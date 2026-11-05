@@ -576,8 +576,8 @@
    "magazine": 136
   },
   "2026-11-05": {
-   "promotii": 245,
-   "magazine": 137
+   "promotii": 286,
+   "magazine": 173
   }
  },
  "magazine": {
@@ -1051,6 +1051,15 @@
   ],
   "atelier49.ro": [
    {
+    "k": "blackfridayatelier49reduceridepanala4010cucodulatelier49|atelier49",
+    "titlu": "Black Friday Atelier49 – reduceri de până la 40% + 10% cu codul ATELIER49",
+    "cod": true,
+    "prima": "2026-11-05",
+    "ultima": "2026-11-05",
+    "expira": "2026-11-13",
+    "activa": true
+   },
+   {
     "k": "reduceridepanala41laarticoleledinlemn10extracucodatelier49|atelier49",
     "titlu": "Reduceri de pana la 41% la articolele din lemn + 10% EXTRA cu cod ATELIER49",
     "cod": true,
@@ -1271,12 +1280,12 @@
   "automobilus.ro": [
    {
     "k": "blackfridayautomobilusreduceridepanala35accelereazaticomisioanele|",
-    "titlu": "🔥 BLACK FRIDAY Automobilus: Reduceri de până la 35%! Accelerează-ți comisioanele!",
+    "titlu": "BLACK FRIDAY Automobilus: Reduceri de până la 35%! Accelerează-ți comisioanele!",
     "cod": false,
     "prima": "2026-11-03",
-    "ultima": "2026-11-03",
+    "ultima": "2026-11-05",
     "expira": "2026-11-15",
-    "activa": false
+    "activa": true
    },
    {
     "k": "reducere20lavopseauapentruetrierefoliatecpastell|",
@@ -1449,15 +1458,26 @@
     "activa": false
    }
   ],
+  "babyneeds.ro": [
+   {
+    "k": "blackfriday2026babyneedsro|",
+    "titlu": "Black Friday 2026 BabyNeeds.ro",
+    "cod": false,
+    "prima": "2026-11-05",
+    "ultima": "2026-11-05",
+    "expira": "2026-11-09",
+    "activa": true
+   }
+  ],
   "baristelli.ro": [
    {
     "k": "blackfridaylabaristelli|",
-    "titlu": "Black Friday la Baristelli ☕",
+    "titlu": "Black Friday la Baristelli",
     "cod": false,
     "prima": "2026-10-29",
-    "ultima": "2026-11-03",
+    "ultima": "2026-11-05",
     "expira": "2026-11-08",
-    "activa": false
+    "activa": true
    },
    {
     "k": "cafeaualuniicostaricatresnubes|",
@@ -1924,6 +1944,17 @@
     "activa": false
    }
   ],
+  "citgrup.ro": [
+   {
+    "k": "blackfridaypanala70panala1000000leireducerelaunsingurprodusincepeazi5noiembrieora1800|",
+    "titlu": "BLACK FRIDAY·până la −70%·până la 1.000.000 lei reducere la un singur produs·începe azi, 5 noiembrie, ora 18:00",
+    "cod": false,
+    "prima": "2026-11-05",
+    "ultima": "2026-11-05",
+    "expira": "2026-11-09",
+    "activa": true
+   }
+  ],
   "cllix.com": [
    {
     "k": "summer2026sale20offcllixapartmentsandhotelsarise|summercllix26",
@@ -1979,9 +2010,9 @@
     "titlu": "Black Friday 2026 Conectica.ro",
     "cod": false,
     "prima": "2026-11-02",
-    "ultima": "2026-11-03",
-    "expira": "2026-11-14",
-    "activa": false
+    "ultima": "2026-11-05",
+    "expira": "2026-11-15",
+    "activa": true
    }
   ],
   "conqueco.com": [
@@ -2003,7 +2034,7 @@
     "prima": "2026-10-19",
     "ultima": "2026-11-05",
     "expira": "2026-11-05",
-    "activa": true
+    "activa": false
    }
   ],
   "craftup.ro": [
@@ -2012,9 +2043,9 @@
     "titlu": "CraftUp Black Friday 2026 cu reduceri de pana la 87%",
     "cod": false,
     "prima": "2026-10-16",
-    "ultima": "2026-11-03",
+    "ultima": "2026-11-05",
     "expira": "2026-11-09",
-    "activa": false
+    "activa": true
    },
    {
     "k": "ambalajesidecoratiunidecraciuncureduceridepanala30lapecraftupro|",
@@ -2073,6 +2104,17 @@
     "activa": true
    }
   ],
+  "cumperiangro.ro": [
+   {
+    "k": "blackfridaycumperiangroro10latotautomatincos68nov|",
+    "titlu": "Black Friday CumperiAngro.ro: −10% la tot, automat în coș (6–8 nov)",
+    "cod": false,
+    "prima": "2026-11-05",
+    "ultima": "2026-11-05",
+    "expira": "2026-11-08",
+    "activa": true
+   }
+  ],
   "curteaveche.ro": [
    {
     "k": "platestijumatatecitestitotcurteavecheroblackfriday2026|",
@@ -2110,9 +2152,9 @@
     "titlu": "Black friday",
     "cod": false,
     "prima": "2026-10-29",
-    "ultima": "2026-11-03",
+    "ultima": "2026-11-05",
     "expira": "2026-11-15",
-    "activa": false
+    "activa": true
    },
    {
     "k": "21gratis|",
@@ -2767,6 +2809,15 @@
   ],
   "drmax.ro": [
    {
+    "k": "blackfridaydrmax68noiembriediscounturidepanala70|",
+    "titlu": "BLACK FRIDAY Dr. Max | 6–8 noiembrie | Discounturi de până la 70%",
+    "cod": false,
+    "prima": "2026-11-05",
+    "ultima": "2026-11-05",
+    "expira": "2026-11-08",
+    "activa": true
+   },
+   {
     "k": "maxdaysfrumusetesiingrijire|",
     "titlu": "Max Days Frumusete si Ingrijire",
     "cod": false,
@@ -3029,13 +3080,13 @@
   ],
   "edez.ro": [
    {
-    "k": "blackfridayedez202615extrareducerelatoateprodusele|",
+    "k": "blackfridayedez202615extrareducerelatoateprodusele|black15",
     "titlu": "Black Friday Edez 2026: 15% EXTRA reducere la toate produsele",
-    "cod": false,
+    "cod": true,
     "prima": "2026-10-29",
-    "ultima": "2026-11-03",
+    "ultima": "2026-11-05",
     "expira": "2026-11-08",
-    "activa": false
+    "activa": true
    },
    {
     "k": "blackfridayedez2026panala15extrareducerelaproduseledejareduse|",
@@ -3091,9 +3142,9 @@
     "titlu": "Black Friday la Editura Casa: reduceri de până la 78%!",
     "cod": false,
     "prima": "2026-10-29",
-    "ultima": "2026-11-03",
-    "expira": "2026-11-07",
-    "activa": false
+    "ultima": "2026-11-05",
+    "expira": "2026-11-08",
+    "activa": true
    },
    {
     "k": "prietenameaconni|",
@@ -3125,6 +3176,15 @@
   ],
   "edituracorint.ro": [
    {
+    "k": "blackfriday2026edituracorintro|",
+    "titlu": "Black Friday 2026 EdituraCorint.ro",
+    "cod": false,
+    "prima": "2026-11-05",
+    "ultima": "2026-11-05",
+    "expira": "2026-11-08",
+    "activa": true
+   },
+   {
     "k": "reduceripanala90|",
     "titlu": "Reduceri pana la 90%",
     "cod": false,
@@ -3145,6 +3205,15 @@
   ],
   "edituradiana.ro": [
    {
+    "k": "theblackfridayshowincepelaedituradiana|",
+    "titlu": "THE BLACK FRIDAY SHOW începe la Editura Diana!",
+    "cod": false,
+    "prima": "2026-11-02",
+    "ultima": "2026-11-05",
+    "expira": "2026-11-13",
+    "activa": true
+   },
+   {
     "k": "puzzlemanianebuniapreturilorainceput|",
     "titlu": "Puzzlemania! Nebunia prețurilor a început!",
     "cod": false,
@@ -3152,15 +3221,6 @@
     "ultima": "2026-11-05",
     "expira": "2026-12-01",
     "activa": true
-   },
-   {
-    "k": "theblackfridayshowincepelaedituradiana|",
-    "titlu": "🎭 THE BLACK FRIDAY SHOW începe la Editura Diana!",
-    "cod": false,
-    "prima": "2026-11-02",
-    "ultima": "2026-11-03",
-    "expira": "2026-11-12",
-    "activa": false
    },
    {
     "k": "noulcatalogedituradiana20262027pentrucadredidacticeinstitutiieducationalesiparintiimplicati|",
@@ -3382,9 +3442,9 @@
     "titlu": "Black Friday ErosVita: -10% peste 150 lei, -15% peste 250 lei",
     "cod": false,
     "prima": "2026-10-27",
-    "ultima": "2026-11-03",
+    "ultima": "2026-11-05",
     "expira": "2026-11-16",
-    "activa": false
+    "activa": true
    },
    {
     "k": "vineritransportgratuitpentruoricecomandacedepaseste129ron|",
@@ -3822,9 +3882,9 @@
     "titlu": "Black Friday 2026 cu reduceri de pana la 80%",
     "cod": false,
     "prima": "2026-10-26",
-    "ultima": "2026-11-03",
-    "expira": "2026-11-15",
-    "activa": false
+    "ultima": "2026-11-05",
+    "expira": "2026-11-16",
+    "activa": true
    }
   ],
   "evolutionpowertools.ro": [
@@ -3974,6 +4034,15 @@
   ],
   "f64.ro": [
    {
+    "k": "startblackfridaylaf64reduceridepanala70panape9noiembrieo|",
+    "titlu": "START Black Friday la F64! Reduceri de până la -70% până pe 9 Noiembrie O",
+    "cod": false,
+    "prima": "2026-11-05",
+    "ultima": "2026-11-05",
+    "expira": "2026-11-09",
+    "activa": true
+   },
+   {
     "k": "halloweendealspanala50laechipamentefotovideo|",
     "titlu": "🎃 HALLOWEEN DEALS: Până la -50% la echipamente foto-video!",
     "cod": false,
@@ -4114,7 +4183,7 @@
     "prima": "2026-11-01",
     "ultima": "2026-11-05",
     "expira": "2026-11-05",
-    "activa": true
+    "activa": false
    },
    {
     "k": "summershoppingairlinesweekend30reduceredirectincoslacumparaturideminimum150lei|",
@@ -4358,13 +4427,13 @@
   ],
   "frapperie.ro": [
    {
-    "k": "blackfridayfrapperie10reducerelatotsiteul|",
+    "k": "blackfridayfrapperie10reducerelatotsiteul|blackfriday10",
     "titlu": "Black Friday Frapperie – 10% reducere la tot site-ul",
-    "cod": false,
+    "cod": true,
     "prima": "2026-10-31",
-    "ultima": "2026-11-03",
+    "ultima": "2026-11-05",
     "expira": "2026-11-13",
-    "activa": false
+    "activa": true
    }
   ],
   "fsm-romania.ro": [
@@ -4752,9 +4821,9 @@
     "titlu": "Black Gift Design: Reduceri de pana la 60%",
     "cod": false,
     "prima": "2026-10-27",
-    "ultima": "2026-11-03",
+    "ultima": "2026-11-05",
     "expira": "2026-11-13",
-    "activa": false
+    "activa": true
    },
    {
     "k": "halloweenpegiftdesignro13cadoula200lei13offfreegift|",
@@ -4866,9 +4935,9 @@
     "titlu": "Black Friday Gorgeaux 2026",
     "cod": false,
     "prima": "2026-10-28",
-    "ultima": "2026-11-03",
-    "expira": "2026-11-08",
-    "activa": false
+    "ultima": "2026-11-05",
+    "expira": "2026-11-09",
+    "activa": true
    }
   ],
   "gorillasports.ro": [
@@ -4905,6 +4974,15 @@
    }
   ],
   "gsmnet.ro": [
+   {
+    "k": "blackfriday2026|",
+    "titlu": "Black Friday 2026",
+    "cod": false,
+    "prima": "2026-11-05",
+    "ultima": "2026-11-05",
+    "expira": "2026-11-09",
+    "activa": true
+   },
    {
     "k": "backtoschool|",
     "titlu": "Back to School",
@@ -5026,9 +5104,9 @@
     "titlu": "Black Friday HAVIT România: 30% reducere la tot, 6-15 Noiembrie",
     "cod": false,
     "prima": "2026-10-29",
-    "ultima": "2026-11-03",
+    "ultima": "2026-11-05",
     "expira": "2026-11-15",
-    "activa": false
+    "activa": true
    }
   ],
   "helloice.com": [
@@ -5270,13 +5348,22 @@
   ],
   "inpuff.ro": [
    {
+    "k": "blackfridaylainpuffreduceride1080|",
+    "titlu": "Black Friday la INPUFF – reduceri de 10–80%!",
+    "cod": false,
+    "prima": "2026-11-05",
+    "ultima": "2026-11-05",
+    "expira": "2026-11-09",
+    "activa": true
+   },
+   {
     "k": "aniversareinpuff15anialaturidetine|",
     "titlu": "Aniversare INPUFF – 15 ani alături de tine!",
     "cod": false,
     "prima": "2026-11-01",
     "ultima": "2026-11-05",
     "expira": "2026-11-05",
-    "activa": true
+    "activa": false
    },
    {
     "k": "inpuffsummersalereduceridepanala40latoaterochiile|",
@@ -5334,9 +5421,9 @@
     "titlu": "Black Friday - Marea Bubuială",
     "cod": false,
     "prima": "2026-10-21",
-    "ultima": "2026-11-03",
-    "expira": "2026-11-07",
-    "activa": false
+    "ultima": "2026-11-05",
+    "expira": "2026-11-08",
+    "activa": true
    },
    {
     "k": "reduceritentantelatoatagamadelenjerii|",
@@ -5647,15 +5734,26 @@
     "activa": false
    }
   ],
+  "kinderauto.ro": [
+   {
+    "k": "blackfridaykinderautoro2026kitmediadisponibil|",
+    "titlu": "Black Friday Kinderauto.ro 2026 | Kit Media disponibil!",
+    "cod": false,
+    "prima": "2026-11-05",
+    "ultima": "2026-11-05",
+    "expira": "2026-11-15",
+    "activa": true
+   }
+  ],
   "kinderplay.ro": [
    {
     "k": "blackfriday2026kinderplayroreduceridepanala38|",
-    "titlu": "🔥 Black Friday 2026 Kinderplay.ro - reduceri de până la 38%",
+    "titlu": "Black Friday 2026 Kinderplay.ro - reduceri de până la 38%",
     "cod": false,
     "prima": "2026-10-26",
-    "ultima": "2026-11-03",
+    "ultima": "2026-11-05",
     "expira": "2026-11-15",
-    "activa": false
+    "activa": true
    }
   ],
   "kisslovehair.com": [
@@ -6048,6 +6146,15 @@
    }
   ],
   "libhumanitas.ro": [
+   {
+    "k": "cartilebunevincureducerimariblackfriday68noiembriepanala90reducerelatoateproduseledepesiteulwwwlibhumanitasro|",
+    "titlu": "Cărțile bune vin cu reduceri mari! Black Friday - 6-8 noiembrie. Pana la 90% reducere la toate produsele de pe site-ul www.libhumanitas.ro",
+    "cod": false,
+    "prima": "2026-11-05",
+    "ultima": "2026-11-05",
+    "expira": "2026-11-08",
+    "activa": true
+   },
    {
     "k": "25reducerelatoatetitlurileedituriigama|",
     "titlu": "25% reducere la toate titlurile editurii GAMA",
@@ -6497,9 +6604,9 @@
     "titlu": "Black Friday la Li Nails Boutique: reduceri reale de pana la 79%, intre 6–8 noiembrie!",
     "cod": false,
     "prima": "2026-10-30",
-    "ultima": "2026-11-03",
+    "ultima": "2026-11-05",
     "expira": "2026-11-08",
-    "activa": false
+    "activa": true
    },
    {
     "k": "blackfridaylalilanailsboutiquereducerirealedepanala79intre68noiembrie|",
@@ -6679,21 +6786,21 @@
   ],
   "longevity-boost.com": [
    {
+    "k": "blackfriday352produsefullsizecadoulalongevityboost|",
+    "titlu": "Black Friday: -35% + 2 produse full size cadou la Longevity BOOST",
+    "cod": false,
+    "prima": "2026-10-29",
+    "ultima": "2026-11-05",
+    "expira": "2026-11-20",
+    "activa": true
+   },
+   {
     "k": "20inca20lasuplimentelelongevityboost|",
     "titlu": "-20% + încă 20% la suplimentele Longevity BOOST",
     "cod": false,
     "prima": "2026-10-29",
     "ultima": "2026-11-05",
     "expira": "2026-11-05",
-    "activa": true
-   },
-   {
-    "k": "blackfriday352produsefullsizecadoulalongevityboost|",
-    "titlu": "Black Friday: -35% + 2 produse full size cadou la Longevity BOOST",
-    "cod": false,
-    "prima": "2026-10-29",
-    "ultima": "2026-11-03",
-    "expira": "2026-11-19",
     "activa": false
    }
   ],
@@ -6774,9 +6881,9 @@
     "titlu": "Black Friday la MarketGarage.ro – Prețuri mai mici pentru pasiunile tale!",
     "cod": false,
     "prima": "2026-11-02",
-    "ultima": "2026-11-03",
-    "expira": "2026-11-14",
-    "activa": false
+    "ultima": "2026-11-05",
+    "expira": "2026-11-15",
+    "activa": true
    }
   ],
   "masif.ro": [
@@ -6785,9 +6892,9 @@
     "titlu": "Black Friday la Masif | 6 - 8 noiembrie | Reduceri cu SPOR",
     "cod": false,
     "prima": "2026-11-02",
-    "ultima": "2026-11-03",
+    "ultima": "2026-11-05",
     "expira": "2026-11-08",
-    "activa": false
+    "activa": true
    }
   ],
   "mathaus.ro": [
@@ -7025,9 +7132,9 @@
     "titlu": "Reducere de Black Friday pentru Menzo.ro",
     "cod": false,
     "prima": "2026-10-29",
-    "ultima": "2026-11-03",
+    "ultima": "2026-11-05",
     "expira": "2026-11-15",
-    "activa": false
+    "activa": true
    }
   ],
   "mobidea.ro": [
@@ -7215,6 +7322,17 @@
     "activa": false
    }
   ],
+  "myown.ro": [
+   {
+    "k": "blackfriday2026|",
+    "titlu": "Black Friday 2026",
+    "cod": false,
+    "prima": "2026-11-05",
+    "ultima": "2026-11-05",
+    "expira": "2026-11-10",
+    "activa": true
+   }
+  ],
   "nadula.com": [
    {
     "k": "thanksgivingearlydealsupto90off|thx",
@@ -7318,13 +7436,13 @@
   ],
   "nano-auto.ro": [
    {
-    "k": "blackfridaycelemaimicipreturidinan|",
+    "k": "blackfridaycelemaimicipreturidinan|nanomax5",
     "titlu": "Black Friday - Cele mai mici preturi din an",
-    "cod": false,
+    "cod": true,
     "prima": "2026-10-28",
-    "ultima": "2026-11-03",
+    "ultima": "2026-11-05",
     "expira": "2026-11-13",
-    "activa": false
+    "activa": true
    },
    {
     "k": "reduceridepanala28lavopsea|",
@@ -7394,13 +7512,13 @@
   ],
   "nemira.ro": [
    {
-    "k": "blackfridaynemirapanala90reducere|",
+    "k": "blackfridaynemirapanala90reducere|extra20",
     "titlu": "Black Friday Nemira: Până la 90% REDUCERE",
-    "cod": false,
+    "cod": true,
     "prima": "2026-10-26",
-    "ultima": "2026-11-03",
+    "ultima": "2026-11-05",
     "expira": "2026-11-08",
-    "activa": false
+    "activa": true
    },
    {
     "k": "toamnaliteraracu40reducerelacos|",
@@ -7522,7 +7640,7 @@
     "prima": "2026-10-23",
     "ultima": "2026-11-05",
     "expira": "2026-11-30",
-    "activa": true
+    "activa": false
    }
   ],
   "nobilacasa.ro": [
@@ -7744,9 +7862,9 @@
     "titlu": "Black Friday",
     "cod": false,
     "prima": "2026-10-30",
-    "ultima": "2026-11-03",
-    "expira": "2026-11-07",
-    "activa": false
+    "ultima": "2026-11-05",
+    "expira": "2026-11-08",
+    "activa": true
    }
   ],
   "nuvien.ro": [
@@ -7821,6 +7939,15 @@
    }
   ],
   "ookee.ro": [
+   {
+    "k": "blackfridayookeero|",
+    "titlu": "Black Friday Ookee.ro",
+    "cod": false,
+    "prima": "2026-11-05",
+    "ultima": "2026-11-05",
+    "expira": "2026-11-27",
+    "activa": true
+   },
    {
     "k": "toamnapromotiilorookeero|",
     "titlu": "Toamna promotiilor - Ookee.ro",
@@ -8227,12 +8354,12 @@
   "petit-bebe.ro": [
    {
     "k": "blackfridaylapetitbebepanala36reducere|",
-    "titlu": "🖤 Black Friday la Petit Bebe – pana la 36% reducere!",
+    "titlu": "Black Friday la Petit Bebe – pana la 36% reducere!",
     "cod": false,
     "prima": "2026-10-29",
-    "ultima": "2026-11-03",
-    "expira": "2026-11-08",
-    "activa": false
+    "ultima": "2026-11-05",
+    "expira": "2026-11-09",
+    "activa": true
    },
    {
     "k": "cozyautumndayspanala33reducerepentrubebelus|",
@@ -8389,6 +8516,15 @@
   ],
   "printingmall.ro": [
    {
+    "k": "voucherblackfriday615noiembrie|",
+    "titlu": "Voucher Black Friday 6-15 Noiembrie",
+    "cod": false,
+    "prima": "2026-11-05",
+    "ultima": "2026-11-05",
+    "expira": "2026-11-15",
+    "activa": true
+   },
+   {
     "k": "voucherblackfriday615noiembriecomisionhavit10|",
     "titlu": "Voucher Black Friday 6-15 Noiembrie",
     "cod": false,
@@ -8428,6 +8564,15 @@
    }
   ],
   "re-bloom.ro": [
+   {
+    "k": "greenfridayrebloompanala70reducere|",
+    "titlu": "Green Friday Re-Bloom – Până la -70% Reducere",
+    "cod": false,
+    "prima": "2026-11-05",
+    "ultima": "2026-11-05",
+    "expira": "2026-11-10",
+    "activa": true
+   },
    {
     "k": "extra30laproduseleselectateextra20laproduseleselectate|",
     "titlu": "Extra 30% la Produsele SelectateExtra 20% la Produsele Selectate",
@@ -8627,9 +8772,9 @@
     "titlu": "Black Friday 2026 Scule265",
     "cod": false,
     "prima": "2026-10-28",
-    "ultima": "2026-11-03",
-    "expira": "2026-11-07",
-    "activa": false
+    "ultima": "2026-11-05",
+    "expira": "2026-11-08",
+    "activa": true
    }
   ],
   "sevensins.ro": [
@@ -8751,9 +8896,9 @@
     "titlu": "Black Friday SportDepot.ro: reduceri de pana la 50%, intre 6 si 29 noiembrie!",
     "cod": false,
     "prima": "2026-11-02",
-    "ultima": "2026-11-03",
+    "ultima": "2026-11-05",
     "expira": "2026-11-29",
-    "activa": false
+    "activa": true
    },
    {
     "k": "codreduceresportdepot20lanouacolectie|",
@@ -8905,12 +9050,12 @@
   "springfarma.com": [
    {
     "k": "blackfridayliftulreducerilor|",
-    "titlu": "🐝 Black Friday - Liftul Reducerilor",
+    "titlu": "Black Friday - Liftul Reducerilor",
     "cod": false,
     "prima": "2026-11-03",
-    "ultima": "2026-11-03",
+    "ultima": "2026-11-05",
     "expira": "2026-11-15",
-    "activa": false
+    "activa": true
    }
   ],
   "spy-shop.ro": [
@@ -9449,13 +9594,13 @@
     "activa": false
    },
    {
-    "k": "blackfriday68112026|",
+    "k": "blackfriday68112026|ved5",
     "titlu": "Black Friday 6-8.11.2026",
-    "cod": false,
+    "cod": true,
     "prima": "2026-10-27",
-    "ultima": "2026-11-03",
-    "expira": "2026-11-07",
-    "activa": false
+    "ultima": "2026-11-05",
+    "expira": "2026-11-08",
+    "activa": true
    },
    {
     "k": "epilarecearasiaccesorii|",
@@ -9719,13 +9864,13 @@
   ],
   "watchshop.ro": [
    {
-    "k": "blackfridaywatchshopro|",
+    "k": "blackfridaywatchshopro|blackfriday2026",
     "titlu": "Black Friday Watchshop.ro",
-    "cod": false,
+    "cod": true,
     "prima": "2026-11-03",
-    "ultima": "2026-11-03",
+    "ultima": "2026-11-05",
     "expira": "2026-11-08",
-    "activa": false
+    "activa": true
    }
   ],
   "wecreat.com": [
@@ -10287,9 +10432,9 @@
     "titlu": "Black Friday pe zelto.ro",
     "cod": false,
     "prima": "2026-11-02",
-    "ultima": "2026-11-03",
-    "expira": "2026-11-07",
-    "activa": false
+    "ultima": "2026-11-05",
+    "expira": "2026-11-08",
+    "activa": true
    },
    {
     "k": "sezonulvirozelorpreturimaimici|",

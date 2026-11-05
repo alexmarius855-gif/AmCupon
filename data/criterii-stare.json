@@ -513,7 +513,7 @@
 "titlu": "Mașini de spălat de 9 kg",
 "nota": "Capacitatea se referă la greutatea rufelor uscate pe care le poți pune o dată în cuvă.",
 "in_text": "\\b9\\s*kg\\b",
-"actualizat": "2026-11-04",
+"actualizat": "2026-11-05",
 "feeduri": [
 {
 "id": 1539,
@@ -565,18 +565,6 @@
 "id": "1f273f036",
 "brand": "Candy",
 "url_magazin": "https://www.evomag.ro/electrocasnice-electrocasnice-mari-masini-de-spalat-rufe-si-accesorii-masini-de-spalat-rufe/candy-masina-de-spalat-rufe-candy-smart-cs-1292dwrr4-1-s-1200-rpm-9-kg-16-programe-de-spalare-functia-easy-iron-clasa-b-antracit-4094036.html",
-"pret_vechi": null,
-"verificat": "2026-11-04"
-},
-{
-"titlu": "CANDY Masina de spalat rufe Candy ProWash BR 49B8-S, 9kg, 1400rpm, 16 programe, 60 cm, Alb",
-"pret": 1706.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202512311121/380051/full/candy-candy-br-49b8-s-washing-machine-a-front-loading-depth-60-cm-9-kg-white-1117010.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fmasina-de-spalat-rufe%2Fcandy%2F380051-masina-de-spalat-rufe-candy-prowash-br-49b8-s-9kg-1400rpm-16-programe-60-cm-alb%2F",
-"magazin": "dwyn.ro",
-"id": "xfQsnJYdUf-U",
-"brand": "CANDY",
-"url_magazin": "https://www.dwyn.ro/masina-de-spalat-rufe/candy/380051-masina-de-spalat-rufe-candy-prowash-br-49b8-s-9kg-1400rpm-16-programe-60-cm-alb/",
 "pret_vechi": null,
 "verificat": "2026-11-04"
 },
@@ -665,6 +653,28 @@
 "verificat": "2026-11-04"
 },
 {
+"titlu": "Samsung Masina de spalat rufe Samsung WW90DG6U25LBU4, 9 kg, 1400 rpm, Clasa A, AI Ecobubble, Super Speed 39 min, Negru",
+"pret": 2773.99,
+"imagine": "https://www.dwyn.ro/images/products/img_202508191322/345908/full/samsung-masina-de-spalat-rufe-samsung-ww90dg6u25lbu4-9-kg-1400-rpm-clasa-a-ai-ecobubble-super-speed-39-min-negru-940010.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fmasina-de-spalat-rufe%2Fsamsung%2F345908-masina-de-spalat-rufe-samsung-ww90dg6u25lbu4-9-kg-1400-rpm-clasa-a-ai-ecobubble-super-speed-39-min-negru%2F",
+"magazin": "dwyn.ro",
+"id": "LQloRNKBXyXA",
+"brand": "Samsung",
+"url_magazin": "https://www.dwyn.ro/masina-de-spalat-rufe/samsung/345908-masina-de-spalat-rufe-samsung-ww90dg6u25lbu4-9-kg-1400-rpm-clasa-a-ai-ecobubble-super-speed-39-min-negru/",
+"pret_vechi": null
+},
+{
+"titlu": "Samsung Masina de spalat rufe Samsung WW90DG6U25LKU4, 9 kg, 1400 RPM, AI Ecobubble, AI Control, AI Energy SmartThings, D",
+"pret": 2874.99,
+"imagine": "https://www.dwyn.ro/images/products/img_202508191322/320383/full/samsung-masina-de-spalat-rufe-samsung-ww90dg6u25lku4-9-kg-1400-rpm-ai-ecobubble-ai-control-ai-energy-smartthings-digital-inverter-clasa-a-alb-925541.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fmasina-de-spalat-rufe%2Fsamsung%2F320383-masina-de-spalat-rufe-samsung-ww90dg6u25lku4-9-kg-1400-rpm-ai-ecobubble-ai-control-ai-energy-smartthings-digital-inverter-clasa-a-alb%2F",
+"magazin": "dwyn.ro",
+"id": "cfWoDddoR4r_",
+"brand": "Samsung",
+"url_magazin": "https://www.dwyn.ro/masina-de-spalat-rufe/samsung/320383-masina-de-spalat-rufe-samsung-ww90dg6u25lku4-9-kg-1400-rpm-ai-ecobubble-ai-control-ai-energy-smartthings-digital-inverter-clasa-a-alb/",
+"pret_vechi": null
+},
+{
 "titlu": "Whirlpool Masina de Spalat Rufe Frontala Whirlpool FFD 9489 BCV EE, Steam, 6th Sense, 9 kg, 1351rpm, Clasa A, 63 cm lati",
 "pret": 2928.99,
 "imagine": "https://www.dwyn.ro/images/products/img_202512311121/380015/full/whirlpool-whirlpool-ffd-9489-bcv-ee-washing-machine-a-front-loading-washing-capacity-9-kg-1351-rpm-depth-63-cm-white-1116674.jpg",
@@ -685,18 +695,6 @@
 "id": "Pmx5-6C9YVKt",
 "brand": "BOSCH",
 "url_magazin": "https://www.dwyn.ro/masina-de-spalat-rufe/bosch/398686-masina-de-spalat-rufe-bosch-wan2826nby-9-kg-1400-rpm-ecosilence-drive-iron-assist-hygiene-plus-control-electronic-touch-program-dark-colors-speed-perfect-clasa-a-60-cm-alb-gri/",
-"pret_vechi": null,
-"verificat": "2026-11-04"
-},
-{
-"titlu": "Electrolux Masina de spalat rufe Electrolux EW6F8492E, 9 kg, 1400 rpm, clasa A, Inverter, SensiCare, PerfectCare600, Ful",
-"pret": 3099.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202512311121/411865/full/electrolux-masina-de-spalat-rufe-electrolux-ew6f8492e-9-kg-1400-rpm-clasa-a-inverter-sensicare-perfectcare600-full-wash45-antialergic-timemanager-alb-1336966.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fmasina-de-spalat-rufe%2Felectrolux%2F411865-masina-de-spalat-rufe-electrolux-ew6f8492e-9-kg-1400-rpm-clasa-a-inverter-sensicare-perfectcare600-full-wash45-antialergic-timemanager-alb%2F",
-"magazin": "dwyn.ro",
-"id": "iq-3I4J33g5C",
-"brand": "Electrolux",
-"url_magazin": "https://www.dwyn.ro/masina-de-spalat-rufe/electrolux/411865-masina-de-spalat-rufe-electrolux-ew6f8492e-9-kg-1400-rpm-clasa-a-inverter-sensicare-perfectcare600-full-wash45-antialergic-timemanager-alb/",
 "pret_vechi": null,
 "verificat": "2026-11-04"
 },
@@ -737,7 +735,7 @@
 "titlu": "Mașini de spălat de 10 kg",
 "nota": "Capacitatea se referă la greutatea rufelor uscate pe care le poți pune o dată în cuvă.",
 "in_text": "\\b10\\s*kg\\b",
-"actualizat": "2026-11-04",
+"actualizat": "2026-11-05",
 "feeduri": [
 {
 "id": 1539,
@@ -778,18 +776,6 @@
 "id": "6b_fWJ7KK3S1",
 "brand": "Albalux",
 "url_magazin": "https://www.evomag.ro/electrocasnice-electrocasnice-mari-masini-de-spalat-rufe-si-accesorii-masini-de-spalat-rufe/albalux-masina-de-spalat-rufe-albalux-axwgi141021-10-kg-16-programe-1400-rpm-clasa-a-alb-4285651.html",
-"pret_vechi": null,
-"verificat": "2026-11-04"
-},
-{
-"titlu": "Masina de spalat rufe Albatros AWMI14107, 10 kg, 16 programe, 1400 rpm, Clasa A-10% (Alb)",
-"pret": 1399.99,
-"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4285%2F4285652%2Fawmi14107-69a70fb309309.jpg&type=auto&width=500&sign=SQs2b6Ggiglcqv9Xj1Iqy4RnyTBLinumsAvC83VVw2U",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Felectrocasnice-electrocasnice-mari-masini-de-spalat-rufe-si-accesorii-masini-de-spalat-rufe%2Falbatros-masina-de-spalat-rufe-albatros-awmi14107-10-kg-16-programe-1400-rpm-clasa-a-10-alb-4285652.html",
-"magazin": "evomag.ro",
-"id": "ORog0ouChxmY",
-"brand": "Albatros",
-"url_magazin": "https://www.evomag.ro/electrocasnice-electrocasnice-mari-masini-de-spalat-rufe-si-accesorii-masini-de-spalat-rufe/albatros-masina-de-spalat-rufe-albatros-awmi14107-10-kg-16-programe-1400-rpm-clasa-a-10-alb-4285652.html",
 "pret_vechi": null,
 "verificat": "2026-11-04"
 },
@@ -866,6 +852,18 @@
 "verificat": "2026-11-04"
 },
 {
+"titlu": "Masina de spalat rufe cu incarcare frontala BOSCH WGJ25401BY Seria 6, 10 kg, 1400 rpm, Clasa A, Iron Assist, Home Connec",
+"pret": 3182.99,
+"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4322%2F4322276%2Fwgj25401by-6aeb45d7e0644.jpg&type=auto&width=500&sign=XNKplNgbVA8OUEk__HwvMlUmVcGXUK_HLxAz68NC2oc",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Felectrocasnice-electrocasnice-mari-masini-de-spalat-rufe-si-accesorii-masini-de-spalat-rufe%2Fbosch-masina-de-spalat-rufe-cu-incarcare-frontala-bosch-wgj25401by-seria-6-10-kg-1400-rpm-clasa-a-iron-assist-home-connect-alb-4322276.html",
+"magazin": "evomag.ro",
+"id": "r0Mae7NMn4Tc",
+"brand": "BOSCH",
+"url_magazin": "https://www.evomag.ro/electrocasnice-electrocasnice-mari-masini-de-spalat-rufe-si-accesorii-masini-de-spalat-rufe/bosch-masina-de-spalat-rufe-cu-incarcare-frontala-bosch-wgj25401by-seria-6-10-kg-1400-rpm-clasa-a-iron-assist-home-connect-alb-4322276.html",
+"pret_vechi": null,
+"verificat": "2026-11-05"
+},
+{
 "titlu": "Masina de spalat rufe frontala HAIER HW100-BD14397U1S, Steam, 10 kg, 1400rpm, Clasa A (Alb)",
 "pret": 4999.99,
 "imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4222%2F4222976%2Fhw100-bd14397u1s-682c39daa00ad.jpg&type=auto&width=500&sign=Pjn7ky0s4wxOUFRbndPGL9KQbrCOPkfu6hQEMB-tpPE",
@@ -890,7 +888,7 @@
 "titlu": "Mașini de spălat cu uscător",
 "nota": null,
 "in_text": "\\buscător\\b",
-"actualizat": "2026-11-04",
+"actualizat": "2026-11-05",
 "feeduri": [
 {
 "id": 1539,
@@ -964,7 +962,7 @@
 "imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4235%2F4235706%2Foverlay_76c68ea4e72c77c5fb371087d601db70.jpg&type=auto&width=500&sign=ikRf8_TFxBy8OaEHssY2Lo8aKrhgaXYKQMZkdf3uoRg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Felectrocasnice-electrocasnice-mari-masini-de-spalat-rufe-si-accesorii-masini-de-spalat-rufe%2Fheinner-masina-de-spalat-rufe-cu-uscator-heinner-hwdm-m1014ivkb-10-kg-spalare-7-kg-uscare-1400-rpm-clasa-b-15-programe-alb-4235706.html",
 "magazin": "evomag.ro",
-"id": "tmpxuybhrt9Y",
+"id": "wlsu_WibLUnE",
 "brand": "Heinner",
 "url_magazin": "https://www.evomag.ro/electrocasnice-electrocasnice-mari-masini-de-spalat-rufe-si-accesorii-masini-de-spalat-rufe/heinner-masina-de-spalat-rufe-cu-uscator-heinner-hwdm-m1014ivkb-10-kg-spalare-7-kg-uscare-1400-rpm-clasa-b-15-programe-alb-4235706.html",
 "pret_vechi": null,
@@ -1055,30 +1053,6 @@
 "verificat": "2026-11-04"
 },
 {
-"titlu": "Beko Masina de spalat rufe cu uscator Beko BM5DFT49442WB, SteamCure, 9/6 kg, 1400rpm, alb",
-"pret": 3323.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202512311121/383417/full/beko-masina-de-spalat-rufe-cu-uscator-beko-bm5dft49442wb-steamcure-9-6-kg-1400rpm-alb-1167350.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fmasina-de-spalat-rufe%2Fbeko%2F383417-masina-de-spalat-rufe-cu-uscator-beko-bm5dft49442wb-steamcure-9-6-kg-1400rpm-alb%2F",
-"magazin": "dwyn.ro",
-"id": "ecIUfHHYFylN",
-"brand": "Beko",
-"url_magazin": "https://www.dwyn.ro/masina-de-spalat-rufe/beko/383417-masina-de-spalat-rufe-cu-uscator-beko-bm5dft49442wb-steamcure-9-6-kg-1400rpm-alb/",
-"pret_vechi": null,
-"verificat": "2026-11-04"
-},
-{
-"titlu": "Beko Masina de spalat rufe cu uscator Beko BM5DFT49442GB, Clasa D, SteamCure, 9/6 kg, 1400rpm, Gri",
-"pret": 3419.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202512311121/383420/full/beko-masina-de-spalat-rufe-cu-uscator-beko-bm5dft49442gb-clasa-d-steamcure-9-6-kg-1400rpm-gri-1168022.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fmasina-de-spalat-rufe%2Fbeko%2F383420-masina-de-spalat-rufe-cu-uscator-beko-bm5dft49442gb-clasa-d-steamcure-9-6-kg-1400rpm-gri%2F",
-"magazin": "dwyn.ro",
-"id": "EuXx4DtXjfUx",
-"brand": "Beko",
-"url_magazin": "https://www.dwyn.ro/masina-de-spalat-rufe/beko/383420-masina-de-spalat-rufe-cu-uscator-beko-bm5dft49442gb-clasa-d-steamcure-9-6-kg-1400rpm-gri/",
-"pret_vechi": null,
-"verificat": "2026-11-04"
-},
-{
 "titlu": "BOSCH Masina de spalat rufe cu uscator BOSCH Serie 4 WNA13401BY, 8kg spalare, 5kg uscare, 1400rpm, Clasa D, Alb",
 "pret": 4344.99,
 "imagine": "https://www.dwyn.ro/images/products/img_202606122129/482830/full/bosch-ma-in-de-sp-lat-rufe-cu-usc-tor-bosch-serie-4-wna13401by-8kg-sp-lare-5kg-uscare-1400rpm-clasa-d-1522135.jpg",
@@ -1101,6 +1075,28 @@
 "url_magazin": "https://www.dwyn.ro/masina-de-spalat-rufe/bosch/482827-masina-de-spalat-rufe-cu-uscator-bosch-seria-4-wna14401by-9kg-spalare-5kg-uscare-1400rpm-clasa-d-alb/",
 "pret_vechi": null,
 "verificat": "2026-11-04"
+},
+{
+"titlu": "Samsung Masina de spalat rufe frontala cu uscator SAMSUNG WD90DG5B15BHLE, Wi-Fi, Eco Bubble, 9/6 kg, 1400rpm, Clasa A/D,",
+"pret": 4746.99,
+"imagine": "https://www.dwyn.ro/images/products/img_202512311121/410782/full/samsung-masina-de-spalat-rufe-frontala-cu-uscator-samsung-wd90dg5b15bhle-wi-fi-eco-bubble-9-6-kg-1400rpm-clasa-a-d-alb-1335502.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fmasina-de-spalat-rufe%2Fsamsung%2F410782-masina-de-spalat-rufe-frontala-cu-uscator-samsung-wd90dg5b15bhle-wi-fi-eco-bubble-9-6-kg-1400rpm-clasa-a-d-alb%2F",
+"magazin": "dwyn.ro",
+"id": "FnFJHqPUs5H4",
+"brand": "Samsung",
+"url_magazin": "https://www.dwyn.ro/masina-de-spalat-rufe/samsung/410782-masina-de-spalat-rufe-frontala-cu-uscator-samsung-wd90dg5b15bhle-wi-fi-eco-bubble-9-6-kg-1400rpm-clasa-a-d-alb/",
+"pret_vechi": null
+},
+{
+"titlu": "BOSCH Masina de spalat rufe cu uscator Bosch Serie 6 WNG25401BY, 10.5kg spalare, 6kg uscare, 1400rpm, Clasa D, Alb",
+"pret": 5004.99,
+"imagine": "https://www.dwyn.ro/images/products/img_202606122129/482824/full/bosch-ma-in-de-sp-lat-rufe-cu-usc-tor-bosch-serie-6-wng25401by-10-5kg-sp-lare-6kg-uscare-1400rpm-clasa-d-1522129.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fmasina-de-spalat-rufe%2Fbosch%2F482824-masina-de-spalat-rufe-cu-uscator-bosch-serie-6-wng25401by-10-5kg-spalare-6kg-uscare-1400rpm-clasa-d-alb%2F",
+"magazin": "dwyn.ro",
+"id": "u7iamwCnXyE_",
+"brand": "BOSCH",
+"url_magazin": "https://www.dwyn.ro/masina-de-spalat-rufe/bosch/482824-masina-de-spalat-rufe-cu-uscator-bosch-serie-6-wng25401by-10-5kg-spalare-6kg-uscare-1400rpm-clasa-d-alb/",
+"pret_vechi": null
 }
 ],
 "magazine": [
@@ -1115,7 +1111,7 @@
 "titlu": "Mașini de spălat slim",
 "nota": null,
 "in_text": "\\bslim\\b",
-"actualizat": "2026-11-04",
+"actualizat": "2026-11-05",
 "feeduri": [
 {
 "id": 1539,
@@ -1300,7 +1296,7 @@
 "titlu": "Mașini de spălat sub 1.500 lei",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-04",
+"actualizat": "2026-11-05",
 "feeduri": [
 {
 "id": 1539,
@@ -18362,7 +18358,8 @@
 "id": "bmvfg0o3B0ui",
 "brand": "Lorelli",
 "url_magazin": "https://www.evomag.ro/bebe-copii-jucarii-carucioare-transport-bebe-scaune-auto-copii-si-inaltatoare/lorelli-scaun-auto-pentru-copii-lorelli-stellar-tetiera-reglabila-spatar-reglabil-0-12-ani-40-150-cm-sps-negru-4318392.html",
-"pret_vechi": null
+"pret_vechi": null,
+"verificat": "2026-11-05"
 },
 {
 "titlu": "Scaun Auto I-size Kinderkraft Safety Fix 2, 76-150 Cm, maxim 36 kg, Gri",
@@ -18373,7 +18370,8 @@
 "id": "W1gVcMb00U3K",
 "brand": "Kinderkraft",
 "url_magazin": "https://www.evomag.ro/bebe-copii-jucarii-carucioare-transport-bebe-scaune-auto-copii-si-inaltatoare/kinderkraft-scaun-auto-i-size-kinderkraft-safety-fix-2-76-150-cm-maxim-36-kg-gri-4181809.html",
-"pret_vechi": null
+"pret_vechi": null,
+"verificat": "2026-11-05"
 },
 {
 "titlu": "Scaun auto copii KinderKraft Xpand 2 Pro i-Size, reglabil, 100-150cm, Negru",
@@ -18384,7 +18382,8 @@
 "id": "5iDbD8tZvDkv",
 "brand": "Kinderkraft",
 "url_magazin": "https://www.evomag.ro/bebe-copii-jucarii-carucioare-transport-bebe-scaune-auto-copii-si-inaltatoare/kinderkraft-scaun-auto-copii-kinderkraft-xpand-2-pro-i-size-reglabil-100-150cm-negru-4305407.html",
-"pret_vechi": null
+"pret_vechi": null,
+"verificat": "2026-11-05"
 },
 {
 "titlu": "Scaun Auto Pentru Copii, 0-36 Kg, Isofix, Centura In 5 Puncte, Tetiera Reglabila, Roz - VALS20",
@@ -18407,7 +18406,8 @@
 "id": "vhS504pElr34",
 "brand": "Lorelli",
 "url_magazin": "https://www.evomag.ro/bebe-copii-jucarii-carucioare-transport-bebe-scaune-auto-copii-si-inaltatoare/lorelli-scaun-auto-pentru-copii-lorelli-sagitta-i-size-rotativ-360-protectie-laterala-sps-spatar-reglabil-0-12-ani-40-150-cm-sps-negru-4305184.html",
-"pret_vechi": null
+"pret_vechi": null,
+"verificat": "2026-11-05"
 },
 {
 "titlu": "Scaun auto Migo Brooklyn i-Size, 100 - 150 cm, 15 - 40 kg, 3 - 12 ani, sistem Isofix, Gri",
@@ -18418,7 +18418,8 @@
 "id": "f8SqCez6oVrA",
 "brand": "Mighty Megasaur",
 "url_magazin": "https://www.evomag.ro/bebe-copii-jucarii-carucioare-transport-bebe-scaune-auto-copii-si-inaltatoare/mighty-megasaur-scaun-auto-migo-brooklyn-i-size-100-150-cm-15-40-kg-3-12-ani-sistem-isofix-gri-4305421.html",
-"pret_vechi": null
+"pret_vechi": null,
+"verificat": "2026-11-05"
 },
 {
 "titlu": "Scaun Auto Pentru Copii cu Isofix și Rotire 360° Motion Seat – Maro, Reglabil, Siguranță și Comfort Maxim-RW11",
@@ -18441,7 +18442,8 @@
 "id": "acaZLziYH2Le",
 "brand": "Lorelli",
 "url_magazin": "https://www.evomag.ro/bebe-copii-jucarii-carucioare-transport-bebe-scaune-auto-copii-si-inaltatoare/lorelli-scaun-auto-pentru-copii-lorelli-voyager-i-size-inclusa-pernuta-de-calatorie-0-luni-12-ani-40-150-cm-verde-4318409.html",
-"pret_vechi": null
+"pret_vechi": null,
+"verificat": "2026-11-05"
 },
 {
 "titlu": "Scaun Auto Cu Isofix, Cu Rotire 360 Grade, 0-36 Kg, Roz, Tetiera Reglabila Pe Inaltime - RT83",
@@ -18594,7 +18596,8 @@
 "id": "ZuyWc8-_tBN4",
 "brand": "LEGO",
 "url_magazin": "https://www.evomag.ro/bebe-copii-jucarii-jucarii-jocuri-seturi-de-constructii-lego-lego-technic/lego-lego-technic-masini-impunatoare-42233-44-piese-4310434.html",
-"pret_vechi": 46.99
+"pret_vechi": 46.99,
+"verificat": "2026-11-05"
 },
 {
 "titlu": "LEGO Duplo - Growing Carrot (10981) | LEGO",
@@ -18671,7 +18674,8 @@
 "id": "jaYPsOGdFxu9",
 "brand": "LEGO",
 "url_magazin": "https://www.evomag.ro/bebe-copii-jucarii-jucarii-jocuri-seturi-de-constructii-lego-lego-technic/lego-lego-technic-buldozer-de-mare-capacitate-42163-195-piese-4148447.html",
-"pret_vechi": null
+"pret_vechi": null,
+"verificat": "2026-11-05"
 },
 {
 "titlu": "LEGO® - Camioneta cu dovleac sculptat 40822, 177 piese",
@@ -18682,7 +18686,8 @@
 "id": "KnqpMyP6KEp8",
 "brand": "LEGO",
 "url_magazin": "https://www.evomag.ro/bebe-copii-jucarii-jucarii-jocuri-seturi-de-constructii-lego-lego-creator/lego-lego-camioneta-cu-dovleac-sculptat-40822-177-piese-4310421.html",
-"pret_vechi": null
+"pret_vechi": null,
+"verificat": "2026-11-05"
 },
 {
 "titlu": "LEGO City - Yellow Taxi (60487) | LEGO",
@@ -18726,7 +18731,8 @@
 "id": "_MFdfm3D_NTC",
 "brand": "LEGO",
 "url_magazin": "https://www.evomag.ro/bebe-copii-jucarii-jucarii-jocuri-seturi-de-constructii-lego-lego-jurassic-world/lego-lego-jurassic-world-pui-de-dinozaur-pteranodon-77977-373-piese-4310417.html",
-"pret_vechi": null
+"pret_vechi": null,
+"verificat": "2026-11-05"
 },
 {
 "titlu": "LEGO® Wicked - Glinda, Elphaba si Nessarose la Universitatea Shiz 75681, 304 piese",
@@ -18737,7 +18743,8 @@
 "id": "oumXjXsroOb0",
 "brand": "LEGO",
 "url_magazin": "https://www.evomag.ro/bebe-copii-jucarii-jucarii-jocuri-seturi-de-constructii-lego-lego-creator/lego-lego-wicked-glinda-elphaba-si-nessarose-la-universitatea-shiz-75681-304-piese-4198152.html",
-"pret_vechi": null
+"pret_vechi": null,
+"verificat": "2026-11-05"
 },
 {
 "titlu": "LEGO® Speed Champions BMW M3 (E30) 77263, 358 piese",
@@ -18748,7 +18755,8 @@
 "id": "INLbYFvnaZgA",
 "brand": "LEGO",
 "url_magazin": "https://www.evomag.ro/bebe-copii-jucarii-jucarii-jocuri-seturi-de-constructii-lego-lego-speed/lego-lego-speed-champions-bmw-m3-e30-77263-358-piese-4310085.html",
-"pret_vechi": null
+"pret_vechi": null,
+"verificat": "2026-11-05"
 },
 {
 "titlu": "LEGO® Set de constructie LEGO® 60510, City - Calendar de advent, Atelierul lui Mos Craciun, 252 piese, 5+ ani",
@@ -18770,7 +18778,8 @@
 "id": "uoeuznCsY8rZ",
 "brand": "LEGO",
 "url_magazin": "https://www.evomag.ro/bebe-copii-jucarii-jucarii-jocuri-seturi-de-constructii-lego-lego-super-heroes/lego-lego-one-piece-ascunzatoarea-doctorului-hiriluk-si-minifigurine-75641-271-piese-4310416.html",
-"pret_vechi": null
+"pret_vechi": null,
+"verificat": "2026-11-05"
 },
 {
 "titlu": "LEGO® Super Heroes Miles Morales vs. Morbius 76244",
@@ -18781,7 +18790,8 @@
 "id": "_VcaSvbO52UM",
 "brand": "LEGO",
 "url_magazin": "https://www.evomag.ro/bebe-copii-jucarii-jucarii-jocuri-seturi-de-constructii-lego-lego-super-heroes/lego-lego-super-heroes-miles-morales-vs.-morbius-76244-4085759.html",
-"pret_vechi": null
+"pret_vechi": null,
+"verificat": "2026-11-05"
 },
 {
 "titlu": "LEGO® Set de constructie LEGO® 71864, NINJAGO® Vehiculele transformabile ale lui Kai si Cole, 394 piese, 7+ ani",
@@ -19766,14 +19776,15 @@
 },
 {
 "titlu": "Puzzle 3D Monumente",
-"pret": 119.0,
+"pret": 83.3,
 "imagine": "https://cdnmpro.com/780585630/p/raw/8/puzzle-3d-monumente~3558.jpg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.hobiktoys.ro%2Fcumpara%2Fpuzzle-3d-monumente-1460",
 "magazin": "hobiktoys.ro",
 "id": "Fttb31O4IqeO",
 "brand": "Imagimake",
 "url_magazin": "https://www.hobiktoys.ro/cumpara/puzzle-3d-monumente-1460",
-"pret_vechi": null
+"pret_vechi": null,
+"verificat": "2026-11-05"
 }
 ],
 "magazine": [
@@ -20918,7 +20929,8 @@
 "id": "uFVZFF-Ru-bb",
 "brand": "Barbie",
 "url_magazin": "https://infinity.ro/papusa-barbie-la-plaja-in-costum-de-baie-tropical-blue-9021698/p?utm_source=2performant",
-"pret_vechi": null
+"pret_vechi": null,
+"verificat": "2026-11-05"
 },
 {
 "titlu": "PAPUSA BARBIE CARIERE",
@@ -20951,7 +20963,8 @@
 "id": "qqdnXczCc8oR",
 "brand": "Barbie",
 "url_magazin": "https://infinity.ro/papusa-barbie-asistenta-medicala-satena-1879512/p?utm_source=2performant",
-"pret_vechi": null
+"pret_vechi": null,
+"verificat": "2026-11-05"
 },
 {
 "titlu": "Papusa Barbie Colectie Aniversara 80 de Ani Blonda cu Rochie Rosie Rubin",
@@ -20962,7 +20975,8 @@
 "id": "eX5mCb7glkly",
 "brand": "Barbie",
 "url_magazin": "https://infinity.ro/papusa-barbie-colectie-aniversara-80-de-ani-blonda-cu-rochie-rosie-rubin-1879545/p?utm_source=2performant",
-"pret_vechi": null
+"pret_vechi": null,
+"verificat": "2026-11-05"
 },
 {
 "titlu": "Papusa Barbie Dansatoare Latino",
@@ -20973,7 +20987,8 @@
 "id": "hTUI35Mbr_8j",
 "brand": "Barbie",
 "url_magazin": "https://infinity.ro/papusa-barbie-dansatoare-latino-9021724/p?utm_source=2performant",
-"pret_vechi": null
+"pret_vechi": null,
+"verificat": "2026-11-05"
 },
 {
 "titlu": "Papusa Barbie Bruneta cu Sindrom Down",
@@ -20984,7 +20999,8 @@
 "id": "Sb5w_JGYaHqK",
 "brand": "Barbie",
 "url_magazin": "https://infinity.ro/papusa-barbie-bruneta-cu-sindrom-down-1879529/p?utm_source=2performant",
-"pret_vechi": null
+"pret_vechi": null,
+"verificat": "2026-11-05"
 },
 {
 "titlu": "Papusa Barbie Fashionista Bruneta Cu Rochie Mov",
@@ -20995,7 +21011,8 @@
 "id": "Ss-dK_-sGyap",
 "brand": "Barbie",
 "url_magazin": "https://infinity.ro/papusa-barbie-fashionista-bruneta-cu-rochie-mov-1879539/p?utm_source=2performant",
-"pret_vechi": null
+"pret_vechi": null,
+"verificat": "2026-11-05"
 },
 {
 "titlu": "Papusa Barbie Blonda Cu Rochie Albastra Cu Fundita",
@@ -21006,7 +21023,8 @@
 "id": "ML5T5O1dRs4n",
 "brand": "Barbie",
 "url_magazin": "https://infinity.ro/papusa-barbie-blonda-cu-rochie-albastra-cu-fundita-1879540/p?utm_source=2performant",
-"pret_vechi": null
+"pret_vechi": null,
+"verificat": "2026-11-05"
 },
 {
 "titlu": "Papusa Barbie Detectiv Pe Plaja",
@@ -21017,7 +21035,8 @@
 "id": "p6hGZGe7jCYn",
 "brand": "Barbie",
 "url_magazin": "https://infinity.ro/papusa-barbie-detectiv-pe-plaja-1879553/p?utm_source=2performant",
-"pret_vechi": null
+"pret_vechi": null,
+"verificat": "2026-11-05"
 }
 ],
 "magazine": [
@@ -21084,7 +21103,8 @@
 "id": "XhVKBEBdiavE",
 "brand": "Piatnik",
 "url_magazin": "https://grupdzc.ro/joc-de-societate-piatnik-digit",
-"pret_vechi": null
+"pret_vechi": null,
+"verificat": "2026-11-05"
 },
 {
 "titlu": "Joc de societate Dublu sau Nimic, Pentru copii, Multicolor Engros",
@@ -21161,7 +21181,8 @@
 "id": "3eLvv3XaDiMT",
 "brand": "Piatnik",
 "url_magazin": "https://grupdzc.ro/joc-de-societate-shut-the-box",
-"pret_vechi": null
+"pret_vechi": null,
+"verificat": "2026-11-05"
 },
 {
 "titlu": "NORIEL Joc de societate Intreaba-ma sa te intreb! Engros",
@@ -21194,7 +21215,8 @@
 "id": "KSWh54Hmoy6J",
 "brand": "-",
 "url_magazin": "https://www.libris.ro/joc/joc-de-societate-4-in-a-row/48672400",
-"pret_vechi": 57.0
+"pret_vechi": 57.0,
+"verificat": "2026-11-05"
 },
 {
 "titlu": "NORIEL Joc de societate, Cine este Fenomenul?, Pentru copii, Rosu Engros",
@@ -21216,7 +21238,8 @@
 "id": "oVvYH4bF3g73",
 "brand": "-",
 "url_magazin": "https://www.libris.ro/joc/joc-de-societate-hai-hui-prin-romania/36453760",
-"pret_vechi": 59.99
+"pret_vechi": 59.99,
+"verificat": "2026-11-05"
 },
 {
 "titlu": "NORIEL Joc de societate, Ghiceste cine sunt, Pentru copii, Albastru Engros",
@@ -21249,7 +21272,8 @@
 "id": "0Zesy7b0w78J",
 "brand": "-",
 "url_magazin": "https://www.libris.ro/joc/joc-de-societate-panic-lab/48906487",
-"pret_vechi": null
+"pret_vechi": null,
+"verificat": "2026-11-05"
 },
 {
 "titlu": "Joc de societate Coup - Party",
@@ -21271,7 +21295,8 @@
 "id": "mUun4DogFJC-",
 "brand": "Cartamundi",
 "url_magazin": "https://grupdzc.ro/joc-de-societate-friends-race-to-central-perk",
-"pret_vechi": null
+"pret_vechi": null,
+"verificat": "2026-11-05"
 },
 {
 "titlu": "Joc de societate: Serpi si scari. My First Snakes and Ladders",
@@ -21282,7 +21307,8 @@
 "id": "CegAL8IJGub5",
 "brand": "-",
 "url_magazin": "https://www.libris.ro/joc/joc-de-societate-serpi-si-scari-my-first-snakes-and-ladders/29129212",
-"pret_vechi": 93.0
+"pret_vechi": 93.0,
+"verificat": "2026-11-05"
 },
 {
 "titlu": "Joc de societate Wildblooms - Strategic",
@@ -21304,7 +21330,8 @@
 "id": "Fz8Wq1cVKBn0",
 "brand": "Kardesler",
 "url_magazin": "https://grupdzc.ro/joc-de-societate-rummy-cu-piese-din-plastic-lux-kardesler",
-"pret_vechi": null
+"pret_vechi": null,
+"verificat": "2026-11-05"
 },
 {
 "titlu": "NORIS JOC DE SOCIETATE POGOOO",
@@ -21315,7 +21342,8 @@
 "id": "MIxafwrwJ2OG",
 "brand": "Simba",
 "url_magazin": "https://grupdzc.ro/noris-joc-de-societate-pogooo",
-"pret_vechi": null
+"pret_vechi": null,
+"verificat": "2026-11-05"
 }
 ],
 "magazine": [
@@ -21361,7 +21389,8 @@
 "id": "QppgqJFc4jQW",
 "brand": "BEBEKING",
 "url_magazin": "https://infinity.ro/circuit-cu-trenulet-electric-ocean-train-974949/p?utm_source=2performant",
-"pret_vechi": null
+"pret_vechi": null,
+"verificat": "2026-11-05"
 },
 {
 "titlu": "Trenulet Electric cu 4 Vagoane, Rosu, Plastic, Sine Ovala 118x58 cm",
@@ -21372,7 +21401,8 @@
 "id": "ALDNtWIJStZy",
 "brand": "OEM",
 "url_magazin": "https://infinity.ro/trenulet-electric-cu-4-vagoane-rosu-plastic-sine-ovala-118x58-cm-9381511/p?utm_source=2performant",
-"pret_vechi": null
+"pret_vechi": null,
+"verificat": "2026-11-05"
 },
 {
 "titlu": "Trenulet Electric Clasic cu Lumina si Sunet, 2 Vagoane, 20 de Sine",
@@ -21383,7 +21413,8 @@
 "id": "WHIrbWmgzkOT",
 "brand": "OEM",
 "url_magazin": "https://infinity.ro/trenulet-electric-clasic-cu-lumina-si-sunet-2-vagoane-20-de-sine-9376449/p?utm_source=2performant",
-"pret_vechi": null
+"pret_vechi": null,
+"verificat": "2026-11-05"
 },
 {
 "titlu": "Trenulet Electric Western cu 3 Vagoane, Locomotiva cu Sunet si Lumini, Telecomanda, 16 Sine, 3+ Ani",
@@ -21394,7 +21425,8 @@
 "id": "Q7T6UHWdCzWj",
 "brand": "OEM",
 "url_magazin": "https://infinity.ro/trenulet-electric-western-cu-3-vagoane-locomotiva-cu-sunet-si-lumini-telecomanda-16-sine-3--ani-9376631/p?utm_source=2performant",
-"pret_vechi": null
+"pret_vechi": null,
+"verificat": "2026-11-05"
 },
 {
 "titlu": "Trenulet electric 86 piese, sine, vagoane de pasageri si alte accesorii incluse, efecte luminoase, 170x98,5 cm",
@@ -21405,29 +21437,32 @@
 "id": "FvZ5X_kdJ6nR",
 "brand": "IQ Toys",
 "url_magazin": "https://infinity.ro/trenulet-electric-86-piese-sine-vagoane-de-pasageri-si-alte-accesorii-incluse-efecte-luminoase-170x98-5-cm-9146557/p?utm_source=2performant",
-"pret_vechi": 532.8
+"pret_vechi": 532.8,
+"verificat": "2026-11-05"
 },
 {
 "titlu": "Trenulet electric pentru 2 copii SX1919 90W 12V cu ROTI MOI Albastru",
-"pret": 810.0,
+"pret": 729.0,
 "imagine": "https://gomagcdn.ro/domains/kinderauto.ro/files/product/large/trenulet-electrica-pentru-copii-sx1919-90w-12v-standard-albastru-633-2251.jpeg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.kinderauto.ro%2Ftrenulet-electrica-pentru-copii-sx1919-90w-12v-standard-albastru.html",
 "magazin": "kinderauto.ro",
 "id": "713694efa",
 "brand": "Hollicy",
 "url_magazin": "https://www.kinderauto.ro/trenulet-electrica-pentru-copii-sx1919-90w-12v-standard-albastru.html",
-"pret_vechi": null
+"pret_vechi": null,
+"verificat": "2026-11-05"
 },
 {
 "titlu": "Trenulet electric SX1919 verde pentru 2 copii, baterie 12V detasabila, putere 90W, roti moi, music player",
-"pret": 810.0,
+"pret": 729.0,
 "imagine": "https://gomagcdn.ro/domains/kinderauto.ro/files/product/large/trenulet-electric-sx1919-verde-pentru-2-copii-baterie-12v-detasabila-putere-90w-roti-moi-music-player-871764.jpg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.kinderauto.ro%2Ftrenulet-electric-sx1919-verde-pentru-2-copii-baterie-12v-detasabila-putere-90w-roti-moi-music-player.html",
 "magazin": "kinderauto.ro",
 "id": "229cad387",
 "brand": "Hollicy",
 "url_magazin": "https://www.kinderauto.ro/trenulet-electric-sx1919-verde-pentru-2-copii-baterie-12v-detasabila-putere-90w-roti-moi-music-player.html",
-"pret_vechi": null
+"pret_vechi": null,
+"verificat": "2026-11-05"
 },
 {
 "titlu": "Trenulet electric pentru 2 copii SX1919 90W 12V cu ROTI MOI Rosu",
@@ -21438,7 +21473,20 @@
 "id": "da0fc47e4",
 "brand": "Hollicy",
 "url_magazin": "https://www.kinderauto.ro/trenulet-electrica-pentru-copii-sx1919-90w-12v-standard-rosu.html",
-"pret_vechi": null
+"pret_vechi": null,
+"verificat": "2026-11-05"
+},
+{
+"titlu": "Trenulet electric cu vagon suplimentar pentru 3 copii SX1919, baterie 12V, putere 180W, roti moi, music player, verde",
+"pret": 917.0,
+"imagine": "https://gomagcdn.ro/domains/kinderauto.ro/files/product/large/trenulet-electric-cu-vagon-pentru-3-copii-sx1919-12v-180w-cu-roti-moi-albastru-copie-682939.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.kinderauto.ro%2Ftrenulet-electric-cu-vagon-suplimentar-pentru-3-copii-sx1919-baterie-12v-putere-180w-roti-moi-music-player-verde.html",
+"magazin": "kinderauto.ro",
+"id": "8a17f76b4",
+"brand": "Hollicy",
+"url_magazin": "https://www.kinderauto.ro/trenulet-electric-cu-vagon-suplimentar-pentru-3-copii-sx1919-baterie-12v-putere-180w-roti-moi-music-player-verde.html",
+"pret_vechi": null,
+"verificat": "2026-11-05"
 },
 {
 "titlu": "Trenulet electric cu vagon pentru 3 copii, SX1919, 12V, 180W, cu roti moi EVA, bluetooth, rosu",
@@ -21449,29 +21497,20 @@
 "id": "9bf5ce7ca",
 "brand": "Hollicy",
 "url_magazin": "https://www.kinderauto.ro/trenulet-electrica-cu-vagon-sx1919-12v-180w-standard-rosu.html",
-"pret_vechi": null
-},
-{
-"titlu": "Trenulet electric cu vagon suplimentar pentru 3 copii SX1919, baterie 12V, putere 180W, roti moi, music player, verde",
-"pret": 1019.0,
-"imagine": "https://gomagcdn.ro/domains/kinderauto.ro/files/product/large/trenulet-electric-cu-vagon-pentru-3-copii-sx1919-12v-180w-cu-roti-moi-albastru-copie-682939.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.kinderauto.ro%2Ftrenulet-electric-cu-vagon-suplimentar-pentru-3-copii-sx1919-baterie-12v-putere-180w-roti-moi-music-player-verde.html",
-"magazin": "kinderauto.ro",
-"id": "8a17f76b4",
-"brand": "Hollicy",
-"url_magazin": "https://www.kinderauto.ro/trenulet-electric-cu-vagon-suplimentar-pentru-3-copii-sx1919-baterie-12v-putere-180w-roti-moi-music-player-verde.html",
-"pret_vechi": null
+"pret_vechi": null,
+"verificat": "2026-11-05"
 },
 {
 "titlu": "Trenulet electric cu 2 vagone suplimentare pentru 4 copii SX1919, baterie 12V 14Ah, putere 180W, roti moi, music player,",
-"pret": 1150.0,
+"pret": 1035.0,
 "imagine": "https://gomagcdn.ro/domains/kinderauto.ro/files/product/large/trenulet-electric-cu-2-vagone-suplimentare-pentru-4-copii-sx1919-baterie-12v-14ah-putere-180w-roti-moi-music-player-albastru-441214.jpg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.kinderauto.ro%2Fhttps-www-kinderauto-ro-masinute-electrice-trenulet-electric-cu-2-vagone-suplimentare-pentru-4-copii-sx1919-baterie-12v-putere-180w-roti-moi-music-player-verde-html.html",
 "magazin": "kinderauto.ro",
 "id": "JqDu-KqGL6zO",
 "brand": "Hollicy",
 "url_magazin": "https://www.kinderauto.ro/https-www-kinderauto-ro-masinute-electrice-trenulet-electric-cu-2-vagone-suplimentare-pentru-4-copii-sx1919-baterie-12v-putere-180w-roti-moi-music-player-verde-html.html",
-"pret_vechi": null
+"pret_vechi": null,
+"verificat": "2026-11-05"
 }
 ],
 "magazine": [
@@ -22939,6 +22978,1036 @@
 "noriel.ro",
 "robazar.ro",
 "timebox.ro",
+"vidaxl.ro"
+]
+},
+{
+"slug": "brad-artificial-210-cm",
+"tema": "craciun",
+"tema_nume": "Crăciun",
+"titlu": "Brazi artificiali de 210 cm",
+"nota": null,
+"in_text": null,
+"actualizat": "2026-11-05",
+"feeduri": [
+{
+"id": 9434,
+"magazin": "vidaxl.ro"
+},
+{
+"id": 4268,
+"magazin": "robazar.ro"
+},
+{
+"id": 8740,
+"magazin": "timebox.ro"
+},
+{
+"id": 2622,
+"magazin": "noriel.ro"
+}
+],
+"produse": [
+{
+"titlu": "vidaXL Brad de Crăciun artificial 210 cm PVC și Oțel Verde și alb",
+"pret": 323.99,
+"imagine": "https://vdxl.im/8721567890850_ai-mo-im_en_px16_12.jpg?t=1791176932450&ai=true",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.vidaxl.ro%2Fe%2FvidaXLBraddeCr%C4%83ciunartificial210cmPVC%C8%99iO%C8%9BelVerde%C8%99ialb%2F8721567890850.html%3Futm_source%3D2performant%26utm_medium%3Daffiliate",
+"magazin": "vidaxl.ro",
+"id": "K2Xp6beKIETb",
+"brand": "vidaXL",
+"url_magazin": "https://www.vidaxl.ro/e/vidaXLBraddeCrăciunartificial210cmPVCșiOțelVerdeșialb/8721567890850.html?utm_source=2performant&utm_medium=affiliate",
+"pret_vechi": null
+},
+{
+"titlu": "vidaXL Brad de Crăciun artificial cu 130 LED-uri/zăpadă pufoasă 210 cm",
+"pret": 349.99,
+"imagine": "https://vdxl.im/8720845443153_a_en_hd_1.jpg?t=1747098342",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.vidaxl.ro%2Fe%2FvidaXLBraddeCr%C4%83ciunartificialcu130LED-uri%2Fz%C4%83pad%C4%83pufoas%C4%83210cm%2F8720845443153.html%3Futm_source%3D2performant%26utm_medium%3Daffiliate",
+"magazin": "vidaxl.ro",
+"id": "KX1_tReBc8Fj",
+"brand": "vidaXL",
+"url_magazin": "https://www.vidaxl.ro/e/vidaXLBraddeCrăciunartificialcu130LED-uri/zăpadăpufoasă210cm/8720845443153.html?utm_source=2performant&utm_medium=affiliate",
+"pret_vechi": null
+},
+{
+"titlu": "Brad artificial cu lumini, Alska, 210 cm",
+"pret": 599.99,
+"imagine": "https://noriel.ro/media/catalog/product/s/0/s01006203-2-2025.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fnoriel.ro%2Fbrad-artificial-cu-lumini-alska-210-cm",
+"magazin": "noriel.ro",
+"id": "w5TxseIguVGq",
+"brand": "Alska",
+"url_magazin": "https://noriel.ro/brad-artificial-cu-lumini-alska-210-cm",
+"pret_vechi": null
+},
+{
+"titlu": "vidaXL Brad de Crăciun artificial cu glob 210 cm 300 LED-uri Alb cald",
+"pret": 747.99,
+"imagine": "https://vdxl.im/8721567863144_ai-mo-im_en_px16_11.jpg?t=1789722337295&ai=true",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.vidaxl.ro%2Fe%2FvidaXLBraddeCr%C4%83ciunartificialcuglob210cm300LED-uriAlbcald%2F8721567863151.html%3Futm_source%3D2performant%26utm_medium%3Daffiliate",
+"magazin": "vidaxl.ro",
+"id": "WVVhm1TvJ79O",
+"brand": "vidaXL",
+"url_magazin": "https://www.vidaxl.ro/e/vidaXLBraddeCrăciunartificialcuglob210cm300LED-uriAlbcald/8721567863151.html?utm_source=2performant&utm_medium=affiliate",
+"pret_vechi": null
+},
+{
+"titlu": "Brad artificial de Crăciun Alpin, verde, 3D, 210 cm",
+"pret": 949.99,
+"imagine": "https://cdn.shopify.com/s/files/1/0914/5810/9824/files/brad-artificial-de-craciun-alpin-verde-U-Viena-Green-210-1.png?v=1792150572",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Ftimebox.ro%2Fproducts%2Fbrad-artificial-de-craciun-alpin-verde-3d-210-cm%3Fvariant%3D60129622917504",
+"magazin": "timebox.ro",
+"id": "CPSOv3AR759Q",
+"brand": "Timebox",
+"url_magazin": "https://timebox.ro/products/brad-artificial-de-craciun-alpin-verde-3d-210-cm?variant=60129622917504",
+"pret_vechi": 1119.99
+},
+{
+"titlu": "vidaXL Brad de Crăciun artificial cu balamale și zăpadă pufoasă 210 cm",
+"pret": 950.99,
+"imagine": "https://vdxl.im/8720845442651_a_en_hd_1.jpg?t=1706491631",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.vidaxl.ro%2Fe%2FvidaXLBraddeCr%C4%83ciunartificialcubalamale%C8%99iz%C4%83pad%C4%83pufoas%C4%83210cm%2F8720845442651.html%3Futm_source%3D2performant%26utm_medium%3Daffiliate",
+"magazin": "vidaxl.ro",
+"id": "_iWV5aDIok8n",
+"brand": "vidaXL",
+"url_magazin": "https://www.vidaxl.ro/e/vidaXLBraddeCrăciunartificialcubalamaleșizăpadăpufoasă210cm/8720845442651.html?utm_source=2performant&utm_medium=affiliate",
+"pret_vechi": null
+},
+{
+"titlu": "Brad Artificial Ontario Elite, Ace 2D + 3D, 210 cm",
+"pret": 1184.11,
+"imagine": "https://bazarulonline.ro/images/detailed/11172/5942928000470_0.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Frobazar.ro%2Fbrad-artificial-ontario-elite-ace-2d-3d-210-cm",
+"magazin": "robazar.ro",
+"id": "QyyPV_PFXPxb",
+"brand": "OEM",
+"url_magazin": "https://robazar.ro/brad-artificial-ontario-elite-ace-2d-3d-210-cm",
+"pret_vechi": null
+},
+{
+"titlu": "Brad Artificial Boreal Full 3D 210 cm",
+"pret": 1470.56,
+"imagine": "https://bazarulonline.ro/images/detailed/11172/5942928000500_0.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Frobazar.ro%2Fbrad-artificial-boreal-full-3d-210-cm",
+"magazin": "robazar.ro",
+"id": "dNFD2V-BlAZl",
+"brand": "OEM",
+"url_magazin": "https://robazar.ro/brad-artificial-boreal-full-3d-210-cm",
+"pret_vechi": null
+},
+{
+"titlu": "Brad Artificial nins Laponia, ace 2D + 3D, 210 cm",
+"pret": 1586.27,
+"imagine": "https://bazarulonline.ro/images/detailed/11172/5942928000272_0.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Frobazar.ro%2Fbrad-artificial-nins-laponia-ace-2d-3d-210-cm",
+"magazin": "robazar.ro",
+"id": "-c6vSDJA7IQi",
+"brand": "OEM",
+"url_magazin": "https://robazar.ro/brad-artificial-nins-laponia-ace-2d-3d-210-cm",
+"pret_vechi": null
+},
+{
+"titlu": "Brad Artificial Prestige Full 3D 210 cm",
+"pret": 1628.24,
+"imagine": "https://bazarulonline.ro/images/detailed/11172/5942928000531_0.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Frobazar.ro%2Fbrad-artificial-prestige-full-3d-210-cm",
+"magazin": "robazar.ro",
+"id": "h0GiPyOQGUXP",
+"brand": "OEM",
+"url_magazin": "https://robazar.ro/brad-artificial-prestige-full-3d-210-cm",
+"pret_vechi": null
+},
+{
+"titlu": "Brad Artificial nins Winter Crown Full 3D 210 cm",
+"pret": 1754.23,
+"imagine": "https://bazarulonline.ro/images/detailed/11172/5942928000432_0.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Frobazar.ro%2Fbrad-artificial-nins-winter-crown-full-3d-210-cm",
+"magazin": "robazar.ro",
+"id": "QFe9skgH-B16",
+"brand": "OEM",
+"url_magazin": "https://robazar.ro/brad-artificial-nins-winter-crown-full-3d-210-cm",
+"pret_vechi": null
+},
+{
+"titlu": "Brad Artificial nins Aurora Full 3D 210 cm",
+"pret": 2009.9,
+"imagine": "https://bazarulonline.ro/images/detailed/11172/5942928000364_0.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Frobazar.ro%2Fbrad-artificial-nins-aurora-full-3d-210-cm",
+"magazin": "robazar.ro",
+"id": "86k_xPlq7LaM",
+"brand": "OEM",
+"url_magazin": "https://robazar.ro/brad-artificial-nins-aurora-full-3d-210-cm",
+"pret_vechi": null
+}
+],
+"magazine": [
+"noriel.ro",
+"robazar.ro",
+"timebox.ro",
+"vidaxl.ro"
+]
+},
+{
+"slug": "radiator-electric-ulei",
+"tema": "incalzire",
+"tema_nume": "Încălzire",
+"titlu": "Radiatoare electrice cu ulei",
+"nota": null,
+"in_text": null,
+"actualizat": "2026-11-05",
+"feeduri": [
+{
+"id": 8767,
+"magazin": "trada.ro"
+},
+{
+"id": 7027,
+"magazin": "vonmag.ro"
+},
+{
+"id": 9053,
+"magazin": "brico.ro"
+},
+{
+"id": 1009,
+"magazin": "cartuseria.ro"
+}
+],
+"produse": [
+{
+"titlu": "Radiator Electric, Portabil, cu Ulei, Well, 5 Elementi, 650 W",
+"pret": 138.99,
+"imagine": "https://www.trada.ro/img/radiator-electric-portabil-cu-ulei-well-5-elementi-650-w_tr-463548-large.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.trada.ro%2Fradiator-electric-portabil-cu-ulei-well-5-elementi-650-w",
+"magazin": "trada.ro",
+"id": "wDiRKgVm5N04",
+"brand": "Well",
+"url_magazin": "https://www.trada.ro/radiator-electric-portabil-cu-ulei-well-5-elementi-650-w",
+"pret_vechi": 149.45
+},
+{
+"titlu": "Radiator Portabil, Electric, 6 Elementi, Well, cu Ulei, 800 W",
+"pret": 151.99,
+"imagine": "https://www.trada.ro/img/radiator-portabil-electric-6-elementi-well-cu-ulei-800-w_tr-463555-large.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.trada.ro%2Fradiator-portabil-electric-6-elementi-well-cu-ulei-800-w",
+"magazin": "trada.ro",
+"id": "SqHrc_6Uvxri",
+"brand": "Well",
+"url_magazin": "https://www.trada.ro/radiator-portabil-electric-6-elementi-well-cu-ulei-800-w",
+"pret_vechi": 163.43
+},
+{
+"titlu": "Radiator electric cu ULEI, 9 ELEMENTI, 1000W, MESKO MS7805",
+"pret": 159.0,
+"imagine": "https://www.vonmag.ro/assets/img/products/ms7805.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.vonmag.ro%2Fproduse%2Finfo%2Fms7805-pret-radiator-electric-ulei-9-elementi-1000w-mesko-oem4",
+"magazin": "vonmag.ro",
+"id": "9YIvnuLHRUeL",
+"brand": "MESKO",
+"url_magazin": "https://www.vonmag.ro/produse/info/ms7805-pret-radiator-electric-ulei-9-elementi-1000w-mesko-oem4",
+"pret_vechi": null
+},
+{
+"titlu": "Radiator Electric, Well, Portabil, cu Ulei, 9 Elementi, 2000 W",
+"pret": 273.99,
+"imagine": "https://www.trada.ro/img/radiator-electric-well-portabil-cu-ulei-9-elementi-2000-w_tr-463558-large.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.trada.ro%2Fradiator-electric-well-portabil-cu-ulei-9-elementi-2000-w",
+"magazin": "trada.ro",
+"id": "yMb_Ai098Lxf",
+"brand": "Well",
+"url_magazin": "https://www.trada.ro/radiator-electric-well-portabil-cu-ulei-9-elementi-2000-w",
+"pret_vechi": 294.61
+},
+{
+"titlu": "Radiator electric cu ulei Teesa TSA8036, 9 ELEMENTI 2000W",
+"pret": 309.0,
+"imagine": "https://www.vonmag.ro/assets/img/products/tsa8036.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.vonmag.ro%2Fproduse%2Finfo%2Ftsa8036-pret-radiator-electric-ulei-teesa-9-elementi-2000w",
+"magazin": "vonmag.ro",
+"id": "GELZS2ujkeHX",
+"brand": "TEESA",
+"url_magazin": "https://www.vonmag.ro/produse/info/tsa8036-pret-radiator-electric-ulei-teesa-9-elementi-2000w",
+"pret_vechi": null
+},
+{
+"titlu": "Radiator Portabil, Electric, 11 Elementi, Well, cu Ulei, 2500 W",
+"pret": 309.99,
+"imagine": "https://www.trada.ro/img/radiator-portabil-electric-11-elementi-well-cu-ulei-2500-w_tr-463554-large.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.trada.ro%2Fradiator-portabil-electric-11-elementi-well-cu-ulei-2500-w",
+"magazin": "trada.ro",
+"id": "zVJeqLOEEqd-",
+"brand": "Well",
+"url_magazin": "https://www.trada.ro/radiator-portabil-electric-11-elementi-well-cu-ulei-2500-w",
+"pret_vechi": 333.32
+},
+{
+"titlu": "Radiator electric cu ulei 11 ELEMENTI 2500W Teesa TSA8049",
+"pret": 329.0,
+"imagine": "https://www.vonmag.ro/assets/img/products/tsa8049.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.vonmag.ro%2Fproduse%2Finfo%2Ftsa8049-pret-radiator-ulei-11-elementi-2500w-teesa-oem4",
+"magazin": "vonmag.ro",
+"id": "2a6a003a2",
+"brand": "OEM4",
+"url_magazin": "https://www.vonmag.ro/produse/info/tsa8049-pret-radiator-ulei-11-elementi-2500w-teesa-oem4",
+"pret_vechi": null
+},
+{
+"titlu": "Radiator Electric, Well, Portabil, cu Ulei, 13 Elementi, 2500 W",
+"pret": 345.99,
+"imagine": "https://www.trada.ro/img/radiator-electric-well-portabil-cu-ulei-13-elementi-2500-w_tr-463547-large.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.trada.ro%2Fradiator-electric-well-portabil-cu-ulei-13-elementi-2500-w",
+"magazin": "trada.ro",
+"id": "BlObdf-Mfpow",
+"brand": "Well",
+"url_magazin": "https://www.trada.ro/radiator-electric-well-portabil-cu-ulei-13-elementi-2500-w",
+"pret_vechi": 372.03
+},
+{
+"titlu": "Radiator electric portabil cu ulei 11 elementi 2500W Well HTR-OIL02-2500/11-WL / 5948636038507",
+"pret": 359.0,
+"imagine": "https://www.vonmag.ro/assets/img/products/htr-oil02-250011-wl.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.vonmag.ro%2Fproduse%2Finfo%2Fhtr-oil02-2500-11-wl-pret-radiator-electric-portabil-ulei-11-elementi-2500w-well-5948636038507",
+"magazin": "vonmag.ro",
+"id": "44f14d33f",
+"brand": "WELL",
+"url_magazin": "https://www.vonmag.ro/produse/info/htr-oil02-2500-11-wl-pret-radiator-electric-portabil-ulei-11-elementi-2500w-well-5948636038507",
+"pret_vechi": null
+},
+{
+"titlu": "RADIATOR electric cu ULEI, 9 ELEMENTI, 1500W BLACK&DECKER BD-BXRA1500E",
+"pret": 389.0,
+"imagine": "https://www.vonmag.ro/assets/img/products/bd-bxra1500e.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.vonmag.ro%2Fproduse%2Finfo%2Fbd-bxra1500e-pret-radiator-electric-ulei-9-elementi-1500w-black-decker",
+"magazin": "vonmag.ro",
+"id": "NX8MpgAA9H0J",
+"brand": "BLACK&DECKER",
+"url_magazin": "https://www.vonmag.ro/produse/info/bd-bxra1500e-pret-radiator-electric-ulei-9-elementi-1500w-black-decker",
+"pret_vechi": null
+},
+{
+"titlu": "Radiator Electric, Negru, Portabil, Well, cu Ulei, 13 Elementi, 2500 W",
+"pret": 394.99,
+"imagine": "https://www.trada.ro/img/radiator-electric-negru-portabil-well-cu-ulei-13-elementi-2500-w_tr-463546-large.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.trada.ro%2Fradiator-electric-negru-portabil-well-cu-ulei-13-elementi-2500-w",
+"magazin": "trada.ro",
+"id": "kETeiD0QIaiP",
+"brand": "Well",
+"url_magazin": "https://www.trada.ro/radiator-electric-negru-portabil-well-cu-ulei-13-elementi-2500-w",
+"pret_vechi": 424.72
+}
+],
+"magazine": [
+"trada.ro",
+"vonmag.ro"
+]
+},
+{
+"slug": "aeroterma",
+"tema": "incalzire",
+"tema_nume": "Încălzire",
+"titlu": "Aeroterme",
+"nota": null,
+"in_text": null,
+"actualizat": "2026-11-05",
+"feeduri": [
+{
+"id": 8746,
+"magazin": "edez.ro"
+},
+{
+"id": 7027,
+"magazin": "vonmag.ro"
+},
+{
+"id": 5439,
+"magazin": "micul-meserias.ro"
+},
+{
+"id": 1096,
+"magazin": "evomag.ro"
+}
+],
+"produse": [
+{
+"titlu": "Aeroterma Heinner HFH-L2000WH, 2000 W, 2 trepte de putere, termostat reglabil (Alb)",
+"pret": 60.99,
+"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F3779%2F3779089%2F1578041723Aeroterma+Heinner+HFH-L2000WH%2C+2000+W%2C+2+trepte+de+putere%2C+termostat+reglabil+%28Alb%29%27%3B.JPG&type=auto&width=500&sign=-oSpX4VB1wKcvEXxGCxwJ_A4Kcnba6ieCsDk15h73ss",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Felectrocasnice-aparate-de-caldura-aparate-de-incalzit%2Fheinner-aeroterma-heinner-hfh-l2000wh-2000-w-2-trepte-de-putere-termostat-reglabil-alb-3779089.html",
+"magazin": "evomag.ro",
+"id": "7LT5wDk8J3yc",
+"brand": "Heinner",
+"url_magazin": "https://www.evomag.ro/electrocasnice-aparate-de-caldura-aparate-de-incalzit/heinner-aeroterma-heinner-hfh-l2000wh-2000-w-2-trepte-de-putere-termostat-reglabil-alb-3779089.html",
+"pret_vechi": null
+},
+{
+"titlu": "Aeroterma Esperanza Gobi EHH011, 2 trepte putere, 1000/2000W (Alb)",
+"pret": 61.99,
+"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4320%2F4320015%2Faeroterma-esperanza-gobi-ehh01-6ad772c8ca7ce.jpg&type=auto&width=500&sign=u6oheIxkrs2N9iUe-KG8VeGXVQO3N5XmoY1NFuk8H0A",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Felectrocasnice-aparate-de-caldura-aparate-de-incalzit%2Fesperanza-aeroterma-esperanza-gobi-ehh011-2-trepte-putere-1000-2000w-alb-4320015.html",
+"magazin": "evomag.ro",
+"id": "P0DWg3EDiW07",
+"brand": "ESPERANZA",
+"url_magazin": "https://www.evomag.ro/electrocasnice-aparate-de-caldura-aparate-de-incalzit/esperanza-aeroterma-esperanza-gobi-ehh011-2-trepte-putere-1000-2000w-alb-4320015.html",
+"pret_vechi": null
+},
+{
+"titlu": "Aeroterma Heinner HFH-L2000GD, 2000 W, 2 trepte de putere, termostat reglabil (Alb)",
+"pret": 63.99,
+"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F3779%2F3779077%2F1578039625Aeroterma+Heinner+HFH-L2000GD%2C+2000+W%2C+2+trepte+de+putere%2C+termostat+reglabil+%28Alb%29hj.JPG&type=auto&width=500&sign=y0m0gsJyn3zNcic0euDstWhOjX5SBDWlLjiLgar6Irw",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Felectrocasnice-aparate-de-caldura-aparate-de-incalzit%2Fheinner-aeroterma-heinner-hfh-l2000gd-2000-w-2-trepte-de-putere-termostat-reglabil-alb-3779077.html",
+"magazin": "evomag.ro",
+"id": "5h69rRLXFsVo",
+"brand": "Heinner",
+"url_magazin": "https://www.evomag.ro/electrocasnice-aparate-de-caldura-aparate-de-incalzit/heinner-aeroterma-heinner-hfh-l2000gd-2000-w-2-trepte-de-putere-termostat-reglabil-alb-3779077.html",
+"pret_vechi": null
+},
+{
+"titlu": "Mini aeroterma Adler AD 7717, 2000W, 2 setari putere, Protectie supraincalzire (Alb)",
+"pret": 63.99,
+"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4283%2F4283840%2Fmini-aeroterma-adler-ad-7717-699c4c2ca698e.jpg&type=auto&width=500&sign=qGlGKHL2N8qRvmKksQyMwZ5T7vf0RMMYN4CIuGlKZUI",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Felectrocasnice-aparate-de-caldura-aparate-de-incalzit%2Fadler-mini-aeroterma-adler-ad-7717-2000w-2-setari-putere-protectie-supraincalzire-alb-4283840.html",
+"magazin": "evomag.ro",
+"id": "Q3pWEraSRVxS",
+"brand": "Adler",
+"url_magazin": "https://www.evomag.ro/electrocasnice-aparate-de-caldura-aparate-de-incalzit/adler-mini-aeroterma-adler-ad-7717-2000w-2-setari-putere-protectie-supraincalzire-alb-4283840.html",
+"pret_vechi": null
+},
+{
+"titlu": "Aeroterma Heinner HFH-L2000SL, 2000 W, 2 trepte de putere, termostat reglabil (Alb)",
+"pret": 63.99,
+"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F3779%2F3779092%2F1578042187Aeroterma+Heinner+HFH-L2000SL%2C+2000+W%2C+2+trepte+de+putere%2C+termostat+reglabil+%28Alb%29%27%3B.JPG&type=auto&width=500&sign=dsYR2nAxgXW2sqW5v5ARUcve0j54K7EnYgIocTBg-vU",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Felectrocasnice-aparate-de-caldura-aparate-de-incalzit%2Fheinner-aeroterma-heinner-hfh-l2000sl-2000-w-2-trepte-de-putere-termostat-reglabil-alb-3779092.html",
+"magazin": "evomag.ro",
+"id": "eaz8845h6sLZ",
+"brand": "Heinner",
+"url_magazin": "https://www.evomag.ro/electrocasnice-aparate-de-caldura-aparate-de-incalzit/heinner-aeroterma-heinner-hfh-l2000sl-2000-w-2-trepte-de-putere-termostat-reglabil-alb-3779092.html",
+"pret_vechi": null
+},
+{
+"titlu": "Aeroterma Esperanza SAHARA EHH003, 2000W (Alb)",
+"pret": 64.99,
+"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F1425%2F1425567%2F14858589441.jpg&type=auto&width=500&sign=VMEnGLxSNY-sfLGltjDw5rA10J63DVmLxXbgPVuXz-w",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Felectrocasnice-aparate-de-caldura-aparate-de-incalzit%2Fesperanza-aeroterma-esperanza-sahara-ehh003-2000w-alba-1425567.html",
+"magazin": "evomag.ro",
+"id": "Z5VN454YmWmx",
+"brand": "ESPERANZA",
+"url_magazin": "https://www.evomag.ro/electrocasnice-aparate-de-caldura-aparate-de-incalzit/esperanza-aeroterma-esperanza-sahara-ehh003-2000w-alba-1425567.html",
+"pret_vechi": null
+},
+{
+"titlu": "Aeroterma Esperanza WAIKIKI EHH004, 2000W, 2 trepte (Alb)",
+"pret": 65.99,
+"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F1425%2F1425568%2F14858668711.jpg&type=auto&width=500&sign=JQf_dPgYqlBL_p6L8dmscUWC1OM4uxk4jSeclk5ETs0",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Felectrocasnice-aparate-de-caldura-aparate-de-incalzit%2Fesperanza-aeroterma-esperanza-waikiki-ehh004-2000w-2-trepte-alb-1425568.html",
+"magazin": "evomag.ro",
+"id": "gCkiNbxzCtqx",
+"brand": "ESPERANZA",
+"url_magazin": "https://www.evomag.ro/electrocasnice-aparate-de-caldura-aparate-de-incalzit/esperanza-aeroterma-esperanza-waikiki-ehh004-2000w-2-trepte-alb-1425568.html",
+"pret_vechi": null
+},
+{
+"titlu": "Aeroterma Albatros AC-22A1, Putere maxima 2000 W, 2 Trepte de viteza, Protectie Supraincalzire (Alb)",
+"pret": 67.99,
+"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F3684%2F3684146%2F1554989443Aeroterma+ceramiaca+Albatros+AC-22A1%2C+2000W%2C+2+trepte+de+putere%2C+termostat+reglabil+%28Alb%29+1.jpg&type=auto&width=500&sign=AytHe86P_PjrFBedgFC4QqVfSUcZsHKgJjLH1UPXVWU",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Felectrocasnice-aparate-de-caldura-aparate-de-incalzit%2Falbatros-aeroterma-albatros-ac-22a1-putere-maxima-2000-w-2-trepte-de-viteza-protectie-supraincalzire-alb-3684146.html",
+"magazin": "evomag.ro",
+"id": "5MwJuuPKlFKO",
+"brand": "Albatros",
+"url_magazin": "https://www.evomag.ro/electrocasnice-aparate-de-caldura-aparate-de-incalzit/albatros-aeroterma-albatros-ac-22a1-putere-maxima-2000-w-2-trepte-de-viteza-protectie-supraincalzire-alb-3684146.html",
+"pret_vechi": null
+},
+{
+"titlu": "Aeroterma 2000W TEESA TSA8025",
+"pret": 68.0,
+"imagine": "https://www.vonmag.ro/assets/img/products/tsa8025.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.vonmag.ro%2Fproduse%2Finfo%2Ftsa8025-pret-aeroterma-2000w-teesa-oem4",
+"magazin": "vonmag.ro",
+"id": "0f73bd357",
+"brand": "OEM4",
+"url_magazin": "https://www.vonmag.ro/produse/info/tsa8025-pret-aeroterma-2000w-teesa-oem4",
+"pret_vechi": null
+},
+{
+"titlu": "Aeroterma 800/1200/2000W TEESA TSA8059",
+"pret": 73.0,
+"imagine": "https://www.vonmag.ro/assets/img/products/tsa8059.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.vonmag.ro%2Fproduse%2Finfo%2Ftsa8059-pret-aeroterma-800-1200-2000w-teesa-oem4",
+"magazin": "vonmag.ro",
+"id": "GG0NKcErZKVG",
+"brand": "OEM4",
+"url_magazin": "https://www.vonmag.ro/produse/info/tsa8059-pret-aeroterma-800-1200-2000w-teesa-oem4",
+"pret_vechi": null
+},
+{
+"titlu": "Motoras aeroterma 16451056 Opel Insignia A (2008-2013)",
+"pret": 74.0,
+"imagine": "https://www.edez.ro/admin/uploads/watermark-no/motoras-clima--16451056-opel--insignia-a--2008-2013---173586.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.edez.ro%2Fpiese-auto%2FOpel%2Fmodel-Insignia-A-%282008_2013%29%2FSistem-climatizare%2FMotoras-clima-%7C-Motoras-aeroterma%2Fmotoras-aeroterma-3301841.html",
+"magazin": "edez.ro",
+"id": "JEUOEuFcHoTk",
+"brand": "necunoscut",
+"url_magazin": "https://www.edez.ro/piese-auto/Opel/model-Insignia-A-(2008_2013)/Sistem-climatizare/Motoras-clima-|-Motoras-aeroterma/motoras-aeroterma-3301841.html",
+"pret_vechi": null
+},
+{
+"titlu": "Motoras aeroterma 52433779R0 Opel Insignia A (2008-2013)",
+"pret": 74.0,
+"imagine": "https://www.edez.ro/admin/uploads/watermark-no/motoras-clima--52433779r0-opel--insignia-a--2008-2013--opel--meriva-b--20...-120183.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.edez.ro%2Fpiese-auto%2FOpel%2Fmodel-Insignia-A-%282008_2013%29%2FSistem-climatizare%2FMotoras-clima-%7C-Motoras-aeroterma%2Fmotoras-aeroterma-3301840.html",
+"magazin": "edez.ro",
+"id": "km8TepIUBKTe",
+"brand": "necunoscut",
+"url_magazin": "https://www.edez.ro/piese-auto/Opel/model-Insignia-A-(2008_2013)/Sistem-climatizare/Motoras-clima-|-Motoras-aeroterma/motoras-aeroterma-3301840.html",
+"pret_vechi": null
+},
+{
+"titlu": "Motoras aeroterma 52433779R0 Opel Meriva B (2010-2014)",
+"pret": 74.0,
+"imagine": "https://www.edez.ro/admin/uploads/watermark-no/motoras-clima--52433779r0-opel--insignia-a--2008-2013--opel--meriva-b--20...-120183.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.edez.ro%2Fpiese-auto%2FOpel%2Fmodel-Meriva-B-%282010_2014%29%2FSistem-climatizare%2FMotoras-clima-%7C-Motoras-aeroterma%2Fmotoras-aeroterma-3301840.html",
+"magazin": "edez.ro",
+"id": "d2Pd4FdWRnfr",
+"brand": "necunoscut",
+"url_magazin": "https://www.edez.ro/piese-auto/Opel/model-Meriva-B-(2010_2014)/Sistem-climatizare/Motoras-clima-|-Motoras-aeroterma/motoras-aeroterma-3301840.html",
+"pret_vechi": null
+},
+{
+"titlu": "Motoras aeroterma 52437252 Opel Insignia A (2008-2013)",
+"pret": 74.0,
+"imagine": "https://www.edez.ro/admin/uploads/watermark-no/motoras-clima--52437252-opel--insignia-a--2008-2013---864435.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.edez.ro%2Fpiese-auto%2FOpel%2Fmodel-Insignia-A-%282008_2013%29%2FSistem-climatizare%2FMotoras-clima-%7C-Motoras-aeroterma%2Fmotoras-aeroterma-3301839.html",
+"magazin": "edez.ro",
+"id": "z3M2hpcycLz8",
+"brand": "necunoscut",
+"url_magazin": "https://www.edez.ro/piese-auto/Opel/model-Insignia-A-(2008_2013)/Sistem-climatizare/Motoras-clima-|-Motoras-aeroterma/motoras-aeroterma-3301839.html",
+"pret_vechi": null
+},
+{
+"titlu": "Aeroterma 2000W TEESA TSA8027",
+"pret": 74.0,
+"imagine": "https://www.vonmag.ro/assets/img/products/tsa8027.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.vonmag.ro%2Fproduse%2Finfo%2Ftsa8027-pret-aeroterma-2000w-teesa-oem4",
+"magazin": "vonmag.ro",
+"id": "bb691f95b",
+"brand": "OEM4",
+"url_magazin": "https://www.vonmag.ro/produse/info/tsa8027-pret-aeroterma-2000w-teesa-oem4",
+"pret_vechi": null
+},
+{
+"titlu": "Motoras aeroterma 503752-1180 Renault Koleos facelift (2011-2016)",
+"pret": 79.0,
+"imagine": "https://www.edez.ro/admin/uploads/watermark-no/motoras-clima--503752-1180-renault--koleos-facelift--2011-2016--renault--k...-386047.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.edez.ro%2Fpiese-auto%2FRenault%2Fmodel-Koleos-facelift-%282011_2016%29%2FSistem-climatizare%2FMotoras-clima-%7C-Motoras-aeroterma%2Fmotoras-aeroterma-3302541.html",
+"magazin": "edez.ro",
+"id": "GltYyCVdFjsW",
+"brand": "necunoscut",
+"url_magazin": "https://www.edez.ro/piese-auto/Renault/model-Koleos-facelift-(2011_2016)/Sistem-climatizare/Motoras-clima-|-Motoras-aeroterma/motoras-aeroterma-3302541.html",
+"pret_vechi": null
+},
+{
+"titlu": "Motoras aeroterma 503752-1180 Renault Koleos (2008-2011)",
+"pret": 79.0,
+"imagine": "https://www.edez.ro/admin/uploads/watermark-no/motoras-clima--503752-1180-renault--koleos-facelift--2011-2016--renault--k...-386047.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.edez.ro%2Fpiese-auto%2FRenault%2Fmodel-Koleos-%282008_2011%29%2FSistem-climatizare%2FMotoras-clima-%7C-Motoras-aeroterma%2Fmotoras-aeroterma-3302541.html",
+"magazin": "edez.ro",
+"id": "3Z8uq4Avrotp",
+"brand": "necunoscut",
+"url_magazin": "https://www.edez.ro/piese-auto/Renault/model-Koleos-(2008_2011)/Sistem-climatizare/Motoras-clima-|-Motoras-aeroterma/motoras-aeroterma-3302541.html",
+"pret_vechi": null
+},
+{
+"titlu": "Motoras aeroterma 5037521160A Renault Koleos facelift (2011-2016)",
+"pret": 79.0,
+"imagine": "https://www.edez.ro/admin/uploads/watermark-no/motoras-clima--5037521160a-renault--koleos-facelift--2011-2016--renault--k...-547982.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.edez.ro%2Fpiese-auto%2FRenault%2Fmodel-Koleos-facelift-%282011_2016%29%2FSistem-climatizare%2FMotoras-clima-%7C-Motoras-aeroterma%2Fmotoras-aeroterma-3302543.html",
+"magazin": "edez.ro",
+"id": "DJdIaZvMurNx",
+"brand": "necunoscut",
+"url_magazin": "https://www.edez.ro/piese-auto/Renault/model-Koleos-facelift-(2011_2016)/Sistem-climatizare/Motoras-clima-|-Motoras-aeroterma/motoras-aeroterma-3302543.html",
+"pret_vechi": null
+},
+{
+"titlu": "Motoras aeroterma 5037521160A Renault Koleos (2008-2011)",
+"pret": 79.0,
+"imagine": "https://www.edez.ro/admin/uploads/watermark-no/motoras-clima--5037521160a-renault--koleos-facelift--2011-2016--renault--k...-547982.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.edez.ro%2Fpiese-auto%2FRenault%2Fmodel-Koleos-%282008_2011%29%2FSistem-climatizare%2FMotoras-clima-%7C-Motoras-aeroterma%2Fmotoras-aeroterma-3302543.html",
+"magazin": "edez.ro",
+"id": "foexdr4Hdc65",
+"brand": "necunoscut",
+"url_magazin": "https://www.edez.ro/piese-auto/Renault/model-Koleos-(2008_2011)/Sistem-climatizare/Motoras-clima-|-Motoras-aeroterma/motoras-aeroterma-3302543.html",
+"pret_vechi": null
+},
+{
+"titlu": "Aeroterma 2000W SFH7021BK SENCOR",
+"pret": 119.0,
+"imagine": "https://www.vonmag.ro/assets/img/products/s-sfh7021bk.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.vonmag.ro%2Fproduse%2Finfo%2Fs-sfh7021bk-pret-aeroterma-2000w-sfh7021bk-sencor-oem4",
+"magazin": "vonmag.ro",
+"id": "eea14711f",
+"brand": "OEM4",
+"url_magazin": "https://www.vonmag.ro/produse/info/s-sfh7021bk-pret-aeroterma-2000w-sfh7021bk-sencor-oem4",
+"pret_vechi": null
+},
+{
+"titlu": "Aeroterma 2000W SFH7020WH SENCOR",
+"pret": 123.0,
+"imagine": "https://www.vonmag.ro/assets/img/products/sfh7020wh.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.vonmag.ro%2Fproduse%2Finfo%2Fsfh7020wh-pret-aeroterma-2000w-sencor",
+"magazin": "vonmag.ro",
+"id": "2ea99e5a0",
+"brand": "OEM",
+"url_magazin": "https://www.vonmag.ro/produse/info/sfh7020wh-pret-aeroterma-2000w-sencor",
+"pret_vechi": null
+},
+{
+"titlu": "Aeroterma electrica , 1000/2000W, element de incalzire ceramic , Micul Fermier",
+"pret": 124.0,
+"imagine": "https://micul-meserias.ro/image/cache/catalog/aeroterma-electrica-micul-fermier-1000-2000w-element-de-incalzire~158032-1300x1300_0.jpeg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fmicul-meserias.ro%2Faeroterma-electrica-1000-2000w-element-de-incalzire-ceramic-micul-fermier",
+"magazin": "micul-meserias.ro",
+"id": "5u7diIcRydMI",
+"brand": "Micul Fermier",
+"url_magazin": "https://micul-meserias.ro/aeroterma-electrica-1000-2000w-element-de-incalzire-ceramic-micul-fermier",
+"pret_vechi": 155.0
+},
+{
+"titlu": "Aeroterma Electrica Industriala DeToolz 25/1000/2000W",
+"pret": 144.0,
+"imagine": "https://micul-meserias.ro/image/cache/catalog/utilaje-uz-casnic/tunuri-de-caldura/AEROTERME/aeroterma--detoolz--ws-b00e-1300x1300_0.jpeg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fmicul-meserias.ro%2Faeroterma-electrica-industriala-detoolz-25-1000-2000w-",
+"magazin": "micul-meserias.ro",
+"id": "cf62f0ead",
+"brand": "DeToolz",
+"url_magazin": "https://micul-meserias.ro/aeroterma-electrica-industriala-detoolz-25-1000-2000w-",
+"pret_vechi": 180.0
+},
+{
+"titlu": "Aeroterma Electrica INTENSIV, PRO 2kW PTC-D, 230V",
+"pret": 149.0,
+"imagine": "https://micul-meserias.ro/image/cache/catalog/pro-2kw-ptcd-aeroterma-electrica-intensiv-230v_3967_3_16335893041624-1300x1300_0.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fmicul-meserias.ro%2Faeroterma-electrica-intensiv-pro-2kw-ptc-d-230v",
+"magazin": "micul-meserias.ro",
+"id": "e6365ecb1",
+"brand": "Intensiv",
+"url_magazin": "https://micul-meserias.ro/aeroterma-electrica-intensiv-pro-2kw-ptc-d-230v",
+"pret_vechi": 186.0
+}
+],
+"magazine": [
+"edez.ro",
+"evomag.ro",
+"micul-meserias.ro",
+"vonmag.ro"
+]
+},
+{
+"slug": "convector-electric",
+"tema": "incalzire",
+"tema_nume": "Încălzire",
+"titlu": "Convectoare electrice",
+"nota": null,
+"in_text": null,
+"actualizat": "2026-11-05",
+"feeduri": [
+{
+"id": 9262,
+"magazin": "casa-bucuriei.ro"
+},
+{
+"id": 7193,
+"magazin": "aeriumshop.ro"
+},
+{
+"id": 5887,
+"magazin": "grupdzc.ro"
+},
+{
+"id": 1009,
+"magazin": "cartuseria.ro"
+}
+],
+"produse": [
+{
+"titlu": "Convector electric podea 2000W, termostat reglabil 3 trepte, negru, Zilan",
+"pret": 120.94,
+"imagine": "https://grupdzc.ro/media/catalog/product/c/o/convector-electric.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fgrupdzc.ro%2Fconvector-electric-podea-2000w-termostat-reglabil-3-trepte-negru-zilan",
+"magazin": "grupdzc.ro",
+"id": "IrcXtuZsvoqZ",
+"brand": "Zilan",
+"url_magazin": "https://grupdzc.ro/convector-electric-podea-2000w-termostat-reglabil-3-trepte-negru-zilan",
+"pret_vechi": null
+},
+{
+"titlu": "Convector electric Detoolz, 2KW, 3 trepte de putere, cu termostat reglabil",
+"pret": 128.99,
+"imagine": "https://grupdzc.ro/media/catalog/product/c/o/convector-electric-detoolz-2kw-3-trepte-de-putere0.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fgrupdzc.ro%2Fconvector-electric-detoolz-2kw-3-trepte-de-putere-cu-termostat-reglabil",
+"magazin": "grupdzc.ro",
+"id": "VL2Fpcjw4yo4",
+"brand": "Detoolz",
+"url_magazin": "https://grupdzc.ro/convector-electric-detoolz-2kw-3-trepte-de-putere-cu-termostat-reglabil",
+"pret_vechi": null
+},
+{
+"titlu": "Convector electric TURBO 2000W, Aeroterma, Termostat reglabil, Alb, Zilan",
+"pret": 157.63,
+"imagine": "https://grupdzc.ro/media/catalog/product/c/o/convector-alb-zilan-.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fgrupdzc.ro%2Fconvector-electric-turbo-2000w-aeroterma-termostat-reglabil-alb-zilan",
+"magazin": "grupdzc.ro",
+"id": "B4iND3DUzCLX",
+"brand": "Zilan",
+"url_magazin": "https://grupdzc.ro/convector-electric-turbo-2000w-aeroterma-termostat-reglabil-alb-zilan",
+"pret_vechi": null
+},
+{
+"titlu": "Convector electric, 2 trepte de viteza 1250W-2000W, termostat reglabil, protectie la supraincalzire, ZILAN",
+"pret": 159.27,
+"imagine": "https://grupdzc.ro/media/catalog/product/c/o/convector-electric-2000.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fgrupdzc.ro%2Fconvector-electric-2-trepte-de-viteza-1250w-2000w-termostat-reglabil-protectie-la-supraincalzire-zilan",
+"magazin": "grupdzc.ro",
+"id": "KWUhRvdajgo8",
+"brand": "Zilan",
+"url_magazin": "https://grupdzc.ro/convector-electric-2-trepte-de-viteza-1250w-2000w-termostat-reglabil-protectie-la-supraincalzire-zilan",
+"pret_vechi": null
+},
+{
+"titlu": "Convector electric, 2 trepte de viteza 1250W-2000W, termostat, protectie la supraincalzire, Zilan",
+"pret": 175.46,
+"imagine": "https://grupdzc.ro/media/catalog/product/c/o/convector-electric-zilan_1.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fgrupdzc.ro%2Fconvector-electric-2-trepte-de-viteza-1250w-2000w-termostat-protectie-la-supraincalzire-zilan",
+"magazin": "grupdzc.ro",
+"id": "jFAJ2YUrn7a_",
+"brand": "Zilan",
+"url_magazin": "https://grupdzc.ro/convector-electric-2-trepte-de-viteza-1250w-2000w-termostat-protectie-la-supraincalzire-zilan",
+"pret_vechi": null
+},
+{
+"titlu": "Convector Electric, Alpina, 1500W",
+"pret": 219.0,
+"imagine": "https://www.casa-bucuriei.ro/wp-content/uploads/2026/07/res_56762daf2c95ef1c53a20dccba99a9f9.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.casa-bucuriei.ro%2Fprodus%2Fconvector-electric-alpina-1500w%2F",
+"magazin": "casa-bucuriei.ro",
+"id": "aZezgN2BRIOz",
+"brand": "Casa-bucuriei",
+"url_magazin": "https://www.casa-bucuriei.ro/produs/convector-electric-alpina-1500w/",
+"pret_vechi": null
+},
+{
+"titlu": "Convector electric pentru incalzire, 2000 W putere, 2 trepte de putere, 20 mp suprafata incalzita, IP00 clasa protectie",
+"pret": 229.0,
+"imagine": "https://www.casa-bucuriei.ro/wp-content/uploads/2026/07/res_ebd7e1514e6245e84e1a376b2457b9f8.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.casa-bucuriei.ro%2Fprodus%2Fconvector-electric-pentru-incalzire-2000-w-putere-2-trepte-de-putere-20-mp-suprafata-incalzita-ip00-clasa-protectie%2F",
+"magazin": "casa-bucuriei.ro",
+"id": "oJAkI1JChMzL",
+"brand": "Casa-bucuriei",
+"url_magazin": "https://www.casa-bucuriei.ro/produs/convector-electric-pentru-incalzire-2000-w-putere-2-trepte-de-putere-20-mp-suprafata-incalzita-ip00-clasa-protectie/",
+"pret_vechi": null
+},
+{
+"titlu": "Convector electric de podea Victronic, 2000 W, 3 trepte de putere, Termostat reglabil, Protectie supra-incalzire, Alb",
+"pret": 245.0,
+"imagine": "https://www.casa-bucuriei.ro/wp-content/uploads/2026/07/res_e3ea3c844f5bd6d5a7897a7c072c040a.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.casa-bucuriei.ro%2Fprodus%2Fconvector-electric-de-podea-victronic-2000-w-3-trepte-de-putere-termostat-reglabil-protectie-supra-incalzire-alb%2F",
+"magazin": "casa-bucuriei.ro",
+"id": "fUywlDMv0YDr",
+"brand": "Casa-bucuriei",
+"url_magazin": "https://www.casa-bucuriei.ro/produs/convector-electric-de-podea-victronic-2000-w-3-trepte-de-putere-termostat-reglabil-protectie-supra-incalzire-alb/",
+"pret_vechi": 699.0
+},
+{
+"titlu": "Convector electric 2000w, Victronic",
+"pret": 279.0,
+"imagine": "https://www.casa-bucuriei.ro/wp-content/uploads/2026/07/res_fdcc8130a343ea15d91de785faaf475c.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.casa-bucuriei.ro%2Fprodus%2Fconvector-electric-2000w-victronic%2F",
+"magazin": "casa-bucuriei.ro",
+"id": "j4nDrQmhU8Mi",
+"brand": "Casa-bucuriei",
+"url_magazin": "https://www.casa-bucuriei.ro/produs/convector-electric-2000w-victronic/",
+"pret_vechi": 699.0
+},
+{
+"titlu": "Convector electric de podea CN214ZF, 2000 W, 3 trepte de putere, Termostat de siguranta, Termostat reglabil",
+"pret": 289.0,
+"imagine": "https://www.casa-bucuriei.ro/wp-content/uploads/2026/07/res_26a05090790f6e7d8cfeff98179bc806.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.casa-bucuriei.ro%2Fprodus%2Fconvector-electric-de-podea-cn214zf-2000-w-3-trepte-de-putere-termostat-de-siguranta-termostat-reglabil%2F",
+"magazin": "casa-bucuriei.ro",
+"id": "HbynesmV34ig",
+"brand": "Casa-bucuriei",
+"url_magazin": "https://www.casa-bucuriei.ro/produs/convector-electric-de-podea-cn214zf-2000-w-3-trepte-de-putere-termostat-de-siguranta-termostat-reglabil/",
+"pret_vechi": 699.0
+},
+{
+"titlu": "Convector electric cu timer, 2000W, Victronic VC2106",
+"pret": 289.0,
+"imagine": "https://www.casa-bucuriei.ro/wp-content/uploads/2026/07/res_c3e14ce37962aad35bbf7711bbf7ad3a.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.casa-bucuriei.ro%2Fprodus%2Fconvector-electric-cu-timer-2000w-victronic-vc2106%2F",
+"magazin": "casa-bucuriei.ro",
+"id": "GkHN68fNJYb0",
+"brand": "Casa-bucuriei",
+"url_magazin": "https://www.casa-bucuriei.ro/produs/convector-electric-cu-timer-2000w-victronic-vc2106/",
+"pret_vechi": 699.0
+},
+{
+"titlu": "Convector electric ZKH 08, 2000 W, 3 trepte putere, Termostat reglabil, Protectie la supraincalzire",
+"pret": 289.0,
+"imagine": "https://www.casa-bucuriei.ro/wp-content/uploads/2026/07/res_10a0b2c89f0cc3f3595417326c9ee99c.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.casa-bucuriei.ro%2Fprodus%2Fconvector-electric-zkh-08-2000-w-3-trepte-putere-termostat-reglabil-protectie-la-supraincalzire%2F",
+"magazin": "casa-bucuriei.ro",
+"id": "Sj_TVIu9Uo4z",
+"brand": "Casa-bucuriei",
+"url_magazin": "https://www.casa-bucuriei.ro/produs/convector-electric-zkh-08-2000-w-3-trepte-putere-termostat-reglabil-protectie-la-supraincalzire/",
+"pret_vechi": 699.0
+},
+{
+"titlu": "Convector electric SilverCrest SKM 2000 B2, 2000W, alb, 53x38.5x19.7cm",
+"pret": 299.0,
+"imagine": "https://www.casa-bucuriei.ro/wp-content/uploads/2026/07/res_2db7cc3077bb474b6361cf6ef4d3626c.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.casa-bucuriei.ro%2Fprodus%2Fconvector-electric-silvercrest-skm-2000-b2-2000w-alb-53x38-5x19-7cm%2F",
+"magazin": "casa-bucuriei.ro",
+"id": "Tc1oxduGA81N",
+"brand": "Casa-bucuriei",
+"url_magazin": "https://www.casa-bucuriei.ro/produs/convector-electric-silvercrest-skm-2000-b2-2000w-alb-53x38-5x19-7cm/",
+"pret_vechi": 699.0
+},
+{
+"titlu": "Convector electric 1000W/2000W, negru",
+"pret": 313.99,
+"imagine": "https://grupdzc.ro/media/catalog/product/D/Z/DZ-EI115_Convector_electric_1000W2000W_negru_1-0.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fgrupdzc.ro%2Fconvector-electric-1000w-2000w-negru",
+"magazin": "grupdzc.ro",
+"id": "T_3h8t3pny82",
+"brand": "Detoolz",
+"url_magazin": "https://grupdzc.ro/convector-electric-1000w-2000w-negru",
+"pret_vechi": null
+},
+{
+"titlu": "Convector electric Rohnson R-029 Wi-Fi",
+"pret": 538.0,
+"imagine": "https://www.aeriumshop.ro/image/cache/catalog/Lprodukty/ROHNSON/R-029/R-029-b-web-1-scaled-1200x1200.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.aeriumshop.ro%2Fconvector-electric-rohnson-r-029-wi-fi",
+"magazin": "aeriumshop.ro",
+"id": "Z0cKo7eGB8Y2",
+"brand": "Rohnson",
+"url_magazin": "https://www.aeriumshop.ro/convector-electric-rohnson-r-029-wi-fi",
+"pret_vechi": null
+},
+{
+"titlu": "Convector electric EUROM Alutherm 2000 Wifi",
+"pret": 729.0,
+"imagine": "https://www.aeriumshop.ro/image/cache/catalog/products/2989//alutherm_2000_wifi_4-1200x1200.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.aeriumshop.ro%2Fconvector-electric-eurom-alutherm-2000-wifi",
+"magazin": "aeriumshop.ro",
+"id": "BfINRtR5aNNB",
+"brand": "EUROM",
+"url_magazin": "https://www.aeriumshop.ro/convector-electric-eurom-alutherm-2000-wifi",
+"pret_vechi": 989.0
+}
+],
+"magazine": [
+"aeriumshop.ro",
+"casa-bucuriei.ro",
+"grupdzc.ro"
+]
+},
+{
+"slug": "panou-radiant",
+"tema": "incalzire",
+"tema_nume": "Încălzire",
+"titlu": "Panouri radiante",
+"nota": null,
+"in_text": null,
+"actualizat": "2026-11-05",
+"feeduri": [
+{
+"id": 6225,
+"magazin": "materialeelectrice.ro"
+},
+{
+"id": 7193,
+"magazin": "aeriumshop.ro"
+},
+{
+"id": 9434,
+"magazin": "vidaxl.ro"
+},
+{
+"id": 7997,
+"magazin": "gossi.ro"
+}
+],
+"produse": [
+{
+"titlu": "Panou radiant cu infraroșu EUROM E-Infrared 425",
+"pret": 489.0,
+"imagine": "https://www.aeriumshop.ro/image/cache/catalog/products/2985//e-infrared_425_1-1200x1200.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.aeriumshop.ro%2Fpanou-radiant-cu-infraro-u-eurom-e-infrared-425",
+"magazin": "aeriumshop.ro",
+"id": "JZBPZURHCoBg",
+"brand": "EUROM",
+"url_magazin": "https://www.aeriumshop.ro/panou-radiant-cu-infraro-u-eurom-e-infrared-425",
+"pret_vechi": 659.0
+},
+{
+"titlu": "Gossi panou radiant, alb, 465 x 900 mm",
+"pret": 643.0,
+"imagine": "https://gossi.ro/images/detailed/4904/Gossi-panou-radiant--alb--465-x-900-mm.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fgossi.ro%2Fgossi-panou-radiant-alb-465-x-900-mm%2F",
+"magazin": "gossi.ro",
+"id": "d8e_SIBx2eEw",
+"brand": "Gossi",
+"url_magazin": "https://gossi.ro/gossi-panou-radiant-alb-465-x-900-mm/",
+"pret_vechi": null
+},
+{
+"titlu": "vidaXL Panou radiant, alb, 465 x 900 mm",
+"pret": 647.99,
+"imagine": "https://vdxl.im/8718475859130_m_en_hd_1.jpg?t=1727787813",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.vidaxl.ro%2Fe%2FvidaXLPanouradiant%2Calb%2C465x900mm%2F8718475859130.html%3Futm_source%3D2performant%26utm_medium%3Daffiliate",
+"magazin": "vidaxl.ro",
+"id": "ZvoyMzyjMLO6",
+"brand": "vidaXL",
+"url_magazin": "https://www.vidaxl.ro/e/vidaXLPanouradiant,alb,465x900mm/8718475859130.html?utm_source=2performant&utm_medium=affiliate",
+"pret_vechi": null
+},
+{
+"titlu": "Panou radiant cu infraroșu EUROM E-Infrared 600",
+"pret": 659.0,
+"imagine": "https://www.aeriumshop.ro/image/cache/catalog/products/2986//e-infrared_600_1-1200x1200.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.aeriumshop.ro%2Fpanou-radiant-cu-infraro-u-eurom-e-infrared-600",
+"magazin": "aeriumshop.ro",
+"id": "Vj18q-Ez3EEO",
+"brand": "EUROM",
+"url_magazin": "https://www.aeriumshop.ro/panou-radiant-cu-infraro-u-eurom-e-infrared-600",
+"pret_vechi": 879.0
+},
+{
+"titlu": "Gossi panou radiant, alb, 542 x 900 mm",
+"pret": 767.0,
+"imagine": "https://gossi.ro/images/detailed/4904/Gossi-panou-radiant--alb--542-x-900-mm.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fgossi.ro%2Fgossi-panou-radiant-alb-542-x-900-mm%2F",
+"magazin": "gossi.ro",
+"id": "PjyXqCF3s0I4",
+"brand": "Gossi",
+"url_magazin": "https://gossi.ro/gossi-panou-radiant-alb-542-x-900-mm/",
+"pret_vechi": null
+},
+{
+"titlu": "vidaXL Panou radiant, alb, 542 x 900 mm",
+"pret": 771.99,
+"imagine": "https://vdxl.im/8718475859147_m_en_hd_1.jpg?t=1727787825",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.vidaxl.ro%2Fe%2FvidaXLPanouradiant%2Calb%2C542x900mm%2F8718475859147.html%3Futm_source%3D2performant%26utm_medium%3Daffiliate",
+"magazin": "vidaxl.ro",
+"id": "83XU-Hm1Z8hM",
+"brand": "vidaXL",
+"url_magazin": "https://www.vidaxl.ro/e/vidaXLPanouradiant,alb,542x900mm/8718475859147.html?utm_source=2performant&utm_medium=affiliate",
+"pret_vechi": null
+},
+{
+"titlu": "Panou radiant pentru tavan MAGNUM Sol Tip 250: 59 x 59 x 4 cm 300 W",
+"pret": 827.78,
+"imagine": "https://storage.googleapis.com/backupmateriale2018/product/450x450/36326.png",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.materialeelectrice.ro%2Fpanou-radiant-pentru-tavan-magnum-sol-tip-250-59-x-59-x-4-cm-240-w%3Fshare%3D55742",
+"magazin": "materialeelectrice.ro",
+"id": "5aa2811db",
+"brand": "Magnum",
+"url_magazin": "https://www.materialeelectrice.ro/panou-radiant-pentru-tavan-magnum-sol-tip-250-59-x-59-x-4-cm-240-w?share=55742",
+"pret_vechi": null
+},
+{
+"titlu": "Panou radiant cu infraroșu EUROM E-Infrared 800",
+"pret": 839.0,
+"imagine": "https://www.aeriumshop.ro/image/cache/catalog/products/2987//e-infrared_800_1-1200x1200.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.aeriumshop.ro%2Fpanou-radiant-cu-infraro-u-eurom-e-infrared-800",
+"magazin": "aeriumshop.ro",
+"id": "SShyKReN-pPc",
+"brand": "EUROM",
+"url_magazin": "https://www.aeriumshop.ro/panou-radiant-cu-infraro-u-eurom-e-infrared-800",
+"pret_vechi": 1099.0
+},
+{
+"titlu": "Panou radiant Sunpower 350W, IP44, TÜV, max 105°C",
+"pret": 852.86,
+"imagine": "https://storage.googleapis.com/backupmateriale2018/product/450x450/1427355.png",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.materialeelectrice.ro%2Fpanou-radiant-sunpower-350w-ip44-tuev-max-1050c-270857%3Fshare%3D55742",
+"magazin": "materialeelectrice.ro",
+"id": "ea6f5519d",
+"brand": "Schrack",
+"url_magazin": "https://www.materialeelectrice.ro/panou-radiant-sunpower-350w-ip44-tuev-max-1050c-270857?share=55742",
+"pret_vechi": null
+},
+{
+"titlu": "Panou radiant de perete din marmura 250W 60x40 cm",
+"pret": 951.33,
+"imagine": "https://storage.googleapis.com/backupmateriale2018/product/450x450/45671.png",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.materialeelectrice.ro%2Fpanou-radiant-de-perete-din-marmura-magnum-marbel-650w%3Fshare%3D55742",
+"magazin": "materialeelectrice.ro",
+"id": "d2b1622bb",
+"brand": "Cavi",
+"url_magazin": "https://www.materialeelectrice.ro/panou-radiant-de-perete-din-marmura-magnum-marbel-650w?share=55742",
+"pret_vechi": null
+},
+{
+"titlu": "Panou radiant Sunpower 550W, IP44, TÜV, max 105°C",
+"pret": 1191.87,
+"imagine": "https://storage.googleapis.com/backupmateriale2018/product/450x450/1427356.png",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.materialeelectrice.ro%2Fpanou-radiant-sunpower-550w-ip44-tuev-max-1050c-270858%3Fshare%3D55742",
+"magazin": "materialeelectrice.ro",
+"id": "48b090f3f",
+"brand": "Schrack",
+"url_magazin": "https://www.materialeelectrice.ro/panou-radiant-sunpower-550w-ip44-tuev-max-1050c-270858?share=55742",
+"pret_vechi": null
+},
+{
+"titlu": "Panou radiant pentru tavan MAGNUM Sol Tip 500: 119 x 59 x 4 cm 500 W",
+"pret": 1241.67,
+"imagine": "https://storage.googleapis.com/backupmateriale2018/product/450x450/36327.png",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.materialeelectrice.ro%2Fpanou-radiant-pentru-tavan-magnum-sol-tip-500-119-x-59-x-4-cm-500-w%3Fshare%3D55742",
+"magazin": "materialeelectrice.ro",
+"id": "c0f6dc3a4",
+"brand": "Magnum",
+"url_magazin": "https://www.materialeelectrice.ro/panou-radiant-pentru-tavan-magnum-sol-tip-500-119-x-59-x-4-cm-500-w?share=55742",
+"pret_vechi": null
+},
+{
+"titlu": "Panou radiant MAGNUM Infrarosu 1000W",
+"pret": 1299.98,
+"imagine": "https://storage.googleapis.com/backupmateriale2018/product/450x450/36320.png",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.materialeelectrice.ro%2Fpanou-radiant-magnum-infrarosu-1000w%3Fshare%3D55742",
+"magazin": "materialeelectrice.ro",
+"id": "f80a9880b",
+"brand": "Magnum",
+"url_magazin": "https://www.materialeelectrice.ro/panou-radiant-magnum-infrarosu-1000w?share=55742",
+"pret_vechi": null
+},
+{
+"titlu": "Panou radiant Sunpower 750W, IP44, TÜV, max 105°C",
+"pret": 1353.85,
+"imagine": "https://storage.googleapis.com/backupmateriale2018/product/450x450/1427357.png",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.materialeelectrice.ro%2Fpanou-radiant-sunpower-750w-ip44-tuev-max-1050c-270859%3Fshare%3D55742",
+"magazin": "materialeelectrice.ro",
+"id": "c8d930dbc",
+"brand": "Schrack",
+"url_magazin": "https://www.materialeelectrice.ro/panou-radiant-sunpower-750w-ip44-tuev-max-1050c-270859?share=55742",
+"pret_vechi": null
+},
+{
+"titlu": "Panou radiant MAGNUM Infrarosu 1500W",
+"pret": 1520.21,
+"imagine": "https://storage.googleapis.com/backupmateriale2018/product/450x450/36321.png",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.materialeelectrice.ro%2Fpanou-radiant-magnum-infrarosu-1500w%3Fshare%3D55742",
+"magazin": "materialeelectrice.ro",
+"id": "2a6d525dd",
+"brand": "Magnum",
+"url_magazin": "https://www.materialeelectrice.ro/panou-radiant-magnum-infrarosu-1500w?share=55742",
+"pret_vechi": null
+}
+],
+"magazine": [
+"aeriumshop.ro",
+"gossi.ro",
+"materialeelectrice.ro",
 "vidaxl.ro"
 ]
 },
