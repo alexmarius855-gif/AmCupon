@@ -264,7 +264,7 @@ CRITERII = [
     C("craciun", "brad-artificial-210-cm", "Brazi artificiali de 210 cm", "brad artificial 210 cm", r"^(.{0,20})\bbrad\b", r"(?<!\d)210\s*cm\b", r"\b(globuri|ornament\w*|decoratiun\w*|suport|mini)\b", 80, accesorii=False),
     # ── Incalzire ──
     C("incalzire", "radiator-electric-ulei", "Radiatoare electrice cu ulei", "radiator electric ulei", r"^(.{0,20})\bradiator\b", r"\belectric\b.*\bulei\b|\bulei\b.*\belectric\b|\bulei\b.*\belement\w*\b", r"\b(potrivit|auto|masina|capac)\b", 100, accesorii=False),
-    C("incalzire", "aeroterma", "Aeroterme", "aeroterma", r"^(.{0,12})\baeroterma\b", None, r"\b(auto|masina|12\s*v)\b", 50, accesorii=False),
+    C("incalzire", "aeroterma", "Aeroterme", "aeroterma", r"^(.{0,12})\baeroterma\b", None, r"\b(auto|masina|12\s*v|motoras|ventilator|rezistenta|releu|opel|renault|dacia|ford|vw|volkswagen|skoda|audi|bmw|mercedes|peugeot|citroen|fiat|toyota|nissan|hyundai|kia)\b", 50, accesorii=False),
     C("incalzire", "convector-electric", "Convectoare electrice", "convector electric", r"^(.{0,12})\bconvector\b", r"\belectric\b", None, 100, accesorii=False),
     C("incalzire", "panou-radiant", "Panouri radiante", "panou radiant", r"^(.{0,12})\bpanou\b", r"\b(radiant|infrarosu)\b", None, 100, accesorii=False),
     # ── Animale ──
@@ -440,11 +440,11 @@ def alt_produs(ceruta: str, final: str, titlu: str, html: str) -> bool:
     produs nu. Fara asta, cel mai mic pret din categorie trecea drept pretul produsului (babyneeds: bicicleta de ~600 lei, 61,99 lei)."""
     if not ceruta or not titlu or _coada(ceruta) == _coada(final):
         return False
-    pe_pagina = set()
-    for g in re.findall(r'"name"\s*:\s*"([^"]{3,250})"', html) + re.findall(r'property="og:title"[^>]+content="([^"]+)"', html, re.I) + re.findall(r"<title[^>]*>([^<]+)</title>", html, re.I):
-        pe_pagina |= _jetoane(g)
+    # Doar titlul paginii: o categorie listeaza in datele ei si numele altor produse din aceeasi familie (babyneeds, 06.11:
+    # „Biciclete cu pedale" continea „Dino Bikes ...", iar bicicleta disparuta parea gasita). Titlu generic = nu confirmam.
+    titluri = re.findall(r'property="og:title"[^>]+content="([^"]+)"', html, re.I) + re.findall(r"<title[^>]*>([^<]+)</title>", html, re.I)
     dorit = _jetoane(titlu)
-    return len(dorit & pe_pagina) / max(1, len(dorit)) < 0.5
+    return max((len(dorit & _jetoane(g)) / max(1, len(dorit)) for g in titluri), default=0) < 0.5
 
 
 def stare_magazin(status: int, final: str, html: str, ceruta: str = "", titlu: str = "") -> dict:
@@ -864,6 +864,9 @@ def test() -> int:
         ("CAPTCHA pe alt domeniu: nu stim, nu stergem", stare_magazin(200, "http://captcha.distinct.ro/?original_url=x", "<title>Distinct Captcha</title>", "https://www.evomag.ro/casti-x", "Casti Monster N-Tune"), {}),
         ("www in plus nu e alt domeniu", stare_magazin(200, "https://a.ro/p", '<meta property="product:price:amount" content="10">', "https://www.a.ro/p", "Produs"), {"pret": 10.0}),
         ("categoria nu confirma produsul", stare_magazin(200, "https://www.babyneeds.ro/plimbare-relaxare/", '<title>Plimbare si relaxare</title><script type="application/ld+json">{"@type":"Product","name":"Plimbare","offers":{"lowPrice":"61.99","highPrice":"1789"}}</script>', "https://www.babyneeds.ro/bicicleta-dino-little-heart.html", "Bicicleta copii, Dino Bikes, Little Heart, Roti ajutatoare"), {"sters": True}),
+        ("categoria cu produsul in lista tot nu-l confirma", stare_magazin(200, "https://www.babyneeds.ro/biciclete-cu-pedale/", '<title>Biciclete cu pedale</title><script type="application/ld+json">{"@type":"ItemList","itemListElement":[{"@type":"Product","name":"Bicicleta copii, Dino Bikes, Little Heart, Roti ajutatoare","offers":{"price":"331.99"}}]}</script>', "https://www.babyneeds.ro/bicicleta-copii-dino-bikes-little-heart.html", "Bicicleta copii, Dino Bikes, Little Heart, Roti ajutatoare"), {"sters": True}),
+        ("motorasul de aeroterma auto nu e aeroterma", se_potriveste("Motoras aeroterma 16451056 Opel Insignia A (2008-2013)", DUPA_SLUG["aeroterma"], 63), False),
+        ("aeroterma de camera ramane", se_potriveste("Aeroterma Heinner HFH-L2000WH, 2000 W, 2 trepte de putere", DUPA_SLUG["aeroterma"], 61), True),
         ("produsul redenumit ramane", stare_magazin(200, "https://afisport.ro/bicicleta-electrica-prophete-52562-28-inch-m-gri.html", '<title>Bicicleta electrica Prophete 52562 28 inch M gri</title><meta property="product:price:amount" content="2990">', "https://afisport.ro/bicicleta-electrica-devron-52562-28-inch-m-gri.html", "Bicicleta electrica Devron 52562, 28 inch, M, gri"), {"pret": 2990.0}),
         ("adresa curatata ramane", stare_magazin(200, "https://a.ro/p/", '<meta property="product:price:amount" content="10">', "https://a.ro/p.html?utm=1", "Produs fara alt nume"), {"pret": 10.0}),
         ("pret de zece ori mai mic: neconfirmat", "verificat" in aplica_verificare({"pret": 600, "verificat": "2026-11-01"}, {"pret": 61.99}, "2026-11-04"), False),
