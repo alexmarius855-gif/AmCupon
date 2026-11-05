@@ -1,6 +1,6 @@
 {
  "_nota": "Generat de scripts/calendar_black_friday.py din promotiile anuntate de magazine in 2Performant (data/promotii_2p.csv si ofertele 2P active din output.json). Doar parteneri cu link platit. Nu edita de mana.",
- "generat": "2026-11-04",
+ "generat": "2026-11-05",
  "categorii": [
   {
    "slug": "casa-gradina",

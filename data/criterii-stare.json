@@ -1,5 +1,5 @@
 {
-"actualizat": "2026-11-04",
+"actualizat": "2026-11-05",
 "criterii": [
 {
 "slug": "masina-de-spalat-6-kg",
@@ -8,7 +8,7 @@
 "titlu": "Mașini de spălat de 6 kg",
 "nota": "Capacitatea se referă la greutatea rufelor uscate pe care le poți pune o dată în cuvă.",
 "in_text": "\\b6\\s*kg\\b",
-"actualizat": "2026-11-04",
+"actualizat": "2026-11-05",
 "feeduri": [
 {
 "id": 1539,
@@ -100,7 +100,7 @@
 "titlu": "Mașini de spălat de 7 kg",
 "nota": "Capacitatea se referă la greutatea rufelor uscate pe care le poți pune o dată în cuvă.",
 "in_text": "\\b7\\s*kg\\b",
-"actualizat": "2026-11-04",
+"actualizat": "2026-11-05",
 "feeduri": [
 {
 "id": 1539,
@@ -191,6 +191,18 @@
 "url_magazin": "https://www.evomag.ro/electrocasnice-electrocasnice-mari-masini-de-spalat-rufe-si-accesorii-masini-de-spalat-rufe/heinner-masina-de-spalat-rufe-heinner-hwm-h7014ivsmtc-7-kg-1400-rpm-15-programe-clasa-c-gri-4114408.html",
 "pret_vechi": null,
 "verificat": "2026-11-04"
+},
+{
+"titlu": "Masina de spalat rufe Candy Pro Wash 300 GD 27SB7-S, 7 kg, 1200 rpm, 16 programe, ProActive Wash, AI Silent Motion (Alb)",
+"pret": 1409.99,
+"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4290%2F4290506%2Fgd-27sb7-s-69cadbbd0690b.jpg&type=auto&width=500&sign=dSOMEH63klCJLWUtzvQHkqBG1YFW-leUYA9DQmqrdwE",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Felectrocasnice-electrocasnice-mari-masini-de-spalat-rufe-si-accesorii-masini-de-spalat-rufe%2Fcandy-masina-de-spalat-rufe-candy-pro-wash-300-gd-27sb7-s-7-kg-1200-rpm-16-programe-proactive-wash-ai-silent-motion-alb-4290506.html",
+"magazin": "evomag.ro",
+"id": "0-dbPcWo8NZR",
+"brand": "Candy",
+"url_magazin": "https://www.evomag.ro/electrocasnice-electrocasnice-mari-masini-de-spalat-rufe-si-accesorii-masini-de-spalat-rufe/candy-masina-de-spalat-rufe-candy-pro-wash-300-gd-27sb7-s-7-kg-1200-rpm-16-programe-proactive-wash-ai-silent-motion-alb-4290506.html",
+"pret_vechi": null,
+"verificat": "2026-11-05"
 },
 {
 "titlu": "CANDY Masina de spalat rufe cu incarcare verticala Candy,Control digita,l 7kg, Start intarziat, 1200rpm, Clasa C, Alba",
@@ -289,7 +301,7 @@
 "titlu": "Mașini de spălat de 8 kg",
 "nota": "Capacitatea se referă la greutatea rufelor uscate pe care le poți pune o dată în cuvă.",
 "in_text": "\\b8\\s*kg\\b",
-"actualizat": "2026-11-04",
+"actualizat": "2026-11-05",
 "feeduri": [
 {
 "id": 1539,
@@ -18890,18 +18902,8 @@
 "id": "xHkBbM3qx-oJ",
 "brand": "Platinum",
 "url_magazin": "https://www.shop4pet.ro/platinum-hrana-caine-light-1-5",
-"pret_vechi": null
-},
-{
-"titlu": "Hrana uscata pentru caini Loyalis Puppy Healthy Start cu miel 3 kg",
-"pret": 57.99,
-"imagine": "https://gomagcdn.ro/domains2/ehranaanimale.ro/files/product/large/hrana-uscata-pentru-caini-loyalis-puppy-healthy-start-cu-miel-3-kg-540409.webp",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ehranaanimale.ro%2Fhrana-uscata-pentru-caini-loyalis-puppy-healthy-start-cu-miel-3-kg.html",
-"magazin": "ehranaanimale.ro",
-"id": "dm5KeLkLUX06",
-"brand": "LOYALIS",
-"url_magazin": "https://www.ehranaanimale.ro/hrana-uscata-pentru-caini-loyalis-puppy-healthy-start-cu-miel-3-kg.html",
-"pret_vechi": null
+"pret_vechi": null,
+"verificat": "2026-11-05"
 },
 {
 "titlu": "Hrana uscata pentru caini, mama si pui Bado, cu vita, 2.25 kg",
@@ -18912,7 +18914,8 @@
 "id": "leADz0UvefSR",
 "brand": "Bado",
 "url_magazin": "https://www.shop4pet.ro/hrana-uscata-caine-mama-pui-bado-vita",
-"pret_vechi": null
+"pret_vechi": null,
+"verificat": "2026-11-05"
 },
 {
 "titlu": "Hrana uscata pentru caini adulti,Bado, cu miel si orez, 2.5 kg",
@@ -18923,7 +18926,8 @@
 "id": "4K55IipnRw59",
 "brand": "Bado",
 "url_magazin": "https://www.shop4pet.ro/bado-hrana-uscata-caine-adult-miel-2-5",
-"pret_vechi": null
+"pret_vechi": null,
+"verificat": "2026-11-05"
 },
 {
 "titlu": "Hrana Uscata Pentru Caini, Vahur Adult, Vita, 10 kg",
@@ -18934,7 +18938,8 @@
 "id": "idqBj1IuRfdu",
 "brand": "Exotic-k",
 "url_magazin": "https://grupdzc.ro/hrana-uscata-pentru-caini-vahur-adult-vita-10-kg",
-"pret_vechi": null
+"pret_vechi": null,
+"verificat": "2026-11-05"
 },
 {
 "titlu": "Vahur Hrana Uscata Pentru Caini, Vahur Adult, Miel, 10 kg",
@@ -18945,7 +18950,8 @@
 "id": "XfdyKi3-ryS1",
 "brand": "Exotic-k",
 "url_magazin": "https://grupdzc.ro/vahur-hrana-uscata-pentru-caini-vahur-adult-miel-10-kg",
-"pret_vechi": null
+"pret_vechi": null,
+"verificat": "2026-11-05"
 },
 {
 "titlu": "Hrana uscata pentru caini adulti, RAW PALEO HEALTHY GRAIN, somon, 2kg",
@@ -18956,7 +18962,8 @@
 "id": "MvDPGX5NkBTS",
 "brand": "Raw Paleo",
 "url_magazin": "https://www.shop4pet.ro/raw-paleo-healthy-grain-somon-2",
-"pret_vechi": null
+"pret_vechi": null,
+"verificat": "2026-11-05"
 },
 {
 "titlu": "Hrana uscata pentru caini adulti, RAW PALEO HEALTHY GRAIN, miel, 2kg",
@@ -18967,7 +18974,8 @@
 "id": "_KJflypyBDPw",
 "brand": "Raw Paleo",
 "url_magazin": "https://www.shop4pet.ro/raw-paleo-hrana-adult-miel-2-kg",
-"pret_vechi": null
+"pret_vechi": null,
+"verificat": "2026-11-05"
 },
 {
 "titlu": "Hrana uscata pentru caini adulti, talie medie si mare, Peritas Signature, cu miel si orez, 3 kg",
@@ -18978,7 +18986,8 @@
 "id": "4_9UGfc3ycnF",
 "brand": "Peritas Signature",
 "url_magazin": "https://www.shop4pet.ro/signature-peritas-hrana-caine-adult-talie-medie-3-miel",
-"pret_vechi": null
+"pret_vechi": null,
+"verificat": "2026-11-05"
 },
 {
 "titlu": "Hrana uscata pentru caini, juniori, talie mica, Peritas Signature, cu miel si orez, 3 kg",
@@ -18989,7 +18998,8 @@
 "id": "T-OeTdGST-iS",
 "brand": "Peritas Signature",
 "url_magazin": "https://www.shop4pet.ro/hrana-caine-junior-talie-mica-peritas-signature-miel-orez-3",
-"pret_vechi": null
+"pret_vechi": null,
+"verificat": "2026-11-05"
 },
 {
 "titlu": "Hrana uscata pentru caini adulti, talie mica, Peritas Signature, cu miel si orez, 3 kg",
@@ -19000,40 +19010,8 @@
 "id": "-HTgWF2lguyv",
 "brand": "Peritas Signature",
 "url_magazin": "https://www.shop4pet.ro/hrana-caine-adult-talie-mica-peritas-signature-miel-3",
-"pret_vechi": null
-},
-{
-"titlu": "Hrana uscata pentru caini Kanova High Energy cu vita 10 kg",
-"pret": 79.99,
-"imagine": "https://gomagcdn.ro/domains2/ehranaanimale.ro/files/product/large/hrana-uscata-pentru-caini-kanova-high-energy-cu-vita-10-kg-930630.webp",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ehranaanimale.ro%2Fhrana-uscata-pentru-caini-kanova-high-energy-cu-vita-10-kg.html",
-"magazin": "ehranaanimale.ro",
-"id": "iGUaj0GdJ5QM",
-"brand": "",
-"url_magazin": "https://www.ehranaanimale.ro/hrana-uscata-pentru-caini-kanova-high-energy-cu-vita-10-kg.html",
-"pret_vechi": 110.0
-},
-{
-"titlu": "Hrana uscata pentru caini Hill s SP Hypoallergenic Small Mini Adult cu somon 1,5 kg",
-"pret": 91.23,
-"imagine": "https://gomagcdn.ro/domains2/ehranaanimale.ro/files/product/large/hrana-uscata-pentru-caini-hill-s-sp-hypoallergenic-small-mini-adult-cu-somon-1-5-kg-452530.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ehranaanimale.ro%2Fhrana-uscata-pentru-caini-hill-s-sp-hypoallergenic-small-mini-adult-cu-somon-1-5-kg.html",
-"magazin": "ehranaanimale.ro",
-"id": "MiSHvJ9oJpqx",
-"brand": "HILL'S",
-"url_magazin": "https://www.ehranaanimale.ro/hrana-uscata-pentru-caini-hill-s-sp-hypoallergenic-small-mini-adult-cu-somon-1-5-kg.html",
-"pret_vechi": null
-},
-{
-"titlu": "Hrana uscata pentru caini Meglium Mini Adult cu miel orez 7 kg",
-"pret": 95.99,
-"imagine": "https://gomagcdn.ro/domains2/ehranaanimale.ro/files/product/large/hrana-uscata-pentru-caini-meglium-mini-adult-cu-miel-orez-7-kg-863675.webp",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ehranaanimale.ro%2Fhrana-uscata-pentru-caini-meglium-mini-adult-cu-miel-orez-7-kg.html",
-"magazin": "ehranaanimale.ro",
-"id": "bV0tp3DZafhM",
-"brand": "MEGLIUM",
-"url_magazin": "https://www.ehranaanimale.ro/hrana-uscata-pentru-caini-meglium-mini-adult-cu-miel-orez-7-kg.html",
-"pret_vechi": null
+"pret_vechi": null,
+"verificat": "2026-11-05"
 },
 {
 "titlu": "Hrana uscata Caini, 3 kg, cu miel si orez, Advance Dog Sensitive Adult",
@@ -19044,40 +19022,8 @@
 "id": "dagE3AFDWdIl",
 "brand": "Advance",
 "url_magazin": "https://grupdzc.ro/hrana-uscata-caini-3-kg-cu-miel-si-orez-advance-dog-sensitive-adult",
-"pret_vechi": null
-},
-{
-"titlu": "Hrana uscata pentru caini Virbac HPM Adult Neutered Small Toy 1,5 kg",
-"pret": 107.59,
-"imagine": "https://gomagcdn.ro/domains2/ehranaanimale.ro/files/product/large/hrana-uscata-pentru-caini-virbac-hpm-adult-neutered-small-toy-1-5-kg-016466.png",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ehranaanimale.ro%2Fhrana-uscata-pentru-caini-virbac-hpm-adult-neutred-small-toy-1-5-kg.html",
-"magazin": "ehranaanimale.ro",
-"id": "tv4Iq6yaY0Iw",
-"brand": "VIRBAC-HPM",
-"url_magazin": "https://www.ehranaanimale.ro/hrana-uscata-pentru-caini-virbac-hpm-adult-neutred-small-toy-1-5-kg.html",
-"pret_vechi": 120.0
-},
-{
-"titlu": "Hrana uscata pentru caini Virbac HPM Baby Small Toy 1,5 kg",
-"pret": 110.74,
-"imagine": "https://gomagcdn.ro/domains2/ehranaanimale.ro/files/product/large/hrana-uscata-pentru-caini-virbac-hpm-baby-small-toy-1-5-kg-037646.webp",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ehranaanimale.ro%2Fhrana-uscata-pentru-caini-virbac-hpm-baby-small-toy-1-5-kg.html",
-"magazin": "ehranaanimale.ro",
-"id": "-EpEQqX84baC",
-"brand": "VIRBAC-HPM",
-"url_magazin": "https://www.ehranaanimale.ro/hrana-uscata-pentru-caini-virbac-hpm-baby-small-toy-1-5-kg.html",
-"pret_vechi": 118.99
-},
-{
-"titlu": "Hrana uscata pentru caini Advance Mini Adult cu pui 7 + 1 kg GRATIS",
-"pret": 131.61,
-"imagine": "https://gomagcdn.ro/domains2/ehranaanimale.ro/files/product/large/hrana-uscata-pentru-caini-advance-mini-adult-cu-pui-7-1-kg-gratis-080563.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ehranaanimale.ro%2Fhrana-uscata-pentru-caini-advance-mini-adult-cu-pui-7-1-kg-gratis.html",
-"magazin": "ehranaanimale.ro",
-"id": "J9Ualpk_dMWB",
-"brand": "ADVANCE",
-"url_magazin": "https://www.ehranaanimale.ro/hrana-uscata-pentru-caini-advance-mini-adult-cu-pui-7-1-kg-gratis.html",
-"pret_vechi": 134.99
+"pret_vechi": null,
+"verificat": "2026-11-05"
 },
 {
 "titlu": "Hrana uscata completa Club 4 Paws Premium pentru caini adulti de talie mica, 14kg Engros",
@@ -19102,17 +19048,6 @@
 "pret_vechi": null
 },
 {
-"titlu": "Hrana uscata pentru caini Virbac HPM Adult Small Toy 3 kg",
-"pret": 157.82,
-"imagine": "https://gomagcdn.ro/domains2/ehranaanimale.ro/files/product/large/hrana-uscata-pentru-caini-virbac-hpm-adult-small-toy-3-kg-069157.webp",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ehranaanimale.ro%2Fhrana-uscata-pentru-caini-virbac-hpm-adult-small-toy-3-kg.html",
-"magazin": "ehranaanimale.ro",
-"id": "0DxUttKMSbsd",
-"brand": "VIRBAC-HPM",
-"url_magazin": "https://www.ehranaanimale.ro/hrana-uscata-pentru-caini-virbac-hpm-adult-small-toy-3-kg.html",
-"pret_vechi": null
-},
-{
 "titlu": "Hrana uscata Caini, Adult Mini, cu Pui, 8 kg, Libra Dog",
 "pret": 167.67,
 "imagine": "https://grupdzc.ro/media/catalog/product/l/i/libra-minidog-adult-cu-pui-8-kg-600x600.jpg",
@@ -19121,7 +19056,8 @@
 "id": "NnjxxHmQ2OfH",
 "brand": "Libra",
 "url_magazin": "https://grupdzc.ro/hrana-uscata-caini-adult-mini-cu-pui-8-kg-libra-dog",
-"pret_vechi": null
+"pret_vechi": null,
+"verificat": "2026-11-05"
 },
 {
 "titlu": "Hrana uscata Caini, Adult Mini, cu Somon, 8 kg, Libra Dog",
@@ -19132,12 +19068,12 @@
 "id": "gy0aegV3FkFV",
 "brand": "Libra",
 "url_magazin": "https://grupdzc.ro/hrana-uscata-caini-adult-mini-cu-somon-8-kg-libra-dog",
-"pret_vechi": null
+"pret_vechi": null,
+"verificat": "2026-11-05"
 }
 ],
 "magazine": [
 "bazarulonline.ro",
-"ehranaanimale.ro",
 "grupdzc.ro",
 "shop4pet.ro"
 ]
@@ -19178,7 +19114,8 @@
 "id": "iLRyj6QLDE7F",
 "brand": "Monge",
 "url_magazin": "https://grupdzc.ro/monge-hrana-uscata-pentru-pisici-lechat-excellence-appetito-difficile-cu-pastrav-1-5-kg",
-"pret_vechi": null
+"pret_vechi": null,
+"verificat": "2026-11-05"
 },
 {
 "titlu": "PURINA ONE Dual Nature Spirulina Sterilcat Hrana uscata pentru pisici adulte sterlizate, bogata in carne de vita 750 g",
@@ -19189,7 +19126,8 @@
 "id": "6yljD3695vAG",
 "brand": "PURINA",
 "url_magazin": "https://fera.ro/purina-one-dual-nature-spirulina-sterilcat-hrana-uscata-pentru-pisici-adulte-sterlizate-bogata-in-carne-de-vita-750-g.html",
-"pret_vechi": null
+"pret_vechi": null,
+"verificat": "2026-11-05"
 },
 {
 "titlu": "Monge Hrana Uscata Pentru Pisici, Gemon Adult, Cu Pui Si Curcan, 2 kg",
@@ -19200,7 +19138,8 @@
 "id": "k5DJZlg_beu7",
 "brand": "Monge",
 "url_magazin": "https://grupdzc.ro/monge-hrana-uscata-pentru-pisici-gemon-adult-cu-pui-si-curcan-2-kg",
-"pret_vechi": null
+"pret_vechi": null,
+"verificat": "2026-11-05"
 },
 {
 "titlu": "Monge Hrana Uscata Pentru Pisici, Lechat Excellence Hairball, 1.5 kg",
@@ -19211,7 +19150,8 @@
 "id": "tyh27AmFbrDA",
 "brand": "Monge",
 "url_magazin": "https://grupdzc.ro/monge-hrana-uscata-pentru-pisici-lechat-excellence-hairball-1-5-kg",
-"pret_vechi": null
+"pret_vechi": null,
+"verificat": "2026-11-05"
 },
 {
 "titlu": "Petline SensiPlus, hrana uscata superpremium pentru pisici sterilizate,, cu somon, 1.5 kg",
@@ -19222,7 +19162,8 @@
 "id": "44PoTUjfn7PA",
 "brand": "Petline",
 "url_magazin": "https://www.shop4pet.ro/petline-hrana-pisici-sterilizate-somon",
-"pret_vechi": null
+"pret_vechi": null,
+"verificat": "2026-11-05"
 },
 {
 "titlu": "Petline Urinary, hrana uscata superpremium pentru pisici cu probleme urinare,, cu pui, 1.5 kg",
@@ -19233,7 +19174,8 @@
 "id": "QmjQqNI38D72",
 "brand": "Petline",
 "url_magazin": "https://www.shop4pet.ro/petline-hrana-uscata-pisici-probleme-urinare",
-"pret_vechi": null
+"pret_vechi": null,
+"verificat": "2026-11-05"
 },
 {
 "titlu": "Petline Delicate, hrana uscata superpremium pentru pisici adulte,, cu pui, 1.5 kg",
@@ -19244,7 +19186,8 @@
 "id": "Ds0B8YoJZsJl",
 "brand": "Petline",
 "url_magazin": "https://www.shop4pet.ro/petline-delicate-hrana-pisici-adult-pui",
-"pret_vechi": null
+"pret_vechi": null,
+"verificat": "2026-11-05"
 },
 {
 "titlu": "Petline Hypoalergenic, hrana uscata superpremium pentru pisici adulte,,sensibile, cu miel, 1.5 kg",
@@ -19255,7 +19198,8 @@
 "id": "bFhMhwSZ7kV9",
 "brand": "Petline",
 "url_magazin": "https://www.shop4pet.ro/petline-hypoalergenic-hrana-uscata-pisici-sensibile-miel",
-"pret_vechi": null
+"pret_vechi": null,
+"verificat": "2026-11-05"
 },
 {
 "titlu": "Petline Anchovy hrana uscata superpremium pentru pisici adulte,, cu peste, 1.5 kg",
@@ -19266,7 +19210,8 @@
 "id": "slEXf2oCoFu6",
 "brand": "Petline",
 "url_magazin": "https://www.shop4pet.ro/petline-hrana-uscata-pisici-adulte-peste",
-"pret_vechi": null
+"pret_vechi": null,
+"verificat": "2026-11-05"
 },
 {
 "titlu": "Monge Hrana Uscata Pentru Pisici, LeChat Excellence Steril, Cu Pui, 1.5 kg",
@@ -19277,7 +19222,8 @@
 "id": "aX5UC_fSSbTR",
 "brand": "Monge",
 "url_magazin": "https://grupdzc.ro/monge-hrana-uscata-pentru-pisici-lechat-excellence-steril-cu-pui-1-5-kg",
-"pret_vechi": null
+"pret_vechi": null,
+"verificat": "2026-11-05"
 },
 {
 "titlu": "Monge Hrana Uscata Pentru Pisici, LeChat Excellence Steril, Cu Rata, 1.5 kg",
@@ -19288,7 +19234,8 @@
 "id": "kQvDYKlE9k3v",
 "brand": "Monge",
 "url_magazin": "https://grupdzc.ro/monge-hrana-uscata-pentru-pisici-lechat-excellence-steril-cu-rata-1-5-kg",
-"pret_vechi": null
+"pret_vechi": null,
+"verificat": "2026-11-05"
 },
 {
 "titlu": "Hrana uscata pentru pisici adulte, Peritas Signature, cu somon, 2 kg, pentru prevenirea ghemurilor de blana",
@@ -19299,7 +19246,8 @@
 "id": "8eGn6ZzwmleT",
 "brand": "Peritas Signature",
 "url_magazin": "https://www.shop4pet.ro/signature-hairball-hrana-pisici-prevenire-ghemuri-blana",
-"pret_vechi": null
+"pret_vechi": null,
+"verificat": "2026-11-05"
 },
 {
 "titlu": "Hrana uscata Pisici, 1.5 kg, Advance Kitten",
@@ -19310,7 +19258,8 @@
 "id": "82383ee50",
 "brand": "Advance",
 "url_magazin": "https://grupdzc.ro/hrana-uscata-pisici-1-5-kg-advance-kitten",
-"pret_vechi": null
+"pret_vechi": null,
+"verificat": "2026-11-05"
 },
 {
 "titlu": "Hrana uscata pentru pisici, junior, Peritas Signature, cu pui, 2 kg",
@@ -19321,7 +19270,8 @@
 "id": "51SyU8zfDT-b",
 "brand": "Peritas Signature",
 "url_magazin": "https://www.shop4pet.ro/hrana-uscata-pisici-junior-signature-pui-2",
-"pret_vechi": null
+"pret_vechi": null,
+"verificat": "2026-11-05"
 },
 {
 "titlu": "Hrana uscata pentru pisici sterilizate, Peritas Signature, cu pui, 2 kg",
@@ -19332,7 +19282,8 @@
 "id": "HJXQtIiKCPUC",
 "brand": "Peritas Signature",
 "url_magazin": "https://www.shop4pet.ro/mancare-pisici-sterilizate-signature-peritas-pui-2",
-"pret_vechi": null
+"pret_vechi": null,
+"verificat": "2026-11-05"
 },
 {
 "titlu": "Hrana uscata, Pisici, Sterilizat, Adult, cu Prosciutto Crudo, 1.5 kg, Natural Trainer",
@@ -19343,7 +19294,8 @@
 "id": "5fbadf84a",
 "brand": "Natural Trainer",
 "url_magazin": "https://grupdzc.ro/hrana-uscata-pisici-sterilizat-adult-cu-prosciutto-crudo-1-5-kg-natural-trainer",
-"pret_vechi": null
+"pret_vechi": null,
+"verificat": "2026-11-05"
 },
 {
 "titlu": "Hrana uscata, pisici, Adult , cu carne proaspata de Pui, 1.5 kg, Natural Trainer Maintenance",
@@ -19354,7 +19306,8 @@
 "id": "f91273498",
 "brand": "Natural Trainer",
 "url_magazin": "https://grupdzc.ro/hrana-uscata-pisici-adult-cu-carne-proaspata-de-pui-1-5-kg-natural-trainer-maintenance",
-"pret_vechi": null
+"pret_vechi": null,
+"verificat": "2026-11-05"
 },
 {
 "titlu": "BRIT Veterinary Diets Cat Grain Free Gastrointestinal Low Fat 2 kg Hrana uscata pisici pentru tulburari ale sistemului d",
@@ -19365,7 +19318,8 @@
 "id": "4zec7Cuo97H6",
 "brand": "BRIT",
 "url_magazin": "https://fera.ro/brit-veterinary-diets-cat-grain-free-gastrointestinal-low-fat-2-kg-hrana-uscata-pisici-pentru-tulburari-ale-sistemului-digestiv.html",
-"pret_vechi": null
+"pret_vechi": null,
+"verificat": "2026-11-05"
 },
 {
 "titlu": "PURINA Pro Plan Cat Sterilised Optirenal Turkey 1.5kg Hrana uscata pisici sterilizate, cu curcan",
@@ -19376,40 +19330,44 @@
 "id": "Hin2_kenKBzK",
 "brand": "PURINA",
 "url_magazin": "https://fera.ro/purina-pro-plan-cat-sterilised-optirenal-turkey-1.5kg-hrana-uscata-pisici-sterilizate-cu-curcan.html",
-"pret_vechi": null
+"pret_vechi": null,
+"verificat": "2026-11-05"
 },
 {
 "titlu": "HAPPY CAT Sterilised Hrana uscata pentru pisici adulte sterilizate, cu carne de vita 4 kg",
-"pret": 102.38,
+"pret": 101.82,
 "imagine": "https://fera.ro/images/thumbnails/405/512/detailed/134/4001967140545.png",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Ffera.ro%2Fhappy-cat-sterilised-hrana-uscata-pentru-pisici-adulte-sterilizate-cu-carne-de-vita-4-kg.html",
 "magazin": "fera.ro",
 "id": "ODiLPLxw-rBF",
 "brand": "HAPPY CAT",
 "url_magazin": "https://fera.ro/happy-cat-sterilised-hrana-uscata-pentru-pisici-adulte-sterilizate-cu-carne-de-vita-4-kg.html",
-"pret_vechi": null
+"pret_vechi": null,
+"verificat": "2026-11-05"
 },
 {
 "titlu": "HAPPY CAT Minkas Hrana uscata pentru pisici, pentru controlul ghemelor de par, 4 kg",
-"pret": 102.99,
+"pret": 101.99,
 "imagine": "https://fera.ro/images/thumbnails/405/512/detailed/134/4001967074338.png",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Ffera.ro%2Fhappy-cat-minkas-hrana-uscata-pentru-pisici-pentru-controlul-ghemelor-de-par-4-kg.html",
 "magazin": "fera.ro",
 "id": "DUYZk4q2nfg8",
 "brand": "HAPPY CAT",
 "url_magazin": "https://fera.ro/happy-cat-minkas-hrana-uscata-pentru-pisici-pentru-controlul-ghemelor-de-par-4-kg.html",
-"pret_vechi": null
+"pret_vechi": null,
+"verificat": "2026-11-05"
 },
 {
 "titlu": "HAPPY CAT Hrana uscata pentru pisici adulte Perfect Mix, peste & pui & miel, 4 kg",
-"pret": 102.99,
+"pret": 101.99,
 "imagine": "https://fera.ro/images/thumbnails/405/512/detailed/134/4001967074314.png",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Ffera.ro%2Fhappy-cat-hrana-uscata-pentru-pisici-adulte-perfect-mix-peste-and-pui-and-miel-4-kg.html",
 "magazin": "fera.ro",
 "id": "mBt3-6kzw3-L",
 "brand": "HAPPY CAT",
 "url_magazin": "https://fera.ro/happy-cat-hrana-uscata-pentru-pisici-adulte-perfect-mix-peste-and-pui-and-miel-4-kg.html",
-"pret_vechi": null
+"pret_vechi": null,
+"verificat": "2026-11-05"
 },
 {
 "titlu": "HAPPY CAT Sensitive Light hrana uscata pentru pisici adulte cu sistem digestiv sensibil 4 kg",
@@ -19420,7 +19378,8 @@
 "id": "PcrPQCEudEod",
 "brand": "HAPPY CAT",
 "url_magazin": "https://fera.ro/happy-cat-sensitive-light-hrana-uscata-pentru-pisici-adulte-cu-sistem-digestiv-sensibil-4-kg.html",
-"pret_vechi": null
+"pret_vechi": null,
+"verificat": "2026-11-05"
 },
 {
 "titlu": "HAPPY CAT Culinary hrana uscata pisici adulte, vita bavareza 4 kg",
@@ -19431,7 +19390,8 @@
 "id": "o8Hmo8LxqUFU",
 "brand": "HAPPY CAT",
 "url_magazin": "https://fera.ro/happy-cat-culinary-hrana-uscata-pisici-adulte-vita-bavareza-4-kg.html",
-"pret_vechi": null
+"pret_vechi": null,
+"verificat": "2026-11-05"
 }
 ],
 "magazine": [
@@ -19461,91 +19421,75 @@
 "produse": [
 {
 "titlu": "Inel argint 925 granat | Clasic #2",
-"pret": 70.4,
+"pret": 18.0,
 "imagine": "https://cdn.shopify.com/s/files/1/0666/5165/2389/files/R1001057-133.jpg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fdruzy.ro%2Fproducts%2Finel-argint-925-granat-clasic-2%3Fvariant%3D57555359105348",
 "magazin": "druzy.ro",
 "id": "7Wp0rjW3QXY2",
 "brand": "druzy.ro - Cristale, Home Deco",
 "url_magazin": "https://druzy.ro/products/inel-argint-925-granat-clasic-2?variant=57555359105348",
-"pret_vechi": 88.0
-},
-{
-"titlu": "Inel argint 925 piatra lunii | Clasic",
-"pret": 76.8,
-"imagine": "https://cdn.shopify.com/s/files/1/0666/5165/2389/files/R1001628-38.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fdruzy.ro%2Fproducts%2Finel-argint-925-piatra-lunii-clasic%3Fvariant%3D57556032389444",
-"magazin": "druzy.ro",
-"id": "Q-a_-Fe8kBwm",
-"brand": "druzy.ro - Cristale, Home Deco",
-"url_magazin": "https://druzy.ro/products/inel-argint-925-piatra-lunii-clasic?variant=57556032389444",
-"pret_vechi": 96.0
+"pret_vechi": null,
+"verificat": "2026-11-05"
 },
 {
 "titlu": "Inel argint peridot | Clasic",
-"pret": 88.0,
+"pret": 22.0,
 "imagine": "https://cdn.shopify.com/s/files/1/0666/5165/2389/files/R1001057-141.jpg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fdruzy.ro%2Fproducts%2Finel-argint-peridot-clasic%3Fvariant%3D57555805438276",
 "magazin": "druzy.ro",
 "id": "9fxy_ANiWE5i",
 "brand": "druzy.ro - Cristale, Home Deco",
 "url_magazin": "https://druzy.ro/products/inel-argint-peridot-clasic?variant=57555805438276",
-"pret_vechi": 110.0
+"pret_vechi": null,
+"verificat": "2026-11-05"
 },
 {
 "titlu": "Inel argint topaz fumuriu | CELESTE #2",
-"pret": 92.8,
+"pret": 23.0,
 "imagine": "https://cdn.shopify.com/s/files/1/0666/5165/2389/files/R1002522-7.jpg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fdruzy.ro%2Fproducts%2Finel-argint-topaz-fumuriu-celeste-2%3Fvariant%3D57555949191492",
 "magazin": "druzy.ro",
 "id": "5c-0fofv7guO",
 "brand": "druzy.ro - Cristale, Home Deco",
 "url_magazin": "https://druzy.ro/products/inel-argint-topaz-fumuriu-celeste-2?variant=57555949191492",
-"pret_vechi": 116.0
+"pret_vechi": null,
+"verificat": "2026-11-05"
 },
 {
 "titlu": "Inel argint 925 piatra lunii | Moon",
-"pret": 124.0,
+"pret": 31.0,
 "imagine": "https://cdn.shopify.com/s/files/1/0666/5165/2389/files/131282.jpg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fdruzy.ro%2Fproducts%2Finel-argint-925-piatra-lunii-moon%3Fvariant%3D57556129972548",
 "magazin": "druzy.ro",
 "id": "OSUPaecLnwS_",
 "brand": "druzy.ro - Cristale, Home Deco",
 "url_magazin": "https://druzy.ro/products/inel-argint-925-piatra-lunii-moon?variant=57556129972548",
-"pret_vechi": 155.0
+"pret_vechi": null,
+"verificat": "2026-11-05"
 },
 {
 "titlu": "Inel argint 925 granat | Flower #3",
-"pret": 132.0,
+"pret": 33.0,
 "imagine": "https://cdn.shopify.com/s/files/1/0666/5165/2389/files/R1001163-56.jpg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fdruzy.ro%2Fproducts%2Finel-argint-925-granat-flower-3%3Fvariant%3D57555359990084",
 "magazin": "druzy.ro",
 "id": "NzWL8CQl9vsM",
 "brand": "druzy.ro - Cristale, Home Deco",
 "url_magazin": "https://druzy.ro/products/inel-argint-925-granat-flower-3?variant=57555359990084",
-"pret_vechi": 165.0
-},
-{
-"titlu": "Inel argint 925 lapis lazuli | Blue #6",
-"pret": 139.2,
-"imagine": "https://cdn.shopify.com/s/files/1/0666/5165/2389/files/131232.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fdruzy.ro%2Fproducts%2Finel-argint-925-lapis-lazuli-blue-6%3Fvariant%3D57555745079620",
-"magazin": "druzy.ro",
-"id": "yrPDwBmUydw4",
-"brand": "druzy.ro - Cristale, Home Deco",
-"url_magazin": "https://druzy.ro/products/inel-argint-925-lapis-lazuli-blue-6?variant=57555745079620",
-"pret_vechi": 174.0
+"pret_vechi": null,
+"verificat": "2026-11-05"
 },
 {
 "titlu": "Inel argint 925 lapis lazuli | Round",
-"pret": 160.0,
+"pret": 40.0,
 "imagine": "https://cdn.shopify.com/s/files/1/0666/5165/2389/files/131209.jpg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fdruzy.ro%2Fproducts%2Finel-argint-925-lapis-lazuli-round%3Fvariant%3D57555514229060",
 "magazin": "druzy.ro",
 "id": "BnevHDo7MsJ7",
 "brand": "druzy.ro - Cristale, Home Deco",
 "url_magazin": "https://druzy.ro/products/inel-argint-925-lapis-lazuli-round?variant=57555514229060",
-"pret_vechi": 200.0
+"pret_vechi": null,
+"verificat": "2026-11-05"
 },
 {
 "titlu": "Inel Cruce - Bijuterie cu Har - Argint 925 - Marime fixa",
@@ -19556,7 +19500,8 @@
 "id": "y9AO_paMomJk",
 "brand": "Chic Bijoux",
 "url_magazin": "https://chicbijoux.ro/inel-cruce-bijuterie-cu-har-argint-925-marime-fixa.html",
-"pret_vechi": null
+"pret_vechi": null,
+"verificat": "2026-11-05"
 },
 {
 "titlu": "Inel Un Amore - 1 nume si Cristale Zirconia - Argint 925",
@@ -19567,7 +19512,8 @@
 "id": "l9ub3lae-eNI",
 "brand": "Chic Bijoux",
 "url_magazin": "https://chicbijoux.ro/inel-un-amore-1-nume-si-cristale-zirconia-argint-925.html",
-"pret_vechi": 222.0
+"pret_vechi": 222.0,
+"verificat": "2026-11-05"
 },
 {
 "titlu": "Inel IMPREUNA - Nordul interior - Busola gravata - Argint 925",
@@ -19578,7 +19524,8 @@
 "id": "I7nwUtI3xkJt",
 "brand": "Chic Bijoux",
 "url_magazin": "https://chicbijoux.ro/inel-impreuna-nordul-interior-busola-gravata-argint-925.html",
-"pret_vechi": 228.0
+"pret_vechi": 228.0,
+"verificat": "2026-11-05"
 },
 {
 "titlu": "Inel Promisiune - Cristal Zirconia inimă și nume gravat - Argint 925",
@@ -19589,7 +19536,8 @@
 "id": "WzjOd7pkkbC0",
 "brand": "Chic Bijoux",
 "url_magazin": "https://chicbijoux.ro/inel-promisiune-cristal-zirconia-inima-si-nume-gravat-argint-925.html",
-"pret_vechi": null
+"pret_vechi": null,
+"verificat": "2026-11-05"
 },
 {
 "titlu": "Inel cu Lăbuță Decupată si Os – Argint 925",
@@ -19600,7 +19548,8 @@
 "id": "axdhynphN83s",
 "brand": "Chic Bijoux",
 "url_magazin": "https://chicbijoux.ro/inel-cu-labuta-decupata-si-os-argint-925.html",
-"pret_vechi": null
+"pret_vechi": null,
+"verificat": "2026-11-05"
 },
 {
 "titlu": "Inel Tre Amori - 3 nume si Cristale Zirconia - Argint 925",
@@ -19611,7 +19560,8 @@
 "id": "7Os-U_ti_vVG",
 "brand": "Chic Bijoux",
 "url_magazin": "https://chicbijoux.ro/inel-tre-amori-3-nume-si-cristale-zirconia-argint-925.html",
-"pret_vechi": 277.0
+"pret_vechi": 277.0,
+"verificat": "2026-11-05"
 },
 {
 "titlu": "Inel Ramura naturii - Argint 925",
@@ -19622,23 +19572,1261 @@
 "id": "4UPLPM1a70A6",
 "brand": "Chic Bijoux",
 "url_magazin": "https://chicbijoux.ro/inel-ramura-naturii-argint-925.html",
-"pret_vechi": null
-},
-{
-"titlu": "Inel Destine Unite - 2 nume si Cristale Zirconia - Argint 925",
-"pret": 254.0,
-"imagine": "https://cdn13.avanticart.ro/chicbijoux.ro/pictures/products/1500/inel-destine-unite-2-nume-si-cristale-zirconia-argint-925-107520.jpeg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fchicbijoux.ro%2Finel-destine-unite-2-nume-si-cristale-zirconia-argint-925.html",
-"magazin": "chicbijoux.ro",
-"id": "vDXLSnZQLx6k",
-"brand": "Chic Bijoux",
-"url_magazin": "https://chicbijoux.ro/inel-destine-unite-2-nume-si-cristale-zirconia-argint-925.html",
-"pret_vechi": null
+"pret_vechi": null,
+"verificat": "2026-11-05"
 }
 ],
 "magazine": [
 "chicbijoux.ro",
 "druzy.ro"
+]
+},
+{
+"slug": "cercei-argint",
+"tema": "bijuterii",
+"tema_nume": "Bijuterii",
+"titlu": "Cercei din argint",
+"nota": null,
+"in_text": null,
+"actualizat": "2026-11-05",
+"feeduri": [
+{
+"id": 5672,
+"magazin": "chicbijoux.ro"
+},
+{
+"id": 7045,
+"magazin": "druzy.ro"
+}
+],
+"produse": [
+{
+"titlu": "Cercei argint lapis lazuli | Marquise 7",
+"pret": 21.0,
+"imagine": "https://cdn.shopify.com/s/files/1/0666/5165/2389/files/rn-image_picker_lib_temp_a98fbc5d-4969-4236-abc6-9143d556689c.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fdruzy.ro%2Fproducts%2Fcercei-argint-lapis-lazuli-marquise-7%3Fvariant%3D56618595713348",
+"magazin": "druzy.ro",
+"id": "A27pe-fSqV4F",
+"brand": "druzy.ro - Cristale, Home Deco",
+"url_magazin": "https://druzy.ro/products/cercei-argint-lapis-lazuli-marquise-7?variant=56618595713348",
+"pret_vechi": null,
+"verificat": "2026-11-05"
+},
+{
+"titlu": "Cercei stud peridot din argint | Oval 5 X 7 mm",
+"pret": 27.0,
+"imagine": "https://cdn.shopify.com/s/files/1/0666/5165/2389/files/rn-image_picker_lib_temp_07d36a94-b6f3-4568-aeba-e079fa72961c.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fdruzy.ro%2Fproducts%2Fcercei-stud-peridot-din-argint-oval-5-x-7-mm%3Fvariant%3D57282491810116",
+"magazin": "druzy.ro",
+"id": "c0MDoX0iXbh8",
+"brand": "druzy.ro - Cristale, Home Deco",
+"url_magazin": "https://druzy.ro/products/cercei-stud-peridot-din-argint-oval-5-x-7-mm?variant=57282491810116",
+"pret_vechi": null,
+"verificat": "2026-11-05"
+},
+{
+"titlu": "Cercei stud piatra soarelui din argint | Oval 5 X 7 mm",
+"pret": 28.0,
+"imagine": "https://cdn.shopify.com/s/files/1/0666/5165/2389/files/rn-image_picker_lib_temp_72ac0e8d-5d42-4145-86c9-045f0abbf8fa.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fdruzy.ro%2Fproducts%2Fcercei-stud-piatra-soarelui-din-argint-oval-5-x-7-mm%3Fvariant%3D57282712535364",
+"magazin": "druzy.ro",
+"id": "IvZyzrtmQG5J",
+"brand": "druzy.ro - Cristale, Home Deco",
+"url_magazin": "https://druzy.ro/products/cercei-stud-piatra-soarelui-din-argint-oval-5-x-7-mm?variant=57282712535364",
+"pret_vechi": null,
+"verificat": "2026-11-05"
+},
+{
+"titlu": "Cercei argint 925 ametist | Lily",
+"pret": 28.0,
+"imagine": "https://cdn.shopify.com/s/files/1/0666/5165/2389/files/R6100029-1.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fdruzy.ro%2Fproducts%2Fcercei-argint-925-ametist-lily%3Fvariant%3D57548630032708",
+"magazin": "druzy.ro",
+"id": "EOtTdMuFzJRB",
+"brand": "druzy.ro - Cristale, Home Deco",
+"url_magazin": "https://druzy.ro/products/cercei-argint-925-ametist-lily?variant=57548630032708",
+"pret_vechi": null,
+"verificat": "2026-11-05"
+},
+{
+"titlu": "Cercei argint 925 ametist | Lily 2",
+"pret": 28.0,
+"imagine": "https://cdn.shopify.com/s/files/1/0666/5165/2389/files/R6100410-51.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fdruzy.ro%2Fproducts%2Fcercei-argint-925-ametist-lily-2%3Fvariant%3D57548668961092",
+"magazin": "druzy.ro",
+"id": "ldszd5B6NSOc",
+"brand": "druzy.ro - Cristale, Home Deco",
+"url_magazin": "https://druzy.ro/products/cercei-argint-925-ametist-lily-2?variant=57548668961092",
+"pret_vechi": null,
+"verificat": "2026-11-05"
+},
+{
+"titlu": "Cercei argint 925 piatra lunii | Clasic 3",
+"pret": 28.0,
+"imagine": "https://cdn.shopify.com/s/files/1/0666/5165/2389/files/130753.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fdruzy.ro%2Fproducts%2Fcercei-argint-925-piatra-lunii-clasic-3%3Fvariant%3D57548779290948",
+"magazin": "druzy.ro",
+"id": "iua1zWolz8U7",
+"brand": "druzy.ro - Cristale, Home Deco",
+"url_magazin": "https://druzy.ro/products/cercei-argint-925-piatra-lunii-clasic-3?variant=57548779290948",
+"pret_vechi": null,
+"verificat": "2026-11-05"
+},
+{
+"titlu": "Cercei argint 925 piatra lunii | Clasic 2",
+"pret": 29.0,
+"imagine": "https://cdn.shopify.com/s/files/1/0666/5165/2389/files/130752.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fdruzy.ro%2Fproducts%2Fcercei-argint-925-piatra-lunii-clasic-1%3Fvariant%3D57548774768964",
+"magazin": "druzy.ro",
+"id": "dZrYmxF-UCEm",
+"brand": "druzy.ro - Cristale, Home Deco",
+"url_magazin": "https://druzy.ro/products/cercei-argint-925-piatra-lunii-clasic-1?variant=57548774768964",
+"pret_vechi": null,
+"verificat": "2026-11-05"
+},
+{
+"titlu": "Cercei argint pink oyster | AURA",
+"pret": 30.0,
+"imagine": "https://cdn.shopify.com/s/files/1/0666/5165/2389/files/130756.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fdruzy.ro%2Fproducts%2Fcercei-argint-pink-oyster-aura%3Fvariant%3D55891787252036",
+"magazin": "druzy.ro",
+"id": "Y5IvwZaGrZAO",
+"brand": "DRUZY",
+"url_magazin": "https://druzy.ro/products/cercei-argint-pink-oyster-aura?variant=55891787252036",
+"pret_vechi": null,
+"verificat": "2026-11-05"
+},
+{
+"titlu": "Cercei Perlati – Picaturi Albe de Eleganta - Argint 925",
+"pret": 109.0,
+"imagine": "https://cdn7.avanticart.ro/chicbijoux.ro/pictures/products/1500/cercei-perlati-picaturi-albe-de-eleganta-argint-925-103802.jpeg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fchicbijoux.ro%2Fcercei-perlati-picaturi-albe-de-eleganta-argint-925.html",
+"magazin": "chicbijoux.ro",
+"id": "nqVWZttNM8M7",
+"brand": "Chic Bijoux",
+"url_magazin": "https://chicbijoux.ro/cercei-perlati-picaturi-albe-de-eleganta-argint-925.html",
+"pret_vechi": null,
+"verificat": "2026-11-05"
+},
+{
+"titlu": "Cercei Perlati – Picaturi Roz de Gingasie - Argint 925",
+"pret": 109.0,
+"imagine": "https://cdn7.avanticart.ro/chicbijoux.ro/pictures/products/1500/cercei-perlati-picaturi-roz-de-gingasie-tija-argint-925-103811.jpeg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fchicbijoux.ro%2Fcercei-perlati-picaturi-roz-de-gingasie-tija-argint-925.html",
+"magazin": "chicbijoux.ro",
+"id": "oP1DfMfM-a6Y",
+"brand": "Chic Bijoux",
+"url_magazin": "https://chicbijoux.ro/cercei-perlati-picaturi-roz-de-gingasie-tija-argint-925.html",
+"pret_vechi": null,
+"verificat": "2026-11-05"
+},
+{
+"titlu": "Cercei Perlati – Picaturi Mov de Visare - Argint 925",
+"pret": 109.0,
+"imagine": "https://cdn7.avanticart.ro/chicbijoux.ro/pictures/products/1500/cercei-perlati-picaturi-mov-de-visare-tija-argint-925-103820.jpeg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fchicbijoux.ro%2Fcercei-perlati-picaturi-mov-de-visare-tija-argint-925.html",
+"magazin": "chicbijoux.ro",
+"id": "rRWt2j8bExpJ",
+"brand": "Chic Bijoux",
+"url_magazin": "https://chicbijoux.ro/cercei-perlati-picaturi-mov-de-visare-tija-argint-925.html",
+"pret_vechi": null,
+"verificat": "2026-11-05"
+},
+{
+"titlu": "Cercei Perlati – Picaturi Negre de Mister - Argint 925",
+"pret": 109.0,
+"imagine": "https://cdn7.avanticart.ro/chicbijoux.ro/pictures/products/1500/cercei-perlati-picaturi-negre-de-mister-argint-925-103829.jpeg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fchicbijoux.ro%2Fcercei-perlati-picaturi-negre-de-mister-argint-925.html",
+"magazin": "chicbijoux.ro",
+"id": "AUDhsM3YAiib",
+"brand": "Chic Bijoux",
+"url_magazin": "https://chicbijoux.ro/cercei-perlati-picaturi-negre-de-mister-argint-925.html",
+"pret_vechi": null,
+"verificat": "2026-11-05"
+},
+{
+"titlu": "Cercei inima - model cu decupaje fine - Argint 925 - inchidere surub",
+"pret": 126.0,
+"imagine": "https://cdn13.avanticart.ro/chicbijoux.ro/pictures/products/1500/cercei-inima-model-cu-decupaje-fine-argint-925-inchidere-surub-127125.jpeg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fchicbijoux.ro%2Fcercei-inima-model-cu-decupaje-fine-argint-925-inchidere-surub.html",
+"magazin": "chicbijoux.ro",
+"id": "XsJwUcluarVh",
+"brand": "Chic Bijoux",
+"url_magazin": "https://chicbijoux.ro/cercei-inima-model-cu-decupaje-fine-argint-925-inchidere-surub.html",
+"pret_vechi": 149.0,
+"verificat": "2026-11-05"
+},
+{
+"titlu": "Cercei stea - model cu decupaje delicate - Argint 925 - inchidere surub",
+"pret": 126.0,
+"imagine": "https://cdn13.avanticart.ro/chicbijoux.ro/pictures/products/1500/cercei-stea-model-cu-decupaje-delicate-argint-925-inchidere-surub-127140.jpeg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fchicbijoux.ro%2Fcercei-stea-model-cu-decupaje-delicate-argint-925-inchidere-surub.html",
+"magazin": "chicbijoux.ro",
+"id": "_kZ63GJ0YiLI",
+"brand": "Chic Bijoux",
+"url_magazin": "https://chicbijoux.ro/cercei-stea-model-cu-decupaje-delicate-argint-925-inchidere-surub.html",
+"pret_vechi": 149.0,
+"verificat": "2026-11-05"
+},
+{
+"titlu": "Cercei copacul vietii si radacini - model cu decupaje elegante - Argint 925 - inchidere surub",
+"pret": 126.0,
+"imagine": "https://cdn13.avanticart.ro/chicbijoux.ro/pictures/products/1500/cercei-copacul-vietii-si-radacini-model-cu-decupaje-elegante-argint-925-inchidere-surub-127110.jpeg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fchicbijoux.ro%2Fcercei-copacul-vietii-si-radacini-model-cu-decupaje-elegante-argint-925-inchidere-surub.html",
+"magazin": "chicbijoux.ro",
+"id": "ymd7VAO-bcaC",
+"brand": "Chic Bijoux",
+"url_magazin": "https://chicbijoux.ro/cercei-copacul-vietii-si-radacini-model-cu-decupaje-elegante-argint-925-inchidere-surub.html",
+"pret_vechi": 149.0,
+"verificat": "2026-11-05"
+},
+{
+"titlu": "Cercei fundite - model cu decupaje delicate - Argint 925 - inchidere surub",
+"pret": 126.0,
+"imagine": "https://cdn13.avanticart.ro/chicbijoux.ro/pictures/products/1500/cercei-fundite-model-cu-decupaje-delicate-argint-925-inchidere-surub-127080.jpeg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fchicbijoux.ro%2Fcercei-fundite-model-cu-decupaje-delicate-argint-925-inchidere-surub.html",
+"magazin": "chicbijoux.ro",
+"id": "JAsYxpORlgBi",
+"brand": "Chic Bijoux",
+"url_magazin": "https://chicbijoux.ro/cercei-fundite-model-cu-decupaje-delicate-argint-925-inchidere-surub.html",
+"pret_vechi": 149.0,
+"verificat": "2026-11-05"
+}
+],
+"magazine": [
+"chicbijoux.ro",
+"druzy.ro"
+]
+},
+{
+"slug": "colier-argint",
+"tema": "bijuterii",
+"tema_nume": "Bijuterii",
+"titlu": "Coliere din argint",
+"nota": null,
+"in_text": null,
+"actualizat": "2026-11-05",
+"feeduri": [
+{
+"id": 6178,
+"magazin": "bijubox.ro"
+},
+{
+"id": 5171,
+"magazin": "bazarulonline.ro"
+},
+{
+"id": 5672,
+"magazin": "chicbijoux.ro"
+},
+{
+"id": 9294,
+"magazin": "craftmystic.ro"
+}
+],
+"produse": [
+{
+"titlu": "Colier din argint 925 EN00662192 - Engross",
+"pret": 62.81,
+"imagine": "https://bazarulonline.ro/images/detailed/2912/en00662192.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fbazarulonline.ro%2Fcolier-din-argint-925-en00662192-engross",
+"magazin": "bazarulonline.ro",
+"id": "alsQB_RXiS4z",
+"brand": "",
+"url_magazin": "https://bazarulonline.ro/colier-din-argint-925-en00662192-engross",
+"pret_vechi": null
+},
+{
+"titlu": "Colier din argint 925 S24N2199 - Engross",
+"pret": 68.6,
+"imagine": "https://bazarulonline.ro/images/detailed/2912/s24n2199.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fbazarulonline.ro%2Fcolier-din-argint-925-s24n2199-engross",
+"magazin": "bazarulonline.ro",
+"id": "5U-InA8RiCor",
+"brand": "",
+"url_magazin": "https://bazarulonline.ro/colier-din-argint-925-s24n2199-engross",
+"pret_vechi": null
+},
+{
+"titlu": "Colier din argint 925 C305L51335 - Engross",
+"pret": 68.6,
+"imagine": "https://bazarulonline.ro/images/detailed/2912/c305l51335.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fbazarulonline.ro%2Fcolier-din-argint-925-c305l51335-engross",
+"magazin": "bazarulonline.ro",
+"id": "k2RUuoUwdaDR",
+"brand": "",
+"url_magazin": "https://bazarulonline.ro/colier-din-argint-925-c305l51335-engross",
+"pret_vechi": null
+},
+{
+"titlu": "Colier din argint 925 D6N19213 - Engross",
+"pret": 71.9,
+"imagine": "https://bazarulonline.ro/images/detailed/2912/d6n19213.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fbazarulonline.ro%2Fcolier-din-argint-925-d6n19213-engross",
+"magazin": "bazarulonline.ro",
+"id": "20v_pfp810nV",
+"brand": "",
+"url_magazin": "https://bazarulonline.ro/colier-din-argint-925-d6n19213-engross",
+"pret_vechi": null
+},
+{
+"titlu": "Colier din argint 925 E303N-13423 - Engross",
+"pret": 74.38,
+"imagine": "https://bazarulonline.ro/images/detailed/2912/e303n-13423.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fbazarulonline.ro%2Fcolier-din-argint-925-e303n-13423-engross",
+"magazin": "bazarulonline.ro",
+"id": "FOgR5R9uB4gx",
+"brand": "",
+"url_magazin": "https://bazarulonline.ro/colier-din-argint-925-e303n-13423-engross",
+"pret_vechi": null
+},
+{
+"titlu": "Colier din argint 925 EN0077326 - Engross",
+"pret": 74.38,
+"imagine": "https://bazarulonline.ro/images/detailed/2912/en0077326.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fbazarulonline.ro%2Fcolier-din-argint-925-en0077326-engross",
+"magazin": "bazarulonline.ro",
+"id": "lxxol_J-c8Ty",
+"brand": "",
+"url_magazin": "https://bazarulonline.ro/colier-din-argint-925-en0077326-engross",
+"pret_vechi": null
+},
+{
+"titlu": "Colier din argint 925 CN8164 - Engross",
+"pret": 74.38,
+"imagine": "https://bazarulonline.ro/images/detailed/2912/cn8164.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fbazarulonline.ro%2Fcolier-din-argint-925-cn8164-engross",
+"magazin": "bazarulonline.ro",
+"id": "X6FH0rOxGqQy",
+"brand": "",
+"url_magazin": "https://bazarulonline.ro/colier-din-argint-925-cn8164-engross",
+"pret_vechi": null
+},
+{
+"titlu": "Colier din argint 925 DZT04340 - Engross",
+"pret": 77.69,
+"imagine": "https://bazarulonline.ro/images/detailed/2912/dzt04340.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fbazarulonline.ro%2Fcolier-din-argint-925-dzt04340-engross",
+"magazin": "bazarulonline.ro",
+"id": "xOFZOCzoUzH-",
+"brand": "",
+"url_magazin": "https://bazarulonline.ro/colier-din-argint-925-dzt04340-engross",
+"pret_vechi": null
+},
+{
+"titlu": "Zafira - Colier personalizat infinit si doua nume nume din argint 925",
+"pret": 244.99,
+"imagine": "https://bijubox.ro/image/catalog/bijuterii_personalizate/Zafira/zafira-colier-personalizat-infinit-si-doua-nume-nume-din-argint-925.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fbijubox.ro%2Fzafira-colier-personalizat-infinit-si-doua-nume-nume-din-argint-925-xp601",
+"magazin": "bijubox.ro",
+"id": "8716236bc",
+"brand": "BijuBOX",
+"url_magazin": "https://bijubox.ro/zafira-colier-personalizat-infinit-si-doua-nume-nume-din-argint-925-xp601",
+"pret_vechi": null
+},
+{
+"titlu": "Music - Colier personalizat pentru iubitorii de muzica \"When words fail, music speaks\" din argint 925",
+"pret": 244.99,
+"imagine": "https://bijubox.ro/image/catalog/bijuterii_personalizate/Music/Colier/music-colier-personalizat-banut-when-words-fail-music-speaks-din-argint-925.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fbijubox.ro%2Fmusic-colier-personalizat-pentru-iubitorii-de-muzica-when-words-fail-music-speaks-din-argint-925-xp603",
+"magazin": "bijubox.ro",
+"id": "3821a3cdd",
+"brand": "BijuBOX",
+"url_magazin": "https://bijubox.ro/music-colier-personalizat-pentru-iubitorii-de-muzica-when-words-fail-music-speaks-din-argint-925-xp603",
+"pret_vechi": null
+},
+{
+"titlu": "Nala - Colier personalizat pentru mama cu banut din argint 925",
+"pret": 244.99,
+"imagine": "https://bijubox.ro/image/catalog/bijuterii_personalizate/Nala/Banut/Colier/nala-colier-personalizat-banut-pentru-mama-din-argint-925.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fbijubox.ro%2Fnala-colier-personalizat-pentru-mama-cu-banut-din-argint-925-si-inel-din-otel-inoxidabil-xp600",
+"magazin": "bijubox.ro",
+"id": "c054f5c4b",
+"brand": "BijuBOX",
+"url_magazin": "https://bijubox.ro/nala-colier-personalizat-pentru-mama-cu-banut-din-argint-925-si-inel-din-otel-inoxidabil-xp600",
+"pret_vechi": null
+},
+{
+"titlu": "Mia - Colier personalizat pentru educatoare/invatatoare/profesoara din argint 925",
+"pret": 244.99,
+"imagine": "https://bijubox.ro/image/catalog/bijuterii_personalizate/Mia/Colier/mia-colier-personalizat-banut-pentru-educatoare-invatatoare-profesoara-din-argint-925.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fbijubox.ro%2Fmia-colier-personalizat-pentru-educatoare-invatatoare-profesoara-din-argint-925-xp588",
+"magazin": "bijubox.ro",
+"id": "68bdc9e78",
+"brand": "BijuBOX",
+"url_magazin": "https://bijubox.ro/mia-colier-personalizat-pentru-educatoare-invatatoare-profesoara-din-argint-925-xp588",
+"pret_vechi": null
+},
+{
+"titlu": "Big Heart - Colier personalizat pentru profesori \"It takes a big heart to shape little minds\" din Argint 925",
+"pret": 244.99,
+"imagine": "https://bijubox.ro/image/catalog/bijuterii_personalizate/Big Heart/Colier/colier-personalizat-it-takes-a-big-heart-to-shape-little-minds-argint-925.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fbijubox.ro%2Fbig-heart-colier-personalizat-pentru-profesori-it-takes-a-big-heart-to-shape-little-minds-din-argint-925-xp573",
+"magazin": "bijubox.ro",
+"id": "1572868d4",
+"brand": "BijuBOX",
+"url_magazin": "https://bijubox.ro/big-heart-colier-personalizat-pentru-profesori-it-takes-a-big-heart-to-shape-little-minds-din-argint-925-xp573",
+"pret_vechi": null
+},
+{
+"titlu": "Growing - Colier personalizat pentru profesori din argint 925",
+"pret": 244.99,
+"imagine": "https://bijubox.ro/image/catalog/bijuterii_personalizate/Growing/Colier/colier-profesori-argint-925.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fbijubox.ro%2Fgrowing-colier-personalizat-pentru-profesori-din-argint-925-xp566",
+"magazin": "bijubox.ro",
+"id": "94f205c0b",
+"brand": "BijuBOX",
+"url_magazin": "https://bijubox.ro/growing-colier-personalizat-pentru-profesori-din-argint-925-xp566",
+"pret_vechi": null
+},
+{
+"titlu": "Colier cu Labradorit natural, lacrimă fațetată, Argint 925 - Protecție energetică",
+"pret": 249.0,
+"imagine": "https://cdn.shopify.com/s/files/1/1029/7249/0058/files/VGP94_studio_alb.webp?v=1793101868",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.craftmystic.ro%2Fproducts%2Fcolier-cu-labradorit-natural-lacrima-fatetata-argint-925-transformare%3Fvariant%3D64117021966666",
+"magazin": "craftmystic.ro",
+"id": "OoqvxV4y51Tf",
+"brand": "CraftMystic",
+"url_magazin": "https://www.craftmystic.ro/products/colier-cu-labradorit-natural-lacrima-fatetata-argint-925-transformare?variant=64117021966666",
+"pret_vechi": 319.0,
+"verificat": "2026-11-05"
+},
+{
+"titlu": "Colier cu Labradorit natural oval fațetat, Argint 925 - Protecție energetică",
+"pret": 259.0,
+"imagine": "https://cdn.shopify.com/s/files/1/1029/7249/0058/files/VGP96_studio_alb.webp?v=1793102786",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.craftmystic.ro%2Fproducts%2Fcolier-cu-labradorit-natural-oval-fatetat-argint-925-transformare%3Fvariant%3D64117127348554",
+"magazin": "craftmystic.ro",
+"id": "l_baHzd2L6G4",
+"brand": "CraftMystic",
+"url_magazin": "https://www.craftmystic.ro/products/colier-cu-labradorit-natural-oval-fatetat-argint-925-transformare?variant=64117127348554",
+"pret_vechi": 369.0,
+"verificat": "2026-11-05"
+},
+{
+"titlu": "Colier cu Labradorit Oval 40+5 cm 1,4 g, Argint 925 - Protecție energetică",
+"pret": 259.0,
+"imagine": "https://cdn.shopify.com/s/files/1/1029/7249/0058/files/VGP95_studio_alb.webp?v=1793103177",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.craftmystic.ro%2Fproducts%2Fcolier-cu-labradorit-oval-40-5-cm-1-4-g-argint-925-protectie-energetica%3Fvariant%3D64117183152458",
+"magazin": "craftmystic.ro",
+"id": "sc8ezKoTPmVp",
+"brand": "CraftMystic",
+"url_magazin": "https://www.craftmystic.ro/products/colier-cu-labradorit-oval-40-5-cm-1-4-g-argint-925-protectie-energetica?variant=64117183152458",
+"pret_vechi": 369.0
+},
+{
+"titlu": "Ivona - Colier lant plat din argint 925 personalizat cu nume",
+"pret": 269.99,
+"imagine": "https://bijubox.ro/image/catalog/bijuterii_personalizate/Ivona/colier-din-argint-nume-ondulat-bijubox-argint.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fbijubox.ro%2Fivona-colier-lant-plat-argint-925-personalizat-cu-nume-xp167",
+"magazin": "bijubox.ro",
+"id": "19ad2b923",
+"brand": "BijuBOX",
+"url_magazin": "https://bijubox.ro/ivona-colier-lant-plat-argint-925-personalizat-cu-nume-xp167",
+"pret_vechi": null
+},
+{
+"titlu": "Colier cu chihlimbar autentic, săgeată, piesă unică, Argint 925",
+"pret": 279.0,
+"imagine": "https://cdn.shopify.com/s/files/1/1029/7249/0058/files/KSP06_studio_alb.webp?v=1793206517",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.craftmystic.ro%2Fproducts%2Fcolier-cu-chihlimbar-autentic-sageata-piesa-unica-argint-925%3Fvariant%3D64134920372554",
+"magazin": "craftmystic.ro",
+"id": "GFCA5zRJn317",
+"brand": "CraftMystic",
+"url_magazin": "https://www.craftmystic.ro/products/colier-cu-chihlimbar-autentic-sageata-piesa-unica-argint-925?variant=64134920372554",
+"pret_vechi": 399.0
+},
+{
+"titlu": "Colier cu chihlimbar autentic în formă de cruce, piesă unică, Argint 925",
+"pret": 279.0,
+"imagine": "https://cdn.shopify.com/s/files/1/1029/7249/0058/files/KSP02_studio_alb.webp?v=1793208006",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.craftmystic.ro%2Fproducts%2Fcolier-cu-chihlimbar-autentic-in-forma-de-cruce-piesa-unica-argint-925%3Fvariant%3D64135312179530",
+"magazin": "craftmystic.ro",
+"id": "lrXr8sigVBOY",
+"brand": "CraftMystic",
+"url_magazin": "https://www.craftmystic.ro/products/colier-cu-chihlimbar-autentic-in-forma-de-cruce-piesa-unica-argint-925?variant=64135312179530",
+"pret_vechi": 399.0
+},
+{
+"titlu": "Colier cu Acvamarin natural dreptunghiular fațetat, Argint 925 - Îmbunătățirea comunicării",
+"pret": 279.0,
+"imagine": "https://cdn.shopify.com/s/files/1/1029/7249/0058/files/VGP40_studio_alb.webp?v=1793203294",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.craftmystic.ro%2Fproducts%2Fcolier-cu-acvamarin-natural-dreptunghiular-fatetat-argint-925-claritate-mentala%3Fvariant%3D64133991792970",
+"magazin": "craftmystic.ro",
+"id": "OLfBK6WpBCt4",
+"brand": "CraftMystic",
+"url_magazin": "https://www.craftmystic.ro/products/colier-cu-acvamarin-natural-dreptunghiular-fatetat-argint-925-claritate-mentala?variant=64133991792970",
+"pret_vechi": 329.0
+},
+{
+"titlu": "Colier cu Labradorit natural delica fațetat, Argint 925 - Protecție energetică",
+"pret": 279.0,
+"imagine": "https://cdn.shopify.com/s/files/1/1029/7249/0058/files/VGP97_studio_alb.webp?v=1793100197",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.craftmystic.ro%2Fproducts%2Fcolier-cu-labradorit-natural-delica-fatetat-argint-925-transformare%3Fvariant%3D64116695892298",
+"magazin": "craftmystic.ro",
+"id": "VkX3D_l2dfmH",
+"brand": "CraftMystic",
+"url_magazin": "https://www.craftmystic.ro/products/colier-cu-labradorit-natural-delica-fatetat-argint-925-transformare?variant=64116695892298",
+"pret_vechi": 369.0
+},
+{
+"titlu": "Colier cu Labradorit natural rotund fațetat, Argint 925 - Protecție energetică",
+"pret": 279.0,
+"imagine": "https://cdn.shopify.com/s/files/1/1029/7249/0058/files/VGP99_studio_alb.webp?v=1793102363",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.craftmystic.ro%2Fproducts%2Fcolier-cu-labradorit-natural-rotund-fatetat-argint-925-protectie-energetica%3Fvariant%3D64117087600970",
+"magazin": "craftmystic.ro",
+"id": "CLiyRx7ppmAU",
+"brand": "CraftMystic",
+"url_magazin": "https://www.craftmystic.ro/products/colier-cu-labradorit-natural-rotund-fatetat-argint-925-protectie-energetica?variant=64117087600970",
+"pret_vechi": 369.0
+},
+{
+"titlu": "Lantisor personalizat cu Nume si pandantiv lateral Semiluna- Argint 925",
+"pret": 294.0,
+"imagine": "https://cdn20.avanticart.ro/chicbijoux.ro/pictures/products/1500/lantisor-personalizat-cu-nume-si-pandantiv-lateral-semiluna-argint-925-115075.jpeg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fchicbijoux.ro%2Flantisor-personalizat-cu-nume-si-pandantiv-lateral-semiluna-argint-925.html",
+"magazin": "chicbijoux.ro",
+"id": "Tvfr7DzkOLsg",
+"brand": "Chic Bijoux",
+"url_magazin": "https://chicbijoux.ro/lantisor-personalizat-cu-nume-si-pandantiv-lateral-semiluna-argint-925.html",
+"pret_vechi": null
+}
+],
+"magazine": [
+"bazarulonline.ro",
+"bijubox.ro",
+"chicbijoux.ro",
+"craftmystic.ro"
+]
+},
+{
+"slug": "banda-de-alergare",
+"tema": "sport",
+"tema_nume": "Sport",
+"titlu": "Benzi de alergare",
+"nota": null,
+"in_text": null,
+"actualizat": "2026-11-05",
+"feeduri": [
+{
+"id": 9311,
+"magazin": "gorillasports.ro"
+},
+{
+"id": 8469,
+"magazin": "gorillasports.ro"
+},
+{
+"id": 8964,
+"magazin": "blacktech.ro"
+}
+],
+"produse": [
+{
+"titlu": "Banda de alergare pliabila Kingsmith WalkingPad G1 Treadmill, Black, viteza maxima 12km/h",
+"pret": 2099.0,
+"imagine": "https://cdn.shopify.com/s/files/1/0954/2244/7951/files/11123.jpg?v=1759585776",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fblacktech.ro%2Fproducts%2Fbanda-de-alergare-pliabila-kingsmith-walkingpad-g1-treadmill-black-viteza-maxima-12km-h%3Fvariant%3D56071289373007",
+"magazin": "blacktech.ro",
+"id": "HYE1ejge1t25",
+"brand": "Kingsmith",
+"url_magazin": "https://blacktech.ro/products/banda-de-alergare-pliabila-kingsmith-walkingpad-g1-treadmill-black-viteza-maxima-12km-h?variant=56071289373007",
+"pret_vechi": 2499.0
+},
+{
+"titlu": "Banda de alergare electrica, pliabilă PHYSIONICS",
+"pret": 2163.9,
+"imagine": "https://cdn.shopify.com/s/files/1/0576/5031/5369/files/LFBD01_galeri_01.jpg?v=1709996721",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.gorillasports.ro%2Fproducts%2Fbanda-de-alergare-electrica-pliabila-physionics%3Fvariant%3D41143898013801",
+"magazin": "gorillasports.ro",
+"id": "84oeo2vVuH6V",
+"brand": "PHYSIONICS",
+"url_magazin": "https://www.gorillasports.ro/products/banda-de-alergare-electrica-pliabila-physionics?variant=41143898013801",
+"pret_vechi": null
+},
+{
+"titlu": "Banda de alergare pliabila YESOUL T3 Foldable Treadmill, Black, viteza maxima 14 km/h",
+"pret": 2399.0,
+"imagine": "https://cdn.shopify.com/s/files/1/0954/2244/7951/files/YESOUL-T3-_21.jpg?v=1778067125",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fblacktech.ro%2Fproducts%2Fbanda-de-alergare-pliabila-yesoul-t3-foldable-treadmill-black-viteza-maxima-14-km-h%3Fvariant%3D57596704293199",
+"magazin": "blacktech.ro",
+"id": "FAVLHTicftFG",
+"brand": "YESOUL",
+"url_magazin": "https://blacktech.ro/products/banda-de-alergare-pliabila-yesoul-t3-foldable-treadmill-black-viteza-maxima-14-km-h?variant=57596704293199",
+"pret_vechi": null
+},
+{
+"titlu": "Banda de alergare YESOUL T3Pro Treadmill, inclinare 10%, Sistem Pliere, viteza maxima 14km/h, Kinomap / Ziwft",
+"pret": 2449.0,
+"imagine": "https://cdn.shopify.com/s/files/1/0954/2244/7951/files/14265.jpg?v=1762171807",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fblacktech.ro%2Fproducts%2Fbanda-de-alergare-yesoul-t3pro-treadmill-inclinare-10-sistem-pliere-viteza-maxima-14km-h-kinomap-ziwft%3Fvariant%3D56323055878479",
+"magazin": "blacktech.ro",
+"id": "N3lcQeRTMqXn",
+"brand": "YESOUL",
+"url_magazin": "https://blacktech.ro/products/banda-de-alergare-yesoul-t3pro-treadmill-inclinare-10-sistem-pliere-viteza-maxima-14km-h-kinomap-ziwft?variant=56323055878479",
+"pret_vechi": 2599.0
+},
+{
+"titlu": "Banda de alergare pliabila KINGSMITH WalkingPad Z3 Hybrid Treadmill, Gray viteza maxima 10 km/h",
+"pret": 2899.0,
+"imagine": "https://cdn.shopify.com/s/files/1/0954/2244/7951/files/12591.jpg?v=1759586727",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fblacktech.ro%2Fproducts%2Fbanda-de-alergare-pliabila-kingsmith-walkingpad-z3-hybrid-treadmill-gray-viteza-maxima-10-km-h%3Fvariant%3D56071313916239",
+"magazin": "blacktech.ro",
+"id": "A7D-0asQvFn5",
+"brand": "Kingsmith",
+"url_magazin": "https://blacktech.ro/products/banda-de-alergare-pliabila-kingsmith-walkingpad-z3-hybrid-treadmill-gray-viteza-maxima-10-km-h?variant=56071313916239",
+"pret_vechi": null
+},
+{
+"titlu": "Banda de alergare pliabila Kingsmith WalkingPad Treadmill TRX21F, viteza maxima 12km/ora",
+"pret": 2999.0,
+"imagine": "https://cdn.shopify.com/s/files/1/0954/2244/7951/files/6300.jpg?v=1759584056",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fblacktech.ro%2Fproducts%2Fbanda-de-alergare-pliabila-kingsmith-walkingpad-treadmill-trx21f-viteza-maxima-12km-ora%3Fvariant%3D56071230292303",
+"magazin": "blacktech.ro",
+"id": "pHPccHGo6xJz",
+"brand": "Kingsmith",
+"url_magazin": "https://blacktech.ro/products/banda-de-alergare-pliabila-kingsmith-walkingpad-treadmill-trx21f-viteza-maxima-12km-ora?variant=56071230292303",
+"pret_vechi": 3399.0
+},
+{
+"titlu": "Banda de alergare TM 2400 S, cu control gestual, Christopeit",
+"pret": 3253.9,
+"imagine": "https://cdn.shopify.com/s/files/1/0576/5031/5369/files/download_27_42cd5454-6cc8-435c-bab4-ec53d10e17ef.png?v=1749535420",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.gorillasports.ro%2Fproducts%2Fbanda-de-alergare-tm-2400-s-cu-control-gestual-christopeit-1%3Fvariant%3D55608129945983",
+"magazin": "gorillasports.ro",
+"id": "_J_h06xNPafg",
+"brand": "Christopeit",
+"url_magazin": "https://www.gorillasports.ro/products/banda-de-alergare-tm-2400-s-cu-control-gestual-christopeit-1?variant=55608129945983",
+"pret_vechi": null
+},
+{
+"titlu": "Banda de alergare pliabila KINGSMITH WalkingPad Z3 Hybrid+ Treadmill, Gray viteza maxima 10 km/h",
+"pret": 3299.0,
+"imagine": "https://cdn.shopify.com/s/files/1/0954/2244/7951/files/12659.jpg?v=1759586756",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fblacktech.ro%2Fproducts%2Fbanda-de-alergare-pliabila-kingsmith-walkingpad-z3-hybrid-treadmill-gray-viteza-maxima-10-km-h-1%3Fvariant%3D56071316144463",
+"magazin": "blacktech.ro",
+"id": "79uHKXj02mRW",
+"brand": "Kingsmith",
+"url_magazin": "https://blacktech.ro/products/banda-de-alergare-pliabila-kingsmith-walkingpad-z3-hybrid-treadmill-gray-viteza-maxima-10-km-h-1?variant=56071316144463",
+"pret_vechi": null
+},
+{
+"titlu": "Banda de alergare YESOUL T3 Plus Treadmill, Black, inclinare 10%, pliere hidraulica, viteza max 14km/ora",
+"pret": 3799.0,
+"imagine": "https://cdn.shopify.com/s/files/1/0954/2244/7951/files/14255.jpg?v=1762171309",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fblacktech.ro%2Fproducts%2Fbanda-de-alergare-yesoul-t3-plus-treadmill-black-inclinare-10-pliere-hidraulica-viteza-max-14km-ora%3Fvariant%3D56322976448847",
+"magazin": "blacktech.ro",
+"id": "61KA3Ba-P7ej",
+"brand": "YESOUL",
+"url_magazin": "https://blacktech.ro/products/banda-de-alergare-yesoul-t3-plus-treadmill-black-inclinare-10-pliere-hidraulica-viteza-max-14km-ora?variant=56322976448847",
+"pret_vechi": null
+},
+{
+"titlu": "Banda de alergare MAXXUS M8 Argintie",
+"pret": 6100.9,
+"imagine": "https://cdn.shopify.com/s/files/1/0576/5031/5369/products/5dd15556-457e-421b-93ac-1385455982f6_1.jpg?v=1750417876",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.gorillasports.ro%2Fproducts%2Fbanda-de-alergare-maxxus-m8-argintie%3Fvariant%3D55607962567039",
+"magazin": "gorillasports.ro",
+"id": "Rv_ODgitdDqp",
+"brand": "MAXXUS",
+"url_magazin": "https://www.gorillasports.ro/products/banda-de-alergare-maxxus-m8-argintie?variant=55607962567039",
+"pret_vechi": null
+},
+{
+"titlu": "Banda de alergare TM 5000S, Christopeit",
+"pret": 8999.9,
+"imagine": "https://cdn.shopify.com/s/files/1/0576/5031/5369/files/TM5000S_1840_cover.png?v=1761987246",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.gorillasports.ro%2Fproducts%2Fbanda-de-alergare-tm-5000s-christopeit%3Fvariant%3D56320607453567",
+"magazin": "gorillasports.ro",
+"id": "9uBGpkgK-iPr",
+"brand": "Christopeit",
+"url_magazin": "https://www.gorillasports.ro/products/banda-de-alergare-tm-5000s-christopeit?variant=56320607453567",
+"pret_vechi": null
+},
+{
+"titlu": "Banda de alergare RunMaxx U9 PRO MAXXUS",
+"pret": 18499.89,
+"imagine": "https://cdn.shopify.com/s/files/1/0576/5031/5369/files/GSMX-600428-00019-0001_P1.jpg?v=1792759294",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.gorillasports.ro%2Fproducts%2Fbanda-de-alergare-runmaxx-u9-pro-maxxus-negru%3Fvariant%3D58918253232511",
+"magazin": "gorillasports.ro",
+"id": "9AgFfE6XEqWL",
+"brand": "MAXXUS",
+"url_magazin": "https://www.gorillasports.ro/products/banda-de-alergare-runmaxx-u9-pro-maxxus-negru?variant=58918253232511",
+"pret_vechi": 20699.9
+}
+],
+"magazine": [
+"blacktech.ro",
+"gorillasports.ro"
+]
+},
+{
+"slug": "bicicleta-fitness",
+"tema": "sport",
+"tema_nume": "Sport",
+"titlu": "Biciclete de fitness",
+"nota": null,
+"in_text": null,
+"actualizat": "2026-11-05",
+"feeduri": [
+{
+"id": 3197,
+"magazin": "kivi.ro"
+},
+{
+"id": 9367,
+"magazin": "infinity.ro"
+},
+{
+"id": 1096,
+"magazin": "evomag.ro"
+}
+],
+"produse": [
+{
+"titlu": "Bicicleta fitness Rebel Active RBA-1013, volanta 1 kg, Greutate maxima utilizator 100 kg",
+"pret": 309.99,
+"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4283%2F4283588%2FRBA-1013.jpg&type=auto&width=500&sign=LzhKEvxXoSF6otdlDS_SaAeDXBe5oJkYJAJ2eaOV1IM",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Fresigilate-produse-resigilate%2Frebel-bicicleta-fitness-rebel-active-rba-1013-volanta-1-kg-greutate-maxima-utilizator-100-kg-4283588.html",
+"magazin": "evomag.ro",
+"id": "PXx4BOSGfwmj",
+"brand": "Rebel",
+"url_magazin": "https://www.evomag.ro/resigilate-produse-resigilate/rebel-bicicleta-fitness-rebel-active-rba-1013-volanta-1-kg-greutate-maxima-utilizator-100-kg-4283588.html",
+"pret_vechi": null
+},
+{
+"titlu": "Bicicleta de fitness cu scaun",
+"pret": 619.73,
+"imagine": "https://infinityro.vteximg.com.br/arquivos/ids/261295152/8718475885139_a_en_hd_1.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Finfinity.ro%2Fbicicleta-de-fitness-cu-scaun-504342%2Fp%3Futm_source%3D2performant",
+"magazin": "infinity.ro",
+"id": "FGEhInc4jydh",
+"brand": "VidaXL",
+"url_magazin": "https://infinity.ro/bicicleta-de-fitness-cu-scaun-504342/p?utm_source=2performant",
+"pret_vechi": null
+},
+{
+"titlu": "Bicicleta spinning Rebel Active RBA-1016, volant 4 kg",
+"pret": 653.99,
+"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4191%2F4191271%2Fbicicleta-spinning-rebel-activ-6745748b9438d.PNG&type=auto&width=500&sign=L1hxVJlq5gQmvzWbPldkpmu-6RD6lGahuiaNxseheWQ",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Fsport-fitness-fitness-biciclete-fitness-magnetice-eliptice%2Frebel-bicicleta-spinning-rebel-active-rba-1016-volant-4-kg-4191271.html",
+"magazin": "evomag.ro",
+"id": "9H3yq_EAKi-y",
+"brand": "Rebel",
+"url_magazin": "https://www.evomag.ro/sport-fitness-fitness-biciclete-fitness-magnetice-eliptice/rebel-bicicleta-spinning-rebel-active-rba-1016-volant-4-kg-4191271.html",
+"pret_vechi": null
+},
+{
+"titlu": "Bicicleta fitness cu centura de rezistenta",
+"pret": 672.2,
+"imagine": "https://infinityro.vteximg.com.br/arquivos/ids/261261115/8719883721149_a_en_hd_1.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Finfinity.ro%2Fbicicleta-fitness-cu-centura-de-rezistenta-504538%2Fp%3Futm_source%3D2performant",
+"magazin": "infinity.ro",
+"id": "LMz5g88OwwpK",
+"brand": "VidaXL",
+"url_magazin": "https://infinity.ro/bicicleta-fitness-cu-centura-de-rezistenta-504538/p?utm_source=2performant",
+"pret_vechi": null
+},
+{
+"titlu": "Bicicleta fitness eliptica Rebel Active RBA-1011",
+"pret": 772.99,
+"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4146%2F4146112%2Fbicicleta-fitness-eliptica-reb-65e84f791f19a.jpg&type=auto&width=500&sign=Axy-BFnBcvhVqE4HT2c6M9gk2iFWzv-UeUgUQFDFDKA",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Fsport-fitness-fitness-biciclete-fitness-magnetice-eliptice%2Frebel-bicicleta-fitness-eliptica-rebel-active-rba-1011-4146112.html",
+"magazin": "evomag.ro",
+"id": "yC7ra8gj1q1X",
+"brand": "Rebel",
+"url_magazin": "https://www.evomag.ro/sport-fitness-fitness-biciclete-fitness-magnetice-eliptice/rebel-bicicleta-fitness-eliptica-rebel-active-rba-1011-4146112.html",
+"pret_vechi": null
+},
+{
+"titlu": "Bicicleta spinning REBEL ACTIVE RBA-1007",
+"pret": 1157.99,
+"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4146%2F4146138%2Fbicicleta-spinning-rebel-activ-65e862201010a.jpg&type=auto&width=500&sign=wHvlpAnyGAO5p-SEojAhURQG2vGSto32JaNrx2ic8AY",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Fsport-fitness-fitness-biciclete-fitness-magnetice-eliptice%2Frebel-bicicleta-spinning-rebel-active-rba-1007-4146138.html",
+"magazin": "evomag.ro",
+"id": "xH_5ZswgdcMn",
+"brand": "Rebel",
+"url_magazin": "https://www.evomag.ro/sport-fitness-fitness-biciclete-fitness-magnetice-eliptice/rebel-bicicleta-spinning-rebel-active-rba-1007-4146138.html",
+"pret_vechi": null
+},
+{
+"titlu": "Bicicleta fitness eliptica Rebel Active RBA-1012",
+"pret": 1278.99,
+"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4146%2F4146113%2Fbicicleta-fitness-eliptica-reb-65e851b9aeb9c.jpg&type=auto&width=500&sign=F69TL5CCtRmkx6fz872UmiYph4FwcLPOPCVVw5Zky_c",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Fsport-fitness-fitness-biciclete-fitness-magnetice-eliptice%2Frebel-bicicleta-fitness-eliptica-rebel-active-rba-1012-4146113.html",
+"magazin": "evomag.ro",
+"id": "bWWBcU62xDZ5",
+"brand": "Rebel",
+"url_magazin": "https://www.evomag.ro/sport-fitness-fitness-biciclete-fitness-magnetice-eliptice/rebel-bicicleta-fitness-eliptica-rebel-active-rba-1012-4146113.html",
+"pret_vechi": null
+},
+{
+"titlu": "Bicicleta fitness YESOUL Spinning Bike S3 (Negru)",
+"pret": 1499.99,
+"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4287%2F4287382%2Fbicicleta-fitness-yesoul-spinn-6361291f68d2a.jpg&type=auto&width=500&sign=TYFbHI-0HKxknb7OxPX9f4jM1EiXBWssh72p-1x9q3E",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Fresigilate-produse-resigilate%2Fyesoul-bicicleta-fitness-yesoul-spinning-bike-s3-negru-4287382.html",
+"magazin": "evomag.ro",
+"id": "YF0HQFkLpywX",
+"brand": "YESOUL",
+"url_magazin": "https://www.evomag.ro/resigilate-produse-resigilate/yesoul-bicicleta-fitness-yesoul-spinning-bike-s3-negru-4287382.html",
+"pret_vechi": null
+},
+{
+"titlu": "Bicicleta antrenament fitness",
+"pret": 1620.62,
+"imagine": "https://infinityro.vteximg.com.br/arquivos/ids/261264738/8718475509615_a_en_hd_1.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Finfinity.ro%2Fbicicleta-antrenament-fitness-504170%2Fp%3Futm_source%3D2performant",
+"magazin": "infinity.ro",
+"id": "xGUYF7SJiR0k",
+"brand": "VidaXL",
+"url_magazin": "https://infinity.ro/bicicleta-antrenament-fitness-504170/p?utm_source=2performant",
+"pret_vechi": null
+},
+{
+"titlu": "Bicicleta Fitness Spinning YESOUL S3 Pro (Alb)",
+"pret": 2299.0,
+"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F3835%2F3835804%2Fbicicleta-fitness-spinning-yes-61a0db74ac41e.jpg&type=auto&width=500&sign=wA2bj6Kyyh78j9T1nlJlULSb8aD3M-zd6LT4Cu3ZSXc",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Fsport-fitness-fitness-biciclete-fitness-magnetice-eliptice%2Fyesoul-bicicleta-fitness-spinning-yesoul-s3-pro-alb-3835804.html",
+"magazin": "evomag.ro",
+"id": "xODGbthnViY0",
+"brand": "YESOUL",
+"url_magazin": "https://www.evomag.ro/sport-fitness-fitness-biciclete-fitness-magnetice-eliptice/yesoul-bicicleta-fitness-spinning-yesoul-s3-pro-alb-3835804.html",
+"pret_vechi": null
+}
+],
+"magazine": [
+"evomag.ro",
+"infinity.ro"
+]
+},
+{
+"slug": "gantere-reglabile",
+"tema": "sport",
+"tema_nume": "Sport",
+"titlu": "Gantere reglabile",
+"nota": null,
+"in_text": null,
+"actualizat": "2026-11-05",
+"feeduri": [
+{
+"id": 3197,
+"magazin": "kivi.ro"
+},
+{
+"id": 8811,
+"magazin": "glowmania.ro"
+},
+{
+"id": 8469,
+"magazin": "gorillasports.ro"
+},
+{
+"id": 9311,
+"magazin": "gorillasports.ro"
+}
+],
+"produse": [
+{
+"titlu": "Set gantere reglabile din ciment cu grip de 10 - 45 KG Gorilla Sports",
+"pret": 149.9,
+"imagine": "https://cdn.shopify.com/s/files/1/0576/5031/5369/products/7-2.jpg?v=1749808432",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.gorillasports.ro%2Fproducts%2Fset-gantere-reglabile-din-ciment-cu-grip-de-10-45-kg%3Fvariant%3D55424104071551",
+"magazin": "gorillasports.ro",
+"id": "IRdG5199Rcgr",
+"brand": "Gorilla Sports",
+"url_magazin": "https://www.gorillasports.ro/products/set-gantere-reglabile-din-ciment-cu-grip-de-10-45-kg?variant=55424104071551",
+"pret_vechi": null
+},
+{
+"titlu": "Set gantere reglabile din ciment cu grip de 10 - 45 KG Gorilla Sports - 10 KG",
+"pret": 149.9,
+"imagine": "https://cdn.shopify.com/s/files/1/0576/5031/5369/products/7-2.jpg?v=1749808432",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.gorillasports.ro%2Fproducts%2Fset-gantere-reglabile-din-ciment-cu-grip-de-10-45-kg%3Fvariant%3D55424104071551",
+"magazin": "gorillasports.ro",
+"id": "6CqLmadCrvg7",
+"brand": "Gorilla Sports",
+"url_magazin": "https://www.gorillasports.ro/products/set-gantere-reglabile-din-ciment-cu-grip-de-10-45-kg?variant=55424104071551",
+"pret_vechi": 182.9
+},
+{
+"titlu": "Set gantere reglabile 10 - 25 KG cu discuri din ciment Gorilla Sports",
+"pret": 177.9,
+"imagine": "https://cdn.shopify.com/s/files/1/0576/5031/5369/products/1-2.jpg?v=1749808032",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.gorillasports.ro%2Fproducts%2Fset-gantere-reglabile-10-25-kg-cu-discuri-din-ciment%3Fvariant%3D55424652509567",
+"magazin": "gorillasports.ro",
+"id": "POVJlUjXs6ul",
+"brand": "Gorilla Sports",
+"url_magazin": "https://www.gorillasports.ro/products/set-gantere-reglabile-10-25-kg-cu-discuri-din-ciment?variant=55424652509567",
+"pret_vechi": null
+},
+{
+"titlu": "Set gantere reglabile 10 - 25 KG cu discuri din ciment Gorilla Sports - 10 KG",
+"pret": 177.9,
+"imagine": "https://cdn.shopify.com/s/files/1/0576/5031/5369/products/1-2.jpg?v=1749808032",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.gorillasports.ro%2Fproducts%2Fset-gantere-reglabile-10-25-kg-cu-discuri-din-ciment%3Fvariant%3D55424652509567",
+"magazin": "gorillasports.ro",
+"id": "alqFTG_BeLMK",
+"brand": "Gorilla Sports",
+"url_magazin": "https://www.gorillasports.ro/products/set-gantere-reglabile-10-25-kg-cu-discuri-din-ciment?variant=55424652509567",
+"pret_vechi": null
+},
+{
+"titlu": "Set gantere reglabile 20 kg cu discuri din ciment Gorilla Sports",
+"pret": 224.9,
+"imagine": "https://cdn.shopify.com/s/files/1/0576/5031/5369/files/100075-00006-0025___P1_bf86ba9e-5ce9-458e-a348-be5e9e23f63c.jpg?v=1744358742",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.gorillasports.ro%2Fproducts%2Fset-gantere-reglabile-20-kg-cu-discuri-din-ciment%3Fvariant%3D41143721164905",
+"magazin": "gorillasports.ro",
+"id": "8_fbyff8UBTW",
+"brand": "Gorilla Sports",
+"url_magazin": "https://www.gorillasports.ro/products/set-gantere-reglabile-20-kg-cu-discuri-din-ciment?variant=41143721164905",
+"pret_vechi": null
+},
+{
+"titlu": "Set gantere reglabile, 15 - 45 KG, Gorilla Sports",
+"pret": 228.9,
+"imagine": "https://cdn.shopify.com/s/files/1/0576/5031/5369/products/2-1_1.jpg?v=1749808134",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.gorillasports.ro%2Fproducts%2Fset-gantere-de-15-45-kg%3Fvariant%3D55424639926655",
+"magazin": "gorillasports.ro",
+"id": "j9Hw-BprP_ce",
+"brand": "Gorilla Sports",
+"url_magazin": "https://www.gorillasports.ro/products/set-gantere-de-15-45-kg?variant=55424639926655",
+"pret_vechi": null
+},
+{
+"titlu": "Set gantere reglabile, 15 - 45 KG, Gorilla Sports - 15 KG",
+"pret": 228.9,
+"imagine": "https://cdn.shopify.com/s/files/1/0576/5031/5369/products/2-1_1.jpg?v=1749808134",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.gorillasports.ro%2Fproducts%2Fset-gantere-de-15-45-kg%3Fvariant%3D55424639926655",
+"magazin": "gorillasports.ro",
+"id": "4TzCdHjdl44I",
+"brand": "Gorilla Sports",
+"url_magazin": "https://www.gorillasports.ro/products/set-gantere-de-15-45-kg?variant=55424639926655",
+"pret_vechi": null
+},
+{
+"titlu": "Set gantere reglabile, 15 - 45 KG, Gorilla Sports - 35 KG",
+"pret": 343.9,
+"imagine": "https://cdn.shopify.com/s/files/1/0576/5031/5369/files/5-3.jpg?v=1749808134",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.gorillasports.ro%2Fproducts%2Fset-gantere-de-15-45-kg%3Fvariant%3D55424639959423",
+"magazin": "gorillasports.ro",
+"id": "0ESlgx75pLfh",
+"brand": "Gorilla Sports",
+"url_magazin": "https://www.gorillasports.ro/products/set-gantere-de-15-45-kg?variant=55424639959423",
+"pret_vechi": 396.9
+}
+],
+"magazine": [
+"gorillasports.ro"
+]
+},
+{
+"slug": "carti-de-colorat",
+"tema": "carti",
+"tema_nume": "Cărți",
+"titlu": "Cărți de colorat",
+"nota": null,
+"in_text": null,
+"actualizat": "2026-11-05",
+"feeduri": [],
+"produse": [],
+"magazine": []
+},
+{
+"slug": "dictionar-englez-roman",
+"tema": "carti",
+"tema_nume": "Cărți",
+"titlu": "Dicționare englez-român",
+"nota": null,
+"in_text": null,
+"actualizat": "2026-11-05",
+"feeduri": [
+{
+"id": 1576,
+"magazin": "libhumanitas.ro"
+},
+{
+"id": 9253,
+"magazin": "printrecarti.ro"
+},
+{
+"id": 225,
+"magazin": "libris.ro"
+},
+{
+"id": 5470,
+"magazin": "libris.ro"
+}
+],
+"produse": [
+{
+"titlu": "Dictionar de expresii uzuale. Limba engleza - Cosmina Draghici",
+"pret": 15.0,
+"imagine": "https://www.libris.ro/img/pozeprod/1072/1071780-1-small-1.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.libris.ro%2Fcarte%2Fdictionar-de-expresii-uzuale-limba-engleza-cosmina-draghici%2F1071780%3Futm_source%3D2parale%26utm_medium%3Dfeed",
+"magazin": "libris.ro",
+"id": "bfb6fc886",
+"brand": "Cosmina Draghici",
+"url_magazin": "https://www.libris.ro/carte/dictionar-de-expresii-uzuale-limba-engleza-cosmina-draghici/1071780?utm_source=2parale&utm_medium=feed",
+"pret_vechi": null
+},
+{
+"titlu": "Georgeta Nichifor - Dictionar englez-roman, roman-englez",
+"pret": 17.5,
+"imagine": "https://imagini.printrecarti.ro/images/products/originals/472/georgeta-nichifor-dictionar-englez-roman-roman-englez_471898.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.printrecarti.ro%2F471898-georgeta-nichifor-dictionar-englez-roman-roman-englez.html",
+"magazin": "printrecarti.ro",
+"id": "p-_f5RtcKxXB",
+"brand": "Niculescu",
+"url_magazin": "https://www.printrecarti.ro/471898-georgeta-nichifor-dictionar-englez-roman-roman-englez.html",
+"pret_vechi": 25.0
+},
+{
+"titlu": "Dictionar tehnic Roman-Englez",
+"pret": 18.2,
+"imagine": "https://imagini.printrecarti.ro/images/products/originals/4/dictionar-tehnic-roman-englez_3843.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.printrecarti.ro%2F3843-dictionar-tehnic-roman-englez.html",
+"magazin": "printrecarti.ro",
+"id": "5OpxiNlvBU-p",
+"brand": "Tehnica",
+"url_magazin": "https://www.printrecarti.ro/3843-dictionar-tehnic-roman-englez.html",
+"pret_vechi": 28.0
+},
+{
+"titlu": "Dictionar roman-englez, englez-roman - Emilia Neculai",
+"pret": 19.03,
+"imagine": "https://www.libris.ro/img/pozeprod/324/323917-1-small-1.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.libris.ro%2Fcarte%2Fdictionar-roman-englez-englez-roman-emilia-neculai%2F323917%3Futm_source%3D2parale%26utm_medium%3Dfeed",
+"magazin": "libris.ro",
+"id": "d43fffa42",
+"brand": "Emilia Neculai",
+"url_magazin": "https://www.libris.ro/carte/dictionar-roman-englez-englez-roman-emilia-neculai/323917?utm_source=2parale&utm_medium=feed",
+"pret_vechi": 21.14
+},
+{
+"titlu": "A. Beziris - Dictionar maritim roman-englez",
+"pret": 19.5,
+"imagine": "https://imagini.printrecarti.ro/images/products/originals/18/a-beziris-dictionar-maritim-roman-englez_18031.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.printrecarti.ro%2F18031-a-beziris-dictionar-maritim-roman-englez.html",
+"magazin": "printrecarti.ro",
+"id": "UUxtcKFDyfN0",
+"brand": "Tehnica",
+"url_magazin": "https://www.printrecarti.ro/18031-a-beziris-dictionar-maritim-roman-englez.html",
+"pret_vechi": 30.0
+},
+{
+"titlu": "Oxford Business. Dictionar englez-roman",
+"pret": 19.5,
+"imagine": "https://imagini.printrecarti.ro/images/products/originals/111/oxford-business-dictionar-englez-roman_111257.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.printrecarti.ro%2F111257-oxford-business-dictionar-englez-roman.html",
+"magazin": "printrecarti.ro",
+"id": "7UIRZ3bpXh3O",
+"brand": "All",
+"url_magazin": "https://www.printrecarti.ro/111257-oxford-business-dictionar-englez-roman.html",
+"pret_vechi": 30.0
+},
+{
+"titlu": "Dictionar englez-roman - Cosmina Draghici",
+"pret": 21.0,
+"imagine": "https://www.libris.ro/img/pozeprod/378/377035-1-small-1.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.libris.ro%2Fcarte%2Fdictionar-englez-roman-cosmina-draghici%2F377035%3Futm_source%3D2parale%26utm_medium%3Dfeed",
+"magazin": "libris.ro",
+"id": "413cf460f",
+"brand": "Cosmina Draghici",
+"url_magazin": "https://www.libris.ro/carte/dictionar-englez-roman-cosmina-draghici/377035?utm_source=2parale&utm_medium=feed",
+"pret_vechi": null
+},
+{
+"titlu": "Georgeta Nichifor - Dictionar englez-roman (75.000 cuvinte si expresii)",
+"pret": 21.75,
+"imagine": "https://imagini.printrecarti.ro/images/products/originals/58/georgeta-nichifor-dictionar-englez-roman-75-000-cuvinte-si-expresii_58258.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.printrecarti.ro%2F58258-georgeta-nichifor-dictionar-englez-roman-75-000-cuvinte-si-expresii.html",
+"magazin": "printrecarti.ro",
+"id": "VyMBloop5J5o",
+"brand": "Niculescu",
+"url_magazin": "https://www.printrecarti.ro/58258-georgeta-nichifor-dictionar-englez-roman-75-000-cuvinte-si-expresii.html",
+"pret_vechi": 29.0
+},
+{
+"titlu": "Primul meu dictionar vizual englez-francez-roman Larousse",
+"pret": 22.5,
+"imagine": "https://imagini.printrecarti.ro/images/products/originals/573/primul-meu-dictionar-vizual-englez-francez-roman-larousse_573249.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.printrecarti.ro%2F573249-primul-meu-dictionar-vizual-englez-francez-roman-larousse.html",
+"magazin": "printrecarti.ro",
+"id": "tFGudq1nk8_l",
+"brand": "Niculescu",
+"url_magazin": "https://www.printrecarti.ro/573249-primul-meu-dictionar-vizual-englez-francez-roman-larousse.html",
+"pret_vechi": 30.0
+},
+{
+"titlu": "Primul meu dictionar german-englez-roman",
+"pret": 23.12,
+"imagine": "https://www.libris.ro/img/pozeprod/13296/13295641-1-small-1.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.libris.ro%2Fcarte%2Fprimul-meu-dictionar-german-englez-roman%2F13295641%3Futm_source%3D2parale%26utm_medium%3Dfeed",
+"magazin": "libris.ro",
+"id": "4hPTyl9jmdUW",
+"brand": "-",
+"url_magazin": "https://www.libris.ro/carte/primul-meu-dictionar-german-englez-roman/13295641?utm_source=2parale&utm_medium=feed",
+"pret_vechi": 28.9
+},
+{
+"titlu": "Dictionar roman-englez, englez-roman - Laura-Veronica Cotoaga",
+"pret": 24.96,
+"imagine": "https://www.libris.ro/img/pozeprod/610/609405-1-small-1.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.libris.ro%2Fcarte%2Fdictionar-roman-englez-englez-roman-laura-veronica-cotoaga%2F609405%3Futm_source%3D2parale%26utm_medium%3Dfeed",
+"magazin": "libris.ro",
+"id": "346777181",
+"brand": "Laura Veronica Cotoaga",
+"url_magazin": "https://www.libris.ro/carte/dictionar-roman-englez-englez-roman-laura-veronica-cotoaga/609405?utm_source=2parale&utm_medium=feed",
+"pret_vechi": 31.2
+},
+{
+"titlu": "Dan Brudascu - Dictionar roman-englez pentru economisti, manageri si oameni de afaceri",
+"pret": 25.0,
+"imagine": "https://imagini.printrecarti.ro/images/products/originals/417/dan-brudascu-dictionar-roman-englez-pentru-economisti-manageri-si-oameni-de-afaceri_416904.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.printrecarti.ro%2F416904-dan-brudascu-dictionar-roman-englez-pentru-economisti-manageri-si-oameni-de-afaceri.html",
+"magazin": "printrecarti.ro",
+"id": "M7KaR1-n3gAk",
+"brand": "Sedan",
+"url_magazin": "https://www.printrecarti.ro/416904-dan-brudascu-dictionar-roman-englez-pentru-economisti-manageri-si-oameni-de-afaceri.html",
+"pret_vechi": null
+},
+{
+"titlu": "Dictionar roman-englez, englez-roman - David Zamfirescu",
+"pret": 25.0,
+"imagine": "https://www.libris.ro/img/pozeprod/947/946870-1-small-1.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.libris.ro%2Fcarte%2Fdictionar-roman-englez-englez-roman-david-zamfirescu%2F946870%3Futm_source%3D2parale%26utm_medium%3Dfeed",
+"magazin": "libris.ro",
+"id": "9737e3efc",
+"brand": "David Zamfirescu",
+"url_magazin": "https://www.libris.ro/carte/dictionar-roman-englez-englez-roman-david-zamfirescu/946870?utm_source=2parale&utm_medium=feed",
+"pret_vechi": null
+},
+{
+"titlu": "Dictionar roman-englez, englez-roman - Loredana Stefan",
+"pret": 25.0,
+"imagine": "https://www.libris.ro/img/pozeprod/863/862519-1-small-1.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.libris.ro%2Fcarte%2Fdictionar-roman-englez-englez-roman-loredana-stefan%2F862519%3Futm_source%3D2parale%26utm_medium%3Dfeed",
+"magazin": "libris.ro",
+"id": "03f96c3fd",
+"brand": "Loredana Stefan",
+"url_magazin": "https://www.libris.ro/carte/dictionar-roman-englez-englez-roman-loredana-stefan/862519?utm_source=2parale&utm_medium=feed",
+"pret_vechi": null
+},
+{
+"titlu": "Dictionar de marketing englez-roman - A. Ivanovic, P.H. Collin",
+"pret": 25.6,
+"imagine": "https://www.libris.ro/img/pozeprod/570/569927-1-small-1.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.libris.ro%2Fcarte%2Fdictionar-de-marketing-englez-roman-a-ivanovic-p-h-collin%2F569927%3Futm_source%3D2parale%26utm_medium%3Dfeed",
+"magazin": "libris.ro",
+"id": "YQNlf3lq7iug",
+"brand": "-",
+"url_magazin": "https://www.libris.ro/carte/dictionar-de-marketing-englez-roman-a-ivanovic-p-h-collin/569927?utm_source=2parale&utm_medium=feed",
+"pret_vechi": 32.0
+},
+{
+"titlu": "Leon Levitchi, Andrei Bantas - Dictionar englez-roman",
+"pret": 26.65,
+"imagine": "https://imagini.printrecarti.ro/images/products/originals/441/leon-levitchi-andrei-bantas-dictionar-englez-roman_441423.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.printrecarti.ro%2F441423-leon-levitchi-andrei-bantas-dictionar-englez-roman.html",
+"magazin": "printrecarti.ro",
+"id": "uRjJ5dAaxp76",
+"brand": "Teora",
+"url_magazin": "https://www.printrecarti.ro/441423-leon-levitchi-andrei-bantas-dictionar-englez-roman.html",
+"pret_vechi": 41.0
+},
+{
+"titlu": "Dictionar ilustrat roman-englez",
+"pret": 29.0,
+"imagine": "https://www.libhumanitas.ro/media/catalog/product/d/i/dictionar-ilustrat-roman_englez.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.libhumanitas.ro%2Fdictionar-ilustrat-roman-englez-a138957.html",
+"magazin": "libhumanitas.ro",
+"id": "062c5e338",
+"brand": "Univers Enciclopedic",
+"url_magazin": "https://www.libhumanitas.ro/dictionar-ilustrat-roman-englez-a138957.html",
+"pret_vechi": null
+},
+{
+"titlu": "Engleza - dicţionar de buzunar",
+"pret": 29.9,
+"imagine": "https://www.libhumanitas.ro/media/catalog/product/b/d/bdbroen2-cover.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.libhumanitas.ro%2Fengleza-dictionar-de-buzunar-a179137.html",
+"magazin": "libhumanitas.ro",
+"id": "7a16b458c",
+"brand": "Linghea",
+"url_magazin": "https://www.libhumanitas.ro/engleza-dictionar-de-buzunar-a179137.html",
+"pret_vechi": null
+},
+{
+"titlu": "Dictionar scolar englez-roman si roman-englez",
+"pret": 29.9,
+"imagine": "https://www.libhumanitas.ro/media/catalog/product/d/i/dictionar_scolar_eng-ro_ro-eng._linghea.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.libhumanitas.ro%2Fdictionar-scolar-englez-roman-si-roman-englez-a143804.html",
+"magazin": "libhumanitas.ro",
+"id": "193d75752",
+"brand": "Linghea",
+"url_magazin": "https://www.libhumanitas.ro/dictionar-scolar-englez-roman-si-roman-englez-a143804.html",
+"pret_vechi": null
+},
+{
+"titlu": "Dictionar englez-roman/roman-englez: uzual",
+"pret": 33.71,
+"imagine": "https://www.libhumanitas.ro/media/catalog/product/d/i/dictio_ere.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.libhumanitas.ro%2Fdictionar-englez-roman-roman-englez-uzual-georgeta-nichifor-c207228.html",
+"magazin": "libhumanitas.ro",
+"id": "d3e2d9cf7",
+"brand": "Niculescu",
+"url_magazin": "https://www.libhumanitas.ro/dictionar-englez-roman-roman-englez-uzual-georgeta-nichifor-c207228.html",
+"pret_vechi": null
+},
+{
+"titlu": "Oxford. Dictionar scolar englez-roman",
+"pret": 43.25,
+"imagine": "https://www.libhumanitas.ro/media/catalog/product/i/m/image_13339.png",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.libhumanitas.ro%2Foxford-dictionar-scolar-englez-roman-c125546.html",
+"magazin": "libhumanitas.ro",
+"id": "2403dbb63",
+"brand": "All",
+"url_magazin": "https://www.libhumanitas.ro/oxford-dictionar-scolar-englez-roman-c125546.html",
+"pret_vechi": null
+},
+{
+"titlu": "Dictionar roman-englez, englez-roman",
+"pret": 49.0,
+"imagine": "https://www.libhumanitas.ro/media/catalog/product/d/i/dictionar.png",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.libhumanitas.ro%2Fdictionar-roman-englez-englez-roman-georgeta-nichifor-a260898.html",
+"magazin": "libhumanitas.ro",
+"id": "deed5081c",
+"brand": "Meteor Press",
+"url_magazin": "https://www.libhumanitas.ro/dictionar-roman-englez-englez-roman-georgeta-nichifor-a260898.html",
+"pret_vechi": null
+},
+{
+"titlu": "Primul meu dictionar englez-roman (7-11 ani)",
+"pret": 51.74,
+"imagine": "https://www.libhumanitas.ro/media/catalog/product/p/r/primul-meu-dictionar-englez-roman-rao-2018.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.libhumanitas.ro%2Fprimul-meu-dictionar-englez-roman-7-11-ani-larousse-a174386.html",
+"magazin": "libhumanitas.ro",
+"id": "c309a121e",
+"brand": "RAO",
+"url_magazin": "https://www.libhumanitas.ro/primul-meu-dictionar-englez-roman-7-11-ani-larousse-a174386.html",
+"pret_vechi": null
+},
+{
+"titlu": "Dictionar de argou englez-roman",
+"pret": 66.47,
+"imagine": "https://www.libhumanitas.ro/media/catalog/product/d/i/dictionar_argou.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.libhumanitas.ro%2Fdictionar-de-argou-englez-roman-george-volceanov-raluca-nicolae-george-paul-volceanov-a120434.html",
+"magazin": "libhumanitas.ro",
+"id": "fa555c82b",
+"brand": "Niculescu",
+"url_magazin": "https://www.libhumanitas.ro/dictionar-de-argou-englez-roman-george-volceanov-raluca-nicolae-george-paul-volceanov-a120434.html",
+"pret_vechi": null
+}
+],
+"magazine": [
+"libhumanitas.ro",
+"libris.ro",
+"printrecarti.ro"
 ]
 },
 {
