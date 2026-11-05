@@ -60,21 +60,24 @@ export function criteriu(slug: string): Criteriu | null {
 }
 
 /**
- * Cateva produse confirmate pentru o tema: pe rand din fiecare pagina, fara dubluri si cel mult doua de la acelasi
- * magazin. Le folosesc paginile /top, de unde vin clicurile.
+ * Cateva produse confirmate pentru o tema: pe rand din fiecare pagina, fara dubluri, intai cel mult doua de la acelasi
+ * magazin. Unde sunt putini parteneri (laptopuri: doi), locurile ramase se umplu fara limita, altfel pagina ramane cu 4
+ * produse desi are zeci confirmate. Le folosesc paginile /top, de unde vin clicurile.
  */
 export function produseTema(tema: string, maxim = 8): ProdusCriteriu[] {
   const liste = criteriiTema(tema).map((c) => c.produse);
   const rez: ProdusCriteriu[] = [];
   const vazute = new Set<string>();
   const pe: Record<string, number> = {};
-  for (let i = 0; i < 30 && rez.length < maxim; i++) {
-    for (const l of liste) {
-      const p = l[i];
-      if (!p || vazute.has(p.url) || (pe[p.magazin] || 0) >= 2 || rez.length >= maxim) continue;
-      vazute.add(p.url);
-      pe[p.magazin] = (pe[p.magazin] || 0) + 1;
-      rez.push(p);
+  for (const limita of [2, Infinity]) {
+    for (let i = 0; i < 30 && rez.length < maxim; i++) {
+      for (const l of liste) {
+        const p = l[i];
+        if (!p || vazute.has(p.url) || (pe[p.magazin] || 0) >= limita || rez.length >= maxim) continue;
+        vazute.add(p.url);
+        pe[p.magazin] = (pe[p.magazin] || 0) + 1;
+        rez.push(p);
+      }
     }
   }
   return rez;
@@ -105,7 +108,7 @@ export function temeCriterii(): { tema: string; nume: string; criterii: Criteriu
  * Temele fiecarei categorii. Chei: paginile /categorii/<slug>, /produse/<slug> si /black-friday/categorie/<slug>.
  * Alex, 04.11.2026: „la unele categorii prin blocuri nu sunt puse link-uri detaliate, gen masina de spalat 6 kg".
  */
-const CASA = ["masini-de-spalat", "frigidere", "friteuze", "saltele", "aer-conditionat", "aspiratoare-robot", "masini-de-spalat-vase", "cafetiere", "aspiratoare-fara-fir", "cuptoare", "roboti-de-bucatarie", "scaune-birou", "scule"];
+const CASA = ["masini-de-spalat", "frigidere", "friteuze", "saltele", "incalzire", "craciun", "aer-conditionat", "aspiratoare-robot", "masini-de-spalat-vase", "cafetiere", "aspiratoare-fara-fir", "cuptoare", "roboti-de-bucatarie", "scaune-birou", "scule"];
 const CATEGORII_TEME: Record<string, string[]> = {
   electronice: ["televizoare", "laptopuri", "telefoane", "monitoare", "tablete", "casti-wireless", "boxe-bluetooth", "smartwatch-uri", "imprimante", "componente", "power-bank", "drone", "supraveghere"],
   casa: CASA,
@@ -118,7 +121,7 @@ const CATEGORII_TEME: Record<string, string[]> = {
   "auto-moto": ["anvelope"],
   jocuri: ["casti-gaming", "scaune-gaming", "monitoare"],
   fashion: ["incaltaminte", "imbracaminte"],
-  copii: ["copii"],
+  copii: ["copii", "jucarii-copii"],
   animale: ["animale"],
   bijuterii: ["bijuterii", "smartwatch-uri"],
   carti: ["carti"],
