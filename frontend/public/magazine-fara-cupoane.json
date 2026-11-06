@@ -1,43 +1,43 @@
 [
  {
   "magazin": "aeriumshop.ro",
-  "categorie_slug": "casa-gradina",
-  "destinatie": "/categorii/casa-gradina"
+  "categorie_slug": "home-garden",
+  "destinatie": "/categorii/home-garden"
  },
  {
   "magazin": "aronia-charlottenburg.ro",
-  "categorie_slug": "sanatate",
-  "destinatie": "/categorii/sanatate"
+  "categorie_slug": "health-personal-care",
+  "destinatie": "/categorii/health-personal-care"
  },
  {
   "magazin": "bagstodoor.ro",
-  "categorie_slug": "casa-gradina",
-  "destinatie": "/categorii/casa-gradina"
+  "categorie_slug": "home-garden",
+  "destinatie": "/categorii/home-garden"
  },
  {
   "magazin": "bazaiot.ro",
-  "categorie_slug": "electronice",
-  "destinatie": "/categorii/electronice"
+  "categorie_slug": "electronics-itc",
+  "destinatie": "/categorii/electronics-itc"
  },
  {
   "magazin": "bonami.ro",
-  "categorie_slug": "casa-gradina",
-  "destinatie": "/categorii/casa-gradina"
+  "categorie_slug": "home-garden",
+  "destinatie": "/categorii/home-garden"
  },
  {
   "magazin": "cadourisiperle.ro",
-  "categorie_slug": "bijuterii",
-  "destinatie": "/categorii/bijuterii"
+  "categorie_slug": "jewelry-accessories",
+  "destinatie": "/categorii/jewelry-accessories"
  },
  {
   "magazin": "comenzi.ro",
-  "categorie_slug": "marketplace",
-  "destinatie": "/categorii/marketplace"
+  "categorie_slug": "online-mall",
+  "destinatie": "/categorii/online-mall"
  },
  {
   "magazin": "daar.ro",
-  "categorie_slug": "bijuterii",
-  "destinatie": "/categorii/bijuterii"
+  "categorie_slug": "jewelry-accessories",
+  "destinatie": "/categorii/jewelry-accessories"
  },
  {
   "magazin": "endro.ro",
@@ -51,28 +51,28 @@
  },
  {
   "magazin": "f64.ro",
-  "categorie_slug": "electronice",
-  "destinatie": "/categorii/electronice"
+  "categorie_slug": "electronics-itc",
+  "destinatie": "/categorii/electronics-itc"
  },
  {
   "magazin": "grupdzc.ro",
-  "categorie_slug": "marketplace",
-  "destinatie": "/categorii/marketplace"
+  "categorie_slug": "online-mall",
+  "destinatie": "/categorii/online-mall"
  },
  {
   "magazin": "heatcollective.ro",
-  "categorie_slug": "mancare-bauturi",
-  "destinatie": "/categorii/mancare-bauturi"
+  "categorie_slug": "food-beverages",
+  "destinatie": "/categorii/food-beverages"
  },
  {
   "magazin": "ihunt.ro",
-  "categorie_slug": "casa-gradina",
-  "destinatie": "/categorii/casa-gradina"
+  "categorie_slug": "home-garden",
+  "destinatie": "/categorii/home-garden"
  },
  {
   "magazin": "inpuff.ro",
-  "categorie_slug": "marketplace",
-  "destinatie": "/categorii/marketplace"
+  "categorie_slug": "diverse",
+  "destinatie": "/categorii/diverse"
  },
  {
   "magazin": "jojofashion.ro",
@@ -86,18 +86,18 @@
  },
  {
   "magazin": "krista.ro",
-  "categorie_slug": "copii",
-  "destinatie": "/categorii/copii"
+  "categorie_slug": "babies-kids-toys",
+  "destinatie": "/categorii/babies-kids-toys"
  },
  {
   "magazin": "librariadelfin.ro",
-  "categorie_slug": "carti-educatie",
-  "destinatie": "/categorii/carti-educatie"
+  "categorie_slug": "books",
+  "destinatie": "/categorii/books"
  },
  {
   "magazin": "mobcub.ro",
-  "categorie_slug": "casa-gradina",
-  "destinatie": "/categorii/casa-gradina"
+  "categorie_slug": "home-garden",
+  "destinatie": "/categorii/home-garden"
  },
  {
   "magazin": "myown.ro",
@@ -111,13 +111,8 @@
  },
  {
   "magazin": "petmart.ro",
-  "categorie_slug": "animale",
-  "destinatie": "/categorii/animale"
- },
- {
-  "magazin": "puradoro.ro",
-  "categorie_slug": "beauty",
-  "destinatie": "/categorii/beauty"
+  "categorie_slug": "pet-supplies",
+  "destinatie": "/categorii/pet-supplies"
  },
  {
   "magazin": "sofiline.ro",
@@ -126,13 +121,13 @@
  },
  {
   "magazin": "targetdeal.ro",
-  "categorie_slug": "marketplace",
-  "destinatie": "/categorii/marketplace"
+  "categorie_slug": "online-mall",
+  "destinatie": "/categorii/online-mall"
  },
  {
   "magazin": "teilor.ro",
-  "categorie_slug": "bijuterii",
-  "destinatie": "/categorii/bijuterii"
+  "categorie_slug": "jewelry-accessories",
+  "destinatie": "/categorii/jewelry-accessories"
  },
  {
   "magazin": "topsport.ro",
@@ -141,8 +136,8 @@
  },
  {
   "magazin": "various-brands.ro",
-  "categorie_slug": "marketplace",
-  "destinatie": "/categorii/marketplace"
+  "categorie_slug": "diverse",
+  "destinatie": "/categorii/diverse"
  },
  {
   "magazin": "viada.ro",
@@ -151,8 +146,8 @@
  },
  {
   "magazin": "vonmag.ro",
-  "categorie_slug": "electronice",
-  "destinatie": "/categorii/electronice"
+  "categorie_slug": "electronics-itc",
+  "destinatie": "/categorii/electronics-itc"
  },
  {
   "magazin": "wojas.ro",

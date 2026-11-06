@@ -1,5 +1,5 @@
 {
-"actualizat": "2026-11-05",
+"actualizat": "2026-11-06",
 "magazine": {
 "10qaroma.ro": {
 "cupoane": "yes",
@@ -304,11 +304,6 @@
 "belher.ro": {
 "cupoane": "yes",
 "google_ads": "yes",
-"cashback": "yes"
-},
-"benvenuti.com": {
-"cupoane": "yes",
-"google_ads": "no",
 "cashback": "yes"
 },
 "bestseller.ro": {
@@ -706,11 +701,6 @@
 "google_ads": "yes",
 "cashback": "yes"
 },
-"ecovent.ro": {
-"cupoane": "yes",
-"google_ads": "no",
-"cashback": "yes"
-},
 "edez.ro": {
 "cupoane": "yes",
 "google_ads": "yes",
@@ -1071,11 +1061,6 @@
 "google_ads": "yes",
 "cashback": "no"
 },
-"hemerama.com": {
-"cupoane": "yes",
-"google_ads": "yes",
-"cashback": "yes"
-},
 "herbagetica.ro": {
 "cupoane": "yes",
 "google_ads": "yes",
@@ -1399,6 +1384,11 @@
 "liki24.ro": {
 "cupoane": "yes",
 "google_ads": "maybe",
+"cashback": "yes"
+},
+"linailsboutique.ro": {
+"cupoane": "yes",
+"google_ads": "yes",
 "cashback": "yes"
 },
 "litera.ro": {
@@ -1986,11 +1976,6 @@
 "google_ads": "yes",
 "cashback": "yes"
 },
-"puradoro.ro": {
-"cupoane": "no",
-"google_ads": "yes",
-"cashback": "yes"
-},
 "qudo.ro": {
 "cupoane": "yes",
 "google_ads": "yes",
@@ -2064,11 +2049,6 @@
 "sabon.ro": {
 "cupoane": "maybe",
 "google_ads": "no",
-"cashback": "yes"
-},
-"sabora.ro": {
-"cupoane": "yes",
-"google_ads": "yes",
 "cashback": "yes"
 },
 "saray-fashion.ro": {

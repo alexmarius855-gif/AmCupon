@@ -1,26 +1,26 @@
 {
  "_nota": "Generat de scripts/calendar_black_friday.py din promotiile anuntate de magazine in 2Performant (data/promotii_2p.csv si ofertele 2P active din output.json). Doar parteneri cu link platit. Nu edita de mana.",
- "generat": "2026-11-05",
+ "generat": "2026-11-06",
  "categorii": [
   {
    "slug": "casa-gradina",
    "nume": "casă și grădină",
-   "campanii": 16
+   "campanii": 20
   },
   {
    "slug": "fashion",
    "nume": "haine și încălțăminte",
-   "campanii": 16
+   "campanii": 14
   },
   {
    "slug": "beauty",
    "nume": "cosmetice",
-   "campanii": 8
+   "campanii": 9
   },
   {
    "slug": "electronice",
    "nume": "electronice și IT",
-   "campanii": 12
+   "campanii": 10
   },
   {
    "slug": "carti-educatie",
@@ -35,25 +35,15 @@
   {
    "slug": "sanatate",
    "nume": "sănătate",
-   "campanii": 6
+   "campanii": 9
   },
   {
    "slug": "auto-moto",
    "nume": "auto-moto",
-   "campanii": 3
+   "campanii": 4
   }
  ],
  "parteneri": [
-  {
-   "magazin": "vonmag.ro",
-   "nume": "VonMag",
-   "start": "2026-10-23",
-   "final": "2026-11-30",
-   "nota": "Black Friday pe VonMag.ro",
-   "descriere": "Vom avea super-oferte la: camere de supraveghere, automatizări pentru porți, UPS-uri și materiale electrice, soluții Smart Home, videointerfoane, control acces și sisteme de alarmă.",
-   "are_cod": false,
-   "categorie": "electronice"
-  },
   {
    "magazin": "craftmystic.ro",
    "nume": "CraftMystic",
@@ -225,6 +215,16 @@
    "categorie": "beauty"
   },
   {
+   "magazin": "liki24.ro",
+   "nume": "Liki24",
+   "start": "2026-11-01",
+   "final": "2026-11-30",
+   "nota": "Liki24 Black Friday",
+   "descriere": "BLACK FRIDAY la Liki24 – Încă 3% reducere în plus! Profită de prețurile speciale de Black Friday și economisește și mai mult! Folosește codul de reducere și primești o reducere suplimentară de 3% la produsele din categoria Black Friday, peste prețurile promoționale deja afișate. Descoperă ofertele aici: ⏳ Oferta este valabilă în limita stocului disponibil. Adaugă produsele preferate în coș și aplică codul de reducere la finalizarea comenzii!",
+   "are_cod": true,
+   "categorie": "sanatate"
+  },
+  {
    "magazin": "maranc.ro",
    "nume": "Maranc",
    "start": "2026-11-01",
@@ -241,16 +241,6 @@
    "final": "2026-11-30",
    "nota": "Black Friday Sevensins 2026: -50% la toate produsele de pe site",
    "descriere": "În luna noiembrie toate produsele de pe sevensins.ro beneficiază de o reducere de 50%.",
-   "are_cod": false,
-   "categorie": "fashion"
-  },
-  {
-   "magazin": "zandra.ro",
-   "nume": "Zandra",
-   "start": "2026-11-01",
-   "final": "2026-11-15",
-   "nota": "Zandra Black Week Sale – reduceri de 10–40%!",
-   "descriere": "In perioada 1–15 noiembrie 2026, bucură-te de reduceri între 1% și 40% la toate produsele de pe site-ul Zandra! Descoperă rochii pentru orice ocazie, geci și paltoane și alege-ți ținutele preferate la prețuri speciale.",
    "are_cod": false,
    "categorie": "fashion"
   },
@@ -365,16 +355,6 @@
    "categorie": "fashion"
   },
   {
-   "magazin": "bazaiot.ro",
-   "nume": "Bazaiot",
-   "start": "2026-11-03",
-   "final": "2026-11-30",
-   "nota": "BlackFriday pentru Brandul Soldered",
-   "descriere": "Oferim 10% discount printr-un cod voucher () pentru toate echipamentele Soldered, acesta fiind un producator de produse electronice precum:. Acumulatori. Senzori. Display uri. Placi dezvoltare. Module etc",
-   "are_cod": true,
-   "categorie": "electronice"
-  },
-  {
    "magazin": "centini.ro",
    "nume": "Centini",
    "start": "2026-11-03",
@@ -475,16 +455,6 @@
    "categorie": "carti-educatie"
   },
   {
-   "magazin": "f64.ro",
-   "nume": "F64",
-   "start": "2026-11-05",
-   "final": "2026-11-09",
-   "nota": "START Black Friday la F64! Reduceri de până la -70% până pe 9 Noiembrie O",
-   "descriere": "BLACK FRIDAY A ÎNCEPUT LA F64! Până pe 9 Noiembrie, ai discounturi de până la 𝟕𝟎% pe F64.ro la cele mai râvnite echipamente foto-video, aparate foto mirrorless/DSLR, obiective, drone, camere de acțiune și accesorii tech! Nu rata șansa să-ți faci upgrade-ul la echipamentul visat! Intră acum și prinde ofertele: Campania este activă doar până pe 9 Noiembrie, în limita stocului disponibil!",
-   "are_cod": false,
-   "categorie": "electronice"
-  },
-  {
    "magazin": "farmec.ro",
    "nume": "Farmec",
    "start": "2026-11-05",
@@ -555,6 +525,16 @@
    "categorie": "casa-gradina"
   },
   {
+   "magazin": "atomico.ro",
+   "nume": "Atomico",
+   "start": "2026-11-06",
+   "final": "2026-11-09",
+   "nota": "Black Friday Atomico 2026: reduceri de pana la 60% âla scule, utilaje și echipamente",
+   "descriere": "Atomico este locul unde reducerile conteaza cu adevarat! In perioada 6-9 noiembrie, te asteapta discounturi de pana la 60%, in functie de pretul recomandat de vanzare (RRP). Indiferent ca vrei sa faci economii la achizitiile importante sau sa-ti modernizezi echipamentele din gospodarie, vei gasi aici oferte de Black Friday adaptate nevoilor tale.",
+   "are_cod": false,
+   "categorie": "casa-gradina"
+  },
+  {
    "magazin": "automobilus.ro",
    "nume": "Automobilus",
    "start": "2026-11-06",
@@ -583,6 +563,26 @@
    "descriere": "Black Friday vine la Baristelli între 6 și 8 noiembrie! Descoperă reducerile la produse selectate, fie că vrei să-ți refaci stocul de cafea, să încerci o origine nouă sau să alegi ceva pentru prepararea cafelei acasă. Intră pe baristelli.ro și profită de ofertele din campanie!",
    "are_cod": false,
    "categorie": "mancare-bauturi"
+  },
+  {
+   "magazin": "bsgmag.ro",
+   "nume": "Bsgmag",
+   "start": "2026-11-06",
+   "final": "2026-11-20",
+   "nota": "BLACK FRIDAY",
+   "descriere": "BLACK FRIDAY a început pe BSGmag.ro! Profită acum de reduceri și descoperă noua categorie Gaming, cu produse sigilate și accesorii pentru console. Campania se încheie pe 20 noiembrie, intră acum pe BSGmag.ro și vezi ofertele!",
+   "are_cod": false,
+   "categorie": "electronice"
+  },
+  {
+   "magazin": "cauciucuridirect.ro",
+   "nume": "Cauciucuridirect",
+   "start": "2026-11-06",
+   "final": "2026-11-06",
+   "nota": "Oferte exclusive de Black Friday!",
+   "descriere": "Oferte exclusive de Black Friday! Valabile doar pe 06.11.2026. 10% REDUCERE la anvelopele Continental și Goodyear pentru primii 1.000 de clienți. (Valabil pentru 2 sau mai multe anvelope comandate). Codurile de reducere: 2026CONTIRDRO10, 2026GYRDRO10. 3% REDUCERE la toate celelalte mărci de anvelope! Cod de reducere. Reducerile nu se cumulează!",
+   "are_cod": true,
+   "categorie": "auto-moto"
   },
   {
    "magazin": "conectica.ro",
@@ -700,7 +700,7 @@
    "start": "2026-11-06",
    "final": "2026-11-13",
    "nota": "Black Friday Frapperie – 10% reducere la tot site-ul",
-   "descriere": "Black Friday la Frapperie! 10% reducere la toate produsele: pudre de frappe, milkshake și ciocolată caldă din producție proprie, siropuri pentru cafea, piureuri de fructe și toppinguri., valabil între 6 și 13 noiembrie 2026, pentru comenzi de minimum 100 lei. Transport gratuit pentru comenzile de peste 200 lei. Codul nu se cumulează cu alte reduceri. Ideal atât pentru cafenele, cât și pentru acasă, mai ales cu ciocolata caldă în sezonul rece.",
+   "descriere": "Black Friday la Frapperie! 10% reducere la toate produsele: pudre de frappe, milkshake și ciocolată caldă din producție proprie, siropuri pentru cafea, piureuri de fructe și toppinguri, valabil între 6 și 13 noiembrie 2026, pentru comenzi de minimum 100 lei. Transport gratuit pentru comenzile de peste 200 lei. Codul nu se cumulează cu alte reduceri. Ideal atât pentru cafenele, cât și pentru acasă, mai ales cu ciocolata caldă în sezonul rece.",
    "are_cod": true,
    "categorie": "mancare-bauturi"
   },
@@ -730,19 +730,9 @@
    "start": "2026-11-06",
    "final": "2026-11-15",
    "nota": "Black Friday HAVIT România: 30% reducere la tot, 6-15 Noiembrie",
-   "descriere": "Reducerea de 30% se aplică direct în coș, fără cod de introdus.. Este valabilă la toate produsele de pe site, între 6 și 15 Noiembrie. Link de promovat",
+   "descriere": "Reducerea de 30% se aplică direct în coș, fără cod de introdus. Este valabilă la toate produsele de pe site, între 6 și 15 Noiembrie. Link de promovat",
    "are_cod": false,
    "categorie": "electronice"
-  },
-  {
-   "magazin": "inpuff.ro",
-   "nume": "INPUFF",
-   "start": "2026-11-06",
-   "final": "2026-11-09",
-   "nota": "Black Friday la INPUFF – reduceri de 10–80%!",
-   "descriere": "Promoțiile continuă la INPUFF, iar de Black Friday adăugăm reduceri și mai mari, de până la 80%! Descoperă rochii de ocazie, rochii de Revelion, paltoane, geci și jachete la prețuri speciale și alege-ți ținutele preferate!",
-   "are_cod": false,
-   "categorie": "marketplace"
   },
   {
    "magazin": "intimax.ro",
@@ -750,7 +740,7 @@
    "start": "2026-11-06",
    "final": "2026-11-08",
    "nota": "Black Friday - Marea Bubuială",
-   "descriere": "Numărătoarea inversă a început! Între 6 și 8 noiembrie 2026, atmosfera se încinge pe Intimax.ro, pentru că vine MAREA BUBUIALĂ! Ce te așteaptă?. Reduceri de până la 98%, la o selecție variată de produse pentru adulți.. Pachete promoționale speciale, începând de la 1 leu, pregătite pentru și mai multă distracție.",
+   "descriere": "Numărătoarea inversă a început! Între 6 și 8 noiembrie 2026, atmosfera se încinge pe Intimax.ro, pentru că vine MAREA BUBUIALĂ! Ce te așteaptă?. Reduceri de până la 98%, la o selecție variată de produse pentru adulți. Pachete promoționale speciale, începând de la 1 leu, pregătite pentru și mai multă distracție.",
    "are_cod": false,
    "categorie": "marketplace"
   },
@@ -775,12 +765,22 @@
    "categorie": "copii"
   },
   {
+   "magazin": "ledo.ro",
+   "nume": "Ledo",
+   "start": "2026-11-06",
+   "final": "2026-11-08",
+   "nota": "Black Friday - reduceri de 30%",
+   "descriere": "Aplicam reducere de 30% in perioada campaniei Black Friday la toate produsele din site.",
+   "are_cod": false,
+   "categorie": "casa-gradina"
+  },
+  {
    "magazin": "libhumanitas.ro",
    "nume": "Libhumanitas",
    "start": "2026-11-06",
    "final": "2026-11-08",
    "nota": "Cărțile bune vin cu reduceri mari! Black Friday - 6-8 noiembrie. Pana la 90% reducere la toate produsele de pe site-ul www.libhumanitas.ro",
-   "descriere": "Pe promotia Black Friday este in intervalul 6-9 noiembrie 2025. Discount-ul minim pe perioada promotiei Black Friday este de 10%, iar cel maxim este de 90%. Pe se gasesc peste 300 de edituri si furnizori, audiobook-uri CD si mp3, ebook-uri, muzica, filme, boardgames, etc.. Transportul este gratuit pe teritoriul Romaniei la comenzi mai mari de 149 lei.",
+   "descriere": "Discount-ul minim pe perioada promotiei Black Friday este de 10%, iar cel maxim este de 90%. Pe se gasesc peste 300 de edituri si furnizori, audiobook-uri CD si mp3, ebook-uri, muzica, filme, boardgames, etc. Transportul este gratuit pe teritoriul Romaniei la comenzi mai mari de 149 lei.",
    "are_cod": false,
    "categorie": "carti-educatie"
   },
@@ -792,7 +792,7 @@
    "nota": "Black Friday la Li Nails Boutique: reduceri reale de pana la 79%, intre 6–8 noiembrie!",
    "descriere": "Descopera ofertele la produse pentru manichiura: geluri LNB, oja semipermanenta, AcrylGel, baze si top coat, Color Rubber Base, produse Nail Art, stickere, tipsuri si sabloane. Completeaza-ti colectia cu aparatura profesionala, ustensile pentru unghii, consumabile, solutii de pregatire, produse pentru dezinfectare si sterilizare sau kituri pentru manichiura.",
    "are_cod": false,
-   "categorie": "online-mall"
+   "categorie": "beauty"
   },
   {
    "magazin": "longevity-boost.com",
@@ -835,14 +835,14 @@
    "categorie": "fashion"
   },
   {
-   "magazin": "myown.ro",
-   "nume": "Myown",
+   "magazin": "micul-meserias.ro",
+   "nume": "Micul Meserias",
    "start": "2026-11-06",
-   "final": "2026-11-10",
-   "nota": "Black Friday 2026",
-   "descriere": "MyOwn te asteapta cu reduceri de pana la 50% la genti si rucsacuri din piele naturala Made in Italy.",
+   "final": "2026-11-08",
+   "nota": "BLACK FRIDAY - EXTRA 2% COMISSION",
+   "descriere": "Panal la 40% reducere la articole selectate.",
    "are_cod": false,
-   "categorie": "fashion"
+   "categorie": "casa-gradina"
   },
   {
    "magazin": "nano-auto.ro",
@@ -895,14 +895,34 @@
    "categorie": "copii"
   },
   {
+   "magazin": "pfarma.ro",
+   "nume": "Pfarma",
+   "start": "2026-11-06",
+   "final": "2026-11-13",
+   "nota": "Black Friday 2026 pfarma.ro",
+   "descriere": "Tu pregătești lista. Noi pregătim reducerile! Pe 6 noiembrie, începe Black Friday la Professional Farmaline: reduceri de până la 70% la produse selecționate, în farmacii și pe pfarma.ro. Notează data și urmărește-ți inboxul — revenim cu ofertele în ziua lansării! 6–13 noiembrie. Reduceri care fac zgomot!",
+   "are_cod": false,
+   "categorie": "sanatate"
+  },
+  {
    "magazin": "printingmall.ro",
    "nume": "PrintingMall",
    "start": "2026-11-06",
    "final": "2026-11-15",
    "nota": "Voucher Black Friday 6-15 Noiembrie",
-   "descriere": "Pentru fiecare astfel de comandă primește automat un voucher pentru produsele HAVIT de pe printingmall.ro, fără pași în plus.. Voucherul pornește de la 50 lei (comenzi până la 500 lei) și ajunge la 15% din valoarea comenzii (comenzi peste 15.000 lei).. Se folosește între 16 și 30 Noiembrie, doar pentru produse HAVIT, pe un coș de minimum 1,5 ori valoarea voucherului.",
+   "descriere": "Pentru fiecare astfel de comandă primește automat un voucher pentru produsele HAVIT de pe printingmall.ro, fără pași în plus. Voucherul pornește de la 50 lei (comenzi până la 500 lei) și ajunge la 15% din valoarea comenzii (comenzi peste 15.000 lei). Se folosește între 16 și 30 Noiembrie, doar pentru produse HAVIT, pe un coș de minimum 1,5 ori valoarea voucherului.",
    "are_cod": false,
    "categorie": "electronice"
+  },
+  {
+   "magazin": "pufrelax.com",
+   "nume": "Pufrelax",
+   "start": "2026-11-06",
+   "final": "2026-11-26",
+   "nota": "Black Friday",
+   "descriere": "Reduceri de pana la 50%, in limita stocului disponibil.",
+   "are_cod": false,
+   "categorie": "casa-gradina"
   },
   {
    "magazin": "re-bloom.ro",
@@ -910,7 +930,7 @@
    "start": "2026-11-06",
    "final": "2026-11-10",
    "nota": "Green Friday Re-Bloom – Până la -70% Reducere",
-   "descriere": "Green is the new Black Friday la Re-Bloom! De ce să profiți de ofertele Re-Bloom: Economii substanțiale: Aceleași produse de calitate la o fracțiune din prețul clasic de retail. Shopping sustenabil: Fiecare comandă susține economia circulară și oferă o nouă viață produselor. Siguranță totală: Garanție legală inclusă și drept de retur în 30 zile. Ofertele sunt valabile în limita stocului disponibil. Cumpără inteligent și sustenabil!",
+   "descriere": "Green is the new Black Friday la Re-Bloom! De ce să profiți de ofertele Re-Bloom: Economii substanțiale: Aceleași produse de calitate la o fracțiune din prețul clasic de retail. Shopping sustenabil: Fiecare comandă susține economia circulară și oferă o nouă viață produselor. Siguranță totală: Garanție legală inclusă și drept de retur în 30 de zile. Ofertele sunt valabile în limita stocului disponibil. Cumpără inteligent și sustenabil!",
    "are_cod": false,
    "categorie": "cadouri-flori"
   },
@@ -940,7 +960,7 @@
    "start": "2026-11-06",
    "final": "2026-11-15",
    "nota": "Black Friday - Liftul Reducerilor",
-   "descriere": "Vii sau pleci? Urci sau cobori? Mergi pe scări? Nu, de data asta trebuie să-i anunți pe cei din comunitatea ta să apese butonul şi să aştepte liftul. Pentru că atunci când uşile se deschid... surprizăăăă! Va veni Liftul Reducerilor de la SpringFarma, singurul lift unde „reducerile urcă până la etajul -70%”, ceea ce înseamnă că prețurile coboară pentru toată lumea.",
+   "descriere": "Vii sau pleci? Urci sau cobori? Mergi pe scări? Nu, de data asta trebuie să-i anunți pe cei din comunitatea ta să apese butonul și să aștepte liftul. Pentru că atunci când ușile se deschid... surprizăăăă! Va veni Liftul Reducerilor de la SpringFarma, singurul lift unde „reducerile urcă până la etajul -70%”, ceea ce înseamnă că prețurile coboară pentru toată lumea.",
    "are_cod": false,
    "categorie": "sanatate"
   },
@@ -980,7 +1000,17 @@
    "start": "2026-11-06",
    "final": "2026-11-08",
    "nota": "Black Friday pe zelto.ro",
-   "descriere": "BLACK FRIDAY pe Zelto.ro! Reduceri de până la 50%! Între 6 și 8 noiembrie 2026, ai trei zile în care poți avea mai multă grijă de tine și de cei dragi, la prețuri mai mici! Am pregătit reduceri de până la 50% la o selecție de produse dedicate sănătății, energiei și stării de bine. Ce te așteaptă de Black Friday?. Reduceri de până la 50% la produse selectate din mai multe categorii..",
+   "descriere": "BLACK FRIDAY pe Zelto.ro! Reduceri de până la 50%! Între 6 și 8 noiembrie 2026, ai trei zile în care poți avea mai multă grijă de tine și de cei dragi, la prețuri mai mici! Am pregătit reduceri de până la 50% la o selecție de produse dedicate sănătății, energiei și stării de bine. Ce te așteaptă de Black Friday?. Reduceri de până la 50% la produse selectate din mai multe categorii.",
+   "are_cod": false,
+   "categorie": "sanatate"
+  },
+  {
+   "magazin": "zephyrlabs.ro",
+   "nume": "Zephyrlabs",
+   "start": "2026-11-06",
+   "final": "2026-11-22",
+   "nota": "Black Friday Zephyr Labs: până la 50% reducere",
+   "descriere": "Black Friday la Zephyr Labs! Între 6 și 22 noiembrie 2026, peste 50 de produse au reduceri de 30–50%, în limita stocului disponibil. Pentru bebeluși și copii: scutece BabyFit Eco și Jumbo (mărimile 1 Newborn – 7 XXL), scutece tip chilot și șervețele umede BabyFit cu aloe vera, toate cu 30% reducere. Pachetele Vitaprim Baby Care de 3 bucăți au 40% reducere, iar laptele de creștere Vitaprim 3 și Vitalact Junior sunt și ele în campanie.",
    "are_cod": false,
    "categorie": "sanatate"
   },
