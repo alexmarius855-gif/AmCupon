@@ -17,8 +17,8 @@ interface Magazin {
 
 export const metadata: Metadata = {
   title: "Jocuri Video & Console 2026 — PC, PS5, Xbox",
-  description: "Jocuri video, console si accesorii de gaming de la magazinele de electronice partenere AmCupon, plus ghid: fizic sau digital. Actualizat zilnic.",
-  keywords: ["cod reducere jocuri","reduceri jocuri video","ps5 ieftin","xbox reducere","jocuri pc reducere","console gaming romania","pcgarage cod cupon"],
+  description: "Jocuri video, console și accesorii de gaming de la magazinele de electronice partenere AmCupon, plus ghid: fizic sau digital. Actualizat zilnic.",
+  keywords: ["cod reducere jocuri","reduceri jocuri video","ps5 ieftin","xbox reducere","jocuri pc reducere","console gaming românia","pcgarage cod cupon"],
   alternates: { canonical: "https://amcupon.ro/jocuri" },
   openGraph: { title: "Jocuri Video 2026 | AmCupon.ro", url: "https://amcupon.ro/jocuri", siteName: "AmCupon.ro", locale: "ro_RO", type: "website", images: [{ url: "https://amcupon.ro/og-image.png", width: 1200, height: 630 }] },
 };
@@ -28,11 +28,11 @@ const TOP_JOCURI = ["pcgarage.ro","evomag.ro","altex.ro","gamers.ro","gaming-gea
 const CAT_JOCURI = ["electronice"];
 
 const AVANTAJE = [
-  { icon: "🎮", titlu: "Console Gaming", desc: "PS5, Xbox Series X/S, Nintendo Switch — console noi si bundle-uri speciale" },
+  { icon: "🎮", titlu: "Console Gaming", desc: "PS5, Xbox Series X/S, Nintendo Switch — console noi și bundle-uri speciale" },
   { icon: "🕹️", titlu: "Jocuri AAA", desc: "Titluri mari pe disc sau cod digital — EA Sports FC, GTA, Call of Duty" },
-  { icon: "💻", titlu: "Gaming PC", desc: "Placi video, procesoare, RAM, monitoare gaming 144Hz+" },
-  { icon: "🎧", titlu: "Accesorii Gaming", desc: "Casti, mouse, tastatura mecanica, controller, scaun gaming" },
-  { icon: "📦", titlu: "Bundle-uri Speciale", desc: "Consola, joc si controller in acelasi pachet" },
+  { icon: "💻", titlu: "Gaming PC", desc: "Plăci video, procesoare, RAM, monitoare gaming 144Hz+" },
+  { icon: "🎧", titlu: "Accesorii Gaming", desc: "Căști, mouse, tastatură mecanică, controller, scaun gaming" },
+  { icon: "📦", titlu: "Bundle-uri Speciale", desc: "Consolă, joc și controller în același pachet" },
   { icon: "🏆", titlu: "Jocuri Mobile", desc: "Carduri gift Google Play, App Store, coduri in-game" },
 ];
 
@@ -42,7 +42,7 @@ const jsonLd = {
   "@type": "CollectionPage",
   "name": "Jocuri Video 2026",
   "url": "https://amcupon.ro/jocuri",
-  "description": "Jocuri video, console si accesorii de la magazinele partenere — PS5, Xbox, Nintendo, PC"
+  "description": "Jocuri video, console și accesorii de la magazinele partenere — PS5, Xbox, Nintendo, PC"
 };
 
 export default function JocuriPage() {
@@ -72,7 +72,7 @@ export default function JocuriPage() {
         {/* Breadcrumb */}
         <nav className="bg-[var(--background)] border-b border-[var(--border)]">
           <div className="max-w-6xl mx-auto px-4 py-2.5 flex items-center gap-1 text-xs text-[var(--text-muted)]">
-            <Link href="/" className="hover:text-[var(--accent-text)]">Acasa</Link>
+            <Link href="/" className="hover:text-[var(--accent-text)]">Acasă</Link>
             <span className="mx-1">/</span>
             <span className="text-[var(--text-soft)] font-medium">Jocuri Video & Gaming</span>
           </div>
@@ -84,7 +84,7 @@ export default function JocuriPage() {
             <div className="text-5xl mb-4">🎮</div>
             <h1 className="text-3xl md:text-4xl font-black mb-3">Jocuri Video {an}</h1>
             <p className="text-[#2a2f10] text-lg mb-6 max-w-xl mx-auto">
-              Console, jocuri si accesorii de gaming {laParteneri(NISA_CATEGORII.jocuri)}, actualizate zilnic.
+              Console, jocuri și accesorii de gaming {laParteneri(NISA_CATEGORII.jocuri)}, actualizate zilnic.
             </p>
             <div className="flex flex-wrap justify-center gap-2">
               {["PS5","Xbox Series","Nintendo Switch","PC Gaming","Jocuri AAA","Accesorii","VR"].map(c => (
@@ -101,7 +101,7 @@ export default function JocuriPage() {
               <span className="font-black text-[var(--accent-text)]">{magazine.length}</span> magazine gaming
             </span>
             <span className="text-[var(--accent-text)] font-semibold">
-              <span className="font-black text-[var(--accent-text)]">{cuPromo.length}</span> cu promotii active
+              <span className="font-black text-[var(--accent-text)]">{cuPromo.length}</span> cu promoții active
             </span>
             <span className="text-[var(--accent-text)] font-semibold">&#10003; Actualizat zilnic</span>
           </div>
@@ -109,7 +109,7 @@ export default function JocuriPage() {
 
         {/* Avantaje */}
         <section className="max-w-6xl mx-auto px-4 py-10">
-          <h2 className="text-xl font-black text-[var(--foreground)] mb-6 text-center">Ce gasesti la magazinele de gaming online</h2>
+          <h2 className="text-xl font-black text-[var(--foreground)] mb-6 text-center">Ce găsești la magazinele de gaming online</h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {AVANTAJE.map(a => (
               <div key={a.titlu} className="bg-[var(--surface)] border border-[var(--border)] rounded-xl p-5">
@@ -123,7 +123,7 @@ export default function JocuriPage() {
 
         {/* Magazine */}
         <section className="max-w-6xl mx-auto px-4 pb-10">
-          <h2 className="text-xl font-black text-[var(--foreground)] mb-5">Magazine cu jocuri si electronice</h2>
+          <h2 className="text-xl font-black text-[var(--foreground)] mb-5">Magazine cu jocuri și electronice</h2>
           {magazine.length > 0 ? (
             <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
               {magazine.map((m) => (
@@ -134,7 +134,7 @@ export default function JocuriPage() {
             <div className="bg-[var(--surface)] border border-[var(--border)] rounded-xl p-10 text-center">
               <p className="text-4xl mb-3">🎮</p>
               <p className="font-bold text-[var(--text-soft)] mb-2">Magazine actualizate zilnic</p>
-              <p className="text-[var(--text-muted)] text-sm mb-4">Revino curand pentru promotii la jocuri si gaming.</p>
+              <p className="text-[var(--text-muted)] text-sm mb-4">Revino curând pentru promoții la jocuri și gaming.</p>
               <Link href="/toate-magazinele" className="text-[var(--accent-text)] font-bold hover:text-[var(--accent-text)] text-sm">Toate magazinele &rarr;</Link>
             </div>
           )}
@@ -146,7 +146,7 @@ export default function JocuriPage() {
         <NisaProduse
           merchantSlugs={[]}
           potrivire={/^(consola (de jocuri|playstation|xbox|nintendo|portabila)|joc (video )?(pentru |pt\.? )?(ps5|ps4|playstation|xbox|nintendo switch|pc)\b|controller (wireless|ps5|ps4|xbox|pentru (ps|xbox|pc|switch))|gamepad|(mouse|tastatura|casti|headset|mousepad|scaun)\b[^,]*\bgaming\b)/}
-          titlu="Jocuri si accesorii de gaming de la parteneri"
+          titlu="Jocuri și accesorii de gaming de la parteneri"
           culoareAccent="indigo"
           limit={12}
         />
@@ -154,23 +154,23 @@ export default function JocuriPage() {
         {/* Editorial */}
         <section className="bg-[var(--surface)] border-t border-[var(--border)] py-10 px-4">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-xl font-black text-[var(--foreground)] mb-5">Ghid: Unde cumperi jocuri mai ieftin in Romania</h2>
+            <h2 className="text-xl font-black text-[var(--foreground)] mb-5">Ghid: Unde cumperi jocuri mai ieftin în România</h2>
             <div className="space-y-4 text-sm text-[var(--text-soft)] leading-relaxed">
               <div>
-                <h3 className="font-bold text-[var(--foreground)] mb-1">Cum compari preturile</h3>
-                <p>Preturile la console si jocuri difera de la un magazin la altul si se schimba des. Compara aceeasi editie (standard, deluxe, pachet) in mai multe magazine; pe AmCupon gasesti ofertele partenerilor, actualizate zilnic.</p>
+                <h3 className="font-bold text-[var(--foreground)] mb-1">Cum compari prețurile</h3>
+                <p>Prețurile la console și jocuri diferă de la un magazin la altul și se schimbă des. Compară aceeași ediție (standard, deluxe, pachet) în mai multe magazine; pe AmCupon găsești ofertele partenerilor, actualizate zilnic.</p>
               </div>
               <div>
                 <h3 className="font-bold text-[var(--foreground)] mb-1">Jocuri fizice vs digitale — ce e mai ieftin</h3>
                 <ul className="list-disc list-inside space-y-1 ml-2">
-                  <li><strong>Jocuri noi (launch)</strong> — pretul e identic fizic/digital; fizic poate fi revandut</li>
-                  <li><strong>Dupa cateva luni</strong> — jocurile apar des la reducere in magazinele digitale (PlayStation Store, Xbox Store, Steam)</li>
-                  <li><strong>Game Pass / PS Plus</strong> — daca joci mult, abonamentul poate iesi mai ieftin decat jocurile cumparate separat</li>
+                  <li><strong>Jocuri noi (launch)</strong> — prețul e identic fizic/digital; fizic poate fi revândut</li>
+                  <li><strong>După câteva luni</strong> — jocurile apar des la reducere în magazinele digitale (PlayStation Store, Xbox Store, Steam)</li>
+                  <li><strong>Game Pass / PS Plus</strong> — dacă joci mult, abonamentul poate ieși mai ieftin decât jocurile cumpărate separat</li>
                 </ul>
               </div>
               <div>
-                <h3 className="font-bold text-[var(--foreground)] mb-1">Cand apar cele mai mari reduceri la gaming</h3>
-                <p>Black Friday (noiembrie) aduce reduceri la console si jocuri. Pe PC: Steam Summer Sale (iunie-iulie) si Winter Sale (decembrie-ianuarie). PlayStation Store are oferte de weekend.</p>
+                <h3 className="font-bold text-[var(--foreground)] mb-1">Când apar cele mai mari reduceri la gaming</h3>
+                <p>Black Friday (noiembrie) aduce reduceri la console și jocuri. Pe PC: Steam Summer Sale (iunie-iulie) și Winter Sale (decembrie-ianuarie). PlayStation Store are oferte de weekend.</p>
               </div>
             </div>
           </div>
@@ -178,13 +178,13 @@ export default function JocuriPage() {
 
         {/* Internal links */}
         <section className="max-w-6xl mx-auto px-4 py-8">
-          <h2 className="text-base font-black text-[var(--text-soft)] mb-4">Exploreaza si alte categorii</h2>
+          <h2 className="text-base font-black text-[var(--text-soft)] mb-4">Explorează și alte categorii</h2>
           <div className="flex flex-wrap gap-2">
             {[
               { href: "/electronice", label: "💻 Electronice & IT" },
               { href: "/gadgets",     label: "📱 Gadgets & Telefoane" },
-              { href: "/copii",       label: "👶 Copii & Jucarii" },
-              { href: "/carti",       label: "📚 Carti & Educatie" },
+              { href: "/copii",       label: "👶 Copii & Jucării" },
+              { href: "/carti",       label: "📚 Cărți & Educație" },
               { href: "/oferte-azi",  label: "🔥 Toate Ofertele de Azi" },
               { href: "/categorii",   label: "📂 Toate Categoriile" },
             ].map(l => (

@@ -143,7 +143,7 @@ export async function generateMetadata({
   const { slug } = await params;
   const magazine = loadData();
   const mag = magazine.filter((m) => m.categorie_slug === slug);
-  if (!mag.length) return { title: "Categorie negasita | AmCupon.ro" };
+  if (!mag.length) return { title: "Categorie negăsită | AmCupon.ro" };
 
   const numeCateg = NUME_CATEGORIE[slug] || mag[0].categorie;
   const cuPromo   = mag.filter((m) => m.are_promotie).length;
@@ -163,7 +163,7 @@ export async function generateMetadata({
   // Peste 60 de caractere, luna cade prima: anul si numarul de coduri spun mai mult.
   const title = titluPlin.length <= 60 ? titluPlin : titluPlin.replace(` ${luna} ${an}`, ` ${an}`);
 
-  const description = `${cuPromo > 0 ? `✅ ${cuPromo === 1 ? "O promotie activa" : cuNumar(cuPromo, "promotie activa", "promotii active")}` : "Coduri si oferte"} la ${cuNumar(mag.length, "magazin", "magazine")} de ${numeCateg} din Romania. ${cuCod > 0 ? `${cuCod === 1 ? "Un cod de reducere activ" : cuNumar(cuCod, "cod de reducere activ", "coduri de reducere active")} in ${luna} ${an}. ` : ""}Oferte actualizate zilnic pe AmCupon.ro.`;
+  const description = `${cuPromo > 0 ? `✅ ${cuPromo === 1 ? "O promoție activă" : cuNumar(cuPromo, "promoție activă", "promoții active")}` : "Coduri și oferte"} la ${cuNumar(mag.length, "magazin", "magazine")} de ${numeCateg} din România. ${cuCod > 0 ? `${cuCod === 1 ? "Un cod de reducere activ" : cuNumar(cuCod, "cod de reducere activ", "coduri de reducere active")} in ${luna} ${an}. ` : ""}Oferte actualizate zilnic pe AmCupon.ro.`;
 
   return {
     title,
@@ -174,7 +174,7 @@ export async function generateMetadata({
       `magazine ${numeCateg.toLowerCase()} romania`,
       `voucher ${numeCateg.toLowerCase()}`,
       `promotii ${numeCateg.toLowerCase()}`,
-      "coduri reducere romania",
+      "coduri reducere românia",
       "amcupon.ro",
     ],
     alternates: { canonical: pageUrl },
@@ -232,28 +232,28 @@ export default async function PaginaCategorie({
     mainEntity: [
       {
         "@type": "Question",
-        name: `Unde gasesc coduri de reducere la magazine de ${numeCateg}?`,
+        name: `Unde găsesc coduri de reducere la magazine de ${numeCateg}?`,
         acceptedAnswer: {
           "@type": "Answer",
-          text: `Pe AmCupon.ro gasesti ${cuNumar(cuPromo, "promotie activa", "promotii active")} pentru ${cuNumar(mag.length, "magazin", "magazine")} de ${numeCateg} din Romania. Codurile se actualizeaza automat de mai multe ori pe zi — gratuit.`,
+          text: `Pe AmCupon.ro găsești ${cuNumar(cuPromo, "promoție activă", "promoții active")} pentru ${cuNumar(mag.length, "magazin", "magazine")} de ${numeCateg} din România. Codurile se actualizează automat de mai multe ori pe zi — gratuit.`,
         },
       },
       {
         "@type": "Question",
-        name: `Cate coduri de reducere ${numeCateg} sunt active in ${luna} ${an}?`,
+        name: `Câte coduri de reducere ${numeCateg} sunt active în ${luna} ${an}?`,
         acceptedAnswer: {
           "@type": "Answer",
           text: cuCod > 0
-            ? `In ${luna} ${an} sunt ${cuNumar(cuCod, "cod de reducere activ", "coduri de reducere active")} la magazine de ${numeCateg}${topCoduri.length > 0 ? `, printre care ${topCoduri.join(", ")}` : ""}. AmCupon.ro actualizeaza zilnic toate ofertele.`
-            : `AmCupon.ro urmareste ${cuNumar(cuPromo, "promotie activa", "promotii active")} la magazine de ${numeCateg}. Revino zilnic pentru coduri noi.`,
+            ? `În ${luna} ${an} sunt ${cuNumar(cuCod, "cod de reducere activ", "coduri de reducere active")} la magazine de ${numeCateg}${topCoduri.length > 0 ? `, printre care ${topCoduri.join(", ")}` : ""}. AmCupon.ro actualizează zilnic toate ofertele.`
+            : `AmCupon.ro urmărește ${cuNumar(cuPromo, "promoție activă", "promoții active")} la magazine de ${numeCateg}. Revino zilnic pentru coduri noi.`,
         },
       },
       {
         "@type": "Question",
-        name: `Cum functioneaza codurile de reducere la magazine de ${numeCateg}?`,
+        name: `Cum funcționează codurile de reducere la magazine de ${numeCateg}?`,
         acceptedAnswer: {
           "@type": "Answer",
-          text: `Copiaza codul de pe AmCupon.ro, adauga produsele in cos pe site-ul magazinului ales, apoi la checkout introdu codul in campul "Cod promotional" sau "Voucher". Reducerea se aplica automat.`,
+          text: `Copiază codul de pe AmCupon.ro, adaugă produsele în coș pe site-ul magazinului ales, apoi la checkout introdu codul în câmpul "Cod promoțional" sau "Voucher". Reducerea se aplică automat.`,
         },
       },
       {
@@ -261,7 +261,7 @@ export default async function PaginaCategorie({
         name: "Este AmCupon.ro gratuit?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Da, AmCupon.ro este 100% gratuit pentru cumparatori. Nu platesti nimic in plus. Magazinele ne platesc un mic comision din bugetul lor de marketing.",
+          text: "Da, AmCupon.ro este 100% gratuit pentru cumpărători. Nu plătești nimic în plus. Magazinele ne plătesc un mic comision din bugetul lor de marketing.",
         },
       },
     ],
@@ -271,7 +271,7 @@ export default async function PaginaCategorie({
     "@context": "https://schema.org",
     "@type": "ItemList",
     name: `Magazine ${numeCateg} cu reduceri — ${luna} ${an}`,
-    description: `${cuNumar(cuPromo, "promotie activa", "promotii active")} la magazine de ${numeCateg} pe AmCupon.ro`,
+    description: `${cuNumar(cuPromo, "promoție activă", "promoții active")} la magazine de ${numeCateg} pe AmCupon.ro`,
     url: pageUrl,
     numberOfItems: mag.filter((m) => m.are_promotie).length,
     itemListElement: mag

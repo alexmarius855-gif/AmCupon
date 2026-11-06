@@ -187,8 +187,8 @@ export default function TopReduceriClient({
   const TABS: { key: Tab; label: string; icon: string; count: number; desc: string }[] = [
     { key: "coduri",   label: "Top Coduri",      icon: "🎟", count: topCoduri.length,    desc: "Cele mai bune coduri active" },
     { key: "promo",    label: "Top Reduceri",     icon: "🏷", count: topPromo.length,     desc: "Reduceri automate active" },
-    { key: "trending", label: "In Trend",         icon: "🔥", count: trending.length,     desc: "Magazine cu crestere rapida" },
-    { key: "expira",   label: "Expira Curand",    icon: "⏰", count: expiraCurand.length, desc: "Ultima sansa" },
+    { key: "trending", label: "În Trend",         icon: "🔥", count: trending.length,     desc: "Magazine cu creștere rapidă" },
+    { key: "expira",   label: "Expiră Curând",    icon: "⏰", count: expiraCurand.length, desc: "Ultima șansă" },
   ];
 
   const activeList = {
@@ -212,7 +212,7 @@ export default function TopReduceriClient({
             Top Reduceri {luna} {an}
           </h1>
           <p className="text-[var(--text-soft)] max-w-xl mx-auto">
-            Selectia celor mai bune coduri si reduceri active, sortate dupa Deal Score. Actualizate zilnic.
+            Selecția celor mai bune coduri și reduceri active, sortate după Deal Score. Actualizate zilnic.
           </p>
 
           {/* Stats */}
@@ -268,7 +268,7 @@ export default function TopReduceriClient({
         {activeList.length === 0 ? (
           <div className="text-center py-16">
             <div className="text-4xl mb-3">🔍</div>
-            <p className="text-[var(--text-soft)]">Nu sunt oferte in aceasta categorie momentan.</p>
+            <p className="text-[var(--text-soft)]">Nu sunt oferte în această categorie momentan.</p>
             <Link href="/toate-magazinele" className="mt-4 inline-block text-[var(--accent-text)] hover:text-[var(--accent-text)] text-sm font-semibold">
               Vezi toate magazinele &rarr;
             </Link>

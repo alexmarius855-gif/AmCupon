@@ -9,13 +9,13 @@ const LINK_SITEGROUND = "https://www.siteground.com";
 const LINK_CLOUDWAYS  = "https://www.cloudways.com";
 
 export const metadata: Metadata = {
-  title: "Cel mai bun Hosting Romania 2026 — Hostinger vs SiteGround",
+  title: "Cel mai bun Hosting România 2026 — Hostinger vs SiteGround",
   description: "Comparăm Hostinger, SiteGround și Cloudways pentru site-uri românești în 2026: tipul de hosting, funcții, suport. Alege găzduirea web potrivită.",
-  keywords: ["cel mai bun hosting romania", "hostinger parere", "gazduire web ieftina", "hosting wordpress romania", "hosting ieftin 2026", "siteground parere"],
+  keywords: ["cel mai bun hosting românia", "hostinger părere", "găzduire web ieftină", "hosting wordpress românia", "hosting ieftin 2026", "siteground părere"],
   alternates: { canonical: "https://amcupon.ro/hosting" },
   openGraph: {
-    title: "Cel mai bun Hosting Romania 2026 | AmCupon.ro",
-    description: "Comparatie Hostinger vs SiteGround vs Cloudways. Ghid complet pentru alegerea hostingului perfect in Romania.",
+    title: "Cel mai bun Hosting România 2026 | AmCupon.ro",
+    description: "Comparație Hostinger vs SiteGround vs Cloudways. Ghid complet pentru alegerea hostingului perfect în România.",
     url: "https://amcupon.ro/hosting",
     siteName: "AmCupon.ro",
     locale: "ro_RO",
@@ -112,11 +112,11 @@ export default function HostingPage() {
           <nav className="flex justify-center gap-2 text-xs text-[var(--text-muted)] mb-8">
             <Link href="/" className="hover:text-[var(--text-soft)]">AmCupon.ro</Link>
             <span>/</span>
-            <span className="text-[var(--text-soft)]">Cel mai bun Hosting Romania</span>
+            <span className="text-[var(--text-soft)]">Cel mai bun Hosting România</span>
           </nav>
           <div className="text-5xl mb-4">🌐</div>
           <h1 className="text-4xl md:text-5xl font-black text-[var(--foreground)] mb-4">
-            Cel mai bun <span className="text-transparent bg-clip-text" style={{ backgroundImage: "linear-gradient(135deg, #ddf93c, #ddf93c)" }}>Hosting Romania</span> 2026
+            Cel mai bun <span className="text-transparent bg-clip-text" style={{ backgroundImage: "linear-gradient(135deg, #ddf93c, #ddf93c)" }}>Hosting România</span> 2026
           </h1>
           <p className="text-[var(--text-soft)] text-lg max-w-2xl mx-auto mb-6">
             Am comparat trei hosteri populari pentru site-uri românești, din ce publică fiecare: tipul de hosting, funcțiile și suportul. Prețurile se schimbă des — le vezi actualizate pe site-ul lor.
@@ -145,7 +145,7 @@ export default function HostingPage() {
 
       {/* Comparatie hosteri */}
       <section className="max-w-5xl mx-auto px-4 py-8 border-t border-[var(--border)]">
-        <h2 className="text-2xl font-black text-[var(--foreground)] mb-3">Top 3 Hosteri pentru Romania</h2>
+        <h2 className="text-2xl font-black text-[var(--foreground)] mb-3">Top 3 Hosteri pentru România</h2>
         <div className="bg-[var(--surface)] border border-[var(--border)] rounded-xl p-4 mb-6">
           <p className="text-[var(--text-soft)] text-sm text-center">
             <strong className="text-[var(--foreground)]">Concluzia scurtă:</strong> Începi un site? <span className="text-[var(--accent-text)] font-bold">Hostinger</span> are planuri de început și instalare WordPress cu un clic. Ai deja trafic? <span className="text-[var(--accent-text)] font-bold">SiteGround</span>, gestionat. Vrei cloud și scalare? <span className="text-[var(--accent-text)] font-bold">Cloudways</span>.

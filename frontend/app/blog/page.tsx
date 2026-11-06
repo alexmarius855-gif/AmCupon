@@ -3,7 +3,7 @@ import fs from "fs";
 import path from "path";
 import Image from "next/image";
 import Link from "next/link";
-import { MACRO_ORDINE, MACRO_EMOJI, getMacro } from "./categories";
+import { MACRO_ORDINE, MACRO_EMOJI, getMacro, eticheta } from "./categories";
 import { cuNumar } from "@/lib/acordNumeral";
 
 /* ═══════════════════════════════════════════════════════════════════════════
@@ -56,11 +56,11 @@ export async function generateMetadata(
   const catValid = cat && MACRO_ORDINE.includes(cat) ? cat : null;
 
   const title = catValid
-    ? `Ghiduri ${catValid} — Sfaturi si Comparatii Reduceri${pageNr > 1 ? ` (pag. ${pageNr})` : ""} | AmCupon.ro`
+    ? `Ghiduri ${eticheta(catValid)} — Sfaturi și Comparații Reduceri${pageNr > 1 ? ` (pag. ${pageNr})` : ""} | AmCupon.ro`
     : "Revista AmCupon: ghiduri și comparații de cumpărături";
   const description = catValid
-    ? `Ghiduri si comparatii ${catValid.toLowerCase()}: cum alegi, cand cumperi si cum economisesti cu coduri de reducere active. Sfaturi practice pe AmCupon.ro.`
-    : "Ghiduri, comparatii si sfaturi despre cum sa economisesti la cumparaturile online din Romania. Coduri de reducere, oferte si promotii explicate simplu.";
+    ? `Ghiduri și comparații ${eticheta(catValid).toLowerCase()}: cum alegi, când cumperi și cum economisești cu coduri de reducere active. Sfaturi practice pe AmCupon.ro.`
+    : "Ghiduri, comparații și sfaturi despre cum să economisești la cumpărăturile online din România. Coduri de reducere, oferte și promoții explicate simplu.";
 
   // Canonical: pagina 1 fara ?page; categoriile isi au canonicalul lor
   const canonical = catValid
@@ -70,7 +70,7 @@ export async function generateMetadata(
   return {
     title,
     description,
-    keywords: ["ghiduri cumparaturi online", "sfaturi reduceri", "comparatii preturi romania", "coduri reducere explicate", "blog economii"],
+    keywords: ["ghiduri cumpărături online", "sfaturi reduceri", "comparații prețuri românia", "coduri reducere explicate", "blog economii"],
     alternates: { canonical },
     openGraph: {
       title, description,
@@ -120,9 +120,9 @@ export default async function BlogPage(
   const breadcrumb = {
     "@context": "https://schema.org", "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Acasa", item: SITE },
+      { "@type": "ListItem", position: 1, name: "Acasă", item: SITE },
       { "@type": "ListItem", position: 2, name: "Revista", item: `${SITE}/blog` },
-      ...(esteHub ? [] : [{ "@type": "ListItem", position: 3, name: categorieActiva, item: `${SITE}/blog?cat=${encodeURIComponent(categorieActiva)}` }]),
+      ...(esteHub ? [] : [{ "@type": "ListItem", position: 3, name: eticheta(categorieActiva), item: `${SITE}/blog?cat=${encodeURIComponent(categorieActiva)}` }]),
     ],
   };
 
@@ -130,7 +130,7 @@ export default async function BlogPage(
     ? {
         "@context": "https://schema.org", "@type": "Blog",
         name: "Revista AmCupon.ro", url: `${SITE}/blog`, inLanguage: "ro-RO",
-        description: "Ghiduri, comparatii si sfaturi despre cum sa economisesti la cumparaturile online din Romania.",
+        description: "Ghiduri, comparații și sfaturi despre cum să economisești la cumpărăturile online din România.",
         publisher: { "@type": "Organization", name: "AmCupon.ro", url: SITE, logo: { "@type": "ImageObject", url: `${SITE}/icon-512.png` } },
         blogPost: toatePosts.slice(0, 10).map(p => ({
           "@type": "BlogPosting", headline: p.title, url: `${SITE}/blog/${p.slug}`,
@@ -140,7 +140,7 @@ export default async function BlogPage(
       }
     : {
         "@context": "https://schema.org", "@type": "CollectionPage",
-        name: `Ghiduri ${categorieActiva}`, url: `${SITE}/blog?cat=${encodeURIComponent(categorieActiva)}`, inLanguage: "ro-RO",
+        name: `Ghiduri ${eticheta(categorieActiva)}`, url: `${SITE}/blog?cat=${encodeURIComponent(categorieActiva)}`, inLanguage: "ro-RO",
         mainEntity: {
           "@type": "ItemList", numberOfItems: postsCat.length,
           itemListElement: postsPagina.map((p, i) => ({
@@ -166,7 +166,7 @@ export default async function BlogPage(
             </Link>
             <span className="text-[var(--text-muted)]">/</span>
             <Link href="/blog" className="font-semibold text-[var(--text-soft)] hover:text-[var(--accent-text)]">Revista</Link>
-            {!esteHub && (<><span className="text-[var(--text-muted)]">/</span><span className="font-semibold text-[var(--accent-text)]">{categorieActiva}</span></>)}
+            {!esteHub && (<><span className="text-[var(--text-muted)]">/</span><span className="font-semibold text-[var(--accent-text)]">{eticheta(categorieActiva)}</span></>)}
           </div>
         </header>
 
@@ -180,17 +180,17 @@ export default async function BlogPage(
                   Revista <span className="text-transparent bg-clip-text" style={{ backgroundImage: "linear-gradient(135deg, #c3dd2c, #ddf93c)" }}>AmCupon</span>
                 </h1>
                 <p className="text-[var(--text-soft)] text-sm md:text-base max-w-2xl mx-auto">
-                  Ghiduri, comparatii si sfaturi ca sa cumperi inteligent si sa economisesti la fiecare comanda. {cuNumar(toatePosts.length, "articol", "articole")}, organizate pe categorii.
+                  Ghiduri, comparații și sfaturi ca să cumperi inteligent și să economisești la fiecare comandă. {cuNumar(toatePosts.length, "articol", "articole")}, organizate pe categorii.
                 </p>
               </>
             ) : (
               <>
                 <div className="text-4xl mb-2">{MACRO_EMOJI[categorieActiva]}</div>
                 <h1 className="text-3xl md:text-4xl font-black mb-3 text-[var(--foreground)]">
-                  Ghiduri <span className="text-transparent bg-clip-text" style={{ backgroundImage: "linear-gradient(135deg, #c3dd2c, #ddf93c)" }}>{categorieActiva}</span>
+                  Ghiduri <span className="text-transparent bg-clip-text" style={{ backgroundImage: "linear-gradient(135deg, #c3dd2c, #ddf93c)" }}>{eticheta(categorieActiva)}</span>
                 </h1>
                 <p className="text-[var(--text-soft)] text-sm md:text-base max-w-2xl mx-auto">
-                  {cuNumar(postsCat.length, "articol", "articole")} cu sfaturi, comparatii si coduri de reducere pentru {categorieActiva.toLowerCase()}.
+                  {cuNumar(postsCat.length, "articol", "articole")} cu sfaturi, comparații și coduri de reducere pentru {eticheta(categorieActiva).toLowerCase()}.
                 </p>
               </>
             )}
@@ -199,7 +199,7 @@ export default async function BlogPage(
 
         <div className="max-w-7xl mx-auto px-4 py-10">
           {/* Filtre categorii (interne, crawlable) */}
-          <nav aria-label="Categorii revista" className="flex flex-wrap justify-center gap-2 mb-10">
+          <nav aria-label="Categorii revistă" className="flex flex-wrap justify-center gap-2 mb-10">
             <Link href="/blog"
               className={`px-4 py-1.5 rounded-full text-sm font-semibold transition-colors ${esteHub ? "bg-[#ddf93c] text-[#0c1000]" : "bg-[var(--surface)] border border-[var(--border-strong)] text-[var(--text-soft)] hover:border-[var(--accent-text)] hover:text-[var(--accent-text)]"}`}>
               Toate
@@ -207,7 +207,7 @@ export default async function BlogPage(
             {categoriiCuPosts.map(c => (
               <Link key={c} href={`/blog?cat=${encodeURIComponent(c)}`}
                 className={`px-4 py-1.5 rounded-full text-sm font-semibold transition-colors ${categorieActiva === c ? "bg-[#ddf93c] text-[#0c1000]" : "bg-[var(--surface)] border border-[var(--border-strong)] text-[var(--text-soft)] hover:border-[var(--accent-text)] hover:text-[var(--accent-text)]"}`}>
-                {MACRO_EMOJI[c]} {c}
+                {MACRO_EMOJI[c]} {eticheta(c)}
                 <span className="ml-1.5 text-[10px] opacity-70">({perMacro[c].length})</span>
               </Link>
             ))}
@@ -245,17 +245,17 @@ export default async function BlogPage(
                 {/* Clustere pe categorii = schema de indexare */}
                 <div className="order-2 lg:order-1">
                   <h2 className="text-xl md:text-2xl font-black text-[var(--foreground)] mb-1">Toate ghidurile, pe categorii</h2>
-                  <p className="text-sm text-[var(--text-muted)] mb-8">Alege o categorie ca sa vezi toate articolele, sau intra direct in ghidul care te intereseaza.</p>
+                  <p className="text-sm text-[var(--text-muted)] mb-8">Alege o categorie ca să vezi toate articolele, sau intră direct în ghidul care te interesează.</p>
 
                   <div className="grid sm:grid-cols-2 gap-x-8 gap-y-10">
                     {categoriiCuPosts.map(m => {
                       const arts = perMacro[m];
                       return (
-                        <section key={m} aria-label={`Ghiduri ${m}`}>
+                        <section key={m} aria-label={`Ghiduri ${eticheta(m)}`}>
                           <div className="flex items-center justify-between border-b border-[var(--border)] pb-2 mb-3">
                             <h3 className="font-black text-[var(--foreground)] text-lg flex items-center gap-2">
                               <span>{MACRO_EMOJI[m]}</span>
-                              <Link href={`/blog?cat=${encodeURIComponent(m)}`} className="hover:text-[var(--accent-text)] transition-colors">{m}</Link>
+                              <Link href={`/blog?cat=${encodeURIComponent(m)}`} className="hover:text-[var(--accent-text)] transition-colors">{eticheta(m)}</Link>
                               <span className="text-[var(--text-muted)] text-sm font-normal">({arts.length})</span>
                             </h3>
                           </div>
@@ -279,7 +279,7 @@ export default async function BlogPage(
                           )}
                           {arts.length > 6 && (
                             <Link href={`/blog?cat=${encodeURIComponent(m)}`} className="inline-flex items-center gap-1 mt-3 text-xs font-bold text-[var(--accent-text)] hover:text-[var(--accent-text)] transition-colors">
-                              Vezi toate cele {arts.length} ghiduri {m} <span aria-hidden>→</span>
+                              Vezi toate cele {arts.length} ghiduri {eticheta(m)} <span aria-hidden>→</span>
                             </Link>
                           )}
                         </section>
@@ -291,9 +291,9 @@ export default async function BlogPage(
                 {/* Sidebar */}
                 <aside className="order-1 lg:order-2 space-y-5">
                   <div className="bg-[var(--surface)] border border-[var(--border)] rounded-xl p-5">
-                    <h2 className="font-black text-[var(--foreground)] text-base mb-2">Cumpara inteligent</h2>
+                    <h2 className="font-black text-[var(--foreground)] text-base mb-2">Cumpără inteligent</h2>
                     <p className="text-sm text-[var(--text-soft)] leading-relaxed mb-4">
-                      Ghiduri practice ca sa gasesti pretul bun si sa nu ratezi reducerile reale din magazinele tale preferate.
+                      Ghiduri practice ca să găsești prețul bun și să nu ratezi reducerile reale din magazinele tale preferate.
                     </p>
                     <Link href="/top-reduceri" className="inline-flex items-center gap-1 text-sm font-bold text-[var(--accent-text)] hover:text-[var(--accent-text)]">
                       Vezi codurile active <span aria-hidden>→</span>
@@ -329,9 +329,9 @@ export default async function BlogPage(
 
                   <div className="relative rounded-xl overflow-hidden border border-[var(--accent-text)]/30 p-5" style={{ background: "linear-gradient(135deg, rgba(13,148,136,0.25), rgba(20,184,166,0.10))" }}>
                     <h2 className="font-black text-[var(--foreground)] text-base mb-1">Coduri noi pe email</h2>
-                    <p className="text-sm text-[var(--text-soft)] mb-4">Cele mai bune reduceri ale zilei. Gratuit, fara spam.</p>
+                    <p className="text-sm text-[var(--text-soft)] mb-4">Cele mai bune reduceri ale zilei. Gratuit, fără spam.</p>
                     <Link href="/newsletter" className="block text-center bg-gradient-to-r from-[#ddf93c] to-[#ddf93c] hover:from-[#ddf93c] hover:to-[#ddf93c] text-[#0c1000] font-bold text-sm py-2.5 rounded-xl transition-all">
-                      Ma abonez gratuit
+                      Mă abonez gratuit
                     </Link>
                   </div>
                 </aside>
@@ -344,7 +344,7 @@ export default async function BlogPage(
             <>
               {postsPagina.length === 0 ? (
                 <div className="text-center py-20 text-[var(--text-muted)]">
-                  <p className="text-lg mb-4">Niciun articol in categoria &ldquo;{categorieActiva}&rdquo;.</p>
+                  <p className="text-lg mb-4">Niciun articol în categoria &ldquo;{eticheta(categorieActiva)}&rdquo;.</p>
                   <Link href="/blog" className="text-[var(--accent-text)] font-bold hover:underline">Vezi toate articolele →</Link>
                 </div>
               ) : (
@@ -364,7 +364,7 @@ export default async function BlogPage(
                           <h2 className="font-black text-[var(--foreground)] text-base leading-snug mb-2 group-hover:text-[var(--accent-text)] transition-colors line-clamp-2">{post.title}</h2>
                           <p className="text-sm text-[var(--text-soft)] line-clamp-3 flex-1">{post.excerpt}</p>
                           <span className="mt-4 text-sm font-bold text-[var(--accent-text)] group-hover:text-[var(--accent-text)] flex items-center gap-1">
-                            Citeste articolul
+                            Citește articolul
                             <svg className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7" />
                             </svg>
@@ -388,7 +388,7 @@ export default async function BlogPage(
                       ))}
                       {pageClamped < totalPagini && (
                         <Link href={`/blog?cat=${encodeURIComponent(categorieActiva)}&page=${pageClamped + 1}`}
-                          className="px-4 py-2 rounded-xl text-sm font-bold bg-[var(--surface)] border border-[var(--border-strong)] text-[var(--text-soft)] hover:border-[var(--accent-text)] hover:text-[var(--accent-text)] transition-colors" rel="next">Urmator →</Link>
+                          className="px-4 py-2 rounded-xl text-sm font-bold bg-[var(--surface)] border border-[var(--border-strong)] text-[var(--text-soft)] hover:border-[var(--accent-text)] hover:text-[var(--accent-text)] transition-colors" rel="next">Următor →</Link>
                       )}
                     </nav>
                   )}
@@ -403,7 +403,7 @@ export default async function BlogPage(
               { n: magazine.length.toLocaleString("ro-RO"), l: "magazine partenere" },
               { n: nrPromo.toLocaleString("ro-RO"), l: "oferte active azi" },
               { n: nrCoduri.toLocaleString("ro-RO"), l: "coduri de reducere" },
-              { n: toatePosts.length.toLocaleString("ro-RO"), l: "articole in revista" },
+              { n: toatePosts.length.toLocaleString("ro-RO"), l: "articole în revistă" },
             ].map(s => (
               <div key={s.l} className="bg-[var(--surface)] border border-[var(--border)] rounded-xl py-6 text-center">
                 <div className="text-2xl md:text-3xl font-black text-transparent bg-clip-text" style={{ backgroundImage: "linear-gradient(135deg, #c3dd2c, #ddf93c)" }}>{s.n}</div>
@@ -413,7 +413,7 @@ export default async function BlogPage(
           </div>
 
           <div className="mt-12 pt-6 border-t border-[var(--border)] text-center">
-            <Link href="/" className="text-sm text-[var(--text-muted)] hover:text-[var(--accent-text)] transition-colors">← Inapoi la AmCupon.ro</Link>
+            <Link href="/" className="text-sm text-[var(--text-muted)] hover:text-[var(--accent-text)] transition-colors">← Înapoi la AmCupon.ro</Link>
           </div>
         </div>
       </div>

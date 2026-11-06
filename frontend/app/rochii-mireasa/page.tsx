@@ -12,41 +12,41 @@ const LINK_DYFASHION = linkPlatit("https://dyfashion.ro");
 // ─────────────────────────────────────────────────────────────────────────
 
 export const metadata: Metadata = {
-  title: "Rochii de Mireasa si Ocazie cu Reducere 2026 | AmCupon.ro",
-  description: "Rochii de mireasa, domnisoare de onoare si ocazii speciale la preturi reduse. Trendiva, Viada, DYFashion — magazine romanesti de rochii si tinute de ocazie.",
-  keywords: ["rochii mireasa reducere", "rochii ocazie reducere", "cod reducere rochii nunta", "rochii domnisoare de onoare", "rochii elegante reducere"],
+  title: "Rochii de Mireasă și Ocazie cu Reducere 2026 | AmCupon.ro",
+  description: "Rochii de mireasă, domnișoare de onoare și ocazii speciale la prețuri reduse. Trendiva, Viada, DYFashion — magazine românești de rochii și ținute de ocazie.",
+  keywords: ["rochii mireasă reducere", "rochii ocazie reducere", "cod reducere rochii nuntă", "rochii domnișoare de onoare", "rochii elegante reducere"],
   alternates: { canonical: "https://amcupon.ro/rochii-mireasa" },
-  openGraph: { title: "Rochii de Mireasa si Ocazie cu Reducere 2026 | AmCupon.ro", url: "https://amcupon.ro/rochii-mireasa", siteName: "AmCupon.ro", locale: "ro_RO", type: "website", images: [{ url: "https://amcupon.ro/og-image.png", width: 1200, height: 630 }] },
+  openGraph: { title: "Rochii de Mireasă și Ocazie cu Reducere 2026 | AmCupon.ro", url: "https://amcupon.ro/rochii-mireasa", siteName: "AmCupon.ro", locale: "ro_RO", type: "website", images: [{ url: "https://amcupon.ro/og-image.png", width: 1200, height: 630 }] },
 };
 
 const MAGAZINE = [
   {
     name: "Trendiva",
-    tagline: "Brand romanesc de rochii elegante — ocazie, seara, bal si nunta",
-    badge: "Rochii nunta & gala",
+    tagline: "Brand românesc de rochii elegante — ocazie, seară, bal și nuntă",
+    badge: "Rochii nuntă & gala",
     url: LINK_TRENDIVA,
-    beneficii: ["Gama larga de rochii de ocazie si nunta", "Brand 100% romanesc", "Descrieri detaliate pe marimi", "Livrare in toata tara"],
+    beneficii: ["Gamă largă de rochii de ocazie și nuntă", "Brand 100% românesc", "Descrieri detaliate pe mărimi", "Livrare în toată țara"],
   },
   {
     name: "Viada",
     tagline: "Rochii elegante, costume office, plus size — pentru orice eveniment",
     badge: "Elegant & plus size",
     url: LINK_VIADA,
-    beneficii: ["Marimi extinse, inclusiv plus size", "Rochii elegante pentru nunta ca invitata", "Costume si blazere asortate", "Colectii reinnoite frecvent"],
+    beneficii: ["Mărimi extinse, inclusiv plus size", "Rochii elegante pentru nuntă ca invitată", "Costume și blazere asortate", "Colecții reînnoite frecvent"],
   },
   {
     name: "DYFashion",
-    tagline: "Rochii de seara si zi, tinute office si plaja — catalog variat",
+    tagline: "Rochii de seară și zi, ținute office și plajă — catalog variat",
     badge: "Catalog variat",
     url: LINK_DYFASHION,
-    beneficii: ["Rochii de seara si ocazie", "Accesorii si genti asortate", "Preturi accesibile", "Tinute pentru toate evenimentele"],
+    beneficii: ["Rochii de seară și ocazie", "Accesorii și genți asortate", "Prețuri accesibile", "Ținute pentru toate evenimentele"],
   },
 ];
 
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "CollectionPage",
-  "name": "Rochii de Mireasa si Ocazie cu Reducere 2026",
+  "name": "Rochii de Mireasă și Ocazie cu Reducere 2026",
   "url": "https://amcupon.ro/rochii-mireasa",
 };
 
@@ -65,14 +65,14 @@ export default function RochiiMireasaPage() {
             <nav className="flex justify-center gap-2 text-xs text-[var(--text-muted)] mb-8">
               <Link href="/" className="hover:text-[var(--text-soft)]">AmCupon.ro</Link>
               <span>/</span>
-              <span className="text-[var(--text-soft)]">Rochii Mireasa & Ocazie</span>
+              <span className="text-[var(--text-soft)]">Rochii Mireasă & Ocazie</span>
             </nav>
             <div className="text-5xl mb-4">👰</div>
             <h1 className="text-4xl md:text-5xl font-black text-[var(--foreground)] mb-4">
               Rochii de <span className="text-transparent bg-clip-text" style={{ backgroundImage: "linear-gradient(135deg, #ddf93c, #ddf93c)" }}>Mireasa</span> & Ocazie {an}
             </h1>
             <p className="text-[var(--text-soft)] text-lg max-w-2xl mx-auto">
-              Pentru mireasa, domnisoare de onoare sau invitati — magazine romanesti de profil.
+              Pentru mireasă, domnișoare de onoare sau invitați — magazine românești de profil.
             </p>
           </div>
         </section>
@@ -105,12 +105,12 @@ export default function RochiiMireasaPage() {
 
           {/* GHID */}
           <section className="mt-10 bg-[var(--surface)] border border-[var(--border)] rounded-xl p-6">
-            <h2 className="text-lg font-black text-[var(--foreground)] mb-4">Cum alegi rochia potrivita pentru nunta?</h2>
+            <h2 className="text-lg font-black text-[var(--foreground)] mb-4">Cum alegi rochia potrivită pentru nuntă?</h2>
             <ul className="space-y-2 text-sm text-[var(--text-soft)]">
-              <li><strong className="text-[var(--text-soft)]">Comanda din timp</strong> — rochiile de mireasa personalizate pot dura 4-8 saptamani de la comanda</li>
-              <li><strong className="text-[var(--text-soft)]">Domnisoare de onoare</strong> — alege un model usor de reprodus in mai multe marimi, nu personalizat excesiv</li>
-              <li><strong className="text-[var(--text-soft)]">Invitata la nunta</strong> — evita albul si nuantele foarte deschise, verifica dress code-ul</li>
-              <li><strong className="text-[var(--text-soft)]">Reduceri sezoniere</strong> — cele mai mari reduceri la rochii de ocazie apar dupa Craciun si dupa sezonul de nunti (sept-oct)</li>
+              <li><strong className="text-[var(--text-soft)]">Comandă din timp</strong> — rochiile de mireasă personalizate pot dura 4-8 săptămâni de la comandă</li>
+              <li><strong className="text-[var(--text-soft)]">Domnișoare de onoare</strong> — alege un model ușor de reprodus în mai multe mărimi, nu personalizat excesiv</li>
+              <li><strong className="text-[var(--text-soft)]">Invitată la nuntă</strong> — evită albul și nuanțele foarte deschise, verifică dress code-ul</li>
+              <li><strong className="text-[var(--text-soft)]">Reduceri sezoniere</strong> — cele mai mari reduceri la rochii de ocazie apar după Crăciun și după sezonul de nunți (sept-oct)</li>
             </ul>
           </section>
 
@@ -118,7 +118,7 @@ export default function RochiiMireasaPage() {
             {[
               { href: "/bijuterii", label: "💍 Bijuterii" },
               { href: "/fashion", label: "👗 Fashion" },
-              { href: "/frumusete", label: "💄 Frumusete" },
+              { href: "/frumusete", label: "💄 Frumusețe" },
               { href: "/oferte-azi", label: "🔥 Oferte de azi" },
             ].map(l => (
               <Link key={l.href} href={l.href}
@@ -128,7 +128,7 @@ export default function RochiiMireasaPage() {
             ))}
           </div>
 
-          <p className="text-[var(--text-muted)] text-xs text-center mt-8">Unele linkuri sunt linkuri de afiliat. Daca faci o achizitie, AmCupon.ro primeste un comision fara cost suplimentar pentru tine.</p>
+          <p className="text-[var(--text-muted)] text-xs text-center mt-8">Unele linkuri sunt linkuri de afiliat. Dacă faci o achiziție, AmCupon.ro primește un comision fără cost suplimentar pentru tine.</p>
         </section>
       </div>
     </>

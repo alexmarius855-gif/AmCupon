@@ -17,8 +17,8 @@ interface Magazin {
 
 export const metadata: Metadata = {
   title: "Supermarket Online 2026 — Alimente de la Magazine Partenere",
-  description: `Alimente si bauturi online ${laParteneri(NISA_CATEGORII.supermarket)} — magazine specializate, cu livrare la domiciliu. Oferte actualizate zilnic.`,
-  keywords: ["cod reducere carrefour","reduceri kaufland","auchan cod cupon","bringo reducere","supermarket online romania","alimente ieftine","livrare mancare reducere"],
+  description: `Alimente și băuturi online ${laParteneri(NISA_CATEGORII.supermarket)} — magazine specializate, cu livrare la domiciliu. Oferte actualizate zilnic.`,
+  keywords: ["cod reducere carrefour","reduceri kaufland","auchan cod cupon","bringo reducere","supermarket online românia","alimente ieftine","livrare mâncare reducere"],
   alternates: { canonical: "https://amcupon.ro/supermarket" },
   openGraph: { title: "Supermarket Online 2026 | AmCupon.ro", url: "https://amcupon.ro/supermarket", siteName: "AmCupon.ro", locale: "ro_RO", type: "website", images: [{ url: "https://amcupon.ro/og-image.png", width: 1200, height: 630 }] },
 };
@@ -28,12 +28,12 @@ const TOP_SUPERMARKET = ["carrefour.ro","bringo.ro","freshful.ro","auchan.ro","k
 const CAT_SUPERMARKET = ["mancare-bauturi"];
 
 const AVANTAJE = [
-  { icon: "🥩", titlu: "Carne & Mezeluri", desc: "Oferte saptamanale la carne proaspata, mezeluri si preparate" },
-  { icon: "🥛", titlu: "Lactate & Oua", desc: "Lapte, iaurt, branza, oua la preturi promotionale zilnic" },
-  { icon: "🥦", titlu: "Fructe & Legume", desc: "Legume si fructe proaspete, bio sau conventionale cu reducere" },
-  { icon: "🧹", titlu: "Produse de Casa", desc: "Detergenti, produse curatenie, hartie, cosuri complete" },
-  { icon: "🚚", titlu: "Livrare la Domiciliu", desc: "Comenzi online, livrate acasa" },
-  { icon: "💳", titlu: "Carduri Fidelitate", desc: "Puncte bonus, cashback si promotii exclusive pentru membrii clubului" },
+  { icon: "🥩", titlu: "Carne & Mezeluri", desc: "Oferte săptămânale la carne proaspătă, mezeluri și preparate" },
+  { icon: "🥛", titlu: "Lactate & Ouă", desc: "Lapte, iaurt, brânză, ouă la prețuri promoționale zilnic" },
+  { icon: "🥦", titlu: "Fructe & Legume", desc: "Legume și fructe proaspete, bio sau convenționale cu reducere" },
+  { icon: "🧹", titlu: "Produse de Casă", desc: "Detergenți, produse curățenie, hârtie, coșuri complete" },
+  { icon: "🚚", titlu: "Livrare la Domiciliu", desc: "Comenzi online, livrate acasă" },
+  { icon: "💳", titlu: "Carduri Fidelitate", desc: "Puncte bonus, cashback și promoții exclusive pentru membrii clubului" },
 ];
 
 
@@ -42,7 +42,7 @@ const jsonLd = {
   "@type": "CollectionPage",
   "name": "Supermarket Online 2026",
   "url": "https://amcupon.ro/supermarket",
-  "description": "Alimente si bauturi online de la magazinele partenere AmCupon"
+  "description": "Alimente și băuturi online de la magazinele partenere AmCupon"
 };
 
 export default function SupermarketPage() {
@@ -72,7 +72,7 @@ export default function SupermarketPage() {
         {/* Breadcrumb */}
         <nav className="bg-[var(--background)] border-b border-[var(--border)]">
           <div className="max-w-6xl mx-auto px-4 py-2.5 flex items-center gap-1 text-xs text-[var(--text-muted)]">
-            <Link href="/" className="hover:text-[var(--accent-text)]">Acasa</Link>
+            <Link href="/" className="hover:text-[var(--accent-text)]">Acasă</Link>
             <span className="mx-1">/</span>
             <span className="text-[var(--text-soft)] font-medium">Supermarket Online</span>
           </div>
@@ -84,10 +84,10 @@ export default function SupermarketPage() {
             <div className="text-5xl mb-4">🛒</div>
             <h1 className="text-3xl md:text-4xl font-black mb-3">Supermarket Online {an}</h1>
             <p className="text-[#2a2f10] text-lg mb-6 max-w-xl mx-auto">
-              Alimente si bauturi {laParteneri(NISA_CATEGORII.supermarket)} si la alte magazine partenere, cu livrare la domiciliu.
+              Alimente și băuturi {laParteneri(NISA_CATEGORII.supermarket)} și la alte magazine partenere, cu livrare la domiciliu.
             </p>
             <div className="flex flex-wrap justify-center gap-2">
-              {["Cafea","Ulei de masline","Bio","Delicatese","Bauturi","Livrare la domiciliu"].map(c => (
+              {["Cafea","Ulei de măsline","Bio","Delicatese","Băuturi","Livrare la domiciliu"].map(c => (
                 <span key={c} className="bg-[var(--surface-alt)] text-[var(--foreground)] text-sm font-semibold px-4 py-1.5 rounded-full border border-[var(--border-strong)]">{c}</span>
               ))}
             </div>
@@ -101,7 +101,7 @@ export default function SupermarketPage() {
               <span className="font-black text-[var(--accent-text)]">{magazine.length}</span> magazine alimentare
             </span>
             <span className="text-[var(--accent-text)] font-semibold">
-              <span className="font-black text-[var(--accent-text)]">{cuPromo.length}</span> cu promotii active
+              <span className="font-black text-[var(--accent-text)]">{cuPromo.length}</span> cu promoții active
             </span>
             <span className="text-[var(--accent-text)] font-semibold">&#10003; Actualizat zilnic</span>
           </div>
@@ -109,7 +109,7 @@ export default function SupermarketPage() {
 
         {/* Avantaje */}
         <section className="max-w-6xl mx-auto px-4 py-10">
-          <h2 className="text-xl font-black text-[var(--foreground)] mb-6 text-center">De ce sa comanzi online de la supermarket</h2>
+          <h2 className="text-xl font-black text-[var(--foreground)] mb-6 text-center">De ce să comanzi online de la supermarket</h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {AVANTAJE.map(a => (
               <div key={a.titlu} className="bg-[var(--surface)] border border-[var(--border)] rounded-xl p-5">
@@ -134,7 +134,7 @@ export default function SupermarketPage() {
             <div className="bg-[var(--surface)] border border-[var(--border)] rounded-xl p-10 text-center">
               <p className="text-4xl mb-3">🛒</p>
               <p className="font-bold text-[var(--text-soft)] mb-2">Magazine actualizate zilnic</p>
-              <p className="text-[var(--text-muted)] text-sm mb-4">Revino curand pentru promotii la supermarketuri online.</p>
+              <p className="text-[var(--text-muted)] text-sm mb-4">Revino curând pentru promoții la supermarketuri online.</p>
               <Link href="/toate-magazinele" className="text-[var(--accent-text)] font-bold hover:text-[var(--accent-text)] text-sm">Toate magazinele &rarr;</Link>
             </div>
           )}
@@ -154,23 +154,23 @@ export default function SupermarketPage() {
         {/* Editorial */}
         <section className="bg-[var(--surface)] border-t border-[var(--border)] py-10 px-4">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-xl font-black text-[var(--foreground)] mb-5">Ghid: Cumparaturi alimentare online — cum economisesti</h2>
+            <h2 className="text-xl font-black text-[var(--foreground)] mb-5">Ghid: Cumpărături alimentare online — cum economisești</h2>
             <div className="space-y-4 text-sm text-[var(--text-soft)] leading-relaxed">
               <div>
                 <h3 className="font-bold text-[var(--foreground)] mb-1">Supermarket mare sau magazin specializat?</h3>
-                <p>Supermarketurile online au cea mai larga gama; magazinele specializate — cafea, ulei de masline, produse bio, delicatese — au de obicei mai multa alegere in nisa lor. Partenerii AmCupon din aceasta categorie sunt magazine specializate.</p>
+                <p>Supermarketurile online au cea mai largă gamă; magazinele specializate — cafea, ulei de măsline, produse bio, delicatese — au de obicei mai multă alegere în nișa lor. Partenerii AmCupon din această categorie sunt magazine specializate.</p>
               </div>
               <div>
-                <h3 className="font-bold text-[var(--foreground)] mb-1">Trucuri pentru cosul de cumparaturi mai mic</h3>
+                <h3 className="font-bold text-[var(--foreground)] mb-1">Trucuri pentru coșul de cumpărături mai mic</h3>
                 <ul className="list-disc list-inside space-y-1 ml-2">
-                  <li><strong>Prima comanda</strong> — multe magazine au o reducere pentru clientii noi; verifica pe site</li>
-                  <li><strong>Comanda minima</strong> — livrarea e gratuita peste un prag, diferit de la un magazin la altul</li>
-                  <li><strong>Slot-uri de livrare</strong> — livrarea programata e de obicei mai ieftina decat cea urgenta</li>
+                  <li><strong>Prima comandă</strong> — multe magazine au o reducere pentru clienții noi; verifică pe site</li>
+                  <li><strong>Comandă minimă</strong> — livrarea e gratuită peste un prag, diferit de la un magazin la altul</li>
+                  <li><strong>Slot-uri de livrare</strong> — livrarea programată e de obicei mai ieftină decât cea urgentă</li>
                 </ul>
               </div>
               <div>
-                <h3 className="font-bold text-[var(--foreground)] mb-1">Produse pe care merita sa le comanzi online</h3>
-                <p>Produsele grele (apa, detergenti, conserve, faina, ulei) sunt ideale pentru comanda online — economisesti timp si efort fizic. La baxuri si ambalaje mari, compara pretul pe unitate.</p>
+                <h3 className="font-bold text-[var(--foreground)] mb-1">Produse pe care merită să le comanzi online</h3>
+                <p>Produsele grele (apă, detergenți, conserve, făină, ulei) sunt ideale pentru comandă online — economisești timp și efort fizic. La baxuri și ambalaje mari, compară prețul pe unitate.</p>
               </div>
             </div>
           </div>
@@ -178,12 +178,12 @@ export default function SupermarketPage() {
 
         {/* Internal links */}
         <section className="max-w-6xl mx-auto px-4 py-8">
-          <h2 className="text-base font-black text-[var(--text-soft)] mb-4">Exploreaza si alte categorii</h2>
+          <h2 className="text-base font-black text-[var(--text-soft)] mb-4">Explorează și alte categorii</h2>
           <div className="flex flex-wrap gap-2">
             {[
-              { href: "/sanatate",   label: "🌿 Sanatate & Naturiste" },
-              { href: "/casa",       label: "🏠 Casa & Gradina" },
-              { href: "/copii",      label: "👶 Copii & Jucarii" },
+              { href: "/sanatate",   label: "🌿 Sănătate & Naturiste" },
+              { href: "/casa",       label: "🏠 Casă & Grădină" },
+              { href: "/copii",      label: "👶 Copii & Jucării" },
               { href: "/animale",    label: "🐾 Animale de Companie" },
               { href: "/oferte-azi", label: "🔥 Toate Ofertele de Azi" },
               { href: "/categorii",  label: "📂 Toate Categoriile" },
@@ -198,7 +198,7 @@ export default function SupermarketPage() {
 
         <footer className="border-t border-[var(--border)] py-6 text-center text-xs text-[var(--text-muted)] mt-4">
           &copy; {an} AmCupon.ro &middot;{" "}
-          <Link href="/sanatate" className="hover:text-[var(--accent-text)]">Sanatate</Link>{" · "}
+          <Link href="/sanatate" className="hover:text-[var(--accent-text)]">Sănătate</Link>{" · "}
           <Link href="/casa" className="hover:text-[var(--accent-text)]">Casa</Link>{" · "}
           <Link href="/categorii" className="hover:text-[var(--accent-text)]">Categorii</Link>
         </footer>

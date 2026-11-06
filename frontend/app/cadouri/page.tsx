@@ -4,12 +4,12 @@ import { pesteMagazine } from "@/lib/cifreSite";
 
 export const metadata: Metadata = {
   title: "Idei Cadouri 2026 — Cadouri pentru Orice Ocazie | AmCupon.ro",
-  description: "Cele mai bune idei de cadouri pentru orice ocazie: botez, nastere, Valentine, Craciun, nasi, mama, tata. Produse cu preturi reale, de la magazinele partenere.",
-  keywords: ["idei cadouri romania", "cadouri originale", "cadouri botez", "cadouri nasi", "cadouri nastere", "cadouri valentine", "cadouri craciun", "cadouri mama"],
+  description: "Cele mai bune idei de cadouri pentru orice ocazie: botez, naștere, Valentine, Crăciun, nași, mama, tata. Produse cu prețuri reale, de la magazinele partenere.",
+  keywords: ["idei cadouri românia", "cadouri originale", "cadouri botez", "cadouri nași", "cadouri naștere", "cadouri valentine", "cadouri crăciun", "cadouri mama"],
   alternates: { canonical: "https://amcupon.ro/cadouri" },
   openGraph: {
     title: "Idei Cadouri pentru Orice Ocazie | AmCupon.ro",
-    description: `Cadouri botez, nasi, Valentine, Craciun, nastere — idei cu preturi reale de la ${pesteMagazine()} partenere.`,
+    description: `Cadouri botez, nași, Valentine, Crăciun, naștere — idei cu prețuri reale de la ${pesteMagazine()} partenere.`,
     url: "https://amcupon.ro/cadouri",
     siteName: "AmCupon.ro",
     locale: "ro_RO",
@@ -20,23 +20,23 @@ export const metadata: Metadata = {
 const OCAZII = [
   { slug: "ea",         emoji: "💝", titlu: "Cadouri pentru Ea",       desc: "Bijuterii, fashion, parfumuri", color: "#ddf93c", popular: true },
   { slug: "el",         emoji: "🎁", titlu: "Cadouri pentru El",       desc: "Electronice, auto, sport",     color: "#ddf93c", popular: true },
-  { slug: "copii",      emoji: "🧸", titlu: "Cadouri Copii",           desc: "Jucarii, carti, sport",        color: "#ddf93c", popular: true },
-  { slug: "mama",       emoji: "🌸", titlu: "Cadouri Mama",            desc: "Bijuterii, cosmetice, rasfat", color: "#ddf93c", popular: true },
+  { slug: "copii",      emoji: "🧸", titlu: "Cadouri Copii",           desc: "Jucării, cărți, sport",        color: "#ddf93c", popular: true },
+  { slug: "mama",       emoji: "🌸", titlu: "Cadouri Mama",            desc: "Bijuterii, cosmetice, răsfăț", color: "#ddf93c", popular: true },
   { slug: "tata",       emoji: "👨", titlu: "Cadouri Tata",            desc: "Gadgeturi, auto, unelte",      color: "#1f2329", popular: false },
   { slug: "botez",      emoji: "👶", titlu: "Cadouri Botez",           desc: "Bijuterii argint, personalizate", color: "#ddf93c", popular: true },
-  { slug: "nasi",       emoji: "💍", titlu: "Cadouri Nasi",            desc: "Bijuterii premium, elegante",  color: "#7c3aed", popular: true },
-  { slug: "nastere",    emoji: "🎂", titlu: "Cadouri Nastere",         desc: "Bijuterii, parfumuri, gadgeturi", color: "#ddf93c", popular: false },
+  { slug: "nasi",       emoji: "💍", titlu: "Cadouri Nași",            desc: "Bijuterii premium, elegante",  color: "#7c3aed", popular: true },
+  { slug: "nastere",    emoji: "🎂", titlu: "Cadouri Naștere",         desc: "Bijuterii, parfumuri, gadgeturi", color: "#ddf93c", popular: false },
   { slug: "valentine",  emoji: "❤️", titlu: "Valentine's Day",         desc: "Bijuterii romantice, parfumuri", color: "#e64343", popular: false },
-  { slug: "craciun",    emoji: "🎄", titlu: "Cadouri Craciun",         desc: "Cadouri pentru toata familia", color: "#16a34a", popular: false },
-  { slug: "absolvire",  emoji: "🎓", titlu: "Cadouri Absolvire",       desc: "Gadgeturi, bijuterii, carti",  color: "#ddf93c", popular: false },
-  { slug: "pasti",      emoji: "🐣", titlu: "Cadouri Paste",           desc: "Seturi cadou, bijuterii, flori", color: "#84cc16", popular: false },
+  { slug: "craciun",    emoji: "🎄", titlu: "Cadouri Crăciun",         desc: "Cadouri pentru toată familia", color: "#16a34a", popular: false },
+  { slug: "absolvire",  emoji: "🎓", titlu: "Cadouri Absolvire",       desc: "Gadgeturi, bijuterii, cărți",  color: "#ddf93c", popular: false },
+  { slug: "pasti",      emoji: "🐣", titlu: "Cadouri Paște",           desc: "Seturi cadou, bijuterii, flori", color: "#84cc16", popular: false },
 ];
 
 const SFATURI = [
-  { emoji: "🎯", titlu: "Personalizeaza cadoul", desc: "Un cadou cu gravura sau personalizat cu numele destinatarului are valoare emotionala mult mai mare." },
-  { emoji: "💰", titlu: "Buget recomandat", desc: "Nasi/Fini: 300-1000 RON. Familie apropiata: 150-500 RON. Prieteni: 50-200 RON. Colegi: 30-100 RON." },
-  { emoji: "⏰", titlu: "Comanda din timp", desc: "Termenele de livrare difera de la un magazin la altul; in perioada sarbatorilor comanda cu cel putin o saptamana inainte." },
-  { emoji: "📦", titlu: "Ambalaj premium", desc: "Multe magazine ofera ambalaj cadou gratuit sau contra cost. Intreaba la checkout — face diferenta!" },
+  { emoji: "🎯", titlu: "Personalizează cadoul", desc: "Un cadou cu gravură sau personalizat cu numele destinatarului are valoare emoțională mult mai mare." },
+  { emoji: "💰", titlu: "Buget recomandat", desc: "Nași/Fini: 300-1000 RON. Familie apropiată: 150-500 RON. Prieteni: 50-200 RON. Colegi: 30-100 RON." },
+  { emoji: "⏰", titlu: "Comandă din timp", desc: "Termenele de livrare diferă de la un magazin la altul; în perioada sărbătorilor comandă cu cel puțin o săptămână înainte." },
+  { emoji: "📦", titlu: "Ambalaj premium", desc: "Multe magazine oferă ambalaj cadou gratuit sau contra cost. Întreabă la checkout — face diferența!" },
 ];
 
 export default function CadouriPage() {
@@ -68,7 +68,7 @@ export default function CadouriPage() {
             Idei Cadouri pentru Orice Ocazie
           </h1>
           <p className="text-[var(--text-soft)] text-base mb-6 max-w-xl mx-auto">
-            De la botez la Craciun, de la nasi la mama — gasesti cadoul perfect
+            De la botez la Crăciun, de la nași la mama — găsești cadoul perfect
             de la <span className="text-[var(--foreground)] font-bold">{pesteMagazine()}</span> partenere.
           </p>
           <div className="flex flex-wrap justify-center gap-3 text-sm">
@@ -144,13 +144,13 @@ export default function CadouriPage() {
         {/* Filtre buget */}
         <section className="mb-12">
           <div className="flex items-center gap-3 mb-6">
-            <h2 className="text-xl font-black text-[var(--foreground)]">Cadouri dupa buget</h2>
+            <h2 className="text-xl font-black text-[var(--foreground)]">Cadouri după buget</h2>
             <span className="text-xs text-green-400 bg-green-500/10 border border-green-500/20 px-2 py-0.5 rounded-full font-bold">NOU</span>
           </div>
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
             {[
               { slug: "sub-100-lei",  emoji: "💰", label: "Sub 100 Lei",     desc: "Cadouri accesibile",   from: "#22c55e", to: "#10b981" },
-              { slug: "sub-200-lei",  emoji: "🎁", label: "Sub 200 Lei",     desc: "Raport pret/calitate", from: "#ddf93c", to: "#c3dd2c" },
+              { slug: "sub-200-lei",  emoji: "🎁", label: "Sub 200 Lei",     desc: "Raport preț/calitate", from: "#ddf93c", to: "#c3dd2c" },
               { slug: "sub-500-lei",  emoji: "💎", label: "Sub 500 Lei",     desc: "Cadouri premium",      from: "#ddf93c", to: "#ddf93c" },
               { slug: "peste-500-lei",emoji: "👑", label: "Peste 500 Lei",   desc: "Cadouri de lux",       from: "#7c3aed", to: "#c084fc" },
             ].map(b => (
@@ -191,7 +191,7 @@ export default function CadouriPage() {
           <h2 className="text-base font-bold text-[var(--foreground)] mb-4">Magazine recomandate pentru cadouri</h2>
           <div className="flex flex-wrap gap-2">
             {[
-              { href: "/noriel", label: "Noriel — Jucarii" },
+              { href: "/noriel", label: "Noriel — Jucării" },
               { href: "/carturesti", label: "Cărturești — Cărți & Cadouri" },
               { href: "/notino", label: "Notino — Parfumuri" },
               { href: "/answear", label: "Answear — Fashion" },

@@ -84,15 +84,15 @@ export default function PachetZilnic({ manifest }: { manifest: Manifest | null }
     return (
       <div className="min-h-screen bg-[var(--background)] text-[var(--foreground)] px-4 py-16">
         <div className="max-w-2xl mx-auto text-center">
-          <h1 className="text-2xl font-black mb-3">Nu exista pachet generat inca</h1>
+          <h1 className="text-2xl font-black mb-3">Nu există pachet generat încă</h1>
           <p className="text-[var(--text-soft)] text-sm mb-6">
-            Uzina de continut nu a rulat inca (sau `latest.json` lipseste). Ruleaza:
+            Uzina de conținut nu a rulat încă (sau `latest.json` lipsește). Rulează:
           </p>
           <code className="block bg-[var(--surface)] border border-[var(--border)] rounded-xl px-4 py-3 text-[var(--accent-text)] text-sm">
             python scripts/social_content_factory.py
           </code>
           <Link href="/admin" className="inline-block mt-8 text-sm font-bold text-[var(--accent-text)] hover:text-[var(--accent-text)]">
-            &larr; Inapoi la admin
+            &larr; Înapoi la admin
           </Link>
         </div>
       </div>
@@ -110,12 +110,12 @@ export default function PachetZilnic({ manifest }: { manifest: Manifest | null }
             </Link>
             <h1 className="text-2xl md:text-3xl font-black mt-1">Pachetul social al zilei</h1>
             <p className="text-[var(--text-muted)] text-sm mt-1">
-              {manifest.zi}, {manifest.data_afisata} · {manifest.nr_postari} postari ·
+              {manifest.zi}, {manifest.data_afisata} · {manifest.nr_postari} postări ·
               carusel {manifest.nr_slide} slide-uri · generat {manifest.generat_la.replace("T", " ")}
             </p>
           </div>
           <p className="text-xs text-[var(--text-muted)] max-w-xs">
-            Toate ofertele au link de comision real si cifre parsate din textul promotiei —
+            Toate ofertele au link de comision real și cifre parsate din textul promoției —
             nimic estimat.
           </p>
         </div>
@@ -135,8 +135,8 @@ export default function PachetZilnic({ manifest }: { manifest: Manifest | null }
                 className="w-full rounded-lg border border-[var(--border)] mb-3"
               />
               <div className="flex flex-wrap gap-2">
-                <ButonDescarcare href={manifest.digest_single} eticheta="Descarca imaginea" Icon={Download} />
-                <ButonCopiere text={manifest.text_digest} eticheta="Copiaza textul" />
+                <ButonDescarcare href={manifest.digest_single} eticheta="Descarcă imaginea" Icon={Download} />
+                <ButonCopiere text={manifest.text_digest} eticheta="Copiază textul" />
               </div>
             </div>
 
@@ -161,7 +161,7 @@ export default function PachetZilnic({ manifest }: { manifest: Manifest | null }
                 ))}
               </div>
               <p className="text-[11px] text-[var(--text-muted)] mt-2">
-                Instagram pastreaza ordinea in care incarci fisierele — incarca-le 1 → {manifest.carusel.length}.
+                Instagram păstrează ordinea în care încarci fișierele — încarcă-le 1 → {manifest.carusel.length}.
               </p>
             </div>
           </div>
@@ -171,7 +171,7 @@ export default function PachetZilnic({ manifest }: { manifest: Manifest | null }
         <section>
           <div className="flex flex-wrap items-center justify-between gap-3 mb-4">
             <h2 className="text-lg font-black flex items-center gap-2">
-              <Smartphone className="w-5 h-5 text-[var(--accent-text)]" /> {manifest.postari.length} postari individuale
+              <Smartphone className="w-5 h-5 text-[var(--accent-text)]" /> {manifest.postari.length} postări individuale
             </h2>
             <div className="flex gap-1.5" role="group" aria-label="Platforma pentru text">
               {(["facebook", "instagram", "tiktok"] as Platforma[]).map((p) => (

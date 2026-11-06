@@ -168,7 +168,7 @@ export default function MagazinCard({ m, numeOverride, astazi, isFavorit, onTogg
               {onToggleFavorit && (
                 <button onClick={e => { e.preventDefault(); e.stopPropagation(); onToggleFavorit(m.magazin, e); }}
                   className="p-1 rounded-full hover:bg-[var(--surface-alt)] transition-colors"
-                  title={isFavorit ? "Elimina din favorite" : "Adauga la favorite"} aria-label="Favorite">
+                  title={isFavorit ? "Elimină din favorite" : "Adaugă la favorite"} aria-label="Favorite">
                   <Heart className={`w-4 h-4 transition-colors ${isFavorit ? "fill-red-500 stroke-red-500" : "fill-none stroke-[#3a4048] hover:stroke-red-400"}`} strokeWidth={2} />
                 </button>
               )}

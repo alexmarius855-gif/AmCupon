@@ -607,7 +607,7 @@ export default async function ArticolPage({
           {/* Newsletter CTA */}
           <div className="mt-10 p-6 bg-[var(--background)] rounded-xl text-center">
             <p className="text-sm font-black text-[var(--accent-text)] uppercase tracking-widest mb-2">Newsletter gratuit</p>
-            <h3 className="text-xl font-black text-[var(--foreground)] mb-2">Primeste coduri noi direct pe email</h3>
+            <h3 className="text-xl font-black text-[var(--foreground)] mb-2">Primește coduri noi direct pe email</h3>
             <p className="text-[var(--text-soft)] text-sm mb-5">Ofertele active de la {pesteMagazine()}, o dată pe zi. Fără spam.</p>
             <Link href="/newsletter"
               className="inline-flex items-center gap-2 bg-[#ddf93c] hover:bg-[#ddf93c] text-[#0c1000] font-bold px-6 py-3 rounded-xl text-sm transition-colors">

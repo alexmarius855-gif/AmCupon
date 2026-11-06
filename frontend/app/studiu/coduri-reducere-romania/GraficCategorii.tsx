@@ -74,7 +74,7 @@ export default function GraficCategorii({ categorii }: { categorii: CategorieGra
         viewBox={`0 0 ${LATIME} ${inaltime}`}
         width="100%"
         role="img"
-        aria-label={`Reducerea mediana pe categorie: ${rezumat}.`}
+        aria-label={`Reducerea mediană pe categorie: ${rezumat}.`}
         // Inaltimea vine din viewBox. `height="auto"` ca atribut SVG e invalid (eroare in consola).
         style={{ display: "block", height: "auto" }}
       >
@@ -122,9 +122,9 @@ export default function GraficCategorii({ categorii }: { categorii: CategorieGra
       </svg>
 
       <figcaption className="text-xs text-[var(--text-muted)] leading-relaxed mt-3">
-        Reducerea mediana declarata, pe categorie, din {cuNumar(date.length, "categorie care trece", "categorii care trec")} pragul
-        de esantion. Restul sunt listate mai jos ca date insuficiente &mdash; le aratam ca sa se
-        vada ce NU stim, nu doar ce stim.
+        Reducerea mediană declarată, pe categorie, din {cuNumar(date.length, "categorie care trece", "categorii care trec")} pragul
+        de eșantion. Restul sunt listate mai jos ca date insuficiente &mdash; le arătăm ca să se
+        vadă ce NU știm, nu doar ce știm.
       </figcaption>
     </figure>
   );

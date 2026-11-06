@@ -304,8 +304,8 @@ export default function BrandPageTemplate({ config }: { config: BrandConfig }) {
         <section className="max-w-5xl mx-auto px-4 py-10">
           <div className="bg-[var(--surface)] border border-[var(--border)] rounded-xl p-8 text-center">
             <p className="text-3xl mb-3">🔍</p>
-            <p className="font-bold text-[var(--text-soft)] mb-2">Nu exista oferte active momentan</p>
-            <p className="text-[var(--text-muted)] text-sm mb-4">Revino maine — actualizam ofertele zilnic de la {config.name}.</p>
+            <p className="font-bold text-[var(--text-soft)] mb-2">Nu există oferte active momentan</p>
+            <p className="text-[var(--text-muted)] text-sm mb-4">Revino mâine — actualizăm ofertele zilnic de la {config.name}.</p>
             {linkMagazin && (
               <a href={linkMagazin} target="_blank" rel="sponsored noopener noreferrer"
                 className="inline-block bg-[#ddf93c] text-[#0c1000] font-bold px-6 py-2.5 rounded-xl text-sm hover:bg-[#ddf93c] transition-colors">
@@ -319,7 +319,7 @@ export default function BrandPageTemplate({ config }: { config: BrandConfig }) {
       {/* ─── EDITORIAL ────────────────────────────────────────────────────── */}
       <section className="max-w-3xl mx-auto px-4 py-10">
         <h2 className="text-xl font-black text-[var(--foreground)] mb-5">
-          De ce sa cumperi de la {config.name}?
+          De ce să cumperi de la {config.name}?
         </h2>
         <div className="space-y-4">
           {config.editorial.map((para, i) => (
@@ -329,7 +329,7 @@ export default function BrandPageTemplate({ config }: { config: BrandConfig }) {
 
         {config.tips.length > 0 && (
           <div className="mt-8 bg-[var(--surface)] border border-[var(--border-strong)] rounded-xl p-5">
-            <h3 className="font-black text-[var(--foreground)] mb-4">Sfaturi pentru cumparaturi mai ieftine la {config.name}</h3>
+            <h3 className="font-black text-[var(--foreground)] mb-4">Sfaturi pentru cumpărături mai ieftine la {config.name}</h3>
             <ul className="space-y-2.5">
               {config.tips.map((tip, i) => (
                 <li key={i} className="flex items-start gap-2.5 text-sm text-[var(--text-soft)]">
@@ -345,7 +345,7 @@ export default function BrandPageTemplate({ config }: { config: BrandConfig }) {
       {/* ─── FAQ ─────────────────────────────────────────────────────────── */}
       {config.faq.length > 0 && (
         <section className="max-w-3xl mx-auto px-4 pb-12">
-          <h2 className="text-xl font-black text-[var(--foreground)] mb-5">Intrebari frecvente despre {config.name}</h2>
+          <h2 className="text-xl font-black text-[var(--foreground)] mb-5">Întrebări frecvente despre {config.name}</h2>
           <div className="divide-y divide-[#e2e8f0] border border-[var(--border)] rounded-xl overflow-hidden">
             {config.faq.map((item, i) => (
               <details key={i} className="group bg-[var(--surface)]">
@@ -363,12 +363,12 @@ export default function BrandPageTemplate({ config }: { config: BrandConfig }) {
       {/* ─── CTA NEWSLETTER ──────────────────────────────────────────────── */}
       <section className="max-w-5xl mx-auto px-4 pb-12">
         <div className="bg-[var(--surface)] border border-[var(--border-strong)] rounded-xl p-8 text-center">
-          <p className="text-2xl font-black text-[var(--foreground)] mb-2">Nu rata urmatoarea oferta {config.name}</p>
-          <p className="text-[var(--text-soft)] text-sm mb-5">Aboneaza-te la newsletter si primesti codurile noi direct pe email.</p>
+          <p className="text-2xl font-black text-[var(--foreground)] mb-2">Nu rata următoarea ofertă {config.name}</p>
+          <p className="text-[var(--text-soft)] text-sm mb-5">Abonează-te la newsletter și primești codurile noi direct pe email.</p>
           <div className="flex flex-wrap justify-center gap-3">
             <Link href="/newsletter"
               className="bg-gradient-to-r from-[#ddf93c] to-[#ddf93c] hover:from-[#ddf93c] hover:to-[#ddf93c] text-[#0c1000] font-black px-7 py-3 rounded-xl text-sm transition-all shadow-lg shadow-[#ddf93c]/20">
-              Aboneaza-te gratuit →
+              Abonează-te gratuit →
             </Link>
             <Link href="/oferte-azi"
               className="bg-[var(--surface-alt)] border border-[var(--border-strong)] hover:bg-[var(--surface-high)] text-[var(--text-soft)] font-semibold px-6 py-3 rounded-xl text-sm transition-colors">

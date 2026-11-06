@@ -36,79 +36,79 @@ PERECHI = [
         "slug": "fashiondays-vs-answear",
         "m1": "fashiondays.ro", "m2": "answear.ro",
         "titlu_scurt": "FashionDays vs Answear",
-        "intro": "FashionDays si Answear vand online haine, incaltaminte si accesorii de brand. Difera prin selectie si prin campaniile de reduceri. Iata cum se compara in {luna} {an}.",
+        "intro": "FashionDays și Answear vând online haine, încălțăminte și accesorii de brand. Diferă prin selecție și prin campaniile de reduceri. Iată cum se compară în {luna} {an}.",
         "puncte": [
-            {"aspect": "Specialitate", "v1": "Fashion, branduri internationale", "v2": "Fashion si sportswear, branduri internationale"},
+            {"aspect": "Specialitate", "v1": "Fashion, branduri internaționale", "v2": "Fashion și sportswear, branduri internaționale"},
             {"aspect": "Retur", "v1": "30 de zile", "v2": "30 de zile"},
         ],
-        "verdict_m1": "Alege FashionDays daca vrei selectia lor de branduri internationale si campaniile lor sezoniere.",
-        "verdict_m2": "Alege Answear pentru branduri de fashion si sportswear.",
-        "categorie": "Fashion online Romania",
+        "verdict_m1": "Alege FashionDays dacă vrei selecția lor de branduri internaționale și campaniile lor sezoniere.",
+        "verdict_m2": "Alege Answear pentru branduri de fashion și sportswear.",
+        "categorie": "Fashion online România",
     },
     {
         "slug": "libris-vs-carturesti",
         "m1": "libris.ro", "m2": "carturesti.ro",
         "titlu_scurt": "Libris vs Carturesti",
-        "intro": "Libris si Carturesti vand carti online in Romania. Iata cum se compara in {luna} {an}, cu ofertele lor active pe AmCupon.ro.",
+        "intro": "Libris și Carturesti vând cărți online în România. Iată cum se compară în {luna} {an}, cu ofertele lor active pe AmCupon.ro.",
         "puncte": [
-            {"aspect": "Specialitate", "v1": "Librarie online", "v2": "Librarie online si lant de librarii fizice"},
+            {"aspect": "Specialitate", "v1": "Librărie online", "v2": "Librărie online și lanț de librării fizice"},
         ],
-        "verdict_m1": "Alege Libris daca vrei o librarie online cu un catalog larg.",
-        "verdict_m2": "Alege Carturesti daca vrei sa vezi cartile si in librariile lor fizice.",
-        "categorie": "Librarii online Romania",
+        "verdict_m1": "Alege Libris dacă vrei o librărie online cu un catalog larg.",
+        "verdict_m2": "Alege Carturesti dacă vrei să vezi cărțile și în librăriile lor fizice.",
+        "categorie": "Librării online România",
     },
     {
         "slug": "surfshark-vs-hostinger",
         "m1": "surfshark.com", "m2": "hostinger.ro",
         "titlu_scurt": "Surfshark vs Hostinger",
-        "intro": "Surfshark si Hostinger sunt servicii diferite: un VPN si un serviciu de hosting web. Le comparam pentru cine cauta reduceri la abonamente online, in {luna} {an}.",
+        "intro": "Surfshark și Hostinger sunt servicii diferite: un VPN și un serviciu de hosting web. Le comparăm pentru cine caută reduceri la abonamente online, în {luna} {an}.",
         "puncte": [
-            {"aspect": "Serviciu principal", "v1": "VPN — protectie online si continut blocat geografic", "v2": "Hosting web — site-uri, WordPress"},
-            {"aspect": "Garantie", "v1": "30 de zile, bani inapoi", "v2": "30 de zile, bani inapoi"},
+            {"aspect": "Serviciu principal", "v1": "VPN — protecție online și conținut blocat geografic", "v2": "Hosting web — site-uri, WordPress"},
+            {"aspect": "Garanție", "v1": "30 de zile, bani înapoi", "v2": "30 de zile, bani înapoi"},
             {"aspect": "Suport", "v1": "Chat non-stop", "v2": "Chat non-stop"},
         ],
-        "verdict_m1": "Alege Surfshark daca vrei protectie online si acces la servicii blocate geografic.",
-        "verdict_m2": "Alege Hostinger daca vrei sa lansezi un site, un blog sau un magazin online.",
+        "verdict_m1": "Alege Surfshark dacă vrei protecție online și acces la servicii blocate geografic.",
+        "verdict_m2": "Alege Hostinger dacă vrei să lansezi un site, un blog sau un magazin online.",
         "categorie": "Servicii online",
     },
     {
         "slug": "drmax-vs-farmec",
         "m1": "drmax.ro", "m2": "farmec.ro",
         "titlu_scurt": "Dr. Max vs Farmec",
-        "intro": "Dr. Max este o farmacie online si fizica, iar Farmec un producator roman de cosmetice care vinde si online. Iata cum se compara in {luna} {an}.",
+        "intro": "Dr. Max este o farmacie online și fizică, iar Farmec un producător român de cosmetice care vinde și online. Iată cum se compară în {luna} {an}.",
         "puncte": [
-            {"aspect": "Specialitate", "v1": "Farmacie: medicamente fara reteta, suplimente, dermatocosmetice", "v2": "Cosmetice romanesti proprii"},
-            {"aspect": "Branduri", "v1": "Branduri internationale si romanesti", "v2": "Gerovital, Aslavital (branduri Farmec)"},
+            {"aspect": "Specialitate", "v1": "Farmacie: medicamente fără rețetă, suplimente, dermatocosmetice", "v2": "Cosmetice românești proprii"},
+            {"aspect": "Branduri", "v1": "Branduri internaționale și românești", "v2": "Gerovital, Aslavital (branduri Farmec)"},
         ],
-        "verdict_m1": "Alege Dr. Max pentru medicamente fara reteta, suplimente si dermatocosmetice.",
-        "verdict_m2": "Alege Farmec daca vrei cosmetice romanesti Gerovital sau Aslavital, direct de la producator.",
-        "categorie": "Sanatate si frumusete",
+        "verdict_m1": "Alege Dr. Max pentru medicamente fără rețetă, suplimente și dermatocosmetice.",
+        "verdict_m2": "Alege Farmec dacă vrei cosmetice românești Gerovital sau Aslavital, direct de la producător.",
+        "categorie": "Sănătate și frumusețe",
     },
     {
         "slug": "noriel-vs-decathlon",
         "m1": "noriel.ro", "m2": "decathlon.ro",
         "titlu_scurt": "Noriel vs Decathlon",
-        "intro": "Noriel vinde jucarii si jocuri, Decathlon echipament sportiv. Ambele au produse pentru copii. Iata cum se compara in {luna} {an}.",
+        "intro": "Noriel vinde jucării și jocuri, Decathlon echipament sportiv. Ambele au produse pentru copii. Iată cum se compară în {luna} {an}.",
         "puncte": [
-            {"aspect": "Specialitate", "v1": "Jucarii si jocuri de societate", "v2": "Sport si outdoor"},
-            {"aspect": "Pentru copii", "v1": "Jucarii si jocuri", "v2": "Echipament sportiv si biciclete pentru copii"},
-            {"aspect": "Branduri proprii", "v1": "—", "v2": "Quechua, Domyos si altele"},
+            {"aspect": "Specialitate", "v1": "Jucării și jocuri de societate", "v2": "Sport și outdoor"},
+            {"aspect": "Pentru copii", "v1": "Jucării și jocuri", "v2": "Echipament sportiv și biciclete pentru copii"},
+            {"aspect": "Branduri proprii", "v1": "—", "v2": "Quechua, Domyos și altele"},
         ],
-        "verdict_m1": "Alege Noriel pentru jucarii, jocuri de societate si cadouri pentru copii.",
-        "verdict_m2": "Alege Decathlon pentru echipament sportiv pentru copii si adulti.",
-        "categorie": "Copii si sport",
+        "verdict_m1": "Alege Noriel pentru jucării, jocuri de societate și cadouri pentru copii.",
+        "verdict_m2": "Alege Decathlon pentru echipament sportiv pentru copii și adulți.",
+        "categorie": "Copii și sport",
     },
     {
         "slug": "libris-vs-elefant",
         "m1": "libris.ro", "m2": "elefant.ro",
         "titlu_scurt": "Libris vs Elefant",
-        "intro": "Libris si Elefant vand carti online in Romania; Elefant are si alte categorii de produse. Iata cum se compara in {luna} {an}.",
+        "intro": "Libris și Elefant vând cărți online în România; Elefant are și alte categorii de produse. Iată cum se compară în {luna} {an}.",
         "puncte": [
-            {"aspect": "Specialitate", "v1": "Librarie online", "v2": "Carti si alte categorii de produse"},
+            {"aspect": "Specialitate", "v1": "Librărie online", "v2": "Cărți și alte categorii de produse"},
         ],
-        "verdict_m1": "Alege Libris daca vrei o librarie online cu un catalog larg.",
-        "verdict_m2": "Alege Elefant daca vrei sa comanzi si alte produse impreuna cu cartile.",
-        "categorie": "Librarii online Romania",
+        "verdict_m1": "Alege Libris dacă vrei o librărie online cu un catalog larg.",
+        "verdict_m2": "Alege Elefant dacă vrei să comanzi și alte produse împreună cu cărțile.",
+        "categorie": "Librării online România",
     },
 ]
 
@@ -162,8 +162,8 @@ def build_comparison(pereche: dict, magazin_map: dict, luna: str, an: int) -> di
     n1 = _num_afisat(m1_slug)
     n2 = _num_afisat(m2_slug)
 
-    titlu = f"{pereche['titlu_scurt']} {an} — Comparatie Completa | AmCupon.ro"
-    titlu_h1 = f"{pereche['titlu_scurt']} — unde gasesti cele mai bune oferte?"
+    titlu = f"{pereche['titlu_scurt']} {an} — Comparație Completă | AmCupon.ro"
+    titlu_h1 = f"{pereche['titlu_scurt']} — unde găsești cele mai bune oferte?"
     intro = pereche["intro"].format(luna=luna, an=an)
 
     promo1 = (m1.get("promotii") or [])[:3]
@@ -186,20 +186,20 @@ def build_comparison(pereche: dict, magazin_map: dict, luna: str, an: int) -> di
 
     def are_oferte(n: str, s: dict) -> str:
         if not s["partener"]:
-            return f"{n} nu are program de afiliere pe AmCupon.ro, deci nu publicam oferte {n}."
+            return f"{n} nu are program de afiliere pe AmCupon.ro, deci nu publicăm oferte {n}."
         k = s["promotii_active"]
-        return (f"{'Da' if k > 0 else 'Momentan nu'}, {n} are {cu_numar(k, 'oferta activa', 'oferte active')} "
-                f"pe AmCupon.ro in {luna} {an}. Ofertele se actualizeaza automat de trei ori pe zi.")
+        return (f"{'Da' if k > 0 else 'Momentan nu'}, {n} are {cu_numar(k, 'ofertă activă', 'oferte active')} "
+                f"pe AmCupon.ro în {luna} {an}. Ofertele se actualizează automat de trei ori pe zi.")
 
     parteneri = [n for n, s in ((n1, stats1), (n2, stats2)) if s["partener"]]
     faq = [
         {"q": f"Care este mai bun, {n1} sau {n2}?", "a": f"{pereche['verdict_m1']} {pereche['verdict_m2']}"},
         {"q": f"Are {n1} coduri de reducere active?", "a": are_oferte(n1, stats1)},
         {"q": f"Are {n2} coduri de reducere active?", "a": are_oferte(n2, stats2)},
-        {"q": f"Unde gasesc cupoane pentru {n1} si {n2}?",
-         "a": (f"Pe AmCupon.ro gasesti ofertele active ale magazinelor partenere ({' si '.join(parteneri)}), actualizate automat. "
-               "Copiezi codul, il aplici in cos si reducerea se scade automat.") if parteneri
-              else "Niciunul dintre cele doua magazine nu are program de afiliere pe AmCupon.ro."},
+        {"q": f"Unde găsesc cupoane pentru {n1} și {n2}?",
+         "a": (f"Pe AmCupon.ro găsești ofertele active ale magazinelor partenere ({' și '.join(parteneri)}), actualizate automat. "
+               "Copiezi codul, îl aplici în coș și reducerea se scade automat.") if parteneri
+              else "Niciunul dintre cele două magazine nu are program de afiliere pe AmCupon.ro."},
     ]
 
     return {

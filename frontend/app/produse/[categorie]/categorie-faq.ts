@@ -1,48 +1,56 @@
+/* Intrebari frecvente pe /produse/<categorie> (text vizibil + FAQPage).
+   06.11.2026: versiunea veche numea magazine care NU sunt partenerii nostri (FashionDays, Altex, PCGarage,
+   eMAG, Douglas, Sephora, IKEA, Dedeman, Carrefour...), promitea „pana la 70%" si „magazine certificate".
+   Regula: aici nu se scrie niciun nume de magazin (partenerii se schimba zilnic, lista reala e pe pagina)
+   si nicio cifra care nu vine din date. */
+const PRETURI = { q: "Cât de exacte sunt prețurile afișate?", a: "Prețurile vin din feed-urile magazinelor partenere și se actualizează zilnic, așa că pot rămâne în urmă față de site-ul magazinului. Prețul final e cel din coșul magazinului: apasă butonul Cumpără acum și verifică-l acolo înainte să comanzi." };
+const WISHLIST = { q: "Pot urmări prețul unui produs?", a: "Da. Salvează produsul în wishlist (inima de pe card); în pagina Wishlist vezi dacă prețul a scăzut de când l-ai salvat. Lista rămâne doar în browserul tău." };
+
 export const CAT_FAQ: Record<string, { q: string; a: string }[]> = {
   fashion: [
-    { q: "Unde gasesc reduceri la haine online in Romania?", a: "Pe pagina Fashion de pe AmCupon.ro gasesti produse de la FashionDays, Answear, Outfitblack si alte magazine cu pana la 70% reducere, actualizate zilnic. Foloseste filtrul Discount maxim pentru cele mai bune oferte." },
-    { q: "Cum economisesc bani la cumparaturi de haine?", a: "Sorteaza produsele dupa Discount maxim, aplica filtrul >=25% si salveaza produsele dorite la favorite. Cand pretul scade, vei vedea notificarea in pagina Wishlist." },
-    { q: "Ce marci de haine gasesc la reducere?", a: "Gasesti marci internationale ca Answear, FashionDays, ZARA, H&M dar si branduri romanesti. Filtrul Brand iti permite sa cauti exact marca dorita." },
+    { q: "De unde vin produsele de fashion de pe AmCupon.ro?", a: "Din feed-urile magazinelor de modă partenere AmCupon.ro, actualizate zilnic. Lista magazinelor e chiar pe pagină, în filtrul Magazin." },
+    { q: "Cum găsesc haine la preț mai mic?", a: "Sortează după Preț crescător sau Discount maxim și folosește filtrele de reducere. Reducerea e cea declarată de magazin în feed; unele produse nu au preț vechi, deci nu au procent." },
+    WISHLIST,
   ],
   electronice: [
-    { q: "Unde gasesc laptopuri si telefoane la cel mai mic pret?", a: "Categoria Electronice de pe AmCupon.ro agrega oferte de la Altex, PCGarage, eMAG si alte magazine IT. Sorteaza dupa Pret crescator sau Discount maxim pentru cele mai bune dealuri." },
-    { q: "Cum stiu ca pretul afisat e corect?", a: "Preturile sunt sincronizate direct din feed-urile oficiale ale magazinelor partenere si actualizate zilnic. Apasa Cumpara acum pentru a vedea pretul final pe site-ul magazinului." },
-    { q: "Pot filtra electronicele dupa brand?", a: "Da, filtrul Brand iti permite sa selectezi exact producatorul dorit: Samsung, Apple, Lenovo, ASUS si altii. Combina cu filtrul de discount pentru ofertele optime." },
+    { q: "De unde vin laptopurile și telefoanele de pe pagină?", a: "Din feed-urile magazinelor de electronice partenere AmCupon.ro. Ce magazine sunt azi vezi în filtrul Magazin." },
+    PRETURI,
+    { q: "Pot filtra electronicele după brand?", a: "Da, filtrul Brand îți arată producătorii din produsele de pe pagină. Îl poți combina cu filtrul de preț maxim." },
   ],
   beauty: [
-    { q: "Unde gasesc parfumuri si cosmetice la reducere?", a: "In categoria Beauty gasesti produse de la Notino, Douglas, Sephora si alte magazine de cosmetice cu reduceri de pana la 50%. Actualizam ofertele zilnic." },
-    { q: "Cum aleg cel mai bun parfum la pret mic?", a: "Foloseste cautarea dupa brand (ex: Chanel, Dior, Versace), sorteaza dupa discount si salveaza preferatele in wishlist pentru a urmari evolutia pretului." },
+    { q: "De unde vin parfumurile și cosmeticele de pe pagină?", a: "Din feed-urile magazinelor de cosmetice partenere AmCupon.ro, actualizate zilnic. Lista lor e în filtrul Magazin." },
+    { q: "Cum compar prețul unui parfum?", a: "Caută numele parfumului, apoi compară aceeași concentrație și același volum (EDT și EDP, 50 ml și 100 ml sunt produse diferite)." },
   ],
   sport: [
-    { q: "Unde gasesc echipamente sportive la reducere?", a: "Categoria Sport & Outdoor agrega oferte de la Decathlon, Hervis, Sportisimo si alte magazine. Filtreaza dupa brand sau tip de produs pentru a gasi exact ce cauti." },
-    { q: "Cum economisesc la cumparaturi de echipament fitness?", a: "Sorteaza produsele dupa Discount maxim sau aplica filtrul >=25%. Multe magazine de sport au perioade cu reduceri mari la sfarsit de sezon." },
+    { q: "De unde vin echipamentele sportive de pe pagină?", a: "Din feed-urile magazinelor de sport partenere AmCupon.ro. Filtrează după brand, magazin sau preț maxim ca să găsești ce cauți." },
+    { q: "Când sunt reduceri la echipament sportiv?", a: "Des la final de sezon, când magazinele lichidează colecția. Sortează după Discount maxim ca să vezi produsele pe care magazinul le-a redus." },
   ],
   casa: [
-    { q: "Unde gasesc mobila si decoratiuni la reducere?", a: "Categoria Casa & Gradina include oferte de la IKEA, Dedeman, Mobexpert, vidaXL si alte magazine. Filtreaza dupa pret maxim cu sliderul pentru a gasi produse in bugetul tau." },
-    { q: "Ce produse pentru casa gasesc la cel mai mic pret?", a: "De la mobila si decoratiuni pana la electrocasnice si unelte, gasesti mii de produse. Sorteaza dupa Pret crescator pentru a incepe de la cele mai accesibile optiuni." },
+    { q: "De unde vin produsele pentru casă de pe pagină?", a: "Din feed-urile magazinelor partenere AmCupon.ro de mobilă, decorațiuni, electrocasnice și unelte. Lista lor e în filtrul Magazin." },
+    { q: "Cum găsesc produse în bugetul meu?", a: "Folosește glisorul de preț maxim și sortează după Preț crescător. Verifică pe site-ul magazinului costul livrării, mai ales la produsele mari." },
   ],
   copii: [
-    { q: "Unde gasesc jucarii la reducere in Romania?", a: "Categoria Copii & Jucarii agrega oferte de la Noriel, Bebetei, Smyths si alte magazine pentru copii. Reduceri de pana la 50% la jucarii, haine bebelusi si accesorii." },
-    { q: "Cum aleg jucarii sigure la pret bun?", a: "Cauta branduri cunoscute (LEGO, Hasbro, Mattel) folosind filtrul de Brand si sorteaza dupa discount. Produsele listate sunt de la magazine certificate." },
+    { q: "De unde vin jucăriile de pe pagină?", a: "Din feed-urile magazinelor pentru copii partenere AmCupon.ro, actualizate zilnic. Lista lor e în filtrul Magazin." },
+    { q: "Ce verific la o jucărie?", a: "Vârsta recomandată de pe ambalaj și marcajul CE. Jucăriile cu piese mici nu sunt pentru copiii sub 3 ani." },
   ],
   farmacie: [
-    { q: "Pot cumpara medicamente si suplimente mai ieftin online?", a: "Da, in categoria Farmacie gasesti suplimente, vitamine si produse naturiste de la Dr. Max, Farmacia Tei, Catena si alte farmacii online cu reduceri actualizate zilnic." },
-    { q: "Cum gasesc cel mai ieftin supliment alimentar?", a: "Foloseste cautarea cu numele produsului, compara preturile intre magazine cu filtrul Magazin si sorteaza dupa Pret crescator pentru cel mai bun pret." },
+    { q: "De unde vin suplimentele și produsele de farmacie de pe pagină?", a: "Din feed-urile farmaciilor și magazinelor de sănătate partenere AmCupon.ro. Pentru medicamente și suplimente întreabă medicul sau farmacistul înainte să cumperi." },
+    PRETURI,
   ],
   carti: [
-    { q: "Unde gasesc carti ieftine online in Romania?", a: "Categoria Carti agrega oferte de la Elefant, Libris, Carturesti si alte librarii online. Gasesti carti cu reduceri de pana la 70% la mii de titluri." },
-    { q: "Cum gasesc rapid o carte anume la pret mic?", a: "Foloseste bara de cautare pentru a cauta dupa titlu sau autor, apoi sorteaza dupa Pret crescator. Salveaza cartea in wishlist si vei fi notificat cand pretul scade." },
+    { q: "De unde vin cărțile de pe pagină?", a: "Din feed-urile librăriilor partenere AmCupon.ro, actualizate zilnic. Lista lor e în filtrul Magazin." },
+    { q: "Cum găsesc o carte anume?", a: "Caută după titlu sau autor, apoi sortează după Preț crescător. Aceeași carte poate avea ediții diferite (copertă, editură), deci compară ediția." },
   ],
   auto: [
-    { q: "Unde gasesc piese auto si accesorii la reducere?", a: "Categoria Auto & Moto include oferte de la Navstore, AutoDoc si alte magazine auto online din Romania. Cauta dupa marca sau tipul piesei cu filtrul de cautare." },
-    { q: "Pot gasi anvelope la pret mic?", a: "Da, sorteaza dupa Discount maxim sau Pret crescator pentru a gasi anvelopele la cel mai bun pret. Filtrul de brand te ajuta sa selectezi producatorul preferat." },
+    { q: "De unde vin piesele și accesoriile auto de pe pagină?", a: "Din feed-urile magazinelor auto partenere AmCupon.ro. Înainte să comanzi o piesă, verifică pe site-ul magazinului compatibilitatea cu modelul exact al mașinii." },
+    PRETURI,
   ],
   animale: [
-    { q: "Unde gasesc hrana pentru animale de companie mai ieftina?", a: "Categoria Animale agrega oferte de la Petmart, Petmax, Animax si alte magazine specializate. Gasesti hrana, accesorii si produse de ingrijire la reduceri frecvente." },
-    { q: "Cum economisesc la hrana pentru caine sau pisica?", a: "Cauta dupa brand (Royal Canin, Hill's, Purina) cu filtrul dedicat, sorteaza dupa discount si salveaza produsele preferate in wishlist." },
+    { q: "De unde vin produsele pentru animale de pe pagină?", a: "Din feed-urile pet shop-urilor partenere AmCupon.ro, actualizate zilnic. Lista lor e în filtrul Magazin." },
+    { q: "Cum economisesc la hrana pentru câine sau pisică?", a: "Compară prețul pe kilogram, nu prețul sacului: sacii mari ies de obicei mai ieftin pe kilogram." },
   ],
   alimente: [
-    { q: "Pot cumpara alimente mai ieftin online?", a: "Da, categoria Alimente include oferte de la Carrefour, Kaufland Online, Bringo si alte supermarketuri online. Gasesti promotii la alimente, bauturi si produse bio." },
-    { q: "Ce produse alimentare au reduceri frecvente?", a: "Cafeaua, ceaiul, produsele bio si suplimentele nutritive au frecvent reduceri de 20-40%. Sorteaza dupa discount pentru a vedea cele mai bune oferte ale momentului." },
+    { q: "De unde vin produsele alimentare de pe pagină?", a: "Din feed-urile magazinelor de alimente partenere AmCupon.ro, actualizate zilnic. Lista lor e în filtrul Magazin." },
+    { q: "Cum compar prețurile la alimente?", a: "Compară prețul pe kilogram sau pe litru, nu prețul pachetului, și verifică data de expirare pe site-ul magazinului." },
   ],
 };

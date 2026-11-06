@@ -147,11 +147,11 @@ export default function TopProduseClient({ produse, culoare, areSectiune, select
 
       {/* SORT CONTROLS */}
       <div className="flex items-center gap-2 mb-6">
-        <span className="text-sm text-[var(--text-soft)] mr-1">Sorteaza:</span>
+        <span className="text-sm text-[var(--text-soft)] mr-1">Sortează:</span>
         {[
           { val: "pozitie" as const, label: "Recomandate" },
           { val: "scor" as const,    label: "Scor" },
-          { val: "pret" as const,    label: "Pret" },
+          { val: "pret" as const,    label: "Preț" },
         ].map(opt => (
           <button
             key={opt.val}
@@ -395,7 +395,7 @@ export default function TopProduseClient({ produse, culoare, areSectiune, select
 
                   {/* SPECIFICATII */}
                   <div>
-                    <p className="text-xs font-bold text-[var(--text-soft)] mb-2">Specificatii tehnice</p>
+                    <p className="text-xs font-bold text-[var(--text-soft)] mb-2">Specificații tehnice</p>
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-1.5">
                       {Object.entries(p.specificatii).map(([k, v]) => (
                         <div key={k} className="flex items-start gap-2 bg-[var(--surface-high)]/50 rounded-lg px-3 py-2">

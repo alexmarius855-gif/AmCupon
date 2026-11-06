@@ -61,7 +61,7 @@ const DEFINITII: { cheie: CheieFiltru; eticheta: string; Icon: typeof Truck }[] 
   { cheie: "cod",       eticheta: "Cu cod",            Icon: Tag },
   { cheie: "reducere",  eticheta: "Reduceri 50%+",     Icon: Flame },
   { cheie: "transport", eticheta: "Transport gratuit", Icon: Truck },
-  { cheie: "expira",    eticheta: "Expira curand",     Icon: Clock },
+  { cheie: "expira",    eticheta: "Expiră curând",     Icon: Clock },
 ];
 
 export default function FiltreRapide({

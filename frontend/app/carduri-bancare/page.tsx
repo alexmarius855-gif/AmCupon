@@ -2,20 +2,20 @@ import { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Cel mai bun Cont Bancar Online Romania 2026 — Revolut",
+  title: "Cel mai bun Cont Bancar Online România 2026 — Revolut",
   description: "Comparăm conturile digitale pe care le pot deschide românii în 2026 — Revolut, Wise, Salt Bank: costuri, schimb valutar, transferuri internaționale…",
   keywords: [
-    "cont bancar online romania",
-    "revolut parere romania",
-    "wise transfer bani strainatate",
-    "n26 cont romania",
-    "salt bank parere",
+    "cont bancar online românia",
+    "revolut părere românia",
+    "wise transfer bani străinătate",
+    "n26 cont românia",
+    "salt bank părere",
     "cel mai bun cont digital 2026",
-    "card fara comision strainatate",
+    "card fără comision străinătate",
   ],
   alternates: { canonical: "https://amcupon.ro/carduri-bancare" },
   openGraph: {
-    title: "Cel mai bun Cont Bancar Online Romania 2026 | AmCupon.ro",
+    title: "Cel mai bun Cont Bancar Online România 2026 | AmCupon.ro",
     description: "Revolut, Wise, Salt Bank — comparație pentru români: costuri, schimb valutar, transferuri internaționale.",
     url: "https://amcupon.ro/carduri-bancare",
     siteName: "AmCupon.ro",
@@ -98,7 +98,7 @@ const CONTURI = [
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "CollectionPage",
-  name: "Cel mai bun Cont Bancar Online Romania 2026",
+  name: "Cel mai bun Cont Bancar Online România 2026",
   url: "https://amcupon.ro/carduri-bancare",
   description: "Comparație Revolut, Wise, Salt Bank pentru români, 2026",
 };
@@ -113,7 +113,7 @@ export default function CarduriBancarePage() {
 
         <nav className="bg-[var(--surface)]/80 backdrop-blur-sm border-b border-[var(--border)]">
           <div className="max-w-6xl mx-auto px-4 py-3 flex items-center gap-1.5 text-xs text-[var(--text-muted)]">
-            <Link href="/" className="hover:text-[var(--accent-text)] transition-colors">Acasa</Link>
+            <Link href="/" className="hover:text-[var(--accent-text)] transition-colors">Acasă</Link>
             <span>/</span>
             <span className="text-[var(--text-soft)] font-medium">Carduri & Conturi Bancare</span>
           </div>
@@ -141,7 +141,7 @@ export default function CarduriBancarePage() {
               Revolut, Wise și Salt Bank — conturi digitale pe care le poți deschide din România, comparate pe condițiile publicate de fiecare: costuri, schimb valutar, transferuri.
             </p>
             <div className="flex flex-wrap justify-center gap-2">
-              {["Cont gratuit", "Card virtual", "Schimb valutar", "Transferuri rapide", "Fara birocratie"].map(c => (
+              {["Cont gratuit", "Card virtual", "Schimb valutar", "Transferuri rapide", "Fără birocrație"].map(c => (
                 <span key={c} className="bg-[var(--surface-alt)] border border-[var(--border-strong)] text-[var(--text-soft)] text-xs font-semibold px-3 py-1.5 rounded-full">{c}</span>
               ))}
             </div>
@@ -151,7 +151,7 @@ export default function CarduriBancarePage() {
         {/* Conturi */}
         <section className="max-w-6xl mx-auto px-4 py-12">
           <div className="text-center mb-10">
-            <p className="text-xs font-bold text-[var(--accent-text)] uppercase tracking-widest mb-2">COMPARATIE CONTURI</p>
+            <p className="text-xs font-bold text-[var(--accent-text)] uppercase tracking-widest mb-2">COMPARAȚIE CONTURI</p>
             <h2 className="text-3xl font-black text-[var(--foreground)]">Conturi digitale pentru români</h2>
             <p className="text-[var(--text-soft)] text-sm mt-2">Comparate pe condițiile publicate de fiecare bancă — verifică-le pe site-ul ei înainte să deschizi contul</p>
           </div>
@@ -193,7 +193,7 @@ export default function CarduriBancarePage() {
                       </ul>
                     </div>
                     <div>
-                      <p className="text-xs font-bold text-[var(--text-muted)] uppercase tracking-wider mb-2">De stiut</p>
+                      <p className="text-xs font-bold text-[var(--text-muted)] uppercase tracking-wider mb-2">De știut</p>
                       <ul className="space-y-1.5">
                         {c.dezavantaje.map(d => (
                           <li key={d} className="flex items-start gap-2 text-sm text-[var(--text-soft)]">
@@ -225,7 +225,7 @@ export default function CarduriBancarePage() {
         <section className="bg-[var(--surface)] border-t border-b border-[var(--border)] py-12 px-4">
           <div className="max-w-4xl mx-auto">
             <p className="text-xs font-bold text-[var(--accent-text)] uppercase tracking-widest mb-3">GHID ALEGERE</p>
-            <h2 className="text-2xl font-black text-[var(--foreground)] mb-7">Ce cont sa alegi in {an}?</h2>
+            <h2 className="text-2xl font-black text-[var(--foreground)] mb-7">Ce cont să alegi în {an}?</h2>
             <div className="grid sm:grid-cols-2 gap-4">
               {[
                 { icon: "✈️", titlu: "Călătorești des în străinătate?", raspuns: "Revolut — schimb valutar fără comision până la limita lunară a planului; peste limită și în weekend se aplică un comision." },
@@ -245,10 +245,10 @@ export default function CarduriBancarePage() {
 
         {/* Related */}
         <section className="max-w-6xl mx-auto px-4 py-8">
-          <p className="text-xs font-bold text-[var(--text-muted)] uppercase tracking-widest mb-4">EXPLOREAZA SI</p>
+          <p className="text-xs font-bold text-[var(--text-muted)] uppercase tracking-widest mb-4">EXPLOREAZĂ ȘI</p>
           <div className="flex flex-wrap gap-2">
             {[
-              { href: "/trading", label: "📈 Trading & Investitii" },
+              { href: "/trading", label: "📈 Trading & Investiții" },
               { href: "/vpn", label: "🔒 VPN & Securitate" },
               { href: "/hosting", label: "🌐 Hosting Web" },
               { href: "/servicii", label: "⚙️ Servicii Online" },

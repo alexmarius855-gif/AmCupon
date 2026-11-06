@@ -19,7 +19,7 @@ interface Magazin {
 export const metadata: Metadata = {
   title: "Cod Reducere Cărți Online România 2026 — Libris, Cărturești",
   description: `Coduri de reducere cărți online ${laParteneri(NISA_CATEGORII.carti)}. Cărți, audiobook-uri, e-book-uri la prețuri reduse. Actualizate zilnic.`,
-  keywords: ["cod reducere carti", "reduceri libris", "carti ieftine online", "cod reducere elefant", "carturesti reducere", "carti online romania", "audiobook reducere"],
+  keywords: ["cod reducere cărți", "reduceri libris", "cărți ieftine online", "cod reducere elefant", "carturesti reducere", "cărți online românia", "audiobook reducere"],
   alternates: { canonical: "https://amcupon.ro/carti" },
   openGraph: { title: "Cărți Online 2026 | AmCupon.ro", url: "https://amcupon.ro/carti", siteName: "AmCupon.ro", locale: "ro_RO", type: "website", images: [{ url: "https://amcupon.ro/og-image.png", width: 1200, height: 630 }] },
 };
@@ -36,7 +36,7 @@ const AVANTAJE = [
   { icon: "📱", titlu: "E-book-uri", desc: "Cărți digitale — instant, fără livrare" },
 ];
 
-const jsonLd = { "@context":"https://schema.org","@type":"CollectionPage","name":"Cărți Online 2026","url":"https://amcupon.ro/carti","description":"Coduri si oferte de la librariile online partenere AmCupon" };
+const jsonLd = { "@context":"https://schema.org","@type":"CollectionPage","name":"Cărți Online 2026","url":"https://amcupon.ro/carti","description":"Coduri și oferte de la librăriile online partenere AmCupon" };
 
 export default function CartiPage() {
   const filePath = path.join(process.cwd(), "public", "output.json");
@@ -138,12 +138,12 @@ export default function CartiPage() {
         </section>
 
         <section className="max-w-6xl mx-auto px-4 py-8">
-          <h2 className="text-base font-black text-[var(--text-soft)] mb-4">Exploreaza si alte categorii</h2>
+          <h2 className="text-base font-black text-[var(--text-soft)] mb-4">Explorează și alte categorii</h2>
           <div className="flex flex-wrap gap-2">
             {[
               { href: "/idei-cadouri", label: "🎁 Idei Cadouri" },
               { href: "/copii", label: "👶 Copii" },
-              { href: "/sanatate", label: "🌿 Sanatate" },
+              { href: "/sanatate", label: "🌿 Sănătate" },
               { href: "/categorii", label: "📂 Categorii" },
               { href: "/blog", label: "✍️ Blog" },
               { href: "/oferte-azi", label: "🔥 Oferte de Azi" },

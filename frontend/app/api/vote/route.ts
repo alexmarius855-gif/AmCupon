@@ -43,17 +43,17 @@ export async function POST(req: NextRequest) {
   try {
     body = await req.json();
   } catch {
-    return NextResponse.json({ eroare: "cerere invalida" }, { status: 400 });
+    return NextResponse.json({ eroare: "cerere invalidă" }, { status: 400 });
   }
 
   const { magazin, cuponHash, pozitiv } = body;
   if (!magazin || !cuponHash || typeof pozitiv !== "boolean") {
-    return NextResponse.json({ eroare: "parametri lipsa" }, { status: 400 });
+    return NextResponse.json({ eroare: "parametri lipsă" }, { status: 400 });
   }
 
   const sb = getSupabase();
   if (!sb) {
-    return NextResponse.json({ eroare: "baza indisponibila" }, { status: 503 });
+    return NextResponse.json({ eroare: "bază indisponibilă" }, { status: 503 });
   }
 
   const { data, error } = await sb.rpc("voteaza_cupon", {
@@ -66,7 +66,7 @@ export async function POST(req: NextRequest) {
   if (error) {
     // 503, nu 200 cu date inventate: UI-ul trebuie sa poata spune adevarul.
     console.error("[vote] RPC esuat:", error.message);
-    return NextResponse.json({ eroare: "vot neinregistrat" }, { status: 503 });
+    return NextResponse.json({ eroare: "vot neînregistrat" }, { status: 503 });
   }
 
   const rand = Array.isArray(data) ? data[0] : data;
@@ -81,7 +81,7 @@ export async function POST(req: NextRequest) {
 export async function GET(req: NextRequest) {
   const magazin = req.nextUrl.searchParams.get("magazin");
   if (!magazin) {
-    return NextResponse.json({ eroare: "lipseste magazin" }, { status: 400 });
+    return NextResponse.json({ eroare: "lipsește magazin" }, { status: 400 });
   }
 
   const sb = getSupabase();

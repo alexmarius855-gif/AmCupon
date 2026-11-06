@@ -53,7 +53,7 @@ export default function WebPushInit({ appId }: Props) {
                 type:       "push",
                 autoPrompt: true,
                 text: {
-                  actionMessage: "Primeste coduri de reducere direct in browser — gratis si fara spam!",
+                  actionMessage: "Primește coduri de reducere direct în browser — gratis și fără spam!",
                   acceptButton:  "Da, vreau!",
                   cancelButton:  "Nu acum",
                 },

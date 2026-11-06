@@ -17,9 +17,9 @@ interface Magazin {
 }
 
 export const metadata: Metadata = {
-  title: "Cod Reducere Pet Shop & Animale 2026 — Hrana Caini, Pisici",
+  title: "Cod Reducere Pet Shop & Animale 2026 — Hrană Câini, Pisici",
   description: `Coduri de reducere și oferte la pet shop ${laParteneri(NISA_CATEGORII.animale)}: hrană pentru câini și pisici, accesorii. Actualizate zilnic.`,
-  keywords: ["reduceri pet shop","hrana caini ieftina","hrana pisici reducere","petmax cod cupon","accesorii animale reducere","zooplus romania"],
+  keywords: ["reduceri pet shop","hrană câini ieftină","hrană pisici reducere","petmax cod cupon","accesorii animale reducere","zooplus românia"],
   alternates: { canonical: "https://amcupon.ro/animale" },
   openGraph: { title: "Pet Shop & Animale 2026 | AmCupon.ro", url: "https://amcupon.ro/animale", siteName: "AmCupon.ro", locale: "ro_RO", type: "website", images: [{ url: "https://amcupon.ro/og-image.png", width: 1200, height: 630 }] },
 };
@@ -29,12 +29,12 @@ const TOP_ANIMALE = ["petmart.ro","petmax.ro","bravapet.ro","ehranaanimale.ro","
 const CAT_ANIMALE = ["animale"];
 
 const AVANTAJE = [
-  { icon: "🐶", titlu: "Hrana Caini", desc: "Kibble, conserve, trate pentru caini de toate rasele si varstele" },
-  { icon: "🐱", titlu: "Hrana Pisici", desc: "Hrana uscata si umeda pentru pisici — Royal Canin, Whiskas, Hills" },
-  { icon: "🐠", titlu: "Acvaristice", desc: "Hrana si accesorii pentru pesti, acvarii si reptile" },
-  { icon: "🦜", titlu: "Pasari & Rozatoare", desc: "Seminte, cagini, jucarii pentru papagali, hamster, iepuri" },
-  { icon: "🛁", titlu: "Ingrijire & Igiena", desc: "Sampon, periute, accesorii grooming pentru animale de companie" },
-  { icon: "🏥", titlu: "Sanatate Animale", desc: "Antiparazitare, vitamine, suplimente pentru animale sanatoase" },
+  { icon: "🐶", titlu: "Hrană Câini", desc: "Kibble, conserve, trate pentru câini de toate rasele și vârstele" },
+  { icon: "🐱", titlu: "Hrană Pisici", desc: "Hrană uscată și umedă pentru pisici — Royal Canin, Whiskas, Hills" },
+  { icon: "🐠", titlu: "Acvaristice", desc: "Hrană și accesorii pentru pești, acvarii și reptile" },
+  { icon: "🦜", titlu: "Păsări & Rozătoare", desc: "Semințe, cuști, jucării pentru papagali, hamster, iepuri" },
+  { icon: "🛁", titlu: "Îngrijire & Igienă", desc: "Șampon, periuțe, accesorii grooming pentru animale de companie" },
+  { icon: "🏥", titlu: "Sănătate Animale", desc: "Antiparazitare, vitamine, suplimente pentru animale sănătoase" },
 ];
 
 
@@ -43,7 +43,7 @@ const jsonLd = {
   "@type": "CollectionPage",
   "name": "Pet Shop & Animale 2026",
   "url": "https://amcupon.ro/animale",
-  "description": "Coduri reducere pet shop online Romania — hrana si accesorii pentru animale de companie"
+  "description": "Coduri reducere pet shop online România — hrană și accesorii pentru animale de companie"
 };
 
 export default function AnimalePage() {
@@ -73,7 +73,7 @@ export default function AnimalePage() {
         {/* Breadcrumb */}
         <nav className="bg-[var(--background)] border-b border-[var(--border)]">
           <div className="max-w-6xl mx-auto px-4 py-2.5 flex items-center gap-1 text-xs text-[var(--text-muted)]">
-            <Link href="/" className="hover:text-[var(--accent-text)]">Acasa</Link>
+            <Link href="/" className="hover:text-[var(--accent-text)]">Acasă</Link>
             <span className="mx-1">/</span>
             <span className="text-[var(--text-soft)] font-medium">Animale de Companie</span>
           </div>
@@ -85,10 +85,10 @@ export default function AnimalePage() {
             <div className="text-5xl mb-4">🐾</div>
             <h1 className="text-3xl md:text-4xl font-black mb-3">Pet Shop {an}</h1>
             <p className="text-[#2a2f10] text-lg mb-6 max-w-xl mx-auto">
-              Hrana, jucarii si accesorii pentru animalele de companie {laParteneri(NISA_CATEGORII.animale)}, actualizate zilnic.
+              Hrană, jucării și accesorii pentru animalele de companie {laParteneri(NISA_CATEGORII.animale)}, actualizate zilnic.
             </p>
             <div className="flex flex-wrap justify-center gap-2">
-              {["Caini","Pisici","Pasari","Rozatoare","Pesti","Reptile","Accesorii"].map(c => (
+              {["Câini","Pisici","Păsări","Rozătoare","Pești","Reptile","Accesorii"].map(c => (
                 <span key={c} className="bg-[var(--surface-alt)] text-[var(--foreground)] text-sm font-semibold px-4 py-1.5 rounded-full border border-[var(--border-strong)]">{c}</span>
               ))}
             </div>
@@ -102,7 +102,7 @@ export default function AnimalePage() {
               <span className="font-black text-[var(--accent-text)]">{magazine.length}</span> magazine pet shop
             </span>
             <span className="text-[var(--accent-text)] font-semibold">
-              <span className="font-black text-[var(--accent-text)]">{cuPromo.length}</span> cu promotii active
+              <span className="font-black text-[var(--accent-text)]">{cuPromo.length}</span> cu promoții active
             </span>
             <span className="text-[var(--accent-text)] font-semibold">
               &#10003; Actualizat zilnic
@@ -112,7 +112,7 @@ export default function AnimalePage() {
 
         {/* Avantaje */}
         <section className="max-w-6xl mx-auto px-4 py-10">
-          <h2 className="text-xl font-black text-[var(--foreground)] mb-6 text-center">Ce gasesti la pet shop-urile online din Romania</h2>
+          <h2 className="text-xl font-black text-[var(--foreground)] mb-6 text-center">Ce găsești la pet shop-urile online din România</h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {AVANTAJE.map(a => (
               <div key={a.titlu} className="bg-[var(--surface)] border border-[var(--border)] rounded-xl p-5">
@@ -140,7 +140,7 @@ export default function AnimalePage() {
             <div className="bg-[var(--surface)] border border-[var(--border)] rounded-xl p-10 text-center">
               <p className="text-4xl mb-3">🐾</p>
               <p className="font-bold text-[var(--text-soft)] mb-2">Magazine actualizate zilnic</p>
-              <p className="text-[var(--text-muted)] text-sm mb-4">Revino curand pentru promotii noi la pet shop-uri.</p>
+              <p className="text-[var(--text-muted)] text-sm mb-4">Revino curând pentru promoții noi la pet shop-uri.</p>
               <Link href="/toate-magazinele" className="text-[var(--accent-text)] font-bold hover:text-[var(--accent-text)] text-sm">
                 Toate magazinele &rarr;
               </Link>
@@ -154,7 +154,7 @@ export default function AnimalePage() {
         <NisaProduse
           merchantSlugs={["petmart.ro","petmax.ro","bravapet.ro","ehranaanimale.ro","mobilepet.ro","husse.ro"]}
           catSlug="animale"
-          titlu="Hrana si accesorii populare pentru animale"
+          titlu="Hrană și accesorii populare pentru animale"
           culoareAccent="indigo"
           limit={12}
         />
@@ -162,24 +162,24 @@ export default function AnimalePage() {
         {/* Editorial */}
         <section className="bg-[var(--surface)] border-t border-[var(--border)] py-10 px-4">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-xl font-black text-[var(--foreground)] mb-5">Ghid: Cum economisesti la cumparaturile pentru animale</h2>
+            <h2 className="text-xl font-black text-[var(--foreground)] mb-5">Ghid: Cum economisești la cumpărăturile pentru animale</h2>
             <div className="space-y-4 text-sm text-[var(--text-soft)] leading-relaxed">
               <div>
                 <h3 className="font-bold text-[var(--foreground)] mb-1">Cum compari pet shop-urile</h3>
-                <p>La hrana, compara pretul pe kilogram — difera de la un magazin la altul si de la o marime de sac la alta. Petmart, Petmax si ceilalti parteneri AmCupon apar mai sus, cu ofertele active.</p>
+                <p>La hrană, compară prețul pe kilogram — diferă de la un magazin la altul și de la o mărime de sac la alta. Petmart, Petmax și ceilalți parteneri AmCupon apar mai sus, cu ofertele active.</p>
               </div>
               <div>
                 <h3 className="font-bold text-[var(--foreground)] mb-1">Sfaturi pentru economii la hrana pentru animale</h3>
                 <ul className="list-disc list-inside space-y-1 ml-2">
-                  <li><strong>Saci mari</strong> — pretul pe kilogram e de obicei mai mic la sacii mari</li>
-                  <li><strong>Newsletter</strong> — pet shop-urile trimit des coduri de reducere abonatilor</li>
-                  <li><strong>Comanda in avans</strong> — nu in ultima clipa, ca sa poti astepta o promotie</li>
-                  <li><strong>Hrana potrivita</strong> — intreaba medicul veterinar ce i se potriveste animalului tau</li>
+                  <li><strong>Saci mari</strong> — prețul pe kilogram e de obicei mai mic la sacii mari</li>
+                  <li><strong>Newsletter</strong> — pet shop-urile trimit des coduri de reducere abonaților</li>
+                  <li><strong>Comandă în avans</strong> — nu în ultima clipă, ca să poți aștepta o promoție</li>
+                  <li><strong>Hrana potrivită</strong> — întreabă medicul veterinar ce i se potrivește animalului tău</li>
                 </ul>
               </div>
               <div>
-                <h3 className="font-bold text-[var(--foreground)] mb-1">Branduri premium la preturi mai mici</h3>
-                <p>Royal Canin, Hill&apos;s Science Diet si Purina Pro Plan se gasesc la majoritatea pet shop-urilor mari. Preturile difera intre magazine — compara inainte sa cumperi.</p>
+                <h3 className="font-bold text-[var(--foreground)] mb-1">Branduri premium la prețuri mai mici</h3>
+                <p>Royal Canin, Hill&apos;s Science Diet și Purina Pro Plan se găsesc la majoritatea pet shop-urilor mari. Prețurile diferă între magazine — compară înainte să cumperi.</p>
               </div>
             </div>
           </div>
@@ -187,12 +187,12 @@ export default function AnimalePage() {
 
         {/* Internal links */}
         <section className="max-w-6xl mx-auto px-4 py-8">
-          <h2 className="text-base font-black text-[var(--text-soft)] mb-4">Exploreaza si alte categorii</h2>
+          <h2 className="text-base font-black text-[var(--text-soft)] mb-4">Explorează și alte categorii</h2>
           <div className="flex flex-wrap gap-2">
             {[
-              { href: "/sanatate",   label: "🌿 Sanatate & Naturiste" },
+              { href: "/sanatate",   label: "🌿 Sănătate & Naturiste" },
               { href: "/farmacie",   label: "💊 Farmacie Online" },
-              { href: "/copii",      label: "👶 Copii & Jucarii" },
+              { href: "/copii",      label: "👶 Copii & Jucării" },
               { href: "/sport",      label: "🏃 Sport & Outdoor" },
               { href: "/oferte-azi", label: "🔥 Toate Ofertele de Azi" },
               { href: "/categorii",  label: "📂 Toate Categoriile" },
@@ -207,7 +207,7 @@ export default function AnimalePage() {
 
         <footer className="border-t border-[var(--border)] py-6 text-center text-xs text-[var(--text-muted)] mt-4">
           &copy; {an} AmCupon.ro &middot;{" "}
-          <Link href="/sanatate" className="hover:text-[var(--accent-text)]">Sanatate</Link>{" · "}
+          <Link href="/sanatate" className="hover:text-[var(--accent-text)]">Sănătate</Link>{" · "}
           <Link href="/farmacie" className="hover:text-[var(--accent-text)]">Farmacie</Link>{" · "}
           <Link href="/categorii" className="hover:text-[var(--accent-text)]">Categorii</Link>
         </footer>

@@ -16,7 +16,7 @@ interface Magazin {
 export const metadata: Metadata = {
   title: "Reduceri Flori & Buchete 2026 — Florării Online | AmCupon.ro",
   description: "Florării online partenere AmCupon — Floria.ro, 3gifts.ro: flori și buchete pentru orice ocazie, cu ofertele active când există.",
-  keywords: ["reduceri flori", "cod reducere floria", "livrare flori online romania", "buchete reducere", "florarie online ieftina", "flori cadou reducere"],
+  keywords: ["reduceri flori", "cod reducere floria", "livrare flori online românia", "buchete reducere", "florărie online ieftină", "flori cadou reducere"],
   alternates: { canonical: "https://amcupon.ro/flori" },
   openGraph: { title: "Reduceri Flori & Buchete 2026 | AmCupon.ro", url: "https://amcupon.ro/flori", siteName: "AmCupon.ro", locale: "ro_RO", type: "website", images: [{ url: "https://amcupon.ro/og-image.png", width: 1200, height: 630 }] },
 };
@@ -147,7 +147,7 @@ export default function FloriPage() {
         </section>
 
         <section className="max-w-6xl mx-auto px-4 py-8">
-          <h2 className="text-base font-black text-[var(--text-soft)] mb-4">Explorează si alte categorii</h2>
+          <h2 className="text-base font-black text-[var(--text-soft)] mb-4">Explorează și alte categorii</h2>
           <div className="flex flex-wrap gap-2">
             {[
               { href: "/idei-cadouri", label: "🎁 Idei Cadouri" },

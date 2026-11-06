@@ -18,10 +18,10 @@ export async function generateMetadata({ searchParams }: { searchParams: Promise
   const { q } = await searchParams;
   const query = (q || "").trim();
   return {
-    title: query ? `Rezultate pentru "${query}" — AmCupon.ro` : "Cauta coduri de reducere — AmCupon.ro",
+    title: query ? `Rezultate pentru "${query}" — AmCupon.ro` : "Caută coduri de reducere — AmCupon.ro",
     description: query
-      ? `Coduri de reducere si oferte pentru "${query}" — magazine actualizate zilnic pe AmCupon.ro.`
-      : "Cauta orice magazin online si gaseste coduri de reducere active actualizate zilnic.",
+      ? `Coduri de reducere și oferte pentru "${query}" — magazine actualizate zilnic pe AmCupon.ro.`
+      : "Caută orice magazin online și găsește coduri de reducere active actualizate zilnic.",
     robots: { index: false },
   };
 }
@@ -55,7 +55,7 @@ export default async function CautarePage({ searchParams }: { searchParams: Prom
                 name="q"
                 type="search"
                 defaultValue={q || ""}
-                placeholder="Cauta magazin sau categorie..."
+                placeholder="Caută magazin sau categorie..."
                 autoFocus
                 className="w-full border border-[var(--border)] rounded-full pl-9 pr-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#ddf93c] bg-[var(--surface)]"
               />
@@ -71,16 +71,16 @@ export default async function CautarePage({ searchParams }: { searchParams: Prom
         {query.length < 2 ? (
           <div className="text-center py-16">
             <div className="text-5xl mb-4">🔍</div>
-            <h1 className="text-2xl font-black text-[var(--foreground)] mb-2">Cauta un magazin</h1>
-            <p className="text-[var(--text-soft)]">Introdu cel putin 2 caractere pentru a cauta.</p>
+            <h1 className="text-2xl font-black text-[var(--foreground)] mb-2">Caută un magazin</h1>
+            <p className="text-[var(--text-soft)]">Introdu cel puțin 2 caractere pentru a căuta.</p>
           </div>
         ) : rezultate.length === 0 ? (
           <div className="text-center py-16">
             <div className="text-5xl mb-4">😕</div>
             <h1 className="text-xl font-black text-[var(--foreground)] mb-2">Niciun rezultat pentru &ldquo;{q}&rdquo;</h1>
-            <p className="text-[var(--text-soft)] mb-6">Incearca un alt termen sau browseza categoriile.</p>
+            <p className="text-[var(--text-soft)] mb-6">Încearcă un alt termen sau răsfoiește categoriile.</p>
             <Link href="/categorii" className="bg-[#ddf93c] text-[#0c1000] font-bold px-6 py-3 rounded-xl text-sm hover:bg-[#ddf93c] transition-colors">
-              Exploreaza categorii
+              Explorează categorii
             </Link>
           </div>
         ) : (
@@ -91,7 +91,7 @@ export default async function CautarePage({ searchParams }: { searchParams: Prom
               </h1>
               {cuPromo > 0 && (
                 <p className="text-sm text-[var(--text-soft)] mt-1">
-                  <span className="text-[var(--accent-text)] font-semibold">{cuNumar(cuPromo, "magazin", "magazine")}</span> cu promotii active
+                  <span className="text-[var(--accent-text)] font-semibold">{cuNumar(cuPromo, "magazin", "magazine")}</span> cu promoții active
                 </p>
               )}
             </div>
@@ -105,7 +105,7 @@ export default async function CautarePage({ searchParams }: { searchParams: Prom
       </div>
 
       <footer className="border-t border-[var(--border)] py-6 text-center text-xs text-[var(--text-muted)] mt-8">
-        <Link href="/" className="hover:text-[var(--accent-text)]">← Inapoi la AmCupon.ro</Link>
+        <Link href="/" className="hover:text-[var(--accent-text)]">← Înapoi la AmCupon.ro</Link>
       </footer>
     </div>
   );

@@ -16,19 +16,19 @@ interface Magazin {
 
 export const metadata: Metadata = {
   title: "Cod Reducere Bijuterii & Accesorii 2026 — Aur, Argint",
-  description: "Coduri de reducere si oferte la bijuterii de la magazinele partenere: Chic Bijoux, Novvu, Bijubox, Lu.ro si altele. Aur, argint, cristale, inele, bratari, coliere.",
-  keywords: ["cod reducere bijuterii","reduceri aur","argint reducere","bijuterii online romania","inele reducere","bratari reducere","coliere reducere"],
+  description: "Coduri de reducere și oferte la bijuterii de la magazinele partenere: Chic Bijoux, Novvu, Bijubox, Lu.ro și altele. Aur, argint, cristale, inele, brățări, coliere.",
+  keywords: ["cod reducere bijuterii","reduceri aur","argint reducere","bijuterii online românia","inele reducere","brățări reducere","coliere reducere"],
   alternates: { canonical: "https://amcupon.ro/bijuterii" },
   openGraph: { title: "Bijuterii 2026 | AmCupon.ro", url: "https://amcupon.ro/bijuterii", siteName: "AmCupon.ro", locale: "ro_RO", type: "website", images: [{ url: "https://amcupon.ro/og-image.png", width: 1200, height: 630 }] },
 };
 
 const AVANTAJE = [
-  { icon: "💍", titlu: "Inele & Verighete", desc: "Inele din aur, argint, cu pietre pretioase — colectii noi sezonier" },
-  { icon: "📿", titlu: "Coliere & Bratari", desc: "Lanturi aur, bratari charm, coliere argint si cristale" },
-  { icon: "👑", titlu: "Bijuterii Premium", desc: "Novvu, Bijubox, Chic Bijoux — colectii din aur si argint" },
-  { icon: "🎁", titlu: "Cadouri Speciale", desc: "Seturi cadou si ambalaj elegant pentru ocazii deosebite" },
-  { icon: "💎", titlu: "Pietre Pretioase", desc: "Diamante, rubine, smaralde, safire in monturi din aur alb sau galben" },
-  { icon: "🥈", titlu: "Argint & Cristale", desc: "Bijuterii argint 925, cristale la preturi accesibile" },
+  { icon: "💍", titlu: "Inele & Verighete", desc: "Inele din aur, argint, cu pietre prețioase — colecții noi sezonier" },
+  { icon: "📿", titlu: "Coliere & Brățări", desc: "Lanțuri aur, brățări charm, coliere argint și cristale" },
+  { icon: "👑", titlu: "Bijuterii Premium", desc: "Novvu, Bijubox, Chic Bijoux — colecții din aur și argint" },
+  { icon: "🎁", titlu: "Cadouri Speciale", desc: "Seturi cadou și ambalaj elegant pentru ocazii deosebite" },
+  { icon: "💎", titlu: "Pietre Prețioase", desc: "Diamante, rubine, smaralde, safire în monturi din aur alb sau galben" },
+  { icon: "🥈", titlu: "Argint & Cristale", desc: "Bijuterii argint 925, cristale la prețuri accesibile" },
 ];
 
 
@@ -37,7 +37,7 @@ const jsonLd = {
   "@type": "CollectionPage",
   "name": "Bijuterii 2026",
   "url": "https://amcupon.ro/bijuterii",
-  "description": "Coduri reducere bijuterii online Romania — aur, argint, cristale, inele, bratari, coliere"
+  "description": "Coduri reducere bijuterii online România — aur, argint, cristale, inele, brățări, coliere"
 };
 
 export default function BijuteriiPage() {
@@ -58,7 +58,7 @@ export default function BijuteriiPage() {
         {/* Breadcrumb */}
         <nav className="bg-[var(--background)] border-b border-[var(--border)]">
           <div className="max-w-6xl mx-auto px-4 py-2.5 flex items-center gap-1 text-xs text-[var(--text-muted)]">
-            <Link href="/" className="hover:text-[var(--accent-text)]">Acasa</Link>
+            <Link href="/" className="hover:text-[var(--accent-text)]">Acasă</Link>
             <span className="mx-1">/</span>
             <span className="text-[var(--text-soft)] font-medium">Bijuterii & Accesorii</span>
           </div>
@@ -70,10 +70,10 @@ export default function BijuteriiPage() {
             <div className="text-5xl mb-4">💍</div>
             <h1 className="text-3xl md:text-4xl font-black mb-3">Bijuterii {an}</h1>
             <p className="text-[#2a2f10] text-lg mb-6 max-w-xl mx-auto">
-              Inele, coliere, bratari si seturi de bijuterii de la Novvu, Bijubox, Chic Bijoux si alte magazine partenere, actualizate zilnic.
+              Inele, coliere, brățări și seturi de bijuterii de la Novvu, Bijubox, Chic Bijoux și alte magazine partenere, actualizate zilnic.
             </p>
             <div className="flex flex-wrap justify-center gap-2">
-              {["Inele","Coliere","Bratari","Verighete","Cercei","Aur","Argint","Cristale"].map(c => (
+              {["Inele","Coliere","Brățări","Verighete","Cercei","Aur","Argint","Cristale"].map(c => (
                 <span key={c} className="bg-[var(--surface-alt)] text-[var(--foreground)] text-sm font-semibold px-4 py-1.5 rounded-full border border-[var(--border-strong)]">{c}</span>
               ))}
             </div>
@@ -87,7 +87,7 @@ export default function BijuteriiPage() {
               <span className="font-black text-[var(--accent-text)]">{magazine.length}</span>{deNumar(magazine.length)} magazine de bijuterii
             </span>
             <span className="text-[var(--accent-text)] font-semibold">
-              <span className="font-black text-[var(--accent-text)]">{cuPromo.length}</span> cu promotii active
+              <span className="font-black text-[var(--accent-text)]">{cuPromo.length}</span> cu promoții active
             </span>
             <span className="text-[var(--accent-text)] font-semibold">&#10003; Actualizat zilnic</span>
           </div>
@@ -95,7 +95,7 @@ export default function BijuteriiPage() {
 
         {/* Avantaje */}
         <section className="max-w-6xl mx-auto px-4 py-10">
-          <h2 className="text-xl font-black text-[var(--foreground)] mb-6 text-center">Ce gasesti la magazinele de bijuterii online</h2>
+          <h2 className="text-xl font-black text-[var(--foreground)] mb-6 text-center">Ce găsești la magazinele de bijuterii online</h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {AVANTAJE.map(a => (
               <div key={a.titlu} className="bg-[var(--surface)] border border-[var(--border)] rounded-xl p-5">
@@ -120,7 +120,7 @@ export default function BijuteriiPage() {
             <div className="bg-[var(--surface)] border border-[var(--border)] rounded-xl p-10 text-center">
               <p className="text-4xl mb-3">💍</p>
               <p className="font-bold text-[var(--text-soft)] mb-2">Magazine actualizate zilnic</p>
-              <p className="text-[var(--text-muted)] text-sm mb-4">Revino curand pentru promotii la bijuterii.</p>
+              <p className="text-[var(--text-muted)] text-sm mb-4">Revino curând pentru promoții la bijuterii.</p>
               <Link href="/toate-magazinele" className="text-[var(--accent-text)] font-bold hover:text-[var(--accent-text)] text-sm">Toate magazinele &rarr;</Link>
             </div>
           )}
@@ -140,24 +140,24 @@ export default function BijuteriiPage() {
         {/* Editorial */}
         <section className="bg-[var(--surface)] border-t border-[var(--border)] py-10 px-4">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-xl font-black text-[var(--foreground)] mb-5">Ghid: Bijuterii online — cum alegi si cum economisesti</h2>
+            <h2 className="text-xl font-black text-[var(--foreground)] mb-5">Ghid: Bijuterii online — cum alegi și cum economisești</h2>
             <div className="space-y-4 text-sm text-[var(--text-soft)] leading-relaxed">
               <div>
-                <h3 className="font-bold text-[var(--foreground)] mb-1">Magazine romanesti de bijuterii online</h3>
-                <p>Chic Bijoux, Novvu, Bijubox si Lu.ro sunt printre magazinele romanesti partenere AmCupon.ro pentru bijuterii — fiecare cu propriul stil si gama de preturi, de la argint accesibil la piese premium din aur. Verifica fiecare magazin pe pagina lui dedicata pentru codurile active.</p>
+                <h3 className="font-bold text-[var(--foreground)] mb-1">Magazine românești de bijuterii online</h3>
+                <p>Chic Bijoux, Novvu, Bijubox și Lu.ro sunt printre magazinele românești partenere AmCupon.ro pentru bijuterii — fiecare cu propriul stil și gamă de prețuri, de la argint accesibil la piese premium din aur. Verifică fiecare magazin pe pagina lui dedicată pentru codurile active.</p>
               </div>
               <div>
                 <h3 className="font-bold text-[var(--foreground)] mb-1">Cum verifici calitatea bijuteriilor online</h3>
                 <ul className="list-disc list-inside space-y-1 ml-2">
-                  <li><strong>Marca poansonare</strong> — aur 585 (14K), 750 (18K) sau argint 925 obligatoriu stampilate</li>
-                  <li><strong>Certificat de autenticitate</strong> — pentru diamante si pietre pretioase, cere certificat de la un laborator recunoscut (de exemplu GIA)</li>
-                  <li><strong>Garantie</strong> — garantia legala de conformitate e de 2 ani; unele magazine ofera si garantie comerciala</li>
-                  <li><strong>Politica de retur</strong> — conteaza daca marimea inelului nu se potriveste; verifica daca returul e gratuit</li>
+                  <li><strong>Marca poansonare</strong> — aur 585 (14K), 750 (18K) sau argint 925 obligatoriu ștampilate</li>
+                  <li><strong>Certificat de autenticitate</strong> — pentru diamante și pietre prețioase, cere certificat de la un laborator recunoscut (de exemplu GIA)</li>
+                  <li><strong>Garanție</strong> — garanția legală de conformitate e de 2 ani; unele magazine oferă și garanție comercială</li>
+                  <li><strong>Politica de retur</strong> — contează dacă mărimea inelului nu se potrivește; verifică dacă returul e gratuit</li>
                 </ul>
               </div>
               <div>
-                <h3 className="font-bold text-[var(--foreground)] mb-1">Cand sa cumperi bijuterii</h3>
-                <p>Reducerile apar de obicei de Valentine&apos;s Day (februarie), de Craciun si la lichidarile de stoc (ianuarie, iulie). Cand vine o colectie noua, cea veche intra des la reducere.</p>
+                <h3 className="font-bold text-[var(--foreground)] mb-1">Când să cumperi bijuterii</h3>
+                <p>Reducerile apar de obicei de Valentine&apos;s Day (februarie), de Crăciun și la lichidările de stoc (ianuarie, iulie). Când vine o colecție nouă, cea veche intră des la reducere.</p>
               </div>
             </div>
           </div>
@@ -165,11 +165,11 @@ export default function BijuteriiPage() {
 
         {/* Internal links */}
         <section className="max-w-6xl mx-auto px-4 py-8">
-          <h2 className="text-base font-black text-[var(--text-soft)] mb-4">Exploreaza si alte categorii</h2>
+          <h2 className="text-base font-black text-[var(--text-soft)] mb-4">Explorează și alte categorii</h2>
           <div className="flex flex-wrap gap-2">
             {[
-              { href: "/frumusete",  label: "💄 Frumusete & Beauty" },
-              { href: "/fashion",    label: "👗 Fashion & Imbracaminte" },
+              { href: "/frumusete",  label: "💄 Frumusețe & Beauty" },
+              { href: "/fashion",    label: "👗 Fashion & Îmbrăcăminte" },
               { href: "/parfumuri",  label: "🌸 Parfumuri" },
               { href: "/idei-cadouri", label: "🎁 Idei de Cadouri" },
               { href: "/oferte-azi", label: "🔥 Toate Ofertele de Azi" },
@@ -186,7 +186,7 @@ export default function BijuteriiPage() {
         <footer className="border-t border-[var(--border)] py-6 text-center text-xs text-[var(--text-muted)] mt-4">
           &copy; {an} AmCupon.ro &middot;{" "}
           <Link href="/fashion" className="hover:text-[var(--accent-text)]">Fashion</Link>{" · "}
-          <Link href="/frumusete" className="hover:text-[var(--accent-text)]">Frumusete</Link>{" · "}
+          <Link href="/frumusete" className="hover:text-[var(--accent-text)]">Frumusețe</Link>{" · "}
           <Link href="/categorii" className="hover:text-[var(--accent-text)]">Categorii</Link>
         </footer>
       </div>

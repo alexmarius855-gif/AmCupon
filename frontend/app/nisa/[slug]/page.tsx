@@ -21,51 +21,51 @@ const NISE: Record<string, {
   catKeywords: string[];  // cuvinte cheie din campul category al produselor
 }> = {
   auto: {
-    titlu:      "Piese auto si accesorii",
-    descriere:  "Cele mai bune oferte pentru masina ta. Piese auto, accesorii, anvelope si uleiuri la preturi reduse.",
+    titlu:      "Piese auto și accesorii",
+    descriere:  "Cele mai bune oferte pentru mașina ta. Piese auto, accesorii, anvelope și uleiuri la prețuri reduse.",
     keywords:   ["piese auto", "accesorii auto", "anvelope reducere", "automobilus oferte"],
     emoji:      "🚗",
     catKeywords: ["auto", "car", "moto", "vehicul", "anvelop", "piese"],
   },
   carti: {
-    titlu:      "Carti si papetarie",
-    descriere:  "Reduceri la carti, educatie si papetarie. Libris, Carturesti si alte librarii online.",
-    keywords:   ["carti reducere", "libris cod cupon", "carturesti oferte", "reduceri carti"],
+    titlu:      "Cărți și papetărie",
+    descriere:  "Reduceri la cărți, educație și papetărie. Libris, Carturesti și alte librării online.",
+    keywords:   ["cărți reducere", "libris cod cupon", "carturesti oferte", "reduceri cărți"],
     emoji:      "📚",
     catKeywords: ["book", "carte", "papetarie", "editorial", "educatie", "libris"],
   },
   casa: {
-    titlu:      "Casa si gradina",
-    descriere:  "Oferte pentru casa ta. Mobila, electrocasnice, decoratiuni si gradinarit la preturi mici.",
-    keywords:   ["mobila reducere", "vidaxl oferte", "electrocasnice cod cupon", "decoratiuni reducere"],
+    titlu:      "Casă și grădină",
+    descriere:  "Oferte pentru casa ta. Mobilă, electrocasnice, decorațiuni și grădinărit la prețuri mici.",
+    keywords:   ["mobilă reducere", "vidaxl oferte", "electrocasnice cod cupon", "decorațiuni reducere"],
     emoji:      "🏡",
     catKeywords: ["home", "casa", "garden", "mobila", "gradina", "decor", "electrocasnic"],
   },
   tech: {
-    titlu:      "Electronice si IT",
-    descriere:  "Reduceri la laptopuri, telefoane, tablete si accesorii electronice.",
+    titlu:      "Electronice și IT",
+    descriere:  "Reduceri la laptopuri, telefoane, tablete și accesorii electronice.",
     keywords:   ["electronice reducere", "laptop oferte", "telefon cod cupon", "it reducere"],
     emoji:      "💻",
     catKeywords: ["electronic", "tech", "phone", "laptop", "computer", "it", "tablet", "gaming"],
   },
   fashion: {
-    titlu:      "Moda si imbracaminte",
-    descriere:  "Coduri de reducere pentru haine, incaltaminte si accesorii fashion.",
-    keywords:   ["haine reducere", "fashion cod cupon", "answear oferte", "imbracaminte reducere"],
+    titlu:      "Modă și îmbrăcăminte",
+    descriere:  "Coduri de reducere pentru haine, încălțăminte și accesorii fashion.",
+    keywords:   ["haine reducere", "fashion cod cupon", "answear oferte", "îmbrăcăminte reducere"],
     emoji:      "👗",
     catKeywords: ["fashion", "clothing", "shoes", "haine", "incaltaminte", "moda", "accessories"],
   },
   sport: {
-    titlu:      "Sport si fitness",
-    descriere:  "Echipamente sportive, imbracaminte sport si accesorii fitness la preturi reduse.",
+    titlu:      "Sport și fitness",
+    descriere:  "Echipamente sportive, îmbrăcăminte sport și accesorii fitness la prețuri reduse.",
     keywords:   ["sport reducere", "sportdepot cod cupon", "fitness oferte", "echipament sport"],
     emoji:      "⚽",
     catKeywords: ["sport", "fitness", "outdoor", "bike", "cycling", "running", "gym"],
   },
   frumusete: {
-    titlu:      "Frumusete si ingrijire",
-    descriere:  "Cosmetice, parfumuri si produse de ingrijire la preturi speciale.",
-    keywords:   ["cosmetice reducere", "parfum cod cupon", "notino oferte", "frumusete reducere"],
+    titlu:      "Frumusețe și îngrijire",
+    descriere:  "Cosmetice, parfumuri și produse de îngrijire la prețuri speciale.",
+    keywords:   ["cosmetice reducere", "parfum cod cupon", "notino oferte", "frumusețe reducere"],
     emoji:      "💄",
     catKeywords: ["beauty", "cosmetic", "parfum", "ingrijire", "health", "personal care"],
   },
@@ -259,7 +259,7 @@ export default async function NisaPage(
                     <p className="text-[10px] text-[var(--text-soft)] truncate">{p.brand || p.category}</p>
                     <p className="text-xs font-semibold text-[var(--text-soft)] line-clamp-2 flex-1 leading-snug">{p.title}</p>
                     <p className="font-black text-[var(--accent-text)] text-sm mt-2">
-                      {p.price > 0 ? `${p.price.toFixed(2)} lei` : "Vezi pretul"}
+                      {p.price > 0 ? `${p.price.toFixed(2)} lei` : "Vezi prețul"}
                     </p>
                   </div>
                 </a>
@@ -269,8 +269,8 @@ export default async function NisaPage(
         ) : (
           <div className="text-center py-16 bg-[var(--surface)] rounded-xl border border-[var(--border)]">
             <p className="text-4xl mb-3">{nisa.emoji}</p>
-            <p className="font-bold text-[var(--text-soft)] mb-2">Produsele se actualizeaza zilnic</p>
-            <p className="text-[var(--text-soft)] text-sm">Revino maine pentru oferte noi in aceasta categorie.</p>
+            <p className="font-bold text-[var(--text-soft)] mb-2">Produsele se actualizează zilnic</p>
+            <p className="text-[var(--text-soft)] text-sm">Revino mâine pentru oferte noi în această categorie.</p>
             <Link href="/produse" className="mt-4 inline-block text-[var(--accent-text)] font-bold hover:text-[var(--accent-text)]">
               Vezi toate produsele &rarr;
             </Link>

@@ -158,7 +158,7 @@ export default function SearchModal() {
       onClick={() => setDeschis(false)}
       role="dialog"
       aria-modal="true"
-      aria-label="Cauta magazin"
+      aria-label="Caută magazin"
     >
       <div
         className="w-full max-w-xl bg-[var(--surface)] border border-[var(--border-strong)] rounded-xl overflow-hidden shadow-2xl shadow-black/60"
@@ -172,12 +172,12 @@ export default function SearchModal() {
             value={q}
             onChange={(e) => { setQ(e.target.value); setActiv(0); }}
             onKeyDown={onKeyDown}
-            placeholder="Cauta un magazin — eMAG, Answear, Dr. Max..."
+            placeholder="Caută un magazin — eMAG, Answear, Dr. Max..."
             className="flex-1 bg-transparent text-[var(--foreground)] placeholder:text-[var(--text-muted)] text-[15px] outline-none"
           />
           <button
             onClick={() => setDeschis(false)}
-            aria-label="Inchide"
+            aria-label="Închide"
             className="text-[var(--text-muted)] hover:text-[var(--foreground)] transition-colors"
           >
             <X className="w-4.5 h-4.5" strokeWidth={2} />
@@ -187,19 +187,19 @@ export default function SearchModal() {
         {/* rezultate */}
         <div className="max-h-[52vh] overflow-y-auto">
           {incarca && (
-            <p className="px-4 py-6 text-sm text-[var(--text-muted)]">Se incarca magazinele...</p>
+            <p className="px-4 py-6 text-sm text-[var(--text-muted)]">Se încarcă magazinele...</p>
           )}
 
           {!incarca && !q && (
             <p className="px-4 py-6 text-sm text-[var(--text-muted)]">
-              Scrie numele unui magazin. Navighezi cu sagetile, deschizi cu Enter.
+              Scrie numele unui magazin. Navighezi cu săgețile, deschizi cu Enter.
             </p>
           )}
 
           {!incarca && q && rezultate.length === 0 && (
             <div className="px-4 py-6">
               <p className="text-sm text-[var(--text-soft)] mb-3">
-                Niciun magazin nu se potriveste cu <strong className="text-[var(--foreground)]">{q}</strong>.
+                Niciun magazin nu se potrivește cu <strong className="text-[var(--foreground)]">{q}</strong>.
               </p>
               <a href="/toate-magazinele" className="text-sm font-bold text-[var(--accent-text)] hover:text-[var(--accent-text)]">
                 Vezi toate cele {date?.length ?? 0} de magazine &rarr;
@@ -236,7 +236,7 @@ export default function SearchModal() {
                       ? cuNumar(nrCod, "cod activ", "coduri active")
                       : nrOferte > 0
                         ? cuNumar(nrOferte, "ofertă", "oferte")
-                        : "fara oferte acum"}
+                        : "fără oferte acum"}
                   </span>
                 </span>
 
@@ -257,7 +257,7 @@ export default function SearchModal() {
 
         <div className="flex items-center justify-between px-4 py-2.5 bg-[var(--surface)] border-t border-[var(--border)] text-[11px] text-[var(--text-muted)]">
           <span>Navighezi cu &uarr; &darr; · deschizi cu Enter</span>
-          <span className="font-mono">Esc</span>
+          <span className="font-mono">ESC</span>
         </div>
       </div>
     </div>

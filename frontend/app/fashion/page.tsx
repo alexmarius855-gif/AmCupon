@@ -19,7 +19,7 @@ interface Magazin {
 export const metadata: Metadata = {
   title: "Cod Reducere Fashion & Haine 2026 — Answear și Parteneri",
   description: `Coduri de reducere și oferte la haine, pantofi și accesorii ${laParteneri(NISA_CATEGORII.fashion)}. Actualizate zilnic.`,
-  keywords: ["cod reducere fashiondays","reduceri answear","haine ieftine online","cod reducere hm","reserved reducere","fashion online romania","imbracaminte reducere"],
+  keywords: ["cod reducere fashiondays","reduceri answear","haine ieftine online","cod reducere hm","reserved reducere","fashion online românia","îmbrăcăminte reducere"],
   alternates: { canonical: "https://amcupon.ro/fashion" },
   openGraph: { title: "Fashion & Haine 2026 | AmCupon.ro", url: "https://amcupon.ro/fashion", siteName: "AmCupon.ro", locale: "ro_RO", type: "website", images: [{ url: "https://amcupon.ro/og-image.png", width: 1200, height: 630 }] },
 };
@@ -28,15 +28,15 @@ const TOP_FASHION = ["answear.ro"];
 // Sluguri REALE din output.json — potrivire EXACTA, nu subsir (vezi lib/categoriiNisa.ts)
 const CAT_FASHION = ["fashion"];
 const AVANTAJE = [
-  { icon: "👗", titlu: "Haine Dama", desc: "Rochii, bluze, pantaloni — branduri premium cu discount" },
-  { icon: "👔", titlu: "Haine Barbati", desc: "Tricouri, camasi, costume — moda masculina la preturi reduse" },
-  { icon: "👟", titlu: "Pantofi & Incaltaminte", desc: "Adidasi, pantofi, cizme — Nike, Adidas, Puma" },
-  { icon: "👜", titlu: "Genti & Accesorii", desc: "Genti, curele, bijuterii fashion" },
+  { icon: "👗", titlu: "Haine Damă", desc: "Rochii, bluze, pantaloni — branduri premium cu discount" },
+  { icon: "👔", titlu: "Haine Bărbați", desc: "Tricouri, cămăși, costume — modă masculină la prețuri reduse" },
+  { icon: "👟", titlu: "Pantofi & Încălțăminte", desc: "Adidași, pantofi, cizme — Nike, Adidas, Puma" },
+  { icon: "👜", titlu: "Genți & Accesorii", desc: "Genți, curele, bijuterii fashion" },
   { icon: "🧥", titlu: "Outerwear", desc: "Geci, paltoane, jachete de sezon" },
-  { icon: "🩱", titlu: "Lenjerie & Pijamale", desc: "Lenjerie intima, pijamale, sosete — branduri de calitate" },
+  { icon: "🩱", titlu: "Lenjerie & Pijamale", desc: "Lenjerie intimă, pijamale, șosete — branduri de calitate" },
 ];
 
-const jsonLd = { "@context":"https://schema.org","@type":"CollectionPage","name":"Fashion & Haine 2026","url":"https://amcupon.ro/fashion","description":"Coduri si oferte la haine de la magazinele partenere AmCupon" };
+const jsonLd = { "@context":"https://schema.org","@type":"CollectionPage","name":"Fashion & Haine 2026","url":"https://amcupon.ro/fashion","description":"Coduri și oferte la haine de la magazinele partenere AmCupon" };
 
 export default function FashionPage() {
   const filePath = path.join(process.cwd(), "public", "output.json");
@@ -56,7 +56,7 @@ export default function FashionPage() {
       <div className="min-h-screen bg-[var(--background)]">
         <nav className="bg-[var(--background)] border-b border-[var(--border)]">
           <div className="max-w-6xl mx-auto px-4 py-2.5 flex items-center gap-1 text-xs text-[var(--text-muted)]">
-            <Link href="/" className="hover:text-[var(--accent-text)]">Acasa</Link>
+            <Link href="/" className="hover:text-[var(--accent-text)]">Acasă</Link>
             <span className="mx-1">/</span>
             <span className="text-[var(--text-soft)] font-medium">Fashion & Haine</span>
           </div>
@@ -70,7 +70,7 @@ export default function FashionPage() {
               Oferte {laParteneri(NISA_CATEGORII.fashion, 3)} și la alte magazine partenere de modă
             </p>
             <div className="flex flex-wrap justify-center gap-2">
-              {["Haine Dama","Haine Barbati","Pantofi","Genti","Geci","Lenjerie","Accesorii"].map(c => (
+              {["Haine Damă","Haine Bărbați","Pantofi","Genți","Geci","Lenjerie","Accesorii"].map(c => (
                 <span key={c} className="bg-[var(--surface-alt)] text-[var(--foreground)] text-sm font-semibold px-4 py-1.5 rounded-full border border-[var(--border-strong)]">{c}</span>
               ))}
             </div>
@@ -78,7 +78,7 @@ export default function FashionPage() {
         </section>
 
         <section className="max-w-6xl mx-auto px-4 py-10">
-          <h2 className="text-xl font-black text-[var(--foreground)] mb-6 text-center">Ce gasesti la magazine fashion online</h2>
+          <h2 className="text-xl font-black text-[var(--foreground)] mb-6 text-center">Ce găsești la magazine fashion online</h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {AVANTAJE.map(a => (
               <div key={a.titlu} className="bg-[var(--surface)] border border-[var(--border)] rounded-xl p-5">
@@ -114,23 +114,23 @@ export default function FashionPage() {
 
         <section className="bg-[var(--surface)] border-t border-[var(--border)] py-10 px-4">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-xl font-black text-[var(--foreground)] mb-5">Ghid: Haine online mai ieftine in Romania</h2>
+            <h2 className="text-xl font-black text-[var(--foreground)] mb-5">Ghid: Haine online mai ieftine în România</h2>
             <div className="space-y-4 text-sm text-[var(--text-soft)] leading-relaxed">
               <div>
-                <h3 className="font-bold text-[var(--foreground)] mb-1">Unde gasesti reduceri la haine</h3>
-                <p>Answear si ceilalti parteneri AmCupon de moda au sectiuni de reduceri si promotii de sezon; ofertele lor active apar mai sus, pe cardurile magazinelor.</p>
+                <h3 className="font-bold text-[var(--foreground)] mb-1">Unde găsești reduceri la haine</h3>
+                <p>Answear și ceilalți parteneri AmCupon de modă au secțiuni de reduceri și promoții de sezon; ofertele lor active apar mai sus, pe cardurile magazinelor.</p>
               </div>
               <div>
-                <h3 className="font-bold text-[var(--foreground)] mb-1">Cele mai bune perioade pentru cumparaturi fashion</h3>
+                <h3 className="font-bold text-[var(--foreground)] mb-1">Cele mai bune perioade pentru cumpărături fashion</h3>
                 <ul className="list-disc list-inside space-y-1 ml-2">
-                  <li><strong>Solduri de iarna (ianuarie)</strong> — reduceri mari la colectiile de toamna-iarna</li>
-                  <li><strong>Solduri de vara (iulie)</strong> — lichidare stocuri primavara-vara</li>
+                  <li><strong>Solduri de iarnă (ianuarie)</strong> — reduceri mari la colecțiile de toamnă-iarnă</li>
+                  <li><strong>Solduri de vară (iulie)</strong> — lichidare stocuri primăvară-vară</li>
                   <li><strong>Black Friday</strong> — discount-uri la branduri premium</li>
                 </ul>
               </div>
               <div>
-                <h3 className="font-bold text-[var(--foreground)] mb-1">Cum economisesti la haine online</h3>
-                <p>Adauga produsele in lista de favorite a magazinului si asteapta o promotie. La sfarsit de sezon, colectia care pleaca intra la reducere.</p>
+                <h3 className="font-bold text-[var(--foreground)] mb-1">Cum economisești la haine online</h3>
+                <p>Adaugă produsele în lista de favorite a magazinului și așteaptă o promoție. La sfârșit de sezon, colecția care pleacă intră la reducere.</p>
               </div>
             </div>
           </div>
@@ -138,7 +138,7 @@ export default function FashionPage() {
 
         <footer className="border-t border-[var(--border)] py-6 text-center text-xs text-[var(--text-muted)] mt-4">
           © {an} AmCupon.ro ·{" "}
-          <Link href="/frumusete" className="hover:text-[var(--accent-text)]">Frumusete</Link>{" · "}
+          <Link href="/frumusete" className="hover:text-[var(--accent-text)]">Frumusețe</Link>{" · "}
           <Link href="/idei-cadouri" className="hover:text-[var(--accent-text)]">Idei Cadouri</Link>{" · "}
           <Link href="/categorii" className="hover:text-[var(--accent-text)]">Categorii</Link>
         </footer>

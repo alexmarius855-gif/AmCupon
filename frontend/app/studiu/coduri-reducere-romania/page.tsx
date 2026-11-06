@@ -89,15 +89,15 @@ export function generateMetadata(): Metadata {
   const s = loadStudiu();
   const titlu = s
     ? `Doar ${s.cu_cod_real} din ${cuNumar(s.total_magazine, "magazin", "magazine")} au cod de reducere`
-    : "Studiu: codurile de reducere in Romania";
+    : "Studiu: codurile de reducere în România";
   return {
     title: `${titlu} | AmCupon.ro`,
     description: s
-      ? `Studiu pe ${s.total_magazine} de magazine online romanesti: doar ${s.cu_cod_real} au cod de reducere activ, ${s.doar_oferta} au promotii fara cod. Reduceri mediane pe categorii, date actualizate ${s.generat}.`
-      : "Studiu pe magazinele online romanesti: cate au cu adevarat coduri de reducere active.",
+      ? `Studiu pe ${s.total_magazine} de magazine online românești: doar ${s.cu_cod_real} au cod de reducere activ, ${s.doar_oferta} au promoții fără cod. Reduceri mediane pe categorii, date actualizate ${s.generat}.`
+      : "Studiu pe magazinele online românești: câte au cu adevărat coduri de reducere active.",
     keywords: [
-      "studiu coduri reducere romania", "cate magazine au cupoane", "reduceri online romania date",
-      "e-commerce romania statistici", "cod reducere romania studiu",
+      "studiu coduri reducere românia", "câte magazine au cupoane", "reduceri online românia date",
+      "e-commerce românia statistici", "cod reducere românia studiu",
     ],
     alternates: { canonical: URL_PAGINA },
     openGraph: {
@@ -119,8 +119,8 @@ export default function StudiuPage() {
     return (
       <div className="min-h-screen bg-[var(--background)] flex items-center justify-center px-4">
         <p className="text-[var(--text-soft)]">
-          Datele studiului se regenereaza. Revino in cateva minute sau vezi{" "}
-          <Link href="/" className="text-[var(--accent-text)] font-semibold hover:text-[var(--accent-text)]">pagina principala</Link>.
+          Datele studiului se regenerează. Revino în câteva minute sau vezi{" "}
+          <Link href="/" className="text-[var(--accent-text)] font-semibold hover:text-[var(--accent-text)]">pagina principală</Link>.
         </p>
       </div>
     );
@@ -137,8 +137,8 @@ export default function StudiuPage() {
     "@graph": [
       {
         "@type": "Dataset",
-        name: "Coduri de reducere active in magazinele online din Romania",
-        description: `Masuratoare pe ${s.total_magazine} de magazine online romanesti: cate au promotii active si cate au cod de reducere real, cu reduceri mediane pe categorie.`,
+        name: "Coduri de reducere active în magazinele online din România",
+        description: `Măsurătoare pe ${s.total_magazine} de magazine online românești: câte au promoții active și câte au cod de reducere real, cu reduceri mediane pe categorie.`,
         url: URL_PAGINA,
         license: "https://creativecommons.org/licenses/by/4.0/",
         creator: { "@type": "Organization", name: "AmCupon.ro", url: "https://amcupon.ro" },
@@ -148,11 +148,11 @@ export default function StudiuPage() {
           encodingFormat: "application/json",
           contentUrl: "https://amcupon.ro/studiu-cupoane.json",
         }],
-        spatialCoverage: { "@type": "Country", name: "Romania" },
+        spatialCoverage: { "@type": "Country", name: "România" },
       },
       {
         "@type": "Article",
-        headline: `Doar ${s.cu_cod_real} din ${s.total_magazine} de magazine online romanesti au cod de reducere activ`,
+        headline: `Doar ${s.cu_cod_real} din ${s.total_magazine} de magazine online românești au cod de reducere activ`,
         datePublished: s.generat,
         dateModified: s.generat,
         author: { "@type": "Organization", name: "AmCupon.ro" },
@@ -162,7 +162,7 @@ export default function StudiuPage() {
       {
         "@type": "BreadcrumbList",
         itemListElement: [
-          { "@type": "ListItem", position: 1, name: "Acasa", item: "https://amcupon.ro" },
+          { "@type": "ListItem", position: 1, name: "Acasă", item: "https://amcupon.ro" },
           { "@type": "ListItem", position: 2, name: "Studiu coduri de reducere", item: URL_PAGINA },
         ],
       },
@@ -176,7 +176,7 @@ export default function StudiuPage() {
 
         <nav className="bg-[var(--background)] border-b border-[var(--border)]">
           <div className="max-w-3xl mx-auto px-4 py-2.5 flex items-center gap-1 text-xs text-[var(--text-muted)]">
-            <Link href="/" className="hover:text-[var(--accent-text)]">Acasa</Link>
+            <Link href="/" className="hover:text-[var(--accent-text)]">Acasă</Link>
             <span className="mx-1">/</span>
             <span className="text-[var(--text-soft)] font-medium">Studiu: coduri de reducere</span>
           </div>
@@ -189,12 +189,12 @@ export default function StudiuPage() {
           </p>
           <h1 className="text-3xl md:text-[2.6rem] font-black text-[var(--foreground)] leading-[1.12] mb-6">
             Doar {s.cu_cod_real} din {s.total_magazine.toLocaleString("ro-RO")} de magazine online
-            romanesti au azi un cod de reducere real
+            românești au azi un cod de reducere real
           </h1>
           <p className="text-[var(--text-soft)] text-lg leading-relaxed">
-            Urmarim automat promotiile din {s.total_magazine.toLocaleString("ro-RO")} de magazine
-            online romanesti (cu domeniu .ro). Am numarat cate au cu adevarat un cod de cupon
-            activ, si cate doar par sa aiba. Rezultatul nu ne avantajeaza: administram un site de cupoane.
+            Urmărim automat promoțiile din {s.total_magazine.toLocaleString("ro-RO")} de magazine
+            online românești (cu domeniu .ro). Am numărat câte au cu adevărat un cod de cupon
+            activ, și câte doar par să aibă. Rezultatul nu ne avantajează: administrăm un site de cupoane.
           </p>
         </header>
 
@@ -202,8 +202,8 @@ export default function StudiuPage() {
         <section className="max-w-3xl mx-auto px-4 pb-10">
           <div className="grid sm:grid-cols-3 gap-3">
             {[
-              { cifra: s.total_magazine.toLocaleString("ro-RO"), eticheta: "magazine urmarite", accent: false },
-              { cifra: `${s.cu_promotie}`, eticheta: `cu promotie activa (${s.procent_cu_promotie.toLocaleString("ro-RO")}%)`, accent: false },
+              { cifra: s.total_magazine.toLocaleString("ro-RO"), eticheta: "magazine urmărite", accent: false },
+              { cifra: `${s.cu_promotie}`, eticheta: `cu promoție activă (${s.procent_cu_promotie.toLocaleString("ro-RO")}%)`, accent: false },
               { cifra: `${s.cu_cod_real}`, eticheta: `cu cod de cupon real (${s.procent_cu_cod.toLocaleString("ro-RO")}%)`, accent: true },
             ].map((x) => (
               <div key={x.eticheta}
@@ -219,11 +219,11 @@ export default function StudiuPage() {
           </div>
 
           <p className="text-[var(--text-soft)] mt-6 leading-relaxed">
-            Diferenta conteaza pentru cumparator: <strong className="text-[var(--foreground)]">{cuDe(s.doar_oferta)} magazine</strong>{" "}
-            au reduceri active, dar afisate direct in pret, fara cod de introdus la finalizarea
+            Diferența contează pentru cumpărător: <strong className="text-[var(--foreground)]">{cuDe(s.doar_oferta)} magazine</strong>{" "}
+            au reduceri active, dar afișate direct în preț, fără cod de introdus la finalizarea
             comenzii. Doar <strong className="text-[var(--foreground)]">{s.cu_cod_real}</strong>{" "}cer un cod.
-            Cine cauta &quot;cod reducere X&quot; pe Google gaseste, in marea majoritate a cazurilor,
-            pagini care promit un cod ce nu exista.
+            Cine caută &quot;cod reducere X&quot; pe Google găsește, în marea majoritate a cazurilor,
+            pagini care promit un cod ce nu există.
           </p>
         </section>
 
@@ -234,38 +234,38 @@ export default function StudiuPage() {
         {ultimaLuna && (
           <section className="max-w-3xl mx-auto px-4 pb-10">
             <h2 className="text-xl font-black text-[var(--foreground)] mb-2">
-              {numeLuna(ultimaLuna.luna).replace(/^./, (c) => c.toUpperCase())} in cifre
+              {numeLuna(ultimaLuna.luna).replace(/^./, (c) => c.toUpperCase())} în cifre
             </h2>
             {ultimaLuna.incomplet ? (
               <p className="text-sm text-[var(--text-soft)] leading-relaxed">
-                Pentru {numeLuna(ultimaLuna.luna)} nu publicam cifrele: doar {ultimaLuna.zile_bune} din{" "}
-                {cuNumar(ultimaLuna.zile, "zi a avut", "zile au avut")} date complete. Preferam o luna lipsa unei luni gresite.
+                Pentru {numeLuna(ultimaLuna.luna)} nu publicăm cifrele: doar {ultimaLuna.zile_bune} din{" "}
+                {cuNumar(ultimaLuna.zile, "zi a avut", "zile au avut")} date complete. Preferăm o lună lipsă unei luni greșite.
               </p>
             ) : (
               <>
                 <p className="text-[var(--text-soft)] leading-relaxed mb-3">
-                  In {numeLuna(ultimaLuna.luna)} am vazut{" "}
-                  <strong className="text-[var(--foreground)]">{cuDe(ultimaLuna.promotii_noi)} promotii noi</strong> la{" "}
+                  În {numeLuna(ultimaLuna.luna)} am văzut{" "}
+                  <strong className="text-[var(--foreground)]">{cuDe(ultimaLuna.promotii_noi)} promoții noi</strong> la{" "}
                   {cuDe(ultimaLuna.magazine)} magazine. Dintre ele,{" "}
                   <strong className="text-[var(--accent-text)]">{ultimaLuna.cu_cod}</strong>{" "}
                   ({ultimaLuna.promotii_noi ? Math.round(((ultimaLuna.cu_cod ?? 0) / ultimaLuna.promotii_noi) * 100) : 0}%)
-                  au avut cod de reducere; restul au fost oferte fara cod de introdus.
+                  au avut cod de reducere; restul au fost oferte fără cod de introdus.
                 </p>
                 <p className="text-[var(--text-soft)] leading-relaxed mb-5">
-                  In medie, {cuDe(ultimaLuna.active_pe_zi)} promotii au fost active in fiecare zi.{" "}
-                  {ultimaLuna.din_magazine_ro} dintre promotiile noi au venit de la magazine cu domeniu .ro.
+                  În medie, {cuDe(ultimaLuna.active_pe_zi)} promoții au fost active în fiecare zi.{" "}
+                  {ultimaLuna.din_magazine_ro} dintre promoțiile noi au venit de la magazine cu domeniu .ro.
                 </p>
 
                 {(ultimaLuna.top_ro?.length ?? 0) > 0 && (
                   <div className="overflow-x-auto rounded-xl border border-[var(--border)] mb-5">
                     <table className="w-full text-sm min-w-[420px]">
                       <caption className="text-left text-xs text-[var(--text-muted)] px-4 pt-3 pb-1">
-                        Magazinele .ro cu cele mai multe promotii noi
+                        Magazinele .ro cu cele mai multe promoții noi
                       </caption>
                       <thead>
                         <tr className="bg-[var(--surface)] text-[var(--text-muted)] text-[11px] uppercase tracking-wider">
                           <th className="text-left font-bold px-4 py-3">Magazin</th>
-                          <th className="text-right font-bold px-4 py-3">Promotii noi</th>
+                          <th className="text-right font-bold px-4 py-3">Promoții noi</th>
                           <th className="text-right font-bold px-4 py-3">Cu cod</th>
                         </tr>
                       </thead>
@@ -308,7 +308,7 @@ export default function StudiuPage() {
                   <thead>
                     <tr className="bg-[var(--surface)] text-[var(--text-muted)] text-[11px] uppercase tracking-wider">
                       <th className="text-left font-bold px-4 py-3">Luna</th>
-                      <th className="text-right font-bold px-4 py-3">Promotii noi</th>
+                      <th className="text-right font-bold px-4 py-3">Promoții noi</th>
                       <th className="text-right font-bold px-4 py-3">Cu cod</th>
                       <th className="text-right font-bold px-4 py-3">Magazine</th>
                     </tr>
@@ -334,19 +334,19 @@ export default function StudiuPage() {
             )}
 
             <p className="text-xs text-[var(--text-muted)] leading-relaxed">
-              Date din {ultimaLuna.zile_bune} din cele {cuDe(ultimaLuna.zile)} zile ale lunii. O promotie e noua in luna
-              in care am vazut-o prima data. Zilele in care o retea n-a raspuns nu intra in calcule.
+              Date din {ultimaLuna.zile_bune} din cele {cuDe(ultimaLuna.zile)} zile ale lunii. O promoție e nouă în luna
+              în care am văzut-o prima dată. Zilele în care o rețea n-a răspuns nu intră în calcule.
             </p>
           </section>
         )}
 
         {/* ── Reduceri pe categorie ────────────────────────────────────────── */}
         <section className="max-w-3xl mx-auto px-4 pb-10">
-          <h2 className="text-xl font-black text-[var(--foreground)] mb-2">Cat de mari sunt reducerile, pe categorii</h2>
+          <h2 className="text-xl font-black text-[var(--foreground)] mb-2">Cât de mari sunt reducerile, pe categorii</h2>
           <p className="text-sm text-[var(--text-muted)] mb-5">
-            Procentele sunt extrase din textul promotiilor, asa cum l-au scris magazinele.
-            Publicam mediana doar unde avem cel putin {cuNumar(s.prag_esantion, "magazin care declara", "magazine care declara")}
-            un procent &mdash; sub atat, o mediana ar fi zgomot prezentat ca masuratoare.
+            Procentele sunt extrase din textul promoțiilor, așa cum l-au scris magazinele.
+            Publicăm mediana doar unde avem cel puțin {cuNumar(s.prag_esantion, "magazin care declară", "magazine care declară")}
+            un procent &mdash; sub atât, o mediană ar fi zgomot prezentat ca măsurătoare.
           </p>
 
           <GraficCategorii categorii={s.categorii} />
@@ -357,8 +357,8 @@ export default function StudiuPage() {
                 <tr className="bg-[var(--surface)] text-[var(--text-muted)] text-[11px] uppercase tracking-wider">
                   <th className="text-left font-bold px-4 py-3">Categorie</th>
                   <th className="text-right font-bold px-4 py-3">Magazine</th>
-                  <th className="text-right font-bold px-4 py-3">Cu promotie</th>
-                  <th className="text-right font-bold px-4 py-3">Reducere mediana</th>
+                  <th className="text-right font-bold px-4 py-3">Cu promoție</th>
+                  <th className="text-right font-bold px-4 py-3">Reducere mediană</th>
                   <th className="text-right font-bold px-4 py-3">Cea mai mare</th>
                 </tr>
               </thead>
@@ -382,10 +382,10 @@ export default function StudiuPage() {
 
           {faraMediana.length > 0 && (
             <p className="text-xs text-[var(--text-muted)] mt-4 leading-relaxed">
-              <strong className="text-[var(--text-soft)]">Date insuficiente</strong> pentru inca{" "}
+              <strong className="text-[var(--text-soft)]">Date insuficiente</strong> pentru încă{" "}
               {cuNumar(faraMediana.length, "categorie", "categorii")} ({faraMediana.map((c) => c.nume).join(", ")}) &mdash;
-              prea putine magazine declara un procent ca sa putem publica o mediana onesta.
-              Le listam ca sa se vada ce NU stim, nu doar ce stim.
+              prea puține magazine declară un procent ca să putem publica o mediană onestă.
+              Le listăm ca să se vadă ce NU știm, nu doar ce știm.
             </p>
           )}
         </section>
@@ -393,64 +393,64 @@ export default function StudiuPage() {
         {/* ── Metoda ───────────────────────────────────────────────────────── */}
         <section className="bg-[var(--surface)] border-y border-[var(--border)] py-10 px-4">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-xl font-black text-[var(--foreground)] mb-5">Cum am masurat</h2>
+            <h2 className="text-xl font-black text-[var(--foreground)] mb-5">Cum am măsurat</h2>
             <div className="space-y-4 text-sm text-[var(--text-soft)] leading-relaxed">
               <div>
                 <h3 className="font-bold text-[var(--foreground)] mb-1">Sursa datelor</h3>
                 <p>
-                  Magazinele si promotiile vin din retelele de afiliere in care AmCupon.ro e partener:{" "}
-                  {s.retele.join(", ")}. Datele se reimprospateaza automat de trei ori pe zi.
-                  Cifrele de pe aceasta pagina sunt cele de la {s.generat}.
+                  Magazinele și promoțiile vin din rețelele de afiliere în care AmCupon.ro e partener:{" "}
+                  {s.retele.join(", ")}. Datele se reîmprospătează automat de trei ori pe zi.
+                  Cifrele de pe această pagină sunt cele de la {s.generat}.
                 </p>
               </div>
               {s.international && (
                 <div>
-                  <h3 className="font-bold text-[var(--foreground)] mb-1">Ce numaram ca magazin romanesc</h3>
+                  <h3 className="font-bold text-[var(--foreground)] mb-1">Ce numărăm ca magazin românesc</h3>
                   <p>
-                    Magazinele cu domeniu .ro. Mai urmarim {s.international.total.toLocaleString("ro-RO")}{deNumar(s.international.total)}
+                    Magazinele cu domeniu .ro. Mai urmărim {s.international.total.toLocaleString("ro-RO")}{deNumar(s.international.total)}
                     magazine internationale care livreaza in Romania (branduri care vand prin Impact.com,
                     magazine cu domeniu .com, .bg sau altul); {s.international.cu_cod} dintre ele au azi un cod
-                    de cupon. Nu le adunam la cifrele de mai sus: ar descrie comertul altor piete, nu pe cel
-                    romanesc.
+                    de cupon. Nu le adunăm la cifrele de mai sus: ar descrie comerțul altor piețe, nu pe cel
+                    românesc.
                   </p>
                 </div>
               )}
               <div>
                 <h3 className="font-bold text-[var(--foreground)] mb-1">Ce inseamna &quot;cod real&quot;</h3>
                 <p>
-                  O promotie activa care contine un cod de cupon nevid, adica un text pe care
-                  cumparatorul chiar il introduce la finalizarea comenzii. Promotiile cu reducere
-                  aplicata direct in pret sunt numarate separat, ca oferte fara cod.
+                  O promoție activă care conține un cod de cupon nevid, adică un text pe care
+                  cumpărătorul chiar îl introduce la finalizarea comenzii. Promoțiile cu reducere
+                  aplicată direct în preț sunt numărate separat, ca oferte fără cod.
                 </p>
               </div>
               <div>
-                <h3 className="font-bold text-[var(--foreground)] mb-1">Limitele acestei masuratori</h3>
+                <h3 className="font-bold text-[var(--foreground)] mb-1">Limitele acestei măsurători</h3>
                 <p>
-                  Acopera magazinele accesibile prin retelele de mai sus si codurile publice
+                  Acoperă magazinele accesibile prin rețelele de mai sus și codurile publice
                   distribuite acolo. Un magazin care trimite coduri <strong className="text-[var(--foreground)]">doar
-                  pe newsletter, in aplicatie sau catre clienti individuali</strong>{" "}nu apare in
-                  aceste cifre. Nu masuram tot comertul online romanesc, ci partea lui vizibila
-                  prin afiliere &mdash; care e, totusi, exact partea pe care o vede oricine cauta
+                  pe newsletter, în aplicație sau către clienți individuali</strong>{" "}nu apare în
+                  aceste cifre. Nu măsurăm tot comerțul online românesc, ci partea lui vizibilă
+                  prin afiliere &mdash; care e, totuși, exact partea pe care o vede oricine caută
                   un cod de reducere pe Google.
                 </p>
               </div>
               {s.serie_de_la && (
                 <div>
-                  <h3 className="font-bold text-[var(--foreground)] mb-1">Seria lunara</h3>
+                  <h3 className="font-bold text-[var(--foreground)] mb-1">Seria lunară</h3>
                   <p>
-                    Seria lunara porneste pe {ZI.format(new Date(`${s.serie_de_la}T00:00:00Z`))}: de atunci
-                    numaram zi de zi promotiile noi. Datele mai vechi exista, dar descriu schimbarile surselor
-                    noastre, nu piata: intre iunie si septembrie am adaugat surse noi, iar pana pe 24 septembrie
-                    o parte din promotii intrau cu intarziere. O luna se publica doar daca cel putin 90% din
+                    Seria lunară pornește pe {ZI.format(new Date(`${s.serie_de_la}T00:00:00Z`))}: de atunci
+                    numărăm zi de zi promoțiile noi. Datele mai vechi există, dar descriu schimbările surselor
+                    noastre, nu piața: între iunie și septembrie am adăugat surse noi, iar până pe 24 septembrie
+                    o parte din promoții intrau cu întârziere. O lună se publică doar dacă cel puțin 90% din
                     zilele ei au date complete.
                   </p>
                 </div>
               )}
               <div>
-                <h3 className="font-bold text-[var(--foreground)] mb-1">Ce nu publicam</h3>
+                <h3 className="font-bold text-[var(--foreground)] mb-1">Ce nu publicăm</h3>
                 <p>
-                  Comisioanele noastre de afiliere. Sunt ce castigam noi dintr-o vanzare, nu o
-                  masura a pietei sau a ofertei pentru cumparator.
+                  Comisioanele noastre de afiliere. Sunt ce câștigăm noi dintr-o vânzare, nu o
+                  măsură a pieței sau a ofertei pentru cumpărător.
                 </p>
               </div>
             </div>
@@ -462,18 +462,18 @@ export default function StudiuPage() {
           <div className="bg-[var(--surface)] border border-[var(--border)] rounded-xl p-6">
             <h2 className="text-lg font-black text-[var(--foreground)] mb-2">Datele brute, libere de folosit</h2>
             <p className="text-sm text-[var(--text-soft)] mb-4 leading-relaxed">
-              Cifrele complete, inclusiv categoriile cu esantion prea mic, sunt publice in format
-              JSON. Se pot prelua si verifica de oricine. Daca le folosesti intr-un articol, te
-              rugam sa citezi AmCupon.ro ca sursa.
+              Cifrele complete, inclusiv categoriile cu eșantion prea mic, sunt publice în format
+              JSON. Se pot prelua și verifica de oricine. Dacă le folosești într-un articol, te
+              rugăm să citezi AmCupon.ro ca sursă.
             </p>
             <div className="flex flex-wrap gap-2">
               <a href="/studiu-cupoane.json"
                 className="inline-block bg-[#ddf93c] text-[#0c1000] font-bold text-sm px-5 py-2.5 rounded-xl hover:bg-[#c3dd2c] transition-colors">
-                Descarca datele (JSON)
+                Descarcă datele (JSON)
               </a>
               <Link href="/contact"
                 className="inline-block bg-[var(--surface-alt)] text-[var(--foreground)] font-bold text-sm px-5 py-2.5 rounded-xl border border-[var(--border-strong)] hover:border-[#c9ced5] transition-colors">
-                Intreaba despre metodologie
+                Întreabă despre metodologie
               </Link>
             </div>
           </div>
@@ -481,7 +481,7 @@ export default function StudiuPage() {
 
         {/* ── Legaturi interne ─────────────────────────────────────────────── */}
         <section className="max-w-3xl mx-auto px-4 pb-10">
-          <h2 className="text-base font-black text-[var(--text-soft)] mb-4">Vezi si</h2>
+          <h2 className="text-base font-black text-[var(--text-soft)] mb-4">Vezi și</h2>
           <div className="flex flex-wrap gap-2">
             {[
               { href: "/oferte-azi", label: "Ofertele de azi" },

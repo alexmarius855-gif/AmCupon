@@ -16,11 +16,11 @@ interface Magazin {
 }
 
 export const metadata: Metadata = {
-  title: "Laptop Ieftin Romania 2026 — Oferte de la Parteneri",
+  title: "Laptop Ieftin România 2026 — Oferte de la Parteneri",
   description: "Oferte la laptopuri 2026: gaming, business, student, de la magazinele de electronice partenere AmCupon. Reduceri active, actualizate zilnic.",
-  keywords: ["laptop ieftin romania", "laptop gaming reducere", "laptop student ieftin", "cel mai bun laptop 2026", "laptop sub 3000 lei", "emag laptop reducere", "altex laptop promotie"],
+  keywords: ["laptop ieftin românia", "laptop gaming reducere", "laptop student ieftin", "cel mai bun laptop 2026", "laptop sub 3000 lei", "eMAG laptop reducere", "altex laptop promoție"],
   alternates: { canonical: "https://amcupon.ro/laptop" },
-  openGraph: { title: "Laptop Ieftin Romania 2026 | AmCupon.ro", url: "https://amcupon.ro/laptop", siteName: "AmCupon.ro", locale: "ro_RO", type: "website", images: [{ url: "https://amcupon.ro/og-image.png", width: 1200, height: 630 }] },
+  openGraph: { title: "Laptop Ieftin România 2026 | AmCupon.ro", url: "https://amcupon.ro/laptop", siteName: "AmCupon.ro", locale: "ro_RO", type: "website", images: [{ url: "https://amcupon.ro/og-image.png", width: 1200, height: 630 }] },
 };
 
 const TOP_LAPTOP = ["evomag.ro"];
@@ -30,7 +30,7 @@ const CAT_LAPTOP = ["electronice"];
 const BUGETE = [
   { pret: "Sub 2.000 lei", emoji: "💰", desc: "Chromebook, student basic, navigare web", culoare: "bg-emerald-600" },
   { pret: "2.000 – 3.500 lei", emoji: "💻", desc: "Office, multitasking, student productivitate", culoare: "bg-[#ddf93c]" },
-  { pret: "3.500 – 5.000 lei", emoji: "⚡", desc: "Laptop gaming entry, creatori continut", culoare: "bg-[#ddf93c]" },
+  { pret: "3.500 – 5.000 lei", emoji: "⚡", desc: "Laptop gaming entry, creatori conținut", culoare: "bg-[#ddf93c]" },
   { pret: "Peste 5.000 lei", emoji: "🚀", desc: "Gaming high-end, workstation, MacBook", culoare: "bg-[#ddf93c]" },
 ];
 
@@ -40,10 +40,10 @@ const BRANDURI = [
   { brand: "HP", desc: "Pavilion (buget), Spectre (premium), Omen (gaming)" },
   { brand: "Dell", desc: "XPS (ultrabook premium), Inspiron (buget), Alienware (gaming)" },
   { brand: "Acer", desc: "Nitro (gaming buget), Swift (ultrabook), Aspire (student)" },
-  { brand: "Apple", desc: "MacBook Air (eficienta), MacBook Pro (profesional)" },
+  { brand: "Apple", desc: "MacBook Air (eficiență), MacBook Pro (profesional)" },
 ];
 
-const jsonLd = { "@context":"https://schema.org","@type":"CollectionPage","name":"Laptop Ieftin Romania 2026","url":"https://amcupon.ro/laptop","description":"Oferte la laptopuri de la magazinele partenere — gaming, business, student" };
+const jsonLd = { "@context":"https://schema.org","@type":"CollectionPage","name":"Laptop Ieftin România 2026","url":"https://amcupon.ro/laptop","description":"Oferte la laptopuri de la magazinele partenere — gaming, business, student" };
 
 export default function LaptopPage() {
   const filePath = path.join(process.cwd(), "public", "output.json");
@@ -65,7 +65,7 @@ export default function LaptopPage() {
         {/* Breadcrumb */}
         <nav className="bg-[var(--surface)]/80 backdrop-blur-sm border-b border-[var(--border)]">
           <div className="max-w-6xl mx-auto px-4 py-3 flex items-center gap-1.5 text-xs text-[var(--text-muted)]">
-            <Link href="/" className="hover:text-[var(--accent-text)] transition-colors">Acasa</Link>
+            <Link href="/" className="hover:text-[var(--accent-text)] transition-colors">Acasă</Link>
             <span>/</span>
             <span className="text-[var(--text-soft)] font-medium">Laptop Ieftin</span>
           </div>
@@ -84,7 +84,7 @@ export default function LaptopPage() {
             </div>
             <div className="text-6xl mb-5 drop-shadow-2xl">💻</div>
             <h1 className="text-4xl md:text-5xl font-black text-[var(--foreground)] mb-4 tracking-tight">
-              Laptop Ieftin Romania <span className="text-transparent bg-clip-text" style={{backgroundImage:"linear-gradient(135deg, #ddf93c, #c3dd2c)"}}>{an}</span>
+              Laptop Ieftin România <span className="text-transparent bg-clip-text" style={{backgroundImage:"linear-gradient(135deg, #ddf93c, #c3dd2c)"}}>{an}</span>
             </h1>
             <p className="text-[var(--text-soft)] text-lg mb-8 max-w-xl mx-auto leading-relaxed">
               Gaming, business, student — laptopuri {laParteneri(NISA_CATEGORII.laptop)}, actualizate zilnic
@@ -101,7 +101,7 @@ export default function LaptopPage() {
         <section className="max-w-6xl mx-auto px-4 py-12">
           <div className="text-center mb-8">
             <p className="text-xs font-bold text-[var(--accent-text)] uppercase tracking-widest mb-2">BUGET</p>
-            <h2 className="text-2xl font-black text-[var(--foreground)]">Alege laptopul dupa buget</h2>
+            <h2 className="text-2xl font-black text-[var(--foreground)]">Alege laptopul după buget</h2>
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
             {BUGETE.map(b => (
@@ -119,7 +119,7 @@ export default function LaptopPage() {
           <div className="flex items-center justify-between mb-6">
             <div>
               <p className="text-xs font-bold text-[var(--accent-text)] uppercase tracking-widest mb-1">MAGAZINE PARTENERE</p>
-              <h2 className="text-xl font-black text-[var(--foreground)]">Magazine cu laptopuri si electronice</h2>
+              <h2 className="text-xl font-black text-[var(--foreground)]">Magazine cu laptopuri și electronice</h2>
             </div>
           </div>
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">
@@ -142,11 +142,11 @@ export default function LaptopPage() {
         {/* Ghid */}
         <section className="bg-[var(--surface)] border-t border-[var(--border)] py-12 px-4">
           <div className="max-w-3xl mx-auto">
-            <p className="text-xs font-bold text-[var(--accent-text)] uppercase tracking-widest mb-3">GHID CUMPARATURI</p>
-            <h2 className="text-2xl font-black text-[var(--foreground)] mb-7">Ce laptop sa cumperi in {an}</h2>
+            <p className="text-xs font-bold text-[var(--accent-text)] uppercase tracking-widest mb-3">GHID CUMPĂRĂTURI</p>
+            <h2 className="text-2xl font-black text-[var(--foreground)] mb-7">Ce laptop să cumperi în {an}</h2>
             <div className="space-y-5">
               <div className="bg-[var(--surface-alt)] border border-[var(--border-strong)] rounded-xl p-5">
-                <h3 className="font-bold text-[var(--foreground)] mb-3 text-base">Branduri populare de laptopuri in {an}</h3>
+                <h3 className="font-bold text-[var(--foreground)] mb-3 text-base">Branduri populare de laptopuri în {an}</h3>
                 <div className="grid sm:grid-cols-2 gap-3">
                   {BRANDURI.map(b => (
                     <div key={b.brand} className="bg-[var(--surface)] border border-[var(--border-strong)] rounded-xl p-3">
@@ -157,14 +157,14 @@ export default function LaptopPage() {
                 </div>
               </div>
               <div className="bg-[var(--surface-alt)] border border-[var(--border-strong)] rounded-xl p-5">
-                <h3 className="font-bold text-[var(--foreground)] mb-3 text-base">Ce specificatii conteaza cu adevarat</h3>
+                <h3 className="font-bold text-[var(--foreground)] mb-3 text-base">Ce specificații contează cu adevărat</h3>
                 <ul className="space-y-2 text-sm text-[var(--text-soft)]">
                   {[
-                    ["Procesor","Intel Core i5/i7 sau Core Ultra 5/7, ori AMD Ryzen 5/7, din generatiile recente"],
-                    ["RAM","minimum 16GB pentru confort real in 2026 (8GB e deja insuficient)"],
-                    ["SSD","minimum 512GB NVMe — viteza de boot si aplicatii radical mai buna"],
-                    ["Display","IPS 1920x1080 minimum; daca lucrezi cu imagini, cauta 2K/OLED"],
-                    ["Baterie","capacitatea in Wh conteaza, dar autonomia reala o afli din testele independente"],
+                    ["Procesor","Intel Core i5/i7 sau Core Ultra 5/7, ori AMD Ryzen 5/7, din generațiile recente"],
+                    ["RAM","minimum 16GB pentru confort real în 2026 (8GB e deja insuficient)"],
+                    ["SSD","minimum 512GB NVMe — viteza de boot și aplicații radical mai bună"],
+                    ["Display","IPS 1920x1080 minimum; dacă lucrezi cu imagini, caută 2K/OLED"],
+                    ["Baterie","capacitatea în Wh contează, dar autonomia reală o afli din testele independente"],
                   ].map(([bold, text]) => (
                     <li key={bold} className="flex gap-2">
                       <span className="text-[var(--accent-text)] mt-0.5 shrink-0">→</span>
@@ -174,8 +174,8 @@ export default function LaptopPage() {
                 </ul>
               </div>
               <div className="bg-[var(--surface-alt)] border border-[var(--border-strong)] rounded-xl p-5">
-                <h3 className="font-bold text-[var(--foreground)] mb-2 text-base">Cand sunt reduceri la laptopuri</h3>
-                <p className="text-sm text-[var(--text-soft)] leading-relaxed">De Black Friday (noiembrie) si cand apare o generatie noua de procesoare, modelele vechi se ieftinesc de obicei. Cand un partener are un cod activ, il gasesti pe pagina lui de pe AmCupon.ro.</p>
+                <h3 className="font-bold text-[var(--foreground)] mb-2 text-base">Când sunt reduceri la laptopuri</h3>
+                <p className="text-sm text-[var(--text-soft)] leading-relaxed">De Black Friday (noiembrie) și când apare o generație nouă de procesoare, modelele vechi se ieftinesc de obicei. Când un partener are un cod activ, îl găsești pe pagina lui de pe AmCupon.ro.</p>
               </div>
             </div>
           </div>
@@ -183,7 +183,7 @@ export default function LaptopPage() {
 
         {/* Related */}
         <section className="max-w-6xl mx-auto px-4 py-8">
-          <p className="text-xs font-bold text-[var(--text-muted)] uppercase tracking-widest mb-4">EXPLOREAZA SI</p>
+          <p className="text-xs font-bold text-[var(--text-muted)] uppercase tracking-widest mb-4">EXPLOREAZĂ ȘI</p>
           <div className="flex flex-wrap gap-2">
             {[
               { href: "/gaming", label: "🎮 Gaming" },

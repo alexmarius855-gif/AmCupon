@@ -37,7 +37,7 @@ const AGENTS = [
     bg:      "from-[var(--background)]/40 to-[var(--background)]",
     border:  "border-[var(--accent-text)]/30",
     glow:    "shadow-[#ddf93c]/20",
-    desc:    "NEXUS actualizeaza magazine, promotii si merge toate platformele de afiliere. Ruleaza de 4 ori pe zi.",
+    desc:    "NEXUS actualizează magazine, promoții și merge toate platformele de afiliere. Rulează de 4 ori pe zi.",
     skills:  ["Scraper","Merge","2Performant","Profitshare","Auto"],
     avatar:  "N",
     avatarBg:"#00f5d4",
@@ -54,7 +54,7 @@ const AGENTS = [
     bg:      "from-pink-900/40 to-[var(--background)]",
     border:  "border-pink-500/30",
     glow:    "shadow-pink-500/20",
-    desc:    "ECHO genereaza scripturi complete YouTube, articole SEO, idei blog si ghiduri de cumparare.",
+    desc:    "ECHO generează scripturi complete YouTube, articole SEO, idei blog și ghiduri de cumpărare.",
     skills:  ["YouTube","Blog","SEO","Creative","Scripts"],
     avatar:  "E",
     avatarBg:"#ff3cac",
@@ -71,7 +71,7 @@ const AGENTS = [
     bg:      "from-orange-900/40 to-[var(--background)]",
     border:  "border-orange-500/30",
     glow:    "shadow-orange-500/20",
-    desc:    "PULSE creeaza continut pentru Instagram, TikTok, Facebook si campanii email pentru abonati.",
+    desc:    "PULSE creează conținut pentru Instagram, TikTok, Facebook și campanii email pentru abonați.",
     skills:  ["Instagram","TikTok","Email","Growth","Viral"],
     avatar:  "P",
     avatarBg:"#f7971e",
@@ -88,7 +88,7 @@ const AGENTS = [
     bg:      "from-violet-900/40 to-[var(--background)]",
     border:  "border-violet-500/30",
     glow:    "shadow-violet-500/20",
-    desc:    "SIGMA analizeaza oportunitati de business, strategii de crestere si idei de monetizare noi.",
+    desc:    "SIGMA analizează oportunități de business, strategii de creștere și idei de monetizare noi.",
     skills:  ["Business","Strategy","Analytics","Research","Ideas"],
     avatar:  "S",
     avatarBg:"#784ba0",
@@ -103,70 +103,70 @@ const MISSIONS = [
   {
     id:"blog-factory",   name:"Blog SEO Factory",     icon:"📝",
     agentId:"echo",  agentName:"ECHO",  color:"#ff3cac",
-    desc:"3 articole/zi generate automat, optimizate SEO. Google rankeaza, tu castigi.",
+    desc:"3 articole/zi generate automat, optimizate SEO. Google rankează, tu câștigi.",
     revenue:"AdSense + afiliere",  est:"50–300 EUR/lună",
     workflow:"run-agent", type_:"blog",     freq:"Zilnic 06:00", active:true,  tag:"CONTENT",
   },
   {
     id:"social-auto",    name:"Social Autopilot",      icon:"📱",
     agentId:"pulse", agentName:"PULSE", color:"#f7971e",
-    desc:"Postari Instagram, TikTok, Facebook generate zilnic. Tu nu faci nimic.",
+    desc:"Postări Instagram, TikTok, Facebook generate zilnic. Tu nu faci nimic.",
     revenue:"Brand + reach",       est:"0 → 10k urmăritori",
     workflow:"run-agent", type_:"social",   freq:"Zilnic",       active:true,  tag:"SOCIAL",
   },
   {
     id:"youtube-bank",   name:"YouTube Script Bank",   icon:"🎬",
     agentId:"echo",  agentName:"ECHO",  color:"#ff3cac",
-    desc:"Scripturi complete YouTube gata de inregistrat — hooks, sectiuni, CTA.",
+    desc:"Scripturi complete YouTube gata de înregistrat — hooks, secțiuni, CTA.",
     revenue:"AdSense YouTube",     est:"100–500 EUR/lună",
-    workflow:"run-agent", type_:"youtube",  freq:"Saptamanal",   active:true,  tag:"VIDEO",
+    workflow:"run-agent", type_:"youtube",  freq:"Săptămânal",   active:true,  tag:"VIDEO",
   },
   {
     id:"newsletter",     name:"Newsletter Campaigns",  icon:"📧",
     agentId:"pulse", agentName:"PULSE", color:"#f7971e",
-    desc:"Top 5 oferte saptamanale trimise automat la abonati. Fiecare click = comision.",
+    desc:"Top 5 oferte săptămânale trimise automat la abonați. Fiecare click = comision.",
     revenue:"Clicks afiliere",     est:"20–100 EUR/lună",
-    workflow:"run-agent", type_:"social",   freq:"Saptamanal",   active:true,  tag:"EMAIL",
+    workflow:"run-agent", type_:"social",   freq:"Săptămânal",   active:true,  tag:"EMAIL",
   },
   {
     id:"data-sync",      name:"Data Sync Engine",      icon:"⚡",
     agentId:"nexus", agentName:"NEXUS", color:"#00f5d4",
-    desc:"1000+ magazine, promotii si preturi actualizate de 4 ori pe zi automat.",
-    revenue:"Baza tuturor veniturilor", est:"Fundatia sitului",
+    desc:"1000+ magazine, promoții și prețuri actualizate de 4 ori pe zi automat.",
+    revenue:"Baza tuturor veniturilor", est:"Fundația sitului",
     workflow:"update-data", type_:null,     freq:"6h / la cerere", active:true, tag:"INFRA",
   },
   {
     id:"business-intel", name:"Business Intel",        icon:"🧠",
     agentId:"sigma", agentName:"SIGMA", color:"#784ba0",
-    desc:"Analiza saptamanala: noi oportunitati, nise profitabile, idei de expansiune.",
+    desc:"Analiza săptămânală: noi oportunități, nișe profitabile, idei de expansiune.",
     revenue:"Decizii mai bune",    est:"Strategic",
-    workflow:"run-agent", type_:"business", freq:"Saptamanal",   active:true,  tag:"STRATEGY",
+    workflow:"run-agent", type_:"business", freq:"Săptămânal",   active:true,  tag:"STRATEGY",
   },
   {
     id:"lead-gen",       name:"Lead Gen Engine",       icon:"🎯",
     agentId:"sigma", agentName:"SIGMA", color:"#784ba0",
-    desc:"Gaseste firme locale care au nevoie de automatizare. Tu le vinzi serviciul.",
+    desc:"Găsește firme locale care au nevoie de automatizare. Tu le vinzi serviciul.",
     revenue:"Servicii automatizare", est:"200–500 EUR/client",
     workflow:"run-agent", type_:"business", freq:"La cerere",    active:false, tag:"SERVICES",
   },
   {
     id:"fiverr-bot",     name:"Fiverr Content Bot",    icon:"💼",
     agentId:"echo",  agentName:"ECHO",  color:"#ff3cac",
-    desc:"Client trimite brief → ECHO livreaza articol/script/descrieri in minute.",
+    desc:"Client trimite brief → ECHO livrează articol/script/descrieri în minute.",
     revenue:"Comenzi directe",     est:"30–150 EUR/proiect",
     workflow:"run-agent", type_:"youtube",  freq:"La cerere",    active:false, tag:"FREELANCE",
   },
   {
     id:"site-launcher",  name:"New Site Launcher",     icon:"🚀",
     agentId:"nexus", agentName:"NEXUS", color:"#00f5d4",
-    desc:"Lanseaza auto.amcupon.ro, carti.amcupon.ro — acelasi cod, noi nise, venit nou.",
-    revenue:"Multi-nisa afiliere", est:"100–1000 EUR/site",
+    desc:"Lansează auto.amcupon.ro, carti.amcupon.ro — același cod, noi nișe, venit nou.",
+    revenue:"Multi-nișă afiliere", est:"100–1000 EUR/site",
     workflow:"update-data", type_:null,     freq:"Lunar",        active:false, tag:"SCALE",
   },
   {
     id:"price-intel",    name:"Price Intel Scanner",   icon:"👁",
     agentId:"nexus", agentName:"NEXUS", color:"#00f5d4",
-    desc:"Monitorizeaza concurenta (Cuponeria, Kuplio) — gaseste coduri pe care nu le ai.",
+    desc:"Monitorizează concurența (Cuponeria, Kuplio) — găsește coduri pe care nu le ai.",
     revenue:"Conversii +30%",      est:"Avantaj competitiv",
     workflow:"update-data", type_:null,     freq:"Orar",         active:false, tag:"DATA",
   },
@@ -518,8 +518,8 @@ export default function AdminDashboard() {
                 <div className="grid grid-cols-3 gap-3 mb-5">
                   {[
                     { label:"Misiuni Active",    value:String(active6.length),    color:"#00f5d4", icon:"⚡" },
-                    { label:"In Lucru Acum",     value:running>0?String(running):"0",  color:running>0?"#ff3cac":"#333355", icon:"🔄" },
-                    { label:"Potential Lunar",   value:"300–1500 EUR",            color:"#f7971e", icon:"💰" },
+                    { label:"În Lucru Acum",     value:running>0?String(running):"0",  color:running>0?"#ff3cac":"#333355", icon:"🔄" },
+                    { label:"Potențial Lunar",   value:"300–1500 EUR",            color:"#f7971e", icon:"💰" },
                   ].map(st => (
                     <div key={st.label} className="rounded-2xl p-4 border flex items-center gap-3"
                       style={{ background:"rgba(13,13,38,0.9)", borderColor:st.color+"33" }}>
@@ -536,7 +536,7 @@ export default function AdminDashboard() {
 
                 {/* Active missions */}
                 <p className="text-xs font-mono font-bold tracking-widest mb-3" style={{ color:"#00f5d4" }}>
-                  ▶ MISIUNI ACTIVE — ruleaza acum
+                  ▶ MISIUNI ACTIVE — rulează acum
                 </p>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-3 mb-6">
                   {active6.map(m => {
@@ -614,7 +614,7 @@ export default function AdminDashboard() {
 
                 {/* Coming soon missions */}
                 <p className="text-xs font-mono font-bold tracking-widest mb-3" style={{ color:"#333355" }}>
-                  ○ IN DEZVOLTARE — urmatoarea faza
+                  ○ ÎN DEZVOLTARE — următoarea fază
                 </p>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
                   {coming4.map(m => (
@@ -655,7 +655,7 @@ export default function AdminDashboard() {
               <div>
                 <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 mb-5">
                   {[
-                    { l:"Fara tracking real", v:String(a.orphanCount),                                     c:"#ff3cac" },
+                    { l:"Fără tracking real", v:String(a.orphanCount),                                     c:"#ff3cac" },
                     { l:"Cu tracking verificat", v:String(a.total - a.orphanCount),                        c:"#00f5d4" },
                     { l:"Din total magazine", v:a.total ? `${Math.round((a.orphanCount/a.total)*100)}%` : "0%", c:"#f7971e" },
                   ].map(st => (
@@ -721,8 +721,8 @@ export default function AdminDashboard() {
               <div>
                 <p className="text-xs font-mono mb-4" style={{ color:"#444466" }}>
                   {"// Link catre pagina PUBLICA (nu direct la retea) — AffiliateClickTracker.tsx"}
-                  {" trimite deja affiliate_click in GA4 la orice click afiliat de pe ea. UTM-urile"}
-                  {" de mai jos iti dau segmentare pe campanie/sursa in GA4, fara cod nou."}
+                  {" trimite deja affiliate_click în GA4 la orice click afiliat de pe ea. UTM-urile"}
+                  {" de mai jos îți dau segmentare pe campanie/sursă în GA4, fără cod nou."}
                 </p>
                 <CampaignLinkBuilder deal={sd} />
               </div>
@@ -804,7 +804,7 @@ export default function AdminDashboard() {
                             animation: isRunning ? "pulse 1s infinite" : "none",
                           }} />
                         <span className="text-xs font-mono" style={{ color:"#666688", fontSize:"10px" }}>
-                          {isRunning ? "RUNNING..." : isDone ? "DONE ✓" : "Fara sesiune activa"}
+                          {isRunning ? "RUNNING..." : isDone ? "DONE ✓" : "Fără sesiune activă"}
                         </span>
                       </div>
                       <button
@@ -869,9 +869,9 @@ export default function AdminDashboard() {
               <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-6">
                 {[
                   { l:"Magazine",    v:s?.totalMagazine, c:"#00f5d4" },
-                  { l:"Cu promotii", v:s?.cuPromotii,    c:"#ff3cac" },
+                  { l:"Cu promoții", v:s?.cuPromotii,    c:"#ff3cac" },
                   { l:"Cu cod",      v:s?.cuCod,         c:"#f7971e" },
-                  { l:"Abonati NL",  v:b?.subscribers,   c:"#784ba0" },
+                  { l:"Abonați NL",  v:b?.subscribers,   c:"#784ba0" },
                 ].map(st => (
                   <div key={st.l} className="rounded-2xl p-4 border" style={{ background:"rgba(13,13,38,0.8)", borderColor:st.c+"33" }}>
                     <div className="text-2xl font-black mb-1" style={{ color:st.c, textShadow:`0 0 10px ${st.c}55` }}>
@@ -892,7 +892,7 @@ export default function AdminDashboard() {
           {/* ── LOGS VIEW ──────────────────────────────── */}
           {nav==="logs" && (
             <div>
-              <h2 className="font-black tracking-wider mb-4" style={{ color:"#ff3cac" }}>📋 OUTPUT AGENTI</h2>
+              <h2 className="font-black tracking-wider mb-4" style={{ color:"#ff3cac" }}>📋 OUTPUT AGENȚI</h2>
               <div className="rounded-2xl p-5 border" style={{ background:"#0a0a1e", borderColor:"#1a1a40" }}>
                 <p className="text-xs font-mono mb-3" style={{ color:"#444466" }}>{"// Ultimul output generat de agenti"}</p>
                 <Link href="/agent-content-latest.json" target="_blank" rel="noopener noreferrer"
@@ -900,7 +900,7 @@ export default function AdminDashboard() {
                   → /agent-content-latest.json
                 </Link>
                 <p className="text-xs font-mono mt-4" style={{ color:"#333355" }}>
-                  Ruleaza un agent din tab-ul AGENT ROSTER pentru a genera continut nou.
+                  Rulează un agent din tab-ul AGENT ROSTER pentru a genera conținut nou.
                 </p>
               </div>
             </div>

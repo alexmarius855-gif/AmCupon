@@ -11,9 +11,9 @@ const LINK_MXENDURO = linkPlatit("https://mxenduro.ro");
 // ─────────────────────────────────────────────────────────────────────────
 
 export const metadata: Metadata = {
-  title: "Echipament Moto cu Reducere Romania 2026 — Casti, Piese",
-  description: "Casti, geci, manusi si piese pentru motociclete si scutere, de la magazinele romanesti de echipament moto partenere AmCupon, precum MxEnduro.",
-  keywords: ["echipament moto reducere", "casti moto ieftine", "costume motociclisti reducere", "piese moto online", "cod reducere fixato", "cod reducere mxenduro"],
+  title: "Echipament Moto cu Reducere România 2026 — Căști, Piese",
+  description: "Căști, geci, mănuși și piese pentru motociclete și scutere, de la magazinele românești de echipament moto partenere AmCupon, precum MxEnduro.",
+  keywords: ["echipament moto reducere", "căști moto ieftine", "costume motocicliști reducere", "piese moto online", "cod reducere fixato", "cod reducere mxenduro"],
   alternates: { canonical: "https://amcupon.ro/echipament-moto" },
   openGraph: { title: "Echipament Moto cu Reducere 2026 | AmCupon.ro", url: "https://amcupon.ro/echipament-moto", siteName: "AmCupon.ro", locale: "ro_RO", type: "website", images: [{ url: "https://amcupon.ro/og-image.png", width: 1200, height: 630 }] },
 };
@@ -21,24 +21,24 @@ export const metadata: Metadata = {
 const MAGAZINE = [
   {
     name: "Fixato",
-    tagline: "Casti si echipament pentru moto, scutere, ATV si biciclete",
-    badge: "Casti & siguranta",
+    tagline: "Căști și echipament pentru moto, scutere, ATV și biciclete",
+    badge: "Căști & siguranță",
     url: LINK_FIXATO,
-    beneficii: ["Casti omologate ECE 22.06", "Geci si pantaloni cu protectii", "Manusi pentru toate sezoanele", "Accesorii scutere si ATV"],
+    beneficii: ["Căști omologate ECE 22.06", "Geci și pantaloni cu protecții", "Mănuși pentru toate sezoanele", "Accesorii scutere și ATV"],
   },
   {
     name: "MxEnduro",
-    tagline: "Piese si accesorii moto — catalog de peste 4 milioane de produse",
+    tagline: "Piese și accesorii moto — catalog de peste 4 milioane de produse",
     badge: "Piese moto",
     url: LINK_MXENDURO,
-    beneficii: ["Piese pentru orice marca/model", "Anvelope moto si scuter", "Accesorii tuning si intretinere", "Catalog uriaș, aproape orice piesa gasesti"],
+    beneficii: ["Piese pentru orice marca/model", "Anvelope moto și scuter", "Accesorii tuning și întreținere", "Catalog uriaș, aproape orice piesă găsești"],
   },
 ];
 
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "CollectionPage",
-  "name": "Echipament Moto cu Reducere Romania 2026",
+  "name": "Echipament Moto cu Reducere România 2026",
   "url": "https://amcupon.ro/echipament-moto",
 };
 
@@ -64,7 +64,7 @@ export default function EchipamentMotoPage() {
               Echipament <span className="text-transparent bg-clip-text" style={{ backgroundImage: "linear-gradient(135deg, #ddf93c, #ddf93c)" }}>Moto</span> {an}
             </h1>
             <p className="text-[var(--text-soft)] text-lg max-w-2xl mx-auto">
-              Casti, geci, manusi si piese pentru motociclete si scutere — magazine romanesti de profil.
+              Căști, geci, mănuși și piese pentru motociclete și scutere — magazine românești de profil.
             </p>
           </div>
         </section>
@@ -99,10 +99,10 @@ export default function EchipamentMotoPage() {
           <section className="mt-10 bg-[var(--surface)] border border-[var(--border)] rounded-xl p-6">
             <h2 className="text-lg font-black text-[var(--foreground)] mb-4">Cum alegi echipamentul moto potrivit?</h2>
             <ul className="space-y-2 text-sm text-[var(--text-soft)]">
-              <li><strong className="text-[var(--text-soft)]">Casca</strong> — verifica intotdeauna omologarea ECE 22.06, marimea corecta conteaza mai mult decat designul</li>
-              <li><strong className="text-[var(--text-soft)]">Geaca si pantaloni</strong> — cauta protectii CE la coate, umeri, genunchi si spate</li>
-              <li><strong className="text-[var(--text-soft)]">Sezonalitate</strong> — echipamentul de iarna (impermeabil, captuseala termica) e de obicei mai ieftin in afara sezonului</li>
-              <li><strong className="text-[var(--text-soft)]">Piese de schimb</strong> — compara pretul intre 2-3 magazine, diferentele pot fi semnificative</li>
+              <li><strong className="text-[var(--text-soft)]">Casca</strong> — verifică întotdeauna omologarea ECE 22.06, mărimea corectă contează mai mult decât designul</li>
+              <li><strong className="text-[var(--text-soft)]">Geaca și pantaloni</strong> — caută protecții CE la coate, umeri, genunchi și spate</li>
+              <li><strong className="text-[var(--text-soft)]">Sezonalitate</strong> — echipamentul de iarnă (impermeabil, căptușeală termică) e de obicei mai ieftin în afara sezonului</li>
+              <li><strong className="text-[var(--text-soft)]">Piese de schimb</strong> — compară prețul între 2-3 magazine, diferențele pot fi semnificative</li>
             </ul>
           </section>
 
@@ -119,7 +119,7 @@ export default function EchipamentMotoPage() {
             ))}
           </div>
 
-          <p className="text-[var(--text-muted)] text-xs text-center mt-8">Unele linkuri sunt linkuri de afiliat. Daca faci o achizitie, AmCupon.ro primeste un comision fara cost suplimentar pentru tine.</p>
+          <p className="text-[var(--text-muted)] text-xs text-center mt-8">Unele linkuri sunt linkuri de afiliat. Dacă faci o achiziție, AmCupon.ro primește un comision fără cost suplimentar pentru tine.</p>
         </section>
       </div>
     </>

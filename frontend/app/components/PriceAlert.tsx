@@ -35,10 +35,10 @@ export default function PriceAlert({ magazin, numeMagazin, deschis = false }: Pr
       if (data.ok) {
         setStatus("success");
       } else {
-        setErrMsg(data.error || "Eroare. Incearca din nou."); setStatus("error");
+        setErrMsg(data.error || "Eroare. Încearcă din nou."); setStatus("error");
       }
     } catch {
-      setErrMsg("Eroare de retea."); setStatus("error");
+      setErrMsg("Eroare de rețea."); setStatus("error");
     }
   }
 
@@ -88,7 +88,7 @@ export default function PriceAlert({ magazin, numeMagazin, deschis = false }: Pr
             value={email}
             onChange={e => { setEmail(e.target.value); setStatus("idle"); setErrMsg(""); }}
             placeholder="email@tau.ro"
-            aria-label={`Adresa de email pentru alerta ${numeMagazin}`}
+            aria-label={`Adresa de email pentru alertă ${numeMagazin}`}
             required
             className="flex-1 border border-[var(--border-strong)] focus:border-[var(--accent-text)] bg-[var(--surface-alt)] text-[var(--foreground)] placeholder:text-[var(--text-muted)] rounded-xl px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#ddf93c]/30"
           />

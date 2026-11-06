@@ -199,20 +199,20 @@ def _shell(titlu: str, subtitlu: str, corp_html: str) -> str:
 def html_ziua3(oferte: list) -> str:
     corp = """
       <p style="color:#374151;font-size:15px;line-height:1.6;margin:0 0 20px;">
-        Salut din nou! Ca sa profiti la maximum de AmCupon.ro, iată 3 obiceiuri rapide:
+        Salut din nou! Ca să profiți la maximum de AmCupon.ro, iată 3 obiceiuri rapide:
       </p>
       <div style="margin-bottom:24px;">
         <div style="display:flex;gap:12px;margin-bottom:14px;">
           <span style="font-size:20px;">🔖</span>
-          <p style="margin:0;color:#374151;font-size:14px;line-height:1.5;"><strong>Salvează pagina magazinului preferat.</strong> Fiecare magazin are propria pagină cu toate codurile lui, actualizate zilnic.</p>
+          <p style="margin:0;color:#374151;font-size:14px;line-height:1.5;"><strong>Salvează pagina magazinului preferat.</strong> Fiecare magazin are propria pagină cu ofertele lui active, actualizate de trei ori pe zi.</p>
         </div>
         <div style="display:flex;gap:12px;margin-bottom:14px;">
-          <span style="font-size:20px;">🔔</span>
-          <p style="margin:0;color:#374151;font-size:14px;line-height:1.5;"><strong>Activează o alertă de preț.</strong> Pe pagina oricărui magazin poți cere să fii anunțat exact când apare un cod nou pentru el.</p>
+          <span style="font-size:20px;">🔎</span>
+          <p style="margin:0;color:#374151;font-size:14px;line-height:1.5;"><strong>Caută magazinul înainte să plătești.</strong> Scrii numele lui pe AmCupon.ro și vezi dacă are o ofertă activă; dacă nu are, îți arătăm magazine similare care au.</p>
         </div>
         <div style="display:flex;gap:12px;">
-          <span style="font-size:20px;">🎯</span>
-          <p style="margin:0;color:#374151;font-size:14px;line-height:1.5;"><strong>Urmărește Deal Score-ul.</strong> Scorul de pe fiecare ofertă combină reducerea, prospețimea și exclusivitatea — cu cât e mai mare, cu atât merită mai mult.</p>
+          <span style="font-size:20px;">⏳</span>
+          <p style="margin:0;color:#374151;font-size:14px;line-height:1.5;"><strong>Uită-te la data de expirare.</strong> Ofertele care expiră curând sunt marcate. Codul îl aplici în coș, la finalizarea comenzii, și vezi acolo prețul final.</p>
         </div>
       </div>
       <p style="color:#6b7280;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:1px;margin:0 0 12px;">Oferte active chiar acum</p>
@@ -228,18 +228,13 @@ def html_ziua3(oferte: list) -> str:
 def html_ziua7(oferte: list) -> str:
     corp = """
       <p style="color:#374151;font-size:15px;line-height:1.6;margin:0 0 20px;">
-        O săptămână de când ești alături de noi! De acum înainte primești newsletter-ul
-        nostru obișnuit — o dată pe săptămână, doar ofertele care chiar merită, fără
-        aglomerare în inbox.
+        O săptămână de când ești alături de noi! Primești în continuare newsletter-ul
+        nostru, o dată pe zi, cu ofertele active de la magazinele partenere.
       </p>
       <p style="color:#6b7280;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:1px;margin:0 0 12px;">Ce e activ chiar acum</p>
       <div style="margin-bottom:24px;">""" + "".join(_card_oferta(o) for o in oferte) + """</div>
-      <div style="background:#f0f9ff;border:1px solid #bae6fd;border-radius:12px;padding:20px;margin-bottom:8px;">
-        <p style="margin:0 0 8px;color:#0c4a6e;font-weight:700;font-size:14px;">🧩 Extensia Chrome — reduceri automate</p>
-        <p style="margin:0 0 12px;color:#0369a1;font-size:13px;">Instalează extensia AmCupon și primești automat cele mai bune coduri când ești pe orice site partener.</p>
-        <a href="https://chromewebstore.google.com/detail/mahfankpalkgognhnllkgdkjncmmkllb" style="background:#0d9488;color:#fff;font-weight:700;font-size:13px;padding:8px 20px;border-radius:8px;text-decoration:none;display:inline-block;">Instalează gratuit</a>
-      </div>"""
-    return _shell("Mulțumim că ești aici de o săptămână!", "Ziua 7 — de acum, newsletter săptămânal normal", corp)
+"""
+    return _shell("Mulțumim că ești aici de o săptămână!", "Ziua 7 — newsletterul zilnic continuă", corp)
 
 
 def trimite(email: str, subiect: str, html: str, tag: str, dry_run: bool) -> bool:

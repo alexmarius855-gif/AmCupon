@@ -8,7 +8,7 @@ import { linkPlatit } from "@/lib/linkPlatit";
 export const metadata: Metadata = {
   title: "Software Business 2026 — Unelte SaaS pentru Firme",
   description: "Unelte software pentru firme — SEO, design, email marketing, productivitate, securitate — și partenerii AmCupon din categoria software, cu ofertele lor active.",
-  keywords: ["software facturare reducere", "facturis-online reducere", "saas romania reducere", "tools business reducere", "semrush reducere", "canva pro reducere"],
+  keywords: ["software facturare reducere", "facturis-online reducere", "saas românia reducere", "tools business reducere", "semrush reducere", "canva pro reducere"],
   alternates: { canonical: "https://amcupon.ro/software-business" },
   openGraph: { title: "Software Business 2026 | AmCupon.ro", url: "https://amcupon.ro/software-business", siteName: "AmCupon.ro", locale: "ro_RO", type: "website" },
 };
@@ -110,7 +110,7 @@ export default function SoftwareBusinessPage() {
       {/* Tools internationale */}
       {TOOLS_INTL.map(group => (
         <section key={group.categ} className="max-w-5xl mx-auto px-4 py-6 border-t border-[var(--border)]">
-          <h2 className="text-xl font-black text-[var(--foreground)] mb-5">{group.categ} — International</h2>
+          <h2 className="text-xl font-black text-[var(--foreground)] mb-5">{group.categ} — Internațional</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {group.items.map(item => (
               <div key={item.name} className="bg-[var(--surface)] border border-[var(--border)] hover:border-[var(--accent-text)]/20 rounded-xl p-5 flex flex-col gap-3 transition-all">

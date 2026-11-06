@@ -124,27 +124,27 @@ function faqItems(peste: string): { q: string; a: string }[] {
 
   {
     q: "Cum folosesc un cod de reducere de pe AmCupon.ro?",
-    a: "Alegi magazinul dorit, apesi pe cod ca sa il copiezi, apoi mergi la magazin prin butonul nostru. La finalizarea comenzii (checkout) lipesti codul in campul \"Cod reducere\" sau \"Voucher\" si reducerea se aplica automat.",
+    a: "Alegi magazinul dorit, apeși pe cod ca să îl copiezi, apoi mergi la magazin prin butonul nostru. La finalizarea comenzii (checkout) lipești codul în câmpul \"Cod reducere\" sau \"Voucher\" și reducerea se aplică automat.",
   },
   {
     q: "Codurile de reducere sunt gratuite?",
-    a: "Da, 100% gratuit. Nu platesti nimic si nu ai nevoie de cont. AmCupon.ro este gratuit pentru toti utilizatorii, fara costuri ascunse.",
+    a: "Da, 100% gratuit. Nu plătești nimic și nu ai nevoie de cont. AmCupon.ro este gratuit pentru toți utilizatorii, fără costuri ascunse.",
   },
   {
-    q: "Cat de des se actualizeaza ofertele si codurile?",
-    a: `Ofertele se actualizeaza automat de trei ori pe zi, de la ${peste} partenere. Cele expirate dispar dupa data lor, iar cele noi apar la urmatoarea actualizare. Codurile nu le testam in cos.`,
+    q: "Cât de des se actualizează ofertele și codurile?",
+    a: `Ofertele se actualizează automat de trei ori pe zi, de la ${peste} partenere. Cele expirate dispar după data lor, iar cele noi apar la următoarea actualizare. Codurile nu le testăm în coș.`,
   },
   {
-    q: "De ce unele coduri nu mai functioneaza?",
-    a: "Magazinele pot opri o promotie inainte de data anuntata sau pot limita stocul. Daca un cod nu mai merge, incearca alt cod activ din aceeasi pagina de magazin sau verifica ofertele fara cod, care se aplica automat.",
+    q: "De ce unele coduri nu mai funcționează?",
+    a: "Magazinele pot opri o promoție înainte de data anunțată sau pot limita stocul. Dacă un cod nu mai merge, încearcă alt cod activ din aceeași pagină de magazin sau verifică ofertele fără cod, care se aplică automat.",
   },
   {
-    q: "Trebuie sa imi fac cont ca sa folosesc codurile?",
-    a: "Nu. Toate codurile si ofertele sunt disponibile fara cont si fara inregistrare. Optional, te poti abona la newsletter pentru a primi ofertele active, o data pe zi, pe email.",
+    q: "Trebuie să îmi fac cont ca să folosesc codurile?",
+    a: "Nu. Toate codurile și ofertele sunt disponibile fără cont și fără înregistrare. Opțional, te poți abona la newsletter pentru a primi ofertele active, o dată pe zi, pe email.",
   },
   {
-    q: "Cum castiga bani AmCupon.ro?",
-    a: "Primim un comision de la magazine atunci cand cumperi prin link-urile noastre, din bugetul lor de marketing. Pentru tine pretul ramane acelasi, fara costuri suplimentare. Asa putem mentine serviciul gratuit.",
+    q: "Cum câștigă bani AmCupon.ro?",
+    a: "Primim un comision de la magazine atunci când cumperi prin link-urile noastre, din bugetul lor de marketing. Pentru tine prețul rămâne același, fără costuri suplimentare. Așa putem menține serviciul gratuit.",
   },
   ];
 }
@@ -486,24 +486,24 @@ export default function HomeClient({
                 <svg className="absolute left-3 top-2.5 w-4 h-4 text-[var(--text-soft)]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
                 </svg>
-                <input type="text" placeholder="Cauta magazin..." value={cautare}
+                <input type="text" placeholder="Caută magazin..." value={cautare}
                   onChange={e => setCautare(e.target.value)}
                   className="w-full bg-[var(--surface-alt)] border border-[var(--border-strong)] text-[var(--foreground)] placeholder-[var(--text-muted)] rounded-full pl-9 pr-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-[#ddf93c]" />
               </div>
               <nav className="space-y-1">
                 {[
                   { href: "/oferte-azi",  label: "🔥 Oferte de azi" },
-                  { href: "/#promotii",  label: "Promotii active" },
+                  { href: "/#promotii",  label: "Promoții active" },
                   { href: "/blog",       label: "Blog" },
                   { href: "/fashion",    label: "Fashion & Haine" },
-                  { href: "/casa",       label: "Casa & Gradina" },
+                  { href: "/casa",       label: "Casă & Grădină" },
                   { href: "/farmacie",   label: "Farmacie Online" },
                   { href: "/sport",      label: "Sport & Outdoor" },
                   { href: "/frumusete",  label: "Beauty" },
-                  { href: "/calatorie",  label: "Vacante & Travel" },
-                  { href: "/copii",      label: "Copii & Jucarii" },
+                  { href: "/calatorie",  label: "Vacanțe & Travel" },
+                  { href: "/copii",      label: "Copii & Jucării" },
                   { href: "/gadgets",    label: "Gadgets & Tech" },
-                  { href: "/sanatate",   label: "Sanatate & Naturiste" },
+                  { href: "/sanatate",   label: "Sănătate & Naturiste" },
                   { href: "/animale",    label: "Animale de Companie" },
                   { href: "/categorii",  label: "Toate categoriile" },
                 ].map(l => (
@@ -680,12 +680,12 @@ export default function HomeClient({
             <span className="text-sm font-semibold text-[var(--accent-text)]">
               {filtrate.length > 0
                 ? <>{filtrate.length === 1 ? "1 rezultat" : `${filtrate.length} rezultate`} pentru <strong>&quot;{cautare}&quot;</strong></>
-                : <>Niciun rezultat pentru <strong>&quot;{cautare}&quot;</strong> — incearca alt nume</>
+                : <>Niciun rezultat pentru <strong>&quot;{cautare}&quot;</strong> — încearcă alt nume</>
               }
             </span>
             <button onClick={() => setCautare("")}
               className="text-xs text-[var(--accent-text)] hover:text-[var(--accent-text)] font-bold border border-[#c3dd2c] rounded-lg px-3 py-1 transition-colors">
-              Sterge cautarea
+              Șterge căutarea
             </button>
           </div>
         )}
@@ -826,7 +826,7 @@ export default function HomeClient({
                   {cautare || filtruActiv !== "toate" ? "FILTRAT" : "LIVE"}
                 </p>
                 <h2 className="text-[1.75rem] md:text-[2.25rem] leading-[1.1] font-black text-[var(--foreground)] tracking-tight">
-                  {cautare ? `Rezultate pentru "${cautare}"` : "Promotii active"}
+                  {cautare ? `Rezultate pentru "${cautare}"` : "Promoții active"}
                 </h2>
                 <p className="text-[var(--text-soft)] text-sm mt-0.5">{cuNumar(cuPromotii.length, "magazin cu ofertă", "magazine cu oferte")}</p>
               </div>
@@ -859,7 +859,7 @@ export default function HomeClient({
                 </p>
               </div>
               <Link href="/toate-magazinele" className="text-sm font-bold text-[var(--accent-text)] hover:text-[var(--accent-text)] transition-colors">
-                Pagina completa →
+                Pagina completă →
               </Link>
             </div>
             {/* Grila COMPACTA, nu carduri mari (08.08.2026).
@@ -895,7 +895,7 @@ export default function HomeClient({
               <div className="text-center mt-6">
                 <button onClick={() => setStoreLimit(l => l + 36)}
                   className="glass hover:border-[var(--accent-text)]/50 text-[var(--text-soft)] hover:text-[var(--accent-text)] font-bold px-7 py-2.5 rounded-xl text-sm transition-all">
-                  Incarca mai multe ({cuNumar(perete.length - storeLimit, "magazin ramas", "magazine ramase")})
+                  Încarcă mai multe ({cuNumar(perete.length - storeLimit, "magazin rămas", "magazine rămase")})
                 </button>
               </div>
             )}
@@ -907,11 +907,11 @@ export default function HomeClient({
           <div className="text-center py-20">
             <div className="text-5xl mb-4">🔍</div>
             <h3 className="text-xl font-black text-[var(--text-soft)] mb-2">Niciun magazin gasit pentru &quot;{cautare}&quot;</h3>
-            <p className="text-[var(--text-soft)] text-sm mb-6">Incearca un alt nume sau cauta in toate magazinele.</p>
+            <p className="text-[var(--text-soft)] text-sm mb-6">Încearcă un alt nume sau caută în toate magazinele.</p>
             <div className="flex flex-wrap justify-center gap-3">
               <button onClick={() => setCautare("")}
                 className="bg-[#ddf93c] text-[#0c1000] font-bold px-6 py-2.5 rounded-xl text-sm hover:bg-[#ddf93c] transition-colors">
-                Sterge cautarea
+                Șterge căutarea
               </button>
               <Link href="/toate-magazinele"
                 className="bg-[var(--surface-alt)] border border-[var(--border-strong)] text-[var(--text-soft)] font-bold px-6 py-2.5 rounded-xl text-sm hover:border-[var(--accent-text)] transition-colors">
@@ -931,8 +931,8 @@ export default function HomeClient({
           <div className="flex items-end justify-between mb-8">
             <div>
               <p className="text-xs font-bold text-[var(--accent-text)] uppercase tracking-widest mb-2">CATEGORII</p>
-              <h2 className="text-[2rem] md:text-[2.5rem] leading-[1.08] font-black tracking-tight text-[var(--foreground)]">Exploreaza dupa categorie</h2>
-              <p className="text-[var(--text-soft)] text-sm mt-1.5">Ofertele fiecarei categorii, actualizate zilnic</p>
+              <h2 className="text-[2rem] md:text-[2.5rem] leading-[1.08] font-black tracking-tight text-[var(--foreground)]">Explorează după categorie</h2>
+              <p className="text-[var(--text-soft)] text-sm mt-1.5">Ofertele fiecărei categorii, actualizate zilnic</p>
             </div>
             <Link href="/categorii" className="hidden sm:flex items-center gap-1.5 text-sm font-bold text-[var(--accent-text)] hover:text-[var(--accent-text)] transition-colors border border-[var(--accent-text)]/30 hover:border-[var(--accent-text)]/60 bg-[#ddf93c]/10 hover:bg-[#ddf93c]/20 px-4 py-2 rounded-full whitespace-nowrap">
               Toate categoriile
@@ -1370,7 +1370,7 @@ export default function HomeClient({
                     <div className="mt-4 pt-4 border-t border-[var(--border-strong)] flex items-center justify-between">
                       <span className="text-xs text-[var(--text-muted)]">{post.date}</span>
                       <span className="text-xs font-bold text-[var(--accent-text)] flex items-center gap-1 group-hover:gap-1.5 transition-all">
-                        Citeste
+                        Citește
                         <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7"/>
                         </svg>
@@ -1444,8 +1444,8 @@ export default function HomeClient({
         />
         <div className="max-w-3xl mx-auto">
           <div className="text-center mb-8">
-            <p className="text-xs font-bold text-[var(--accent-text)] uppercase tracking-widest mb-2">INTREBARI FRECVENTE</p>
-            <h2 className="text-[2rem] md:text-[2.5rem] leading-[1.08] font-black tracking-tight text-[var(--foreground)]">Tot ce vrei sa stii despre codurile de reducere</h2>
+            <p className="text-xs font-bold text-[var(--accent-text)] uppercase tracking-widest mb-2">ÎNTREBĂRI FRECVENTE</p>
+            <h2 className="text-[2rem] md:text-[2.5rem] leading-[1.08] font-black tracking-tight text-[var(--foreground)]">Tot ce vrei să știi despre codurile de reducere</h2>
           </div>
           <div className="space-y-3">
             {FAQ.map((item, i) => (
@@ -1476,10 +1476,10 @@ export default function HomeClient({
             Newsletter zilnic gratuit
           </div>
           <h2 className="text-3xl md:text-4xl font-black tracking-tight text-[var(--foreground)] mb-3">
-            Nu rata nicio oferta buna
+            Nu rata nicio ofertă bună
           </h2>
           <p className="text-[var(--text-soft)] text-base mb-8 max-w-sm mx-auto leading-relaxed">
-            Ofertele active, o data pe zi, pe email. Fara spam.
+            Ofertele active, o dată pe zi, pe email. Fără spam.
           </p>
           <div className="flex flex-wrap justify-center gap-5 text-xs text-[var(--text-soft)] mb-8 font-medium">
             {["Gratuit", "Fără spam", "Dezabonare oricând", "Doar oferte active"].map(t => (
@@ -1550,8 +1550,8 @@ export default function HomeClient({
                 {[
                   { href: "/categorii/fashion",           label: "Fashion" },
                   { href: "/categorii/electronice",   label: "Electronice IT&C" },
-                  { href: "/categorii/beauty",            label: "Frumusete" },
-                  { href: "/categorii/casa-gradina",       label: "Casa & Gradina" },
+                  { href: "/categorii/beauty",            label: "Frumusețe" },
+                  { href: "/categorii/casa-gradina",       label: "Casă & Grădină" },
                   { href: "/categorii/sport",   label: "Sport" },
                   { href: "/categorii/sanatate",            label: "Farmacie" },
                   { href: "/categorii",                   label: "Toate categoriile →" },
@@ -1565,7 +1565,7 @@ export default function HomeClient({
                 copiata: altfel homepage-ul (pagina cu cea mai multa autoritate) ramane
                 singura fara linkurile noi, exact cum s-a intamplat pana acum. */}
             <div>
-              <h3 className="text-[var(--text-soft)] font-bold text-xs mb-4 uppercase tracking-wider">Reduceri &amp; nise</h3>
+              <h3 className="text-[var(--text-soft)] font-bold text-xs mb-4 uppercase tracking-wider">Reduceri &amp; nișe</h3>
               <ul className="space-y-2.5 text-sm">
                 {REDUCERI.map(l => (
                   <li key={l.href}><a href={l.href} className="hover:text-[var(--accent-text)] transition-colors">{l.label}</a></li>
@@ -1575,7 +1575,7 @@ export default function HomeClient({
 
             {/* Cautari populare */}
             <div>
-              <h3 className="text-[var(--text-soft)] font-bold text-xs mb-4 uppercase tracking-wider">Cautari populare</h3>
+              <h3 className="text-[var(--text-soft)] font-bold text-xs mb-4 uppercase tracking-wider">Căutări populare</h3>
               <ul className="space-y-2.5 text-sm">
                 {[
                   { href: "/cod-reducere/answear.ro",      label: "Cod Answear" },
@@ -1598,15 +1598,15 @@ export default function HomeClient({
               <ul className="space-y-2.5 text-sm">
                 {[
                   { href: "/oferte-azi",        label: "Oferte de Azi" },
-                  { href: "/sanatate",          label: "Sanatate & Naturiste" },
+                  { href: "/sanatate",          label: "Sănătate & Naturiste" },
                   { href: "/animale",           label: "Animale de Companie" },
                   { href: "/fashion",          label: "Fashion & Haine" },
-                  { href: "/casa",             label: "Casa & Gradina" },
+                  { href: "/casa",             label: "Casă & Grădină" },
                   { href: "/farmacie",         label: "Farmacie Online" },
                   { href: "/sport",            label: "Sport & Outdoor" },
                   { href: "/frumusete",        label: "Beauty" },
-                  { href: "/calatorie",        label: "Vacante & Travel" },
-                  { href: "/copii",            label: "Copii & Jucarii" },
+                  { href: "/calatorie",        label: "Vacanțe & Travel" },
+                  { href: "/copii",            label: "Copii & Jucării" },
                   { href: "/gadgets",          label: "Gadgets & Tech" },
                   { href: "/idei-cadouri",     label: "Idei Cadouri" },
                   { href: "/flori",            label: "Flori & Buchete" },
@@ -1625,8 +1625,8 @@ export default function HomeClient({
               <h3 className="text-[var(--text-soft)] font-bold text-xs mb-4 uppercase tracking-wider">Legal & Info</h3>
               <ul className="space-y-2.5 text-sm">
                 {[
-                  { href: "/termeni",            label: "Termeni si Conditii" },
-                  { href: "/confidentialitate",  label: "Politica de Confidentialitate" },
+                  { href: "/termeni",            label: "Termeni și Condiții" },
+                  { href: "/confidentialitate",  label: "Politica de Confidențialitate" },
                   { href: "mailto:contact@amcupon.ro", label: "Contact" },
                   { href: "https://anpc.ro",     label: "ANPC", ext: true },
                   { href: "https://ec.europa.eu/consumers/odr", label: "SAL-UE", ext: true },
@@ -1650,7 +1650,7 @@ export default function HomeClient({
 
           <div className="border-t border-[var(--border-strong)] pt-6 space-y-2">
             <p className="text-xs text-[var(--text-soft)] leading-relaxed max-w-4xl">
-              Linkurile de pe AmCupon.ro sunt linkuri afiliate, generate prin retelele de afiliere la care suntem inscrisi (2Performant, Impact, Awin). Cand accesezi un magazin partener si efectuezi o achizitie, primim un comision de la magazin fara niciun cost suplimentar pentru tine.
+              Linkurile de pe AmCupon.ro sunt linkuri afiliate, generate prin rețelele de afiliere la care suntem înscriși (2Performant, Impact, Awin). Când accesezi un magazin partener și efectuezi o achiziție, primim un comision de la magazin fără niciun cost suplimentar pentru tine.
             </p>
             <p className="text-xs text-[var(--text-muted)]">
               &copy; {new Date().getFullYear()} AmCupon.ro &mdash; Toate drepturile rezervate.
@@ -1707,7 +1707,7 @@ function NewsletterForm() {
     e.preventDefault();
     const trimmed = email.trim().toLowerCase();
     if (!trimmed.includes("@") || !trimmed.includes(".")) {
-      setErrMsg("Adresa de email invalida.");
+      setErrMsg("Adresa de email invalidă.");
       setStatus("err");
       return;
     }
@@ -1727,12 +1727,12 @@ function NewsletterForm() {
         // Mesaj clar in loc de generic
         setErrMsg(
           data.error ||
-          (res.status === 503 ? "Newsletter in configurare — revino curand!" : "Eroare. Incearca din nou.")
+          (res.status === 503 ? "Newsletter în configurare — revino curând!" : "Eroare. Încearcă din nou.")
         );
         setStatus("err");
       }
     } catch {
-      setErrMsg("Eroare de retea. Verifica conexiunea.");
+      setErrMsg("Eroare de rețea. Verifică conexiunea.");
       setStatus("err");
     }
   }
@@ -1740,7 +1740,7 @@ function NewsletterForm() {
   if (status === "ok") {
     return (
       <div className="bg-[var(--surface-alt)] backdrop-blur-sm rounded-xl px-8 py-6 text-[var(--foreground)] text-center border border-[var(--border-strong)]">
-        <p className="font-black text-xl mb-1">Multumim!</p>
+        <p className="font-black text-xl mb-1">Mulțumim!</p>
         <p className="text-sm text-[var(--text-soft)]">Te-ai abonat cu succes. Vei primi ofertele zilei pe email.</p>
       </div>
     );
@@ -1754,7 +1754,7 @@ function NewsletterForm() {
           className="flex-1 px-4 py-3.5 rounded-xl bg-[var(--surface-alt)] border border-[var(--border-strong)] text-[var(--foreground)] text-sm placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-[#ddf93c]/50 focus:border-[var(--accent-text)]/40 disabled:opacity-60 transition-all"/>
         <button type="submit" disabled={status === "loading"}
           className="bg-[#ddf93c] hover:bg-[#ddf93c] disabled:opacity-60 text-[#0c1000] font-black px-7 py-3.5 rounded-xl text-sm transition-colors whitespace-nowrap shadow-lg shadow-[#ddf93c]/25">
-          {status === "loading" ? "Se trimite..." : "Aboneaza-te"}
+          {status === "loading" ? "Se trimite..." : "Abonează-te"}
         </button>
       </form>
       {status === "err" && errMsg && (

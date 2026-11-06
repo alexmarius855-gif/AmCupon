@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   // produse din feed au reducere. Pagina arata produse cu pretul la zi si ofertele active.
   title: "Produse la zi de la magazinele partenere | AmCupon.ro",
   description: "Produse cu prețul la zi din feed-urile magazinelor partenere și ofertele lor active: campanii, coduri și reduceri, actualizate de mai multe ori pe zi.",
-  keywords: ["produse online romania", "oferte magazine online", "preturi produse azi"],
+  keywords: ["produse online românia", "oferte magazine online", "prețuri produse azi"],
   alternates: { canonical: "https://amcupon.ro/produse" },
   openGraph: {
     title: "Produse la zi de la magazinele partenere | AmCupon.ro",

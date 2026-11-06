@@ -24,7 +24,7 @@ export async function generateMetadata(): Promise<Metadata> {
   const an   = new Date().getFullYear();
   return {
     title: `Top Reduceri ${luna} ${an} — cele mai bune coduri active`,
-    description: `Selectia celor mai bune coduri de reducere active in ${luna} ${an}. Sortate dupa Deal Score. Actualizat zilnic pe AmCupon.ro.`,
+    description: `Selecția celor mai bune coduri de reducere active în ${luna} ${an}. Sortate după Deal Score. Actualizat zilnic pe AmCupon.ro.`,
     alternates: { canonical: "https://amcupon.ro/top-reduceri" },
     openGraph: {
       title: `Top Reduceri ${luna} ${an} | AmCupon.ro`,

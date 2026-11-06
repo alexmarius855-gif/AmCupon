@@ -186,13 +186,13 @@ function ProdusCard({ p, onSave, saved }: { p: Produs; onSave: () => void; saved
               </div>
             )}
             <span className="font-black text-[var(--accent-text)] text-lg leading-none">
-              {p.price > 0 ? `${p.price.toFixed(2)} lei` : "Vezi pretul"}
+              {p.price > 0 ? `${p.price.toFixed(2)} lei` : "Vezi prețul"}
             </span>
           </div>
 
           {/* CTA Button — buton real, RetailMeNot style */}
           <div className="mt-auto w-full bg-[#ddf93c] hover:bg-[#ddf93c] text-[#0c1000] font-black text-xs py-2.5 px-3 rounded-xl flex items-center justify-center gap-1.5 transition-colors shadow-sm shadow-[#ddf93c]/20">
-            Cumpara acum
+            Cumpără acum
             <svg className="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7"/>
             </svg>
@@ -274,7 +274,7 @@ function DealCard({ m, rank }: { m: Magazin; rank?: number }) {
       {/* CTA */}
       <div className="px-4 pb-4">
         <div className="bg-[#ddf93c] group-hover:bg-[#ddf93c] text-[#0c1000] text-xs font-black py-2 rounded-xl text-center transition-colors">
-          {m.cod_cupon ? "Copiaza codul" : "Vezi oferta"} →
+          {m.cod_cupon ? "Copiază codul" : "Vezi oferta"} →
         </div>
       </div>
     </a>
@@ -414,7 +414,7 @@ export default function ProduseClient({
         <div className="relative max-w-5xl mx-auto px-4 pt-14 pb-16 text-center">
           <div className="inline-flex items-center gap-2 bg-[var(--surface-alt)] border border-[var(--border-strong)] rounded-full px-4 py-1.5 text-xs font-semibold text-slate-500 mb-6">
             <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse inline-block"/>
-            {cuNumar(cuPromotii.length, "magazin", "magazine")} cu promotii active · {cuNumar(products.length, "produs", "produse")} in catalog
+            {cuNumar(cuPromotii.length, "magazin", "magazine")} cu promoții active · {cuNumar(products.length, "produs", "produse")} în catalog
           </div>
           <h1 className="text-4xl md:text-6xl font-black tracking-tight leading-tight mb-4">
             <span className="text-[var(--foreground)]">Produse cu prețul de azi</span><br/>
@@ -429,7 +429,7 @@ export default function ProduseClient({
           <div className="flex flex-wrap justify-center gap-8 text-sm">
             {[
               { v: `${cuPromotii.length}+`, l: "Magazine cu deals" },
-              { v: `${products.length}`,    l: "Produse in catalog" },
+              { v: `${products.length}`,    l: "Produse în catalog" },
               { v: `${bannereValide.length}`,l: "Campanii vizuale" },
               { v: "100%",                  l: "Gratuit" },
             ].map(s => (
@@ -470,17 +470,17 @@ export default function ProduseClient({
         <section id="top-deals" className="max-w-7xl mx-auto px-4 py-10">
           <div className="mb-8">
             <p className="text-xs font-bold text-[var(--accent-text)] uppercase tracking-widest mb-2">LIVE · ACTUALIZAT AZI</p>
-            <h2 className="text-3xl font-black tracking-tight text-[var(--foreground)]">Top Deals din Romania</h2>
+            <h2 className="text-3xl font-black tracking-tight text-[var(--foreground)]">Top Deals din România</h2>
             <p className="text-[var(--text-soft)] text-sm mt-1.5">
-              {cuNumar(cuPromotii.length, "magazin", "magazine")} cu promotii actuale, sortate dupa reducere maxima
+              {cuNumar(cuPromotii.length, "magazin", "magazine")} cu promoții actuale, sortate după reducere maximă
             </p>
           </div>
 
           {cuPromotii.length === 0 ? (
             <div className="text-center py-16 bg-[var(--surface)] rounded-xl border border-[var(--border-strong)]">
               <p className="text-3xl mb-3">⏳</p>
-              <p className="font-black text-[var(--text-soft)] mb-2">Se incarca ofertele</p>
-              <p className="text-[var(--text-soft)] text-sm">Datele se actualizeaza zilnic la 08:00</p>
+              <p className="font-black text-[var(--text-soft)] mb-2">Se încarcă ofertele</p>
+              <p className="text-[var(--text-soft)] text-sm">Datele se actualizează zilnic la 08:00</p>
             </div>
           ) : (
             <>
@@ -517,15 +517,15 @@ export default function ProduseClient({
             <p className="text-xs font-bold text-[var(--accent-text)] uppercase tracking-widest mb-2">CAMPANII VIZUALE</p>
             <h2 className="text-3xl font-black tracking-tight text-[var(--foreground)]">Bannere & Campanii Active</h2>
             <p className="text-[var(--text-soft)] text-sm mt-1.5">
-              Imagini oficiale de la magazinele partenere. Clic = redirectionare cu tracking afiliat.
+              Imagini oficiale de la magazinele partenere. Clic = redirecționare cu tracking afiliat.
             </p>
           </div>
 
           {bannereValide.length === 0 ? (
             <div className="text-center py-16 bg-[var(--surface)] rounded-xl border border-[var(--border-strong)]">
               <p className="text-3xl mb-3">🖼️</p>
-              <p className="font-black text-[var(--text-soft)] mb-2">Nicio campanie activa momentan</p>
-              <p className="text-[var(--text-soft)] text-sm">Bannere se actualizeaza zilnic odata ce magazinele activeaza campanii</p>
+              <p className="font-black text-[var(--text-soft)] mb-2">Nicio campanie activă momentan</p>
+              <p className="text-[var(--text-soft)] text-sm">Bannere se actualizează zilnic odată ce magazinele activează campanii</p>
             </div>
           ) : (
             <>
@@ -611,7 +611,7 @@ export default function ProduseClient({
 
             return catList.length > 0 ? (
               <div className="mb-8">
-                <p className="text-xs font-bold text-[var(--text-muted)] uppercase tracking-widest mb-3">NAVIGATIE PE CATEGORII</p>
+                <p className="text-xs font-bold text-[var(--text-muted)] uppercase tracking-widest mb-3">NAVIGAȚIE PE CATEGORII</p>
                 <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-7 gap-2">
                   {catList.map(([slug, cm]) => (
                     <Link key={slug} href={`/produse/${slug}`}
@@ -629,7 +629,7 @@ export default function ProduseClient({
           {products.length === 0 ? (
             <div className="text-center py-16 bg-[var(--surface)] rounded-xl border border-[var(--border-strong)]">
               <p className="text-4xl mb-4">📦</p>
-              <h3 className="font-black text-[var(--text-soft)] text-xl mb-2">Feed-urile se populeaza</h3>
+              <h3 className="font-black text-[var(--text-soft)] text-xl mb-2">Feed-urile se populează</h3>
               <p className="text-[var(--text-muted)] text-sm mb-6 max-w-md mx-auto">
                 Produsele din feed-urile magazinelor se actualizează de mai multe ori pe zi. Între timp, vezi ofertele din tab-ul Top Deals.
               </p>
@@ -645,7 +645,7 @@ export default function ProduseClient({
                 <div className="flex flex-wrap gap-3 items-end">
                   {/* Search */}
                   <div className="flex flex-col gap-1 flex-1 min-w-[200px]">
-                    <label className="text-[10px] font-bold text-[var(--text-soft)] uppercase tracking-widest">Cauta produs</label>
+                    <label className="text-[10px] font-bold text-[var(--text-soft)] uppercase tracking-widest">Caută produs</label>
                     <div className="relative">
                       <svg className="absolute left-3 top-2.5 w-4 h-4 text-[var(--text-muted)]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
@@ -692,8 +692,8 @@ export default function ProduseClient({
                       className="border border-[var(--border-strong)] bg-[var(--surface-alt)] text-[var(--text-soft)] rounded-xl px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#ddf93c]">
                       <option value="nou">Cele mai noi</option>
                       <option value="discount">Discount maxim</option>
-                      <option value="pret_asc">Pret crescator</option>
-                      <option value="pret_desc">Pret descrescator</option>
+                      <option value="pret_asc">Preț crescător</option>
+                      <option value="pret_desc">Preț descrescător</option>
                     </select>
                   </div>
                   {hasFiltre && (
@@ -708,7 +708,7 @@ export default function ProduseClient({
               {/* Count */}
               <div className="flex items-center justify-between mb-4">
                 <p className="text-sm text-[var(--text-soft)]">
-                  <span className="font-bold text-[var(--text-soft)]">{filtrate.length.toLocaleString()}</span> produse gasite
+                  <span className="font-bold text-[var(--text-soft)]">{filtrate.length.toLocaleString()}</span> produse găsite
                 </p>
                 {statsProds.cuImag > 0 && (
                   <span className="text-xs text-[var(--text-soft)]">{statsProds.cuImag} cu imagine</span>
@@ -718,10 +718,10 @@ export default function ProduseClient({
               {filtrate.length === 0 ? (
                 <div className="text-center py-12 bg-[var(--surface)] rounded-xl border border-[var(--border-strong)]">
                   <p className="text-3xl mb-3">🔍</p>
-                  <p className="font-bold text-[var(--text-soft)] mb-2">Niciun produs gasit</p>
+                  <p className="font-bold text-[var(--text-soft)] mb-2">Niciun produs găsit</p>
                   <button onClick={() => { setCategorie(""); setMagazinFiltru(""); setMinDiscount(0); setSearch(""); }}
                     className="text-[var(--accent-text)] font-semibold text-sm hover:text-[var(--accent-text)]">
-                    Reseteaza filtrele →
+                    Resetează filtrele →
                   </button>
                 </div>
               ) : (
@@ -731,7 +731,7 @@ export default function ProduseClient({
                     <div className="mb-4 bg-emerald-500/10 border border-emerald-500/30 rounded-xl p-3 flex items-center gap-3">
                       <span className="text-xl">&#127381;</span>
                       <div className="flex-1 text-sm">
-                        <span className="font-bold text-emerald-400">Pretul a scazut la {cuNumar(priceDrops.length, "produs salvat", "produse salvate")}!</span>
+                        <span className="font-bold text-emerald-400">Prețul a scăzut la {cuNumar(priceDrops.length, "produs salvat", "produse salvate")}!</span>
                       </div>
                       <Link href="/wishlist" className="text-xs font-bold text-emerald-400 hover:text-emerald-300 whitespace-nowrap">
                         Vezi lista &#8594;
@@ -767,7 +767,7 @@ export default function ProduseClient({
                     <div className="text-center mt-8">
                       <button onClick={() => setLimit(l => l + 48)}
                         className="bg-[var(--surface-alt)] border border-[var(--border-strong)] hover:border-[var(--accent-text)] text-[var(--text-soft)] hover:text-[var(--accent-text)] font-bold px-8 py-3 rounded-xl text-sm transition-all hover:shadow-md">
-                        Incarca mai multe ({filtrate.length - limit} ramase)
+                        Încarcă mai multe ({filtrate.length - limit} ramase)
                       </button>
                     </div>
                   )}
@@ -781,13 +781,13 @@ export default function ProduseClient({
       {/* ─── CROSS-PROMO: Alte sectiuni ───────────────────────────────────── */}
       <section className="bg-[var(--surface)] border-t border-[var(--border)] py-10 px-4">
         <div className="max-w-7xl mx-auto">
-          <p className="text-xs font-bold text-[var(--text-muted)] uppercase tracking-widest mb-4">EXPLOREAZA SI</p>
+          <p className="text-xs font-bold text-[var(--text-muted)] uppercase tracking-widest mb-4">EXPLOREAZĂ ȘI</p>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             {[
               { href: "/",               emoji: "🔥", label: "Coduri de reducere",   desc: "Toate codurile active" },
               { href: "/categorii",      emoji: "📂", label: "Categorii",             desc: "Fashion, Tech, Beauty..." },
               { href: "/toate-magazinele",emoji:"🏪", label: "Toate magazinele",       desc: `${magazine.length} de magazine` },
-              { href: "/blog",           emoji: "📝", label: "Blog & Ghiduri",         desc: "Cum sa economisesti mai mult" },
+              { href: "/blog",           emoji: "📝", label: "Blog & Ghiduri",         desc: "Cum să economisești mai mult" },
             ].map(s => (
               <a key={s.href} href={s.href}
                 className="group bg-[var(--surface-alt)] border border-[var(--border-strong)] hover:border-[var(--accent-text)]/50 rounded-xl p-5 hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200">

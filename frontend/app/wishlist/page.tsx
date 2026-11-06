@@ -47,7 +47,7 @@ export default function WishlistPage() {
             <span className="text-2xl">&#127381;</span>
             <div>
               <p className="font-bold text-emerald-800">
-                Pretul a scazut la {cuNumar(priceDrops.length, "produs salvat", "produse salvate")}!
+                Prețul a scăzut la {cuNumar(priceDrops.length, "produs salvat", "produse salvate")}!
               </p>
               <ul className="mt-1 space-y-0.5">
                 {priceDrops.map((p) => {
@@ -70,12 +70,12 @@ export default function WishlistPage() {
         {items.length === 0 && (
           <div className="text-center py-20">
             <div className="text-6xl mb-4">&#128722;</div>
-            <p className="text-lg font-bold text-[var(--text-soft)] mb-2">Niciun produs salvat inca</p>
+            <p className="text-lg font-bold text-[var(--text-soft)] mb-2">Niciun produs salvat încă</p>
             <p className="text-[var(--text-muted)] text-sm mb-6">
-              Apasa iconita &#9825; pe orice produs din sectiunea Produse pentru a-l salva.
+              Apasă iconița &#9825; pe orice produs din secțiunea Produse pentru a-l salva.
             </p>
             <Link href="/produse" className="inline-block bg-[#ddf93c] text-[#0c1000] font-bold px-6 py-3 rounded-xl hover:bg-[#ddf93c] transition-colors">
-              Exploreaza produse
+              Explorează produse
             </Link>
           </div>
         )}
@@ -95,7 +95,7 @@ export default function WishlistPage() {
                   {/* Badge pret scazut */}
                   {dropped && pct && (
                     <div className="absolute top-2 left-2 z-10 bg-[#ddf93c] text-[#0c1000] text-[10px] font-black px-2 py-0.5 rounded-full">
-                      -{pct}% SCAZUT
+                      -{pct}% SCĂZUT
                     </div>
                   )}
 
@@ -103,7 +103,7 @@ export default function WishlistPage() {
                   <button
                     onClick={() => remove(item.id)}
                     className="absolute top-2 right-2 z-10 w-6 h-6 bg-[var(--surface-alt)] hover:bg-[var(--surface)] border border-[var(--border)] rounded-full flex items-center justify-center text-[var(--text-muted)] hover:text-red-400 transition-colors text-xs"
-                    title="Sterge din lista"
+                    title="Șterge din listă"
                   >
                     &#x2715;
                   </button>
@@ -143,7 +143,7 @@ export default function WishlistPage() {
                           )}
                         </div>
                       ) : (
-                        <span className="text-xs text-[var(--text-soft)]">Pret indisponibil</span>
+                        <span className="text-xs text-[var(--text-soft)]">Preț indisponibil</span>
                       )}
                       <p className="text-[9px] text-[var(--text-soft)] mt-0.5">
                         Salvat la {item.savedPrice.toFixed(2)} lei
@@ -154,7 +154,7 @@ export default function WishlistPage() {
                       href={item.url} target="_blank" rel="sponsored noopener noreferrer"
                       className="mt-2 block text-center text-[10px] font-bold text-[#0c1000] bg-[#ddf93c] hover:bg-[#ddf93c] py-1.5 rounded-lg transition-colors"
                     >
-                      Cumpara acum
+                      Cumpără acum
                     </a>
                   </div>
                 </div>

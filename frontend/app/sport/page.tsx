@@ -18,7 +18,7 @@ interface Magazin {
 export const metadata: Metadata = {
   title: "Reduceri Sport & Fitness 2026 | AmCupon.ro",
   description: `Coduri de reducere și oferte la echipament sport și fitness ${laParteneri(NISA_CATEGORII.sport)}: biciclete, sală, outdoor, running.`,
-  keywords: ["reduceri sport", "cod reducere decathlon", "echipament fitness ieftin", "bicicleta reducere", "sportisimo reducere", "sport outdoor reducere romania"],
+  keywords: ["reduceri sport", "cod reducere decathlon", "echipament fitness ieftin", "bicicletă reducere", "sportisimo reducere", "sport outdoor reducere românia"],
   alternates: { canonical: "https://amcupon.ro/sport" },
   openGraph: { title: "Reduceri Sport & Fitness 2026 | AmCupon.ro", url: "https://amcupon.ro/sport", siteName: "AmCupon.ro", locale: "ro_RO", type: "website", images: [{ url: "https://amcupon.ro/og-image.png", width: 1200, height: 630 }] },
 };
@@ -145,13 +145,13 @@ export default function SportPage() {
         </section>
 
         <section className="max-w-6xl mx-auto px-4 py-8">
-          <h2 className="text-base font-black text-[var(--text-soft)] mb-4">Exploreaza si alte categorii</h2>
+          <h2 className="text-base font-black text-[var(--text-soft)] mb-4">Explorează și alte categorii</h2>
           <div className="flex flex-wrap gap-2">
             {[
               { href: "/farmacie", label: "💊 Farmacie" },
               { href: "/gadgets", label: "📡 Gadgets" },
               { href: "/moto", label: "🚗 Auto-Moto" },
-              { href: "/sanatate", label: "🌿 Sanatate" },
+              { href: "/sanatate", label: "🌿 Sănătate" },
               { href: "/copii", label: "👶 Copii" },
               { href: "/oferte-azi", label: "🔥 Oferte de Azi" },
             ].map(l => (

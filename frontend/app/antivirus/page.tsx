@@ -16,11 +16,11 @@ interface Magazin {
 }
 
 export const metadata: Metadata = {
-  title: "Antivirus Romania 2026 — Bitdefender, Norton, ESET",
+  title: "Antivirus România 2026 — Bitdefender, Norton, ESET",
   description: "Antivirus pentru PC, Mac și Android în 2026: Bitdefender, Norton, ESET, Kaspersky — ce include fiecare și cum alegi pachetul potrivit.",
-  keywords: ["antivirus ieftin romania", "cod reducere bitdefender", "norton reducere", "eset reducere", "kaspersky cod reducere", "antivirus 2026", "antivirus pc ieftin"],
+  keywords: ["antivirus ieftin românia", "cod reducere bitdefender", "norton reducere", "eset reducere", "kaspersky cod reducere", "antivirus 2026", "antivirus pc ieftin"],
   alternates: { canonical: "https://amcupon.ro/antivirus" },
-  openGraph: { title: "Antivirus Romania 2026 | AmCupon.ro", url: "https://amcupon.ro/antivirus", siteName: "AmCupon.ro", locale: "ro_RO", type: "website", images: [{ url: "https://amcupon.ro/og-image.png", width: 1200, height: 630 }] },
+  openGraph: { title: "Antivirus România 2026 | AmCupon.ro", url: "https://amcupon.ro/antivirus", siteName: "AmCupon.ro", locale: "ro_RO", type: "website", images: [{ url: "https://amcupon.ro/og-image.png", width: 1200, height: 630 }] },
 };
 
 const TOP_ANTIVIRUS = ["bitdefender.com","norton.com","eset.com","kaspersky.com","malwarebytes.com","altex.ro"];
@@ -28,12 +28,12 @@ const TOP_ANTIVIRUS = ["bitdefender.com","norton.com","eset.com","kaspersky.com"
 const CAT_AV = ["software"];
 
 const TIPURI_PROTECTIE = [
-  { emoji: "🛡️", titlu: "Antivirus PC & Mac", desc: "Protectie in timp real impotriva virusilor, ransomware, spyware" },
-  { emoji: "📱", titlu: "Antivirus Android & iOS", desc: "Securitate mobila, anti-furt, VPN integrat" },
-  { emoji: "👨‍👩‍👧", titlu: "Parental Control", desc: "Filtru continut, monitorizare timp ecran pentru copii" },
-  { emoji: "🔐", titlu: "Password Manager", desc: "Stocare parole securizata, autentificare biometrica" },
-  { emoji: "🌐", titlu: "VPN inclus", desc: "Navigare anonima, acces continut restrictionat geografic" },
-  { emoji: "🔍", titlu: "Dark Web Monitor", desc: "Alerte cand datele tale apar in breach-uri" },
+  { emoji: "🛡️", titlu: "Antivirus PC & Mac", desc: "Protecție în timp real împotriva virușilor, ransomware, spyware" },
+  { emoji: "📱", titlu: "Antivirus Android & iOS", desc: "Securitate mobilă, anti-furt, VPN integrat" },
+  { emoji: "👨‍👩‍👧", titlu: "Parental Control", desc: "Filtru conținut, monitorizare timp ecran pentru copii" },
+  { emoji: "🔐", titlu: "Password Manager", desc: "Stocare parole securizată, autentificare biometrică" },
+  { emoji: "🌐", titlu: "VPN inclus", desc: "Navigare anonimă, acces conținut restricționat geografic" },
+  { emoji: "🔍", titlu: "Dark Web Monitor", desc: "Alerte când datele tale apar în breach-uri" },
 ];
 
 // ── LINKURI AFILIATE ── inlocuieste cu linkurile tale dupa aprobare ────────
@@ -59,7 +59,7 @@ const COMPARATIV = [
 ];
 
 const CULORI_BADGE = ["bg-red-600","bg-yellow-500","bg-[#ddf93c]","bg-emerald-600","bg-[#ddf93c]","bg-[#ddf93c]","bg-[#ddf93c]"];
-const jsonLd = { "@context":"https://schema.org","@type":"CollectionPage","name":"Antivirus Romania 2026","url":"https://amcupon.ro/antivirus","description":"Antivirus pentru PC, Mac și Android — Bitdefender, Norton, ESET, Kaspersky" };
+const jsonLd = { "@context":"https://schema.org","@type":"CollectionPage","name":"Antivirus România 2026","url":"https://amcupon.ro/antivirus","description":"Antivirus pentru PC, Mac și Android — Bitdefender, Norton, ESET, Kaspersky" };
 
 export default function AntivirusPage() {
   const filePath = path.join(process.cwd(), "public", "output.json");
@@ -81,7 +81,7 @@ export default function AntivirusPage() {
         {/* Breadcrumb */}
         <nav className="bg-[var(--surface)]/80 backdrop-blur-sm border-b border-[var(--border)]">
           <div className="max-w-6xl mx-auto px-4 py-3 flex items-center gap-1.5 text-xs text-[var(--text-muted)]">
-            <Link href="/" className="hover:text-[var(--accent-text)] transition-colors">Acasa</Link>
+            <Link href="/" className="hover:text-[var(--accent-text)] transition-colors">Acasă</Link>
             <span>/</span>
             <span className="text-[var(--text-soft)] font-medium">Antivirus</span>
           </div>
@@ -100,7 +100,7 @@ export default function AntivirusPage() {
             </div>
             <div className="text-6xl mb-5 drop-shadow-2xl">🛡️</div>
             <h1 className="text-4xl md:text-5xl font-black text-[var(--foreground)] mb-4 tracking-tight">
-              Antivirus Romania <span className="text-transparent bg-clip-text" style={{backgroundImage:"linear-gradient(135deg, #ddf93c, #ddf93c)"}}>{an}</span>
+              Antivirus România <span className="text-transparent bg-clip-text" style={{backgroundImage:"linear-gradient(135deg, #ddf93c, #ddf93c)"}}>{an}</span>
             </h1>
             <p className="text-[var(--text-soft)] text-lg mb-8 max-w-xl mx-auto leading-relaxed">
               Bitdefender, Norton, ESET, Kaspersky — ce include fiecare și cum alegi pachetul potrivit
@@ -137,7 +137,7 @@ export default function AntivirusPage() {
         {/* Tipuri protectie */}
         <section className="max-w-6xl mx-auto px-4 pb-12">
           <div className="text-center mb-8">
-            <p className="text-xs font-bold text-[var(--accent-text)] uppercase tracking-widest mb-2">FUNCTII</p>
+            <p className="text-xs font-bold text-[var(--accent-text)] uppercase tracking-widest mb-2">FUNCȚII</p>
             <h2 className="text-2xl font-black text-[var(--foreground)]">Ce include un antivirus bun</h2>
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -184,7 +184,7 @@ export default function AntivirusPage() {
         <section className="bg-[var(--surface)] border-t border-[var(--border)] py-12 px-4">
           <div className="max-w-3xl mx-auto">
             <p className="text-xs font-bold text-red-400 uppercase tracking-widest mb-3">GHID ALEGERE</p>
-            <h2 className="text-2xl font-black text-[var(--foreground)] mb-7">Ce antivirus sa alegi in {an}</h2>
+            <h2 className="text-2xl font-black text-[var(--foreground)] mb-7">Ce antivirus să alegi în {an}</h2>
             <div className="space-y-5">
               <div className="bg-[var(--surface-alt)] border border-[var(--border-strong)] rounded-xl p-5">
                 <h3 className="font-bold text-[var(--foreground)] mb-2 text-base">Bitdefender — antivirusul românesc</h3>
@@ -204,7 +204,7 @@ export default function AntivirusPage() {
 
         {/* Related */}
         <section className="max-w-6xl mx-auto px-4 py-8">
-          <p className="text-xs font-bold text-[var(--text-muted)] uppercase tracking-widest mb-4">EXPLOREAZA SI</p>
+          <p className="text-xs font-bold text-[var(--text-muted)] uppercase tracking-widest mb-4">EXPLOREAZĂ ȘI</p>
           <div className="flex flex-wrap gap-2">
             {[
               { href: "/vpn", label: "🌐 VPN" },

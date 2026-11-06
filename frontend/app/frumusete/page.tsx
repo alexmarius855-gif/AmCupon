@@ -19,7 +19,7 @@ interface Magazin {
 export const metadata: Metadata = {
   title: "Reduceri Beauty & Cosmetice 2026 — Coduri Notino",
   description: `Coduri de reducere beauty și cosmetice 2026 ${laParteneri(NISA_CATEGORII.frumusete)}. Parfumuri, skincare, machiaj la prețuri reduse. Actualizate zilnic.`,
-  keywords: ["reduceri beauty", "cod reducere notino", "parfumuri ieftine", "cosmetice reducere romania", "skincare reducere", "machiaj ieftin"],
+  keywords: ["reduceri beauty", "cod reducere notino", "parfumuri ieftine", "cosmetice reducere românia", "skincare reducere", "machiaj ieftin"],
   alternates: { canonical: "https://amcupon.ro/frumusete" },
   openGraph: { title: "Reduceri Beauty & Cosmetice 2026 | AmCupon.ro", url: "https://amcupon.ro/frumusete", siteName: "AmCupon.ro", locale: "ro_RO", type: "website", images: [{ url: "https://amcupon.ro/og-image.png", width: 1200, height: 630 }] },
 };
@@ -145,11 +145,11 @@ export default function FrumusetePage() {
         </section>
 
         <section className="max-w-6xl mx-auto px-4 py-8">
-          <h2 className="text-base font-black text-[var(--text-soft)] mb-4">Exploreaza si alte categorii</h2>
+          <h2 className="text-base font-black text-[var(--text-soft)] mb-4">Explorează și alte categorii</h2>
           <div className="flex flex-wrap gap-2">
             {[
               { href: "/parfumuri", label: "🌹 Parfumuri" },
-              { href: "/sanatate", label: "🌿 Sanatate" },
+              { href: "/sanatate", label: "🌿 Sănătate" },
               { href: "/fashion", label: "👗 Fashion" },
               { href: "/idei-cadouri", label: "🎁 Idei Cadouri" },
               { href: "/farmacie", label: "💊 Farmacie" },

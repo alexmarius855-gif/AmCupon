@@ -8,10 +8,10 @@ export const metadata: Metadata = {
     "16 unelte AI pentru text, video, voce, SEO și design: ce face fiecare și pentru cine e potrivită — Copy.ai, InVideo, ElevenLabs, Canva, Semrush și altele.",
   keywords: [
     "cele mai bune ai tools 2026",
-    "unelte ai romania",
+    "unelte ai românia",
     "ai pentru video",
-    "ai copywriting romana",
-    "ai voce romaneasca",
+    "ai copywriting română",
+    "ai voce românească",
     "canva pro reducere",
   ],
   alternates: { canonical: "https://amcupon.ro/ai-tools" },

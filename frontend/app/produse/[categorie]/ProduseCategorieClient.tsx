@@ -73,8 +73,8 @@ function ProdusCard({
               ? "bg-red-600 text-white scale-110"
               : "bg-[var(--surface)]/80 text-[var(--text-soft)] opacity-0 group-hover:opacity-100 hover:text-red-400"
           }`}
-          title={isSaved ? "Salvat in wishlist — click sa stergi" : "Salveaza in wishlist"}
-          aria-label={isSaved ? "Sterge din wishlist" : "Adauga in wishlist"}
+          title={isSaved ? "Salvat în wishlist — click să ștergi" : "Salvează în wishlist"}
+          aria-label={isSaved ? "Șterge din wishlist" : "Adaugă în wishlist"}
         >
           {isSaved ? "♥" : "♡"}
         </button>
@@ -88,14 +88,14 @@ function ProdusCard({
         </p>
         <div className="flex items-baseline gap-2 mt-2 flex-wrap">
           <span className="font-black text-[var(--accent-text)] text-sm">
-            {p.price > 0 ? `${p.price.toFixed(2)} lei` : "Vezi pretul"}
+            {p.price > 0 ? `${p.price.toFixed(2)} lei` : "Vezi prețul"}
           </span>
           {p.old_price && p.old_price > p.price && (
             <span className="text-[10px] text-[var(--text-soft)] line-through">{p.old_price.toFixed(2)} lei</span>
           )}
         </div>
         <div className="mt-2 flex items-center gap-1 text-[10px] font-bold text-[var(--accent-text)]">
-          Cumpara acum
+          Cumpără acum
           <svg className="w-3 h-3 group-hover:translate-x-0.5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7" />
           </svg>
@@ -310,10 +310,10 @@ export default function ProduseCategorieClient({
         {products.length === 0 ? (
           <div className="text-center py-20 bg-[var(--surface)] rounded-xl border border-[var(--border-strong)]">
             <p className="text-5xl mb-4">{catMeta.emoji}</p>
-            <h2 className="font-black text-[var(--text-soft)] text-xl mb-2">Feed-urile se actualizeaza</h2>
+            <h2 className="font-black text-[var(--text-soft)] text-xl mb-2">Feed-urile se actualizează</h2>
             <p className="text-[var(--text-muted)] text-sm mb-6 max-w-md mx-auto">
-              Produsele din categoria {catMeta.label} se incarca la urmatoarea actualizare zilnica.
-              Total in catalog: {cuNumar(totalAll, "produs", "produse")}.
+              Produsele din categoria {catMeta.label} se încarcă la următoarea actualizare zilnică.
+              Total în catalog: {cuNumar(totalAll, "produs", "produse")}.
             </p>
             <Link href="/produse" className="bg-[#ddf93c] text-[#0c1000] font-bold px-6 py-3 rounded-xl hover:bg-[#ddf93c] transition-colors text-sm inline-block">
               Toate produsele ({totalAll.toLocaleString()}) →
@@ -380,7 +380,7 @@ export default function ProduseCategorieClient({
                 {pretMax > 0 && (
                   <div className="flex flex-col gap-1 min-w-[160px]">
                     <label className="text-[10px] font-bold text-[var(--text-soft)] uppercase tracking-widest">
-                      Pret max: {maxPret > 0 && maxPret < pretMax ? `${maxPret} lei` : "Orice"}
+                      Preț max: {maxPret > 0 && maxPret < pretMax ? `${maxPret} lei` : "Orice"}
                     </label>
                     <input
                       type="range" min={0} max={pretMax} step={Math.ceil(pretMax / 50)}
@@ -404,8 +404,8 @@ export default function ProduseCategorieClient({
                     className="border border-[var(--border-strong)] bg-[var(--surface-alt)] text-[var(--text-soft)] rounded-xl px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#ddf93c]">
                     <option value="discount">Discount maxim</option>
                     <option value="nou">Cele mai noi</option>
-                    <option value="pret_asc">Pret crescator</option>
-                    <option value="pret_desc">Pret descrescator</option>
+                    <option value="pret_asc">Preț crescător</option>
+                    <option value="pret_desc">Preț descrescător</option>
                   </select>
                 </div>
 
@@ -434,9 +434,9 @@ export default function ProduseCategorieClient({
             {filtrate.length === 0 ? (
               <div className="text-center py-16 bg-[var(--surface)] rounded-xl border border-[var(--border-strong)]">
                 <p className="text-3xl mb-3">🔍</p>
-                <p className="font-bold text-[var(--text-soft)] mb-2">Niciun produs gasit</p>
+                <p className="font-bold text-[var(--text-soft)] mb-2">Niciun produs găsit</p>
                 <button onClick={resetFiltre} className="text-[var(--accent-text)] font-semibold text-sm hover:text-[var(--accent-text)]">
-                  Reseteaza filtrele →
+                  Resetează filtrele →
                 </button>
               </div>
             ) : (
@@ -459,7 +459,7 @@ export default function ProduseCategorieClient({
                 <div ref={loadMoreRef} className="h-4 mt-4" />
                 {limit >= filtrate.length && filtrate.length > 48 && (
                   <p className="text-center text-xs text-[var(--text-muted)] mt-4">
-                    Toate cele {cuNumar(filtrate.length, "produs", "produse")} au fost incarcate.
+                    Toate cele {cuNumar(filtrate.length, "produs", "produse")} au fost încărcate.
                   </p>
                 )}
               </>
@@ -472,7 +472,7 @@ export default function ProduseCategorieClient({
       {faqItems.length > 0 && (
         <section className="max-w-3xl mx-auto px-4 py-12">
           <h2 className="text-xl font-black text-[var(--foreground)] mb-6 text-center">
-            Intrebari frecvente despre {catMeta.label}
+            Întrebări frecvente despre {catMeta.label}
           </h2>
           <div className="space-y-3">
             {faqItems.map((item, i) => (
@@ -498,7 +498,7 @@ export default function ProduseCategorieClient({
       {/* ─── ALTE CATEGORII ──────────────────────────────────────────────────── */}
       <section className="bg-[var(--surface)] border-t border-[var(--border)] py-10 px-4">
         <div className="max-w-7xl mx-auto">
-          <p className="text-xs font-bold text-[var(--text-muted)] uppercase tracking-widest mb-4">EXPLOREAZA SI</p>
+          <p className="text-xs font-bold text-[var(--text-muted)] uppercase tracking-widest mb-4">EXPLOREAZĂ ȘI</p>
           <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-3">
             {alteCategorii.map(([slug, cm]) => (
               <Link key={slug} href={`/produse/${slug}`}

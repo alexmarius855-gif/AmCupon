@@ -146,7 +146,7 @@ export default function ShareButton({
               className={`w-full flex items-center gap-2.5 px-3 py-2.5 rounded-xl text-sm font-semibold ${copyColor} ${itemHover} transition-colors whitespace-nowrap`}
             >
               <span className="text-base">{copied ? "✅" : "🔗"}</span>
-              {copied ? "Link copiat!" : "Copiaza link"}
+              {copied ? "Link copiat!" : "Copiază link"}
             </button>
           </div>
         </>

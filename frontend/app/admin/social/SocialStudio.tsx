@@ -52,25 +52,25 @@ function wrapLines(ctx: CanvasRenderingContext2D, text: string, maxWidth: number
 
 function captionFor(item: SocialItem, tone: Tone, url: string) {
   if (tone === "newsletter") {
-    return `Vrei cele mai bune reduceri fara sa le cauti manual?\n\nAm pus pe AmCupon.ro ofertele active si codurile verificate.\n\n${url}\n\n${item.hashtags || "#reduceri #oferte #romania #amcupon"}`;
+    return `Vrei cele mai bune reduceri fără să le cauți manual?\n\nAm pus pe AmCupon.ro ofertele active și codurile verificate.\n\n${url}\n\n${item.hashtags || "#reduceri #oferte #romania #amcupon"}`;
   }
 
   if (tone === "deal") {
-    return `${item.procent ? `${item.procent} ` : "Reducere "}la ${item.nume} - activ acum pe AmCupon.ro.\n\nVerifica oferta inainte sa cumperi:\n${url}\n\n${item.hashtags || "#reduceri #coduri #oferte #romania"}`;
+    return `${item.procent ? `${item.procent} ` : "Reducere "}la ${item.nume} - activ acum pe AmCupon.ro.\n\nVerifică oferta înainte să cumperi:\n${url}\n\n${item.hashtags || "#reduceri #coduri #oferte #romania"}`;
   }
 
-  return `Inainte sa cumperi online, verifica daca exista cod sau oferta activa.\n\nAzi am salvat ${item.nume} in lista de verificat pe AmCupon.ro.\n\n${url}\n\nSalveaza story-ul pentru urmatoarea comanda.`;
+  return `Înainte să cumperi online, verifică dacă există cod sau ofertă activă.\n\nAzi am salvat ${item.nume} în lista de verificat pe AmCupon.ro.\n\n${url}\n\nSalvează story-ul pentru următoarea comandă.`;
 }
 
 function storyTitle(item: SocialItem, tone: Tone) {
-  if (tone === "newsletter") return "Reduceri fara cautat manual";
+  if (tone === "newsletter") return "Reduceri fără căutat manual";
   if (tone === "deal") return item.procent ? `${item.procent} la ${item.nume}` : `Oferta la ${item.nume}`;
-  return "Verifica reducerile inainte sa cumperi";
+  return "Verifică reducerile înainte să cumperi";
 }
 
 function storySubtitle(item: SocialItem, tone: Tone) {
-  if (tone === "newsletter") return "Top oferte si coduri active, direct pe AmCupon.ro";
-  if (tone === "deal") return item.cod ? `Cod: ${item.cod}` : "Fara cod necesar, vezi oferta activa";
+  if (tone === "newsletter") return "Top oferte și coduri active, direct pe AmCupon.ro";
+  if (tone === "deal") return item.cod ? `Cod: ${item.cod}` : "Fără cod necesar, vezi oferta activă";
   return `${item.nume} / ${item.categorie || "Oferte online"}`;
 }
 
@@ -152,7 +152,7 @@ async function createStoryBlob(item: SocialItem, tone: Tone, url: string): Promi
 
   ctx.fillStyle = "rgba(255,255,255,0.70)";
   ctx.font = "700 30px Arial";
-  ctx.fillText("Salveaza pentru urmatoarea comanda", 150, 1710);
+  ctx.fillText("Salvează pentru următoarea comandă", 150, 1710);
 
   return await new Promise((resolve, reject) => {
     canvas.toBlob((blob) => blob ? resolve(blob) : reject(new Error("Nu pot genera PNG")), "image/png", 0.96);
@@ -183,7 +183,7 @@ export default function SocialStudio({ items }: { items: SocialItem[] }) {
     a.download = `amcupon-story-${item.magazin || item.nume}.png`;
     a.click();
     URL.revokeObjectURL(url);
-    setStatus("Imagine descarcata. O poti posta in Story.");
+    setStatus("Imagine descărcată. O poți posta în Story.");
   }
 
   async function shareStory() {
@@ -200,11 +200,11 @@ export default function SocialStudio({ items }: { items: SocialItem[] }) {
 
     if (navigator.share) {
       await navigator.share({ title: "AmCupon.ro", text: caption, url: shareUrl });
-      setStatus("Share sheet deschis cu text si link.");
+      setStatus("Share sheet deschis cu text și link.");
       return;
     }
 
-    await copyText(caption, "Caption copiat. Descarca imaginea si posteaza manual.");
+    await copyText(caption, "Caption copiat. Descarcă imaginea și postează manual.");
   }
 
   if (!item) {
@@ -212,8 +212,8 @@ export default function SocialStudio({ items }: { items: SocialItem[] }) {
       <main className="min-h-screen bg-[var(--background)] text-[var(--foreground)] flex items-center justify-center px-4">
         <div className="max-w-md text-center">
           <h1 className="text-2xl font-black mb-3">Social Studio</h1>
-          <p className="text-[var(--text-soft)]">Nu am gasit postari in data/postari-zilnice.json.</p>
-          <Link href="/admin" className="inline-block mt-6 text-[var(--text-soft)] underline">Inapoi la admin</Link>
+          <p className="text-[var(--text-soft)]">Nu am găsit postări în data/postari-zilnice.json.</p>
+          <Link href="/admin" className="inline-block mt-6 text-[var(--text-soft)] underline">Înapoi la admin</Link>
         </div>
       </main>
     );
@@ -226,7 +226,7 @@ export default function SocialStudio({ items }: { items: SocialItem[] }) {
           <div>
             <p className="text-xs font-black uppercase tracking-widest text-[var(--accent-text)]">AmCupon.ro</p>
             <h1 className="text-2xl sm:text-4xl font-black">Social Studio</h1>
-            <p className="text-sm text-[var(--text-soft)] mt-1">Story evergreen pentru telefon: alege, genereaza, share.</p>
+            <p className="text-sm text-[var(--text-soft)] mt-1">Story evergreen pentru telefon: alege, generează, share.</p>
           </div>
           <Link href="/admin" className="shrink-0 rounded-xl border border-[var(--border)] px-4 py-2 text-sm font-bold text-[var(--text-soft)]">Admin</Link>
         </div>
@@ -278,9 +278,9 @@ export default function SocialStudio({ items }: { items: SocialItem[] }) {
             </div>
 
             <div className="grid grid-cols-2 gap-2">
-              <button onClick={() => copyText(caption, "Caption copiat.")} className="rounded-xl bg-[var(--background)] px-3 py-3 text-sm font-black text-[var(--text-soft)]">Copiaza caption</button>
-              <button onClick={() => copyText(shareUrl, "Link copiat.")} className="rounded-xl bg-[var(--background)] px-3 py-3 text-sm font-black text-[var(--text-soft)]">Copiaza link</button>
-              <button onClick={downloadStory} className="rounded-xl bg-[#ddf93c] px-3 py-3 text-sm font-black text-[#0c1000]">Descarca Story</button>
+              <button onClick={() => copyText(caption, "Caption copiat.")} className="rounded-xl bg-[var(--background)] px-3 py-3 text-sm font-black text-[var(--text-soft)]">Copiază caption</button>
+              <button onClick={() => copyText(shareUrl, "Link copiat.")} className="rounded-xl bg-[var(--background)] px-3 py-3 text-sm font-black text-[var(--text-soft)]">Copiază link</button>
+              <button onClick={downloadStory} className="rounded-xl bg-[#ddf93c] px-3 py-3 text-sm font-black text-[#0c1000]">Descarcă Story</button>
               <button onClick={shareStory} className="rounded-xl bg-[#ffffff] px-3 py-3 text-sm font-black text-[#06080b]">Share telefon</button>
             </div>
 
@@ -304,10 +304,10 @@ export default function SocialStudio({ items }: { items: SocialItem[] }) {
                     <p className="text-[var(--foreground)] font-black text-sm">Link:</p>
                     <p className="text-[var(--text-soft)] text-sm break-words mt-1">{shareUrl.replace(/^https?:\/\//, "")}</p>
                   </div>
-                  <p className="text-[var(--foreground)]/70 text-xs font-bold mt-5">Salveaza pentru urmatoarea comanda</p>
+                  <p className="text-[var(--foreground)]/70 text-xs font-bold mt-5">Salvează pentru următoarea comandă</p>
                 </div>
               </div>
-              <p className="mt-3 text-center text-xs text-[var(--text-soft)]">Preview. Butonul descarca PNG real 1080x1920.</p>
+              <p className="mt-3 text-center text-xs text-[var(--text-soft)]">Preview. Butonul descarcă PNG real 1080x1920.</p>
             </div>
           </section>
         </div>

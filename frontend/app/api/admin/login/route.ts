@@ -10,7 +10,7 @@ export async function POST(request: Request) {
     return Response.json({ error: "ADMIN_PASSWORD not configured" }, { status: 500 });
   }
   if (!verifyPassword(password || "")) {
-    return Response.json({ error: "Parola incorecta" }, { status: 401 });
+    return Response.json({ error: "Parolă incorectă" }, { status: 401 });
   }
 
   const cookieStore = await cookies();

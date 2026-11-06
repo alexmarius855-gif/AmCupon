@@ -14,9 +14,9 @@ interface Magazin {
 }
 
 export const metadata: Metadata = {
-  title: "Reduceri Echipamente Pescuit 2026 — Undite, Naluci",
-  description: "Coduri reducere magazine pescuit Romania: Pescar Expert, Decathlon. Undite, mulinete, naluci, corturi carp — reduceri verificate, livrare rapida.",
-  keywords: ["reduceri pescuit", "cod reducere pescar expert", "echipamente pescuit ieftine", "undita reducere", "naluci reducere", "pescuit romania online"],
+  title: "Reduceri Echipamente Pescuit 2026 — Undițe, Năluci",
+  description: "Coduri reducere magazine pescuit România: Pescar Expert, Decathlon. Undițe, mulinete, năluci, corturi carp — reduceri verificate, livrare rapidă.",
+  keywords: ["reduceri pescuit", "cod reducere pescar expert", "echipamente pescuit ieftine", "undiță reducere", "năluci reducere", "pescuit românia online"],
   alternates: { canonical: "https://amcupon.ro/pescuit" },
   openGraph: {
     title: "Reduceri Echipamente Pescuit 2026 | AmCupon.ro",
@@ -32,12 +32,12 @@ const TOP_PESCUIT = ["pescar-expert.ro"];
 const FALLBACK_SPORTS = ["decathlon.ro", "sportisimo.ro"];
 
 const ECHIPAMENTE = [
-  { emoji: "🎣", label: "Undite & Lansete", desc: "Crap, pastrav, feeder, spinning, match" },
-  { emoji: "🪝", label: "Naluci & Momeli", desc: "Siliconi, wobblere, twistere, popere" },
-  { emoji: "🌀", label: "Mulinete", desc: "Spinning, stationar, multiplier, baitcasting" },
-  { emoji: "🎒", label: "Genti & Carry-all", desc: "Transport echipament, tacklebox, rucsacuri" },
+  { emoji: "🎣", label: "Undițe & Lansete", desc: "Crap, păstrăv, feeder, spinning, match" },
+  { emoji: "🪝", label: "Năluci & Momeli", desc: "Siliconi, wobblere, twistere, popere" },
+  { emoji: "🌀", label: "Mulinete", desc: "Spinning, staționar, multiplier, baitcasting" },
+  { emoji: "🎒", label: "Genți & Carry-all", desc: "Transport echipament, tacklebox, rucsacuri" },
   { emoji: "⛺", label: "Corturi & Umbrele", desc: "Bivvace carp, umbrele pescuit, sleeping bag" },
-  { emoji: "🧲", label: "Accesorii", desc: "Plumbi, carlige, fir, vartej, agrafe, flotor" },
+  { emoji: "🧲", label: "Accesorii", desc: "Plumbi, cârlige, fir, vârtej, agrafe, flotor" },
 ];
 
 const BRANDURI = ["Daiwa", "Okuma", "Trabucco", "Prologic", "Delphin", "Jaxon", "Nash", "Fox"];
@@ -74,7 +74,7 @@ export default function PescuitPage() {
 
         <nav className="bg-[var(--background)] border-b border-[var(--border)]">
           <div className="max-w-6xl mx-auto px-4 py-2.5 flex items-center gap-1 text-xs text-[var(--text-muted)]">
-            <Link href="/" className="hover:text-[var(--accent-text)]">Acasa</Link>
+            <Link href="/" className="hover:text-[var(--accent-text)]">Acasă</Link>
             <span className="mx-1">/</span>
             <span className="text-[var(--text-soft)] font-medium">Pescuit</span>
           </div>
@@ -88,7 +88,7 @@ export default function PescuitPage() {
               Echipamente Pescuit cu Reducere {an}
             </h1>
             <p className="text-emerald-100 text-lg mb-6 max-w-xl mx-auto">
-              Undite, mulinete, naluci si accesorii la preturi mai mici. Reduceri active pentru pasionatii de pescuit din Romania.
+              Undițe, mulinete, năluci și accesorii la prețuri mai mici. Reduceri active pentru pasionații de pescuit din România.
             </p>
             <div className="flex flex-wrap justify-center gap-2">
               {BRANDURI.map(b => (
@@ -102,7 +102,7 @@ export default function PescuitPage() {
 
         {/* CATEGORII ECHIPAMENTE */}
         <section className="max-w-6xl mx-auto px-4 py-10">
-          <h2 className="text-xl font-black text-[var(--foreground)] mb-6 text-center">Ce gasesti la preturi mai mici</h2>
+          <h2 className="text-xl font-black text-[var(--foreground)] mb-6 text-center">Ce găsești la prețuri mai mici</h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {ECHIPAMENTE.map(e => (
               <div key={e.label} className="bg-[var(--surface)] border border-[var(--border)] rounded-xl p-5 hover:shadow-md transition-all">
@@ -120,7 +120,7 @@ export default function PescuitPage() {
           {magazine.length === 0 ? (
             <div className="text-center py-10 bg-[var(--surface)] rounded-xl">
               <p className="text-2xl mb-3">🎣</p>
-              <p className="text-[var(--text-soft)] font-medium mb-2">Curand disponibil — verifica ofertele sport</p>
+              <p className="text-[var(--text-soft)] font-medium mb-2">Curând disponibil — verifică ofertele sport</p>
               <Link href="/categorii/sport" className="inline-block bg-emerald-700 text-white font-bold px-6 py-3 rounded-xl hover:bg-emerald-500 transition-colors">
                 Sport & Outdoor →
               </Link>
@@ -151,20 +151,20 @@ export default function PescuitPage() {
             <h2 className="text-xl font-black text-[var(--foreground)] mb-5">Cum alegi echipamentele de pescuit</h2>
             <div className="space-y-4 text-sm text-[var(--text-soft)] leading-relaxed">
               <div>
-                <h3 className="font-bold text-[var(--foreground)] mb-1">Undite: spinning, feeder sau crap?</h3>
-                <p>Pentru inceput, o undita spinning universala (2-3m, 10-30g) acopera cele mai multe situatii. Feeder-ul e optim pentru rauri si lacuri cu fund nisipos, iar setup-ul de crap necesita investitie mai mare dar ofera sesiuni lungi si capturi mari.</p>
+                <h3 className="font-bold text-[var(--foreground)] mb-1">Undițe: spinning, feeder sau crap?</h3>
+                <p>Pentru început, o undiță spinning universală (2-3m, 10-30g) acoperă cele mai multe situații. Feeder-ul e optim pentru râuri și lacuri cu fund nisipos, iar setup-ul de crap necesită investiție mai mare dar oferă sesiuni lungi și capturi mari.</p>
               </div>
               <div>
-                <h3 className="font-bold text-[var(--foreground)] mb-1">Branduri de incredere la preturi corecte</h3>
-                <p>Daiwa si Okuma ofera cel mai bun raport calitate-pret pentru incepatori si intermediari. Trabucco e preferat la pescuitul la feeder. Prologic si Delphin au accesorii excelente. Fox si Nash sunt pentru crap-isti seriosi cu buget dedicat.</p>
+                <h3 className="font-bold text-[var(--foreground)] mb-1">Branduri de încredere la prețuri corecte</h3>
+                <p>Daiwa și Okuma oferă cel mai bun raport calitate-preț pentru începători și intermediari. Trabucco e preferat la pescuitul la feeder. Prologic și Delphin au accesorii excelente. Fox și Nash sunt pentru crap-iști serioși cu buget dedicat.</p>
               </div>
               <div>
                 <h3 className="font-bold text-[var(--foreground)] mb-1">Sfaturi pentru economii la echipamente {an}</h3>
                 <ul className="list-disc list-inside space-y-1 ml-2">
-                  <li>Sezonul off (iarna) aduce reduceri de 20-40% la undite si mulinete</li>
-                  <li>Codurile de reducere de la Pescar Expert se pot combina cu promotiile active</li>
-                  <li>Kit-urile complete costa mai putin decat componentele cumparate separat</li>
-                  <li>Verifica AmCupon zilnic — reducerile la sport expira rapid</li>
+                  <li>Sezonul off (iarnă) aduce reduceri de 20-40% la undițe și mulinete</li>
+                  <li>Codurile de reducere de la Pescar Expert se pot combina cu promoțiile active</li>
+                  <li>Kit-urile complete costă mai puțin decât componentele cumpărate separat</li>
+                  <li>Verifică AmCupon zilnic — reducerile la sport expiră rapid</li>
                 </ul>
               </div>
             </div>
@@ -173,10 +173,10 @@ export default function PescuitPage() {
 
         {/* LINK-URI INRUDITE */}
         <section className="max-w-6xl mx-auto px-4 py-8">
-          <h2 className="text-base font-black text-[var(--text-soft)] mb-4">Exploreaza si alte categorii</h2>
+          <h2 className="text-base font-black text-[var(--text-soft)] mb-4">Explorează și alte categorii</h2>
           <div className="flex flex-wrap gap-2">
             {[
-              { href: "/casa", label: "🌿 Casa & Gradina" },
+              { href: "/casa", label: "🌿 Casă & Grădină" },
               { href: "/decathlon", label: "🏃 Decathlon" },
               { href: "/flori", label: "💐 Flori & Buchete" },
               { href: "/top-reduceri", label: "🏆 Top Reduceri" },
@@ -195,7 +195,7 @@ export default function PescuitPage() {
           © {an} AmCupon.ro ·{" "}
           <Link href="/blog" className="hover:text-[var(--accent-text)]">Blog</Link>{" · "}
           <Link href="/categorii" className="hover:text-[var(--accent-text)]">Categorii</Link>{" · "}
-          <Link href="/" className="hover:text-[var(--accent-text)]">Acasa</Link>
+          <Link href="/" className="hover:text-[var(--accent-text)]">Acasă</Link>
         </footer>
       </div>
     </>

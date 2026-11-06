@@ -3,12 +3,12 @@ import { Metadata } from "next";
 import { pesteMagazine, PesteMagazine, reteleAfiliere, numarMagazine } from "@/lib/cifreSite";
 
 export const metadata: Metadata = {
-  title: "Despre AmCupon.ro — Platforma de Coduri Reducere din Romania",
-  description: `AmCupon.ro aduna codurile de reducere si ofertele active de la ${pesteMagazine()} partenere, actualizate automat de mai multe ori pe zi.`,
-  keywords: ["despre amcupon","cum functioneaza coduri reducere","platforma reduceri romania","coduri reducere actualizate"],
+  title: "Despre AmCupon.ro — Platformă de Coduri Reducere din România",
+  description: `AmCupon.ro adună codurile de reducere și ofertele active de la ${pesteMagazine()} partenere, actualizate automat de mai multe ori pe zi.`,
+  keywords: ["despre amcupon","cum funcționează coduri reducere","platformă reduceri românia","coduri reducere actualizate"],
   alternates: { canonical: "https://amcupon.ro/despre-noi" },
   openGraph: {
-    title: "Despre AmCupon.ro — Cum functioneaza",
+    title: "Despre AmCupon.ro — Cum funcționează",
     description: `${PesteMagazine()} partenere, coduri actualizate zilnic, 100% gratuit.`,
     url: "https://amcupon.ro/despre-noi",
     siteName: "AmCupon.ro",

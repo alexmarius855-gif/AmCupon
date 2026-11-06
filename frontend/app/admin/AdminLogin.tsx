@@ -21,7 +21,7 @@ export default function AdminLogin() {
       if (data.ok) {
         window.location.reload();
       } else {
-        setError(data.error || "Parola incorecta");
+        setError(data.error || "Parolă incorectă");
       }
     } catch {
       setError("Eroare de conexiune");
@@ -69,7 +69,7 @@ export default function AdminLogin() {
             disabled={loading || !password}
             className="w-full bg-orange-500 hover:bg-orange-400 disabled:opacity-50 text-white font-black py-3 rounded-xl text-sm transition-colors shadow-lg shadow-orange-500/20"
           >
-            {loading ? "Se verifica..." : "Intra in Mission Control →"}
+            {loading ? "Se verifică..." : "Intră în Mission Control →"}
           </button>
         </form>
 

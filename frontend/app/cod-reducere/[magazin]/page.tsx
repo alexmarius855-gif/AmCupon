@@ -411,7 +411,7 @@ export async function generateMetadata({
         // 22.09.2026: cu sufixul de brand, 100 din aceste titluri treceau de 60 de
         // caractere si Google taia exact partea care spune ce e pagina. Pagina e oricum
         // `noindex`, dar titlul se vede in tab si la distribuire.
-        title: `Cod reducere ${numeF}: nu livreaza in Romania`.slice(0, 60),
+        title: `Cod reducere ${numeF}: nu livrează în România`.slice(0, 60),
         description: `Programul de afiliere ${numeF} la care avem acces funcționează doar pentru ${tariLivrare(f.regiuni)}, deci nu îl promovăm. Vezi alternativele din ${f.categorie}.`,
         robots: { index: false, follow: true },
         alternates: { canonical: `https://amcupon.ro/cod-reducere/${f.magazin}` },
@@ -486,11 +486,11 @@ export async function generateMetadata({
       `cod reducere ${nume.toLowerCase()}`,
       `voucher ${nume.toLowerCase()}`,
       `cupon ${nume.toLowerCase()}`,
-      `cod promotional ${nume.toLowerCase()}`,
+      `cod promoțional ${nume.toLowerCase()}`,
       `reducere ${nume.toLowerCase()} ${an}`,
       `${nume.toLowerCase()} discount`,
       `${slug}`,
-      "coduri reducere romania",
+      "coduri reducere românia",
       "amcupon.ro",
     ],
     alternates: {

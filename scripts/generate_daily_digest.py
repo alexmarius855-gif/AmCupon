@@ -157,7 +157,7 @@ EDITORIAL_SYSTEM = (
     "nu spui ca le-am ales sau citit una cate una. Scrii in romana, la persoana intai plural, "
     "ca un prieten priceput. Ton: clar, util, ZERO hype publicitar, "
     "fara superlative goale. Esti onest si cand o oferta e doar 'ok'. Fara emoji in "
-    "exces (max 1-2). Nu inventezi cifre. NU spui niciodata ca am verificat, testat "
+    "exces (max 1-2). Scrii corect, cu diacritice (ă, â, î, ș, ț). Nu inventezi cifre. NU spui niciodata ca am verificat, testat "
     "sau garantat codurile ori ofertele: le preluam de la reteaua de afiliere si nu "
     "le incercam in cos."
 )
@@ -223,13 +223,13 @@ def genereaza_voce_ai(picks: list, data_str: str) -> dict | None:
 
 
 _TAKE_CAT = {
-    "Fashion": "Bun de prins daca oricum voiai sa-ti reimprospatezi garderoba.",
-    "Frumusete": "Merita daca esti deja pe lista de cumparaturi cosmetice luna asta.",
-    "Electronice": "Compara pretul si la alte magazine inainte sa comanzi.",
-    "Carti": "Ocazie buna sa-ti faci stocul de lectura fara sa platesti plin.",
-    "Sport": "Util daca tocmai ti-ai propus sa te apuci serios de miscare.",
-    "Casa": "Practic pentru orice ai de bifat prin casa zilele astea.",
-    "Copii": "De luat in calcul daca ai un eveniment sau o zi de nastere aproape.",
+    "Fashion": "Bun de prins dacă oricum voiai să-ți reîmprospătezi garderoba.",
+    "Frumusete": "Merită dacă ești deja pe lista de cumpărături cosmetice luna asta.",
+    "Electronice": "Compară prețul și la alte magazine înainte să comanzi.",
+    "Carti": "Ocazie bună să-ți faci stocul de lectură fără să plătești prețul întreg.",
+    "Sport": "Util dacă tocmai ți-ai propus să te apuci serios de mișcare.",
+    "Casa": "Practic pentru orice ai de bifat prin casă zilele astea.",
+    "Copii": "De luat în calcul dacă ai un eveniment sau o zi de naștere aproape.",
     "Farmacie": "Bun pentru reaprovizionare la lucrurile pe care le iei oricum.",
 }
 
@@ -238,22 +238,22 @@ def genereaza_voce_fallback(picks: list, data_str: str) -> dict:
     top = picks[0]["nume_afisat"] if picks else "magazinele partenere"
     al2 = picks[1]["nume_afisat"] if len(picks) > 1 else ""
     intro = (
-        f"Selectia de azi e facuta automat din ofertele active, dupa reducere, cod si termen. "
+        f"Selecția de azi e făcută automat din ofertele active, după reducere, cod și termen. "
         f"Primele sunt {top}"
-        + (f" si {al2}" if al2 else "")
-        + ", dar mai jos ai toata selectia. Ofertele vin de la magazine prin reteaua "
-        "de afiliere; nu le incercam in cos, asa ca citeste conditiile inainte sa comanzi. "
-        "Cele care expira curand sunt marcate."
+        + (f" și {al2}" if al2 else "")
+        + ", dar mai jos ai toată selecția. Ofertele vin de la magazine prin rețeaua "
+        "de afiliere; nu le încercăm în coș, așa că citește condițiile înainte să comanzi. "
+        "Cele care expiră curând sunt marcate."
     )
     takes = []
     for p in picks:
-        t = _TAKE_CAT.get(p["categorie"], "Oferta activa — buna daca te incadrezi in categorie.")
+        t = _TAKE_CAT.get(p["categorie"], "Ofertă activă — bună dacă te încadrezi în categorie.")
         zile = p["zile_ramase"]
         if 0 < zile <= 5:
             unit = "zi" if zile == 1 else "zile"
-            t = f"Grabeste-te: expira in {zile} {unit}. " + t
+            t = f"Grăbește-te: expiră în {zile} {unit}. " + t
         takes.append(t)
-    outro = "Revino maine la Radar: selectia se reface in fiecare dimineata, din ofertele active atunci."
+    outro = "Revino mâine la Radar: selecția se reface în fiecare dimineață, din ofertele active atunci."
     return {"intro": intro, "takes": takes, "outro": outro, "sursa": "fallback"}
 
 

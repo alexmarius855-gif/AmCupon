@@ -19,7 +19,7 @@ interface Magazin {
 export const metadata: Metadata = {
   title: "Reduceri Jucării & Haine Copii 2026 — Noriel și Parteneri",
   description: `Coduri de reducere și oferte la magazinele pentru copii ${laParteneri(NISA_CATEGORII.copii)}: jucării, haine, cărucioare, scaune auto.`,
-  keywords: ["reduceri jucarii", "cod reducere noriel", "haine copii reducere", "jucarii ieftine online", "emag copii reducere", "carucior reducere", "scaun auto copil reducere"],
+  keywords: ["reduceri jucării", "cod reducere noriel", "haine copii reducere", "jucării ieftine online", "eMAG copii reducere", "cărucior reducere", "scaun auto copil reducere"],
   alternates: { canonical: "https://amcupon.ro/copii" },
   openGraph: { title: "Reduceri Copii & Jucării 2026 | AmCupon.ro", url: "https://amcupon.ro/copii", siteName: "AmCupon.ro", locale: "ro_RO", type: "website", images: [{ url: "https://amcupon.ro/og-image.png", width: 1200, height: 630 }] },
 };
@@ -138,14 +138,14 @@ export default function CopiiPage() {
         </section>
 
         <section className="max-w-6xl mx-auto px-4 py-8">
-          <h2 className="text-base font-black text-[var(--text-soft)] mb-4">Exploreaza si alte categorii</h2>
+          <h2 className="text-base font-black text-[var(--text-soft)] mb-4">Explorează și alte categorii</h2>
           <div className="flex flex-wrap gap-2">
             {[
               { href: "/farmacie", label: "💊 Farmacie" },
               { href: "/animale", label: "🐾 Animale" },
               { href: "/idei-cadouri", label: "🎁 Idei Cadouri" },
-              { href: "/sanatate", label: "🌿 Sanatate" },
-              { href: "/carti", label: "📚 Carti" },
+              { href: "/sanatate", label: "🌿 Sănătate" },
+              { href: "/carti", label: "📚 Cărți" },
               { href: "/oferte-azi", label: "🔥 Oferte de Azi" },
             ].map(l => (
               <a key={l.href} href={l.href}

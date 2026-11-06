@@ -17,26 +17,26 @@ interface Magazin {
 }
 
 export const metadata: Metadata = {
-  title: "Cod Reducere Casa & Gradina 2026 | AmCupon.ro",
+  title: "Cod Reducere Casă & Grădină 2026 | AmCupon.ro",
   description: `Coduri de reducere și oferte pentru casă și grădină ${laParteneri(NISA_CATEGORII.casa)}: mobilă, decorațiuni, grădină. Actualizate zilnic.`,
-  keywords: ["cod reducere dedeman","reduceri ikea","mobila ieftina","cod reducere leroy merlin","mobexpert reducere","casa gradina reducere romania","electrocasnice reducere"],
+  keywords: ["cod reducere dedeman","reduceri ikea","mobilă ieftină","cod reducere leroy merlin","mobexpert reducere","casă grădină reducere românia","electrocasnice reducere"],
   alternates: { canonical: "https://amcupon.ro/casa" },
-  openGraph: { title: "Casa & Gradina 2026 | AmCupon.ro", url: "https://amcupon.ro/casa", siteName: "AmCupon.ro", locale: "ro_RO", type: "website", images: [{ url: "https://amcupon.ro/og-image.png", width: 1200, height: 630 }] },
+  openGraph: { title: "Casă & Grădină 2026 | AmCupon.ro", url: "https://amcupon.ro/casa", siteName: "AmCupon.ro", locale: "ro_RO", type: "website", images: [{ url: "https://amcupon.ro/og-image.png", width: 1200, height: 630 }] },
 };
 
 const TOP_CASA = ["electrolux.ro","clickandgrow.com"];
 // Sluguri REALE din output.json — potrivire EXACTA, nu subsir (vezi lib/categoriiNisa.ts)
 const CAT_CASA = ["casa-gradina"];
 const AVANTAJE = [
-  { icon: "🛋️", titlu: "Mobila & Living", desc: "Canapele, paturi, dulapuri" },
-  { icon: "🌿", titlu: "Gradina & Terasa", desc: "Mobilier gradina, plante, unelte — tot ce ai nevoie" },
-  { icon: "🔨", titlu: "Bricolaj & Constructii", desc: "Materiale, scule, vopsele" },
-  { icon: "🍳", titlu: "Bucatarie", desc: "Electrocasnice, vase, accesorii bucatarie" },
-  { icon: "🛁", titlu: "Baie & Sanitare", desc: "Cazi, dusuri, obiecte sanitare" },
-  { icon: "💡", titlu: "Iluminat & Decoratiuni", desc: "Lustre, lampi, tablouri, obiecte decorative" },
+  { icon: "🛋️", titlu: "Mobilă & Living", desc: "Canapele, paturi, dulapuri" },
+  { icon: "🌿", titlu: "Grădină & Terasă", desc: "Mobilier grădină, plante, unelte — tot ce ai nevoie" },
+  { icon: "🔨", titlu: "Bricolaj & Construcții", desc: "Materiale, scule, vopsele" },
+  { icon: "🍳", titlu: "Bucătărie", desc: "Electrocasnice, vase, accesorii bucătărie" },
+  { icon: "🛁", titlu: "Baie & Sanitare", desc: "Căzi, dușuri, obiecte sanitare" },
+  { icon: "💡", titlu: "Iluminat & Decorațiuni", desc: "Lustre, lămpi, tablouri, obiecte decorative" },
 ];
 
-const jsonLd = { "@context":"https://schema.org","@type":"CollectionPage","name":"Casa & Gradina 2026","url":"https://amcupon.ro/casa","description":"Coduri si oferte pentru casa si gradina de la magazinele partenere AmCupon" };
+const jsonLd = { "@context":"https://schema.org","@type":"CollectionPage","name":"Casă & Grădină 2026","url":"https://amcupon.ro/casa","description":"Coduri și oferte pentru casă și grădină de la magazinele partenere AmCupon" };
 
 export default function CasaPage() {
   const filePath = path.join(process.cwd(), "public", "output.json");
@@ -56,21 +56,21 @@ export default function CasaPage() {
       <div className="min-h-screen bg-[var(--background)]">
         <nav className="bg-[var(--background)] border-b border-[var(--border)]">
           <div className="max-w-6xl mx-auto px-4 py-2.5 flex items-center gap-1 text-xs text-[var(--text-muted)]">
-            <Link href="/" className="hover:text-[var(--accent-text)]">Acasa</Link>
+            <Link href="/" className="hover:text-[var(--accent-text)]">Acasă</Link>
             <span className="mx-1">/</span>
-            <span className="text-[var(--text-soft)] font-medium">Casa & Gradina</span>
+            <span className="text-[var(--text-soft)] font-medium">Casă & Grădină</span>
           </div>
         </nav>
 
         <section className="bg-gradient-to-br from-[#c3dd2c] via-[#ddf93c] to-[#c3dd2c] text-[#0c1000] py-12 px-4">
           <div className="max-w-6xl mx-auto text-center">
             <div className="text-5xl mb-4">🏡</div>
-            <h1 className="text-3xl md:text-4xl font-black mb-3">Casa & Gradina {an}</h1>
+            <h1 className="text-3xl md:text-4xl font-black mb-3">Casă & Grădină {an}</h1>
             <p className="text-[#2a2f10] text-lg mb-6 max-w-xl mx-auto">
               Oferte {laParteneri(NISA_CATEGORII.casa, 3)} și la alte magazine partenere de amenajări
             </p>
             <div className="flex flex-wrap justify-center gap-2">
-              {["Mobila","Bricolaj","Gradina","Electrocasnice","Decoratiuni","Baie"].map(c => (
+              {["Mobila","Bricolaj","Gradina","Electrocasnice","Decorațiuni","Baie"].map(c => (
                 <span key={c} className="bg-[var(--surface-alt)] text-[var(--foreground)] text-sm font-semibold px-4 py-1.5 rounded-full border border-[var(--border-strong)]">{c}</span>
               ))}
             </div>
@@ -78,7 +78,7 @@ export default function CasaPage() {
         </section>
 
         <section className="max-w-6xl mx-auto px-4 py-10">
-          <h2 className="text-xl font-black text-[var(--foreground)] mb-6 text-center">Ce gasesti la magazine casa & gradina</h2>
+          <h2 className="text-xl font-black text-[var(--foreground)] mb-6 text-center">Ce găsești la magazine casă & grădină</h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {AVANTAJE.map(a => (
               <div key={a.titlu} className="bg-[var(--surface)] border border-[var(--border)] rounded-xl p-5">
@@ -93,7 +93,7 @@ export default function CasaPage() {
         <section className="max-w-6xl mx-auto px-4 pb-10">
           <div className="flex items-center gap-3 mb-5">
             
-            <h2 className="text-xl font-black text-[var(--foreground)]">Magazine casa cu reduceri active</h2>
+            <h2 className="text-xl font-black text-[var(--foreground)]">Magazine pentru casă cu reduceri active</h2>
           </div>
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
             {magazine.map((m) => (
@@ -114,24 +114,24 @@ export default function CasaPage() {
 
         <section className="bg-[var(--surface)] border-t border-[var(--border)] py-10 px-4">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-xl font-black text-[var(--foreground)] mb-5">Ghid: Amenajari casa mai ieftine in Romania</h2>
+            <h2 className="text-xl font-black text-[var(--foreground)] mb-5">Ghid: Amenajări casă mai ieftine în România</h2>
             <div className="space-y-4 text-sm text-[var(--text-soft)] leading-relaxed">
               <div>
                 <h3 className="font-bold text-[var(--foreground)] mb-1">Magazin mare sau magazin specializat?</h3>
-                <p>Lanturile mari de bricolaj si mobila au gama cea mai larga; magazinele specializate (mobila, saltele, electrocasnice, gradina) au de obicei mai multa alegere in nisa lor. Partenerii AmCupon din aceasta categorie apar mai sus, cu ofertele active.</p>
+                <p>Lanțurile mari de bricolaj și mobilă au gama cea mai largă; magazinele specializate (mobilă, saltele, electrocasnice, grădină) au de obicei mai multă alegere în nișa lor. Partenerii AmCupon din această categorie apar mai sus, cu ofertele active.</p>
               </div>
               <div>
-                <h3 className="font-bold text-[var(--foreground)] mb-1">Cand sa cumperi mobila si electrocasnice</h3>
+                <h3 className="font-bold text-[var(--foreground)] mb-1">Când să cumperi mobilă și electrocasnice</h3>
                 <ul className="list-disc list-inside space-y-1 ml-2">
-                  <li><strong>Black Friday</strong> — reduceri la electrocasnice mari si mobilier</li>
-                  <li><strong>Ianuarie</strong> — solduri de iarna, stocuri vechi cu discount mare</li>
-                  <li><strong>Primavara</strong> — promotii la articole gradina si mobilier exterior</li>
-                  <li><strong>Septembrie</strong> — reluare sezon, promotii la renovari</li>
+                  <li><strong>Black Friday</strong> — reduceri la electrocasnice mari și mobilier</li>
+                  <li><strong>Ianuarie</strong> — solduri de iarnă, stocuri vechi cu discount mare</li>
+                  <li><strong>Primăvara</strong> — promoții la articole grădină și mobilier exterior</li>
+                  <li><strong>Septembrie</strong> — reluare sezon, promoții la renovări</li>
                 </ul>
               </div>
               <div>
-                <h3 className="font-bold text-[var(--foreground)] mb-1">Sfaturi economii amenajari</h3>
-                <p>Urmariti sectiunile &quot;Outlet&quot; si produsele din colectii retrase, unde reducerile sunt de obicei mai mari. Cand un partener are un cod activ, il gasiti pe pagina lui de pe AmCupon.ro.</p>
+                <h3 className="font-bold text-[var(--foreground)] mb-1">Sfaturi economii amenajări</h3>
+                <p>Urmăriți secțiunile &quot;Outlet&quot; și produsele din colecții retrase, unde reducerile sunt de obicei mai mari. Când un partener are un cod activ, îl găsiți pe pagina lui de pe AmCupon.ro.</p>
               </div>
             </div>
           </div>

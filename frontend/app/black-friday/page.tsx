@@ -68,7 +68,7 @@ export const metadata: Metadata = {
   title: `Black Friday ${BF.an}: calendarul a ${BF.totalCampanii} de magazine`,
   description: `Când începe Black Friday ${BF.an} la ${BF.totalCampanii} de magazine din România: datele fiecărei campanii, ofertele active și câte reduceri sunt reale. eMAG pe ${emagScurt}.`,
   keywords: [
-    `black friday romania ${BF.an}`,
+    `black friday românia ${BF.an}`,
     `black friday ${BF.an} data`,
     "oferte black friday",
     "coduri reducere black friday",

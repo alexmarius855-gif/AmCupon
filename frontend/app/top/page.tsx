@@ -21,12 +21,12 @@ interface TopData {
 }
 
 export const metadata: Metadata = {
-  title: "Top Produse Recomandate 2026 — Review-uri si Ghiduri",
-  description: "Review-uri si topuri de produse testate: laptopuri, telefoane, casti wireless, televizoare, smartwatch-uri. Recomandarile noastre cu link-uri la cel mai bun pret.",
+  title: "Top Produse Recomandate 2026 — Topuri și Ghiduri",
+  description: "Topuri și ghiduri de cumpărare: laptopuri, telefoane, căști wireless, televizoare, smartwatch-uri, cu ofertele de azi de la magazinele partenere.",
   alternates: { canonical: "https://amcupon.ro/top" },
   openGraph: {
     title: "Top Produse Recomandate 2026 | AmCupon.ro",
-    description: "Review-uri, comparatii si ghiduri de cumparare pentru electronice, gadgets si electrocasnice.",
+    description: "Topuri, comparații și ghiduri de cumpărare pentru electronice, gadgets și electrocasnice.",
     url: "https://amcupon.ro/top",
     siteName: "AmCupon.ro",
     locale: "ro_RO",
@@ -52,7 +52,7 @@ const jsonLd = {
   "@context": "https://schema.org",
   "@type": "CollectionPage",
   name: "Top Produse Recomandate 2026",
-  description: "Review-uri si ghiduri de cumparare pentru electronice si gadgets",
+  description: "Topuri și ghiduri de cumpărare pentru electronice și gadgets",
   url: "https://amcupon.ro/top",
   publisher: { "@type": "Organization", name: "AmCupon.ro", url: "https://amcupon.ro" },
 };
@@ -71,7 +71,7 @@ export default function TopHubPage() {
         {/* BREADCRUMB */}
         <nav className="bg-[var(--surface)] border-b border-[var(--border)] ">
           <div className="max-w-6xl mx-auto px-4 py-2.5 flex items-center gap-1 text-xs text-[var(--text-muted)] flex-wrap">
-            <Link href="/" className="hover:text-[var(--accent-text)] transition-colors">Acasa</Link>
+            <Link href="/" className="hover:text-[var(--accent-text)] transition-colors">Acasă</Link>
             <span className="mx-1 text-[var(--text-muted)]">/</span>
             <span className="text-[var(--text-soft)]  font-medium">Top Produse</span>
           </div>
@@ -173,10 +173,10 @@ export default function TopHubPage() {
           <div className="bg-gradient-to-r from-[var(--surface)] to-[var(--surface-alt)] rounded-xl p-8 text-center">
             <div className="text-3xl mb-3">📧</div>
             <h3 className="text-xl font-black text-[var(--foreground)] mb-2">
-              Primeste review-urile noi direct pe email
+              Primește ofertele active pe email
             </h3>
             <p className="text-[var(--text-soft)] text-sm mb-5">
-              Adaugam saptamanal noi ghiduri si review-uri. Zero spam.
+              O dată pe zi, ofertele active de la magazinele partenere. Zero spam.
             </p>
             <a
               href="/newsletter"
@@ -190,7 +190,7 @@ export default function TopHubPage() {
         {/* CROSS LINKS */}
         <section className="max-w-6xl mx-auto px-4 pb-10">
           <h3 className="text-base font-black text-[var(--text-soft)]  mb-4">
-            Exploreaza si
+            Explorează și
           </h3>
           <div className="flex flex-wrap gap-2">
             {[
@@ -211,7 +211,7 @@ export default function TopHubPage() {
 
         <footer className="border-t border-[var(--border)]  py-6 text-center text-xs text-[var(--text-muted)]">
           &copy; {an} AmCupon.ro &middot;{" "}
-          <Link href="/" className="hover:text-[var(--accent-text)]">Acasa</Link>
+          <Link href="/" className="hover:text-[var(--accent-text)]">Acasă</Link>
           {" · "}<Link href="/blog" className="hover:text-[var(--accent-text)]">Blog</Link>
           {" · "}<Link href="/gadgets" className="hover:text-[var(--accent-text)]">Gadgets</Link>
         </footer>

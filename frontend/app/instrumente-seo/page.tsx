@@ -13,7 +13,7 @@ interface Magazin {
 export const metadata: Metadata = {
   title: "Instrumente SEO 2026 — Semrush, Ahrefs, Moz comparate",
   description: "Instrumente SEO în 2026: ce face Semrush, Ahrefs și Moz, plus unelte gratuite — Search Console, Screaming Frog, PageSpeed Insights.",
-  keywords: ["instrumente seo gratuite", "semrush reducere", "ahrefs cod reducere", "se ranking discount", "tool seo romania", "semrush trial gratuit", "software seo ieftin"],
+  keywords: ["instrumente seo gratuite", "semrush reducere", "ahrefs cod reducere", "se ranking discount", "tool seo românia", "semrush trial gratuit", "software seo ieftin"],
   alternates: { canonical: "https://amcupon.ro/instrumente-seo" },
   openGraph: { title: "Instrumente SEO 2026 | AmCupon.ro", url: "https://amcupon.ro/instrumente-seo", siteName: "AmCupon.ro", locale: "ro_RO", type: "website", images: [{ url: "https://amcupon.ro/og-image.png", width: 1200, height: 630 }] },
 };
@@ -51,12 +51,12 @@ const TOOLS_SEO = [
 ];
 
 const TOOLS_GRATUITE = [
-  { emoji: "🔍", nume: "Google Search Console", desc: "Gratuit de la Google — indexare, erori, click-uri, pozitii reale in search" },
-  { emoji: "📈", nume: "Google Analytics 4", desc: "Analiza trafic, conversii, comportament vizitatori — 100% gratuit" },
-  { emoji: "🕷️", nume: "Screaming Frog (free)", desc: "Crawl pana la 500 pagini gratuit — identifica erori 404, duplicate content, redirecturi" },
-  { emoji: "💡", nume: "Ubersuggest (free)", desc: "Research cuvinte cheie si analiza de baza a domeniului — 3 cautari/zi gratuit" },
-  { emoji: "📝", nume: "Google PageSpeed Insights", desc: "Viteza de incarcare si Core Web Vitals — esential pentru SEO tehnic" },
-  { emoji: "🗺️", nume: "XML Sitemap Generator", desc: "Genereaza automat sitemap.xml pentru site-ul tau — gratuit online" },
+  { emoji: "🔍", nume: "Google Search Console", desc: "Gratuit de la Google — indexare, erori, click-uri, poziții reale în search" },
+  { emoji: "📈", nume: "Google Analytics 4", desc: "Analiză trafic, conversii, comportament vizitatori — 100% gratuit" },
+  { emoji: "🕷️", nume: "Screaming Frog (free)", desc: "Crawl până la 500 pagini gratuit — identifică erori 404, duplicate content, redirecturi" },
+  { emoji: "💡", nume: "Ubersuggest (free)", desc: "Research cuvinte cheie și analiză de bază a domeniului — 3 căutări/zi gratuit" },
+  { emoji: "📝", nume: "Google PageSpeed Insights", desc: "Viteza de încărcare și Core Web Vitals — esențial pentru SEO tehnic" },
+  { emoji: "🗺️", nume: "XML Sitemap Generator", desc: "Generează automat sitemap.xml pentru site-ul tău — gratuit online" },
 ];
 
 const GHID_SEO = [
@@ -65,11 +65,11 @@ const GHID_SEO = [
     continut: "Semrush acoperă mai mult din marketingul digital (PPC, social, conținut), pe lângă SEO. Ahrefs e cunoscut mai ales pentru analiza backlinkurilor și link building. Dacă vrei un singur tool pentru mai multe canale, Semrush e mai versatil; dacă te interesează mai ales linkurile, Ahrefs.",
   },
   {
-    titlu: "Poti face SEO bun cu instrumente gratuite?",
-    continut: "Da, la inceput. Google Search Console + Google Analytics + Screaming Frog free + Ubersuggest free acoperă mare parte din nevoile unui site mic. Treci la tool premium cand ai nevoie de date competitionale, tracking avansat de pozitii sau audit la scara.",
+    titlu: "Poți face SEO bun cu instrumente gratuite?",
+    continut: "Da, la început. Google Search Console + Google Analytics + Screaming Frog free + Ubersuggest free acoperă mare parte din nevoile unui site mic. Treci la tool premium când ai nevoie de date competiționale, tracking avansat de poziții sau audit la scară.",
   },
   {
-    titlu: "Cand merita un abonament Semrush?",
+    titlu: "Când merită un abonament Semrush?",
     continut: "Merită când site-ul are deja trafic constant, lucrezi cu mai mulți clienți SEO, vrei să urmărești pozițiile pentru sute de cuvinte cheie sau ai nevoie de date despre concurenți. Prețul actual și perioada de probă le vezi pe site-ul Semrush.",
   },
 ];
@@ -97,7 +97,7 @@ export default function InstrumenteSeoPage() {
         {/* Breadcrumb */}
         <nav className="bg-[var(--surface)]/80 backdrop-blur-sm border-b border-[var(--border)]">
           <div className="max-w-6xl mx-auto px-4 py-3 flex items-center gap-1.5 text-xs text-[var(--text-muted)]">
-            <Link href="/" className="hover:text-[var(--accent-text)] transition-colors">Acasa</Link>
+            <Link href="/" className="hover:text-[var(--accent-text)] transition-colors">Acasă</Link>
             <span>/</span>
             <Link href="/servicii" className="hover:text-[var(--accent-text)] transition-colors">Servicii</Link>
             <span>/</span>
@@ -121,7 +121,7 @@ export default function InstrumenteSeoPage() {
               Instrumente SEO cu Reducere <span className="text-transparent bg-clip-text" style={{backgroundImage:"linear-gradient(135deg, #34d399, #ddf93c)"}}>{an}</span>
             </h1>
             <p className="text-[var(--text-soft)] text-lg mb-8 max-w-xl mx-auto leading-relaxed">
-              Semrush, Ahrefs, Moz — tool-uri SEO profesionale cu trial gratuit si reduceri pana la 40%
+              Semrush, Ahrefs, Moz — tool-uri SEO profesionale cu trial gratuit și reduceri până la 40%
             </p>
             <div className="flex flex-wrap justify-center gap-2">
               {["Semrush","Ahrefs","Moz Pro","SE Ranking","Trial Gratuit","Keyword Research","Audit Site","Backlink Analysis"].map(c => (
@@ -160,7 +160,7 @@ export default function InstrumenteSeoPage() {
                         {mag ? (
                           <a href={`/cod-reducere/${t.slug}`}
                             className="inline-flex items-center gap-2 bg-[#ddf93c] hover:bg-[#ddf93c] text-[#0c1000] text-sm font-bold px-4 py-2 rounded-xl transition-colors shadow-lg shadow-[#ddf93c]/20">
-                            {mag.are_promotie ? (mag.cod_cupon ? "Cod reducere activ" : "Oferta activa") : "Vezi oferta"}
+                            {mag.are_promotie ? (mag.cod_cupon ? "Cod reducere activ" : "Ofertă activă") : "Vezi oferta"}
                             <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7"/></svg>
                           </a>
                         ) : (
@@ -190,7 +190,7 @@ export default function InstrumenteSeoPage() {
             <div className="text-center mb-8">
               <p className="text-xs font-bold text-[var(--accent-text)] uppercase tracking-widest mb-2">100% GRATUIT</p>
               <h2 className="text-2xl font-black text-[var(--foreground)]">Instrumente SEO gratuite recomandate</h2>
-              <p className="text-[var(--text-soft)] text-sm mt-2">Start ideal daca esti la inceput sau ai un buget limitat</p>
+              <p className="text-[var(--text-soft)] text-sm mt-2">Start ideal dacă ești la început sau ai un buget limitat</p>
             </div>
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
               {TOOLS_GRATUITE.map((t) => (
@@ -244,7 +244,7 @@ export default function InstrumenteSeoPage() {
 
         {/* Related */}
         <section className="max-w-6xl mx-auto px-4 py-8">
-          <p className="text-xs font-bold text-[var(--text-muted)] uppercase tracking-widest mb-4">EXPLOREAZA SI</p>
+          <p className="text-xs font-bold text-[var(--text-muted)] uppercase tracking-widest mb-4">EXPLOREAZĂ ȘI</p>
           <div className="flex flex-wrap gap-2">
             {[
               { href: "/hosting", label: "🌐 Hosting Web" },

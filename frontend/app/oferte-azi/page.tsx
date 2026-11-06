@@ -49,14 +49,14 @@ const CAT_LABELS: Record<string, string> = {
   "fashion":              "Fashion",
   "electronics-itc":     "Electronice",
   "pharma":              "Farmacie",
-  "beauty":              "Frumusete",
+  "beauty":              "Frumusețe",
   "sports-outdoors":     "Sport",
-  "home-garden":         "Casa",
+  "home-garden":         "Casă",
   "babies-kids-toys":    "Copii",
   "automotive":          "Auto",
-  "books":               "Carti",
+  "books":               "Cărți",
   "gifts-flowers":       "Cadouri",
-  "health-personal-care":"Sanatate",
+  "health-personal-care":"Sănătate",
   "hypermarket-groceries":"Supermarket",
   "pet-supplies":        "Animale",
   "online-mall":         "Mall",
@@ -131,13 +131,13 @@ export async function generateMetadata(
     ? `Oferte ${catLabel} de Azi — Reduceri ${luna} ${an} | AmCupon.ro`
     : `Oferte de azi: toate promoțiile active, ${luna} ${an}`;
   const description = catLabel
-    ? `Toate ofertele active ${catLabel} din Romania pentru ${luna} ${an}. Coduri de reducere si promotii actualizate zilnic pe AmCupon.ro.`
-    : `Toate ofertele si promotiile active de azi in Romania. Coduri de reducere actualizate zilnic la 1000+ magazine online. Actualizat ${luna} ${an}.`;
+    ? `Toate ofertele active ${catLabel} din România pentru ${luna} ${an}. Coduri de reducere și promoții actualizate zilnic pe AmCupon.ro.`
+    : `Toate ofertele și promoțiile active de azi în România. Coduri de reducere de la magazinele partenere, actualizate zilnic. Actualizat ${luna} ${an}.`;
 
   return {
     title,
     description,
-    keywords: ["oferte de azi","promotii de azi","reduceri de azi romania","coduri reducere active","oferte online romania"],
+    keywords: ["oferte de azi","promoții de azi","reduceri de azi românia","coduri reducere active","oferte online românia"],
     alternates: { canonical: "https://amcupon.ro/oferte-azi" },
     openGraph: {
       title, description,
@@ -280,8 +280,8 @@ export default async function OferteAziPage(
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "ItemList",
-    "name": `Oferte de Azi Romania — ${luna} ${an}`,
-    "description": `Toate promotiile active de azi: ${cuNumar(toateOfertele.length, "ofertă", "oferte")} la ${cuNumar(nrMagazineTotal, "magazin", "magazine")}`,
+    "name": `Oferte de Azi România — ${luna} ${an}`,
+    "description": `Toate promoțiile active de azi: ${cuNumar(toateOfertele.length, "ofertă", "oferte")} la ${cuNumar(nrMagazineTotal, "magazin", "magazine")}`,
     "url": "https://amcupon.ro/oferte-azi",
     "numberOfItems": oferteFiltrate.length,
     "itemListElement": oferteFiltrate.slice(0, 30).map((o, i) => ({
@@ -312,11 +312,11 @@ export default async function OferteAziPage(
             <h1 className="text-4xl md:text-5xl font-black tracking-tight text-[var(--foreground)] mb-4 leading-tight">
               {cat && CAT_LABELS[cat]
                 ? <>{CAT_EMOJI[cat] || ""} Oferte <span className="text-[var(--accent-text)]">{CAT_LABELS[cat]}</span> de Azi</>
-                : <>Oferte de Azi <span className="text-[var(--accent-text)]">Romania</span></>
+                : <>Oferte de Azi <span className="text-[var(--accent-text)]">România</span></>
               }
             </h1>
             <p className="text-[var(--text-soft)] text-lg mb-8 max-w-xl mx-auto">
-              {cuNumar(oferteFiltrate.length, "promotie activa", "promotii active")} la {cuNumar(nrMagazine, "magazin", "magazine")}, sortate dupa valoare.
+              {cuNumar(oferteFiltrate.length, "promoție activă", "promoții active")} la {cuNumar(nrMagazine, "magazin", "magazine")}, sortate după valoare.
             </p>
 
             <div className="flex flex-wrap justify-center gap-3">
@@ -331,7 +331,7 @@ export default async function OferteAziPage(
               {nrUrgente > 0 && (
                 <div className="bg-red-500/10 border border-red-500/25 rounded-xl px-4 py-2.5 text-sm font-bold text-red-400 flex items-center gap-2">
                   <span className="w-1.5 h-1.5 rounded-full bg-red-400 animate-pulse" />
-                  {nrUrgente} expira curand
+                  {nrUrgente} expiră curând
                 </div>
               )}
             </div>
@@ -369,8 +369,8 @@ export default async function OferteAziPage(
           {oferteFiltrate.length === 0 ? (
             <div className="text-center py-20 bg-[var(--surface)] rounded-xl border border-[var(--border)]">
               <p className="text-5xl mb-4">🔍</p>
-              <p className="font-black text-[var(--foreground)] text-lg mb-2">Nicio oferta activa in aceasta categorie</p>
-              <p className="text-[var(--text-soft)] text-sm mb-6">Incearca alta categorie sau revino mai tarziu.</p>
+              <p className="font-black text-[var(--foreground)] text-lg mb-2">Nicio ofertă activă în această categorie</p>
+              <p className="text-[var(--text-soft)] text-sm mb-6">Încearcă altă categorie sau revino mai târziu.</p>
               <Link href="/oferte-azi"
                 className="inline-flex items-center gap-2 bg-[#ddf93c] hover:bg-[#ddf93c] text-[#0c1000] font-bold px-5 py-2.5 rounded-xl text-sm transition-colors">
                 Vezi toate ofertele →
@@ -383,11 +383,11 @@ export default async function OferteAziPage(
                 <p className="text-sm text-[var(--text-soft)]">
                   <span className="font-black text-[var(--foreground)]">{oferteFiltrate.length}</span> oferte
                   {cat && CAT_LABELS[cat] ? ` in ${CAT_LABELS[cat]}` : " active"}
-                  {" "}— sortate: cod &gt; discount &gt; urgenta
+                  {" "}— sortate: cod &gt; discount &gt; urgență
                 </p>
                 {cat && (
                   <Link href="/oferte-azi" className="text-xs font-bold text-[var(--accent-text)] hover:text-[var(--accent-text)] transition-colors">
-                    Sterge filtrul ×
+                    Șterge filtrul ×
                   </Link>
                 )}
               </div>
@@ -407,18 +407,18 @@ export default async function OferteAziPage(
             <div className="absolute inset-0 pointer-events-none" style={{background:"radial-gradient(ellipse 80% 100% at 50% 100%, rgba(20,184,166,0.07) 0%, transparent 70%)"}} />
             <div className="relative">
               <span className="inline-flex items-center gap-2 bg-[#ddf93c]/10 border border-[var(--accent-text)]/20 text-[var(--accent-text)] text-xs font-black px-3 py-1 rounded-full mb-5 uppercase tracking-widest">
-                📬 Nu rata nicio oferta buna
+                📬 Nu rata nicio ofertă bună
               </span>
               <h2 className="text-2xl md:text-3xl font-black text-[var(--foreground)] mb-3">
-                Primeste top oferte direct pe email
+                Primește top oferte direct pe email
               </h2>
               <p className="text-[var(--text-soft)] mb-8 max-w-md mx-auto">
-                {cuNumar(nrMagazineTotal, "magazin monitorizat", "magazine monitorizate")} zilnic. Cele mai bune coduri, o data pe saptamana. Zero spam.
+                {cuNumar(nrMagazineTotal, "magazin monitorizat", "magazine monitorizate")} zilnic. Ofertele active, o dată pe zi. Zero spam.
               </p>
               <div className="flex flex-wrap items-center justify-center gap-4">
                 <Link href="/newsletter"
                   className="bg-[#ddf93c] hover:bg-[#ddf93c] text-[#0c1000] font-black px-8 py-3.5 rounded-xl text-sm transition-all shadow-lg shadow-[#ddf93c]/25 hover:shadow-[#ddf93c]/40 hover:-translate-y-0.5 duration-200">
-                  Aboneaza-te gratuit →
+                  Abonează-te gratuit →
                 </Link>
                 <Link href="/toate-magazinele"
                   className="bg-[var(--surface-alt)] hover:bg-[var(--surface-high)] border border-[var(--border-strong)] text-[var(--text-soft)] font-semibold px-6 py-3.5 rounded-xl text-sm transition-colors">
@@ -426,7 +426,7 @@ export default async function OferteAziPage(
                 </Link>
               </div>
               <div className="flex flex-wrap justify-center gap-x-6 gap-y-1 mt-6 text-xs text-[var(--text-muted)]">
-                <span>✓ Gratuit, fara cont</span>
+                <span>✓ Gratuit, fără cont</span>
                 <span>✓ Dezabonare cu un click</span>
                 <span>✓ Zero spam garantat</span>
               </div>

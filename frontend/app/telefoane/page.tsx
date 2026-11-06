@@ -17,10 +17,10 @@ interface Magazin {
 
 export const metadata: Metadata = {
   title: "Telefoane 2026 — Samsung, iPhone, Xiaomi de la parteneri",
-  description: "Oferte la telefoane 2026: Samsung Galaxy, iPhone si altele, de la magazinele de electronice partenere AmCupon. Reduceri active, actualizate zilnic.",
-  keywords: ["telefon ieftin romania", "smartphone reducere 2026", "samsung reducere", "iphone reducere romania", "xiaomi ieftin", "telefon sub 2000 lei", "emag telefoane reducere"],
+  description: "Oferte la telefoane 2026: Samsung Galaxy, iPhone și altele, de la magazinele de electronice partenere AmCupon. Reduceri active, actualizate zilnic.",
+  keywords: ["telefon ieftin românia", "smartphone reducere 2026", "samsung reducere", "iPhone reducere românia", "xiaomi ieftin", "telefon sub 2000 lei", "eMAG telefoane reducere"],
   alternates: { canonical: "https://amcupon.ro/telefoane" },
-  openGraph: { title: "Telefon Ieftin Romania 2026 | AmCupon.ro", url: "https://amcupon.ro/telefoane", siteName: "AmCupon.ro", locale: "ro_RO", type: "website", images: [{ url: "https://amcupon.ro/og-image.png", width: 1200, height: 630 }] },
+  openGraph: { title: "Telefon Ieftin România 2026 | AmCupon.ro", url: "https://amcupon.ro/telefoane", siteName: "AmCupon.ro", locale: "ro_RO", type: "website", images: [{ url: "https://amcupon.ro/og-image.png", width: 1200, height: 630 }] },
 };
 
 const TOP_TEL = ["evomag.ro"];
@@ -28,7 +28,7 @@ const TOP_TEL = ["evomag.ro"];
 const CAT_TEL = ["electronice"];
 
 const BUGETE_TEL = [
-  { pret: "Sub 1.000 lei", emoji: "📱", desc: "Android de baza, retea 4G, camera decenta", culoare: "bg-emerald-600" },
+  { pret: "Sub 1.000 lei", emoji: "📱", desc: "Android de bază, rețea 4G, cameră decentă", culoare: "bg-emerald-600" },
   { pret: "1.000 – 2.000 lei", emoji: "📲", desc: "Mid-range solid: Xiaomi, Samsung A, OnePlus Nord", culoare: "bg-[#ddf93c]" },
   { pret: "2.000 – 4.000 lei", emoji: "✨", desc: "Flagship-uri accesibile: Samsung Galaxy S FE, Google Pixel, iPhone din generația trecută", culoare: "bg-[#ddf93c]" },
   { pret: "Peste 4.000 lei", emoji: "👑", desc: "Flagship: iPhone Pro, Samsung Galaxy S Ultra, OnePlus", culoare: "bg-[#ddf93c]" },
@@ -36,14 +36,14 @@ const BUGETE_TEL = [
 
 const BRANDURI_TEL = [
   { brand: "Samsung", desc: "Galaxy A (buget), Galaxy S (flagship), Fold/Flip (pliabile)" },
-  { brand: "Apple iPhone", desc: "modelul de baza, Pro si Pro Max; generatia trecuta costa mai putin" },
-  { brand: "Xiaomi", desc: "Redmi (buget), seria cu numar (flagship)" },
-  { brand: "OnePlus", desc: "Nord (mid-range) si seria cu numar (flagship), cu incarcare rapida" },
-  { brand: "Google Pixel", desc: "fotografie computationala; de la Pixel 8, 7 ani de actualizari Android" },
+  { brand: "Apple iPhone", desc: "modelul de bază, Pro și Pro Max; generația trecută costă mai puțin" },
+  { brand: "Xiaomi", desc: "Redmi (buget), seria cu număr (flagship)" },
+  { brand: "OnePlus", desc: "Nord (mid-range) și seria cu număr (flagship), cu încărcare rapidă" },
+  { brand: "Google Pixel", desc: "fotografie computațională; de la Pixel 8, 7 ani de actualizări Android" },
   { brand: "Motorola", desc: "Moto G (buget solid), Edge (mid-range), Razr (pliabil)" },
 ];
 
-const jsonLd = { "@context":"https://schema.org","@type":"CollectionPage","name":"Telefon Ieftin Romania 2026","url":"https://amcupon.ro/telefoane","description":"Oferte la telefoane de la magazinele partenere — Samsung, iPhone, Xiaomi" };
+const jsonLd = { "@context":"https://schema.org","@type":"CollectionPage","name":"Telefon Ieftin România 2026","url":"https://amcupon.ro/telefoane","description":"Oferte la telefoane de la magazinele partenere — Samsung, iPhone, Xiaomi" };
 
 export default function TelefoaneePage() {
   const filePath = path.join(process.cwd(), "public", "output.json");
@@ -65,7 +65,7 @@ export default function TelefoaneePage() {
         {/* Breadcrumb */}
         <nav className="bg-[var(--surface)]/80 backdrop-blur-sm border-b border-[var(--border)]">
           <div className="max-w-6xl mx-auto px-4 py-3 flex items-center gap-1.5 text-xs text-[var(--text-muted)]">
-            <Link href="/" className="hover:text-[var(--accent-text)] transition-colors">Acasa</Link>
+            <Link href="/" className="hover:text-[var(--accent-text)] transition-colors">Acasă</Link>
             <span>/</span>
             <span className="text-[var(--text-soft)] font-medium">Telefoane cu Reducere</span>
           </div>
@@ -101,7 +101,7 @@ export default function TelefoaneePage() {
         <section className="max-w-6xl mx-auto px-4 py-12">
           <div className="text-center mb-8">
             <p className="text-xs font-bold text-[var(--accent-text)] uppercase tracking-widest mb-2">BUGET</p>
-            <h2 className="text-2xl font-black text-[var(--foreground)]">Alege telefonul dupa buget</h2>
+            <h2 className="text-2xl font-black text-[var(--foreground)]">Alege telefonul după buget</h2>
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
             {BUGETE_TEL.map(b => (
@@ -119,7 +119,7 @@ export default function TelefoaneePage() {
           <div className="flex items-center justify-between mb-6">
             <div>
               <p className="text-xs font-bold text-[var(--accent-text)] uppercase tracking-widest mb-1">MAGAZINE PARTENERE</p>
-              <h2 className="text-xl font-black text-[var(--foreground)]">Magazine cu telefoane si electronice</h2>
+              <h2 className="text-xl font-black text-[var(--foreground)]">Magazine cu telefoane și electronice</h2>
             </div>
           </div>
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">
@@ -142,11 +142,11 @@ export default function TelefoaneePage() {
         {/* Ghid */}
         <section className="bg-[var(--surface)] border-t border-[var(--border)] py-12 px-4">
           <div className="max-w-3xl mx-auto">
-            <p className="text-xs font-bold text-[var(--accent-text)] uppercase tracking-widest mb-3">GHID CUMPARATURI</p>
-            <h2 className="text-2xl font-black text-[var(--foreground)] mb-7">Ce telefon sa cumperi in {an}</h2>
+            <p className="text-xs font-bold text-[var(--accent-text)] uppercase tracking-widest mb-3">GHID CUMPĂRĂTURI</p>
+            <h2 className="text-2xl font-black text-[var(--foreground)] mb-7">Ce telefon să cumperi în {an}</h2>
             <div className="space-y-5">
               <div className="bg-[var(--surface-alt)] border border-[var(--border-strong)] rounded-xl p-5">
-                <h3 className="font-bold text-[var(--foreground)] mb-3 text-base">Branduri populare in {an}</h3>
+                <h3 className="font-bold text-[var(--foreground)] mb-3 text-base">Branduri populare în {an}</h3>
                 <div className="grid sm:grid-cols-2 gap-3">
                   {BRANDURI_TEL.map(b => (
                     <div key={b.brand} className="bg-[var(--surface)] border border-[var(--border-strong)] rounded-xl p-3">
@@ -158,14 +158,14 @@ export default function TelefoaneePage() {
               </div>
               <div className="bg-[var(--surface-alt)] border border-[var(--border-strong)] rounded-xl p-5">
                 <h3 className="font-bold text-[var(--foreground)] mb-2 text-base">Android sau iPhone — care e mai bun?</h3>
-                <p className="text-sm text-[var(--text-soft)] leading-relaxed">Daca ai deja Mac sau iPad, iPhone se integreaza cel mai bine cu ele. Android are mai multe modele la fiecare buget (Samsung, Xiaomi, Motorola, OnePlus). Compara acelasi buget pe camera, baterie si cati ani de actualizari primeste telefonul.</p>
+                <p className="text-sm text-[var(--text-soft)] leading-relaxed">Dacă ai deja Mac sau iPad, iPhone se integrează cel mai bine cu ele. Android are mai multe modele la fiecare buget (Samsung, Xiaomi, Motorola, OnePlus). Compară același buget pe cameră, baterie și câți ani de actualizări primește telefonul.</p>
               </div>
               <div className="bg-[var(--surface-alt)] border border-[var(--border-strong)] rounded-xl p-5">
-                <h3 className="font-bold text-[var(--foreground)] mb-3 text-base">Cand sa cumperi un telefon mai ieftin</h3>
+                <h3 className="font-bold text-[var(--foreground)] mb-3 text-base">Când să cumperi un telefon mai ieftin</h3>
                 <ul className="space-y-2 text-sm text-[var(--text-soft)]">
                   {[
-                    ["Dupa lansarea modelului nou","modelul din generatia trecuta se ieftineste de obicei"],
-                    ["Black Friday","reduceri la modelele mid-range si la flagship-urile din generatia anterioara"],
+                    ["După lansarea modelului nou","modelul din generația trecută se ieftinește de obicei"],
+                    ["Black Friday","reduceri la modelele mid-range și la flagship-urile din generația anterioară"],
                   ].map(([bold, text]) => (
                     <li key={bold} className="flex gap-2">
                       <span className="text-[var(--accent-text)] mt-0.5 shrink-0">→</span>
@@ -180,7 +180,7 @@ export default function TelefoaneePage() {
 
         {/* Related */}
         <section className="max-w-6xl mx-auto px-4 py-8">
-          <p className="text-xs font-bold text-[var(--text-muted)] uppercase tracking-widest mb-4">EXPLOREAZA SI</p>
+          <p className="text-xs font-bold text-[var(--text-muted)] uppercase tracking-widest mb-4">EXPLOREAZĂ ȘI</p>
           <div className="flex flex-wrap gap-2">
             {[
               { href: "/laptop", label: "💻 Laptop" },

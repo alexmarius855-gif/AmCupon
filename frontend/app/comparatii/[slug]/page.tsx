@@ -73,8 +73,8 @@ export async function generateMetadata(
   const c = comparatii[slug];
   if (!c) return {};
 
-  const titluMeta = `${c.n1} vs ${c.n2} ${c.an} — Comparatie Completa`;
-  const desc = `${c.n1} sau ${c.n2}? Comparatie ${c.luna} ${c.an}: preturi, promotii active, livrare, retururi. Gaseste codul de reducere potrivit pe AmCupon.ro.`;
+  const titluMeta = `${c.n1} vs ${c.n2} ${c.an} — Comparație Completă`;
+  const desc = `${c.n1} sau ${c.n2}? Comparație ${c.luna} ${c.an}: prețuri, promoții active, livrare, retururi. Găsește codul de reducere potrivit pe AmCupon.ro.`;
 
   return {
     title: titluMeta,
@@ -106,7 +106,7 @@ export default async function ComparatiePage(
         "@type": "BreadcrumbList",
         itemListElement: [
           { "@type": "ListItem", position: 1, name: "AmCupon.ro", item: "https://amcupon.ro" },
-          { "@type": "ListItem", position: 2, name: "Comparatii magazine", item: "https://amcupon.ro/comparatii" },
+          { "@type": "ListItem", position: 2, name: "Comparații magazine", item: "https://amcupon.ro/comparatii" },
           { "@type": "ListItem", position: 3, name: `${c.n1} vs ${c.n2}`, item: `https://amcupon.ro/comparatii/${slug}` },
         ],
       },
@@ -133,9 +133,9 @@ export default async function ComparatiePage(
 
           {/* Breadcrumb */}
           <nav className="text-sm text-[var(--text-soft)] mb-6 flex items-center gap-2">
-            <Link href="/" className="hover:text-[var(--accent-text)]">Acasa</Link>
+            <Link href="/" className="hover:text-[var(--accent-text)]">Acasă</Link>
             <span>/</span>
-            <Link href="/comparatii" className="hover:text-[var(--accent-text)]">Comparatii</Link>
+            <Link href="/comparatii" className="hover:text-[var(--accent-text)]">Comparații</Link>
             <span>/</span>
             <span className="text-[var(--foreground)]">{c.n1} vs {c.n2}</span>
           </nav>
@@ -160,9 +160,9 @@ export default async function ComparatiePage(
                 <h2 className="text-[var(--foreground)] font-bold text-lg mb-3">{side.n}</h2>
                 <div className="space-y-2 text-sm mb-4">
                   <div className="flex justify-between">
-                    <span className="text-[var(--text-soft)]">Promotii active</span>
+                    <span className="text-[var(--text-soft)]">Promoții active</span>
                     <span className={side.stats.promotii_active > 0 ? "text-[var(--accent-text)] font-semibold" : "text-[var(--text-muted)]"}>
-                      {side.stats.promotii_active > 0 ? cuNumar(side.stats.promotii_active, "ofertă", "oferte") : "Nicio oferta"}
+                      {side.stats.promotii_active > 0 ? cuNumar(side.stats.promotii_active, "ofertă", "oferte") : "Nicio ofertă"}
                     </span>
                   </div>
                   {/* 07.09: aici scria „Cashback: pana la X%", unde X era COMISIONUL nostru
@@ -260,7 +260,7 @@ export default async function ComparatiePage(
 
           {/* FAQ */}
           <div className="mb-10">
-            <h2 className="text-xl font-bold text-[var(--foreground)] mb-5">Intrebari frecvente</h2>
+            <h2 className="text-xl font-bold text-[var(--foreground)] mb-5">Întrebări frecvente</h2>
             <div className="space-y-4">
               {c.faq.map((f, i) => (
                 <div key={i} className="bg-[var(--surface)] border border-[var(--border)] rounded-xl p-5">
@@ -274,7 +274,7 @@ export default async function ComparatiePage(
           {/* Back link */}
           <div className="text-center">
             <Link href="/comparatii" className="text-[var(--accent-text)] hover:text-[var(--accent-text)] text-sm font-medium">
-              ← Toate comparatiile magazine
+              ← Toate comparațiile magazine
             </Link>
           </div>
 

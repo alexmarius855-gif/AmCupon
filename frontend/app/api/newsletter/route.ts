@@ -253,7 +253,7 @@ export async function POST(request: Request) {
 
   if (!checkRateLimit(ip)) {
     return Response.json(
-      { error: "Prea multe cereri. Incearca din nou in cateva minute." },
+      { error: "Prea multe cereri. Încearcă din nou în câteva minute." },
       { status: 429, headers: { ...corsHeaders, "Retry-After": "60" } }
     );
   }
@@ -272,14 +272,14 @@ export async function POST(request: Request) {
   }
 
   if (!isValidEmail(email)) {
-    return Response.json({ error: "Adresa de email invalida." }, { status: 400, headers: corsHeaders });
+    return Response.json({ error: "Adresa de email invalidă." }, { status: 400, headers: corsHeaders });
   }
 
   // Fara API key — returneaza eroare clara (nu simula succes fals)
   if (!API_KEY) {
     console.warn("[newsletter] BREVO_API_KEY nu este setat in env vars");
     return Response.json(
-      { error: "Serviciul de newsletter este momentan in configurare. Revino in curand!" },
+      { error: "Serviciul de newsletter este momentan în configurare. Revino în curând!" },
       { status: 503, headers: corsHeaders }
     );
   }
@@ -347,10 +347,10 @@ export async function POST(request: Request) {
     }
     console.error("[newsletter] Brevo API error:", res.status, JSON.stringify(data));
     // Returnam mesaj mai specific in functie de tipul erorii
-    const msg = data?.message || "Eroare server. Incearca din nou.";
+    const msg = data?.message || "Eroare server. Încearcă din nou.";
     return Response.json({ error: msg }, { status: 500, headers: corsHeaders });
   } catch (err) {
     console.error("Newsletter fetch error:", err);
-    return Response.json({ error: "Eroare retea" }, { status: 500, headers: corsHeaders });
+    return Response.json({ error: "Eroare rețea" }, { status: 500, headers: corsHeaders });
   }
 }

@@ -16,12 +16,12 @@ const LINK_HIDEMYNAME  = "https://www.awin1.com/cread.php?awinmid=5887918&awinaf
 // ──────────────────────────────────────────────────────────────────────────
 
 export const metadata: Metadata = {
-  title: "VPN Romania 2026 — NordVPN vs Surfshark | AmCupon.ro",
+  title: "VPN România 2026 — NordVPN vs Surfshark | AmCupon.ro",
   description: "Comparăm NordVPN, Surfshark și ExpressVPN pentru România în 2026: funcții, dispozitive, securitate, garanție.",
-  keywords: ["cel mai bun vpn romania", "nordvpn romania", "surfshark parere", "vpn streaming", "vpn ieftin romania 2026", "vpn recenzii"],
+  keywords: ["cel mai bun vpn românia", "nordvpn românia", "surfshark părere", "vpn streaming", "vpn ieftin românia 2026", "vpn recenzii"],
   alternates: { canonical: "https://amcupon.ro/vpn" },
   openGraph: {
-    title: "Cel mai bun VPN Romania 2026 | AmCupon.ro",
+    title: "Cel mai bun VPN România 2026 | AmCupon.ro",
     description: "Comparație NordVPN vs Surfshark vs ExpressVPN: funcții, dispozitive, securitate — ghid pentru români.",
     url: "https://amcupon.ro/vpn",
     siteName: "AmCupon.ro",
@@ -143,11 +143,11 @@ export default function VpnPage() {
           <nav className="flex justify-center gap-2 text-xs text-[var(--text-muted)] mb-8">
             <Link href="/" className="hover:text-[var(--text-soft)]">AmCupon.ro</Link>
             <span>/</span>
-            <span className="text-[var(--text-soft)]">Cel mai bun VPN Romania</span>
+            <span className="text-[var(--text-soft)]">Cel mai bun VPN România</span>
           </nav>
           <div className="text-5xl mb-4">🔒</div>
           <h1 className="text-4xl md:text-5xl font-black text-[var(--foreground)] mb-4">
-            Cel mai bun <span className="text-transparent bg-clip-text" style={{ backgroundImage: "linear-gradient(135deg, #ddf93c, #c3dd2c)" }}>VPN Romania</span> 2026
+            Cel mai bun <span className="text-transparent bg-clip-text" style={{ backgroundImage: "linear-gradient(135deg, #ddf93c, #c3dd2c)" }}>VPN România</span> 2026
           </h1>
           <p className="text-[var(--text-soft)] text-lg max-w-2xl mx-auto mb-6">
             Am comparat funcțiile, limitele și garanțiile celor mai populare VPN-uri, din ce publică fiecare furnizor. Prețurile se schimbă des, așa că le vezi actualizate pe site-ul lor.
@@ -220,7 +220,7 @@ export default function VpnPage() {
       {/* Alte VPN-uri verificate */}
       <section className="max-w-5xl mx-auto px-4 py-8 border-t border-[var(--border)]">
         <h2 className="text-xl font-black text-[var(--foreground)] mb-2">Alte VPN-uri</h2>
-        <p className="text-[var(--text-muted)] text-sm mb-5">Optiuni suplimentare, pentru cazuri specifice sau buget mai mic.</p>
+        <p className="text-[var(--text-muted)] text-sm mb-5">Opțiuni suplimentare, pentru cazuri specifice sau buget mai mic.</p>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           {ALTE_VPN.map((v) => (
             <div key={v.name} className="bg-[var(--surface)] border border-[var(--border)] rounded-xl p-5 flex flex-col gap-3">
@@ -239,7 +239,7 @@ export default function VpnPage() {
         </div>
         <div className="mt-4 bg-[var(--surface)]/60 border border-[var(--border)] rounded-xl p-4 flex items-center justify-between gap-4 flex-wrap">
           <p className="text-xs text-[var(--text-soft)]">
-            <strong className="text-[var(--text-soft)]">IPRoyal</strong> — nu e un VPN clasic, ci o retea de proxy rezidential. Util pentru web scraping, verificare reclame sau administrare de conturi multiple, nu pentru streaming general.
+            <strong className="text-[var(--text-soft)]">IPRoyal</strong> — nu e un VPN clasic, ci o rețea de proxy rezidențial. Util pentru web scraping, verificare reclame sau administrare de conturi multiple, nu pentru streaming general.
           </p>
           <a href={linkPlatit(LINK_IPROYAL)} target="_blank" rel="sponsored noopener noreferrer"
             className="shrink-0 text-xs font-bold text-[var(--text-soft)] hover:text-[var(--foreground)] bg-[var(--surface-alt)] hover:bg-[var(--surface-high)] px-3 py-1.5 rounded-lg transition-all">

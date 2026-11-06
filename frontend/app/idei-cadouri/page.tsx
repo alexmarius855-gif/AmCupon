@@ -17,7 +17,7 @@ interface Magazin {
 export const metadata: Metadata = {
   title: "Idei de Cadouri 2026 — Reduceri la Cadouri Online",
   description: "Idei de cadouri pentru orice ocazie: ziua de naștere, aniversare, Crăciun, Valentine's Day.",
-  keywords: ["idei cadouri", "cadouri reducere", "cadou ziua nasterii", "cadou craciun", "cadouri online ieftine", "voucher cadou romania", "cod reducere cadouri"],
+  keywords: ["idei cadouri", "cadouri reducere", "cadou ziua nașterii", "cadou crăciun", "cadouri online ieftine", "voucher cadou românia", "cod reducere cadouri"],
   alternates: { canonical: "https://amcupon.ro/idei-cadouri" },
   openGraph: { title: "Idei Cadouri cu Reducere 2026 | AmCupon.ro", url: "https://amcupon.ro/idei-cadouri", siteName: "AmCupon.ro", locale: "ro_RO", type: "website", images: [{ url: "https://amcupon.ro/og-image.png", width: 1200, height: 630 }] },
 };
@@ -191,13 +191,13 @@ export default function IdeiCadouriPage() {
         </section>
 
         <section className="max-w-6xl mx-auto px-4 py-8">
-          <h2 className="text-base font-black text-[var(--text-soft)] mb-4">Exploreaza si alte categorii</h2>
+          <h2 className="text-base font-black text-[var(--text-soft)] mb-4">Explorează și alte categorii</h2>
           <div className="flex flex-wrap gap-2">
             {[
               { href: "/fashion", label: "👗 Fashion" },
-              { href: "/frumusete", label: "💄 Frumusete" },
+              { href: "/frumusete", label: "💄 Frumusețe" },
               { href: "/parfumuri", label: "🌹 Parfumuri" },
-              { href: "/carti", label: "📚 Carti" },
+              { href: "/carti", label: "📚 Cărți" },
               { href: "/copii", label: "👶 Copii" },
               { href: "/oferte-azi", label: "🔥 Oferte de Azi" },
             ].map(l => (

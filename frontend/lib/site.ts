@@ -26,9 +26,9 @@ export const SITE = {
 
 /** Meniul de sus, pe ecrane late. */
 export const MENIU_PRINCIPAL: Link[] = [
-  { href: "/", label: "Acasa" },
+  { href: "/", label: "Acasă" },
   { href: "/black-friday", label: "Black Friday" }, // pana la sfarsitul lui noiembrie
-  { href: "/#promotii", label: "Promotii" },
+  { href: "/#promotii", label: "Promoții" },
   { href: "/produse", label: "Produse" },
   { href: "/blog", label: "Blog" },
   { href: "/toate-magazinele", label: "Magazine" },
@@ -39,16 +39,16 @@ export const MENIU_PRINCIPAL: Link[] = [
 
 /** Meniul de pe telefon (butonul ☰). */
 export const MENIU_MOBIL: Link[] = [
-  { href: "/", label: "🏠 Acasa" },
+  { href: "/", label: "🏠 Acasă" },
   { href: "/black-friday", label: "🖤 Black Friday" }, // pana la sfarsitul lui noiembrie
-  { href: "/#promotii", label: "🔥 Promotii active" },
+  { href: "/#promotii", label: "🔥 Promoții active" },
   { href: "/produse", label: "🛍️ Produse" },
   { href: "/blog", label: "📝 Blog" },
   { href: "/toate-magazinele", label: "🏪 Toate magazinele" },
   { href: "/categorii", label: "📂 Categorii" },
   { href: "/comparator", label: "⚖️ Comparator magazine" },
   { href: "/top-reduceri", label: "⭐ Top reduceri" },
-  { href: "/esim", label: "📡 eSIM Calatorie" },
+  { href: "/esim", label: "📡 eSIM Călătorie" },
   { href: "/vpn", label: "🛡️ Cel mai bun VPN" },
   { href: "/hosting", label: "🌐 Hosting ieftin" },
   { href: "/extensie", label: "🧩 Extensie Chrome" },

@@ -57,7 +57,7 @@ export default function ReviewSection({ magazin }: { magazin: string }) {
     setEroare("");
     if (!disponibil) { setEroare("Recenziile nu sunt disponibile momentan."); return; }
     if (stele === 0) { setEroare("Alege un rating (1-5 stele)."); return; }
-    if (text.trim().length < 10) { setEroare("Scrie cel putin 10 caractere."); return; }
+    if (text.trim().length < 10) { setEroare("Scrie cel puțin 10 caractere."); return; }
     setSubmitting(true);
     // aprobat: false il pune trimiteRecenzie — moderare manuala in Supabase dashboard
     const ok = await trimiteRecenzie({ magazin, nume: nume.trim() || "Anonim", stele, text: text.trim() });
@@ -78,7 +78,7 @@ export default function ReviewSection({ magazin }: { magazin: string }) {
     <section className="mt-10 pt-8 border-t border-[var(--border)]">
       <div className="flex items-center justify-between mb-6">
         <div>
-          <h2 className="text-lg font-black text-[var(--foreground)]">Recenzii cumparatori</h2>
+          <h2 className="text-lg font-black text-[var(--foreground)]">Recenzii cumpărători</h2>
           {medieStele && (
             <div className="flex items-center gap-2 mt-1">
               <span className="text-2xl font-black text-[var(--accent-text)]">{medieStele}</span>
@@ -121,19 +121,19 @@ export default function ReviewSection({ magazin }: { magazin: string }) {
           ))}
         </div>
       ) : (
-        <p className="text-sm text-[var(--text-muted)] italic mb-8">Fii primul care lasa o recenzie pentru acest magazin.</p>
+        <p className="text-sm text-[var(--text-muted)] italic mb-8">Fii primul care lasă o recenzie pentru acest magazin.</p>
       )}
 
       {/* Formular */}
       <div className="bg-[var(--surface)] border border-[var(--border)] rounded-xl p-5">
-        <h3 className="font-black text-[var(--foreground)] text-sm mb-4">Lasa o recenzie</h3>
+        <h3 className="font-black text-[var(--foreground)] text-sm mb-4">Lasă o recenzie</h3>
         {trimis ? (
           <div className="text-center py-4">
             <div className="text-3xl mb-2">&#9989;</div>
-            <p className="font-bold text-[var(--foreground)] text-sm">Multumim pentru recenzie!</p>
+            <p className="font-bold text-[var(--foreground)] text-sm">Mulțumim pentru recenzie!</p>
             <p className="text-xs text-[var(--text-soft)] mt-1">Va apărea după aprobare.</p>
             <button onClick={() => setTrimis(false)} className="mt-3 text-xs text-[var(--accent-text)] hover:underline">
-              Adauga alta recenzie
+              Adaugă altă recenzie
             </button>
           </div>
         ) : (

@@ -6,22 +6,22 @@ import ReducereClient from "./ReducereClient";
 import { cuNumar } from "@/lib/acordNumeral";
 
 export const metadata: Metadata = {
-  title: "Calculator reduceri — cat costa dupa reducere | AmCupon.ro",
+  title: "Calculator reduceri — cât costă după reducere | AmCupon.ro",
   description:
-    "Calculator de reduceri gratuit: afla pretul final si cat economisesti. Calculeaza si doua reduceri succesive (cod peste pret redus) sau ce procent ai…",
+    "Calculator de reduceri gratuit: află prețul final și cât economisești. Calculează și două reduceri succesive (cod peste preț redus) sau ce procent ai…",
   keywords: [
     "calculator reduceri",
     "calcul procent reducere",
-    "cat costa dupa reducere",
+    "cât costă după reducere",
     "calculator discount",
     "reduceri succesive calcul",
-    "cat la suta reducere",
+    "cât la sută reducere",
   ],
   alternates: { canonical: "https://amcupon.ro/calculatoare/reducere" },
   openGraph: {
-    title: "Calculator reduceri — cat costa dupa reducere",
+    title: "Calculator reduceri — cât costă după reducere",
     description:
-      "Afla instant pretul final, economia si reducerea reala cand se aplica doua reduceri una peste alta.",
+      "Află instant prețul final, economia și reducerea reală când se aplică două reduceri una peste alta.",
     url: "https://amcupon.ro/calculatoare/reducere",
     siteName: "AmCupon.ro",
     locale: "ro_RO",
@@ -59,20 +59,20 @@ function statistici(): { cuCod: number; cuPromotie: number } {
 
 const FAQ = [
   {
-    q: "Cum calculez pretul dupa o reducere de 30%?",
-    a: "Inmultesti pretul cu 0,7. Un produs de 249 lei cu 30% reducere costa 174,30 lei, deci economisesti 74,70 lei. Calculatorul de mai sus face asta instant, pentru orice procent.",
+    q: "Cum calculez prețul după o reducere de 30%?",
+    a: "Înmulțești prețul cu 0,7. Un produs de 249 lei cu 30% reducere costă 174,30 lei, deci economisești 74,70 lei. Calculatorul de mai sus face asta instant, pentru orice procent.",
   },
   {
-    q: "Daca am 30% reducere si un cod de 20%, primesc 50%?",
-    a: "Nu. Codul se aplica peste pretul deja redus, nu peste cel initial. La 249 lei: dupa -30% ramane 174,30 lei, iar -20% din acesta inseamna 139,44 lei. Reducerea reala e 44%, nu 50%.",
+    q: "Dacă am 30% reducere și un cod de 20%, primesc 50%?",
+    a: "Nu. Codul se aplică peste prețul deja redus, nu peste cel inițial. La 249 lei: după -30% rămâne 174,30 lei, iar -20% din acesta înseamnă 139,44 lei. Reducerea reală e 44%, nu 50%.",
   },
   {
     q: "Cum aflu ce procent de reducere am primit?",
-    a: "Imparti economia la pretul initial si inmultesti cu 100. De la 249 lei la 174,30 lei inseamna 74,70 / 249 = 30%. Foloseste modul Ce procent e? din calculator.",
+    a: "Împarți economia la prețul inițial și înmulțești cu 100. De la 249 lei la 174,30 lei înseamnă 74,70 / 249 = 30%. Folosește modul Ce procent e? din calculator.",
   },
   {
-    q: "Reducerea se aplica si la costul livrarii?",
-    a: "De regula nu. Majoritatea magazinelor aplica procentul doar la valoarea produselor, iar transportul se adauga dupa. Verifica in cosul de cumparaturi inainte de plata.",
+    q: "Reducerea se aplică și la costul livrării?",
+    a: "De regulă nu. Majoritatea magazinelor aplică procentul doar la valoarea produselor, iar transportul se adaugă după. Verifică în coșul de cumpărături înainte de plată.",
   },
 ];
 
@@ -90,7 +90,7 @@ export default function CalculatorReducerePage() {
         operatingSystem: "Web",
         offers: { "@type": "Offer", price: "0", priceCurrency: "RON" },
         description:
-          "Calculator gratuit pentru pretul final dupa reducere, economia in lei si reducerea reala la doua reduceri succesive.",
+          "Calculator gratuit pentru prețul final după reducere, economia în lei și reducerea reală la două reduceri succesive.",
       },
       {
         "@type": "FAQPage",
@@ -103,7 +103,7 @@ export default function CalculatorReducerePage() {
       {
         "@type": "BreadcrumbList",
         itemListElement: [
-          { "@type": "ListItem", position: 1, name: "Acasa", item: "https://amcupon.ro" },
+          { "@type": "ListItem", position: 1, name: "Acasă", item: "https://amcupon.ro" },
           {
             "@type": "ListItem",
             position: 2,
@@ -130,7 +130,7 @@ export default function CalculatorReducerePage() {
 
       <nav className="text-xs text-[var(--text-muted)] mb-5">
         <Link href="/" className="hover:text-[var(--foreground)] transition-colors">
-          Acasa
+          Acasă
         </Link>
         <span className="mx-1.5">/</span>
         <Link href="/calculatoare" className="hover:text-[var(--foreground)] transition-colors">
@@ -142,49 +142,49 @@ export default function CalculatorReducerePage() {
 
       <h1 className="text-3xl sm:text-4xl font-black mb-3 leading-tight">Calculator de reduceri</h1>
       <p className="text-[var(--text-muted)] mb-8 max-w-2xl">
-        Afla pretul final, cat economisesti si care e reducerea reala cand se aplica doua reduceri
-        una peste alta. Fara cont, fara instalare.
+        Află prețul final, cât economisești și care e reducerea reală când se aplică două reduceri
+        una peste alta. Fără cont, fără instalare.
       </p>
 
       <ReducereClient />
 
       <section className="mt-12">
-        <h2 className="text-2xl font-black mb-4">Capcana celor doua reduceri</h2>
+        <h2 className="text-2xl font-black mb-4">Capcana celor două reduceri</h2>
         <p className="text-[var(--text-muted)] leading-relaxed mb-4">
-          Cea mai frecventa greseala la cumparaturi online e adunarea procentelor. Un produs redus cu
-          30%, peste care aplici un cod de 20%, nu costa cu 50% mai putin. Al doilea procent se
-          calculeaza din pretul deja redus, nu din cel de la raft.
+          Cea mai frecventă greșeală la cumpărături online e adunarea procentelor. Un produs redus cu
+          30%, peste care aplici un cod de 20%, nu costă cu 50% mai puțin. Al doilea procent se
+          calculează din prețul deja redus, nu din cel de la raft.
         </p>
         <div className="bg-[var(--surface)] rounded-xl border border-[var(--border)] p-5 mb-4">
           <table className="w-full text-sm">
             <tbody className="divide-y divide-[var(--border)]">
               <tr>
-                <td className="py-2.5 text-[var(--text-muted)]">Pret initial</td>
+                <td className="py-2.5 text-[var(--text-muted)]">Preț inițial</td>
                 <td className="py-2.5 text-right font-semibold">249,00 lei</td>
               </tr>
               <tr>
-                <td className="py-2.5 text-[var(--text-muted)]">Dupa reducerea de 30%</td>
+                <td className="py-2.5 text-[var(--text-muted)]">După reducerea de 30%</td>
                 <td className="py-2.5 text-right font-semibold">174,30 lei</td>
               </tr>
               <tr>
-                <td className="py-2.5 text-[var(--text-muted)]">Dupa codul de 20%</td>
+                <td className="py-2.5 text-[var(--text-muted)]">După codul de 20%</td>
                 <td className="py-2.5 text-right font-semibold text-[var(--accent-text)]">139,44 lei</td>
               </tr>
               <tr>
-                <td className="py-2.5 text-[var(--text-muted)]">Reducere reala</td>
+                <td className="py-2.5 text-[var(--text-muted)]">Reducere reală</td>
                 <td className="py-2.5 text-right font-semibold">44%, nu 50%</td>
               </tr>
             </tbody>
           </table>
         </div>
         <p className="text-[var(--text-muted)] leading-relaxed">
-          Diferenta de 6 puncte procentuale inseamna 14,94 lei la un singur produs. Ordinea in care
-          se aplica cele doua reduceri nu conteaza matematic: rezultatul e acelasi.
+          Diferența de 6 puncte procentuale înseamnă 14,94 lei la un singur produs. Ordinea în care
+          se aplică cele două reduceri nu contează matematic: rezultatul e același.
         </p>
       </section>
 
       <section className="mt-12">
-        <h2 className="text-2xl font-black mb-4">Intrebari frecvente</h2>
+        <h2 className="text-2xl font-black mb-4">Întrebări frecvente</h2>
         <div className="space-y-3">
           {FAQ.map((f) => (
             <details
@@ -205,9 +205,9 @@ export default function CalculatorReducerePage() {
 
       {cuCod > 0 && (
         <section className="mt-12 bg-[var(--surface)] rounded-xl border border-[var(--border)] p-6">
-          <h2 className="text-xl font-black mb-2">Ai calculat. Acum gaseste reducerea.</h2>
+          <h2 className="text-xl font-black mb-2">Ai calculat. Acum găsește reducerea.</h2>
           <p className="text-[var(--text-muted)] mb-4">
-            Urmarim {cuNumar(cuPromotie, "magazin", "magazine")} cu promotii active, dintre care {cuCod} au si un cod de
+            Urmărim {cuNumar(cuPromotie, "magazin", "magazine")} cu promoții active, dintre care {cuCod} au și un cod de
             reducere activ.
           </p>
           <div className="flex flex-wrap gap-3">

@@ -14,13 +14,13 @@ const LINK_AIRZLINK  = "https://zhonglianhongkonglimited.sjv.io/c/7401119/376637
 const LINK_ORBITMOBILE = "https://orbitmobile.sjv.io/c/7401119/2846112/32966";
 
 export const metadata: Metadata = {
-  title: "eSIM pentru calatorii in afara UE 2026 | AmCupon.ro",
-  description: "Comparam furnizori de eSIM pentru calatorii in afara UE: acoperire, activare, compatibilitate, date mobile fara SIM fizic. Pagina contine linkuri afiliate.",
-  keywords: ["cel mai bun esim", "esim calatorie", "airalo parere", "esim ieftin", "date mobile calatorie", "esim romania 2026", "esim international"],
+  title: "eSIM pentru călătorii în afara UE 2026 | AmCupon.ro",
+  description: "Comparăm furnizori de eSIM pentru călătorii în afara UE: acoperire, activare, compatibilitate, date mobile fără SIM fizic. Pagina conține linkuri afiliate.",
+  keywords: ["cel mai bun esim", "esim călătorie", "airalo părere", "esim ieftin", "date mobile călătorie", "esim românia 2026", "esim internațional"],
   alternates: { canonical: "https://amcupon.ro/esim" },
   openGraph: {
-    title: "eSIM pentru calatorii in afara UE 2026 | AmCupon.ro",
-    description: "Date mobile in afara UE fara SIM fizic. Comparatie de furnizori eSIM — acoperire, activare, compatibilitate.",
+    title: "eSIM pentru călătorii în afara UE 2026 | AmCupon.ro",
+    description: "Date mobile în afara UE fără SIM fizic. Comparație de furnizori eSIM — acoperire, activare, compatibilitate.",
     url: "https://amcupon.ro/esim",
     siteName: "AmCupon.ro",
     locale: "ro_RO",
@@ -35,7 +35,7 @@ const ESIM_TOP = [
     tagline: "eSIM pentru 190+ țări, cu aplicație pentru iOS și Android",
     badge: "Cea mai mare acoperire",
     badgeColor: "bg-[#ddf93c]",
-    pret_min: "pret pe destinatie",
+    pret_min: "preț pe destinație",
     pret_nota: "1GB / 7 zile",
     url: LINK_AIRALO,
     acoperire: "190+ tari",
@@ -43,14 +43,14 @@ const ESIM_TOP = [
     valabilitate: "7-90 zile",
     pros: [
       "Catalog mare: 190+ țări și pachete regionale",
-      "App intuitiva iOS/Android",
-      "Preturi competitive per GB",
-      "Suport 24/7 in app",
-      "eSIM regional (Asia, Europa, Global) — mai ieftin decat national",
+      "App intuitivă iOS/Android",
+      "Prețuri competitive per GB",
+      "Suport 24/7 în app",
+      "eSIM regional (Asia, Europa, Global) — mai ieftin decât național",
       "Compatibil cu toate telefoanele noi",
     ],
-    cons: ["Pretul per GB creste pentru date putine", "Nu include apeluri/SMS in toate planurile"],
-    ideal: "Calatori frecventi, backpackers, business travel",
+    cons: ["Prețul per GB crește pentru date puține", "Nu include apeluri/SMS în toate planurile"],
+    ideal: "Călători frecvenți, backpackers, business travel",
   },
   {
     rank: 2,
@@ -58,21 +58,21 @@ const ESIM_TOP = [
     tagline: "De la echipa NordVPN — aplicație simplă, activare instant",
     badge: "De la echipa NordVPN",
     badgeColor: "bg-[#ddf93c]",
-    pret_min: "pret pe destinatie",
+    pret_min: "preț pe destinație",
     pret_nota: "1GB / 7 zile",
     url: LINK_SAILY,
     acoperire: "150+ tari",
     activare: "Instant (app)",
     valabilitate: "7-30 zile",
     pros: [
-      "De la echipa NordVPN — brand de incredere",
-      "App simpla si curata",
-      "Preturi competitive",
-      "Activare rapida",
-      "Date nerestricate pe viteza (FUP aplicat doar la abuz)",
+      "De la echipa NordVPN — brand de încredere",
+      "App simplă și curată",
+      "Prețuri competitive",
+      "Activare rapidă",
+      "Date nerestricționate pe viteză (FUP aplicat doar la abuz)",
     ],
-    cons: ["Catalog de tari mai mic ca Airalo", "Brand nou — mai putine review-uri"],
-    ideal: "Calatori care vor simplitate si un brand cunoscut",
+    cons: ["Catalog de țări mai mic decât Airalo", "Brand nou — mai puține review-uri"],
+    ideal: "Călători care vor simplitate și un brand cunoscut",
   },
   {
     rank: 3,
@@ -80,7 +80,7 @@ const ESIM_TOP = [
     tagline: "Date nelimitate în unele țări",
     badge: "Date nelimitate",
     badgeColor: "bg-[#ddf93c]",
-    pret_min: "pret pe destinatie",
+    pret_min: "preț pe destinație",
     pret_nota: "date nelimitate",
     url: LINK_AMIGO,
     acoperire: "130+ tari",
@@ -88,12 +88,12 @@ const ESIM_TOP = [
     valabilitate: "7-30 zile",
     pros: [
       "Planuri cu date nelimitate disponibile",
-      "Pret mic per zi",
-      "Activare usoara",
-      "Bun pentru calatorii lungi",
+      "Preț mic per zi",
+      "Activare ușoară",
+      "Bun pentru călătorii lungi",
     ],
-    cons: ["Viteza poate fi throttled dupa un anumit volum", "Acoperire mai mica ca Airalo"],
-    ideal: "Calatorii lungi (1-4 saptamani), buget limitat",
+    cons: ["Viteza poate fi limitată după un anumit volum", "Acoperire mai mică decât Airalo"],
+    ideal: "Călătorii lungi (1-4 săptămâni), buget limitat",
   },
 ];
 
@@ -101,37 +101,37 @@ const ALTE_ESIM = [
   {
     name: "ChillSIM",
     emoji: "🧊",
-    desc: "eSIM European — ideal pentru calatorii in UE, pret mic, activare rapida.",
+    desc: "eSIM European — ideal pentru călătorii în UE, preț mic, activare rapidă.",
     url: LINK_CHILLSIM,
   },
   {
     name: "eSIMo",
     emoji: "🌍",
-    desc: "Acoperire globala, planuri flexibile. Bun pentru Asia si America.",
+    desc: "Acoperire globală, planuri flexibile. Bun pentru Asia și America.",
     url: LINK_ESIMO,
   },
   {
     name: "Esimatic",
     emoji: "📡",
-    desc: "eSIM specializat pentru Asia. Preturi bune pentru Japonia, Coreea, China.",
+    desc: "eSIM specializat pentru Asia. Prețuri bune pentru Japonia, Coreea, China.",
     url: LINK_ESIMATIC,
   },
   {
     name: "eTravelSIM",
     emoji: "✈️",
-    desc: "Dedicat calatorilor — planuri combinate voce + date in 130+ tari.",
+    desc: "Dedicat călătorilor — planuri combinate voce + date în 130+ țări.",
     url: LINK_ETRAVELSIM,
   },
   {
     name: "ByteSIM",
     emoji: "💾",
-    desc: "Date ieftine in Asia si Europa. Activare rapida, app simpla.",
+    desc: "Date ieftine în Asia și Europa. Activare rapidă, app simplă.",
     url: LINK_BYTESIM,
   },
   {
     name: "AirZlink",
     emoji: "🔗",
-    desc: "eSIM global cu preturi transparente si suport rapid.",
+    desc: "eSIM global cu prețuri transparente și suport rapid.",
     url: LINK_AIRZLINK,
   },
   {
@@ -144,36 +144,36 @@ const ALTE_ESIM = [
 
 const FAQ = [
   {
-    q: "Ce este un eSIM si cum functioneaza?",
-    a: "Un eSIM (embedded SIM) este un chip SIM integrat direct in telefonul tau. Nu ai nevoie de un SIM fizic — activezi datele mobile digital, instant, inainte sau in timpul calatoriei. Functioneaza pe toate telefoanele produse dupa 2018 (iPhone XS+, Samsung S20+, Google Pixel 3+).",
+    q: "Ce este un eSIM și cum funcționează?",
+    a: "Un eSIM (embedded SIM) este un chip SIM integrat direct în telefonul tău. Nu ai nevoie de un SIM fizic — activezi datele mobile digital, instant, înainte sau în timpul călătoriei. Funcționează pe toate telefoanele produse după 2018 (iPhone XS+, Samsung S20+, Google Pixel 3+).",
   },
   {
     q: "Telefonul meu este compatibil cu eSIM?",
-    a: "Majoritatea telefoanelor lansate dupa 2019 suporta eSIM: iPhone XS/XR si modele noi, Samsung Galaxy S20+, Google Pixel 3+, Xiaomi Mi 11 si versiuni mai noi. Verifica in Setari > General > Informatii sau contacteaza producatorul.",
+    a: "Majoritatea telefoanelor lansate după 2019 suportă eSIM: iPhone XS/XR și modele noi, Samsung Galaxy S20+, Google Pixel 3+, Xiaomi Mi 11 și versiuni mai noi. Verifică în Setări > General > Informații sau contactează producătorul.",
   },
   {
-    q: "Pot folosi eSIM si SIM fizic simultan?",
-    a: "Da! Daca telefonul tau suporta Dual SIM (fizic + eSIM), poti pastra numarul romanesc activ pentru apeluri/SMS si folosi eSIM-ul pentru date mobile ieftine. Astfel nu platesti roaming si nu ratezi apeluri importante.",
+    q: "Pot folosi eSIM și SIM fizic simultan?",
+    a: "Da! Dacă telefonul tău suportă Dual SIM (fizic + eSIM), poți păstra numărul românesc activ pentru apeluri/SMS și folosi eSIM-ul pentru date mobile ieftine. Astfel nu plătești roaming și nu ratezi apeluri importante.",
   },
   {
-    q: "Am nevoie de eSIM cand calatoresc in Europa?",
-    a: "In tarile UE si SEE, cu un abonament romanesc ai roaming ca acasa (Regulamentul (UE) 2022/612), in limitele politicii de utilizare corecta a operatorului, deci de obicei nu ai nevoie de eSIM. Un eSIM de date are sens in afara UE (de exemplu Turcia, Egipt, Emiratele Arabe Unite, SUA) sau in tari europene din afara UE, precum Elvetia sau Marea Britanie. Preturile variaza pe destinatie si se schimba des, asa ca verifica pretul actual pe site-ul furnizorului.",
+    q: "Am nevoie de eSIM când călătoresc în Europa?",
+    a: "În țările UE și SEE, cu un abonament românesc ai roaming ca acasă (Regulamentul (UE) 2022/612), în limitele politicii de utilizare corectă a operatorului, deci de obicei nu ai nevoie de eSIM. Un eSIM de date are sens în afara UE (de exemplu Turcia, Egipt, Emiratele Arabe Unite, SUA) sau în țări europene din afara UE, precum Elveția sau Marea Britanie. Prețurile variază pe destinație și se schimbă des, așa că verifică prețul actual pe site-ul furnizorului.",
   },
   {
-    q: "Airalo sau Saily — pe care il aleg?",
-    a: "Airalo are un catalog foarte mare (peste 200 de destinatii), util daca mergi in mai multe tari sau in destinatii mai rare. Saily e mai simplu de folosit si e facut de firma din spatele NordVPN. Inainte sa alegi, compara pretul pentru destinatia ta pe ambele site-uri.",
+    q: "Airalo sau Saily — pe care îl aleg?",
+    a: "Airalo are un catalog foarte mare (peste 200 de destinații), util dacă mergi în mai multe țări sau în destinații mai rare. Saily e mai simplu de folosit și e făcut de firma din spatele NordVPN. Înainte să alegi, compară prețul pentru destinația ta pe ambele site-uri.",
   },
   {
     q: "Pot face apeluri cu un eSIM de date?",
-    a: "Planurile de date pure nu includ apeluri/SMS. Poti folosi WhatsApp, Signal, Telegram, Google Meet sau FaceTime prin datele mobile. Unele eSIM-uri au si planuri cu minute incluse, de obicei mai scumpe.",
+    a: "Planurile de date pure nu includ apeluri/SMS. Poți folosi WhatsApp, Signal, Telegram, Google Meet sau FaceTime prin datele mobile. Unele eSIM-uri au și planuri cu minute incluse, de obicei mai scumpe.",
   },
 ];
 
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "ItemList",
-  name: "Cele mai bune eSIM pentru calatorii 2026",
-  description: "Comparatie de furnizori eSIM pentru calatorii in afara UE",
+  name: "Cele mai bune eSIM pentru călătorii 2026",
+  description: "Comparație de furnizori eSIM pentru călătorii în afara UE",
   url: "https://amcupon.ro/esim",
   numberOfItems: ESIM_TOP.length,
   itemListElement: ESIM_TOP.map((e, i) => ({
@@ -206,20 +206,20 @@ export default function EsimPage() {
           <div className="max-w-5xl mx-auto px-4 py-14 text-center">
             <div className="inline-flex items-center gap-2 bg-[var(--background)]/30 border border-[#c3dd2c]/40 rounded-full px-4 py-1.5 text-sm text-[var(--accent-text)] mb-5">
               <span>📡</span>
-              <span>Date mobile in 190+ tari fara SIM fizic</span>
+              <span>Date mobile în 190+ țări fără SIM fizic</span>
             </div>
             <h1 className="text-4xl md:text-5xl font-bold text-[var(--foreground)] mb-4">
-              Cel mai bun <span className="text-[var(--accent-text)]">eSIM</span> pentru Calatorie 2026
+              Cel mai bun <span className="text-[var(--accent-text)]">eSIM</span> pentru Călătorie 2026
             </h1>
             <p className="text-lg text-[var(--text-soft)] max-w-2xl mx-auto mb-8">
-              Comparam cele mai bune eSIM-uri — date mobile ieftine in 190+ tari,
-              activare instant, fara SIM fizic. Ideal pentru orice calator roman.
+              Comparăm cele mai bune eSIM-uri — date mobile ieftine în 190+ țări,
+              activare instant, fără SIM fizic. Ideal pentru orice călător român.
             </p>
             <div className="flex flex-wrap justify-center gap-6 text-sm text-[var(--text-soft)]">
               <span className="flex items-center gap-1.5"><span className="text-[var(--accent-text)]">✓</span> Activare instant</span>
-              <span className="flex items-center gap-1.5"><span className="text-[var(--accent-text)]">✓</span> Fara contracte</span>
-              <span className="flex items-center gap-1.5"><span className="text-[var(--accent-text)]">✓</span> Pastrezi numarul RO</span>
-              <span className="flex items-center gap-1.5"><span className="text-[var(--accent-text)]">✓</span> 190+ tari acoperite</span>
+              <span className="flex items-center gap-1.5"><span className="text-[var(--accent-text)]">✓</span> Fără contracte</span>
+              <span className="flex items-center gap-1.5"><span className="text-[var(--accent-text)]">✓</span> Păstrezi numărul RO</span>
+              <span className="flex items-center gap-1.5"><span className="text-[var(--accent-text)]">✓</span> 190+ țări acoperite</span>
             </div>
           </div>
         </div>
@@ -247,7 +247,7 @@ export default function EsimPage() {
                     <p className="text-[var(--text-soft)] text-sm mb-4">{esim.tagline}</p>
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mb-4">
                       <div className="bg-[var(--surface-alt)]/60 rounded-lg p-2.5 text-center">
-                        <div className="text-xs text-[var(--text-muted)] mb-0.5">Pret de la</div>
+                        <div className="text-xs text-[var(--text-muted)] mb-0.5">Preț de la</div>
                         <div className="text-sm font-bold text-[var(--accent-text)]">{esim.pret_min}</div>
                         <div className="text-xs text-[var(--text-muted)]">{esim.pret_nota}</div>
                       </div>
@@ -305,25 +305,25 @@ export default function EsimPage() {
 
           {/* Ce este eSIM */}
           <div className="bg-[var(--surface)]/60 border border-[var(--border)] rounded-xl p-7 mb-12">
-            <h2 className="text-xl font-bold text-[var(--foreground)] mb-4">Ce este un eSIM si de ce sa il folosesti in calatorie?</h2>
+            <h2 className="text-xl font-bold text-[var(--foreground)] mb-4">Ce este un eSIM și de ce să îl folosești în călătorie?</h2>
             <div className="grid md:grid-cols-3 gap-5 text-sm">
               <div>
-                <div className="text-[var(--accent-text)] font-semibold mb-2">Fara SIM fizic</div>
-                <p className="text-[var(--text-soft)]">Activezi datele mobile direct din aplicatie. Fara sa mergi la un magazin, fara sa astepti posta, fara riscul de a pierde SIM-ul.</p>
+                <div className="text-[var(--accent-text)] font-semibold mb-2">Fără SIM fizic</div>
+                <p className="text-[var(--text-soft)]">Activezi datele mobile direct din aplicație. Fără să mergi la un magazin, fără să aștepți poșta, fără riscul de a pierde SIM-ul.</p>
               </div>
               <div>
-                <div className="text-[var(--accent-text)] font-semibold mb-2">Util in afara UE</div>
-                <p className="text-[var(--text-soft)]">In UE ai &bdquo;roaming ca acasa&rdquo; cu abonamentul romanesc. In afara UE, roamingul poate fi scump, iar un eSIM de date e de obicei alternativa. Compara pretul pentru destinatia ta inainte sa cumperi.</p>
+                <div className="text-[var(--accent-text)] font-semibold mb-2">Util în afara UE</div>
+                <p className="text-[var(--text-soft)]">În UE ai &bdquo;roaming ca acasă&rdquo; cu abonamentul românesc. În afara UE, roamingul poate fi scump, iar un eSIM de date e de obicei alternativa. Compară prețul pentru destinația ta înainte să cumperi.</p>
               </div>
               <div>
-                <div className="text-[var(--accent-text)] font-semibold mb-2">Pastrezi numarul RO</div>
-                <p className="text-[var(--text-soft)]">Daca telefonul are Dual SIM, poti folosi eSIM-ul pentru date si SIM-ul fizic pentru apeluri romanesti. Nu ratezi niciun SMS sau apel.</p>
+                <div className="text-[var(--accent-text)] font-semibold mb-2">Păstrezi numărul RO</div>
+                <p className="text-[var(--text-soft)]">Dacă telefonul are Dual SIM, poți folosi eSIM-ul pentru date și SIM-ul fizic pentru apeluri românești. Nu ratezi niciun SMS sau apel.</p>
               </div>
             </div>
           </div>
 
           {/* Alte eSIM-uri */}
-          <h2 className="text-2xl font-bold text-[var(--foreground)] mb-5">Alte optiuni eSIM</h2>
+          <h2 className="text-2xl font-bold text-[var(--foreground)] mb-5">Alte opțiuni eSIM</h2>
           <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4 mb-14">
             {ALTE_ESIM.map((e) => (
               <a
@@ -343,7 +343,7 @@ export default function EsimPage() {
           </div>
 
           {/* Tabel comparativ */}
-          <h2 className="text-2xl font-bold text-[var(--foreground)] mb-5">Comparatie rapida</h2>
+          <h2 className="text-2xl font-bold text-[var(--foreground)] mb-5">Comparație rapidă</h2>
           <div className="overflow-x-auto mb-14">
             <table className="w-full text-sm border-collapse">
               <thead>
@@ -372,7 +372,7 @@ export default function EsimPage() {
           </div>
 
           {/* FAQ */}
-          <h2 className="text-2xl font-bold text-[var(--foreground)] mb-5">Intrebari frecvente despre eSIM</h2>
+          <h2 className="text-2xl font-bold text-[var(--foreground)] mb-5">Întrebări frecvente despre eSIM</h2>
           <div className="space-y-4 mb-14">
             {FAQ.map((item) => (
               <div key={item.q} className="bg-[var(--surface)] border border-[var(--border)] rounded-xl p-5">
@@ -384,8 +384,8 @@ export default function EsimPage() {
 
           {/* CTA + navlink */}
           <div className="bg-gradient-to-r from-[var(--background)]/30 to-[var(--background)]/30 border border-[var(--border)]/40 rounded-xl p-7 text-center mb-10">
-            <h2 className="text-xl font-bold text-[var(--foreground)] mb-2">Pregatit pentru urmatoarea calatorie?</h2>
-            <p className="text-[var(--text-soft)] text-sm mb-5">Activeaza eSIM-ul inainte sa pleci — 5 minute si esti conectat oriunde in lume.</p>
+            <h2 className="text-xl font-bold text-[var(--foreground)] mb-2">Pregătit pentru următoarea călătorie?</h2>
+            <p className="text-[var(--text-soft)] text-sm mb-5">Activează eSIM-ul înainte să pleci — 5 minute și ești conectat oriunde în lume.</p>
             <a
               href={LINK_AIRALO}
               target="_blank"
@@ -397,7 +397,7 @@ export default function EsimPage() {
           </div>
 
           <div className="flex flex-wrap gap-3 text-sm">
-            <Link href="/calatorie" className="text-[var(--text-soft)] hover:text-[var(--accent-text)] transition-colors">Oferte Calatorie</Link>
+            <Link href="/calatorie" className="text-[var(--text-soft)] hover:text-[var(--accent-text)] transition-colors">Oferte Călătorie</Link>
             <span className="text-[var(--text-soft)]">•</span>
             <Link href="/vpn" className="text-[var(--text-soft)] hover:text-[var(--accent-text)] transition-colors">Cele mai bune VPN-uri</Link>
             <span className="text-[var(--text-soft)]">•</span>

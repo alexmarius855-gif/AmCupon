@@ -33,14 +33,14 @@ export const metadata: Metadata = {
   description:
     `Coduri de reducere și oferte de Crăciun 2026 de la ${pesteMagazine()} partenere AmCupon: jucării, electronice, fashion, parfumuri la prețuri reduse.`,
   keywords: [
-    "reduceri craciun 2026",
-    "oferte craciun romania",
-    "coduri reducere cadouri craciun",
-    "promotii craciun",
-    "cadouri craciun online",
-    "reduceri sarbatori",
-    "voucher craciun",
-    "amcupon craciun",
+    "reduceri crăciun 2026",
+    "oferte crăciun românia",
+    "coduri reducere cadouri crăciun",
+    "promoții crăciun",
+    "cadouri crăciun online",
+    "reduceri sărbători",
+    "voucher crăciun",
+    "amcupon crăciun",
   ],
   alternates: { canonical: "https://amcupon.ro/craciun" },
   openGraph: {

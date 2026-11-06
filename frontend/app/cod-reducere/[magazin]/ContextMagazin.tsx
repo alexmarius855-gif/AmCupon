@@ -55,16 +55,16 @@ export default function ContextMagazin({
         {/* ── Ce urmarim la magazin (doar cu feed) ─────────────────────────── */}
         {stat && (
           <div className="bg-[var(--surface)] border border-[var(--border)] rounded-xl p-5">
-            <h2 className="text-lg font-black text-[var(--foreground)] mb-1">Ce preturi are {nume}</h2>
+            <h2 className="text-lg font-black text-[var(--foreground)] mb-1">Ce prețuri are {nume}</h2>
             <p className="text-xs text-[var(--text-muted)] mb-4">
               Calculat din cele {cuNumar(stat.total, "produs", "produse")} pe care le
-              urmarim automat in catalogul magazinului.
+              urmărim automat în catalogul magazinului.
             </p>
 
             <dl className="grid grid-cols-3 gap-3 mb-4">
               {[
                 { et: "Cel mai ieftin", v: lei(stat.pretMin) },
-                { et: "Pret median", v: lei(stat.pretMedian) },
+                { et: "Preț median", v: lei(stat.pretMedian) },
                 { et: "Cel mai scump", v: lei(stat.pretMax) },
               ].map((x) => (
                 <div key={x.et} className="bg-[var(--surface-alt)] rounded-xl p-3">
@@ -113,11 +113,11 @@ export default function ContextMagazin({
 
             <p className="text-sm text-[var(--text-soft)] leading-relaxed mb-4">
               {cat.reducere_mediana !== null ? (
-                <>Cand vezi o reducere sub {cat.reducere_mediana}% la {numeCat?.toLowerCase()},
-                  merita sa mai astepti &mdash; e sub cat se ofera de obicei in categorie.</>
+                <>Când vezi o reducere sub {cat.reducere_mediana}% la {numeCat?.toLowerCase()},
+                  merită să mai aștepți &mdash; e sub cât se oferă de obicei în categorie.</>
               ) : (
-                <>Prea putine magazine din {numeCat?.toLowerCase()} declara un procent de reducere
-                  ca sa putem publica o valoare tipica onesta.</>
+                <>Prea puține magazine din {numeCat?.toLowerCase()} declară un procent de reducere
+                  ca să putem publica o valoare tipică onestă.</>
               )}
             </p>
 
@@ -130,7 +130,7 @@ export default function ContextMagazin({
               )}
               <Link href="/studiu/coduri-reducere-romania"
                 className="text-xs font-bold px-3 py-1.5 rounded-xl bg-[var(--surface-alt)] text-[var(--text-soft)] border border-[var(--border-strong)] hover:text-[var(--accent-text)] hover:border-[#c9ced5] transition-colors">
-                Cum am masurat
+                Cum am măsurat
               </Link>
               {urlSite && (
                 <a href={urlSite} target="_blank" rel="sponsored nofollow noopener noreferrer"
@@ -150,7 +150,7 @@ export default function ContextMagazin({
       {pasi.length > 0 && (
         <div id="cum-folosesti" className="mt-4 bg-[var(--surface)] border border-[var(--border)] rounded-xl p-5">
           <h2 className="text-lg font-black text-[var(--foreground)] mb-1">Cum aplici un cod de reducere pe {nume}</h2>
-          <p className="text-xs text-[var(--text-muted)] mb-4">Dureaza sub doua minute.</p>
+          <p className="text-xs text-[var(--text-muted)] mb-4">Durează sub două minute.</p>
           <ol className="space-y-3">
             {pasi.map((p, i) => (
               <li key={p.titlu} className="flex gap-3">
@@ -175,7 +175,7 @@ export default function ContextMagazin({
           array din care se construieste schema, deci nu mai pot diverge. */}
       {intrebari.length > 0 && (
         <div className="mt-4 bg-[var(--surface)] border border-[var(--border)] rounded-xl p-5">
-          <h2 className="text-lg font-black text-[var(--foreground)] mb-4">Intrebari frecvente despre {nume}</h2>
+          <h2 className="text-lg font-black text-[var(--foreground)] mb-4">Întrebări frecvente despre {nume}</h2>
           {/* `details` nativ, nu accordion pe JS: continutul ramane in DOM chiar
               inchis, deci Google il vede — cerinta pentru marcajul FAQPage. Un
               accordion care randeaza doar la click ar reintroduce exact problema

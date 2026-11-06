@@ -103,7 +103,7 @@ export async function generateMetadata({
   const { slug } = await params;
   const data = loadData();
   const cat = data.categorii.find(c => c.slug === slug);
-  if (!cat) return { title: "Pagina negasita | AmCupon.ro" };
+  if (!cat) return { title: "Pagina negăsită | AmCupon.ro" };
 
   const pretMinim = Math.min(...cat.produse.map(p => p.pret_de_la));
   const scorMax   = Math.max(...cat.produse.map(p => p.scor_total));
@@ -546,7 +546,7 @@ export default async function TopCategoriePage({
 
         <footer className="border-t border-[var(--border)] dark:border-[var(--border-strong)] py-6 text-center text-xs text-[var(--text-muted)]">
           &copy; {an} AmCupon.ro &middot;{" "}
-          <Link href="/" className="hover:text-[var(--accent-text)]">Acasa</Link>
+          <Link href="/" className="hover:text-[var(--accent-text)]">Acasă</Link>
           {" · "}<Link href="/top" className="hover:text-[var(--accent-text)]">Top Produse</Link>
           {" · "}<Link href="/blog" className="hover:text-[var(--accent-text)]">Blog</Link>
         </footer>

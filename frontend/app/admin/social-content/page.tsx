@@ -33,7 +33,7 @@ export default async function PaginaSocialContent() {
         <div className="text-center max-w-sm">
           <h1 className="text-xl font-black text-[var(--foreground)] mb-2">ADMIN_PASSWORD neconfigurat</h1>
           <p className="text-[var(--text-soft)] text-sm">
-            Configureaza parola de admin in Vercel Environment Variables.
+            Configurează parola de admin în Vercel Environment Variables.
           </p>
         </div>
       </div>

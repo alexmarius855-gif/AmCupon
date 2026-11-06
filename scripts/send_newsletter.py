@@ -189,7 +189,7 @@ def badge_onest(m: dict) -> tuple:
     if promo.get("cod_cupon"):
         return ("COD", "#14181c", "#ddf93c")
 
-    return ("Oferta activa", "#f1f5f9", "#475569")
+    return ("Ofertă activă", "#f1f5f9", "#475569")
 
 
 # ── Black Friday ──────────────────────────────────────────────────────────────
@@ -536,7 +536,7 @@ def make_text(top_n: list, data_str: str) -> str:
         name  = m["magazin"].split(".")[0].capitalize()
         promo = get_best_promo(m)
         cod   = promo.get("cod_cupon", "")
-        titlu = promo.get("nume", "Oferta activa")
+        titlu = promo.get("nume", "Ofertă activă")
         link  = link_iesire(m, promo, SITE_URL)
         lines.append(f"{i}. {name}")
         lines.append(f"   {titlu[:80]}")

@@ -60,11 +60,11 @@ export async function generateMetadata(): Promise<Metadata> {
   const luna = LUNI_RO[new Date().getMonth()];
   const an = new Date().getFullYear();
   const title = `Radarul AmCupon — Cele mai bune oferte de azi (${luna} ${an})`;
-  const description = `Selectia zilnica AmCupon: cele mai bune oferte active, alese automat dupa cod, reducere si valabilitate, cu o nota scurta pentru fiecare. Actualizat zilnic.`;
+  const description = `Selecția zilnică AmCupon: cele mai bune oferte active, alese automat după cod, reducere și valabilitate, cu o notă scurtă pentru fiecare. Actualizat zilnic.`;
   return {
     title: title.length > 60 ? `Radarul AmCupon — Ofertele zilei ${luna} ${an}` : title,
     description,
-    keywords: ["radar oferte","cele mai bune oferte azi","oferte verificate romania","selectie reduceri","coduri reducere zilnic"],
+    keywords: ["radar oferte","cele mai bune oferte azi","oferte verificate românia","selecție reduceri","coduri reducere zilnic"],
     alternates: { canonical: "https://amcupon.ro/radar" },
     openGraph: {
       title, description,
@@ -126,7 +126,7 @@ function RadarEntry({ p, rank }: { p: Pick; rank: number }) {
             {urgent && (
               <span className="text-[11px] font-bold text-red-400 bg-red-500/10 border border-red-500/20 px-2 py-1 rounded-full flex items-center gap-1">
                 <span className="w-1 h-1 rounded-full bg-red-400 animate-pulse" />
-                Expira in {zileText}
+                Expiră în {zileText}
               </span>
             )}
             <Link
@@ -153,8 +153,8 @@ export default function RadarPage() {
       <main className="min-h-screen bg-[var(--background)] text-[var(--foreground)] flex items-center justify-center px-6">
         <div className="text-center max-w-md">
           <div className="text-5xl mb-4">📡</div>
-          <h1 className="text-2xl font-black mb-2">Radarul se incarca</h1>
-          <p className="text-[var(--text-soft)] mb-6">Selectia de azi nu e inca gata. Revino in cateva minute sau vezi toate ofertele active.</p>
+          <h1 className="text-2xl font-black mb-2">Radarul se încarcă</h1>
+          <p className="text-[var(--text-soft)] mb-6">Selecția de azi nu e încă gata. Revino în câteva minute sau vezi toate ofertele active.</p>
           <Link href="/oferte-azi" className="inline-block text-sm font-bold text-[#0c1000] bg-[#ddf93c] hover:bg-[#ddf93c] px-5 py-2.5 rounded-full transition-colors">
             Vezi ofertele active →
           </Link>
@@ -180,7 +180,7 @@ export default function RadarPage() {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     "itemListElement": [
-      { "@type": "ListItem", "position": 1, "name": "Acasa", "item": "https://amcupon.ro" },
+      { "@type": "ListItem", "position": 1, "name": "Acasă", "item": "https://amcupon.ro" },
       { "@type": "ListItem", "position": 2, "name": "Radar", "item": "https://amcupon.ro/radar" },
     ],
   };

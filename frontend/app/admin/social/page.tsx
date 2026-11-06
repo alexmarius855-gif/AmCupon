@@ -46,7 +46,7 @@ export default async function AdminSocialPage() {
       <div className="min-h-screen bg-[var(--background)] flex items-center justify-center px-4">
         <div className="text-center max-w-sm">
           <h1 className="text-xl font-black text-[var(--foreground)] mb-2">ADMIN_PASSWORD neconfigurat</h1>
-          <p className="text-[var(--text-soft)] text-sm">Configureaza parola de admin in Vercel Environment Variables.</p>
+          <p className="text-[var(--text-soft)] text-sm">Configurează parola de admin în Vercel Environment Variables.</p>
         </div>
       </div>
     );

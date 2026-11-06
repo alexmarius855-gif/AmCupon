@@ -19,23 +19,23 @@ interface Magazin {
 export const metadata: Metadata = {
   title: "Reduceri Vacanțe & Călătorii 2026 — Bilete, Hotel, Troller",
   description: `Coduri de reducere vacanțe și travel 2026 ${laParteneri(NISA_CATEGORII.calatorie)}. Reduceri active pentru vacanță ieftină.`,
-  keywords: ["reduceri vacante", "cod reducere booking", "vacanta ieftina romania 2026", "bilete avion reducere", "hotel reducere", "troller reducere", "travel reducere romania"],
+  keywords: ["reduceri vacanțe", "cod reducere booking", "vacanță ieftină românia 2026", "bilete avion reducere", "hotel reducere", "troller reducere", "travel reducere românia"],
   alternates: { canonical: "https://amcupon.ro/calatorie" },
   openGraph: { title: "Reduceri Vacanțe & Călătorii 2026 | AmCupon.ro", url: "https://amcupon.ro/calatorie", siteName: "AmCupon.ro", locale: "ro_RO", type: "website", images: [{ url: "https://amcupon.ro/og-image.png", width: 1200, height: 630 }] },
 };
 
 const TOP_TRAVEL = ["booking.com","airbnb.com","trip.com","rentalcars.com","samsonite.com","delsey.com"];
 const PARTENERI_INTL = [
-  { nume: "KKday", emoji: "🎟️", desc: "Excursii, tururi ghidate si activitati locale in Asia si nu numai — rezervare instanta.", url: "https://kkday.sjv.io/n4P9qx" },
-  { nume: "Pelago by Singapore Airlines", emoji: "✈️", desc: "Experiente si excursii curate de Singapore Airlines — de la city tours la activitati exclusive.", url: "https://pelago.pxf.io/3kyVBv" },
-  { nume: "Air Serbia", emoji: "🛫", desc: "Compania aeriana nationala a Serbiei — zboruri catre Belgrad si conexiuni internationale.", url: "https://www.awin1.com/cread.php?awinmid=5289333&awinaffid=101829567&clickref=" },
-  { nume: "CarmelLimo", emoji: "🚘", desc: "Transfer privat cu sofer in New York si alte orase mari din SUA — alternativa la taxi pentru calatorii de business.", url: "https://www.awin1.com/cread.php?awinmid=2387410&awinaffid=101829567&clickref=" },
+  { nume: "KKday", emoji: "🎟️", desc: "Excursii, tururi ghidate și activități locale în Asia și nu numai — rezervare instant.", url: "https://kkday.sjv.io/n4P9qx" },
+  { nume: "Pelago by Singapore Airlines", emoji: "✈️", desc: "Experiențe și excursii selectate de Singapore Airlines — de la city tours la activități exclusive.", url: "https://pelago.pxf.io/3kyVBv" },
+  { nume: "Air Serbia", emoji: "🛫", desc: "Compania aeriană națională a Serbiei — zboruri către Belgrad și conexiuni internaționale.", url: "https://www.awin1.com/cread.php?awinmid=5289333&awinaffid=101829567&clickref=" },
+  { nume: "CarmelLimo", emoji: "🚘", desc: "Transfer privat cu șofer în New York și alte orașe mari din SUA — alternativă la taxi pentru călătorii de business.", url: "https://www.awin1.com/cread.php?awinmid=2387410&awinaffid=101829567&clickref=" },
 ];
 // Sluguri REALE din output.json — potrivire EXACTA, nu subsir (vezi lib/categoriiNisa.ts)
 const CAT_TRAVEL = ["calatorii"];
 const DESTINATII = [
-  { emoji: "🏔️", label: "Munte Romania", desc: "Bucegi, Retezat, Apuseni" },
-  { emoji: "🌊", label: "Litoral Romania", desc: "Mamaia, Vama Veche, Neptun" },
+  { emoji: "🏔️", label: "Munte România", desc: "Bucegi, Retezat, Apuseni" },
+  { emoji: "🌊", label: "Litoral România", desc: "Mamaia, Vama Veche, Neptun" },
   { emoji: "🌿", label: "Delta Dunării", desc: "Natură sălbatică unică" },
   { emoji: "🏙️", label: "City Break", desc: "Sibiu, Cluj, Brașov, București" },
   { emoji: "✈️", label: "Europa", desc: "Roma, Paris, Viena, Praga" },
@@ -136,7 +136,7 @@ export default function CalatoriePage() {
 
         {/* Parteneri internationali (Impact.com) */}
         <section className="max-w-6xl mx-auto px-4 pb-10">
-          <h2 className="text-xl font-black text-[var(--foreground)] mb-5">Excursii & activitati internationale</h2>
+          <h2 className="text-xl font-black text-[var(--foreground)] mb-5">Excursii & activități internaționale</h2>
           <div className="grid sm:grid-cols-2 gap-4">
             {PARTENERI_INTL.map(p => (
               <a key={p.nume} href={p.url} target="_blank" rel="sponsored noopener noreferrer"
@@ -175,10 +175,10 @@ export default function CalatoriePage() {
         </section>
 
         <section className="max-w-6xl mx-auto px-4 py-8">
-          <h2 className="text-base font-black text-[var(--text-soft)] mb-4">Exploreaza si alte categorii</h2>
+          <h2 className="text-base font-black text-[var(--text-soft)] mb-4">Explorează și alte categorii</h2>
           <div className="flex flex-wrap gap-2">
             {[
-              { href: "/esim", label: "📡 eSIM Calatorie" },
+              { href: "/esim", label: "📡 eSIM Călătorie" },
               { href: "/gadgets", label: "🎮 Gadgets" },
               { href: "/idei-cadouri", label: "🎁 Idei Cadouri" },
               { href: "/fashion", label: "👗 Fashion" },

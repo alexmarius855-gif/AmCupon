@@ -7,10 +7,10 @@ import { useState } from "react";
 type Status = "idle" | "loading" | "success" | "error";
 
 const BENEFICII = [
-  { icon: "🎯", titlu: "Codurile zilei", desc: "Codurile si ofertele active de pe site, intr-un singur email" },
-  { icon: "☀️", titlu: "In fiecare dimineata", desc: "Dupa actualizarea de dimineata a ofertelor" },
-  { icon: "📅", titlu: "Pe categorii", desc: "IT, fashion, casa si restul, cu codul scris in email cand oferta are unul" },
-  { icon: "🚫", titlu: "Zero spam", desc: "Dezabonare cu un singur click, oricand" },
+  { icon: "🎯", titlu: "Codurile zilei", desc: "Codurile și ofertele active de pe site, într-un singur email" },
+  { icon: "☀️", titlu: "În fiecare dimineață", desc: "După actualizarea de dimineață a ofertelor" },
+  { icon: "📅", titlu: "Pe categorii", desc: "IT, fashion, casă și restul, cu codul scris în email când oferta are unul" },
+  { icon: "🚫", titlu: "Zero spam", desc: "Dezabonare cu un singur click, oricând" },
 ];
 
 export default function NewsletterForm() {
@@ -22,7 +22,7 @@ export default function NewsletterForm() {
     e.preventDefault();
     const trimmed = email.trim().toLowerCase();
     if (!trimmed || !trimmed.includes("@")) {
-      setErrMsg("Adresa de email invalida.");
+      setErrMsg("Adresa de email invalidă.");
       setStatus("error");
       return;
     }
@@ -39,11 +39,11 @@ export default function NewsletterForm() {
         setStatus("success");
         try { localStorage.setItem("nl_subscribed", "1"); } catch {}
       } else {
-        setErrMsg(data.error || "Eroare. Incearca din nou.");
+        setErrMsg(data.error || "Eroare. Încearcă din nou.");
         setStatus("error");
       }
     } catch {
-      setErrMsg("Eroare de retea. Incearca din nou.");
+      setErrMsg("Eroare de rețea. Încearcă din nou.");
       setStatus("error");
     }
   }
@@ -70,8 +70,8 @@ export default function NewsletterForm() {
         {status === "success" ? (
           <div className="text-center py-6">
             <div className="text-5xl mb-4">🎉</div>
-            <h2 className="text-2xl font-black text-[var(--foreground)] mb-2">Esti abonat!</h2>
-            <p className="text-[var(--text-soft)] mb-6">Vei primi cele mai bune coduri reducere direct in inbox.</p>
+            <h2 className="text-2xl font-black text-[var(--foreground)] mb-2">Ești abonat!</h2>
+            <p className="text-[var(--text-soft)] mb-6">Vei primi cele mai bune coduri reducere direct în inbox.</p>
             <Link href="/" className="inline-flex items-center gap-2 bg-[#ddf93c] hover:bg-[#ddf93c] text-[#0c1000] font-bold px-6 py-3 rounded-xl transition-colors">
               Descopera ofertele de azi &rarr;
             </Link>
@@ -100,12 +100,12 @@ export default function NewsletterForm() {
               disabled={status === "loading"}
               className="w-full bg-[#ddf93c] hover:bg-[#ddf93c] disabled:opacity-60 text-[#0c1000] font-black py-4 rounded-xl text-base transition-colors shadow-lg shadow-[#ddf93c]/25"
             >
-              {status === "loading" ? "Se proceseaza..." : "Aboneaza-ma gratuit →"}
+              {status === "loading" ? "Se procesează..." : "Abonează-mă gratuit →"}
             </button>
             <p className="text-xs text-[var(--text-muted)] text-center leading-relaxed">
-              Prin abonare esti de acord cu{" "}
-              <Link href="/confidentialitate" className="text-[var(--accent-text)] hover:underline">politica de confidentialitate</Link>
-              . Dezabonare oricand cu un click.
+              Prin abonare ești de acord cu{" "}
+              <Link href="/confidentialitate" className="text-[var(--accent-text)] hover:underline">politica de confidențialitate</Link>
+              . Dezabonare oricând cu un click.
             </p>
           </form>
         )}

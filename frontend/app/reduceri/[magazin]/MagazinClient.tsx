@@ -100,7 +100,7 @@ export default function MagazinClient({ magazin: m }: { magazin: Magazin }) {
               <h1 className="text-2xl font-black text-gray-900">{nume}</h1>
               {m.rank && m.rank <= 20 && (
                 <span className="text-xs font-bold bg-yellow-100 text-yellow-700 px-2 py-0.5 rounded-full">
-                  Top #{m.rank} Romania
+                  Top #{m.rank} România
                 </span>
               )}
               {m.exclusiv && (

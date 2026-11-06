@@ -19,7 +19,7 @@ interface Magazin {
 export const metadata: Metadata = {
   title: "Farmacie Online Ieftină România 2026 — Reduceri Dr. Max",
   description: `Coduri de reducere și oferte la farmaciile online ${laParteneri(NISA_CATEGORII.farmacie)}: suplimente, medicamente fără rețetă, dermatocosmetice.`,
-  keywords: ["farmacie online", "cod reducere dr max", "reduceri vegis", "suplimente ieftine", "medicamente online romania", "farmacie reducere", "catena online"],
+  keywords: ["farmacie online", "cod reducere dr max", "reduceri vegis", "suplimente ieftine", "medicamente online românia", "farmacie reducere", "catena online"],
   alternates: { canonical: "https://amcupon.ro/farmacie" },
   openGraph: { title: "Farmacie Online 2026 | AmCupon.ro", url: "https://amcupon.ro/farmacie", siteName: "AmCupon.ro", locale: "ro_RO", type: "website", images: [{ url: "https://amcupon.ro/og-image.png", width: 1200, height: 630 }] },
 };
@@ -28,7 +28,7 @@ const TOP_PHARMA = ["drmax.ro"];
 // Sluguri REALE din output.json — potrivire EXACTA, nu subsir (vezi lib/categoriiNisa.ts)
 const CAT_PHARMA = ["sanatate"];
 const AVANTAJE = [
-  { icon: "💊", titlu: "Medicamente OTC", desc: "Antialgice, antitusive, vitamine — fara rețetă" },
+  { icon: "💊", titlu: "Medicamente OTC", desc: "Antialgice, antitusive, vitamine — fără rețetă" },
   { icon: "🌿", titlu: "Naturiste & Suplimente", desc: "Plante medicinale, vitamine, probiotice" },
   { icon: "💄", titlu: "Cosmetice Medicale", desc: "Vichy, La Roche-Posay, Avène — dermatologic testate" },
   { icon: "🩺", titlu: "Aparate Medicale", desc: "Tensiometre, glucometre, termometre" },
@@ -36,7 +36,7 @@ const AVANTAJE = [
   { icon: "🐾", titlu: "Produse Veterinare", desc: "Antiparazitare, vitamine pentru animale" },
 ];
 
-const jsonLd = { "@context":"https://schema.org","@type":"CollectionPage","name":"Farmacie Online 2026","url":"https://amcupon.ro/farmacie","description":"Coduri si oferte de la farmaciile online partenere AmCupon" };
+const jsonLd = { "@context":"https://schema.org","@type":"CollectionPage","name":"Farmacie Online 2026","url":"https://amcupon.ro/farmacie","description":"Coduri și oferte de la farmaciile online partenere AmCupon" };
 
 export default function FarmaciePage() {
   const filePath = path.join(process.cwd(), "public", "output.json");
@@ -96,7 +96,7 @@ export default function FarmaciePage() {
         <section className="max-w-6xl mx-auto px-4 pb-10">
           <div className="flex items-center gap-3 mb-5">
             
-            <h2 className="text-xl font-black text-[var(--foreground)]">Farmacii si magazine de sanatate</h2>
+            <h2 className="text-xl font-black text-[var(--foreground)]">Farmacii și magazine de sănătate</h2>
           </div>
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
             {magazine.map((m) => (
@@ -143,11 +143,11 @@ export default function FarmaciePage() {
         </section>
 
         <section className="max-w-6xl mx-auto px-4 py-8">
-          <h2 className="text-base font-black text-[var(--text-soft)] mb-4">Exploreaza si alte categorii</h2>
+          <h2 className="text-base font-black text-[var(--text-soft)] mb-4">Explorează și alte categorii</h2>
           <div className="flex flex-wrap gap-2">
             {[
-              { href: "/sanatate", label: "🌿 Sanatate" },
-              { href: "/frumusete", label: "💄 Frumusete" },
+              { href: "/sanatate", label: "🌿 Sănătate" },
+              { href: "/frumusete", label: "💄 Frumusețe" },
               { href: "/copii", label: "👶 Copii" },
               { href: "/animale", label: "🐾 Animale" },
               { href: "/sport", label: "🏃 Sport" },

@@ -12,12 +12,12 @@ export const metadata: Metadata = {
   description:
     "Tabel de conversie mărimi: haine damă și bărbați, încălțăminte și copii. Echivalențe România/EU, UK, US, Italia, plus lungimea tălpii în cm.",
   keywords: [
-    "convertor marimi",
-    "tabel marimi haine",
-    "conversie marimi incaltaminte",
-    "marimi uk in ro",
-    "marimi us in eu",
-    "ce marime sunt",
+    "convertor mărimi",
+    "tabel mărimi haine",
+    "conversie mărimi încălțăminte",
+    "mărimi uk în ro",
+    "mărimi us în eu",
+    "ce mărime sunt",
   ],
   alternates: { canonical: "https://amcupon.ro/calculatoare/marimi" },
   openGraph: {

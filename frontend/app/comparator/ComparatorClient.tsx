@@ -213,7 +213,7 @@ function SearchMagazin({ onSelect, exclude }: { onSelect: (slug: string) => void
         <input type="text" value={query} onChange={e => setQuery(e.target.value)}
           onFocus={() => results.length > 0 && setShow(true)}
           onBlur={() => setTimeout(() => setShow(false), 150)}
-          placeholder="Cauta magazin (ex: eMAG, Notino...)"
+          placeholder="Caută magazin (ex: eMAG, Notino...)"
           className="w-full bg-[var(--background)] border border-[var(--border)] focus:border-[var(--accent-text)] focus:ring-2 focus:ring-[#ddf93c]/20 rounded-xl pl-9 pr-4 py-3 text-sm focus:outline-none transition-all" />
       </div>
       {show && results.length > 0 && (

@@ -33,7 +33,7 @@ const MESAJE_STATICE: AnuntItem[] = [
   // jos. Inainte scria "300+" (stale de luni de zile, cand site-ul are 1177) si asta
   // era exact textul pe care Google il vedea in HTML-ul server-side, pe FIECARE pagina.
   { text: "Magazine partenere — coduri actualizate zilnic", href: "/toate-magazinele", emoji: "🛍️" },
-  { text: "Extensie Chrome — in curs de lansare, anunta-te acum", href: "/extensie", emoji: "🧩" },
+  { text: "Extensie Chrome — în curs de lansare, anunță-te acum", href: "/extensie", emoji: "🧩" },
   // „top 5 oferte zilnic" era fals: send_newsletter.py trimite pana la 20 (--n 20), o data pe zi.
   { text: "Newsletter gratuit — ofertele zilei, o dată pe zi pe email", href: "/newsletter", emoji: "📬" },
 ];
@@ -133,7 +133,7 @@ export default function AnuntAnimat() {
             key={i}
             onClick={() => { setVisible(false); setTimeout(() => { setIdx(i); setVisible(true); }, 300); }}
             className={`w-1.5 h-1.5 rounded-full transition-all ${i === idx % Math.min(items.length, 8) ? "bg-[#ddf93c]" : "bg-[var(--surface-high)]"}`}
-            aria-label={`Anunt ${i + 1}`}
+            aria-label={`Anunț ${i + 1}`}
           />
         ))}
       </div>

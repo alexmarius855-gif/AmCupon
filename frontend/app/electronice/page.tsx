@@ -19,7 +19,7 @@ interface Magazin {
 export const metadata: Metadata = {
   title: "Electronice România 2026 — Oferte de la Parteneri",
   description: `Oferte la electronice ${laParteneri(NISA_CATEGORII.electronice)}: telefoane, laptopuri, gadgeturi. Actualizate zilnic.`,
-  keywords: ["cod reducere emag", "reduceri altex", "electronice ieftine", "cod reducere pcgarage", "laptop reducere", "telefon reducere romania", "electronice online"],
+  keywords: ["cod reducere eMAG", "reduceri altex", "electronice ieftine", "cod reducere pcgarage", "laptop reducere", "telefon reducere românia", "electronice online"],
   alternates: { canonical: "https://amcupon.ro/electronice" },
   openGraph: { title: "Electronice 2026 | AmCupon.ro", url: "https://amcupon.ro/electronice", siteName: "AmCupon.ro", locale: "ro_RO", type: "website", images: [{ url: "https://amcupon.ro/og-image.png", width: 1200, height: 630 }] },
 };
@@ -133,7 +133,7 @@ export default function ElectronicePage() {
         </section>
 
         <section className="max-w-6xl mx-auto px-4 py-8">
-          <h2 className="text-base font-black text-[var(--text-soft)] mb-4">Exploreaza si alte categorii</h2>
+          <h2 className="text-base font-black text-[var(--text-soft)] mb-4">Explorează și alte categorii</h2>
           <div className="flex flex-wrap gap-2">
             {[
               { href: "/gadgets", label: "📡 Gadgets" },

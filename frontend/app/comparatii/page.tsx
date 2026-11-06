@@ -6,8 +6,8 @@ import { pesteMagazine } from "@/lib/cifreSite";
 import { cuNumar } from "@/lib/acordNumeral";
 
 export const metadata: Metadata = {
-  title: "Comparatii Magazine Online Romania 2026 — AmCupon.ro",
-  description: "Comparatii intre magazine online din Romania, cu ofertele si codurile de reducere active la fiecare. Actualizate zilnic.",
+  title: "Comparații Magazine Online România 2026 — AmCupon.ro",
+  description: "Comparații între magazine online din România, cu ofertele și codurile de reducere active la fiecare. Actualizate zilnic.",
   alternates: { canonical: "https://amcupon.ro/comparatii" },
 };
 
@@ -66,7 +66,7 @@ export default function ComparatiiPage() {
     "@type": "BreadcrumbList",
     itemListElement: [
       { "@type": "ListItem", position: 1, name: "AmCupon.ro", item: "https://amcupon.ro" },
-      { "@type": "ListItem", position: 2, name: "Comparatii magazine", item: "https://amcupon.ro/comparatii" },
+      { "@type": "ListItem", position: 2, name: "Comparații magazine", item: "https://amcupon.ro/comparatii" },
     ],
   };
 
@@ -82,10 +82,10 @@ export default function ComparatiiPage() {
 
           {/* Hero */}
           <div className="text-center mb-10">
-            <h1 className="text-4xl font-bold text-[var(--foreground)] mb-3">Comparatii Magazine Online</h1>
+            <h1 className="text-4xl font-bold text-[var(--foreground)] mb-3">Comparații Magazine Online</h1>
             <p className="text-[var(--text-soft)] text-lg max-w-2xl mx-auto">
-              Nu stii unde sa cumperi? Comparam cele mai populare magazine online din Romania
-              ca sa iei decizia corecta — cu coduri de reducere actualizate zilnic.
+              Nu știi unde să cumperi? Comparăm cele mai populare magazine online din România
+              ca să iei decizia corectă — cu coduri de reducere actualizate zilnic.
             </p>
           </div>
 
@@ -112,7 +112,7 @@ export default function ComparatiiPage() {
                     {c.n1} vs {c.n2}
                   </h2>
                   <p className={`text-sm font-medium ${cl.text}`}>
-                    {c.luna} {c.an} — Comparatie completa
+                    {c.luna} {c.an} — Comparație completă
                   </p>
                   <p className="text-[var(--text-muted)] text-xs mt-2">
                     Oferte, livrare, reduceri, verdict final →
@@ -124,7 +124,7 @@ export default function ComparatiiPage() {
 
           {/* CTA jos */}
           <div className="mt-12 text-center bg-[var(--surface)] border border-[var(--border)] rounded-xl p-8">
-            <h2 className="text-xl font-bold text-[var(--foreground)] mb-2">Cauti un cod de reducere specific?</h2>
+            <h2 className="text-xl font-bold text-[var(--foreground)] mb-2">Cauți un cod de reducere specific?</h2>
             <p className="text-[var(--text-soft)] text-sm mb-5">
               AmCupon.ro actualizează de mai multe ori pe zi codurile și ofertele de la {pesteMagazine()} partenere.
             </p>

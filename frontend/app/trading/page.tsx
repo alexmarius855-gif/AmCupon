@@ -2,21 +2,21 @@ import { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Cel mai bun Broker Romania 2026 — Binance, XTB",
+  title: "Cel mai bun Broker România 2026 — Binance, XTB",
   description: "Comparăm platformele de investiții folosite de români în 2026 — XTB (acțiuni și ETF-uri), Binance (crypto), eToro (copy trading), Trading212 — pe…",
   keywords: [
-    "cel mai bun broker romania",
-    "xtb parere romania",
-    "binance romania",
-    "etoro parere",
-    "trading212 parere",
-    "investitii actiuni romania 2026",
-    "platforma crypto romania",
-    "broker actiuni 0 comision",
+    "cel mai bun broker românia",
+    "xtb părere românia",
+    "binance românia",
+    "etoro părere",
+    "trading212 părere",
+    "investiții acțiuni românia 2026",
+    "platformă crypto românia",
+    "broker acțiuni 0 comision",
   ],
   alternates: { canonical: "https://amcupon.ro/trading" },
   openGraph: {
-    title: "Cel mai bun Broker & Platforma Trading Romania 2026 | AmCupon.ro",
+    title: "Cel mai bun Broker & Platformă Trading România 2026 | AmCupon.ro",
     description: "XTB, Binance, eToro, Trading212 — comparație pe condițiile publicate: comisioane, reglementare, tipuri de active.",
     url: "https://amcupon.ro/trading",
     siteName: "AmCupon.ro",
@@ -138,9 +138,9 @@ const COMPARATIE = [
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "CollectionPage",
-  name: "Cel mai bun Broker Romania 2026",
+  name: "Cel mai bun Broker România 2026",
   url: "https://amcupon.ro/trading",
-  description: "Comparatie XTB, Binance, eToro, Trading212 pentru investitori romani 2026",
+  description: "Comparație XTB, Binance, eToro, Trading212 pentru investitori români 2026",
 };
 
 export default function TradingPage() {
@@ -154,9 +154,9 @@ export default function TradingPage() {
         {/* Breadcrumb */}
         <nav className="bg-[var(--surface)]/80 backdrop-blur-sm border-b border-[var(--border)]">
           <div className="max-w-6xl mx-auto px-4 py-3 flex items-center gap-1.5 text-xs text-[var(--text-muted)]">
-            <Link href="/" className="hover:text-[var(--accent-text)] transition-colors">Acasa</Link>
+            <Link href="/" className="hover:text-[var(--accent-text)] transition-colors">Acasă</Link>
             <span>/</span>
-            <span className="text-[var(--text-soft)] font-medium">Trading & Investitii</span>
+            <span className="text-[var(--text-soft)] font-medium">Trading & Investiții</span>
           </div>
         </nav>
 
@@ -173,16 +173,16 @@ export default function TradingPage() {
             </div>
             <div className="text-6xl mb-5 drop-shadow-2xl">📈</div>
             <h1 className="text-4xl md:text-5xl font-black text-[var(--foreground)] mb-4 tracking-tight">
-              Cel mai bun Broker Romania{" "}
+              Cel mai bun Broker România{" "}
               <span className="text-transparent bg-clip-text" style={{ backgroundImage: "linear-gradient(135deg, #34d399, #ddf93c)" }}>
                 {an}
               </span>
             </h1>
             <p className="text-[var(--text-soft)] text-lg mb-8 max-w-2xl mx-auto leading-relaxed">
-              Am comparat XTB, Binance, eToro si Trading212 pe conditiile publicate de fiecare: comisioane, siguranta, usurinta utilizarii. Nu e consultanta financiara.
+              Am comparat XTB, Binance, eToro și Trading212 pe condițiile publicate de fiecare: comisioane, siguranță, ușurința utilizării. Nu e consultanță financiară.
             </p>
             <div className="flex flex-wrap justify-center gap-2">
-              {["Actiuni 0%", "ETF-uri", "Crypto", "Copy Trading", "Staking", "Cont Demo"].map(c => (
+              {["Acțiuni 0%", "ETF-uri", "Crypto", "Copy Trading", "Staking", "Cont Demo"].map(c => (
                 <span key={c} className="bg-[var(--surface-alt)] border border-[var(--border-strong)] text-[var(--text-soft)] text-xs font-semibold px-3 py-1.5 rounded-full">{c}</span>
               ))}
             </div>
@@ -192,15 +192,15 @@ export default function TradingPage() {
         {/* Disclaimer */}
         <div className="bg-[#ddf93c]/10 border-b border-[var(--accent-text)]/30">
           <div className="max-w-6xl mx-auto px-4 py-3 text-xs text-[var(--accent-text)] text-center">
-            ⚠️ Investitiile implica riscuri. Acest ghid are scop informativ, nu constituie sfat financiar. Tranzactionarea produselor leverage comporta risc ridicat de pierdere a capitalului.
+            ⚠️ Investițiile implică riscuri. Acest ghid are scop informativ, nu constituie sfat financiar. Tranzacționarea produselor leverage comportă risc ridicat de pierdere a capitalului.
           </div>
         </div>
 
         {/* Top 4 platforme */}
         <section className="max-w-6xl mx-auto px-4 py-12">
           <div className="text-center mb-10">
-            <p className="text-xs font-bold text-emerald-400 uppercase tracking-widest mb-2">COMPARATIE PLATFORME</p>
-            <h2 className="text-3xl font-black text-[var(--foreground)]">Top 4 platforme de investitii pentru romani</h2>
+            <p className="text-xs font-bold text-emerald-400 uppercase tracking-widest mb-2">COMPARAȚIE PLATFORME</p>
+            <h2 className="text-3xl font-black text-[var(--foreground)]">Top 4 platforme de investiții pentru români</h2>
             <p className="text-[var(--text-soft)] text-sm mt-2">Comparate pe condițiile publicate de fiecare platformă — nu e consultanță financiară</p>
           </div>
 
@@ -256,7 +256,7 @@ export default function TradingPage() {
                       </ul>
                     </div>
                     <div>
-                      <p className="text-xs font-bold text-[var(--text-muted)] uppercase tracking-wider mb-2">De stiut</p>
+                      <p className="text-xs font-bold text-[var(--text-muted)] uppercase tracking-wider mb-2">De știut</p>
                       <ul className="space-y-1.5">
                         {p.dezavantaje.map(d => (
                           <li key={d} className="flex items-start gap-2 text-sm text-[var(--text-soft)]">
@@ -288,7 +288,7 @@ export default function TradingPage() {
         <section className="bg-[var(--surface)] border-t border-b border-[var(--border)] py-12 px-4">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-8">
-              <p className="text-xs font-bold text-emerald-400 uppercase tracking-widest mb-2">COMPARATIE RAPIDA</p>
+              <p className="text-xs font-bold text-emerald-400 uppercase tracking-widest mb-2">COMPARAȚIE RAPIDĂ</p>
               <h2 className="text-2xl font-black text-[var(--foreground)]">XTB vs Binance vs eToro vs Trading212</h2>
             </div>
             <div className="overflow-x-auto">
@@ -321,7 +321,7 @@ export default function TradingPage() {
         {/* Ghid alegere */}
         <section className="max-w-4xl mx-auto px-4 py-12">
           <p className="text-xs font-bold text-[var(--text-muted)] uppercase tracking-widest mb-3">GHID ALEGERE</p>
-          <h2 className="text-2xl font-black text-[var(--foreground)] mb-7">Ce platforma sa alegi in {an}?</h2>
+          <h2 className="text-2xl font-black text-[var(--foreground)] mb-7">Ce platformă să alegi în {an}?</h2>
           <div className="grid sm:grid-cols-2 gap-4">
             {[
               { icon: "🏆", titlu: "Vrei ETF-uri (VWCE, CSPX)?", raspuns: "XTB are ETF-uri precum VWCE și CSPX, fără comision până la 100.000 € rulaj lunar, cu interfață în română și cont în RON. Alternativă: Trading212." },
@@ -343,7 +343,7 @@ export default function TradingPage() {
           <div className="bg-gradient-to-r from-[var(--surface)] to-[var(--background)] border border-[var(--accent-text)]/40 rounded-xl p-6 flex flex-col sm:flex-row items-center justify-between gap-4">
             <div>
               <p className="text-xs font-bold text-[var(--accent-text)] uppercase tracking-widest mb-1">ALTERNATIVĂ</p>
-              <h3 className="text-xl font-black text-[var(--foreground)] mb-1">Revolut — actiuni si crypto in aplicatie</h3>
+              <h3 className="text-xl font-black text-[var(--foreground)] mb-1">Revolut — acțiuni și crypto în aplicație</h3>
               <p className="text-[var(--text-soft)] text-sm">Planul Standard e gratuit; din aplicație cumperi acțiuni fracționate și crypto. Util ca al doilea cont.</p>
             </div>
             <a href={LINK_REVOLUT} target="_blank" rel="nofollow noopener noreferrer"
@@ -355,7 +355,7 @@ export default function TradingPage() {
 
         {/* Related */}
         <section className="max-w-6xl mx-auto px-4 py-8">
-          <p className="text-xs font-bold text-[var(--text-muted)] uppercase tracking-widest mb-4">EXPLOREAZA SI</p>
+          <p className="text-xs font-bold text-[var(--text-muted)] uppercase tracking-widest mb-4">EXPLOREAZĂ ȘI</p>
           <div className="flex flex-wrap gap-2">
             {[
               { href: "/vpn", label: "🔒 VPN & Securitate" },

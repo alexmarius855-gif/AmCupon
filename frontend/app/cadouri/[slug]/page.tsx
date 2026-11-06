@@ -25,201 +25,201 @@ const OCAZII: Record<string, {
 }> = {
   "ea": {
     titlu: "Cadouri pentru Ea",
-    titluMeta: "Cadouri pentru Ea 2026 — Idei Originale cu Pret",
-    desc: "Bijuterii, fashion, parfumuri — cadouri perfecte pentru femeia speciala din viata ta",
-    descMeta: "Top idei cadouri pentru femei: bijuterii, parfumuri, fashion. Preturi de la 50 RON. Livrare rapida din magazinele partenere.",
+    titluMeta: "Cadouri pentru Ea 2026 — Idei Originale cu Preț",
+    desc: "Bijuterii, fashion, parfumuri — cadouri perfecte pentru femeia specială din viața ta",
+    descMeta: "Top idei cadouri pentru femei: bijuterii, parfumuri, fashion. Prețuri de la 50 RON. Livrare rapidă din magazinele partenere.",
     emoji: "💝",
     from: "#ddf93c", to: "#ddf93c",
     catSluguri: ["bijuterii", "fashion"],
     keywords: ["bijuterie", "colier", "cercei", "bratara", "inel", "parfum", "rochie", "poseta"],
-    editorial: "Alege un cadou care sa o surprinda cu adevarat. Bijuteriile raman intotdeauna o alegere sigura — de la cercei delicati la coliere cu pandantiv. Daca o cunosti bine, o piesa fashion sau un parfum de calitate sunt cadouri memorabile.",
-    idei: ["Colier sau cercei argint/aur", "Parfum de firma", "Set cosmetice premium", "Geanta sau poseta eleganta", "Esarfa sau sal de calitate", "Bijuterie cu piatra pretioasa"],
+    editorial: "Alege un cadou care să o surprindă cu adevărat. Bijuteriile rămân întotdeauna o alegere sigură — de la cercei delicați la coliere cu pandantiv. Dacă o cunoști bine, o piesă fashion sau un parfum de calitate sunt cadouri memorabile.",
+    idei: ["Colier sau cercei argint/aur", "Parfum de firmă", "Set cosmetice premium", "Geantă sau poșetă elegantă", "Eșarfă sau șal de calitate", "Bijuterie cu piatră prețioasă"],
   },
   "el": {
     titlu: "Cadouri pentru El",
-    titluMeta: "Cadouri pentru El 2026 — Idei pentru Barbati",
-    desc: "Electronice, auto, sport — cadouri practice si utile pentru barbatul din viata ta",
-    descMeta: "Idei cadouri barbati: gadgeturi, accesorii auto, echipamente sport. Preturi reale din magazine partenere. Livrare Romania.",
+    titluMeta: "Cadouri pentru El 2026 — Idei pentru Bărbați",
+    desc: "Electronice, auto, sport — cadouri practice și utile pentru bărbatul din viața ta",
+    descMeta: "Idei cadouri bărbați: gadgeturi, accesorii auto, echipamente sport. Prețuri reale din magazine partenere. Livrare România.",
     emoji: "🎁",
     from: "#ddf93c", to: "#ddf93c",
     catSluguri: ["auto", "electronice", "sport"],
     keywords: ["navigatie", "gadget", "accesoriu", "sport", "fitness", "smartwatch"],
-    editorial: "Gadgeturile si accesoriile auto sunt mereu binevenite pentru barbati. Daca e pasionat de sport, echipamentele de fitness sunt o alegere practica. Electronicele — smartwatch, casti, accesorii — raman cadouri sigure.",
-    idei: ["Smartwatch sau ceas sport", "Accesorii auto (navigatie GPS, camera dashcam)", "Casti wireless", "Echipament fitness", "Power bank premium", "Set scule sau unelte"],
+    editorial: "Gadgeturile și accesoriile auto sunt mereu binevenite pentru bărbați. Dacă e pasionat de sport, echipamentele de fitness sunt o alegere practică. Electronicele — smartwatch, căști, accesorii — rămân cadouri sigure.",
+    idei: ["Smartwatch sau ceas sport", "Accesorii auto (navigație GPS, cameră dashcam)", "Căști wireless", "Echipament fitness", "Power bank premium", "Set scule sau unelte"],
   },
   "copii": {
     titlu: "Cadouri pentru Copii",
-    titluMeta: "Cadouri Copii 2026 — Jucarii si Idei Originale",
-    desc: "Jucarii educative, carti si echipamente sport pentru copii de toate varstele",
-    descMeta: "Cele mai bune cadouri pentru copii: jucarii educative, carti, echipamente sport. Toate cu livrare rapida in Romania.",
+    titluMeta: "Cadouri Copii 2026 — Jucării și Idei Originale",
+    desc: "Jucării educative, cărți și echipamente sport pentru copii de toate vârstele",
+    descMeta: "Cele mai bune cadouri pentru copii: jucării educative, cărți, echipamente sport. Toate cu livrare rapidă în România.",
     emoji: "🧸",
     from: "#ddf93c", to: "#ddf93c",
     catSluguri: ["fashion", "sport", "bijuterii"],
     keywords: ["copil", "bebe", "jucarie", "carte", "educativ", "sport", "noriel"],
-    editorial: "Jucariile educative stimuleaza creativitatea si imaginatia. Cartile sunt mereu un cadou cu valoare pe termen lung. Pentru copiii mai mari, echipamentele sport sau jocurile de strategie sunt perfecte.",
-    idei: ["Jucarie educativa STEM", "Set de carti ilustrate", "Bicicleta sau trotineta", "Joc de societate", "Set creativ (pictura, sculptura)", "Abonament platforme invatare"],
+    editorial: "Jucăriile educative stimulează creativitatea și imaginația. Cărțile sunt mereu un cadou cu valoare pe termen lung. Pentru copiii mai mari, echipamentele sport sau jocurile de strategie sunt perfecte.",
+    idei: ["Jucărie educativă STEM", "Set de cărți ilustrate", "Bicicletă sau trotinetă", "Joc de societate", "Set creativ (pictură, sculptură)", "Abonament platforme învățare"],
   },
   "botez": {
     titlu: "Cadouri Botez",
-    titluMeta: "Cadouri Botez 2026 — Idei Originale pentru Bebelusi",
-    desc: "Cadouri elegante si memorabile pentru ocazia botezului — bijuterii, jucarii si decoratiuni speciale",
-    descMeta: "Cele mai frumoase cadouri de botez: bijuterii argint cu gravura, jucarii de plus, cadouri personalizate. Preturi si livrare Romania.",
+    titluMeta: "Cadouri Botez 2026 — Idei Originale pentru Bebeluși",
+    desc: "Cadouri elegante și memorabile pentru ocazia botezului — bijuterii, jucării și decorațiuni speciale",
+    descMeta: "Cele mai frumoase cadouri de botez: bijuterii argint cu gravură, jucării de pluș, cadouri personalizate. Prețuri și livrare România.",
     emoji: "👶",
     from: "#ddf93c", to: "#c3dd2c",
     catSluguri: ["bijuterii", "fashion"],
     keywords: ["botez", "bebelus", "argint", "gravura", "bijuterie", "set cadou"],
-    editorial: "Botezul este una dintre cele mai speciale ocazii din viata unui copil. Cadourile traditionale — bijuterii din argint cu gravura, seturi de haine premium sau jucarii de plus de calitate — raman amintiri pretioase pentru parinti si copil deopotriva.",
-    idei: ["Bijuterie argint cu gravura (bratara, lantisor)", "Patura personalizata cu numele bebelusului", "Set haine premium pentru bebelus", "Album foto personalizat", "Jucarie muzicala sau de plus", "Set cosmetic bebelus premium"],
+    editorial: "Botezul este una dintre cele mai speciale ocazii din viața unui copil. Cadourile tradiționale — bijuterii din argint cu gravură, seturi de haine premium sau jucării de pluș de calitate — rămân amintiri prețioase pentru părinți și copil deopotrivă.",
+    idei: ["Bijuterie argint cu gravură (brățară, lănțișor)", "Pătură personalizată cu numele bebelușului", "Set haine premium pentru bebeluș", "Album foto personalizat", "Jucărie muzicală sau de pluș", "Set cosmetic bebeluș premium"],
   },
   "nasi": {
-    titlu: "Cadouri pentru Nasi",
-    titluMeta: "Cadouri pentru Nasi 2026 — Idei Elegante si Speciale",
-    desc: "Cadouri de lux si elegante pentru nasii tai — bijuterii premium, seturi cadou exclusive",
-    descMeta: "Cadouri originale pentru nasi: bijuterii aur/argint, seturi cadou premium, accesorii elegante. Idei pentru botez si nunta. Livrare Romania.",
+    titlu: "Cadouri pentru Nași",
+    titluMeta: "Cadouri pentru Nași 2026 — Idei Elegante și Speciale",
+    desc: "Cadouri de lux și elegante pentru nașii tăi — bijuterii premium, seturi cadou exclusive",
+    descMeta: "Cadouri originale pentru nași: bijuterii aur/argint, seturi cadou premium, accesorii elegante. Idei pentru botez și nuntă. Livrare România.",
     emoji: "💍",
     from: "#7c3aed", to: "#c084fc",
     catSluguri: ["bijuterii", "fashion"],
     keywords: ["nas", "fina", "bijuterie", "set cadou", "aur", "argint", "elegant"],
-    editorial: "Nasii merita un cadou pe masura rolului lor special. Bijuteriile din aur sau argint, seturile cadou premium sau accesoriile de lux transmit respectul si recunostinta. Alege ceva memorabil, care sa ramana o amintire de valoare.",
-    idei: ["Set bijuterii aur/argint (colier + cercei)", "Ceas elegant pentru ea sau el", "Set cosmetice sau parfumuri premium", "Geanta sau portofel de lux", "Voucher la un restaurant/spa", "Tablou personalizat sau obiect decorativ"],
+    editorial: "Nașii merită un cadou pe măsura rolului lor special. Bijuteriile din aur sau argint, seturile cadou premium sau accesoriile de lux transmit respectul și recunoștința. Alege ceva memorabil, care să rămână o amintire de valoare.",
+    idei: ["Set bijuterii aur/argint (colier + cercei)", "Ceas elegant pentru ea sau el", "Set cosmetice sau parfumuri premium", "Geantă sau portofel de lux", "Voucher la un restaurant/spa", "Tablou personalizat sau obiect decorativ"],
   },
   "mama": {
     titlu: "Cadouri pentru Mama",
     titluMeta: "Cadouri pentru Mama 2026 — Idei Speciale",
-    desc: "Bijuterii, cosmetice si mici rasfaturi pentru cea mai importanta femeie din viata ta",
-    descMeta: "Idei cadouri mama: bijuterii, parfumuri, cosmetice. De la 50 RON la 500 RON. Livrare rapida in Romania din magazine partenere.",
+    desc: "Bijuterii, cosmetice și mici răsfățuri pentru cea mai importantă femeie din viața ta",
+    descMeta: "Idei cadouri mama: bijuterii, parfumuri, cosmetice. De la 50 RON la 500 RON. Livrare rapidă în România din magazine partenere.",
     emoji: "🌸",
     from: "#ddf93c", to: "#ddf93c",
     catSluguri: ["bijuterii", "fashion"],
     keywords: ["mama", "bijuterie", "colier", "cercei", "parfum", "cosmetice", "ingrijire"],
-    editorial: "Mama merita sa se simta speciala in fiecare zi, nu doar de ziua ei. Un colier cu pandantiv personalizat, un parfum preferat sau un set de cosmetice premium sunt cadouri care ii amintesc ca este iubita si apreciata.",
-    idei: ["Colier cu pandantiv inimioara sau initial", "Parfum de firma preferat", "Set ingrijire piele premium", "Pijamale sau halat de baie moale", "Carte motivationala + ciocolata artizanala", "Planta sau aranjament floral"],
+    editorial: "Mama merită să se simtă specială în fiecare zi, nu doar de ziua ei. Un colier cu pandantiv personalizat, un parfum preferat sau un set de cosmetice premium sunt cadouri care îi amintesc că este iubită și apreciată.",
+    idei: ["Colier cu pandantiv inimioară sau inițială", "Parfum de firmă preferat", "Set îngrijire piele premium", "Pijamale sau halat de baie moale", "Carte motivațională + ciocolată artizanală", "Plantă sau aranjament floral"],
   },
   "tata": {
     titlu: "Cadouri pentru Tata",
-    titluMeta: "Cadouri pentru Tata 2026 — Idei Practice si Utile",
-    desc: "Gadgeturi, accesorii auto si unelte — cadouri practice pentru tatal tau",
-    descMeta: "Cele mai bune cadouri pentru tata: accesorii auto, gadgeturi tech, unelte. Livrare rapida in Romania. Preturi de la 100 RON.",
+    titluMeta: "Cadouri pentru Tata 2026 — Idei Practice și Utile",
+    desc: "Gadgeturi, accesorii auto și unelte — cadouri practice pentru tatăl tău",
+    descMeta: "Cele mai bune cadouri pentru tata: accesorii auto, gadgeturi tech, unelte. Livrare rapidă în România. Prețuri de la 100 RON.",
     emoji: "👨",
     from: "#1f2329", to: "#ddf93c",
     catSluguri: ["auto", "electronice", "sport"],
     keywords: ["tata", "auto", "navigatie", "gadget", "smartwatch", "unelte", "sport"],
-    editorial: "Tatii apreciaza cadourile practice si utile. Accesoriile auto, gadgeturile tech sau echipamentele pentru hobby-urile lui sunt alegeri sigure. Daca e pasionat de sport sau de bricolaj, optiunile sunt nelimitate.",
-    idei: ["Navigatie GPS sau camera auto", "Smartwatch sport", "Set unelte premium", "Casti wireless Bluetooth", "Abonament streaming sau gaming", "Voucher pentru o activitate (karting, tir, etc.)"],
+    editorial: "Tații apreciază cadourile practice și utile. Accesoriile auto, gadgeturile tech sau echipamentele pentru hobby-urile lui sunt alegeri sigure. Dacă e pasionat de sport sau de bricolaj, opțiunile sunt nelimitate.",
+    idei: ["Navigație GPS sau cameră auto", "Smartwatch sport", "Set unelte premium", "Căști wireless Bluetooth", "Abonament streaming sau gaming", "Voucher pentru o activitate (karting, tir, etc.)"],
   },
   "valentine": {
     titlu: "Cadouri Valentine's Day",
     titluMeta: "Cadouri Valentine's Day 2026 — Idei Romantice",
-    desc: "Bijuterii, parfumuri si surprize romantice pentru ziua indragostitilor",
-    descMeta: "Cadouri Valentine's Day: bijuterii, parfumuri, set romantic. Idei originale cu livrare rapida in Romania. De la 50 RON.",
+    desc: "Bijuterii, parfumuri și surprize romantice pentru ziua îndrăgostiților",
+    descMeta: "Cadouri Valentine's Day: bijuterii, parfumuri, set romantic. Idei originale cu livrare rapidă în România. De la 50 RON.",
     emoji: "❤️",
     from: "#e64343", to: "#ddf93c",
     catSluguri: ["bijuterii", "fashion"],
     keywords: ["valentine", "bijuterie", "inima", "colier", "parfum", "romantic", "dragoste"],
-    editorial: "Valentine's Day este momentul perfect sa arati cat de mult tii la persoana iubita. O bijuterie cu motiv inimioara, un parfum special sau un set romantic de cosmetice sunt cadouri care transmit emotie si afectiune.",
-    idei: ["Colier sau cercei cu pandantiv inimioara", "Set parfum + lotiune corp", "Bratara personalizata cu gravura", "Set ciocolata artizanala + trandafiri", "Bijuterie argint cu piatra rosie", "Weekend romantic (voucher cazare)"],
+    editorial: "Valentine's Day este momentul perfect să arăți cât de mult ții la persoana iubită. O bijuterie cu motiv inimioară, un parfum special sau un set romantic de cosmetice sunt cadouri care transmit emoție și afecțiune.",
+    idei: ["Colier sau cercei cu pandantiv inimioară", "Set parfum + loțiune corp", "Brățară personalizată cu gravură", "Set ciocolată artizanală + trandafiri", "Bijuterie argint cu piatră roșie", "Weekend romantic (voucher cazare)"],
   },
   "craciun": {
-    titlu: "Cadouri de Craciun",
-    titluMeta: "Cadouri de Craciun 2026 — Idei pentru Toata Familia",
-    desc: "Cadouri pentru intreaga familie — de la copii la adulti, pentru orice buget",
-    descMeta: "Idei cadouri Craciun 2026: jucarii, bijuterii, gadgeturi, fashion. Oferte de la magazinele partenere AmCupon.",
+    titlu: "Cadouri de Crăciun",
+    titluMeta: "Cadouri de Crăciun 2026 — Idei pentru Toată Familia",
+    desc: "Cadouri pentru întreaga familie — de la copii la adulți, pentru orice buget",
+    descMeta: "Idei cadouri Crăciun 2026: jucării, bijuterii, gadgeturi, fashion. Oferte de la magazinele partenere AmCupon.",
     emoji: "🎄",
     from: "#16a34a", to: "#dc2626",
     catSluguri: ["bijuterii", "auto", "electronice", "sport", "fashion"],
-    keywords: ["craciun", "cadou", "mos craciun", "sarbatori"],
-    editorial: "Craciunul este magia din care faci parte si tu. Alege cadouri care sa aduca bucurie: bijuterii elegante pentru doamne, gadgeturi pentru barbati, jucarii educative pentru copii. Cel mai important e gandul din spate.",
-    idei: ["Bijuterie pentru ea (colier/cercei)", "Gadget sau smartwatch pentru el", "Jucarie premium pentru copii", "Set cosmetice sau parfum", "Carte sau joc de societate", "Voucher shopping sau experienta"],
+    keywords: ["craciun", "cadou", "moș crăciun", "sarbatori"],
+    editorial: "Crăciunul este magia din care faci parte și tu. Alege cadouri care să aducă bucurie: bijuterii elegante pentru doamne, gadgeturi pentru bărbați, jucării educative pentru copii. Cel mai important e gândul din spate.",
+    idei: ["Bijuterie pentru ea (colier/cercei)", "Gadget sau smartwatch pentru el", "Jucărie premium pentru copii", "Set cosmetice sau parfum", "Carte sau joc de societate", "Voucher shopping sau experiență"],
   },
   "nastere": {
-    titlu: "Cadouri de Nastere",
-    titluMeta: "Cadouri Zi de Nastere 2026 — Idei Originale cu Pret",
-    desc: "Bijuterii, fashion si surprize originale pentru ziua de nastere a cuiva drag",
-    descMeta: "Idei originale cadouri zi de nastere: bijuterii, parfumuri, gadgeturi. Preturi de la 50 RON. Magazine partenere cu livrare rapida.",
+    titlu: "Cadouri de Naștere",
+    titluMeta: "Cadouri Zi de Naștere 2026 — Idei Originale cu Preț",
+    desc: "Bijuterii, fashion și surprize originale pentru ziua de naștere a cuiva drag",
+    descMeta: "Idei originale cadouri zi de naștere: bijuterii, parfumuri, gadgeturi. Prețuri de la 50 RON. Magazine partenere cu livrare rapidă.",
     emoji: "🎂",
     from: "#ddf93c", to: "#c3dd2c",
     catSluguri: ["bijuterii", "fashion", "electronice"],
-    keywords: ["nastere", "zi nastere", "aniversare", "bijuterie", "cadou", "surprise"],
-    editorial: "Ziua de nastere este momentul in care un cadou atent ales face diferenta. Gandeste-te la ce isi doreste persoana respectiva sau ce ar folosi zilnic. O bijuterie cu semnificatie, un gadget dorit sau un parfum preferat sunt mereu binevenit.",
-    idei: ["Bijuterie cu piatra lunii de nastere", "Parfum sau set cosmetice", "Gadget dorit (casti, smartwatch)", "Voucher la un magazin preferat", "Experienta (concert, spectacol, spa)", "Set carte + ciocolata artizanala"],
+    keywords: ["nastere", "zi naștere", "aniversare", "bijuterie", "cadou", "surprise"],
+    editorial: "Ziua de naștere este momentul în care un cadou atent ales face diferența. Gândește-te la ce își dorește persoana respectivă sau ce ar folosi zilnic. O bijuterie cu semnificație, un gadget dorit sau un parfum preferat sunt mereu binevenite.",
+    idei: ["Bijuterie cu piatra lunii de naștere", "Parfum sau set cosmetice", "Gadget dorit (căști, smartwatch)", "Voucher la un magazin preferat", "Experiență (concert, spectacol, spa)", "Set carte + ciocolată artizanală"],
   },
   "absolvire": {
     titlu: "Cadouri Absolvire",
-    titluMeta: "Cadouri Absolvire 2026 — Idei pentru Absolventi",
-    desc: "Cadouri practice si memorabile pentru absolvirea scolii, liceului sau facultatii",
-    descMeta: "Idei cadouri absolvire: bijuterii, gadgeturi, carti, accesorii. Felicita absolventi cu un cadou memorabil. Livrare Romania.",
+    titluMeta: "Cadouri Absolvire 2026 — Idei pentru Absolvenți",
+    desc: "Cadouri practice și memorabile pentru absolvirea școlii, liceului sau facultății",
+    descMeta: "Idei cadouri absolvire: bijuterii, gadgeturi, cărți, accesorii. Felicită absolvenții cu un cadou memorabil. Livrare România.",
     emoji: "🎓",
     from: "#ddf93c", to: "#ddf93c",
     catSluguri: ["electronice", "bijuterii", "sport"],
     keywords: ["absolvire", "diploma", "facultate", "liceu", "scoala", "cadou"],
-    editorial: "Absolvirea este o realizare majora care merita sarbatorita. Un gadget util pentru urmatoarea etapa a vietii, o bijuterie memorabila sau un voucher de calatorie sunt cadouri care marcat inceputul unui nou capitol.",
-    idei: ["Laptop sau tableta (facultate)", "Smartwatch sau ceas elegant", "Bijuterie cu data absolvirii gravata", "Voucher calatorie sau experienta", "Set carti de business/dezvoltare personala", "Geanta sau rucsac profesional"],
+    editorial: "Absolvirea este o realizare majoră care merită sărbătorită. Un gadget util pentru următoarea etapă a vieții, o bijuterie memorabilă sau un voucher de călătorie sunt cadouri care marchează începutul unui nou capitol.",
+    idei: ["Laptop sau tabletă (facultate)", "Smartwatch sau ceas elegant", "Bijuterie cu data absolvirii gravată", "Voucher călătorie sau experiență", "Set cărți de business/dezvoltare personală", "Geantă sau rucsac profesional"],
   },
   "pasti": {
-    titlu: "Cadouri de Paste",
-    titluMeta: "Cadouri de Paste 2026 — Idei pentru Sarbatori",
-    desc: "Cadouri speciale pentru sarbatoarea Pastelui — pentru copii si adulti",
-    descMeta: "Idei cadouri Paste: bijuterii, jucarii, seturi cadou. Sarbatoare in familie cu cadouri atente. Livrare Romania.",
+    titlu: "Cadouri de Paște",
+    titluMeta: "Cadouri de Paște 2026 — Idei pentru Sărbători",
+    desc: "Cadouri speciale pentru sărbătoarea Paștelui — pentru copii și adulți",
+    descMeta: "Idei cadouri Paște: bijuterii, jucării, seturi cadou. Sărbătoare în familie cu cadouri atente. Livrare România.",
     emoji: "🐣",
     from: "#84cc16", to: "#eab308",
     catSluguri: ["bijuterii", "fashion", "sport"],
     keywords: ["paste", "sarbatoare", "primavara", "cadou", "familie"],
-    editorial: "Pastele reuneste familia in jurul meselor festive. Un cadou atent ales — o bijuterie eleganta, un set de cosmetice sau un accesoriu util — completeaza sarbatoarea cu un strop de bucurie in plus.",
-    idei: ["Set ciocolata belgiana artizanala", "Bijuterie argint primavara", "Planta sau aranjament floral", "Carte de bucate sau lectura", "Set ingrijire corp premium", "Accesorii pentru activitati in aer liber"],
+    editorial: "Paștele reunește familia în jurul meselor festive. Un cadou atent ales — o bijuterie elegantă, un set de cosmetice sau un accesoriu util — completează sărbătoarea cu un strop de bucurie în plus.",
+    idei: ["Set ciocolată belgiană artizanală", "Bijuterie argint primăvară", "Plantă sau aranjament floral", "Carte de bucate sau lectură", "Set îngrijire corp premium", "Accesorii pentru activități în aer liber"],
   },
 
   /* ─── Filtre buget ─────────────────────────────────────────────────────── */
   "sub-100-lei": {
     titlu: "Cadouri sub 100 Lei",
-    titluMeta: "Cadouri sub 100 Lei 2026 — Idei Ieftine si Originale",
-    desc: "Cadouri frumoase si originale cu un buget de maxim 100 lei — bijuterii, accesorii, fashion",
-    descMeta: "Idei cadouri sub 100 lei: bijuterii, accesorii, fashion. Cadouri originale la pret mic, de la magazinele partenere AmCupon.",
+    titluMeta: "Cadouri sub 100 Lei 2026 — Idei Ieftine și Originale",
+    desc: "Cadouri frumoase și originale cu un buget de maxim 100 lei — bijuterii, accesorii, fashion",
+    descMeta: "Idei cadouri sub 100 lei: bijuterii, accesorii, fashion. Cadouri originale la preț mic, de la magazinele partenere AmCupon.",
     emoji: "💰",
     from: "#22c55e", to: "#10b981",
     catSluguri: ["bijuterii", "fashion", "sport"],
     keywords: ["cadou ieftin", "cadou sub 100 lei", "cadou buget mic", "cadou accesibil"],
     pretMax: 100,
-    editorial: "Un buget de 100 lei nu inseamna un cadou slab. Bijuteriile din argint, accesoriile fashion sau produsele de sport pot fi la preturi accesibile si totusi memorabile. Cheia e alegerea atenta.",
-    idei: ["Bratara sau cercei argint sub 80 lei", "Esarfa sau fulare elegant", "Set ingrijire mini", "Carte sau jurnal premium", "Accesoriu sport (sosete, bentita, bratara fitness)", "Lumanare parfumata artizanala"],
+    editorial: "Un buget de 100 lei nu înseamnă un cadou slab. Bijuteriile din argint, accesoriile fashion sau produsele de sport pot fi la prețuri accesibile și totuși memorabile. Cheia e alegerea atentă.",
+    idei: ["Brățară sau cercei argint sub 80 lei", "Eșarfă sau fular elegant", "Set îngrijire mini", "Carte sau jurnal premium", "Accesoriu sport (șosete, bentiță, brățară fitness)", "Lumânare parfumată artizanală"],
   },
   "sub-200-lei": {
     titlu: "Cadouri sub 200 Lei",
-    titluMeta: "Cadouri sub 200 Lei 2026 — Idei Originale cu Pret Bun",
+    titluMeta: "Cadouri sub 200 Lei 2026 — Idei Originale cu Preț Bun",
     desc: "Cadouri de calitate cu buget de maxim 200 lei — bijuterii, fashion, sport",
-    descMeta: "Idei cadouri sub 200 lei: bijuterii, accesorii premium, fashion. Cadouri originale cu pret bun. Livrare rapida Romania.",
+    descMeta: "Idei cadouri sub 200 lei: bijuterii, accesorii premium, fashion. Cadouri originale cu preț bun. Livrare rapidă România.",
     emoji: "🎁",
     from: "#ddf93c", to: "#c3dd2c",
     catSluguri: ["bijuterii", "fashion", "sport"],
-    keywords: ["cadou sub 200 lei", "cadou pret mediu", "cadou original", "cadou 150 lei"],
+    keywords: ["cadou sub 200 lei", "cadou preț mediu", "cadou original", "cadou 150 lei"],
     pretMax: 200,
-    editorial: "La 200 lei gasesti cadouri cu adevarat impresionante. Coliere sau seturi de bijuterii, genti fashion sau echipamente sport de calitate sunt toate accesibile in aceasta gama de pret.",
-    idei: ["Colier sau set bijuterii argint", "Geanta sau portofel elegant", "Parfum mini sau set cosmetice", "Incaltaminte sport de calitate", "Ceas sport sau accesorii fitness", "Set carte + accesorii premium"],
+    editorial: "La 200 lei găsești cadouri cu adevărat impresionante. Coliere sau seturi de bijuterii, genți fashion sau echipamente sport de calitate sunt toate accesibile în această gamă de preț.",
+    idei: ["Colier sau set bijuterii argint", "Geantă sau portofel elegant", "Parfum mini sau set cosmetice", "Încălțăminte sport de calitate", "Ceas sport sau accesorii fitness", "Set carte + accesorii premium"],
   },
   "sub-500-lei": {
     titlu: "Cadouri sub 500 Lei",
-    titluMeta: "Cadouri sub 500 Lei 2026 — Cadouri Premium la Pret Bun",
-    desc: "Cadouri premium si memorabile cu buget de maxim 500 lei — bijuterii, electronice, fashion",
-    descMeta: "Cadouri sub 500 lei: bijuterii premium, electronice, accesorii auto. Cadouri de impact fara a rupe bugetul. Livrare Romania.",
+    titluMeta: "Cadouri sub 500 Lei 2026 — Cadouri Premium la Preț Bun",
+    desc: "Cadouri premium și memorabile cu buget de maxim 500 lei — bijuterii, electronice, fashion",
+    descMeta: "Cadouri sub 500 lei: bijuterii premium, electronice, accesorii auto. Cadouri de impact fără a rupe bugetul. Livrare România.",
     emoji: "💎",
     from: "#ddf93c", to: "#ddf93c",
     catSluguri: ["bijuterii", "auto", "electronice", "sport", "fashion"],
     keywords: ["cadou sub 500 lei", "cadou premium", "cadou 400 lei", "cadou calitate"],
     pretMax: 500,
-    editorial: "La 500 lei intri in zona cadourilor cu adevarat premium. Bijuterii aur sau argint de calitate, gadgeturi utile, accesorii auto sau echipamente sport profesionale — toate sunt accesibile in aceasta gama.",
-    idei: ["Bijuterie aur/argint premium", "Smartwatch sau ceas sport", "Accesoriu auto (navigatie, camera)", "Set sport profesional", "Geanta sau rucsac premium", "Set electronic (casti, power bank, hub)"],
+    editorial: "La 500 lei intri în zona cadourilor cu adevărat premium. Bijuterii aur sau argint de calitate, gadgeturi utile, accesorii auto sau echipamente sport profesionale — toate sunt accesibile în această gamă.",
+    idei: ["Bijuterie aur/argint premium", "Smartwatch sau ceas sport", "Accesoriu auto (navigație, cameră)", "Set sport profesional", "Geantă sau rucsac premium", "Set electronic (căști, power bank, hub)"],
   },
   "peste-500-lei": {
     titlu: "Cadouri Luxoase peste 500 Lei",
     titluMeta: "Cadouri de Lux peste 500 Lei — Cadouri Speciale 2026",
-    desc: "Cadouri premium si de lux pentru ocazii speciale — bijuterii, electronice, auto",
-    descMeta: "Cadouri luxoase peste 500 lei: bijuterii premium, electronice de top, accesorii auto. Pentru nasi, nunti, anniversari speciale.",
+    desc: "Cadouri premium și de lux pentru ocazii speciale — bijuterii, electronice, auto",
+    descMeta: "Cadouri luxoase peste 500 lei: bijuterii premium, electronice de top, accesorii auto. Pentru nași, nunți, aniversări speciale.",
     emoji: "👑",
     from: "#7c3aed", to: "#c084fc",
     catSluguri: ["bijuterii", "auto", "electronice", "sport"],
-    keywords: ["cadou lux", "cadou scump", "cadou nunta", "cadou premium"],
+    keywords: ["cadou lux", "cadou scump", "cadou nuntă", "cadou premium"],
     pretMin: 500,
-    editorial: "Cadourile luxoase transmit o apreciere deosebita. Pentru nasi, anniversari sau ocazii speciale, o bijuterie din aur, un gadget de top sau un accesoriu auto premium sunt alegeri irezistibile.",
-    idei: ["Bijuterie aur cu diamant/pietre pretioase", "Smartwatch premium (Apple Watch, Samsung)", "Navigatie dedicata auto", "Set parfum de lux", "Geanta designer", "Weekend la spa (voucher)"],
+    editorial: "Cadourile luxoase transmit o apreciere deosebită. Pentru nași, aniversări sau ocazii speciale, o bijuterie din aur, un gadget de top sau un accesoriu auto premium sunt alegeri irezistibile.",
+    idei: ["Bijuterie aur cu diamant/pietre prețioase", "Smartwatch premium (Apple Watch, Samsung)", "Navigație dedicată auto", "Set parfum de lux", "Geantă designer", "Weekend la spa (voucher)"],
   },
 };
 
@@ -288,7 +288,7 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { slug } = await params;
   const oc = OCAZII[slug];
-  if (!oc) return { title: "Pagina negasita" };
+  if (!oc) return { title: "Pagina negăsită" };
   const url = `https://amcupon.ro/cadouri/${slug}`;
   return {
     // 22.09.2026: cu sufixul de brand, opt dintre cele saisprezece pagini de ocazie
@@ -298,7 +298,7 @@ export async function generateMetadata({
       ? `${oc.titluMeta} | AmCupon.ro`
       : oc.titluMeta.slice(0, 60).trim(),
     description: oc.descMeta,
-    keywords: [`cadouri ${slug}`, "idei cadouri romania", "cadouri originale", "cadouri cu pret", ...oc.keywords],
+    keywords: [`cadouri ${slug}`, "idei cadouri românia", "cadouri originale", "cadouri cu preț", ...oc.keywords],
     alternates: { canonical: url },
     openGraph: {
       title: oc.titluMeta,
@@ -387,7 +387,7 @@ export default async function CadouriSlugPage({
                 <span className="text-[var(--accent-text)]">✓</span> Prețuri din feed-ul magazinelor
               </span>
               <span className="flex items-center gap-1.5 bg-[var(--surface-alt)]/80 border border-[var(--border-strong)] text-[var(--text-soft)] px-3 py-1.5 rounded-full">
-                <span className="text-[var(--accent-text)]">✓</span> Livrare Romania
+                <span className="text-[var(--accent-text)]">✓</span> Livrare România
               </span>
             </div>
           </div>
@@ -472,18 +472,18 @@ export default async function CadouriSlugPage({
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
                 <div className="bg-[var(--surface-alt)]/50 rounded-xl p-4">
                   <div className="text-2xl mb-2">💡</div>
-                  <h3 className="text-sm font-bold text-[var(--foreground)] mb-1">Gandeste-te la persoana</h3>
-                  <p className="text-xs text-[var(--text-muted)]">Care sunt hobby-urile si pasiunile ei/lui? Un cadou personalizat valoreath mult mai mult decat unul scump dar nepotrivit.</p>
+                  <h3 className="text-sm font-bold text-[var(--foreground)] mb-1">Gândește-te la persoana</h3>
+                  <p className="text-xs text-[var(--text-muted)]">Care sunt hobby-urile și pasiunile ei/lui? Un cadou personalizat valorează mult mai mult decât unul scump dar nepotrivit.</p>
                 </div>
                 <div className="bg-[var(--surface-alt)]/50 rounded-xl p-4">
                   <div className="text-2xl mb-2">💰</div>
-                  <h3 className="text-sm font-bold text-[var(--foreground)] mb-1">Stabileste un buget</h3>
-                  <p className="text-xs text-[var(--text-muted)]">Nu trebuie sa cheltuiesti mult pentru a impresiona. Cadouri intre 100-300 RON sunt apreciate la fel de mult ca cele mai scumpe.</p>
+                  <h3 className="text-sm font-bold text-[var(--foreground)] mb-1">Stabilește un buget</h3>
+                  <p className="text-xs text-[var(--text-muted)]">Nu trebuie să cheltuiești mult pentru a impresiona. Cadouri între 100-300 RON sunt apreciate la fel de mult ca cele mai scumpe.</p>
                 </div>
                 <div className="bg-[var(--surface-alt)]/50 rounded-xl p-4">
                   <div className="text-2xl mb-2">📦</div>
-                  <h3 className="text-sm font-bold text-[var(--foreground)] mb-1">Verifica livrarea</h3>
-                  <p className="text-xs text-[var(--text-muted)]">Asigura-te ca produsul ajunge la timp. Toate magazinele partenere AmCupon livreaza in Romania, cele mai multe in 24-48h.</p>
+                  <h3 className="text-sm font-bold text-[var(--foreground)] mb-1">Verifică livrarea</h3>
+                  <p className="text-xs text-[var(--text-muted)]">Asigură-te că produsul ajunge la timp. Toate magazinele partenere AmCupon livrează în România, cele mai multe în 24-48h.</p>
                 </div>
               </div>
             </div>
@@ -492,7 +492,7 @@ export default async function CadouriSlugPage({
           {/* Oferte active din magazine */}
           {promoRelevante.length > 0 && (
             <section className="mb-10">
-              <h2 className="text-lg font-black text-[var(--foreground)] mb-4">Oferte active azi in magazine</h2>
+              <h2 className="text-lg font-black text-[var(--foreground)] mb-4">Oferte active azi în magazine</h2>
               <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
                 {promoRelevante.slice(0, 8).map((m: Magazin, i: number) => (
                   <Link

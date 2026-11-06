@@ -32,24 +32,24 @@ interface Magazin extends CardMagazin {
  *      ce e citit din date, nu.
  */
 const DESC_CATEG: Record<string, string> = {
-  "marketplace":     "Coduri de reducere pentru marketplace-uri si magazine generaliste, unde gasesti de toate intr-un singur loc. Actualizam ofertele zilnic si pastram doar ce e activ.",
-  "casa-gradina":    "Reduceri la mobila, decoratiuni, unelte si tot ce tine de casa si gradina. De la amenajari complete pana la obiecte mici care schimba o camera.",
-  "electronice":     "Coduri reducere pentru laptopuri, telefoane, televizoare si electronice IT. Categoria cu cele mai frecvente campanii din an.",
-  "fashion":         "Voucher si coduri de reducere pentru haine, incaltaminte si accesorii. Colectii noi, stocuri la final de sezon si reduceri care se schimba saptamanal.",
-  "software":        "Reduceri la licente software, aplicatii si servicii digitale - de la antivirus si VPN pana la unelte de productivitate.",
-  "calatorii":       "Coduri reducere pentru cazare, zboruri, eSIM si servicii de calatorie. Utile mai ales cand rezervi din timp.",
-  "beauty":          "Voucher si coduri de reducere pentru parfumuri, cosmetice si produse de ingrijire. Una dintre cele mai active categorii ca numar de promotii.",
-  "sanatate":        "Reduceri la farmacii online, suplimente, vitamine si produse de ingrijire personala.",
-  "sport":           "Coduri reducere pentru echipament sportiv, imbracaminte de antrenament si articole outdoor.",
-  "carti-educatie":  "Reduceri la carti, manuale si audiobook-uri. Campaniile cresc vizibil in perioada de inceput de scoala.",
-  "copii":           "Coduri reducere la jucarii, haine si produse pentru copii si bebelusi.",
-  "auto-moto":       "Reduceri la piese auto, anvelope, accesorii si echipament moto.",
-  "servicii":        "Coduri reducere pentru servicii online: gazduire, unelte de business, abonamente si platforme digitale.",
-  "bijuterii":       "Voucher si reduceri la bijuterii, ceasuri si accesorii - de la piese de zi cu zi pana la cadouri.",
-  "animale":         "Coduri reducere pentru hrana, accesorii si produse de ingrijire pentru animale de companie.",
-  "mancare-bauturi": "Reduceri la livrare de mancare, cafea, vin si bauturi. Categorie mica la noi deocamdata, dar in crestere.",
-  "cadouri-flori":   "Coduri reducere pentru flori, cadouri personalizate si experiente. Cerere concentrata in jurul sarbatorilor.",
-  "financiar":       "Reduceri si oferte la carduri, credite, asigurari si servicii financiare.",
+  "marketplace":     "Coduri de reducere pentru marketplace-uri și magazine generaliste, unde găsești de toate într-un singur loc. Actualizăm ofertele zilnic și păstrăm doar ce e activ.",
+  "casa-gradina":    "Reduceri la mobilă, decorațiuni, unelte și tot ce ține de casă și grădină. De la amenajări complete până la obiecte mici care schimbă o cameră.",
+  "electronice":     "Coduri reducere pentru laptopuri, telefoane, televizoare și electronice IT. Categoria cu cele mai frecvente campanii din an.",
+  "fashion":         "Voucher și coduri de reducere pentru haine, încălțăminte și accesorii. Colecții noi, stocuri la final de sezon și reduceri care se schimbă săptămânal.",
+  "software":        "Reduceri la licențe software, aplicații și servicii digitale - de la antivirus și VPN până la unelte de productivitate.",
+  "calatorii":       "Coduri reducere pentru cazare, zboruri, eSIM și servicii de călătorie. Utile mai ales când rezervi din timp.",
+  "beauty":          "Voucher și coduri de reducere pentru parfumuri, cosmetice și produse de îngrijire. Una dintre cele mai active categorii ca număr de promoții.",
+  "sanatate":        "Reduceri la farmacii online, suplimente, vitamine și produse de îngrijire personală.",
+  "sport":           "Coduri reducere pentru echipament sportiv, îmbrăcăminte de antrenament și articole outdoor.",
+  "carti-educatie":  "Reduceri la cărți, manuale și audiobook-uri. Campaniile cresc vizibil în perioada de început de școală.",
+  "copii":           "Coduri reducere la jucării, haine și produse pentru copii și bebeluși.",
+  "auto-moto":       "Reduceri la piese auto, anvelope, accesorii și echipament moto.",
+  "servicii":        "Coduri reducere pentru servicii online: găzduire, unelte de business, abonamente și platforme digitale.",
+  "bijuterii":       "Voucher și reduceri la bijuterii, ceasuri și accesorii - de la piese de zi cu zi până la cadouri.",
+  "animale":         "Coduri reducere pentru hrană, accesorii și produse de îngrijire pentru animale de companie.",
+  "mancare-bauturi": "Reduceri la livrare de mâncare, cafea, vin și băuturi. Categorie mică la noi deocamdată, dar în creștere.",
+  "cadouri-flori":   "Coduri reducere pentru flori, cadouri personalizate și experiențe. Cerere concentrată în jurul sărbătorilor.",
+  "financiar":       "Reduceri și oferte la carduri, credite, asigurări și servicii financiare.",
 };
 
 interface Produs {
@@ -116,7 +116,7 @@ export default function CategorieClient({ magazine, numeCategorie, slug, produse
           {magazineMentionate.length > 0 && (
             <p className="text-[var(--text-muted)] text-sm mt-1.5 max-w-2xl">
               Magazine cu oferte active acum: {magazineMentionate.join(", ")}
-              {restulCuPromotii > 0 ? " si inca " + restulCuPromotii : ""}.
+              {restulCuPromotii > 0 ? " și încă " + restulCuPromotii : ""}.
             </p>
           )}
         </div>

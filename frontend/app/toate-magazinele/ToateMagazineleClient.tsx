@@ -38,16 +38,16 @@ function maxPct(promotii: { nume: string; descriere: string }[]): number {
 const CATEGORII_FILTRE = [
   { key: "Toate", label: "Toate" },
   { key: "Fashion", label: "Fashion" },
-  { key: "Beauty", label: "Frumusete" },
+  { key: "Beauty", label: "Frumusețe" },
   { key: "Electronics IT&C", label: "Electronice" },
-  { key: "Home & Garden", label: "Casa & Gradina" },
+  { key: "Home & Garden", label: "Casă & Grădină" },
   { key: "Sports & outdoors", label: "Sport" },
   { key: "Pharma", label: "Farmacie" },
   { key: "Babies Kids & Toys", label: "Copii" },
   { key: "Automotive", label: "Auto-Moto" },
-  { key: "Books", label: "Carti" },
+  { key: "Books", label: "Cărți" },
   { key: "Online Mall", label: "Online Mall" },
-  { key: "Health & Personal care", label: "Sanatate" },
+  { key: "Health & Personal care", label: "Sănătate" },
   { key: "Pet supplies", label: "Animale" },
 ];
 
@@ -123,7 +123,7 @@ export default function ToateMagazineleClient({ magazine }: { magazine: Magazin[
             </svg>
             <input
               type="text"
-              placeholder="Cauta magazin (ex: Zara, eMAG, Notino...)"
+              placeholder="Caută magazin (ex: Zara, eMAG, Notino...)"
               value={cautare}
               onChange={e => setCautare(e.target.value)}
               className="w-full bg-[var(--surface-alt)] text-[var(--foreground)] rounded-xl pl-12 pr-4 py-3.5 text-base focus:outline-none focus:ring-2 focus:ring-[#ddf93c]/50 border border-[var(--border-strong)] focus:border-[var(--accent-text)]/50 placeholder-[var(--text-muted)] transition-all"
@@ -252,11 +252,11 @@ export default function ToateMagazineleClient({ magazine }: { magazine: Magazin[
         {filtrate.length === 0 && (
           <div className="text-center py-24 text-[var(--text-muted)]">
             <p className="text-5xl mb-4">🔍</p>
-            <p className="font-bold text-lg text-[var(--text-soft)]">Niciun magazin gasit</p>
-            <p className="text-sm mt-1">Incearca alt termen de cautare sau sterge filtrele</p>
+            <p className="font-bold text-lg text-[var(--text-soft)]">Niciun magazin găsit</p>
+            <p className="text-sm mt-1">Încearcă alt termen de căutare sau șterge filtrele</p>
             <button onClick={() => { setCautare(""); setCategorie("Toate"); setFiltru("toate"); }}
               className="mt-4 text-[var(--accent-text)] hover:text-[var(--accent-text)] text-sm font-bold transition-colors">
-              Reseteaza filtrele
+              Resetează filtrele
             </button>
           </div>
         )}
@@ -264,7 +264,7 @@ export default function ToateMagazineleClient({ magazine }: { magazine: Magazin[
         {/* FOOTER NAV */}
         <div className="mt-12 pt-6 border-t border-[var(--border)] flex items-center justify-between flex-wrap gap-3">
           <Link href="/" className="text-sm text-[var(--text-muted)] hover:text-[var(--accent-text)] transition-colors">
-            &larr; Inapoi la homepage
+            &larr; Înapoi la homepage
           </Link>
           <Link href="/categorii" className="text-sm text-[var(--text-muted)] hover:text-[var(--accent-text)] transition-colors">
             Exploreaza categorii &rarr;

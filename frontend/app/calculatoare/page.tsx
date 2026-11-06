@@ -10,9 +10,9 @@ export const metadata: Metadata = {
     "Calculator de reduceri, convertor de mărimi și alte unelte gratuite pentru cumpărături online. Fără cont, fără instalare, totul rulează în browser.",
   keywords: [
     "calculator reduceri",
-    "convertor marimi",
-    "unelte cumparaturi online",
-    "calculator discount romania",
+    "convertor mărimi",
+    "unelte cumpărături online",
+    "calculator discount românia",
   ],
   alternates: { canonical: "https://amcupon.ro/calculatoare" },
   openGraph: {

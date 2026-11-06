@@ -41,3 +41,12 @@ export const MACRO_EMOJI: Record<string, string> = {
 };
 
 export const getMacro = (cat: string): string => CATEG_MAP[cat] || "";
+
+/* Numele de mai sus sunt CHEI (date, adrese /blog?cat=..., MACRO_EMOJI): raman fara diacritice.
+   Pe pagina se afiseaza eticheta(m), scrisa corect. */
+export const MACRO_ETICHETA: Record<string, string> = {
+  "Casa & Gradina": "Casă & Grădină", "Frumusete": "Frumusețe", "Sanatate": "Sănătate",
+  "Copii & Jucarii": "Copii & Jucării", "Carti": "Cărți", "Calatorie": "Călătorie",
+};
+
+export const eticheta = (m: string): string => MACRO_ETICHETA[m] || m;

@@ -63,7 +63,7 @@ export default function NewsletterPopup() {
     e.preventDefault();
     const trimmed = email.trim().toLowerCase();
     if (!trimmed || !trimmed.includes("@") || !trimmed.includes(".")) {
-      setErrMsg("Adresa de email invalida.");
+      setErrMsg("Adresa de email invalidă.");
       setStatus("error");
       return;
     }
@@ -84,11 +84,11 @@ export default function NewsletterPopup() {
       if (data.ok) {
         setStatus("success");
       } else {
-        setErrMsg(data.error || "Eroare. Incearca din nou.");
+        setErrMsg(data.error || "Eroare. Încearcă din nou.");
         setStatus("error");
       }
     } catch {
-      setErrMsg("Eroare de retea. Incearca din nou.");
+      setErrMsg("Eroare de rețea. Încearcă din nou.");
       setStatus("error");
     }
   }
@@ -114,7 +114,7 @@ export default function NewsletterPopup() {
       onClick={(e) => e.target === e.currentTarget && close()}
       role="dialog"
       aria-modal="true"
-      aria-label="Aboneaza-te la newsletter"
+      aria-label="Abonează-te la newsletter"
     >
       <div className="bg-[var(--surface)] border border-[var(--border)] rounded-xl shadow-2xl w-full max-w-md overflow-hidden animate-in slide-in-from-bottom-4 duration-300">
 
@@ -123,7 +123,7 @@ export default function NewsletterPopup() {
           <div className="absolute inset-0 pointer-events-none" style={{ background: "radial-gradient(ellipse 80% 80% at 50% 0%, rgba(13,148,136,0.25) 0%, transparent 70%)" }} />
           <button
             onClick={close}
-            aria-label="Inchide"
+            aria-label="Închide"
             className="absolute z-10 top-4 right-4 text-[var(--text-muted)] hover:text-[var(--foreground)] transition-colors text-xl font-bold"
           >
             &#x2715;
@@ -132,7 +132,7 @@ export default function NewsletterPopup() {
             <div className="text-4xl mb-2">&#127873;</div>
             <h2 className="text-xl font-black mb-1 text-[var(--foreground)]">Codurile zilei, pe email</h2>
             <p className="text-[var(--text-soft)] text-sm">
-              Ofertele active de pe site, intr-un email pe zi &mdash; gratuit
+              Ofertele active de pe site, într-un email pe zi &mdash; gratuit
             </p>
           </div>
         </div>
@@ -141,8 +141,8 @@ export default function NewsletterPopup() {
         <div className="px-6 py-4 bg-[var(--surface)] border-b border-[var(--border)]">
           <div className="flex flex-col gap-1.5 text-sm text-[var(--text-soft)]">
             {[
-              "Oferte active pe categorii, cu codul scris in email",
-              "Fara cont: doar adresa de email",
+              "Oferte active pe categorii, cu codul scris în email",
+              "Fără cont: doar adresa de email",
               "Zero spam - dezabonare cu un click",
             ].map((b, i) => (
               <span key={i} className="font-medium flex items-center gap-1.5">
@@ -157,7 +157,7 @@ export default function NewsletterPopup() {
           {status === "success" ? (
             <div className="text-center py-4">
               <div className="text-4xl mb-2">&#127881;</div>
-              <p className="font-black text-[var(--foreground)] text-lg">Multumim!</p>
+              <p className="font-black text-[var(--foreground)] text-lg">Mulțumim!</p>
               <p className="text-[var(--text-soft)] text-sm mt-1">
                 Vei primi cele mai bune oferte pe email.
               </p>
@@ -186,9 +186,9 @@ export default function NewsletterPopup() {
               </button>
 
               <p className="text-xs text-[var(--text-muted)] text-center">
-                Prin abonare esti de acord cu{" "}
+                Prin abonare ești de acord cu{" "}
                 <Link href="/confidentialitate" className="underline hover:text-[var(--accent-text)]">
-                  politica de confidentialitate
+                  politica de confidențialitate
                 </Link>
               </p>
             </form>

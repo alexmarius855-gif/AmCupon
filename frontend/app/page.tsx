@@ -9,14 +9,14 @@ import { topuri } from "@/lib/legaturiInterne";
 import { criterii, criteriiPeCategorii } from "@/lib/criterii";
 
 export const metadata: Metadata = {
-  title: "AmCupon.ro — Coduri de reducere si oferte actualizate zilnic",
+  title: "AmCupon.ro — Coduri de reducere și oferte actualizate zilnic",
   description:
-    `${PesteMagazine()} partenere cu coduri de reducere si oferte actualizate zilnic: ${laParteneri(["fashion", "beauty", "sanatate", "electronice"], 4).replace(/^la /, "")} si multe altele.`,
+    `${PesteMagazine()} partenere cu coduri de reducere și oferte actualizate zilnic: ${laParteneri(["fashion", "beauty", "sanatate", "electronice"], 4).replace(/^la /, "")} și multe altele.`,
   alternates: { canonical: "https://amcupon.ro" },
   openGraph: {
-    title: "AmCupon.ro — Coduri de reducere si oferte actualizate zilnic",
+    title: "AmCupon.ro — Coduri de reducere și oferte actualizate zilnic",
     description:
-      `${PesteMagazine()} partenere cu coduri si oferte actualizate zilnic.`,
+      `${PesteMagazine()} partenere cu coduri și oferte actualizate zilnic.`,
     url: "https://amcupon.ro",
     siteName: "AmCupon.ro",
     locale: "ro_RO",

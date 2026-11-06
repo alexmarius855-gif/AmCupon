@@ -3,12 +3,12 @@ import Link from "next/link";
 import { linkPlatit } from "@/lib/linkPlatit";
 
 export const metadata: Metadata = {
-  title: "Servicii Internationale 2026 — VPN, Hosting, Software",
+  title: "Servicii Internaționale 2026 — VPN, Hosting, Software",
   description: "Servicii internaționale pe care le poți folosi din România: VPN, antivirus, hosting, software creativ, freelancing, e-commerce.",
   keywords: [
-    "servicii internationale romania", "vpn romania", "hosting ieftin", "antivirus online",
-    "shopify romania", "surfshark romania", "bitdefender",
-    "hostinger romania", "invideo", "logitech", "razer gaming"
+    "servicii internaționale românia", "vpn românia", "hosting ieftin", "antivirus online",
+    "shopify românia", "surfshark românia", "bitdefender",
+    "hostinger românia", "invideo", "logitech", "razer gaming"
   ],
   alternates: { canonical: "https://amcupon.ro/servicii-internationale" },
   openGraph: {
@@ -104,7 +104,7 @@ const CATEGORII = [
   },
   {
     slug: "freelancing-remote",
-    titlu: "Freelancing & Munca Remote",
+    titlu: "Freelancing & Muncă Remote",
     emoji: "💼",
     desc: "Platforme pentru freelanceri și angajatori",
     branduri: [
@@ -142,7 +142,7 @@ export default function ServiciiInternationale() {
           <nav className="flex justify-center gap-2 text-xs text-[var(--text-muted)] mb-8">
             <Link href="/" className="hover:text-[var(--text-soft)]">AmCupon.ro</Link>
             <span>/</span>
-            <span className="text-[var(--text-soft)]">Servicii Internationale</span>
+            <span className="text-[var(--text-soft)]">Servicii Internaționale</span>
           </nav>
           <div className="text-5xl mb-4">🌍</div>
           <h1 className="text-4xl md:text-5xl font-black text-[var(--foreground)] mb-4">
@@ -192,7 +192,7 @@ export default function ServiciiInternationale() {
                   </div>
                   <p className="text-[var(--text-soft)] text-xs leading-relaxed">{brand.descriere}</p>
                   <div className="mt-3 text-xs text-[var(--text-muted)] group-hover:text-[var(--text-soft)] transition-colors flex items-center gap-1">
-                    <span>Viziteaza</span>
+                    <span>Vizitează</span>
                     <span className="group-hover:translate-x-0.5 transition-transform">→</span>
                   </div>
                 </a>
@@ -204,7 +204,7 @@ export default function ServiciiInternationale() {
 
       {/* De ce servicii internationale */}
       <section className="max-w-5xl mx-auto px-4 py-10 border-t border-[var(--border)]">
-        <h2 className="text-2xl font-black text-[var(--foreground)] mb-6">De ce sa alegi servicii internationale?</h2>
+        <h2 className="text-2xl font-black text-[var(--foreground)] mb-6">De ce să alegi servicii internaționale?</h2>
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
           {[
             { emoji: "🧩", titlu: "Ce nu găsești local", desc: "Pentru unele lucruri (VPN, unelte AI, software cu licență internațională) alternativele românești sunt puține sau lipsesc." },
@@ -222,10 +222,10 @@ export default function ServiciiInternationale() {
 
       {/* Link categorii aferente */}
       <section className="max-w-5xl mx-auto px-4 py-8 border-t border-[var(--border)]">
-        <h2 className="text-xl font-black text-[var(--foreground)] mb-4">Exploreaza si paginile dedicate</h2>
+        <h2 className="text-xl font-black text-[var(--foreground)] mb-4">Explorează și paginile dedicate</h2>
         <div className="flex flex-wrap gap-3">
           {[
-            { href: "/vpn", label: "VPN Romania" },
+            { href: "/vpn", label: "VPN România" },
             { href: "/hosting", label: "Hosting Web" },
             { href: "/software-business", label: "Software Business" },
             { href: "/ai-tools", label: "AI Tools" },

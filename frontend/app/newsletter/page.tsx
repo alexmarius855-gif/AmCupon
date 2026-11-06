@@ -6,12 +6,12 @@ import NewsletterForm from "./NewsletterForm";
 
 export const metadata: Metadata = {
   title: "Newsletter Gratuit — Coduri Reducere Zilnic | AmCupon.ro",
-  description: "Aboneaza-te gratuit la newsletter-ul AmCupon.ro: ofertele active de la magazinele partenere, o data pe zi, direct in inbox (cel mult 12 pe email). Fara spam.",
-  keywords: ["newsletter coduri reducere", "alerte oferte romania", "reduceri email gratuit", "amcupon newsletter"],
+  description: "Abonează-te gratuit la newsletter-ul AmCupon.ro: ofertele active de la magazinele partenere, o dată pe zi, direct în inbox (cel mult 12 pe email). Fără spam.",
+  keywords: ["newsletter coduri reducere", "alerte oferte românia", "reduceri email gratuit", "amcupon newsletter"],
   alternates: { canonical: "https://amcupon.ro/newsletter" },
   openGraph: {
     title: "Newsletter Gratuit — Coduri Reducere | AmCupon.ro",
-    description: "Ofertele active, o data pe zi, direct in inbox. Gratuit, fara spam.",
+    description: "Ofertele active, o dată pe zi, direct în inbox. Gratuit, fără spam.",
     url: "https://amcupon.ro/newsletter",
     siteName: "AmCupon.ro",
     locale: "ro_RO",
@@ -24,7 +24,7 @@ const jsonLd = {
   "@context": "https://schema.org",
   "@type": "WebPage",
   name: "Newsletter AmCupon.ro",
-  description: "Abonare la newsletter cu ofertele active de pe AmCupon.ro, o data pe zi",
+  description: "Abonare la newsletter cu ofertele active de pe AmCupon.ro, o dată pe zi",
   url: "https://amcupon.ro/newsletter",
   isPartOf: { "@type": "WebSite", url: "https://amcupon.ro", name: "AmCupon.ro" },
 };
@@ -51,7 +51,7 @@ export default function NewsletterPage() {
             </h1>
             <p className="text-[var(--text-soft)] text-lg">
               <span className="text-[var(--foreground)] font-bold">{totalMagazine} de magazine</span>, actualizate de trei ori pe zi.
-              Ofertele active, pe categorii, intr-un email in fiecare dimineata.
+              Ofertele active, pe categorii, într-un email în fiecare dimineață.
             </p>
           </div>
 
@@ -72,7 +72,7 @@ export default function NewsletterPage() {
 
           <div className="text-center">
             <Link href="/" className="text-sm text-[var(--text-muted)] hover:text-[var(--accent-text)] transition-colors">
-              &larr; Inapoi la homepage
+              &larr; Înapoi la homepage
             </Link>
           </div>
         </div>

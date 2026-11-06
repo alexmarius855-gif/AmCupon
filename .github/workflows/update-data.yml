@@ -521,6 +521,9 @@ jobs:
           cd ../scripts
           python verifica_site.py --html
           python verifica_text.py
+          # Ortografie (diacritice in textul nostru): deocamdata RAPORT, nu opreste publicarea.
+          # Devine --strict dupa curatarea articolelor de blog vechi (vezi CLAUDE.md, 06.11 partea a treia).
+          python verifica_ortografie.py || echo "raportul de ortografie n-a putut rula"
           python audit_live.py --baza http://localhost:3300 --strict
           kill %1 || true
 

@@ -16,11 +16,11 @@ interface Magazin {
 }
 
 export const metadata: Metadata = {
-  title: "Smart Home Romania 2026 — Ghid și Oferte de la Parteneri",
+  title: "Smart Home România 2026 — Ghid și Oferte de la Parteneri",
   description: "Oferte smart home 2026: becuri inteligente, prize smart, camere de supraveghere, de la magazinele partenere AmCupon. Reduceri active, actualizate zilnic.",
-  keywords: ["smart home romania", "bec inteligent ieftin", "priza smart reducere", "camera supraveghere wifi", "termostat inteligent", "emag smart home", "casa inteligenta romania"],
+  keywords: ["smart home românia", "bec inteligent ieftin", "priză smart reducere", "cameră supraveghere wifi", "termostat inteligent", "eMAG smart home", "casă inteligentă românia"],
   alternates: { canonical: "https://amcupon.ro/smart-home" },
-  openGraph: { title: "Smart Home Romania 2026 | AmCupon.ro", url: "https://amcupon.ro/smart-home", siteName: "AmCupon.ro", locale: "ro_RO", type: "website", images: [{ url: "https://amcupon.ro/og-image.png", width: 1200, height: 630 }] },
+  openGraph: { title: "Smart Home România 2026 | AmCupon.ro", url: "https://amcupon.ro/smart-home", siteName: "AmCupon.ro", locale: "ro_RO", type: "website", images: [{ url: "https://amcupon.ro/og-image.png", width: 1200, height: 630 }] },
 };
 
 const TOP_SMART = ["evomag.ro"];
@@ -28,16 +28,16 @@ const TOP_SMART = ["evomag.ro"];
 const CAT_SMART = ["electronice", "casa-gradina"];
 
 const CATEGORII_SMART = [
-  { emoji: "💡", titlu: "Becuri Inteligente", desc: "Philips Hue, IKEA TRADFRI, Tuya — control din aplicatie, 16M culori" },
-  { emoji: "🔌", titlu: "Prize & Intrerupatoare Smart", desc: "Monitorizare consum, programare, control vocal Alexa/Google" },
-  { emoji: "📷", titlu: "Camere Supraveghere", desc: "WiFi, detectie miscare, vedere nocturna, stocare cloud" },
-  { emoji: "🌡️", titlu: "Termostate Inteligente", desc: "Tado, Honeywell — programare si control de oriunde" },
-  { emoji: "🔊", titlu: "Boxe Smart", desc: "Amazon Echo, Google Nest — asistent vocal pentru toata casa" },
-  { emoji: "🚪", titlu: "Siguranta Casa", desc: "Incuietori smart, senzori usa/fereastra, alarme WiFi" },
+  { emoji: "💡", titlu: "Becuri Inteligente", desc: "Philips Hue, IKEA TRADFRI, Tuya — control din aplicație, 16M culori" },
+  { emoji: "🔌", titlu: "Prize & Întrerupătoare Smart", desc: "Monitorizare consum, programare, control vocal Alexa/Google" },
+  { emoji: "📷", titlu: "Camere Supraveghere", desc: "WiFi, detecție mișcare, vedere nocturnă, stocare cloud" },
+  { emoji: "🌡️", titlu: "Termostate Inteligente", desc: "Tado, Honeywell — programare și control de oriunde" },
+  { emoji: "🔊", titlu: "Boxe Smart", desc: "Amazon Echo, Google Nest — asistent vocal pentru toată casa" },
+  { emoji: "🚪", titlu: "Siguranța casei", desc: "Încuietori smart, senzori ușă/fereastră, alarme WiFi" },
 ];
 
 const CULORI_BADGE = ["bg-[#ddf93c]"];
-const jsonLd = { "@context":"https://schema.org","@type":"CollectionPage","name":"Smart Home Romania 2026","url":"https://amcupon.ro/smart-home","description":"Oferte smart home Romania 2026 — becuri, prize, camere, termostate inteligente" };
+const jsonLd = { "@context":"https://schema.org","@type":"CollectionPage","name":"Smart Home România 2026","url":"https://amcupon.ro/smart-home","description":"Oferte smart home România 2026 — becuri, prize, camere, termostate inteligente" };
 
 export default function SmartHomePage() {
   const filePath = path.join(process.cwd(), "public", "output.json");
@@ -59,7 +59,7 @@ export default function SmartHomePage() {
         {/* Breadcrumb */}
         <nav className="bg-[var(--surface)]/80 backdrop-blur-sm border-b border-[var(--border)]">
           <div className="max-w-6xl mx-auto px-4 py-3 flex items-center gap-1.5 text-xs text-[var(--text-muted)]">
-            <Link href="/" className="hover:text-[var(--accent-text)] transition-colors">Acasa</Link>
+            <Link href="/" className="hover:text-[var(--accent-text)] transition-colors">Acasă</Link>
             <span>/</span>
             <span className="text-[var(--text-soft)] font-medium">Smart Home</span>
           </div>
@@ -74,14 +74,14 @@ export default function SmartHomePage() {
           <div className="relative max-w-6xl mx-auto text-center">
             <div className="inline-flex items-center gap-2 bg-[#ddf93c]/20 border border-[var(--accent-text)]/30 text-[var(--accent-text)] text-xs font-bold px-4 py-1.5 rounded-full mb-6 tracking-wider uppercase">
               <span className="w-1.5 h-1.5 rounded-full bg-[#ddf93c] animate-pulse"/>
-              Casa mai inteligenta
+              Casă mai inteligentă
             </div>
             <div className="text-6xl mb-5 drop-shadow-2xl">🏠</div>
             <h1 className="text-4xl md:text-5xl font-black text-[var(--foreground)] mb-4 tracking-tight">
-              Smart Home Romania <span className="text-transparent bg-clip-text" style={{backgroundImage:"linear-gradient(135deg, #c3dd2c, #ddf93c)"}}>{an}</span>
+              Smart Home România <span className="text-transparent bg-clip-text" style={{backgroundImage:"linear-gradient(135deg, #c3dd2c, #ddf93c)"}}>{an}</span>
             </h1>
             <p className="text-[var(--text-soft)] text-lg mb-8 max-w-xl mx-auto leading-relaxed">
-              Becuri inteligente, prize smart, camere WiFi — ghid de inceput si oferte {laParteneri(NISA_CATEGORII["smart-home"])}
+              Becuri inteligente, prize smart, camere WiFi — ghid de început și oferte {laParteneri(NISA_CATEGORII["smart-home"])}
             </p>
             <div className="flex flex-wrap justify-center gap-2">
               {["Alexa","Google Home","Apple HomeKit","Philips Hue","Tuya","Zigbee","Wi-Fi Direct"].map(c => (
@@ -115,7 +115,7 @@ export default function SmartHomePage() {
           <div className="flex items-center justify-between mb-6">
             <div>
               <p className="text-xs font-bold text-[var(--accent-text)] uppercase tracking-widest mb-1">MAGAZINE PARTENERE</p>
-              <h2 className="text-xl font-black text-[var(--foreground)]">Magazine smart home, electronice si casa</h2>
+              <h2 className="text-xl font-black text-[var(--foreground)]">Magazine smart home, electronice și casă</h2>
             </div>
           </div>
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">
@@ -138,21 +138,21 @@ export default function SmartHomePage() {
         {/* Ghid */}
         <section className="bg-[var(--surface)] border-t border-[var(--border)] py-12 px-4">
           <div className="max-w-3xl mx-auto">
-            <p className="text-xs font-bold text-[var(--accent-text)] uppercase tracking-widest mb-3">GHID INCEPUT</p>
-            <h2 className="text-2xl font-black text-[var(--foreground)] mb-7">Cum incepi cu Smart Home in {an}</h2>
+            <p className="text-xs font-bold text-[var(--accent-text)] uppercase tracking-widest mb-3">GHID ÎNCEPUT</p>
+            <h2 className="text-2xl font-black text-[var(--foreground)] mb-7">Cum începi cu Smart Home în {an}</h2>
             <div className="space-y-5">
               <div className="bg-[var(--surface-alt)] border border-[var(--border-strong)] rounded-xl p-5">
                 <h3 className="font-bold text-[var(--foreground)] mb-2 text-base">Ecosistem: Alexa, Google Home sau Apple HomeKit?</h3>
-                <p className="text-sm text-[var(--text-soft)] leading-relaxed">Alexa (Amazon Echo) si Google Home au cele mai multe dispozitive compatibile; Apple Home merge cu iPhone. Standardul Matter face tot mai multe dispozitive compatibile cu toate trei. Verifica daca asistentul vocal accepta limba romana — multe comenzi merg doar in engleza.</p>
+                <p className="text-sm text-[var(--text-soft)] leading-relaxed">Alexa (Amazon Echo) și Google Home au cele mai multe dispozitive compatibile; Apple Home merge cu iPhone. Standardul Matter face tot mai multe dispozitive compatibile cu toate trei. Verifică dacă asistentul vocal acceptă limba română — multe comenzi merg doar în engleză.</p>
               </div>
               <div className="bg-[var(--surface-alt)] border border-[var(--border-strong)] rounded-xl p-5">
-                <h3 className="font-bold text-[var(--foreground)] mb-3 text-base">De unde sa incepi</h3>
+                <h3 className="font-bold text-[var(--foreground)] mb-3 text-base">De unde să începi</h3>
                 <ul className="space-y-2 text-sm text-[var(--text-soft)]">
                   {[
                     ["Becuri inteligente","cel mai simplu start: Tuya sau Philips Hue"],
-                    ["Priza smart","monitorizare consum, automatizare orice aparat"],
-                    ["Camera WiFi","supraveghere live pe telefon de oriunde"],
-                    ["Termostat","programarea incalzirii; economiile depind de casa si de cum il setezi"],
+                    ["Priză smart","monitorizare consum, automatizare orice aparat"],
+                    ["Cameră WiFi","supraveghere live pe telefon de oriunde"],
+                    ["Termostat","programarea încălzirii; economiile depind de casă și de cum îl setezi"],
                   ].map(([bold, text]) => (
                     <li key={bold} className="flex gap-2">
                       <span className="text-[var(--accent-text)] mt-0.5 shrink-0">→</span>
@@ -163,7 +163,7 @@ export default function SmartHomePage() {
               </div>
               <div className="bg-[var(--surface-alt)] border border-[var(--border-strong)] rounded-xl p-5">
                 <h3 className="font-bold text-[var(--foreground)] mb-2 text-base">Protocol: Zigbee vs WiFi vs Z-Wave</h3>
-                <p className="text-sm text-[var(--text-soft)] leading-relaxed">WiFi e cel mai simplu (conectare directa, fara hub), dar poate incarca reteaua cu multe dispozitive. Zigbee (Philips Hue, IKEA) consuma putin curent si este mai stabil, dar necesita un hub/bridge. Pentru inceput, WiFi e alegerea pragmatica.</p>
+                <p className="text-sm text-[var(--text-soft)] leading-relaxed">WiFi e cel mai simplu (conectare directă, fără hub), dar poate încărca rețeaua cu multe dispozitive. Zigbee (Philips Hue, IKEA) consumă puțin curent și este mai stabil, dar necesită un hub/bridge. Pentru început, WiFi e alegerea pragmatică.</p>
               </div>
             </div>
           </div>
@@ -171,11 +171,11 @@ export default function SmartHomePage() {
 
         {/* Related */}
         <section className="max-w-6xl mx-auto px-4 py-8">
-          <p className="text-xs font-bold text-[var(--text-muted)] uppercase tracking-widest mb-4">EXPLOREAZA SI</p>
+          <p className="text-xs font-bold text-[var(--text-muted)] uppercase tracking-widest mb-4">EXPLOREAZĂ ȘI</p>
           <div className="flex flex-wrap gap-2">
             {[
               { href: "/electronice", label: "📱 Electronice" },
-              { href: "/casa", label: "🏡 Casa & Gradina" },
+              { href: "/casa", label: "🏡 Casă & Grădină" },
               { href: "/gadgets", label: "📡 Gadgets" },
               { href: "/gaming", label: "🎮 Gaming" },
               { href: "/oferte-azi", label: "🔥 Oferte de Azi" },
@@ -191,7 +191,7 @@ export default function SmartHomePage() {
         <footer className="border-t border-[var(--border)] py-6 text-center text-xs text-[var(--text-muted)]">
           &copy; {an} AmCupon.ro &middot;{" "}
           <Link href="/electronice" className="hover:text-[var(--accent-text)] transition-colors">Electronice</Link>{" · "}
-          <Link href="/casa" className="hover:text-[var(--accent-text)] transition-colors">Casa & Gradina</Link>{" · "}
+          <Link href="/casa" className="hover:text-[var(--accent-text)] transition-colors">Casă & Grădină</Link>{" · "}
           <Link href="/categorii" className="hover:text-[var(--accent-text)] transition-colors">Categorii</Link>
         </footer>
       </div>

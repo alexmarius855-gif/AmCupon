@@ -8,12 +8,12 @@ import { maskCod } from "@/lib/maskCod";
 import { linkPlatit } from "@/lib/linkPlatit";
 
 export const metadata: Metadata = {
-  title: "Servicii Online Romania 2026 — Ghiduri și Parteneri",
+  title: "Servicii Online România 2026 — Ghiduri și Parteneri",
   description: "Servicii online de la partenerii AmCupon — sănătate, telecomunicații, software — și ghiduri pentru cursuri, hosting, VPN, conturi bancare și asigurări.",
-  keywords: ["servicii cu reducere", "cod reducere servicii online", "albire dinti reducere", "software facturare reducere", "hosting reducere romania"],
+  keywords: ["servicii cu reducere", "cod reducere servicii online", "albire dinți reducere", "software facturare reducere", "hosting reducere românia"],
   alternates: { canonical: "https://amcupon.ro/servicii" },
   openGraph: {
-    title: "Servicii Online Romania 2026 | AmCupon.ro",
+    title: "Servicii Online România 2026 | AmCupon.ro",
     description: "Servicii online de la partenerii AmCupon și ghiduri pentru cursuri, hosting, VPN, conturi bancare și asigurări.",
     url: "https://amcupon.ro/servicii",
     siteName: "AmCupon.ro",
@@ -41,15 +41,15 @@ interface Magazin {
 
 // Sluguri care sunt servicii (nu produse fizice)
 const SERVICII_SLUGS: Record<string, { label: string; emoji: string; desc: string; slug_url: string | null }> = {
-  "albirea-dintilor.com": { label: "Sanatate & Estetica", emoji: "🦷", desc: "Serviciu albire dinti", slug_url: "/albire-dinti" },
+  "albirea-dintilor.com": { label: "Sănătate & Estetică", emoji: "🦷", desc: "Serviciu albire dinți", slug_url: "/albire-dinti" },
   "facturis-online.ro":   { label: "Software & SaaS",     emoji: "📊", desc: "Software de facturare", slug_url: "/software-business" },
   "chroot.ro":            { label: "Software & SaaS",      emoji: "💻", desc: "Servicii IT & cloud", slug_url: "/software-business" },
-  "nextsim.eu":           { label: "Telecomunicatii",      emoji: "📱", desc: "SIM & servicii telecom", slug_url: null },
-  "telvertical.ro":       { label: "Telecomunicatii",      emoji: "📡", desc: "Servicii de telecomunicații", slug_url: null },
-  "reincarcareprepay.ro": { label: "Telecomunicatii",      emoji: "📱", desc: "Reincarcari prepay",    slug_url: null },
-  "feelnue.ro":           { label: "Sanatate & Estetica",  emoji: "💆", desc: "Sănătate și wellness", slug_url: null },
-  "21collagen.ro":        { label: "Sanatate & Estetica",  emoji: "✨", desc: "Colagen și suplimente", slug_url: null },
-  "apiland.ro":           { label: "Sanatate & Estetica",  emoji: "🍯", desc: "Produse naturale & apicultura", slug_url: null },
+  "nextsim.eu":           { label: "Telecomunicații",      emoji: "📱", desc: "SIM & servicii telecom", slug_url: null },
+  "telvertical.ro":       { label: "Telecomunicații",      emoji: "📡", desc: "Servicii de telecomunicații", slug_url: null },
+  "reincarcareprepay.ro": { label: "Telecomunicații",      emoji: "📱", desc: "Reîncărcări prepay",    slug_url: null },
+  "feelnue.ro":           { label: "Sănătate & Estetică",  emoji: "💆", desc: "Sănătate și wellness", slug_url: null },
+  "21collagen.ro":        { label: "Sănătate & Estetică",  emoji: "✨", desc: "Colagen și suplimente", slug_url: null },
+  "apiland.ro":           { label: "Sănătate & Estetică",  emoji: "🍯", desc: "Produse naturale & apicultură", slug_url: null },
 };
 
 // Servicii internationale (afiliere directa, nu 2Performant)
@@ -79,25 +79,25 @@ function getBestPromo(m: Magazin): Promotie {
 
 // Culoare distincta per categorie de serviciu — niciodata portocaliu
 const CATEG_COLOR: Record<string, { from: string; to: string; text: string; ring: string; textBtn: string }> = {
-  "Sanatate & Estetica":  { from: "#c3dd2c", to: "#ddf93c", text: "text-[var(--accent-text)]",   ring: "hover:border-[var(--accent-text)]/30",   textBtn: "text-[#0c1000]" },
-  "Educatie & Cursuri":   { from: "#ddf93c", to: "#ddf93c", text: "text-[var(--accent-text)]",   ring: "hover:border-[var(--accent-text)]/30",   textBtn: "text-[#0c1000]" },
+  "Sănătate & Estetică":  { from: "#c3dd2c", to: "#ddf93c", text: "text-[var(--accent-text)]",   ring: "hover:border-[var(--accent-text)]/30",   textBtn: "text-[#0c1000]" },
+  "Educație & Cursuri":   { from: "#ddf93c", to: "#ddf93c", text: "text-[var(--accent-text)]",   ring: "hover:border-[var(--accent-text)]/30",   textBtn: "text-[#0c1000]" },
   "Software & SaaS":      { from: "#ddf93c", to: "#c3dd2c", text: "text-[var(--accent-text)]",   ring: "hover:border-[var(--accent-text)]/30",   textBtn: "text-[#0c1000]" },
   "Hosting":              { from: "#ddf93c", to: "#c3dd2c", text: "text-[var(--accent-text)]",   ring: "hover:border-[var(--accent-text)]/30",   textBtn: "text-[#0c1000]" },
-  "Telecomunicatii":      { from: "#ddf93c", to: "#ddf93c", text: "text-[var(--accent-text)]",   ring: "hover:border-[var(--accent-text)]/30",   textBtn: "text-[#0c1000]" },
+  "Telecomunicații":      { from: "#ddf93c", to: "#ddf93c", text: "text-[var(--accent-text)]",   ring: "hover:border-[var(--accent-text)]/30",   textBtn: "text-[#0c1000]" },
   "Financiar":            { from: "#10b981", to: "#059669", text: "text-emerald-400", ring: "hover:border-emerald-500/30", textBtn: "text-[#0c1000]" },
 };
 
 const PAGINI_DEDICATE = [
-  { href: "/albire-dinti",          emoji: "🦷", name: "Albire Dinti",         sub: "Serviciu estetic",          from: "#c3dd2c", to: "#ddf93c" },
+  { href: "/albire-dinti",          emoji: "🦷", name: "Albire Dinți",         sub: "Serviciu estetic",          from: "#c3dd2c", to: "#ddf93c" },
   { href: "/software-business",     emoji: "📊", name: "Software Business",    sub: "Software pentru firme",     from: "#ddf93c", to: "#c3dd2c" },
-  { href: "/hosting",               emoji: "🌐", name: "Hosting Web",          sub: "Gazduire site-uri",         from: "#ddf93c", to: "#c3dd2c" },
+  { href: "/hosting",               emoji: "🌐", name: "Hosting Web",          sub: "Găzduire site-uri",         from: "#ddf93c", to: "#c3dd2c" },
   { href: "/vpn",                   emoji: "🔒", name: "VPN & Securitate",     sub: "NordVPN, Surfshark",        from: "#ddf93c", to: "#c3dd2c" },
-  { href: "/ai-tools",              emoji: "🤖", name: "AI Tools",             sub: "Unelte AI pentru munca",    from: "#ddf93c", to: "#ddf93c" },
-  { href: "/trading",               emoji: "📈", name: "Trading & Investitii", sub: "XTB, Binance, eToro",       from: "#10b981", to: "#059669" },
+  { href: "/ai-tools",              emoji: "🤖", name: "AI Tools",             sub: "Unelte AI pentru muncă",    from: "#ddf93c", to: "#ddf93c" },
+  { href: "/trading",               emoji: "📈", name: "Trading & Investiții", sub: "XTB, Binance, eToro",       from: "#10b981", to: "#059669" },
   { href: "/instrumente-seo",       emoji: "📊", name: "Instrumente SEO",      sub: "Semrush, Ahrefs, Moz",      from: "#ddf93c", to: "#c3dd2c" },
   { href: "/carduri-bancare",       emoji: "💳", name: "Carduri Bancare",      sub: "Conturi & carduri online",  from: "#ddf93c", to: "#ddf93c" },
-  { href: "/asigurari",             emoji: "🛡️", name: "Asigurari",           sub: "RCA, CASCO, locuinta",       from: "#c3dd2c", to: "#ddf93c" },
-  { href: "/servicii-internationale", emoji: "🌍", name: "Servicii Internationale", sub: "VPN, hosting, software", from: "#ddf93c", to: "#c3dd2c" },
+  { href: "/asigurari",             emoji: "🛡️", name: "Asigurări",           sub: "RCA, CASCO, locuință",       from: "#c3dd2c", to: "#ddf93c" },
+  { href: "/servicii-internationale", emoji: "🌍", name: "Servicii Internaționale", sub: "VPN, hosting, software", from: "#ddf93c", to: "#c3dd2c" },
 ];
 
 export default function ServiciiPage() {
@@ -114,7 +114,7 @@ export default function ServiciiPage() {
     grupate[info.label].push({ info, mag: m });
   }
 
-  const ordineCateg = ["Sanatate & Estetica", "Educatie & Cursuri", "Software & SaaS", "Hosting", "Telecomunicatii", "Financiar"];
+  const ordineCateg = ["Sănătate & Estetică", "Educație & Cursuri", "Software & SaaS", "Hosting", "Telecomunicații", "Financiar"];
 
   return (
     <div className="min-h-screen bg-[var(--background)]">
@@ -234,7 +234,7 @@ export default function ServiciiPage() {
                     <div>
                       <div className="flex items-center gap-2 mb-0.5">
                         <span className="text-[var(--foreground)] font-black text-sm">{item.name}</span>
-                        <span className={`text-[10px] bg-[var(--surface-alt)] ${culoare.text} border border-[var(--border-strong)] px-1.5 py-0.5 rounded-full font-bold`}>International</span>
+                        <span className={`text-[10px] bg-[var(--surface-alt)] ${culoare.text} border border-[var(--border-strong)] px-1.5 py-0.5 rounded-full font-bold`}>Internațional</span>
                       </div>
                       <p className="text-[var(--text-muted)] text-xs">{item.desc}</p>
                     </div>
@@ -243,7 +243,7 @@ export default function ServiciiPage() {
                   <a href={linkPlatit(item.url)} target="_blank" rel="sponsored noopener noreferrer"
                     className={`mt-auto ${culoare.textBtn} text-xs font-bold py-2.5 rounded-lg text-center transition-all hover:-translate-y-0.5`}
                     style={{ background: `linear-gradient(135deg, ${culoare.from}, ${culoare.to})` }}>
-                    Incearca {item.name} →
+                    Încearcă {item.name} →
                   </a>
                 </div>
               ))}
@@ -268,7 +268,7 @@ export default function ServiciiPage() {
             </Link>
             <Link href="/contact"
               className="bg-[var(--surface-alt)] hover:bg-[var(--surface-high)] text-[var(--foreground)] font-bold px-5 py-2.5 rounded-xl text-sm transition-all border border-[var(--border-strong)]">
-              Sugereaza un serviciu
+              Sugerează un serviciu
             </Link>
           </div>
         </div>

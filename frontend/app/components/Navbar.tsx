@@ -53,7 +53,7 @@ export default function Navbar() {
             type="button"
             onClick={() => window.dispatchEvent(new Event("amcupon:cauta"))}
             className="group w-full flex items-center gap-3 bg-[var(--surface-alt)] border border-[var(--border-strong)] hover:border-[var(--accent-text)]/50 rounded-full pl-10 pr-3 py-2.5 text-sm text-left relative transition-colors"
-            aria-label="Cauta un magazin"
+            aria-label="Caută un magazin"
           >
             <svg className="absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4 text-[var(--text-muted)] group-hover:text-[var(--accent-text)] transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
@@ -121,7 +121,7 @@ export default function Navbar() {
             <svg className="w-4 h-4 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
             </svg>
-            Cauta magazin...
+            Caută magazin...
           </button>
           <nav className="space-y-0.5">
             {mobileLinks.map(l => (

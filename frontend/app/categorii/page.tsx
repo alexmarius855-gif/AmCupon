@@ -6,12 +6,12 @@ import { PesteMagazine } from "@/lib/cifreSite";
 import { cuNumar } from "@/lib/acordNumeral";
 
 export const metadata: Metadata = {
-  title: "Categorii Coduri Reducere Romania 2026 | AmCupon.ro",
-  description: `Coduri de reducere organizate pe categorii: Fashion, Electronice, Frumusete, Casa, Sport, Farmacie, Copii, Animale si multe altele.`,
-  keywords: ["categorii reduceri romania","coduri reducere pe categorii","fashion reducere","electronice ieftine","farmacie online reducere"],
+  title: "Categorii Coduri Reducere România 2026 | AmCupon.ro",
+  description: `Coduri de reducere organizate pe categorii: Fashion, Electronice, Frumusețe, Casă, Sport, Farmacie, Copii, Animale și multe altele.`,
+  keywords: ["categorii reduceri românia","coduri reducere pe categorii","fashion reducere","electronice ieftine","farmacie online reducere"],
   alternates: { canonical: "https://amcupon.ro/categorii" },
   openGraph: {
-    title: "Categorii Coduri Reducere Romania | AmCupon.ro",
+    title: "Categorii Coduri Reducere România | AmCupon.ro",
     description: `${PesteMagazine()} organizate pe categorii. Oferte actualizate zilnic.`,
     url: "https://amcupon.ro/categorii",
     siteName: "AmCupon.ro",
@@ -39,7 +39,7 @@ const CATEGORII = [
     keywords: ["fashion", "clothing", "haine", "shoes", "answear", "aboutyou"],
   },
   {
-    slug: "beauty", label: "Frumusete", desc: "Cosmetice & parfumuri",
+    slug: "beauty", label: "Frumusețe", desc: "Cosmetice & parfumuri",
     accent: "#ddf93c",
     keywords: ["beauty", "cosmetic", "parfum", "notino", "makeup", "sephora"],
   },
@@ -54,7 +54,7 @@ const CATEGORII = [
     keywords: ["electronic", "tech", "it", "laptop", "phone", "ozone", "navstore"],
   },
   {
-    slug: "software", label: "Software & Digital", desc: "VPN, hosting, AI, aplicatii",
+    slug: "software", label: "Software & Digital", desc: "VPN, hosting, AI, aplicații",
     accent: "#7dd3fc",
     keywords: ["software", "vpn", "hosting", "ai", "app", "digital"],
   },
@@ -64,27 +64,27 @@ const CATEGORII = [
     keywords: ["telecom", "mobile", "abonament", "orange", "vodafone", "digi"],
   },
   {
-    slug: "casa-gradina", label: "Casa & Gradina", desc: "Mobila, decoratiuni, unelte",
+    slug: "casa-gradina", label: "Casă & Grădină", desc: "Mobilă, decorațiuni, unelte",
     accent: "#34d399",
     keywords: ["home", "casa", "garden", "vidaxl", "gradina", "mobila", "dedeman"],
   },
   {
-    slug: "animale", label: "Animale", desc: "Hrana, jucarii, accesorii",
+    slug: "animale", label: "Animale", desc: "Hrană, jucării, accesorii",
     accent: "#fda4af",
     keywords: ["pet", "animal", "caine", "pisica", "zooplus"],
   },
   {
-    slug: "mancare-bauturi", label: "Mancare & Bauturi", desc: "Alimente & produse zilnice",
+    slug: "mancare-bauturi", label: "Mâncare & Băuturi", desc: "Alimente & produse zilnice",
     accent: "#ddf93c",
     keywords: ["hypermarket", "grocery", "aliment", "food", "supermarket", "bautura"],
   },
   {
-    slug: "carti-educatie", label: "Carti & Educatie", desc: "Carti, e-books, papetarie",
+    slug: "carti-educatie", label: "Cărți & Educație", desc: "Cărți, e-books, papetărie",
     accent: "#ddf93c",
     keywords: ["book", "carte", "libris", "carturesti", "bookzone", "edu"],
   },
   {
-    slug: "copii", label: "Copii & Jucarii", desc: "Produse pentru cei mici",
+    slug: "copii", label: "Copii & Jucării", desc: "Produse pentru cei mici",
     accent: "#ddf93c",
     keywords: ["kids", "copii", "toy", "bebe", "noriel", "jucarii"],
   },
@@ -94,17 +94,17 @@ const CATEGORII = [
     keywords: ["gift", "cadou", "flori", "flower", "cadouri"],
   },
   {
-    slug: "calatorii", label: "Calatorii", desc: "Vacante, bilete, cazare",
+    slug: "calatorii", label: "Călătorii", desc: "Vacanțe, bilete, cazare",
     accent: "#7dd3fc",
     keywords: ["travel", "calatorie", "vacanta", "bilet", "esim", "hotel"],
   },
   {
-    slug: "sanatate", label: "Sanatate & Farmacie", desc: "Medicamente, suplimente, ingrijire",
+    slug: "sanatate", label: "Sănătate & Farmacie", desc: "Medicamente, suplimente, îngrijire",
     accent: "#2dd4bf",
     keywords: ["pharma", "farmacie", "drmax", "sensiblu", "vegis", "medic", "health", "sanatate", "wellness"],
   },
   {
-    slug: "financiar", label: "Financiar", desc: "Carduri, banking, asigurari",
+    slug: "financiar", label: "Financiar", desc: "Carduri, banking, asigurări",
     accent: "#9399a0",
     keywords: ["financiar", "card", "banking", "asigurare", "credit", "revolut"],
   },
@@ -190,7 +190,7 @@ export default function CategoriPage() {
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "ItemList",
-    "name": "Categorii Coduri Reducere Romania",
+    "name": "Categorii Coduri Reducere România",
     "url": "https://amcupon.ro/categorii",
     // categoriiCuDate, NU CATEGORII: altfel am declara lui Google, in date
     // structurate, un URL care raspunde 404 (cazul /categorii/telecom — slug fara
@@ -210,16 +210,16 @@ export default function CategoriPage() {
     { href: "/electronice",  emoji: "💻", label: "Electronice & IT" },
     { href: "/frumusete",    emoji: "💄", label: "Beauty & Cosmetice" },
     { href: "/parfumuri",    emoji: "🌹", label: "Parfumuri" },
-    { href: "/casa",         emoji: "🏡", label: "Casa & Gradina" },
+    { href: "/casa",         emoji: "🏡", label: "Casă & Grădină" },
     { href: "/sport",        emoji: "🏃", label: "Sport & Outdoor" },
     { href: "/farmacie",     emoji: "💊", label: "Farmacie Online" },
-    { href: "/sanatate",     emoji: "🌿", label: "Sanatate & Naturiste" },
-    { href: "/copii",        emoji: "👶", label: "Copii & Jucarii" },
+    { href: "/sanatate",     emoji: "🌿", label: "Sănătate & Naturiste" },
+    { href: "/copii",        emoji: "👶", label: "Copii & Jucării" },
     { href: "/animale",      emoji: "🐾", label: "Animale de Companie" },
-    { href: "/calatorie",    emoji: "✈️", label: "Vacante & Travel" },
+    { href: "/calatorie",    emoji: "✈️", label: "Vacanțe & Travel" },
     { href: "/gadgets",      emoji: "📡", label: "Gadgets & Tech" },
     { href: "/moto",         emoji: "🚗", label: "Auto-Moto" },
-    { href: "/carti",        emoji: "📚", label: "Carti & Edu" },
+    { href: "/carti",        emoji: "📚", label: "Cărți & Edu" },
     { href: "/idei-cadouri", emoji: "🎁", label: "Idei Cadouri" },
     { href: "/oferte-azi",   emoji: "🔥", label: "Oferte de Azi" },
   ];
@@ -250,7 +250,7 @@ export default function CategoriPage() {
           </h1>
           <p className="text-[var(--text-soft)] text-sm">
             <span className="text-emerald-400 font-bold">{cuNumar(totalOff, "ofertă activă", "oferte active")}</span>
-            {" "}in{" "}
+            {" "}în{" "}
             <span className="text-[var(--foreground)] font-bold">{cuNumar(categoriiCuDate.length, "categorie", "categorii")}</span>
             {" "}&mdash; actualizat zilnic
           </p>
@@ -322,8 +322,8 @@ export default function CategoriPage() {
 
         {/* Pagini specializate — contin editorial + produse */}
         <div className="mt-12 border-t border-[var(--border)] pt-10">
-          <h2 className="text-lg font-black text-[var(--foreground)] mb-2">Pagini specializate pe nisa</h2>
-          <p className="text-[var(--text-muted)] text-sm mb-6">Fiecare pagina are editorial, ghiduri de cumparaturi si produse recomandate.</p>
+          <h2 className="text-lg font-black text-[var(--foreground)] mb-2">Pagini specializate pe nișă</h2>
+          <p className="text-[var(--text-muted)] text-sm mb-6">Fiecare pagină are editorial, ghiduri de cumpărături și produse recomandate.</p>
           <div className="flex flex-wrap gap-2">
             {NISE_SPECIALE.map(n => (
               <a key={n.href} href={n.href}
@@ -338,7 +338,7 @@ export default function CategoriPage() {
         {/* Back link */}
         <div className="mt-10 text-center">
           <Link href="/" className="text-sm text-[var(--text-muted)] hover:text-[var(--accent-text)] transition-colors">
-            &larr; Inapoi la AmCupon.ro
+            &larr; Înapoi la AmCupon.ro
           </Link>
         </div>
       </div>

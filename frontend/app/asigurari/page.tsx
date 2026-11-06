@@ -4,7 +4,7 @@ import BrandPageTemplate, { metadataBrand } from "../components/BrandPageTemplat
 const META: Metadata = {
   title: "Asigurări Online România 2026 — RCA, CASCO, Locuință",
   description: "Compară asigurări RCA, CASCO, locuință, viață și călătorie prin Otto Broker — 15 ani experiență, peste 130.000 clienți.",
-  keywords: ["asigurare rca online", "asigurare casco", "compara asigurari romania", "otto broker", "asigurare locuinta", "asigurare calatorie"],
+  keywords: ["asigurare rca online", "asigurare casco", "compară asigurări românia", "otto broker", "asigurare locuință", "asigurare călătorie"],
   alternates: { canonical: "https://amcupon.ro/asigurari" },
   openGraph: { title: "Asigurări Online România 2026 | AmCupon.ro", url: "https://amcupon.ro/asigurari", siteName: "AmCupon.ro", locale: "ro_RO", type: "website" },
 };
@@ -22,7 +22,7 @@ export default function AsigurariPage() {
       name: "Otto Broker",
       tagline: "Broker de asigurări — RCA, CASCO, locuință, viață, călătorie și bicicletă, de la mai mulți asigurători",
       emoji: "🛡️",
-      desc: "Otto Broker compară ofertele mai multor asiguratori autorizați din România — RCA, CASCO, locuință, viață, călătorie și asigurare de bicicletă (Otto Velo, unică în Romania).",
+      desc: "Otto Broker compară ofertele mai multor asigurători autorizați din România — RCA, CASCO, locuință, viață, călătorie și asigurare de bicicletă (Otto Velo, unică în România).",
       editorial: [
         "Otto Broker este un broker de asigurări românesc cu 15 ani de experiență pe piață, peste 130.000 de clienți persoane fizice și 10.000 de clienți companii, plus o rețea de 30 de birouri de vânzare în centre comerciale din toată țara. Spre deosebire de un singur asigurător, un broker îți arată ofertele de la mai mulți jucători de pe piață, ca să compari și să alegi ce ți se potrivește — fără cost suplimentar pentru tine.",
         "Acoperă cele mai căutate tipuri de asigurări: RCA (obligatorie pentru orice mașină înmatriculată), CASCO (protecție completă, cu asistență la rezolvarea daunei), asigurare de locuință, asigurare de viață și asigurare de călătorie. Au și un produs unic pe piața românească — Otto Velo, singura asigurare dedicată bicicletelor din România.",

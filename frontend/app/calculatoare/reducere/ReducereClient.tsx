@@ -66,9 +66,9 @@ export default function ReducereClient() {
   }, [mod, pret, reducere, pretS, r1, r2, pretInitial, pretFinal]);
 
   const taburi: { id: Mod; eticheta: string; sub: string }[] = [
-    { id: "simplu", eticheta: "Reducere simpla", sub: "Pret si procent" },
-    { id: "succesiv", eticheta: "Doua reduceri", sub: "Cod peste reducere" },
-    { id: "invers", eticheta: "Ce procent e?", sub: "Din doua preturi" },
+    { id: "simplu", eticheta: "Reducere simplă", sub: "Preț și procent" },
+    { id: "succesiv", eticheta: "Două reduceri", sub: "Cod peste reducere" },
+    { id: "invers", eticheta: "Ce procent e?", sub: "Din două prețuri" },
   ];
 
   return (
@@ -99,7 +99,7 @@ export default function ReducereClient() {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
             <div>
               <label className={LABEL} htmlFor="pret">
-                Pretul initial
+                Prețul inițial
               </label>
               <input
                 id="pret"
@@ -140,13 +140,13 @@ export default function ReducereClient() {
         {mod === "succesiv" && (
           <>
             <p className="text-sm text-[var(--text-muted)] mb-4">
-              Cazul real de la casa: produsul e deja redus, iar codul de reducere se aplica peste
-              pretul redus, nu peste cel initial. De aceea 30% plus 20% nu inseamna 50%.
+              Cazul real de la casă: produsul e deja redus, iar codul de reducere se aplică peste
+              prețul redus, nu peste cel inițial. De aceea 30% plus 20% nu înseamnă 50%.
             </p>
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-5">
               <div>
                 <label className={LABEL} htmlFor="pretS">
-                  Pretul initial
+                  Prețul inițial
                 </label>
                 <input
                   id="pretS"
@@ -188,7 +188,7 @@ export default function ReducereClient() {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
             <div>
               <label className={LABEL} htmlFor="pi">
-                Pretul initial
+                Prețul inițial
               </label>
               <input
                 id="pi"
@@ -200,7 +200,7 @@ export default function ReducereClient() {
             </div>
             <div>
               <label className={LABEL} htmlFor="pf">
-                Pretul platit
+                Prețul plătit
               </label>
               <input
                 id="pf"
@@ -216,29 +216,29 @@ export default function ReducereClient() {
 
       <div className={`${CARD} p-5 sm:p-6`}>
         {rezultat === null ? (
-          <p className="text-[var(--text-muted)] text-sm">Completeaza campurile de mai sus.</p>
+          <p className="text-[var(--text-muted)] text-sm">Completează câmpurile de mai sus.</p>
         ) : (
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-5">
             <div>
-              <span className={LABEL}>{mod === "invers" ? "Ai platit" : "Pret final"}</span>
+              <span className={LABEL}>{mod === "invers" ? "Ai plătit" : "Preț final"}</span>
               <span className="block text-3xl sm:text-4xl font-black text-[var(--accent-text)] leading-tight">
                 {lei(rezultat.final)}
               </span>
             </div>
             <div>
-              <span className={LABEL}>Economisesti</span>
+              <span className={LABEL}>Economisești</span>
               <span className="block text-3xl sm:text-4xl font-black text-[var(--foreground)] leading-tight">
                 {lei(rezultat.economie)}
               </span>
             </div>
             <div>
-              <span className={LABEL}>Reducere reala</span>
+              <span className={LABEL}>Reducere reală</span>
               <span className="block text-3xl sm:text-4xl font-black text-[var(--foreground)] leading-tight">
                 {proc(rezultat.procentTotal)}
               </span>
               {mod === "succesiv" && isFinite(rezultat.dupaPrima) && (
                 <span className="block text-xs text-[var(--text-muted)] mt-1.5">
-                  Dupa prima reducere: {lei(rezultat.dupaPrima)}
+                  După prima reducere: {lei(rezultat.dupaPrima)}
                 </span>
               )}
             </div>
@@ -247,14 +247,14 @@ export default function ReducereClient() {
 
         {mod === "succesiv" && rezultat !== null && (
           <p className="text-sm text-[var(--text-muted)] mt-5 pt-5 border-t border-[var(--border)]">
-            Adunate, cele doua reduceri ar da {proc(num(r1) + num(r2))}. Real, primesti{" "}
+            Adunate, cele două reduceri ar da {proc(num(r1) + num(r2))}. Real, primești{" "}
             <span className="text-[var(--foreground)] font-semibold">{proc(rezultat.procentTotal)}</span>.
           </p>
         )}
       </div>
 
       <p className="text-xs text-[var(--text-muted)]">
-        Calculele se fac in browserul tau. Nu trimitem si nu stocam nimic.{" "}
+        Calculele se fac în browserul tău. Nu trimitem și nu stocăm nimic.{" "}
         <Link href="/calculatoare" className="text-[var(--accent-text)] hover:underline">
           Vezi toate calculatoarele
         </Link>

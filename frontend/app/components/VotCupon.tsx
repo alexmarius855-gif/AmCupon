@@ -69,19 +69,19 @@ export default function VotCupon({
     <div className={`flex items-center gap-2 flex-wrap ${compact ? "text-[11px]" : "text-xs"}`}>
       {stare === "votat" ? (
         <span className="inline-flex items-center gap-1.5 text-[var(--accent-text)] font-semibold">
-          <Check className="w-3.5 h-3.5" strokeWidth={2.5} /> Multumim
+          <Check className="w-3.5 h-3.5" strokeWidth={2.5} /> Mulțumim
         </span>
       ) : stare === "eroare" ? (
         <span className="text-[#e64343] font-semibold">
-          Nu s-a putut inregistra. Incearca mai tarziu.
+          Nu s-a putut înregistra. Încearcă mai târziu.
         </span>
       ) : (
         <>
-          <span className="text-[var(--text-muted)]">A functionat?</span>
+          <span className="text-[var(--text-muted)]">A funcționat?</span>
           <button
             onClick={() => voteaza(true)}
             disabled={stare === "trimit"}
-            aria-label="Codul a functionat"
+            aria-label="Codul a funcționat"
             className="inline-flex items-center gap-1 px-2 py-1 rounded-lg border border-[var(--border-strong)] text-[var(--text-soft)] hover:border-[var(--accent-text)] hover:text-[var(--accent-text)] disabled:opacity-50 transition-colors"
           >
             <ThumbsUp className="w-3.5 h-3.5" strokeWidth={2} /> Da
@@ -89,7 +89,7 @@ export default function VotCupon({
           <button
             onClick={() => voteaza(false)}
             disabled={stare === "trimit"}
-            aria-label="Codul nu a functionat"
+            aria-label="Codul nu a funcționat"
             className="inline-flex items-center gap-1 px-2 py-1 rounded-lg border border-[var(--border-strong)] text-[var(--text-soft)] hover:border-[#e64343] hover:text-[#e64343] disabled:opacity-50 transition-colors"
           >
             <ThumbsDown className="w-3.5 h-3.5" strokeWidth={2} /> Nu
@@ -101,7 +101,7 @@ export default function VotCupon({
           absenta unei cifre e onesta, o cifra din 1 vot nu ar fi. */}
       {aratScor && (
         <span className="text-[var(--text-muted)]">
-          <strong className="text-[var(--foreground)]">{procent}%</strong> din {total} spun ca merge
+          <strong className="text-[var(--foreground)]">{procent}%</strong> din {total} spun că merge
         </span>
       )}
     </div>

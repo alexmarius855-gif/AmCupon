@@ -3,12 +3,12 @@ import Link from "next/link";
 import { linkPlatit } from "@/lib/linkPlatit";
 
 export const metadata: Metadata = {
-  title: "Recomandari Premium — VPN, Hosting, Freelancing, SEO Tools",
+  title: "Recomandări Premium — VPN, Hosting, Freelancing, SEO Tools",
   description: "Servicii online recomandate de AmCupon.ro, alese după prețurile și condițiile publicate: VPN, hosting, unelte SEO, design, freelancing, travel.",
-  keywords: ["recomandari servicii online", "nordvpn romania", "hostinger parere", "fiverr romania", "semrush pret", "canva pro"],
+  keywords: ["recomandări servicii online", "nordvpn românia", "hostinger părere", "fiverr românia", "semrush preț", "canva pro"],
   alternates: { canonical: "https://amcupon.ro/recomandari" },
   openGraph: {
-    title: "Recomandari Premium AmCupon.ro — VPN, Hosting, SEO, Freelancing",
+    title: "Recomandări Premium AmCupon.ro — VPN, Hosting, SEO, Freelancing",
     description: "Servicii online recomandate: VPN, hosting, unelte SEO, design, freelancing și travel.",
     url: "https://amcupon.ro/recomandari",
     siteName: "AmCupon.ro",
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
 // 07.10.2026: fara preturi scrise de mana (se schimba, iar pagina nu afla) si fara superlative.
 const CATEGORII = [
   {
-    titlu: "VPN — Navigare Sigura",
+    titlu: "VPN — Navigare Sigură",
     emoji: "🔒",
     slug: "/vpn",
     desc: "Conexiune criptată pe Wi-Fi public, mai multă confidențialitate și acces la servere din alte țări.",
@@ -43,7 +43,7 @@ const CATEGORII = [
     ],
   },
   {
-    titlu: "Hosting — Gazduire Web",
+    titlu: "Hosting — Găzduire Web",
     emoji: "🌐",
     slug: "/hosting",
     desc: "Ai un site sau vrei să lansezi unul? Hostingul decide cât de repede se încarcă și cât de des cade.",
@@ -87,7 +87,7 @@ const CATEGORII = [
     ],
   },
   {
-    titlu: "Design & Creatie",
+    titlu: "Design & Creație",
     emoji: "🎨",
     slug: null,
     desc: "Unelte de design pentru oricine — de la postări pe social media până la prezentări profesionale.",
@@ -124,7 +124,7 @@ const CATEGORII = [
     ],
   },
   {
-    titlu: "Travel — Rezervari si Vacante",
+    titlu: "Travel — Rezervări și Vacanțe",
     emoji: "✈️",
     slug: "/calatorie",
     desc: "Cazare și mașini de închiriat — compară ofertele înainte să rezervi.",
@@ -157,14 +157,14 @@ export default function RecomandariPage() {
           <nav className="flex justify-center gap-2 text-xs text-[var(--text-muted)] mb-8">
             <Link href="/" className="hover:text-[var(--text-soft)]">AmCupon.ro</Link>
             <span>/</span>
-            <span className="text-[var(--text-soft)]">Recomandari Premium</span>
+            <span className="text-[var(--text-soft)]">Recomandări Premium</span>
           </nav>
           <div className="text-5xl mb-5">⭐</div>
           <h1 className="text-4xl md:text-5xl font-black text-[var(--foreground)] mb-4">
             Servicii <span className="text-transparent bg-clip-text" style={{ backgroundImage: "linear-gradient(135deg, #ddf93c, #ddf93c)" }}>Recomandate</span>
           </h1>
           <p className="text-[var(--text-soft)] text-lg max-w-2xl mx-auto mb-8">
-            VPN, hosting, SEO tools, freelancing si travel — servicii alese de echipa AmCupon.ro pe baza prețurilor și a condițiilor publice. Alege ce ți se potrivește.
+            VPN, hosting, SEO tools, freelancing și travel — servicii alese de echipa AmCupon.ro pe baza prețurilor și a condițiilor publice. Alege ce ți se potrivește.
           </p>
           {/* Jump links */}
           <div className="flex flex-wrap justify-center gap-2">
@@ -222,7 +222,7 @@ export default function RecomandariPage() {
                 <div className="mt-auto flex flex-col gap-2">
                   <a href={linkPlatit(s.url)} target="_blank" rel="sponsored noopener noreferrer"
                     className="bg-[#ddf93c] hover:bg-[#ddf93c] text-[#0c1000] font-black px-5 py-3 rounded-xl text-sm transition-all text-center shadow-lg shadow-[#ddf93c]/20 hover:-translate-y-0.5 duration-200">
-                    Incearca {s.name} →
+                    Încearcă {s.name} →
                   </a>
                 </div>
               </div>
@@ -235,7 +235,7 @@ export default function RecomandariPage() {
       <section className="max-w-5xl mx-auto px-4 pb-12 pt-4">
         <div className="bg-[var(--surface)]/50 border border-[var(--border)] rounded-xl p-5 text-center">
           <p className="text-[var(--text-muted)] text-xs">
-            Unele linkuri de pe aceasta pagina sunt linkuri de afiliat — daca faci o achizitie, AmCupon.ro primeste un comision, fara niciun cost suplimentar pentru tine.
+            Unele linkuri de pe această pagină sunt linkuri de afiliat — dacă faci o achiziție, AmCupon.ro primește un comision, fără niciun cost suplimentar pentru tine.
             Descrierile se bazează pe ce publică fiecare serviciu; prețurile și condițiile se schimbă, așa că verifică-le pe site înainte să cumperi.
           </p>
         </div>
