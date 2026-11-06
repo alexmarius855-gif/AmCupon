@@ -44,6 +44,27 @@ export const REDIRECTURI: Redirect[] = [
   { source: "/calculator-procente", destination: "/servicii", permanent: true },
   { source: "/generator-proforma",  destination: "/servicii", permanent: true },
 
+  // ── Articole SCOASE 06.11.2026: nerescrise pe surse, cu afirmatii fara sursa sau gresite ─────────────
+  // Decizia lui Alex: „fiecare litera verificata, ce nu e in regula nu publicam". Citite integral: carti care par
+  // inventate („Visul lui Elias"), „farmaciile online au crescut 200%", „Libris peste 500.000 de titluri",
+  // „diferenta e de obicei 2-8%" (eMAG vs Altex), modele depasite (RTX 4080 Super, Galaxy Tab S9 FE), „economisesti
+  // 15-23% la factura". Revin doar rescrise pe surse in scripts/articole_verificate.py (acelasi slug, apoi scoti randul).
+  // scripts/curata_articole.py le scoate si din blog (`fara_redirectionate`), deci generatoarele nu le mai publica.
+  { source: "/blog/cea-mai-buna-tableta-android-2026", destination: "/top/tablete", permanent: true },
+  { source: "/blog/cel-mai-bun-cort-camping-2026", destination: "/categorii/sport", permanent: true },
+  { source: "/blog/cel-mai-bun-echipament-fitness-2026", destination: "/categorii/sport", permanent: true },
+  { source: "/blog/cele-mai-bune-haine-de-sport-2026", destination: "/categorii/sport", permanent: true },
+  { source: "/blog/cel-mai-bun-pc-gaming-2026", destination: "/categorii/electronice", permanent: true },
+  { source: "/blog/cel-mai-bun-robot-de-bucatarie-2026", destination: "/top/roboti-de-bucatarie", permanent: true },
+  { source: "/blog/cel-mai-bun-sistem-smart-home-2026", destination: "/smart-home", permanent: true },
+  { source: "/blog/cele-mai-bune-carti-2026", destination: "/carti", permanent: true },
+  { source: "/blog/librarii-online-romania-2026", destination: "/carti", permanent: true },
+  { source: "/blog/farmacie-online-ieftina-romania-2026", destination: "/farmacie", permanent: true },
+  { source: "/blog/farmacii-online-romania-2026", destination: "/farmacie", permanent: true },
+  { source: "/blog/fashiondays-vs-answear-2026", destination: "/cod-reducere/answear.ro", permanent: true },
+  { source: "/blog/emag-vs-altex-2026", destination: "/comparatii", permanent: true },
+  { source: "/blog/vacanta-ieftina-romania-2026", destination: "/categorii/calatorii", permanent: true },
+
   // ── Articole contopite (07.10.2026) ─────────────────────────────────────
   // „Cel mai bun air fryer" era a doua pagina pe aceeasi cautare cu articolul despre friteuze (rescris pe
   // surse): doua pagini care isi impart semnalul. scripts/curata_articole.py il scoate si din blog.

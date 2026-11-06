@@ -482,9 +482,11 @@ def aplica_verificare(p: dict, v: dict, azi: str):
     return nou
 
 
-def titlu_curat(t: str) -> str:
-    """Fara caractere invizibile si fara textul alternativ lipit de titlu („Imagine produs Friteuza...")."""
-    return re.sub(r"^imagine produs\s+", "", re.sub(r"[\u200b-\u200d\ufeff]", "", t or ""), flags=re.I).strip()
+def titlu_curat(t: str, marca: str = "") -> str:
+    """Fara caractere invizibile si fara textul alternativ lipit de titlu („Imagine produs Friteuza..."); entitati,
+    punctuatie si marca scrisa de doua ori curatate de text_curat.titlu_produs („Sencor Sencor, Cuptor")."""
+    from text_curat import titlu_produs
+    return titlu_produs(re.sub(r"^imagine produs\s+", "", re.sub(r"[​-‍﻿]", "", t or ""), flags=re.I).strip(), marca)
 
 
 def adresa_magazin(p: dict) -> str:
@@ -702,7 +704,7 @@ def ruleaza() -> int:
     for x in lista:
         c = DUPA_SLUG[x["slug"]]
         for p in x["produse"]:
-            p["titlu"] = titlu_curat(p["titlu"])
+            p["titlu"] = titlu_curat(p["titlu"], p.get("brand") or "")
         x["produse"] = [p for p in x["produse"] if se_potriveste(p["titlu"], c, p["pret"]) and not fpf.adresa_moarta(p.get("url_magazin") or "")
                         and p["magazin"] not in MAGAZINE_RECONDITIONATE and p["magazin"] in plati]  # magazin iesit din program = fara comision
     verifica_la_magazine(lista, azi)

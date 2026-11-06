@@ -520,6 +520,7 @@ jobs:
           for i in $(seq 1 45); do curl -sf -o /dev/null http://localhost:3300/sitemap.xml && break; sleep 2; done
           cd ../scripts
           python verifica_site.py --html
+          python verifica_text.py
           python audit_live.py --baza http://localhost:3300 --strict
           kill %1 || true
 

@@ -22,6 +22,7 @@ import sys
 import unicodedata
 
 from continut_restrictionat import e_restrictionat
+from text_curat import fara_entitati, punctuatie, titlu_produs
 from fetch_product_feeds import CATEGORY_SLUG_MAP, MERCHANT_SLUG_FALLBACK
 
 ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), ".."))
@@ -157,7 +158,12 @@ def ruleaza() -> int:
         titlu = re.sub(r"^descriere\s+", "", p.get("title") or "", flags=re.I)
         if (p.get("merchant_slug") or "").lower() in MAGAZINE_RECONDITIONATE and "recondi" not in titlu.lower():
             titlu += ETICHETA_RECONDITIONAT
-        p["title"] = titlu
+        # 06.11.2026: entitati („Tom&nbsp;Ford"), punctuatie („sterilizate,, cu somon") si marca dubla („Seiko Seiko").
+        if p.get("brand"):
+            p["brand"] = punctuatie(fara_entitati(p["brand"]))
+        if isinstance(p.get("category"), str) and p["category"]:
+            p["category"] = fara_entitati(p["category"])  # „Health &amp; Beauty > ..."
+        p["title"] = titlu_produs(titlu, p.get("brand") or "")
         nou = categorie(p, magazine)
         if nou != p.get("cat_slug"):
             p["cat_slug"] = nou
@@ -165,6 +171,20 @@ def ruleaza() -> int:
     with io.open(PRODUSE, "w", encoding="utf-8", newline="") as h:
         json.dump(d, h, ensure_ascii=False, indent=INDENT)
     print(f"Categorii de produse: {schimbate} corectate din {len(lista)}.")
+    # Produsele restrictionate (doar pe pagina magazinului lor) primesc aceeasi curatare de text.
+    cale_r = os.path.join(os.path.dirname(PRODUSE), "products-restrictionate.json")
+    if os.path.exists(cale_r):
+        with io.open(cale_r, encoding="utf-8") as h:
+            dr = json.load(h)
+        lr = dr.get("products", []) if isinstance(dr, dict) else dr
+        for p in lr:
+            if p.get("brand"):
+                p["brand"] = punctuatie(fara_entitati(p["brand"]))
+            if isinstance(p.get("category"), str):
+                p["category"] = fara_entitati(p["category"])
+            p["title"] = titlu_produs(p.get("title") or "", p.get("brand") or "")
+        with io.open(cale_r, "w", encoding="utf-8", newline="") as h:
+            json.dump(dr, h, ensure_ascii=False, indent=INDENT)
     return 0
 
 

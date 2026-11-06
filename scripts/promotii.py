@@ -435,6 +435,9 @@ def descriere_publica(desc: str, promo: dict) -> str:
     t = RE_COD_ORFAN.sub(lambda m: ". " if m.end() < len(m.string) and m.string[m.end()].isupper() else "", t)
     t = RE_CUM_FUNCTIONEAZA.sub("", RE_SALUT.sub("", re.sub(r"(?<!\d)\s+-\s+(?!\d)", ". ", t).strip(" -–|:")))
     t = re.sub(r"\.\s+\.", ".", t).lstrip(" .")
+    # Punctuatia ramasa dupa codul scos („toppinguri., valabil") si propozitiile cu alt an („6-9 noiembrie 2025").
+    from text_curat import text_oferta
+    t = text_oferta(t)
     if t[:1].islower():
         t = t[0].upper() + t[1:]
     if _cheie(t) == _cheie(promo.get("nume") or ""):
@@ -535,6 +538,10 @@ def curata_promotii(magazine: list, azi: str = None) -> dict:
                 p["nume"] = RE_EMOJI.sub("", p["nume"]).strip() or p["nume"]
             for camp in ("nume", "descriere"):
                 p[camp] = titlu_fara_cod_lipit(p.get(camp)) if p.get(camp) else p.get(camp)
+                # 06.11.2026: entitati, punctuatie rupta si propozitii cu alt an, aceeasi regula ca garda verifica_text.py.
+                if isinstance(p.get(camp), str) and p[camp]:
+                    from text_curat import text_oferta, punctuatie, fara_entitati
+                    p[camp] = text_oferta(p[camp]) if camp == "descriere" else punctuatie(fara_entitati(p[camp]))
             nume_curat = fara_segmente_afiliati(p.get("nume"), m)
             if nume_curat is None:
                 st["afiliati_scoase"].append(f"{m.get('magazin', '?')} (titlul e pentru afiliati)")

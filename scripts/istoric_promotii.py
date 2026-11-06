@@ -154,7 +154,8 @@ def recurata(istoric: dict, azi: str, dupa_slug: dict) -> int:
                 del intrari[k]
                 scoase += 1
                 continue
-            e["titlu"] = curat
+            from text_curat import fara_entitati, punctuatie
+            e["titlu"] = punctuatie(fara_entitati(curat))
             if not titlu_publicabil(e["titlu"], m) or e["ultima"] < limita:
                 del intrari[k]
                 scoase += 1

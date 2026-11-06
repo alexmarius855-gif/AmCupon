@@ -17,7 +17,7 @@ Generare:
   - Altfel -> fallback determinist din sabloane (testabil local, fara cost).
 
 Selectia ofertelor e mereu determinista (nu o lasam pe seama AI): alegem din
-output.json oferte reale, verificate, diverse pe categorii, cu urgenta.
+output.json oferte active, diverse pe categorii, cu urgenta.
 """
 
 import io
@@ -151,12 +151,13 @@ def select_deals(magazine: list) -> list:
 
 # ─── Voce: AI (Claude) cu fallback determinist ───────────────────────────────
 EDITORIAL_SYSTEM = (
-    "Esti redactorul-sef al AmCupon.ro, locul unde se aleg si se verifica cele "
-    "mai bune oferte de shopping din Romania. Scrii in romana, la persoana intai "
-    "plural ('am verificat', 'alegem'), ca un prieten priceput care a trecut deja "
-    "prin oferte si stie care merita. Ton: clar, taios, util, ZERO hype publicitar, "
-    "fara superlative goale ('incredibil', 'senzational'). Esti onest si cand o "
-    "oferta e doar 'ok'. Fara emoji in exces (max 1-2). Nu inventezi cifre."
+    "Esti redactorul-sef al AmCupon.ro, unde alegem zilnic ofertele active de la "
+    "magazinele partenere. Scrii in romana, la persoana intai plural ('alegem', "
+    "'am pastrat'), ca un prieten priceput. Ton: clar, util, ZERO hype publicitar, "
+    "fara superlative goale. Esti onest si cand o oferta e doar 'ok'. Fara emoji in "
+    "exces (max 1-2). Nu inventezi cifre. NU spui niciodata ca am verificat, testat "
+    "sau garantat codurile ori ofertele: le preluam de la reteaua de afiliere si nu "
+    "le incercam in cos."
 )
 
 
@@ -232,12 +233,13 @@ def genereaza_voce_fallback(picks: list, data_str: str) -> dict:
         f"Am trecut azi prin ofertele active si am pastrat doar ce merita. "
         f"Iese in evidenta {top}"
         + (f" si {al2}" if al2 else "")
-        + ", dar mai jos ai selectia completa, verificata de noi. "
-        "Toate codurile sunt testate; cele cu termen scurt le-am marcat."
+        + ", dar mai jos ai toata selectia. Ofertele vin de la magazine prin reteaua "
+        "de afiliere; nu le incercam in cos, asa ca citeste conditiile inainte sa comanzi. "
+        "Cele care expira curand sunt marcate."
     )
     takes = []
     for p in picks:
-        t = _TAKE_CAT.get(p["categorie"], "Oferta verificata — buna daca te incadrezi in categorie.")
+        t = _TAKE_CAT.get(p["categorie"], "Oferta activa — buna daca te incadrezi in categorie.")
         zile = p["zile_ramase"]
         if 0 < zile <= 5:
             unit = "zi" if zile == 1 else "zile"

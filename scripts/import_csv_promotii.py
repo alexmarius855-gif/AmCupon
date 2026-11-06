@@ -332,6 +332,18 @@ def make_magazin_nou(slug: str, promotie: dict) -> dict:
 
 # ─── Main ─────────────────────────────────────────────────────────────────────
 
+def _scoase_din_site() -> set:
+    """Magazinele pe care merge_platforms.py le-a scos cu intentie: liste scrise de el in frontend/public."""
+    rez = set()
+    for nume in ("magazine-fara-cupoane.json", "magazine-fara-livrare-ro.json"):
+        try:
+            with open(os.path.join(os.path.dirname(OUTPUT_JSON), nume), encoding="utf-8") as f:
+                rez |= {(x.get("magazin") or "").lower() for x in json.load(f)}
+        except (OSError, ValueError):
+            pass
+    return rez
+
+
 def main():
     parser = argparse.ArgumentParser(description="Import promotii din CSV in output.json")
     parser.add_argument("--csv",     default=DEFAULT_CSV, help="Calea catre fisierul CSV")
@@ -419,6 +431,10 @@ def main():
                 mag["promotii"].append(promotie)
                 magazine[noi_by_slug[slug]] = recalculeaza_flags(mag)
                 stats["adaugate"] += 1
+        elif slug.lower() in _scoase_din_site():
+            # 06.11.2026: magazinele scoase de merge (interzic site-urile de cupoane sau nu livreaza in Romania) nu
+            # revin prin CSV — garda verifica_site.py le-a prins re-create de aici.
+            stats["duplicate_skip"] += 1
         else:
             # Magazin nou: il cream cu link afiliat 2P real (program acceptat in 2P)
             mag_nou = make_magazin_nou(slug, promotie)

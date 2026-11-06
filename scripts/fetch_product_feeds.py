@@ -348,7 +348,8 @@ def curata_titlu(s) -> str:
         k = t.find(cap, 20)
         if k > 0:
             t = t[:k]
-    return re.sub(r"[\s※*•·|,;-]+$", "", t).strip()
+    from text_curat import punctuatie, fara_entitati
+    return punctuatie(re.sub(r"[\s※*•·|,;-]+$", "", fara_entitati(t)).strip())
 
 
 def _radacina(cheie: str) -> str:
