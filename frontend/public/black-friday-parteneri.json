@@ -25,7 +25,7 @@
   {
    "slug": "carti-educatie",
    "nume": "cărți",
-   "campanii": 11
+   "campanii": 12
   },
   {
    "slug": "copii",
@@ -781,6 +781,16 @@
    "final": "2026-11-08",
    "nota": "Cărțile bune vin cu reduceri mari! Black Friday - 6-8 noiembrie. Pana la 90% reducere la toate produsele de pe site-ul www.libhumanitas.ro",
    "descriere": "Discount-ul minim pe perioada promotiei Black Friday este de 10%, iar cel maxim este de 90%. Pe se gasesc peste 300 de edituri si furnizori, audiobook-uri CD si mp3, ebook-uri, muzica, filme, boardgames, etc. Transportul este gratuit pe teritoriul Romaniei la comenzi mai mari de 149 lei.",
+   "are_cod": false,
+   "categorie": "carti-educatie"
+  },
+  {
+   "magazin": "librarie.net",
+   "nume": "Librarie.net",
+   "start": "2026-11-06",
+   "final": "2026-11-08",
+   "nota": "Black Friday 2026 cu peste 30.000 de produse in campanie (6 - 8 Noiembrie 2026)",
+   "descriere": "",
    "are_cod": false,
    "categorie": "carti-educatie"
   },

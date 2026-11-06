@@ -4,18 +4,18 @@
  "zile": {
   "2026-11-06": {
    "zi": "2026-11-06",
-   "produse_urmarite": 4678,
+   "produse_urmarite": 4759,
    "excluse": 10,
-   "ieftinite": 139,
-   "reale": 130,
+   "ieftinite": 234,
+   "reale": 225,
    "nu_sub_minim": 9,
-   "pct_reale_din_ieftinite": 93.5,
-   "mediana_reducere_reala_pct": 16.6,
+   "pct_reale_din_ieftinite": 96.2,
+   "mediana_reducere_reala_pct": 15.1,
    "mediana_reducere_aparenta_pct": 20.0,
    "scumpite": 14,
-   "neschimbate": 4525,
-   "scumpite_in_luna_dinainte": 257,
-   "pct_scumpite_in_luna_dinainte": 5.5
+   "neschimbate": 4511,
+   "scumpite_in_luna_dinainte": 258,
+   "pct_scumpite_in_luna_dinainte": 5.4
   }
  }
 }

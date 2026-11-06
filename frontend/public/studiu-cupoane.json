@@ -57,11 +57,11 @@
     {
       "slug": "fashion",
       "nume": "Fashion",
-      "magazine": 45,
-      "cu_promotie": 16,
-      "reducere_mediana": 50.0,
+      "magazine": 46,
+      "cu_promotie": 17,
+      "reducere_mediana": 50,
       "reducere_max": 70,
-      "esantion": 12
+      "esantion": 13
     },
     {
       "slug": "casa-gradina",
@@ -82,15 +82,6 @@
       "esantion": 10
     },
     {
-      "slug": "marketplace",
-      "nume": "Marketplace",
-      "magazine": 38,
-      "cu_promotie": 9,
-      "reducere_mediana": 17.5,
-      "reducere_max": 60,
-      "esantion": 6
-    },
-    {
       "slug": "auto-moto",
       "nume": "Auto & moto",
       "magazine": 22,
@@ -98,6 +89,15 @@
       "reducere_mediana": 15,
       "reducere_max": 35,
       "esantion": 3
+    },
+    {
+      "slug": "marketplace",
+      "nume": "Marketplace",
+      "magazine": 37,
+      "cu_promotie": 8,
+      "reducere_mediana": 15,
+      "reducere_max": 60,
+      "esantion": 5
     },
     {
       "slug": "bijuterii",
@@ -214,7 +214,7 @@
         {
           "slug": "fashion",
           "nume": "Fashion",
-          "promotii": 37
+          "promotii": 39
         },
         {
           "slug": "casa-gradina",

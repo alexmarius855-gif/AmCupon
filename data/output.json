@@ -18,6 +18,15 @@
     "zile_ramase": 24,
     "promotii": [
       {
+        "nume": "DH149BFP",
+        "descriere": "Save £21 on orders over £149 during Black Friday & Cyber Monday. Available for GBP-settlement accounts.",
+        "cod_cupon": "",
+        "landing_page": "https://dhgate.sjv.io/c/7401119/1466364/12108?u=https%3A%2F%2Fwww.dhgate.com%2Fsales%2Fmarket%2Fblackfriday.html",
+        "zile_ramase": 25,
+        "expira": "2026-12-01",
+        "sursa": "impact_deals_api"
+      },
+      {
         "nume": "DH2026NOVSAVE6",
         "descriere": "Save $6 on orders over $50 using coupon DH2026NOVSAVE6 at DHgate.",
         "cod_cupon": "DH2026NOVSAVE6",
@@ -218,15 +227,6 @@
       {
         "nume": "DH99BFP",
         "descriere": "Save £15 on orders over £99 during Black Friday & Cyber Monday. Available for GBP-settlement accounts.",
-        "cod_cupon": "",
-        "landing_page": "https://dhgate.sjv.io/c/7401119/1466364/12108?u=https%3A%2F%2Fwww.dhgate.com%2Fsales%2Fmarket%2Fblackfriday.html",
-        "zile_ramase": 25,
-        "expira": "2026-12-01",
-        "sursa": "impact_deals_api"
-      },
-      {
-        "nume": "DH149BFP",
-        "descriere": "Save £21 on orders over £149 during Black Friday & Cyber Monday. Available for GBP-settlement accounts.",
         "cod_cupon": "",
         "landing_page": "https://dhgate.sjv.io/c/7401119/1466364/12108?u=https%3A%2F%2Fwww.dhgate.com%2Fsales%2Fmarket%2Fblackfriday.html",
         "zile_ramase": 25,
@@ -523,6 +523,15 @@
         "sursa": "impact_deals_api"
       },
       {
+        "nume": "Black Friday 25% off",
+        "descriere": "Black Friday 25% off",
+        "cod_cupon": "BF25",
+        "landing_page": "https://laavooextensions.sjv.io/c/7401119/3855423/51251?u=https%3A%2F%2Flaavooextensions.com%2Fcollections%2Finjection-tape-virgin-hair",
+        "zile_ramase": 24,
+        "expira": "2026-11-30",
+        "sursa": "impact_deals_api"
+      },
+      {
         "nume": "Black Friday 16% off",
         "descriere": "Black Friday 16% off",
         "cod_cupon": "BF16",
@@ -535,15 +544,6 @@
         "nume": "Black Friday 20% off",
         "descriere": "Black Friday 20% off",
         "cod_cupon": "BF20",
-        "landing_page": "https://laavooextensions.sjv.io/c/7401119/3855423/51251?u=https%3A%2F%2Fwww.laavooextensions.com",
-        "zile_ramase": 24,
-        "expira": "2026-11-30",
-        "sursa": "impact_deals_api"
-      },
-      {
-        "nume": "Black Friday 25% off",
-        "descriere": "Black Friday 25% off",
-        "cod_cupon": "BF25",
         "landing_page": "https://laavooextensions.sjv.io/c/7401119/3855423/51251?u=https%3A%2F%2Fwww.laavooextensions.com",
         "zile_ramase": 24,
         "expira": "2026-11-30",
@@ -3490,6 +3490,81 @@
     "unique_code": "8e59c17b0"
   },
   {
+    "magazin": "librarie.net",
+    "url": "https://www.librarie.net/",
+    "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.librarie.net%2F",
+    "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/10206/medium/10206.png",
+    "categorie": "Cărți & Educație",
+    "categorie_slug": "carti-educatie",
+    "rank": 999,
+    "scor_afiliere": 0,
+    "prioritate": "neclasat",
+    "canal_recomandat": "",
+    "sales_number": 0,
+    "trend": 0,
+    "are_promotie": true,
+    "cod_cupon": false,
+    "zile_ramase": 2,
+    "promotii": [
+      {
+        "nume": "Bursa Cărților Ieftine: Ediția sub 15 lei (peste 5000 de titluri active)",
+        "descriere": "",
+        "cod_cupon": "",
+        "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.librarie.net%2Fc%2F4637%2Fbursa-c%C4%83r%C8%9Bilor-ieftine-edi%C8%9Bia-sub-15",
+        "zile_ramase": 55,
+        "expira": "2026-12-31",
+        "incepe": "2026-10-03T21:00:00Z",
+        "sursa": "2performant_api"
+      },
+      {
+        "nume": "Minim 50% Reducere",
+        "descriere": "Book-Half continua pe Librarie.net! Avem peste 1200 de titluri cu reduceri de minimum 50%. Fie că vânezi un bestseller, vrei să pregătești lecturile de vacanță ale copiilor sau cauți acel titlu de dezvoltare personală care să te motiveze, acum le iei la preț de outlet.",
+        "cod_cupon": "",
+        "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.librarie.net%2Fc%2F4628%2Fminim-50-reducere",
+        "zile_ramase": 55,
+        "expira": "2026-12-31",
+        "incepe": "2026-10-03T21:00:00Z",
+        "sursa": "2performant_api"
+      },
+      {
+        "nume": "Editura Act si Politon reducere 23% la peste 600 de titluri (23 octombrie - 23 decembrie 2026)",
+        "descriere": "",
+        "cod_cupon": "",
+        "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.librarie.net%2Fcautare-rezultate.php%3Feditura_id%3D6005",
+        "zile_ramase": 47,
+        "expira": "2026-12-23",
+        "incepe": "2026-10-21T21:00:00Z",
+        "sursa": "2performant_api"
+      },
+      {
+        "nume": "Editura Rao Books - reduceri de minim 50% la peste 1300 de titluri",
+        "descriere": "Stocuri consistente cu reaprovizionare continua.",
+        "cod_cupon": "",
+        "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.librarie.net%2Fcautare-rezultate.php%3F%26editura%3D1163%26sort%3Dtop%26discount%3D50",
+        "zile_ramase": 55,
+        "expira": "2026-12-31",
+        "incepe": "2026-11-01T22:00:00Z",
+        "sursa": "2performant_api"
+      },
+      {
+        "nume": "Black Friday 2026 cu peste 30.000 de produse in campanie (6 - 8 Noiembrie 2026)",
+        "descriere": "",
+        "cod_cupon": "",
+        "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.librarie.net%2Fc%2F4621%2Fblack-friday-2026",
+        "zile_ramase": 2,
+        "expira": "2026-11-08",
+        "incepe": "2026-11-05T22:00:00Z",
+        "sursa": "2performant_api"
+      }
+    ],
+    "exclusiv": false,
+    "platforma": "2performant",
+    "ultima_verificare": "2026-11-06",
+    "scor_final": 40.0,
+    "program_id": 825,
+    "unique_code": "da1148931"
+  },
+  {
     "magazin": "drmax.ro",
     "url": "https://www.drmax.ro/",
     "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.drmax.ro%2F",
@@ -4325,6 +4400,41 @@
     "unique_code": "522f2a38e"
   },
   {
+    "magazin": "ada-shoes.ro",
+    "url": "https://ada-shoes.ro",
+    "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fada-shoes.ro",
+    "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/12349/medium/12349.jpg",
+    "categorie": "Fashion",
+    "categorie_slug": "fashion",
+    "rank": 999,
+    "scor_afiliere": 0,
+    "prioritate": "neclasat",
+    "canal_recomandat": "",
+    "sales_number": 0,
+    "trend": 0,
+    "are_promotie": true,
+    "cod_cupon": false,
+    "zile_ramase": 2,
+    "promotii": [
+      {
+        "nume": "BLACK FRIDAY a început mai devreme la ADA Shoes!",
+        "descriere": "Avem și -20% la poșete de la brandurile Anekke, Epica, ADA Shoes și Rieker. Vă invităm să începeți promovarea campaniei și să folosiți materialele Black Friday puse la dispoziție.",
+        "cod_cupon": "",
+        "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fada-shoes.ro%2F",
+        "zile_ramase": 2,
+        "expira": "2026-11-08",
+        "incepe": "2026-10-06T21:00:00Z",
+        "sursa": "2performant_api"
+      }
+    ],
+    "exclusiv": false,
+    "platforma": "2performant",
+    "ultima_verificare": "2026-11-06",
+    "scor_final": 40.0,
+    "program_id": 10992,
+    "unique_code": "81a821097"
+  },
+  {
     "magazin": "edituracasa.ro",
     "url": "https://www.edituracasa.ro/",
     "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.edituracasa.ro%2F",
@@ -4843,71 +4953,6 @@
     "scor_final": 30.0,
     "program_id": 2615,
     "unique_code": "bb3071a7d"
-  },
-  {
-    "magazin": "librarie.net",
-    "url": "https://www.librarie.net/",
-    "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.librarie.net%2F",
-    "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/10206/medium/10206.png",
-    "categorie": "Cărți & Educație",
-    "categorie_slug": "carti-educatie",
-    "rank": 999,
-    "scor_afiliere": 0,
-    "prioritate": "neclasat",
-    "canal_recomandat": "",
-    "sales_number": 0,
-    "trend": 0,
-    "are_promotie": true,
-    "cod_cupon": false,
-    "zile_ramase": 47,
-    "promotii": [
-      {
-        "nume": "Bursa Cărților Ieftine: Ediția sub 15 lei (peste 5000 de titluri active)",
-        "descriere": "",
-        "cod_cupon": "",
-        "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.librarie.net%2Fc%2F4637%2Fbursa-c%C4%83r%C8%9Bilor-ieftine-edi%C8%9Bia-sub-15",
-        "zile_ramase": 55,
-        "expira": "2026-12-31",
-        "incepe": "2026-10-03T21:00:00Z",
-        "sursa": "2performant_api"
-      },
-      {
-        "nume": "Minim 50% Reducere",
-        "descriere": "Book-Half continua pe Librarie.net! Avem peste 1200 de titluri cu reduceri de minimum 50%. Fie că vânezi un bestseller, vrei să pregătești lecturile de vacanță ale copiilor sau cauți acel titlu de dezvoltare personală care să te motiveze, acum le iei la preț de outlet.",
-        "cod_cupon": "",
-        "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.librarie.net%2Fc%2F4628%2Fminim-50-reducere",
-        "zile_ramase": 55,
-        "expira": "2026-12-31",
-        "incepe": "2026-10-03T21:00:00Z",
-        "sursa": "2performant_api"
-      },
-      {
-        "nume": "Editura Act si Politon reducere 23% la peste 600 de titluri (23 octombrie - 23 decembrie 2026)",
-        "descriere": "",
-        "cod_cupon": "",
-        "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.librarie.net%2Fcautare-rezultate.php%3Feditura_id%3D6005",
-        "zile_ramase": 47,
-        "expira": "2026-12-23",
-        "incepe": "2026-10-21T21:00:00Z",
-        "sursa": "2performant_api"
-      },
-      {
-        "nume": "Editura Rao Books - reduceri de minim 50% la peste 1300 de titluri",
-        "descriere": "Stocuri consistente cu reaprovizionare continua.",
-        "cod_cupon": "",
-        "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.librarie.net%2Fcautare-rezultate.php%3F%26editura%3D1163%26sort%3Dtop%26discount%3D50",
-        "zile_ramase": 55,
-        "expira": "2026-12-31",
-        "incepe": "2026-11-01T22:00:00Z",
-        "sursa": "2performant_api"
-      }
-    ],
-    "exclusiv": false,
-    "platforma": "2performant",
-    "ultima_verificare": "2026-11-06",
-    "scor_final": 30.0,
-    "program_id": 825,
-    "unique_code": "da1148931"
   },
   {
     "magazin": "kinderauto.ro",
@@ -11346,12 +11391,12 @@
     "ultima_verificare": "2026-11-06"
   },
   {
-    "magazin": "nobilacasa.ro",
-    "url": "https://www.nobilacasa.ro",
-    "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.nobilacasa.ro",
-    "logo_url": "https://www.google.com/s2/favicons?domain=nobilacasa.ro&sz=128",
-    "categorie": "Casă & Grădină",
-    "categorie_slug": "casa-gradina",
+    "magazin": "fera.ro",
+    "url": "https://www.fera.ro",
+    "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.fera.ro",
+    "logo_url": "https://www.google.com/s2/favicons?domain=fera.ro&sz=128",
+    "categorie": "Pet Shop",
+    "categorie_slug": "animale",
     "rank": null,
     "scor_afiliere": 55,
     "scor_final": 55,
@@ -11368,12 +11413,12 @@
     "ultima_verificare": "2026-11-06"
   },
   {
-    "magazin": "fera.ro",
-    "url": "https://www.fera.ro",
-    "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.fera.ro",
-    "logo_url": "https://www.google.com/s2/favicons?domain=fera.ro&sz=128",
-    "categorie": "Pet Shop",
-    "categorie_slug": "animale",
+    "magazin": "nobilacasa.ro",
+    "url": "https://www.nobilacasa.ro",
+    "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.nobilacasa.ro",
+    "logo_url": "https://www.google.com/s2/favicons?domain=nobilacasa.ro&sz=128",
+    "categorie": "Casă & Grădină",
+    "categorie_slug": "casa-gradina",
     "rank": null,
     "scor_afiliere": 55,
     "scor_final": 55,
@@ -16989,6 +17034,30 @@
     "unique_code": "351384404"
   },
   {
+    "magazin": "asus.com",
+    "url": "https://www.asus.com/ro",
+    "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.asus.com%2Fro",
+    "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/9043/medium/9043.jpg",
+    "categorie": "Electronice & IT",
+    "categorie_slug": "electronice",
+    "rank": 999,
+    "scor_afiliere": 0,
+    "prioritate": "neclasat",
+    "canal_recomandat": "",
+    "sales_number": 0,
+    "trend": 0,
+    "are_promotie": false,
+    "cod_cupon": false,
+    "zile_ramase": 99,
+    "promotii": [],
+    "exclusiv": false,
+    "platforma": "2performant",
+    "ultima_verificare": "2026-11-06",
+    "scor_final": 30.0,
+    "program_id": 8347,
+    "unique_code": "3f2fc358a"
+  },
+  {
     "magazin": "boost4life.ro",
     "url": "https://www.boost4life.ro",
     "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.boost4life.ro",
@@ -20201,30 +20270,6 @@
     "scor_final": 0.0,
     "program_id": 9404,
     "unique_code": "7b2bb25ec"
-  },
-  {
-    "magazin": "asus.com",
-    "url": "https://www.asus.com/ro",
-    "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.asus.com%2Fro",
-    "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/9043/medium/9043.jpg",
-    "categorie": "Electronice & IT",
-    "categorie_slug": "electronice",
-    "rank": 999,
-    "scor_afiliere": 0,
-    "prioritate": "neclasat",
-    "canal_recomandat": "",
-    "sales_number": 0,
-    "trend": 0,
-    "are_promotie": false,
-    "cod_cupon": false,
-    "zile_ramase": 99,
-    "promotii": [],
-    "exclusiv": false,
-    "platforma": "2performant",
-    "ultima_verificare": "2026-11-06",
-    "scor_final": 0.0,
-    "program_id": 8347,
-    "unique_code": "3f2fc358a"
   },
   {
     "magazin": "rik.ro",

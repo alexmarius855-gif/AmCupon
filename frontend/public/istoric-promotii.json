@@ -580,7 +580,7 @@
    "magazine": 173
   },
   "2026-11-06": {
-   "promotii": 293,
+   "promotii": 294,
    "magazine": 176
   }
  },
@@ -6228,6 +6228,15 @@
    }
   ],
   "librarie.net": [
+   {
+    "k": "blackfriday2026cupeste30000deproduseincampanie68noiembrie2026|",
+    "titlu": "Black Friday 2026 cu peste 30.000 de produse in campanie (6 - 8 Noiembrie 2026)",
+    "cod": false,
+    "prima": "2026-11-06",
+    "ultima": "2026-11-06",
+    "expira": "2026-11-08",
+    "activa": true
+   },
    {
     "k": "avanpremierablackfriday2026|",
     "titlu": "Avanpremiera Black Friday 2026",
