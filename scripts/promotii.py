@@ -540,8 +540,9 @@ def curata_promotii(magazine: list, azi: str = None) -> dict:
                 p[camp] = titlu_fara_cod_lipit(p.get(camp)) if p.get(camp) else p.get(camp)
                 # 06.11.2026: entitati, punctuatie rupta si propozitii cu alt an, aceeasi regula ca garda verifica_text.py.
                 if isinstance(p.get(camp), str) and p[camp]:
-                    from text_curat import text_oferta, punctuatie, fara_entitati
-                    p[camp] = text_oferta(p[camp]) if camp == "descriere" else punctuatie(fara_entitati(p[camp]))
+                    from text_curat import text_oferta, punctuatie, fara_entitati, acord_numeral
+                    # Acordul numeralului si in titlu: „cu peste 30.000 produse" -> „30.000 de produse" (06.11, oprit de garda).
+                    p[camp] = text_oferta(p[camp]) if camp == "descriere" else acord_numeral(punctuatie(fara_entitati(p[camp])))
             nume_curat = fara_segmente_afiliati(p.get("nume"), m)
             if nume_curat is None:
                 st["afiliati_scoase"].append(f"{m.get('magazin', '?')} (titlul e pentru afiliati)")

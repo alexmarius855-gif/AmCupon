@@ -211,7 +211,7 @@ export default function BlackFridayPage() {
                 de afiliere 2Performant sau publicate de presă; reducerile le stabilește fiecare magazin.
               </p>
               <p className="text-sm text-[var(--text-soft)] mb-3 max-w-2xl">
-                Black Friday nu mai e o singură zi: {BF.inainteDeEmag} din {BF.totalCampanii} de campanii încep înainte de {emagScurt}, prima
+                Black Friday nu mai e o singură zi: {BF.inainteDeEmag} din {cuNumar(BF.totalCampanii, "campanie", "campanii")} încep înainte de {emagScurt}, prima
                 pe {BF.primaZi}. O campanie ține {cuNumar(BF.medianaZile, "zi", "zile")} în mod obișnuit (valoarea mediană), iar cea mai lungă, {cuNumar(BF.celMaiLung, "zi", "zile")}.
               </p>
               <nav aria-label="Campanii pe categorii" className="flex flex-wrap gap-2 mb-4">

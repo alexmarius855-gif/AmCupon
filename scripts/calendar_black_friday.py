@@ -32,6 +32,7 @@ from datetime import datetime, timezone
 
 sys.path.insert(0, os.path.dirname(__file__))
 from import_csv_promotii import find_magazin, norm_slug  # noqa: E402
+from text_curat import acord_numeral  # noqa: E402
 from nume_magazin import nume_afisat  # noqa: E402
 from promotii import (RE_EMOJI, data_csv, descriere_publica, fara_segmente_afiliati,  # noqa: E402
                       inceput_in_viitor, ora_ro, promotie_pentru_alta_piata, sfarsit_real, titlu_in_text)
@@ -96,7 +97,7 @@ def campanii(randuri: list[dict], magazine: list[dict], an: int) -> list[dict]:
             continue
         slug = magazine[idx]["magazin"]
         nume = nume_afisat(slug)
-        nota = re.sub(r"\s{2,}", " ", RE_EMOJI.sub("", titlu_in_text(promo, nume))).strip(" -|:")
+        nota = acord_numeral(re.sub(r"\s{2,}", " ", RE_EMOJI.sub("", titlu_in_text(promo, nume))).strip(" -|:"))
         c = {"magazin": slug, "nume": nume, "start": s, "final": f, "nota": nota,
              "descriere": descriere_publica(desc, promo), "are_cod": bool(promo["cod_cupon"])}
         if slug not in alese or s < alese[slug]["start"]:
