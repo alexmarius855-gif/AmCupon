@@ -1,5 +1,57 @@
 [
   {
+    "id": 274405,
+    "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/274364/original/274364.jpg",
+    "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=3572f4157&aff_code=541547473&campaign_unique=4b9a6d5ea",
+    "landing_raw": "https://www.kitunghii.ro",
+    "width": 1200,
+    "height": 1200,
+    "merchant": "kitunghii.ro",
+    "merchant_slug": "kitunghii-ro",
+    "name": "-80% BLACK FRIDAY,SECRET BEAUTY BAG GRATUIT",
+    "category": "-80% BLACK FRIDAY,SECRET BEAUTY BAG GRATUIT",
+    "b_type": "image"
+  },
+  {
+    "id": 274397,
+    "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/274356/original/274356.jpg",
+    "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=30c6086a8&aff_code=541547473&campaign_unique=cc08e2536",
+    "landing_raw": "https://www.pensulemachiaj.ro",
+    "width": 1200,
+    "height": 1200,
+    "merchant": "pensulemachiaj.ro",
+    "merchant_slug": "pensulemachiaj-ro",
+    "name": "-80 BLACK FRIDAY CELEBRITY SECRET BAG GRATUIT ",
+    "category": "-80 BLACK FRIDAY CELEBRITY SECRET BAG GRATUIT ",
+    "b_type": "image"
+  },
+  {
+    "id": 274358,
+    "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/274317/original/274317.jpeg",
+    "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=0a570a16a&aff_code=541547473&campaign_unique=6390e3cfb",
+    "landing_raw": "https://www.drmax.ro/black-friday",
+    "width": 1080,
+    "height": 1080,
+    "merchant": "drmax.ro/",
+    "merchant_slug": "drmax-ro",
+    "name": "Black Friday 2026",
+    "category": "Black Friday 2026",
+    "b_type": "image"
+  },
+  {
+    "id": 274325,
+    "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/274284/original/274284.jpg",
+    "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=4c23f9855&aff_code=541547473&campaign_unique=a3076d4a0",
+    "landing_raw": "https://www.apolino.ro/sale",
+    "width": 769,
+    "height": 840,
+    "merchant": "apolino.ro",
+    "merchant_slug": "apolino-ro",
+    "name": "https://www.apolino.ro/femei",
+    "category": "https://www.apolino.ro/femei",
+    "b_type": "image"
+  },
+  {
     "id": 274294,
     "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/274253/original/274253.jpg",
     "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=f2d7f5bc7&aff_code=541547473&campaign_unique=f394d2a00",
@@ -192,45 +244,6 @@
     "merchant_slug": "intimax-ro",
     "name": "Black Friday - start",
     "category": "Black Friday - start",
-    "b_type": "image"
-  },
-  {
-    "id": 274154,
-    "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/274113/original/274113.JPG",
-    "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=e14fbc443&aff_code=541547473&campaign_unique=313128750",
-    "landing_raw": "https://www.edituradiana.ro/puzzle-uri",
-    "width": 948,
-    "height": 931,
-    "merchant": "edituradiana.ro",
-    "merchant_slug": "edituradiana-ro",
-    "name": "Puzzlemania! Nebunia preturilor la puzzle-uri a inceput!",
-    "category": "Puzzlemania! Nebunia preturilor la puzzle-uri a inceput!",
-    "b_type": "image"
-  },
-  {
-    "id": 274152,
-    "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/274111/original/274111.jpg",
-    "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=e3bef2ac4&aff_code=541547473&campaign_unique=bb24d9ce5",
-    "landing_raw": "https://mobilalaguna.ro/",
-    "width": 1200,
-    "height": 1200,
-    "merchant": "mobilalaguna.ro",
-    "merchant_slug": "mobilalaguna-ro",
-    "name": "Reduceri Mobila Luna Noiembrie 2026",
-    "category": "Reduceri Mobila Luna Noiembrie 2026",
-    "b_type": "image"
-  },
-  {
-    "id": 274142,
-    "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/274101/original/274101.jpg",
-    "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=3c2dafff1&aff_code=541547473&campaign_unique=313128750",
-    "landing_raw": "https://www.edituradiana.ro/black-friday2026",
-    "width": 700,
-    "height": 650,
-    "merchant": "edituradiana.ro",
-    "merchant_slug": "edituradiana-ro",
-    "name": "Black Friday 2026",
-    "category": "Black Friday 2026",
     "b_type": "image"
   }
 ]

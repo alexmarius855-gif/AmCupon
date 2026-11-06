@@ -2,7 +2,7 @@
   "data": "2026-11-06",
   "data_afisata": "6 noiembrie 2026",
   "titlu": "Radarul AmCupon — 6 noiembrie 2026",
-  "intro": "Selectia de azi e facuta automat din ofertele active, dupa reducere, cod si termen. Primele sunt Libris si Vetro, dar mai jos ai toata selectia. Ofertele vin de la magazine prin reteaua de afiliere; nu le incercam in cos, asa ca citeste conditiile inainte sa comanzi. Cele care expira curand sunt marcate.",
+  "intro": "Selectia de azi e facuta automat din ofertele active, dupa reducere, cod si termen. Primele sunt Libris si Aosom, dar mai jos ai toata selectia. Ofertele vin de la magazine prin reteaua de afiliere; nu le incercam in cos, asa ca citeste conditiile inainte sa comanzi. Cele care expira curand sunt marcate.",
   "picks": [
     {
       "scor": 125,
@@ -15,6 +15,20 @@
       "descriere": "Campania se încheie duminică, 8 noiembrie, la ora 23:59. Bannerele au fost încărcate. Bannerele au fost incarcate.",
       "cod": "BF25",
       "url": "https://amcupon.ro/cod-reducere/libris.ro",
+      "zile_ramase": 3,
+      "take": "Grabeste-te: expira in 3 zile. Oferta activa — buna daca te incadrezi in categorie."
+    },
+    {
+      "scor": 100,
+      "magazin": "aosom.ro",
+      "nume_afisat": "Aosom",
+      "categorie": "Casă & Grădină",
+      "categorie_slug": "casa-gradina",
+      "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/9145/medium/9145.png",
+      "titlu": "BLACK FRIDAY",
+      "descriere": "Reduceri de până la 50% și 15% EXTRA la coșurile de peste 899 lei.",
+      "cod": "BLACK15",
+      "url": "https://amcupon.ro/cod-reducere/aosom.ro",
       "zile_ramase": 3,
       "take": "Grabeste-te: expira in 3 zile. Oferta activa — buna daca te incadrezi in categorie."
     },
@@ -48,6 +62,20 @@
     },
     {
       "scor": 100,
+      "magazin": "edez.ro",
+      "nume_afisat": "Edez",
+      "categorie": "Auto & Moto",
+      "categorie_slug": "auto-moto",
+      "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/13514/medium/13514.jpeg",
+      "titlu": "Black Friday Edez 2026: 15% EXTRA reducere la toate produsele",
+      "descriere": "Codul de reducere oferă 15% EXTRA reducere la toate produsele inclusiv la cele reduse deja.",
+      "cod": "black15",
+      "url": "https://amcupon.ro/cod-reducere/edez.ro",
+      "zile_ramase": 2,
+      "take": "Grabeste-te: expira in 2 zile. Oferta activa — buna daca te incadrezi in categorie."
+    },
+    {
+      "scor": 100,
       "magazin": "nadula.com",
       "nume_afisat": "Nadula",
       "categorie": "Marketplace",
@@ -59,34 +87,6 @@
       "url": "https://amcupon.ro/cod-reducere/nadula.com",
       "zile_ramase": 5,
       "take": "Grabeste-te: expira in 5 zile. Oferta activa — buna daca te incadrezi in categorie."
-    },
-    {
-      "scor": 100,
-      "magazin": "klaiyihair.com",
-      "nume_afisat": "Klaiyihair",
-      "categorie": "Beauty & Îngrijire",
-      "categorie_slug": "beauty",
-      "logo_url": "https://www.google.com/s2/favicons?domain=klaiyihair.com&sz=128",
-      "titlu": "Klaiyi Hair Black Friday Is Coming! 2026",
-      "descriere": "17% OFF Sitewide; $30 OFF Orders Over $155; $60 OFF Orders Over $265. Nov 2–10, 2026. Flash sales: Nov 4: 60% OFF; Nov 6: Down To $47.",
-      "cod": "BF60",
-      "url": "https://amcupon.ro/cod-reducere/klaiyihair.com",
-      "zile_ramase": 5,
-      "take": "Grabeste-te: expira in 5 zile. Oferta activa — buna daca te incadrezi in categorie."
-    },
-    {
-      "scor": 100,
-      "magazin": "nano-auto.ro",
-      "nume_afisat": "Nano Auto",
-      "categorie": "Casă & Grădină",
-      "categorie_slug": "casa-gradina",
-      "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/14437/medium/14437.jpg",
-      "titlu": "Black Friday - Cele mai mici preturi din an",
-      "descriere": "Foloseste codul de reducere la checkout pentru o reducere suplimentara de 5%.",
-      "cod": "NANOMAX5",
-      "url": "https://amcupon.ro/cod-reducere/nano-auto.ro",
-      "zile_ramase": 7,
-      "take": "Oferta activa — buna daca te incadrezi in categorie."
     }
   ],
   "outro": "Revino maine la Radar: selectia se reface in fiecare dimineata, din ofertele active atunci.",

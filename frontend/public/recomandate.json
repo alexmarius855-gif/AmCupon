@@ -48,6 +48,14 @@
   "oferta": "Reducere de 10% la toate produsele Intimplay.ro"
  },
  {
+  "magazin": "intimax.ro",
+  "nume": "Intimax",
+  "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/13590/medium/13590.png",
+  "categorie": "Marketplace",
+  "are_cod": false,
+  "oferta": "Black Friday - Marea Bubuială"
+ },
+ {
   "magazin": "moftcollection.ro",
   "nume": "Moftcollection",
   "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/13200/medium/13200.png",
@@ -80,19 +88,11 @@
   "oferta": "Cupon cadou la prima comanda"
  },
  {
-  "magazin": "zelto.ro",
-  "nume": "Zelto",
-  "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/14523/medium/14523.jpeg",
-  "categorie": "Sănătate & Farmacie",
-  "are_cod": false,
-  "oferta": "Sezonul virozelor, prețuri mai mici!"
- },
- {
-  "magazin": "labelshop.ro",
-  "nume": "Labelshop",
-  "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/9364/medium/9364.png",
+  "magazin": "priveboutique.net",
+  "nume": "PRIVÉ Boutique",
+  "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/1570/medium/1570.png",
   "categorie": "Fashion",
   "are_cod": false,
-  "oferta": "Profita acum de reduceri intre 5% si 15% la echipamente si consumabile"
+  "oferta": "Black Cat Friday: toate rochiile la preț de Black Friday + până la −15"
  }
 ]

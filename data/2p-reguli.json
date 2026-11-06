@@ -306,6 +306,11 @@
 "google_ads": "yes",
 "cashback": "yes"
 },
+"benvenuti.com": {
+"cupoane": "yes",
+"google_ads": "no",
+"cashback": "yes"
+},
 "bestseller.ro": {
 "cupoane": "yes",
 "google_ads": "yes",
