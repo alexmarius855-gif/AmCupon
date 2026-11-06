@@ -4,6 +4,7 @@ import Link from "next/link";
 
 import { useState, useMemo, useEffect } from "react";
 import { numeAfisat } from "@/lib/numeMagazin";
+import { cuNumar } from "@/lib/acordNumeral";
 
 interface Magazin {
   magazin: string;
@@ -108,7 +109,7 @@ export default function ToateMagazineleClient({ magazine }: { magazine: Magazin[
             Toate magazinele cu reduceri
           </h1>
           <p className="text-[var(--text-soft)] text-sm mb-1">
-            <span className="text-[var(--foreground)] font-bold">{magazine.length} magazine partenere</span>
+            <span className="text-[var(--foreground)] font-bold">{cuNumar(magazine.length, "magazin partener", "magazine partenere")}</span>
             {" · "}
             <span className="text-emerald-400 font-bold">{cuPromotii} cu promoții active</span>
             {" · "}
@@ -180,7 +181,7 @@ export default function ToateMagazineleClient({ magazine }: { magazine: Magazin[
 
         {/* ── REZULTAT COUNT ──────────────────────────────────────────── */}
         <p className="text-sm text-[var(--text-muted)] mb-5">
-          {filtrate.length} magazine{" "}
+          {cuNumar(filtrate.length, "magazin", "magazine")}{" "}
           {cautare ? <span>pentru <span className="text-[var(--foreground)] font-semibold">&quot;{cautare}&quot;</span></span> : ""}
           {categorie !== "Toate" ? <span className="text-[var(--accent-text)]"> · {CATEGORII_FILTRE.find(c => c.key === categorie)?.label}</span> : ""}
         </p>

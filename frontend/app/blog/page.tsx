@@ -4,6 +4,7 @@ import path from "path";
 import Image from "next/image";
 import Link from "next/link";
 import { MACRO_ORDINE, MACRO_EMOJI, getMacro } from "./categories";
+import { cuNumar } from "@/lib/acordNumeral";
 
 /* ═══════════════════════════════════════════════════════════════════════════
    REVISTA AmCupon — hub topical optimizat SEO (schema de indexare)
@@ -179,7 +180,7 @@ export default async function BlogPage(
                   Revista <span className="text-transparent bg-clip-text" style={{ backgroundImage: "linear-gradient(135deg, #c3dd2c, #ddf93c)" }}>AmCupon</span>
                 </h1>
                 <p className="text-[var(--text-soft)] text-sm md:text-base max-w-2xl mx-auto">
-                  Ghiduri, comparatii si sfaturi ca sa cumperi inteligent si sa economisesti la fiecare comanda. {toatePosts.length} articole, organizate pe categorii.
+                  Ghiduri, comparatii si sfaturi ca sa cumperi inteligent si sa economisesti la fiecare comanda. {cuNumar(toatePosts.length, "articol", "articole")}, organizate pe categorii.
                 </p>
               </>
             ) : (
@@ -189,7 +190,7 @@ export default async function BlogPage(
                   Ghiduri <span className="text-transparent bg-clip-text" style={{ backgroundImage: "linear-gradient(135deg, #c3dd2c, #ddf93c)" }}>{categorieActiva}</span>
                 </h1>
                 <p className="text-[var(--text-soft)] text-sm md:text-base max-w-2xl mx-auto">
-                  {postsCat.length} articole cu sfaturi, comparatii si coduri de reducere pentru {categorieActiva.toLowerCase()}.
+                  {cuNumar(postsCat.length, "articol", "articole")} cu sfaturi, comparatii si coduri de reducere pentru {categorieActiva.toLowerCase()}.
                 </p>
               </>
             )}

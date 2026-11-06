@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 // Fara @supabase/supabase-js in browser (27.09.2026): vezi lib/supabaseRest.ts.
 import { citesteRecenzii, trimiteRecenzie, SUPABASE_KEY, type Review } from "../../../lib/supabaseRest";
+import { cuNumar } from "@/lib/acordNumeral";
 
 function Stele({ value, onChange }: { value: number; onChange?: (v: number) => void }) {
   const [hover, setHover] = useState(0);
@@ -82,7 +83,7 @@ export default function ReviewSection({ magazin }: { magazin: string }) {
             <div className="flex items-center gap-2 mt-1">
               <span className="text-2xl font-black text-[var(--accent-text)]">{medieStele}</span>
               <Stele value={Math.round(Number(medieStele))} />
-              <span className="text-xs text-[var(--text-muted)]">({reviews.length} {reviews.length === 1 ? "recenzie" : "recenzii"})</span>
+              <span className="text-xs text-[var(--text-muted)]">({cuNumar(reviews.length, "recenzie", "recenzii")})</span>
             </div>
           )}
         </div>

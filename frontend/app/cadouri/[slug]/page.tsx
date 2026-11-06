@@ -5,6 +5,7 @@ import fs from "fs";
 import path from "path";
 import Link from "next/link";
 import { maskCod } from "@/lib/maskCod";
+import { cuNumar } from "@/lib/acordNumeral";
 
 /* ─── Configuratie ocazii ────────────────────────────────────────────────── */
 const OCAZII: Record<string, {
@@ -417,7 +418,7 @@ export default async function CadouriSlugPage({
                 <h2 className="text-xl font-black text-[var(--foreground)]">
                   Produse disponibile — {oc.titlu}
                 </h2>
-                <span className="text-sm text-[var(--text-muted)]">{products.length} produse</span>
+                <span className="text-sm text-[var(--text-muted)]">{cuNumar(products.length, "produs", "produse")}</span>
               </div>
               <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-4">
                 {products.map((p: Produs) => (

@@ -8,6 +8,7 @@ import CriteriiTema from "../../components/CriteriiTema";
 import ProductDealCard from "../../components/ProductDealCard";
 import { statisticiPreturi } from "@/lib/preturi";
 import { pret } from "../../black-friday/comun";
+import { cuNumar } from "@/lib/acordNumeral";
 
 /**
  * „Masini de spalat de 6 kg" — o pagina pentru o singura caracteristica (04.11.2026).
@@ -34,7 +35,7 @@ export async function generateMetadata({ params }: { params: Promise<{ criteriu:
   const lung = `${c.titlu}: ${c.produse.length} modele, de la ${pret(min)}`;
   const title = lung.length <= 60 ? lung : `${c.titlu}: ${c.produse.length} modele`.slice(0, 60);
   const magazine = new Set(c.produse.map((p) => p.magazin)).size;
-  const description = `${c.titlu}: ${c.produse.length} modele la ${magazine === 1 ? "un magazin partener" : `${magazine} magazine partenere`}, de la ${pret(min)}. Vezi prețul din feed și mergi direct la produs.`.slice(0, 158);
+  const description = `${c.titlu}: ${cuNumar(c.produse.length, "model", "modele")} la ${magazine === 1 ? "un magazin partener" : cuNumar(magazine, "magazin partener", "magazine partenere")}, de la ${pret(min)}. Vezi prețul din feed și mergi direct la produs.`.slice(0, 158);
   const url = `https://amcupon.ro/alege/${c.slug}`;
   return { title, description, alternates: { canonical: url }, openGraph: { title, description, url, siteName: "AmCupon.ro", locale: "ro_RO", type: "website" } };
 }
@@ -101,7 +102,7 @@ export default async function CriteriuPage({ params }: { params: Promise<{ crite
 
       <h1 className="text-3xl md:text-4xl font-black text-[var(--foreground)] leading-tight">{c.titlu}</h1>
       <p className="mt-3 text-lg text-[var(--text-soft)] max-w-3xl">
-        <strong className="text-[var(--foreground)]">{c.produse.length} modele de la {pret(min)}</strong>, la {listaMagazine}. Apeși pe produs și ajungi direct la el în magazin, fără să mai cauți.
+        <strong className="text-[var(--foreground)]">{cuNumar(c.produse.length, "model", "modele")} de la {pret(min)}</strong>, la {listaMagazine}. Apeși pe produs și ajungi direct la el în magazin, fără să mai cauți.
       </p>
       {c.nota && <p className="mt-2 text-sm text-[var(--text-soft)] max-w-3xl">{c.nota}</p>}
 

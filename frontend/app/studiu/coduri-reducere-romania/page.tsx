@@ -3,6 +3,7 @@ import { Metadata } from "next";
 import fs from "fs";
 import path from "path";
 import GraficCategorii from "./GraficCategorii";
+import { cuNumar, deNumar } from "@/lib/acordNumeral";
 
 /**
  * Studiu public pe datele proprii — pagina construita ca sa poata fi CITATA.
@@ -71,7 +72,7 @@ const LUNA = new Intl.DateTimeFormat("ro-RO", { month: "long", year: "numeric", 
 const ZI = new Intl.DateTimeFormat("ro-RO", { day: "numeric", month: "long", year: "numeric", timeZone: "UTC" });
 const numeLuna = (l: string) => LUNA.format(new Date(`${l}-01T00:00:00Z`));
 /** „138 de magazine", nu „138 magazine": numeralul romanesc cere „de" de la 20 in sus. */
-const cuDe = (n: number | undefined) => `${n ?? 0}${(n ?? 0) % 100 >= 20 || ((n ?? 0) > 0 && (n ?? 0) % 100 === 0) ? " de" : ""}`;
+const cuDe = (n: number | undefined) => `${n ?? 0}${deNumar(n ?? 0)}`;
 
 function loadStudiu(): Studiu | null {
   try {
@@ -87,7 +88,7 @@ const URL_PAGINA = "https://amcupon.ro/studiu/coduri-reducere-romania";
 export function generateMetadata(): Metadata {
   const s = loadStudiu();
   const titlu = s
-    ? `Doar ${s.cu_cod_real} din ${s.total_magazine} magazine au cod de reducere`
+    ? `Doar ${s.cu_cod_real} din ${cuNumar(s.total_magazine, "magazin", "magazine")} au cod de reducere`
     : "Studiu: codurile de reducere in Romania";
   return {
     title: `${titlu} | AmCupon.ro`,
@@ -238,7 +239,7 @@ export default function StudiuPage() {
             {ultimaLuna.incomplet ? (
               <p className="text-sm text-[var(--text-soft)] leading-relaxed">
                 Pentru {numeLuna(ultimaLuna.luna)} nu publicam cifrele: doar {ultimaLuna.zile_bune} din{" "}
-                {ultimaLuna.zile} zile au avut date complete. Preferam o luna lipsa unei luni gresite.
+                {cuNumar(ultimaLuna.zile, "zi a avut", "zile au avut")} date complete. Preferam o luna lipsa unei luni gresite.
               </p>
             ) : (
               <>
@@ -344,7 +345,7 @@ export default function StudiuPage() {
           <h2 className="text-xl font-black text-[var(--foreground)] mb-2">Cat de mari sunt reducerile, pe categorii</h2>
           <p className="text-sm text-[var(--text-muted)] mb-5">
             Procentele sunt extrase din textul promotiilor, asa cum l-au scris magazinele.
-            Publicam mediana doar unde avem cel putin {s.prag_esantion} magazine care declara
+            Publicam mediana doar unde avem cel putin {cuNumar(s.prag_esantion, "magazin care declara", "magazine care declara")}
             un procent &mdash; sub atat, o mediana ar fi zgomot prezentat ca masuratoare.
           </p>
 
@@ -382,7 +383,7 @@ export default function StudiuPage() {
           {faraMediana.length > 0 && (
             <p className="text-xs text-[var(--text-muted)] mt-4 leading-relaxed">
               <strong className="text-[var(--text-soft)]">Date insuficiente</strong> pentru inca{" "}
-              {faraMediana.length} categorii ({faraMediana.map((c) => c.nume).join(", ")}) &mdash;
+              {cuNumar(faraMediana.length, "categorie", "categorii")} ({faraMediana.map((c) => c.nume).join(", ")}) &mdash;
               prea putine magazine declara un procent ca sa putem publica o mediana onesta.
               Le listam ca sa se vada ce NU stim, nu doar ce stim.
             </p>
@@ -406,7 +407,7 @@ export default function StudiuPage() {
                 <div>
                   <h3 className="font-bold text-[var(--foreground)] mb-1">Ce numaram ca magazin romanesc</h3>
                   <p>
-                    Magazinele cu domeniu .ro. Mai urmarim {s.international.total.toLocaleString("ro-RO")} de
+                    Magazinele cu domeniu .ro. Mai urmarim {s.international.total.toLocaleString("ro-RO")}{deNumar(s.international.total)}
                     magazine internationale care livreaza in Romania (branduri care vand prin Impact.com,
                     magazine cu domeniu .com, .bg sau altul); {s.international.cu_cod} dintre ele au azi un cod
                     de cupon. Nu le adunam la cifrele de mai sus: ar descrie comertul altor piete, nu pe cel

@@ -72,6 +72,7 @@ def slug_valid(slug: str) -> bool:
 # Numele magazinului: scripts/nume_magazin.py, acelasi rezultat ca numeAfisat() din frontend
 # (06.10.2026 — copia naiva de aici scria „Cod Reducere Us" pentru us.lemorele.com).
 from nume_magazin import nume_afisat  # noqa: E402
+from text_curat import AFIRMATIE_FALSA  # noqa: E402
 
 
 def load_magazine() -> list:
@@ -151,9 +152,10 @@ def select_deals(magazine: list) -> list:
 
 # ─── Voce: AI (Claude) cu fallback determinist ───────────────────────────────
 EDITORIAL_SYSTEM = (
-    "Esti redactorul-sef al AmCupon.ro, unde alegem zilnic ofertele active de la "
-    "magazinele partenere. Scrii in romana, la persoana intai plural ('alegem', "
-    "'am pastrat'), ca un prieten priceput. Ton: clar, util, ZERO hype publicitar, "
+    "Esti redactorul-sef al AmCupon.ro. Ofertele de mai jos sunt alese AUTOMAT, in fiecare "
+    "dimineata, din ofertele active ale magazinelor partenere (dupa reducere, cod si termen); "
+    "nu spui ca le-am ales sau citit una cate una. Scrii in romana, la persoana intai plural, "
+    "ca un prieten priceput. Ton: clar, util, ZERO hype publicitar, "
     "fara superlative goale. Esti onest si cand o oferta e doar 'ok'. Fara emoji in "
     "exces (max 1-2). Nu inventezi cifre. NU spui niciodata ca am verificat, testat "
     "sau garantat codurile ori ofertele: le preluam de la reteaua de afiliere si nu "
@@ -205,6 +207,12 @@ def genereaza_voce_ai(picks: list, data_str: str) -> dict | None:
         takes = parsed.get("takes") or []
         if not parsed.get("intro") or len(takes) < len(picks):
             return None
+        # 06.11.2026: un text care spune ca am testat/verificat codurile ar opri publicarea (verifica_text.py);
+        # AI-ul il poate scrie desi promptul il interzice, deci textul sigur ia locul lui.
+        tot = " ".join([parsed.get("intro") or "", parsed.get("outro") or ""] + [str(t) for t in takes])
+        if AFIRMATIE_FALSA.search(tot):
+            print("  (AI voce: afirmatie falsa despre noi — folosesc fallback)")
+            return None
         return {"intro": parsed["intro"].strip(),
                 "takes": [t.strip() for t in takes[:len(picks)]],
                 "outro": (parsed.get("outro") or "").strip(),
@@ -217,7 +225,7 @@ def genereaza_voce_ai(picks: list, data_str: str) -> dict | None:
 _TAKE_CAT = {
     "Fashion": "Bun de prins daca oricum voiai sa-ti reimprospatezi garderoba.",
     "Frumusete": "Merita daca esti deja pe lista de cumparaturi cosmetice luna asta.",
-    "Electronice": "Verifica pretul si la concurenta, dar reducerea e reala.",
+    "Electronice": "Compara pretul si la alte magazine inainte sa comanzi.",
     "Carti": "Ocazie buna sa-ti faci stocul de lectura fara sa platesti plin.",
     "Sport": "Util daca tocmai ti-ai propus sa te apuci serios de miscare.",
     "Casa": "Practic pentru orice ai de bifat prin casa zilele astea.",
@@ -230,8 +238,8 @@ def genereaza_voce_fallback(picks: list, data_str: str) -> dict:
     top = picks[0]["nume_afisat"] if picks else "magazinele partenere"
     al2 = picks[1]["nume_afisat"] if len(picks) > 1 else ""
     intro = (
-        f"Am trecut azi prin ofertele active si am pastrat doar ce merita. "
-        f"Iese in evidenta {top}"
+        f"Selectia de azi e facuta automat din ofertele active, dupa reducere, cod si termen. "
+        f"Primele sunt {top}"
         + (f" si {al2}" if al2 else "")
         + ", dar mai jos ai toata selectia. Ofertele vin de la magazine prin reteaua "
         "de afiliere; nu le incercam in cos, asa ca citeste conditiile inainte sa comanzi. "
@@ -245,7 +253,7 @@ def genereaza_voce_fallback(picks: list, data_str: str) -> dict:
             unit = "zi" if zile == 1 else "zile"
             t = f"Grabeste-te: expira in {zile} {unit}. " + t
         takes.append(t)
-    outro = "Revino maine la Radar — alegem din nou ce merita, ca sa nu cauti tu prin sute de oferte."
+    outro = "Revino maine la Radar: selectia se reface in fiecare dimineata, din ofertele active atunci."
     return {"intro": intro, "takes": takes, "outro": outro, "sursa": "fallback"}
 
 

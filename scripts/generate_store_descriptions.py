@@ -22,6 +22,9 @@ OUTPUT: frontend/public/store-descriptions.json
 
 import json, os, sys, time, argparse, urllib.request
 
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from text_curat import de_numar  # noqa: E402  „25 de oferte active", nu „25 oferte active"
+
 if sys.stdout.encoding and sys.stdout.encoding.lower() != "utf-8":
     try: sys.stdout.reconfigure(encoding="utf-8")
     except Exception: pass
@@ -121,7 +124,7 @@ def construieste_descriere(slug: str, nume: str, cat_txt: str,
         if len(promo_scurt) > 70:
             promo_scurt = promo_scurt[:67].rstrip() + "…"
         p2 = PROMO_DA[_idx(slug, 3)].format(
-            nume=nume, n=nr_promo, ofcuv=ofcuv, activ=activ, promo=promo_scurt
+            nume=nume, n=f"{nr_promo}{de_numar(nr_promo)}", ofcuv=ofcuv, activ=activ, promo=promo_scurt
         )
     else:
         p2 = PROMO_NU[_idx(slug, 3)].format(nume=nume, cat=cat_txt)

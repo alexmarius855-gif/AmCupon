@@ -5,6 +5,7 @@ import path from "path";
 import Link from "next/link";
 import { maskCod } from "@/lib/maskCod";
 import { titluPromotie } from "@/lib/oferta";
+import { cuNumar } from "@/lib/acordNumeral";
 
 interface Punct {
   aspect: string;
@@ -161,7 +162,7 @@ export default async function ComparatiePage(
                   <div className="flex justify-between">
                     <span className="text-[var(--text-soft)]">Promotii active</span>
                     <span className={side.stats.promotii_active > 0 ? "text-[var(--accent-text)] font-semibold" : "text-[var(--text-muted)]"}>
-                      {side.stats.promotii_active > 0 ? `${side.stats.promotii_active} oferte` : "Nicio oferta"}
+                      {side.stats.promotii_active > 0 ? cuNumar(side.stats.promotii_active, "ofertă", "oferte") : "Nicio oferta"}
                     </span>
                   </div>
                   {/* 07.09: aici scria „Cashback: pana la X%", unde X era COMISIONUL nostru

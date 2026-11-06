@@ -4,6 +4,7 @@ import path from "path";
 import Link from "next/link";
 import MagazinCard, { type CardMagazin } from "../components/MagazinCard";
 import { numeAfisat } from "@/lib/numeMagazin";
+import { cuNumar } from "@/lib/acordNumeral";
 
 interface Magazin extends CardMagazin {
 }
@@ -90,7 +91,7 @@ export default async function CautarePage({ searchParams }: { searchParams: Prom
               </h1>
               {cuPromo > 0 && (
                 <p className="text-sm text-[var(--text-soft)] mt-1">
-                  <span className="text-[var(--accent-text)] font-semibold">{cuPromo} magazine</span> cu promotii active
+                  <span className="text-[var(--accent-text)] font-semibold">{cuNumar(cuPromo, "magazin", "magazine")}</span> cu promotii active
                 </p>
               )}
             </div>

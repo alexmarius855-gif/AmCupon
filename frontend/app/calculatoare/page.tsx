@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import Link from "next/link";
 import fs from "fs";
 import path from "path";
+import { cuNumar } from "@/lib/acordNumeral";
 
 export const metadata: Metadata = {
   title: "Unelte gratuite pentru cumpărături online | AmCupon.ro",
@@ -145,7 +146,7 @@ export default function CalculatoarePage() {
         <section className="mt-10 bg-[var(--surface)] rounded-xl border border-[var(--border)] p-6">
           <h2 className="text-xl font-black mb-2">Și ce urmează după calcul</h2>
           <p className="text-[var(--text-muted)] mb-4">
-            Urmărim {cuPromotie} magazine cu promoții active, dintre care {cuCod} au și un cod de
+            Urmărim {cuNumar(cuPromotie, "magazin", "magazine")} cu promoții active, dintre care {cuCod} au și un cod de
             reducere activ.
           </p>
           <div className="flex flex-wrap gap-3">

@@ -4,6 +4,7 @@ import fs from "fs";
 import path from "path";
 import type { Metadata } from "next";
 import { linkAfiliat } from "@/lib/linkMagazin";
+import { cuNumar } from "@/lib/acordNumeral";
 
 /** Pagina principala care castiga semnalul pentru fiecare nisa (vezi canonical mai jos). */
 const CANONIC_PRINCIPAL: Record<string, string> = {
@@ -191,8 +192,8 @@ export default async function NisaPage(
           <h1 className="text-3xl font-black mb-2">{nisa.titlu}</h1>
           <p className="text-[var(--text-soft)] text-sm max-w-xl mx-auto">{nisa.descriere}</p>
           <div className="mt-4 flex flex-wrap justify-center gap-3 text-xs text-[var(--text-soft)]">
-            <span>&#10003; {produseFiltrate.length} produse</span>
-            <span>&#10003; {magazineFiltrate.length} magazine</span>
+            <span>&#10003; {cuNumar(produseFiltrate.length, "produs", "produse")}</span>
+            <span>&#10003; {cuNumar(magazineFiltrate.length, "magazin", "magazine")}</span>
             <span>&#10003; Actualizat zilnic</span>
           </div>
         </div>

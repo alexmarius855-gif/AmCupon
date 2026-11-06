@@ -9,6 +9,7 @@ import { notFound } from "next/navigation";
 import { categoriiBF, toateCampaniileBF, type CampanieBF } from "@/lib/campaniiBlackFriday";
 import { imagineSigura, type ProdusFeed } from "@/lib/topFeed";
 import { CardProdus, interval, pret, stare, zi } from "../../comun";
+import { cuNumar } from "@/lib/acordNumeral";
 
 /**
  * „Black Friday cărți 2026" — campaniile partenerilor dintr-o categorie (04.11.2026).
@@ -46,8 +47,7 @@ function campaniiDin(slug: string): CampanieBF[] {
 
 /** „1 magazin", „7 magazine", „20 de magazine". */
 function magazine(n: number): string {
-  if (n === 1) return "1 magazin";
-  return `${n}${n >= 20 ? " de" : ""} magazine`;
+  return cuNumar(n, "magazin", "magazine");
 }
 
 export function generateStaticParams() {

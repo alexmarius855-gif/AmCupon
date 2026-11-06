@@ -184,12 +184,5 @@ export function magazinePopulareAcasa<M extends MagazinAcasa>(
   return [...out, ...rest].slice(0, n);
 }
 
-/**
- * „1 cod", „2 coduri", „20 de coduri". In romana, „de" apare cand ultimele doua cifre
- * sunt 00 sau 20-99 („101 coduri", dar „120 de coduri").
- */
-export function cuNumar(n: number, singular: string, plural: string): string {
-  if (n === 1) return `1 ${singular}`;
-  const r = n % 100;
-  return n > 0 && (r === 0 || r >= 20) ? `${n} de ${plural}` : `${n} ${plural}`;
-}
+/** Acordul numeralului: sursa unica e lib/acordNumeral.ts (pastrat aici pentru testul de mai jos). */
+export { cuNumar } from "./acordNumeral.ts";

@@ -3,6 +3,7 @@ import fs from "fs";
 import path from "path";
 import Link from "next/link";
 import { maskCod } from "@/lib/maskCod";
+import { cuNumar } from "@/lib/acordNumeral";
 
 /* ── Tipuri ──────────────────────────────────────────────────────────────── */
 interface Pick {
@@ -79,7 +80,7 @@ export async function generateMetadata(): Promise<Metadata> {
 /* ── Intrare editoriala ──────────────────────────────────────────────────── */
 function RadarEntry({ p, rank }: { p: Pick; rank: number }) {
   const urgent = p.zile_ramase > 0 && p.zile_ramase <= 3;
-  const zileText = p.zile_ramase === 1 ? "1 zi" : `${p.zile_ramase} zile`;
+  const zileText = cuNumar(p.zile_ramase, "zi", "zile");
 
   return (
     <article className="relative bg-[var(--surface)] border border-[var(--border)] hover:border-[var(--accent-text)]/40 rounded-xl p-5 transition-all duration-200 hover:shadow-xl hover:shadow-black/40">

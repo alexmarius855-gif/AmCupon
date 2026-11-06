@@ -3,6 +3,7 @@ import fs from "fs";
 import path from "path";
 import Link from "next/link";
 import { pesteMagazine } from "@/lib/cifreSite";
+import { cuNumar } from "@/lib/acordNumeral";
 
 export const metadata: Metadata = {
   title: "Comparatii Magazine Online Romania 2026 — AmCupon.ro",
@@ -104,7 +105,7 @@ export default function ComparatiiPage() {
                       {c.categorie}
                     </span>
                     {totalPromo > 0 && (
-                      <span className="text-xs text-[var(--text-soft)]">{totalPromo} oferte active</span>
+                      <span className="text-xs text-[var(--text-soft)]">{cuNumar(totalPromo, "ofertă activă", "oferte active")}</span>
                     )}
                   </div>
                   <h2 className="text-[var(--foreground)] font-bold text-lg mb-1 group-hover:text-[var(--accent-text)] transition-colors">

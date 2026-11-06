@@ -51,6 +51,7 @@ CATEGORII_ROUNDUP = [
 # (06.10.2026 — copia naiva de aici scria „Cod Reducere Us" pentru us.lemorele.com).
 from nume_magazin import nume_afisat  # noqa: E402
 from promotii import fara_coduri, fara_coduri_magazin, pare_cod, scurteaza, titlu_in_text  # noqa: E402
+from text_curat import cu_numar  # noqa: E402
 
 
 def slug_articol_magazin(magazin: str, luna: str, an: int) -> str:
@@ -119,8 +120,8 @@ def text_expirare(zile) -> str:
     if zile == 1:
         return "\n   ⚠️ Expiră **mâine**"
     if zile <= 3:
-        return f"\n   ⚠️ Expiră în **{zile} zile**"
-    return f"\n   _(expiră în {zile} zile)_"
+        return f"\n   ⚠️ Expiră în **{cu_numar(zile, 'zi', 'zile')}**"
+    return f"\n   _(expiră în {cu_numar(zile, 'zi', 'zile')})_"
 
 
 # Sfatul lunii: generic, despre PERIOADA, nu despre magazin. Varianta de pana pe 06.10.2026 punea
@@ -313,7 +314,7 @@ def genereaza_articol_categorie(cat_slug: str, cat_name: str, magazine: list, lu
 
     content = f"""## Cele mai bune reduceri {cat_name} in {luna} {an}
 
-In {luna} {an}, AmCupon.ro monitorizeaza **{nr_total} magazine** de {cat_name} cu promotii active, din care **{nr_coduri} au cod de reducere**. Mai jos gasesti selectia noastra pentru aceasta luna.
+In {luna} {an}, AmCupon.ro monitorizeaza **{cu_numar(nr_total, 'magazin', 'magazine')}** de {cat_name} cu promotii active, din care **{'unul are' if nr_coduri == 1 else f'{nr_coduri} au'} cod de reducere**. Mai jos gasesti selectia noastra pentru aceasta luna.
 
 {bloc_magazine}
 
@@ -334,7 +335,7 @@ AmCupon.ro aduna automat, de mai multe ori pe zi, ofertele active de la magazine
         "slug": slug_articol_categorie(cat_slug, luna, an),
         "title": f"Top Reduceri {cat_name} {luna} {an} | AmCupon.ro",
         "date": datetime.now().strftime("%Y-%m-%d"),
-        "excerpt": f"{nr_total} magazine de {cat_name} cu promotii active in {luna} {an}. {nr_coduri} cu cod reducere. Oferte actualizate zilnic pe AmCupon.ro.",
+        "excerpt": f"{cu_numar(nr_total, 'magazin', 'magazine')} de {cat_name} cu promotii active in {luna} {an}. {nr_coduri} cu cod reducere. Oferte actualizate zilnic pe AmCupon.ro.",
         "category": cat_name,
         "cover": cover_categorie(cat_slug),
         "content": content,
@@ -375,7 +376,7 @@ def genereaza_articol_roundup(magazine: list, luna: str, an: int) -> dict:
 
     content = f"""## Rezumat reduceri {luna} {an}
 
-In {luna} {an}, AmCupon.ro monitorizeaza **{total_magazine} magazine** cu promotii active si **{total_coduri} coduri de reducere** active. Iata cele mai bune oferte ale lunii:
+In {luna} {an}, AmCupon.ro monitorizeaza **{cu_numar(total_magazine, 'magazin', 'magazine')}** cu promotii active si **{cu_numar(total_coduri, 'cod de reducere activ', 'coduri de reducere active')}**. Iata cele mai bune oferte ale lunii:
 
 {bloc_sectiuni}
 
@@ -400,7 +401,7 @@ In {luna} {an}, AmCupon.ro monitorizeaza **{total_magazine} magazine** cu promot
         "slug": slug_articol_roundup(luna, an),
         "title": f"Cele Mai Bune Coduri Reducere — {luna} {an} | AmCupon.ro",
         "date": datetime.now().strftime("%Y-%m-%d"),
-        "excerpt": f"Selectia celor mai bune {total_coduri} coduri reducere active in {luna} {an} din {total_magazine} magazine. Actualizate zilnic pe AmCupon.ro.",
+        "excerpt": f"Selectia celor mai bune {cu_numar(total_coduri, 'cod de reducere activ', 'coduri de reducere active')} in {luna} {an} din {cu_numar(total_magazine, 'magazin', 'magazine')}. Actualizate zilnic pe AmCupon.ro.",
         "category": "General",
         "cover": "/blog-covers/roundup.png",
         "content": content,

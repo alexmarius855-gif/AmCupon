@@ -3,6 +3,7 @@ import { Metadata } from "next";
 import fs from "fs";
 import path from "path";
 import { PesteMagazine } from "@/lib/cifreSite";
+import { cuNumar } from "@/lib/acordNumeral";
 
 export const metadata: Metadata = {
   title: "Categorii Coduri Reducere Romania 2026 | AmCupon.ro",
@@ -248,9 +249,9 @@ export default function CategoriPage() {
             Toate categoriile
           </h1>
           <p className="text-[var(--text-soft)] text-sm">
-            <span className="text-emerald-400 font-bold">{totalOff} oferte active</span>
+            <span className="text-emerald-400 font-bold">{cuNumar(totalOff, "ofertă activă", "oferte active")}</span>
             {" "}in{" "}
-            <span className="text-[var(--foreground)] font-bold">{categoriiCuDate.length} categorii</span>
+            <span className="text-[var(--foreground)] font-bold">{cuNumar(categoriiCuDate.length, "categorie", "categorii")}</span>
             {" "}&mdash; actualizat zilnic
           </p>
         </div>
@@ -292,11 +293,11 @@ export default function CategoriPage() {
                 {c.nrOff > 0 ? (
                   <div className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full border mb-3" style={{ background: `${c.accent}22`, borderColor: `${c.accent}44` }}>
                     <span className="w-1.5 h-1.5 rounded-full animate-pulse" style={{ background: c.accent }} />
-                    <span className="text-[10px] font-bold" style={{ color: `color-mix(in srgb, ${c.accent} 40%, var(--foreground))` }}>{c.nrOff} {c.nrOff === 1 ? "ofertă" : "oferte"}</span>
+                    <span className="text-[10px] font-bold" style={{ color: `color-mix(in srgb, ${c.accent} 40%, var(--foreground))` }}>{cuNumar(c.nrOff, "ofertă", "oferte")}</span>
                   </div>
                 ) : (
                   <div className="inline-flex items-center gap-1 bg-[var(--surface-alt)] px-2 py-0.5 rounded-full mb-3">
-                    <span className="text-[var(--text-soft)] text-[10px]">{c.nrMag} magazine</span>
+                    <span className="text-[var(--text-soft)] text-[10px]">{cuNumar(c.nrMag, "magazin", "magazine")}</span>
                   </div>
                 )}
 

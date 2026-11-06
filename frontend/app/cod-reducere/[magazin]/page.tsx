@@ -17,6 +17,7 @@ import { numeAfisat, brandDomeniu } from "@/lib/numeMagazin";
 import { alMagazinului } from "@/lib/produseMagazin";
 import { imagineSigura, normTitlu, titluAfisat } from "@/lib/topFeed";
 import { titluPromotie, notaExpirare, descriereScurta } from "@/lib/oferta";
+import { cuNumar } from "@/lib/acordNumeral";
 
 interface Promotie {
   nume: string;
@@ -652,7 +653,7 @@ export default async function PaginaMagazin({
     "@context": "https://schema.org",
     "@type": "ItemList",
     name: `Coduri reducere ${nume} ${luna} ${an}`,
-    description: `${nrPromo} oferte active ${nume} pe AmCupon.ro, actualizate de mai multe ori pe zi`,
+    description: `${cuNumar(nrPromo, "ofertă activă", "oferte active")} ${nume} pe AmCupon.ro, actualizate de mai multe ori pe zi`,
     url: pageUrl,
     numberOfItems: nrPromo,
     itemListElement: m.promotii.map((promo, i) => ({
@@ -741,7 +742,7 @@ export default async function PaginaMagazin({
     {
       i: `Câte oferte active are ${nume} acum?`,
       r: nrPromo > 0
-        ? `${nume} are ${nrPromo} ofert${nrPromo > 1 ? "e" : "ă"} active în ${luna} ${an}${nrCod > 0 ? `, dintre care ${nrCod} cu cod de reducere` : ""}. Lista se actualizează de mai multe ori pe zi pe AmCupon.ro.`
+        ? `${nume} are ${cuNumar(nrPromo, "ofertă activă", "oferte active")} în ${luna} ${an}${nrCod > 0 ? (nrPromo === 1 ? ", cu cod de reducere" : `, dintre care ${nrCod} cu cod de reducere`) : ""}. Lista se actualizează de mai multe ori pe zi pe AmCupon.ro.`
         : similare.some((s) => s.are_promotie)
         ? `Niciuna în acest moment. Mai jos găsești magazinele din aceeași categorie care au oferte azi.`
         : `Niciuna în acest moment. Lista se actualizează de mai multe ori pe zi.`,

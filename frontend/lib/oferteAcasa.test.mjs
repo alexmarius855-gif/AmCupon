@@ -31,6 +31,13 @@ verifica("20", cuNumar(20, "cod", "coduri"), "20 de coduri");
 verifica("100", cuNumar(100, "cod", "coduri"), "100 de coduri");
 verifica("101", cuNumar(101, "cod", "coduri"), "101 coduri");
 verifica("188", cuNumar(188, "ofertă", "oferte"), "188 de oferte");
+// 06.11.2026: sursa unica e lib/acordNumeral.ts; doua copii vechi scriau `n >= 20` („105 de magazine").
+verifica("105", cuNumar(105, "magazin", "magazine"), "105 magazine");
+verifica("120", cuNumar(120, "magazin", "magazine"), "120 de magazine");
+verifica("0", cuNumar(0, "produs", "produse"), "0 produse");
+verifica("1000", cuNumar(1000, "produs", "produse"), "1.000 de produse");
+verifica("18817", cuNumar(18817, "produs", "produse"), "18.817 produse");
+verifica("55 zile", cuNumar(55, "zi rămasă", "zile rămase"), "55 de zile rămase");
 
 console.log("\n── reguli, pe date construite ──");
 const P = (nume, cod = "", zile = 10) => ({ nume, descriere: "", cod_cupon: cod, landing_page: "", zile_ramase: zile });

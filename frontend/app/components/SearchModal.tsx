@@ -3,6 +3,7 @@
 import { useEffect, useMemo, useRef, useState, useCallback } from "react";
 import Image from "next/image";
 import { Search, X, CornerDownLeft, Tag } from "lucide-react";
+import { cuNumar } from "@/lib/acordNumeral";
 
 /**
  * Cautare instant, global, cu Cmd+K / Ctrl+K.
@@ -232,9 +233,9 @@ export default function SearchModal() {
                   <span className="block text-[var(--foreground)] font-semibold text-sm truncate">{m.magazin}</span>
                   <span className="block text-xs text-[var(--text-muted)]">
                     {nrCod > 0
-                      ? `${nrCod} ${nrCod === 1 ? "cod activ" : "coduri active"}`
+                      ? cuNumar(nrCod, "cod activ", "coduri active")
                       : nrOferte > 0
-                        ? `${nrOferte} ${nrOferte === 1 ? "oferta" : "oferte"}`
+                        ? cuNumar(nrOferte, "ofertă", "oferte")
                         : "fara oferte acum"}
                   </span>
                 </span>

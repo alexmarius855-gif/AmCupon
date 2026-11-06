@@ -122,6 +122,7 @@ def _partener(m: dict) -> bool:
 # Numele magazinului: scripts/nume_magazin.py, acelasi rezultat ca numeAfisat() din frontend
 # (06.10.2026 — copia naiva de aici scria „Drmax" pentru drmax.ro si „Us" pentru us.lemorele.com).
 from nume_magazin import nume_afisat  # noqa: E402
+from text_curat import cu_numar  # noqa: E402
 
 
 def _num_afisat(slug: str) -> str:
@@ -187,7 +188,7 @@ def build_comparison(pereche: dict, magazin_map: dict, luna: str, an: int) -> di
         if not s["partener"]:
             return f"{n} nu are program de afiliere pe AmCupon.ro, deci nu publicam oferte {n}."
         k = s["promotii_active"]
-        return (f"{'Da' if k > 0 else 'Momentan nu'}, {n} are {k} {'oferta activa' if k == 1 else 'oferte active'} "
+        return (f"{'Da' if k > 0 else 'Momentan nu'}, {n} are {cu_numar(k, 'oferta activa', 'oferte active')} "
                 f"pe AmCupon.ro in {luna} {an}. Ofertele se actualizeaza automat de trei ori pe zi.")
 
     parteneri = [n for n, s in ((n1, stats1), (n2, stats2)) if s["partener"]]

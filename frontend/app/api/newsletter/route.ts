@@ -1,3 +1,4 @@
+import { cuNumar } from "@/lib/acordNumeral";
 /**
  * POST /api/newsletter — Aboneaza email la Brevo
  * Env vars Vercel: BREVO_API_KEY, BREVO_LIST_ID (default 2)
@@ -186,7 +187,7 @@ async function sendWelcomeEmail(email: string, apiKey: string): Promise<boolean>
         }).join("")}
       </div>
       ${ofertePlus.length ? `
-      <p style="color:#6b7280;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:1px;margin:0 0 10px;">Încă ${ofertePlus.length === 1 ? "o ofertă activă" : `${ofertePlus.length} oferte active`}</p>
+      <p style="color:#6b7280;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:1px;margin:0 0 10px;">Încă ${ofertePlus.length === 1 ? "o ofertă activă" : cuNumar(ofertePlus.length, "ofertă activă", "oferte active")}</p>
       <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px;margin-bottom:32px;">
         ${ofertePlus.map(o => {
           const tag = escHtml(o.cod ? "COD" : (o.procent || "OFERTĂ"));

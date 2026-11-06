@@ -15,7 +15,7 @@ from datetime import datetime, timezone
 
 from continut_restrictionat import e_restrictionat
 from nume_magazin import nume_afisat
-from promotii import titlu_afisabil
+from promotii import fara_coduri, titlu_afisabil
 
 SCRIPT_DIR   = os.path.dirname(os.path.abspath(__file__))
 REPO_ROOT    = os.path.dirname(SCRIPT_DIR)
@@ -90,7 +90,9 @@ def promo_to_product(mag: dict, promo: dict, idx: int) -> dict | None:
     cod = (promo.get("cod_cupon") or "").strip()
     display_title = title
     if cod and len(cod) >= 3:
-        # La Impact, descrierea incepe des cu codul („IMPACTVPN75 — 75% off ...").
+        # La Impact, descrierea incepe des cu codul („IMPACTVPN75 — 75% off ..."). 06.11.2026: prin
+        # `promotii.fara_coduri` (scoate si eticheta: „Coupon Code: PULUMAPE86, For" ramanea „Coupon Code: , For").
+        display_title = fara_coduri(display_title, promo)
         display_title = re.sub(re.escape(cod), "", display_title, flags=re.I)
         display_title = re.sub(r"^[\s—–:\-|]+|[\s—–:\-|]+$", "", re.sub(r"\s{2,}", " ", display_title))
         if " " not in display_title:

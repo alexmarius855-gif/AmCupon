@@ -9,6 +9,7 @@ import { maskCod } from "@/lib/maskCod";
 import { titluPromotie } from "@/lib/oferta";
 import { useCopyCod } from "../hooks/useCopyCod";
 import { trackAfiliat } from "@/lib/trackAfiliat";
+import { cuNumar } from "@/lib/acordNumeral";
 
 interface Promotie {
   nume: string;
@@ -115,7 +116,7 @@ function MagazinCard({
                   ? "bg-red-500/15 text-red-400"
                   : "bg-[#ddf93c]/15 text-[var(--accent-text)]"
               }`}>
-                {m.zile_ramase === 1 ? "Expira azi!" : `${m.zile_ramase} zile`}
+                {m.zile_ramase === 1 ? "Expiră mâine" : cuNumar(m.zile_ramase, "zi", "zile")}
               </span>
             )}
           </div>
@@ -296,7 +297,7 @@ export default function TopReduceriClient({
             <span className="text-3xl">🏪</span>
             <div>
               <p className="text-[var(--foreground)] font-bold text-sm">Toate Magazinele</p>
-              <p className="text-[var(--text-muted)] text-xs">{totalMagazine} magazine partenere</p>
+              <p className="text-[var(--text-muted)] text-xs">{cuNumar(totalMagazine, "magazin partener", "magazine partenere")}</p>
             </div>
             <a
               href="/toate-magazinele"

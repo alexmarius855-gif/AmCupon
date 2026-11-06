@@ -22,6 +22,7 @@ import { calculateDealScore, DEAL_SCORE_VISIBLE_THRESHOLD } from "../../../lib/d
 import VotCupon, { hashCupon } from "../../components/VotCupon";
 import { linkAfiliat, linkPromotie } from "@/lib/linkMagazin";
 import { numeAfisat } from "@/lib/numeMagazin";
+import { cuNumar } from "@/lib/acordNumeral";
 
 // ── Deal Score badge ────────────────────────────────────────────────────────────
 // 19.09.2026: numaratoarea 0 -> scor pornea de la 0 si pe server, deci HTML-ul (ce citesc Google
@@ -366,7 +367,7 @@ export default function MagazinClient({ magazin: m, produse = [], similare = [],
                 {m.promotii.length > 0 && (
                   <div className="flex items-center gap-1.5 bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs font-bold px-3 py-1.5 rounded-full">
                     <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"/>
-                    {m.promotii.length === 1 ? "1 ofertă activă" : `${m.promotii.length} oferte active`}
+                    {cuNumar(m.promotii.length, "ofertă activă", "oferte active")}
                   </div>
                 )}
                 {m.trend > 0 && (
@@ -382,7 +383,7 @@ export default function MagazinClient({ magazin: m, produse = [], similare = [],
                     ) : null}
                     ✓ {zileDeLaVerificare <= 0
                       ? "Actualizat azi"
-                      : `Actualizat acum ${zileDeLaVerificare} ${zileDeLaVerificare === 1 ? "zi" : "zile"}`}
+                      : `Actualizat acum ${cuNumar(zileDeLaVerificare, "zi", "zile")}`}
                   </div>
                 )}
               </div>
@@ -480,7 +481,7 @@ export default function MagazinClient({ magazin: m, produse = [], similare = [],
 
                 <div className="flex items-center gap-3 mb-5">
                   <h2 className="text-xl font-black text-[var(--foreground)]">Coduri Reducere {nume} {an}</h2>
-                  <span className="text-sm text-[var(--text-muted)]">{cuCod.length === 1 ? "1 cod activ" : `${cuCod.length} coduri active`}</span>
+                  <span className="text-sm text-[var(--text-muted)]">{cuNumar(cuCod.length, "cod activ", "coduri active")}</span>
                 </div>
                 <div className="cc-list">
                   {cuCod.map((promo, idx) => {
@@ -576,7 +577,7 @@ export default function MagazinClient({ magazin: m, produse = [], similare = [],
                     {faraCodd.length > 0 && (
                       <button onClick={() => setTabActiv("oferte")}
                         className="bg-[var(--accent)] text-[var(--on-accent)] font-bold px-5 py-2.5 rounded-xl text-sm hover:bg-[var(--accent-deep)] transition-colors">
-                        {faraCodd.length === 1 ? "Vezi oferta activă" : `Vezi ${faraCodd.length} oferte active`}
+                        {faraCodd.length === 1 ? "Vezi oferta activă" : `Vezi ${cuNumar(faraCodd.length, "ofertă activă", "oferte active")}`}
                       </button>
                     )}
                     {linkIesire && (
@@ -617,7 +618,7 @@ export default function MagazinClient({ magazin: m, produse = [], similare = [],
               <section>
                 <div className="flex items-center gap-3 mb-5">
                   <h2 className="text-xl font-black text-[var(--foreground)]">Oferte {nume} {an}</h2>
-                  <span className="text-sm text-[var(--text-muted)]">{faraCodd.length === 1 ? "1 ofertă activă" : `${faraCodd.length} oferte active`}</span>
+                  <span className="text-sm text-[var(--text-muted)]">{cuNumar(faraCodd.length, "ofertă activă", "oferte active")}</span>
                 </div>
                 <div className="cc-list">
                   {faraCodd.map((promo, idx) => {
@@ -652,7 +653,7 @@ export default function MagazinClient({ magazin: m, produse = [], similare = [],
                 {cuCod.length > 0 && (
                   <button onClick={() => setTabActiv("coduri")}
                     className="bg-[#ddf93c] text-[#0c1000] font-bold px-5 py-2.5 rounded-xl text-sm hover:bg-[#ddf93c] transition-colors">
-                    {cuCod.length === 1 ? "Vezi codul disponibil" : `Vezi ${cuCod.length} coduri disponibile`}
+                    {cuCod.length === 1 ? "Vezi codul disponibil" : `Vezi ${cuNumar(cuCod.length, "cod disponibil", "coduri disponibile")}`}
                   </button>
                 )}
               </div>
@@ -670,7 +671,7 @@ export default function MagazinClient({ magazin: m, produse = [], similare = [],
                 <div className="flex items-center justify-between mb-5">
                   <div className="flex items-center gap-3">
                     <h2 className="text-xl font-black text-[var(--foreground)]">Produse {nume} cu reducere</h2>
-                    <span className="text-sm text-[var(--text-muted)]">{produse.length} produse</span>
+                    <span className="text-sm text-[var(--text-muted)]">{cuNumar(produse.length, "produs", "produse")}</span>
                   </div>
                   <Link href="/produse" className="text-sm font-semibold text-[var(--accent-text)] hover:text-[var(--accent-text)]">Toate produsele →</Link>
                 </div>

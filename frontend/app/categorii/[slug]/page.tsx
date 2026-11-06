@@ -6,6 +6,7 @@ import fs from "fs";
 import path from "path";
 import CategorieClient from "./CategorieClient";
 import NisaProduse from "../../components/NisaProduse";
+import { cuNumar } from "@/lib/acordNumeral";
 
 const CATEG_MERCHANTS: Record<string, string[]> = {
   "fashion":            ["answear.ro","hm.com","reserved.com","about-you.ro","lc-waikiki.ro","zara.com"],
@@ -157,12 +158,12 @@ export async function generateMetadata({
     //     singularul iesea in dezacord, direct in rezultatul Google;
     //  2. toate cele 49 treceau de 60 de caractere, deci titlul era taiat exact pe
     //     partea utila. Sufixul de brand cade primul — nu el aduce clicul.
-    ? `Cod Reducere ${numeCateg} ${luna} ${an} — ${cuCod} ${cuCod === 1 ? "cod activ" : "coduri active"}`
-    : `Coduri reducere ${numeCateg} ${an} — ${cuPromo} ${cuPromo === 1 ? "ofertă activă" : "oferte active"}`;
+    ? `Cod Reducere ${numeCateg} ${luna} ${an} — ${cuNumar(cuCod, "cod activ", "coduri active")}`
+    : `Coduri reducere ${numeCateg} ${an} — ${cuNumar(cuPromo, "ofertă activă", "oferte active")}`;
   // Peste 60 de caractere, luna cade prima: anul si numarul de coduri spun mai mult.
   const title = titluPlin.length <= 60 ? titluPlin : titluPlin.replace(` ${luna} ${an}`, ` ${an}`);
 
-  const description = `${cuPromo > 0 ? `✅ ${cuPromo === 1 ? "O promotie activa" : `${cuPromo} promotii active`}` : "Coduri si oferte"} la ${mag.length} magazine de ${numeCateg} din Romania. ${cuCod > 0 ? `${cuCod === 1 ? "Un cod de reducere activ" : `${cuCod} coduri de reducere active`} in ${luna} ${an}. ` : ""}Oferte actualizate zilnic pe AmCupon.ro.`;
+  const description = `${cuPromo > 0 ? `✅ ${cuPromo === 1 ? "O promotie activa" : cuNumar(cuPromo, "promotie activa", "promotii active")}` : "Coduri si oferte"} la ${cuNumar(mag.length, "magazin", "magazine")} de ${numeCateg} din Romania. ${cuCod > 0 ? `${cuCod === 1 ? "Un cod de reducere activ" : cuNumar(cuCod, "cod de reducere activ", "coduri de reducere active")} in ${luna} ${an}. ` : ""}Oferte actualizate zilnic pe AmCupon.ro.`;
 
   return {
     title,
@@ -234,7 +235,7 @@ export default async function PaginaCategorie({
         name: `Unde gasesc coduri de reducere la magazine de ${numeCateg}?`,
         acceptedAnswer: {
           "@type": "Answer",
-          text: `Pe AmCupon.ro gasesti ${cuPromo} promotii active pentru ${mag.length} magazine de ${numeCateg} din Romania. Codurile se actualizeaza automat de mai multe ori pe zi — gratuit.`,
+          text: `Pe AmCupon.ro gasesti ${cuNumar(cuPromo, "promotie activa", "promotii active")} pentru ${cuNumar(mag.length, "magazin", "magazine")} de ${numeCateg} din Romania. Codurile se actualizeaza automat de mai multe ori pe zi — gratuit.`,
         },
       },
       {
@@ -243,8 +244,8 @@ export default async function PaginaCategorie({
         acceptedAnswer: {
           "@type": "Answer",
           text: cuCod > 0
-            ? `In ${luna} ${an} sunt ${cuCod} coduri de reducere active la magazine de ${numeCateg}${topCoduri.length > 0 ? `, printre care ${topCoduri.join(", ")}` : ""}. AmCupon.ro actualizeaza zilnic toate ofertele.`
-            : `AmCupon.ro urmareste ${cuPromo} promotii active la magazine de ${numeCateg}. Revino zilnic pentru coduri noi.`,
+            ? `In ${luna} ${an} sunt ${cuNumar(cuCod, "cod de reducere activ", "coduri de reducere active")} la magazine de ${numeCateg}${topCoduri.length > 0 ? `, printre care ${topCoduri.join(", ")}` : ""}. AmCupon.ro actualizeaza zilnic toate ofertele.`
+            : `AmCupon.ro urmareste ${cuNumar(cuPromo, "promotie activa", "promotii active")} la magazine de ${numeCateg}. Revino zilnic pentru coduri noi.`,
         },
       },
       {
@@ -270,7 +271,7 @@ export default async function PaginaCategorie({
     "@context": "https://schema.org",
     "@type": "ItemList",
     name: `Magazine ${numeCateg} cu reduceri — ${luna} ${an}`,
-    description: `${cuPromo} promotii active la magazine de ${numeCateg} pe AmCupon.ro`,
+    description: `${cuNumar(cuPromo, "promotie activa", "promotii active")} la magazine de ${numeCateg} pe AmCupon.ro`,
     url: pageUrl,
     numberOfItems: mag.filter((m) => m.are_promotie).length,
     itemListElement: mag

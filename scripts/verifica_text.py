@@ -21,7 +21,13 @@ import sys
 from datetime import datetime, timezone
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from text_curat import LUNI, PRESCURTARI  # noqa: E402
+from text_curat import AFIRMATIE_FALSA, LUNI, PRESCURTARI, acord_gresit  # noqa: E402
+
+
+class _Acord:
+    """„24 produse" (lipseste „de"), „cele 15 de produse" (e in plus), „1 oferte": aceeasi regula ca lib/acordNumeral.ts."""
+    def search(self, linie: str):
+        return acord_gresit(linie)
 
 APP = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "frontend", ".next", "server", "app")
 INLINE = r"a|span|strong|em|b|i|u|small|sup|sub|mark|abbr|time|code|label|q|s"
@@ -32,16 +38,15 @@ REGULI = [
     ("valoare tehnica", re.compile(r"\b(undefined|NaN|null|\[object Object\])\b|\{\{|\}\}|\$\{")),
     ("entitate HTML afisata", re.compile(r"&(amp|nbsp|quot|lt|gt|apos|#\d+|#x[0-9a-f]+);", re.I)),
     ("caractere stricate", re.compile(r"Ã[\u0080-¿]|Ä[\u0080-¿]|Å[\u0080-¿]|â€|�|È™|È›")),
-    ("punctuatie dubla", re.compile(r"(?<!\.)\.\.(?!\.)|,,|!!|\?\?|;;|" + PRESCURTARI + r"\.,|,\.")),
+    ("punctuatie dubla", re.compile(r"(?<!\.)\.\.(?!\.)|,,|!!|\?\?|;;|" + PRESCURTARI + r"(?<!\.\.)\.,|,\.|: ?,")),
     ("spatiu inainte de punctuatie", re.compile(r"[a-zăâîșțA-ZĂÂÎȘȚ0-9)] +[,.;:!?](?= |$)")),
     # Fara re.I: „Redodopower DE de pe" e eticheta de tara langa „de", nu o greseala.
     ("cuvant de legatura dublat", re.compile(r"\b(de|la|și|si|în|in|pe|cu|al|ale|că|ca|să|sa|nu|un|din|pentru|este|sunt)\s+\1\b")),
-    ("afirmatie falsa despre noi", re.compile(
-        r"(toate )?codurile (sunt|au fost) (testate|verificate)(?![^.!?]*\?)|(verificat|testat)[ăae]* de (noi|echipa noastr)|"
-        r"garantat[ăe]? (functional|funcțional|valabil)|100% (functional|funcțional|valabil)", re.I)),
+    ("afirmatie falsa despre noi", AFIRMATIE_FALSA),
     # Doar unde procentul e o crestere, o scadere sau o reducere: „au crescut 200%" (statistica inventata), „-150%".
     # „800% volum" e numele oficial al unei mascara Lancome, „144% sRGB" o specificatie de ecran.
     ("procent peste 100", re.compile(r"(crescut|scazut|scăzut|mai ieftin\w*|mai scump\w*|reducere|discount|economis\w*|-)\s*(cu |de |de pana la |de până la )?(10[1-9]|1[1-9]\d|[2-9]\d\d|\d{4,})\s*%", re.I)),
+    ("acord numeral", _Acord()),
     ("oferta cu an trecut", re.compile(
         rf"(?=[^\n]*\b(promoți|promoti|reducer|Black Friday|campani|discount))[^\n]*\b\d{{1,2}}(?:\s*[-–]\s*\d{{1,2}})?\s+(?:{LUNI})\s+(?:{ANI_TRECUTI})\b", re.I)),
 ]
@@ -131,6 +136,12 @@ def test() -> int:
         ("lege despre oferta online ramane", prinde(f"Din 13 decembrie {AN - 2}, regulamentul european cere ca oferta online să arate clar producătorul."), []),
         ("valoare tehnica", prinde("Pret: undefined lei"), ["valoare tehnica"]),
         ("caractere stricate", prinde("Jusqu'Ã  45 % de rÃ©duction"), ["caractere stricate"]),
+        ("eticheta fara cod", prinde("USD $224 Off Coupon Code: , For PULUMA PE86"), ["punctuatie dubla"]),
+        ("suspensie urmata de virgula ramane", prinde("(La revedere, tabără..., Vine vacanța..., 8 povestiri...)"), []),
+        ("lipseste de", prinde("24 produse · 55 zile rămase"), ["acord numeral"]),
+        ("de in plus", prinde("Calculat din cele 15 de produse urmarite"), ["acord numeral"]),
+        ("acord corect ramane", prinde("55 de zile rămase · 19 produse · 120 de magazine · 105 oferte"), []),
+        ("specificatie de produs ramane", prinde("Autonomie 45 ore, varsta 12-36 luni"), []),
         ("text corect", prinde("Mașină de spălat Samsung, 8 kg, 1.299 lei. Livrare gratuită!"), []),
     ]
     rele = [(n, a, e) for n, a, e in asteptari if a != e]

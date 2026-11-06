@@ -2,6 +2,7 @@ import fs from "fs";
 import path from "path";
 import { linkAfiliat } from "./linkMagazin";
 import { numeAfisat } from "./numeMagazin";
+import { cuNumar } from "./acordNumeral.ts";
 
 /**
  * Cifrele si numele de magazine care apar in TEXT (descrieri, FAQ, pagini „despre"),
@@ -61,7 +62,7 @@ export function pesteMagazine(): string {
     const s = Math.floor(n / 100) * 100;
     return n > s ? `peste ${s} de magazine` : `${n} de magazine`;
   }
-  if (n > 0) return `${n}${n >= 20 ? " de" : ""} magazine`;
+  if (n > 0) return cuNumar(n, "magazin", "magazine");
   return "sute de magazine";
 }
 

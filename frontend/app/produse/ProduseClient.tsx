@@ -7,6 +7,7 @@ import { CAT_META } from "./categorie-meta";
 import { linkAfiliat, linkPromotie } from "@/lib/linkMagazin";
 import { numeAfisat } from "@/lib/numeMagazin";
 import { titluPromotie } from "@/lib/oferta";
+import { cuNumar } from "@/lib/acordNumeral";
 
 /* ─── Types ──────────────────────────────────────────────────────────────── */
 export interface Produs {
@@ -267,7 +268,7 @@ function DealCard({ m, rank }: { m: Magazin; rank?: number }) {
             Ofertă activă
           </div>
           <span className="text-[var(--text-soft)] text-[10px]">·</span>
-          <span className="text-[10px] text-[var(--text-soft)]">{m.promotii.length} {m.promotii.length === 1 ? "oferta" : "oferte"}</span>
+          <span className="text-[10px] text-[var(--text-soft)]">{cuNumar(m.promotii.length, "ofertă", "oferte")}</span>
         </div>
       </div>
       {/* CTA */}
@@ -413,7 +414,7 @@ export default function ProduseClient({
         <div className="relative max-w-5xl mx-auto px-4 pt-14 pb-16 text-center">
           <div className="inline-flex items-center gap-2 bg-[var(--surface-alt)] border border-[var(--border-strong)] rounded-full px-4 py-1.5 text-xs font-semibold text-slate-500 mb-6">
             <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse inline-block"/>
-            {cuPromotii.length} magazine cu promotii active · {products.length} produse in catalog
+            {cuNumar(cuPromotii.length, "magazin", "magazine")} cu promotii active · {cuNumar(products.length, "produs", "produse")} in catalog
           </div>
           <h1 className="text-4xl md:text-6xl font-black tracking-tight leading-tight mb-4">
             <span className="text-[var(--foreground)]">Produse cu prețul de azi</span><br/>
@@ -471,7 +472,7 @@ export default function ProduseClient({
             <p className="text-xs font-bold text-[var(--accent-text)] uppercase tracking-widest mb-2">LIVE · ACTUALIZAT AZI</p>
             <h2 className="text-3xl font-black tracking-tight text-[var(--foreground)]">Top Deals din Romania</h2>
             <p className="text-[var(--text-soft)] text-sm mt-1.5">
-              {cuPromotii.length} magazine cu promotii actuale, sortate dupa reducere maxima
+              {cuNumar(cuPromotii.length, "magazin", "magazine")} cu promotii actuale, sortate dupa reducere maxima
             </p>
           </div>
 
@@ -500,7 +501,7 @@ export default function ProduseClient({
               {cuPromotii.length > 54 && (
                 <div className="text-center mt-8">
                   <Link href="/" className="border-2 border-[var(--border-strong)] hover:border-[var(--accent-text)] text-[var(--text-soft)] hover:text-[var(--accent-text)] font-bold px-8 py-3 rounded-xl text-sm transition-all hover:shadow-md inline-block">
-                    Vezi toate {cuPromotii.length} magazine pe homepage →
+                    Vezi toate cele {cuNumar(cuPromotii.length, "magazin", "magazine")} pe homepage →
                   </Link>
                 </div>
               )}
@@ -590,7 +591,7 @@ export default function ProduseClient({
               <p className="text-xs font-bold text-[var(--accent-text)] uppercase tracking-widest mb-2">FEED-URI 2PERFORMANT</p>
               <h2 className="text-3xl font-black tracking-tight text-[var(--foreground)]">Catalog Produse</h2>
               <p className="text-[var(--text-soft)] text-sm mt-1.5">
-                {products.length} produse din feed-urile partenerilor · {statsProds.magazine} magazine
+                {cuNumar(products.length, "produs", "produse")} din feed-urile partenerilor · {cuNumar(statsProds.magazine, "magazin", "magazine")}
                 {updated && ` · actualizat ${new Date(updated).toLocaleDateString("ro-RO")}`}
               </p>
             </div>
@@ -617,7 +618,7 @@ export default function ProduseClient({
                       className="group bg-[var(--surface)] border border-[var(--border-strong)] hover:border-[var(--accent-text)]/60 rounded-xl p-2.5 text-center hover:-translate-y-0.5 transition-all duration-200">
                       <div className="text-xl mb-1">{cm.emoji}</div>
                       <p className="text-[10px] font-bold text-[var(--text-soft)] group-hover:text-[var(--accent-text)] transition-colors leading-tight">{cm.label}</p>
-                      {(catCounts[slug] || 0) > 0 && <p className="text-[10px] text-[var(--text-muted)] mt-0.5">{(catCounts[slug] || 0).toLocaleString()} produse</p>}
+                      {(catCounts[slug] || 0) > 0 && <p className="text-[10px] text-[var(--text-muted)] mt-0.5">{cuNumar(catCounts[slug] || 0, "produs", "produse")}</p>}
                     </Link>
                   ))}
                 </div>
@@ -730,7 +731,7 @@ export default function ProduseClient({
                     <div className="mb-4 bg-emerald-500/10 border border-emerald-500/30 rounded-xl p-3 flex items-center gap-3">
                       <span className="text-xl">&#127381;</span>
                       <div className="flex-1 text-sm">
-                        <span className="font-bold text-emerald-400">Pretul a scazut la {priceDrops.length} produse salvate!</span>
+                        <span className="font-bold text-emerald-400">Pretul a scazut la {cuNumar(priceDrops.length, "produs salvat", "produse salvate")}!</span>
                       </div>
                       <Link href="/wishlist" className="text-xs font-bold text-emerald-400 hover:text-emerald-300 whitespace-nowrap">
                         Vezi lista &#8594;

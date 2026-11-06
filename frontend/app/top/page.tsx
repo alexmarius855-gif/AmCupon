@@ -2,6 +2,7 @@ import Link from "next/link";
 import { Metadata } from "next";
 import fs from "fs";
 import path from "path";
+import { cuNumar } from "@/lib/acordNumeral";
 
 interface Categorie {
   slug: string;
@@ -147,7 +148,7 @@ export default function TopHubPage() {
                   {/* FOOTER */}
                   <div className="flex items-center justify-between pt-3 border-t border-[var(--border)] ">
                     <div className="flex items-center gap-2">
-                      <span className="text-xs text-[var(--text-muted)] dark:text-[var(--text-muted)]">{cat.produse.length} produse</span>
+                      <span className="text-xs text-[var(--text-muted)] dark:text-[var(--text-muted)]">{cuNumar(cat.produse.length, "produs", "produse")}</span>
                       {scorMediu > 0 && (
                         <>
                           <span className="text-[var(--text-soft)] dark:text-[var(--text-muted)]">·</span>

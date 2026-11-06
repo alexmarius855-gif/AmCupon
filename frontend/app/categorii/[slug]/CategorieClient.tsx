@@ -7,6 +7,7 @@ import CriteriiTema from "../../components/CriteriiTema";
 import MagazinCard, { numeAfisat, type CardMagazin } from "../../components/MagazinCard";
 import FiltreRapide, { trecePrinFiltru, type CheieFiltru } from "../../components/FiltreRapide";
 import NewsletterCTA from "../../components/NewsletterCTA";
+import { cuNumar } from "@/lib/acordNumeral";
 
 interface Magazin extends CardMagazin {
   trend: number;
@@ -107,7 +108,7 @@ export default function CategorieClient({ magazine, numeCategorie, slug, produse
             Coduri reducere <span className="text-transparent bg-clip-text" style={{ backgroundImage: "linear-gradient(135deg, #c3dd2c, #ddf93c)" }}>{numeCategorie}</span> {an}
           </h1>
           <p className="text-[var(--text-soft)] text-sm">
-            {cuPromotii.length} promoții active · {magazine.length} magazine · Actualizat zilnic
+            {cuNumar(cuPromotii.length, "promoție activă", "promoții active")} · {cuNumar(magazine.length, "magazin", "magazine")} · Actualizat zilnic
           </p>
           {descCateg && (
             <p className="text-[var(--text-soft)] text-sm mt-2 max-w-2xl opacity-90">{descCateg}</p>
@@ -132,8 +133,8 @@ export default function CategorieClient({ magazine, numeCategorie, slug, produse
               <h2 className="text-xl font-black text-[var(--foreground)]">Promoții Active {an}</h2>
               <span className="text-sm text-[var(--text-muted)]">
                 {filtruActiv === "toate"
-                  ? cuPromotii.length + " oferte"
-                  : cuPromotiiFiltrate.length + " din " + cuPromotii.length + " oferte"}
+                  ? cuNumar(cuPromotii.length, "ofertă", "oferte")
+                  : cuPromotiiFiltrate.length + " din " + cuNumar(cuPromotii.length, "ofertă", "oferte")}
               </span>
             </div>
 
@@ -168,7 +169,7 @@ export default function CategorieClient({ magazine, numeCategorie, slug, produse
             <div className="flex items-center justify-between gap-3 mb-5">
               <div className="flex items-center gap-3">
                 <h2 className="text-xl font-black text-[var(--foreground)]">Produse din {numeCategorie}</h2>
-                <span className="text-sm text-[var(--text-muted)]">{produse.length} produse</span>
+                <span className="text-sm text-[var(--text-muted)]">{cuNumar(produse.length, "produs", "produse")}</span>
               </div>
               <Link href="/produse" className="hidden sm:inline text-xs font-bold text-[var(--accent-text)] hover:text-[var(--accent-text)] transition-colors">Toate produsele →</Link>
             </div>
@@ -206,7 +207,7 @@ export default function CategorieClient({ magazine, numeCategorie, slug, produse
           <section>
             <div className="flex items-center gap-3 mb-4">
               <h2 className="text-lg font-black text-[var(--text-soft)]">Toate magazinele {numeCategorie}</h2>
-              <span className="text-sm text-[var(--text-muted)]">{faraPromotii.length} magazine</span>
+              <span className="text-sm text-[var(--text-muted)]">{cuNumar(faraPromotii.length, "magazin", "magazine")}</span>
             </div>
             <p className="text-xs text-[var(--text-muted)] mb-4">
               Aceste magazine nu au promoții active momentan — butoanele duc direct la magazin prin linkul nostru afiliat.

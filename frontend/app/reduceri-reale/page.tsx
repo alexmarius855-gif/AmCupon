@@ -5,6 +5,7 @@ import fs from "fs";
 import path from "path";
 import { numeAfisat } from "@/lib/numeMagazin";
 import { imagineSigura } from "@/lib/topFeed";
+import { cuNumar } from "@/lib/acordNumeral";
 
 /**
  * /reduceri-reale — produse al căror preț de AZI e sub minimul din ultimele 30 de zile (26.10.2026).
@@ -156,7 +157,7 @@ export default function ReduceriRealePage() {
           <section className="max-w-6xl mx-auto px-4 pb-10">
             <h2 className="text-xl font-black mb-2">Ce s-a întâmplat cu prețurile în ultimele {s.fereastra_zile} de zile</h2>
             <p className="text-sm text-[var(--text-soft)] mb-5 max-w-3xl">
-              Din {nr(s.produse)} de produse urmărite de cel puțin {s.acoperire_min_zile} zile la magazinele partenere,
+              Din {cuNumar(s.produse, "produs urmărit", "produse urmărite")} de cel puțin {cuNumar(s.acoperire_min_zile, "zi", "zile")} la magazinele partenere,
               comparate cu prețul lor de acum {s.fereastra_zile} de zile:
             </p>
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 max-w-3xl">
@@ -174,7 +175,7 @@ export default function ReduceriRealePage() {
               </div>
             </div>
             <p className="text-xs text-[var(--text-muted)] mt-3 max-w-3xl">
-              Nu numim magazine. {s.excluse > 0 ? `${nr(s.excluse)} produse cu o variație mai mare de trei ori nu sunt numărate: pe aceeași adresă apare uneori altă variantă (alt gramaj, alt set), deci nu e o schimbare de preț. ` : ""}
+              Nu numim magazine. {s.excluse > 0 ? `${cuNumar(s.excluse, "produs", "produse")} cu o variație mai mare de trei ori nu sunt numărate: pe aceeași adresă apare uneori altă variantă (alt gramaj, alt set), deci nu e o schimbare de preț. ` : ""}
               Înainte de Black Friday merită să notezi prețul produsului pe care îl vrei.
             </p>
           </section>
@@ -184,7 +185,7 @@ export default function ReduceriRealePage() {
           <div className="flex items-baseline justify-between mb-5 gap-4">
             <h2 className="text-xl font-black">Sub minimul din ultimele {d.fereastra_zile} de zile, azi</h2>
             <span className="text-sm text-[var(--text-muted)] shrink-0">
-              {produse.length === 1 ? "1 produs" : produse.length < 20 ? `${produse.length} produse` : `${produse.length} de produse`}
+              {cuNumar(produse.length, "produs", "produse")}
             </span>
           </div>
           {produse.length > 0 ? (
@@ -209,7 +210,7 @@ export default function ReduceriRealePage() {
                       <p className="text-sm font-semibold leading-snug line-clamp-2">{p.title}</p>
                       <p className="mt-1 text-sm">
                         <span className="font-black text-[var(--accent-text)]">{lei(p.pret)}</span>
-                        <span className="text-xs text-[var(--text-muted)]"> · minim 30 zile {lei(p.minim_30_zile)} · −{p.scadere_pct}%</span>
+                        <span className="text-xs text-[var(--text-muted)]"> · minim 30 de zile {lei(p.minim_30_zile)} · −{p.scadere_pct}%</span>
                       </p>
                     </div>
                   </a>

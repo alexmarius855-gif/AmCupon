@@ -5,6 +5,7 @@ import path from "path";
 import MagazinCard from "../components/MagazinCard";
 import NewsletterCTA from "../components/NewsletterCTA";
 import { pesteMagazine } from "@/lib/cifreSite";
+import { cuNumar } from "@/lib/acordNumeral";
 
 interface Promotie {
   nume: string;
@@ -180,7 +181,7 @@ export default function CraciunPage() {
             <h2 className="text-xl font-black text-[var(--foreground)]">
               🛍️ Magazine cu reduceri active
             </h2>
-            <span className="text-sm text-[var(--text-muted)]">{magazine.length} magazine</span>
+            <span className="text-sm text-[var(--text-muted)]">{cuNumar(magazine.length, "magazin", "magazine")}</span>
           </div>
 
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">

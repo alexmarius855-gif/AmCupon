@@ -3,6 +3,7 @@ import Link from "next/link";
 import fs from "fs";
 import path from "path";
 import ReducereClient from "./ReducereClient";
+import { cuNumar } from "@/lib/acordNumeral";
 
 export const metadata: Metadata = {
   title: "Calculator reduceri — cat costa dupa reducere | AmCupon.ro",
@@ -206,7 +207,7 @@ export default function CalculatorReducerePage() {
         <section className="mt-12 bg-[var(--surface)] rounded-xl border border-[var(--border)] p-6">
           <h2 className="text-xl font-black mb-2">Ai calculat. Acum gaseste reducerea.</h2>
           <p className="text-[var(--text-muted)] mb-4">
-            Urmarim {cuPromotie} magazine cu promotii active, dintre care {cuCod} au si un cod de
+            Urmarim {cuNumar(cuPromotie, "magazin", "magazine")} cu promotii active, dintre care {cuCod} au si un cod de
             reducere activ.
           </p>
           <div className="flex flex-wrap gap-3">

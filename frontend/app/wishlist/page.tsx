@@ -4,6 +4,7 @@ import Link from "next/link";
 
 import { useWishlist } from "../hooks/useWishlist";
 import { useEffect, useRef, useState } from "react";
+import { cuNumar } from "@/lib/acordNumeral";
 
 export default function WishlistPage() {
   const { items, remove, priceDrops, actualizeazaPreturi } = useWishlist();
@@ -36,7 +37,7 @@ export default function WishlistPage() {
           <span className="text-3xl">&#10084;&#65039;</span>
           <div>
             <h1 className="text-2xl font-black text-[var(--foreground)]">Produsele mele salvate</h1>
-            <p className="text-sm text-[var(--text-muted)]">{items.length} {items.length === 1 ? "produs salvat" : "produse salvate"}</p>
+            <p className="text-sm text-[var(--text-muted)]">{cuNumar(items.length, "produs salvat", "produse salvate")}</p>
           </div>
         </div>
 
@@ -46,7 +47,7 @@ export default function WishlistPage() {
             <span className="text-2xl">&#127381;</span>
             <div>
               <p className="font-bold text-emerald-800">
-                Pretul a scazut la {priceDrops.length} {priceDrops.length === 1 ? "produs" : "produse"} salvate!
+                Pretul a scazut la {cuNumar(priceDrops.length, "produs salvat", "produse salvate")}!
               </p>
               <ul className="mt-1 space-y-0.5">
                 {priceDrops.map((p) => {

@@ -7,6 +7,7 @@ import NewsletterCTA from "../components/NewsletterCTA";
 import { areLinkAfiliat } from "@/lib/linkMagazin";
 import { campaniiBF, categoriiBF, toateCampaniileBF } from "@/lib/campaniiBlackFriday";
 import StudiuReale from "./StudiuReale";
+import { cuNumar } from "@/lib/acordNumeral";
 
 /**
  * Black Friday — doar magazinele la care clicul aduce comision.
@@ -181,7 +182,7 @@ export default function BlackFridayPage() {
             Black Friday {BF.an} în România
           </h1>
           <p className="text-[var(--text-soft)] text-base md:text-lg max-w-2xl">
-            <strong className="text-[var(--foreground)]">{cuOferta.length} magazine partenere au oferte active acum.</strong> Pe fiecare vezi codul,
+            <strong className="text-[var(--foreground)]">{cuNumar(cuOferta.length, "magazin partener are", "magazine partenere au")} oferte active acum.</strong> Pe fiecare vezi codul,
             dacă există, și până când e valabilă oferta.
           </p>
 
@@ -206,12 +207,12 @@ export default function BlackFridayPage() {
             <div className="mt-8">
               <h2 className="text-lg font-black mb-1">Calendarul Black Friday la partenerii AmCupon</h2>
               <p className="text-sm text-[var(--text-muted)] mb-3 max-w-2xl">
-                {BF.parteneri.length} campanii, în ordinea în care încep. Datele sunt cele anunțate de magazine în rețeaua
+                {cuNumar(BF.parteneri.length, "campanie", "campanii")}, în ordinea în care încep. Datele sunt cele anunțate de magazine în rețeaua
                 de afiliere 2Performant sau publicate de presă; reducerile le stabilește fiecare magazin.
               </p>
               <p className="text-sm text-[var(--text-soft)] mb-3 max-w-2xl">
                 Black Friday nu mai e o singură zi: {BF.inainteDeEmag} din {BF.totalCampanii} de campanii încep înainte de {emagScurt}, prima
-                pe {BF.primaZi}. O campanie ține {BF.medianaZile} zile în mod obișnuit (valoarea mediană), iar cea mai lungă, {BF.celMaiLung} de zile.
+                pe {BF.primaZi}. O campanie ține {cuNumar(BF.medianaZile, "zi", "zile")} în mod obișnuit (valoarea mediană), iar cea mai lungă, {cuNumar(BF.celMaiLung, "zi", "zile")}.
               </p>
               <nav aria-label="Campanii pe categorii" className="flex flex-wrap gap-2 mb-4">
                 {categoriiBF().map((k) => (

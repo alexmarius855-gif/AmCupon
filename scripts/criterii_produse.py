@@ -708,6 +708,11 @@ def ruleaza() -> int:
         x["produse"] = [p for p in x["produse"] if se_potriveste(p["titlu"], c, p["pret"]) and not fpf.adresa_moarta(p.get("url_magazin") or "")
                         and p["magazin"] not in MAGAZINE_RECONDITIONATE and p["magazin"] in plati]  # magazin iesit din program = fara comision
     verifica_la_magazine(lista, azi)
+    # Pretul citit acum pe site-ul magazinului poate iesi din intervalul paginii (06.11.2026: serul cu retinol de la
+    # Dr. Max, 21 lei, sub pragul de 25): regula se reaplica pe pretul confirmat, altfel `--verifica` opreste publicarea.
+    for x in lista:
+        c = DUPA_SLUG[x["slug"]]
+        x["produse"] = [p for p in x["produse"] if se_potriveste(p["titlu"], c, p["pret"])]
     for x in lista:
         x["magazine"] = sorted({p["magazin"] for p in x["produse"]})
     io.open(STARE, "w", encoding="utf-8", newline="").write(json.dumps({"actualizat": azi, "criterii": lista}, ensure_ascii=False, indent=0))

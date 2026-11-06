@@ -1,8 +1,8 @@
 {
-  "data": "2026-11-05",
-  "data_afisata": "5 noiembrie 2026",
-  "titlu": "Radarul AmCupon — 5 noiembrie 2026",
-  "intro": "Am trecut azi prin ofertele active si am pastrat doar ce merita. Iese in evidenta Libris si Detoxmed, dar mai jos ai selectia completa, verificata de noi. Toate codurile sunt testate; cele cu termen scurt le-am marcat.",
+  "data": "2026-11-06",
+  "data_afisata": "6 noiembrie 2026",
+  "titlu": "Radarul AmCupon — 6 noiembrie 2026",
+  "intro": "Selectia de azi e facuta automat din ofertele active, dupa reducere, cod si termen. Primele sunt Libris si Vetro, dar mai jos ai toata selectia. Ofertele vin de la magazine prin reteaua de afiliere; nu le incercam in cos, asa ca citeste conditiile inainte sa comanzi. Cele care expira curand sunt marcate.",
   "picks": [
     {
       "scor": 125,
@@ -15,22 +15,36 @@
       "descriere": "Campania se încheie duminică, 8 noiembrie, la ora 23:59. Bannerele au fost încărcate. Bannerele au fost incarcate.",
       "cod": "BF25",
       "url": "https://amcupon.ro/cod-reducere/libris.ro",
-      "zile_ramase": 4,
-      "take": "Grabeste-te: expira in 4 zile. Oferta verificata — buna daca te incadrezi in categorie."
+      "zile_ramase": 3,
+      "take": "Grabeste-te: expira in 3 zile. Oferta activa — buna daca te incadrezi in categorie."
     },
     {
       "scor": 100,
-      "magazin": "detoxmed.ro",
-      "nume_afisat": "Detoxmed",
+      "magazin": "vetro.ro",
+      "nume_afisat": "Vetro",
       "categorie": "Sănătate & Farmacie",
       "categorie_slug": "sanatate",
-      "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/14520/medium/14520.jpg",
-      "titlu": "reducere 30% la toate programele DETOXMED",
-      "descriere": "DetoxMed îți livrează acasă programe complete de detoxifiere cu sucuri crude, nepasteurizate, imbogatite cu vitamina C Alcalina, ambalate în sticlă. Toate mesele zilei vin gata preparate: 6 sucuri sau 4 sucuri și o salată pe zi, pe 3, 5, 7 sau 12 zile. Intareste-ti imunitatea, scapa de câteva kilograme, de balonare și de oboseală, fără senzația de foame. Livrarea in sistem termoizolant e gratuită în toată țara.",
-      "cod": "DETOX10",
-      "url": "https://amcupon.ro/cod-reducere/detoxmed.ro",
-      "zile_ramase": 3,
-      "take": "Grabeste-te: expira in 3 zile. Oferta verificata — buna daca te incadrezi in categorie."
+      "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/12008/medium/12008.jpg",
+      "titlu": "Black Friday 6-8.11.2026",
+      "descriere": "In perioada 06.11 - 08.11 se va desfasura campania de Black Friday cu discount-uri de pana la 19% la toate produsele cu pret intreg si 9% la produsele aflate deja la promotie. In campania de Black Friday nu intra produse care sunt \"Pe Comanda\".",
+      "cod": "VED5",
+      "url": "https://amcupon.ro/cod-reducere/vetro.ro",
+      "zile_ramase": 2,
+      "take": "Grabeste-te: expira in 2 zile. Oferta activa — buna daca te incadrezi in categorie."
+    },
+    {
+      "scor": 100,
+      "magazin": "watchshop.ro",
+      "nume_afisat": "Watchshop",
+      "categorie": "Bijuterii & Ceasuri",
+      "categorie_slug": "bijuterii",
+      "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/11435/medium/11435.png",
+      "titlu": "Black Friday Watchshop.ro",
+      "descriere": "Black Friday la WatchShop.ro Reduceri de pana la 80% la produsele din stoc. Reduceri reale intre 25 si 40% pentru restul produselor, in functie de brand si de categorie. Voucher de 20% reducere pentru orice produs care nu se afla in promotie. Cod voucher",
+      "cod": "BLACKFRIDAY2026",
+      "url": "https://amcupon.ro/cod-reducere/watchshop.ro",
+      "zile_ramase": 2,
+      "take": "Grabeste-te: expira in 2 zile. Oferta activa — buna daca te incadrezi in categorie."
     },
     {
       "scor": 100,
@@ -43,8 +57,8 @@
       "descriere": "Use code THX to unlock the following discounts: $15 OFF orders of $89+ $25 OFF orders of $159+ $35 OFF orders of $199+ $90 OFF orders of $399+",
       "cod": "THX",
       "url": "https://amcupon.ro/cod-reducere/nadula.com",
-      "zile_ramase": 6,
-      "take": "Oferta verificata — buna daca te incadrezi in categorie."
+      "zile_ramase": 5,
+      "take": "Grabeste-te: expira in 5 zile. Oferta activa — buna daca te incadrezi in categorie."
     },
     {
       "scor": 100,
@@ -57,38 +71,24 @@
       "descriere": "17% OFF Sitewide; $30 OFF Orders Over $155; $60 OFF Orders Over $265. Nov 2–10, 2026. Flash sales: Nov 4: 60% OFF; Nov 6: Down To $47.",
       "cod": "BF60",
       "url": "https://amcupon.ro/cod-reducere/klaiyihair.com",
-      "zile_ramase": 6,
-      "take": "Oferta verificata — buna daca te incadrezi in categorie."
+      "zile_ramase": 5,
+      "take": "Grabeste-te: expira in 5 zile. Oferta activa — buna daca te incadrezi in categorie."
     },
     {
       "scor": 100,
-      "magazin": "kospet.com",
-      "nume_afisat": "Kospet",
-      "categorie": "Electronice & IT",
-      "categorie_slug": "electronice",
-      "logo_url": "https://www.google.com/s2/favicons?domain=kospet.com&sz=128",
-      "titlu": "[EU] Limited time sale-T3U2 Save 42% OFF! Use code HT3U2",
-      "descriere": "Limited time sale-T3U2 Save 42% OFF! Use code HT3U2",
-      "cod": "HT3U2",
-      "url": "https://amcupon.ro/cod-reducere/kospet.com",
-      "zile_ramase": 6,
-      "take": "Oferta verificata — buna daca te incadrezi in categorie."
-    },
-    {
-      "scor": 75,
-      "magazin": "noriel.ro",
-      "nume_afisat": "Noriel",
-      "categorie": "Copii & Familie",
-      "categorie_slug": "copii",
-      "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/7926/medium/7926.png",
-      "titlu": "25% REDUCERE la cumparaturi LEGO® de minimum 349 lei | 04 - 10.11.2026",
-      "descriere": "Esti gata pentru noi aventuri LEGO®? Pe Noriel.ro, intre 04 - 10.11.2026, ai 25% REDUCERE direct in cos, la comenzi LEGO® de minimum 349 lei!Grabeste-te, oferta este valabila pentru o perioada limitata! Promotie exclusiv online in perioada 04 - 10.11.2026. Se aplica direct in cos si nu se cumuleaza cu alte reduceri.",
-      "cod": "",
-      "url": "https://amcupon.ro/cod-reducere/noriel.ro",
-      "zile_ramase": 5,
-      "take": "Grabeste-te: expira in 5 zile. Oferta verificata — buna daca te incadrezi in categorie."
+      "magazin": "nano-auto.ro",
+      "nume_afisat": "Nano Auto",
+      "categorie": "Casă & Grădină",
+      "categorie_slug": "casa-gradina",
+      "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/14437/medium/14437.jpg",
+      "titlu": "Black Friday - Cele mai mici preturi din an",
+      "descriere": "Foloseste codul de reducere la checkout pentru o reducere suplimentara de 5%.",
+      "cod": "NANOMAX5",
+      "url": "https://amcupon.ro/cod-reducere/nano-auto.ro",
+      "zile_ramase": 7,
+      "take": "Oferta activa — buna daca te incadrezi in categorie."
     }
   ],
-  "outro": "Revino maine la Radar — alegem din nou ce merita, ca sa nu cauti tu prin sute de oferte.",
+  "outro": "Revino maine la Radar: selectia se reface in fiecare dimineata, din ofertele active atunci.",
   "sursa_voce": "fallback"
 }

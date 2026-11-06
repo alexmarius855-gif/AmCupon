@@ -5,6 +5,7 @@ import fs from "fs";
 import path from "path";
 import { linkAfiliat } from "@/lib/linkMagazin";
 import { numeAfisat } from "@/lib/numeMagazin";
+import { cuNumar } from "@/lib/acordNumeral";
 
 /**
  * eSIM pe destinatie — date din data/esim-preturi.csv, prin scripts/genereaza_esim.py.
@@ -45,7 +46,7 @@ const zi = (iso: string) => ZI.format(new Date(`${iso}T00:00:00Z`));
 const pret = (p: Plan) =>
   new Intl.NumberFormat("ro-RO", { style: "currency", currency: p.moneda, minimumFractionDigits: 2 }).format(p.pret);
 /** „un furnizor", „4 furnizori", „20 de furnizori". */
-const furnizori = (n: number) => (n === 1 ? "un furnizor" : `${n}${n % 100 >= 20 || (n > 0 && n % 100 === 0) ? " de" : ""} furnizori`);
+const furnizori = (n: number) => (n === 1 ? "un furnizor" : cuNumar(n, "furnizor", "furnizori"));
 
 export async function generateStaticParams() {
   return Object.keys(loadDestinatii()).map((destinatie) => ({ destinatie }));

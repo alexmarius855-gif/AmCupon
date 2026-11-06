@@ -5,6 +5,7 @@ import path from "path";
 import MagazinCard from "../components/MagazinCard";
 import NewsletterCTA from "../components/NewsletterCTA";
 import NisaProduse from "../components/NisaProduse";
+import { deNumar } from "@/lib/acordNumeral";
 
 interface Promotie { nume: string; cod_cupon: string; landing_page: string; zile_ramase: number; }
 interface Magazin {
@@ -83,7 +84,7 @@ export default function BijuteriiPage() {
         <div className="bg-[var(--surface)] border-[var(--border)] py-3 px-4">
           <div className="max-w-6xl mx-auto flex flex-wrap justify-center gap-6 text-sm">
             <span className="text-[var(--accent-text)] font-semibold">
-              <span className="font-black text-[var(--accent-text)]">{magazine.length}</span> magazine bijuterii
+              <span className="font-black text-[var(--accent-text)]">{magazine.length}</span>{deNumar(magazine.length)} magazine de bijuterii
             </span>
             <span className="text-[var(--accent-text)] font-semibold">
               <span className="font-black text-[var(--accent-text)]">{cuPromo.length}</span> cu promotii active

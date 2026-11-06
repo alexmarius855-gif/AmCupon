@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { statisticiFeed, lei, type ProdusStat } from "../../../lib/statisticiMagazin";
+import { cuNumar } from "@/lib/acordNumeral";
 
 /**
  * Context real despre magazin — adancimea care ne lipsea fata de concurenta.
@@ -56,7 +57,7 @@ export default function ContextMagazin({
           <div className="bg-[var(--surface)] border border-[var(--border)] rounded-xl p-5">
             <h2 className="text-lg font-black text-[var(--foreground)] mb-1">Ce preturi are {nume}</h2>
             <p className="text-xs text-[var(--text-muted)] mb-4">
-              Calculat din cele {stat.total.toLocaleString("ro-RO")} de produse pe care le
+              Calculat din cele {cuNumar(stat.total, "produs", "produse")} pe care le
               urmarim automat in catalogul magazinului.
             </p>
 
@@ -76,8 +77,8 @@ export default function ContextMagazin({
             <p className="text-sm text-[var(--text-soft)] leading-relaxed">
               Jumătate din produsele urmărite costă sub {lei(stat.pretMedian)}.
               {stat.cuReducere > 0 && (
-                <> Chiar acum, <strong className="text-[var(--foreground)]">{stat.cuReducere}</strong>{" "}
-                  {stat.cuReducere === 1 ? "produs are" : "produse au"} prețul tăiat față de cel inițial.</>
+                <> Chiar acum, <strong className="text-[var(--foreground)]">{cuNumar(stat.cuReducere, "produs", "produse")}</strong>{" "}
+                  {stat.cuReducere === 1 ? "are" : "au"} prețul tăiat față de cel inițial.</>
               )}{" "}
               Prețul median spune mai mult decât cel mai mic preț afișat pe site:
               arată unde se află cu adevărat majoritatea produselor.

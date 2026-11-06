@@ -8,6 +8,7 @@ import { CAT_META } from "../categorie-meta";
 import { CAT_FAQ } from "./categorie-faq";
 import { useWishlist } from "../../hooks/useWishlist";
 import { numeAfisat } from "@/lib/numeMagazin";
+import { cuNumar } from "@/lib/acordNumeral";
 
 
 type Sort = "discount" | "pret_asc" | "pret_desc" | "nou";
@@ -312,7 +313,7 @@ export default function ProduseCategorieClient({
             <h2 className="font-black text-[var(--text-soft)] text-xl mb-2">Feed-urile se actualizeaza</h2>
             <p className="text-[var(--text-muted)] text-sm mb-6 max-w-md mx-auto">
               Produsele din categoria {catMeta.label} se incarca la urmatoarea actualizare zilnica.
-              Total in catalog: {totalAll.toLocaleString()} produse.
+              Total in catalog: {cuNumar(totalAll, "produs", "produse")}.
             </p>
             <Link href="/produse" className="bg-[#ddf93c] text-[#0c1000] font-bold px-6 py-3 rounded-xl hover:bg-[#ddf93c] transition-colors text-sm inline-block">
               Toate produsele ({totalAll.toLocaleString()}) →
@@ -420,7 +421,7 @@ export default function ProduseCategorieClient({
             {/* Count */}
             <div className="flex items-center justify-between mb-4">
               <p className="text-sm text-[var(--text-soft)]">
-                <span className="font-bold text-[var(--text-soft)]">{filtrate.length.toLocaleString()}</span> produse
+                <span className="font-bold text-[var(--text-soft)]">{cuNumar(filtrate.length, "produs", "produse")}</span>
                 {hasFiltre && <span className="text-[var(--text-muted)]"> (din {products.length.toLocaleString()})</span>}
                 {updated && <span className="text-[var(--text-muted)]"> · actualizat {new Date(updated).toLocaleDateString("ro-RO")}</span>}
               </p>
@@ -458,7 +459,7 @@ export default function ProduseCategorieClient({
                 <div ref={loadMoreRef} className="h-4 mt-4" />
                 {limit >= filtrate.length && filtrate.length > 48 && (
                   <p className="text-center text-xs text-[var(--text-muted)] mt-4">
-                    Toate cele {filtrate.length.toLocaleString()} produse au fost incarcate.
+                    Toate cele {cuNumar(filtrate.length, "produs", "produse")} au fost incarcate.
                   </p>
                 )}
               </>

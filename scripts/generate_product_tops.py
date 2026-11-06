@@ -12,6 +12,8 @@ import re
 import os
 from datetime import date
 
+from text_curat import acord_numeral
+
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 OUTPUT_JSON = os.path.join(SCRIPT_DIR, "..", "frontend", "public", "output.json")
 TOP_JSON    = os.path.join(SCRIPT_DIR, "..", "frontend", "public", "top-produse.json")
@@ -32,7 +34,20 @@ def load_top() -> dict:
         return json.load(f)
 
 
+def _acord(x):
+    """Acordul numeralului in tot textul scris de mana („29 zile autonomie" -> „29 de zile"), la fiecare rulare:
+    fisierul e intrare si iesire. Sursa regulii: text_curat.acord_numeral (06.11.2026)."""
+    if isinstance(x, dict):
+        return {k: _acord(v) for k, v in x.items()}
+    if isinstance(x, list):
+        return [_acord(v) for v in x]
+    if isinstance(x, str) and not x.startswith("http"):
+        return acord_numeral(x)
+    return x
+
+
 def save_top(data: dict):
+    data = _acord(data)
     data["updated"] = date.today().isoformat()
     with open(TOP_JSON, "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=2)

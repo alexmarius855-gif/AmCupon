@@ -1,3 +1,4 @@
+import { cuNumar } from "./acordNumeral.ts";
 /**
  * Sursa UNICA pentru eticheta de expirare a unei promotii.
  *
@@ -60,8 +61,8 @@ export function etichetaExpirare(zile: number | null | undefined): EtichetaExpir
 
   if (zile === 0) return { text: "Expiră azi", ton: "urgent", esteImediata: true };
   if (zile === 1) return { text: "Expiră mâine", ton: "urgent", esteImediata: true };
-  if (zile <= PRAG_URGENT) return { text: `Expiră în ${zile} zile`, ton: "urgent", esteImediata: false };
-  if (zile < PRAG_FARA_CIFRA) return { text: `${zile} zile rămase`, ton: "normal", esteImediata: false };
+  if (zile <= PRAG_URGENT) return { text: `Expiră în ${cuNumar(zile, "zi", "zile")}`, ton: "urgent", esteImediata: false };
+  if (zile < PRAG_FARA_CIFRA) return { text: cuNumar(zile, "zi rămasă", "zile rămase"), ton: "normal", esteImediata: false };
 
   return { text: "Ofertă activă", ton: "neutru", esteImediata: false };
 }

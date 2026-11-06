@@ -1,3 +1,4 @@
+import { cuNumar } from "@/lib/acordNumeral";
 /**
  * Graficul medianelor pe categorie — SVG randat pe SERVER, fara JS.
  *
@@ -121,7 +122,7 @@ export default function GraficCategorii({ categorii }: { categorii: CategorieGra
       </svg>
 
       <figcaption className="text-xs text-[var(--text-muted)] leading-relaxed mt-3">
-        Reducerea mediana declarata, pe categorie, din {date.length} categorii care trec pragul
+        Reducerea mediana declarata, pe categorie, din {cuNumar(date.length, "categorie care trece", "categorii care trec")} pragul
         de esantion. Restul sunt listate mai jos ca date insuficiente &mdash; le aratam ca sa se
         vada ce NU stim, nu doar ce stim.
       </figcaption>

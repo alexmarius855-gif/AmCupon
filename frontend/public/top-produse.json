@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-05",
+  "updated": "2026-11-06",
   "categorii": [
     {
       "slug": "laptopuri",
@@ -1206,7 +1206,7 @@
             "Suctiune": "4000 Pa",
             "Navigatie": "LiDAR",
             "Mop": "Vibratie 3000 rpm",
-            "Statie": "Golire automata 60 zile",
+            "Statie": "Golire automata 60 de zile",
             "Autonomie": "130 min",
             "Zgomot": "65 dB"
           },
@@ -1533,9 +1533,9 @@
             "Pret/Calitate": 8.2
           },
           "verdict_scurt": "Cel mai performant smartwatch pentru atleti",
-          "verdict_detaliat": "Garmin Fenix 8 Sapphire este alegerea sportivilor seriosi. 29 zile autonomie, GPS multi-band, analize VO2max si training load avansat. Primul Fenix cu microfon si difuzor pentru apeluri.",
+          "verdict_detaliat": "Garmin Fenix 8 Sapphire este alegerea sportivilor seriosi. 29 de zile autonomie, GPS multi-band, analize VO2max si training load avansat. Primul Fenix cu microfon si difuzor pentru apeluri.",
           "pro": [
-            "29 zile autonomie record",
+            "29 de zile autonomie record",
             "GPS multi-band ultra-precis",
             "Analize sport extrem de avansate",
             "Microfon + difuzor noi pe Fenix"
@@ -1550,7 +1550,7 @@
             "Display": "AMOLED 1.4 inch",
             "Sanatate": "Pulse Ox, Body Battery, HRV, Stress",
             "GPS": "Multi-band L1+L5",
-            "Autonomie": "29 zile smartwatch / 90h GPS",
+            "Autonomie": "29 de zile smartwatch / 90h GPS",
             "WR": "10ATM + MIL-STD-810"
           },
           "magazine": [

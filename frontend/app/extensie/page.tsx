@@ -2,6 +2,7 @@ import Link from "next/link";
 import { Metadata } from "next";
 import fs from "fs";
 import path from "path";
+import { cuNumar } from "@/lib/acordNumeral";
 
 /**
  * Pagina extensiei Chrome.
@@ -137,8 +138,7 @@ export default function ExtensiePage() {
       {magazine.length > 0 && (
         <section className="max-w-5xl mx-auto px-4 py-16">
           <h2 className="text-2xl font-black text-[var(--foreground)] mb-4 text-center">
-            Azi ar arăta oferte la {magazine.length}
-            {magazine.length % 100 >= 20 || magazine.length % 100 === 0 ? " de" : ""} magazine
+            Azi ar arăta oferte la {cuNumar(magazine.length, "magazin", "magazine")}
           </h2>
           <p className="text-center text-[var(--text-soft)] text-sm mb-8">
             Lista se schimbă de trei ori pe zi, odată cu ofertele. Câteva dintre ele:

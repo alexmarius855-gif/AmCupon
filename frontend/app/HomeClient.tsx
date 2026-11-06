@@ -20,8 +20,9 @@ import { PRAG_URGENT } from "@/lib/expirarePromo";
 import { MAGAZINE_POPULARE } from "@/lib/magazinePopulare";
 import {
   oferteAcasa, numaraFiltre, filtreAfisate, alegeAfisate, oferteDePeMagazin,
-  magazinePopulareAcasa, cuNumar, EXCLUSE_ACASA, type FiltruAcasa,
+  magazinePopulareAcasa, EXCLUSE_ACASA, type FiltruAcasa,
 } from "@/lib/oferteAcasa";
+import { cuNumar } from "@/lib/acordNumeral";
 
 interface Promotie {
   nume: string;
@@ -588,7 +589,7 @@ export default function HomeClient({
 
           <p className={`text-[var(--text-soft)] text-lg mb-6 max-w-lg mx-auto leading-relaxed ${codulZilei ? "lg:mx-0" : ""}`}>
             {blackFriday && blackFriday.inCurs > 0
-              ? `Black Friday a început la ${blackFriday.inCurs} magazine. Vezi codurile active și mergi direct la oferta potrivită, gratuit.`
+              ? `Black Friday a început la ${cuNumar(blackFriday.inCurs, "magazin", "magazine")}. Vezi codurile active și mergi direct la oferta potrivită, gratuit.`
               : "Le strângem automat din rețelele de afiliere și le arătăm pe toate, gratuit."}
           </p>
 
@@ -852,8 +853,8 @@ export default function HomeClient({
                 <h2 className="text-[1.75rem] md:text-[2.25rem] leading-[1.1] font-black text-[var(--foreground)] tracking-tight">Magazine partenere</h2>
                 <p className="text-[var(--text-soft)] text-sm mt-0.5">
                   {cautare || filtruActiv !== "toate"
-                    ? <>{faraPromotii.length} din {magazine.length} magazine</>
-                    : <>{magazine.length} magazine</>
+                    ? <>{faraPromotii.length} din {cuNumar(magazine.length, "magazin", "magazine")}</>
+                    : <>{cuNumar(magazine.length, "magazin", "magazine")}</>
                   }
                 </p>
               </div>
@@ -894,7 +895,7 @@ export default function HomeClient({
               <div className="text-center mt-6">
                 <button onClick={() => setStoreLimit(l => l + 36)}
                   className="glass hover:border-[var(--accent-text)]/50 text-[var(--text-soft)] hover:text-[var(--accent-text)] font-bold px-7 py-2.5 rounded-xl text-sm transition-all">
-                  Incarca mai multe ({perete.length - storeLimit} magazine ramase)
+                  Incarca mai multe ({cuNumar(perete.length - storeLimit, "magazin ramas", "magazine ramase")})
                 </button>
               </div>
             )}
@@ -966,7 +967,7 @@ export default function HomeClient({
                     {nrPromo > 0 ? (
                       <div className="inline-flex self-start items-center gap-1 px-2 py-0.5 rounded-full border" style={{ background: `${accent}1a`, borderColor: `${accent}44` }}>
                         <span className="w-1.5 h-1.5 rounded-full animate-pulse" style={{ background: accent }} />
-                        <span className="text-[10px] font-bold" style={{ color: `color-mix(in srgb, ${accent} 40%, var(--foreground))` }}>{nrPromo} {nrPromo === 1 ? "oferta" : "oferte"}</span>
+                        <span className="text-[10px] font-bold" style={{ color: `color-mix(in srgb, ${accent} 40%, var(--foreground))` }}>{cuNumar(nrPromo, "ofertă", "oferte")}</span>
                       </div>
                     ) : (
                       <div className="inline-flex self-start bg-[var(--surface-alt)] px-2 py-0.5 rounded-full">
@@ -1089,7 +1090,7 @@ export default function HomeClient({
                       <div className="flex items-center gap-2.5">
                         <CategoryIcon slug={cat.slug} size="md" />
                         <h3 className="text-lg font-black text-[var(--foreground)]">{cat.label}</h3>
-                        <span className="text-xs text-[var(--text-muted)] font-medium">{cat.products.length} produse</span>
+                        <span className="text-xs text-[var(--text-muted)] font-medium">{cuNumar(cat.products.length, "produs", "produse")}</span>
                       </div>
                       <Link
                         href={paginaCategorieProduse(cat.slug)}

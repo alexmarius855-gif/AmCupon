@@ -51,6 +51,7 @@ BREVO_BASE     = "https://api.brevo.com/v3"
 OUTPUT_JSON    = os.path.join(os.path.dirname(__file__), "../frontend/public/output.json")
 SITE_URL       = "https://amcupon.ro"
 from link_oferta import link_iesire  # noqa: E402  fara clic gratis pe canale externe
+from text_curat import cu_numar  # noqa: E402  „927 de magazine", nu „927 magazine" (si nu „1000+")
 
 LUNI_RO = ["ianuarie","februarie","martie","aprilie","mai","iunie",
            "iulie","august","septembrie","octombrie","noiembrie","decembrie"]
@@ -457,7 +458,7 @@ def make_html(top_n: list, data_str: str, is_test: bool = False, total_magazine:
               Ofertele active azi
             </div>
             <div style="font-family:Arial,sans-serif;font-size:13px;color:#a7f3d0;margin-top:5px;">
-              {data_str} &bull; {total_oferte} oferte active
+              {data_str} &bull; {cu_numar(total_oferte, 'ofert&#259; activ&#259;', 'oferte active')}
             </div>
           </td>
         </tr>
@@ -488,7 +489,7 @@ def make_html(top_n: list, data_str: str, is_test: bool = False, total_magazine:
                     </tr>
                   </table>
                   <div style="font-family:Arial,sans-serif;font-size:12px;color:#94a3b8;margin-top:12px;">
-                    {total_magazine if total_magazine else '1000+'} magazine &bull; actualizat zilnic &bull; 100% gratuit
+                    {cu_numar(total_magazine, 'magazin', 'magazine') if total_magazine else 'sute de magazine'} &bull; actualizat zilnic &bull; 100% gratuit
                   </div>
                 </td>
               </tr>

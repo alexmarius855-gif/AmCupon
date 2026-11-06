@@ -1,3 +1,4 @@
+import { cuNumar } from "./acordNumeral.ts";
 /**
  * Ce arata cardul de oferta: valoarea (blocul mare din stanga) si titlul fara cod.
  * Functii PURE, fara React — ca sa poata fi testate pe datele reale
@@ -128,10 +129,10 @@ export function hookMagazin(promos: PromotieCupon[], nume: string): string {
   const pana = maxim > 0 ? `, până la -${maxim}%` : "";
   const coduri = promos.filter((p) => p.cod_cupon).length;
   if (coduri > 0) {
-    const cate = coduri === 1 ? "Un cod activ" : `${coduri} coduri active`;
+    const cate = coduri === 1 ? "Un cod activ" : cuNumar(coduri, "cod activ", "coduri active");
     return `${cate} la ${nume}${pana}. Apeși pe cod: se copiază și se deschide magazinul.`;
   }
-  const cate = promos.length === 1 ? "O ofertă activă" : `${promos.length} oferte active`;
+  const cate = promos.length === 1 ? "O ofertă activă" : cuNumar(promos.length, "ofertă activă", "oferte active");
   return `${cate} la ${nume}${pana}. Apeși pe ofertă și ajungi direct la ea, fără cod.`;
 }
 

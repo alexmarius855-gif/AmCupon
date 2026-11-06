@@ -8,6 +8,7 @@ import { linkAfiliat, linkPromotie } from "@/lib/linkMagazin";
 import { numeAfisat } from "@/lib/numeMagazin";
 import { maskCod } from "@/lib/maskCod";
 import { titluPromotie } from "@/lib/oferta";
+import { cuNumar } from "@/lib/acordNumeral";
 
 /* ── Tipuri ──────────────────────────────────────────────────────────────── */
 interface Promotie {
@@ -280,7 +281,7 @@ export default async function OferteAziPage(
     "@context": "https://schema.org",
     "@type": "ItemList",
     "name": `Oferte de Azi Romania — ${luna} ${an}`,
-    "description": `Toate promotiile active de azi: ${toateOfertele.length} oferte la ${nrMagazineTotal} magazine`,
+    "description": `Toate promotiile active de azi: ${cuNumar(toateOfertele.length, "ofertă", "oferte")} la ${cuNumar(nrMagazineTotal, "magazin", "magazine")}`,
     "url": "https://amcupon.ro/oferte-azi",
     "numberOfItems": oferteFiltrate.length,
     "itemListElement": oferteFiltrate.slice(0, 30).map((o, i) => ({
@@ -315,17 +316,17 @@ export default async function OferteAziPage(
               }
             </h1>
             <p className="text-[var(--text-soft)] text-lg mb-8 max-w-xl mx-auto">
-              {oferteFiltrate.length} promotii active la {nrMagazine} magazine, sortate dupa valoare.
+              {cuNumar(oferteFiltrate.length, "promotie activa", "promotii active")} la {cuNumar(nrMagazine, "magazin", "magazine")}, sortate dupa valoare.
             </p>
 
             <div className="flex flex-wrap justify-center gap-3">
               <div className="bg-[var(--surface)] border border-[var(--border)] rounded-xl px-4 py-2.5 text-sm font-bold text-[var(--foreground)] flex items-center gap-2">
                 <span className="text-[var(--accent-text)]">🎟</span>
-                {nrCoduri} coduri de reducere
+                {cuNumar(nrCoduri, "cod de reducere", "coduri de reducere")}
               </div>
               <div className="bg-[var(--surface)] border border-[var(--border)] rounded-xl px-4 py-2.5 text-sm font-bold text-[var(--foreground)] flex items-center gap-2">
                 <span>🏪</span>
-                {nrMagazineTotal} magazine
+                {cuNumar(nrMagazineTotal, "magazin", "magazine")}
               </div>
               {nrUrgente > 0 && (
                 <div className="bg-red-500/10 border border-red-500/25 rounded-xl px-4 py-2.5 text-sm font-bold text-red-400 flex items-center gap-2">
@@ -412,7 +413,7 @@ export default async function OferteAziPage(
                 Primeste top oferte direct pe email
               </h2>
               <p className="text-[var(--text-soft)] mb-8 max-w-md mx-auto">
-                {nrMagazineTotal} magazine monitorizate zilnic. Cele mai bune coduri, o data pe saptamana. Zero spam.
+                {cuNumar(nrMagazineTotal, "magazin monitorizat", "magazine monitorizate")} zilnic. Cele mai bune coduri, o data pe saptamana. Zero spam.
               </p>
               <div className="flex flex-wrap items-center justify-center gap-4">
                 <Link href="/newsletter"

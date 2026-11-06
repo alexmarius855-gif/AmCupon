@@ -5,6 +5,7 @@ import path from "path";
 import { esteInCategorie } from "../../../lib/categoriiNisa";
 import { CAI_REDIRECTIONATE } from "../../../lib/redirecturi";
 import MarimiClient from "./MarimiClient";
+import { cuNumar } from "@/lib/acordNumeral";
 
 export const metadata: Metadata = {
   title: "Convertor mărimi haine și încălțăminte — RO, UK, US, IT",
@@ -182,7 +183,7 @@ export default function ConvertorMarimiPage() {
         <section className="mt-12 bg-[var(--surface)] rounded-xl border border-[var(--border)] p-6">
           <h2 className="text-xl font-black mb-2">Ai găsit mărimea. Găsește și reducerea.</h2>
           <p className="text-[var(--text-muted)] mb-4">
-            {fashion.length} magazine de fashion au acum o promoție activă.
+            {cuNumar(fashion.length, "magazin de fashion are", "magazine de fashion au")} acum o promoție activă.
           </p>
           <div className="flex flex-wrap gap-2">
             {fashion.map((m) => (
