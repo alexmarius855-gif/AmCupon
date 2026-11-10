@@ -130,11 +130,6 @@
   "destinatie": "/categorii/jewelry-accessories"
  },
  {
-  "magazin": "topsport.ro",
-  "categorie_slug": "fashion",
-  "destinatie": "/categorii/fashion"
- },
- {
   "magazin": "various-brands.ro",
   "categorie_slug": "diverse",
   "destinatie": "/categorii/diverse"

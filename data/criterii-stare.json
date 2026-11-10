@@ -1,5 +1,5 @@
 {
-"actualizat": "2026-11-06",
+"actualizat": "2026-11-10",
 "criterii": [
 {
 "slug": "masina-de-spalat-6-kg",
@@ -15052,16 +15052,47 @@
 "titlu": "Boxe Bluetooth",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-04",
-"feeduri": [],
+"actualizat": "2026-11-10",
+"feeduri": [
+{
+"id": 1539,
+"magazin": "dwyn.ro"
+},
+{
+"id": 4268,
+"magazin": "robazar.ro"
+},
+{
+"id": 3250,
+"magazin": "carturesti.ro"
+},
+{
+"id": 3249,
+"magazin": "carturesti.ro"
+}
+],
 "produse": [
+{
+"titlu": "Yesido Boxa Bluetooth Yesido YSW33, 3W, Neagra",
+"pret": 62.99,
+"imagine": "https://www.dwyn.ro/images/products/img_202606122129/465697/full/yesido-boxa-bluetooth-yesido-ysw33-3w-neagra-1483894.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fboxe-portabile%2Fyesido%2F465697-boxa-bluetooth-yesido-ysw33-3w-neagra%2F",
+"magazin": "dwyn.ro",
+"id": "Tk53J-HNWfMc",
+"brand": "Yesido",
+"url_magazin": "https://www.dwyn.ro/boxe-portabile/yesido/465697-boxa-bluetooth-yesido-ysw33-3w-neagra/",
+"pret_vechi": null
+},
 {
 "titlu": "DEVIA Boxa Portabila Devia Sound Lite2, Bluetooth, Negru",
 "pret": 64.99,
 "imagine": "https://www.dwyn.ro/images/products/img_202606122129/481606/full/devia-devia-boxa-portabila-sound-lite2-negru-1530559.jpg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fboxe-portabile%2Fdevia%2F481606-boxa-portabila-devia-sound-lite2-bluetooth-negru%2F",
 "magazin": "dwyn.ro",
+"id": "8gLH4OAJuwVI",
+"brand": "DEVIA",
 "url_magazin": "https://www.dwyn.ro/boxe-portabile/devia/481606-boxa-portabila-devia-sound-lite2-bluetooth-negru/",
+"pret_vechi": null,
 "verificat": "2026-11-04"
 },
 {
@@ -15070,7 +15101,10 @@
 "imagine": "https://www.dwyn.ro/images/products/img_202606122129/481609/full/devia-devia-boxa-portabila-sound-lite2-blue-1530544.jpg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fboxe-portabile%2Fdevia%2F481609-boxa-portabila-devia-sound-lite2-bluetooth-albastru%2F",
 "magazin": "dwyn.ro",
+"id": "HrFMVN_oC-ol",
+"brand": "DEVIA",
 "url_magazin": "https://www.dwyn.ro/boxe-portabile/devia/481609-boxa-portabila-devia-sound-lite2-bluetooth-albastru/",
+"pret_vechi": null,
 "verificat": "2026-11-04"
 },
 {
@@ -15079,7 +15113,10 @@
 "imagine": "https://bazarulonline.ro/images/detailed/10699/res_9fda9aa4283ad6dcd78cdb3c23f04213.avif",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Frobazar.ro%2Fbox-portabil-bluetooth-elworld-ms-3534bt-cu-lumini-led-rgb-i-maner-de-transport",
 "magazin": "robazar.ro",
+"id": "6S27S1sgaTxX",
+"brand": "",
 "url_magazin": "https://robazar.ro/box-portabil-bluetooth-elworld-ms-3534bt-cu-lumini-led-rgb-i-maner-de-transport",
+"pret_vechi": null,
 "verificat": "2026-11-04"
 },
 {
@@ -15088,7 +15125,10 @@
 "imagine": "https://www.dwyn.ro/images/products/img_202606122129/465793/full/borofone-boxa-portabila-bluetooth-borofone-br102-gratificado-5w-tws-neagra-1483990.jpg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fboxe-portabile%2Fborofone%2F465793-boxa-portabila-bluetooth-borofone-br102-gratificado-5w-tws-neagra%2F",
 "magazin": "dwyn.ro",
+"id": "RdjXVdWH7-bK",
+"brand": "Borofone",
 "url_magazin": "https://www.dwyn.ro/boxe-portabile/borofone/465793-boxa-portabila-bluetooth-borofone-br102-gratificado-5w-tws-neagra/",
+"pret_vechi": null,
 "verificat": "2026-11-04"
 },
 {
@@ -15097,7 +15137,22 @@
 "imagine": "https://bazarulonline.ro/images/detailed/5737/boxa-portabila-bluetooth-165259-manhattan-6-moduri-de-iluminare.webp",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Frobazar.ro%2Fboxa-portabila-bluetooth-165259-manhattan-6-moduri-de-iluminare",
 "magazin": "robazar.ro",
+"id": "-ESh6aKyY8H_",
+"brand": "",
 "url_magazin": "https://robazar.ro/boxa-portabila-bluetooth-165259-manhattan-6-moduri-de-iluminare",
+"pret_vechi": null,
+"verificat": "2026-11-04"
+},
+{
+"titlu": "Borofone Boxa Portabila Bluetooth Borofone BR105 Loud, 10W, TWS, RGB, Gri",
+"pret": 81.99,
+"imagine": "https://www.dwyn.ro/images/products/img_202606122129/465811/full/borofone-boxa-portabila-bluetooth-borofone-br105-loud-10w-tws-rgb-gri-1484008.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fboxe-portabile%2Fborofone%2F465811-boxa-portabila-bluetooth-borofone-br105-loud-10w-tws-rgb-gri%2F",
+"magazin": "dwyn.ro",
+"id": "CIclh0HlB94w",
+"brand": "Borofone",
+"url_magazin": "https://www.dwyn.ro/boxe-portabile/borofone/465811-boxa-portabila-bluetooth-borofone-br105-loud-10w-tws-rgb-gri/",
+"pret_vechi": null,
 "verificat": "2026-11-04"
 },
 {
@@ -15106,7 +15161,10 @@
 "imagine": "https://www.dwyn.ro/images/products/img_202606122129/465907/full/yesido-boxa-portabila-bluetooth-yesido-ysw14-5w-rgb-albastra-1484101.jpg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fboxe-portabile%2Fyesido%2F465907-boxa-portabila-bluetooth-yesido-ysw14-5w-rgb-albastra%2F",
 "magazin": "dwyn.ro",
+"id": "gGcDGdmJuKLy",
+"brand": "Yesido",
 "url_magazin": "https://www.dwyn.ro/boxe-portabile/yesido/465907-boxa-portabila-bluetooth-yesido-ysw14-5w-rgb-albastra/",
+"pret_vechi": null,
 "verificat": "2026-11-04"
 },
 {
@@ -15115,7 +15173,10 @@
 "imagine": "https://bazarulonline.ro/images/detailed/8197/f22222_js11-rl.jpg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Frobazar.ro%2Fboxa-audio-cu-bluetooth-si-incarcare-solara-hf-f222",
 "magazin": "robazar.ro",
+"id": "gKImJmypIB2V",
+"brand": "",
 "url_magazin": "https://robazar.ro/boxa-audio-cu-bluetooth-si-incarcare-solara-hf-f222",
+"pret_vechi": null,
 "verificat": "2026-11-04"
 },
 {
@@ -15124,7 +15185,10 @@
 "imagine": "https://bazarulonline.ro/images/detailed/5508/boxa-bluetooth-portabila-cu-clip-pentru-atasare-3w-negru-sweex.webp",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Frobazar.ro%2Fboxa-bluetooth-portabila-cu-clip-pentru-atasare-3w-negru-sweex",
 "magazin": "robazar.ro",
+"id": "xQNZY6RZS2oI",
+"brand": "",
 "url_magazin": "https://robazar.ro/boxa-bluetooth-portabila-cu-clip-pentru-atasare-3w-negru-sweex",
+"pret_vechi": null,
 "verificat": "2026-11-04"
 },
 {
@@ -15133,16 +15197,22 @@
 "imagine": "https://bazarulonline.ro/images/detailed/5508/boxa-bluetooth-portabila-cu-clip-pentru-atasare-3w-roz-sweex.webp",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Frobazar.ro%2Fboxa-bluetooth-portabila-cu-clip-pentru-atasare-3w-roz-sweex",
 "magazin": "robazar.ro",
+"id": "DI8Y2voHYq7e",
+"brand": "",
 "url_magazin": "https://robazar.ro/boxa-bluetooth-portabila-cu-clip-pentru-atasare-3w-roz-sweex",
+"pret_vechi": null,
 "verificat": "2026-11-04"
 },
 {
-"titlu": "Tellur Boxa portabila Bluetooth Tellur Loop, 10W, Rosu",
-"pret": 87.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202508191322/327265/full/tellur-boxa-portabila-bluetooth-tellur-loop-10w-rosu-836696.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fboxe-portabile%2Ftellur%2F327265-boxa-portabila-bluetooth-tellur-loop-10w-rosu%2F",
+"titlu": "HOCO Boxa Portabila Bluetooth Hoco HC49 Mini Magnetic, 8W, TWS, Verde",
+"pret": 88.99,
+"imagine": "https://www.dwyn.ro/images/products/img_202606122129/465718/full/hoco-boxa-portabila-bluetooth-hoco-hc49-mini-magnetic-8w-tws-verde-1483915.png",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fboxe-portabile%2Fhoco%2F465718-boxa-portabila-bluetooth-hoco-hc49-mini-magnetic-8w-tws-verde%2F",
 "magazin": "dwyn.ro",
-"url_magazin": "https://www.dwyn.ro/boxe-portabile/tellur/327265-boxa-portabila-bluetooth-tellur-loop-10w-rosu/",
+"id": "DEX93S14NoGE",
+"brand": "HOCO",
+"url_magazin": "https://www.dwyn.ro/boxe-portabile/hoco/465718-boxa-portabila-bluetooth-hoco-hc49-mini-magnetic-8w-tws-verde/",
+"pret_vechi": null,
 "verificat": "2026-11-04"
 },
 {
@@ -15151,34 +15221,10 @@
 "imagine": "https://www.dwyn.ro/images/products/img_202606122129/481612/full/devia-devia-boxa-portabila-sound-lite1-negru-1530535.jpg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fboxe-portabile%2Fdevia%2F481612-boxa-portabila-devia-sound-lite1-bluetooth-negru%2F",
 "magazin": "dwyn.ro",
+"id": "EpwV0FlZ5zfq",
+"brand": "DEVIA",
 "url_magazin": "https://www.dwyn.ro/boxe-portabile/devia/481612-boxa-portabila-devia-sound-lite1-bluetooth-negru/",
-"verificat": "2026-11-04"
-},
-{
-"titlu": "Boxa portabila 4W cu microfon FM/ Bluetooth/ SD/ USB si AUX Madison",
-"pret": 93.51,
-"imagine": "https://bazarulonline.ro/images/detailed/7182/boxa-portabila-4w-cu-microfon-fm-bluetooth-sd-usb-si-aux-madison.webp",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Frobazar.ro%2Fboxa-portabila-4w-cu-microfon-fm-bluetooth-sd-usb-si-aux-madison",
-"magazin": "robazar.ro",
-"url_magazin": "https://robazar.ro/boxa-portabila-4w-cu-microfon-fm-bluetooth-sd-usb-si-aux-madison",
-"verificat": "2026-11-04"
-},
-{
-"titlu": "HOCO Boxa Portabila Bluetooth Hoco HC49 Mini Magnetic, 8W, TWS, Neagra",
-"pret": 93.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202606122129/465712/full/hoco-boxa-portabila-bluetooth-hoco-hc49-mini-magnetic-8w-tws-neagra-1483909.png",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fboxe-portabile%2Fhoco%2F465712-boxa-portabila-bluetooth-hoco-hc49-mini-magnetic-8w-tws-neagra%2F",
-"magazin": "dwyn.ro",
-"url_magazin": "https://www.dwyn.ro/boxe-portabile/hoco/465712-boxa-portabila-bluetooth-hoco-hc49-mini-magnetic-8w-tws-neagra/",
-"verificat": "2026-11-04"
-},
-{
-"titlu": "Yesido Boxa Portabila Bluetooth Yesido YSW25, 5W, RGB, Neagra",
-"pret": 95.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202606122129/465901/full/yesido-boxa-portabila-bluetooth-yesido-ysw25-5w-rgb-neagra-1484095.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fboxe-portabile%2Fyesido%2F465901-boxa-portabila-bluetooth-yesido-ysw25-5w-rgb-neagra%2F",
-"magazin": "dwyn.ro",
-"url_magazin": "https://www.dwyn.ro/boxe-portabile/yesido/465901-boxa-portabila-bluetooth-yesido-ysw25-5w-rgb-neagra/",
+"pret_vechi": null,
 "verificat": "2026-11-04"
 },
 {
@@ -15187,8 +15233,33 @@
 "imagine": "https://bazarulonline.ro/images/detailed/7185/boxa-lemn-3-inch-5w-bluetooth-v42-tws-omega-og60w.jpg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Frobazar.ro%2Fboxa-lemn-3-inch-5w-bluetooth-v4-2-tws-omega-og60w",
 "magazin": "robazar.ro",
+"id": "JA3KeLyLg1G6",
+"brand": "Omega",
 "url_magazin": "https://robazar.ro/boxa-lemn-3-inch-5w-bluetooth-v4-2-tws-omega-og60w",
+"pret_vechi": null,
 "verificat": "2026-11-04"
+},
+{
+"titlu": "Boxa portabila cu Bluetooth si difuzor stereo Rock Star rosie Sweex",
+"pret": 100.36,
+"imagine": "https://bazarulonline.ro/images/detailed/5508/boxa-portabila-cu-bluetooth-si-difuzor-stereo-rock-star-rosie-sweex.webp",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Frobazar.ro%2Fboxa-portabila-cu-bluetooth-si-difuzor-stereo-rock-star-rosie-sweex",
+"magazin": "robazar.ro",
+"id": "ZWx4TtGqKzAs",
+"brand": "",
+"url_magazin": "https://robazar.ro/boxa-portabila-cu-bluetooth-si-difuzor-stereo-rock-star-rosie-sweex",
+"pret_vechi": null
+},
+{
+"titlu": "Boxa portabila cu bluetooth gri 3W NGS ROLLER JOY GREY",
+"pret": 107.19,
+"imagine": "https://bazarulonline.ro/images/detailed/5509/boxa-portabila-cu-bluetooth-gri-3w-ngs-roller-joy-grey.webp",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Frobazar.ro%2Fboxa-portabila-cu-bluetooth-gri-3w-ngs-roller-joy-grey",
+"magazin": "robazar.ro",
+"id": "ztYi6fUFwtq_",
+"brand": "NGS",
+"url_magazin": "https://robazar.ro/boxa-portabila-cu-bluetooth-gri-3w-ngs-roller-joy-grey",
+"pret_vechi": null
 },
 {
 "titlu": "Boxa Bluetooth - Mini Xboy Metallic Blue | Xoopar",
@@ -15196,7 +15267,10 @@
 "imagine": "https://carturesti.ro/img-prod/283814812-0.jpeg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fcarturesti.ro%2Fgadget%2Fboxa-bluetooth-mini-xboy-metallic-blue-283814812",
 "magazin": "carturesti.ro",
-"url_magazin": "https://carturesti.ro/gadget/boxa-bluetooth-mini-xboy-metallic-blue-283814812"
+"id": "337bcc7e1",
+"brand": "Xoopar",
+"url_magazin": "https://carturesti.ro/gadget/boxa-bluetooth-mini-xboy-metallic-blue-283814812",
+"pret_vechi": 149.0
 },
 {
 "titlu": "Boxa Bluetooth - Mini XBoy Gray | Xoopar",
@@ -15204,7 +15278,10 @@
 "imagine": "https://carturesti.ro/img-prod/1033258-2.jpeg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fcarturesti.ro%2Fpapetarie%2Fboxa-bluetooth-mini-xboy-gray-1033258",
 "magazin": "carturesti.ro",
-"url_magazin": "https://carturesti.ro/papetarie/boxa-bluetooth-mini-xboy-gray-1033258"
+"id": "87219e993",
+"brand": "Xoopar",
+"url_magazin": "https://carturesti.ro/papetarie/boxa-bluetooth-mini-xboy-gray-1033258",
+"pret_vechi": 149.0
 },
 {
 "titlu": "Boxa Bluetooth - Mini XBoy Pink | Xoopar",
@@ -15212,7 +15289,10 @@
 "imagine": "https://carturesti.ro/img-prod/1033254-1.jpeg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fcarturesti.ro%2Fpapetarie%2Fboxa-bluetooth-mini-xboy-pink-1033254",
 "magazin": "carturesti.ro",
-"url_magazin": "https://carturesti.ro/papetarie/boxa-bluetooth-mini-xboy-pink-1033254"
+"id": "ffd0e892f",
+"brand": "Xoopar",
+"url_magazin": "https://carturesti.ro/papetarie/boxa-bluetooth-mini-xboy-pink-1033254",
+"pret_vechi": 149.0
 },
 {
 "titlu": "Boxa Bluetooth - Mini XBoy Gold | Xoopar",
@@ -15220,7 +15300,10 @@
 "imagine": "https://carturesti.ro/img-prod/2330578-4.jpeg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fcarturesti.ro%2Fpapetarie%2Fboxa-bluetooth-mini-xboy-gold-2330578",
 "magazin": "carturesti.ro",
-"url_magazin": "https://carturesti.ro/papetarie/boxa-bluetooth-mini-xboy-gold-2330578"
+"id": "9f92e8225",
+"brand": "Xoopar",
+"url_magazin": "https://carturesti.ro/papetarie/boxa-bluetooth-mini-xboy-gold-2330578",
+"pret_vechi": 155.0
 },
 {
 "titlu": "Boxa Bluetooth - Mini Xboy Limited Edition Silver | Xoopar",
@@ -15228,7 +15311,10 @@
 "imagine": "https://carturesti.ro/img-prod/283814816-0.jpeg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fcarturesti.ro%2Fgadget%2Fboxa-bluetooth-mini-xboy-limited-edition-silver-283814816",
 "magazin": "carturesti.ro",
-"url_magazin": "https://carturesti.ro/gadget/boxa-bluetooth-mini-xboy-limited-edition-silver-283814816"
+"id": "2a5d438d4",
+"brand": "Xoopar",
+"url_magazin": "https://carturesti.ro/gadget/boxa-bluetooth-mini-xboy-limited-edition-silver-283814816",
+"pret_vechi": 189.9
 },
 {
 "titlu": "Boxa Bluetooth - Splash Pink | Xoopar",
@@ -15236,7 +15322,10 @@
 "imagine": "https://carturesti.ro/img-prod/442045-3.jpg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fcarturesti.ro%2Fpapetarie%2Fboxa-bluetooth-splash-pink-442045",
 "magazin": "carturesti.ro",
-"url_magazin": "https://carturesti.ro/papetarie/boxa-bluetooth-splash-pink-442045"
+"id": "b42a46307",
+"brand": "Xoopar",
+"url_magazin": "https://carturesti.ro/papetarie/boxa-bluetooth-splash-pink-442045",
+"pret_vechi": 229.9
 },
 {
 "titlu": "Boxa Bluetooth - Splash White | Xoopar",
@@ -15244,7 +15333,10 @@
 "imagine": "https://carturesti.ro/img-prod/442043-1.jpg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fcarturesti.ro%2Fpapetarie%2Fboxa-bluetooth-splash-white-442043",
 "magazin": "carturesti.ro",
-"url_magazin": "https://carturesti.ro/papetarie/boxa-bluetooth-splash-white-442043"
+"id": "3bbd79665",
+"brand": "Xoopar",
+"url_magazin": "https://carturesti.ro/papetarie/boxa-bluetooth-splash-white-442043",
+"pret_vechi": 229.9
 },
 {
 "titlu": "Boxa portabila - Balle Bluetooth - Black | Lexon",
@@ -15252,7 +15344,10 @@
 "imagine": "https://carturesti.ro/img-prod/280663708-1.jpeg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fcarturesti.ro%2Fgadget%2Fboxa-portabila-balle-bluetooth-black-280663708",
 "magazin": "carturesti.ro",
-"url_magazin": "https://carturesti.ro/gadget/boxa-portabila-balle-bluetooth-black-280663708"
+"id": "1ed426327",
+"brand": "Lexon",
+"url_magazin": "https://carturesti.ro/gadget/boxa-portabila-balle-bluetooth-black-280663708",
+"pret_vechi": 289.0
 }
 ],
 "magazine": [
@@ -15268,8 +15363,25 @@
 "titlu": "Boxe portabile",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-04",
-"feeduri": [],
+"actualizat": "2026-11-10",
+"feeduri": [
+{
+"id": 1539,
+"magazin": "dwyn.ro"
+},
+{
+"id": 3250,
+"magazin": "carturesti.ro"
+},
+{
+"id": 3249,
+"magazin": "carturesti.ro"
+},
+{
+"id": 8937,
+"magazin": "dacris.net"
+}
+],
 "produse": [
 {
 "titlu": "Boxa portabila Akai ABTS-704 50 W, negru",
@@ -15277,7 +15389,10 @@
 "imagine": "https://dacris.vteximg.com.br/arquivos/ids/706089/Boxa-portabila-Akai-ABTS-704-50-W-negru-0.jpg?v=638962265529200000",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dacris.net%2Fabts-704-boxa-portabila-akai-abts-704-50-w--negru%2Fp%3FskuId%3D210194",
 "magazin": "dacris.net",
+"id": "fuiQlym6RbVl",
+"brand": "Akai",
 "url_magazin": "https://www.dacris.net/abts-704-boxa-portabila-akai-abts-704-50-w--negru/p?skuId=210194",
+"pret_vechi": null,
 "verificat": "2026-11-04"
 },
 {
@@ -15286,7 +15401,10 @@
 "imagine": "https://www.dwyn.ro/images/products/img_202606122129/481606/full/devia-devia-boxa-portabila-sound-lite2-negru-1530559.jpg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fboxe-portabile%2Fdevia%2F481606-boxa-portabila-devia-sound-lite2-bluetooth-negru%2F",
 "magazin": "dwyn.ro",
+"id": "8gLH4OAJuwVI",
+"brand": "DEVIA",
 "url_magazin": "https://www.dwyn.ro/boxe-portabile/devia/481606-boxa-portabila-devia-sound-lite2-bluetooth-negru/",
+"pret_vechi": null,
 "verificat": "2026-11-04"
 },
 {
@@ -15295,7 +15413,10 @@
 "imagine": "https://www.dwyn.ro/images/products/img_202606122129/481609/full/devia-devia-boxa-portabila-sound-lite2-blue-1530544.jpg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fboxe-portabile%2Fdevia%2F481609-boxa-portabila-devia-sound-lite2-bluetooth-albastru%2F",
 "magazin": "dwyn.ro",
+"id": "HrFMVN_oC-ol",
+"brand": "DEVIA",
 "url_magazin": "https://www.dwyn.ro/boxe-portabile/devia/481609-boxa-portabila-devia-sound-lite2-bluetooth-albastru/",
+"pret_vechi": null,
 "verificat": "2026-11-04"
 },
 {
@@ -15304,7 +15425,10 @@
 "imagine": "https://dacris.vteximg.com.br/arquivos/ids/1073789/ebe208e6d5a5283fd312fdc6419fb334.png.png?v=639159590235200000",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dacris.net%2Fspbs-rocker-bk-boxa-spacer-portabila-rocker-10w%2Fp%3FskuId%3D249537",
 "magazin": "dacris.net",
+"id": "PBdjabJUpNe6",
+"brand": "Spacer",
 "url_magazin": "https://www.dacris.net/spbs-rocker-bk-boxa-spacer-portabila-rocker-10w/p?skuId=249537",
+"pret_vechi": null,
 "verificat": "2026-11-04"
 },
 {
@@ -15313,7 +15437,10 @@
 "imagine": "https://carturesti.ro/img-prod/243888584-3.jpeg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fcarturesti.ro%2Fgadget%2Fboxa-portabila-take-it-eas-243888584",
 "magazin": "carturesti.ro",
-"url_magazin": "https://carturesti.ro/gadget/boxa-portabila-take-it-eas-243888584"
+"id": "c60b62e88",
+"brand": "Legami",
+"url_magazin": "https://carturesti.ro/gadget/boxa-portabila-take-it-eas-243888584",
+"pret_vechi": 93.0
 },
 {
 "titlu": "Borofone Boxa Portabila Bluetooth Borofone BR102 Gratificado, 5W, TWS, Neagra",
@@ -15321,16 +15448,10 @@
 "imagine": "https://www.dwyn.ro/images/products/img_202606122129/465793/full/borofone-boxa-portabila-bluetooth-borofone-br102-gratificado-5w-tws-neagra-1483990.jpg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fboxe-portabile%2Fborofone%2F465793-boxa-portabila-bluetooth-borofone-br102-gratificado-5w-tws-neagra%2F",
 "magazin": "dwyn.ro",
+"id": "RdjXVdWH7-bK",
+"brand": "Borofone",
 "url_magazin": "https://www.dwyn.ro/boxe-portabile/borofone/465793-boxa-portabila-bluetooth-borofone-br102-gratificado-5w-tws-neagra/",
-"verificat": "2026-11-04"
-},
-{
-"titlu": "Yesido Boxa Portabila Bluetooth Yesido YSW14, 5W, RGB, Albastra",
-"pret": 81.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202606122129/465907/full/yesido-boxa-portabila-bluetooth-yesido-ysw14-5w-rgb-albastra-1484101.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fboxe-portabile%2Fyesido%2F465907-boxa-portabila-bluetooth-yesido-ysw14-5w-rgb-albastra%2F",
-"magazin": "dwyn.ro",
-"url_magazin": "https://www.dwyn.ro/boxe-portabile/yesido/465907-boxa-portabila-bluetooth-yesido-ysw14-5w-rgb-albastra/",
+"pret_vechi": null,
 "verificat": "2026-11-04"
 },
 {
@@ -15339,7 +15460,22 @@
 "imagine": "https://www.dwyn.ro/images/products/img_202606122129/465811/full/borofone-boxa-portabila-bluetooth-borofone-br105-loud-10w-tws-rgb-gri-1484008.jpg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fboxe-portabile%2Fborofone%2F465811-boxa-portabila-bluetooth-borofone-br105-loud-10w-tws-rgb-gri%2F",
 "magazin": "dwyn.ro",
+"id": "CIclh0HlB94w",
+"brand": "Borofone",
 "url_magazin": "https://www.dwyn.ro/boxe-portabile/borofone/465811-boxa-portabila-bluetooth-borofone-br105-loud-10w-tws-rgb-gri/",
+"pret_vechi": null,
+"verificat": "2026-11-04"
+},
+{
+"titlu": "Yesido Boxa Portabila Bluetooth Yesido YSW14, 5W, RGB, Albastra",
+"pret": 81.99,
+"imagine": "https://www.dwyn.ro/images/products/img_202606122129/465907/full/yesido-boxa-portabila-bluetooth-yesido-ysw14-5w-rgb-albastra-1484101.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fboxe-portabile%2Fyesido%2F465907-boxa-portabila-bluetooth-yesido-ysw14-5w-rgb-albastra%2F",
+"magazin": "dwyn.ro",
+"id": "gGcDGdmJuKLy",
+"brand": "Yesido",
+"url_magazin": "https://www.dwyn.ro/boxe-portabile/yesido/465907-boxa-portabila-bluetooth-yesido-ysw14-5w-rgb-albastra/",
+"pret_vechi": null,
 "verificat": "2026-11-04"
 },
 {
@@ -15348,16 +15484,10 @@
 "imagine": "https://dacris.vteximg.com.br/arquivos/ids/829744/Boxa-portabila-Akai-ABTS-V5BL-3W-albstr-0.jpg?v=638962931548330000",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dacris.net%2Fabts-v5bl-boxa-portabila-akai-abts-v5bl-3w--albstr%2Fp%3FskuId%3D229742",
 "magazin": "dacris.net",
+"id": "J0jElFNEZ8bZ",
+"brand": "Akai",
 "url_magazin": "https://www.dacris.net/abts-v5bl-boxa-portabila-akai-abts-v5bl-3w--albstr/p?skuId=229742",
-"verificat": "2026-11-04"
-},
-{
-"titlu": "Tellur Boxa portabila Bluetooth Tellur Loop, 10W, Rosu",
-"pret": 87.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202508191322/327265/full/tellur-boxa-portabila-bluetooth-tellur-loop-10w-rosu-836696.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fboxe-portabile%2Ftellur%2F327265-boxa-portabila-bluetooth-tellur-loop-10w-rosu%2F",
-"magazin": "dwyn.ro",
-"url_magazin": "https://www.dwyn.ro/boxe-portabile/tellur/327265-boxa-portabila-bluetooth-tellur-loop-10w-rosu/",
+"pret_vechi": null,
 "verificat": "2026-11-04"
 },
 {
@@ -15366,7 +15496,10 @@
 "imagine": "https://carturesti.ro/img-prod/280663732-0.png",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fcarturesti.ro%2Fgadget%2Fmini-boxa-portabila-gun-metal-280663732",
 "magazin": "carturesti.ro",
-"url_magazin": "https://carturesti.ro/gadget/mini-boxa-portabila-gun-metal-280663732"
+"id": "935283951",
+"brand": "Lexon",
+"url_magazin": "https://carturesti.ro/gadget/mini-boxa-portabila-gun-metal-280663732",
+"pret_vechi": 110.0
 },
 {
 "titlu": "Boxa portabila Mino Glossy - Galben neon | Lexon",
@@ -15374,7 +15507,10 @@
 "imagine": "https://carturesti.ro/img-prod/403329790-0.jpeg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fcarturesti.ro%2Fgadget%2Fboxa-portabila-mino-glossy-galben-neon-403329790",
 "magazin": "carturesti.ro",
-"url_magazin": "https://carturesti.ro/gadget/boxa-portabila-mino-glossy-galben-neon-403329790"
+"id": "1d8dc8fdd",
+"brand": "Lexon",
+"url_magazin": "https://carturesti.ro/gadget/boxa-portabila-mino-glossy-galben-neon-403329790",
+"pret_vechi": 110.0
 },
 {
 "titlu": "HOCO Boxa Portabila Bluetooth Hoco HC49 Mini Magnetic, 8W, TWS, Verde",
@@ -15382,7 +15518,10 @@
 "imagine": "https://www.dwyn.ro/images/products/img_202606122129/465718/full/hoco-boxa-portabila-bluetooth-hoco-hc49-mini-magnetic-8w-tws-verde-1483915.png",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fboxe-portabile%2Fhoco%2F465718-boxa-portabila-bluetooth-hoco-hc49-mini-magnetic-8w-tws-verde%2F",
 "magazin": "dwyn.ro",
+"id": "DEX93S14NoGE",
+"brand": "HOCO",
 "url_magazin": "https://www.dwyn.ro/boxe-portabile/hoco/465718-boxa-portabila-bluetooth-hoco-hc49-mini-magnetic-8w-tws-verde/",
+"pret_vechi": null,
 "verificat": "2026-11-04"
 },
 {
@@ -15391,7 +15530,22 @@
 "imagine": "https://www.dwyn.ro/images/products/img_202606122129/481612/full/devia-devia-boxa-portabila-sound-lite1-negru-1530535.jpg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fboxe-portabile%2Fdevia%2F481612-boxa-portabila-devia-sound-lite1-bluetooth-negru%2F",
 "magazin": "dwyn.ro",
+"id": "EpwV0FlZ5zfq",
+"brand": "DEVIA",
 "url_magazin": "https://www.dwyn.ro/boxe-portabile/devia/481612-boxa-portabila-devia-sound-lite1-bluetooth-negru/",
+"pret_vechi": null,
+"verificat": "2026-11-04"
+},
+{
+"titlu": "HOCO Boxa Portabila Bluetooth Hoco HC49 Mini Magnetic, 8W, TWS, Neagra",
+"pret": 93.99,
+"imagine": "https://www.dwyn.ro/images/products/img_202606122129/465712/full/hoco-boxa-portabila-bluetooth-hoco-hc49-mini-magnetic-8w-tws-neagra-1483909.png",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fboxe-portabile%2Fhoco%2F465712-boxa-portabila-bluetooth-hoco-hc49-mini-magnetic-8w-tws-neagra%2F",
+"magazin": "dwyn.ro",
+"id": "EV0hHPgkp8Lm",
+"brand": "HOCO",
+"url_magazin": "https://www.dwyn.ro/boxe-portabile/hoco/465712-boxa-portabila-bluetooth-hoco-hc49-mini-magnetic-8w-tws-neagra/",
+"pret_vechi": null,
 "verificat": "2026-11-04"
 },
 {
@@ -15400,7 +15554,10 @@
 "imagine": "https://carturesti.ro/img-prod/280663720-0.jpeg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fcarturesti.ro%2Fgadget%2Fmini-boxa-portabila-light-gold-280663720",
 "magazin": "carturesti.ro",
-"url_magazin": "https://carturesti.ro/gadget/mini-boxa-portabila-light-gold-280663720"
+"id": "3401a3c11",
+"brand": "Lexon",
+"url_magazin": "https://carturesti.ro/gadget/mini-boxa-portabila-light-gold-280663720",
+"pret_vechi": 135.0
 },
 {
 "titlu": "Mini boxa portabila - Plum | Lexon",
@@ -15408,7 +15565,10 @@
 "imagine": "https://carturesti.ro/img-prod/280663724-0.jpeg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fcarturesti.ro%2Fgadget%2Fmini-boxa-portabila-plum-280663724",
 "magazin": "carturesti.ro",
-"url_magazin": "https://carturesti.ro/gadget/mini-boxa-portabila-plum-280663724"
+"id": "6fbfbb937",
+"brand": "Lexon",
+"url_magazin": "https://carturesti.ro/gadget/mini-boxa-portabila-plum-280663724",
+"pret_vechi": 135.0
 },
 {
 "titlu": "Mini boxa portabila - Lime | Lexon",
@@ -15416,7 +15576,10 @@
 "imagine": "https://carturesti.ro/img-prod/280663728-0.jpeg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fcarturesti.ro%2Fgadget%2Fmini-boxa-portabila-lime-280663728",
 "magazin": "carturesti.ro",
-"url_magazin": "https://carturesti.ro/gadget/mini-boxa-portabila-lime-280663728"
+"id": "8162938c0",
+"brand": "Lexon",
+"url_magazin": "https://carturesti.ro/gadget/mini-boxa-portabila-lime-280663728",
+"pret_vechi": 135.0
 },
 {
 "titlu": "Mini boxa portabila - Copper | Lexon",
@@ -15424,7 +15587,10 @@
 "imagine": "https://carturesti.ro/img-prod/280663716-0.png",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fcarturesti.ro%2Fgadget%2Fmini-boxa-portabila-copper-280663716",
 "magazin": "carturesti.ro",
-"url_magazin": "https://carturesti.ro/gadget/mini-boxa-portabila-copper-280663716"
+"id": "d2fbbd016",
+"brand": "Lexon",
+"url_magazin": "https://carturesti.ro/gadget/mini-boxa-portabila-copper-280663716",
+"pret_vechi": 135.0
 },
 {
 "titlu": "Boxa portabila Mino Glossy - Portocalie | Lexon",
@@ -15432,7 +15598,10 @@
 "imagine": "https://carturesti.ro/img-prod/403329782-1.jpeg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fcarturesti.ro%2Fgadget%2Fboxa-portabila-mino-glossy-portocalie-403329782",
 "magazin": "carturesti.ro",
-"url_magazin": "https://carturesti.ro/gadget/boxa-portabila-mino-glossy-portocalie-403329782"
+"id": "081e3ca9b",
+"brand": "Lexon",
+"url_magazin": "https://carturesti.ro/gadget/boxa-portabila-mino-glossy-portocalie-403329782",
+"pret_vechi": 135.0
 },
 {
 "titlu": "Boxa portabila Akai ABTS-08-BL 8W, albst",
@@ -15440,16 +15609,11 @@
 "imagine": "https://dacris.vteximg.com.br/arquivos/ids/634422/Boxa-portabila-Akai-ABTS-08-BL-8W-albst-0.jpg?v=638962361202730000",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dacris.net%2Fabts-08bl-boxa-portabila-akai-abts-08-bl-8w--albst%2Fp%3FskuId%3D220737",
 "magazin": "dacris.net",
+"id": "bbX6taG-T6VZ",
+"brand": "Akai",
 "url_magazin": "https://www.dacris.net/abts-08bl-boxa-portabila-akai-abts-08-bl-8w--albst/p?skuId=220737",
+"pret_vechi": null,
 "verificat": "2026-11-04"
-},
-{
-"titlu": "Boxa portabila Akai ABTS-12C 5W, negru",
-"pret": 113.15,
-"imagine": "https://dacris.vteximg.com.br/arquivos/ids/837530/Boxa-portabila-Akai-ABTS-12C-5W-negru-0.jpg?v=638962152044800000",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dacris.net%2Fabts-12c-boxa-portabila-akai-abts-12c-5w--negru%2Fp%3FskuId%3D12772",
-"magazin": "dacris.net",
-"url_magazin": "https://www.dacris.net/abts-12c-boxa-portabila-akai-abts-12c-5w--negru/p?skuId=12772"
 },
 {
 "titlu": "Boxa portabila Akai ABTS-08-BK 8W, negru",
@@ -15457,7 +15621,10 @@
 "imagine": "https://dacris.vteximg.com.br/arquivos/ids/654935/Boxa-portabila-Akai-ABTS-08-BK-8W-negru-0.jpg?v=638962361169100000",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dacris.net%2Fabts-08bk-boxa-portabila-akai-abts-08-bk-8w--negru%2Fp%3FskuId%3D220736",
 "magazin": "dacris.net",
+"id": "uofLg3WEb3qa",
+"brand": "Akai",
 "url_magazin": "https://www.dacris.net/abts-08bk-boxa-portabila-akai-abts-08-bk-8w--negru/p?skuId=220736",
+"pret_vechi": null,
 "verificat": "2026-11-04"
 },
 {
@@ -15466,16 +15633,35 @@
 "imagine": "https://dacris.vteximg.com.br/arquivos/ids/738349/Boxa-portabila-Akai-ABTS-530BT5-W-negru-0.jpg?v=638962235128470000",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dacris.net%2Fabts-530bt-boxa-portabila-akai-abts-530bt5-w--negru%2Fp%3FskuId%3D203439",
 "magazin": "dacris.net",
+"id": "XvNiUWy7r941",
+"brand": "Akai",
 "url_magazin": "https://www.dacris.net/abts-530bt-boxa-portabila-akai-abts-530bt5-w--negru/p?skuId=203439",
+"pret_vechi": null,
 "verificat": "2026-11-04"
 },
 {
-"titlu": "Boxa portabila Akai BT 5.0, putere 50W",
-"pret": 244.25,
-"imagine": "https://dacris.vteximg.com.br/arquivos/ids/738363/Boxa-portabila-Akai-BT-5-0-putere-50W-0.jpg?v=638962881900770000",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dacris.net%2Fabts-v20-boxa-portabila-akai-bt-5-0--putere-50w%2Fp%3FskuId%3D227782",
+"titlu": "Boxa portabila JBL Go 4 IP67 auracast rosu",
+"pret": 255.08,
+"imagine": "https://dacris.vteximg.com.br/arquivos/ids/456472/Boxa-portabila-JBL-Go-4-IP67-auracast-rosu-0.png?v=638962396964230000",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dacris.net%2Fboxa-portabila-jbl-go-4-ip67-auracast-rosu%2Fp%3FskuId%3D222481",
 "magazin": "dacris.net",
-"url_magazin": "https://www.dacris.net/abts-v20-boxa-portabila-akai-bt-5-0--putere-50w/p?skuId=227782"
+"id": "21KXrYd_aXzy",
+"brand": "Alte brand-uri",
+"url_magazin": "https://www.dacris.net/boxa-portabila-jbl-go-4-ip67-auracast-rosu/p?skuId=222481",
+"pret_vechi": null,
+"verificat": "2026-11-10"
+},
+{
+"titlu": "Boxa portabila Akai ABTS-808L 10W, negru",
+"pret": 267.88,
+"imagine": "https://dacris.vteximg.com.br/arquivos/ids/889856/Boxa-portabila-Akai-ABTS-808L-10W-negru-0.jpg?v=638962152059970000",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dacris.net%2Fabts-808l-boxa-portabila-akai-abts-808l-10w--negru%2Fp%3FskuId%3D12775",
+"magazin": "dacris.net",
+"id": "0g9xKU32TeNf",
+"brand": "Akai",
+"url_magazin": "https://www.dacris.net/abts-808l-boxa-portabila-akai-abts-808l-10w--negru/p?skuId=12775",
+"pret_vechi": null,
+"verificat": "2026-11-10"
 }
 ],
 "magazine": [
@@ -15491,8 +15677,25 @@
 "titlu": "Smartwatch-uri pentru copii",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-04",
-"feeduri": [],
+"actualizat": "2026-11-10",
+"feeduri": [
+{
+"id": 8969,
+"magazin": "ozone.ro"
+},
+{
+"id": 1096,
+"magazin": "evomag.ro"
+},
+{
+"id": 6119,
+"magazin": "infinity.ro"
+},
+{
+"id": 8937,
+"magazin": "dacris.net"
+}
+],
 "produse": [
 {
 "titlu": "Ceas Smartwatch pentru Copii, Monitorizare, Apelare SOS, Camera, Albastru",
@@ -15500,7 +15703,10 @@
 "imagine": "https://infinityro.vteximg.com.br/arquivos/ids/271413269/image-f6706efc330945fc904752638b848499.jpg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Finfinity.ro%2Fceas-smartwatch-pentru-copii-monitorizare-apelare-sos-camera-albastru-9102786%2Fp%3Futm_source%3D2performant",
 "magazin": "infinity.ro",
+"id": "nd9GWdlWeKWH",
+"brand": "Dalimag",
 "url_magazin": "https://infinity.ro/ceas-smartwatch-pentru-copii-monitorizare-apelare-sos-camera-albastru-9102786/p?utm_source=2performant",
+"pret_vechi": null,
 "verificat": "2026-11-04"
 },
 {
@@ -15509,25 +15715,10 @@
 "imagine": "https://infinityro.vteximg.com.br/arquivos/ids/268686468/image-ee29f875773a40d980feb5168ff363c1.jpg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Finfinity.ro%2Fceas-smartwatch-copii-techstar-q19-1-40-inch-ips-cartela-sim-tracker-lbs-buton-sos-apelare-bidirectionala-1650681%2Fp%3Futm_source%3D2performant",
 "magazin": "infinity.ro",
+"id": "VAJgN9V8nQ2A",
+"brand": "Techstar",
 "url_magazin": "https://infinity.ro/ceas-smartwatch-copii-techstar-q19-1-40-inch-ips-cartela-sim-tracker-lbs-buton-sos-apelare-bidirectionala-1650681/p?utm_source=2performant",
-"verificat": "2026-11-04"
-},
-{
-"titlu": "Smartwatch pentru copii Xmart - KW03G, 31mm, 1,22\", albastru",
-"pret": 159.67,
-"imagine": "https://www.ozone.ro/media/catalog/product/d/e/detski_smart_chasovnik_xmart_kw03g_1_22_sin_1628582212_0.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ozone.ro%2Fproduct%2Fsmartwatch-pentru-copii-xmart-kw03g-31mm-1-22-albastru%2F",
-"magazin": "ozone.ro",
-"url_magazin": "https://www.ozone.ro/product/smartwatch-pentru-copii-xmart-kw03g-31mm-1-22-albastru/",
-"verificat": "2026-11-04"
-},
-{
-"titlu": "Smartwatch pentru copii Xmart - KW03G, 31mm, 1.22\", roz",
-"pret": 159.67,
-"imagine": "https://www.ozone.ro/media/catalog/product/d/e/detski_smart_chasovnik_xmart_kw03g_1_22_rozov_1628580884_0.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ozone.ro%2Fproduct%2Fsmartwatch-pentru-copii-xmart-kw03g-31mm-1-22-roz%2F",
-"magazin": "ozone.ro",
-"url_magazin": "https://www.ozone.ro/product/smartwatch-pentru-copii-xmart-kw03g-31mm-1-22-roz/",
+"pret_vechi": null,
 "verificat": "2026-11-04"
 },
 {
@@ -15536,17 +15727,22 @@
 "imagine": "https://infinityro.vteximg.com.br/arquivos/ids/215756693/image-bd88ddc0f2d64de18390047875e406d0.jpg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Finfinity.ro%2Fsmartwatch-copii-canyon-my-dino-kw-33-1-3-ips-full-touch-screen-ip68-waterproof-verde-641418%2Fp%3Futm_source%3D2performant",
 "magazin": "infinity.ro",
+"id": "3OQnQc16bNn0",
+"brand": "Canyon",
 "url_magazin": "https://infinity.ro/smartwatch-copii-canyon-my-dino-kw-33-1-3-ips-full-touch-screen-ip68-waterproof-verde-641418/p?utm_source=2performant",
+"pret_vechi": 222.1,
 "verificat": "2026-11-04"
 },
 {
-"titlu": "Smartwatch pentru copii Blackview Z30, 4G SIM, 1.75, Localizare GPS + WIFI AI + LBS, Apeluri Video si Voce, Lanterna, 8",
+"titlu": "Smartwatch pentru copii Blackview Z30, 4G SIM, 1.75, Localizare GPS + WIFI AI + LBS, Apeluri Video si Voce, Lanterna, 80",
 "pret": 242.99,
-"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4316%2F4316054%2Fsmartwatch-blackview-z30-4g-sim-1-75-inch-localizare-gps-wifi-ai-lbs-apeluri-video-si-voce-lanterna-800mah-pink-981637.png&type=auto&width=500&sign=KY-tXP6so9_sf_xFrjQ5C_jpMwNZn3buc2R_WEZKvKw",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Ftelefoane-tablete-accesorii-smartwatch%2Fblackview-smartwatch-pentru-copii-blackview-z30-4g-sim-1.75-localizare-gps-wifi-ai-lbs-apeluri-video-si-voce-lanterna-800mah-roz-4316054.html",
+"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4316%2F4316055%2Fsmartwatch-pentru-copii-blackview-z30-4g-sim-1-75-localizare-gps-wifi-ai-lbs-apeluri-video-si-voce-lanterna-800mah-pink-copie-717380.png&type=auto&width=500&sign=bPxJVacIvYmpFL2ub1I_QNiAeqY8JLdh-eHbX_dhfxY",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Ftelefoane-tablete-accesorii-smartwatch%2Fblackview-smartwatch-pentru-copii-blackview-z30-4g-sim-1.75-localizare-gps-wifi-ai-lbs-apeluri-video-si-voce-lanterna-800mah-albastru-4316055.html",
 "magazin": "evomag.ro",
-"url_magazin": "https://www.evomag.ro/telefoane-tablete-accesorii-smartwatch/blackview-smartwatch-pentru-copii-blackview-z30-4g-sim-1.75-localizare-gps-wifi-ai-lbs-apeluri-video-si-voce-lanterna-800mah-roz-4316054.html",
-"verificat": "2026-11-04"
+"id": "i142a4xJ6pjU",
+"brand": "Blackview",
+"url_magazin": "https://www.evomag.ro/telefoane-tablete-accesorii-smartwatch/blackview-smartwatch-pentru-copii-blackview-z30-4g-sim-1.75-localizare-gps-wifi-ai-lbs-apeluri-video-si-voce-lanterna-800mah-albastru-4316055.html",
+"pret_vechi": null
 },
 {
 "titlu": "Smartwatch Copii 4G cu SIM GBV LOGIC Y88, Apel Video, GPS+LBS+WiFi, Control Parental, Buton SOS, SeTracker2, Camera HD",
@@ -15554,16 +15750,10 @@
 "imagine": "https://infinityro.vteximg.com.br/arquivos/ids/273660048/fcde7f23-6c6d-4ac5-8c8a-280f90da40f6-Hd9d80258e6b04b26a85fe46d4427f74ap___c2201ee98fa700f582e8f31d6313a4bf.jpg.jpg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Finfinity.ro%2Fsmartwatch-copii-4g-cu-sim-gbv-logic-y88-apel-video-gps-lbs-wifi-control-parental-buton-sos-setracker2-camera-hd-9293042%2Fp%3Futm_source%3D2performant",
 "magazin": "infinity.ro",
+"id": "8YjjUIg785q9",
+"brand": "GBV LOGIC",
 "url_magazin": "https://infinity.ro/smartwatch-copii-4g-cu-sim-gbv-logic-y88-apel-video-gps-lbs-wifi-control-parental-buton-sos-setracker2-camera-hd-9293042/p?utm_source=2performant",
-"verificat": "2026-11-04"
-},
-{
-"titlu": "Smartwatch pentru copii Canyon - Sunny KW-44, 1.44'', Green",
-"pret": 298.51,
-"imagine": "https://www.ozone.ro/media/catalog/product/d/e/detski_smart_chasovnik_canyon_sunny_kw_44_1_44_green_1766502742_0.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ozone.ro%2Fproduct%2Fsmartwatch-pentru-copii-canyon-sunny-kw-44-1-44-green%2F",
-"magazin": "ozone.ro",
-"url_magazin": "https://www.ozone.ro/product/smartwatch-pentru-copii-canyon-sunny-kw-44-1-44-green/",
+"pret_vechi": null,
 "verificat": "2026-11-04"
 },
 {
@@ -15572,7 +15762,22 @@
 "imagine": "https://www.ozone.ro/media/catalog/product/d/e/detski_smart_chasovnik_canyon_sunny_kw_44_1_44_blue_1766502762_0.jpg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ozone.ro%2Fproduct%2Fsmartwatch-pentru-copii-canyon-sunny-kw-44-1-44-blue%2F",
 "magazin": "ozone.ro",
+"id": "pVWJFwx2hJ1j",
+"brand": "Canyon",
 "url_magazin": "https://www.ozone.ro/product/smartwatch-pentru-copii-canyon-sunny-kw-44-1-44-blue/",
+"pret_vechi": 391.35,
+"verificat": "2026-11-04"
+},
+{
+"titlu": "Smartwatch pentru copii Canyon - Sunny KW-44, 1.44'', Green",
+"pret": 298.51,
+"imagine": "https://www.ozone.ro/media/catalog/product/d/e/detski_smart_chasovnik_canyon_sunny_kw_44_1_44_green_1766502742_0.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ozone.ro%2Fproduct%2Fsmartwatch-pentru-copii-canyon-sunny-kw-44-1-44-green%2F",
+"magazin": "ozone.ro",
+"id": "LTgkQBay98Lp",
+"brand": "Canyon",
+"url_magazin": "https://www.ozone.ro/product/smartwatch-pentru-copii-canyon-sunny-kw-44-1-44-green/",
+"pret_vechi": 391.35,
 "verificat": "2026-11-04"
 },
 {
@@ -15581,7 +15786,10 @@
 "imagine": "https://infinityro.vteximg.com.br/arquivos/ids/273659900/f2d9d222-31d6-479f-9159-628bcfc4cb72-Hf0ec368320554025b668d618c869c040d.png_64x64___4acbdfb740b40fc521cc992357efe725.jpg.jpg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Finfinity.ro%2Fsmartwatch-copii-4g-cu-sim-gbv-logic-apel-video-localizare-gps-control-parental-buton-sos-functii-de-siguranta-9293035%2Fp%3Futm_source%3D2performant",
 "magazin": "infinity.ro",
+"id": "A7NJ9ThzIejQ",
+"brand": "GBV LOGIC",
 "url_magazin": "https://infinity.ro/smartwatch-copii-4g-cu-sim-gbv-logic-apel-video-localizare-gps-control-parental-buton-sos-functii-de-siguranta-9293035/p?utm_source=2performant",
+"pret_vechi": null,
 "verificat": "2026-11-04"
 },
 {
@@ -15590,7 +15798,10 @@
 "imagine": "https://www.ozone.ro/media/catalog/product/d/e/detski_smart_chasovnik_xmart_k3_1_7_gps_sin_cheren_1769072175_0.jpg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ozone.ro%2Fproduct%2Fsmartwatch-pentru-copii-xmart-k3-1-7-gps-albastru-negru%2F",
 "magazin": "ozone.ro",
+"id": "f7MdQmL60hRA",
+"brand": "Xmart",
 "url_magazin": "https://www.ozone.ro/product/smartwatch-pentru-copii-xmart-k3-1-7-gps-albastru-negru/",
+"pret_vechi": null,
 "verificat": "2026-11-04"
 },
 {
@@ -15599,7 +15810,10 @@
 "imagine": "https://www.ozone.ro/media/catalog/product/d/e/detski_smart_chasovnik_xmart_k3_1_7_gps_rozov_lilav_1769070840_0.jpg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ozone.ro%2Fproduct%2Fsmartwatch-pentru-copii-xmart-k3-1-7-gps-roz-mov%2F",
 "magazin": "ozone.ro",
+"id": "pw2khAb7w8xr",
+"brand": "Xmart",
 "url_magazin": "https://www.ozone.ro/product/smartwatch-pentru-copii-xmart-k3-1-7-gps-roz-mov/",
+"pret_vechi": null,
 "verificat": "2026-11-04"
 },
 {
@@ -15608,7 +15822,10 @@
 "imagine": "https://www.ozone.ro/media/catalog/product/d/e/detski_smart_chasovnik_blackview_bvz30_1_75_rozov_1768805182_0.jpg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ozone.ro%2Fproduct%2Fsmartwatch-pentru-copii-blackview-bvz30-1-75-roz%2F",
 "magazin": "ozone.ro",
+"id": "prp3utXRjJgA",
+"brand": "Blackview",
 "url_magazin": "https://www.ozone.ro/product/smartwatch-pentru-copii-blackview-bvz30-1-75-roz/",
+"pret_vechi": 417.65,
 "verificat": "2026-11-04"
 },
 {
@@ -15617,8 +15834,33 @@
 "imagine": "https://www.ozone.ro/media/catalog/product/d/e/detski_smart_chasovnik_blackview_bvz30_1_75_sin_1768805142_0.jpg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ozone.ro%2Fproduct%2Fsmartwatch-pentru-copii-blackview-bvz30-1-75-albastru%2F",
 "magazin": "ozone.ro",
+"id": "S6k0dUYXW7jo",
+"brand": "Blackview",
 "url_magazin": "https://www.ozone.ro/product/smartwatch-pentru-copii-blackview-bvz30-1-75-albastru/",
+"pret_vechi": 417.65,
 "verificat": "2026-11-04"
+},
+{
+"titlu": "Smartwatch pentru copii Canyon - Sunny KW-48, 1.44'', Violet",
+"pret": 373.27,
+"imagine": "https://www.ozone.ro/media/catalog/product/d/e/detski_smart_chasovnik_canyon_sunny_kw_48_1_44_violet_1742209859_0.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ozone.ro%2Fproduct%2Fsmartwatch-pentru-copii-canyon-sunny-kw-48-1-44-violet%2F",
+"magazin": "ozone.ro",
+"id": "myUrW0Lisldd",
+"brand": "Canyon",
+"url_magazin": "https://www.ozone.ro/product/smartwatch-pentru-copii-canyon-sunny-kw-48-1-44-violet/",
+"pret_vechi": 393.69
+},
+{
+"titlu": "Smartwatch pentru copii Canyon - Sunny KW-48, 1.44'', Blue",
+"pret": 373.27,
+"imagine": "https://www.ozone.ro/media/catalog/product/d/e/detski_smart_chasovnik_canyon_sunny_kw_48_1_44_blue_1742209935_0.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ozone.ro%2Fproduct%2Fsmartwatch-pentru-copii-canyon-sunny-kw-48-1-44-blue%2F",
+"magazin": "ozone.ro",
+"id": "ZKxXu1eOs54M",
+"brand": "Canyon",
+"url_magazin": "https://www.ozone.ro/product/smartwatch-pentru-copii-canyon-sunny-kw-48-1-44-blue/",
+"pret_vechi": 393.69
 },
 {
 "titlu": "Smartwatch copii CANYON Sunny KW-48, 4G VoLTE, GPS, 512MB Flash, Camera, IP67 (Violet)",
@@ -15626,7 +15868,10 @@
 "imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4233%2F4233307%2Fcanyon-kids-watch-sunny-kw-48-6867d0d4d5482.png&type=auto&width=500&sign=RKPX60Bx61blZhIw_YbfDCtspef3nUvd4JYkzkiaG0E",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Ftelefoane-tablete-accesorii-smartwatch%2Fcanyon-smartwatch-copii-canyon-sunny-kw-48-4g-volte-gps-512mb-flash-camera-ip67-violet-4233307.html",
 "magazin": "evomag.ro",
+"id": "qvgCwKVchYZW",
+"brand": "Canyon",
 "url_magazin": "https://www.evomag.ro/telefoane-tablete-accesorii-smartwatch/canyon-smartwatch-copii-canyon-sunny-kw-48-4g-volte-gps-512mb-flash-camera-ip67-violet-4233307.html",
+"pret_vechi": null,
 "verificat": "2026-11-04"
 },
 {
@@ -15635,17 +15880,22 @@
 "imagine": "https://infinityro.vteximg.com.br/arquivos/ids/268653758/image-8bbd5610a9aa4ea09869453acc4fbff4.jpg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Finfinity.ro%2Fceas-inteligent-smartwatch-sim-4g-lte-emeszon-a22-localizare-copii-si-adulti-prin-gps-apel-video-sos-lbs-wi-fi-negru-1646003%2Fp%3Futm_source%3D2performant",
 "magazin": "infinity.ro",
+"id": "g52h_zhYsbYw",
+"brand": "EMESZON",
 "url_magazin": "https://infinity.ro/ceas-inteligent-smartwatch-sim-4g-lte-emeszon-a22-localizare-copii-si-adulti-prin-gps-apel-video-sos-lbs-wi-fi-negru-1646003/p?utm_source=2performant",
+"pret_vechi": 487.5,
 "verificat": "2026-11-04"
 },
 {
 "titlu": "Smartwatch copii HiFuture Kidsguard G1, 4G, Apeluri Vocale, Video Call, ecran IPS, SOS Alert, Alerta zona virtuala, GPS",
 "pret": 499.99,
-"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4317%2F4317914%2Fsmartwatch-copii-hifuture-kids-6abf980f760b1.jpg&type=auto&width=500&sign=7wz3SZMgosXkADR2nFbm6OOvWVKwgxmLYHu5CAnDovw",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Ftelefoane-tablete-accesorii-smartwatch%2Fhifuture-smartwatch-copii-hifuture-kidsguard-g1-4g-apeluri-vocale-video-call-ecran-ips-sos-alert-alerta-zona-virtuala-gps-tracking-ip67-autonomie-pana-la-5-zile-roz-4317914.html",
+"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4317%2F4317916%2Fsmartwatch-copii-hifuture-kids-6abf98a5772c7.jpg&type=auto&width=500&sign=15nKab4CDpWTbcMWhIfVFyqxLUvcUWMHJZwfva354-U",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Ftelefoane-tablete-accesorii-smartwatch%2Fhifuture-smartwatch-copii-hifuture-kidsguard-g1-4g-apeluri-vocale-video-call-ecran-ips-sos-alert-alerta-zona-virtuala-gps-tracking-ip67-autonomie-pana-la-5-zile-albastru-4317916.html",
 "magazin": "evomag.ro",
-"url_magazin": "https://www.evomag.ro/telefoane-tablete-accesorii-smartwatch/hifuture-smartwatch-copii-hifuture-kidsguard-g1-4g-apeluri-vocale-video-call-ecran-ips-sos-alert-alerta-zona-virtuala-gps-tracking-ip67-autonomie-pana-la-5-zile-roz-4317914.html",
-"verificat": "2026-11-04"
+"id": "VT3-p2vnh3xC",
+"brand": "HiFuture",
+"url_magazin": "https://www.evomag.ro/telefoane-tablete-accesorii-smartwatch/hifuture-smartwatch-copii-hifuture-kidsguard-g1-4g-apeluri-vocale-video-call-ecran-ips-sos-alert-alerta-zona-virtuala-gps-tracking-ip67-autonomie-pana-la-5-zile-albastru-4317916.html",
+"pret_vechi": null
 },
 {
 "titlu": "Smartwatch pentru copii TCL MOVETIME Kids Watch MT48, 1.68inch, 4G, GPS, IP68 2ATM, Camera 2MP (Gri)",
@@ -15653,25 +15903,10 @@
 "imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4317%2F4317763%2Foverlay_1426d24c9bc533bb69d800309905988a.png&type=auto&width=500&sign=RqjjISclcndpj5uyl9vIloCWq9bSdTrJ6lB1PDmsyOA",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Ftelefoane-tablete-accesorii-smartwatch%2Ftcl-smartwatch-pentru-copii-tcl-movetime-kids-watch-mt48-1.68-4g-gps-ip68-2atm-camera-2mp-gri-4317763.html",
 "magazin": "evomag.ro",
+"id": "_ZllCvltT5yr",
+"brand": "TCL",
 "url_magazin": "https://www.evomag.ro/telefoane-tablete-accesorii-smartwatch/tcl-smartwatch-pentru-copii-tcl-movetime-kids-watch-mt48-1.68-4g-gps-ip68-2atm-camera-2mp-gri-4317763.html",
-"verificat": "2026-11-04"
-},
-{
-"titlu": "TCL Smartwatch copii Cosmic Pink",
-"pret": 837.62,
-"imagine": "https://dacris.vteximg.com.br/arquivos/ids/1094338/overlay_83b6d270bd57ba06b1cc04e194a1de29.png.png?v=639264353029970000",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dacris.net%2Fmt48x-3nlca11-tcl-smartwatch-copii-cosmic-pink%2Fp%3FskuId%3D253563",
-"magazin": "dacris.net",
-"url_magazin": "https://www.dacris.net/mt48x-3nlca11-tcl-smartwatch-copii-cosmic-pink/p?skuId=253563",
-"verificat": "2026-11-04"
-},
-{
-"titlu": "TCL Smartwatch copii Lunar Cream",
-"pret": 837.62,
-"imagine": "https://dacris.vteximg.com.br/arquivos/ids/1094296/overlay_fa0a18fc205b62271b238d7c9a56a553.png.png?v=639264132033130000",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dacris.net%2Fmt48x-3blca11-tcl-smartwatch-copii-lunar-cream%2Fp%3FskuId%3D253545",
-"magazin": "dacris.net",
-"url_magazin": "https://www.dacris.net/mt48x-3blca11-tcl-smartwatch-copii-lunar-cream/p?skuId=253545",
+"pret_vechi": null,
 "verificat": "2026-11-04"
 },
 {
@@ -15680,8 +15915,35 @@
 "imagine": "https://dacris.vteximg.com.br/arquivos/ids/1094297/overlay_1426d24c9bc533bb69d800309905988a.png.png?v=639264132035130000",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dacris.net%2Fmt48x-3alca11-tcl-smartwatch-copii-nebula-grey%2Fp%3FskuId%3D253547",
 "magazin": "dacris.net",
+"id": "ggNZUe6FYuLl",
+"brand": "TCL",
 "url_magazin": "https://www.dacris.net/mt48x-3alca11-tcl-smartwatch-copii-nebula-grey/p?skuId=253547",
+"pret_vechi": null,
 "verificat": "2026-11-04"
+},
+{
+"titlu": "TCL Smartwatch copii Cosmic Pink",
+"pret": 837.62,
+"imagine": "https://dacris.vteximg.com.br/arquivos/ids/1094338/overlay_83b6d270bd57ba06b1cc04e194a1de29.png.png?v=639264353029970000",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dacris.net%2Fmt48x-3nlca11-tcl-smartwatch-copii-cosmic-pink%2Fp%3FskuId%3D253563",
+"magazin": "dacris.net",
+"id": "zvg49-mZIXV5",
+"brand": "TCL",
+"url_magazin": "https://www.dacris.net/mt48x-3nlca11-tcl-smartwatch-copii-cosmic-pink/p?skuId=253563",
+"pret_vechi": null,
+"verificat": "2026-11-04"
+},
+{
+"titlu": "TCL Smartwatch copii Galactic Blue",
+"pret": 837.62,
+"imagine": "https://dacris.vteximg.com.br/arquivos/ids/1094295/overlay_7c198c9e6a930c11d60bbebacfd0da97.png.png?v=639264132032030000",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dacris.net%2Fmt48x-3glca11-tcl-smartwatch-copii-galactic-blue%2Fp%3FskuId%3D253546",
+"magazin": "dacris.net",
+"id": "E5DtHR6Ao-mC",
+"brand": "TCL",
+"url_magazin": "https://www.dacris.net/mt48x-3glca11-tcl-smartwatch-copii-galactic-blue/p?skuId=253546",
+"pret_vechi": null,
+"verificat": "2026-11-10"
 }
 ],
 "magazine": [
@@ -15710,8 +15972,25 @@
 "titlu": "Imprimante laser",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-04",
-"feeduri": [],
+"actualizat": "2026-11-10",
+"feeduri": [
+{
+"id": 1256,
+"magazin": "itarena.ro"
+},
+{
+"id": 9351,
+"magazin": "pcmadd.com"
+},
+{
+"id": 2746,
+"magazin": "evomag.ro"
+},
+{
+"id": 1152,
+"magazin": "evomag.ro"
+}
+],
 "produse": [
 {
 "titlu": "Imprimanta Laser Monocrom Brother HL-1112E",
@@ -15719,7 +15998,10 @@
 "imagine": "http://www.itarena.ro/images/products/2024-10-07/original/463686_jpg.webp",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.itarena.ro%2Fimprimante%2Fimprimanta_laser_monocrom_brother_hl1112e.html",
 "magazin": "itarena.ro",
+"id": "d490bb734",
+"brand": "Brother",
 "url_magazin": "https://www.itarena.ro/imprimante/imprimanta_laser_monocrom_brother_hl1112e.html",
+"pret_vechi": null,
 "verificat": "2026-11-04"
 },
 {
@@ -15728,7 +16010,10 @@
 "imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F3933%2F3933701%2Fhp-laserjet-m110w-mono-usb-wif-628cc5e7ebbd8.JPG&type=auto&width=500&sign=AU6DPmRxoegPn2LGr8cpbGQKFMTx3NOEKT3ACqAV-nQ",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Fimprimante-imprimante-laser-alb-negru%2Fhp-imprimanta-laser-monocrom-hp-laserjet-m110w-a4-usb-wifi-alb-3933701.html",
 "magazin": "evomag.ro",
+"id": "8b2e1d42b",
+"brand": "HP",
 "url_magazin": "https://www.evomag.ro/imprimante-imprimante-laser-alb-negru/hp-imprimanta-laser-monocrom-hp-laserjet-m110w-a4-usb-wifi-alb-3933701.html",
+"pret_vechi": null,
 "verificat": "2026-11-04"
 },
 {
@@ -15737,7 +16022,10 @@
 "imagine": "http://www.itarena.ro/images/products/2024-02-05/original/430638_jpg.webp",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.itarena.ro%2Fimprimante%2Fimprimanta_laser_monocrom_brother_hll2402d.html",
 "magazin": "itarena.ro",
+"id": "67fd2a9be",
+"brand": "Brother",
 "url_magazin": "https://www.itarena.ro/imprimante/imprimanta_laser_monocrom_brother_hll2402d.html",
+"pret_vechi": null,
 "verificat": "2026-11-04"
 },
 {
@@ -15746,16 +16034,10 @@
 "imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4143%2F4143174%2Fbrother-hll2402dyj1-laser-prin-65d2ffde5733a.jpg&type=auto&width=500&sign=hk7u7hCRuJ9VfJxffHFXj_4Xp7A5jAOCc2ntteINQZs",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Fimprimante-imprimante-laser-alb-negru%2Fbrother-imprimanta-laser-brother-hl-l2402d-a4-monocrom-30ppm-duplex-usb-2.0-negru-4143174.html",
 "magazin": "evomag.ro",
+"id": "b79d5cfa7",
+"brand": "Brother",
 "url_magazin": "https://www.evomag.ro/imprimante-imprimante-laser-alb-negru/brother-imprimanta-laser-brother-hl-l2402d-a4-monocrom-30ppm-duplex-usb-2.0-negru-4143174.html",
-"verificat": "2026-11-04"
-},
-{
-"titlu": "Imprimanta Laser Monocrom Brother HL-L2442DW",
-"pret": 643.61,
-"imagine": "http://www.itarena.ro/images/products/2024-01-05/original/428557_jpg.webp",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.itarena.ro%2Fimprimante%2Fimprimanta_laser_monocrom_brother_hll2442dw.html",
-"magazin": "itarena.ro",
-"url_magazin": "https://www.itarena.ro/imprimante/imprimanta_laser_monocrom_brother_hll2442dw.html",
+"pret_vechi": 599.99,
 "verificat": "2026-11-04"
 },
 {
@@ -15764,7 +16046,10 @@
 "imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4143%2F4143178%2Fimprimanta-laser-a4-mono-broth-65d3080e08679.jpg&type=auto&width=500&sign=KIBe805F3d2flsBihuy1kDJ6702T_zaOQJE-8qOovBc",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Fimprimante-imprimante-laser-alb-negru%2Fbrother-imprimanta-laser-brother-hl-l2442dw-a4-monocrom-30-ppm-wireless-usb-2.0-negru-4143178.html",
 "magazin": "evomag.ro",
+"id": "RH-__YypuxXM",
+"brand": "Brother",
 "url_magazin": "https://www.evomag.ro/imprimante-imprimante-laser-alb-negru/brother-imprimanta-laser-brother-hl-l2442dw-a4-monocrom-30-ppm-wireless-usb-2.0-negru-4143178.html",
+"pret_vechi": null,
 "verificat": "2026-11-04"
 },
 {
@@ -15773,7 +16058,10 @@
 "imagine": "http://www.itarena.ro/images/products/2025-04-17/original/487946_jpg.webp",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.itarena.ro%2Fimprimante%2Fimprimanta_laser_monocrom_hp_laserjet_m209d.html",
 "magazin": "itarena.ro",
+"id": "b2442ff2c",
+"brand": "HP Inc.",
 "url_magazin": "https://www.itarena.ro/imprimante/imprimanta_laser_monocrom_hp_laserjet_m209d.html",
+"pret_vechi": null,
 "verificat": "2026-11-04"
 },
 {
@@ -15782,7 +16070,10 @@
 "imagine": "http://www.itarena.ro/images/products/2024-02-05/original/430641_jpg.webp",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.itarena.ro%2Fimprimante%2Fimprimanta_laser_monocrom_brother_hll2460dn.html",
 "magazin": "itarena.ro",
+"id": "88cf3df56",
+"brand": "Brother",
 "url_magazin": "https://www.itarena.ro/imprimante/imprimanta_laser_monocrom_brother_hll2460dn.html",
+"pret_vechi": null,
 "verificat": "2026-11-04"
 },
 {
@@ -15791,7 +16082,10 @@
 "imagine": "http://www.itarena.ro/images/products/2025-04-17/original/487947_jpg.webp",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.itarena.ro%2Fimprimante%2Fimprimanta_laser_monocrom_hp_laserjet_m207dw.html",
 "magazin": "itarena.ro",
+"id": "3fd5ef098",
+"brand": "HP Inc.",
 "url_magazin": "https://www.itarena.ro/imprimante/imprimanta_laser_monocrom_hp_laserjet_m207dw.html",
+"pret_vechi": null,
 "verificat": "2026-11-04"
 },
 {
@@ -15800,7 +16094,10 @@
 "imagine": "http://www.itarena.ro/images/products/2024-10-09/original/463816_jpg.webp",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.itarena.ro%2Fimprimante%2Fimprimanta_laser_monocrom_brother_hlb2180dw.html",
 "magazin": "itarena.ro",
+"id": "844418c19",
+"brand": "Brother",
 "url_magazin": "https://www.itarena.ro/imprimante/imprimanta_laser_monocrom_brother_hlb2180dw.html",
+"pret_vechi": null,
 "verificat": "2026-11-04"
 },
 {
@@ -15809,8 +16106,23 @@
 "imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4143%2F4143183%2Fimprimanta-laser-a4-mono-broth-65d30f28e7c16.JPG&type=auto&width=500&sign=ip7sVfw5DQKyjWLo1chAHFNIcN_YV8mHA3P8O5SkaFk",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Fimprimante-imprimante-laser-alb-negru%2Fbrother-imprimanta-laser-brother-hl-l2460dn-a4-monocrom-34-ppm-retea-usb-2.0-negru-4143183.html",
 "magazin": "evomag.ro",
+"id": "1jBbpH-lSqst",
+"brand": "Brother",
 "url_magazin": "https://www.evomag.ro/imprimante-imprimante-laser-alb-negru/brother-imprimanta-laser-brother-hl-l2460dn-a4-monocrom-34-ppm-retea-usb-2.0-negru-4143183.html",
+"pret_vechi": null,
 "verificat": "2026-11-04"
+},
+{
+"titlu": "Imprimanta Laser Monocrom HP LaserJet Pro 4007dw",
+"pret": 1237.37,
+"imagine": "http://www.itarena.ro/images/products/2026-10-26/original/534574_jpg.webp",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.itarena.ro%2Fmultifunctionale%2Fimprimanta_laser_monocrom_hp_laserjet_pro_4007dw.html",
+"magazin": "itarena.ro",
+"id": "YUAqh6wRrvCh",
+"brand": "HP Inc.",
+"url_magazin": "https://www.itarena.ro/multifunctionale/imprimanta_laser_monocrom_hp_laserjet_pro_4007dw.html",
+"pret_vechi": null,
+"verificat": "2026-11-10"
 },
 {
 "titlu": "Imprimanta Laser Monocrom Canon i-SENSYS LBP246dw II",
@@ -15818,7 +16130,10 @@
 "imagine": "http://www.itarena.ro/images/products/2025-11-12/original/505347_jpg.webp",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.itarena.ro%2Fimprimante%2Fimprimanta_laser_monocrom_canon_isensys_lbp246dw_ii.html",
 "magazin": "itarena.ro",
+"id": "0cgUGghGDDE6",
+"brand": "Canon",
 "url_magazin": "https://www.itarena.ro/imprimante/imprimanta_laser_monocrom_canon_isensys_lbp246dw_ii.html",
+"pret_vechi": null,
 "verificat": "2026-11-04"
 },
 {
@@ -15827,7 +16142,10 @@
 "imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4246%2F4246072%2Fimprimanta-laser-a4-color-brot-65e7108355eaa.jpg&type=auto&width=500&sign=0lgH6nx60vtaocXSPzyh6vqii24QyMsod9OhXiGXwJA",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Fresigilate-produse-resigilate%2Fbrother-imprimanta-laser-brother-hl-l8230cw-a4-color-30-ppm-usb-wireless-alb-4246072.html",
 "magazin": "evomag.ro",
+"id": "VfhT-dbDE7wm",
+"brand": "Brother",
 "url_magazin": "https://www.evomag.ro/resigilate-produse-resigilate/brother-imprimanta-laser-brother-hl-l8230cw-a4-color-30-ppm-usb-wireless-alb-4246072.html",
+"pret_vechi": null,
 "verificat": "2026-11-04"
 },
 {
@@ -15836,7 +16154,10 @@
 "imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4266%2F4266851%2Flexmark-ms531dw-a4-printer-las-693990083da4f.jpg&type=auto&width=500&sign=uQ9iI-xkDjqyG8xJK06EKLCDfRT48iStz-hlFdG1Fv0",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Fimprimante-imprimante-laser-alb-negru%2Flexmark-imprimanta-monocrom-lexmark-ms531dw-laser-a4-duplex-retea-wi-fi-4266851.html",
 "magazin": "evomag.ro",
+"id": "qiYzVdl6dK9t",
+"brand": "Lexmark",
 "url_magazin": "https://www.evomag.ro/imprimante-imprimante-laser-alb-negru/lexmark-imprimanta-monocrom-lexmark-ms531dw-laser-a4-duplex-retea-wi-fi-4266851.html",
+"pret_vechi": null,
 "verificat": "2026-11-04"
 }
 ],
@@ -15852,8 +16173,17 @@
 "titlu": "Imprimante multifuncționale",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-04",
-"feeduri": [],
+"actualizat": "2026-11-10",
+"feeduri": [
+{
+"id": 1539,
+"magazin": "dwyn.ro"
+},
+{
+"id": 1096,
+"magazin": "evomag.ro"
+}
+],
 "produse": [
 {
 "titlu": "Multifunctionala InkJet Color HP DeskJet 2910 All-in-One, Wireless, 7.5/5.5 ppm, eligibil Instant Ink",
@@ -15861,7 +16191,10 @@
 "imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4274%2F4274160%2Fmultifunctionala-inkjet-color-6a7ac87d110b0.jpeg&type=auto&width=500&sign=jV1rZHMIA4N8AgrZaWC-4JrutSf73y5mJJJTNM37OsU",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Fimprimante-multifunctionale%2Fhp-multifunctionala-inkjet-color-hp-deskjet-2910-all-in-one-wireless-7.5-5.5-ppm-eligibil-instant-ink-4274160.html",
 "magazin": "evomag.ro",
+"id": "VulGlFKcM0FH",
+"brand": "HP",
 "url_magazin": "https://www.evomag.ro/imprimante-multifunctionale/hp-multifunctionala-inkjet-color-hp-deskjet-2910-all-in-one-wireless-7.5-5.5-ppm-eligibil-instant-ink-4274160.html",
+"pret_vechi": null,
 "verificat": "2026-11-04"
 },
 {
@@ -15870,7 +16203,10 @@
 "imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4274%2F4274918%2Fmultifunctionala-color-hp-desk-6abe022464b2c.jpg&type=auto&width=500&sign=RF8Sjtd343YWHi0b0taO_QodbMNyg5amHcBIrU9NoNM",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Fimprimante-multifunctionale%2Fhp-multifunctionala-color-hp-deskjet-2922-a4-7.5ppm-5.5ppm-wireless-usb-2.0-4274918.html",
 "magazin": "evomag.ro",
+"id": "CJ_qcIui5A-n",
+"brand": "HP",
 "url_magazin": "https://www.evomag.ro/imprimante-multifunctionale/hp-multifunctionala-color-hp-deskjet-2922-a4-7.5ppm-5.5ppm-wireless-usb-2.0-4274918.html",
+"pret_vechi": null,
 "verificat": "2026-11-04"
 },
 {
@@ -15879,7 +16215,10 @@
 "imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4253%2F4253520%2Fcanon-pixma-ts4150i-colour-ink-68e768ef42232.jpg&type=auto&width=500&sign=zea9NCkppVCevaR3VsvOsi8gT3SL3dbNKQtY1OECVts",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Fimprimante-multifunctionale%2Fcanon-multifunctionala-color-canon-pixma-ts4150i-format-a4-duplex-imprimare-wi-fi-4253520.html",
 "magazin": "evomag.ro",
+"id": "JetEfNMtc1SG",
+"brand": "Canon",
 "url_magazin": "https://www.evomag.ro/imprimante-multifunctionale/canon-multifunctionala-color-canon-pixma-ts4150i-format-a4-duplex-imprimare-wi-fi-4253520.html",
+"pret_vechi": null,
 "verificat": "2026-11-04"
 },
 {
@@ -15888,7 +16227,10 @@
 "imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4274%2F4274344%2Fmultifunctionala-color-hp-desk-6a7acb9d39219.jpeg&type=auto&width=500&sign=uv-ypKDSe8b4fvu4pa9Cu_nqHcwkrB2YrA-QeZtWS88",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Fimprimante-multifunctionale%2Fhp-multifunctionala-color-hp-deskjet-4330-all-in-one-wireless-8.5-5.5-ppm-eligibil-instant-ink-4274344.html",
 "magazin": "evomag.ro",
+"id": "kElCuyPwW3C8",
+"brand": "HP",
 "url_magazin": "https://www.evomag.ro/imprimante-multifunctionale/hp-multifunctionala-color-hp-deskjet-4330-all-in-one-wireless-8.5-5.5-ppm-eligibil-instant-ink-4274344.html",
+"pret_vechi": null,
 "verificat": "2026-11-04"
 },
 {
@@ -15897,7 +16239,10 @@
 "imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4274%2F4274167%2Fmultifunctionala-color-hp-desk-6a7acb333bdd5.jpeg&type=auto&width=500&sign=lA82npcRQe05sI99Pfrmghu5kzB2PXYhrfrHzqMQALA",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Fimprimante-multifunctionale%2Fhp-multifunctionala-color-hp-deskjet-4322-all-in-one-wireless-adf-usb-2.0-8.5-5.5-ppm-eligibil-instant-ink-4274167.html",
 "magazin": "evomag.ro",
+"id": "9BkCExIuHwoa",
+"brand": "HP",
 "url_magazin": "https://www.evomag.ro/imprimante-multifunctionale/hp-multifunctionala-color-hp-deskjet-4322-all-in-one-wireless-adf-usb-2.0-8.5-5.5-ppm-eligibil-instant-ink-4274167.html",
+"pret_vechi": null,
 "verificat": "2026-11-04"
 },
 {
@@ -15906,7 +16251,10 @@
 "imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4274%2F4274172%2Fmultifunctionala-color-hp-desk-6a7aca5fc1c52.jpeg&type=auto&width=500&sign=iqwv0saf1U6gWRy1uicRR6f62C1Zry0IaE90bkxhgYE",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Fimprimante-multifunctionale%2Fhp-multifunctionala-color-hp-deskjet-4310-all-in-one-wireless-adf-usb-2.0-8.5-5.5-ppm-eligibil-instant-ink-4274172.html",
 "magazin": "evomag.ro",
+"id": "C7CV-mmtEXyV",
+"brand": "HP",
 "url_magazin": "https://www.evomag.ro/imprimante-multifunctionale/hp-multifunctionala-color-hp-deskjet-4310-all-in-one-wireless-adf-usb-2.0-8.5-5.5-ppm-eligibil-instant-ink-4274172.html",
+"pret_vechi": null,
 "verificat": "2026-11-04"
 },
 {
@@ -15915,7 +16263,10 @@
 "imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4252%2F4252633%2Fcanon-pixma-ts6550i-colour-ink-68e4e3e3eb518.jpg&type=auto&width=500&sign=SKLCs2jIL-u9zvoGxmODTntAczXVDm6EBLDoqJlm-Rg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Fimprimante-multifunctionale%2Fcanon-multifunctionala-color-canon-pixma-ts6550i-format-a4-duplex-imprimare-wi-fi-4252633.html",
 "magazin": "evomag.ro",
+"id": "tAj0t9xe03dR",
+"brand": "Canon",
 "url_magazin": "https://www.evomag.ro/imprimante-multifunctionale/canon-multifunctionala-color-canon-pixma-ts6550i-format-a4-duplex-imprimare-wi-fi-4252633.html",
+"pret_vechi": null,
 "verificat": "2026-11-04"
 },
 {
@@ -15924,7 +16275,10 @@
 "imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4252%2F4252009%2Fmultifunctionala-color-hp-envy-6a7acf3d041a6.jpeg&type=auto&width=500&sign=qfKOCpEhZkOn4dhTOZQ-BbYWuIbWwclX1fiWdv047-g",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Fimprimante-multifunctionale%2Fhp-multifunctionala-color-hp-envy-6120e-inkjet-a4-duplex-imprimare-wi-fi-fax-eligibil-instant-ink-4252009.html",
 "magazin": "evomag.ro",
+"id": "77NFhPYLRKo9",
+"brand": "HP",
 "url_magazin": "https://www.evomag.ro/imprimante-multifunctionale/hp-multifunctionala-color-hp-envy-6120e-inkjet-a4-duplex-imprimare-wi-fi-fax-eligibil-instant-ink-4252009.html",
+"pret_vechi": null,
 "verificat": "2026-11-04"
 },
 {
@@ -15933,7 +16287,10 @@
 "imagine": "https://www.dwyn.ro/images/products/img_202606122129/422311/full/xerox-imprimanta-multifunctionala-laser-xerox-b105v_bi-a4-monocrom-usb-wireless-21-ppm-1443589.jpg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fimprimante%2Fxerox%2F422311-imprimanta-multifunctionala-laser-xerox-b105v_bi-a4-monocrom-usb-wireless-21-ppm%2F",
 "magazin": "dwyn.ro",
+"id": "GhctDJ21mNOy",
+"brand": "XEROX",
 "url_magazin": "https://www.dwyn.ro/imprimante/xerox/422311-imprimanta-multifunctionala-laser-xerox-b105v_bi-a4-monocrom-usb-wireless-21-ppm/",
+"pret_vechi": null,
 "verificat": "2026-11-04"
 },
 {
@@ -15942,7 +16299,10 @@
 "imagine": "https://www.dwyn.ro/images/products/img_202606122129/422308/full/xerox-imprimanta-multifunctionala-laser-xerox-b115v_ni-a4-monocrom-usb-wireless-retea-adf-20-ppm-1443577.jpg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fimprimante%2Fxerox%2F422308-imprimanta-multifunctionala-laser-xerox-b115v_ni-a4-monocrom-usb-wireless-retea-adf-20-ppm%2F",
 "magazin": "dwyn.ro",
+"id": "X1xUPxt1sEYJ",
+"brand": "XEROX",
 "url_magazin": "https://www.dwyn.ro/imprimante/xerox/422308-imprimanta-multifunctionala-laser-xerox-b115v_ni-a4-monocrom-usb-wireless-retea-adf-20-ppm/",
+"pret_vechi": null,
 "verificat": "2026-11-04"
 },
 {
@@ -15951,7 +16311,10 @@
 "imagine": "https://www.dwyn.ro/images/products/img_202606122129/447043/full/epson-epson-ecotank-l3356-multifunctional-printer-1442464.jpg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fimprimante%2Fepson%2F447043-imprimanta-multifunctionala-epson-ecotank-l3356w-inkjet-wi-fi-wi-fi-direct-usb-a4-5760-1440-dpi-33-pag-min-alb%2F",
 "magazin": "dwyn.ro",
+"id": "x8a00pIODyZ1",
+"brand": "Epson",
 "url_magazin": "https://www.dwyn.ro/imprimante/epson/447043-imprimanta-multifunctionala-epson-ecotank-l3356w-inkjet-wi-fi-wi-fi-direct-usb-a4-5760-1440-dpi-33-pag-min-alb/",
+"pret_vechi": null,
 "verificat": "2026-11-04"
 },
 {
@@ -15960,7 +16323,10 @@
 "imagine": "https://www.dwyn.ro/images/products/img_202606122129/447040/full/epson-epson-ecotank-l3351-multifunctional-printer-1442419.png",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fimprimante%2Fepson%2F447040-imprimanta-multifunctionala-epson-ecotank-l3351w-imprimanta-cu-jet-de-cerneala-color-scaner-copiator-wireless-wi-fi-wi-fi-direct-33-pag-min-5760x1440-dpi-a4-usb-negru%2F",
 "magazin": "dwyn.ro",
+"id": "hEw9LiVPYsJR",
+"brand": "Epson",
 "url_magazin": "https://www.dwyn.ro/imprimante/epson/447040-imprimanta-multifunctionala-epson-ecotank-l3351w-imprimanta-cu-jet-de-cerneala-color-scaner-copiator-wireless-wi-fi-wi-fi-direct-33-pag-min-5760x1440-dpi-a4-usb-negru/",
+"pret_vechi": null,
 "verificat": "2026-11-04"
 }
 ],
@@ -15976,8 +16342,21 @@
 "titlu": "Trotinete electrice pentru adulți",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-04",
-"feeduri": [],
+"actualizat": "2026-11-10",
+"feeduri": [
+{
+"id": 2800,
+"magazin": "evomag.ro"
+},
+{
+"id": 1539,
+"magazin": "dwyn.ro"
+},
+{
+"id": 1598,
+"magazin": "evomag.ro"
+}
+],
 "produse": [
 {
 "titlu": "Trotineta electrica Quer Fast Wheels ZAB0020, Autonomie 8 Km, Viteza 23 Km/h (Negru)",
@@ -15985,7 +16364,10 @@
 "imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F3621%2F3621501%2F1528088713lpa1.JPG&type=auto&width=500&sign=LwhkBKAtibB5y579qylrDLWMpEV8fWhmdWFa7XUn1Q0",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Fsport-fitness-vehicule-electrice-trotinete-electrice-adulti-copii%2Fquer-trotineta-electrica-quer-fast-wheels-zab0020-23-km-h-negru-3621501.html",
 "magazin": "evomag.ro",
+"id": "5A_ZQBvOgzxm",
+"brand": "Quer",
 "url_magazin": "https://www.evomag.ro/sport-fitness-vehicule-electrice-trotinete-electrice-adulti-copii/quer-trotineta-electrica-quer-fast-wheels-zab0020-23-km-h-negru-3621501.html",
+"pret_vechi": null,
 "verificat": "2026-11-04"
 },
 {
@@ -15994,7 +16376,10 @@
 "imagine": "https://www.dwyn.ro/images/products/img_202512311121/369548/full/rebel-trotineta-electrica-fast-wheels-rebel-negru-1062953.png",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fvehicule-fara-pedale%2Frebel%2F369548-trotineta-electrica-pliabila-250w-viteza-maxima-23-km-h-negru%2F",
 "magazin": "dwyn.ro",
+"id": "ofS64yMMNEU1",
+"brand": "Rebel",
 "url_magazin": "https://www.dwyn.ro/vehicule-fara-pedale/rebel/369548-trotineta-electrica-pliabila-250w-viteza-maxima-23-km-h-negru/",
+"pret_vechi": null,
 "verificat": "2026-11-04"
 }
 ],
@@ -16010,8 +16395,13 @@
 "titlu": "Biciclete electrice",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-04",
-"feeduri": [],
+"actualizat": "2026-11-10",
+"feeduri": [
+{
+"id": 5747,
+"magazin": "afisport.ro"
+}
+],
 "produse": [
 {
 "titlu": "Bicicleta Electrica Corwin 28321 - 28 Inch, 530 mm, Negru mat",
@@ -16019,7 +16409,10 @@
 "imagine": "https://afisport.ro/images/detailed/316/2BF28321CW5360_3__1__btqj-i7.jpg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fafisport.ro%2Fbicicleta-electrica-corwin-28321-28-inch-530-mm-negru-mat.html",
 "magazin": "afisport.ro",
+"id": "411cc17d6",
+"brand": "",
 "url_magazin": "https://afisport.ro/bicicleta-electrica-corwin-28321-28-inch-530-mm-negru-mat.html",
+"pret_vechi": 4790.0,
 "verificat": "2026-11-04"
 },
 {
@@ -16028,7 +16421,10 @@
 "imagine": "https://afisport.ro/images/detailed/316/2BF28321CW4970_3__1_.jpg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fafisport.ro%2Fbicicleta-electrica-corwin-28321-28-inch-490-mm-gri-lucios.html",
 "magazin": "afisport.ro",
+"id": "cf00fc7c1",
+"brand": "",
 "url_magazin": "https://afisport.ro/bicicleta-electrica-corwin-28321-28-inch-490-mm-gri-lucios.html",
+"pret_vechi": 4790.0,
 "verificat": "2026-11-04"
 },
 {
@@ -16037,7 +16433,10 @@
 "imagine": "https://afisport.ro/images/detailed/316/2BF28321CW5360_3__1__kgb5-8o.jpg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fafisport.ro%2Fbicicleta-electrica-corwin-28321-28-inch-490-mm-negru-mat.html",
 "magazin": "afisport.ro",
+"id": "7cafc7689",
+"brand": "",
 "url_magazin": "https://afisport.ro/bicicleta-electrica-corwin-28321-28-inch-490-mm-negru-mat.html",
+"pret_vechi": 4790.0,
 "verificat": "2026-11-04"
 },
 {
@@ -16046,7 +16445,10 @@
 "imagine": "https://afisport.ro/images/detailed/315/3_2MB525620JQ0ES.png",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fafisport.ro%2Fbicicleta-electrica-devron-52562-28-inch-480-mm-gri.html",
 "magazin": "afisport.ro",
+"id": "bf20e3597",
+"brand": "",
 "url_magazin": "https://afisport.ro/bicicleta-electrica-devron-52562-28-inch-480-mm-gri.html",
+"pret_vechi": 5290.0,
 "verificat": "2026-11-04"
 },
 {
@@ -16055,7 +16457,10 @@
 "imagine": "https://afisport.ro/images/detailed/317/2MB517210DO0ES_1__1_.jpg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fafisport.ro%2Fbicicleta-electrica-devron-51721-28-inch-340-mm-negru.html",
 "magazin": "afisport.ro",
+"id": "dc75cef70",
+"brand": "",
 "url_magazin": "https://afisport.ro/bicicleta-electrica-devron-51721-28-inch-340-mm-negru.html",
+"pret_vechi": 5390.0,
 "verificat": "2026-11-04"
 },
 {
@@ -16064,7 +16469,10 @@
 "imagine": "https://afisport.ro/images/detailed/316/20122VT7__green_normal__1__edit__1_.jpg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fafisport.ro%2Fbicicleta-electrica-pliabila-devron-20122-20-inch-s-verde.html",
 "magazin": "afisport.ro",
+"id": "88c12d75d",
+"brand": "",
 "url_magazin": "https://afisport.ro/bicicleta-electrica-pliabila-devron-20122-20-inch-s-verde.html",
+"pret_vechi": 5890.0,
 "verificat": "2026-11-04"
 },
 {
@@ -16073,7 +16481,10 @@
 "imagine": "https://afisport.ro/images/detailed/231/Bicicleta-Electrica-Corwin-28322---28-Inch--490-mm--Negru.jpg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fafisport.ro%2Fbicicleta-electrica-corwin-28322-2021-28-inch-l-negru.html",
 "magazin": "afisport.ro",
+"id": "a7aaceb4e",
+"brand": "Corwin",
 "url_magazin": "https://afisport.ro/bicicleta-electrica-corwin-28322-2021-28-inch-l-negru.html",
+"pret_vechi": 4990.0,
 "verificat": "2026-11-04"
 },
 {
@@ -16082,7 +16493,10 @@
 "imagine": "https://afisport.ro/images/detailed/316/20122VT7__black_normal__1___1_.jpg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fafisport.ro%2Fbicicleta-electrica-pliabila-devron-20122-20-inch-s-negru.html",
 "magazin": "afisport.ro",
+"id": "d73d620b0",
+"brand": "",
 "url_magazin": "https://afisport.ro/bicicleta-electrica-pliabila-devron-20122-20-inch-s-negru.html",
+"pret_vechi": 5890.0,
 "verificat": "2026-11-04"
 }
 ],

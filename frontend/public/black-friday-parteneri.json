@@ -1,11 +1,11 @@
 {
  "_nota": "Generat de scripts/calendar_black_friday.py din promotiile anuntate de magazine in 2Performant (data/promotii_2p.csv si ofertele 2P active din output.json). Doar parteneri cu link platit. Nu edita de mana.",
- "generat": "2026-11-06",
+ "generat": "2026-11-10",
  "categorii": [
   {
    "slug": "casa-gradina",
    "nume": "casă și grădină",
-   "campanii": 20
+   "campanii": 21
   },
   {
    "slug": "fashion",
@@ -15,17 +15,17 @@
   {
    "slug": "beauty",
    "nume": "cosmetice",
-   "campanii": 9
+   "campanii": 10
   },
   {
    "slug": "electronice",
    "nume": "electronice și IT",
-   "campanii": 10
+   "campanii": 11
   },
   {
    "slug": "carti-educatie",
    "nume": "cărți",
-   "campanii": 12
+   "campanii": 13
   },
   {
    "slug": "copii",
@@ -35,7 +35,7 @@
   {
    "slug": "sanatate",
    "nume": "sănătate",
-   "campanii": 9
+   "campanii": 10
   },
   {
    "slug": "auto-moto",
@@ -625,16 +625,6 @@
    "categorie": "casa-gradina"
   },
   {
-   "magazin": "drmax.ro",
-   "nume": "Dr. Max",
-   "start": "2026-11-06",
-   "final": "2026-11-08",
-   "nota": "BLACK FRIDAY Dr. Max | 6–8 noiembrie | Discounturi de până la 70%",
-   "descriere": "Campania Black Friday 2026 la Dr Max vine cu reduceri de pana la 70% la o selectie de peste 7000 de produse, din categoriile Frumusete si Ingirjire, Mama si Copilul si Medicatie alternativa. Campania este valabila in perioada 6-8 noiembrie pe site-ul drmax.ro si in reteaua de farmacii Dr Max.",
-   "are_cod": false,
-   "categorie": "sanatate"
-  },
-  {
    "magazin": "edez.ro",
    "nume": "Edez",
    "start": "2026-11-06",
@@ -1025,6 +1015,36 @@
    "categorie": "sanatate"
   },
   {
+   "magazin": "asus.com",
+   "nume": "Asus",
+   "start": "2026-11-07",
+   "final": "2026-11-13",
+   "nota": "ASUS Black Friday 2026 Reduceri de până la 2.500 RON în ASUS eShop!",
+   "descriere": "ASUS Black Friday 2026 Profită de reducerile de până la 2.500 RON la produsele selecționate, în limita stocului disponibil. Promoția este valabilă până pe 13 noiembrie, dar stocurile se epuizează rapid.",
+   "are_cod": false,
+   "categorie": "electronice"
+  },
+  {
+   "magazin": "davopro.ro",
+   "nume": "Davopro",
+   "start": "2026-11-07",
+   "final": "2026-11-15",
+   "nota": "Black Friday - Reduceri de pana la 50% la produse pentru casa",
+   "descriere": "Discounturi de pana la 50% in perioada 06-15 Noiembrie la: folii autocolante si tapet ceramic, accesorii de baie si perdele de dus, accesorii pentru seniori, covoare universale sau pentru baie / bucatarie. Oferim transport gratuit pentru comenzile care depasesc valoarea de 199 lei, pentru plata cu cardul se ofera un discount in cos de 5%, iar pentru cosurile ce depasesc valoarea de 500 lei, se ofera un discount extra de 10%.",
+   "are_cod": false,
+   "categorie": "casa-gradina"
+  },
+  {
+   "magazin": "femieko.ro",
+   "nume": "Femieko",
+   "start": "2026-11-07",
+   "final": "2026-11-22",
+   "nota": "Black Period - Black Friday la Femieko",
+   "descriere": "Reduceri de pana la 35% in limita stocului disponibil.",
+   "are_cod": false,
+   "categorie": "sanatate"
+  },
+  {
    "magazin": "agroclima.ro",
    "nume": "Agroclima",
    "start": "2026-11-09",
@@ -1033,6 +1053,36 @@
    "descriere": "Pregătim o săptămână de oferte speciale la Agroclima.ro, cu reduceri de până la 40% la produse din categoriile Grădină, Aer Condiționat & Montaj și Construcții.",
    "are_cod": true,
    "categorie": "casa-gradina"
+  },
+  {
+   "magazin": "bestseller.ro",
+   "nume": "Bestseller",
+   "start": "2026-11-09",
+   "final": "2026-11-15",
+   "nota": "Black Friday 50-70% Mega Reduceri",
+   "descriere": "Toate produsele din această categorie au reduceri între 50% și 70%. Prețurile sunt deja reduse în site.",
+   "are_cod": false,
+   "categorie": "carti-educatie"
+  },
+  {
+   "magazin": "drmax.ro",
+   "nume": "Dr. Max",
+   "start": "2026-11-09",
+   "final": "2026-11-15",
+   "nota": "Max Deals Dr Max",
+   "descriere": "Black Friday s-a incheiat, dar ofertele continua pe Dr. Max! In perioada 9-15 noiembrie, lansam campania Max Deals, cu noi reduceri atractive. Continuam perioada de shopping intens cu oferte la branduri cunoscute, din categorii relevante pentru consumatori: beauty, sanatate, suplimente, ingrijire personala, mama si copilul.",
+   "are_cod": false,
+   "categorie": "sanatate"
+  },
+  {
+   "magazin": "magazinuldegene.ro",
+   "nume": "Magazinuldegene",
+   "start": "2026-11-10",
+   "final": "2026-11-14",
+   "nota": "Black Friday, beauty your way",
+   "descriere": "Black Friday, beauty your way Gene false cu până la -90% și Danessa Myricks Beauty cu până la -55%. Wishlist-ul tău tocmai a devenit realitate. THE LASH SELECTION Privirea ta, în versiunea ei cea mai fabuloasă. Red Cherry, Ardell, ModelRock, Devi, Kara și Miss Adoro, de la natural și delicat până la full glam: gene bandă, smocuri, magnetice sau individuale.",
+   "are_cod": false,
+   "categorie": "beauty"
   },
   {
    "magazin": "infinity.ro",
