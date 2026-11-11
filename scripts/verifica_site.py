@@ -411,7 +411,9 @@ RE_PROMISIUNE_COD = re.compile(
 RE_NUMAR_MAGAZINE = re.compile(r"\b1\.?000\+?\s*(?:de\s+)?magazine", re.I)
 RE_COMISION_PUBLICAT = re.compile(
     r"\b[1-9]\d*(?:[.,]\d+)?(?:\s?-\s?\d+(?:[.,]\d+)?)?\s?%\s+comision\b"
-    r"|\d+\s?\$\s+per\b|\$\s?\d+(?:\s?-\s?\d+)?\s+per\b|\bper\s+v[aâ]nzare\b|\bCPA\b"
+    r"|\d+\s?\$\s+per\b|\$\s?\d+(?:\s?-\s?\d+)?\s+per\b|\bper\s+v[aâ]nzare\b"
+    # „150$ CPA" / „CPA 30%" = comision; „CPA TOYS" (marca de jucarii, 11.11.2026) nu: a oprit publicarea.
+    r"|\d[\d.,]*\s?(?:\$|€|lei|ron|eur|usd)?\s?CPA\b|\bCPA\s*[:=]?\s*\$?\d"
     r"|\bProgram\s+afiliere\b|\bProgram\s+recomandare\b"
     r"|\bcel\s+mai\s+mare\s+comision\b|\bcomision\s+verificat\b|\bcomision\s+recurent\b",
     re.I)

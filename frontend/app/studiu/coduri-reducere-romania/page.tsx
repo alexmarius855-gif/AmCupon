@@ -93,7 +93,7 @@ export function generateMetadata(): Metadata {
   return {
     title: `${titlu} | AmCupon.ro`,
     description: s
-      ? `Studiu pe ${s.total_magazine} de magazine online românești: doar ${s.cu_cod_real} au cod de reducere activ, ${s.doar_oferta} au promoții fără cod. Reduceri mediane pe categorii, date actualizate ${s.generat}.`
+      ? `Studiu pe ${cuDe(s.total_magazine)} magazine online românești: doar ${s.cu_cod_real} au cod de reducere activ, ${s.doar_oferta} au promoții fără cod. Reduceri mediane pe categorii, date actualizate ${s.generat}.`
       : "Studiu pe magazinele online românești: câte au cu adevărat coduri de reducere active.",
     keywords: [
       "studiu coduri reducere românia", "câte magazine au cupoane", "reduceri online românia date",
@@ -138,7 +138,7 @@ export default function StudiuPage() {
       {
         "@type": "Dataset",
         name: "Coduri de reducere active în magazinele online din România",
-        description: `Măsurătoare pe ${s.total_magazine} de magazine online românești: câte au promoții active și câte au cod de reducere real, cu reduceri mediane pe categorie.`,
+        description: `Măsurătoare pe ${cuDe(s.total_magazine)} magazine online românești: câte au promoții active și câte au cod de reducere real, cu reduceri mediane pe categorie.`,
         url: URL_PAGINA,
         license: "https://creativecommons.org/licenses/by/4.0/",
         creator: { "@type": "Organization", name: "AmCupon.ro", url: "https://amcupon.ro" },
@@ -152,7 +152,7 @@ export default function StudiuPage() {
       },
       {
         "@type": "Article",
-        headline: `Doar ${s.cu_cod_real} din ${s.total_magazine} de magazine online românești au cod de reducere activ`,
+        headline: `Doar ${s.cu_cod_real} din ${cuDe(s.total_magazine)} magazine online românești au cod de reducere activ`,
         datePublished: s.generat,
         dateModified: s.generat,
         author: { "@type": "Organization", name: "AmCupon.ro" },
@@ -188,11 +188,11 @@ export default function StudiuPage() {
             Date proprii &middot; actualizat {s.generat}
           </p>
           <h1 className="text-3xl md:text-[2.6rem] font-black text-[var(--foreground)] leading-[1.12] mb-6">
-            Doar {s.cu_cod_real} din {s.total_magazine.toLocaleString("ro-RO")} de magazine online
+            Doar {s.cu_cod_real} din {s.total_magazine.toLocaleString("ro-RO")}{deNumar(s.total_magazine)} magazine online
             românești au azi un cod de reducere real
           </h1>
           <p className="text-[var(--text-soft)] text-lg leading-relaxed">
-            Urmărim automat promoțiile din {s.total_magazine.toLocaleString("ro-RO")} de magazine
+            Urmărim automat promoțiile din {s.total_magazine.toLocaleString("ro-RO")}{deNumar(s.total_magazine)} magazine
             online românești (cu domeniu .ro). Am numărat câte au cu adevărat un cod de cupon
             activ, și câte doar par să aibă. Rezultatul nu ne avantajează: administrăm un site de cupoane.
           </p>

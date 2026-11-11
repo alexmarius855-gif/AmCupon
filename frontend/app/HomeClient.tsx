@@ -22,7 +22,7 @@ import {
   oferteAcasa, numaraFiltre, filtreAfisate, alegeAfisate, oferteDePeMagazin,
   magazinePopulareAcasa, EXCLUSE_ACASA, type FiltruAcasa,
 } from "@/lib/oferteAcasa";
-import { cuNumar } from "@/lib/acordNumeral";
+import { cuNumar, deNumar } from "@/lib/acordNumeral";
 
 interface Promotie {
   nume: string;
@@ -533,7 +533,7 @@ export default function HomeClient({
       {/* ─── BANDA BLACK FRIDAY (cat timp exista campanii ale partenerilor) ── */}
       {blackFriday && (
         <Link href="/black-friday" className="block bg-[var(--accent)] px-4 py-2 text-center text-sm font-bold text-[#0c1000] hover:opacity-90">
-          Black Friday: {blackFriday.inCurs >= 20 ? `${blackFriday.inCurs} de` : blackFriday.inCurs}{" "}
+          Black Friday: {blackFriday.inCurs}{deNumar(blackFriday.inCurs)}{" "}
           {blackFriday.inCurs === 1 ? "campanie" : "campanii"} în desfășurare la magazinele partenere. Vezi calendarul →
         </Link>
       )}
@@ -628,7 +628,7 @@ export default function HomeClient({
           {/* Trust row */}
           <div className={`flex flex-wrap justify-center gap-x-6 gap-y-2 text-xs text-[var(--text-muted)] font-medium ${codulZilei ? "lg:justify-start" : ""}`}>
             <span className="flex items-center gap-1.5"><span className="text-[var(--accent-text)]">✓</span> Gratuit, fără cont</span>
-            <span className="flex items-center gap-1.5"><span className="text-[var(--accent-text)]">✓</span> {magazine.length > 0 ? `${magazine.length} de magazine` : "Sute de magazine"}</span>
+            <span className="flex items-center gap-1.5"><span className="text-[var(--accent-text)]">✓</span> {magazine.length > 0 ? cuNumar(magazine.length, "magazin", "magazine") : "Sute de magazine"}</span>
             <span className="flex items-center gap-1.5"><span className="text-[var(--accent-text)]">✓</span> Actualizat de 3 ori pe zi</span>
             <span className="flex items-center gap-1.5"><span className="text-[var(--accent-text)]">✓</span> 0 reclame invazive</span>
           </div>

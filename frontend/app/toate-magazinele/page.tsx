@@ -1,3 +1,4 @@
+import { deNumar } from "@/lib/acordNumeral";
 import { Metadata } from "next";
 import fs from "fs";
 import path from "path";
@@ -6,7 +7,7 @@ import { numarMagazine, PesteMagazine } from "@/lib/cifreSite";
 
 export const metadata: Metadata = {
   title: `Toate Magazinele cu Reduceri România 2026 — ${Math.floor(numarMagazine() / 100) * 100}+ Parteneri`,
-  description: `Lista completă a celor ${numarMagazine()} de magazine partenere AmCupon.ro, cu coduri de reducere și oferte active.`,
+  description: `Lista completă a celor ${numarMagazine()}${deNumar(numarMagazine())} magazine partenere AmCupon.ro, cu coduri de reducere și oferte active.`,
   keywords: ["toate magazinele reduceri","coduri reducere magazine online românia","lista magazine afiliate","reduceri active românia"],
   alternates: { canonical: "https://amcupon.ro/toate-magazinele" },
   openGraph: {

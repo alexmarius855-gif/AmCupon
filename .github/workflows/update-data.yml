@@ -515,7 +515,9 @@ jobs:
           NEXT_TELEMETRY_DISABLED: "1"
         run: |
           npm ci --no-audit --no-fund
-          npm run build
+          # Fontul Google se descarca la build; de doua ori (08-10.11) n-a raspuns si a oprit publicarea.
+          # O singura reluare: o eroare reala de cod pica si a doua oara, deci poarta ramane.
+          npm run build || { echo "::warning::Build picat, reiau o data (de obicei fontul Google nu raspunde)"; sleep 45; npm run build; }
           npx next start -p 3300 > /tmp/next-start.log 2>&1 &
           for i in $(seq 1 45); do curl -sf -o /dev/null http://localhost:3300/sitemap.xml && break; sleep 2; done
           cd ../scripts

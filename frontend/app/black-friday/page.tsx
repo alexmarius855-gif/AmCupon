@@ -7,7 +7,7 @@ import NewsletterCTA from "../components/NewsletterCTA";
 import { areLinkAfiliat } from "@/lib/linkMagazin";
 import { campaniiBF, categoriiBF, toateCampaniileBF } from "@/lib/campaniiBlackFriday";
 import StudiuReale from "./StudiuReale";
-import { cuNumar } from "@/lib/acordNumeral";
+import { cuNumar, deNumar } from "@/lib/acordNumeral";
 
 /**
  * Black Friday — doar magazinele la care clicul aduce comision.
@@ -65,8 +65,8 @@ const MAX_CARDURI = 48;
 const emagScurt = BF.emag.replace(/^[^,]+,\s*/, "");
 
 export const metadata: Metadata = {
-  title: `Black Friday ${BF.an}: calendarul a ${BF.totalCampanii} de magazine`,
-  description: `Când începe Black Friday ${BF.an} la ${BF.totalCampanii} de magazine din România: datele fiecărei campanii, ofertele active și câte reduceri sunt reale. eMAG pe ${emagScurt}.`,
+  title: `Black Friday ${BF.an}: calendarul a ${BF.totalCampanii}${deNumar(BF.totalCampanii)} magazine`,
+  description: `Când începe Black Friday ${BF.an} la ${BF.totalCampanii}${deNumar(BF.totalCampanii)} magazine din România: datele fiecărei campanii, ofertele active și câte reduceri sunt reale. eMAG pe ${emagScurt}.`,
   keywords: [
     `black friday românia ${BF.an}`,
     `black friday ${BF.an} data`,

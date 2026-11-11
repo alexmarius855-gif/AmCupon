@@ -786,7 +786,7 @@ export default function ProduseClient({
             {[
               { href: "/",               emoji: "🔥", label: "Coduri de reducere",   desc: "Toate codurile active" },
               { href: "/categorii",      emoji: "📂", label: "Categorii",             desc: "Fashion, Tech, Beauty..." },
-              { href: "/toate-magazinele",emoji:"🏪", label: "Toate magazinele",       desc: `${magazine.length} de magazine` },
+              { href: "/toate-magazinele",emoji:"🏪", label: "Toate magazinele",       desc: cuNumar(magazine.length, "magazin", "magazine") },
               { href: "/blog",           emoji: "📝", label: "Blog & Ghiduri",         desc: "Cum să economisești mai mult" },
             ].map(s => (
               <a key={s.href} href={s.href}

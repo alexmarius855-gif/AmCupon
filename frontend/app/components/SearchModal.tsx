@@ -202,7 +202,7 @@ export default function SearchModal() {
                 Niciun magazin nu se potrivește cu <strong className="text-[var(--foreground)]">{q}</strong>.
               </p>
               <a href="/toate-magazinele" className="text-sm font-bold text-[var(--accent-text)] hover:text-[var(--accent-text)]">
-                Vezi toate cele {date?.length ?? 0} de magazine &rarr;
+                Vezi toate cele {cuNumar(date?.length ?? 0, "magazin", "magazine")} &rarr;
               </a>
             </div>
           )}

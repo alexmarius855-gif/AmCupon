@@ -1,3 +1,4 @@
+import { cuNumar } from "@/lib/acordNumeral";
 import Link from "next/link";
 
 /**
@@ -44,7 +45,7 @@ export function tariLivrare(regiuni: string[]): string {
   if (nume.length === 0) return "alte țări";
   if (nume.length === 1) return nume[0];
   if (nume.length <= 3) return `${nume.slice(0, -1).join(", ")} și ${nume[nume.length - 1]}`;
-  return `${nume.length} de țări (fără România)`;
+  return `${cuNumar(nume.length, "țară", "țări")} (fără România)`;
 }
 
 export default function FaraLivrareRo({

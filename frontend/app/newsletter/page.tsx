@@ -1,3 +1,4 @@
+import { cuNumar } from "@/lib/acordNumeral";
 import Link from "next/link";
 import { Metadata } from "next";
 import fs from "fs";
@@ -50,7 +51,7 @@ export default function NewsletterPage() {
               Codurile zilei, pe email
             </h1>
             <p className="text-[var(--text-soft)] text-lg">
-              <span className="text-[var(--foreground)] font-bold">{totalMagazine} de magazine</span>, actualizate de trei ori pe zi.
+              <span className="text-[var(--foreground)] font-bold">{cuNumar(totalMagazine, "magazin", "magazine")}</span>, actualizate de trei ori pe zi.
               Ofertele active, pe categorii, într-un email în fiecare dimineață.
             </p>
           </div>
