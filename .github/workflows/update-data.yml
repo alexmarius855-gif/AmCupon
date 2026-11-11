@@ -730,6 +730,9 @@ jobs:
           git add data/stare-site.json data/price_alert_snapshot.json data/telegram-oferte-trimise.json || true
           # Scrise de pasul IndexNow, tot dupa commit: fara ele s-ar retrimite aceleasi adrese la fiecare rulare.
           git add data/indexnow_seen.json data/indexnow_amprente.json || true
+          # Masuratori, nu continut publicat: istoricul de preturi si instantaneul zilnic al studiului Black Friday.
+          # Intre 07 si 10.11 poarta a oprit publicarea, iar zilele 7-9 s-au pierdut din studiu. frontend/public ramane neatins.
+          git add data/istoric-preturi.json data/black-friday-2026.json || true
           if git diff --staged --quiet; then
             echo "Stare neschimbata — skip"
           else
