@@ -588,7 +588,7 @@
    "magazine": 147
   },
   "2026-11-11": {
-   "promotii": 266,
+   "promotii": 265,
    "magazine": 152
   }
  },
@@ -714,7 +714,7 @@
     "prima": "2026-10-28",
     "ultima": "2026-11-11",
     "expira": "2026-11-11",
-    "activa": true
+    "activa": false
    },
    {
     "k": "extragarantie23anilabicicleteafisportro|",
@@ -1516,6 +1516,15 @@
    }
   ],
   "babyneeds.ro": [
+   {
+    "k": "blackweekbabyneedsro|",
+    "titlu": "Black Week BabyNeeds.ro",
+    "cod": false,
+    "prima": "2026-11-11",
+    "ultima": "2026-11-11",
+    "expira": "2026-11-16",
+    "activa": true
+   },
    {
     "k": "blackfriday2026babyneedsro|",
     "titlu": "Black Friday 2026 BabyNeeds.ro",
@@ -7811,7 +7820,7 @@
     "prima": "2026-11-10",
     "ultima": "2026-11-11",
     "expira": "2026-11-24",
-    "activa": true
+    "activa": false
    },
    {
     "k": "30offtheaiwebsitebuilderwithannualterms|new30",

@@ -151,6 +151,11 @@
 "google_ads": "yes",
 "cashback": "yes"
 },
+"arabescu.ro": {
+"cupoane": "yes",
+"google_ads": "no",
+"cashback": "yes"
+},
 "arashop.ro": {
 "cupoane": "yes",
 "google_ads": "no",

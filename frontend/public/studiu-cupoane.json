@@ -1,13 +1,13 @@
 {
   "generat": "2026-11-11",
-  "total_magazine": 419,
+  "total_magazine": 420,
   "cu_promotie": 89,
   "cu_cod_real": 18,
   "doar_oferta": 71,
   "procent_cu_promotie": 21.2,
   "procent_cu_cod": 4.3,
-  "reducere_mediana_generala": 45.0,
-  "magazine_cu_procent_declarat": 62,
+  "reducere_mediana_generala": 50,
+  "magazine_cu_procent_declarat": 63,
   "categorii": [
     {
       "slug": "carti-educatie",
@@ -17,6 +17,15 @@
       "reducere_mediana": 80,
       "reducere_max": 90,
       "esantion": 7
+    },
+    {
+      "slug": "copii",
+      "nume": "Copii & familie",
+      "magazine": 23,
+      "cu_promotie": 5,
+      "reducere_mediana": 66,
+      "reducere_max": 70,
+      "esantion": 3
     },
     {
       "slug": "cadouri-flori",
@@ -30,7 +39,7 @@
     {
       "slug": "beauty",
       "nume": "Beauty & îngrijire",
-      "magazine": 49,
+      "magazine": 50,
       "cu_promotie": 10,
       "reducere_mediana": 57.5,
       "reducere_max": 90,
@@ -46,15 +55,6 @@
       "esantion": 5
     },
     {
-      "slug": "casa-gradina",
-      "nume": "Casă & grădină",
-      "magazine": 94,
-      "cu_promotie": 20,
-      "reducere_mediana": 45.0,
-      "reducere_max": 80,
-      "esantion": 12
-    },
-    {
       "slug": "fashion",
       "nume": "Fashion",
       "magazine": 46,
@@ -62,6 +62,15 @@
       "reducere_mediana": 45.0,
       "reducere_max": 70,
       "esantion": 8
+    },
+    {
+      "slug": "casa-gradina",
+      "nume": "Casă & grădină",
+      "magazine": 94,
+      "cu_promotie": 20,
+      "reducere_mediana": 45.0,
+      "reducere_max": 80,
+      "esantion": 12
     },
     {
       "slug": "sanatate",
@@ -100,15 +109,6 @@
       "esantion": 2
     },
     {
-      "slug": "copii",
-      "nume": "Copii & familie",
-      "magazine": 23,
-      "cu_promotie": 4,
-      "reducere_mediana": null,
-      "reducere_max": null,
-      "esantion": 2
-    },
-    {
       "slug": "animale",
       "nume": "Pet shop",
       "magazine": 12,
@@ -116,15 +116,6 @@
       "reducere_mediana": null,
       "reducere_max": null,
       "esantion": 2
-    },
-    {
-      "slug": "sport",
-      "nume": "Sport & fitness",
-      "magazine": 9,
-      "cu_promotie": 1,
-      "reducere_mediana": null,
-      "reducere_max": null,
-      "esantion": 0
     },
     {
       "slug": "software",
@@ -139,6 +130,15 @@
       "slug": "bijuterii",
       "nume": "Bijuterii & ceasuri",
       "magazine": 12,
+      "cu_promotie": 0,
+      "reducere_mediana": null,
+      "reducere_max": null,
+      "esantion": 0
+    },
+    {
+      "slug": "sport",
+      "nume": "Sport & fitness",
+      "magazine": 9,
       "cu_promotie": 0,
       "reducere_mediana": null,
       "reducere_max": null,

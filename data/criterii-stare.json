@@ -18287,7 +18287,7 @@
 "titlu": "Omega 3 în capsule",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-04",
+"actualizat": "2026-11-11",
 "feeduri": [
 {
 "id": 6414,
@@ -18388,18 +18388,6 @@
 "id": "E7iKeOugHuFi",
 "brand": "Doppelherz",
 "url_magazin": "https://www.pfarma.ro/medicatie-pe-afectiuni/colesterol/doppelherz-omega-3-1400-mg-40-capsule-supx65527027.html",
-"pret_vechi": null,
-"verificat": "2026-11-04"
-},
-{
-"titlu": "Doppelherz A-Z Omega 3 30 capsule",
-"pret": 36.51,
-"imagine": "https://cdn.contentspeed.ro/pfarma.websales.ro/cs-content/cs-photos/products/original/doppelherz-a-z-omega-3-30-capsule_310361_1_16961745835531.png",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.pfarma.ro%2Fmedicatie-pe-afectiuni%2Fcolesterol%2Fdoppelherz-a-z-omega-3-30-capsule-supx65522392.html",
-"magazin": "pfarma.ro",
-"id": "a34d14452",
-"brand": "Doppelherz",
-"url_magazin": "https://www.pfarma.ro/medicatie-pe-afectiuni/colesterol/doppelherz-a-z-omega-3-30-capsule-supx65522392.html",
 "pret_vechi": null,
 "verificat": "2026-11-04"
 },
@@ -18529,7 +18517,7 @@
 "id": "QLmJfoV0-X7Y",
 "brand": "BrainMax",
 "url_magazin": "https://www.brainmarket.ro/ulei-de-peste-brainmax-omega-3--60-capsule-moale/",
-"pret_vechi": 71.99,
+"pret_vechi": null,
 "verificat": "2026-11-04"
 },
 {
@@ -18557,6 +18545,17 @@
 "verificat": "2026-11-04"
 },
 {
+"titlu": "OstroVit Omega 3 Ultra, 2x90 capsule",
+"pret": 75.7,
+"imagine": "https://liki24.ro/image/catalog/product/newupload/910259-134383381941651626.png",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fliki24.ro%2Fp%2Fostrovit-omega-3-ultra-2x90-capsule%2F%3Fnlr%3D1",
+"magazin": "liki24.ro",
+"id": "mvDRyXLAeQ8y",
+"brand": "Ostrovit",
+"url_magazin": "https://liki24.ro/p/ostrovit-omega-3-ultra-2x90-capsule/?nlr=1",
+"pret_vechi": null
+},
+{
 "titlu": "Beggs Omega-3, EPA+DHA 90 capsule",
 "pret": 79.19,
 "imagine": "https://liki24.ro/image/catalog/product/newupload/376592-133705290115811534.png",
@@ -18565,6 +18564,17 @@
 "id": "DrKCIo8MQDNd",
 "brand": "Beggs",
 "url_magazin": "https://liki24.ro/p/beggs-omega-3-epa-dha-90-capsule/?nlr=1",
+"pret_vechi": null
+},
+{
+"titlu": "GreenFood Nutrition Omega 3 + Vit E 120cps 1x120 cps",
+"pret": 81.04,
+"imagine": "https://liki24.ro/image/catalog/product/newupload/401855-133740763178832750.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fliki24.ro%2Fp%2Fgreenfood-nutrition-omega-3-vit-e-120cps-1x120-cps%2F%3Fnlr%3D1",
+"magazin": "liki24.ro",
+"id": "_B4lOcLVumaC",
+"brand": "GreenFood Nutrition",
+"url_magazin": "https://liki24.ro/p/greenfood-nutrition-omega-3-vit-e-120cps-1x120-cps/?nlr=1",
 "pret_vechi": null
 },
 {
@@ -18578,17 +18588,6 @@
 "url_magazin": "https://www.pfarma.ro/medicatie-pe-afectiuni/colesterol/omega-3-6-9-pachet-economic-60-60-capsule-gelatinoase-supx65528918.html",
 "pret_vechi": null,
 "verificat": "2026-11-04"
-},
-{
-"titlu": "Omega 3-6-9, 60 capsule moi, Faunus Plant",
-"pret": 83.64,
-"imagine": "https://liki24.ro/image/catalog/product/newupload/910065-134374929150918526.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fliki24.ro%2Fp%2Fomega-3-6-9-60-capsule-moi-faunus-plant%2F%3Fnlr%3D1",
-"magazin": "liki24.ro",
-"id": "nfpq1CIkeV1Y",
-"brand": "Faunus Plant",
-"url_magazin": "https://liki24.ro/p/omega-3-6-9-60-capsule-moi-faunus-plant/?nlr=1",
-"pret_vechi": null
 }
 ],
 "magazine": [
@@ -18605,7 +18604,7 @@
 "titlu": "Colagen pulbere",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-04",
+"actualizat": "2026-11-11",
 "feeduri": [
 {
 "id": 6414,
@@ -18733,24 +18732,13 @@
 },
 {
 "titlu": "SANHELIOS colagen pulbere 450 g",
-"pret": 135.48,
+"pret": 136.97,
 "imagine": "https://liki24.ro/image/catalog/product/newupload/713796-134211786297982552.jpg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fliki24.ro%2Fp%2Fsanhelios-colagen-pulbere-450-g%2F%3Fnlr%3D1",
 "magazin": "liki24.ro",
 "id": "uuprG11iTm7X",
 "brand": "",
 "url_magazin": "https://liki24.ro/p/sanhelios-colagen-pulbere-450-g/?nlr=1",
-"pret_vechi": null
-},
-{
-"titlu": "Collal Colagen Halal, pulbere în ambalaj Doypack, 300 g pulbere",
-"pret": 140.68,
-"imagine": "https://liki24.ro/image/catalog/product/newupload/893743-134297051427340124.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fliki24.ro%2Fp%2Fcollal-colagen-halal-pulbere-in-ambalaj-doypack-300-g-pulbere%2F%3Fnlr%3D1",
-"magazin": "liki24.ro",
-"id": "myQZ3fiDvVVc",
-"brand": "",
-"url_magazin": "https://liki24.ro/p/collal-colagen-halal-pulbere-in-ambalaj-doypack-300-g-pulbere/?nlr=1",
 "pret_vechi": null
 },
 {
@@ -18766,6 +18754,17 @@
 "verificat": "2026-11-04"
 },
 {
+"titlu": "Collal Colagen Halal, pulbere în ambalaj Doypack, 300 g pulbere",
+"pret": 146.35,
+"imagine": "https://liki24.ro/image/catalog/product/newupload/893743-134297051427340124.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fliki24.ro%2Fp%2Fcollal-colagen-halal-pulbere-in-ambalaj-doypack-300-g-pulbere%2F%3Fnlr%3D1",
+"magazin": "liki24.ro",
+"id": "myQZ3fiDvVVc",
+"brand": "",
+"url_magazin": "https://liki24.ro/p/collal-colagen-halal-pulbere-in-ambalaj-doypack-300-g-pulbere/?nlr=1",
+"pret_vechi": null
+},
+{
 "titlu": "Pudra cu colagen marin Collagene Beaute Sublim Lift, 300 g, Granions",
 "pret": 147.9,
 "imagine": "https://liki24.ro/image/catalog/product/newupload/726725-134215522456093839.jpg",
@@ -18779,7 +18778,7 @@
 },
 {
 "titlu": "Pudră de colagen + biotină + vitamina C 480 g",
-"pret": 157.14,
+"pret": 155.8,
 "imagine": "https://liki24.ro/image/catalog/product/newupload/663047-134197967699470671.jpg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fliki24.ro%2Fp%2Fpudra-de-colagen-biotina-vitamina-c-480-g%2F%3Fnlr%3D1",
 "magazin": "liki24.ro",
@@ -18826,7 +18825,7 @@
 "titlu": "Creme de protecție SPF 50",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-04",
+"actualizat": "2026-11-11",
 "feeduri": [
 {
 "id": 6414,
@@ -18881,28 +18880,6 @@
 "verificat": "2026-11-04"
 },
 {
-"titlu": "Crema pentru protectie solara cu SPF 50+ Bariesun, 50ml, Uriage",
-"pret": 35.24,
-"imagine": "https://backend.drmax.ro/media/catalog/product/3/6/3661434028069_1.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.drmax.ro%2Fcrema-pentru-protectie-solara-cu-spf-50-bariesun-50ml-uriage",
-"magazin": "drmax.ro",
-"id": "jrRku9uEHftQ",
-"brand": "Uriage",
-"url_magazin": "https://www.drmax.ro/crema-pentru-protectie-solara-cu-spf-50-bariesun-50ml-uriage",
-"pret_vechi": null
-},
-{
-"titlu": "Crema de zi anti-pete SPF50, 50ml, Revuele",
-"pret": 36.58,
-"imagine": "https://backend.drmax.ro/media/catalog/product/5/0/5060565106390.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.drmax.ro%2Fcrema-de-zi-anti-pete-spf50-50ml-revuele",
-"magazin": "drmax.ro",
-"id": "m68aKvgKdXUY",
-"brand": "Revuele",
-"url_magazin": "https://www.drmax.ro/crema-de-zi-anti-pete-spf50-50ml-revuele",
-"pret_vechi": null
-},
-{
 "titlu": "Crema de fata anti-pete pigmentare cu SPF 50+ Sun Sensitive, 50 ml, Gerovital",
 "pret": 39.61,
 "imagine": "https://cdnmpro.com/848326168/p/raw/0/crema-de-fata-anti-pete-pigmentare-cu-spf-50-sun-sensitive-50-ml~174340.jpg",
@@ -18939,6 +18916,28 @@
 "verificat": "2026-11-04"
 },
 {
+"titlu": "Crema antirid cu protectie solara SPF50+ Tinted Light, 50ml, Byphasse",
+"pret": 42.49,
+"imagine": "https://backend.drmax.ro/media/catalog/product/6/5/652412229_byphasse_crema_antirid_pt_fata_tinted_light_spf50_50ml.png",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.drmax.ro%2Fcrema-antirid-cu-protectie-solara-spf50-tinted-light-50ml-byphasse",
+"magazin": "drmax.ro",
+"id": "U5JHpnZValKW",
+"brand": "Byphasse",
+"url_magazin": "https://www.drmax.ro/crema-antirid-cu-protectie-solara-spf50-tinted-light-50ml-byphasse",
+"pret_vechi": null
+},
+{
+"titlu": "Crema pentru protectie solara Cica Care Sun Protector SPF 50+/PA++++, 25g, HIDEHERE",
+"pret": 42.99,
+"imagine": "https://backend.drmax.ro/media/catalog/product/c/r/crema-pentru-protectie-solara-cica-care-sun-protector-spf-50-pa-25-g-hidehere-6697.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.drmax.ro%2Fcrema-pentru-protectie-solara-cica-care-sun-protector-spf-50-pa-25g-hidehere",
+"magazin": "drmax.ro",
+"id": "1507ebaa7",
+"brand": "HIDEHERE",
+"url_magazin": "https://www.drmax.ro/crema-pentru-protectie-solara-cica-care-sun-protector-spf-50-pa-25g-hidehere",
+"pret_vechi": null
+},
+{
 "titlu": "Crema pentru fata cu SPF 50 H3 Derma+ Sun Gerovital, nunata naturala, 50 ml",
 "pret": 47.03,
 "imagine": "https://cdnmpro.com/848326168/p/raw/2/crema-pentru-fata-cu-spf-50-h3-derma-sun-gerovital-nunata-naturala-50~18742.jpg",
@@ -18949,6 +18948,17 @@
 "url_magazin": "https://www.farmaciilenapofarm.ro/protectie-solara-pentru-fata/crema-pentru-fata-cu-spf-50-h3-derma-sun-gerovital-nunata-naturala-50-ml",
 "pret_vechi": null,
 "verificat": "2026-11-04"
+},
+{
+"titlu": "Crema fotoprotectie Age Control cu SPF50 H3 Evolution, 50 ml, Gerovital",
+"pret": 49.48,
+"imagine": "https://liki24.ro/image/catalog/product/newupload/580502-134134072398637342.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fliki24.ro%2Fp%2Fcrema-fotoprotectie-age-control-cu-spf50-h3-evolution-50-ml-gerovital%2F%3Fnlr%3D1",
+"magazin": "liki24.ro",
+"id": "G4GgcYEpgy4h",
+"brand": "Gerovital",
+"url_magazin": "https://liki24.ro/p/crema-fotoprotectie-age-control-cu-spf50-h3-evolution-50-ml-gerovital/?nlr=1",
+"pret_vechi": null
 },
 {
 "titlu": "Crema protectie solara SPF 50+ matifianta pentru ten acneic si gras, 40ml, Bio Balance",
@@ -18997,14 +19007,14 @@
 "verificat": "2026-11-04"
 },
 {
-"titlu": "Crema de fata cu pigment si SPF50, 50g, DermaFactory",
-"pret": 54.49,
-"imagine": "https://backend.drmax.ro/media/catalog/product/c/r/crema-de-fata-cu-pigment-si-spf-50-tone-up-50-g-derma-factory-4010.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.drmax.ro%2Fcrema-de-fata-cu-pigment-si-spf50-50g-dermafactory",
-"magazin": "drmax.ro",
-"id": "BnH-lEY2G8cy",
-"brand": "DermaFactory",
-"url_magazin": "https://www.drmax.ro/crema-de-fata-cu-pigment-si-spf50-50g-dermafactory",
+"titlu": "Crema de fata cu protectie solara SPF 50+ PA++++ Green Tea Fresh, 45 ml, Dr. Althea",
+"pret": 54.26,
+"imagine": "https://liki24.ro/image/catalog/product/newupload/580674-134134564024267727.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fliki24.ro%2Fp%2Fcrema-de-fata-cu-protectie-solara-spf-50-pa-green-tea-fresh-45-ml-dr-althea%2F%3Fnlr%3D1",
+"magazin": "liki24.ro",
+"id": "VJoU2LmA4Sr4",
+"brand": "Althea Life Science",
+"url_magazin": "https://liki24.ro/p/crema-de-fata-cu-protectie-solara-spf-50-pa-green-tea-fresh-45-ml-dr-althea/?nlr=1",
 "pret_vechi": null
 },
 {
@@ -19042,6 +19052,29 @@
 "pret_vechi": null
 },
 {
+"titlu": "Crema de protectie solara Mineral Sunmuse SPF 50+/ PA++++, 50ml, Beplain",
+"pret": 58.61,
+"imagine": "https://backend.drmax.ro/media/catalog/product/9/_/9_26ac688a-50a9-4648-ac3d-129016421af3-removebg-preview.png",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.drmax.ro%2Fcrema-de-protectie-solara-mineral-sunmuse-spf-50-pa-sunmuse-50ml-beplain",
+"magazin": "drmax.ro",
+"id": "-QZXcJEja6vu",
+"brand": "Beplain",
+"url_magazin": "https://www.drmax.ro/crema-de-protectie-solara-mineral-sunmuse-spf-50-pa-sunmuse-50ml-beplain",
+"pret_vechi": null
+},
+{
+"titlu": "Crema regeneratoare cu protectie solara SPF 50 Sophieskin 50ml",
+"pret": 59.62,
+"imagine": "https://cdnmpro.com/848326168/p/raw/4/crema-regeneratoare-cu-protectie-solara-spf-50-sophieskin-50ml~18494.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.farmaciilenapofarm.ro%2Fproduse-cosmetice-cu-protectie-solara%2Fcrema-regeneratoare-cu-protectie-solara-spf-50-sophieskin-50ml",
+"magazin": "farmaciilenapofarm.ro",
+"id": "VQRmQ2TF_u6f",
+"brand": "SOPHIESKIN",
+"url_magazin": "https://www.farmaciilenapofarm.ro/produse-cosmetice-cu-protectie-solara/crema-regeneratoare-cu-protectie-solara-spf-50-sophieskin-50ml",
+"pret_vechi": null,
+"verificat": "2026-11-11"
+},
+{
 "titlu": "Crema cu protectie solara SPF 50 pentru copii – Sophieskin 50ml",
 "pret": 59.62,
 "imagine": "https://cdnmpro.com/848326168/p/raw/3/crema-cu-protectie-solara-spf-50-pentru-copii-%E2%80%93-sophieskin-50ml~18493.jpg",
@@ -19052,29 +19085,6 @@
 "url_magazin": "https://www.farmaciilenapofarm.ro/produse-cosmetice-cu-protectie-solara/crema-cu-protectie-solara-spf-50-pentru-copii-sophieskin-50ml",
 "pret_vechi": null,
 "verificat": "2026-11-04"
-},
-{
-"titlu": "Crema depigmentanta cu protectie solara SPF 50 Sophieskin 50ml",
-"pret": 59.62,
-"imagine": "https://cdnmpro.com/848326168/p/raw/6/crema-depigmentanta-cu-protectie-solara-spf-50-sophieskin-50ml~18496.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.farmaciilenapofarm.ro%2Fproduse-cosmetice-cu-protectie-solara%2Fcrema-depigmentanta-cu-protectie-solara-spf-50-sophieskin-50ml",
-"magazin": "farmaciilenapofarm.ro",
-"id": "nfJNYSJjiqOY",
-"brand": "SOPHIESKIN",
-"url_magazin": "https://www.farmaciilenapofarm.ro/produse-cosmetice-cu-protectie-solara/crema-depigmentanta-cu-protectie-solara-spf-50-sophieskin-50ml",
-"pret_vechi": null,
-"verificat": "2026-11-04"
-},
-{
-"titlu": "Crema de corp cu protectie solara SPF 50+ Sun, 50 ml, Gerovital",
-"pret": 68.34,
-"imagine": "https://liki24.ro/image/catalog/product/newupload/753463-134239322777839083.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fliki24.ro%2Fp%2Fcrema-de-corp-cu-protectie-solara-spf-50-sun-50-ml-gerovital%2F%3Fnlr%3D1",
-"magazin": "liki24.ro",
-"id": "mgTeFfn_PRRw",
-"brand": "Gerovital",
-"url_magazin": "https://liki24.ro/p/crema-de-corp-cu-protectie-solara-spf-50-sun-50-ml-gerovital/?nlr=1",
-"pret_vechi": null
 },
 {
 "titlu": "Crema de fata cu SPF 50 pentru protectie solara zilnica Zero Feel, 75 ml, Geek & Gorgeous",
@@ -19088,6 +19098,17 @@
 "pret_vechi": null
 },
 {
+"titlu": "Crema de fata cu protectie solara SPF 50+ Photoderm Xdefense Ultra Fluid Fototip 1, 40 ml, Bioderma",
+"pret": 69.88,
+"imagine": "https://liki24.ro/image/catalog/product/newupload/725225-134215220359308557.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fliki24.ro%2Fp%2Fcrema-de-fata-cu-protectie-solara-spf-50-photoderm-xdefense-ultra-fluid-fototip-1-40-ml-bioderma%2F%3Fnlr%3D1",
+"magazin": "liki24.ro",
+"id": "8ZHtIA4JfkW8",
+"brand": "Bioderma",
+"url_magazin": "https://liki24.ro/p/crema-de-fata-cu-protectie-solara-spf-50-photoderm-xdefense-ultra-fluid-fototip-1-40-ml-bioderma/?nlr=1",
+"pret_vechi": null
+},
+{
 "titlu": "Crema protectie solara fata, RoC Soleil-Protect, SPF 50, 50ml",
 "pret": 71.99,
 "imagine": "https://primefarma.ro/wp-content/uploads/2026/09/crema-protectie-solara-pentru-fata-spf50-soleil-protect-high-fluid-roc21094.gif",
@@ -19098,28 +19119,6 @@
 "url_magazin": "https://primefarma.ro/produs/crema-protectie-solara-fata-roc-soleil-protect-spf-50-50ml/",
 "pret_vechi": 83.99,
 "verificat": "2026-11-04"
-},
-{
-"titlu": "Resibo Sun To The People, cremă ușoară pentru față și corp, SPF 50+, 50 ml",
-"pret": 72.39,
-"imagine": "https://liki24.ro/image/catalog/product/newupload/336012-133644704538060837..jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fliki24.ro%2Fp%2Fresibo-sun-to-the-people-crema-usoara-pentru-fata-si-corp-spf-50-50-ml%2F%3Fnlr%3D1",
-"magazin": "liki24.ro",
-"id": "iGxbw1HPP5pm",
-"brand": "Resibo",
-"url_magazin": "https://liki24.ro/p/resibo-sun-to-the-people-crema-usoara-pentru-fata-si-corp-spf-50-50-ml/?nlr=1",
-"pret_vechi": null
-},
-{
-"titlu": "Crema de fata cu protectie solara SPF 50+PA++++ Daily Soothing Sunscreen Inout, 50 ml, Mizon",
-"pret": 77.01,
-"imagine": "https://liki24.ro/image/catalog/product/newupload/726815-134215538733748910.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fliki24.ro%2Fp%2Fcrema-de-fata-cu-protectie-solara-spf-50-pa-daily-soothing-sunscreen-inout-50-ml-mizon%2F%3Fnlr%3D1",
-"magazin": "liki24.ro",
-"id": "lSRnIhGTxjMk",
-"brand": "Mizon",
-"url_magazin": "https://liki24.ro/p/crema-de-fata-cu-protectie-solara-spf-50-pa-daily-soothing-sunscreen-inout-50-ml-mizon/?nlr=1",
-"pret_vechi": null
 }
 ],
 "magazine": [
@@ -19136,7 +19135,7 @@
 "titlu": "Seruri cu retinol",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-04",
+"actualizat": "2026-11-11",
 "feeduri": [
 {
 "id": 4165,
@@ -19157,17 +19156,6 @@
 ],
 "produse": [
 {
-"titlu": "Ser de noapte cu retinol, 30ml, Revuele",
-"pret": 25.99,
-"imagine": "https://backend.drmax.ro/media/catalog/product/5/0/5060565106277.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.drmax.ro%2Frevuele-retinol-ser-de-noapte-30-ml",
-"magazin": "drmax.ro",
-"id": "FGvOj9OriPJ9",
-"brand": "Revuele",
-"url_magazin": "https://www.drmax.ro/revuele-retinol-ser-de-noapte-30-ml",
-"pret_vechi": null
-},
-{
 "titlu": "Astrid Dermocycling ser facial cu retinol",
 "pret": 26.0,
 "imagine": "https://cdn.notinoimg.com/mailing/astrid/8592297012764_01-o.jpg",
@@ -19178,28 +19166,6 @@
 "url_magazin": "https://www.notino.ro/astrid/dermocycling-ser-facial-cu-retinol/p-16385023/",
 "pret_vechi": null,
 "verificat": "2026-11-04"
-},
-{
-"titlu": "Ser pentru fata Pure Retinol Multi-Active, 10ml, La Cabine",
-"pret": 27.49,
-"imagine": "https://backend.drmax.ro/media/catalog/product/8/4/8435534414757.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.drmax.ro%2Fser-pentru-fata-pure-retinol-multi-active-10ml-la-cabine",
-"magazin": "drmax.ro",
-"id": "KQzLPMrq5dbN",
-"brand": "La Cabine",
-"url_magazin": "https://www.drmax.ro/ser-pentru-fata-pure-retinol-multi-active-10ml-la-cabine",
-"pret_vechi": null
-},
-{
-"titlu": "Ser roll-on pentru ochi impotriva ridurilor cu retinol si squalane, 15ml, Skincyclopedia",
-"pret": 30.0,
-"imagine": "https://backend.drmax.ro/media/catalog/product/3/8/3801017005685.png",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.drmax.ro%2Fser-roll-on-pentru-ochi-impotriva-ridurilor-cu-retinol-si-squalane-15ml-skincyclopedia",
-"magazin": "drmax.ro",
-"id": "JvY0ltsvTTPY",
-"brand": "Skincyclopedia",
-"url_magazin": "https://www.drmax.ro/ser-roll-on-pentru-ochi-impotriva-ridurilor-cu-retinol-si-squalane-15ml-skincyclopedia",
-"pret_vechi": null
 },
 {
 "titlu": "Ser de fata APLB Phantenol Retinol Ampoule Serum",
@@ -19238,16 +19204,15 @@
 "verificat": "2026-11-04"
 },
 {
-"titlu": "Ser facial cu 1% retinol + squalane, 30ml, Skincyclopedia",
-"pret": 35.0,
-"imagine": "https://backend.drmax.ro/media/catalog/product/3/8/3801017001427.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.drmax.ro%2Fser-facial-cu-1-retinol-squalane-30ml-skincyclopedia",
+"titlu": "Ser pentru fata cu retinol vital, 30ml, Esfolio",
+"pret": 36.36,
+"imagine": "https://backend.drmax.ro/media/catalog/product/e/s/esfolio-serum-retinol.png",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.drmax.ro%2Fser-pentru-fata-cu-retinol-vital-30ml-esfolio",
 "magazin": "drmax.ro",
-"id": "A7lPF3qnzDCU",
-"brand": "Skincyclopedia",
-"url_magazin": "https://www.drmax.ro/ser-facial-cu-1-retinol-squalane-30ml-skincyclopedia",
-"pret_vechi": null,
-"verificat": "2026-11-04"
+"id": "TIcRVJGH5DpU",
+"brand": "Esfolio",
+"url_magazin": "https://www.drmax.ro/ser-pentru-fata-cu-retinol-vital-30ml-esfolio",
+"pret_vechi": null
 },
 {
 "titlu": "Ser cu retinol și acid tranexamic - Cos DE BAHA Retinol & Tranex",
@@ -19262,6 +19227,17 @@
 "verificat": "2026-11-04"
 },
 {
+"titlu": "Ser de fata Retinol'e Retinol pur 0,3 + Vitamina E 2% Super Serum, 30ml, Bio Balance",
+"pret": 45.84,
+"imagine": "https://backend.drmax.ro/media/catalog/product/8/6/8697711600852_1.png",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.drmax.ro%2Fser-de-fata-retinol-e-retinol-pur-0-3-vitamina-e-2-super-serum-30ml-bio-balance",
+"magazin": "drmax.ro",
+"id": "c5378510c",
+"brand": "Bio Balance",
+"url_magazin": "https://www.drmax.ro/ser-de-fata-retinol-e-retinol-pur-0-3-vitamina-e-2-super-serum-30ml-bio-balance",
+"pret_vechi": null
+},
+{
 "titlu": "Ser facial cu Spicule Retinol Shot 180, 55ml, APLB",
 "pret": 47.49,
 "imagine": "https://backend.drmax.ro/media/catalog/product/8/8/8809874685250.jpg",
@@ -19270,17 +19246,6 @@
 "id": "YA87VeJfpsVt",
 "brand": "APLB",
 "url_magazin": "https://www.drmax.ro/ser-facial-cu-spicule-retinol-shot-180-55ml-aplb",
-"pret_vechi": null
-},
-{
-"titlu": "Ser pentru fata cu retinol vital, 30ml, Esfolio",
-"pret": 48.49,
-"imagine": "https://backend.drmax.ro/media/catalog/product/e/s/esfolio-serum-retinol.png",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.drmax.ro%2Fser-pentru-fata-cu-retinol-vital-30ml-esfolio",
-"magazin": "drmax.ro",
-"id": "TIcRVJGH5DpU",
-"brand": "Esfolio",
-"url_magazin": "https://www.drmax.ro/ser-pentru-fata-cu-retinol-vital-30ml-esfolio",
 "pret_vechi": null
 },
 {
@@ -19340,8 +19305,20 @@
 "id": "zDsPkHJnEJ2a",
 "brand": "Retinol Complex",
 "url_magazin": "https://primefarma.ro/produs/ser-ultra-retinol-complex-acid-hialuronic-30ml-transparent/",
-"pret_vechi": 69.99,
+"pret_vechi": 70.99,
 "verificat": "2026-11-04"
+},
+{
+"titlu": "Ser pentru ochi cu Retinol Heimish Marine Care Retinol Eye Serum",
+"pret": 61.5,
+"imagine": "https://cdn.makeupshop.ro/imagini-makeup/produse/original/1-oxwia97j.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fmakeupshop.ro%2Fingrijire-ten%2Fhidratare%2Fser-fata%2F21382-ser-pentru-ochi-cu-retinol-heimish-marine-care-retinol-eye-serum%3Fref%3D2p%26af%3D299702",
+"magazin": "makeupshop.ro",
+"id": "y7cHtaNT33i4",
+"brand": "Heimish",
+"url_magazin": "https://makeupshop.ro/ingrijire-ten/hidratare/ser-fata/21382-ser-pentru-ochi-cu-retinol-heimish-marine-care-retinol-eye-serum?ref=2p&af=299702",
+"pret_vechi": 82.0,
+"verificat": "2026-11-11"
 },
 {
 "titlu": "Ser Anti-Rid, Retinol, Teen Again, alb, 41g",
@@ -19356,25 +19333,25 @@
 "verificat": "2026-11-04"
 },
 {
-"titlu": "Ser de fata Retinol'e Retinol pur 0,3 + Vitamina E 2% Super Serum, 30ml, Bio Balance",
-"pret": 65.49,
-"imagine": "https://backend.drmax.ro/media/catalog/product/8/6/8697711600852_1.png",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.drmax.ro%2Fser-de-fata-retinol-e-retinol-pur-0-3-vitamina-e-2-super-serum-30ml-bio-balance",
+"titlu": "Ser crema Monoactives 0.3% Pro-Retinol, 30ml, La Cabine",
+"pret": 68.49,
+"imagine": "https://backend.drmax.ro/media/catalog/product/c/b/cbb44c66-6499-446c-8439-24accb9fd839.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.drmax.ro%2Fser-crema-monoactives-0-3-pro-retinol-30ml-la-cabine",
 "magazin": "drmax.ro",
-"id": "c5378510c",
-"brand": "Bio Balance",
-"url_magazin": "https://www.drmax.ro/ser-de-fata-retinol-e-retinol-pur-0-3-vitamina-e-2-super-serum-30ml-bio-balance",
+"id": "8307a6653",
+"brand": "La Cabine",
+"url_magazin": "https://www.drmax.ro/ser-crema-monoactives-0-3-pro-retinol-30ml-la-cabine",
 "pret_vechi": null
 },
 {
-"titlu": "Ser antirid cu retinol, 50ml, Byphasse",
-"pret": 67.99,
-"imagine": "https://backend.drmax.ro/media/catalog/product/6/5/652412257_byphasse_ser_antirid_cu_retinol_50ml.png",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.drmax.ro%2Fser-antirid-cu-retinol-50ml-byphasse",
+"titlu": "Ser antirid de noapte imbogatit cu 0.2% retinol pur Revitalift Laser, 30ml, L'Oreal Paris",
+"pret": 70.99,
+"imagine": "https://backend.drmax.ro/media/catalog/product/r/e/res_57d00e13f5eb1df811ac8e7a6fec3383.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.drmax.ro%2Fser-antirid-de-noapte-imbogatit-cu-0-2-retinol-pur-revitalift-laser-30ml-l-oreal-paris",
 "magazin": "drmax.ro",
-"id": "XDvykNmT1VDD",
-"brand": "Byphasse",
-"url_magazin": "https://www.drmax.ro/ser-antirid-cu-retinol-50ml-byphasse",
+"id": "cdb6ff4dc",
+"brand": "L'Oreal Paris",
+"url_magazin": "https://www.drmax.ro/ser-antirid-de-noapte-imbogatit-cu-0-2-retinol-pur-revitalift-laser-30ml-l-oreal-paris",
 "pret_vechi": null
 },
 {
@@ -19402,6 +19379,17 @@
 "verificat": "2026-11-04"
 },
 {
+"titlu": "Ser pentru fata anti-imbatranire Retinol Boost, 30ml, Neutrogena",
+"pret": 74.01,
+"imagine": "https://backend.drmax.ro/media/catalog/product/s/e/ser_pentru_fata_anti-imbatranire_retinol_boost_30ml_neutrogena.png",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.drmax.ro%2Fser-pentru-fata-anti-imbatranire-retinol-boost-30ml-neutrogena",
+"magazin": "drmax.ro",
+"id": "UpzrqYLgcvIo",
+"brand": "Neutrogena",
+"url_magazin": "https://www.drmax.ro/ser-pentru-fata-anti-imbatranire-retinol-boost-30ml-neutrogena",
+"pret_vechi": null
+},
+{
 "titlu": "Ser facial Skinchemists Retinol Bakuchiol 30ml",
 "pret": 75.99,
 "imagine": "https://primefarma.ro/wp-content/uploads/2026/09/DqaFBSbWVLXPF9Q9KkWs25.jpg",
@@ -19412,6 +19400,28 @@
 "url_magazin": "https://primefarma.ro/produs/ser-facial-skinchemists-retinol-bakuchiol-30ml/",
 "pret_vechi": 87.99,
 "verificat": "2026-11-04"
+},
+{
+"titlu": "Ser retinol 0.3%, 30ml, Alchemy",
+"pret": 79.99,
+"imagine": "https://backend.drmax.ro/media/catalog/product/8/4/8436587021039.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.drmax.ro%2Fser-retinol-0-3-30ml-alchemy",
+"magazin": "drmax.ro",
+"id": "98ec02160",
+"brand": "Alchemy Care Cosmetics",
+"url_magazin": "https://www.drmax.ro/ser-retinol-0-3-30ml-alchemy",
+"pret_vechi": null
+},
+{
+"titlu": "Ser pentru fata Pure Retinol, 30ml, La Cabine",
+"pret": 82.49,
+"imagine": "https://backend.drmax.ro/media/catalog/product/a/7/a73d102a-8f38-4d85-962a-8a24ee010a5c.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.drmax.ro%2Fser-pentru-fata-pure-retinol-30ml-la-cabine",
+"magazin": "drmax.ro",
+"id": "4ade3a2f1",
+"brand": "La Cabine",
+"url_magazin": "https://www.drmax.ro/ser-pentru-fata-pure-retinol-30ml-la-cabine",
+"pret_vechi": null
 }
 ],
 "magazine": [
@@ -19428,7 +19438,7 @@
 "titlu": "Seruri cu vitamina C",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-04",
+"actualizat": "2026-11-11",
 "feeduri": [
 {
 "id": 6414,
@@ -19448,6 +19458,17 @@
 }
 ],
 "produse": [
+{
+"titlu": "Ser facial iluminator cu Vitamina C pentru adolescenti si tineri, 40ml, BeYoutiful",
+"pret": 26.64,
+"imagine": "https://backend.drmax.ro/media/catalog/product/8/5/850060590658_1.png",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.drmax.ro%2Fser-facial-iluminator-cu-vitamina-c-pentru-adolescenti-si-tineri-40ml-beyoutiful",
+"magazin": "drmax.ro",
+"id": "bvUSTzWbeYXs",
+"brand": "BeYoutiful",
+"url_magazin": "https://www.drmax.ro/ser-facial-iluminator-cu-vitamina-c-pentru-adolescenti-si-tineri-40ml-beyoutiful",
+"pret_vechi": null
+},
 {
 "titlu": "Ser pentru fata cu Vitamina C Multi-Active, 10ml, La Cabine",
 "pret": 27.49,
@@ -19472,28 +19493,15 @@
 "pret_vechi": null
 },
 {
-"titlu": "Ser Anti-Age Antioxidant 10% Vitamina C Must Have, 30ml, Gerovital",
-"pret": 31.99,
-"imagine": "https://backend.drmax.ro/media/catalog/product/5/9/5943000115839_2.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.drmax.ro%2Fser-anti-age-antioxidant-10-vitamina-c-must-have-30ml-gerovital",
+"titlu": "Ser Vitamina C cu extract de portocale si acid hyaluronic, 30ml, Evoluderm",
+"pret": 33.04,
+"imagine": "https://backend.drmax.ro/media/catalog/product/s/e/serum-vitamine-c-800x800.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.drmax.ro%2Fser-vitamina-c-cu-extract-de-portocale-si-acid-hyaluronic-30ml-evoluderm",
 "magazin": "drmax.ro",
-"id": "6e6d11aab",
-"brand": "Gerovital",
-"url_magazin": "https://www.drmax.ro/ser-anti-age-antioxidant-10-vitamina-c-must-have-30ml-gerovital",
-"pret_vechi": null,
-"verificat": "2026-11-04"
-},
-{
-"titlu": "Ser facial cu Vitamina C, 30ml, Pierre Cardin",
-"pret": 34.43,
-"imagine": "https://backend.drmax.ro/media/catalog/product/8/6/8680570530392_ser_vitamina_c-1.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.drmax.ro%2Fser-facial-cu-vitamina-c-30ml-pierre-cardin",
-"magazin": "drmax.ro",
-"id": "KAmhy-fY9oaO",
-"brand": "Pierre Cardin",
-"url_magazin": "https://www.drmax.ro/ser-facial-cu-vitamina-c-30ml-pierre-cardin",
-"pret_vechi": null,
-"verificat": "2026-11-04"
+"id": "KYttFvApKlB9",
+"brand": "Evoluderm",
+"url_magazin": "https://www.drmax.ro/ser-vitamina-c-cu-extract-de-portocale-si-acid-hyaluronic-30ml-evoluderm",
+"pret_vechi": null
 },
 {
 "titlu": "Ser Facial Iluminator cu Vitamina C pentru Adolescenti si Tineri 40ml",
@@ -19508,14 +19516,14 @@
 "verificat": "2026-11-04"
 },
 {
-"titlu": "Ser facial iluminator cu Vitamina C pentru adolescenti si tineri, 40ml, BeYoutiful",
-"pret": 40.99,
-"imagine": "https://backend.drmax.ro/media/catalog/product/8/5/850060590658_1.png",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.drmax.ro%2Fser-facial-iluminator-cu-vitamina-c-pentru-adolescenti-si-tineri-40ml-beyoutiful",
+"titlu": "Ser facial cu Vitamina C Cellular Expert Filler, 30ml, Nivea",
+"pret": 38.69,
+"imagine": "https://backend.drmax.ro/media/catalog/product/i/n/int-94467-xxxxx-33-3-o.png",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.drmax.ro%2Fser-facial-cu-vitamina-c-cellular-expert-filler-30ml-nivea",
 "magazin": "drmax.ro",
-"id": "bvUSTzWbeYXs",
-"brand": "BeYoutiful",
-"url_magazin": "https://www.drmax.ro/ser-facial-iluminator-cu-vitamina-c-pentru-adolescenti-si-tineri-40ml-beyoutiful",
+"id": "jIqUHhiWw27G",
+"brand": "Nivea",
+"url_magazin": "https://www.drmax.ro/ser-facial-cu-vitamina-c-cellular-expert-filler-30ml-nivea",
 "pret_vechi": null
 },
 {
@@ -19647,7 +19655,7 @@
 "titlu": "Șampoane fără sulfați",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-04",
+"actualizat": "2026-11-11",
 "feeduri": [
 {
 "id": 713,
@@ -19776,17 +19784,6 @@
 "verificat": "2026-11-04"
 },
 {
-"titlu": "Sampon fara sulfati pentru par vopsit Color Brillianz, 300 ml, Keune",
-"pret": 86.04,
-"imagine": "https://liki24.ro/image/catalog/product/newupload/579004-134133878575439459.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fliki24.ro%2Fp%2Fsampon-fara-sulfati-pentru-par-vopsit-color-brillianz-300-ml-keune%2F%3Fnlr%3D1",
-"magazin": "liki24.ro",
-"id": "-ujPEPN8wE8k",
-"brand": "Keune",
-"url_magazin": "https://liki24.ro/p/sampon-fara-sulfati-pentru-par-vopsit-color-brillianz-300-ml-keune/?nlr=1",
-"pret_vechi": null
-},
-{
 "titlu": "Sampon fara Sulfati pentru Par Cret Chakra Curl 200ml",
 "pret": 95.0,
 "imagine": "https://cdn.vegis.ro/images/products/img_202406171514/171955/full/khadi-sampon-fara-sulfati-pentru-par-cret-chakra-curl-200ml-388489.png",
@@ -19824,7 +19821,7 @@
 "titlu": "Bormașini cu acumulator",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-04",
+"actualizat": "2026-11-11",
 "feeduri": [
 {
 "id": 1539,
@@ -19853,18 +19850,6 @@
 "id": "vSPeUoz_dVtf",
 "brand": "INGCO",
 "url_magazin": "https://www.scule365.ro/cumpara/bormasina-insurubanta-cu-motor-brushless-20v-55nm-mandrina-metalica-30518",
-"pret_vechi": null,
-"verificat": "2026-11-04"
-},
-{
-"titlu": "Masina de Gaurit si Insurubat cu Impact 20V INGCO CIDLI205581, 55Nm, brushless, 2 viteze 0-500/2000 rpm, 30000 bpm, mand",
-"pret": 185.89,
-"imagine": "https://www.scule365.ro/uploads/feed_curate/produse/30845/6215048.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.scule365.ro%2Fcumpara%2Fmasina-de-gaurit-si-insurubat-cu-impact-20v-ingco-cidli205581-55nm-30845",
-"magazin": "scule365.ro",
-"id": "E3yY2ooMVq3R",
-"brand": "INGCO",
-"url_magazin": "https://www.scule365.ro/cumpara/masina-de-gaurit-si-insurubat-cu-impact-20v-ingco-cidli205581-55nm-30845",
 "pret_vechi": null,
 "verificat": "2026-11-04"
 },
@@ -19929,16 +19914,15 @@
 "verificat": "2026-11-04"
 },
 {
-"titlu": "Masina de Gaurit si Insurubat cu Impact 20V INGCO CIDLI209685, 96Nm, brushless, 2 viteze 0-550/2100 rpm, 31500 bpm, mand",
-"pret": 285.99,
-"imagine": "https://www.scule365.ro/uploads/feed_curate/produse/30846/6215051.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.scule365.ro%2Fcumpara%2Fmasina-de-gaurit-si-insurubat-cu-impact-20v-ingco-cidli209685-96nm-30846",
-"magazin": "scule365.ro",
-"id": "JHOneAf1zHmb",
-"brand": "INGCO",
-"url_magazin": "https://www.scule365.ro/cumpara/masina-de-gaurit-si-insurubat-cu-impact-20v-ingco-cidli209685-96nm-30846",
-"pret_vechi": null,
-"verificat": "2026-11-04"
+"titlu": "HEINNER Masina de gaurit si insurubat (bormasina) pe acumulator Heinner AMGA009, 18 V, 650 RPM, 28 Nm, 10 mm mandrina ra",
+"pret": 293.99,
+"imagine": "https://www.dwyn.ro/images/products/img_202508191322/323050/full/heinner-masina-de-gaurit-si-insurubat-bormasina-pe-acumulator-heinner-amga009-18-v-650-rpm-28-nm-10-mm-mandrina-rapida-862181.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fmasini-de-gaurit%2Fheinner%2F323050-masina-de-gaurit-si-insurubat-bormasina-pe-acumulator-heinner-amga009-18-v-650-rpm-28-nm-10-mm-mandrina-rapida-verde%2F",
+"magazin": "dwyn.ro",
+"id": "KG25wbipReRV",
+"brand": "HEINNER",
+"url_magazin": "https://www.dwyn.ro/masini-de-gaurit/heinner/323050-masina-de-gaurit-si-insurubat-bormasina-pe-acumulator-heinner-amga009-18-v-650-rpm-28-nm-10-mm-mandrina-rapida-verde/",
+"pret_vechi": null
 },
 {
 "titlu": "Masina de gaurit Bormasina cu impact 45Nm 20V cu 2 Acumulatori mandrina metal Ingco CIDLI2002",
@@ -19953,7 +19937,19 @@
 "verificat": "2026-11-04"
 },
 {
-"titlu": "Einhell Masina de gaurit (bormasina) Einhell Power X-Change, TE-CD 18/44 Li-I Kit, 18 V, 44 Nm, 1500 rpm, mandrina 13 m",
+"titlu": "Bormasina cu Impact 20V 55Nm CIDLI20558E, Motor Brushless, Mandrina Metalica 13 mm, 2 Acumulatori 2.0Ah, Incarcator, 47",
+"pret": 390.58,
+"imagine": "https://www.scule365.ro/uploads/feed_curate/produse/30984/6545609.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.scule365.ro%2Fcumpara%2Fbormasina-cu-impact-20v-55nm-cidli20558e-motor-brushless-mandrina-30984",
+"magazin": "scule365.ro",
+"id": "jiMVfmLSb0CR",
+"brand": "INGCO",
+"url_magazin": "https://www.scule365.ro/cumpara/bormasina-cu-impact-20v-55nm-cidli20558e-motor-brushless-mandrina-30984",
+"pret_vechi": null,
+"verificat": "2026-11-11"
+},
+{
+"titlu": "Einhell Masina de gaurit (bormasina) Einhell Power X-Change, TE-CD 18/44 Li-I Kit, 18 V, 44 Nm, 1500 rpm, mandrina 13 mm",
 "pret": 408.99,
 "imagine": "https://www.dwyn.ro/images/products/img_202512311121/383546/full/einhell-masina-de-gaurit-bormasina-einhell-power-x-change-te-cd-18-44-li-i-kit-18-v-44-nm-1500-rpm-mandrina-13-mm-acumulator-18-v-2-5-ah-einhell-power-x-change-si-incarcator-1163663.jpg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fmasini-de-gaurit%2Feinhell%2F383546-masina-de-gaurit-bormasina-einhell-power-x-change-te-cd-18-44-li-i-kit-18-v-44-nm-1500-rpm-mandrina-13-mm-acumulator-18-v-2-5-ah-einhell-power-x-change-si-incarcator%2F",
@@ -19965,28 +19961,107 @@
 "verificat": "2026-11-04"
 },
 {
-"titlu": "BOSCH Masina de gaurit si insurubat (bormasina) pe acumulator cu percutie Bosch EasyImpact 06039D810H, 18V-40, 1630 RPM,",
-"pret": 434.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202508191322/355412/full/bosch-masina-de-gaurit-si-insurubat-bormasina-pe-acumulator-cu-percutie-bosch-easyimpact-06039d810h-18v-40-1630-rpm-36-nm-24-450-percutii-min-13-mm-mandrina-rapida-fara-acumulator-incarcator-993080.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fmasini-de-gaurit%2Fbosch%2F355412-masina-de-gaurit-si-insurubat-bormasina-pe-acumulator-cu-percutie-bosch-easyimpact-06039d810h-18v-40-1630-rpm-36-nm-24-450-percutii-min-13-mm-mandrina-rapida-fara-acumulator-incarcator-verde-negru%2F",
-"magazin": "dwyn.ro",
-"id": "Pz277_k4agwC",
-"brand": "BOSCH",
-"url_magazin": "https://www.dwyn.ro/masini-de-gaurit/bosch/355412-masina-de-gaurit-si-insurubat-bormasina-pe-acumulator-cu-percutie-bosch-easyimpact-06039d810h-18v-40-1630-rpm-36-nm-24-450-percutii-min-13-mm-mandrina-rapida-fara-acumulator-incarcator-verde-negru/",
-"pret_vechi": null,
-"verificat": "2026-11-04"
+"titlu": "Masina de gaurit Bormasina impact 20V, 45Nm, cu 2 Acumulatori Ingco CIDLI200215",
+"pret": 454.0,
+"imagine": "https://www.scule365.ro/uploads/feed_curate/produse/27342/14331.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.scule365.ro%2Fcumpara%2Fmasina-de-gaurit-bormasina-impact-20v-45nm-cu-2-acumulatori-ingco-27342",
+"magazin": "scule365.ro",
+"id": "6daf63d07",
+"brand": "INGCO",
+"url_magazin": "https://www.scule365.ro/cumpara/masina-de-gaurit-bormasina-impact-20v-45nm-cu-2-acumulatori-ingco-27342",
+"pret_vechi": 621.27,
+"verificat": "2026-11-11"
 },
 {
-"titlu": "BOSCH Masina de gaurit si insurubat (bormasina) pe acumulator Bosch Universal Drill 18V-60, 06039D7001, 60Nm, 2 trepte,",
-"pret": 541.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202606122129/479221/full/bosch-masina-de-gaurit-si-insurubat-bormasina-pe-acumulator-bosch-universal-drill-18v-60-06039d7001-60nm-2-trepte-mandrina-13mm-acumulator-2ah-incarcator-1508497.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fmasini-de-gaurit%2Fbosch%2F479221-masina-de-gaurit-si-insurubat-bormasina-pe-acumulator-bosch-universal-drill-18v-60-06039d7001-60nm-2-trepte-mandrina-13mm-acumulator-2ah-incarcator%2F",
-"magazin": "dwyn.ro",
-"id": "QU2Ujtk7dUJL",
-"brand": "BOSCH",
-"url_magazin": "https://www.dwyn.ro/masini-de-gaurit/bosch/479221-masina-de-gaurit-si-insurubat-bormasina-pe-acumulator-bosch-universal-drill-18v-60-06039d7001-60nm-2-trepte-mandrina-13mm-acumulator-2ah-incarcator/",
+"titlu": "Set bormasina cu impact INGCO HKTHP41662E, 20V, 66Nm, 22500 BPM, acumulator 2Ah, incarcator 220-240V, trusa 166 piese, s",
+"pret": 460.0,
+"imagine": "https://www.scule365.ro/uploads/feed_curate/produse/31111/8604902.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.scule365.ro%2Fcumpara%2Fset-bormasina-cu-impact-ingco-hkthp41662e-20v-66nm-22500-bpm-31111",
+"magazin": "scule365.ro",
+"id": "h0_2DZj79A7S",
+"brand": "INGCO",
+"url_magazin": "https://www.scule365.ro/cumpara/set-bormasina-cu-impact-ingco-hkthp41662e-20v-66nm-22500-bpm-31111",
 "pret_vechi": null,
-"verificat": "2026-11-04"
+"verificat": "2026-11-11"
+},
+{
+"titlu": "BOSCH Masina de gaurit si insurubat (bormasina) pe acumulator Bosch UniversalDrill 06039D4001, 18 V, 1.5 Ah, 1450 RPM, 2",
+"pret": 494.99,
+"imagine": "https://www.dwyn.ro/images/products/img_202503142150/279075/full/robert-bosch-masina-de-gaurit-si-insurubat-bormasina-pe-acumulator-bosch-universaldrill-06039d4001-18-v-1-5-ah-1450-rpm-23-32-nm-30-mm-diametru-maxim-gaurire-acumulator-incarcator-cap-surubelnita-dubl-644187.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fmasini-de-gaurit%2Fbosch%2F279075-masina-de-gaurit-si-insurubat-bormasina-pe-acumulator-bosch-universaldrill-06039d4001-18-v-1-5-ah-1450-rpm-23-32-nm-30-mm-diametru-maxim-gaurire-acumulator-incarcator-cap-surubelnita-dublu-valiza-prof%2F",
+"magazin": "dwyn.ro",
+"id": "nu4HqVX1anqL",
+"brand": "BOSCH",
+"url_magazin": "https://www.dwyn.ro/masini-de-gaurit/bosch/279075-masina-de-gaurit-si-insurubat-bormasina-pe-acumulator-bosch-universaldrill-06039d4001-18-v-1-5-ah-1450-rpm-23-32-nm-30-mm-diametru-maxim-gaurire-acumulator-incarcator-cap-surubelnita-dublu-valiza-prof/",
+"pret_vechi": null
+},
+{
+"titlu": "Masina de gaurit Bormasina 20V cu Impact 66Nm cu 2 Acumulator, 30000bpm, fara perii, Ingco CIDLI20668E",
+"pret": 508.95,
+"imagine": "https://www.scule365.ro/uploads/feed_curate/produse/29580/16318.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.scule365.ro%2Fcumpara%2Fmasina-de-gaurit-bormasina-20v-cu-impact-66nm-cu-2-acumulator-30000bpm-29580",
+"magazin": "scule365.ro",
+"id": "901e8a96e",
+"brand": "INGCO",
+"url_magazin": "https://www.scule365.ro/cumpara/masina-de-gaurit-bormasina-20v-cu-impact-66nm-cu-2-acumulator-30000bpm-29580",
+"pret_vechi": 812.43,
+"verificat": "2026-11-11"
+},
+{
+"titlu": "BOSCH Masina de gaurit si insurubat (bormasina) pe acumulator Bosch,18 V, 1450 RPM, sistem auto-blocare, acumulator, inc",
+"pret": 593.99,
+"imagine": "https://www.dwyn.ro/images/products/img_202503142150/279065/full/robert-bosch-masina-de-gaurit-si-insurubat-bormasina-pe-acumulator-bosch-18-v-1450-rpm-sistem-auto-blocare-acumulator-incarcator-644097.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fmasini-de-gaurit%2Fbosch%2F279065-masina-de-gaurit-si-insurubat-bormasina-pe-acumulator-bosch-18-v-1450-rpm-sistem-auto-blocare-acumulator-incarcator%2F",
+"magazin": "dwyn.ro",
+"id": "UMCRM9K5eVoP",
+"brand": "BOSCH",
+"url_magazin": "https://www.dwyn.ro/masini-de-gaurit/bosch/279065-masina-de-gaurit-si-insurubat-bormasina-pe-acumulator-bosch-18-v-1450-rpm-sistem-auto-blocare-acumulator-incarcator/",
+"pret_vechi": null
+},
+{
+"titlu": "Einhell Masina de gaurit si insurubat (bormasina) cu percutie pe acumulator Einhell Power X-Change TE-CD 18/2 Li-i +64,",
+"pret": 664.99,
+"imagine": "https://www.dwyn.ro/images/products/img_202508191322/323230/full/einhell-masina-de-gaurit-si-insurubat-bormasina-cu-percutie-pe-acumulator-einhell-power-x-change-te-cd-18-2-li-i-plus64-18-v-44-nm-2-trepte-de-viteza-2-acumulatori-de-2-ah-incarcator-geanta-set-de-acc-868835.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fmasini-de-gaurit%2Feinhell%2F323230-masina-de-gaurit-si-insurubat-bormasina-cu-percutie-pe-acumulator-einhell-power-x-change-te-cd-18-2-li-i-plus64-18-v-44-nm-2-trepte-de-viteza-2-acumulatori-de-2-ah-incarcator-geanta-set-de-accesorii-6%2F",
+"magazin": "dwyn.ro",
+"id": "gFEdCPRxta5D",
+"brand": "Einhell",
+"url_magazin": "https://www.dwyn.ro/masini-de-gaurit/einhell/323230-masina-de-gaurit-si-insurubat-bormasina-cu-percutie-pe-acumulator-einhell-power-x-change-te-cd-18-2-li-i-plus64-18-v-44-nm-2-trepte-de-viteza-2-acumulatori-de-2-ah-incarcator-geanta-set-de-accesorii-6/",
+"pret_vechi": null
+},
+{
+"titlu": "BOSCH Masina de gaurit si insurubat (bormasina) pe acumulator cu percutie Bosch Professional GSB 120-Li, 12 V, 1300 RPM",
+"pret": 739.99,
+"imagine": "https://www.dwyn.ro/images/products/img_202503142150/279007/full/bosch-masina-de-gaurit-si-insurubat-bormasina-pe-acumulator-cu-percutie-bosch-professional-gsb-120-li-12-v-1300-rpm-661137.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fmasini-de-gaurit%2Fbosch%2F279007-masina-de-gaurit-si-insurubat-bormasina-pe-acumulator-cu-percutie-bosch-professional-gsb-120-li-12-v-1300-rpm%2F",
+"magazin": "dwyn.ro",
+"id": "23Y-d1K2zcKu",
+"brand": "BOSCH",
+"url_magazin": "https://www.dwyn.ro/masini-de-gaurit/bosch/279007-masina-de-gaurit-si-insurubat-bormasina-pe-acumulator-cu-percutie-bosch-professional-gsb-120-li-12-v-1300-rpm/",
+"pret_vechi": null
+},
+{
+"titlu": "Einhell Masina de gaurit/insurubat (bormasina) pe acumulatori pe acumulator Einhell Expert Power X-Change Einhell Expert",
+"pret": 747.99,
+"imagine": "https://www.dwyn.ro/images/products/img_202508191322/323242/full/einhell-masina-de-gaurit-insurubat-bormasina-pe-acumulatori-pe-acumulator-einhell-expert-power-x-change-einhell-expert-te-cd-18-40-li-bl-18-v-litiu-ion-motor-fara-perii-angrenaj-cu-2-viteze-2-acumulat-868934.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fmasini-de-gaurit%2Feinhell%2F323242-masina-de-gaurit-insurubat-bormasina-pe-acumulatori-pe-acumulator-einhell-expert-power-x-change-einhell-expert-te-cd-18-40-li-bl-18-v-litiu-ion-motor-fara-perii-angrenaj-cu-2-viteze-2-acumulatori-inca%2F",
+"magazin": "dwyn.ro",
+"id": "PYMG1FEEUzvM",
+"brand": "Einhell",
+"url_magazin": "https://www.dwyn.ro/masini-de-gaurit/einhell/323242-masina-de-gaurit-insurubat-bormasina-pe-acumulatori-pe-acumulator-einhell-expert-power-x-change-einhell-expert-te-cd-18-40-li-bl-18-v-litiu-ion-motor-fara-perii-angrenaj-cu-2-viteze-2-acumulatori-inca/",
+"pret_vechi": null
+},
+{
+"titlu": "Masina de gaurit + Polizor unghiular flex cu 2 acumulator 2/4AH si incarcator bormasina P20S Ingco CKLI20273E",
+"pret": 804.7,
+"imagine": "https://www.scule365.ro/uploads/feed_curate/produse/29578/16316.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.scule365.ro%2Fcumpara%2Fmasina-de-gaurit-polizor-unghiular-flex-cu-2-acumulator-2-4ah-si-29578",
+"magazin": "scule365.ro",
+"id": "c67ee7727",
+"brand": "INGCO",
+"url_magazin": "https://www.scule365.ro/cumpara/masina-de-gaurit-polizor-unghiular-flex-cu-2-acumulator-2-4ah-si-29578",
+"pret_vechi": 1082.9,
+"verificat": "2026-11-11"
 }
 ],
 "magazine": [
@@ -20002,7 +20077,7 @@
 "titlu": "Polizoare unghiulare de 125 mm",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-04",
+"actualizat": "2026-11-11",
 "feeduri": [
 {
 "id": 1096,
@@ -20083,6 +20158,39 @@
 "verificat": "2026-11-04"
 },
 {
+"titlu": "Polizor unghiular Black & Decker KG1202, 1200 W, 11000 RPM, 125 mm",
+"pret": 214.99,
+"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F3785%2F3785720%2F1585636851KG1202-QS.JPG&type=auto&width=500&sign=UBAEbcsFjd0Xr6wl4dH3lWpYNfD5Z3U3umHtktwfQ9w",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Fcasa-decoratiuni-bricolaj-unelte-si-scule-polizor-unghiular%2Fblack-decker-polizor-unghiular-black-decker-kg1202-1200-w-11000-rpm-125-mm-3785720.html",
+"magazin": "evomag.ro",
+"id": "UBSG_AePevw8",
+"brand": "BLACK+DECKER",
+"url_magazin": "https://www.evomag.ro/casa-decoratiuni-bricolaj-unelte-si-scule-polizor-unghiular/black-decker-polizor-unghiular-black-decker-kg1202-1200-w-11000-rpm-125-mm-3785720.html",
+"pret_vechi": 252.99
+},
+{
+"titlu": "Polizor unghiular Hyundai HY-AG 9-125, 900 W, 125 mm (Albastru/Negru)",
+"pret": 227.99,
+"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F3842%2F3842729%2Fhy-ag-9-125-61f12a5108436.JPG&type=auto&width=500&sign=Ig-4NZCH9V2fwKCKnrEoWkoMbBYZMRQhGQrwOFnsh58",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Fcasa-decoratiuni-bricolaj-unelte-si-scule-polizor-unghiular%2Fhyundai-polizor-unghiular-hyundai-hy-ag-9-125-900-w-125-mm-albastru-negru-3842729.html",
+"magazin": "evomag.ro",
+"id": "BqXlxwXXobpD",
+"brand": "Hyundai",
+"url_magazin": "https://www.evomag.ro/casa-decoratiuni-bricolaj-unelte-si-scule-polizor-unghiular/hyundai-polizor-unghiular-hyundai-hy-ag-9-125-900-w-125-mm-albastru-negru-3842729.html",
+"pret_vechi": 249.99
+},
+{
+"titlu": "Polizor unghiular Yato 125 mm, 850W, 12000 rpm, cablu 3 m",
+"pret": 234.99,
+"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4300%2F4300506%2F6a225abe26b96.webp&type=auto&width=500&sign=88R7czF4n28x3BCLmsqRNvBUe8M4efwm_c5zZf9Pe_Q",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Fcasa-decoratiuni-bricolaj-unelte-si-scule-polizor-unghiular%2Fyato-polizor-unghiular-yato-125-mm-850w-12000-rpm-cablu-3-m-4300506.html",
+"magazin": "evomag.ro",
+"id": "AwYiyDGjnPZe",
+"brand": "YATO",
+"url_magazin": "https://www.evomag.ro/casa-decoratiuni-bricolaj-unelte-si-scule-polizor-unghiular/yato-polizor-unghiular-yato-125-mm-850w-12000-rpm-cablu-3-m-4300506.html",
+"pret_vechi": null
+},
+{
 "titlu": "Polizor unghiular electric Black & Decker - BEG220K, 900W, 125 mm",
 "pret": 238.79,
 "imagine": "https://www.ozone.ro/media/catalog/product/e/l/elektricheski_agloshlayf_black_decker_beg220k_900w_125_mm_1761136484_0.jpg",
@@ -20093,6 +20201,17 @@
 "url_magazin": "https://www.ozone.ro/product/polizor-unghiular-electric-black-decker-beg220k-900w-125-mm/",
 "pret_vechi": null,
 "verificat": "2026-11-04"
+},
+{
+"titlu": "Polizor unghiular electric RTRMAX - 115/125 mm, 950W",
+"pret": 249.39,
+"imagine": "https://www.ozone.ro/media/catalog/product/e/l/elektricheski_agloshlayf_rtrmax_115_125_mm_950w_1750692892_0.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ozone.ro%2Fproduct%2Fpolizor-unghiular-electric-rtrmax-115-125-mm-950w%2F",
+"magazin": "ozone.ro",
+"id": "ydcT2lcMvzbT",
+"brand": "RTRMAX",
+"url_magazin": "https://www.ozone.ro/product/polizor-unghiular-electric-rtrmax-115-125-mm-950w/",
+"pret_vechi": null
 },
 {
 "titlu": "Polizor unghiular electric Black & Decker - KG1202, 1200W, 125 mm",
@@ -20107,16 +20226,26 @@
 "verificat": "2026-11-04"
 },
 {
-"titlu": "Polizor unghiular electric HiKOKI – Hitachi G13SR4, 730 W, 125 mm",
-"pret": 286.55,
-"imagine": "https://www.ozone.ro/media/catalog/product/e/l/elektricheski_agloshlayf_hikoki_hitachi_g13sr4_730w_125_mm_1792674706_0.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ozone.ro%2Fproduct%2Fpolizor-unghiular-electric-hikoki-hitachi-g13sr4-730-w-125-mm%2F",
-"magazin": "ozone.ro",
-"id": "MAnXa4wQi5_t",
-"brand": "HiKOKI (Hitachi)",
-"url_magazin": "https://www.ozone.ro/product/polizor-unghiular-electric-hikoki-hitachi-g13sr4-730-w-125-mm/",
-"pret_vechi": null,
-"verificat": "2026-11-04"
+"titlu": "Polizor unghiular Hikoki-Hitachi, G13SR4, 125 mm, 10000 rpm, 730W, Verde",
+"pret": 276.99,
+"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F3874%2F3874096%2F623ac43b99b7d.jpg&type=auto&width=500&sign=WM3K4tNf-UV5zleJ_YRk-N7HkPJ_3d9K7XuxTD81PH0",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Fcasa-decoratiuni-bricolaj-unelte-si-scule-polizor-unghiular%2Fhikoki-polizor-unghiular-hikoki-hitachi-g13sr4-125-mm-10000-rpm-730w-verde-3874096.html",
+"magazin": "evomag.ro",
+"id": "SsMMn5dynEwK",
+"brand": "HIKOKI",
+"url_magazin": "https://www.evomag.ro/casa-decoratiuni-bricolaj-unelte-si-scule-polizor-unghiular/hikoki-polizor-unghiular-hikoki-hitachi-g13sr4-125-mm-10000-rpm-730w-verde-3874096.html",
+"pret_vechi": null
+},
+{
+"titlu": "Polizor Unghiular 125MM, 1400W, YT-82098",
+"pret": 288.99,
+"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F3997%2F3997534%2F62ff71a754432.jpg&type=auto&width=500&sign=dkUm1ziXuhQwVuyj_fisyd4zXG7JVAZPEQPhqumN0-k",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Fcasa-decoratiuni-bricolaj-unelte-si-scule-polizor-unghiular%2Fyato-polizor-unghiular-125mm-1400w-yt-82098-3997534.html",
+"magazin": "evomag.ro",
+"id": "uQeHtLBgf42J",
+"brand": "YATO",
+"url_magazin": "https://www.evomag.ro/casa-decoratiuni-bricolaj-unelte-si-scule-polizor-unghiular/yato-polizor-unghiular-125mm-1400w-yt-82098-3997534.html",
+"pret_vechi": null
 },
 {
 "titlu": "Polizor unghiular Flex L 850 125, 125 mm, 850 W, 12000 rpm",
@@ -20143,6 +20272,17 @@
 "verificat": "2026-11-04"
 },
 {
+"titlu": "Polizor unghiular cu fir Bosch UniversalGrind 850-12, 850 W, 125 mm, maner antivibratii, accesorii",
+"pret": 401.99,
+"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4292%2F4292888%2F06033e2102-69e700cf1fe10.JPG&type=auto&width=500&sign=orz0YIioJ-al-_vrRTYKCek7ujI_DHJvE2IWAtGEodM",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Fcasa-decoratiuni-bricolaj-unelte-si-scule-polizor-unghiular%2Fbosch-polizor-unghiular-cu-fir-bosch-universalgrind-850-12-850-w-125-mm-maner-antivibratii-accesorii-4292888.html",
+"magazin": "evomag.ro",
+"id": "16Fdb1oBpk3P",
+"brand": "BOSCH",
+"url_magazin": "https://www.evomag.ro/casa-decoratiuni-bricolaj-unelte-si-scule-polizor-unghiular/bosch-polizor-unghiular-cu-fir-bosch-universalgrind-850-12-850-w-125-mm-maner-antivibratii-accesorii-4292888.html",
+"pret_vechi": null
+},
+{
 "titlu": "Polizor unghiular Stanley SFMCG400B SFMCG400B, 125 mm, fara acumulatori Li-Ion, 18 V",
 "pret": 415.01,
 "imagine": "https://masif.ro/media/catalog/product/s/f/sfmcg400b_1.jpg",
@@ -20153,6 +20293,17 @@
 "url_magazin": "https://masif.ro/polizor-unghiular-stanley-sfmcg400b-sfmcg400b-125-mm-fara-acumulatori-li-ion-18-v/",
 "pret_vechi": null,
 "verificat": "2026-11-04"
+},
+{
+"titlu": "Polizor unghiular DeWalt DWE4157, 900 W, 125 mm",
+"pret": 425.0,
+"imagine": "https://masif.ro/media/catalog/product/d/w/dwe4157_1.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fmasif.ro%2Fpolizor-unghiular-dewalt-dwe4157-900-w-125-mm%2F",
+"magazin": "masif.ro",
+"id": "bYu2UYzZoOM3",
+"brand": "DeWalt",
+"url_magazin": "https://masif.ro/polizor-unghiular-dewalt-dwe4157-900-w-125-mm/",
+"pret_vechi": null
 },
 {
 "titlu": "Polizor unghiular Flex L 3309 FR, 125 mm, 1010 W, 11000 rpm",
@@ -20189,33 +20340,10 @@
 "url_magazin": "https://masif.ro/polizor-unghiular-flex-l-1400-125-1400-w-125-mm/",
 "pret_vechi": null,
 "verificat": "2026-11-04"
-},
-{
-"titlu": "Polizor unghiular Flex L 3309 FRG, 125 mm, 1010 W, 11000 rpm",
-"pret": 450.0,
-"imagine": "https://masif.ro/media/catalog/product/4/0/406570_1.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fmasif.ro%2Fpolizor-unghiular-flex-l-3309-frg-125-mm-1010-w-11000-rpm%2F",
-"magazin": "masif.ro",
-"id": "GAOTVMGvcTbm",
-"brand": "Flex",
-"url_magazin": "https://masif.ro/polizor-unghiular-flex-l-3309-frg-125-mm-1010-w-11000-rpm/",
-"pret_vechi": null,
-"verificat": "2026-11-04"
-},
-{
-"titlu": "Polizor unghiular Flex L 1506 VR, 1200 W, 125 mm, 2200-6800 rpm",
-"pret": 450.0,
-"imagine": "https://masif.ro/media/catalog/product/4/3/437972_1.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fmasif.ro%2Fpolizor-unghiular-flex-l-1506-vr-1200-w-125-mm-2200-6800-rpm%2F",
-"magazin": "masif.ro",
-"id": "q7VFNWiHwdYF",
-"brand": "Flex",
-"url_magazin": "https://masif.ro/polizor-unghiular-flex-l-1506-vr-1200-w-125-mm-2200-6800-rpm/",
-"pret_vechi": null,
-"verificat": "2026-11-04"
 }
 ],
 "magazine": [
+"evomag.ro",
 "masif.ro",
 "ozone.ro"
 ]
@@ -20227,7 +20355,7 @@
 "titlu": "Generatoare de curent",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-04",
+"actualizat": "2026-11-11",
 "feeduri": [
 {
 "id": 4679,
@@ -20254,21 +20382,9 @@
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Finfinity.ro%2Fgenerator-curent-1500w-12-230v-kd146-kraft-dele-9036227%2Fp%3Futm_source%3D2performant",
 "magazin": "infinity.ro",
 "id": "j7icwXgQuCjk",
-"brand": "",
+"brand": "Kraft&Dele",
 "url_magazin": "https://infinity.ro/generator-curent-1500w-12-230v-kd146-kraft-dele-9036227/p?utm_source=2performant",
 "pret_vechi": 1251.14,
-"verificat": "2026-11-04"
-},
-{
-"titlu": "Generator de curent Kamrad K-3500A, 3000W, 7.5CP, stabilizator tensiune AVR, monofazat",
-"pret": 849.0,
-"imagine": "https://cdn.shopify.com/s/files/1/0885/0571/2906/files/WhatsApp-Image-2022-12-19-at-10.05.38.jpg?v=1741187117",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.atomico.ro%2Fproducts%2Fkamrad-generator-de-curent-k-3500a-3000w-7-5cp-stabilizator-tensiune-avr-monofazat",
-"magazin": "atomico.ro",
-"id": "gXhfK78mqAXd",
-"brand": "Kamrad",
-"url_magazin": "https://www.atomico.ro/products/kamrad-generator-de-curent-k-3500a-3000w-7-5cp-stabilizator-tensiune-avr-monofazat",
-"pret_vechi": null,
 "verificat": "2026-11-04"
 },
 {
@@ -20278,7 +20394,7 @@
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Finfinity.ro%2Fgenerator-curent-kraft-dele-kd148-3500w-230v-15l-9036144%2Fp%3Futm_source%3D2performant",
 "magazin": "infinity.ro",
 "id": "7MqFRwgH9Ysk",
-"brand": "",
+"brand": "Kraft&Dele",
 "url_magazin": "https://infinity.ro/generator-curent-kraft-dele-kd148-3500w-230v-15l-9036144/p?utm_source=2performant",
 "pret_vechi": 1543.96,
 "verificat": "2026-11-04"
@@ -20302,10 +20418,22 @@
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Finfinity.ro%2Fgenerator-de-curent-kraft-dele-3000w-pe-benzina-kd136-9036178%2Fp%3Futm_source%3D2performant",
 "magazin": "infinity.ro",
 "id": "cEZGm5xbcv9L",
-"brand": "",
+"brand": "Kraft&Dele",
 "url_magazin": "https://infinity.ro/generator-de-curent-kraft-dele-3000w-pe-benzina-kd136-9036178/p?utm_source=2performant",
 "pret_vechi": 1317.69,
 "verificat": "2026-11-04"
+},
+{
+"titlu": "Generator de curent Wolfson, digital invertor 2000W, 3.5 CP",
+"pret": 1136.0,
+"imagine": "https://cdn.shopify.com/s/files/1/0885/0571/2906/files/WhatsApp-Image-2023-11-25-at-10.01.17_984e8c38.jpg?v=1741187166",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.atomico.ro%2Fproducts%2Fwolfson-generator-curent-invertor-2000w-3-5cp",
+"magazin": "atomico.ro",
+"id": "MQbWXfmajTN5",
+"brand": "Wolfson",
+"url_magazin": "https://www.atomico.ro/products/wolfson-generator-curent-invertor-2000w-3-5cp",
+"pret_vechi": null,
+"verificat": "2026-11-11"
 },
 {
 "titlu": "Generator de curent WOLFSON GT-3500A - 2600W, 7 CP, AVR + 2 ulei 0.6L",
@@ -20338,7 +20466,7 @@
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Finfinity.ro%2Fgenerator-curent-1500w-12-230v-kd140-kraft-dele-9036167%2Fp%3Futm_source%3D2performant",
 "magazin": "infinity.ro",
 "id": "G5o0lNPfU2z5",
-"brand": "",
+"brand": "Kraft&Dele",
 "url_magazin": "https://infinity.ro/generator-curent-1500w-12-230v-kd140-kraft-dele-9036167/p?utm_source=2performant",
 "pret_vechi": 1357.62,
 "verificat": "2026-11-04"
@@ -20350,34 +20478,32 @@
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Finfinity.ro%2Fgenerator-curent-3800w-12-230v-kd125-kraft-dele-9036213%2Fp%3Futm_source%3D2performant",
 "magazin": "infinity.ro",
 "id": "HbEROOC0qPwi",
-"brand": "",
+"brand": "Kraft&Dele",
 "url_magazin": "https://infinity.ro/generator-curent-3800w-12-230v-kd125-kraft-dele-9036213/p?utm_source=2performant",
 "pret_vechi": 1743.61,
 "verificat": "2026-11-04"
 },
 {
-"titlu": "Generator de curent, Kraft&Dele, 230 V monofazat, 41 kg, 15 l, KD142",
-"pret": 1495.64,
-"imagine": "https://infinityro.vteximg.com.br/arquivos/ids/270578233/image-e65a05380db7461d994cac9bda3033c1.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Finfinity.ro%2Fgenerator-de-curent-kraft-dele-230-v-monofazat-41-kg-15-l-kd142-9036226%2Fp%3Futm_source%3D2performant",
-"magazin": "infinity.ro",
-"id": "dFWDXW29zn01",
-"brand": "",
-"url_magazin": "https://infinity.ro/generator-de-curent-kraft-dele-230-v-monofazat-41-kg-15-l-kd142-9036226/p?utm_source=2performant",
-"pret_vechi": 1759.58,
-"verificat": "2026-11-04"
+"titlu": "Generator de curent 2.5kW 3.6L Yato YT-85453",
+"pret": 1486.99,
+"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4299%2F4299750%2F6a17c60372c28.jpg&type=auto&width=500&sign=9UFSoMuKgFnnjYsPUIGJCXBeu_tKCyE_WneRsIbFVPY",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Fcasa-decoratiuni-bricolaj-generatoare-curent-electric-accesorii-generator-curent%2Fyato-generator-de-curent-2.5kw-3.6l-yato-yt-85453-4299750.html",
+"magazin": "evomag.ro",
+"id": "wgwIcZxZx4wx",
+"brand": "YATO",
+"url_magazin": "https://www.evomag.ro/casa-decoratiuni-bricolaj-generatoare-curent-electric-accesorii-generator-curent/yato-generator-de-curent-2.5kw-3.6l-yato-yt-85453-4299750.html",
+"pret_vechi": null
 },
 {
-"titlu": "Generator pe benzina RD-GG06 2800W in 4 timpi, cu rezervor de 15L, Raider 090103",
-"pret": 1665.99,
-"imagine": "https://infinityro.vteximg.com.br/arquivos/ids/264732961/image-38bd64ae3ea041dd944a4fe90b2fa304.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Finfinity.ro%2Fgenerator-pe-benzina-rd-gg06-2800w-in-4-timpi-cu-rezervor-de-15l-raider-090103-807851%2Fp%3Futm_source%3D2performant",
-"magazin": "infinity.ro",
-"id": "ki_Ai_b4yjZ8",
-"brand": "",
-"url_magazin": "https://infinity.ro/generator-pe-benzina-rd-gg06-2800w-in-4-timpi-cu-rezervor-de-15l-raider-090103-807851/p?utm_source=2performant",
-"pret_vechi": null,
-"verificat": "2026-11-04"
+"titlu": "Generator Curent Electric HYUNDAI HY3001, Monofazic, 2,8 kW, 230V (Argintiu)",
+"pret": 1499.99,
+"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F3828%2F3828597%2Fhy3001-61790eb0af347.jpg&type=auto&width=500&sign=VbUbcPE_fdrDZUL0mGoIjYfAI_gD5VcT7fKbjigNe8c",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Fcasa-decoratiuni-bricolaj-generatoare-curent-electric-accesorii-generator-curent%2Fhyundai-generator-curent-electric-hyundai-hy3001-monofazic-2-8-kw-230v-argintiu-3828597.html",
+"magazin": "evomag.ro",
+"id": "MsZKQzqgYTap",
+"brand": "Hyundai",
+"url_magazin": "https://www.evomag.ro/casa-decoratiuni-bricolaj-generatoare-curent-electric-accesorii-generator-curent/hyundai-generator-curent-electric-hyundai-hy3001-monofazic-2-8-kw-230v-argintiu-3828597.html",
+"pret_vechi": 1684.99
 },
 {
 "titlu": "Generator curent invertor, 2.1 kW, KD684, Kraft&Dele",
@@ -20386,10 +20512,34 @@
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Finfinity.ro%2Fgenerator-curent-invertor-2-1-kw-kd684-kraft-dele-9036194%2Fp%3Futm_source%3D2performant",
 "magazin": "infinity.ro",
 "id": "aHN3qq_fbUwj",
-"brand": "",
+"brand": "Kraft&Dele",
 "url_magazin": "https://infinity.ro/generator-curent-invertor-2-1-kw-kd684-kraft-dele-9036194/p?utm_source=2performant",
 "pret_vechi": 2954.82,
 "verificat": "2026-11-04"
+},
+{
+"titlu": "Generator de curent POWERMAT PM-AGR-3000MNKE 3000W 230V/400V, PM1196",
+"pret": 1911.3,
+"imagine": "https://infinityro.vteximg.com.br/arquivos/ids/271937769/image-fb83640740ec4f0ba0d172cc4b789fd0.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Finfinity.ro%2Fgenerator-de-curent-powermat-pm-agr-3000mnke-3000w-230v-400v-pm1196-9139837%2Fp%3Futm_source%3D2performant",
+"magazin": "infinity.ro",
+"id": "QaiO0Fm2phZZ",
+"brand": "Powermat",
+"url_magazin": "https://infinity.ro/generator-de-curent-powermat-pm-agr-3000mnke-3000w-230v-400v-pm1196-9139837/p?utm_source=2performant",
+"pret_vechi": null,
+"verificat": "2026-11-11"
+},
+{
+"titlu": "Generator de curent, Kraft&Dele, KD163, 3500W, 12/230V/380V, 15L",
+"pret": 1921.03,
+"imagine": "https://infinityro.vteximg.com.br/arquivos/ids/270577493/image-e46056c849494382a1d12488b1f70f53.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Finfinity.ro%2Fgenerator-de-curent-kraft-dele-kd163-3500w-12-230v-380v-15l-9036140%2Fp%3Futm_source%3D2performant",
+"magazin": "infinity.ro",
+"id": "iJ9Im8SlGLk1",
+"brand": "Kraft&Dele",
+"url_magazin": "https://infinity.ro/generator-de-curent-kraft-dele-kd163-3500w-12-230v-380v-15l-9036140/p?utm_source=2performant",
+"pret_vechi": 2260.04,
+"verificat": "2026-11-11"
 },
 {
 "titlu": "Generator de curent pe benzina Wolfson Imperio 3000, 3000W, monofazat, 7CP, 212cc",
@@ -20404,9 +20554,20 @@
 "verificat": "2026-11-04"
 },
 {
+"titlu": "Generator electric cu invertor DEDRA 1,8/2,0kW, DEGA2000",
+"pret": 2079.99,
+"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4130%2F4130164%2F655c70dfbaf12.jpg&type=auto&width=500&sign=H4uSCEA7gnDrMhuyAgLjoveXakT9NVpPr6LEH7JrpOQ",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Fcasa-decoratiuni-bricolaj-generatoare-curent-electric-accesorii-generator-curent%2Fdedra-generator-electric-cu-invertor-dedra-1-8-2-0kw-dega2000-4130164.html",
+"magazin": "evomag.ro",
+"id": "01c36eae2",
+"brand": "Dedra",
+"url_magazin": "https://www.evomag.ro/casa-decoratiuni-bricolaj-generatoare-curent-electric-accesorii-generator-curent/dedra-generator-electric-cu-invertor-dedra-1-8-2-0kw-dega2000-4130164.html",
+"pret_vechi": null
+},
+{
 "titlu": "Generator de curent 4.2 kW inverter SuperHIBRID (GPL + Gaz Natural + Benzina) 230V - CRIANO - CNO-NRG-40iG-EZ",
 "pret": 2974.0,
-"imagine": "https://c.cdnmp.net/917469284/p/l/3/generator-de-curent-4-2-kw-inverter-superhibrid-gpl-gaz-natural~8888543.jpg",
+"imagine": "https://c.cdnmp.net/917469284/p/l/2/generator-de-curent-4-2-kw-inverter-superhibrid-gpl-gaz-natural~8890292.jpg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.albertool.com%2Fcumpara%2Fgenerator-de-curent-4-2-kw-inverter-superhibrid-gpl-gaz-natural-25982%3Futm_source%3Dportal%26utm_medium%3Dweb%26utm_campaign%3D2parale",
 "magazin": "albertool.com",
 "id": "QbVy5-e62d8P",
@@ -20416,21 +20577,42 @@
 "verificat": "2026-11-04"
 },
 {
-"titlu": "Generator de curent GENMAC Click RG4000HO putere maxima 3,1 kW 230V motor Honda GP200",
-"pret": 3767.4,
-"imagine": "https://c.cdnmp.net/917469284/p/l/0/generator-de-curent-genmac-click-rg4000ho-putere-maxima-3-1-kw-230v~8830040.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.albertool.com%2Fcumpara%2Fgenerator-de-curent-genmac-click-rg4000ho-putere-maxima-3-1-kw-230v-24375%3Futm_source%3Dportal%26utm_medium%3Dweb%26utm_campaign%3D2parale",
-"magazin": "albertool.com",
-"id": "qOl64zsgOUgC",
-"brand": "Genmac",
-"url_magazin": "https://www.albertool.com/cumpara/generator-de-curent-genmac-click-rg4000ho-putere-maxima-3-1-kw-230v-24375?utm_source=portal&utm_medium=web&utm_campaign=2parale",
-"pret_vechi": null,
-"verificat": "2026-11-04"
+"titlu": "Generator curent Tecnoware FGE4200E, monofazat, 4200VA, Negru",
+"pret": 3232.99,
+"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4320%2F4320835%2Fpetrol-generator-4200vafge420-6ae0a29d23309.JPG&type=auto&width=500&sign=fLFxvSL9PQcgX5oBygKi_MVQ-gXd6eTNtMAe7J7kuJg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Fcasa-decoratiuni-bricolaj-generatoare-curent-electric-accesorii-generator-curent%2Ftecnoware-generator-curent-tecnoware-fge4200e-monofazat-4200va-negru-4320835.html",
+"magazin": "evomag.ro",
+"id": "F0M1QjOdhX2D",
+"brand": "Tecnoware",
+"url_magazin": "https://www.evomag.ro/casa-decoratiuni-bricolaj-generatoare-curent-electric-accesorii-generator-curent/tecnoware-generator-curent-tecnoware-fge4200e-monofazat-4200va-negru-4320835.html",
+"pret_vechi": null
+},
+{
+"titlu": "Generator curent electric tip inverter Könner & Söhnen KS 2000iG S, 2.5 CP, Pornire motor manuala, Benzina/GPL (Albastru",
+"pret": 3258.99,
+"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F3837%2F3837722%2Fks-2000ig-s-silent-gplben-61b1e4aa31120.JPG&type=auto&width=500&sign=ldvOIVShWEoKQRJcI9rW91ZHMUVA2gjNv4K3X5AdsoA",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Fcasa-decoratiuni-bricolaj-generatoare-curent-electric-accesorii-generator-curent%2Fk-nner-s-hnen-generator-curent-electric-tip-inverter-k-nner-s-hnen-ks-2000ig-s-2.5-cp-pornire-motor-manuala-benzina-gpl-albastru-negru-3837722.html",
+"magazin": "evomag.ro",
+"id": "IMVqSAjQwzUU",
+"brand": "Könner&Söhnen",
+"url_magazin": "https://www.evomag.ro/casa-decoratiuni-bricolaj-generatoare-curent-electric-accesorii-generator-curent/k-nner-s-hnen-generator-curent-electric-tip-inverter-k-nner-s-hnen-ks-2000ig-s-2.5-cp-pornire-motor-manuala-benzina-gpl-albastru-negru-3837722.html",
+"pret_vechi": null
+},
+{
+"titlu": "Generator de curent Dedra pe benzina 5,0kW",
+"pret": 3621.99,
+"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4117%2F4117295%2F64facc94225ca.jpg&type=auto&width=500&sign=-Q9Uhnkp_8u_CIgMvHhxaijVrqx-mx1TCNrnLBQkSQg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Fcasa-decoratiuni-bricolaj-generatoare-curent-electric-accesorii-generator-curent%2Fdedra-generator-de-curent-dedra-pe-benzina-5-0kw-4117295.html",
+"magazin": "evomag.ro",
+"id": "I07nvD2NIShZ",
+"brand": "Dedra",
+"url_magazin": "https://www.evomag.ro/casa-decoratiuni-bricolaj-generatoare-curent-electric-accesorii-generator-curent/dedra-generator-de-curent-dedra-pe-benzina-5-0kw-4117295.html",
+"pret_vechi": null
 },
 {
 "titlu": "Generator de curent 4.2kW inverter si SUDURA 160A SuperHIBRID (GPL + Gaz Natural + Benzina) 230V - CRIANO - CNO-NRG-40i-",
 "pret": 3772.0,
-"imagine": "https://c.cdnmp.net/917469284/p/l/6/generator-de-curent-4-2kw-inverter-si-sudura-160a-superhibrid-gpl-gaz~8888546.jpg",
+"imagine": "https://c.cdnmp.net/917469284/p/l/5/generator-de-curent-4-2kw-inverter-si-sudura-160a-superhibrid-gpl-gaz~8890295.jpg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.albertool.com%2Fcumpara%2Fgenerator-de-curent-4-2kw-inverter-si-sudura-160a-superhibrid-gpl-gaz-25983%3Futm_source%3Dportal%26utm_medium%3Dweb%26utm_campaign%3D2parale",
 "magazin": "albertool.com",
 "id": "7WzYP-zaqnGy",
@@ -20443,6 +20625,7 @@
 "magazine": [
 "albertool.com",
 "atomico.ro",
+"evomag.ro",
 "infinity.ro"
 ]
 },

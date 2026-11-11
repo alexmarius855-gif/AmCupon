@@ -3599,7 +3599,7 @@
         "descriere": "Black Friday 16% off",
         "cod_cupon": "BF16",
         "landing_page": "https://www.laavooextensions.com",
-        "zile_ramase": 19,
+        "zile_ramase": 18,
         "expira": "2026-11-30",
         "sursa": "impact_deals_api"
       },
@@ -3608,7 +3608,7 @@
         "descriere": "Black Friday 20% off",
         "cod_cupon": "BF20",
         "landing_page": "https://www.laavooextensions.com",
-        "zile_ramase": 19,
+        "zile_ramase": 18,
         "expira": "2026-11-30",
         "sursa": "impact_deals_api"
       },
@@ -3617,7 +3617,7 @@
         "descriere": "Black Friday 25% off",
         "cod_cupon": "BF25",
         "landing_page": "https://www.laavooextensions.com",
-        "zile_ramase": 19,
+        "zile_ramase": 18,
         "expira": "2026-11-30",
         "sursa": "impact_deals_api"
       },
@@ -4019,14 +4019,14 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 1,
+    "zile_ramase": 0,
     "promotii": [
       {
         "nume": "Allsite UP TO 60% OFF",
         "descriere": "$10 off over $139 , $30 off over $199 , $50 off over $259 , $90 off over $369 ,",
         "cod_cupon": "",
         "landing_page": "https://www.ashimaryhair.com/collections/hot-sale",
-        "zile_ramase": 1,
+        "zile_ramase": 0,
         "expira": "2026-11-12",
         "sursa": "impact_deals_api"
       },
@@ -4035,7 +4035,7 @@
         "descriere": "20% off over $199 , 23% off over 299 ,",
         "cod_cupon": "",
         "landing_page": "https://www.ashimaryhair.com/collections/invisi-strap-360-lace-wig",
-        "zile_ramase": 1,
+        "zile_ramase": 0,
         "expira": "2026-11-12",
         "sursa": "impact_deals_api"
       },
@@ -4044,7 +4044,7 @@
         "descriere": "25% off over $329",
         "cod_cupon": "",
         "landing_page": "https://www.ashimaryhair.com/collections/13x6-full-lace-wig",
-        "zile_ramase": 1,
+        "zile_ramase": 0,
         "expira": "2026-11-12",
         "sursa": "impact_deals_api"
       }
@@ -4951,8 +4951,8 @@
     "sales_number": 0,
     "trend": 0,
     "are_promotie": true,
-    "cod_cupon": true,
-    "zile_ramase": 12,
+    "cod_cupon": false,
+    "zile_ramase": 109,
     "promotii": [
       {
         "nume": "30% Off the AI Website Builder with Annual Terms",
@@ -4961,15 +4961,6 @@
         "landing_page": "https://www.networksolutions.com/partner/annual-website-builder?promo=NEW30",
         "zile_ramase": 109,
         "expira": "2027-03-01",
-        "sursa": "impact_deals_api"
-      },
-      {
-        "nume": "30% off domains + 50% off Google Workspace",
-        "descriere": "Use code GETONLINENOW Runs: 11/9/26 - 11/23/2026",
-        "cod_cupon": "GETONLINENOW",
-        "landing_page": "https://www.networksolutions.com/partner/getonline",
-        "zile_ramase": 12,
-        "expira": "2026-11-24",
         "sursa": "impact_deals_api"
       }
     ],
@@ -8973,7 +8964,7 @@
         "descriere": "52% Off For All Product Code:E52",
         "cod_cupon": "",
         "landing_page": "https://www.yilitehair.com",
-        "zile_ramase": 1571,
+        "zile_ramase": 1570,
         "expira": "2031-03-02",
         "sursa": "impact_deals_api"
       },
@@ -9613,14 +9604,14 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 7,
+    "zile_ramase": 6,
     "promotii": [
       {
         "nume": "New Hair Up To 40% Off",
         "descriere": "New Hair Up To 40% Off",
         "cod_cupon": "",
         "landing_page": "https://www.kisslovehair.com/collections/new-arrival",
-        "zile_ramase": 7,
+        "zile_ramase": 6,
         "expira": "2026-11-18",
         "sursa": "impact_deals_api"
       }
@@ -9671,7 +9662,7 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 7,
+    "zile_ramase": 6,
     "promotii": [
       {
         "nume": "Redodo 8% Discount Code – Save on All Products",
@@ -9687,7 +9678,7 @@
         "descriere": "Get ready for Redodo Black Friday Early Access from November 5–18, 2026! Enjoy up to 60% OFF across the entire Redodo product range, plus an EXTRA 10% OFF with code BLACKFRIDAY10.",
         "cod_cupon": "",
         "landing_page": "https://www.redodopower.de/pages/redodo-black-friday-angebote",
-        "zile_ramase": 7,
+        "zile_ramase": 6,
         "expira": "2026-11-19",
         "sursa": "impact_deals_api"
       }
@@ -10475,14 +10466,14 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": true,
-    "zile_ramase": 50,
+    "zile_ramase": 49,
     "promotii": [
       {
         "nume": "LumosFlex120",
         "descriere": "120 off for lumos flex",
         "cod_cupon": "",
         "landing_page": "https://wecreat.com/products/wecreat-lumos",
-        "zile_ramase": 50,
+        "zile_ramase": 49,
         "expira": "2026-12-31",
         "sursa": "impact_deals_api"
       },
@@ -10500,7 +10491,7 @@
         "descriere": "5% off for all wecreat products! including accessories",
         "cod_cupon": "WECREAT",
         "landing_page": "https://wecreat.com/?utm_source=impact&utm_medium=affiliate",
-        "zile_ramase": 50,
+        "zile_ramase": 49,
         "expira": "2026-12-31",
         "sursa": "impact_deals_api"
       },
@@ -13914,7 +13905,7 @@
         "descriere": "�� Plunge Chill Pod Tub — Only $49 ($30 OFF)! Help your audience kickstart their cold plunge routine for less! ❄️ Portable & Easy Setup — Enjoy cold plunges anywhere. �� Recovery Support — Perfect for athletes and fitness lovers. �� Indoor & Outdoor Use — Ideal for home, backyard, or gym. �� Regular Price: $79 | Now Only $49 with code POD30! �� Start Promoting Today!",
         "cod_cupon": "",
         "landing_page": "https://plungechill.com/products/cold-plunge-tub?utm_source=impact&utm_medium=affiliate&utm_campaign=summer_sale",
-        "zile_ramase": 50,
+        "zile_ramase": 49,
         "expira": "2026-12-31",
         "sursa": "impact_deals_api"
       },
@@ -13923,7 +13914,7 @@
         "descriere": "",
         "cod_cupon": "",
         "landing_page": "https://plungechill.com/pages/summer-sale?utm_source=impact&utm_medium=affiliate&utm_campaign=summer_sale",
-        "zile_ramase": 50,
+        "zile_ramase": 49,
         "expira": "2026-12-31",
         "sursa": "impact_deals_api"
       },

@@ -545,16 +545,6 @@
    "categorie": "auto-moto"
   },
   {
-   "magazin": "babyneeds.ro",
-   "nume": "Babyneeds",
-   "start": "2026-11-06",
-   "final": "2026-11-09",
-   "nota": "Black Friday 2026 BabyNeeds.ro",
-   "descriere": "Black Friday Babyneeds bate la ușă! Între 6 și 9 noiembrie, Babyneeds pornește una dintre cele mai puternice campanii ale anului, cu reduceri de până la 63% la majoritatea produselor din magazin. În plus, pachetele promoționale vin cu discounturi suplimentare, iar abonații la newsletter beneficiază de încă 2% reducere față de prețurile afișate pe site.",
-   "are_cod": false,
-   "categorie": "copii"
-  },
-  {
    "magazin": "baristelli.ro",
    "nume": "Baristelli",
    "start": "2026-11-06",
@@ -1073,6 +1063,16 @@
    "descriere": "Black Friday s-a incheiat, dar ofertele continua pe Dr. Max! In perioada 9-15 noiembrie, lansam campania Max Deals, cu noi reduceri atractive. Continuam perioada de shopping intens cu oferte la branduri cunoscute, din categorii relevante pentru consumatori: beauty, sanatate, suplimente, ingrijire personala, mama si copilul.",
    "are_cod": false,
    "categorie": "sanatate"
+  },
+  {
+   "magazin": "babyneeds.ro",
+   "nume": "Babyneeds",
+   "start": "2026-11-10",
+   "final": "2026-11-16",
+   "nota": "Black Week BabyNeeds.ro",
+   "descriere": "Am dat startul campaniei Black Week BabyNeeds! Super reduceri de pana la 66%! Gasesti aici toate ofertele active Reducerile sunt deja live și rămân valabile până pe 16 noiembrie!",
+   "are_cod": false,
+   "categorie": "copii"
   },
   {
    "magazin": "magazinuldegene.ro",
