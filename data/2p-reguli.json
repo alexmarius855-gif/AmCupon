@@ -1,5 +1,5 @@
 {
-"actualizat": "2026-11-10",
+"actualizat": "2026-11-11",
 "magazine": {
 "10qaroma.ro": {
 "cupoane": "yes",
@@ -39,6 +39,11 @@
 "a2t.ro": {
 "cupoane": "yes",
 "google_ads": "no",
+"cashback": "yes"
+},
+"ada-shoes.ro": {
+"cupoane": "yes",
+"google_ads": "yes",
 "cashback": "yes"
 },
 "adhoreca.eu": {
@@ -144,11 +149,6 @@
 "aquaromania.ro": {
 "cupoane": "yes",
 "google_ads": "yes",
-"cashback": "yes"
-},
-"arabescu.ro": {
-"cupoane": "yes",
-"google_ads": "no",
 "cashback": "yes"
 },
 "arashop.ro": {
@@ -316,6 +316,11 @@
 "google_ads": "yes",
 "cashback": "yes"
 },
+"bigiottos.com": {
+"cupoane": "yes",
+"google_ads": "yes",
+"cashback": "yes"
+},
 "bijubox.ro": {
 "cupoane": "yes",
 "google_ads": "yes",
@@ -428,11 +433,6 @@
 },
 "cartuseria.ro": {
 "cupoane": "maybe",
-"google_ads": "yes",
-"cashback": "yes"
-},
-"casa-bucuriei.ro": {
-"cupoane": "yes",
 "google_ads": "yes",
 "cashback": "yes"
 },
@@ -741,11 +741,6 @@
 "google_ads": "yes",
 "cashback": "yes"
 },
-"edogkalypsoland.ro": {
-"cupoane": "yes",
-"google_ads": "yes",
-"cashback": "yes"
-},
 "elaiolado-shop.gr": {
 "cupoane": "yes",
 "google_ads": "yes",
@@ -841,6 +836,11 @@
 "google_ads": "no",
 "cashback": "maybe"
 },
+"fabricadegratare.ro": {
+"cupoane": "yes",
+"google_ads": "yes",
+"cashback": "yes"
+},
 "fabricadetuica.ro": {
 "cupoane": "yes",
 "google_ads": "no",
@@ -892,6 +892,11 @@
 "cashback": "yes"
 },
 "figurinart.ro": {
+"cupoane": "yes",
+"google_ads": "yes",
+"cashback": "yes"
+},
+"flip.bg": {
 "cupoane": "yes",
 "google_ads": "yes",
 "cashback": "yes"
@@ -1276,11 +1281,6 @@
 "google_ads": "yes",
 "cashback": "yes"
 },
-"lancome.ro": {
-"cupoane": "yes",
-"google_ads": "no",
-"cashback": "yes"
-},
 "lasebiacasa.ro": {
 "cupoane": "yes",
 "google_ads": "yes",
@@ -1555,6 +1555,11 @@
 "cupoane": "yes",
 "google_ads": "yes",
 "cashback": "yes"
+},
+"mobilstore.ro": {
+"cupoane": "maybe",
+"google_ads": "no",
+"cashback": "maybe"
 },
 "mobiro.ro": {
 "cupoane": "yes",

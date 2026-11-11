@@ -1,5 +1,5 @@
 {
-"actualizat": "2026-11-10",
+"actualizat": "2026-11-11",
 "criterii": [
 {
 "slug": "masina-de-spalat-6-kg",
@@ -16547,8 +16547,25 @@
 "titlu": "Parfum Dior Sauvage",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-04",
-"feeduri": [],
+"actualizat": "2026-11-11",
+"feeduri": [
+{
+"id": 8969,
+"magazin": "ozone.ro"
+},
+{
+"id": 2966,
+"magazin": "brasty.ro"
+},
+{
+"id": 9125,
+"magazin": "primefarma.ro"
+},
+{
+"id": 6840,
+"magazin": "notino.ro"
+}
+],
 "produse": [
 {
 "titlu": "Christian Dior Sauvage Apă de toaletă, 10 ml",
@@ -16556,8 +16573,35 @@
 "imagine": "https://www.ozone.ro/media/catalog/product/c/h/christian_dior_sauvage_toaletna_voda_10_ml_1783347770_0.jpg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ozone.ro%2Fproduct%2Fchristian-dior-sauvage-ap-de-toalet-10-ml%2F",
 "magazin": "ozone.ro",
+"id": "Mi4Tcihu7aHC",
+"brand": "Christian Dior",
 "url_magazin": "https://www.ozone.ro/product/christian-dior-sauvage-ap-de-toalet-10-ml/",
+"pret_vechi": null,
 "verificat": "2026-11-04"
+},
+{
+"titlu": "DIOR Sauvage gel parfumat pentru duș cu pompa pentru bărbați 250 ml",
+"pret": 275.0,
+"imagine": "https://cdn.notinoimg.com/export_mergado/dior/3348901553254_01.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.notino.ro%2Fdior%2Fsauvage-gel-parfumat-pentru-dus-cu-pompa-pentru-barbati%2Fp-16111228%2F",
+"magazin": "notino.ro",
+"id": "d18b6baa8",
+"brand": "DIOR",
+"url_magazin": "https://www.notino.ro/dior/sauvage-gel-parfumat-pentru-dus-cu-pompa-pentru-barbati/p-16111228/",
+"pret_vechi": null,
+"verificat": "2026-11-11"
+},
+{
+"titlu": "DIOR Sauvage The Toner tonic pentru fata cu extract de cactus pentru bărbați 100 ml",
+"pret": 319.0,
+"imagine": "https://cdn.notinoimg.com/export_mergado/dior/3348901683562_01.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.notino.ro%2Fdior%2Fsauvage-the-toner-tonic-pentru-fata%2Fp-16230973%2F",
+"magazin": "notino.ro",
+"id": "c6fcffa4b",
+"brand": "DIOR",
+"url_magazin": "https://www.notino.ro/dior/sauvage-the-toner-tonic-pentru-fata/p-16230973/",
+"pret_vechi": null,
+"verificat": "2026-11-11"
 },
 {
 "titlu": "Christian Dior Sauvage Apă de toaletă, 30 ml",
@@ -16565,8 +16609,23 @@
 "imagine": "https://www.ozone.ro/media/catalog/product/c/h/christian_dior_sauvage_toaletna_voda_30_ml_1727795868_0.jpg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ozone.ro%2Fproduct%2Fchristian-dior-sauvage-ap-de-toalet-30-ml%2F",
 "magazin": "ozone.ro",
+"id": "fhe3nyyyUXfB",
+"brand": "Christian Dior",
 "url_magazin": "https://www.ozone.ro/product/christian-dior-sauvage-ap-de-toalet-30-ml/",
+"pret_vechi": null,
 "verificat": "2026-11-04"
+},
+{
+"titlu": "DIOR Sauvage Hydrating Shampoo sampon hidratant pentru bărbați 250 ml",
+"pret": 339.0,
+"imagine": "https://cdn.notinoimg.com/export_mergado/dior/3348901791526_01.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.notino.ro%2Fdior%2Fsauvage-hydrating-shampoo-sampon-hidratant-pentru-barbati%2Fp-16363503%2F",
+"magazin": "notino.ro",
+"id": "ZybZ6MX23F-M",
+"brand": "DIOR",
+"url_magazin": "https://www.notino.ro/dior/sauvage-hydrating-shampoo-sampon-hidratant-pentru-barbati/p-16363503/",
+"pret_vechi": null,
+"verificat": "2026-11-11"
 },
 {
 "titlu": "Christian Dior Sauvage Apă de toaletă, 60 ml",
@@ -16574,8 +16633,23 @@
 "imagine": "https://www.ozone.ro/media/catalog/product/c/h/christian_dior_sauvage_toaletna_voda_60_ml_1689774593_0.jpg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ozone.ro%2Fproduct%2Fchristian-dior-sauvage-ap-de-toalet-60-ml%2F",
 "magazin": "ozone.ro",
+"id": "08DcFmIJjLWB",
+"brand": "Christian Dior",
 "url_magazin": "https://www.ozone.ro/product/christian-dior-sauvage-ap-de-toalet-60-ml/",
+"pret_vechi": null,
 "verificat": "2026-11-04"
+},
+{
+"titlu": "DIOR Sauvage The Serum ser facial cu extract de cactus pentru bărbați 50 ml",
+"pret": 475.0,
+"imagine": "https://cdn.notinoimg.com/export_mergado/dior/3348901683579_01.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.notino.ro%2Fdior%2Fsauvage-the-serum-ser-facial%2Fp-16225550%2F",
+"magazin": "notino.ro",
+"id": "f498571bd",
+"brand": "DIOR",
+"url_magazin": "https://www.notino.ro/dior/sauvage-the-serum-ser-facial/p-16225550/",
+"pret_vechi": null,
+"verificat": "2026-11-11"
 },
 {
 "titlu": "Dior (Christian Dior) Sauvage Eau Forte Parfum bărbați 60 ml",
@@ -16583,7 +16657,10 @@
 "imagine": "https://www.brasty.ro/images/w320/dior-christian-dior-sauvage-eau-forte-parfum-barbati-60-ml/3348901728829-1.jpg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.brasty.ro%2Fdior-christian-dior-sauvage-eau-forte-parfum-barbati-60-ml",
 "magazin": "brasty.ro",
+"id": "f989ea778",
+"brand": "Dior (Christian Dior)",
 "url_magazin": "https://www.brasty.ro/dior-christian-dior-sauvage-eau-forte-parfum-barbati-60-ml",
+"pret_vechi": null,
 "verificat": "2026-11-04"
 },
 {
@@ -16592,7 +16669,10 @@
 "imagine": "https://www.ozone.ro/media/catalog/product/c/h/christian_dior_sauvage_toaletna_voda_100_ml_1733495902_0.jpg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ozone.ro%2Fproduct%2Fchristian-dior-sauvage-ap-de-toalet-100-ml-829182%2F",
 "magazin": "ozone.ro",
+"id": "4b7FwKWA8YbG",
+"brand": "Christian Dior",
 "url_magazin": "https://www.ozone.ro/product/christian-dior-sauvage-ap-de-toalet-100-ml-829182/",
+"pret_vechi": null,
 "verificat": "2026-11-04"
 },
 {
@@ -16601,7 +16681,10 @@
 "imagine": "https://www.brasty.ro/images/w320/christian-dior-sauvage-eau-de-toilette-pentru-barbati-60-ml/81006-1.jpg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.brasty.ro%2Fchristian-dior-sauvage-eau-de-toilette-pentru-barbati-60-ml",
 "magazin": "brasty.ro",
+"id": "4f1b78d57",
+"brand": "Dior (Christian Dior)",
 "url_magazin": "https://www.brasty.ro/christian-dior-sauvage-eau-de-toilette-pentru-barbati-60-ml",
+"pret_vechi": null,
 "verificat": "2026-11-04"
 },
 {
@@ -16610,7 +16693,10 @@
 "imagine": "https://www.ozone.ro/media/catalog/product/c/h/christian_dior_sauvage_parfyum_60_ml_1727183028_0.jpg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ozone.ro%2Fproduct%2Fchristian-dior-sauvage-parfum-60-ml%2F",
 "magazin": "ozone.ro",
+"id": "3jzn_Rm4uE_E",
+"brand": "Christian Dior",
 "url_magazin": "https://www.ozone.ro/product/christian-dior-sauvage-parfum-60-ml/",
+"pret_vechi": null,
 "verificat": "2026-11-04"
 },
 {
@@ -16619,7 +16705,10 @@
 "imagine": "https://www.ozone.ro/media/catalog/product/c/h/christian_dior_sauvage_parfyumna_voda_60_ml_1733735941_0.jpg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ozone.ro%2Fproduct%2Fchristian-dior-sauvage-ap-de-parfum-60-ml%2F",
 "magazin": "ozone.ro",
+"id": "ZxnOut7stEC9",
+"brand": "Christian Dior",
 "url_magazin": "https://www.ozone.ro/product/christian-dior-sauvage-ap-de-parfum-60-ml/",
+"pret_vechi": null,
 "verificat": "2026-11-04"
 },
 {
@@ -16628,7 +16717,10 @@
 "imagine": "https://www.ozone.ro/media/catalog/product/c/h/christian_dior_sauvage_toaletna_voda_100_ml_tester_1737357948_0.jpg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ozone.ro%2Fproduct%2Fchristian-dior-sauvage-ap-de-toalet-100-ml-tester%2F",
 "magazin": "ozone.ro",
+"id": "Q8kt6LYewkfh",
+"brand": "Christian Dior",
 "url_magazin": "https://www.ozone.ro/product/christian-dior-sauvage-ap-de-toalet-100-ml-tester/",
+"pret_vechi": null,
 "verificat": "2026-11-04"
 },
 {
@@ -16637,7 +16729,10 @@
 "imagine": "https://www.ozone.ro/media/catalog/product/c/h/christian_dior_sauvage_eau_forte_parfyumna_voda_60_ml_1752058826_0.jpg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ozone.ro%2Fproduct%2Fchristian-dior-sauvage-eau-forte-ap-de-parfum-60-ml%2F",
 "magazin": "ozone.ro",
+"id": "_LSUThYC3M7w",
+"brand": "Christian Dior",
 "url_magazin": "https://www.ozone.ro/product/christian-dior-sauvage-eau-forte-ap-de-parfum-60-ml/",
+"pret_vechi": null,
 "verificat": "2026-11-04"
 },
 {
@@ -16646,13 +16741,78 @@
 "imagine": "https://www.brasty.ro/images/w320/dior-christian-dior-sauvage-parfum-barba-i-60-ml/133168-1.jpg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.brasty.ro%2Fdior-christian-dior-sauvage-parfum-barba-i-60-ml",
 "magazin": "brasty.ro",
+"id": "f6d4e6b6c",
+"brand": "Dior (Christian Dior)",
 "url_magazin": "https://www.brasty.ro/dior-christian-dior-sauvage-parfum-barba-i-60-ml",
+"pret_vechi": null,
 "verificat": "2026-11-04"
+},
+{
+"titlu": "Parfum bărbătesc Dior Sauvage Eau de Parfum, 100 ml",
+"pret": 903.99,
+"imagine": "https://primefarma.ro/wp-content/uploads/2026/09/UtbeLZR94bvWvieqXt9fZF.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fprimefarma.ro%2Fprodus%2Fparfum-barbatesc-dior-sauvage-eau-de-parfum-100-ml%2F",
+"magazin": "primefarma.ro",
+"id": "k77sE2sNWdaG",
+"brand": "Christian Dior",
+"url_magazin": "https://primefarma.ro/produs/parfum-barbatesc-dior-sauvage-eau-de-parfum-100-ml/",
+"pret_vechi": 1333.99,
+"verificat": "2026-11-11"
+},
+{
+"titlu": "Dior (Christian Dior) Sauvage Eau de Parfum bărbați 60 ml",
+"pret": 913.0,
+"imagine": "https://www.brasty.ro/images/w320/dior-christian-dior-sauvage-eau-de-parfum-barba-i-60-ml/98050-1.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.brasty.ro%2Fdior-christian-dior-sauvage-eau-de-parfum-barba-i-60-ml",
+"magazin": "brasty.ro",
+"id": "ed05607c1",
+"brand": "Dior (Christian Dior)",
+"url_magazin": "https://www.brasty.ro/dior-christian-dior-sauvage-eau-de-parfum-barba-i-60-ml",
+"pret_vechi": null,
+"verificat": "2026-11-11"
+},
+{
+"titlu": "Parfum Spray, Dior Sauvage, 60ml",
+"pret": 1018.99,
+"imagine": "https://primefarma.ro/wp-content/uploads/2026/09/K9Zaj7TQ9Bxy3K8iNJ4Wdi.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fprimefarma.ro%2Fprodus%2Fparfum-spray-dior-sauvage-60ml%2F",
+"magazin": "primefarma.ro",
+"id": "O_7v83V6wNw5",
+"brand": "Christian Dior",
+"url_magazin": "https://primefarma.ro/produs/parfum-spray-dior-sauvage-60ml/",
+"pret_vechi": 1268.99,
+"verificat": "2026-11-11"
+},
+{
+"titlu": "DIOR Sauvage Eau de Parfum pentru bărbați 60 ml",
+"pret": 1050.0,
+"imagine": "https://cdn.notinoimg.com/export_mergado/dior/3348901368254_01__5.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.notino.ro%2Fdior%2Fsauvage-eau-de-parfum-pentru-barbati%2Fp-15676582%2F",
+"magazin": "notino.ro",
+"id": "ce199f73b",
+"brand": "DIOR",
+"url_magazin": "https://www.notino.ro/dior/sauvage-eau-de-parfum-pentru-barbati/p-15676582/",
+"pret_vechi": null,
+"verificat": "2026-11-11"
+},
+{
+"titlu": "DIOR Sauvage parfum pentru bărbați 60 ml",
+"pret": 1290.0,
+"imagine": "https://cdn.notinoimg.com/export_mergado/dior/3348901486392_01.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.notino.ro%2Fdior%2Fsauvage-parfumuri-pentru-barbati%2Fp-16001168%2F",
+"magazin": "notino.ro",
+"id": "3c317406b",
+"brand": "DIOR",
+"url_magazin": "https://www.notino.ro/dior/sauvage-parfumuri-pentru-barbati/p-16001168/",
+"pret_vechi": null,
+"verificat": "2026-11-11"
 }
 ],
 "magazine": [
 "brasty.ro",
-"ozone.ro"
+"notino.ro",
+"ozone.ro",
+"primefarma.ro"
 ]
 },
 {
@@ -16662,8 +16822,21 @@
 "titlu": "Parfum Paco Rabanne Invictus",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-04",
-"feeduri": [],
+"actualizat": "2026-11-11",
+"feeduri": [
+{
+"id": 9125,
+"magazin": "primefarma.ro"
+},
+{
+"id": 8969,
+"magazin": "ozone.ro"
+},
+{
+"id": 8532,
+"magazin": "qudo.ro"
+}
+],
 "produse": [
 {
 "titlu": "Paco Rabanne Invictus Apă de toaletă, 100 ml, tester",
@@ -16671,7 +16844,10 @@
 "imagine": "https://www.ozone.ro/media/catalog/product/p/a/paco_rabanne_invictus_toaletna_voda_100_ml_tester_1737460157_0.jpg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ozone.ro%2Fproduct%2Fpaco-rabanne-invictus-ap-de-toalet-100-ml-tester%2F",
 "magazin": "ozone.ro",
+"id": "c0kAv8EguOAs",
+"brand": "Paco Rabanne",
 "url_magazin": "https://www.ozone.ro/product/paco-rabanne-invictus-ap-de-toalet-100-ml-tester/",
+"pret_vechi": null,
 "verificat": "2026-11-04"
 },
 {
@@ -16680,7 +16856,10 @@
 "imagine": "https://www.ozone.ro/media/catalog/product/p/a/paco_rabanne_invictus_toaletna_voda_100_ml_1689759443_0.jpg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ozone.ro%2Fproduct%2Fpaco-rabanne-invictus-ap-de-toalet-100-ml%2F",
 "magazin": "ozone.ro",
+"id": "wAHcNkEF5X3p",
+"brand": "Paco Rabanne",
 "url_magazin": "https://www.ozone.ro/product/paco-rabanne-invictus-ap-de-toalet-100-ml/",
+"pret_vechi": null,
 "verificat": "2026-11-04"
 },
 {
@@ -16689,7 +16868,10 @@
 "imagine": "https://www.ozone.ro/media/catalog/product/p/a/paco_rabanne_parfyum_invictus_50_ml_1793014150_0.jpg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ozone.ro%2Fproduct%2Fpaco-rabanne-parfum-invictus-50-ml%2F",
 "magazin": "ozone.ro",
+"id": "WSK_4mB6rmWp",
+"brand": "Paco Rabanne",
 "url_magazin": "https://www.ozone.ro/product/paco-rabanne-parfum-invictus-50-ml/",
+"pret_vechi": null,
 "verificat": "2026-11-04"
 },
 {
@@ -16698,7 +16880,10 @@
 "imagine": "https://primefarma.ro/wp-content/uploads/2026/09/27CCTCEND2pe8DDtauRePv.jpg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fprimefarma.ro%2Fprodus%2Feau-de-toilette-paco-rabanne-invictus-50ml%2F",
 "magazin": "primefarma.ro",
+"id": "lj0QuDrZdOnN",
+"brand": "Paco Rabanne",
 "url_magazin": "https://primefarma.ro/produs/eau-de-toilette-paco-rabanne-invictus-50ml/",
+"pret_vechi": 493.0,
 "verificat": "2026-11-04"
 },
 {
@@ -16707,7 +16892,10 @@
 "imagine": "https://www.ozone.ro/media/catalog/product/p/a/paco_rabanne_invictus_parfyum_100_ml_1737098672_0.jpg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ozone.ro%2Fproduct%2Fpaco-rabanne-invictus-parfum-100-ml%2F",
 "magazin": "ozone.ro",
+"id": "XJmqHBFOzbaw",
+"brand": "Paco Rabanne",
 "url_magazin": "https://www.ozone.ro/product/paco-rabanne-invictus-parfum-100-ml/",
+"pret_vechi": null,
 "verificat": "2026-11-04"
 },
 {
@@ -16716,7 +16904,10 @@
 "imagine": "https://www.ozone.ro/media/catalog/product/p/a/paco_rabanne_parfyum_invictus_elixir_50_ml_1793014364_0.jpg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ozone.ro%2Fproduct%2Fpaco-rabanne-parfum-invictus-elixir-50-ml%2F",
 "magazin": "ozone.ro",
+"id": "yRzQcUGXTRT6",
+"brand": "Paco Rabanne",
 "url_magazin": "https://www.ozone.ro/product/paco-rabanne-parfum-invictus-elixir-50-ml/",
+"pret_vechi": null,
 "verificat": "2026-11-04"
 },
 {
@@ -16725,8 +16916,22 @@
 "imagine": "https://qudo.ro/wp-content/uploads/2026/05/res_d96bd6fb68839b9a087d3ab00b52b3c2.avif",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fqudo.ro%2Fprodus%2Fpaco-rabanne-invictus-eau-de-toilette-100ml-cc%2F",
 "magazin": "qudo.ro",
+"id": "dGsxYJL-mobR",
+"brand": "Paco Rabanne",
 "url_magazin": "https://qudo.ro/produs/paco-rabanne-invictus-eau-de-toilette-100ml-cc/",
+"pret_vechi": null,
 "verificat": "2026-11-04"
+},
+{
+"titlu": "Paco Rabanne Invictus Apă de Parfum Victory, 100 ml",
+"pret": 508.55,
+"imagine": "https://www.ozone.ro/media/catalog/product/p/a/paco_rabanne_invictus_parfyumna_voda_victory_100_ml_1689758567_0.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ozone.ro%2Fproduct%2Fpaco-rabanne-invictus-ap-de-parfum-victory-100-ml%2F",
+"magazin": "ozone.ro",
+"id": "PdjAG9ZjMIXA",
+"brand": "Paco Rabanne",
+"url_magazin": "https://www.ozone.ro/product/paco-rabanne-invictus-ap-de-parfum-victory-100-ml/",
+"pret_vechi": null
 },
 {
 "titlu": "Parfum Eau de Toilette Paco Rabanne Invictus, 100ml",
@@ -16734,7 +16939,10 @@
 "imagine": "https://primefarma.ro/wp-content/uploads/2026/09/5JXWpzMi2V6FG9zMD43Es4.jpg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fprimefarma.ro%2Fprodus%2Fparfum-eau-de-toilette-paco-rabanne-invictus-100ml%2F",
 "magazin": "primefarma.ro",
+"id": "HQPNvNatW4D4",
+"brand": "Paco Rabanne",
 "url_magazin": "https://primefarma.ro/produs/parfum-eau-de-toilette-paco-rabanne-invictus-100ml/",
+"pret_vechi": 632.0,
 "verificat": "2026-11-04"
 },
 {
@@ -16743,7 +16951,10 @@
 "imagine": "https://primefarma.ro/wp-content/uploads/2026/09/75Nz46DYiNAspFxWCr9R4z.jpg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fprimefarma.ro%2Fprodus%2Fset-cadou-parfum-paco-rabanne-invictus-eau-de-toilette-50ml%2F",
 "magazin": "primefarma.ro",
+"id": "bRtJuWCglSRY",
+"brand": "Paco Rabanne",
 "url_magazin": "https://primefarma.ro/produs/set-cadou-parfum-paco-rabanne-invictus-eau-de-toilette-50ml/",
+"pret_vechi": 649.99,
 "verificat": "2026-11-04"
 },
 {
@@ -16752,7 +16963,10 @@
 "imagine": "https://primefarma.ro/wp-content/uploads/2026/09/848nrXqzzGXPsKc9kDDJai.jpg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fprimefarma.ro%2Fprodus%2Fparfum-paco-rabanne-invictus-victory-extreme-50ml%2F",
 "magazin": "primefarma.ro",
+"id": "VItevzH5V8up",
+"brand": "Paco Rabanne",
 "url_magazin": "https://primefarma.ro/produs/parfum-paco-rabanne-invictus-victory-extreme-50ml/",
+"pret_vechi": 723.99,
 "verificat": "2026-11-04"
 },
 {
@@ -16761,7 +16975,10 @@
 "imagine": "https://primefarma.ro/wp-content/uploads/2026/09/2k6Ys2pFjq4BuL8ZfFgkZn.jpg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fprimefarma.ro%2Fprodus%2Fparfum-paco-rabanne-invictus-50ml%2F",
 "magazin": "primefarma.ro",
+"id": "-33XLyE4sEAj",
+"brand": "Paco Rabanne",
 "url_magazin": "https://primefarma.ro/produs/parfum-paco-rabanne-invictus-50ml/",
+"pret_vechi": 769.99,
 "verificat": "2026-11-04"
 },
 {
@@ -16770,7 +16987,10 @@
 "imagine": "https://primefarma.ro/wp-content/uploads/2026/09/6EPp88uoyYfSzBpEPFDab2.jpg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fprimefarma.ro%2Fprodus%2Fparfum-paco-rabanne-invictus-victory-100ml%2F",
 "magazin": "primefarma.ro",
+"id": "fj_BiiOigIty",
+"brand": "Paco Rabanne",
 "url_magazin": "https://primefarma.ro/produs/parfum-paco-rabanne-invictus-victory-100ml/",
+"pret_vechi": 814.0,
 "verificat": "2026-11-04"
 },
 {
@@ -16779,7 +16999,10 @@
 "imagine": "https://primefarma.ro/wp-content/uploads/2026/09/8A65KpE2QG22D74mTZPrTi.jpg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fprimefarma.ro%2Fprodus%2Fset-parfum-paco-rabanne-invictus-100ml-20ml-apa-de-toaleta-set-cadou%2F",
 "magazin": "primefarma.ro",
+"id": "29haM90atyck",
+"brand": "Paco Rabanne",
 "url_magazin": "https://primefarma.ro/produs/set-parfum-paco-rabanne-invictus-100ml-20ml-apa-de-toaleta-set-cadou/",
+"pret_vechi": 851.99,
 "verificat": "2026-11-04"
 },
 {
@@ -16788,7 +17011,10 @@
 "imagine": "https://primefarma.ro/wp-content/uploads/2026/09/nHUS3UkCA2UYpHMpH6Uc8x.jpg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fprimefarma.ro%2Fprodus%2Fset-cadou-paco-rabanne-invictus-pentru-barbati-eau-de-toilette-spray-100ml-mini-spray-20ml%2F",
 "magazin": "primefarma.ro",
+"id": "QhEWofjhXMb4",
+"brand": "Paco Rabanne",
 "url_magazin": "https://primefarma.ro/produs/set-cadou-paco-rabanne-invictus-pentru-barbati-eau-de-toilette-spray-100ml-mini-spray-20ml/",
+"pret_vechi": 897.99,
 "verificat": "2026-11-04"
 }
 ],
@@ -16805,16 +17031,48 @@
 "titlu": "Parfum Lancôme La Vie Est Belle",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-04",
-"feeduri": [],
+"actualizat": "2026-11-11",
+"feeduri": [
+{
+"id": 9125,
+"magazin": "primefarma.ro"
+},
+{
+"id": 8532,
+"magazin": "qudo.ro"
+},
+{
+"id": 8437,
+"magazin": "fragranza.ro"
+},
+{
+"id": 8526,
+"magazin": "floria.ro"
+}
+],
 "produse": [
+{
+"titlu": "Lancome La Vie est Belle L`Original Hair and Body Mist Spray pentru păr și corp, tester Volum 100 ml",
+"pret": 157.99,
+"imagine": "https://fragranza.ro/46701-large_default/lancome-la-vie-est-belle-loriginal-hair-and-body-mist-sprey-za-kosa-i-tyalo-bez-opakovka.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Ffragranza.ro%2Flancome-la-vie-est-belle-loriginal-hair-and-body-mist-sprey-za-kosa-i-tyalo-bez-opakovka",
+"magazin": "fragranza.ro",
+"id": "bPrxZuJNiWy5",
+"brand": "Lancome",
+"url_magazin": "https://fragranza.ro/lancome-la-vie-est-belle-loriginal-hair-and-body-mist-sprey-za-kosa-i-tyalo-bez-opakovka",
+"pret_vechi": null,
+"verificat": "2026-11-11"
+},
 {
 "titlu": "Lancome La Vie Est Belle Soleil Cristal Tester EDP Volum 15 ml",
 "pret": 202.99,
 "imagine": "https://fragranza.ro/1281-large_default/lancome-la-vie-est-belle-soleil-cristal-fara-ambalaj-edp.jpg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Ffragranza.ro%2Flancome-la-vie-est-belle-soleil-cristal-fara-ambalaj-edp%23%2F30-volum-15_ml",
 "magazin": "fragranza.ro",
+"id": "9mTvecggrpGf",
+"brand": "Lancome",
 "url_magazin": "https://fragranza.ro/lancome-la-vie-est-belle-soleil-cristal-fara-ambalaj-edp#/30-volum-15_ml",
+"pret_vechi": null,
 "verificat": "2026-11-04"
 },
 {
@@ -16823,8 +17081,22 @@
 "imagine": "https://fragranza.ro/34859-large_default/lancome-la-vie-est-belle-rose-extraordinaire-apa-de-parfum-pentru-femei-tester-edp.jpg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Ffragranza.ro%2Flancome-la-vie-est-belle-rose-extraordinaire-apa-de-parfum-pentru-femei-tester-edp",
 "magazin": "fragranza.ro",
+"id": "cd-ik17zSwaO",
+"brand": "Lancome",
 "url_magazin": "https://fragranza.ro/lancome-la-vie-est-belle-rose-extraordinaire-apa-de-parfum-pentru-femei-tester-edp",
+"pret_vechi": null,
 "verificat": "2026-11-04"
+},
+{
+"titlu": "Lancome La Vie Est Belle EDP Volum 30 ml",
+"pret": 263.99,
+"imagine": "https://fragranza.ro/26534-large_default/lancome-la-vie-est-belle-edp.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Ffragranza.ro%2Flancome-la-vie-est-belle-edp%23%2F51-volum-30_ml",
+"magazin": "fragranza.ro",
+"id": "YhxiO-dSswny",
+"brand": "Lancome",
+"url_magazin": "https://fragranza.ro/lancome-la-vie-est-belle-edp#/51-volum-30_ml",
+"pret_vechi": null
 },
 {
 "titlu": "Lancome La Vie Est Belle Intensement Apă de parfum pentru Femei Tester EDP Volum 50 ml",
@@ -16832,7 +17104,10 @@
 "imagine": "https://fragranza.ro/11801-large_default/lancome-la-vie-est-belle-intensement-apă-de-parfum-pentru-femei-tester-edp.jpg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Ffragranza.ro%2Flancome-la-vie-est-belle-intensement-ap%C4%83-de-parfum-pentru-femei-tester-edp",
 "magazin": "fragranza.ro",
+"id": "RKUwz-3okgPR",
+"brand": "Lancome",
 "url_magazin": "https://fragranza.ro/lancome-la-vie-est-belle-intensement-apă-de-parfum-pentru-femei-tester-edp",
+"pret_vechi": null,
 "verificat": "2026-11-04"
 },
 {
@@ -16841,32 +17116,34 @@
 "imagine": "https://fragranza.ro/34920-large_default/lancome-la-vie-est-belle-l-elixir-apa-de-parfum-pentru-femei-tester-edp.jpg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Ffragranza.ro%2Flancome-la-vie-est-belle-l-elixir-apa-de-parfum-pentru-femei-tester-edp",
 "magazin": "fragranza.ro",
+"id": "p-tGDLS76iDc",
+"brand": "Lancome",
 "url_magazin": "https://fragranza.ro/lancome-la-vie-est-belle-l-elixir-apa-de-parfum-pentru-femei-tester-edp",
+"pret_vechi": null,
 "verificat": "2026-11-04"
 },
 {
-"titlu": "Lancome La Vie Est Belle EDP Volum 30 ml",
-"pret": 384.99,
-"imagine": "https://fragranza.ro/26534-large_default/lancome-la-vie-est-belle-edp.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Ffragranza.ro%2Flancome-la-vie-est-belle-edp%23%2F51-volum-30_ml",
-"magazin": "fragranza.ro",
-"url_magazin": "https://fragranza.ro/lancome-la-vie-est-belle-edp#/51-volum-30_ml"
-},
-{
 "titlu": "Lancome La Vie Est Belle EDP Volum 50 ml",
-"pret": 384.99,
+"pret": 385.99,
 "imagine": "https://fragranza.ro/26534-large_default/lancome-la-vie-est-belle-edp.jpg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Ffragranza.ro%2Flancome-la-vie-est-belle-edp",
 "magazin": "fragranza.ro",
-"url_magazin": "https://fragranza.ro/lancome-la-vie-est-belle-edp"
+"id": "Gzrnw8vBZedo",
+"brand": "Lancome",
+"url_magazin": "https://fragranza.ro/lancome-la-vie-est-belle-edp",
+"pret_vechi": null
 },
 {
-"titlu": "Lancome La Vie Est Belle EDP Volum 100 ml umplutură",
-"pret": 384.99,
-"imagine": "https://fragranza.ro/26534-large_default/lancome-la-vie-est-belle-edp.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Ffragranza.ro%2Flancome-la-vie-est-belle-edp%23%2F2683-volum-100_ml_umplutur%C4%83",
+"titlu": "Lancome La Vie Est Belle Apă de parfum Tester EDP Volum 100 ml",
+"pret": 447.99,
+"imagine": "https://fragranza.ro/33332-large_default/lancome-la-vie-est-belle-parfum-tester-edp.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Ffragranza.ro%2Flancome-la-vie-est-belle-parfum-tester-edp",
 "magazin": "fragranza.ro",
-"url_magazin": "https://fragranza.ro/lancome-la-vie-est-belle-edp#/2683-volum-100_ml_umplutură"
+"id": "kCp5Xc0y0yyJ",
+"brand": "Lancome",
+"url_magazin": "https://fragranza.ro/lancome-la-vie-est-belle-parfum-tester-edp",
+"pret_vechi": null,
+"verificat": "2026-11-11"
 },
 {
 "titlu": "Parfum, Lancôme, La Vie est Belle, 30ml",
@@ -16874,16 +17151,10 @@
 "imagine": "https://primefarma.ro/wp-content/uploads/2026/09/kNi7VDMdDwuYfWbq4Wkn9j.jpg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fprimefarma.ro%2Fprodus%2Fparfum-lancome-la-vie-est-belle-30ml%2F",
 "magazin": "primefarma.ro",
+"id": "nz0h4HidKlTG",
+"brand": "Lancome",
 "url_magazin": "https://primefarma.ro/produs/parfum-lancome-la-vie-est-belle-30ml/",
-"verificat": "2026-11-04"
-},
-{
-"titlu": "Lancome La Vie Est Belle Iris Absolu Apa de parfum pentru femei EDP Volum 50 ml",
-"pret": 537.99,
-"imagine": "https://fragranza.ro/15821-large_default/lancome-la-vie-est-belle-iris-absolu-apa-de-parfum-pentru-femei-edp.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Ffragranza.ro%2Flancome-la-vie-est-belle-iris-absolu-apa-de-parfum-pentru-femei-edp%23%2F37-volum-50_ml",
-"magazin": "fragranza.ro",
-"url_magazin": "https://fragranza.ro/lancome-la-vie-est-belle-iris-absolu-apa-de-parfum-pentru-femei-edp#/37-volum-50_ml",
+"pret_vechi": 544.0,
 "verificat": "2026-11-04"
 },
 {
@@ -16892,7 +17163,10 @@
 "imagine": "https://primefarma.ro/wp-content/uploads/2026/09/VksLWGSBxf79qMxNgaT6qS.jpg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fprimefarma.ro%2Fprodus%2Fparfum-lancome-la-vie-est-belle-50ml%2F",
 "magazin": "primefarma.ro",
+"id": "PClH1TMI8YwE",
+"brand": "Lancome",
 "url_magazin": "https://primefarma.ro/produs/parfum-lancome-la-vie-est-belle-50ml/",
+"pret_vechi": 721.99,
 "verificat": "2026-11-04"
 },
 {
@@ -16901,7 +17175,10 @@
 "imagine": "https://qudo.ro/wp-content/uploads/2026/05/la-vie-est-belle-eau-de-parfum-75ml-abb85e6635fd9ca67e426586cc94e958.jpg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fqudo.ro%2Fprodus%2Flancome-la-vie-est-belle-eau-de-parfum-75ml%2F",
 "magazin": "qudo.ro",
+"id": "J8xuFWUWc9uM",
+"brand": "Lancome",
 "url_magazin": "https://qudo.ro/produs/lancome-la-vie-est-belle-eau-de-parfum-75ml/",
+"pret_vechi": null,
 "verificat": "2026-11-04"
 },
 {
@@ -16910,7 +17187,10 @@
 "imagine": "https://primefarma.ro/wp-content/uploads/2026/09/fwK482UaUiuCkecceaznmq.jpg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fprimefarma.ro%2Fprodus%2Flancome-la-vie-est-belle-eau-de-parfum-set-cadou-50-ml%2F",
 "magazin": "primefarma.ro",
+"id": "BapIgYRzy6t0",
+"brand": "Lancome",
 "url_magazin": "https://primefarma.ro/produs/lancome-la-vie-est-belle-eau-de-parfum-set-cadou-50-ml/",
+"pret_vechi": 792.99,
 "verificat": "2026-11-04"
 },
 {
@@ -16919,7 +17199,10 @@
 "imagine": "https://primefarma.ro/wp-content/uploads/2026/09/6bhpMvRdJxUjgidsbRyVKd.jpg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fprimefarma.ro%2Fprodus%2Fparfum-lancome-la-vie-est-belle-iris-absolu-leau-de-parfum-spray-50ml%2F",
 "magazin": "primefarma.ro",
+"id": "O9hDLMPA0BW6",
+"brand": "Lancome",
 "url_magazin": "https://primefarma.ro/produs/parfum-lancome-la-vie-est-belle-iris-absolu-leau-de-parfum-spray-50ml/",
+"pret_vechi": 806.99,
 "verificat": "2026-11-04"
 },
 {
@@ -16928,7 +17211,10 @@
 "imagine": "https://floriaro.vtexassets.com/arquivos/ids/163682/Lancome-LA-VIE-EST-BELLE-50-ML---Parfum-pentru-femei.jpg?v=638180037185670000",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.floria.ro%2Flancome-la-vie-est-belle-50-ml-parfum-pentru-femei%2Fp",
 "magazin": "floria.ro",
+"id": "e-QLJjcx8wzp",
+"brand": "Floria",
 "url_magazin": "https://www.floria.ro/lancome-la-vie-est-belle-50-ml-parfum-pentru-femei/p",
+"pret_vechi": null,
 "verificat": "2026-11-04"
 },
 {
@@ -16937,7 +17223,10 @@
 "imagine": "https://primefarma.ro/wp-content/uploads/2026/09/ddxi37YsexWJCkEzi2VKqw.jpg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fprimefarma.ro%2Fprodus%2Fparfum-lancome-la-vie-est-belle-75ml%2F",
 "magazin": "primefarma.ro",
+"id": "Pann6VEA6wtm",
+"brand": "Lancome",
 "url_magazin": "https://primefarma.ro/produs/parfum-lancome-la-vie-est-belle-75ml/",
+"pret_vechi": 1174.99,
 "verificat": "2026-11-04"
 },
 {
@@ -16946,7 +17235,10 @@
 "imagine": "https://primefarma.ro/wp-content/uploads/2026/09/44hWfAB3TiNciGt6ffHs95.jpg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fprimefarma.ro%2Fprodus%2Fparfum-dama-lancome-la-vie-est-belle-100ml%2F",
 "magazin": "primefarma.ro",
+"id": "uWdRrGWV8a4G",
+"brand": "Lancome",
 "url_magazin": "https://primefarma.ro/produs/parfum-dama-lancome-la-vie-est-belle-100ml/",
+"pret_vechi": 1320.99,
 "verificat": "2026-11-04"
 }
 ],
@@ -16964,8 +17256,25 @@
 "titlu": "Parfum Yves Saint Laurent Libre",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-04",
-"feeduri": [],
+"actualizat": "2026-11-11",
+"feeduri": [
+{
+"id": 8532,
+"magazin": "qudo.ro"
+},
+{
+"id": 8969,
+"magazin": "ozone.ro"
+},
+{
+"id": 9125,
+"magazin": "primefarma.ro"
+},
+{
+"id": 2966,
+"magazin": "brasty.ro"
+}
+],
 "produse": [
 {
 "titlu": "Yves Saint Laurent Parfum Libre Le Parfum, 30 ml",
@@ -16973,8 +17282,22 @@
 "imagine": "https://www.ozone.ro/media/catalog/product/y/v/yves_saint_laurent_parfyum_libre_le_parfum_30_ml_1761030869_0.jpg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ozone.ro%2Fproduct%2Fyves-saint-laurent-parfum-libre-le-parfum-30-ml%2F",
 "magazin": "ozone.ro",
+"id": "cBd27Q0886GB",
+"brand": "Yves Saint Laurent",
 "url_magazin": "https://www.ozone.ro/product/yves-saint-laurent-parfum-libre-le-parfum-30-ml/",
+"pret_vechi": null,
 "verificat": "2026-11-04"
+},
+{
+"titlu": "Yves Saint Laurent Apă de parfum Libre Flowers & Flames, 30 ml",
+"pret": 386.65,
+"imagine": "https://www.ozone.ro/media/catalog/product/y/v/yves_saint_laurent_parfyumna_voda_libre_flowers_flames_30_ml_1761030986_0.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ozone.ro%2Fproduct%2Fyves-saint-laurent-ap-de-parfum-libre-flowers-flames-30-ml%2F",
+"magazin": "ozone.ro",
+"id": "IzTAUk09MnjY",
+"brand": "Yves Saint Laurent",
+"url_magazin": "https://www.ozone.ro/product/yves-saint-laurent-ap-de-parfum-libre-flowers-flames-30-ml/",
+"pret_vechi": null
 },
 {
 "titlu": "Yves Saint Laurent Apă de parfum Libre Intense, 30 ml",
@@ -16982,16 +17305,10 @@
 "imagine": "https://www.ozone.ro/media/catalog/product/y/v/yves_saint_laurent_parfyumna_voda_libre_intense_30_ml_1761030993_0.jpg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ozone.ro%2Fproduct%2Fyves-saint-laurent-ap-de-parfum-libre-intense-30-ml%2F",
 "magazin": "ozone.ro",
+"id": "LkmIW3iDKM2g",
+"brand": "Yves Saint Laurent",
 "url_magazin": "https://www.ozone.ro/product/yves-saint-laurent-ap-de-parfum-libre-intense-30-ml/",
-"verificat": "2026-11-04"
-},
-{
-"titlu": "Yves Saint Laurent Apă de parfum Libre, 50 ml",
-"pret": 417.5,
-"imagine": "https://www.ozone.ro/media/catalog/product/y/v/yves_saint_laurent_parfyumna_voda_libre_50_ml_1761031254_0.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ozone.ro%2Fproduct%2Fyves-saint-laurent-ap-de-parfum-libre-50-ml%2F",
-"magazin": "ozone.ro",
-"url_magazin": "https://www.ozone.ro/product/yves-saint-laurent-ap-de-parfum-libre-50-ml/",
+"pret_vechi": null,
 "verificat": "2026-11-04"
 },
 {
@@ -17000,7 +17317,10 @@
 "imagine": "https://www.ozone.ro/media/catalog/product/y/v/yves_saint_laurent_parfyumna_voda_libre_flowers_flames_50_ml_1763128697_0.jpg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ozone.ro%2Fproduct%2Fyves-saint-laurent-ap-de-parfum-libre-flowers-flames-50-ml%2F",
 "magazin": "ozone.ro",
+"id": "e5ZI2FU_sWiL",
+"brand": "Yves Saint Laurent",
 "url_magazin": "https://www.ozone.ro/product/yves-saint-laurent-ap-de-parfum-libre-flowers-flames-50-ml/",
+"pret_vechi": null,
 "verificat": "2026-11-04"
 },
 {
@@ -17009,8 +17329,23 @@
 "imagine": "https://www.ozone.ro/media/catalog/product/y/v/yves_saint_laurent_parfyumna_voda_libre_l_eau_nue_50_ml_1761031006_0.jpg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ozone.ro%2Fproduct%2Fyves-saint-laurent-ap-de-parfum-libre-l-eau-nue-50-ml%2F",
 "magazin": "ozone.ro",
+"id": "OwMXM0BvAPcG",
+"brand": "Yves Saint Laurent",
 "url_magazin": "https://www.ozone.ro/product/yves-saint-laurent-ap-de-parfum-libre-l-eau-nue-50-ml/",
+"pret_vechi": null,
 "verificat": "2026-11-04"
+},
+{
+"titlu": "Yves Saint Laurent Libre Flowers & Flames Eau de Parfum femei 50 ml",
+"pret": 451.0,
+"imagine": "https://www.brasty.ro/images/w320/yves-saint-laurent-libre-flowers-flames-eau-de-parfum-femei-50-ml/3614274151152-1.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.brasty.ro%2Fyves-saint-laurent-libre-flowers-flames-eau-de-parfum-femei-50-ml",
+"magazin": "brasty.ro",
+"id": "d4cc45790",
+"brand": "Yves Saint Laurent",
+"url_magazin": "https://www.brasty.ro/yves-saint-laurent-libre-flowers-flames-eau-de-parfum-femei-50-ml",
+"pret_vechi": null,
+"verificat": "2026-11-11"
 },
 {
 "titlu": "Yves Saint Laurent Apă de parfum Libre Intense, 50 ml",
@@ -17018,7 +17353,10 @@
 "imagine": "https://www.ozone.ro/media/catalog/product/y/v/yves_saint_laurent_parfyumna_voda_libre_intense_50_ml_1761030997_0.jpg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ozone.ro%2Fproduct%2Fyves-saint-laurent-ap-de-parfum-libre-intense-50-ml%2F",
 "magazin": "ozone.ro",
+"id": "NFt3Rt3TRP-U",
+"brand": "Yves Saint Laurent",
 "url_magazin": "https://www.ozone.ro/product/yves-saint-laurent-ap-de-parfum-libre-intense-50-ml/",
+"pret_vechi": null,
 "verificat": "2026-11-04"
 },
 {
@@ -17027,40 +17365,100 @@
 "imagine": "https://www.ozone.ro/media/catalog/product/y/v/yves_saint_laurent_parfyum_libre_le_parfum_50_ml_1761030873_0.jpg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ozone.ro%2Fproduct%2Fysl-libre-le-parfum-edp-50-ml-d%2F",
 "magazin": "ozone.ro",
+"id": "ToPknZ9S0yvI",
+"brand": "Yves Saint Laurent",
 "url_magazin": "https://www.ozone.ro/product/ysl-libre-le-parfum-edp-50-ml-d/",
+"pret_vechi": null,
 "verificat": "2026-11-04"
 },
 {
-"titlu": "Yves Saint Laurent Libre Eau de Toilette pentru femei 30 ml",
-"pret": 495.0,
-"imagine": "https://cdn.notinoimg.com/export_mergado/yves-saint-laurent/3614273316149_01-o.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.notino.ro%2Fyves-saint-laurent%2Flibre-eau-de-toilette-pentru-femei%2Fp-16074454%2F",
-"magazin": "notino.ro",
-"url_magazin": "https://www.notino.ro/yves-saint-laurent/libre-eau-de-toilette-pentru-femei/p-16074454/",
-"verificat": "2026-11-04"
+"titlu": "Yves Saint Laurent Apă de parfum Libre, 90 ml, tester",
+"pret": 492.33,
+"imagine": "https://www.ozone.ro/media/catalog/product/y/v/yves_saint_laurent_parfyumna_voda_libre_90_ml_tester_1761031261_0.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ozone.ro%2Fproduct%2Fyves-saint-laurent-ap-de-parfum-libre-90-ml-tester%2F",
+"magazin": "ozone.ro",
+"id": "V2jCaCaIiXsG",
+"brand": "Yves Saint Laurent",
+"url_magazin": "https://www.ozone.ro/product/yves-saint-laurent-ap-de-parfum-libre-90-ml-tester/",
+"pret_vechi": null
 },
 {
-"titlu": "Yves Saint Laurent Libre Eau de Parfum reincarcabil pentru femei 30 ml",
-"pret": 556.0,
-"imagine": "https://cdn.notinoimg.com/export_mergado/yves-saint-laurent/3614272648401_01-o.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.notino.ro%2Fyves-saint-laurent%2Flibre-libre-eau-de-parfum-pentru-femei%2Fp-15968533%2F",
-"magazin": "notino.ro",
-"url_magazin": "https://www.notino.ro/yves-saint-laurent/libre-libre-eau-de-parfum-pentru-femei/p-15968533/",
-"verificat": "2026-11-04"
+"titlu": "Yves Saint Laurent Libre Flowers & Flames Eau de Parfum femei 90 ml",
+"pret": 555.0,
+"imagine": "https://www.brasty.ro/images/w320/yves-saint-laurent-libre-flowers-flames-eau-de-parfum-femei-90-ml/2048950-1.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.brasty.ro%2Fyves-saint-laurent-libre-flowers-flames-eau-de-parfum-femei-90-ml",
+"magazin": "brasty.ro",
+"id": "724de66fd",
+"brand": "Yves Saint Laurent",
+"url_magazin": "https://www.brasty.ro/yves-saint-laurent-libre-flowers-flames-eau-de-parfum-femei-90-ml",
+"pret_vechi": null,
+"verificat": "2026-11-11"
 },
 {
-"titlu": "Yves Saint Laurent Libre Flowers & Flames Eau de Parfum pentru femei 30 ml",
-"pret": 568.0,
-"imagine": "https://cdn.notinoimg.com/export_mergado/yves-saint-laurent/3614274151145_01-o.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.notino.ro%2Fyves-saint-laurent%2Flibre-flowers-flames-eau-de-parfum-pentru-femei%2Fp-16260077%2F",
-"magazin": "notino.ro",
-"url_magazin": "https://www.notino.ro/yves-saint-laurent/libre-flowers-flames-eau-de-parfum-pentru-femei/p-16260077/",
-"verificat": "2026-11-04"
+"titlu": "Parfum, Yves Saint Laurent Libre, Eau De Parfum Intense, 30ml",
+"pret": 671.99,
+"imagine": "https://primefarma.ro/wp-content/uploads/2026/09/btGyJPq5jEgN98AXdTpeg5.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fprimefarma.ro%2Fprodus%2Fparfum-yves-saint-laurent-libre-eau-de-parfum-intense-30ml%2F",
+"magazin": "primefarma.ro",
+"id": "E8jdMdxA3WN_",
+"brand": "Yves Saint Laurent",
+"url_magazin": "https://primefarma.ro/produs/parfum-yves-saint-laurent-libre-eau-de-parfum-intense-30ml/",
+"pret_vechi": 791.99,
+"verificat": "2026-11-11"
+},
+{
+"titlu": "Parfum Yves Saint Laurent Libre Le Parfum, 50ml",
+"pret": 786.99,
+"imagine": "https://primefarma.ro/wp-content/uploads/2026/09/Tx6NYDWcafYgurvqyK8ayq.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fprimefarma.ro%2Fprodus%2Fparfum-yves-saint-laurent-libre-le-parfum-50ml%2F",
+"magazin": "primefarma.ro",
+"id": "DeCXqTT1by4v",
+"brand": "Yves Saint Laurent",
+"url_magazin": "https://primefarma.ro/produs/parfum-yves-saint-laurent-libre-le-parfum-50ml/",
+"pret_vechi": 936.99,
+"verificat": "2026-11-11"
+},
+{
+"titlu": "Parfum Yves Saint Laurent Libre L'Absolu Platine 50ml",
+"pret": 938.99,
+"imagine": "https://primefarma.ro/wp-content/uploads/2026/09/9iDEPpXgCypVt6dcipje6z.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fprimefarma.ro%2Fprodus%2Fparfum-yves-saint-laurent-libre-labsolu-platine-50ml%2F",
+"magazin": "primefarma.ro",
+"id": "vlVogJpvrLSL",
+"brand": "Yves Saint Laurent",
+"url_magazin": "https://primefarma.ro/produs/parfum-yves-saint-laurent-libre-labsolu-platine-50ml/",
+"pret_vechi": 1148.99,
+"verificat": "2026-11-11"
+},
+{
+"titlu": "Apa de Parfum, Yves Saint Laurent, Libre Intense, 50ml",
+"pret": 945.99,
+"imagine": "https://primefarma.ro/wp-content/uploads/2026/09/87RjLA3V7pXznsQ8tjvSPs.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fprimefarma.ro%2Fprodus%2Fapa-de-parfum-yves-saint-laurent-libre-intense-50ml%2F",
+"magazin": "primefarma.ro",
+"id": "v3FzzmZ79CbE",
+"brand": "Yves Saint Laurent",
+"url_magazin": "https://primefarma.ro/produs/apa-de-parfum-yves-saint-laurent-libre-intense-50ml/",
+"pret_vechi": 1155.99,
+"verificat": "2026-11-11"
+},
+{
+"titlu": "Parfum, Yves Saint Laurent, Libre, 90ml",
+"pret": 1172.99,
+"imagine": "https://primefarma.ro/wp-content/uploads/2026/09/88bmqMVyEMjTciTEQgQDyp.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fprimefarma.ro%2Fprodus%2Fparfum-yves-saint-laurent-libre-90ml%2F",
+"magazin": "primefarma.ro",
+"id": "fBolyiKfJmWW",
+"brand": "Yves Saint Laurent",
+"url_magazin": "https://primefarma.ro/produs/parfum-yves-saint-laurent-libre-90ml/",
+"pret_vechi": 1378.99,
+"verificat": "2026-11-11"
 }
 ],
 "magazine": [
-"notino.ro",
-"ozone.ro"
+"brasty.ro",
+"ozone.ro",
+"primefarma.ro"
 ]
 },
 {
@@ -17070,7 +17468,7 @@
 "titlu": "Vitamina D3 2000 UI",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-04",
+"actualizat": "2026-11-11",
 "feeduri": [
 {
 "id": 6414,
@@ -17115,7 +17513,7 @@
 },
 {
 "titlu": "Doppelherz Vitamina D3 2000 UI 30 capsule",
-"pret": 21.93,
+"pret": 21.03,
 "imagine": "https://liki24.ro/image/catalog/product/newupload/907882-134340253497739692.jpg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fliki24.ro%2Fp%2Fdoppelherz-vitamina-d3-2000-ui-30-capsule%2F%3Fnlr%3D1",
 "magazin": "liki24.ro",
@@ -17135,6 +17533,17 @@
 "url_magazin": "https://www.farmaciilenapofarm.ro/imunitate-2/vitamina-d3-2000-ui-60-comprimate-doppelherz",
 "pret_vechi": null,
 "verificat": "2026-11-04"
+},
+{
+"titlu": "OstroVit Vitamina D3 2000 UI, 2x60 capsule",
+"pret": 22.69,
+"imagine": "https://liki24.ro/image/catalog/product/newupload/910227-134382707547716829.png",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fliki24.ro%2Fp%2Fostrovit-vitamina-d3-2000-ui-2x60-capsule%2F%3Fnlr%3D1",
+"magazin": "liki24.ro",
+"id": "3BkfEXxa8O0U",
+"brand": "Ostrovit",
+"url_magazin": "https://liki24.ro/p/ostrovit-vitamina-d3-2000-ui-2x60-capsule/?nlr=1",
+"pret_vechi": null
 },
 {
 "titlu": "Laboratoarele Remedia Vitamina D3 2000 UI + Vitamina K2 75 mcg, 40 comprimate filmate",
@@ -17246,7 +17655,7 @@
 },
 {
 "titlu": "Wish Vitamina D3 2000 UI + PREBIOTIC 120 capsule",
-"pret": 36.27,
+"pret": 36.24,
 "imagine": "https://liki24.ro/image/catalog/product/newupload/746122-134228319045769822.jpg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fliki24.ro%2Fp%2Fwish-vitamina-d3-2000-ui-prebiotic-120-capsule%2F%3Fnlr%3D1",
 "magazin": "liki24.ro",
@@ -17279,18 +17688,6 @@
 "verificat": "2026-11-04"
 },
 {
-"titlu": "Equilibra vitamina d3 2000 ui 30 comprimate - supliment imunostimulant",
-"pret": 41.76,
-"imagine": "https://liki24.ro/image/catalog/product/newupload/811236-134253389647819053.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fliki24.ro%2Fp%2Fequilibra-vitamina-d3-2000-ui-30-comprimate-supliment-imunostimulant%2F%3Fnlr%3D1",
-"magazin": "liki24.ro",
-"id": "feLDQx3YcOmL",
-"brand": "Equilibra",
-"url_magazin": "https://liki24.ro/p/equilibra-vitamina-d3-2000-ui-30-comprimate-supliment-imunostimulant/?nlr=1",
-"pret_vechi": null,
-"verificat": "2026-11-04"
-},
-{
 "titlu": "Vitamina D3 2000 UI + K2 (MK-7) 30cps moi",
 "pret": 42.11,
 "imagine": "https://cdn.vegis.ro/images/products/img_202406171514/156575/full/cosmopharm-vitamina-d3-2000-ui-plus-k2-mk-7-30cps-moi-357491.png",
@@ -17304,7 +17701,7 @@
 },
 {
 "titlu": "SFD D3 + K2, vitamina D 2000 UI + vitamina K 100 µg, 200 comprimate",
-"pret": 42.57,
+"pret": 42.25,
 "imagine": "https://liki24.ro/image/catalog/product/newupload/311096-133631868576835329.jpg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fliki24.ro%2Fp%2Fsfd-d3-k2-vitamina-d-2000-ui-vitamina-k-100-ug-200-comprimate%2F%3Fnlr%3D1",
 "magazin": "liki24.ro",
@@ -17386,7 +17783,7 @@
 "titlu": "Vitamina C 1000 mg",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-04",
+"actualizat": "2026-11-11",
 "feeduri": [
 {
 "id": 6414,
@@ -17454,6 +17851,18 @@
 "verificat": "2026-11-04"
 },
 {
+"titlu": "Laboratoarele Remedia Complex Imunitate cu vitamina C 1000 mg, zinc 25 mg si vitamina D3 2000 UI, 30 comprimate",
+"pret": 26.02,
+"imagine": "https://cdnmpro.com/848326168/p/raw/1/laboratoarele-remedia-complex-imunitate-cu-vitamina-c-1000-mg-zinc-25~150031.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.farmaciilenapofarm.ro%2Fimunitate-2%2Flaboratoarele-remedia-complex-imunitate-cu-vitamina-c-1000-mg-zinc-25-mg-si-vitamina-d3-2000-ui-30-comprimate",
+"magazin": "farmaciilenapofarm.ro",
+"id": "O5YykCeRwpJ0",
+"brand": "Laboratoarele Remedia",
+"url_magazin": "https://www.farmaciilenapofarm.ro/imunitate-2/laboratoarele-remedia-complex-imunitate-cu-vitamina-c-1000-mg-zinc-25-mg-si-vitamina-d3-2000-ui-30-comprimate",
+"pret_vechi": null,
+"verificat": "2026-11-04"
+},
+{
 "titlu": "Vitamina C 1000mg 20cpr efervescente",
 "pret": 26.9,
 "imagine": "https://cdn.vegis.ro/images/products/img_202406171514/164320/full/biosunline-vitamina-c-1000mg-20cpr-efervescente-361129.jpg",
@@ -17466,6 +17875,18 @@
 "verificat": "2026-11-04"
 },
 {
+"titlu": "Vitamina C 1000 mg + Zinc 10 mg + D3 2000 UI, 30 comprimate filmate – Remedia",
+"pret": 30.25,
+"imagine": "https://cdnmpro.com/848326168/p/raw/7/vitamina-c-1000-mg-zinc-10-mg-d3-2000-ui-30-comprimate-filmate-%E2%80%93~150067.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.farmaciilenapofarm.ro%2Fvitamina-c-adulti%2Fvitamina-c-1000-mg-zinc-10-mg-d3-2000-ui-30-comprimate-filmate-remedia",
+"magazin": "farmaciilenapofarm.ro",
+"id": "hV_WAGHBJTfz",
+"brand": "Laboratoarele Remedia",
+"url_magazin": "https://www.farmaciilenapofarm.ro/vitamina-c-adulti/vitamina-c-1000-mg-zinc-10-mg-d3-2000-ui-30-comprimate-filmate-remedia",
+"pret_vechi": null,
+"verificat": "2026-11-11"
+},
+{
 "titlu": "Vitamina C Upsavit 1000 mg, 15 comprimate masticabile, UPSA",
 "pret": 30.63,
 "imagine": "https://cdnmpro.com/848326168/p/raw/1/vitamina-c-upsavit-1000-mg-15-comprimate-masticabile-upsa~182041.jpg",
@@ -17474,18 +17895,6 @@
 "id": "ks4p9unBDFyB",
 "brand": "Upsa",
 "url_magazin": "https://www.farmaciilenapofarm.ro/imunitate-2/vitamina-c-upsavit-1000-mg-15-comprimate-masticabile-upsa",
-"pret_vechi": null,
-"verificat": "2026-11-04"
-},
-{
-"titlu": "Vitamina C 1000 mg + Zinc 25 mg + D3 4000 UI, 30 de bucati, Fiterman",
-"pret": 32.1,
-"imagine": "https://cdnmpro.com/848326168/p/raw/1/vitamina-c-1000-mg-zinc-25-mg-d3-4000-ui-30-bucati-fiterman~8611.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.farmaciilenapofarm.ro%2Fvitamine-si-energie%2Fvitamina-c-1000-mg-zinc-25-mg-d3-4000-ui-30-bucati-fiterman",
-"magazin": "farmaciilenapofarm.ro",
-"id": "Oo5vTSEnjK2j",
-"brand": "Fiterman Pharma",
-"url_magazin": "https://www.farmaciilenapofarm.ro/vitamine-si-energie/vitamina-c-1000-mg-zinc-25-mg-d3-4000-ui-30-bucati-fiterman",
 "pret_vechi": null,
 "verificat": "2026-11-04"
 },
@@ -17583,18 +17992,6 @@
 "pret_vechi": null
 },
 {
-"titlu": "Vitamina C Strong 1000 mg, 60 tablete, Naturmil",
-"pret": 64.13,
-"imagine": "https://cdnmpro.com/848326168/p/raw/9/vitamina-c-strong-1000-mg-60-tablete-naturmil~189949.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.farmaciilenapofarm.ro%2Fvitamina-c-adulti%2Fvitamina-c-strong-1000-mg-60-tablete-naturmil",
-"magazin": "farmaciilenapofarm.ro",
-"id": "Ph443pLacV6P",
-"brand": "Naturmil",
-"url_magazin": "https://www.farmaciilenapofarm.ro/vitamina-c-adulti/vitamina-c-strong-1000-mg-60-tablete-naturmil",
-"pret_vechi": null,
-"verificat": "2026-11-04"
-},
-{
 "titlu": "Vitamina C 1000mg 120cps vegetale",
 "pret": 67.96,
 "imagine": "https://cdn.vegis.ro/images/products/img_202406171514/164371/full/alevia-vitamina-c-1000mg-120cps-vegetale-361195.jpg",
@@ -17617,17 +18014,6 @@
 "url_magazin": "https://pansiprod.ro/products/vitamina-c-1000-mg-90-cps?variant=44882621235431",
 "pret_vechi": null,
 "verificat": "2026-11-04"
-},
-{
-"titlu": "Vitamina C 1000 mg, 100 tablete, Bronson Laboratories",
-"pret": 76.86,
-"imagine": "https://liki24.ro/image/catalog/product/newupload/29742-vitamina-c-1000-mg-100-tablete-bronson-laboratories-1.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fliki24.ro%2Fp%2Fvitamina-c-1000-mg-100-tablete-bronson-laboratories%2F%3Fnlr%3D1",
-"magazin": "liki24.ro",
-"id": "L6b5qOn39cEh",
-"brand": "Bronson Laboratories",
-"url_magazin": "https://liki24.ro/p/vitamina-c-1000-mg-100-tablete-bronson-laboratories/?nlr=1",
-"pret_vechi": null
 },
 {
 "titlu": "Pachet Vitamina C Strong, 1000 mg, 60 tablete + 60 tablete, Naturmil",
@@ -17685,6 +18071,17 @@
 "url_magazin": "https://pansiprod.ro/products/esi-pachet-imunitate-2-1-immunilflor-urto-si-vitamina-c-1000-mg-90-cps?variant=52711961919821",
 "pret_vechi": 192.0,
 "verificat": "2026-11-04"
+},
+{
+"titlu": "Lipozomal Propolis 100mg, Vitamina C 1000mg, Vitamina D3 2000UI 30 fiole",
+"pret": 163.63,
+"imagine": "https://cdn.vegis.ro/images/products/img_202406171514/157562/full/albina-carpatina-lipozomal-propolis-100mg-vitamina-c-1000mg-vitamina-d3-2000ui-30-fiole-342677.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fvegis.ro%2Fsuplimente-fiole%2Falbina-carpatina%2F157562-lipozomal-propolis-100mg-vitamina-c-1000mg-vitamina-d3-2000ui-30-fiole%2F",
+"magazin": "vegis.ro",
+"id": "1-xdZzA-FrkZ",
+"brand": "ALBINA&nbsp;CARPATINA",
+"url_magazin": "https://vegis.ro/suplimente-fiole/albina-carpatina/157562-lipozomal-propolis-100mg-vitamina-c-1000mg-vitamina-d3-2000ui-30-fiole/",
+"pret_vechi": 192.5
 }
 ],
 "magazine": [
@@ -17701,7 +18098,7 @@
 "titlu": "Magneziu în capsule",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-04",
+"actualizat": "2026-11-11",
 "feeduri": [
 {
 "id": 6414,
@@ -17770,7 +18167,18 @@
 "verificat": "2026-11-04"
 },
 {
-"titlu": "Bereș Magneziu Bisglicinat + Vitamina B6, 60 capsule",
+"titlu": "WK DZIK Magneziu B6 ( citrat de magneziu ) 120 capsule",
+"pret": 44.1,
+"imagine": "https://liki24.ro/image/catalog/product/newupload/745520-134228220783207436.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fliki24.ro%2Fp%2Fwk-dzik-magneziu-b6-citrat-de-magneziu-120-capsule%2F%3Fnlr%3D1",
+"magazin": "liki24.ro",
+"id": "FcT5fTMDJbu2",
+"brand": "",
+"url_magazin": "https://liki24.ro/p/wk-dzik-magneziu-b6-citrat-de-magneziu-120-capsule/?nlr=1",
+"pret_vechi": null
+},
+{
+"titlu": "Beres Magneziu Bisglicinat + Vitamina B6, 60 capsule",
 "pret": 44.29,
 "imagine": "https://cdnmpro.com/848326168/p/raw/6/beres-magneziu-bisglicinat-vitamina-b6-60-capsule~197326.jpg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.farmaciilenapofarm.ro%2Fmagneziu-si-minerale-esentiale-2%2Fberes-magneziu-bisglicinat-vitamina-b6-60-capsule",
@@ -17806,42 +18214,6 @@
 "verificat": "2026-11-04"
 },
 {
-"titlu": "Swanson Albion Calciu și Magneziu, 60 capsule",
-"pret": 50.44,
-"imagine": "https://cdn.myshoptet.com/usr/www.brainmarket.ro/user/shop/orig/36310_swanson-albion-calciu-si-magneziu--60-capsule.jpg?6ab16d1a",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.brainmarket.ro%2Fswanson-albion-calciu-si-magneziu--60-capsule%2F",
-"magazin": "brainmarket.ro",
-"id": "2pMkcSNQgaJQ",
-"brand": "Swanson",
-"url_magazin": "https://www.brainmarket.ro/swanson-albion-calciu-si-magneziu--60-capsule/",
-"pret_vechi": null,
-"verificat": "2026-11-04"
-},
-{
-"titlu": "Swanson Aspartat de magneziu, 685 mg, 90 capsule",
-"pret": 54.85,
-"imagine": "https://cdn.myshoptet.com/usr/www.brainmarket.ro/user/shop/orig/36448_swanson-aspartat-de-magneziu--685-mg--90-capsule.jpg?6ab69b34",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.brainmarket.ro%2Fswanson-aspartat-de-magneziu--685-mg--90-capsule%2F",
-"magazin": "brainmarket.ro",
-"id": "bT9PCAT5bOLE",
-"brand": "Swanson",
-"url_magazin": "https://www.brainmarket.ro/swanson-aspartat-de-magneziu--685-mg--90-capsule/",
-"pret_vechi": null,
-"verificat": "2026-11-04"
-},
-{
-"titlu": "Swanson Citrat de calciu + Magneziu, 150 capsule",
-"pret": 55.51,
-"imagine": "https://cdn.myshoptet.com/usr/www.brainmarket.ro/user/shop/orig/36643_swanson-citrat-de-calciu-magneziu--150-capsule.jpg?6aae34d1",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.brainmarket.ro%2Fswanson-citrat-de-calciu-magneziu--150-capsule%2F",
-"magazin": "brainmarket.ro",
-"id": "2v7C5_4-1rZ4",
-"brand": "Swanson",
-"url_magazin": "https://www.brainmarket.ro/swanson-citrat-de-calciu-magneziu--150-capsule/",
-"pret_vechi": null,
-"verificat": "2026-11-04"
-},
-{
 "titlu": "Magneziu + Vitamina B6 Lipozomal, 30 capsule, Laboratoarele Remedia",
 "pret": 56.27,
 "imagine": "https://cdnmpro.com/848326168/p/raw/8/magneziu-vitamina-b6-lipozomal-30-capsule-laboratoarele-remedia~190288.jpg",
@@ -17850,18 +18222,6 @@
 "id": "HAkDoiRtzU-L",
 "brand": "Laboratoarele Remedia",
 "url_magazin": "https://www.farmaciilenapofarm.ro/magneziu-si-minerale-esentiale-2/magneziu-vitamina-b6-lipozomal-30-capsule-laboratoarele-remedia",
-"pret_vechi": null,
-"verificat": "2026-11-04"
-},
-{
-"titlu": "Reflex Albion Magneziu, 90 capsule",
-"pret": 59.25,
-"imagine": "https://cdn.myshoptet.com/usr/www.brainmarket.ro/user/shop/orig/14607_magnesium-bysglycinate-90-kapsli.jpg?6aaa1b07",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.brainmarket.ro%2Freflex-albion-magneziu--90-capsule%2F",
-"magazin": "brainmarket.ro",
-"id": "0zTRfbnYR5uH",
-"brand": "Reflex",
-"url_magazin": "https://www.brainmarket.ro/reflex-albion-magneziu--90-capsule/",
 "pret_vechi": null,
 "verificat": "2026-11-04"
 },
@@ -17878,18 +18238,6 @@
 "verificat": "2026-11-04"
 },
 {
-"titlu": "Swanson Albion Magneziu, 133 mg, 90 capsule",
-"pret": 61.45,
-"imagine": "https://cdn.myshoptet.com/usr/www.brainmarket.ro/user/shop/orig/36307_swanson-albion-magneziu--133-mg--90-capsule.jpg?6aaa1b07",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.brainmarket.ro%2Fswanson-albion-magneziu--133-mg--90-capsule%2F",
-"magazin": "brainmarket.ro",
-"id": "gaEHFqF9f5M5",
-"brand": "Swanson",
-"url_magazin": "https://www.brainmarket.ro/swanson-albion-magneziu--133-mg--90-capsule/",
-"pret_vechi": null,
-"verificat": "2026-11-04"
-},
-{
 "titlu": "Magneziu Lipozomal, 30 capsule vegetale, Cosmopharm",
 "pret": 68.0,
 "imagine": "https://c.cdnmp.net/992552723/p/l/6/magneziu-lipozomal-30-capsule-vegetale-cosmopharm~32236.jpg",
@@ -17902,30 +18250,6 @@
 "verificat": "2026-11-04"
 },
 {
-"titlu": "Swanson Orotat de magneziu, 60 capsule",
-"pret": 72.47,
-"imagine": "https://cdn.myshoptet.com/usr/www.brainmarket.ro/user/shop/orig/36457_swanson-orotat-de-magneziu--60-capsule.jpg?6ab04e40",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.brainmarket.ro%2Fswanson-orotat-de-magneziu--60-capsule%2F",
-"magazin": "brainmarket.ro",
-"id": "wlmcTON4Tk6n",
-"brand": "Swanson",
-"url_magazin": "https://www.brainmarket.ro/swanson-orotat-de-magneziu--60-capsule/",
-"pret_vechi": null,
-"verificat": "2026-11-04"
-},
-{
-"titlu": "Swanson Lactat de magneziu Swanson, 84 mg, 120 capsule",
-"pret": 76.87,
-"imagine": "https://cdn.myshoptet.com/usr/www.brainmarket.ro/user/shop/orig/36451_lactat-de-magneziu-swanson--84-mg--120-capsule.jpg?6ab6a85e",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.brainmarket.ro%2Flactat-de-magneziu-swanson--84-mg--120-capsule%2F",
-"magazin": "brainmarket.ro",
-"id": "msRM0cJTQ3M4",
-"brand": "Swanson",
-"url_magazin": "https://www.brainmarket.ro/lactat-de-magneziu-swanson--84-mg--120-capsule/",
-"pret_vechi": null,
-"verificat": "2026-11-04"
-},
-{
 "titlu": "Magneziu Taurat, 30 capsule, Viridian",
 "pret": 95.0,
 "imagine": "https://c.cdnmp.net/992552723/p/l/7/magneziu-taurat-30-capsule-viridian~33087.jpg",
@@ -17934,18 +18258,6 @@
 "id": "gs_PSnw8NS8Z",
 "brand": "Viridian",
 "url_magazin": "https://www.remediumfarm.ro/vitamine-si-minerale-2/magneziu-taurat-30-capsule-viridian",
-"pret_vechi": null,
-"verificat": "2026-11-04"
-},
-{
-"titlu": "Citrat de magneziu de potasiu Viridian 90 capsule (potasiu-magneziu)",
-"pret": 96.7,
-"imagine": "https://cdn.myshoptet.com/usr/www.brainmarket.ro/user/shop/orig/17328_342-potassium-magnesium-citrate-90maly.jpg?6aaa1b07",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.brainmarket.ro%2Fcitrat-de-magneziu-de-potasiu-viridian-90-capsule--potasiu-magneziu-%2F",
-"magazin": "brainmarket.ro",
-"id": "gpw21VYQQlbn",
-"brand": "Viridian",
-"url_magazin": "https://www.brainmarket.ro/citrat-de-magneziu-de-potasiu-viridian-90-capsule--potasiu-magneziu-/",
 "pret_vechi": null,
 "verificat": "2026-11-04"
 },
@@ -17963,8 +18275,8 @@
 }
 ],
 "magazine": [
-"brainmarket.ro",
 "farmaciilenapofarm.ro",
+"liki24.ro",
 "remediumfarm.ro"
 ]
 },
@@ -19653,18 +19965,6 @@
 "verificat": "2026-11-04"
 },
 {
-"titlu": "Masina de gaurit, insurubat (bormasina), cu acumulator 2 Ah, incarcator, 18 V Li-ion, mandrina 0.8-10 mm, Graphite Energ",
-"pret": 429.98,
-"imagine": "https://www.casa-bucuriei.ro/wp-content/uploads/2026/04/11762794_PRODUCT.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.casa-bucuriei.ro%2Fprodus%2Fmasina-de-gaurit-insurubat-bormasina-cu-acumulator-2-ah-incarcator-18-v-li-ion-mandrina-0-8-10-mm-graphite-energy%2F",
-"magazin": "casa-bucuriei.ro",
-"id": "x2pDT1bVfL4N",
-"brand": "Casa-bucuriei",
-"url_magazin": "https://www.casa-bucuriei.ro/produs/masina-de-gaurit-insurubat-bormasina-cu-acumulator-2-ah-incarcator-18-v-li-ion-mandrina-0-8-10-mm-graphite-energy/",
-"pret_vechi": null,
-"verificat": "2026-11-04"
-},
-{
 "titlu": "BOSCH Masina de gaurit si insurubat (bormasina) pe acumulator cu percutie Bosch EasyImpact 06039D810H, 18V-40, 1630 RPM,",
 "pret": 434.99,
 "imagine": "https://www.dwyn.ro/images/products/img_202508191322/355412/full/bosch-masina-de-gaurit-si-insurubat-bormasina-pe-acumulator-cu-percutie-bosch-easyimpact-06039d810h-18v-40-1630-rpm-36-nm-24-450-percutii-min-13-mm-mandrina-rapida-fara-acumulator-incarcator-993080.jpg",
@@ -19673,18 +19973,6 @@
 "id": "Pz277_k4agwC",
 "brand": "BOSCH",
 "url_magazin": "https://www.dwyn.ro/masini-de-gaurit/bosch/355412-masina-de-gaurit-si-insurubat-bormasina-pe-acumulator-cu-percutie-bosch-easyimpact-06039d810h-18v-40-1630-rpm-36-nm-24-450-percutii-min-13-mm-mandrina-rapida-fara-acumulator-incarcator-verde-negru/",
-"pret_vechi": null,
-"verificat": "2026-11-04"
-},
-{
-"titlu": "Masina de gaurit, insurubat (bormasina), cu acumulator 1.5 Ah, incarcator 18V Li-ion Energy, mandrina 0.8-10 mm, Dedra",
-"pret": 435.36,
-"imagine": "https://www.casa-bucuriei.ro/wp-content/uploads/2026/04/11766953_PRODUCT.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.casa-bucuriei.ro%2Fprodus%2Fmasina-de-gaurit-insurubat-bormasina-cu-acumulator-1-5-ah-incarcator-18v-li-ion-energy-mandrina-0-8-10-mm-dedra%2F",
-"magazin": "casa-bucuriei.ro",
-"id": "s68jddv8_aVY",
-"brand": "Casa-bucuriei",
-"url_magazin": "https://www.casa-bucuriei.ro/produs/masina-de-gaurit-insurubat-bormasina-cu-acumulator-1-5-ah-incarcator-18v-li-ion-energy-mandrina-0-8-10-mm-dedra/",
 "pret_vechi": null,
 "verificat": "2026-11-04"
 },
@@ -19699,23 +19987,10 @@
 "url_magazin": "https://www.dwyn.ro/masini-de-gaurit/bosch/479221-masina-de-gaurit-si-insurubat-bormasina-pe-acumulator-bosch-universal-drill-18v-60-06039d7001-60nm-2-trepte-mandrina-13mm-acumulator-2ah-incarcator/",
 "pret_vechi": null,
 "verificat": "2026-11-04"
-},
-{
-"titlu": "Masina de gaurit, insurubat (bormasina), cu percutie, cu acumulator 4 Ah Li-ion, 20 V, incarcator, mandrina 13 mm, Worcr",
-"pret": 559.97,
-"imagine": "https://www.casa-bucuriei.ro/wp-content/uploads/2026/04/11762767_PRODUCT.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.casa-bucuriei.ro%2Fprodus%2Fmasina-de-gaurit-insurubat-bormasina-cu-percutie-cu-acumulator-4-ah-li-ion-20-v-incarcator-mandrina-13-mm-worcraft%2F",
-"magazin": "casa-bucuriei.ro",
-"id": "xpWRTIeIvPFm",
-"brand": "Casa-bucuriei",
-"url_magazin": "https://www.casa-bucuriei.ro/produs/masina-de-gaurit-insurubat-bormasina-cu-percutie-cu-acumulator-4-ah-li-ion-20-v-incarcator-mandrina-13-mm-worcraft/",
-"pret_vechi": null,
-"verificat": "2026-11-04"
 }
 ],
 "magazine": [
 "brico.ro",
-"casa-bucuriei.ro",
 "dwyn.ro",
 "scule365.ro"
 ]
@@ -19844,18 +20119,6 @@
 "verificat": "2026-11-04"
 },
 {
-"titlu": "Polizor unghiular, flex, 710 W, 125 mm, Worcraft",
-"pret": 299.95,
-"imagine": "https://www.casa-bucuriei.ro/wp-content/uploads/2026/04/11757886_PRODUCT.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.casa-bucuriei.ro%2Fprodus%2Fpolizor-unghiular-flex-710-w-125-mm-worcraft%2F",
-"magazin": "casa-bucuriei.ro",
-"id": "6DkWDNa8bBE7",
-"brand": "Casa-bucuriei",
-"url_magazin": "https://www.casa-bucuriei.ro/produs/polizor-unghiular-flex-710-w-125-mm-worcraft/",
-"pret_vechi": null,
-"verificat": "2026-11-04"
-},
-{
 "titlu": "Polizor unghiular Flex L 850 125, 125 mm, 850 W, 12000 rpm",
 "pret": 314.0,
 "imagine": "https://masif.ro/media/catalog/product/5/3/533120_1.jpg",
@@ -19876,30 +20139,6 @@
 "id": "o_UECOdihd0W",
 "brand": "DeWalt",
 "url_magazin": "https://masif.ro/polizor-unghiular-dewalt-dwe4117-950-w-125-mm-12000-rot-min/",
-"pret_vechi": null,
-"verificat": "2026-11-04"
-},
-{
-"titlu": "Polizor unghiular, flex, 1100 W, 125 mm, Dedra",
-"pret": 371.68,
-"imagine": "https://www.casa-bucuriei.ro/wp-content/uploads/2026/04/11766987_PRODUCT.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.casa-bucuriei.ro%2Fprodus%2Fpolizor-unghiular-flex-1100-w-125-mm-dedra%2F",
-"magazin": "casa-bucuriei.ro",
-"id": "CFdZeBy0IhyD",
-"brand": "Casa-bucuriei",
-"url_magazin": "https://www.casa-bucuriei.ro/produs/polizor-unghiular-flex-1100-w-125-mm-dedra/",
-"pret_vechi": null,
-"verificat": "2026-11-04"
-},
-{
-"titlu": "Polizor unghiular, flex, 820 W, turatie reglabila, 125 mm, Worcraft",
-"pret": 400.86,
-"imagine": "https://www.casa-bucuriei.ro/wp-content/uploads/2026/04/11757892_PRODUCT.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.casa-bucuriei.ro%2Fprodus%2Fpolizor-unghiular-flex-820-w-turatie-reglabila-125-mm-worcraft%2F",
-"magazin": "casa-bucuriei.ro",
-"id": "CvNyuiIKl0j1",
-"brand": "Casa-bucuriei",
-"url_magazin": "https://www.casa-bucuriei.ro/produs/polizor-unghiular-flex-820-w-turatie-reglabila-125-mm-worcraft/",
 "pret_vechi": null,
 "verificat": "2026-11-04"
 },
@@ -19977,7 +20216,6 @@
 }
 ],
 "magazine": [
-"casa-bucuriei.ro",
 "masif.ro",
 "ozone.ro"
 ]
@@ -20260,18 +20498,6 @@
 "verificat": "2026-11-04"
 },
 {
-"titlu": "Masina de tuns iarba, gazon, electrica, 2x20V Li-ion (acumulatori neinclusi), 34 cm, Worcraft",
-"pret": 1169.09,
-"imagine": "https://www.casa-bucuriei.ro/wp-content/uploads/2026/04/11757805_PRODUCT.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.casa-bucuriei.ro%2Fprodus%2Fmasina-de-tuns-iarba-gazon-electrica-2x20v-li-ion-acumulatori-neinclusi-34-cm-worcraft%2F",
-"magazin": "casa-bucuriei.ro",
-"id": "DBr-uTuDDywU",
-"brand": "Casa-bucuriei",
-"url_magazin": "https://www.casa-bucuriei.ro/produs/masina-de-tuns-iarba-gazon-electrica-2x20v-li-ion-acumulatori-neinclusi-34-cm-worcraft/",
-"pret_vechi": null,
-"verificat": "2026-11-04"
-},
-{
 "titlu": "Ruris Masina de tuns iarba / gazon Ruris Dac 110XR, autopropulsata pe benzina, putere 3.3 CP, 131 CC, 4 timpi, latime lu",
 "pret": 1220.99,
 "imagine": "https://www.dwyn.ro/images/products/img_202606122129/413587/full/ruris-masina-de-tuns-iarba-gazon-ruris-dac-110xr-autopropulsata-pe-benzina-putere-3-3-cp-131-cc-4-timpi-latime-lucru-41-cm-inaltime-taiere-25-75-mm-7-trepte-de-taiere-sac-colector-45-l-1358428.jpg",
@@ -20369,7 +20595,6 @@
 }
 ],
 "magazine": [
-"casa-bucuriei.ro",
 "dwyn.ro",
 "micul-meserias.ro"
 ]
@@ -25820,107 +26045,8 @@
 "magazin": "cartuseria.ro"
 }
 ],
-"produse": [
-{
-"titlu": "Convector Electric, Alpina, 1500W",
-"pret": 219.0,
-"imagine": "https://www.casa-bucuriei.ro/wp-content/uploads/2026/07/res_56762daf2c95ef1c53a20dccba99a9f9.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.casa-bucuriei.ro%2Fprodus%2Fconvector-electric-alpina-1500w%2F",
-"magazin": "casa-bucuriei.ro",
-"id": "aZezgN2BRIOz",
-"brand": "Casa-bucuriei",
-"url_magazin": "https://www.casa-bucuriei.ro/produs/convector-electric-alpina-1500w/",
-"pret_vechi": null,
-"verificat": "2026-11-05"
-},
-{
-"titlu": "Convector electric pentru incalzire, 2000 W putere, 2 trepte de putere, 20 mp suprafata incalzita, IP00 clasa protectie",
-"pret": 229.0,
-"imagine": "https://www.casa-bucuriei.ro/wp-content/uploads/2026/07/res_ebd7e1514e6245e84e1a376b2457b9f8.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.casa-bucuriei.ro%2Fprodus%2Fconvector-electric-pentru-incalzire-2000-w-putere-2-trepte-de-putere-20-mp-suprafata-incalzita-ip00-clasa-protectie%2F",
-"magazin": "casa-bucuriei.ro",
-"id": "oJAkI1JChMzL",
-"brand": "Casa-bucuriei",
-"url_magazin": "https://www.casa-bucuriei.ro/produs/convector-electric-pentru-incalzire-2000-w-putere-2-trepte-de-putere-20-mp-suprafata-incalzita-ip00-clasa-protectie/",
-"pret_vechi": null,
-"verificat": "2026-11-05"
-},
-{
-"titlu": "Convector electric de podea Victronic, 2000 W, 3 trepte de putere, Termostat reglabil, Protectie supra-incalzire, Alb",
-"pret": 245.0,
-"imagine": "https://www.casa-bucuriei.ro/wp-content/uploads/2026/07/res_e3ea3c844f5bd6d5a7897a7c072c040a.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.casa-bucuriei.ro%2Fprodus%2Fconvector-electric-de-podea-victronic-2000-w-3-trepte-de-putere-termostat-reglabil-protectie-supra-incalzire-alb%2F",
-"magazin": "casa-bucuriei.ro",
-"id": "fUywlDMv0YDr",
-"brand": "Casa-bucuriei",
-"url_magazin": "https://www.casa-bucuriei.ro/produs/convector-electric-de-podea-victronic-2000-w-3-trepte-de-putere-termostat-reglabil-protectie-supra-incalzire-alb/",
-"pret_vechi": 699.0,
-"verificat": "2026-11-05"
-},
-{
-"titlu": "Convector electric 2000w, Victronic",
-"pret": 279.0,
-"imagine": "https://www.casa-bucuriei.ro/wp-content/uploads/2026/07/res_fdcc8130a343ea15d91de785faaf475c.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.casa-bucuriei.ro%2Fprodus%2Fconvector-electric-2000w-victronic%2F",
-"magazin": "casa-bucuriei.ro",
-"id": "j4nDrQmhU8Mi",
-"brand": "Casa-bucuriei",
-"url_magazin": "https://www.casa-bucuriei.ro/produs/convector-electric-2000w-victronic/",
-"pret_vechi": 699.0,
-"verificat": "2026-11-05"
-},
-{
-"titlu": "Convector electric de podea CN214ZF, 2000 W, 3 trepte de putere, Termostat de siguranta, Termostat reglabil",
-"pret": 289.0,
-"imagine": "https://www.casa-bucuriei.ro/wp-content/uploads/2026/07/res_26a05090790f6e7d8cfeff98179bc806.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.casa-bucuriei.ro%2Fprodus%2Fconvector-electric-de-podea-cn214zf-2000-w-3-trepte-de-putere-termostat-de-siguranta-termostat-reglabil%2F",
-"magazin": "casa-bucuriei.ro",
-"id": "HbynesmV34ig",
-"brand": "Casa-bucuriei",
-"url_magazin": "https://www.casa-bucuriei.ro/produs/convector-electric-de-podea-cn214zf-2000-w-3-trepte-de-putere-termostat-de-siguranta-termostat-reglabil/",
-"pret_vechi": 699.0,
-"verificat": "2026-11-05"
-},
-{
-"titlu": "Convector electric cu timer, 2000W, Victronic VC2106",
-"pret": 289.0,
-"imagine": "https://www.casa-bucuriei.ro/wp-content/uploads/2026/07/res_c3e14ce37962aad35bbf7711bbf7ad3a.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.casa-bucuriei.ro%2Fprodus%2Fconvector-electric-cu-timer-2000w-victronic-vc2106%2F",
-"magazin": "casa-bucuriei.ro",
-"id": "GkHN68fNJYb0",
-"brand": "Casa-bucuriei",
-"url_magazin": "https://www.casa-bucuriei.ro/produs/convector-electric-cu-timer-2000w-victronic-vc2106/",
-"pret_vechi": 699.0,
-"verificat": "2026-11-05"
-},
-{
-"titlu": "Convector electric ZKH 08, 2000 W, 3 trepte putere, Termostat reglabil, Protectie la supraincalzire",
-"pret": 289.0,
-"imagine": "https://www.casa-bucuriei.ro/wp-content/uploads/2026/07/res_10a0b2c89f0cc3f3595417326c9ee99c.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.casa-bucuriei.ro%2Fprodus%2Fconvector-electric-zkh-08-2000-w-3-trepte-putere-termostat-reglabil-protectie-la-supraincalzire%2F",
-"magazin": "casa-bucuriei.ro",
-"id": "Sj_TVIu9Uo4z",
-"brand": "Casa-bucuriei",
-"url_magazin": "https://www.casa-bucuriei.ro/produs/convector-electric-zkh-08-2000-w-3-trepte-putere-termostat-reglabil-protectie-la-supraincalzire/",
-"pret_vechi": 699.0,
-"verificat": "2026-11-05"
-},
-{
-"titlu": "Convector electric SilverCrest SKM 2000 B2, 2000W, alb, 53x38.5x19.7cm",
-"pret": 299.0,
-"imagine": "https://www.casa-bucuriei.ro/wp-content/uploads/2026/07/res_2db7cc3077bb474b6361cf6ef4d3626c.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.casa-bucuriei.ro%2Fprodus%2Fconvector-electric-silvercrest-skm-2000-b2-2000w-alb-53x38-5x19-7cm%2F",
-"magazin": "casa-bucuriei.ro",
-"id": "Tc1oxduGA81N",
-"brand": "Casa-bucuriei",
-"url_magazin": "https://www.casa-bucuriei.ro/produs/convector-electric-silvercrest-skm-2000-b2-2000w-alb-53x38-5x19-7cm/",
-"pret_vechi": 699.0,
-"verificat": "2026-11-05"
-}
-],
-"magazine": [
-"casa-bucuriei.ro"
-]
+"produse": [],
+"magazine": []
 },
 {
 "slug": "panou-radiant",
