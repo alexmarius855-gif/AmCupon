@@ -8,7 +8,7 @@
 "titlu": "Mașini de spălat de 6 kg",
 "nota": "Capacitatea se referă la greutatea rufelor uscate pe care le poți pune o dată în cuvă.",
 "in_text": "\\b6\\s*kg\\b",
-"actualizat": "2026-11-05",
+"actualizat": "2026-11-12",
 "feeduri": [
 {
 "id": 1539,
@@ -27,6 +27,17 @@
 "url_magazin": "https://www.dwyn.ro/masina-de-spalat-rufe/heinner/282105-masina-de-spalat-rufe-slim-heinner-hwm-m6010smd-plus-plus-6-kg-1000-rpm-clasa-d-dislay-digital-blocare-acces-copii-alb/",
 "pret_vechi": null,
 "verificat": "2026-11-04"
+},
+{
+"titlu": "Samsung Masina de spalat rufe slim Samsung WW60A3120WE/LE, 6 kg, 1200 RPM, Clasa C, Hygiene Steam, Quick Wash 15 min, Al",
+"pret": 1837.99,
+"imagine": "https://www.dwyn.ro/images/products/img_202508191322/320407/full/samsung-masina-de-spalat-rufe-slim-samsung-ww60a3120we-le-6-kg-1200-rpm-clasa-c-hygiene-steam-quick-wash-15-min-alb-938615.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fmasina-de-spalat-rufe%2Fsamsung%2F320407-masina-de-spalat-rufe-slim-samsung-ww60a3120we-le-6-kg-1200-rpm-clasa-c-hygiene-steam-quick-wash-15-min-alb%2F",
+"magazin": "dwyn.ro",
+"id": "rvDrwtu60f9K",
+"brand": "Samsung",
+"url_magazin": "https://www.dwyn.ro/masina-de-spalat-rufe/samsung/320407-masina-de-spalat-rufe-slim-samsung-ww60a3120we-le-6-kg-1200-rpm-clasa-c-hygiene-steam-quick-wash-15-min-alb/",
+"pret_vechi": null
 },
 {
 "titlu": "Samsung Masina de spalat rufe Slim Samsung WW60A3120BE/LE, 6 kg, Clasa C, 1200 RPM, Hygiene Steam, Alb",
@@ -53,18 +64,6 @@
 "verificat": "2026-11-04"
 },
 {
-"titlu": "INDESIT Masina de spalat rufe INDESIT MTWSA 61294 W EE, 6 kg, 1200 rpm, Clasa C, Slim",
-"pret": 2054.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202512311121/380027/full/indesit-indesit-mtwsa-61294-w-ee-washing-machine-c-front-loading-washing-capacity-6-kg-1151-rpm-depth-42-5-cm-white-1116764.png",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fmasina-de-spalat-rufe%2Findesit%2F380027-masina-de-spalat-rufe-indesit-mtwsa-61294-w-ee-6-kg-1200-rpm-clasa-c-slim%2F",
-"magazin": "dwyn.ro",
-"id": "H_tRCFhdQnp-",
-"brand": "INDESIT",
-"url_magazin": "https://www.dwyn.ro/masina-de-spalat-rufe/indesit/380027-masina-de-spalat-rufe-indesit-mtwsa-61294-w-ee-6-kg-1200-rpm-clasa-c-slim/",
-"pret_vechi": null,
-"verificat": "2026-11-04"
-},
-{
 "titlu": "CANDY Masina de spalat rufe CANDY GD 06SS6-S, 6 kg, 1000 rpm, Clasa A, Slim",
 "pret": 2469.99,
 "imagine": "https://www.dwyn.ro/images/products/img_202512311121/380072/full/candy-candy-gd-06ss6-s-washing-machine-a-front-loading-depth-42-cm-6-kg-white-1117151.jpg",
@@ -73,18 +72,6 @@
 "id": "6qJoLslZaaFF",
 "brand": "CANDY",
 "url_magazin": "https://www.dwyn.ro/masina-de-spalat-rufe/candy/380072-masina-de-spalat-rufe-candy-gd-06ss6-s-6-kg-1000-rpm-clasa-a-slim/",
-"pret_vechi": null,
-"verificat": "2026-11-04"
-},
-{
-"titlu": "Midea Masina de spalat rufe verticala Midea, MF100T60B/W, 6 kg, 1200 rpm, 40x61cm, clasa A, Alb",
-"pret": 3200.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202512311121/380012/full/midea-midea-mf100t60b-w-hr-washing-machine-a-top-loading-depth-40-cm-6-kg-white-1116656.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fmasina-de-spalat-rufe%2Fmidea%2F380012-masina-de-spalat-rufe-verticala-midea-mf100t60b-w-6-kg-1200-rpm-40x61cm-clasa-a-alb%2F",
-"magazin": "dwyn.ro",
-"id": "hmag7PabDwDG",
-"brand": "Midea",
-"url_magazin": "https://www.dwyn.ro/masina-de-spalat-rufe/midea/380012-masina-de-spalat-rufe-verticala-midea-mf100t60b-w-6-kg-1200-rpm-40x61cm-clasa-a-alb/",
 "pret_vechi": null,
 "verificat": "2026-11-04"
 }
@@ -100,7 +87,7 @@
 "titlu": "Mașini de spălat de 7 kg",
 "nota": "Capacitatea se referă la greutatea rufelor uscate pe care le poți pune o dată în cuvă.",
 "in_text": "\\b7\\s*kg\\b",
-"actualizat": "2026-11-05",
+"actualizat": "2026-11-12",
 "feeduri": [
 {
 "id": 1539,
@@ -145,18 +132,6 @@
 "verificat": "2026-11-04"
 },
 {
-"titlu": "Masina de spalat rufe Fram FWM-V714T2IXD+++, 7 kg, 1400 RPM, Clasa D (Gri)",
-"pret": 1099.99,
-"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4316%2F4316190%2Fmasina-de-spalat-fram-fwm-v714-60e58b16a85bd.JPG&type=auto&width=500&sign=x4xopPVX5hXdE8BnC20JGDcunCnBdRnSq8SO9EFDBa4",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Fresigilate-produse-resigilate%2Ffram-masina-de-spalat-rufe-fram-fwm-v714t2ixd-7-kg-1400-rpm-clasa-d-gri-4316190.html",
-"magazin": "evomag.ro",
-"id": "6_a8oRBRijrO",
-"brand": "Fram",
-"url_magazin": "https://www.evomag.ro/resigilate-produse-resigilate/fram-masina-de-spalat-rufe-fram-fwm-v714t2ixd-7-kg-1400-rpm-clasa-d-gri-4316190.html",
-"pret_vechi": null,
-"verificat": "2026-11-04"
-},
-{
 "titlu": "Allview Masina de spalat rufe Allview Sensy W710E, Slim, 7 kg, 1200 rpm, Inverter, abur, clasa A, Alb",
 "pret": 1219.0,
 "imagine": "https://www.dwyn.ro/images/products/img_202606122129/484969/full/allview-masina-de-spalat-rufe-allview-sensy-w710e-slim-7-kg-1200-rpm-inverter-abur-clasa-a-alb-1532737.jpg",
@@ -181,16 +156,15 @@
 "verificat": "2026-11-04"
 },
 {
-"titlu": "Masina de spalat rufe Heinner HWM-H7014IVSMTC+++, 7 kg, 1400 RPM, 15 Programe, Clasa C (Gri)",
-"pret": 1360.99,
-"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4114%2F4114408%2F64c2ec1498b41.jpg&type=auto&width=500&sign=szRVFWF39R2nYMz_MxIp9suHvPxMdbUOyjhVyQuQAkc",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Felectrocasnice-electrocasnice-mari-masini-de-spalat-rufe-si-accesorii-masini-de-spalat-rufe%2Fheinner-masina-de-spalat-rufe-heinner-hwm-h7014ivsmtc-7-kg-1400-rpm-15-programe-clasa-c-gri-4114408.html",
+"titlu": "Masina de spalat rufe Fram FWM-V714T2IXD+++, 7 kg, 1400 RPM, Clasa D (Gri)",
+"pret": 1269.99,
+"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F3819%2F3819299%2Fmasina-de-spalat-fram-fwm-v714-60e58b16a85bd.JPG&type=auto&width=500&sign=d20b7pVfIAABgCGi6JNZXnUnGMxvHIwx2ygxq_GgAoA",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Felectrocasnice-electrocasnice-mari-masini-de-spalat-rufe-si-accesorii-masini-de-spalat-rufe%2Ffram-masina-de-spalat-rufe-fram-fwm-v714t2ixd-7-kg-1400-rpm-clasa-d-gri-3819299.html",
 "magazin": "evomag.ro",
-"id": "5qZIQn7WJQCD",
-"brand": "Heinner",
-"url_magazin": "https://www.evomag.ro/electrocasnice-electrocasnice-mari-masini-de-spalat-rufe-si-accesorii-masini-de-spalat-rufe/heinner-masina-de-spalat-rufe-heinner-hwm-h7014ivsmtc-7-kg-1400-rpm-15-programe-clasa-c-gri-4114408.html",
-"pret_vechi": null,
-"verificat": "2026-11-04"
+"id": "1qvw8ZzLs4ku",
+"brand": "Fram",
+"url_magazin": "https://www.evomag.ro/electrocasnice-electrocasnice-mari-masini-de-spalat-rufe-si-accesorii-masini-de-spalat-rufe/fram-masina-de-spalat-rufe-fram-fwm-v714t2ixd-7-kg-1400-rpm-clasa-d-gri-3819299.html",
+"pret_vechi": null
 },
 {
 "titlu": "Masina de spalat rufe Candy Pro Wash 300 GD 27SB7-S, 7 kg, 1200 rpm, 16 programe, ProActive Wash, AI Silent Motion (Alb)",
@@ -203,6 +177,17 @@
 "url_magazin": "https://www.evomag.ro/electrocasnice-electrocasnice-mari-masini-de-spalat-rufe-si-accesorii-masini-de-spalat-rufe/candy-masina-de-spalat-rufe-candy-pro-wash-300-gd-27sb7-s-7-kg-1200-rpm-16-programe-proactive-wash-ai-silent-motion-alb-4290506.html",
 "pret_vechi": null,
 "verificat": "2026-11-05"
+},
+{
+"titlu": "Masina de spalat rufe cu incarcare verticala HEINNER HWM-TL7012C++, 7 kg, 1200 rpm, 15 programe, A 61 cm (Alb)",
+"pret": 1444.99,
+"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4223%2F4223355%2Fmasina-de-spalat-rufe-cu-incar-682dca43c7bf6.jpg&type=auto&width=500&sign=2y9M4XYqbV8x6zMjOAVzLZ9prhClU2VPbxX-FX-wb3Y",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Felectrocasnice-electrocasnice-mari-masini-de-spalat-rufe-si-accesorii-masini-de-spalat-rufe%2Fheinner-masina-de-spalat-rufe-cu-incarcare-verticala-heinner-hwm-tl7012c-7-kg-1200-rpm-15-programe-a-61-cm-alb-4223355.html",
+"magazin": "evomag.ro",
+"id": "sQ3a69iE0glQ",
+"brand": "Heinner",
+"url_magazin": "https://www.evomag.ro/electrocasnice-electrocasnice-mari-masini-de-spalat-rufe-si-accesorii-masini-de-spalat-rufe/heinner-masina-de-spalat-rufe-cu-incarcare-verticala-heinner-hwm-tl7012c-7-kg-1200-rpm-15-programe-a-61-cm-alb-4223355.html",
+"pret_vechi": null
 },
 {
 "titlu": "CANDY Masina de spalat rufe cu incarcare verticala Candy, Control digita, l 7kg, Start intarziat, 1200rpm, Clasa C, Alba",
@@ -265,18 +250,6 @@
 "verificat": "2026-11-04"
 },
 {
-"titlu": "CANDY Masina de spalat rufe CANDY CO4 374TWM6/1-S, 7 kg, 1300 rpm, Clasa A, Wi-Fi",
-"pret": 2048.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202512311121/380042/full/candy-candy-co4-374twm6-1-s-washing-machine-a-front-loading-depth-45-cm-7-kg-white-1116893.png",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fmasina-de-spalat-rufe%2Fcandy%2F380042-masina-de-spalat-rufe-candy-co4-374twm6-1-s-7-kg-1300-rpm-clasa-a-wi-fi%2F",
-"magazin": "dwyn.ro",
-"id": "g3EexfDP4NFn",
-"brand": "CANDY",
-"url_magazin": "https://www.dwyn.ro/masina-de-spalat-rufe/candy/380042-masina-de-spalat-rufe-candy-co4-374twm6-1-s-7-kg-1300-rpm-clasa-a-wi-fi/",
-"pret_vechi": null,
-"verificat": "2026-11-04"
-},
-{
 "titlu": "Masina de spalat rufe cu incarcare verticala Candy CSTG 272DVET/1-S, 7 kg, 1200 rpm, Gentle Touch Opening, Easy Iron, Cl",
 "pret": 2071.99,
 "imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4096%2F4096806%2F646dc3ee479e8.jpg&type=auto&width=500&sign=dnOxjCpi8iZag9JeYmV_V1jQhLh4BHveuQzf6wiamVo",
@@ -287,6 +260,17 @@
 "url_magazin": "https://www.evomag.ro/electrocasnice-electrocasnice-mari-masini-de-spalat-rufe-si-accesorii-masini-de-spalat-rufe/candy-masina-de-spalat-rufe-cu-incarcare-verticala-candy-cstg-272dvet-1-s-7-kg-1200-rpm-gentle-touch-opening-easy-iron-clasa-e-alb-4096806.html",
 "pret_vechi": null,
 "verificat": "2026-11-04"
+},
+{
+"titlu": "INDESIT Masina de spalat rufe INDESIT MTWA 71252 W EE, 7 kg, 1200 rpm, Clasa E, Alb",
+"pret": 2072.99,
+"imagine": "https://www.dwyn.ro/images/products/img_202512311121/380018/full/indesit-indesit-washing-machine-mtwa-71252-w-ee-front-loading-e-washing-capacity-7-kg-1200-rpm-depth-54-cm-white-1116707.png",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fmasina-de-spalat-rufe%2Findesit%2F380018-masina-de-spalat-rufe-indesit-mtwa-71252-w-ee-7-kg-1200-rpm-clasa-e-alb%2F",
+"magazin": "dwyn.ro",
+"id": "a4p50n5jV7al",
+"brand": "INDESIT",
+"url_magazin": "https://www.dwyn.ro/masina-de-spalat-rufe/indesit/380018-masina-de-spalat-rufe-indesit-mtwa-71252-w-ee-7-kg-1200-rpm-clasa-e-alb/",
+"pret_vechi": null
 }
 ],
 "magazine": [
@@ -28537,8 +28521,25 @@
 "titlu": "Baterii externe de 20.000 mAh",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-04",
-"feeduri": [],
+"actualizat": "2026-11-12",
+"feeduri": [
+{
+"id": 1539,
+"magazin": "dwyn.ro"
+},
+{
+"id": 1096,
+"magazin": "evomag.ro"
+},
+{
+"id": 5171,
+"magazin": "bazarulonline.ro"
+},
+{
+"id": 3916,
+"magazin": "conectica.ro"
+}
+],
 "produse": [
 {
 "titlu": "Baterie externa Hoco J151A, 2A, 20000 mAh, USB-A, USB-C, Lightning, Micro USB + Lanterna Engros",
@@ -28546,7 +28547,10 @@
 "imagine": "https://bazarulonline.ro/images/detailed/7860/014400931d431a15d656cc7f86be8f7e.jpg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fbazarulonline.ro%2Fbaterie-externa-hoco-j151a-2a-20000-mah-usb-a-usb-c-lightning-micro-usb-lanterna-engros",
 "magazin": "bazarulonline.ro",
-"url_magazin": "https://bazarulonline.ro/baterie-externa-hoco-j151a-2a-20000-mah-usb-a-usb-c-lightning-micro-usb-lanterna-engros"
+"id": "fE5B5rS-vRnQ",
+"brand": "",
+"url_magazin": "https://bazarulonline.ro/baterie-externa-hoco-j151a-2a-20000-mah-usb-a-usb-c-lightning-micro-usb-lanterna-engros",
+"pret_vechi": null
 },
 {
 "titlu": "Baterie externa Hoco J171A, QC PD, 2A, 22,5W, 20000 mAh, USB-C si Lightning integrate, Alb Engros",
@@ -28554,7 +28558,10 @@
 "imagine": "https://bazarulonline.ro/images/detailed/7860/7eec160c56d5724d731e99ae028aff2d.jpg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fbazarulonline.ro%2Fbaterie-externa-hoco-j171a-qc-pd-2a-22-5w-20000-mah-usb-c-si-lightning-integrate-alb-engros",
 "magazin": "bazarulonline.ro",
-"url_magazin": "https://bazarulonline.ro/baterie-externa-hoco-j171a-qc-pd-2a-22-5w-20000-mah-usb-c-si-lightning-integrate-alb-engros"
+"id": "HS2xXe-scMq6",
+"brand": "",
+"url_magazin": "https://bazarulonline.ro/baterie-externa-hoco-j171a-qc-pd-2a-22-5w-20000-mah-usb-c-si-lightning-integrate-alb-engros",
+"pret_vechi": null
 },
 {
 "titlu": "Baterie externa portabila Dudao K10Pro, 20000 mAh, 2A, 2x USB-A, Negru",
@@ -28562,7 +28569,10 @@
 "imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4300%2F4300484%2F6a215e8dd7b33.jpg&type=auto&width=500&sign=YY0ShKykVFQA7n_C3eQfLfqafc7yLGWRCQ4QyHtf1rQ",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Ftelefoane-tablete-accesorii-accesorii-telefoane-acumulatori-externi%2Fdudao-baterie-externa-portabila-dudao-k10pro-20000-mah-2a-2x-usb-a-negru-4300484.html",
 "magazin": "evomag.ro",
+"id": "OIK1iDeKkPg6",
+"brand": "Dudao",
 "url_magazin": "https://www.evomag.ro/telefoane-tablete-accesorii-accesorii-telefoane-acumulatori-externi/dudao-baterie-externa-portabila-dudao-k10pro-20000-mah-2a-2x-usb-a-negru-4300484.html",
+"pret_vechi": null,
 "verificat": "2026-11-04"
 },
 {
@@ -28571,7 +28581,10 @@
 "imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4308%2F4308048%2Fbaterie-externa-dudao-k11-1-1759399800.jpg&type=auto&width=500&sign=dP840HOy0wUceftcXqdCXg4u8KlL0SGr-Itr0SZcFGQ",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Ftelefoane-tablete-accesorii-accesorii-telefoane-acumulatori-externi%2Fdudao-baterie-externa-dudao-k11-pro-20000mah-10w-1-x-lightning-1-x-microusb-1-x-usb-a-1-x-usb-c-alb-4308048.html",
 "magazin": "evomag.ro",
+"id": "vVGALj8JQ4Vt",
+"brand": "Dudao",
 "url_magazin": "https://www.evomag.ro/telefoane-tablete-accesorii-accesorii-telefoane-acumulatori-externi/dudao-baterie-externa-dudao-k11-pro-20000mah-10w-1-x-lightning-1-x-microusb-1-x-usb-a-1-x-usb-c-alb-4308048.html",
+"pret_vechi": null,
 "verificat": "2026-11-04"
 },
 {
@@ -28580,7 +28593,10 @@
 "imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4300%2F4300485%2F6a215e8de81fd.jpg&type=auto&width=500&sign=3DC8dwWqqEkqM1P-pEHLpRIfpkKTX6kDks_Rb0p8MQ4",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Ftelefoane-tablete-accesorii-accesorii-telefoane-acumulatori-externi%2Fdudao-baterie-externa-portabila-dudao-k10pro-20000-mah-2a-2x-usb-a-alb-4300485.html",
 "magazin": "evomag.ro",
+"id": "Tzsi1OVB37AR",
+"brand": "Dudao",
 "url_magazin": "https://www.evomag.ro/telefoane-tablete-accesorii-accesorii-telefoane-acumulatori-externi/dudao-baterie-externa-portabila-dudao-k10pro-20000-mah-2a-2x-usb-a-alb-4300485.html",
+"pret_vechi": null,
 "verificat": "2026-11-04"
 },
 {
@@ -28589,16 +28605,21 @@
 "imagine": "https://bazarulonline.ro/images/detailed/7860/92c6865b1b22c0c4c038fff4644b14f3.jpg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fbazarulonline.ro%2Fbaterie-externa-hoco-q37a-qc-pd-22-5w-20000-mah-usb-c-si-lightning-negru-engros",
 "magazin": "bazarulonline.ro",
-"url_magazin": "https://bazarulonline.ro/baterie-externa-hoco-q37a-qc-pd-22-5w-20000-mah-usb-c-si-lightning-negru-engros"
+"id": "PC6_8djqws8Y",
+"brand": "",
+"url_magazin": "https://bazarulonline.ro/baterie-externa-hoco-q37a-qc-pd-22-5w-20000-mah-usb-c-si-lightning-negru-engros",
+"pret_vechi": null
 },
 {
-"titlu": "Dudao Baterie Externa Dudao K11 Pro, 20000mAh, 10W, 1 x Lightning - 1 x microUSB - 1 x USB-A - 1 x USB-C, Neagra",
-"pret": 84.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202508191322/336416/full/dudao-baterie-externa-dudao-k11-pro-20000mah-10w-1-x-lightning-1-x-microusb-1-x-usb-a-1-x-usb-c-neagra-854072.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fbaterii-powerbank%2Fdudao%2F336416-baterie-externa-dudao-k11-pro-20000mah-10w-1-x-lightning-1-x-microusb-1-x-usb-a-1-x-usb-c-neagra%2F",
+"titlu": "Dudao Baterie Externa Dudao K10Pro, 20000mAh, 12W, 2 x USB-A, Neagra",
+"pret": 80.99,
+"imagine": "https://www.dwyn.ro/images/products/img_202508191322/336254/full/dudao-baterie-externa-dudao-k10pro-20000mah-12w-2-x-usb-a-neagra-853910.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fbaterii-powerbank%2Fdudao%2F336254-baterie-externa-dudao-k10pro-20000mah-12w-2-x-usb-a-neagra%2F",
 "magazin": "dwyn.ro",
-"url_magazin": "https://www.dwyn.ro/baterii-powerbank/dudao/336416-baterie-externa-dudao-k11-pro-20000mah-10w-1-x-lightning-1-x-microusb-1-x-usb-a-1-x-usb-c-neagra/",
-"verificat": "2026-11-04"
+"id": "gm9fyjjZPZHz",
+"brand": "Dudao",
+"url_magazin": "https://www.dwyn.ro/baterii-powerbank/dudao/336254-baterie-externa-dudao-k10pro-20000mah-12w-2-x-usb-a-neagra/",
+"pret_vechi": null
 },
 {
 "titlu": "Baterie externa Veger S20 (W2081), PD QC3.0, 2A, 22,5W, 20000 mAh, Alb Engros",
@@ -28606,7 +28627,10 @@
 "imagine": "https://bazarulonline.ro/images/detailed/7860/f644cbb2df96e122720f96a66158e0ff.jpg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fbazarulonline.ro%2Fbaterie-externa-veger-s20-w2081-pd-qc3-0-2a-22-5w-20000-mah-alb-engros",
 "magazin": "bazarulonline.ro",
-"url_magazin": "https://bazarulonline.ro/baterie-externa-veger-s20-w2081-pd-qc3-0-2a-22-5w-20000-mah-alb-engros"
+"id": "bX_6FUv2nyyO",
+"brand": "",
+"url_magazin": "https://bazarulonline.ro/baterie-externa-veger-s20-w2081-pd-qc3-0-2a-22-5w-20000-mah-alb-engros",
+"pret_vechi": null
 },
 {
 "titlu": "Baterie externa Veger S20 (W2081), PD QC3.0, 2A, 22,5W, 20000 mAh, Negru Engros",
@@ -28614,7 +28638,10 @@
 "imagine": "https://bazarulonline.ro/images/detailed/7860/f2453f5bb874ef10ae2ad24ce1832b65.jpg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fbazarulonline.ro%2Fbaterie-externa-veger-s20-w2081-pd-qc3-0-2a-22-5w-20000-mah-negru-engros",
 "magazin": "bazarulonline.ro",
-"url_magazin": "https://bazarulonline.ro/baterie-externa-veger-s20-w2081-pd-qc3-0-2a-22-5w-20000-mah-negru-engros"
+"id": "gEhgDHf030uk",
+"brand": "",
+"url_magazin": "https://bazarulonline.ro/baterie-externa-veger-s20-w2081-pd-qc3-0-2a-22-5w-20000-mah-negru-engros",
+"pret_vechi": null
 },
 {
 "titlu": "Baterie Externa Ultra-Thin, 20000 mAh, LED, Hoco J100A, Alb Engros",
@@ -28622,7 +28649,21 @@
 "imagine": "https://bazarulonline.ro/images/detailed/3865/Baterie-Externa-Ultra-Subtire-20000-mAh-LED-Original-Hoco-J100A-Alb-1.jpg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fbazarulonline.ro%2Fbaterie-externa-ultra-thin-20000-mah-led-hoco-j100a-alb-engros-ro",
 "magazin": "bazarulonline.ro",
-"url_magazin": "https://bazarulonline.ro/baterie-externa-ultra-thin-20000-mah-led-hoco-j100a-alb-engros-ro"
+"id": "L14JXKLJ2PoY",
+"brand": "",
+"url_magazin": "https://bazarulonline.ro/baterie-externa-ultra-thin-20000-mah-led-hoco-j100a-alb-engros-ro",
+"pret_vechi": null
+},
+{
+"titlu": "Dudao Baterie Externa Dudao K11 Pro, 20000mAh, 10W, 1 x Lightning - 1 x microUSB - 1 x USB-A - 1 x USB-C, Alba",
+"pret": 90.99,
+"imagine": "https://www.dwyn.ro/images/products/img_202508191322/336413/full/dudao-baterie-externa-dudao-k11-pro-20000mah-10w-1-x-lightning-1-x-microusb-1-x-usb-a-1-x-usb-c-alba-854069.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fbaterii-powerbank%2Fdudao%2F336413-baterie-externa-dudao-k11-pro-20000mah-10w-1-x-lightning-1-x-microusb-1-x-usb-a-1-x-usb-c-alba%2F",
+"magazin": "dwyn.ro",
+"id": "wbLI9D3DWIS7",
+"brand": "Dudao",
+"url_magazin": "https://www.dwyn.ro/baterii-powerbank/dudao/336413-baterie-externa-dudao-k11-pro-20000mah-10w-1-x-lightning-1-x-microusb-1-x-usb-a-1-x-usb-c-alba/",
+"pret_vechi": null
 },
 {
 "titlu": "Baterie externa Veger L20S (VP2039PD / W2039PD), PD QC3.0, 2A, 20W, 20000 mAh, Alb Engros",
@@ -28630,16 +28671,10 @@
 "imagine": "https://bazarulonline.ro/images/detailed/7860/7d04e687bdd7ef019af52bb9bbc897d0.jpg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fbazarulonline.ro%2Fbaterie-externa-veger-l20s-vp2039pd-w2039pd-pd-qc3-0-2a-20w-20000-mah-alb-engros",
 "magazin": "bazarulonline.ro",
-"url_magazin": "https://bazarulonline.ro/baterie-externa-veger-l20s-vp2039pd-w2039pd-pd-qc3-0-2a-20w-20000-mah-alb-engros"
-},
-{
-"titlu": "Acumulator extern Baseus Qpow2, 20000 mAh, 22.5 W, 2 x USB Type-C, 1 Lightning, 1 x USB, Cablu 30cm (Albastru)",
-"pret": 99.99,
-"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4234%2F4234171%2Fpower-bank-baseus-qpow2-digita-686e2e3c6b79e.jpg&type=auto&width=500&sign=tHPvLLW9dir_VX90KZsh5sKoOYWBfOwxwK3GKqG9X60",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Ftelefoane-tablete-accesorii-accesorii-telefoane-acumulatori-externi%2Fbaseus-acumulator-extern-baseus-qpow2-20000-mah-22.5-w-2-x-usb-type-c-1-lightning-1-x-usb-cablu-30cm-albastru-4234171.html",
-"magazin": "evomag.ro",
-"url_magazin": "https://www.evomag.ro/telefoane-tablete-accesorii-accesorii-telefoane-acumulatori-externi/baseus-acumulator-extern-baseus-qpow2-20000-mah-22.5-w-2-x-usb-type-c-1-lightning-1-x-usb-cablu-30cm-albastru-4234171.html",
-"verificat": "2026-11-04"
+"id": "f5qA6pnOVy0E",
+"brand": "",
+"url_magazin": "https://bazarulonline.ro/baterie-externa-veger-l20s-vp2039pd-w2039pd-pd-qc3-0-2a-20w-20000-mah-alb-engros",
+"pret_vechi": null
 },
 {
 "titlu": "Powerbank, 3mk, 20000mAh, 22.5W, 2xUSB-A 1xUSB-C, Negru",
@@ -28647,7 +28682,10 @@
 "imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4134%2F4134785%2F658be2f2b504e.jpg&type=auto&width=500&sign=sgvCd8TnOtvJNPn48DNIje2L5pvYdPJ0vMSC-ZVLXCs",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Ftelefoane-tablete-accesorii-accesorii-telefoane-acumulatori-externi%2F3mk-powerbank-3mk-20000mah-22.5w-2xusb-a-1xusb-c-negru-4134785.html",
 "magazin": "evomag.ro",
+"id": "5f464625b",
+"brand": "3MK",
 "url_magazin": "https://www.evomag.ro/telefoane-tablete-accesorii-accesorii-telefoane-acumulatori-externi/3mk-powerbank-3mk-20000mah-22.5w-2xusb-a-1xusb-c-negru-4134785.html",
+"pret_vechi": null,
 "verificat": "2026-11-04"
 },
 {
@@ -28656,7 +28694,10 @@
 "imagine": "https://bazarulonline.ro/images/detailed/7860/c44b954b058529cefcb0397a3fc5dfea.jpg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fbazarulonline.ro%2Fbaterie-externa-veger-w2060-pd-qc3-0-3a-20w-20000-mah-negru-engros",
 "magazin": "bazarulonline.ro",
-"url_magazin": "https://bazarulonline.ro/baterie-externa-veger-w2060-pd-qc3-0-3a-20w-20000-mah-negru-engros"
+"id": "xwOGARxbIE4G",
+"brand": "",
+"url_magazin": "https://bazarulonline.ro/baterie-externa-veger-w2060-pd-qc3-0-3a-20w-20000-mah-negru-engros",
+"pret_vechi": null
 },
 {
 "titlu": "Baterie externa 20000 mAh Dudao K6Pro Plus, 22.5W, 2xUSB-A, 1xUSB-C, 1xLightning, 1xMicroUSB, Alb",
@@ -28664,8 +28705,22 @@
 "imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4300%2F4300478%2F6a215e7df1a1c.jpg&type=auto&width=500&sign=RVP_GLUt1kPLLicjhpKD-nBj5vBt5nszGPzvalcJUeo",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Ftelefoane-tablete-accesorii-accesorii-telefoane-acumulatori-externi%2Fdudao-baterie-externa-20000-mah-dudao-k6pro-plus-22.5w-2xusb-a-1xusb-c-1xlightning-1xmicrousb-alb-4300478.html",
 "magazin": "evomag.ro",
+"id": "U4x98o0y8vmn",
+"brand": "Dudao",
 "url_magazin": "https://www.evomag.ro/telefoane-tablete-accesorii-accesorii-telefoane-acumulatori-externi/dudao-baterie-externa-20000-mah-dudao-k6pro-plus-22.5w-2xusb-a-1xusb-c-1xlightning-1xmicrousb-alb-4300478.html",
+"pret_vechi": null,
 "verificat": "2026-11-04"
+},
+{
+"titlu": "Baterie externa Borofone BJ30A, 20000 mAh, 2x USB, 1x USB-C, 22.5 W (Alb)",
+"pret": 102.99,
+"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4286%2F4286868%2Fbaterie-externa-borofone-bj30a-69abd7ace8009.jpg&type=auto&width=500&sign=jQa4rrI2oVnNBKV9L0LDoGuFRYXW0g1Kt5UT5vqSzUI",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Ftelefoane-tablete-accesorii-accesorii-telefoane-acumulatori-externi%2Fborofone-baterie-externa-borofone-bj30a-20000-mah-2x-usb-1x-usb-c-22.5-w-alb-4286868.html",
+"magazin": "evomag.ro",
+"id": "xt1QIjFwf3S-",
+"brand": "Borofone",
+"url_magazin": "https://www.evomag.ro/telefoane-tablete-accesorii-accesorii-telefoane-acumulatori-externi/borofone-baterie-externa-borofone-bj30a-20000-mah-2x-usb-1x-usb-c-22.5-w-alb-4286868.html",
+"pret_vechi": 117.99
 },
 {
 "titlu": "Dudao Baterie Externa Dudao K6Pro+, 20000mAh, 10W, 1 x Lightning - 1 x microUSB - 1 x USB-A - 1 x USB-C, Alba",
@@ -28673,7 +28728,10 @@
 "imagine": "https://www.dwyn.ro/images/products/img_202512311121/374762/full/dudao-baterie-externa-dudao-k6pro-plus-20000mah-10w-1-x-lightning-1-x-microusb-1-x-usb-a-1-x-usb-c-alba-1073285.png",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fbaterii-powerbank%2Fdudao%2F374762-baterie-externa-dudao-k6pro-plus-20000mah-10w-1-x-lightning-1-x-microusb-1-x-usb-a-1-x-usb-c-alba%2F",
 "magazin": "dwyn.ro",
+"id": "PTbErumSbG3D",
+"brand": "Dudao",
 "url_magazin": "https://www.dwyn.ro/baterii-powerbank/dudao/374762-baterie-externa-dudao-k6pro-plus-20000mah-10w-1-x-lightning-1-x-microusb-1-x-usb-a-1-x-usb-c-alba/",
+"pret_vechi": null,
 "verificat": "2026-11-04"
 },
 {
@@ -28682,7 +28740,10 @@
 "imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4314%2F4314072%2Fbaterie-externa-hoco-j136a-1-1788178270.jpg&type=auto&width=500&sign=_VWzMVGQhlHLixO2riPzFAZEkrCj0YaLba-RsyjbFQQ",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Ftelefoane-tablete-accesorii-accesorii-telefoane-acumulatori-externi%2Fhoco-baterie-externa-hoco-j136a-20000mah-22.5w-qc-pd-1-x-usb-c-2-x-usb-a-negru-4314072.html",
 "magazin": "evomag.ro",
+"id": "J0C4o2lV0dGg",
+"brand": "Hoco",
 "url_magazin": "https://www.evomag.ro/telefoane-tablete-accesorii-accesorii-telefoane-acumulatori-externi/hoco-baterie-externa-hoco-j136a-20000mah-22.5w-qc-pd-1-x-usb-c-2-x-usb-a-negru-4314072.html",
+"pret_vechi": null,
 "verificat": "2026-11-04"
 },
 {
@@ -28691,17 +28752,22 @@
 "imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4235%2F4235393%2Fpower-bank-usb-20000mahl20s-w-68762aba07fe6.jpg&type=auto&width=500&sign=hzHMP2gA0QPDmUs0S1YAof4GnPKZvgJLtBO4beDXSsU",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Ftelefoane-tablete-accesorii-accesorii-telefoane-acumulatori-externi%2Fveger-baterie-externa-veger-l20s-20000-mah-2x-usb-1x-usb-c-alb-4235393.html",
 "magazin": "evomag.ro",
+"id": "_6qbHicwNgXz",
+"brand": "Veger",
 "url_magazin": "https://www.evomag.ro/telefoane-tablete-accesorii-accesorii-telefoane-acumulatori-externi/veger-baterie-externa-veger-l20s-20000-mah-2x-usb-1x-usb-c-alb-4235393.html",
+"pret_vechi": null,
 "verificat": "2026-11-04"
 },
 {
-"titlu": "Trust Acumulator extern Trust Primo Eco TR 24676, 20000 mAh, Negru",
-"pret": 114.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202404261115/261721/full/trust-trust-primo-powerbank-20-000mah-tr-24676-timbru-verde-0-98-lei-547201.png",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fbaterii-powerbank%2Ftrust%2F261721-acumulator-extern-trust-primo-eco-tr-24676-20000-mah-negru%2F",
+"titlu": "JOYROOM Baterie Externa Joyroom JR-PBF14, 20000mAh, 12W, 1 x USB-C - 2 x USB-A, Neagra",
+"pret": 112.99,
+"imagine": "https://www.dwyn.ro/images/products/img_202508191322/336128/full/joyroom-baterie-externa-joyroom-jr-pbf14-20000mah-12w-1-x-usb-c-2-x-usb-a-neagra-847535.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fbaterii-powerbank%2Fjoyroom%2F336128-baterie-externa-joyroom-jr-pbf14-20000mah-12w-1-x-usb-c-2-x-usb-a-neagra%2F",
 "magazin": "dwyn.ro",
-"url_magazin": "https://www.dwyn.ro/baterii-powerbank/trust/261721-acumulator-extern-trust-primo-eco-tr-24676-20000-mah-negru/",
-"verificat": "2026-11-04"
+"id": "A4w4t5Tg_yw7",
+"brand": "JOYROOM",
+"url_magazin": "https://www.dwyn.ro/baterii-powerbank/joyroom/336128-baterie-externa-joyroom-jr-pbf14-20000mah-12w-1-x-usb-c-2-x-usb-a-neagra/",
+"pret_vechi": null
 },
 {
 "titlu": "Dudao Baterie Externa Dudao K15Pro, 20000mAh, 22.5W, QC + PD, 1 x Lightning - 1 x USB-A - 2 x USB-C, Neagra",
@@ -28709,8 +28775,22 @@
 "imagine": "https://www.dwyn.ro/images/products/img_202512311121/374330/full/dudao-baterie-externa-dudao-k15pro-20000mah-22-5w-qc-plus-pd-1-x-lightning-1-x-usb-a-2-x-usb-c-neagra-1072832.jpg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fbaterii-powerbank%2Fdudao%2F374330-baterie-externa-dudao-k15pro-20000mah-22-5w-qc-plus-pd-1-x-lightning-1-x-usb-a-2-x-usb-c-neagra%2F",
 "magazin": "dwyn.ro",
+"id": "qHt6GVoD96d4",
+"brand": "Dudao",
 "url_magazin": "https://www.dwyn.ro/baterii-powerbank/dudao/374330-baterie-externa-dudao-k15pro-20000mah-22-5w-qc-plus-pd-1-x-lightning-1-x-usb-a-2-x-usb-c-neagra/",
+"pret_vechi": null,
 "verificat": "2026-11-04"
+},
+{
+"titlu": "Dudao Baterie Externa Dudao K12Pro, 20000mAh, 22.5W, QC + PD, 1 x USB-C - 2 x USB-A, Neagra",
+"pret": 119.99,
+"imagine": "https://www.dwyn.ro/images/products/img_202508191322/336152/full/dudao-baterie-externa-dudao-k12pro-20000mah-22-5w-qc-plus-pd-1-x-usb-c-2-x-usb-a-neagra-847559.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fbaterii-powerbank%2Fdudao%2F336152-baterie-externa-dudao-k12pro-20000mah-22-5w-qc-plus-pd-1-x-usb-c-2-x-usb-a-neagra%2F",
+"magazin": "dwyn.ro",
+"id": "hY-r5FLF8Z2n",
+"brand": "Dudao",
+"url_magazin": "https://www.dwyn.ro/baterii-powerbank/dudao/336152-baterie-externa-dudao-k12pro-20000mah-22-5w-qc-plus-pd-1-x-usb-c-2-x-usb-a-neagra/",
+"pret_vechi": null
 },
 {
 "titlu": "Xiaomi Baterie externa universala Xiaomi BHR9740GL, 22.5 W, 20000 mAh, cablu integrat USB-C, Li-Ion, Gri inchis",
@@ -28718,7 +28798,10 @@
 "imagine": "https://www.dwyn.ro/images/products/img_202512311121/390517/full/xiaomi-baterie-externa-universala-xiaomi-bhr9740gl-22-5-w-20000-mah-cablu-integrat-usb-c-li-ion-gri-inchis-1198723.jpg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fbaterii-powerbank%2Fxiaomi%2F390517-baterie-externa-universala-xiaomi-bhr9740gl-22-5-w-20000-mah-cablu-integrat-usb-c-li-ion-gri-inchis%2F",
 "magazin": "dwyn.ro",
+"id": "Pi4LoRD47iHt",
+"brand": "Xiaomi",
 "url_magazin": "https://www.dwyn.ro/baterii-powerbank/xiaomi/390517-baterie-externa-universala-xiaomi-bhr9740gl-22-5-w-20000-mah-cablu-integrat-usb-c-li-ion-gri-inchis/",
+"pret_vechi": null,
 "verificat": "2026-11-04"
 },
 {
@@ -28727,25 +28810,10 @@
 "imagine": "https://www.dwyn.ro/images/products/img_202305231058/220444/full/canyon-acumulator-extern-canyon-pb-2002-20000-mah-2x-usb-a-1x-usb-type-c-pd-20w-negru-426210.jpg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fbaterii-powerbank%2Fcanyon%2F220444-acumulator-extern-canyon-pb-2002-20000-mah-2x-usb-a-1x-usb-type-c-pd-20w-negru%2F",
 "magazin": "dwyn.ro",
+"id": "zt-BfQoB_nB2",
+"brand": "Canyon",
 "url_magazin": "https://www.dwyn.ro/baterii-powerbank/canyon/220444-acumulator-extern-canyon-pb-2002-20000-mah-2x-usb-a-1x-usb-type-c-pd-20w-negru/",
-"verificat": "2026-11-04"
-},
-{
-"titlu": "BASEUS Baterie Externa Baseus EnerFill FC21 Qpow 3 Ultra, 20000mAh, 22.5W, QC + PD, 1 x USB-A - 1 x USB-C, Neagra",
-"pret": 131.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202512311121/374714/full/baseus-baterie-externa-baseus-enerfill-fc21-qpow-3-ultra-20000mah-22-5w-qc-plus-pd-1-x-usb-a-1-x-usb-c-neagra-e0027m00-1073237.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fbaterii-powerbank%2Fbaseus%2F374714-baterie-externa-baseus-enerfill-fc21-qpow-3-ultra-20000mah-22-5w-qc-plus-pd-1-x-usb-a-1-x-usb-c-neagra%2F",
-"magazin": "dwyn.ro",
-"url_magazin": "https://www.dwyn.ro/baterii-powerbank/baseus/374714-baterie-externa-baseus-enerfill-fc21-qpow-3-ultra-20000mah-22-5w-qc-plus-pd-1-x-usb-a-1-x-usb-c-neagra/",
-"verificat": "2026-11-04"
-},
-{
-"titlu": "JOYROOM Baterie Externa Joyroom JR-PBF29, 20000mAh, 22.5W, QC + PD, 1 x Lightning - 2 x USB-C, Neagra",
-"pret": 146.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202606122129/477631/full/joyroom-baterie-externa-joyroom-jr-pbf29-20000mah-22-5w-qc-plus-pd-1-x-lightning-2-x-usb-c-neagra-1495897.png",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fbaterii-powerbank%2Fjoyroom%2F477631-baterie-externa-joyroom-jr-pbf29-20000mah-22-5w-qc-plus-pd-1-x-lightning-2-x-usb-c-neagra%2F",
-"magazin": "dwyn.ro",
-"url_magazin": "https://www.dwyn.ro/baterii-powerbank/joyroom/477631-baterie-externa-joyroom-jr-pbf29-20000mah-22-5w-qc-plus-pd-1-x-lightning-2-x-usb-c-neagra/",
+"pret_vechi": null,
 "verificat": "2026-11-04"
 }
 ],
@@ -28762,25 +28830,36 @@
 "titlu": "SSD de 1 TB",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-04",
-"feeduri": [],
-"produse": [
+"actualizat": "2026-11-12",
+"feeduri": [
 {
-"titlu": "SSD extern Corsair EX300U, 1 TB, USB 3.2 Gen 2, Gri",
-"pret": 909.91,
-"imagine": "http://1cctv.ro/164893/ssd-extern-corsair-ex300u-1-tb-usb-32-gen-2-gri.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2F1cctv.ro%2Fro%2Fhdd-extern%2F41441-ssd-extern-corsair-ex300u-1-tb-usb-32-gen-2-gri.html%3Futm_source%3D2performant",
-"magazin": "1cctv.ro",
-"url_magazin": "https://1cctv.ro/ro/hdd-extern/41441-ssd-extern-corsair-ex300u-1-tb-usb-32-gen-2-gri.html?utm_source=2performant",
-"verificat": "2026-11-04"
+"id": 1096,
+"magazin": "evomag.ro"
 },
+{
+"id": 8527,
+"magazin": "1cctv.ro"
+},
+{
+"id": 8937,
+"magazin": "dacris.net"
+},
+{
+"id": 1256,
+"magazin": "itarena.ro"
+}
+],
+"produse": [
 {
 "titlu": "SSD intern Kingston NV3, 1 TB, PCI Express 4.0 NVMe M.2",
 "pret": 919.68,
 "imagine": "http://1cctv.ro/116198/ssd-intern-kingston-nv3-1-tb-pci-express-40-nvme-m2.jpg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2F1cctv.ro%2Fro%2Fssd%2F37722-ssd-intern-kingston-nv3-1-tb-pci-express-40-nvme-m2.html%3Futm_source%3D2performant",
 "magazin": "1cctv.ro",
+"id": "RIQrm4g1Uyfj",
+"brand": "KINGSTON",
 "url_magazin": "https://1cctv.ro/ro/ssd/37722-ssd-intern-kingston-nv3-1-tb-pci-express-40-nvme-m2.html?utm_source=2performant",
+"pret_vechi": null,
 "verificat": "2026-11-04"
 },
 {
@@ -28789,7 +28868,10 @@
 "imagine": "http://1cctv.ro/167641/ssd-samsung-990-evo-1tb-pci-express-40.jpg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2F1cctv.ro%2Fro%2Fssd%2F43135-ssd-samsung-990-evo-1tb-pci-express-40.html%3Futm_source%3D2performant",
 "magazin": "1cctv.ro",
+"id": "ASD0XxT6JxtI",
+"brand": "SAMSUNG",
 "url_magazin": "https://1cctv.ro/ro/ssd/43135-ssd-samsung-990-evo-1tb-pci-express-40.html?utm_source=2performant",
+"pret_vechi": null,
 "verificat": "2026-11-04"
 },
 {
@@ -28798,7 +28880,10 @@
 "imagine": "https://dacris.vteximg.com.br/arquivos/ids/1089181/overlay_5c9b71299f4a54b8f5d45ab2cfb3e631.jpg.jpg?v=639221796795600000",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dacris.net%2Fmz-v9v1t0bw-ssd-samsung-990-evo-1tb-pci-express-4-0%2Fp%3FskuId%3D252262",
 "magazin": "dacris.net",
+"id": "vcf2X8bFTbxP",
+"brand": "Samsung",
 "url_magazin": "https://www.dacris.net/mz-v9v1t0bw-ssd-samsung-990-evo-1tb-pci-express-4-0/p?skuId=252262",
+"pret_vechi": null,
 "verificat": "2026-11-04"
 },
 {
@@ -28807,8 +28892,23 @@
 "imagine": "http://1cctv.ro/116201/ssd-extern-kingston-xs1000r-1-tb-usb-32-gen-2-rosu.jpg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2F1cctv.ro%2Fro%2Fhdd-extern%2F37725-ssd-extern-kingston-xs1000r-1-tb-usb-32-gen-2-rosu.html%3Futm_source%3D2performant",
 "magazin": "1cctv.ro",
+"id": "GdTUMHCdoXW9",
+"brand": "KINGSTON",
 "url_magazin": "https://1cctv.ro/ro/hdd-extern/37725-ssd-extern-kingston-xs1000r-1-tb-usb-32-gen-2-rosu.html?utm_source=2performant",
+"pret_vechi": null,
 "verificat": "2026-11-04"
+},
+{
+"titlu": "SSD WD Red SA500 1TB SATA-III M.2 2280",
+"pret": 1865.31,
+"imagine": "https://dacris.vteximg.com.br/arquivos/ids/978188/SSD-WD-Red-SA500-1TB-SATA-III-M-2-2280-0.jpg?v=638962864999500000",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dacris.net%2Fwds100t1r0b-ssd-wd-red-sa500-1tb-sata-iii-m-2-2280%2Fp%3FskuId%3D226976",
+"magazin": "dacris.net",
+"id": "SfR5NWiWmyBU",
+"brand": "WD",
+"url_magazin": "https://www.dacris.net/wds100t1r0b-ssd-wd-red-sa500-1tb-sata-iii-m-2-2280/p?skuId=226976",
+"pret_vechi": null,
+"verificat": "2026-11-12"
 }
 ],
 "magazine": [
@@ -28823,8 +28923,25 @@
 "titlu": "Plăci video NVIDIA RTX",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-04",
-"feeduri": [],
+"actualizat": "2026-11-12",
+"feeduri": [
+{
+"id": 1096,
+"magazin": "evomag.ro"
+},
+{
+"id": 2746,
+"magazin": "evomag.ro"
+},
+{
+"id": 1539,
+"magazin": "dwyn.ro"
+},
+{
+"id": 1152,
+"magazin": "evomag.ro"
+}
+],
 "produse": [
 {
 "titlu": "Placa video GIGABYTE GeForce RTX 3050 WINDFORCE OC V2 6GB GDDR6 96-bit",
@@ -28832,16 +28949,10 @@
 "imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4194%2F4194862%2Fplaca-video-gigabyte-geforce-r-668660493f1bc.png&type=auto&width=500&sign=0XpSITJQnkHBHRkARHQTcyM-H2qEZwAbVWHt3_LJKIQ",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Fcomponente-pc-gaming-placi-video%2Fgigabyte-placa-video-gigabyte-geforce-rtx-3050-windforce-oc-v2-6gb-gddr6-96-bit-4194862.html",
 "magazin": "evomag.ro",
+"id": "aa5d0d28b",
+"brand": "GIGABYTE",
 "url_magazin": "https://www.evomag.ro/componente-pc-gaming-placi-video/gigabyte-placa-video-gigabyte-geforce-rtx-3050-windforce-oc-v2-6gb-gddr6-96-bit-4194862.html",
-"verificat": "2026-11-04"
-},
-{
-"titlu": "Placa video ASUS GeForce RTX 3050 DUAL OC 6GB GDDR6 96-bit",
-"pret": 1499.99,
-"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4143%2F4143553%2Fplaca-video-asus-geforce-rtx-3-65d5f22018713.JPG&type=auto&width=500&sign=7qmj-pPckhmRBekgEGlNGbG80NIuDSvZ6r2O5dKC2Kg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Fcomponente-pc-gaming-placi-video%2Fasus-placa-video-asus-geforce-rtx-3050-dual-oc-6gb-gddr6-96-bit-4143553.html",
-"magazin": "evomag.ro",
-"url_magazin": "https://www.evomag.ro/componente-pc-gaming-placi-video/asus-placa-video-asus-geforce-rtx-3050-dual-oc-6gb-gddr6-96-bit-4143553.html",
+"pret_vechi": null,
 "verificat": "2026-11-04"
 },
 {
@@ -28850,7 +28961,10 @@
 "imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4254%2F4254473%2Fplaca-video-palit-geforce-rtx-68ee10a35cc63.png&type=auto&width=500&sign=tQWUpiEKsItlf8rppXu6QEAJQwlMI5oZlNgBfoYLwZw",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Fcomponente-pc-gaming-placi-video%2Fpalit-placa-video-palit-geforce-rtx-3050-stormx-6gb-gddr6-96-bit-4254473.html",
 "magazin": "evomag.ro",
+"id": "MuvWYZaeXUaX",
+"brand": "Palit",
 "url_magazin": "https://www.evomag.ro/componente-pc-gaming-placi-video/palit-placa-video-palit-geforce-rtx-3050-stormx-6gb-gddr6-96-bit-4254473.html",
+"pret_vechi": null,
 "verificat": "2026-11-04"
 },
 {
@@ -28859,7 +28973,10 @@
 "imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4194%2F4194876%2Fplaca-video-msi-geforce-rtx-30-67628977535a7.jpg&type=auto&width=500&sign=WkWjFGHf--VG1PBZGHJlDyaoXvs2PPBHf3xjeb5RSQ0",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Fcomponente-pc-gaming-placi-video%2Fmsi-placa-video-msi-geforce-rtx-3050-ventus-2x-e-oc-6gb-gddr6-96-bit-4194876.html",
 "magazin": "evomag.ro",
+"id": "H_jidDxvufTj",
+"brand": "MSI",
 "url_magazin": "https://www.evomag.ro/componente-pc-gaming-placi-video/msi-placa-video-msi-geforce-rtx-3050-ventus-2x-e-oc-6gb-gddr6-96-bit-4194876.html",
+"pret_vechi": null,
 "verificat": "2026-11-04"
 },
 {
@@ -28868,7 +28985,10 @@
 "imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4108%2F4108571%2Fplaca-video-asus-geforce-rtx-3-64c751d75ad91.jpg&type=auto&width=500&sign=KjNoJCDr_wqDDqYcoHazxgynh_18j0Hw2BU1wVzuYNM",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Fcomponente-pc-gaming-placi-video%2Fasus-placa-video-asus-geforce-rtx-3050-dual-v2-oc-8gb-gddr6-128-bit-4108571.html",
 "magazin": "evomag.ro",
+"id": "RaGKN_6HiA_x",
+"brand": "ASUS",
 "url_magazin": "https://www.evomag.ro/componente-pc-gaming-placi-video/asus-placa-video-asus-geforce-rtx-3050-dual-v2-oc-8gb-gddr6-128-bit-4108571.html",
+"pret_vechi": null,
 "verificat": "2026-11-04"
 },
 {
@@ -28877,8 +28997,22 @@
 "imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4250%2F4250271%2Fgeforce-rtx-5050-d6-8g-gddr6-68dbd369619a7.jpg&type=auto&width=500&sign=Sejpu1WaGETiMgUE9imJh67u2VbFdbEK7kmpcCQqmrg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Fcomponente-pc-gaming-placi-video%2Fgigabyte-placa-video-gigabyte-geforce-rtx-5050-d6-8gb-gddr6-128-bit-dlss-4.0-4250271.html",
 "magazin": "evomag.ro",
+"id": "w5rNYR4MDukx",
+"brand": "GIGABYTE",
 "url_magazin": "https://www.evomag.ro/componente-pc-gaming-placi-video/gigabyte-placa-video-gigabyte-geforce-rtx-5050-d6-8gb-gddr6-128-bit-dlss-4.0-4250271.html",
+"pret_vechi": null,
 "verificat": "2026-11-04"
+},
+{
+"titlu": "Placa video GIGABYTE RTX 5050 GAMING OC 8GB GDDR6 128-bit",
+"pret": 2399.99,
+"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4238%2F4238120%2F48f25c191fddc1a521dd33260f64560b.png&type=auto&width=500&sign=XZ_XoOESvGgkCQa2HJgt03_feHkEsFUQ95d_R5REtyE",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Fcomponente-pc-gaming-placi-video%2Fgigabyte-placa-video-gigabyte-rtx-5050-gaming-oc-8gb-gddr6-128-bit-4238120.html",
+"magazin": "evomag.ro",
+"id": "u_sdgh54hsDS",
+"brand": "GIGABYTE",
+"url_magazin": "https://www.evomag.ro/componente-pc-gaming-placi-video/gigabyte-placa-video-gigabyte-rtx-5050-gaming-oc-8gb-gddr6-128-bit-4238120.html",
+"pret_vechi": null
 },
 {
 "titlu": "Placa video ASUS GeForce RTX 3060 DUAL OC V2 12GB GDDR6 192-bit",
@@ -28886,7 +29020,10 @@
 "imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F3817%2F3817073%2Fplaca-video-asus-geforce-rtx-3-60bf4d34411d9.jpg&type=auto&width=500&sign=Mj-Z_9xLU60lJ1la--W758FzH9axEZIvsLGL5lEvJok",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Fcomponente-pc-gaming-placi-video%2Fasus-placa-video-asus-geforce-rtx-3060-dual-oc-v2-12gb-gddr6-192-bit-3817073.html",
 "magazin": "evomag.ro",
+"id": "5713f017b",
+"brand": "ASUS",
 "url_magazin": "https://www.evomag.ro/componente-pc-gaming-placi-video/asus-placa-video-asus-geforce-rtx-3060-dual-oc-v2-12gb-gddr6-192-bit-3817073.html",
+"pret_vechi": null,
 "verificat": "2026-11-04"
 },
 {
@@ -28895,7 +29032,10 @@
 "imagine": "https://www.dwyn.ro/images/products/img_202508191322/343019/full/msi-geforce-rtx-5060-8g-inspire-itx-oc-gddr7-128-bit-904181.png",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fplaci-video%2Fmsi%2F343019-placa-video-msi-geforce-rtx-5060-inspire-itx-oc-8gb-gddr7-128-bit-dlss-4-0%2F",
 "magazin": "dwyn.ro",
+"id": "aU1KFYqmoAih",
+"brand": "MSI",
 "url_magazin": "https://www.dwyn.ro/placi-video/msi/343019-placa-video-msi-geforce-rtx-5060-inspire-itx-oc-8gb-gddr7-128-bit-dlss-4-0/",
+"pret_vechi": null,
 "verificat": "2026-11-04"
 },
 {
@@ -28904,7 +29044,10 @@
 "imagine": "https://www.dwyn.ro/images/products/img_202206212004/201302/full/gigabyte-placa-video-gigabyte-nvidia-geforce-rtx-3060-windforce-oc-12gb-gddr6-192bit-385666.png",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fplaci-video%2Fgigabyte%2F201302-placa-video-gigabyte-nvidia-geforce-rtx-3060-windforce-oc-12gb-gddr6-192bit%2F",
 "magazin": "dwyn.ro",
+"id": "QymhuUIhyENm",
+"brand": "Gigabyte",
 "url_magazin": "https://www.dwyn.ro/placi-video/gigabyte/201302-placa-video-gigabyte-nvidia-geforce-rtx-3060-windforce-oc-12gb-gddr6-192bit/",
+"pret_vechi": null,
 "verificat": "2026-11-04"
 },
 {
@@ -28913,7 +29056,10 @@
 "imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4224%2F4224190%2Fplaca-video-msi-geforce-rtx-50-68358d8624bfa.png&type=auto&width=500&sign=nVuMX0XMT94_wyLiON_R7_Twraxck6bHNHk176HojaM",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Fcomponente-pc-gaming-placi-video%2Fmsi-placa-video-msi-geforce-rtx-5060-ventus-2x-oc-8gb-128-bit-gddr7-dlss-4.0-4224190.html",
 "magazin": "evomag.ro",
+"id": "cLJcmKs5gQ0g",
+"brand": "MSI",
 "url_magazin": "https://www.evomag.ro/componente-pc-gaming-placi-video/msi-placa-video-msi-geforce-rtx-5060-ventus-2x-oc-8gb-128-bit-gddr7-dlss-4.0-4224190.html",
+"pret_vechi": null,
 "verificat": "2026-11-04"
 },
 {
@@ -28922,8 +29068,33 @@
 "imagine": "https://www.dwyn.ro/images/products/img_202503142150/284773/full/gigabyte-placa-video-gigabyte-geforce-rtx-5060-ti-aero-oc-16gb-gddr7-128bit-677761.jpg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fplaci-video%2Fgigabyte%2F284773-placa-video-gigabyte-geforce-rtx-5060-ti-aero-oc-16gb-gddr7-128bit%2F",
 "magazin": "dwyn.ro",
+"id": "QYUGSL6Wn30z",
+"brand": "Gigabyte",
 "url_magazin": "https://www.dwyn.ro/placi-video/gigabyte/284773-placa-video-gigabyte-geforce-rtx-5060-ti-aero-oc-16gb-gddr7-128bit/",
+"pret_vechi": null,
 "verificat": "2026-11-04"
+},
+{
+"titlu": "Asus Placa video Asus ROG Astral OC Edition, NVIDIA GeForce RTX 5090, 32GB GDDR7, 512 bit, DLSS 4",
+"pret": 56214.99,
+"imagine": "https://www.dwyn.ro/images/products/img_202503142150/295985/full/asus-vga-pcie16-rtx5090-32gb-gddr7-astral-rtx5090-o32g-gam-asus-731623.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fplaci-video%2Fasus%2F295985-placa-video-asus-rog-astral-oc-edition-nvidia-geforce-rtx-5090-32gb-gddr7-512-bit-dlss-4%2F",
+"magazin": "dwyn.ro",
+"id": "E7PF6E7_vvUX",
+"brand": "Asus",
+"url_magazin": "https://www.dwyn.ro/placi-video/asus/295985-placa-video-asus-rog-astral-oc-edition-nvidia-geforce-rtx-5090-32gb-gddr7-512-bit-dlss-4/",
+"pret_vechi": null
+},
+{
+"titlu": "PNY Placa video PNY NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition, 96 GB GDDR7",
+"pret": 104297.99,
+"imagine": "https://www.dwyn.ro/images/products/img_202512311121/410536/full/pny-placa-video-pny-nvidia-rtx-pro-6000-blackwell-max-q-workstation-edition-96-gb-gddr7-1342036.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fplaci-video%2Fpny%2F410536-placa-video-pny-nvidia-rtx-pro-6000-blackwell-max-q-workstation-edition-96-gb-gddr7%2F",
+"magazin": "dwyn.ro",
+"id": "n-5HMtQMVR6A",
+"brand": "PNY",
+"url_magazin": "https://www.dwyn.ro/placi-video/pny/410536-placa-video-pny-nvidia-rtx-pro-6000-blackwell-max-q-workstation-edition-96-gb-gddr7/",
+"pret_vechi": null
 }
 ],
 "magazine": [
@@ -28938,16 +29109,36 @@
 "titlu": "Drone cu cameră",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-04",
-"feeduri": [],
+"actualizat": "2026-11-12",
+"feeduri": [
+{
+"id": 6119,
+"magazin": "infinity.ro"
+},
+{
+"id": 5171,
+"magazin": "bazarulonline.ro"
+},
+{
+"id": 9441,
+"magazin": "infinity.ro"
+},
+{
+"id": 5496,
+"magazin": "gave.ro"
+}
+],
 "produse": [
 {
 "titlu": "Drona E88 PRO 4K brate pliabile 2 camere wifi buton de Return To Home camera 4k HD cu transmisie live pe telefon",
 "pret": 159.99,
 "imagine": "https://gave.ro/image/catalog/CATEGORII_OK/drona_e88_pro_4k_brate_pliabile_2_camere_wifi_buton_de_return_to_home_camera_4k_hd_cu_transmisie_live_pe_telefon.png",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fgave.ro%2Findex.php%3Froute%3Dproduct%2Fproduct%26product_id%3D22963",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fgave.ro%2Fdrona-e88-pro-4k-brate-pliabile-2-camere-wifi-buton-de-return-to-home-camera-4k-hd-cu-transmisie-live-pe-telefon",
 "magazin": "gave.ro",
-"url_magazin": "https://gave.ro/index.php?route=product/product&product_id=22963"
+"id": "QWPcXJ2S_4-x",
+"brand": "GAVE",
+"url_magazin": "https://gave.ro/drona-e88-pro-4k-brate-pliabile-2-camere-wifi-buton-de-return-to-home-camera-4k-hd-cu-transmisie-live-pe-telefon",
+"pret_vechi": 320.0
 },
 {
 "titlu": "Drona Engros, pliabila, cu camera ULTRA HD, SKY-769",
@@ -28955,15 +29146,21 @@
 "imagine": "https://bazarulonline.ro/images/detailed/2924/b3ebb6f37d504af3ed187310b511952a.jpg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fbazarulonline.ro%2Fdrona-engros-pliabila-cu-camera-ultra-hd-sky-769",
 "magazin": "bazarulonline.ro",
-"url_magazin": "https://bazarulonline.ro/drona-engros-pliabila-cu-camera-ultra-hd-sky-769"
+"id": "dqPsMPHd_3tX",
+"brand": "",
+"url_magazin": "https://bazarulonline.ro/drona-engros-pliabila-cu-camera-ultra-hd-sky-769",
+"pret_vechi": null
 },
 {
 "titlu": "Drona Andowl Sky 97 Cu Camera FullHD Mentinere Altitudine Brate Pliabile",
 "pret": 299.0,
 "imagine": "https://gave.ro/image/catalog/CATEGORII_OK/drona_andowl_sky_97_cu_camera_fullhd_mentinere_altitudine_brate_pliabile.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fgave.ro%2Findex.php%3Froute%3Dproduct%2Fproduct%26product_id%3D21007",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fgave.ro%2Fdrona-andowl-sky-97-cu-camera-fullhd-mentinere-altitudine-brate-pliabile",
 "magazin": "gave.ro",
-"url_magazin": "https://gave.ro/index.php?route=product/product&product_id=21007"
+"id": "GbR5gkmgcGQs",
+"brand": "GAVE",
+"url_magazin": "https://gave.ro/drona-andowl-sky-97-cu-camera-fullhd-mentinere-altitudine-brate-pliabile",
+"pret_vechi": 515.0
 },
 {
 "titlu": "Drona Engros cu camera de supraveghere, SKY-91",
@@ -28971,15 +29168,21 @@
 "imagine": "https://bazarulonline.ro/images/detailed/2481/2aad29b12686c0a842daf98c5a705c3e.jpg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fbazarulonline.ro%2Flampa-solara-engros-tip-camera-de-supraveghere-q-ty032-clone",
 "magazin": "bazarulonline.ro",
-"url_magazin": "https://bazarulonline.ro/lampa-solara-engros-tip-camera-de-supraveghere-q-ty032-clone"
+"id": "a9172f053",
+"brand": "",
+"url_magazin": "https://bazarulonline.ro/lampa-solara-engros-tip-camera-de-supraveghere-q-ty032-clone",
+"pret_vechi": null
 },
 {
 "titlu": "Drona SKY97 Cu Camera FullHD cu Mentinere Altitudine si Brate Pliabile",
 "pret": 309.0,
 "imagine": "https://gave.ro/image/catalog/CATEGORII_OK/drona_sky97_cu_camera_fullhd_cu_mentinere_altitudine_si_brate_pliabile.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fgave.ro%2Findex.php%3Froute%3Dproduct%2Fproduct%26product_id%3D16803",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fgave.ro%2Fdrona-sky97-cu-camera-fullhd-cu-mentinere-altitudine-si-brate-pliabile",
 "magazin": "gave.ro",
-"url_magazin": "https://gave.ro/index.php?route=product/product&product_id=16803"
+"id": "9_EJHLWjEZRb",
+"brand": "GAVE",
+"url_magazin": "https://gave.ro/drona-sky97-cu-camera-fullhd-cu-mentinere-altitudine-si-brate-pliabile",
+"pret_vechi": 560.0
 },
 {
 "titlu": "Drona RC pliabila cu camera HD 1080P, 18 minute zbor, neagra, 30x30x8cm",
@@ -28987,7 +29190,10 @@
 "imagine": "https://infinityro.vteximg.com.br/arquivos/ids/273340294/2.jpg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Finfinity.ro%2Fdrona-rc-pliabila-cu-camera-hd-1080p-18-minute-zbor-neagra-30x30x8cm-9262344%2Fp%3Futm_source%3D2performant",
 "magazin": "infinity.ro",
+"id": "WrnmF_Ua3wdi",
+"brand": "OEM",
 "url_magazin": "https://infinity.ro/drona-rc-pliabila-cu-camera-hd-1080p-18-minute-zbor-neagra-30x30x8cm-9262344/p?utm_source=2performant",
+"pret_vechi": 609.84,
 "verificat": "2026-11-04"
 },
 {
@@ -28996,16 +29202,33 @@
 "imagine": "https://infinityro.vteximg.com.br/arquivos/ids/268719174/image-754d97b885e74c84aa9d0b50eba3e486.jpg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Finfinity.ro%2Fdrona-pliabila-cu-camera-incorporata-si-lumini-decolare-si-aterizare-automata-54x8x37cm-negru-1657792%2Fp%3Futm_source%3D2performant",
 "magazin": "infinity.ro",
+"id": "DAT7t9G5595p",
+"brand": "Welora",
 "url_magazin": "https://infinity.ro/drona-pliabila-cu-camera-incorporata-si-lumini-decolare-si-aterizare-automata-54x8x37cm-negru-1657792/p?utm_source=2performant",
+"pret_vechi": 750.22,
 "verificat": "2026-11-04"
 },
 {
 "titlu": "Drona Andowl GST69 cu camera 4K zbor stabilizat pana la 120 metri culoare neagra",
 "pret": 489.0,
 "imagine": "https://gave.ro/image/catalog/CATEGORII_OK/Screenshot 2026-08-05 at 13.15.12.png",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fgave.ro%2Findex.php%3Froute%3Dproduct%2Fproduct%26product_id%3D27260",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fgave.ro%2Fdrona-andowl-gst69-cu-camera-4k-zbor-stabilizat-pana-la-120-metri-culoare-neagra",
 "magazin": "gave.ro",
-"url_magazin": "https://gave.ro/index.php?route=product/product&product_id=27260"
+"id": "CYHdEriRZqUy",
+"brand": "GAVE",
+"url_magazin": "https://gave.ro/drona-andowl-gst69-cu-camera-4k-zbor-stabilizat-pana-la-120-metri-culoare-neagra",
+"pret_vechi": 799.0
+},
+{
+"titlu": "Drona RC pliabila 2.4G WIFI FPV cu camera HD 1080P, timp de zbor 18 minute, multicolor, dimensiuni 30x30x8cm",
+"pret": 517.42,
+"imagine": "https://infinityro.vteximg.com.br/arquivos/ids/275846994/0.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Finfinity.ro%2Fdrona-rc-pliabila-2-4g-wifi-fpv-cu-camera-hd-1080p-timp-de-zbor-18-minute-multicolor-dimensiuni-30x30x8cm-9406188%2Fp%3Futm_source%3D2performant",
+"magazin": "infinity.ro",
+"id": "3SLWOm0wfFMy",
+"brand": "OEM",
+"url_magazin": "https://infinity.ro/drona-rc-pliabila-2-4g-wifi-fpv-cu-camera-hd-1080p-timp-de-zbor-18-minute-multicolor-dimensiuni-30x30x8cm-9406188/p?utm_source=2performant",
+"pret_vechi": null
 },
 {
 "titlu": "Drona Nivazo S166, rotire 360 de grade, functie de evitarea obstacolelor, camera duala 4K, filmare si fotografiere",
@@ -29013,7 +29236,10 @@
 "imagine": "https://infinityro.vteximg.com.br/arquivos/ids/268830863/image-1924bb1432fc4dbb88eed1163f7ab428.jpg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Finfinity.ro%2Fdrona-nivazo-s166-rotire-360-de-grade-functie-de-evitarea-obstacolelor-camera-duala-4k-filmare-si-fotografiere-1675788%2Fp%3Futm_source%3D2performant",
 "magazin": "infinity.ro",
+"id": "70Bejb_T17gG",
+"brand": "Nivazo",
 "url_magazin": "https://infinity.ro/drona-nivazo-s166-rotire-360-de-grade-functie-de-evitarea-obstacolelor-camera-duala-4k-filmare-si-fotografiere-1675788/p?utm_source=2performant",
+"pret_vechi": null,
 "verificat": "2026-11-04"
 },
 {
@@ -29022,7 +29248,10 @@
 "imagine": "https://infinityro.vteximg.com.br/arquivos/ids/265985684/image-313b9e6a2ccf4fbeaaec1b32c8875aea.jpg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Finfinity.ro%2Fdrona-csj-m818-cu-2-acumulatoare-wifi-5g-buton-return-to-home-camera-4k-hd-cu-transmisie-live-pe-telefon-gps-1070042%2Fp%3Futm_source%3D2performant",
 "magazin": "infinity.ro",
+"id": "nQ9vqOJZwjTK",
+"brand": "CSJ",
 "url_magazin": "https://infinity.ro/drona-csj-m818-cu-2-acumulatoare-wifi-5g-buton-return-to-home-camera-4k-hd-cu-transmisie-live-pe-telefon-gps-1070042/p?utm_source=2performant",
+"pret_vechi": 1540.0,
 "verificat": "2026-11-04"
 },
 {
@@ -29031,7 +29260,10 @@
 "imagine": "https://infinityro.vteximg.com.br/arquivos/ids/265985680/image-3a5e4f8b1598474786be3b0143a7bfa5.jpg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Finfinity.ro%2Fdrona-sjrc-f5s-pro-4k-5g-gps-obiectiv-evitarea-obstacolelor-cu-laser-brate-pliabile-camera-4k-hd-eis-1070043%2Fp%3Futm_source%3D2performant",
 "magazin": "infinity.ro",
+"id": "gzI_D-K-UkSS",
+"brand": "SJRC",
 "url_magazin": "https://infinity.ro/drona-sjrc-f5s-pro-4k-5g-gps-obiectiv-evitarea-obstacolelor-cu-laser-brate-pliabile-camera-4k-hd-eis-1070043/p?utm_source=2performant",
+"pret_vechi": 1650.0,
 "verificat": "2026-11-04"
 }
 ],
@@ -29048,8 +29280,25 @@
 "titlu": "Camere de supraveghere Wi-Fi",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-04",
-"feeduri": [],
+"actualizat": "2026-11-12",
+"feeduri": [
+{
+"id": 6119,
+"magazin": "infinity.ro"
+},
+{
+"id": 8527,
+"magazin": "1cctv.ro"
+},
+{
+"id": 5496,
+"magazin": "gave.ro"
+},
+{
+"id": 5171,
+"magazin": "bazarulonline.ro"
+}
+],
 "produse": [
 {
 "titlu": "Cameră Supraveghere WiFi interior 4MP EnGros, Pan/Tilt 360°, Baby Monitor, Detectie AI, Viziune Nocturnă, Audio Bidirecț",
@@ -29057,7 +29306,10 @@
 "imagine": "https://bazarulonline.ro/images/detailed/4994/Screenshot_2237.png",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fbazarulonline.ro%2Fcamer-supraveghere-wifi-interior-4mp-engros-pan-tilt-360-baby-monitor-detectie-ai-viziune-nocturn-audio-bidirecional-alarm-control-vocal",
 "magazin": "bazarulonline.ro",
-"url_magazin": "https://bazarulonline.ro/camer-supraveghere-wifi-interior-4mp-engros-pan-tilt-360-baby-monitor-detectie-ai-viziune-nocturn-audio-bidirecional-alarm-control-vocal"
+"id": "UWT8bRvmR0T_",
+"brand": "",
+"url_magazin": "https://bazarulonline.ro/camer-supraveghere-wifi-interior-4mp-engros-pan-tilt-360-baby-monitor-detectie-ai-viziune-nocturn-audio-bidirecional-alarm-control-vocal",
+"pret_vechi": null
 },
 {
 "titlu": "Sonerie Video Smart Razo, ENGROSS Camera Supraveghere WiFi, Fara fir, Night Vision, Voice Changer, Audio Bidirectional,",
@@ -29065,7 +29317,21 @@
 "imagine": "https://bazarulonline.ro/images/detailed/3637/res_60b9a5505b83f1e24990a760cafd8e63.jpg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fbazarulonline.ro%2Fsonerie-video-smart-razo-engross-camera-supraveghere-wifi-fara-fir-night-vision-voice-changer-audio-bidirectional-apel-vocal-si-interfon-video-control-aplicatie-android-ios",
 "magazin": "bazarulonline.ro",
-"url_magazin": "https://bazarulonline.ro/sonerie-video-smart-razo-engross-camera-supraveghere-wifi-fara-fir-night-vision-voice-changer-audio-bidirectional-apel-vocal-si-interfon-video-control-aplicatie-android-ios"
+"id": "9CDpL7xHVWM4",
+"brand": "",
+"url_magazin": "https://bazarulonline.ro/sonerie-video-smart-razo-engross-camera-supraveghere-wifi-fara-fir-night-vision-voice-changer-audio-bidirectional-apel-vocal-si-interfon-video-control-aplicatie-android-ios",
+"pret_vechi": null
+},
+{
+"titlu": "Camera Supraveghere, ENGROS, PTZ, UHD, 4MP, WIFI, SD, ICSEE, Rotire, Detectie forma umana, Urmarire automata",
+"pret": 64.9,
+"imagine": "https://bazarulonline.ro/images/detailed/2148/69e059fe-354b-4cc6-9662-a9f39e6e52da-Photoroom_uhfh-g0.png",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fbazarulonline.ro%2Fcamera-supraveghere-engros-ptz-uhd-4mp-wifi-sd-icsee-rotire-detectie-forma-umana-urmarire-automata",
+"magazin": "bazarulonline.ro",
+"id": "e4c214663",
+"brand": "",
+"url_magazin": "https://bazarulonline.ro/camera-supraveghere-engros-ptz-uhd-4mp-wifi-sd-icsee-rotire-detectie-forma-umana-urmarire-automata",
+"pret_vechi": null
 },
 {
 "titlu": "Cameră de Supraveghere WiFi Smart Triplă Engros, Tip Bec E27, 3 Lentile, Vizualizare Panoramică 360°, Ecran Triplu, Nigh",
@@ -29073,7 +29339,10 @@
 "imagine": "https://bazarulonline.ro/images/detailed/10880/Smart_WiFi_Panoramic_Camera_Product_Showcase__1_.jpg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fbazarulonline.ro%2Fcamer-de-supraveghere-wifi-smart-tripl-engros-tip-bec-e27-3-lentile-vizualizare-panoramic-360-ecran-triplu-night-vision-ir-audio-bidirecional-detectare-micare-alb",
 "magazin": "bazarulonline.ro",
-"url_magazin": "https://bazarulonline.ro/camer-de-supraveghere-wifi-smart-tripl-engros-tip-bec-e27-3-lentile-vizualizare-panoramic-360-ecran-triplu-night-vision-ir-audio-bidirecional-detectare-micare-alb"
+"id": "jqgBBtZAzasb",
+"brand": "",
+"url_magazin": "https://bazarulonline.ro/camer-de-supraveghere-wifi-smart-tripl-engros-tip-bec-e27-3-lentile-vizualizare-panoramic-360-ecran-triplu-night-vision-ir-audio-bidirecional-detectare-micare-alb",
+"pret_vechi": null
 },
 {
 "titlu": "Camera supraveghere WiFi 8177HJ tip bec cu soclu E27 vedere nocturna",
@@ -29081,7 +29350,10 @@
 "imagine": "https://infinityro.vteximg.com.br/arquivos/ids/271124281/image-3eab14dc39754bf8b44f91ff9975f200.jpg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Finfinity.ro%2Fcamera-supraveghere-wifi-8177hj-tip-bec-cu-soclu-e27-vedere-nocturna-9073149%2Fp%3Futm_source%3D2performant",
 "magazin": "infinity.ro",
+"id": "zblFHi9M2XVY",
+"brand": "MIKI",
 "url_magazin": "https://infinity.ro/camera-supraveghere-wifi-8177hj-tip-bec-cu-soclu-e27-vedere-nocturna-9073149/p?utm_source=2performant",
+"pret_vechi": 181.5,
 "verificat": "2026-11-04"
 },
 {
@@ -29090,7 +29362,10 @@
 "imagine": "https://gave.ro/image/catalog/CATEGORII_OK/Screenshot 2026-03-10 at 12.55.47.png",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fgave.ro%2Fcamera-supraveghere-panoramica-wifi-360-tip-bec-night-vision-detectare-miscare",
 "magazin": "gave.ro",
-"url_magazin": "https://gave.ro/camera-supraveghere-panoramica-wifi-360-tip-bec-night-vision-detectare-miscare"
+"id": "fRqwmPoku5b1",
+"brand": "GAVE",
+"url_magazin": "https://gave.ro/camera-supraveghere-panoramica-wifi-360-tip-bec-night-vision-detectare-miscare",
+"pret_vechi": 165.0
 },
 {
 "titlu": "Cameră de Supraveghere WiFi Tip Bec E27 Engros, Lentilă Dublă, 1080P, Monitorizare Duală, Urmărire Automată, Control PTZ",
@@ -29098,7 +29373,10 @@
 "imagine": "https://bazarulonline.ro/images/detailed/10638/1080p_Dual-Sensor_Security_Camera_Bundle.jpg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fbazarulonline.ro%2Fcamer-de-supraveghere-wifi-tip-bec-e27-engros-lentil-dubl-1080p-monitorizare-dual-urmrire-automat-control-ptz-vedere-nocturn",
 "magazin": "bazarulonline.ro",
-"url_magazin": "https://bazarulonline.ro/camer-de-supraveghere-wifi-tip-bec-e27-engros-lentil-dubl-1080p-monitorizare-dual-urmrire-automat-control-ptz-vedere-nocturn"
+"id": "APsmFNSBtPby",
+"brand": "",
+"url_magazin": "https://bazarulonline.ro/camer-de-supraveghere-wifi-tip-bec-e27-engros-lentil-dubl-1080p-monitorizare-dual-urmrire-automat-control-ptz-vedere-nocturn",
+"pret_vechi": null
 },
 {
 "titlu": "Camera de Supraveghere WiFi, Dubla, Model JT-8292, 1080p Full HD, Baby Monitor, cu Senzor de Miscare",
@@ -29106,7 +29384,10 @@
 "imagine": "https://infinityro.vteximg.com.br/arquivos/ids/271407163/image-c58a7a79c0b3408cbb457838eacc4d4c.jpg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Finfinity.ro%2Fcamera-de-supraveghere-wifi-dubla-model-jt-8292-1080p-full-hd-baby-monitor-cu-senzor-de-miscare-9101423%2Fp%3Futm_source%3D2performant",
 "magazin": "infinity.ro",
+"id": "adO7rR2X9FGL",
+"brand": "Dalimag",
 "url_magazin": "https://infinity.ro/camera-de-supraveghere-wifi-dubla-model-jt-8292-1080p-full-hd-baby-monitor-cu-senzor-de-miscare-9101423/p?utm_source=2performant",
+"pret_vechi": null,
 "verificat": "2026-11-04"
 },
 {
@@ -29115,7 +29396,10 @@
 "imagine": "https://infinityro.vteximg.com.br/arquivos/ids/271407169/camera-de-supraveghere-cu-microsd-32gb-wifi-dubla-model-jt-8292-1080p-full-hd-baby--1a28865173ab.jpg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Finfinity.ro%2Fcamera-de-supraveghere-cu-microsd-32gb-wifi-dubla-model-jt-8292-1080p-full-hd-baby-monitor-cu-senzor-de-miscare-9101426%2Fp%3Futm_source%3D2performant",
 "magazin": "infinity.ro",
+"id": "Z0TvGik8ohEi",
+"brand": "Dalimag",
 "url_magazin": "https://infinity.ro/camera-de-supraveghere-cu-microsd-32gb-wifi-dubla-model-jt-8292-1080p-full-hd-baby-monitor-cu-senzor-de-miscare-9101426/p?utm_source=2performant",
+"pret_vechi": null,
 "verificat": "2026-11-04"
 },
 {
@@ -29124,7 +29408,10 @@
 "imagine": "https://gave.ro/image/catalog/CATEGORII_OK/Screenshot 2026-03-10 at 12.51.35.png",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fgave.ro%2Fcamera-de-supraveghere-wifi-5mp-full-hd-montare-exterior-interior-night-vision-2-antene",
 "magazin": "gave.ro",
-"url_magazin": "https://gave.ro/camera-de-supraveghere-wifi-5mp-full-hd-montare-exterior-interior-night-vision-2-antene"
+"id": "lZleIOef0HwG",
+"brand": "GAVE",
+"url_magazin": "https://gave.ro/camera-de-supraveghere-wifi-5mp-full-hd-montare-exterior-interior-night-vision-2-antene",
+"pret_vechi": 225.0
 },
 {
 "titlu": "Camera De Supraveghere Full Color cu 28 LEDURI Smart si Wifi",
@@ -29132,7 +29419,10 @@
 "imagine": "https://gave.ro/image/catalog/CATEGORII_OK/camera_de_supraveghere_full_color_cu_28_leduri_smart_si_wifi.png",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fgave.ro%2Fcamera-de-supraveghere-full-color-cu-28-leduri-smart-si-wifi",
 "magazin": "gave.ro",
-"url_magazin": "https://gave.ro/camera-de-supraveghere-full-color-cu-28-leduri-smart-si-wifi"
+"id": "QUxYSXj2OShu",
+"brand": "GAVE",
+"url_magazin": "https://gave.ro/camera-de-supraveghere-full-color-cu-28-leduri-smart-si-wifi",
+"pret_vechi": 249.0
 },
 {
 "titlu": "Cameră de Supraveghere WiFi Smart Engros, 3MP HD, PTZ, Audio Bidirecțional, Detectare Mișcare, Vedere Nocturnă, IP66, Ex",
@@ -29140,7 +29430,10 @@
 "imagine": "https://bazarulonline.ro/images/detailed/10670/WiFi_Smart_Camera_Product_Display.jpg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fbazarulonline.ro%2Fcamer-de-supraveghere-wifi-smart-engros-3mp-hd-ptz-audio-bidirecional-detectare-micare-vedere-nocturn-ip66-exterior-i-interior",
 "magazin": "bazarulonline.ro",
-"url_magazin": "https://bazarulonline.ro/camer-de-supraveghere-wifi-smart-engros-3mp-hd-ptz-audio-bidirecional-detectare-micare-vedere-nocturn-ip66-exterior-i-interior"
+"id": "STo-NQ_FL4bV",
+"brand": "",
+"url_magazin": "https://bazarulonline.ro/camer-de-supraveghere-wifi-smart-engros-3mp-hd-ptz-audio-bidirecional-detectare-micare-vedere-nocturn-ip66-exterior-i-interior",
+"pret_vechi": null
 },
 {
 "titlu": "Mini Camera de Supraveghere, WiFi, Full HD, 360°, Night Vision, Senzor de miscare",
@@ -29148,7 +29441,10 @@
 "imagine": "https://infinityro.vteximg.com.br/arquivos/ids/266496262/image-9a338f47942d43df8d2761fe3f7a9274.jpg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Finfinity.ro%2Fmini-camera-de-supraveghere-wifi-full-hd-360-night-vision-senzor-de-miscare-1175367%2Fp%3Futm_source%3D2performant",
 "magazin": "infinity.ro",
+"id": "03zQmpCgyVjL",
+"brand": "Divendi-ro",
 "url_magazin": "https://infinity.ro/mini-camera-de-supraveghere-wifi-full-hd-360-night-vision-senzor-de-miscare-1175367/p?utm_source=2performant",
+"pret_vechi": 153.74,
 "verificat": "2026-11-04"
 },
 {
@@ -29157,15 +29453,10 @@
 "imagine": "https://bazarulonline.ro/images/detailed/3805/res_c6df7fa504f08a32f9493634cbb80930.jpg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fbazarulonline.ro%2Fcamer-de-supraveghere-wi-fi-cu-3-camere-12mp-zoom-10x-detectare-micare-i-alarm-control-complet-prin-aplicaie-i-conectivitate-avansat",
 "magazin": "bazarulonline.ro",
-"url_magazin": "https://bazarulonline.ro/camer-de-supraveghere-wi-fi-cu-3-camere-12mp-zoom-10x-detectare-micare-i-alarm-control-complet-prin-aplicaie-i-conectivitate-avansat"
-},
-{
-"titlu": "UB Camera de supraveghere 3 IN 1 M145 Tripla 6K cu 6 Megapixeli Wireless Rotire automata Inteligent tracking Supraveghea",
-"pret": 133.2,
-"imagine": "https://gave.ro/image/catalog/CATEGORII_OK/camera_de_supraveghere_3_in_1_m145_tripla_6k_cu_6_megapixeli_wireless_rotire_automata_inteligent_tracking_supravegheaza_3_zone_simultan.png",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fgave.ro%2Findex.php%3Froute%3Dproduct%2Fproduct%26product_id%3D28445",
-"magazin": "gave.ro",
-"url_magazin": "https://gave.ro/index.php?route=product/product&product_id=28445"
+"id": "ycPP1uWJujnW",
+"brand": "",
+"url_magazin": "https://bazarulonline.ro/camer-de-supraveghere-wi-fi-cu-3-camere-12mp-zoom-10x-detectare-micare-i-alarm-control-complet-prin-aplicaie-i-conectivitate-avansat",
+"pret_vechi": null
 },
 {
 "titlu": "Camera de Supraveghere WiFi Tip Bec SriHome SH068 – Vizualizare Panoramica",
@@ -29173,7 +29464,10 @@
 "imagine": "http://1cctv.ro/164513/camera-de-supraveghere-wifi-tip-bec-srihome-sh068-vizualizare-panoramica.jpg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2F1cctv.ro%2Fro%2Fcamere-supraveghere-wireless-sricam-srihome%2F41168-camera-de-supraveghere-wifi-tip-bec-srihome-sh068-vizualizare-panoramica.html%3Futm_source%3D2performant",
 "magazin": "1cctv.ro",
+"id": "YFll5T-5aH40",
+"brand": "Sricam",
 "url_magazin": "https://1cctv.ro/ro/camere-supraveghere-wireless-sricam-srihome/41168-camera-de-supraveghere-wifi-tip-bec-srihome-sh068-vizualizare-panoramica.html?utm_source=2performant",
+"pret_vechi": null,
 "verificat": "2026-11-04"
 },
 {
@@ -29182,7 +29476,10 @@
 "imagine": "https://bazarulonline.ro/images/detailed/4784/H1fa660f4f5a24f70aabc3ac923bfa8b2R.jpg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fbazarulonline.ro%2Fcamera-de-supraveghere-wifi-jortan-doua-lentile-6mp-full-hd-exterior-clone",
 "magazin": "bazarulonline.ro",
-"url_magazin": "https://bazarulonline.ro/camera-de-supraveghere-wifi-jortan-doua-lentile-6mp-full-hd-exterior-clone"
+"id": "5LxX0iAJr0St",
+"brand": "",
+"url_magazin": "https://bazarulonline.ro/camera-de-supraveghere-wifi-jortan-doua-lentile-6mp-full-hd-exterior-clone",
+"pret_vechi": null
 },
 {
 "titlu": "Camera de supraveghere Clip Sonic X95PC, Wifi",
@@ -29190,7 +29487,10 @@
 "imagine": "https://infinityro.vteximg.com.br/arquivos/ids/268737764/image-41578ef89bdc4d76bba1e56702028d44.jpg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Finfinity.ro%2Fcamera-de-supraveghere-clip-sonic-x95pc-wifi-1661058%2Fp%3Futm_source%3D2performant",
 "magazin": "infinity.ro",
+"id": "IgaK2FNskC7a",
+"brand": "Clip Sonic",
 "url_magazin": "https://infinity.ro/camera-de-supraveghere-clip-sonic-x95pc-wifi-1661058/p?utm_source=2performant",
+"pret_vechi": 188.99,
 "verificat": "2026-11-04"
 },
 {
@@ -29199,7 +29499,10 @@
 "imagine": "https://infinityro.vteximg.com.br/arquivos/ids/271106046/image-2b25b4d928994def968c96b7dc74695e.jpg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Finfinity.ro%2Fcamera-supraveghere-wifi-cu-5-antene-9071252%2Fp%3Futm_source%3D2performant",
 "magazin": "infinity.ro",
+"id": "gD7_OBuqo2N-",
+"brand": "MANDU",
 "url_magazin": "https://infinity.ro/camera-supraveghere-wifi-cu-5-antene-9071252/p?utm_source=2performant",
+"pret_vechi": 328.9,
 "verificat": "2026-11-04"
 },
 {
@@ -29208,7 +29511,10 @@
 "imagine": "https://gave.ro/image/catalog/CATEGORII_OK/Screenshot 2026-03-10 at 12.46.07.png",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fgave.ro%2Fcamera-de-supraveghere-wifi-1080p-smart-home-ir-30m-senzor-miscare-night-vision-alba-rotunda",
 "magazin": "gave.ro",
-"url_magazin": "https://gave.ro/camera-de-supraveghere-wifi-1080p-smart-home-ir-30m-senzor-miscare-night-vision-alba-rotunda"
+"id": "pc4VblITx_1J",
+"brand": "GAVE",
+"url_magazin": "https://gave.ro/camera-de-supraveghere-wifi-1080p-smart-home-ir-30m-senzor-miscare-night-vision-alba-rotunda",
+"pret_vechi": 309.0
 },
 {
 "titlu": "Camera de supraveghere Wifi SOCLU E27 rotatie 360 grade SMART XL",
@@ -29216,16 +29522,33 @@
 "imagine": "https://infinityro.vteximg.com.br/arquivos/ids/271106201/image-edbbcdf2348c4845beb782b92d965628.jpg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Finfinity.ro%2Fcamera-de-supraveghere-wifi-soclu-e27-rotatie-360-grade-smart-xl-9071277%2Fp%3Futm_source%3D2performant",
 "magazin": "infinity.ro",
+"id": "w_AMMcAOsr4y",
+"brand": "XL",
 "url_magazin": "https://infinity.ro/camera-de-supraveghere-wifi-soclu-e27-rotatie-360-grade-smart-xl-9071277/p?utm_source=2performant",
+"pret_vechi": 308.01,
 "verificat": "2026-11-04"
+},
+{
+"titlu": "Camera de supraveghere 2 MP HD, PTZ, vedere nocturna color, WIFI, detectie forma umana, microfon incorporat",
+"pret": 169.0,
+"imagine": "https://infinityro.vteximg.com.br/arquivos/ids/268979300/image-3e48c23dbb9049739d87d5346bb0e388.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Finfinity.ro%2Fcamera-de-supraveghere-2-mp-hd-ptz-vedere-nocturna-color-wifi-detectie-forma-umana-microfon-incorporat-1697697%2Fp%3Futm_source%3D2performant",
+"magazin": "infinity.ro",
+"id": "n5vBF7HwAm0I",
+"brand": "Spionescu",
+"url_magazin": "https://infinity.ro/camera-de-supraveghere-2-mp-hd-ptz-vedere-nocturna-color-wifi-detectie-forma-umana-microfon-incorporat-1697697/p?utm_source=2performant",
+"pret_vechi": 229.0
 },
 {
 "titlu": "UB Camera Supraveghere WiFi BT Ultra HD 4 Lentile Unghi Larg Zoom 8X Night Vision Autotracking Audio Bidirectional",
 "pret": 177.2,
 "imagine": "https://gave.ro/image/catalog/CATEGORII_OK/Screenshot 2026-04-07 at 10.52.42.png",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fgave.ro%2Findex.php%3Froute%3Dproduct%2Fproduct%26product_id%3D28698",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fgave.ro%2Fub-camera-supraveghere-wifi-bt-ultra-hd-4-lentile-unghi-larg-zoom-8x-night-vision-autotracking-audio-bidirectional",
 "magazin": "gave.ro",
-"url_magazin": "https://gave.ro/index.php?route=product/product&product_id=28698"
+"id": "kCbWlWMVepaJ",
+"brand": "GAVE",
+"url_magazin": "https://gave.ro/ub-camera-supraveghere-wifi-bt-ultra-hd-4-lentile-unghi-larg-zoom-8x-night-vision-autotracking-audio-bidirectional",
+"pret_vechi": null
 },
 {
 "titlu": "Camera de Supraveghere Wifi IP66 Hd wireless 2 MP 1920 x 1080 pixeli ALB",
@@ -29233,7 +29556,21 @@
 "imagine": "https://gave.ro/image/catalog/CATEGORII_OK/Screenshot 2026-03-10 at 12.29.44.png",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fgave.ro%2Fcamera-de-supraveghere-wifi-ip66-hd-wireless-2-mp-1920-x-1080-pixeli-alb",
 "magazin": "gave.ro",
-"url_magazin": "https://gave.ro/camera-de-supraveghere-wifi-ip66-hd-wireless-2-mp-1920-x-1080-pixeli-alb"
+"id": "OKDcuZY-YTEZ",
+"brand": "GAVE",
+"url_magazin": "https://gave.ro/camera-de-supraveghere-wifi-ip66-hd-wireless-2-mp-1920-x-1080-pixeli-alb",
+"pret_vechi": 350.0
+},
+{
+"titlu": "Camera Supraveghere WiFi SriHome SH064 – 8MP, Audio, IR",
+"pret": 183.8,
+"imagine": "http://1cctv.ro/164467/camera-supraveghere-wifi-srihome-sh064-8mp-audio-ir.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2F1cctv.ro%2Fro%2Fcamere-supraveghere-wireless-sricam-srihome%2F41156-camera-supraveghere-wifi-srihome-sh064-8mp-audio-ir.html%3Futm_source%3D2performant",
+"magazin": "1cctv.ro",
+"id": "0eWE8SmQ046r",
+"brand": "Sricam",
+"url_magazin": "https://1cctv.ro/ro/camere-supraveghere-wireless-sricam-srihome/41156-camera-supraveghere-wifi-srihome-sh064-8mp-audio-ir.html?utm_source=2performant",
+"pret_vechi": null
 }
 ],
 "magazine": [

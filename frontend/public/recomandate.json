@@ -16,20 +16,20 @@
   "oferta": "15% Discount la fibrele de păr din cheratină pentru păr rar și chelie"
  },
  {
-  "magazin": "femieko.ro",
-  "nume": "Femieko",
-  "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/10996/medium/10996.png",
-  "categorie": "Sănătate & Farmacie",
-  "are_cod": true,
-  "oferta": "Economisește până la 25% cu Abonamentul Femi.Eko – Protecție lunară fă"
- },
- {
   "magazin": "giftera.ro",
   "nume": "Giftera",
   "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/14646/medium/14646.png",
   "categorie": "Cadouri & Flori",
   "are_cod": false,
   "oferta": "Cadouri de Craciun Giftera.ro – seturi cu lantisor si mesaj pentru cei"
+ },
+ {
+  "magazin": "femieko.ro",
+  "nume": "Femieko",
+  "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/10996/medium/10996.png",
+  "categorie": "Sănătate & Farmacie",
+  "are_cod": true,
+  "oferta": "Economisește până la 25% cu Abonamentul Femi.Eko – Protecție lunară fă"
  },
  {
   "magazin": "uniquestore.ro",
@@ -46,14 +46,6 @@
   "categorie": "Marketplace",
   "are_cod": true,
   "oferta": "Reducere de 10% la toate produsele Intimplay.ro"
- },
- {
-  "magazin": "intimax.ro",
-  "nume": "Intimax",
-  "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/13590/medium/13590.png",
-  "categorie": "Marketplace",
-  "are_cod": false,
-  "oferta": "Black Friday - Marea Bubuială"
  },
  {
   "magazin": "moftcollection.ro",
@@ -88,11 +80,19 @@
   "oferta": "Cupon cadou la prima comanda"
  },
  {
-  "magazin": "priveboutique.net",
-  "nume": "PRIVÉ Boutique",
-  "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/1570/medium/1570.png",
+  "magazin": "havit-romania.ro",
+  "nume": "Havit România",
+  "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/14600/medium/14600.png",
+  "categorie": "Electronice & IT",
+  "are_cod": false,
+  "oferta": "Black Friday HAVIT România: 30% reducere la tot, 6-15 Noiembrie"
+ },
+ {
+  "magazin": "labelshop.ro",
+  "nume": "Labelshop",
+  "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/9364/medium/9364.png",
   "categorie": "Fashion",
   "are_cod": false,
-  "oferta": "Black Cat Friday: toate rochiile la preț de Black Friday + până la −15"
+  "oferta": "Profita acum de reduceri intre 5% si 15% la echipamente si consumabile"
  }
 ]
