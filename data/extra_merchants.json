@@ -462,221 +462,14 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 18,
+    "zile_ramase": 17,
     "promotii": [
-      {
-        "nume": "DH179BFE",
-        "descriere": "Save €24 on orders over €179 during Black Friday & Cyber Monday. Available for EUR-settlement accounts.",
-        "cod_cupon": "",
-        "landing_page": "https://www.dhgate.com/sales/market/blackfriday.html",
-        "zile_ramase": 19,
-        "expira": "2026-12-01",
-        "sursa": "impact_deals_api"
-      },
-      {
-        "nume": "DH269BFE",
-        "descriere": "Save €27 on orders over €269 during Black Friday & Cyber Monday. Available for EUR-settlement accounts.",
-        "cod_cupon": "",
-        "landing_page": "https://www.dhgate.com/sales/market/blackfriday.html",
-        "zile_ramase": 19,
-        "expira": "2026-12-01",
-        "sursa": "impact_deals_api"
-      },
-      {
-        "nume": "DH59BFP",
-        "descriere": "Save £9 on orders over £59 during Black Friday & Cyber Monday. Available for GBP-settlement accounts.",
-        "cod_cupon": "",
-        "landing_page": "https://www.dhgate.com/sales/market/blackfriday.html",
-        "zile_ramase": 19,
-        "expira": "2026-12-01",
-        "sursa": "impact_deals_api"
-      },
-      {
-        "nume": "DH99BFP",
-        "descriere": "Save £15 on orders over £99 during Black Friday & Cyber Monday. Available for GBP-settlement accounts.",
-        "cod_cupon": "",
-        "landing_page": "https://www.dhgate.com/sales/market/blackfriday.html",
-        "zile_ramase": 19,
-        "expira": "2026-12-01",
-        "sursa": "impact_deals_api"
-      },
-      {
-        "nume": "DH149BFP",
-        "descriere": "Save £21 on orders over £149 during Black Friday & Cyber Monday. Available for GBP-settlement accounts.",
-        "cod_cupon": "",
-        "landing_page": "https://www.dhgate.com/sales/market/blackfriday.html",
-        "zile_ramase": 19,
-        "expira": "2026-12-01",
-        "sursa": "impact_deals_api"
-      },
-      {
-        "nume": "DH219BFP",
-        "descriere": "Save £23 on orders over £219 during Black Friday & Cyber Monday. Available for GBP-settlement accounts.",
-        "cod_cupon": "",
-        "landing_page": "https://www.dhgate.com/sales/market/blackfriday.html",
-        "zile_ramase": 19,
-        "expira": "2026-12-01",
-        "sursa": "impact_deals_api"
-      },
-      {
-        "nume": "DH2026NOVSAVE6",
-        "descriere": "Save $6 on orders over $50 using coupon DH2026NOVSAVE6 at DHgate.",
-        "cod_cupon": "",
-        "landing_page": "https://www.dhgate.com",
-        "zile_ramase": 18,
-        "expira": "2026-11-30",
-        "sursa": "impact_deals_api"
-      },
-      {
-        "nume": "DH2026NOVSAVE8",
-        "descriere": "Save $8 on orders over $80 using coupon DH2026NOVSAVE8 at DHgate.",
-        "cod_cupon": "",
-        "landing_page": "https://www.dhgate.com",
-        "zile_ramase": 18,
-        "expira": "2026-11-30",
-        "sursa": "impact_deals_api"
-      },
-      {
-        "nume": "DH2026NOVSAVE10",
-        "descriere": "Save $10 on orders over $100 using coupon DH2026NOVSAVE10 at DHgate.",
-        "cod_cupon": "",
-        "landing_page": "https://www.dhgate.com",
-        "zile_ramase": 18,
-        "expira": "2026-11-30",
-        "sursa": "impact_deals_api"
-      },
-      {
-        "nume": "DH2026NOVSAVE12",
-        "descriere": "Save $12 on orders over $120 using coupon DH2026NOVSAVE12 at DHgate.",
-        "cod_cupon": "",
-        "landing_page": "https://www.dhgate.com",
-        "zile_ramase": 18,
-        "expira": "2026-11-30",
-        "sursa": "impact_deals_api"
-      },
-      {
-        "nume": "DH2026NOVSAVE16",
-        "descriere": "Save $16 on orders over $160 using coupon DH2026NOVSAVE16 at DHgate.",
-        "cod_cupon": "",
-        "landing_page": "https://www.dhgate.com",
-        "zile_ramase": 18,
-        "expira": "2026-11-30",
-        "sursa": "impact_deals_api"
-      },
-      {
-        "nume": "DH2026NOVSAVE20",
-        "descriere": "Save $20 on orders over $200 using coupon DH2026NOVSAVE20 at DHgate.",
-        "cod_cupon": "",
-        "landing_page": "https://www.dhgate.com",
-        "zile_ramase": 18,
-        "expira": "2026-11-30",
-        "sursa": "impact_deals_api"
-      },
-      {
-        "nume": "DH2026NOVSAVE25",
-        "descriere": "Save $25 on orders over $300 using coupon DH2026NOVSAVE25 at DHgate.",
-        "cod_cupon": "",
-        "landing_page": "https://www.dhgate.com",
-        "zile_ramase": 18,
-        "expira": "2026-11-30",
-        "sursa": "impact_deals_api"
-      },
-      {
-        "nume": "DH2026NOVSAVE35",
-        "descriere": "Save $35 on orders over $600 using coupon DH2026NOVSAVE35 at DHgate.",
-        "cod_cupon": "",
-        "landing_page": "https://www.dhgate.com",
-        "zile_ramase": 18,
-        "expira": "2026-11-30",
-        "sursa": "impact_deals_api"
-      },
-      {
-        "nume": "DH2026NOVSAVE45",
-        "descriere": "Save $40 on orders over $850 using coupon DH2026NOVSAVE45 at DHgate.",
-        "cod_cupon": "",
-        "landing_page": "https://www.dhgate.com",
-        "zile_ramase": 18,
-        "expira": "2026-11-30",
-        "sursa": "impact_deals_api"
-      },
-      {
-        "nume": "DH2026NOV3NEW",
-        "descriere": "New user: Save $3 on orders over $5 using coupon DH2026NOV3NEW at DHgate.",
-        "cod_cupon": "",
-        "landing_page": "https://www.dhgate.com",
-        "zile_ramase": 18,
-        "expira": "2026-11-30",
-        "sursa": "impact_deals_api"
-      },
-      {
-        "nume": "DH2026NOV8NEW",
-        "descriere": "New user: Save $8 on orders over $50 using coupon DH2026NOV8NEW at DHgate.",
-        "cod_cupon": "",
-        "landing_page": "https://www.dhgate.com",
-        "zile_ramase": 18,
-        "expira": "2026-11-30",
-        "sursa": "impact_deals_api"
-      },
-      {
-        "nume": "DH2026NOV10NEW",
-        "descriere": "New user: Save $10 on orders over $85 using coupon DH2026NOV10NEW at DHgate.",
-        "cod_cupon": "",
-        "landing_page": "https://www.dhgate.com",
-        "zile_ramase": 18,
-        "expira": "2026-11-30",
-        "sursa": "impact_deals_api"
-      },
-      {
-        "nume": "DH2026NOV4NEW",
-        "descriere": "New user: Save $4 on orders over $10 using coupon DH2026NOV4NEW at DHgate.",
-        "cod_cupon": "",
-        "landing_page": "https://www.dhgate.com",
-        "zile_ramase": 18,
-        "expira": "2026-11-30",
-        "sursa": "impact_deals_api"
-      },
-      {
-        "nume": "DH69BF",
-        "descriere": "Save $11 on orders over $69 during Black Friday & Cyber Monday. Claim now and use it from Nov 23.",
-        "cod_cupon": "",
-        "landing_page": "https://www.dhgate.com/sales/market/blackfriday.html",
-        "zile_ramase": 19,
-        "expira": "2026-12-01",
-        "sursa": "impact_deals_api"
-      },
-      {
-        "nume": "DH129BF",
-        "descriere": "Save $20 on orders over $129 during Black Friday & Cyber Monday. Claim now and use it from Nov 23.",
-        "cod_cupon": "",
-        "landing_page": "https://www.dhgate.com/sales/market/blackfriday.html",
-        "zile_ramase": 19,
-        "expira": "2026-12-01",
-        "sursa": "impact_deals_api"
-      },
-      {
-        "nume": "DH199BF",
-        "descriere": "Save $26 on orders over $199 during Black Friday & Cyber Monday. Claim now and use it from Nov 23.",
-        "cod_cupon": "",
-        "landing_page": "https://www.dhgate.com/sales/market/blackfriday.html",
-        "zile_ramase": 19,
-        "expira": "2026-12-01",
-        "sursa": "impact_deals_api"
-      },
-      {
-        "nume": "DH299BF",
-        "descriere": "Save $30 on orders over $299 during Black Friday & Cyber Monday. Claim now and use it from Nov 23.",
-        "cod_cupon": "",
-        "landing_page": "https://www.dhgate.com/sales/market/blackfriday.html",
-        "zile_ramase": 19,
-        "expira": "2026-12-01",
-        "sursa": "impact_deals_api"
-      },
       {
         "nume": "DH59BFE",
         "descriere": "Save €9 on orders over €59 during Black Friday & Cyber Monday. Available for EUR-settlement accounts.",
         "cod_cupon": "",
         "landing_page": "https://www.dhgate.com/sales/market/blackfriday.html",
-        "zile_ramase": 19,
+        "zile_ramase": 18,
         "expira": "2026-12-01",
         "sursa": "impact_deals_api"
       },
@@ -685,7 +478,214 @@
         "descriere": "Save €18 on orders over €119 during Black Friday & Cyber Monday. Available for EUR-settlement accounts.",
         "cod_cupon": "",
         "landing_page": "https://www.dhgate.com/sales/market/blackfriday.html",
-        "zile_ramase": 19,
+        "zile_ramase": 18,
+        "expira": "2026-12-01",
+        "sursa": "impact_deals_api"
+      },
+      {
+        "nume": "DH179BFE",
+        "descriere": "Save €24 on orders over €179 during Black Friday & Cyber Monday. Available for EUR-settlement accounts.",
+        "cod_cupon": "",
+        "landing_page": "https://www.dhgate.com/sales/market/blackfriday.html",
+        "zile_ramase": 18,
+        "expira": "2026-12-01",
+        "sursa": "impact_deals_api"
+      },
+      {
+        "nume": "DH269BFE",
+        "descriere": "Save €27 on orders over €269 during Black Friday & Cyber Monday. Available for EUR-settlement accounts.",
+        "cod_cupon": "",
+        "landing_page": "https://www.dhgate.com/sales/market/blackfriday.html",
+        "zile_ramase": 18,
+        "expira": "2026-12-01",
+        "sursa": "impact_deals_api"
+      },
+      {
+        "nume": "DH59BFP",
+        "descriere": "Save £9 on orders over £59 during Black Friday & Cyber Monday. Available for GBP-settlement accounts.",
+        "cod_cupon": "",
+        "landing_page": "https://www.dhgate.com/sales/market/blackfriday.html",
+        "zile_ramase": 18,
+        "expira": "2026-12-01",
+        "sursa": "impact_deals_api"
+      },
+      {
+        "nume": "DH99BFP",
+        "descriere": "Save £15 on orders over £99 during Black Friday & Cyber Monday. Available for GBP-settlement accounts.",
+        "cod_cupon": "",
+        "landing_page": "https://www.dhgate.com/sales/market/blackfriday.html",
+        "zile_ramase": 18,
+        "expira": "2026-12-01",
+        "sursa": "impact_deals_api"
+      },
+      {
+        "nume": "DH149BFP",
+        "descriere": "Save £21 on orders over £149 during Black Friday & Cyber Monday. Available for GBP-settlement accounts.",
+        "cod_cupon": "",
+        "landing_page": "https://www.dhgate.com/sales/market/blackfriday.html",
+        "zile_ramase": 18,
+        "expira": "2026-12-01",
+        "sursa": "impact_deals_api"
+      },
+      {
+        "nume": "DH219BFP",
+        "descriere": "Save £23 on orders over £219 during Black Friday & Cyber Monday. Available for GBP-settlement accounts.",
+        "cod_cupon": "",
+        "landing_page": "https://www.dhgate.com/sales/market/blackfriday.html",
+        "zile_ramase": 18,
+        "expira": "2026-12-01",
+        "sursa": "impact_deals_api"
+      },
+      {
+        "nume": "DH2026NOVSAVE6",
+        "descriere": "Save $6 on orders over $50 using coupon DH2026NOVSAVE6 at DHgate.",
+        "cod_cupon": "",
+        "landing_page": "https://www.dhgate.com",
+        "zile_ramase": 17,
+        "expira": "2026-11-30",
+        "sursa": "impact_deals_api"
+      },
+      {
+        "nume": "DH2026NOVSAVE8",
+        "descriere": "Save $8 on orders over $80 using coupon DH2026NOVSAVE8 at DHgate.",
+        "cod_cupon": "",
+        "landing_page": "https://www.dhgate.com",
+        "zile_ramase": 17,
+        "expira": "2026-11-30",
+        "sursa": "impact_deals_api"
+      },
+      {
+        "nume": "DH2026NOVSAVE10",
+        "descriere": "Save $10 on orders over $100 using coupon DH2026NOVSAVE10 at DHgate.",
+        "cod_cupon": "",
+        "landing_page": "https://www.dhgate.com",
+        "zile_ramase": 17,
+        "expira": "2026-11-30",
+        "sursa": "impact_deals_api"
+      },
+      {
+        "nume": "DH2026NOVSAVE12",
+        "descriere": "Save $12 on orders over $120 using coupon DH2026NOVSAVE12 at DHgate.",
+        "cod_cupon": "",
+        "landing_page": "https://www.dhgate.com",
+        "zile_ramase": 17,
+        "expira": "2026-11-30",
+        "sursa": "impact_deals_api"
+      },
+      {
+        "nume": "DH2026NOVSAVE16",
+        "descriere": "Save $16 on orders over $160 using coupon DH2026NOVSAVE16 at DHgate.",
+        "cod_cupon": "",
+        "landing_page": "https://www.dhgate.com",
+        "zile_ramase": 17,
+        "expira": "2026-11-30",
+        "sursa": "impact_deals_api"
+      },
+      {
+        "nume": "DH2026NOVSAVE20",
+        "descriere": "Save $20 on orders over $200 using coupon DH2026NOVSAVE20 at DHgate.",
+        "cod_cupon": "",
+        "landing_page": "https://www.dhgate.com",
+        "zile_ramase": 17,
+        "expira": "2026-11-30",
+        "sursa": "impact_deals_api"
+      },
+      {
+        "nume": "DH2026NOVSAVE25",
+        "descriere": "Save $25 on orders over $300 using coupon DH2026NOVSAVE25 at DHgate.",
+        "cod_cupon": "",
+        "landing_page": "https://www.dhgate.com",
+        "zile_ramase": 17,
+        "expira": "2026-11-30",
+        "sursa": "impact_deals_api"
+      },
+      {
+        "nume": "DH2026NOVSAVE35",
+        "descriere": "Save $35 on orders over $600 using coupon DH2026NOVSAVE35 at DHgate.",
+        "cod_cupon": "",
+        "landing_page": "https://www.dhgate.com",
+        "zile_ramase": 17,
+        "expira": "2026-11-30",
+        "sursa": "impact_deals_api"
+      },
+      {
+        "nume": "DH2026NOVSAVE45",
+        "descriere": "Save $40 on orders over $850 using coupon DH2026NOVSAVE45 at DHgate.",
+        "cod_cupon": "",
+        "landing_page": "https://www.dhgate.com",
+        "zile_ramase": 17,
+        "expira": "2026-11-30",
+        "sursa": "impact_deals_api"
+      },
+      {
+        "nume": "DH2026NOV3NEW",
+        "descriere": "New user: Save $3 on orders over $5 using coupon DH2026NOV3NEW at DHgate.",
+        "cod_cupon": "",
+        "landing_page": "https://www.dhgate.com",
+        "zile_ramase": 17,
+        "expira": "2026-11-30",
+        "sursa": "impact_deals_api"
+      },
+      {
+        "nume": "DH2026NOV8NEW",
+        "descriere": "New user: Save $8 on orders over $50 using coupon DH2026NOV8NEW at DHgate.",
+        "cod_cupon": "",
+        "landing_page": "https://www.dhgate.com",
+        "zile_ramase": 17,
+        "expira": "2026-11-30",
+        "sursa": "impact_deals_api"
+      },
+      {
+        "nume": "DH2026NOV10NEW",
+        "descriere": "New user: Save $10 on orders over $85 using coupon DH2026NOV10NEW at DHgate.",
+        "cod_cupon": "",
+        "landing_page": "https://www.dhgate.com",
+        "zile_ramase": 17,
+        "expira": "2026-11-30",
+        "sursa": "impact_deals_api"
+      },
+      {
+        "nume": "DH2026NOV4NEW",
+        "descriere": "New user: Save $4 on orders over $10 using coupon DH2026NOV4NEW at DHgate.",
+        "cod_cupon": "",
+        "landing_page": "https://www.dhgate.com",
+        "zile_ramase": 17,
+        "expira": "2026-11-30",
+        "sursa": "impact_deals_api"
+      },
+      {
+        "nume": "DH69BF",
+        "descriere": "Save $11 on orders over $69 during Black Friday & Cyber Monday. Claim now and use it from Nov 23.",
+        "cod_cupon": "",
+        "landing_page": "https://www.dhgate.com/sales/market/blackfriday.html",
+        "zile_ramase": 18,
+        "expira": "2026-12-01",
+        "sursa": "impact_deals_api"
+      },
+      {
+        "nume": "DH129BF",
+        "descriere": "Save $20 on orders over $129 during Black Friday & Cyber Monday. Claim now and use it from Nov 23.",
+        "cod_cupon": "",
+        "landing_page": "https://www.dhgate.com/sales/market/blackfriday.html",
+        "zile_ramase": 18,
+        "expira": "2026-12-01",
+        "sursa": "impact_deals_api"
+      },
+      {
+        "nume": "DH199BF",
+        "descriere": "Save $26 on orders over $199 during Black Friday & Cyber Monday. Claim now and use it from Nov 23.",
+        "cod_cupon": "",
+        "landing_page": "https://www.dhgate.com/sales/market/blackfriday.html",
+        "zile_ramase": 18,
+        "expira": "2026-12-01",
+        "sursa": "impact_deals_api"
+      },
+      {
+        "nume": "DH299BF",
+        "descriere": "Save $30 on orders over $299 during Black Friday & Cyber Monday. Claim now and use it from Nov 23.",
+        "cod_cupon": "",
+        "landing_page": "https://www.dhgate.com/sales/market/blackfriday.html",
+        "zile_ramase": 18,
         "expira": "2026-12-01",
         "sursa": "impact_deals_api"
       }
@@ -1832,15 +1832,25 @@
     "categorie_slug": "electronice",
     "rank": null,
     "scor_afiliere": 65,
-    "scor_final": 65,
+    "scor_final": 65.0,
     "prioritate": "standard",
     "canal_recomandat": "Content, Social",
     "sales_number": 0,
     "trend": 0,
-    "are_promotie": false,
-    "cod_cupon": false,
-    "zile_ramase": 0,
-    "promotii": [],
+    "are_promotie": true,
+    "cod_cupon": true,
+    "zile_ramase": 7,
+    "promotii": [
+      {
+        "nume": "AOHi Black Friday Sale Is Live — 15% OFF + Mystery Box Deals",
+        "descriere": "AOHi's Black Friday Sale is now LIVE! We're bringing our customers exciting deals this shopping season, and we'd love for you to join us in promoting the campaign and sharing these exclusive offers with your audience.",
+        "cod_cupon": "15BF",
+        "landing_page": "https://www.iaohi.com",
+        "zile_ramase": 7,
+        "expira": "2026-11-19",
+        "sursa": "impact_deals_api"
+      }
+    ],
     "folosit_de": 0,
     "procent_succes": 80,
     "exclusiv": false,
@@ -2064,14 +2074,14 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": true,
-    "zile_ramase": 20,
+    "zile_ramase": 19,
     "promotii": [
       {
         "nume": "Black Friday Offer - Up to 23% off | Atzavara Hotel & Spa",
         "descriere": "Book your next getaway now with Atzavara Hotel and enjoy up to 23% off this festive season with the Black Friday, Cyber Monday and Travel Tuesday offer. Terms and Conditions:\n-Offer valid for booking until 01/12/2026. -Subject to availability.",
         "cod_cupon": "BLACK",
         "landing_page": "https://www.atzavarahotel.com/en/",
-        "zile_ramase": 20,
+        "zile_ramase": 19,
         "expira": "2026-12-02",
         "sursa": "impact_deals_api"
       }
@@ -2099,14 +2109,14 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 1084,
+    "zile_ramase": 1083,
     "promotii": [
       {
         "nume": "AFF20",
         "descriere": "Enjoy 20% off sitewide with code: AFF20",
         "cod_cupon": "",
         "landing_page": "https://www.avidlove.com",
-        "zile_ramase": 3610,
+        "zile_ramase": 3609,
         "expira": "2036-09-30",
         "sursa": "impact_deals_api"
       },
@@ -2115,7 +2125,7 @@
         "descriere": "Affiliate Discount Code",
         "cod_cupon": "",
         "landing_page": "https://www.avidlove.com",
-        "zile_ramase": 1084,
+        "zile_ramase": 1083,
         "expira": "2029-10-31",
         "sursa": "impact_deals_api"
       }
@@ -2428,14 +2438,14 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 261,
+    "zile_ramase": 260,
     "promotii": [
       {
         "nume": "BOYA15%off",
         "descriere": "BOYA15%off",
         "cod_cupon": "",
         "landing_page": "https://store.boyamic.com/discount/BOYAaff15",
-        "zile_ramase": 261,
+        "zile_ramase": 260,
         "expira": "2027-07-31",
         "sursa": "impact_deals_api"
       }
@@ -2713,14 +2723,14 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": true,
-    "zile_ramase": 415,
+    "zile_ramase": 414,
     "promotii": [
       {
         "nume": "Extra 5% PROMOCODE Offer on Room Rates -Direct Booking| Kuredu Maldives",
         "descriere": "Enjoy extra 5% savings on your stay at Kuredu Island, a top Maldives resort for families, great diving, thrilling water sports, land sports and culinary choices of 12 restaurants and bars. Offer Includes: • Book Now & Pay later • Flexible Can",
         "cod_cupon": "EXTRA5OFF",
         "landing_page": "https://www.kuredu.com/special-offers/?utm_source=affilired&utm_medium=affiliate&utm_campaign=affilired",
-        "zile_ramase": 415,
+        "zile_ramase": 414,
         "expira": "2028-01-01",
         "sursa": "impact_deals_api"
       }
@@ -3348,14 +3358,14 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 85,
+    "zile_ramase": 84,
     "promotii": [
       {
         "nume": "Fall & Winter Campaign Package",
         "descriere": "Buy $189, get $20 off",
         "cod_cupon": "",
         "landing_page": "https://mooyius.com/",
-        "zile_ramase": 85,
+        "zile_ramase": 84,
         "expira": "2027-02-05",
         "sursa": "impact_deals_api"
       }
@@ -3583,7 +3593,7 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": true,
-    "zile_ramase": 1,
+    "zile_ramase": 0,
     "promotii": [
       {
         "nume": "Best Seller 25% off!",
@@ -3626,7 +3636,7 @@
         "descriere": "Injection Tape in Hair Black Friday Flash Sale",
         "cod_cupon": "VT27",
         "landing_page": "https://laavooextensions.com/collections/injection-tape-virgin-hair",
-        "zile_ramase": 1,
+        "zile_ramase": 0,
         "expira": "2026-11-13",
         "sursa": "impact_deals_api"
       }
@@ -3779,14 +3789,14 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 18,
+    "zile_ramase": 17,
     "promotii": [
       {
         "nume": "LONGERR",
         "descriere": "USD $12 Off Coupon Code: LONGERR, For LONGER Laser Engraver Y-axis Rotary Roller with Bracket. Available Countries: ALL",
         "cod_cupon": "",
         "landing_page": "https://www.geekbuying.com/item/LONGER-Laser-Engraver-Y-axis-Rotary-Roller-with-Bracket-527094.html",
-        "zile_ramase": 42,
+        "zile_ramase": 41,
         "expira": "2026-12-24",
         "sursa": "impact_deals_api"
       },
@@ -3795,7 +3805,7 @@
         "descriere": "USD $15 Off Coupon Code: LONANORC, For LONGER Laser Rotary Chuck for Nano/ Nano Pro. Available Countries: ALL",
         "cod_cupon": "",
         "landing_page": "https://www.geekbuying.com/item/LONGER-Laser-Rotary-Chuck-for-Nano-Nano-Pro-527160.html",
-        "zile_ramase": 42,
+        "zile_ramase": 41,
         "expira": "2026-12-24",
         "sursa": "impact_deals_api"
       },
@@ -3804,7 +3814,7 @@
         "descriere": "USD $27 Off Coupon Code: RAY55WEU, For LONGER RAY5 5W Laser Engraver, 3.5inch Touch Screen, Offline Carving, Ultrafine Focused Laser, 32-Bit Chipset, Upgradable Laser Module, Compatible with Windows/MAC/Linux System. Available Countries: ALL",
         "cod_cupon": "",
         "landing_page": "https://www.geekbuying.com/item/LONGER-RAY5-Laser-Engraver-494612.html",
-        "zile_ramase": 169,
+        "zile_ramase": 168,
         "expira": "2027-04-30",
         "sursa": "impact_deals_api"
       },
@@ -3813,7 +3823,7 @@
         "descriere": "USD $4 Off Coupon Code: LRAY5RF, For LONGER RAY5 Laser Engraver Raiser Feet 70mm - 8pcs. Available Countries: ALL",
         "cod_cupon": "",
         "landing_page": "https://www.geekbuying.com/item/LONGER-RAY5-Laser-Engraver-Raiser-Feet-70mm-8pcs-527897.html",
-        "zile_ramase": 207,
+        "zile_ramase": 206,
         "expira": "2027-06-07",
         "sursa": "impact_deals_api"
       },
@@ -3822,7 +3832,7 @@
         "descriere": "USD $7 Off Coupon Code: LRAY5M25, For LONGER RAY5 Mini 2.5W Laser Engraver, 0.04mm Precision, 12,000mm/min Speed, for Wood/ Acrylic/ Leather/ Metal, 130*140mm. Available Countries: ALL",
         "cod_cupon": "",
         "landing_page": "https://www.geekbuying.com/item/LONGER-RAY5-Mini-2-5W-Laser-Engraver-528627.html",
-        "zile_ramase": 169,
+        "zile_ramase": 168,
         "expira": "2027-04-30",
         "sursa": "impact_deals_api"
       },
@@ -3831,7 +3841,7 @@
         "descriere": "USD $17 Off Coupon Code: CONGKBH27, For KTC H27E6 27 inch Gaming Monitor, 2560*1440 QHD Fast IPS Screen, 300Hz 240Hz Refresh Rate, HDR 400, 1ms Response Time, FreeSync & G-Sync, 144% sRGB, VESA Mountable, 2*HDMI 2.1, 2*DP 1.4, 1*USB 2.0, 1*Earphone. Available Countries: ALL",
         "cod_cupon": "",
         "landing_page": "https://www.geekbuying.com/item/KTC-H27E6-27inch-QHD-300Hz-Gaming-Monitor-527730.html",
-        "zile_ramase": 18,
+        "zile_ramase": 17,
         "expira": "2026-11-30",
         "sursa": "impact_deals_api"
       },
@@ -3840,7 +3850,7 @@
         "descriere": "USD $4 Off Coupon Code: JAKE10P, For Jakemy JM-Y10 Pro 2-in-1 Ultrasonic Cutter & Polisher, 35W 40kHz, OLED Display, for DIY/Medical/Industrial, Model Prototyping & Deburring, 73pcs - EU Plug. Available Countries: ALL",
         "cod_cupon": "",
         "landing_page": "https://www.geekbuying.com/item/Jakemy-JM-Y10-Pro-35W-40kHz-Ultrasonic-Cutter-Polisher-73pcs-EU-Plug-529257.html",
-        "zile_ramase": 169,
+        "zile_ramase": 168,
         "expira": "2027-04-30",
         "sursa": "impact_deals_api"
       },
@@ -3849,7 +3859,7 @@
         "descriere": "USD $67 Off Coupon Code: 9OJ5SQUX31, For Creality Raptor 3D Scanner, Hybrid Blue Laser NIR, 60fps Scanning Speed, Objects Between 5-2000mm, 24-bit Full-Color Scan, 0.02mm Accuracy, Anti-shaking. Available Countries: ALL",
         "cod_cupon": "",
         "landing_page": "https://www.geekbuying.com/item/Creality-Raptor-3D-Scanner-526773.html",
-        "zile_ramase": 18,
+        "zile_ramase": 17,
         "expira": "2026-11-30",
         "sursa": "impact_deals_api"
       },
@@ -3858,7 +3868,7 @@
         "descriere": "USD $7 Off Coupon Code: JAKEY10, For Jakemy JM-Y10 2-in-1 Ultrasonic Cutter & Polisher, 35W 40kHz, OLED Display, for DIY/Medical/Industrial, Model Prototyping & Deburring, 26pcs - EU Plug. Available Countries: ALL",
         "cod_cupon": "",
         "landing_page": "https://www.geekbuying.com/item/Jakemy-JM-Y10-35W-40kHz-Ultrasonic-Cutter-Polisher-26pcs-EU-Plug-529256.html",
-        "zile_ramase": 18,
+        "zile_ramase": 17,
         "expira": "2026-11-30",
         "sursa": "impact_deals_api"
       },
@@ -3867,7 +3877,7 @@
         "descriere": "USD $56 Off Coupon Code: MOB617, For Foride Xtremer 3 Electric Bike, 250W Motor, 48V 12Ah Battery, 29*2.4 inch Tires, 25km/h Max Speed, 120km Max Range, Hydraulic Disc Brakes, Suspension with Lockout, Shimano 7-speed. Available Countries: ALL",
         "cod_cupon": "",
         "landing_page": "https://www.geekbuying.com/item/Foride-Xtremer-3-Electric-Bike-250W-48V-12Ah-EU-Plug-528305.html",
-        "zile_ramase": 613,
+        "zile_ramase": 612,
         "expira": "2028-07-17",
         "sursa": "impact_deals_api"
       },
@@ -3876,7 +3886,7 @@
         "descriere": "USD $224 Off Coupon Code: PULUMAPE86, For PULUMA PE86 Electric Bike, 500W Motor, 48V 20Ah Battery, 26 inch Tires, 40km/h Max Speed, 150km Range, Hydraulic Brakes, Oil Spring Suspension System, Shimano 7-speed, LCD Display, Torque Sensor. Available Countries: ALL",
         "cod_cupon": "",
         "landing_page": "https://www.geekbuying.com/item/PULUMA-PE86-Electric-Bike-500W-48V-20Ah-529247.html",
-        "zile_ramase": 978,
+        "zile_ramase": 977,
         "expira": "2029-07-17",
         "sursa": "impact_deals_api"
       },
@@ -3885,7 +3895,7 @@
         "descriere": "USD $224 Off Coupon Code: PULUMAPE86PRO, For PULUMA PE86 Pro Electric Bike, 500W*2 Motor, 48V 20Ah Battery, 26 inch Tires, 40km/h Max Speed, 150km Range, Hydraulic Brakes, Oil Spring Suspension System, Shimano 7-speed, LCD Display, Torque Sensor. Available Countries: ALL",
         "cod_cupon": "",
         "landing_page": "https://www.geekbuying.com/item/PULUMA-PE86-Pro-Electric-Bike-500W-2-48V-20Ah-529248.html",
-        "zile_ramase": 613,
+        "zile_ramase": 612,
         "expira": "2028-07-17",
         "sursa": "impact_deals_api"
       },
@@ -3894,7 +3904,7 @@
         "descriere": "USD $3 Off Coupon Code: TRIMUI256, For TRIMUI Smart Pro Game Console with 256GB TF Card, 13729 Games, 4.96in 720P IPS Screen, Linux OS, 1GB RAM/8GB Storage, 5 Hours Playtime - Black. Available Countries: ALL",
         "cod_cupon": "",
         "landing_page": "https://www.geekbuying.com/item/TRIMUI-Smart-Pro-Handheld-Game-Console-256GB-TF-Card-Black-523921.html",
-        "zile_ramase": 414,
+        "zile_ramase": 413,
         "expira": "2027-12-31",
         "sursa": "impact_deals_api"
       },
@@ -3903,7 +3913,7 @@
         "descriere": "USD $22 Off Coupon Code: SCZZ97, For MINIX NEO Z97 Mini PC, Intel N97 4 Cores Max 3.6GHz, 12GB LPDDR5X RAM 512GB SSD, WiFi 6 Bluetooth 5.2, 2*HDMI+1*DP 4K Triple Display, 3*USB3.2, 2*RJ45, 1*Audio, Active Cooling. Available Countries: ALL",
         "cod_cupon": "",
         "landing_page": "https://www.geekbuying.com/item/MINIX-NEO-Z97-mini-PC-12GB-512GB-528673.html",
-        "zile_ramase": 504,
+        "zile_ramase": 503,
         "expira": "2028-03-30",
         "sursa": "impact_deals_api"
       },
@@ -3912,7 +3922,7 @@
         "descriere": "USD $10 Off Coupon Code: VADER4P, For Flydigi Vader 4 Pro Gaming Controller, Force Adjustment Lever Joystick, Hall & Micro 2-in-1 Triggers, 1000Hz Polling Rate, Compatible with PC, NS, TV, Android & Laptop. Available Countries: ALL",
         "cod_cupon": "",
         "landing_page": "https://www.geekbuying.com/item/Flydigi-Vader-4-Pro-Gaming-Controller-528115.html",
-        "zile_ramase": 612,
+        "zile_ramase": 611,
         "expira": "2028-07-16",
         "sursa": "impact_deals_api"
       },
@@ -3921,7 +3931,7 @@
         "descriere": "USD $45 Off Coupon Code: ANYKS1CA, For Anycubic Kobra S1 3D Printer with 2*Ace Pro, Vibrant 8-Color Printing, 600mm/s Ultra-Fast Speed, Auto-leveling, 320掳C Hotend, 44dB Ultra-Quiet, CoreXY Construction, 250*250*250mm. Available Countries: ALL",
         "cod_cupon": "",
         "landing_page": "https://www.geekbuying.com/item/Anycubic-Kobra-S1-with-2-Ace-Pro-8-Color-3D-Printer-527307.html",
-        "zile_ramase": 49,
+        "zile_ramase": 48,
         "expira": "2026-12-31",
         "sursa": "impact_deals_api"
       },
@@ -3930,7 +3940,7 @@
         "descriere": "USD $22 Off Coupon Code: ANYS14P, For Anycubic Kobra S1 Combo 3D Printer + 4kg Hyper PLA Filament - 1kg Purple + 1kg Blue + 1kg Red + 1kg Peachy-pink. Available Countries: ALL",
         "cod_cupon": "",
         "landing_page": "https://www.geekbuying.com/item/Anycubic-Kobra-S1-Combo-3D-Printer-4kg-Hyper-PLA-Filament-528918.html",
-        "zile_ramase": 204,
+        "zile_ramase": 203,
         "expira": "2027-06-04",
         "sursa": "impact_deals_api"
       },
@@ -3939,7 +3949,7 @@
         "descriere": "8% off for 3D Printers & Laser Engravers category, max save $50",
         "cod_cupon": "",
         "landing_page": "https://www.geekbuying.com/category/3D-Printers-Accessories-1544",
-        "zile_ramase": 200,
+        "zile_ramase": 199,
         "expira": "2027-05-31",
         "sursa": "impact_deals_api"
       },
@@ -3948,7 +3958,7 @@
         "descriere": "26BTS02",
         "cod_cupon": "",
         "landing_page": "https://www.geekbuying.com",
-        "zile_ramase": 18,
+        "zile_ramase": 17,
         "expira": "2026-11-30",
         "sursa": "impact_deals_api"
       },
@@ -3957,7 +3967,7 @@
         "descriere": "26BTS03",
         "cod_cupon": "",
         "landing_page": "https://www.geekbuying.com",
-        "zile_ramase": 18,
+        "zile_ramase": 17,
         "expira": "2026-11-30",
         "sursa": "impact_deals_api"
       },
@@ -3966,7 +3976,7 @@
         "descriere": "USD $0 Off Coupon Code: CHAU21, For PVY Turbo Electric Bike 250W Motor 48V 13Ah Battery 20*4.0 inch Fat Tires 25km/h Max Speed 100km Range Shimano 7-Speed Mechanical Disc Brake, Front Suspension Fork & Rear Mechanical Shock Absorber. Available Countries: ALL",
         "cod_cupon": "",
         "landing_page": "https://www.geekbuying.com/item/PVY-Turbo-250W-13AH-Electric-Bike-525243.html",
-        "zile_ramase": 19,
+        "zile_ramase": 18,
         "expira": "2026-12-01",
         "sursa": "impact_deals_api"
       }
@@ -4357,14 +4367,14 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 20,
+    "zile_ramase": 19,
     "promotii": [
       {
         "nume": "BLACKEST",
         "descriere": "Discount: 15% Region: Europe Promo code valid until: December 2, 2026, 00:00:00 Validity after activation: 2 days Number of promo codes: 1,000,000 Limit per user: 1 use Applies to: all categories Cannot be combined with other coupons Exceptions: 13% discount Korean products Japanese products Indian products Products from the Marshall Islands Exceptions: coupon does not apply (0% discount) AirPods Flipper multi-tool Automatic window cleaning robots Branded smartwatches and fitness trackers A-bran",
         "cod_cupon": "",
         "landing_page": "https://www.joom.com",
-        "zile_ramase": 20,
+        "zile_ramase": 19,
         "expira": "2026-12-02",
         "sursa": "impact_deals_api"
       }
@@ -4585,15 +4595,25 @@
     "categorie_slug": "calatorie",
     "rank": null,
     "scor_afiliere": 52,
-    "scor_final": 52,
+    "scor_final": 52.0,
     "prioritate": "standard",
     "canal_recomandat": "Content, Social",
     "sales_number": 0,
     "trend": 0,
-    "are_promotie": false,
-    "cod_cupon": false,
-    "zile_ramase": 0,
-    "promotii": [],
+    "are_promotie": true,
+    "cod_cupon": true,
+    "zile_ramase": 18,
+    "promotii": [
+      {
+        "nume": "Black Friday Sale - Up to 15% Off|Villa Luz|Magic Hotel Group",
+        "descriere": "This Black Weeks, discover a special opportunity to enjoy Villa Luz Design & Art Hotel. Get up to 15% off + 1 kid stays 100% free when using the given coupon code. Terms and Conditions:\n-Offer valid from 12/11/2026 until 30/11/2026. -Subject to ava",
+        "cod_cupon": "BLACKWEEKS",
+        "landing_page": "https://en.hotelmagicvillaluz.com/offers/black-friday-hotel-gandia/?partner=628&utm_source=affilired&utm_medium=afiliacion&utm_campaign=blackweeks&cp=blackweeks",
+        "zile_ramase": 18,
+        "expira": "2026-12-01",
+        "sursa": "impact_deals_api"
+      }
+    ],
     "folosit_de": 0,
     "procent_succes": 80,
     "exclusiv": false,
@@ -4817,14 +4837,14 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": true,
-    "zile_ramase": 140,
+    "zile_ramase": 139,
     "promotii": [
       {
         "nume": "Pre-Winter Offer is Live! Up to 25% off | Minor Hotels EUAM (formerly NH Hoteles)",
         "descriere": "Plan your autumn & winter city escapes across Europe and the Americas with up to 25% off. Including: - 5 DISCOVERY Dollars (D$) reward for bookings made on our website - Flexible cancellation policy Terms and Conditions:\n- Valid for bookings un",
         "cod_cupon": "CITYDREAMERS",
         "landing_page": "https://www.nh-hotels.com/en/deals/special-deal",
-        "zile_ramase": 140,
+        "zile_ramase": 139,
         "expira": "2027-04-01",
         "sursa": "impact_deals_api"
       }
@@ -4952,14 +4972,14 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 109,
+    "zile_ramase": 108,
     "promotii": [
       {
         "nume": "30% Off the AI Website Builder with Annual Terms",
         "descriere": "Get 30% off 1 (one) of the following Website builder plans: Website, Website+Marketing, and Ecommerce when you purchase an annual plan. Cannot be combined with other coupons or offers. All plans and products are renewed automatically to the card on file; cancel any time before renewal via your billing center, phone, or chat. Enter promo code NEW30 at checkout if you do not see the promo code applied. Promo valid until February 28th, 20‌27 ‌at ‌11‌‌:‌‌59‌‌:‌‌59‌‌PM ‌E‌ST‌",
         "cod_cupon": "",
         "landing_page": "https://www.networksolutions.com/partner/annual-website-builder?promo=NEW30",
-        "zile_ramase": 109,
+        "zile_ramase": 108,
         "expira": "2027-03-01",
         "sursa": "impact_deals_api"
       }
@@ -5187,14 +5207,14 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": true,
-    "zile_ramase": 353,
+    "zile_ramase": 352,
     "promotii": [
       {
         "nume": "Quber Savings",
         "descriere": "Quber Savings",
         "cod_cupon": "QUBER10",
         "landing_page": "https://orbitmobile.com",
-        "zile_ramase": 353,
+        "zile_ramase": 352,
         "expira": "2027-10-31",
         "sursa": "impact_deals_api"
       }
@@ -5222,14 +5242,14 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": true,
-    "zile_ramase": 4,
+    "zile_ramase": 3,
     "promotii": [
       {
         "nume": "BURLESQUE MONTH IS HERE AT DESIRE RIVIERA MAYA RESORT | Original Resorts",
         "descriere": "Make your November getaway even more unforgettable with exclusive savings and added perks at Desire Riviera Maya Resort. Up to 35% OFF Your Stay Complimentary Round-Trip Transfers from Cancun Airport 15% OFF at the Glam Shop 15% OFF Premium Bev",
         "cod_cupon": "VELVET26",
         "landing_page": "https://links.desire-experience.com/availability/69fcabe2-4214-4a44-8a4a-0b2d60ee5920",
-        "zile_ramase": 4,
+        "zile_ramase": 3,
         "expira": "2026-11-16",
         "sursa": "impact_deals_api"
       },
@@ -5238,7 +5258,7 @@
         "descriere": "Book your vacation for December 2026 and get 8% cash back + 15% off at the Glam shop, on premium beverages and spa treatments + 10% off spa products. Terms and Conditions:\n- Book between Oct. 15 and Dec. 15, 2026. - Travel between Dec. 1 and Dec. 3",
         "cod_cupon": "SSHOL",
         "landing_page": "https://www.temptation-experience.com",
-        "zile_ramase": 34,
+        "zile_ramase": 33,
         "expira": "2026-12-16",
         "sursa": "impact_deals_api"
       },
@@ -5247,7 +5267,7 @@
         "descriere": "Book Temptation Cancun Resort for the month of November and get UP TO 40% OFF + Round-trip transfer (Cancun Airport) + 15% off at the Glam shop, on premium beverages and spa treatments + 10% off spa products. Terms and Conditions:\nBook between today",
         "cod_cupon": "DARKM",
         "landing_page": "https://links.temptation-experience.com/availability/30fd55de-d766-4b08-94c1-783a850f7e0d",
-        "zile_ramase": 4,
+        "zile_ramase": 3,
         "expira": "2026-11-16",
         "sursa": "impact_deals_api"
       },
@@ -5256,7 +5276,7 @@
         "descriere": "Book your stay with Original Resorts at Temptation Cancun Resort From $220 USD per person / per night and get Complimentary one-way transfer (Cancun Arpt.) + Special romantic dinner + 15% off at the Glam shop, on premium beverages and spa treatments",
         "cod_cupon": "WINTER27",
         "landing_page": "https://www.temptation-experience.com/?affiliate1528&partner=10255",
-        "zile_ramase": 4,
+        "zile_ramase": 3,
         "expira": "2026-11-16",
         "sursa": "impact_deals_api"
       }
@@ -5284,14 +5304,14 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 155,
+    "zile_ramase": 154,
     "promotii": [
       {
         "nume": "OutIn Code：OIAFF5",
         "descriere": "Stackable universal discount code, enjoy 5% off Code：OIAFF5",
         "cod_cupon": "",
         "landing_page": "https://outin.com",
-        "zile_ramase": 155,
+        "zile_ramase": 154,
         "expira": "2027-04-16",
         "sursa": "impact_deals_api"
       }
@@ -5879,14 +5899,14 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": true,
-    "zile_ramase": 201,
+    "zile_ramase": 200,
     "promotii": [
       {
         "nume": "30% discount",
         "descriere": "Unlock Savings with 30% Off: Use Code: 30CVLIFE",
         "cod_cupon": "30CVLIFE",
         "landing_page": "https://bit.ly/4oyVetj",
-        "zile_ramase": 201,
+        "zile_ramase": 200,
         "expira": "2027-06-01",
         "sursa": "impact_deals_api"
       }
@@ -6494,14 +6514,14 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": true,
-    "zile_ramase": 50,
+    "zile_ramase": 49,
     "promotii": [
       {
         "nume": "20% Discount| Grandparents & Grandchildren Programme - Vila Gale",
         "descriere": "From Sunday to Thursday, we invite grandparents and grandchildren to discover unique landscapes, history and national heritage through stays designed to provide comfort, fun and plenty of quality time together, under very special conditions. With the",
         "cod_cupon": "AVOS&NETOS",
         "landing_page": "https://www.vilagale.com/en/highlights/promotions/grandparents-grandchildren-programme",
-        "zile_ramase": 50,
+        "zile_ramase": 49,
         "expira": "2027-01-01",
         "sursa": "impact_deals_api"
       }
@@ -6654,14 +6674,14 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 49,
+    "zile_ramase": 48,
     "promotii": [
       {
         "nume": "NEWBC20",
         "descriere": "Use code NEWBC20 to enjoy 20% OFF for new customers",
         "cod_cupon": "",
         "landing_page": "https://www.billionconnect.net/pages/activity/newcustomer2605?platform=App",
-        "zile_ramase": 49,
+        "zile_ramase": 48,
         "expira": "2026-12-31",
         "sursa": "impact_deals_api"
       }
@@ -6792,14 +6812,14 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 1296,
+    "zile_ramase": 1295,
     "promotii": [
       {
         "nume": "comfy35",
         "descriere": "35% Off for All Massagers",
         "cod_cupon": "",
         "landing_page": "https://www.comfier.com",
-        "zile_ramase": 1296,
+        "zile_ramase": 1295,
         "expira": "2030-05-31",
         "sursa": "impact_deals_api"
       }
@@ -6827,14 +6847,14 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 201,
+    "zile_ramase": 200,
     "promotii": [
       {
         "nume": "Xmind 10% Off | XMIND10OFF",
         "descriere": "Save 10% on eligible Xmind subscriptions with code XMIND10OFF. Valid through June 1, 2027. See the landing page for current pricing and eligibility.",
         "cod_cupon": "",
         "landing_page": "https://xmind.com/pricing",
-        "zile_ramase": 201,
+        "zile_ramase": 200,
         "expira": "2027-06-01",
         "sursa": "impact_deals_api"
       }
@@ -7031,14 +7051,14 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 65,
+    "zile_ramase": 64,
     "promotii": [
       {
         "nume": "8% Sitewide：AFFNEW8",
         "descriere": "Code:AFFNEW8 For new customers only, one use per person",
         "cod_cupon": "",
         "landing_page": "https://www.autofull.com",
-        "zile_ramase": 65,
+        "zile_ramase": 64,
         "expira": "2027-01-16",
         "sursa": "impact_deals_api"
       },
@@ -7645,7 +7665,7 @@
         "descriere": "Up To $100 OFF With Code: THX",
         "cod_cupon": "THX",
         "landing_page": "https://m.nadula.com",
-        "zile_ramase": 6,
+        "zile_ramase": 5,
         "expira": "2026-11-18",
         "sursa": "impact_deals_api"
       }
@@ -7696,14 +7716,14 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 49,
+    "zile_ramase": 48,
     "promotii": [
       {
         "nume": "BFEARLY75",
         "descriere": "Coupon BFEARLY75: 2ND 25% Off; 3RD 55% Off; 4TH 75% Off",
         "cod_cupon": "",
         "landing_page": "https://hardaddy.com",
-        "zile_ramase": 49,
+        "zile_ramase": 48,
         "expira": "2026-12-31",
         "sursa": "impact_deals_api"
       }
@@ -8330,14 +8350,14 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 85,
+    "zile_ramase": 84,
     "promotii": [
       {
         "nume": "Fall & Winter Campaign Package",
         "descriere": "Buy$189, get $15 off",
         "cod_cupon": "",
         "landing_page": "https://oyrosy.com/",
-        "zile_ramase": 85,
+        "zile_ramase": 84,
         "expira": "2027-02-05",
         "sursa": "impact_deals_api"
       }
@@ -8676,14 +8696,14 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": true,
-    "zile_ramase": 415,
+    "zile_ramase": 414,
     "promotii": [
       {
         "nume": "Save $249 on orders over $999 for Saramonic products!",
         "descriere": "Save $249 on orders over $999 for Saramonic products!",
         "cod_cupon": "SRaff249",
         "landing_page": "https://store.saramonic.com/discount/SRaff249",
-        "zile_ramase": 415,
+        "zile_ramase": 414,
         "expira": "2028-01-01",
         "sursa": "impact_deals_api"
       }
@@ -8847,7 +8867,7 @@
         "descriere": "yilite hair 53% off all products",
         "cod_cupon": "",
         "landing_page": "https://www.yilitehair.com",
-        "zile_ramase": 1241,
+        "zile_ramase": 1240,
         "expira": "2030-04-06",
         "sursa": "impact_deals_api"
       },
@@ -8856,7 +8876,7 @@
         "descriere": "NEW Long Seamless Invisible Tape-ins",
         "cod_cupon": "",
         "landing_page": "https://www.yilitehair.com",
-        "zile_ramase": 1241,
+        "zile_ramase": 1240,
         "expira": "2030-04-06",
         "sursa": "impact_deals_api"
       },
@@ -8865,7 +8885,7 @@
         "descriere": "Try it boldly!!You will amaze everyone!",
         "cod_cupon": "",
         "landing_page": "https://www.yilitehair.com",
-        "zile_ramase": 1241,
+        "zile_ramase": 1240,
         "expira": "2030-04-06",
         "sursa": "impact_deals_api"
       },
@@ -8874,7 +8894,7 @@
         "descriere": "YILITE Tape In Hair Extensions",
         "cod_cupon": "",
         "landing_page": "https://www.yilitehair.com",
-        "zile_ramase": 919,
+        "zile_ramase": 918,
         "expira": "2029-05-19",
         "sursa": "impact_deals_api"
       },
@@ -8883,7 +8903,7 @@
         "descriere": "literally got sooo many compliments all night long",
         "cod_cupon": "",
         "landing_page": "https://www.yilitehair.com",
-        "zile_ramase": 1283,
+        "zile_ramase": 1282,
         "expira": "2030-05-18",
         "sursa": "impact_deals_api"
       },
@@ -8892,7 +8912,7 @@
         "descriere": "YILITE Tape In Hair Extensions Price reduction",
         "cod_cupon": "",
         "landing_page": "https://www.yilitehair.com",
-        "zile_ramase": 1289,
+        "zile_ramase": 1288,
         "expira": "2030-05-24",
         "sursa": "impact_deals_api"
       },
@@ -8901,7 +8921,7 @@
         "descriere": "Yilite 100% Virgin Human Hair",
         "cod_cupon": "",
         "landing_page": "https://www.yilitehair.com",
-        "zile_ramase": 1269,
+        "zile_ramase": 1268,
         "expira": "2030-05-04",
         "sursa": "impact_deals_api"
       },
@@ -8910,7 +8930,7 @@
         "descriere": "yilite hair Buy Now Pay Later With Klarna&Paypal",
         "cod_cupon": "",
         "landing_page": "https://www.yilitehair.com",
-        "zile_ramase": 1646,
+        "zile_ramase": 1645,
         "expira": "2031-05-16",
         "sursa": "impact_deals_api"
       },
@@ -8919,7 +8939,7 @@
         "descriere": "Yilite Hair is available for purchase using PayPal Pay Later, Affirm, Afterpay, or Klarna.",
         "cod_cupon": "",
         "landing_page": "https://www.yilitehair.com",
-        "zile_ramase": 1289,
+        "zile_ramase": 1288,
         "expira": "2030-05-24",
         "sursa": "impact_deals_api"
       },
@@ -8928,7 +8948,7 @@
         "descriere": "TOPLOOK55 (55% OFF, valid for all products sitewide).",
         "cod_cupon": "",
         "landing_page": "https://www.yilitehair.com",
-        "zile_ramase": 2380,
+        "zile_ramase": 2379,
         "expira": "2033-05-19",
         "sursa": "impact_deals_api"
       },
@@ -8937,7 +8957,7 @@
         "descriere": "yilite hair clip ins",
         "cod_cupon": "",
         "landing_page": "https://www.yilitehair.com",
-        "zile_ramase": 1696,
+        "zile_ramase": 1695,
         "expira": "2031-07-05",
         "sursa": "impact_deals_api"
       },
@@ -8946,7 +8966,7 @@
         "descriere": "Can’t wait to rock these on stage",
         "cod_cupon": "",
         "landing_page": "https://www.yilitehair.com",
-        "zile_ramase": 1702,
+        "zile_ramase": 1701,
         "expira": "2031-07-11",
         "sursa": "impact_deals_api"
       },
@@ -8955,7 +8975,7 @@
         "descriere": "51% Off For All Product(Impcat channel only)",
         "cod_cupon": "AFF51",
         "landing_page": "https://www.yilitehair.com",
-        "zile_ramase": 1941,
+        "zile_ramase": 1940,
         "expira": "2032-03-06",
         "sursa": "impact_deals_api"
       },
@@ -8973,7 +8993,7 @@
         "descriere": "Come quickly! Yilite Hair 53% Off For All Product",
         "cod_cupon": "",
         "landing_page": "https://www.yilitehair.com",
-        "zile_ramase": 1605,
+        "zile_ramase": 1604,
         "expira": "2031-04-05",
         "sursa": "impact_deals_api"
       },
@@ -8982,7 +9002,7 @@
         "descriere": "Yilite Hair Extra 54% OFF (code:E54)",
         "cod_cupon": "",
         "landing_page": "https://www.yilitehair.com",
-        "zile_ramase": 1628,
+        "zile_ramase": 1627,
         "expira": "2031-04-28",
         "sursa": "impact_deals_api"
       },
@@ -8991,7 +9011,7 @@
         "descriere": "yilite hair Invisible tape ins are making blending easy",
         "cod_cupon": "",
         "landing_page": "https://www.yilitehair.com",
-        "zile_ramase": 2051,
+        "zile_ramase": 2050,
         "expira": "2032-06-24",
         "sursa": "impact_deals_api"
       },
@@ -9000,7 +9020,7 @@
         "descriere": "I am so excited to share with you all my new hair",
         "cod_cupon": "",
         "landing_page": "https://www.yilitehair.com",
-        "zile_ramase": 2416,
+        "zile_ramase": 2415,
         "expira": "2033-06-24",
         "sursa": "impact_deals_api"
       },
@@ -9009,7 +9029,7 @@
         "descriere": "wearing 22 inch clip ins in #1 jet black color",
         "cod_cupon": "",
         "landing_page": "https://www.yilitehair.com",
-        "zile_ramase": 2395,
+        "zile_ramase": 2394,
         "expira": "2033-06-03",
         "sursa": "impact_deals_api"
       },
@@ -9018,7 +9038,7 @@
         "descriere": "The NEW Seamless Invisible Tape-ins",
         "cod_cupon": "",
         "landing_page": "https://www.yilitehair.com",
-        "zile_ramase": 2039,
+        "zile_ramase": 2038,
         "expira": "2032-06-12",
         "sursa": "impact_deals_api"
       },
@@ -9027,7 +9047,7 @@
         "descriere": "Try Our Long Seamless Tape-Ins",
         "cod_cupon": "",
         "landing_page": "https://www.yilitehair.com",
-        "zile_ramase": 1680,
+        "zile_ramase": 1679,
         "expira": "2031-06-19",
         "sursa": "impact_deals_api"
       },
@@ -9036,7 +9056,7 @@
         "descriere": "Invisible tape in weft hair extensions, made for easy DIY at home",
         "cod_cupon": "",
         "landing_page": "https://www.yilitehair.com",
-        "zile_ramase": 2032,
+        "zile_ramase": 2031,
         "expira": "2032-06-05",
         "sursa": "impact_deals_api"
       },
@@ -9045,7 +9065,7 @@
         "descriere": "Save 53% CODE:E53 Say Goodbye to Bald Spots!",
         "cod_cupon": "",
         "landing_page": "https://www.yilitehair.com",
-        "zile_ramase": 2056,
+        "zile_ramase": 2055,
         "expira": "2032-06-29",
         "sursa": "impact_deals_api"
       },
@@ -9054,7 +9074,7 @@
         "descriere": "Seamless Invisible Tape-Ins",
         "cod_cupon": "",
         "landing_page": "https://www.yilitehair.com",
-        "zile_ramase": 2087,
+        "zile_ramase": 2086,
         "expira": "2032-07-30",
         "sursa": "impact_deals_api"
       },
@@ -9063,7 +9083,7 @@
         "descriere": "New Semester, New Look-Back To School Big Sale-53% OFF(Code:E53).",
         "cod_cupon": "E53",
         "landing_page": "https://www.yilitehair.com",
-        "zile_ramase": 1024,
+        "zile_ramase": 1023,
         "expira": "2029-09-01",
         "sursa": "impact_deals_api"
       },
@@ -9081,7 +9101,7 @@
         "descriere": "Now at 53% OFF",
         "cod_cupon": "",
         "landing_page": "https://www.yilitehair.com",
-        "zile_ramase": 1742,
+        "zile_ramase": 1741,
         "expira": "2031-08-20",
         "sursa": "impact_deals_api"
       },
@@ -9090,7 +9110,7 @@
         "descriere": "Save 53%! CODE:E53",
         "cod_cupon": "",
         "landing_page": "https://www.yilitehair.com",
-        "zile_ramase": 2107,
+        "zile_ramase": 2106,
         "expira": "2032-08-19",
         "sursa": "impact_deals_api"
       },
@@ -9099,7 +9119,7 @@
         "descriere": "YILITE Invisible Tape-in Hair Extensions create fuller, thicker-looking hair in minutes.",
         "cod_cupon": "",
         "landing_page": "https://www.yilitehair.com",
-        "zile_ramase": 2471,
+        "zile_ramase": 2470,
         "expira": "2033-08-18",
         "sursa": "impact_deals_api"
       },
@@ -9108,7 +9128,7 @@
         "descriere": "100% Virgin Hair. Reusable. Invisible. Get",
         "cod_cupon": "",
         "landing_page": "https://www.yilitehair.com",
-        "zile_ramase": 2113,
+        "zile_ramase": 2112,
         "expira": "2032-08-25",
         "sursa": "impact_deals_api"
       },
@@ -9117,7 +9137,7 @@
         "descriere": "Just discovered the easiest way to get long",
         "cod_cupon": "",
         "landing_page": "https://www.yilitehair.com",
-        "zile_ramase": 2465,
+        "zile_ramase": 2464,
         "expira": "2033-08-12",
         "sursa": "impact_deals_api"
       },
@@ -9126,7 +9146,7 @@
         "descriere": "Say Goodbye to Bald Spots!",
         "cod_cupon": "",
         "landing_page": "https://www.yilitehair.com",
-        "zile_ramase": 2092,
+        "zile_ramase": 2091,
         "expira": "2032-08-04",
         "sursa": "impact_deals_api"
       },
@@ -9135,7 +9155,7 @@
         "descriere": "So easy!!You can easily install it at home",
         "cod_cupon": "",
         "landing_page": "https://www.yilitehair.com",
-        "zile_ramase": 2107,
+        "zile_ramase": 2106,
         "expira": "2032-08-19",
         "sursa": "impact_deals_api"
       }
@@ -9330,14 +9350,14 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 322,
+    "zile_ramase": 321,
     "promotii": [
       {
         "nume": "New Autumn and winter collection",
         "descriere": "New Autumn and winter collection",
         "cod_cupon": "",
         "landing_page": "https://fitory.com/collections/new-arrivals",
-        "zile_ramase": 322,
+        "zile_ramase": 321,
         "expira": "2027-09-30",
         "sursa": "impact_deals_api"
       }
@@ -9570,14 +9590,14 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 28,
+    "zile_ramase": 27,
     "promotii": [
       {
         "nume": "BLACK FRIDAY -- UP TO 45% OFF",
         "descriere": "BF12 -- Extra 12% OFF on Any order BF15 -- Extra 15% OFF on Orders $90+ BF20 -- Extra 20% OFF on Orders $120+",
         "cod_cupon": "",
         "landing_page": "https://www.flextail.com/collections/sale",
-        "zile_ramase": 28,
+        "zile_ramase": 27,
         "expira": "2026-12-10",
         "sursa": "impact_deals_api"
       }
@@ -9705,14 +9725,14 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 13,
+    "zile_ramase": 12,
     "promotii": [
       {
         "nume": "IMPACTVPN75",
         "descriere": "IMPACTVPN75 — 75% off a 2-year AdGuard VPN subscription. The promo code will be valid until November 25, 2026.",
         "cod_cupon": "",
         "landing_page": "https://adguard-vpn.com",
-        "zile_ramase": 13,
+        "zile_ramase": 12,
         "expira": "2026-11-25",
         "sursa": "impact_deals_api"
       }
@@ -9947,14 +9967,14 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 50,
+    "zile_ramase": 49,
     "promotii": [
       {
         "nume": "AFFA05",
         "descriere": "5% Screens & Audio",
         "cod_cupon": "",
         "landing_page": "https://awolvision.de/collections/leinwande-audio",
-        "zile_ramase": 50,
+        "zile_ramase": 49,
         "expira": "2027-01-01",
         "sursa": "impact_deals_api"
       }
@@ -10231,14 +10251,14 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 50,
+    "zile_ramase": 49,
     "promotii": [
       {
         "nume": "IM99OFF",
         "descriere": "Get An Extra $99 OFF On All Orders Over $1500 on Xlaserlab",
         "cod_cupon": "",
         "landing_page": "https://www.xlaserlab.com",
-        "zile_ramase": 50,
+        "zile_ramase": 49,
         "expira": "2027-01-01",
         "sursa": "impact_deals_api"
       },
@@ -10247,7 +10267,7 @@
         "descriere": "Get a 5% OFF on Laser Welder X1/X1Pro for your First Purchase",
         "cod_cupon": "",
         "landing_page": "https://www.xlaserlab.com/products/xlaserlab-x1-pro-laser-welder-cleaner-cutter",
-        "zile_ramase": 50,
+        "zile_ramase": 49,
         "expira": "2027-01-01",
         "sursa": "impact_deals_api"
       }
@@ -10923,14 +10943,14 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": true,
-    "zile_ramase": 50,
+    "zile_ramase": 49,
     "promotii": [
       {
         "nume": "30 Days Long Staying Package | iclub Fortress Hill Hotel | Regal Hotels",
         "descriere": "Enjoy a seamless long-stay experience with the 30 Days Long Staying Package at Regal Hotels. Indulge in exclusive privileges including complimentary breakfast quotas, access to gym, swimming pool, co-working spaces, wellness tea, Wi-Fi, laundry token",
         "cod_cupon": "RWLS30",
         "landing_page": "https://www.booking.regalhotel.com/",
-        "zile_ramase": 50,
+        "zile_ramase": 49,
         "expira": "2027-01-01",
         "sursa": "impact_deals_api"
       }
@@ -11004,33 +11024,6 @@
         "descriere": "Limited time sale-T3U2 Save 41% OFF! Use code HT3U2",
         "cod_cupon": "",
         "landing_page": "https://kospet.com/pages/special-clearance-sale",
-        "zile_ramase": 0,
-        "expira": "2026-11-12",
-        "sursa": "impact_deals_api"
-      },
-      {
-        "nume": "[EU] Limited time sale-P10 Save 48% OFF! Use code DPR35",
-        "descriere": "Limited time sale-Save 45% OFF! Use code DPR35",
-        "cod_cupon": "",
-        "landing_page": "https://eu.kospet.com/pages/special-clearance-sale",
-        "zile_ramase": 0,
-        "expira": "2026-11-12",
-        "sursa": "impact_deals_api"
-      },
-      {
-        "nume": "[EU] Limited time sale-S2 Save 51% OFF! Use code DS20",
-        "descriere": "Limited time sale-S2 Save 54% OFF! Use code DS20",
-        "cod_cupon": "",
-        "landing_page": "https://eu.kospet.com/pages/special-clearance-sale",
-        "zile_ramase": 0,
-        "expira": "2026-11-12",
-        "sursa": "impact_deals_api"
-      },
-      {
-        "nume": "[EU] Limited time sale-M3U Save 45% OFF! Use code V3U20",
-        "descriere": "Limited time sale-M3U Save 45% OFF! Use code V3U20",
-        "cod_cupon": "",
-        "landing_page": "https://eu.kospet.com/pages/special-clearance-sale",
         "zile_ramase": 0,
         "expira": "2026-11-12",
         "sursa": "impact_deals_api"
@@ -11754,14 +11747,14 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 49,
+    "zile_ramase": 48,
     "promotii": [
       {
         "nume": "DFN15",
         "descriere": "15% discount on the first purchase for all subscriptions",
         "cod_cupon": "",
         "landing_page": "https://www.novakidschool.com",
-        "zile_ramase": 49,
+        "zile_ramase": 48,
         "expira": "2026-12-31",
         "sursa": "impact_deals_api"
       }
@@ -11788,14 +11781,14 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": true,
-    "zile_ramase": 50,
+    "zile_ramase": 49,
     "promotii": [
       {
         "nume": "Get up to 17% discount on stays - Casa Andina",
         "descriere": "Book your stay at Casa Andina and get up to 17% discount on stays. Terms and Conditions:\n- Offer valid until 31/12/2026. - Subject to availability.",
         "cod_cupon": "DISCOUNT2026",
         "landing_page": "https://www.casa-andina.com/en/home",
-        "zile_ramase": 50,
+        "zile_ramase": 49,
         "expira": "2027-01-01",
         "sursa": "impact_deals_api"
       }
@@ -12566,14 +12559,14 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 30,
+    "zile_ramase": 29,
     "promotii": [
       {
         "nume": "BF2026",
         "descriere": "EaseUS Black Friday Sale is live! Use promo code BF2026 to get up to 80% OFF essential software, including data recovery tools, backup tools, multimedia tools and more. Shop now before limited-time offer ends!",
         "cod_cupon": "",
         "landing_page": "https://www.easeus-software.com/campaign/2026-black-friday.html",
-        "zile_ramase": 30,
+        "zile_ramase": 29,
         "expira": "2026-12-12",
         "sursa": "impact_deals_api"
       }
@@ -12624,14 +12617,14 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 49,
+    "zile_ramase": 48,
     "promotii": [
       {
         "nume": "X-Sense Exclusive Affiliate Offer – 12% Off Your Entire Order",
         "descriere": "Enjoy an exclusive 12% OFF your entire order at X-Sense with affiliate code XSENSEAF12. Shop smoke alarms, carbon monoxide detectors, water leak sensors, and smart home safety solutions. Upgrade your home protection and save on your entire purchase. Offer valid through December 30, 2026.",
         "cod_cupon": "",
         "landing_page": "https://www.x-sense.com/",
-        "zile_ramase": 49,
+        "zile_ramase": 48,
         "expira": "2026-12-31",
         "sursa": "impact_deals_api"
       },
@@ -12640,7 +12633,7 @@
         "descriere": "Sichern Sie sich exklusiv 12 % Rabatt auf Ihre gesamte Bestellung bei X-Sense mit dem Affiliate-Code XSENSEAF12. Entdecken Sie Rauchmelder, CO-Melder, Wassermelder und smarte Sicherheitslösungen für Ihr Zuhause. Schützen Sie, was wirklich zählt, und sparen Sie bei Ihrem Einkauf. Angebot gültig bis zum 30.12.2026.",
         "cod_cupon": "",
         "landing_page": "https://de.x-sense.com/",
-        "zile_ramase": 49,
+        "zile_ramase": 48,
         "expira": "2026-12-31",
         "sursa": "impact_deals_api"
       },
@@ -12649,7 +12642,7 @@
         "descriere": "Profitez de 12 % de réduction exclusive sur toute votre commande X-Sense avec le code affilié XSENSEAF12. Découvrez les détecteurs de fumée, détecteurs de monoxyde de carbone, détecteurs de fuite d'eau et solutions de sécurité connectées. Protégez votre maison tout en réalisant des économies. Offre valable jusqu'au 30 décembre 2026.",
         "cod_cupon": "",
         "landing_page": "https://fr.x-sense.com/",
-        "zile_ramase": 49,
+        "zile_ramase": 48,
         "expira": "2026-12-31",
         "sursa": "impact_deals_api"
       },
@@ -12658,7 +12651,7 @@
         "descriere": "Profitez de la meilleure remise exclusive aux affiliés de la saison chez X-SENSE ! Avec le code BFCMXS13, bénéficiez de 13 % de réduction sur toute votre commande. Découvrez les détecteurs de fumée, de CO, de fuite d'eau et les solutions de sécurité connectées. Cumulez cette offre avec certaines promotions du site pour économiser davantage pendant le Black Friday, le Cyber Monday, Noël et les soldes de fin d'année. Valable jusqu'au 30/12/2026. Non cumulable avec d'autres codes affiliés.",
         "cod_cupon": "",
         "landing_page": "https://fr.x-sense.com/",
-        "zile_ramase": 49,
+        "zile_ramase": 48,
         "expira": "2026-12-31",
         "sursa": "impact_deals_api"
       },
@@ -12667,7 +12660,7 @@
         "descriere": "Make the most of the holiday shopping season with X-SENSE! Enjoy an exclusive 13% OFF your entire order with affiliate code BFCMXS13—our highest affiliate-exclusive discount of the season. Shop smart smoke alarms, CO detectors, water leak sensors, and home safety essentials. Combine your code with eligible site promotions for even bigger savings during Black Friday, Cyber Monday, Christmas, and year-end sales. Valid through December 30, 2026. Cannot be combined with other affiliate codes.",
         "cod_cupon": "",
         "landing_page": "https://www.x-sense.com/",
-        "zile_ramase": 49,
+        "zile_ramase": 48,
         "expira": "2026-12-31",
         "sursa": "impact_deals_api"
       },
@@ -12676,7 +12669,7 @@
         "descriere": "Make the most of the holiday shopping season with X-SENSE! Enjoy an exclusive 13% OFF your entire order with affiliate code BFCMXS13—our highest affiliate-exclusive discount of the season. Shop smart smoke alarms, CO detectors, water leak sensors, and home safety essentials. Combine your code with eligible site promotions for even bigger savings during Black Friday, Cyber Monday, Christmas, and year-end sales. Valid through December 30, 2026. Cannot be combined with other affiliate codes.",
         "cod_cupon": "",
         "landing_page": "https://eu.x-sense.com/",
-        "zile_ramase": 49,
+        "zile_ramase": 48,
         "expira": "2026-12-31",
         "sursa": "impact_deals_api"
       },
@@ -12685,7 +12678,7 @@
         "descriere": "Sichern Sie sich den höchsten exklusiven Affiliate-Rabatt der Saison bei X-SENSE! Mit dem Code BFCMXS13 sparen Sie 13 % auf Ihre gesamte Bestellung. Entdecken Sie Rauchmelder, CO-Melder, Wassermelder und smarte Sicherheitslösungen. Kombinieren Sie den Code mit ausgewählten Shop-Aktionen und profitieren Sie von zusätzlichen Ersparnissen zum Black Friday, Cyber Monday, zu Weihnachten und beim Jahresendverkauf. Gültig bis 30.12.2026. Nicht mit anderen Affiliate-Codes kombinierbar.",
         "cod_cupon": "",
         "landing_page": "https://de.x-sense.com/",
-        "zile_ramase": 49,
+        "zile_ramase": 48,
         "expira": "2026-12-31",
         "sursa": "impact_deals_api"
       }
@@ -12923,14 +12916,14 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": true,
-    "zile_ramase": 226,
+    "zile_ramase": 225,
     "promotii": [
       {
         "nume": "10 EUR Rabatt auf 20 EUR MBW",
         "descriere": "MBW: 20 EUR NUR für Neukunden",
         "cod_cupon": "IMPACT10",
         "landing_page": "https://www.italki.com/de",
-        "zile_ramase": 226,
+        "zile_ramase": 225,
         "expira": "2027-06-26",
         "sursa": "impact_deals_api"
       }
@@ -13303,14 +13296,14 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": true,
-    "zile_ramase": 260,
+    "zile_ramase": 259,
     "promotii": [
       {
         "nume": "Earn More with LWR01",
         "descriere": "Drive more conversions with our latest LWR01 promotion! Customers can save 40% using code LWR40OFF, while affiliates earn an increased commission on every eligible sale. Update your content and start promoting today.",
         "cod_cupon": "LWR40OFF",
         "landing_page": "https://www.gl-inet.com/products/lwr01",
-        "zile_ramase": 260,
+        "zile_ramase": 259,
         "expira": "2027-07-30",
         "sursa": "impact_deals_api"
       }
@@ -13587,14 +13580,14 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": true,
-    "zile_ramase": 50,
+    "zile_ramase": 49,
     "promotii": [
       {
         "nume": "Book now and get up to 25% discount with Savoy Hotels, Dubai",
         "descriere": "Use a promo code and get a 25% discount with the best benefits, including early check-in/ late check-out at Savoy Hotels Dubai. Terms and Conditions:\n- Offer valid until 31/12/2026. - Offer is subject to availability.",
         "cod_cupon": "CAMP-BEST",
         "landing_page": "https://www.savoydubai.com/",
-        "zile_ramase": 50,
+        "zile_ramase": 49,
         "expira": "2027-01-01",
         "sursa": "impact_deals_api"
       }
@@ -13813,14 +13806,14 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": true,
-    "zile_ramase": 19,
+    "zile_ramase": 18,
     "promotii": [
       {
         "nume": "8% off for all machines and parts",
         "descriere": "8% off for all machines and parts",
         "cod_cupon": "",
         "landing_page": "https://monportlaser.com/",
-        "zile_ramase": 627,
+        "zile_ramase": 626,
         "expira": "2028-07-31",
         "sursa": "impact_deals_api"
       },
@@ -13829,7 +13822,7 @@
         "descriere": "Unlock extra savings this Black Friday! Apply promo code \"impact9bfcm\" at checkout on Monport Laser US store. Grab your deal before it ends!",
         "cod_cupon": "impact9bfcm",
         "landing_page": "https://monportlaser.com/pages/monport-laser-2026-sale",
-        "zile_ramase": 19,
+        "zile_ramase": 18,
         "expira": "2026-12-01",
         "sursa": "impact_deals_api"
       },
@@ -13838,7 +13831,7 @@
         "descriere": "Monportlaser UK Black Friday Special Discount Code 9%OFF. Unlock more inspiration with Monport!",
         "cod_cupon": "MPUKI9",
         "landing_page": "https://monportlaser.uk/pages/2026-monport-sale",
-        "zile_ramase": 19,
+        "zile_ramase": 18,
         "expira": "2026-12-01",
         "sursa": "impact_deals_api"
       },
@@ -13847,7 +13840,7 @@
         "descriere": "Monportlaser DE 9%OFF Special Discount Code for ALL orders",
         "cod_cupon": "MPL9",
         "landing_page": "https://monportlaser.de/pages/2026-monport-sale",
-        "zile_ramase": 19,
+        "zile_ramase": 18,
         "expira": "2026-12-01",
         "sursa": "impact_deals_api"
       }
@@ -13898,7 +13891,7 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 49,
+    "zile_ramase": 48,
     "promotii": [
       {
         "nume": "$30 OFF Plunge Chill Pod Tub-Code 【POD30】",
@@ -13923,7 +13916,7 @@
         "descriere": "Bring the ice bath home — without the ice. ❄️ Tired of hauling bags of ice just to get your cold plunge fix? This chiller does the job 24/7, so you're always ready to go. Here's why it's a game-changer: • Chills to 39°F — steady, reliable, and always on standby. • Dead quiet — no noisy compressor, just pure chill. • Fits any tub — bathtub, stock tank, or dedicated plunge. • Costs less than your morning coffee — as little as $0.80–$1.50/day in electricity. Install it once. Plunge anytime. Recover",
         "cod_cupon": "",
         "landing_page": "https://plungechill.com/products/cold-plunge-chiller-pro-tub?utm_source=impact&utm_medium=affiliate&utm_campaign=summer_sale",
-        "zile_ramase": 49,
+        "zile_ramase": 48,
         "expira": "2026-12-31",
         "sursa": "impact_deals_api"
       },
@@ -13932,7 +13925,7 @@
         "descriere": "",
         "cod_cupon": "",
         "landing_page": "https://plungechill.com/products/cold-plunge-chiller-pro-tub?utm_source=impact&utm_medium=affiliate&utm_campaign=summer_sale",
-        "zile_ramase": 49,
+        "zile_ramase": 48,
         "expira": "2026-12-31",
         "sursa": "impact_deals_api"
       },
@@ -13941,7 +13934,7 @@
         "descriere": "",
         "cod_cupon": "",
         "landing_page": "https://plungechill.com/products/1hp-cold-plunge-chiller?utm_source=impact&utm_medium=affiliate&utm_campaign=summer_sale",
-        "zile_ramase": 49,
+        "zile_ramase": 48,
         "expira": "2026-12-31",
         "sursa": "impact_deals_api"
       },
@@ -13950,7 +13943,7 @@
         "descriere": "",
         "cod_cupon": "",
         "landing_page": "https://plungechill.com/products/1hp-cold-plunge-chiller-tub-plus?utm_source=impact&utm_medium=affiliate&utm_campaign=summer_sale",
-        "zile_ramase": 49,
+        "zile_ramase": 48,
         "expira": "2026-12-31",
         "sursa": "impact_deals_api"
       },
@@ -13959,7 +13952,7 @@
         "descriere": "",
         "cod_cupon": "",
         "landing_page": "https://plungechill.com/products/1hp-cold-plunge-chiller-tub-plus?utm_source=impact&utm_medium=affiliate&utm_campaign=summer_sale",
-        "zile_ramase": 49,
+        "zile_ramase": 48,
         "expira": "2026-12-31",
         "sursa": "impact_deals_api"
       },
@@ -13968,7 +13961,7 @@
         "descriere": "Product name: Plunge Chill 1/3 hp Chiller+ Max Tub Cold Plunge Bundle Product link: Original price: $1399 List price: $659 Code discount: $65.90 OFF Code: CMX65 Price after code: $593.10 Key product features: 1. 39°F Ice-Free Cooling — No ice needed. 2. Quiet & Energy-Efficient Chiller — Just $0.80–$1.50/day. 3. Portable tub& Easy Setup — Plunge anywhere. Enjoy effortless cold plunges anytime, right at home.",
         "cod_cupon": "",
         "landing_page": "https://plungechill.com/products/cold-plunge-chiller-tub-max?utm_source=impact&utm_medium=affiliate&utm_campaign=summer_sale",
-        "zile_ramase": 49,
+        "zile_ramase": 48,
         "expira": "2026-12-31",
         "sursa": "impact_deals_api"
       }
@@ -14115,14 +14108,14 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": true,
-    "zile_ramase": 29,
+    "zile_ramase": 28,
     "promotii": [
       {
         "nume": "Enjoy 10% off On Your Stay With Book Direct -CLLIX Apartments and Hotels: Arise",
         "descriere": "Book your stay with CLLIX Apartments and Hotels: Arise and get up to 10% discount if you book through website, or contact or reservation team. Terms and Conditions:\n- Offer is valid until 31/12/2026. - Subject to availability.",
         "cod_cupon": "BOOKDIRECT2SAVE",
         "landing_page": "https://www.cllix.com/paragon-apartments/special-offers/",
-        "zile_ramase": 50,
+        "zile_ramase": 49,
         "expira": "2027-01-01",
         "sursa": "impact_deals_api"
       },
@@ -14131,7 +14124,7 @@
         "descriere": "Book your stay Summer 2026 - 20% Off on ALL RATE PLANS. Participating Properties: All CLLIX properties are included, except: 1 Bedroom River View Executive at Spire Residences by CLLIX Hedge Apartments by CLLIX CLLIX Australia 108 Apartments C",
         "cod_cupon": "SUMMERCLLIX26",
         "landing_page": "https://www.cllix.com/",
-        "zile_ramase": 29,
+        "zile_ramase": 28,
         "expira": "2026-12-11",
         "sursa": "impact_deals_api"
       }
@@ -14326,14 +14319,14 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": true,
-    "zile_ramase": 50,
+    "zile_ramase": 49,
     "promotii": [
       {
         "nume": "Get additional 5% discount on Adult Only Properties - Garden Hotels",
         "descriere": "The time has come to enjoy a vacation at our Adults Only hotels, where rest and tranquility take center stage. Book now and save an additional 5% using the promo code. Terms and Conditions:\n- Offer valid until 31/12/2026.",
         "cod_cupon": "GHADULTS",
         "landing_page": "https://www.gardenhotels.com/en/promotions-2/only-adults-hotels-promotion/",
-        "zile_ramase": 50,
+        "zile_ramase": 49,
         "expira": "2027-01-01",
         "sursa": "impact_deals_api"
       }
@@ -14576,14 +14569,14 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": true,
-    "zile_ramase": 20,
+    "zile_ramase": 19,
     "promotii": [
       {
         "nume": "Black Friday | Get 30% Off, JetPark Hotels",
         "descriere": "Book your stay at JetPark Hotels this Black Friday and enjoy an exclusive 30% discount on your stay. Terms and Conditions:\n- Offer is valid until 01/12/2026. - Subject to availability.",
         "cod_cupon": "BLACKFRIDAY",
         "landing_page": "https://www.jetpark.co.nz/offers/",
-        "zile_ramase": 20,
+        "zile_ramase": 19,
         "expira": "2026-12-02",
         "sursa": "impact_deals_api"
       }
@@ -14682,14 +14675,14 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": true,
-    "zile_ramase": 109,
+    "zile_ramase": 108,
     "promotii": [
       {
         "nume": "Discover the Heart of Sao Paulo & Save 5% | Monreale Hotels, Brazil",
         "descriere": "Whether you're visiting for business or leisure, experience comfort, convenience, and the vibrant energy of Sao Paulo with a special offer from DELPLAZA Hotels. Your Benefits: 5% OFF your stay Complimentary Breakfast Free Wi‑Fi Prime São Pa",
         "cod_cupon": "DELPLAZA5",
         "landing_page": "https://www.monrealehotels.com/",
-        "zile_ramase": 109,
+        "zile_ramase": 108,
         "expira": "2027-03-01",
         "sursa": "impact_deals_api"
       },
@@ -14698,7 +14691,7 @@
         "descriere": "Whether you're traveling for business or leisure, make the most of your visit with comfort, convenience, and exclusive savings. Offer Highlights 5% OFF your booking Complimentary Breakfast Free Wi‑Fi Excellent location in Campinas Experie",
         "cod_cupon": "MONREALE5",
         "landing_page": "https://www.monrealehotels.com/",
-        "zile_ramase": 109,
+        "zile_ramase": 108,
         "expira": "2027-03-01",
         "sursa": "impact_deals_api"
       }
@@ -15109,14 +15102,14 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": true,
-    "zile_ramase": 39,
+    "zile_ramase": 38,
     "promotii": [
       {
         "nume": "Bank BCA Offer: Enjoy 15% off Best Flexible Rates | Swiss-bel Hotel International",
         "descriere": "Enjoy up to 15% OFF Best Flexible Rates and a 15% discount on food exclusively for Bank BCA credit and debit cardholders!. Terms and Conditions:\n- Offer valid until 20 December 2026. - Subject to availability.",
         "cod_cupon": "BCACC",
         "landing_page": "https://www.swiss-belhotel.com/offers/bca?p=base&c=property-select&lg=en-US",
-        "zile_ramase": 39,
+        "zile_ramase": 38,
         "expira": "2026-12-21",
         "sursa": "impact_deals_api"
       }
@@ -15311,14 +15304,14 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 49,
+    "zile_ramase": 48,
     "promotii": [
       {
         "nume": "IKIER Master Exclusive $300 OFF Coupon Code – AFFMASTER300",
         "descriere": "Unlock the power of IKIER Master and enjoy an exclusive discount. Your audience can save $300 instantly with the coupon code below. Coupon Code: AFFMASTER300 Discount: $300/€300 OFF Promote IKIER Master today and offer your audience a special deal on a high-performance laser engraving machine.",
         "cod_cupon": "",
         "landing_page": "https://www.ikier.com/products/ikier-master",
-        "zile_ramase": 80,
+        "zile_ramase": 79,
         "expira": "2027-01-31",
         "sursa": "impact_deals_api"
       },
@@ -15327,7 +15320,7 @@
         "descriere": "Save $200 on the iKier K1 Pro Max 70W! Use exclusive discount code AFFK70P200 at checkout to get $200 OFF the iKier K1 Pro Max 70W. Don’t miss this limited-time offer and upgrade your laser engraving experience with the powerful K1 Pro Max 70W!",
         "cod_cupon": "",
         "landing_page": "https://www.ikier.com/products/ikier-k1-pro-max-70w",
-        "zile_ramase": 49,
+        "zile_ramase": 48,
         "expira": "2026-12-31",
         "sursa": "impact_deals_api"
       },
@@ -15336,7 +15329,7 @@
         "descriere": "Save $160 on the iKier K40 MAX! Use exclusive discount code AFFK40160 at checkout to get $160 OFF the iKier K40 MAX. Don’t miss this limited-time offer and upgrade your laser engraving experience with the powerful K40 MAX!",
         "cod_cupon": "",
         "landing_page": "https://www.ikier.com/products/ikier-k40-max",
-        "zile_ramase": 49,
+        "zile_ramase": 48,
         "expira": "2026-12-31",
         "sursa": "impact_deals_api"
       },
@@ -15345,7 +15338,7 @@
         "descriere": "Obtén $1,999 MXN de descuento en iKier K1 Pro Max 70W usando el código promocional AFFK11999 en iKier México. No se puede combinar con otros códigos de descuento.",
         "cod_cupon": "",
         "landing_page": "https://mx.ikier.com/products/ikier-k1-pro-max-70w",
-        "zile_ramase": 80,
+        "zile_ramase": 79,
         "expira": "2027-01-31",
         "sursa": "impact_deals_api"
       },
@@ -15354,7 +15347,7 @@
         "descriere": "Consigue $1,600 MXN de descuento en iKier K70 Max aplicando el código AFFK71999 al finalizar tu compra en iKier México. No acumulable con otras promociones.",
         "cod_cupon": "",
         "landing_page": "https://mx.ikier.com/products/ikier-k70-max",
-        "zile_ramase": 80,
+        "zile_ramase": 79,
         "expira": "2027-01-31",
         "sursa": "impact_deals_api"
       },
@@ -15363,7 +15356,7 @@
         "descriere": "Disfruta de $1,000 MXN de descuento en iKier K40 Max con el código AFFK41000. Válido únicamente en la tienda oficial iKier México.",
         "cod_cupon": "",
         "landing_page": "https://mx.ikier.com/products/ikier-k40-max",
-        "zile_ramase": 80,
+        "zile_ramase": 79,
         "expira": "2027-01-31",
         "sursa": "impact_deals_api"
       },
@@ -15372,7 +15365,7 @@
         "descriere": "Obtén $2,500 MXN de descuento en iKier Master usando el código FFMAS24000 durante tu compra. Oferta exclusiva para iKier México.",
         "cod_cupon": "",
         "landing_page": "https://mx.ikier.com/products/ikier-master",
-        "zile_ramase": 80,
+        "zile_ramase": 79,
         "expira": "2027-01-31",
         "sursa": "impact_deals_api"
       },
@@ -15381,7 +15374,7 @@
         "descriere": "Upgrade your creative workflow with IKIER Master and enjoy an exclusive 300€ discount. Your audience can save 300€ instantly with the coupon code below and experience professional laser engraving performance at a better price. Coupon Code: AFFMASTER300 Discount: 300€ OFF",
         "cod_cupon": "",
         "landing_page": "https://eu.ikier.com/products/ikier-master",
-        "zile_ramase": 80,
+        "zile_ramase": 79,
         "expira": "2027-01-31",
         "sursa": "impact_deals_api"
       },
@@ -15390,7 +15383,7 @@
         "descriere": "Upgrade to the powerful IKIER K70 MAX and unlock an exclusive offer. Your audience can save 200€ instantly with the coupon code below. Coupon Code: AFFK70200 Discount: 200€ OFF Promote IKIER K70 MAX today and give your audience the opportunity to experience a high-performance laser engraver with an exclusive limited-time discount.",
         "cod_cupon": "",
         "landing_page": "https://eu.ikier.com/products/ikier-k70-max",
-        "zile_ramase": 80,
+        "zile_ramase": 79,
         "expira": "2027-01-31",
         "sursa": "impact_deals_api"
       },
@@ -15399,7 +15392,7 @@
         "descriere": "Upgrade your laser engraving experience with IKIER K40 MAX and enjoy an exclusive limited-time offer. Your audience can save 160€ instantly with the coupon code below. Coupon Code: AFFK40160 Discount: 160€ OFF Promote IKIER K40 MAX today and help your audience get a powerful laser engraver at an exclusive price.",
         "cod_cupon": "",
         "landing_page": "https://eu.ikier.com/products/ikier-k40-max",
-        "zile_ramase": 80,
+        "zile_ramase": 79,
         "expira": "2027-01-31",
         "sursa": "impact_deals_api"
       },
@@ -15408,7 +15401,7 @@
         "descriere": "Upgrade your laser engraving experience with the powerful IKIER K1 PRO (1064) 20W and enjoy an exclusive limited-time offer. Your audience can save 100€ instantly with the coupon code below. Coupon Code: AFFK1064100 Discount: 100€ OFF Promote IKIER K1 PRO (1064) 20W today and help your audience unlock professional laser engraving performance at a better price.",
         "cod_cupon": "",
         "landing_page": "https://eu.ikier.com/products/ikier-k1-pro-1064nm-20w",
-        "zile_ramase": 80,
+        "zile_ramase": 79,
         "expira": "2027-01-31",
         "sursa": "impact_deals_api"
       },
@@ -15417,7 +15410,7 @@
         "descriere": "Upgrade your laser engraving experience with the powerful IKIER K1 Ultra 36W and enjoy an exclusive limited-time offer. Your audience can save 80€ instantly with the coupon code below. Coupon Code: AFFK3680 Discount: 80€ OFF Promote IKIER K1 Ultra 36W today and help your audience get a high-performance laser engraver with an exclusive discount.",
         "cod_cupon": "",
         "landing_page": "https://eu.ikier.com/products/ikier-k1-ultra-36w",
-        "zile_ramase": 80,
+        "zile_ramase": 79,
         "expira": "2027-01-31",
         "sursa": "impact_deals_api"
       }
@@ -16846,14 +16839,14 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": true,
-    "zile_ramase": 49,
+    "zile_ramase": 48,
     "promotii": [
       {
         "nume": "Affiliate offer - free Moss Eyeliner with +£30 spend",
         "descriere": "Customers can get a free Moss Eyeliner & Sharpener with their £30+ spend on one order. Oncer per customer.",
         "cod_cupon": "rolling-moss",
         "landing_page": "https://etalbeautycollective.co.uk",
-        "zile_ramase": 49,
+        "zile_ramase": 48,
         "expira": "2026-12-31",
         "sursa": "impact_deals_api"
       }
@@ -16900,14 +16893,14 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": true,
-    "zile_ramase": 17,
+    "zile_ramase": 16,
     "promotii": [
       {
         "nume": "ROBUD Black Friday US 20% Off $500+",
         "descriere": "20% off US orders of $500 or more.",
         "cod_cupon": "RBD20",
         "landing_page": "https://www.robud.com/",
-        "zile_ramase": 17,
+        "zile_ramase": 16,
         "expira": "2026-11-29",
         "sursa": "impact_deals_api"
       },
@@ -16916,7 +16909,7 @@
         "descriere": "25% off US orders of $800 or more.",
         "cod_cupon": "RBD25",
         "landing_page": "https://www.robud.com/",
-        "zile_ramase": 17,
+        "zile_ramase": 16,
         "expira": "2026-11-29",
         "sursa": "impact_deals_api"
       },
@@ -16925,7 +16918,7 @@
         "descriere": "28% off US orders of $1000 or more.",
         "cod_cupon": "RBD28",
         "landing_page": "https://www.robud.com/",
-        "zile_ramase": 17,
+        "zile_ramase": 16,
         "expira": "2026-11-29",
         "sursa": "impact_deals_api"
       },
@@ -16934,7 +16927,7 @@
         "descriere": "30% off US orders of $1200 or more.",
         "cod_cupon": "RBD30",
         "landing_page": "https://www.robud.com/",
-        "zile_ramase": 17,
+        "zile_ramase": 16,
         "expira": "2026-11-29",
         "sursa": "impact_deals_api"
       }

@@ -1,6 +1,6 @@
 {
  "_nota": "Generat de scripts/calendar_black_friday.py din promotiile anuntate de magazine in 2Performant (data/promotii_2p.csv si ofertele 2P active din output.json). Doar parteneri cu link platit. Nu edita de mana.",
- "generat": "2026-11-11",
+ "generat": "2026-11-12",
  "categorii": [
   {
    "slug": "casa-gradina",
@@ -35,7 +35,7 @@
   {
    "slug": "sanatate",
    "nume": "sănătate",
-   "campanii": 10
+   "campanii": 11
   },
   {
    "slug": "auto-moto",
@@ -1083,6 +1083,16 @@
    "descriere": "Black Friday, beauty your way Gene false cu până la -90% și Danessa Myricks Beauty cu până la -55%. Wishlist-ul tău tocmai a devenit realitate. THE LASH SELECTION Privirea ta, în versiunea ei cea mai fabuloasă. Red Cherry, Ardell, ModelRock, Devi, Kara și Miss Adoro, de la natural și delicat până la full glam: gene bandă, smocuri, magnetice sau individuale.",
    "are_cod": false,
    "categorie": "beauty"
+  },
+  {
+   "magazin": "magazin-bbraun.ro",
+   "nume": "Magazin Bbraun",
+   "start": "2026-11-11",
+   "final": "2026-11-29",
+   "nota": "Black Friday",
+   "descriere": "",
+   "are_cod": false,
+   "categorie": "sanatate"
   },
   {
    "magazin": "yves-rocher.ro",

@@ -1,6 +1,6 @@
 {
 "_nota": "Generat de scripts/criterii_produse.py. Doar pagini aprobate, doar produse cu pretul confirmat pe site-ul magazinului.",
-"actualizat": "2026-11-11",
+"actualizat": "2026-11-12",
 "criterii": [
 {
 "slug": "masina-de-spalat-6-kg",
@@ -17698,7 +17698,7 @@
 "titlu": "Mașini de tuns gazon",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-04",
+"actualizat": "2026-11-12",
 "feeduri": [
 {
 "id": 5887,
@@ -17787,7 +17787,7 @@
 "id": "N1V3M8H30BPd",
 "brand": "Hecht - Cehia",
 "url_magazin": "https://micul-meserias.ro/masina-de-tuns-iarba-pe-benzina-hecht-548-sw-5-in-1",
-"pret_vechi": 2145.0,
+"pret_vechi": 3105.0,
 "verificat": "2026-11-04"
 },
 {
@@ -17799,7 +17799,7 @@
 "id": "9NWb0SUsp1nv",
 "brand": "Hecht - Cehia",
 "url_magazin": "https://micul-meserias.ro/masina-de-tuns-iarba-pe-benzina-hecht-554-sx-5in1",
-"pret_vechi": 2145.0,
+"pret_vechi": 2771.0,
 "verificat": "2026-11-04"
 },
 {
@@ -17811,30 +17811,6 @@
 "id": "AJmGNeqfZe_I",
 "brand": "Dreame",
 "url_magazin": "https://www.dwyn.ro/masini-de-tuns-iarba/dreame/408757-masina-de-tuns-iarba-gazon-mova-gl417-latime-de-lucru-43cm-40v-gri-negru/",
-"pret_vechi": null,
-"verificat": "2026-11-04"
-},
-{
-"titlu": "Ruris Masina de tuns iarba / gazon Ruris DAC 150XR, autopropulsata pe benzina, putere 5 CP, 173 CC, 4 timpi, latime lucr",
-"pret": 1974.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202606122129/413584/full/ruris-masina-de-tuns-iarba-gazon-ruris-dac-150xr-autopropulsata-pe-benzina-putere-5-cp-173-cc-4-timpi-latime-lucru-51-cm-inaltime-taiere-25-75-mm-7-trepte-de-taiere-sac-colector-60-l-1358422.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fmasini-de-tuns-iarba%2Fruris%2F413584-masina-de-tuns-iarba-gazon-ruris-dac-150xr-autopropulsata-pe-benzina-putere-5-cp-173-cc-4-timpi-latime-lucru-51-cm-inaltime-taiere-25-75-mm-7-trepte-de-taiere-sac-colector-60-l%2F",
-"magazin": "dwyn.ro",
-"id": "7ubSu0YU_sdq",
-"brand": "Ruris",
-"url_magazin": "https://www.dwyn.ro/masini-de-tuns-iarba/ruris/413584-masina-de-tuns-iarba-gazon-ruris-dac-150xr-autopropulsata-pe-benzina-putere-5-cp-173-cc-4-timpi-latime-lucru-51-cm-inaltime-taiere-25-75-mm-7-trepte-de-taiere-sac-colector-60-l/",
-"pret_vechi": null,
-"verificat": "2026-11-04"
-},
-{
-"titlu": "Ruris Masina de tuns gazon Ruris RX331S, 3.5 CP 460 mm, Alb -Portocaliu",
-"pret": 1974.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202512311121/365498/full/ruris-masina-de-tuns-gazon-ruris-rx331sm-3-5-cp-460-mm-alb-portocaliu-1040669.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fmasini-de-tuns-iarba%2Fruris%2F365498-masina-de-tuns-gazon-ruris-rx331s-3-5-cp-460-mm-alb-portocaliu%2F",
-"magazin": "dwyn.ro",
-"id": "x1S_d87rhDf_",
-"brand": "Ruris",
-"url_magazin": "https://www.dwyn.ro/masini-de-tuns-iarba/ruris/365498-masina-de-tuns-gazon-ruris-rx331s-3-5-cp-460-mm-alb-portocaliu/",
 "pret_vechi": null,
 "verificat": "2026-11-04"
 }
@@ -17852,7 +17828,7 @@
 "titlu": "Adidași pentru damă",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-04",
+"actualizat": "2026-11-12",
 "feeduri": [
 {
 "id": 967,
@@ -17913,6 +17889,18 @@
 "verificat": "2026-11-04"
 },
 {
+"titlu": "Adidasi dama casual albi cu roz 6612",
+"pret": 89.0,
+"imagine": "https://dehaine.ro/image/catalog/-9912/414/6612-adidasi-dama-casual-albi-roz-b.png",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fdehaine.ro%2F6612-adidasi-dama-casual-albi-roz-c%26utm_source%3Ddouaparale%26utm_medium%3Dcpc%26utm_campaign%3Ddouaparale",
+"magazin": "dehaine.ro",
+"id": "fkMwV8Uuntd6",
+"brand": "",
+"url_magazin": "https://dehaine.ro/6612-adidasi-dama-casual-albi-roz-c&utm_source=douaparale&utm_medium=cpc&utm_campaign=douaparale",
+"pret_vechi": null,
+"verificat": "2026-11-12"
+},
+{
 "titlu": "Adidasi dama albi casual inalti H50",
 "pret": 99.0,
 "imagine": "https://dehaine.ro/image/catalog/-9912/412/H50-ghete-barbati-albe.png",
@@ -17947,18 +17935,6 @@
 "url_magazin": "https://dehaine.ro/8901-adidasi-dama-casual-a&utm_source=douaparale&utm_medium=cpc&utm_campaign=douaparale",
 "pret_vechi": null,
 "verificat": "2026-11-04"
-},
-{
-"titlu": "Adidasi dama casual albi cu gri R01 N3-3",
-"pret": 99.0,
-"imagine": "https://dehaine.ro/image/catalog/-9912/414/R01-adidasi-dama-casual-gri-f.png",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fdehaine.ro%2FR01-adidasi-dama-casual-gri%26utm_source%3Ddouaparale%26utm_medium%3Dcpc%26utm_campaign%3Ddouaparale",
-"magazin": "dehaine.ro",
-"id": "RKEkm3fS2vsq",
-"brand": "",
-"url_magazin": "https://dehaine.ro/R01-adidasi-dama-casual-gri&utm_source=douaparale&utm_medium=cpc&utm_campaign=douaparale",
-"pret_vechi": null,
-"verificat": "2026-11-04"
 }
 ],
 "magazine": [
@@ -17973,7 +17949,7 @@
 "titlu": "Geci de iarnă pentru bărbați",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-04",
+"actualizat": "2026-11-12",
 "feeduri": [
 {
 "id": 967,
@@ -17981,18 +17957,6 @@
 }
 ],
 "produse": [
-{
-"titlu": "Geaca barbati de iarna neagra w210",
-"pret": 140.0,
-"imagine": "https://dehaine.ro/image/catalog/-9912/410/W210-geaca-barbati-land-of-b.png",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fdehaine.ro%2FW210-geaca-barbati-land-of-a%26utm_source%3Ddouaparale%26utm_medium%3Dcpc%26utm_campaign%3Ddouaparale",
-"magazin": "dehaine.ro",
-"id": "BBjEBqQpolov",
-"brand": "",
-"url_magazin": "https://dehaine.ro/W210-geaca-barbati-land-of-a&utm_source=douaparale&utm_medium=cpc&utm_campaign=douaparale",
-"pret_vechi": null,
-"verificat": "2026-11-04"
-},
 {
 "titlu": "Geaca barbati de iarna bleumarin w208",
 "pret": 180.0,
@@ -18042,18 +18006,6 @@
 "verificat": "2026-11-04"
 },
 {
-"titlu": "Geaca barbati de iarna kaki w224",
-"pret": 180.0,
-"imagine": "https://dehaine.ro/image/catalog/-9912/409/W224-GEACA-BARBATI-GE-BRUDER-b.png",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fdehaine.ro%2FW224-GEACA-BARBATI-GE-BRUDER-a%26utm_source%3Ddouaparale%26utm_medium%3Dcpc%26utm_campaign%3Ddouaparale",
-"magazin": "dehaine.ro",
-"id": "EaT3KKG8TYJR",
-"brand": "",
-"url_magazin": "https://dehaine.ro/W224-GEACA-BARBATI-GE-BRUDER-a&utm_source=douaparale&utm_medium=cpc&utm_campaign=douaparale",
-"pret_vechi": null,
-"verificat": "2026-11-04"
-},
-{
 "titlu": "Geaca barbati de iarna kaki w216",
 "pret": 180.0,
 "imagine": "https://dehaine.ro/image/catalog/-9912/409/W216-geaca-barbati-iarna-sarra-2-c.png",
@@ -18066,16 +18018,40 @@
 "verificat": "2026-11-04"
 },
 {
-"titlu": "Geaca barbati de iarna maro W227",
+"titlu": "Geaca barbati de iarna neagra w216",
 "pret": 180.0,
-"imagine": "https://dehaine.ro/image/catalog/-9912/409/W227-GEACA-BARBATI-roletti-a.png",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fdehaine.ro%2FW227-geaca-barbati-groasa-de-iarna%26utm_source%3Ddouaparale%26utm_medium%3Dcpc%26utm_campaign%3Ddouaparale",
+"imagine": "https://dehaine.ro/image/catalog/-9912/409/W216-geaca-barbati-iarna-sarra-3-a.png",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fdehaine.ro%2FW216-geaca-barbati-iarna-sarra-3-a%26utm_source%3Ddouaparale%26utm_medium%3Dcpc%26utm_campaign%3Ddouaparale",
 "magazin": "dehaine.ro",
-"id": "ZmAJ-9aT6vrB",
+"id": "Gkfq-B_oFtT1",
 "brand": "",
-"url_magazin": "https://dehaine.ro/W227-geaca-barbati-groasa-de-iarna&utm_source=douaparale&utm_medium=cpc&utm_campaign=douaparale",
+"url_magazin": "https://dehaine.ro/W216-geaca-barbati-iarna-sarra-3-a&utm_source=douaparale&utm_medium=cpc&utm_campaign=douaparale",
 "pret_vechi": null,
-"verificat": "2026-11-04"
+"verificat": "2026-11-12"
+},
+{
+"titlu": "Geaca barbati de iarna negara w218",
+"pret": 180.0,
+"imagine": "https://dehaine.ro/image/catalog/-9912/409/W218-geaca-barbati-iarna-Roletti-d-1.png",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fdehaine.ro%2FW218-geaca-barbati-iarna-Roletti-a%26utm_source%3Ddouaparale%26utm_medium%3Dcpc%26utm_campaign%3Ddouaparale",
+"magazin": "dehaine.ro",
+"id": "tZePk8HY8e9e",
+"brand": "",
+"url_magazin": "https://dehaine.ro/W218-geaca-barbati-iarna-Roletti-a&utm_source=douaparale&utm_medium=cpc&utm_campaign=douaparale",
+"pret_vechi": null,
+"verificat": "2026-11-12"
+},
+{
+"titlu": "Geaca barbati de iarna negara w220",
+"pret": 180.0,
+"imagine": "https://dehaine.ro/image/catalog/-9912/409/W220-geaca-barbati-iarna-zagmen-b.png",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fdehaine.ro%2FW220-geaca-barbati-iarna-zagmen-a%26utm_source%3Ddouaparale%26utm_medium%3Dcpc%26utm_campaign%3Ddouaparale",
+"magazin": "dehaine.ro",
+"id": "nyg6SVS88yhZ",
+"brand": "",
+"url_magazin": "https://dehaine.ro/W220-geaca-barbati-iarna-zagmen-a&utm_source=douaparale&utm_medium=cpc&utm_campaign=douaparale",
+"pret_vechi": null,
+"verificat": "2026-11-12"
 }
 ],
 "magazine": [
@@ -18090,7 +18066,7 @@
 "titlu": "Cărucioare 3 în 1",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-04",
+"actualizat": "2026-11-12",
 "feeduri": [
 {
 "id": 1169,
@@ -18111,16 +18087,16 @@
 ],
 "produse": [
 {
-"titlu": "Carucior Kinderkraft Esme, 3 In 1, Pure Black",
-"pret": 1574.0,
-"imagine": "https://infinityro.vteximg.com.br/arquivos/ids/268766025/image-cf2d41700d614504bd4bf268d6f338fe.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Finfinity.ro%2Fcarucior-kinderkraft-esme-3-in-1-pure-black-1665181%2Fp%3Futm_source%3D2performant",
-"magazin": "infinity.ro",
-"id": "X-7fiuT2Zr4C",
-"brand": "",
-"url_magazin": "https://infinity.ro/carucior-kinderkraft-esme-3-in-1-pure-black-1665181/p?utm_source=2performant",
-"pret_vechi": 2046.0,
-"verificat": "2026-11-04"
+"titlu": "Carucior Chipolino Aura 3 in 1 biscotta",
+"pret": 926.05,
+"imagine": "https://www.ookee.ro/367417-large_default/carucior-chipolino-aura-3-in-1-biscotta.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ookee.ro%2Fcarucioare-3-in-1%2F123732-carucior-chipolino-aura-3-in-1-biscotta.html",
+"magazin": "ookee.ro",
+"id": "zlsDPjoIAgdg",
+"brand": "Chipolino",
+"url_magazin": "https://www.ookee.ro/carucioare-3-in-1/123732-carucior-chipolino-aura-3-in-1-biscotta.html",
+"pret_vechi": null,
+"verificat": "2026-11-12"
 },
 {
 "titlu": "Carucior Kinderkraft Esme, 3 In 1, Moonlight Grey",
@@ -18129,9 +18105,45 @@
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Finfinity.ro%2Fcarucior-kinderkraft-esme-3-in-1-moonlight-grey-1665146%2Fp%3Futm_source%3D2performant",
 "magazin": "infinity.ro",
 "id": "Pz0HmuhDKaB5",
-"brand": "",
+"brand": "Kinderkraft",
 "url_magazin": "https://infinity.ro/carucior-kinderkraft-esme-3-in-1-moonlight-grey-1665146/p?utm_source=2performant",
-"pret_vechi": 2046.0,
+"pret_vechi": 2400.0,
+"verificat": "2026-11-04"
+},
+{
+"titlu": "Carucior Kinderkraft esme, 3 in 1, pure black",
+"pret": 1631.73,
+"imagine": "https://infinityro.vteximg.com.br/arquivos/ids/270052864/image-12da2d696ff3481ea3ae30056f054c55.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Finfinity.ro%2Fcarucior-kinderkraft-esme-3-in-1-pure-black-1856821%2Fp%3Futm_source%3D2performant",
+"magazin": "infinity.ro",
+"id": "R4q8Fo4hm9LL",
+"brand": "Kinderkraft",
+"url_magazin": "https://infinity.ro/carucior-kinderkraft-esme-3-in-1-pure-black-1856821/p?utm_source=2performant",
+"pret_vechi": null,
+"verificat": "2026-11-12"
+},
+{
+"titlu": "Carucior 3 in 1, Lionelo, Bianka Black Onyx, Transformabil, Cu landou si salteluta moale, Cu scoica auto, Sustine 22 kg,",
+"pret": 1639.99,
+"imagine": "https://cdn13.avanticart.ro/babyneeds.ro/pictures/products/800/carucior-3-in-1-lionelo-bianka-black-onyx-transformabil-cu-landou-si-salteluta-moale-cu-scoica-auto-sustine-22-kg-cu-muselina-din-bambus-120x120-cm-bej-3434937.jpeg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.babyneeds.ro%2Fcarucior-3-in-1-lionelo-bianka-black-onyx-transformabil-cu-landou-si-salteluta-moale-cu-scoica-auto-sustine-22-kg-cu-muselina-din-bambus-120x120-cm-bej.html",
+"magazin": "babyneeds.ro",
+"id": "-ek1DoIHdDvN",
+"brand": "Lionelo",
+"url_magazin": "https://www.babyneeds.ro/carucior-3-in-1-lionelo-bianka-black-onyx-transformabil-cu-landou-si-salteluta-moale-cu-scoica-auto-sustine-22-kg-cu-muselina-din-bambus-120x120-cm-bej.html",
+"pret_vechi": 2453.7,
+"verificat": "2026-11-12"
+},
+{
+"titlu": "Carucior 3 in 1, Lionelo, Bianka Grey Stone, Transformabil, Cu landou si salteluta moale, Cu scoica auto, Sustine 22 kg,",
+"pret": 1639.99,
+"imagine": "https://cdn13.avanticart.ro/babyneeds.ro/pictures/products/800/carucior-3-in-1-lionelo-bianka-grey-stone-transformabil-cu-landou-si-salteluta-moale-cu-scoica-auto-sustine-22-kg-cu-muselina-din-bambus-120x120-cm-gri-3435186.jpeg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.babyneeds.ro%2Fcarucior-3-in-1-lionelo-bianka-grey-stone-transformabil-cu-landou-si-salteluta-moale-cu-scoica-auto-sustine-22-kg-cu-muselina-din-bambus-120x120-cm-gri.html",
+"magazin": "babyneeds.ro",
+"id": "k_VBdXVtefch",
+"brand": "Lionelo",
+"url_magazin": "https://www.babyneeds.ro/carucior-3-in-1-lionelo-bianka-grey-stone-transformabil-cu-landou-si-salteluta-moale-cu-scoica-auto-sustine-22-kg-cu-muselina-din-bambus-120x120-cm-gri.html",
+"pret_vechi": 2467.11,
 "verificat": "2026-11-04"
 },
 {
@@ -18147,30 +18159,6 @@
 "verificat": "2026-11-04"
 },
 {
-"titlu": "Carucior 3 in 1, Lionelo, Bianka Black Onyx, Transformabil, Cu landou si salteluta moale, Cu scoica auto, Sustine 22 kg,",
-"pret": 1639.99,
-"imagine": "https://cdn13.avanticart.ro/babyneeds.ro/pictures/products/800/carucior-3-in-1-lionelo-bianka-black-onyx-transformabil-cu-landou-si-salteluta-moale-cu-scoica-auto-sustine-22-kg-cu-muselina-din-bambus-120x120-cm-gri-3434934.jpeg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.babyneeds.ro%2Fcarucior-3-in-1-lionelo-bianka-black-onyx-transformabil-cu-landou-si-salteluta-moale-cu-scoica-auto-sustine-22-kg-cu-muselina-din-bambus-120x120-cm-gri.html",
-"magazin": "babyneeds.ro",
-"id": "ytX-Bc7EwJX1",
-"brand": "Lionelo",
-"url_magazin": "https://www.babyneeds.ro/carucior-3-in-1-lionelo-bianka-black-onyx-transformabil-cu-landou-si-salteluta-moale-cu-scoica-auto-sustine-22-kg-cu-muselina-din-bambus-120x120-cm-gri.html",
-"pret_vechi": 2467.11,
-"verificat": "2026-11-04"
-},
-{
-"titlu": "Carucior 3 in 1, Lionelo, Bianka Grey Stone, Transformabil, Cu landou si salteluta moale, Cu scoica auto, Sustine 22 kg,",
-"pret": 1639.99,
-"imagine": "https://cdn13.avanticart.ro/babyneeds.ro/pictures/products/800/carucior-3-in-1-lionelo-bianka-grey-stone-transformabil-cu-landou-si-salteluta-moale-cu-scoica-auto-sustine-22-kg-cu-muselina-din-bambus-120x120-cm-gri-3435186.jpeg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.babyneeds.ro%2Fcarucior-3-in-1-lionelo-bianka-grey-stone-transformabil-cu-landou-si-salteluta-moale-cu-scoica-auto-sustine-22-kg-cu-muselina-din-bambus-120x120-cm-gri.html",
-"magazin": "babyneeds.ro",
-"id": "k_VBdXVtefch",
-"brand": "Lionelo",
-"url_magazin": "https://www.babyneeds.ro/carucior-3-in-1-lionelo-bianka-grey-stone-transformabil-cu-landou-si-salteluta-moale-cu-scoica-auto-sustine-22-kg-cu-muselina-din-bambus-120x120-cm-gri.html",
-"pret_vechi": 2467.11,
-"verificat": "2026-11-04"
-},
-{
 "titlu": "Carucior Chipolino Euphoria 3 in 1 cashmere",
 "pret": 1641.54,
 "imagine": "https://www.ookee.ro/395460-large_default/carucior-chipolino-euphoria-3-in-1-cashmere.jpg",
@@ -18179,32 +18167,20 @@
 "id": "WuEj1mKc5ayx",
 "brand": "Chipolino",
 "url_magazin": "https://www.ookee.ro/carucioare-3-in-1/130644-carucior-chipolino-euphoria-3-in-1-cashmere.html",
-"pret_vechi": 2548.9,
+"pret_vechi": 2564.9,
 "verificat": "2026-11-04"
 },
 {
-"titlu": "Carucior Chipolino Euphoria 3 in 1 platinum",
-"pret": 1641.54,
-"imagine": "https://www.ookee.ro/395481-large_default/carucior-chipolino-euphoria-3-in-1-platinum.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ookee.ro%2Fcarucioare-3-in-1%2F130645-carucior-chipolino-euphoria-3-in-1-platinum.html",
+"titlu": "Carucior Chipolino Aurora 3 in 1 matcha",
+"pret": 1645.78,
+"imagine": "https://www.ookee.ro/395645-large_default/carucior-chipolino-aurora-3-in-1-matcha.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ookee.ro%2Fcarucioare-3-in-1%2F130660-carucior-chipolino-aurora-3-in-1-matcha.html",
 "magazin": "ookee.ro",
-"id": "9WXAZrKfNlye",
+"id": "vdQ8ohmrtcGM",
 "brand": "Chipolino",
-"url_magazin": "https://www.ookee.ro/carucioare-3-in-1/130645-carucior-chipolino-euphoria-3-in-1-platinum.html",
-"pret_vechi": 2548.9,
-"verificat": "2026-11-04"
-},
-{
-"titlu": "Carucior Chipolino Aurora 3 in 1 powder pink",
-"pret": 1733.95,
-"imagine": "https://www.ookee.ro/395623-large_default/carucior-chipolino-aurora-3-in-1-powder-pink.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ookee.ro%2Fcarucioare-3-in-1%2F130659-carucior-chipolino-aurora-3-in-1-powder-pink.html",
-"magazin": "ookee.ro",
-"id": "F2wBcCFn7b_a",
-"brand": "Chipolino",
-"url_magazin": "https://www.ookee.ro/carucioare-3-in-1/130659-carucior-chipolino-aurora-3-in-1-powder-pink.html",
-"pret_vechi": 2928.9,
-"verificat": "2026-11-04"
+"url_magazin": "https://www.ookee.ro/carucioare-3-in-1/130660-carucior-chipolino-aurora-3-in-1-matcha.html",
+"pret_vechi": 2938.9,
+"verificat": "2026-11-12"
 },
 {
 "titlu": "Carucior Chipolino Aurora 3 in 1 cashmere",
@@ -18215,31 +18191,7 @@
 "id": "evhe8JUOYx1M",
 "brand": "Chipolino",
 "url_magazin": "https://www.ookee.ro/carucioare-3-in-1/130661-carucior-chipolino-aurora-3-in-1-cashmere.html",
-"pret_vechi": 2928.9,
-"verificat": "2026-11-04"
-},
-{
-"titlu": "Carucior Chipolino Aurora 3 in 1 latte",
-"pret": 1733.95,
-"imagine": "https://www.ookee.ro/395701-large_default/carucior-chipolino-aurora-3-in-1-latte.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ookee.ro%2Fcarucioare-3-in-1%2F130662-carucior-chipolino-aurora-3-in-1-latte.html",
-"magazin": "ookee.ro",
-"id": "dgAqRT1MtLL0",
-"brand": "Chipolino",
-"url_magazin": "https://www.ookee.ro/carucioare-3-in-1/130662-carucior-chipolino-aurora-3-in-1-latte.html",
-"pret_vechi": 2928.9,
-"verificat": "2026-11-04"
-},
-{
-"titlu": "Carucior Chipolino Aurora 3 in 1 platinum",
-"pret": 1733.95,
-"imagine": "https://www.ookee.ro/395723-large_default/carucior-chipolino-aurora-3-in-1-platinum.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ookee.ro%2Fcarucioare-3-in-1%2F130663-carucior-chipolino-aurora-3-in-1-platinum.html",
-"magazin": "ookee.ro",
-"id": "1csV6HztedAD",
-"brand": "Chipolino",
-"url_magazin": "https://www.ookee.ro/carucioare-3-in-1/130663-carucior-chipolino-aurora-3-in-1-platinum.html",
-"pret_vechi": 2928.9,
+"pret_vechi": 2938.9,
 "verificat": "2026-11-04"
 },
 {
@@ -18251,7 +18203,43 @@
 "id": "SnqEq0O0l3E8",
 "brand": "Chipolino",
 "url_magazin": "https://www.ookee.ro/carucioare-3-in-1/130664-carucior-chipolino-aurora-3-in-1-charcoal.html",
-"pret_vechi": 2928.9,
+"pret_vechi": 2938.9,
+"verificat": "2026-11-04"
+},
+{
+"titlu": "Carucior Chipolino Aurora 3 in 1 powder pink",
+"pret": 1733.95,
+"imagine": "https://www.ookee.ro/395623-large_default/carucior-chipolino-aurora-3-in-1-powder-pink.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ookee.ro%2Fcarucioare-3-in-1%2F130659-carucior-chipolino-aurora-3-in-1-powder-pink.html",
+"magazin": "ookee.ro",
+"id": "F2wBcCFn7b_a",
+"brand": "Chipolino",
+"url_magazin": "https://www.ookee.ro/carucioare-3-in-1/130659-carucior-chipolino-aurora-3-in-1-powder-pink.html",
+"pret_vechi": 2938.9,
+"verificat": "2026-11-04"
+},
+{
+"titlu": "Carucior Chipolino Aurora 3 in 1 latte",
+"pret": 1733.95,
+"imagine": "https://www.ookee.ro/395701-large_default/carucior-chipolino-aurora-3-in-1-latte.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ookee.ro%2Fcarucioare-3-in-1%2F130662-carucior-chipolino-aurora-3-in-1-latte.html",
+"magazin": "ookee.ro",
+"id": "dgAqRT1MtLL0",
+"brand": "Chipolino",
+"url_magazin": "https://www.ookee.ro/carucioare-3-in-1/130662-carucior-chipolino-aurora-3-in-1-latte.html",
+"pret_vechi": 2938.9,
+"verificat": "2026-11-04"
+},
+{
+"titlu": "Carucior Chipolino Aurora 3 in 1 platinum",
+"pret": 1733.95,
+"imagine": "https://www.ookee.ro/395723-large_default/carucior-chipolino-aurora-3-in-1-platinum.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ookee.ro%2Fcarucioare-3-in-1%2F130663-carucior-chipolino-aurora-3-in-1-platinum.html",
+"magazin": "ookee.ro",
+"id": "1csV6HztedAD",
+"brand": "Chipolino",
+"url_magazin": "https://www.ookee.ro/carucioare-3-in-1/130663-carucior-chipolino-aurora-3-in-1-platinum.html",
+"pret_vechi": 2938.9,
 "verificat": "2026-11-04"
 },
 {
@@ -18261,7 +18249,7 @@
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Finfinity.ro%2Fcarucior-3-in-1-cangaroo-noble-black-1049839%2Fp%3Futm_source%3D2performant",
 "magazin": "infinity.ro",
 "id": "S4lGLqtVV7vU",
-"brand": "",
+"brand": "Cangaroo",
 "url_magazin": "https://infinity.ro/carucior-3-in-1-cangaroo-noble-black-1049839/p?utm_source=2performant",
 "pret_vechi": null,
 "verificat": "2026-11-04"
@@ -18273,21 +18261,9 @@
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Finfinity.ro%2Fcarucior-kinderkraft-newly-3-in-1-bej-1856824%2Fp%3Futm_source%3D2performant",
 "magazin": "infinity.ro",
 "id": "lx1cXJScjBAY",
-"brand": "",
+"brand": "Kinderkraft",
 "url_magazin": "https://infinity.ro/carucior-kinderkraft-newly-3-in-1-bej-1856824/p?utm_source=2performant",
 "pret_vechi": null,
-"verificat": "2026-11-04"
-},
-{
-"titlu": "Carucior 3 in 1, Lionelo, Meril, Cu landou de dimensiune XL, Reversibil, Cu scoica auto testata ADAC Astrid Green, Cu ac",
-"pret": 1975.99,
-"imagine": "https://cdn13.avanticart.ro/babyneeds.ro/pictures/products/800/carucior-3-in-1-lionelo-meril-cu-landou-de-dimensiune-xl-reversibil-cu-scoica-auto-testata-adac-astrid-green-cu-accesorii-pana-la-22-kg-black-onyx-3430311.jpeg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.babyneeds.ro%2Fcarucior-3-in-1-lionelo-meril-cu-landou-de-dimensiune-xl-reversibil-cu-scoica-auto-testata-adac-astrid-green-cu-accesorii-pana-la-22-kg-black-onyx.html",
-"magazin": "babyneeds.ro",
-"id": "nV1OkLKStbIj",
-"brand": "Lionelo",
-"url_magazin": "https://www.babyneeds.ro/carucior-3-in-1-lionelo-meril-cu-landou-de-dimensiune-xl-reversibil-cu-scoica-auto-testata-adac-astrid-green-cu-accesorii-pana-la-22-kg-black-onyx.html",
-"pret_vechi": 3482.02,
 "verificat": "2026-11-04"
 },
 {
@@ -18301,6 +18277,30 @@
 "url_magazin": "https://www.babyneeds.ro/carucior-3-in-1-lionelo-amber-cadru-aluminiu-cu-landou-intarit-si-salteluta-moale-cu-scoica-auto-testata-adac-reversibil-cu-accesorii-geanta-parinti-pana-la-22-kg-verde.html",
 "pret_vechi": 3031.59,
 "verificat": "2026-11-04"
+},
+{
+"titlu": "Set Carucior 3 in 1, Lionelo, Mika Plus, Beige Sand, Cu scoica auto Astrid testata ADAC, Beige Cream",
+"pret": 2497.99,
+"imagine": "https://cdn13.avanticart.ro/babyneeds.ro/pictures/products/800/set-carucior-3-in-1-lionelo-mika-plus-beige-sand-cu-scoica-auto-astrid-testata-adac-beige-cream-3430230.jpeg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.babyneeds.ro%2Fset-carucior-3-in-1-lionelo-mika-plus-beige-sand-cu-scoica-auto-astrid-testata-adac-beige-cream.html",
+"magazin": "babyneeds.ro",
+"id": "4RkQWXkNedpK",
+"brand": "Lionelo",
+"url_magazin": "https://www.babyneeds.ro/set-carucior-3-in-1-lionelo-mika-plus-beige-sand-cu-scoica-auto-astrid-testata-adac-beige-cream.html",
+"pret_vechi": 3795.19,
+"verificat": "2026-11-12"
+},
+{
+"titlu": "Set Carucior 3 in 1, Lionelo, Mika Plus, Green Olive, Cu scoica auto Astrid testata ADAC, Beige Cream",
+"pret": 2497.99,
+"imagine": "https://cdn13.avanticart.ro/babyneeds.ro/pictures/products/800/set-carucior-3-in-1-lionelo-mika-plus-green-olive-cu-scoica-auto-astrid-testata-adac-beige-cream-3430233.jpeg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.babyneeds.ro%2Fset-carucior-3-in-1-lionelo-mika-plus-green-olive-cu-scoica-auto-astrid-testata-adac-beige-cream.html",
+"magazin": "babyneeds.ro",
+"id": "eWqWTXf8n7rS",
+"brand": "Lionelo",
+"url_magazin": "https://www.babyneeds.ro/set-carucior-3-in-1-lionelo-mika-plus-green-olive-cu-scoica-auto-astrid-testata-adac-beige-cream.html",
+"pret_vechi": 3795.19,
+"verificat": "2026-11-12"
 }
 ],
 "magazine": [
@@ -18317,7 +18317,7 @@
 "titlu": "Scaune auto pentru copii",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-04",
+"actualizat": "2026-11-12",
 "feeduri": [
 {
 "id": 1528,
@@ -18337,6 +18337,54 @@
 }
 ],
 "produse": [
+{
+"titlu": "Scaun auto Chipolino Patrol I-Size 100-150 cm cu sistem Isofix powder pink",
+"pret": 329.96,
+"imagine": "https://www.ookee.ro/390409-large_default/scaun-auto-chipolino-patrol-i-size-100-150-cm-cu-sistem-isofix-powder-pink.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ookee.ro%2Fscaune-auto%2F128694-scaun-auto-chipolino-patrol-i-size-100-150-cm-cu-sistem-isofix-powder-pink.html",
+"magazin": "ookee.ro",
+"id": "9Th3QEIYU652",
+"brand": "Chipolino",
+"url_magazin": "https://www.ookee.ro/scaune-auto/128694-scaun-auto-chipolino-patrol-i-size-100-150-cm-cu-sistem-isofix-powder-pink.html",
+"pret_vechi": 568.9,
+"verificat": "2026-11-12"
+},
+{
+"titlu": "Scaun auto Chipolino Patrol I-Size 100-150 cm cu sistem Isofix matcha",
+"pret": 329.96,
+"imagine": "https://www.ookee.ro/390413-large_default/scaun-auto-chipolino-patrol-i-size-100-150-cm-cu-sistem-isofix-matcha.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ookee.ro%2Fscaune-auto%2F128695-scaun-auto-chipolino-patrol-i-size-100-150-cm-cu-sistem-isofix-matcha.html",
+"magazin": "ookee.ro",
+"id": "IDAksW76Zk9t",
+"brand": "Chipolino",
+"url_magazin": "https://www.ookee.ro/scaune-auto/128695-scaun-auto-chipolino-patrol-i-size-100-150-cm-cu-sistem-isofix-matcha.html",
+"pret_vechi": 568.9,
+"verificat": "2026-11-12"
+},
+{
+"titlu": "Scaun auto Chipolino Patrol I-Size 100-150 cm cu sistem Isofix noir",
+"pret": 329.96,
+"imagine": "https://www.ookee.ro/390422-large_default/scaun-auto-chipolino-patrol-i-size-100-150-cm-cu-sistem-isofix-noir.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ookee.ro%2Fscaune-auto%2F128698-scaun-auto-chipolino-patrol-i-size-100-150-cm-cu-sistem-isofix-noir.html",
+"magazin": "ookee.ro",
+"id": "A1ZBMhaRfhHJ",
+"brand": "Chipolino",
+"url_magazin": "https://www.ookee.ro/scaune-auto/128698-scaun-auto-chipolino-patrol-i-size-100-150-cm-cu-sistem-isofix-noir.html",
+"pret_vechi": 568.9,
+"verificat": "2026-11-12"
+},
+{
+"titlu": "Scaun auto Chipolino Patrol I-Size 100-150 cm cu sistem Isofix cashmere",
+"pret": 329.96,
+"imagine": "https://www.ookee.ro/390416-large_default/scaun-auto-chipolino-patrol-i-size-100-150-cm-cu-sistem-isofix-cashmere.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ookee.ro%2Fscaune-auto%2F128696-scaun-auto-chipolino-patrol-i-size-100-150-cm-cu-sistem-isofix-cashmere.html",
+"magazin": "ookee.ro",
+"id": "AjkMAeAjVafd",
+"brand": "Chipolino",
+"url_magazin": "https://www.ookee.ro/scaune-auto/128696-scaun-auto-chipolino-patrol-i-size-100-150-cm-cu-sistem-isofix-cashmere.html",
+"pret_vechi": 568.9,
+"verificat": "2026-11-12"
+},
 {
 "titlu": "Scaun Auto 2 In 1, 9-36 Kg, Inchidere In 5 Puncte, 6-12 Ani, 40-105 Cm, Negru - HC01",
 "pret": 405.0,
@@ -18374,16 +18422,16 @@
 "verificat": "2026-11-04"
 },
 {
-"titlu": "Scaun auto pentru copii Lorelli Growgo, Isofix, pliabil, protectii laterale extensibile, spatar reglabil, tetiera reglab",
-"pret": 565.99,
-"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4301%2F4301984%2Fscaun-auto-pentru-copii-growgo-isofix-pliabil-_10580_1_17787656992773.jpg&type=auto&width=500&sign=YfOZZum79EmmiDNhc0qCdNSjGKGSm4gSf9e5J6Gexkk",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Fbebe-copii-jucarii-carucioare-transport-bebe-scaune-auto-copii-si-inaltatoare%2Florelli-scaun-auto-pentru-copii-lorelli-growgo-isofix-pliabil-protectii-laterale-extensibile-spatar-reglabil-tetiera-reglabila-100-150-cm-3-12-ani-negru-4301984.html",
-"magazin": "evomag.ro",
-"id": "PK7_sm0mTIsH",
-"brand": "Lorelli",
-"url_magazin": "https://www.evomag.ro/bebe-copii-jucarii-carucioare-transport-bebe-scaune-auto-copii-si-inaltatoare/lorelli-scaun-auto-pentru-copii-lorelli-growgo-isofix-pliabil-protectii-laterale-extensibile-spatar-reglabil-tetiera-reglabila-100-150-cm-3-12-ani-negru-4301984.html",
-"pret_vechi": null,
-"verificat": "2026-11-04"
+"titlu": "Scaun auto Chipolino Mondial I-Size 40-150 cm latte",
+"pret": 534.74,
+"imagine": "https://www.ookee.ro/390435-large_default/scaun-auto-chipolino-mondial-i-size-40-150-cm-latte.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ookee.ro%2Fscaune-auto%2F128701-scaun-auto-chipolino-mondial-i-size-40-150-cm-latte.html",
+"magazin": "ookee.ro",
+"id": "HqBk_n40uB8Q",
+"brand": "Chipolino",
+"url_magazin": "https://www.ookee.ro/scaune-auto/128701-scaun-auto-chipolino-mondial-i-size-40-150-cm-latte.html",
+"pret_vechi": 954.9,
+"verificat": "2026-11-12"
 },
 {
 "titlu": "Scaun auto pentru copii Lorelli Rio, Isofix, 76-150 cm, 15 Luni-12 Ani, tetiera reglabila prin mecanism, Negru",
@@ -18538,7 +18586,7 @@
 "id": "aeZvLvf9AOM_",
 "brand": "Chipolino",
 "url_magazin": "https://www.ookee.ro/pentru-40-150-cm/116592-scaun-auto-chipolino-maximus-i-size-40-150-cm-obsidian-cu-sistem-isofix.html",
-"pret_vechi": 1438.9,
+"pret_vechi": 1584.9,
 "verificat": "2026-11-04"
 },
 {
@@ -18550,67 +18598,7 @@
 "id": "v2l94Kb4ecxR",
 "brand": "Chipolino",
 "url_magazin": "https://www.ookee.ro/scaune-auto/132633-scaun-auto-chipolino-techno-igrow-i-size-40-150-cm-cu-sistem-isofix-si-sezut-rotativ-powder-pink.html",
-"pret_vechi": 1348.9,
-"verificat": "2026-11-04"
-},
-{
-"titlu": "Scaun auto Chipolino Hypnotic Plus I-Size 40-150 cm cu sistem Isofix si sezut rotativ green",
-"pret": 906.51,
-"imagine": "https://www.ookee.ro/407871-large_default/scaun-auto-chipolino-hypnotic-plus-i-size-40-150-cm-cu-sistem-isofix-si-sezut-rotativ-green.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ookee.ro%2Fscaune-auto%2F132638-scaun-auto-chipolino-hypnotic-plus-i-size-40-150-cm-cu-sistem-isofix-si-sezut-rotativ-green.html",
-"magazin": "ookee.ro",
-"id": "1tGjwxa9cO46",
-"brand": "Chipolino",
-"url_magazin": "https://www.ookee.ro/scaune-auto/132638-scaun-auto-chipolino-hypnotic-plus-i-size-40-150-cm-cu-sistem-isofix-si-sezut-rotativ-green.html",
-"pret_vechi": 1408.9,
-"verificat": "2026-11-04"
-},
-{
-"titlu": "Scaun auto Chipolino Clima Air I-Size 40-150 cm cu sistem Isofix si sezut rotativ anthracite",
-"pret": 965.7,
-"imagine": "https://www.ookee.ro/388553-large_default/scaun-auto-chipolino-clima-air-i-size-40-150-cm-cu-sistem-isofix-si-sezut-rotativ-anthracite.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ookee.ro%2Fscaune-auto%2F128550-scaun-auto-chipolino-clima-air-i-size-40-150-cm-cu-sistem-isofix-si-sezut-rotativ-anthracite.html",
-"magazin": "ookee.ro",
-"id": "0UbFIuX3R0ST",
-"brand": "Chipolino",
-"url_magazin": "https://www.ookee.ro/scaune-auto/128550-scaun-auto-chipolino-clima-air-i-size-40-150-cm-cu-sistem-isofix-si-sezut-rotativ-anthracite.html",
-"pret_vechi": 1498.9,
-"verificat": "2026-11-04"
-},
-{
-"titlu": "Scaun Auto Nania Dune, 40-150 Cm, Grey",
-"pret": 1159.9,
-"imagine": "https://www.ookee.ro/355145-large_default/scaun-auto-nania-dune-40-150-cm-grey.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ookee.ro%2Fpentru-40-150-cm%2F121745-scaun-auto-nania-dune-40-150-cm-grey-3507460244489.html",
-"magazin": "ookee.ro",
-"id": "36jGKil7sx29",
-"brand": "Nania",
-"url_magazin": "https://www.ookee.ro/pentru-40-150-cm/121745-scaun-auto-nania-dune-40-150-cm-grey-3507460244489.html",
-"pret_vechi": null,
-"verificat": "2026-11-04"
-},
-{
-"titlu": "Scaun auto iSize Peg Perego, Viaggio Flex, 100-150 cm, 3-12 ani, Crystal Black",
-"pret": 1240.9,
-"imagine": "https://www.ookee.ro/318915-large_default/scaun-auto-isize-peg-perego-viaggio-flex-100-150-cm-3-12-ani-crystal-black.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ookee.ro%2Fpentru-100-150-cm%2F117594-scaun-auto-isize-peg-perego-viaggio-flex-100-150-cm-3-12-ani-crystal-black-8005475429549.html",
-"magazin": "ookee.ro",
-"id": "EzMQoDKDpmTq",
-"brand": "Peg Perego",
-"url_magazin": "https://www.ookee.ro/pentru-100-150-cm/117594-scaun-auto-isize-peg-perego-viaggio-flex-100-150-cm-3-12-ani-crystal-black-8005475429549.html",
-"pret_vechi": null,
-"verificat": "2026-11-04"
-},
-{
-"titlu": "Scaun Auto Kinderkraft I-guard Pro I-size 61-105 Cm, Graphite Black",
-"pret": 1931.93,
-"imagine": "https://www.ookee.ro/355018-large_default/scaun-auto-kinderkraft-i-guard-pro-i-size-61-105-cm-graphite-black.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ookee.ro%2Fgrupa-0-1-0-18-kg%2F121729-scaun-auto-kinderkraft-i-guard-pro-i-size-61-105-cm-graphite-black-5902533921522.html",
-"magazin": "ookee.ro",
-"id": "y_ub6NwPg0IE",
-"brand": "Kinderkraft",
-"url_magazin": "https://www.ookee.ro/grupa-0-1-0-18-kg/121729-scaun-auto-kinderkraft-i-guard-pro-i-size-61-105-cm-graphite-black-5902533921522.html",
-"pret_vechi": null,
+"pret_vechi": 1378.9,
 "verificat": "2026-11-04"
 }
 ],
@@ -18623,12 +18611,12 @@
 },
 {
 "slug": "seturi-lego",
-"tema": "copii",
-"tema_nume": "Copii",
+"tema": "jucarii-copii",
+"tema_nume": "Jucării",
 "titlu": "Seturi LEGO",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-04",
+"actualizat": "2026-11-12",
 "feeduri": [
 {
 "id": 3248,
@@ -18648,18 +18636,6 @@
 }
 ],
 "produse": [
-{
-"titlu": "LEGO® Technic Masini impunatoare 42233, 44 piese",
-"pret": 36.99,
-"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4310%2F4310434%2F6a7c19236ca13.jpg&type=auto&width=500&sign=7pnk4dNxguDzQKWUjKkTNish0NyErgomF4p_NngWq7M",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Fbebe-copii-jucarii-jucarii-jocuri-seturi-de-constructii-lego-lego-technic%2Flego-lego-technic-masini-impunatoare-42233-44-piese-4310434.html",
-"magazin": "evomag.ro",
-"id": "ZuyWc8-_tBN4",
-"brand": "LEGO",
-"url_magazin": "https://www.evomag.ro/bebe-copii-jucarii-jucarii-jocuri-seturi-de-constructii-lego-lego-technic/lego-lego-technic-masini-impunatoare-42233-44-piese-4310434.html",
-"pret_vechi": 46.99,
-"verificat": "2026-11-05"
-},
 {
 "titlu": "LEGO® Technic - Buldozer de mare capacitate 42163, 195 piese",
 "pret": 59.99,
@@ -18709,18 +18685,6 @@
 "verificat": "2026-11-05"
 },
 {
-"titlu": "LEGO® Speed Champions BMW M3 (E30) 77263, 358 piese",
-"pret": 132.99,
-"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4310%2F4310085%2F6a75d447ce62a.jpg&type=auto&width=500&sign=svfzMnW9by8qf82yHGLhYG_wXzHQilZQ5LFzuwSi6wk",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Fbebe-copii-jucarii-jucarii-jocuri-seturi-de-constructii-lego-lego-speed%2Flego-lego-speed-champions-bmw-m3-e30-77263-358-piese-4310085.html",
-"magazin": "evomag.ro",
-"id": "INLbYFvnaZgA",
-"brand": "LEGO",
-"url_magazin": "https://www.evomag.ro/bebe-copii-jucarii-jucarii-jocuri-seturi-de-constructii-lego-lego-speed/lego-lego-speed-champions-bmw-m3-e30-77263-358-piese-4310085.html",
-"pret_vechi": null,
-"verificat": "2026-11-05"
-},
-{
 "titlu": "LEGO® ONE PIECE Ascunzatoarea doctorului Hiriluk si Minifigurine 75641, 271 piese",
 "pret": 141.99,
 "imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4310%2F4310416%2F6a7c192310748.jpg&type=auto&width=500&sign=QUFYOMQRudFiAR_ytbZ6q2q5IfEIaRLvr3VOFnZh2WQ",
@@ -18729,18 +18693,6 @@
 "id": "uoeuznCsY8rZ",
 "brand": "LEGO",
 "url_magazin": "https://www.evomag.ro/bebe-copii-jucarii-jucarii-jocuri-seturi-de-constructii-lego-lego-super-heroes/lego-lego-one-piece-ascunzatoarea-doctorului-hiriluk-si-minifigurine-75641-271-piese-4310416.html",
-"pret_vechi": null,
-"verificat": "2026-11-05"
-},
-{
-"titlu": "LEGO® Super Heroes Miles Morales vs. Morbius 76244",
-"pret": 154.99,
-"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4085%2F4085759%2Flego-76244-marvel-miles-morale-641da1f3d81e1.JPG&type=auto&width=500&sign=BpWCscqIXHqiwzY6MLOk-UZa1l_tFIfc6CpkRNeDiHo",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Fbebe-copii-jucarii-jucarii-jocuri-seturi-de-constructii-lego-lego-super-heroes%2Flego-lego-super-heroes-miles-morales-vs.-morbius-76244-4085759.html",
-"magazin": "evomag.ro",
-"id": "_VcaSvbO52UM",
-"brand": "LEGO",
-"url_magazin": "https://www.evomag.ro/bebe-copii-jucarii-jucarii-jocuri-seturi-de-constructii-lego-lego-super-heroes/lego-lego-super-heroes-miles-morales-vs.-morbius-76244-4085759.html",
 "pret_vechi": null,
 "verificat": "2026-11-05"
 }
@@ -21873,7 +21825,7 @@
 "titlu": "Hrană uscată pentru câini",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-04",
+"actualizat": "2026-11-12",
 "feeduri": [
 {
 "id": 4943,
@@ -21893,18 +21845,6 @@
 }
 ],
 "produse": [
-{
-"titlu": "Platinum VetActive Dog Adult, light, hrana uscata pentru caini, cu pui, 1.5 kg",
-"pret": 46.0,
-"imagine": "https://www.shop4pet.ro/image/catalog/PRODS/Caini/platinum-hrana/platinum-light-hrana-caine-5.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.shop4pet.ro%2Fplatinum-hrana-caine-light-1-5",
-"magazin": "shop4pet.ro",
-"id": "xHkBbM3qx-oJ",
-"brand": "Platinum",
-"url_magazin": "https://www.shop4pet.ro/platinum-hrana-caine-light-1-5",
-"pret_vechi": null,
-"verificat": "2026-11-05"
-},
 {
 "titlu": "Hrana uscata pentru caini, mama si pui Bado, cu vita, 2.25 kg",
 "pret": 59.0,
@@ -21930,16 +21870,28 @@
 "verificat": "2026-11-05"
 },
 {
-"titlu": "Hrana uscata pentru caini adulti, RAW PALEO HEALTHY GRAIN, somon, 2kg",
-"pret": 76.0,
-"imagine": "https://www.shop4pet.ro/image/catalog/product-85294629.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.shop4pet.ro%2Fraw-paleo-healthy-grain-somon-2",
+"titlu": "Petline Kids, hrana uscata superpremium pentru caini juniori, cu miel, 3 kg",
+"pret": 74.0,
+"imagine": "https://www.shop4pet.ro/image/catalog/PRODS/Caini/petline-hrana-caine-pisica/petline-kids-hrana-uscata-caine-junior-3.png",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.shop4pet.ro%2Fpetline-kids-hrana-uscata-caine-junior-miel-3",
 "magazin": "shop4pet.ro",
-"id": "MvDPGX5NkBTS",
-"brand": "Raw Paleo",
-"url_magazin": "https://www.shop4pet.ro/raw-paleo-healthy-grain-somon-2",
-"pret_vechi": null,
-"verificat": "2026-11-05"
+"id": "1fQwtXv1S-Pj",
+"brand": "Petline",
+"url_magazin": "https://www.shop4pet.ro/petline-kids-hrana-uscata-caine-junior-miel-3",
+"pret_vechi": 84.0,
+"verificat": "2026-11-12"
+},
+{
+"titlu": "Petline Sensitive, hrana uscata superpremium pentru caini adulti, cu somon, 3 kg",
+"pret": 74.0,
+"imagine": "https://www.shop4pet.ro/image/catalog/PRODS/Caini/petline-hrana-caine-pisica/petline-sensitive-hrana-caine-adult-somon.png",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.shop4pet.ro%2Fpetline-sensitive-hrana-caine-adult-somon-3",
+"magazin": "shop4pet.ro",
+"id": "sa_zjSMeL-JM",
+"brand": "Petline",
+"url_magazin": "https://www.shop4pet.ro/petline-sensitive-hrana-caine-adult-somon-3",
+"pret_vechi": 84.0,
+"verificat": "2026-11-12"
 },
 {
 "titlu": "Hrana uscata pentru caini adulti, RAW PALEO HEALTHY GRAIN, miel, 2kg",
@@ -21954,14 +21906,14 @@
 "verificat": "2026-11-05"
 },
 {
-"titlu": "Hrana uscata pentru caini adulti, talie medie si mare, Peritas Signature, cu miel si orez, 3 kg",
-"pret": 79.0,
-"imagine": "https://www.shop4pet.ro/image/catalog/PRODS/Pisici/peritas-signature-hrana-pisici-caini/peritas-signature-hrana-caine-adult-talie-medie-miel-3.png",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.shop4pet.ro%2Fsignature-peritas-hrana-caine-adult-talie-medie-3-miel",
+"titlu": "Hrana uscata pentru caini adulti, RAW PALEO HEALTHY GRAIN, somon, 2kg",
+"pret": 76.0,
+"imagine": "https://www.shop4pet.ro/image/catalog/product-85294629.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.shop4pet.ro%2Fraw-paleo-healthy-grain-somon-2",
 "magazin": "shop4pet.ro",
-"id": "4_9UGfc3ycnF",
-"brand": "Peritas Signature",
-"url_magazin": "https://www.shop4pet.ro/signature-peritas-hrana-caine-adult-talie-medie-3-miel",
+"id": "MvDPGX5NkBTS",
+"brand": "Raw Paleo",
+"url_magazin": "https://www.shop4pet.ro/raw-paleo-healthy-grain-somon-2",
 "pret_vechi": null,
 "verificat": "2026-11-05"
 },
@@ -22002,7 +21954,7 @@
 "titlu": "Hrană uscată pentru pisici",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-04",
+"actualizat": "2026-11-12",
 "feeduri": [
 {
 "id": 4943,
@@ -22035,6 +21987,18 @@
 "verificat": "2026-11-05"
 },
 {
+"titlu": "EUKANUBA Cat Hairball Control Adult All Breeds Chicken & Liver Hrana uscata pentru pisici adulte, impotriva formarii ghe",
+"pret": 56.83,
+"imagine": "https://fera.ro/images/thumbnails/405/512/detailed/170/8710255123004_1.png",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Ffera.ro%2Feukanuba-cat-hairball-control-adult-all-breeds-chicken-and-liver-hrana-uscata-pentru-pisici-adulte-impotriva-formarii-ghemelor-de-blana-2-kg.html",
+"magazin": "fera.ro",
+"id": "d9KiJ-71oAqj",
+"brand": "EUKANUBA",
+"url_magazin": "https://fera.ro/eukanuba-cat-hairball-control-adult-all-breeds-chicken-and-liver-hrana-uscata-pentru-pisici-adulte-impotriva-formarii-ghemelor-de-blana-2-kg.html",
+"pret_vechi": null,
+"verificat": "2026-11-12"
+},
+{
 "titlu": "Petline SensiPlus, hrana uscata superpremium pentru pisici sterilizate, cu somon, 1.5 kg",
 "pret": 57.0,
 "imagine": "https://www.shop4pet.ro/image/catalog/PRODS/Caini/petline-hrana-caine-pisica/petline-hrana-uscata-pisici-sterilizate-somon.png",
@@ -22043,18 +22007,6 @@
 "id": "44PoTUjfn7PA",
 "brand": "Petline",
 "url_magazin": "https://www.shop4pet.ro/petline-hrana-pisici-sterilizate-somon",
-"pret_vechi": null,
-"verificat": "2026-11-05"
-},
-{
-"titlu": "Petline Urinary, hrana uscata superpremium pentru pisici cu probleme urinare, cu pui, 1.5 kg",
-"pret": 57.0,
-"imagine": "https://www.shop4pet.ro/image/catalog/PRODS/Caini/petline-hrana-caine-pisica/petline-urinary-hrana-probleme-sistem-urinar-pisica.png",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.shop4pet.ro%2Fpetline-hrana-uscata-pisici-probleme-urinare",
-"magazin": "shop4pet.ro",
-"id": "QmjQqNI38D72",
-"brand": "Petline",
-"url_magazin": "https://www.shop4pet.ro/petline-hrana-uscata-pisici-probleme-urinare",
 "pret_vechi": null,
 "verificat": "2026-11-05"
 },
@@ -22071,18 +22023,6 @@
 "verificat": "2026-11-05"
 },
 {
-"titlu": "Petline Hypoalergenic, hrana uscata superpremium pentru pisici adulte, sensibile, cu miel, 1.5 kg",
-"pret": 57.0,
-"imagine": "https://www.shop4pet.ro/image/catalog/PRODS/Caini/petline-hrana-caine-pisica/petline-hypoalergenic-hrana-uscata-pisici-sensibile-miel.png",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.shop4pet.ro%2Fpetline-hypoalergenic-hrana-uscata-pisici-sensibile-miel",
-"magazin": "shop4pet.ro",
-"id": "bFhMhwSZ7kV9",
-"brand": "Petline",
-"url_magazin": "https://www.shop4pet.ro/petline-hypoalergenic-hrana-uscata-pisici-sensibile-miel",
-"pret_vechi": null,
-"verificat": "2026-11-05"
-},
-{
 "titlu": "Petline Anchovy hrana uscata superpremium pentru pisici adulte, cu peste, 1.5 kg",
 "pret": 57.0,
 "imagine": "https://www.shop4pet.ro/image/catalog/PRODS/Caini/petline-hrana-caine-pisica/petline-ancovy-hrana-pisici-adulte-peste.png",
@@ -22091,6 +22031,30 @@
 "id": "slEXf2oCoFu6",
 "brand": "Petline",
 "url_magazin": "https://www.shop4pet.ro/petline-hrana-uscata-pisici-adulte-peste",
+"pret_vechi": null,
+"verificat": "2026-11-05"
+},
+{
+"titlu": "Petline Urinary, hrana uscata superpremium pentru pisici cu probleme urinare, cu pui, 1.5 kg",
+"pret": 57.0,
+"imagine": "https://www.shop4pet.ro/image/catalog/PRODS/Caini/petline-hrana-caine-pisica/petline-urinary-hrana-probleme-sistem-urinar-pisica.png",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.shop4pet.ro%2Fpetline-hrana-uscata-pisici-probleme-urinare",
+"magazin": "shop4pet.ro",
+"id": "QmjQqNI38D72",
+"brand": "Petline",
+"url_magazin": "https://www.shop4pet.ro/petline-hrana-uscata-pisici-probleme-urinare",
+"pret_vechi": null,
+"verificat": "2026-11-05"
+},
+{
+"titlu": "Petline Hypoalergenic, hrana uscata superpremium pentru pisici adulte, sensibile, cu miel, 1.5 kg",
+"pret": 57.0,
+"imagine": "https://www.shop4pet.ro/image/catalog/PRODS/Caini/petline-hrana-caine-pisica/petline-hypoalergenic-hrana-uscata-pisici-sensibile-miel.png",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.shop4pet.ro%2Fpetline-hypoalergenic-hrana-uscata-pisici-sensibile-miel",
+"magazin": "shop4pet.ro",
+"id": "bFhMhwSZ7kV9",
+"brand": "Petline",
+"url_magazin": "https://www.shop4pet.ro/petline-hypoalergenic-hrana-uscata-pisici-sensibile-miel",
 "pret_vechi": null,
 "verificat": "2026-11-05"
 },
@@ -22107,6 +22071,18 @@
 "verificat": "2026-11-05"
 },
 {
+"titlu": "Hrana uscata pentru pisici adulte, Peritas Signature, cu pui, 2 kg",
+"pret": 69.0,
+"imagine": "https://www.shop4pet.ro/image/catalog/PRODS/Pisici/peritas-signature-hrana-pisici-caini/peritas-signature-hrana-pisica-adult-pui.png",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.shop4pet.ro%2Fperitas-signature-hrana-uscata-pisici-adulte-pui-2",
+"magazin": "shop4pet.ro",
+"id": "cIG3XrobROB-",
+"brand": "Peritas Signature",
+"url_magazin": "https://www.shop4pet.ro/peritas-signature-hrana-uscata-pisici-adulte-pui-2",
+"pret_vechi": null,
+"verificat": "2026-11-12"
+},
+{
 "titlu": "Hrana uscata pentru pisici, junior, Peritas Signature, cu pui, 2 kg",
 "pret": 69.0,
 "imagine": "https://www.shop4pet.ro/image/catalog/PRODS/Pisici/peritas-signature-hrana-pisici-caini/hrana-uscata-pisici-junior-signature-pui.png",
@@ -22115,18 +22091,6 @@
 "id": "51SyU8zfDT-b",
 "brand": "Peritas Signature",
 "url_magazin": "https://www.shop4pet.ro/hrana-uscata-pisici-junior-signature-pui-2",
-"pret_vechi": null,
-"verificat": "2026-11-05"
-},
-{
-"titlu": "Hrana uscata pentru pisici sterilizate, Peritas Signature, cu pui, 2 kg",
-"pret": 69.0,
-"imagine": "https://www.shop4pet.ro/image/catalog/PRODS/Pisici/peritas-signature-hrana-pisici-caini/mancare-pisici-sterilizate-signature-peritas-pui.png",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.shop4pet.ro%2Fmancare-pisici-sterilizate-signature-peritas-pui-2",
-"magazin": "shop4pet.ro",
-"id": "HJXQtIiKCPUC",
-"brand": "Peritas Signature",
-"url_magazin": "https://www.shop4pet.ro/mancare-pisici-sterilizate-signature-peritas-pui-2",
 "pret_vechi": null,
 "verificat": "2026-11-05"
 },
@@ -22191,28 +22155,16 @@
 "verificat": "2026-11-05"
 },
 {
-"titlu": "HAPPY CAT Sensitive Light hrana uscata pentru pisici adulte cu sistem digestiv sensibil 4 kg",
-"pret": 122.7,
-"imagine": "https://fera.ro/images/thumbnails/405/512/detailed/134/4001967141023.png",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Ffera.ro%2Fhappy-cat-sensitive-light-hrana-uscata-pentru-pisici-adulte-cu-sistem-digestiv-sensibil-4-kg.html",
+"titlu": "HAPPY CAT Indoor hrana uscata pisici adulte de interior, vita bavareza 4 kg",
+"pret": 104.95,
+"imagine": "https://fera.ro/images/thumbnails/405/512/detailed/134/4001967140835.png",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Ffera.ro%2Fhappy-cat-indoor-hrana-uscata-pisici-adulte-de-interior-vita-bavareza-4-kg.html",
 "magazin": "fera.ro",
-"id": "PcrPQCEudEod",
+"id": "9VuPIlYf1BH1",
 "brand": "HAPPY CAT",
-"url_magazin": "https://fera.ro/happy-cat-sensitive-light-hrana-uscata-pentru-pisici-adulte-cu-sistem-digestiv-sensibil-4-kg.html",
+"url_magazin": "https://fera.ro/happy-cat-indoor-hrana-uscata-pisici-adulte-de-interior-vita-bavareza-4-kg.html",
 "pret_vechi": null,
-"verificat": "2026-11-05"
-},
-{
-"titlu": "HAPPY CAT Culinary hrana uscata pisici adulte, vita bavareza 4 kg",
-"pret": 136.99,
-"imagine": "https://fera.ro/images/thumbnails/405/512/detailed/134/4001967140293.png",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Ffera.ro%2Fhappy-cat-culinary-hrana-uscata-pisici-adulte-vita-bavareza-4-kg.html",
-"magazin": "fera.ro",
-"id": "o8Hmo8LxqUFU",
-"brand": "HAPPY CAT",
-"url_magazin": "https://fera.ro/happy-cat-culinary-hrana-uscata-pisici-adulte-vita-bavareza-4-kg.html",
-"pret_vechi": null,
-"verificat": "2026-11-05"
+"verificat": "2026-11-12"
 }
 ],
 "magazine": [
@@ -22228,7 +22180,7 @@
 "titlu": "Inele din argint",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-04",
+"actualizat": "2026-11-12",
 "feeduri": [
 {
 "id": 7045,
@@ -22587,8 +22539,25 @@
 "titlu": "Baterii externe de 10.000 mAh",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-04",
-"feeduri": [],
+"actualizat": "2026-11-12",
+"feeduri": [
+{
+"id": 1539,
+"magazin": "dwyn.ro"
+},
+{
+"id": 8937,
+"magazin": "dacris.net"
+},
+{
+"id": 1096,
+"magazin": "evomag.ro"
+},
+{
+"id": 5171,
+"magazin": "bazarulonline.ro"
+}
+],
 "produse": [
 {
 "titlu": "Baterie externa HAVIT PB89, 10000 mAh, 2x USB, 1x USB-C, 22.5 W (Alb)",
@@ -22596,16 +22565,10 @@
 "imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4292%2F4292532%2Fpb89-69e220618eb3b.jpg&type=auto&width=500&sign=PD7IGJ_27pzuLI-DodLe15cVdKN8JZmhqabcO3yWFlI",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Ftelefoane-tablete-accesorii-accesorii-telefoane-acumulatori-externi%2Fhavit-gamenote-baterie-externa-havit-pb89-10000-mah-2x-usb-1x-usb-c-22.5-w-alb-4292532.html",
 "magazin": "evomag.ro",
+"id": "8rhY4ZOIV5nG",
+"brand": "Havit",
 "url_magazin": "https://www.evomag.ro/telefoane-tablete-accesorii-accesorii-telefoane-acumulatori-externi/havit-gamenote-baterie-externa-havit-pb89-10000-mah-2x-usb-1x-usb-c-22.5-w-alb-4292532.html",
-"verificat": "2026-11-04"
-},
-{
-"titlu": "Baterie externa Borofone BJ79, 10000 mAh, 1x USB, 1x USB-C, 22.5 W, include cabluri integrate: 1 x USB Type-C, 1 x USB,",
-"pret": 56.99,
-"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4286%2F4286882%2Fpower-bank-borofone-bj79-10-69abe37fa3da2.jpg&type=auto&width=500&sign=66-bc1xqeU6Xl-HNkHr9h08I0C8UvLjBN9JTd2dWYo0",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Ftelefoane-tablete-accesorii-accesorii-telefoane-acumulatori-externi%2Fborofone-baterie-externa-borofone-bj79-10000-mah-1x-usb-1x-usb-c-22.5-w-include-cabluri-integrate-1-x-usb-type-c-1-x-usb-1-x-iphone-lightning-total-5v-2a-negru-4286882.html",
-"magazin": "evomag.ro",
-"url_magazin": "https://www.evomag.ro/telefoane-tablete-accesorii-accesorii-telefoane-acumulatori-externi/borofone-baterie-externa-borofone-bj79-10000-mah-1x-usb-1x-usb-c-22.5-w-include-cabluri-integrate-1-x-usb-type-c-1-x-usb-1-x-iphone-lightning-total-5v-2a-negru-4286882.html",
+"pret_vechi": null,
 "verificat": "2026-11-04"
 },
 {
@@ -22614,7 +22577,10 @@
 "imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4286%2F4286884%2Fpower-bank-borofone-bj80-10-69abe41a29a92.jpg&type=auto&width=500&sign=sKhnmnVsMBfPJNfXaPswjB_a49iEwrgxMxrUDurK5pg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Ftelefoane-tablete-accesorii-accesorii-telefoane-acumulatori-externi%2Fborofone-baterie-externa-borofone-bj80-10000-mah-2x-usb-1x-usb-c-22.5-w-negru-4286884.html",
 "magazin": "evomag.ro",
+"id": "xxDBQ2b17iZd",
+"brand": "Borofone",
 "url_magazin": "https://www.evomag.ro/telefoane-tablete-accesorii-accesorii-telefoane-acumulatori-externi/borofone-baterie-externa-borofone-bj80-10000-mah-2x-usb-1x-usb-c-22.5-w-negru-4286884.html",
+"pret_vechi": null,
 "verificat": "2026-11-04"
 },
 {
@@ -22623,16 +22589,10 @@
 "imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4311%2F4311212%2Fbaterie-externa-maxlife-mxpb-07-1-1768897886.jpeg&type=auto&width=500&sign=oMu2uL_bqe73ot_Dye9QaZ-itdGEpa0-oCDOkLLEugM",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Ftelefoane-tablete-accesorii-accesorii-telefoane-acumulatori-externi%2Fmaxlife-baterie-externa-maxlife-mxpb-07-10000mah-10w-2-x-usb-a-negru-4311212.html",
 "magazin": "evomag.ro",
+"id": "fxyS_KQcdJDc",
+"brand": "MaXlife",
 "url_magazin": "https://www.evomag.ro/telefoane-tablete-accesorii-accesorii-telefoane-acumulatori-externi/maxlife-baterie-externa-maxlife-mxpb-07-10000mah-10w-2-x-usb-a-negru-4311212.html",
-"verificat": "2026-11-04"
-},
-{
-"titlu": "Borofone Baterie Externa Borofone BJ79 Clever, 10000mAh, 10W, 1 x Lightning - 1 x USB-A - 1 x USB-C, Neagra",
-"pret": 64.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202512311121/374372/full/borofone-baterie-externa-borofone-bj79-clever-10000mah-10w-1-x-lightning-1-x-usb-a-1-x-usb-c-neagra-1072874.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fbaterii-powerbank%2Fborofone%2F374372-baterie-externa-borofone-bj79-clever-10000mah-10w-1-x-lightning-1-x-usb-a-1-x-usb-c-neagra%2F",
-"magazin": "dwyn.ro",
-"url_magazin": "https://www.dwyn.ro/baterii-powerbank/borofone/374372-baterie-externa-borofone-bj79-clever-10000mah-10w-1-x-lightning-1-x-usb-a-1-x-usb-c-neagra/",
+"pret_vechi": null,
 "verificat": "2026-11-04"
 },
 {
@@ -22641,7 +22601,10 @@
 "imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4292%2F4292533%2Fpb5215-69e2211fe7de4.jpg&type=auto&width=500&sign=W-uG50qmfL_FI6mHmRkdM5Qq_-tg6Mos1qgChbjbKTA",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Ftelefoane-tablete-accesorii-accesorii-telefoane-acumulatori-externi%2Fhavit-gamenote-baterie-externa-havit-pb5215-10000-mah-1x-lightning-2x-usb-c-20-w-display-cablu-usb-c-integrat-negru-4292533.html",
 "magazin": "evomag.ro",
+"id": "rGGQ55HUIY8P",
+"brand": "Havit",
 "url_magazin": "https://www.evomag.ro/telefoane-tablete-accesorii-accesorii-telefoane-acumulatori-externi/havit-gamenote-baterie-externa-havit-pb5215-10000-mah-1x-lightning-2x-usb-c-20-w-display-cablu-usb-c-integrat-negru-4292533.html",
+"pret_vechi": null,
 "verificat": "2026-11-04"
 },
 {
@@ -22650,7 +22613,10 @@
 "imagine": "https://www.dwyn.ro/images/products/img_202512311121/393163/full/adata-power-bank-usb-10000mah-white-pc100-14wh-adata-1207900.jpg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fbaterii-powerbank%2Fadata%2F393163-baterie-externa-adata-pc100-14wh-10000mah-magnetic-20w-alb%2F",
 "magazin": "dwyn.ro",
+"id": "8AK4L99Ognaf",
+"brand": "Adata",
 "url_magazin": "https://www.dwyn.ro/baterii-powerbank/adata/393163-baterie-externa-adata-pc100-14wh-10000mah-magnetic-20w-alb/",
+"pret_vechi": null,
 "verificat": "2026-11-04"
 },
 {
@@ -22659,7 +22625,10 @@
 "imagine": "https://www.dwyn.ro/images/products/img_202512311121/393166/full/adata-power-bank-usb-10000mah-black-pc100-14bk-adata-1207903.jpg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fbaterii-powerbank%2Fadata%2F393166-baterie-externa-adata-pc100-14bk-10000mah-magnetic-20w-negru%2F",
 "magazin": "dwyn.ro",
+"id": "6XM58Ak_53Uk",
+"brand": "Adata",
 "url_magazin": "https://www.dwyn.ro/baterii-powerbank/adata/393166-baterie-externa-adata-pc100-14bk-10000mah-magnetic-20w-negru/",
+"pret_vechi": null,
 "verificat": "2026-11-04"
 },
 {
@@ -22668,7 +22637,10 @@
 "imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4308%2F4308012%2Fbaterie-externa-xo-design-1-1783421480.png&type=auto&width=500&sign=uqVSayHbyxDd6BdK2nUDqPh5fBC9Bsm_TXNdb2wTQwc",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Ftelefoane-tablete-accesorii-accesorii-telefoane-acumulatori-externi%2Fxo-baterie-externa-xo-design-pb308-10000mah-22.5w-qc-pd-1-x-usb-a-1-x-usb-c-negru-4308012.html",
 "magazin": "evomag.ro",
+"id": "a-r_3GbJV6M6",
+"brand": "XO",
 "url_magazin": "https://www.evomag.ro/telefoane-tablete-accesorii-accesorii-telefoane-acumulatori-externi/xo-baterie-externa-xo-design-pb308-10000mah-22.5w-qc-pd-1-x-usb-a-1-x-usb-c-negru-4308012.html",
+"pret_vechi": null,
 "verificat": "2026-11-04"
 },
 {
@@ -22677,7 +22649,10 @@
 "imagine": "https://www.dwyn.ro/images/products/img_202606122129/477673/full/xo-design-baterie-externa-xo-design-pb312-10000mah-10w-2-x-usb-a-neagra-1495939.png",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fbaterii-powerbank%2Fxo-design%2F477673-baterie-externa-xo-design-pb312-10000mah-10w-2-x-usb-a-neagra%2F",
 "magazin": "dwyn.ro",
+"id": "TB-TsCXa2nmM",
+"brand": "XO&nbsp;Design",
 "url_magazin": "https://www.dwyn.ro/baterii-powerbank/xo-design/477673-baterie-externa-xo-design-pb312-10000mah-10w-2-x-usb-a-neagra/",
+"pret_vechi": null,
 "verificat": "2026-11-04"
 },
 {
@@ -22686,7 +22661,10 @@
 "imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4286%2F4286883%2Fpower-bank-borofone-bj80-10-69abe3cfaff88.jpg&type=auto&width=500&sign=1wg7LOK-5VI2bJF6vQE0w6mRy5bNlHG8C8P7yNjrq3A",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Ftelefoane-tablete-accesorii-accesorii-telefoane-acumulatori-externi%2Fborofone-baterie-externa-borofone-bj80-10000-mah-2x-usb-1x-usb-c-22.5-w-alb-4286883.html",
 "magazin": "evomag.ro",
+"id": "IcnoAr497618",
+"brand": "Borofone",
 "url_magazin": "https://www.evomag.ro/telefoane-tablete-accesorii-accesorii-telefoane-acumulatori-externi/borofone-baterie-externa-borofone-bj80-10000-mah-2x-usb-1x-usb-c-22.5-w-alb-4286883.html",
+"pret_vechi": null,
 "verificat": "2026-11-04"
 },
 {
@@ -22695,7 +22673,10 @@
 "imagine": "https://www.dwyn.ro/images/products/img_202512311121/393169/full/aukey-power-bank-usb-10000mah-pb-y55-white-aukey-1207906.jpg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fbaterii-powerbank%2Faukey%2F393169-baterie-externa-aukey-pb-y55-white-10000-mah-22-5w-alb%2F",
 "magazin": "dwyn.ro",
+"id": "7xhsJK_ALQzy",
+"brand": "AUKEY",
 "url_magazin": "https://www.dwyn.ro/baterii-powerbank/aukey/393169-baterie-externa-aukey-pb-y55-white-10000-mah-22-5w-alb/",
+"pret_vechi": null,
 "verificat": "2026-11-04"
 },
 {
@@ -22704,7 +22685,10 @@
 "imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4300%2F4300483%2F6a215e8db86a4.jpg&type=auto&width=500&sign=vyvClXaoV6x29p6zQg-ffoDlyzhr2a0I3UFNrvcpVnw",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Ftelefoane-tablete-accesorii-accesorii-telefoane-acumulatori-externi%2Fjoyroom-baterie-externa-portabila-joyroom-jr-qp191-mini-10000-mah-led-22.5w-2x-usb-c-1x-usb-a-alb-4300483.html",
 "magazin": "evomag.ro",
+"id": "wlViQ0znzlr9",
+"brand": "Joyroom",
 "url_magazin": "https://www.evomag.ro/telefoane-tablete-accesorii-accesorii-telefoane-acumulatori-externi/joyroom-baterie-externa-portabila-joyroom-jr-qp191-mini-10000-mah-led-22.5w-2x-usb-c-1x-usb-a-alb-4300483.html",
+"pret_vechi": null,
 "verificat": "2026-11-04"
 },
 {
@@ -22713,7 +22697,10 @@
 "imagine": "https://www.dwyn.ro/images/products/img_202606122129/477766/full/xo-design-baterie-externa-xo-design-pb308-10000mah-22-5w-qc-plus-pd-1-x-usb-a-1-x-usb-c-neagra-1496032.png",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fbaterii-powerbank%2Fxo-design%2F477766-baterie-externa-xo-design-pb308-10000mah-22-5w-qc-plus-pd-1-x-usb-a-1-x-usb-c-neagra%2F",
 "magazin": "dwyn.ro",
+"id": "yZvInf6awygl",
+"brand": "XO&nbsp;Design",
 "url_magazin": "https://www.dwyn.ro/baterii-powerbank/xo-design/477766-baterie-externa-xo-design-pb308-10000mah-22-5w-qc-plus-pd-1-x-usb-a-1-x-usb-c-neagra/",
+"pret_vechi": null,
 "verificat": "2026-11-04"
 },
 {
@@ -22722,7 +22709,10 @@
 "imagine": "https://www.dwyn.ro/images/products/img_202404261115/265077/full/hoco-baterie-externa-hoco-j101-10000mah-22-5w-qc-plus-pd-1-x-usb-c-2-x-usb-a-alba-575203.jpg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fbaterii-powerbank%2Fhoco%2F265077-baterie-externa-hoco-j101-10000mah-22-5w-qc-plus-pd-1-x-usb-c-2-x-usb-a-alba%2F",
 "magazin": "dwyn.ro",
+"id": "ZweltScW2aMT",
+"brand": "HOCO",
 "url_magazin": "https://www.dwyn.ro/baterii-powerbank/hoco/265077-baterie-externa-hoco-j101-10000mah-22-5w-qc-plus-pd-1-x-usb-c-2-x-usb-a-alba/",
+"pret_vechi": null,
 "verificat": "2026-11-04"
 },
 {
@@ -22731,7 +22721,10 @@
 "imagine": "https://www.dwyn.ro/images/products/img_202606122129/477733/full/joyroom-baterie-externa-joyroom-jr-pbf12-pro-10000mah-22-5w-qc-plus-pd-1-x-usb-c-2-x-usb-a-neagra-1495999.png",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fbaterii-powerbank%2Fjoyroom%2F477733-baterie-externa-joyroom-jr-pbf12-pro-10000mah-22-5w-qc-plus-pd-1-x-usb-c-2-x-usb-a-neagra%2F",
 "magazin": "dwyn.ro",
+"id": "0pdbzYWnujmr",
+"brand": "JOYROOM",
 "url_magazin": "https://www.dwyn.ro/baterii-powerbank/joyroom/477733-baterie-externa-joyroom-jr-pbf12-pro-10000mah-22-5w-qc-plus-pd-1-x-usb-c-2-x-usb-a-neagra/",
+"pret_vechi": null,
 "verificat": "2026-11-04"
 }
 ],

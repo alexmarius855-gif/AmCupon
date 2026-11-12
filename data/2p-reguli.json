@@ -1,5 +1,5 @@
 {
-"actualizat": "2026-11-11",
+"actualizat": "2026-11-12",
 "magazine": {
 "10qaroma.ro": {
 "cupoane": "yes",
@@ -236,11 +236,6 @@
 "google_ads": "yes",
 "cashback": "yes"
 },
-"baby24.ro": {
-"cupoane": "yes",
-"google_ads": "yes",
-"cashback": "yes"
-},
 "babyneeds.ro": {
 "cupoane": "yes",
 "google_ads": "no",
@@ -428,6 +423,11 @@
 },
 "cartepedia.ro": {
 "cupoane": "maybe",
+"google_ads": "yes",
+"cashback": "yes"
+},
+"cartigeniale.ro": {
+"cupoane": "yes",
 "google_ads": "yes",
 "cashback": "yes"
 },
@@ -967,11 +967,6 @@
 "cashback": "yes"
 },
 "geekmall.ro": {
-"cupoane": "yes",
-"google_ads": "yes",
-"cashback": "yes"
-},
-"giftdesign.ro": {
 "cupoane": "yes",
 "google_ads": "yes",
 "cashback": "yes"
@@ -1563,7 +1558,7 @@
 },
 "mobilstore.ro": {
 "cupoane": "maybe",
-"google_ads": "no",
+"google_ads": "maybe",
 "cashback": "maybe"
 },
 "mobiro.ro": {
@@ -1583,11 +1578,6 @@
 },
 "mxenduro.ro": {
 "cupoane": "yes",
-"google_ads": "yes",
-"cashback": "yes"
-},
-"myown.ro": {
-"cupoane": "no",
 "google_ads": "yes",
 "cashback": "yes"
 },
@@ -1679,11 +1669,6 @@
 "notino.ro": {
 "cupoane": "yes",
 "google_ads": "no",
-"cashback": "yes"
-},
-"novambient.ro": {
-"cupoane": "yes",
-"google_ads": "yes",
 "cashback": "yes"
 },
 "novvu.ro": {
@@ -2232,6 +2217,11 @@
 "cashback": "maybe"
 },
 "synergytherm.com": {
+"cupoane": "yes",
+"google_ads": "yes",
+"cashback": "yes"
+},
+"talis.ro": {
 "cupoane": "yes",
 "google_ads": "yes",
 "cashback": "yes"

@@ -46,6 +46,21 @@
    "neschimbate": 3651,
    "scumpite_in_luna_dinainte": 219,
    "pct_scumpite_in_luna_dinainte": 5.6
+  },
+  "2026-11-12": {
+   "zi": "2026-11-12",
+   "produse_urmarite": 4026,
+   "excluse": 8,
+   "ieftinite": 236,
+   "reale": 215,
+   "nu_sub_minim": 21,
+   "pct_reale_din_ieftinite": 91.1,
+   "mediana_reducere_reala_pct": 14.9,
+   "mediana_reducere_aparenta_pct": 13.9,
+   "scumpite": 153,
+   "neschimbate": 3637,
+   "scumpite_in_luna_dinainte": 221,
+   "pct_scumpite_in_luna_dinainte": 5.5
   }
  }
 }

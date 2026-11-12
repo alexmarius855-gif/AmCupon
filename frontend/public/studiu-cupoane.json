@@ -1,18 +1,18 @@
 {
-  "generat": "2026-11-11",
+  "generat": "2026-11-12",
   "total_magazine": 420,
-  "cu_promotie": 89,
+  "cu_promotie": 91,
   "cu_cod_real": 18,
-  "doar_oferta": 71,
-  "procent_cu_promotie": 21.2,
+  "doar_oferta": 73,
+  "procent_cu_promotie": 21.7,
   "procent_cu_cod": 4.3,
-  "reducere_mediana_generala": 50,
-  "magazine_cu_procent_declarat": 63,
+  "reducere_mediana_generala": 45.0,
+  "magazine_cu_procent_declarat": 64,
   "categorii": [
     {
       "slug": "carti-educatie",
       "nume": "Cărți & educație",
-      "magazine": 21,
+      "magazine": 22,
       "cu_promotie": 9,
       "reducere_mediana": 80,
       "reducere_max": 90,
@@ -21,19 +21,10 @@
     {
       "slug": "copii",
       "nume": "Copii & familie",
-      "magazine": 23,
+      "magazine": 22,
       "cu_promotie": 5,
       "reducere_mediana": 66,
       "reducere_max": 70,
-      "esantion": 3
-    },
-    {
-      "slug": "cadouri-flori",
-      "nume": "Cadouri & flori",
-      "magazine": 10,
-      "cu_promotie": 4,
-      "reducere_mediana": 60,
-      "reducere_max": 75,
       "esantion": 3
     },
     {
@@ -67,16 +58,16 @@
       "slug": "casa-gradina",
       "nume": "Casă & grădină",
       "magazine": 94,
-      "cu_promotie": 20,
-      "reducere_mediana": 45.0,
+      "cu_promotie": 21,
+      "reducere_mediana": 40,
       "reducere_max": 80,
-      "esantion": 12
+      "esantion": 13
     },
     {
       "slug": "sanatate",
       "nume": "Sănătate & farmacie",
       "magazine": 38,
-      "cu_promotie": 11,
+      "cu_promotie": 12,
       "reducere_mediana": 25,
       "reducere_max": 70,
       "esantion": 7
@@ -103,6 +94,15 @@
       "slug": "auto-moto",
       "nume": "Auto & moto",
       "magazine": 22,
+      "cu_promotie": 3,
+      "reducere_mediana": null,
+      "reducere_max": null,
+      "esantion": 2
+    },
+    {
+      "slug": "cadouri-flori",
+      "nume": "Cadouri & flori",
+      "magazine": 9,
       "cu_promotie": 3,
       "reducere_mediana": null,
       "reducere_max": null,
@@ -152,13 +152,22 @@
       "reducere_mediana": null,
       "reducere_max": null,
       "esantion": 0
+    },
+    {
+      "slug": "babies-kids-toys",
+      "nume": "babies-kids-toys",
+      "magazine": 1,
+      "cu_promotie": 1,
+      "reducere_mediana": null,
+      "reducere_max": null,
+      "esantion": 1
     }
   ],
   "criteriu": "domeniu .ro",
   "international": {
     "total": 500,
-    "cu_promotie": 66,
-    "cu_cod": 42
+    "cu_promotie": 69,
+    "cu_cod": 45
   },
   "retele": [
     "2Performant",
@@ -247,8 +256,8 @@
           "promotii": 10
         },
         {
-          "slug": "cadouri-flori",
-          "nume": "Cadouri & flori",
+          "slug": "electronice",
+          "nume": "Electronice & IT",
           "promotii": 8
         }
       ]

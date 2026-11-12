@@ -100,11 +100,6 @@
   "destinatie": "/categorii/home-garden"
  },
  {
-  "magazin": "myown.ro",
-  "categorie_slug": "fashion",
-  "destinatie": "/categorii/fashion"
- },
- {
   "magazin": "pensulemachiaj.ro",
   "categorie_slug": "beauty",
   "destinatie": "/categorii/beauty"
