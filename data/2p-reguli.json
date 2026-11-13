@@ -71,6 +71,11 @@
 "google_ads": "yes",
 "cashback": "yes"
 },
+"aidaune.ro": {
+"cupoane": "yes",
+"google_ads": "yes",
+"cashback": "yes"
+},
 "air7.ro": {
 "cupoane": "yes",
 "google_ads": "yes",
@@ -651,6 +656,11 @@
 "google_ads": "yes",
 "cashback": "yes"
 },
+"dogpro.ro": {
+"cupoane": "yes",
+"google_ads": "yes",
+"cashback": "yes"
+},
 "drawdetailing.ro": {
 "cupoane": "yes",
 "google_ads": "yes",
@@ -892,11 +902,6 @@
 "cashback": "yes"
 },
 "fermier.ro": {
-"cupoane": "yes",
-"google_ads": "yes",
-"cashback": "yes"
-},
-"feydom.ro": {
 "cupoane": "yes",
 "google_ads": "yes",
 "cashback": "yes"
@@ -1352,11 +1357,6 @@
 "cashback": "no"
 },
 "librarie.net": {
-"cupoane": "yes",
-"google_ads": "yes",
-"cashback": "yes"
-},
-"librex.ro": {
 "cupoane": "yes",
 "google_ads": "yes",
 "cashback": "yes"

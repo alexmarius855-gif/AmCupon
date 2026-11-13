@@ -596,7 +596,7 @@
    "magazine": 157
   },
   "2026-11-13": {
-   "promotii": 274,
+   "promotii": 275,
    "magazine": 160
   }
  },
@@ -8667,6 +8667,15 @@
    }
   ],
   "ozone.ro": [
+   {
+    "k": "blackfridaytbi|",
+    "titlu": "Black Friday TBI",
+    "cod": false,
+    "prima": "2026-11-13",
+    "ultima": "2026-11-13",
+    "expira": "2026-11-30",
+    "activa": true
+   },
    {
     "k": "blackfriday|",
     "titlu": "BLACK FRIDAY",
