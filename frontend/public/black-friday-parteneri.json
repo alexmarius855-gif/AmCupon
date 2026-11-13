@@ -10,7 +10,7 @@
   {
    "slug": "fashion",
    "nume": "haine și încălțăminte",
-   "campanii": 14
+   "campanii": 15
   },
   {
    "slug": "beauty",
@@ -1133,6 +1133,16 @@
    "descriere": "Casa curata incepe cu reduceri mari! Intre 13 si 15 noiembrie 2026, descopera reduceri de 25–50% la peste 1.000 de produse din campania Black Friday PAA-home. Alege filtre, saci, perii si accesorii pentru aspiratoare clasice, verticale si robot, accesorii pentru purificatoare de aer si produse de curatenie. Ofertele sunt valabile din 13 noiembrie, ora 00:00, pana pe 15 noiembrie, ora 23:59. Preturile reduse se afiseaza automat pe site, fara cod.",
    "are_cod": false,
    "categorie": "casa-gradina"
+  },
+  {
+   "magazin": "ietraditionala.com",
+   "nume": "Ietraditionala",
+   "start": "2026-11-14",
+   "final": "2026-11-30",
+   "nota": "A început campania de 1 Decembrie!",
+   "descriere": "Prețuri mai mici decât de Black Friday la majoritatea produselor Reducere aplicată direct, fără cod ⏰ Doar până pe 1 decembrie, ora 23:59 Comandă până pe 25 noiembrie, ora 12:00, ca să ajungă înainte de 1 Decembrie",
+   "are_cod": false,
+   "categorie": "fashion"
   },
   {
    "magazin": "doctorshield.ro",

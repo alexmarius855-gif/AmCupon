@@ -3465,7 +3465,7 @@
 "titlu": "Televizoare OLED",
 "nota": null,
 "in_text": "\\bOLED\\b",
-"actualizat": "2026-11-05",
+"actualizat": "2026-11-13",
 "feeduri": [
 {
 "id": 1539,
@@ -3496,18 +3496,6 @@
 "url_magazin": "https://www.evomag.ro/tv-multimedia-televizoare/metz-televizor-oled-metz-139-cm-55-55moc9010-ultra-hd-4k-smart-tv-wifi-ci-4215349.html",
 "pret_vechi": null,
 "verificat": "2026-11-05"
-},
-{
-"titlu": "Televizor smart Hisense - 55A85Q, 55'', 4K, OLED Premium, Anti‑Reflection PRO, 120Hz Ultra Motion AI, support PS5/Xbox,",
-"pret": 3603.99,
-"imagine": "https://www.ozone.ro/media/catalog/product/s/m/smart_televizor_hisense_55a85q_55_4k_oled_premium_anti_reflection_pro_120hz_ultra_motion_ai_support__1791964149_9.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ozone.ro%2Fproduct%2Ftelevizor-smart-hisense-a85q-55-oled-4k-uhd-negru%2F",
-"magazin": "ozone.ro",
-"id": "fPl47U0p7Ov4",
-"brand": "Hisense",
-"url_magazin": "https://www.ozone.ro/product/televizor-smart-hisense-a85q-55-oled-4k-uhd-negru/",
-"pret_vechi": null,
-"verificat": "2026-11-04"
 },
 {
 "titlu": "Televizor smart LG - OLED42C61LA, 42'', 4K, OLED evo, Alpha 11 AI 4K Gen3, 120Hz (up to 165Hz VRR), negru",
@@ -3542,19 +3530,7 @@
 "id": "o6d3AN2rN5no",
 "brand": "LG",
 "url_magazin": "https://www.evomag.ro/tv-multimedia-televizoare/lg-televizor-oled-lg-106-cm-42-oled42c61la-ultra-hd-4k-smart-tv-wifi-ci-4316085.html",
-"pret_vechi": 5442.99,
-"verificat": "2026-11-05"
-},
-{
-"titlu": "Televizor OLED Samsung 106 cm (42inch) QE42S90HAEXXH, Ultra HD 4K, Smart TV, WiFi, CI+",
-"pret": 5199.99,
-"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4319%2F4319139%2Fsamsung-qe42s90hae-1067-cm-4-6acdb5968c176.JPG&type=auto&width=500&sign=OQtVh8lmRDMw2q0GRYJahaVhhu6yOT-3igvgioCBF_A",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Ftv-multimedia-televizoare%2Fsamsung-televizor-oled-samsung-106-cm-42-qe42s90haexxh-ultra-hd-4k-smart-tv-wifi-ci-4319139.html",
-"magazin": "evomag.ro",
-"id": "hHn7cY_QUOb5",
-"brand": "Samsung",
-"url_magazin": "https://www.evomag.ro/tv-multimedia-televizoare/samsung-televizor-oled-samsung-106-cm-42-qe42s90haexxh-ultra-hd-4k-smart-tv-wifi-ci-4319139.html",
-"pret_vechi": 5999.99,
+"pret_vechi": 5468.99,
 "verificat": "2026-11-05"
 },
 {
@@ -3566,31 +3542,7 @@
 "id": "Xd9HtjvEiDDb",
 "brand": "Samsung",
 "url_magazin": "https://www.evomag.ro/tv-multimedia-televizoare/samsung-televizor-oled-samsung-122-cm-48-qe48s90haexxh-ultra-hd-4k-smart-tv-wifi-4316391.html",
-"pret_vechi": 5599.99,
-"verificat": "2026-11-05"
-},
-{
-"titlu": "Samsung Televizor SAMSUNG OLED 48S85H, 120 cm, Smart, 4K Ultra HD, 120 Hz, Clasa G (Model 2026)",
-"pret": 5227.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202606122129/455341/full/samsung-televizor-samsung-oled-48s85h-120-cm-smart-4k-ultra-hd-120-hz-clasa-g-model-2026-1453087.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Ftelevizoare%2Fsamsung%2F455341-televizor-samsung-oled-48s85h-120-cm-smart-4k-ultra-hd-120-hz-clasa-g-model-2026%2F",
-"magazin": "dwyn.ro",
-"id": "Uezw_0Ze9FZx",
-"brand": "Samsung",
-"url_magazin": "https://www.dwyn.ro/televizoare/samsung/455341-televizor-samsung-oled-48s85h-120-cm-smart-4k-ultra-hd-120-hz-clasa-g-model-2026/",
-"pret_vechi": null,
-"verificat": "2026-11-04"
-},
-{
-"titlu": "Televizor OLED Samsung 139 cm (55inch) QE55S90FA, Ultra HD 4K, Vision AI, Smart TV, WiFi, CI+",
-"pret": 5231.99,
-"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4224%2F4224402%2Ftv-samsung-qe55s90fa-6836fb924c607.JPG&type=auto&width=500&sign=1DffWniFRVeVEsNw2PRJpUL1HWzEeg7Yrq3T-OMlwhQ",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Ftv-multimedia-televizoare%2Fsamsung-televizor-oled-samsung-139-cm-55-qe55s90fa-ultra-hd-4k-vision-ai-smart-tv-wifi-ci-4224402.html",
-"magazin": "evomag.ro",
-"id": "mMc7cuHdTE9c",
-"brand": "Samsung",
-"url_magazin": "https://www.evomag.ro/tv-multimedia-televizoare/samsung-televizor-oled-samsung-139-cm-55-qe55s90fa-ultra-hd-4k-vision-ai-smart-tv-wifi-ci-4224402.html",
-"pret_vechi": null,
+"pret_vechi": 5641.99,
 "verificat": "2026-11-05"
 },
 {
@@ -3606,30 +3558,6 @@
 "verificat": "2026-11-05"
 },
 {
-"titlu": "Televizor smart LG - OLED48G63LS, 48'', OLED evo, 4K, 165Hz, negru",
-"pret": 5569.99,
-"imagine": "https://www.ozone.ro/media/catalog/product/s/m/smart_televizor_lg_oled48g63ls_oled_evo_48_4k_165hz_cheren_1789566689_0.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ozone.ro%2Fproduct%2Ftelevizor-smart-lg-oled48g63ls-48-oled-evo-4k-165hz-negru%2F",
-"magazin": "ozone.ro",
-"id": "f9djCLhHKFHn",
-"brand": "LG",
-"url_magazin": "https://www.ozone.ro/product/televizor-smart-lg-oled48g63ls-48-oled-evo-4k-165hz-negru/",
-"pret_vechi": null,
-"verificat": "2026-11-04"
-},
-{
-"titlu": "Televizor OLED Samsung 139 cm (55inch) QE55S90HAEXXH, Ultra HD 4K, Smart TV, WiFi, CI+",
-"pret": 5833.99,
-"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4316%2F4316787%2Fsamsung-qe55s90hae-1397-cm-5-6ab37ca3f0a0d.JPG&type=auto&width=500&sign=a5JIn1IOof5h4Q7132_U4EbZxhR3zxYCbr0xHqpwNJY",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Ftv-multimedia-televizoare%2Fsamsung-televizor-oled-samsung-139-cm-55-qe55s90haexxh-ultra-hd-4k-smart-tv-wifi-ci-4316787.html",
-"magazin": "evomag.ro",
-"id": "lm7AW30mTS8n",
-"brand": "Samsung",
-"url_magazin": "https://www.evomag.ro/tv-multimedia-televizoare/samsung-televizor-oled-samsung-139-cm-55-qe55s90haexxh-ultra-hd-4k-smart-tv-wifi-ci-4316787.html",
-"pret_vechi": null,
-"verificat": "2026-11-05"
-},
-{
 "titlu": "Televizor smart LG - OLED55C61LA, 55\", OLED evo, 4K, up to 165Hz VRR/Native 120Hz, Alpha 11 AI 4K Gen3, NVIDIA G-SYNC, 4",
 "pret": 5839.99,
 "imagine": "https://www.ozone.ro/media/catalog/product/s/m/smart_televizor_lg_oled55c61la_55_oled_evo_4k_120hz_cheren_1782192171_0.jpg",
@@ -3638,7 +3566,7 @@
 "id": "Rf_1k895avV2",
 "brand": "LG",
 "url_magazin": "https://www.ozone.ro/product/televizor-smart-lg-oled55c61la-55-oled-evo-4k-120hz-negru/",
-"pret_vechi": null,
+"pret_vechi": 7959.99,
 "verificat": "2026-11-04"
 },
 {
@@ -3690,18 +3618,6 @@
 "verificat": "2026-11-04"
 },
 {
-"titlu": "Philips Televizor Philips AMBILIGHT tv OLED 42OLED811, 106 cm, Smart TV, Ultra HD 4K, 144Hz, Clasa G (Model 2026), Argin",
-"pret": 6934.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202606122129/482005/full/philips-televizor-philips-ambilight-tv-oled-42oled811-106-cm-smart-tv-ultra-hd-4k-144hz-clasa-g-model-2026-1520038.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Ftelevizoare%2Fphilips%2F482005-televizor-philips-ambilight-tv-oled-42oled811-106-cm-smart-tv-ultra-hd-4k-144hz-clasa-g-model-2026-argintiu%2F",
-"magazin": "dwyn.ro",
-"id": "TNpFMCCx-FPV",
-"brand": "Philips",
-"url_magazin": "https://www.dwyn.ro/televizoare/philips/482005-televizor-philips-ambilight-tv-oled-42oled811-106-cm-smart-tv-ultra-hd-4k-144hz-clasa-g-model-2026-argintiu/",
-"pret_vechi": null,
-"verificat": "2026-11-04"
-},
-{
 "titlu": "Televizor smart Sony - BRAVIA 6, 65\", OLED, 4K, 120Hz, Dolby Vision, HLG, Triluminos Pro™, 40W (RMS), Google TV, negru",
 "pret": 7689.99,
 "imagine": "https://www.ozone.ro/media/catalog/product/s/m/smart_televizor_sony_bravia_6_65_oled_4k_120hz_cheren_1788526582_0.jpg",
@@ -3728,7 +3644,7 @@
 "titlu": "Televizoare QLED",
 "nota": null,
 "in_text": "\\bQLED\\b",
-"actualizat": "2026-11-05",
+"actualizat": "2026-11-13",
 "feeduri": [
 {
 "id": 8969,
@@ -3801,20 +3717,8 @@
 "id": "iMag4Pwm69cd",
 "brand": "CHiQ",
 "url_magazin": "https://www.evomag.ro/tv-multimedia-televizoare/chiq-televizor-qled-chiq-80-cm-32-l32qm10v-full-hd-smart-tv-wifi-ci-4320724.html",
-"pret_vechi": 1290.99,
-"verificat": "2026-11-05"
-},
-{
-"titlu": "Televizor QLED Toshiba 80 cm (32inch) 32QV2F63DG, Full HD, Smart TV, WiFi, CI+",
-"pret": 1077.99,
-"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4221%2F4221663%2Ftelewizor-qled-32-cale-32qv2f6-68248946082a4.JPG&type=auto&width=500&sign=Sctnbm5Q8nMLfIIzliaFTzmCOl-H9_p6bR1CtTdErH8",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Ftv-multimedia-televizoare%2Ftoshiba-televizor-qled-toshiba-80-cm-32-32qv2f63dg-full-hd-smart-tv-wifi-ci-4221663.html",
-"magazin": "evomag.ro",
-"id": "mI5P0gg02zB6",
-"brand": "Toshiba",
-"url_magazin": "https://www.evomag.ro/tv-multimedia-televizoare/toshiba-televizor-qled-toshiba-80-cm-32-32qv2f63dg-full-hd-smart-tv-wifi-ci-4221663.html",
 "pret_vechi": null,
-"verificat": "2026-11-04"
+"verificat": "2026-11-05"
 },
 {
 "titlu": "Televizor QLED Sharp 80 cm (32inch) 32HF3865E, Full HD, Smart TV, WiFi",
@@ -3825,20 +3729,8 @@
 "id": "Fz4YK1JNHZEb",
 "brand": "Sharp",
 "url_magazin": "https://www.evomag.ro/tv-multimedia-televizoare/sharp-televizor-qled-sharp-80-cm-32-32hf3865e-full-hd-smart-tv-wifi-4319145.html",
-"pret_vechi": 1499.99,
-"verificat": "2026-11-05"
-},
-{
-"titlu": "TCL Televizor TCL QLED 40S5L, 100 cm, Smart Android TV, Full HD, Clasa F (Model 2026), Negru",
-"pret": 1149.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202606122129/478747/full/tcl-qled-tv-fhd-40-100-cm-tcl-40s5l-1509319.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Ftelevizoare%2Ftcl%2F478747-televizor-tcl-qled-40s5l-100-cm-smart-android-tv-full-hd-clasa-f-model-2026-negru%2F",
-"magazin": "dwyn.ro",
-"id": "NWmtP8cNKlIk",
-"brand": "TCL",
-"url_magazin": "https://www.dwyn.ro/televizoare/tcl/478747-televizor-tcl-qled-40s5l-100-cm-smart-android-tv-full-hd-clasa-f-model-2026-negru/",
 "pret_vechi": null,
-"verificat": "2026-11-04"
+"verificat": "2026-11-05"
 },
 {
 "titlu": "Toshiba Televizor QLED Toshiba 80 cm 32 32QV2F63DG, Full HD, Smart TV, WiFi, CI+",
@@ -3873,7 +3765,7 @@
 "id": "iltKkkboLoja",
 "brand": "Sharp",
 "url_magazin": "https://www.evomag.ro/tv-multimedia-televizoare/sharp-televizor-qled-sharp-101-cm-40-40hf3265e-full-hd-smart-tv-wifi-ci-4318034.html",
-"pret_vechi": 1781.99,
+"pret_vechi": null,
 "verificat": "2026-11-05"
 },
 {
@@ -3901,30 +3793,6 @@
 "verificat": "2026-11-04"
 },
 {
-"titlu": "COOCAA Televizor Coocaa QLED 40CGQH40Z, 100 cm, FHD, Smart TV, Negru",
-"pret": 1291.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202606122129/478768/full/coocaa-televizor-coocaa-qled-40cgqh40z-100-cm-fhd-smart-tv-negru-1508965.png",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Ftelevizoare%2Fcoocaa%2F478768-televizor-coocaa-qled-40cgqh40z-100-cm-fhd-smart-tv-negru%2F",
-"magazin": "dwyn.ro",
-"id": "n_V7_zGNBFsR",
-"brand": "COOCAA",
-"url_magazin": "https://www.dwyn.ro/televizoare/coocaa/478768-televizor-coocaa-qled-40cgqh40z-100-cm-fhd-smart-tv-negru/",
-"pret_vechi": null,
-"verificat": "2026-11-04"
-},
-{
-"titlu": "Televizor QLED TCL 109 cm (43inch) 43QLED780L, Ultra HD 4K, Smart TV, WiFi, CI",
-"pret": 1299.99,
-"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4317%2F4317174%2Foverlay_f4d690da46f8293c485c8ef28c779659.png&type=auto&width=500&sign=ucksngtbN19r8gd6gwFc-NZjbeRXSMrNXogEasLCy00",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Ftv-multimedia-televizoare%2Ftcl-televizor-qled-tcl-109-cm-43-43qled780l-ultra-hd-4k-smart-tv-wifi-ci-4317174.html",
-"magazin": "evomag.ro",
-"id": "DiiZ63F_a3rt",
-"brand": "TCL",
-"url_magazin": "https://www.evomag.ro/tv-multimedia-televizoare/tcl-televizor-qled-tcl-109-cm-43-43qled780l-ultra-hd-4k-smart-tv-wifi-ci-4317174.html",
-"pret_vechi": null,
-"verificat": "2026-11-04"
-},
-{
 "titlu": "Televizor QLED Coocaa 101 cm (40inch) 40CGQH40Z, Full HD, Smart TV, WiFi, CI",
 "pret": 1306.99,
 "imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4317%2F4317446%2Foverlay_dd8532a370245de45608d3f9b15b8225.png&type=auto&width=500&sign=9ThvYCo10vvt0qAjeKV6bbs_j4Lf-mkS_Gn4caVJRyA",
@@ -3935,18 +3803,6 @@
 "url_magazin": "https://www.evomag.ro/tv-multimedia-televizoare/coocaa-televizor-qled-coocaa-101-cm-40-40cgqh40z-full-hd-smart-tv-wifi-ci-4317446.html",
 "pret_vechi": null,
 "verificat": "2026-11-05"
-},
-{
-"titlu": "Televizor smart Philips - 40PQS6901/12, 40\", QLED, FHD, negru",
-"pret": 1321.99,
-"imagine": "https://www.ozone.ro/media/catalog/product/s/m/smart_televizor_philips_40pqs6901_12_40_qled_fhd_cheren_1787753013_0.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ozone.ro%2Fproduct%2Ftelevizor-smart-philips-40pqs6901-12-40-qled-fhd-negru%2F",
-"magazin": "ozone.ro",
-"id": "Hw0ToPH8B2GM",
-"brand": "Philips",
-"url_magazin": "https://www.ozone.ro/product/televizor-smart-philips-40pqs6901-12-40-qled-fhd-negru/",
-"pret_vechi": null,
-"verificat": "2026-11-04"
 },
 {
 "titlu": "Televizor QLED Sharp 80 cm (32inch) 32HF3265E, HD Ready, Smart TV, WiFi, CI+",
@@ -4023,7 +3879,7 @@
 "titlu": "Televizoare sub 2.000 lei",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-05",
+"actualizat": "2026-11-13",
 "feeduri": [
 {
 "id": 8969,
@@ -4035,18 +3891,6 @@
 }
 ],
 "produse": [
-{
-"titlu": "Televizor Tesla - 32E365BH, 32\", HD Ready, DLED, VA, 2x10W, Hotel Mode, negru",
-"pret": 472.35,
-"imagine": "https://www.ozone.ro/media/catalog/product/t/e/televizor_tesla_32e365bh_32_hd_ready_dled_va_cheren_1790676102_0.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ozone.ro%2Fproduct%2Ftelevizor-tesla-32e365bh-32-hd-ready-dled-va-negru%2F",
-"magazin": "ozone.ro",
-"id": "uFhUGIBRyyyZ",
-"brand": "Tesla",
-"url_magazin": "https://www.ozone.ro/product/televizor-tesla-32e365bh-32-hd-ready-dled-va-negru/",
-"pret_vechi": null,
-"verificat": "2026-11-04"
-},
 {
 "titlu": "Televizor Tesla - 40E365BF, 40\", DLED, 2K FHD, 2x10W box speakers, Hotel Mode, negru",
 "pret": 631.55,
@@ -4104,7 +3948,7 @@
 "id": "s6bLYcdiAdjN",
 "brand": "LG",
 "url_magazin": "https://www.ozone.ro/product/televizor-smart-lg-43nu850b3la-43-4k-uhd-negru/",
-"pret_vechi": 1586.99,
+"pret_vechi": null,
 "verificat": "2026-11-04"
 },
 {
@@ -4128,7 +3972,7 @@
 "id": "U4Q060qMFzBs",
 "brand": "TCL",
 "url_magazin": "https://infinity.ro/televizor-smart-tcl-32v4c-80-cm-hd-clasa-f-9020734/p?utm_source=2performant",
-"pret_vechi": 2082.34,
+"pret_vechi": 2083.61,
 "verificat": "2026-11-04"
 },
 {
@@ -4157,7 +4001,7 @@
 "titlu": "Espressoare automate",
 "nota": null,
 "in_text": "\\bautomat\\w*\\b",
-"actualizat": "2026-11-05",
+"actualizat": "2026-11-13",
 "feeduri": [
 {
 "id": 9051,
@@ -4190,6 +4034,18 @@
 "verificat": "2026-11-04"
 },
 {
+"titlu": "Espressor Automat BEKO CaffeExperto CEG7302B, 2l, 1350W, 19 Bar, 6 tipuri de bauturi, Sistem spumare lapte, Negru-Argint",
+"pret": 1599.0,
+"imagine": "https://gomagcdn.ro/domains3/brico.ro/files/product/original/espressor-automat-beko-caffeexperto-ceg7302b-2l-1350w-19-bar-negru-argintiu-186438.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.brico.ro%2Felectrocasnice-332%2Fespressor-automat-beko-caffeexperto-ceg7302b-2l-1350w-19-bar-negru-argintiu.html",
+"magazin": "brico.ro",
+"id": "8qJnLNYg1mwf",
+"brand": "BEKO",
+"url_magazin": "https://www.brico.ro/electrocasnice-332/espressor-automat-beko-caffeexperto-ceg7302b-2l-1350w-19-bar-negru-argintiu.html",
+"pret_vechi": 2267.0,
+"verificat": "2026-11-13"
+},
+{
 "titlu": "Espressor automat Krups My Coffee+ EA201BE0, 1690 W, 19 bari, 3 bauturi, rasnita metalica, 5 trepte macinare, rezervor a",
 "pret": 1629.0,
 "imagine": "https://gomagcdn.ro/domains3/brico.ro/files/product/original/espressor-automat-krups-my-coffee-ea201be0-1690-w-19-bari-3-bauturi-rasnita-metalica-5-trepte-macinare-rezervor-apa-1-5-l-duza-abur-panou-tac-226971.jpg",
@@ -4198,7 +4054,7 @@
 "id": "lHPpH8WfRkvI",
 "brand": "Krups",
 "url_magazin": "https://www.brico.ro/electrocasnice-332/espressor-automat-krups-my-coffee-ea201be0-1690-w-19-bari-3-bauturi-rasnita-metalica-5-trepte-macinare-rezervor-apa-1-5-l-duza-abur-panou-tac.html",
-"pret_vechi": null,
+"pret_vechi": 1710.45,
 "verificat": "2026-11-06"
 },
 {
@@ -4226,18 +4082,6 @@
 "verificat": "2026-11-04"
 },
 {
-"titlu": "Espressor automat Krups Sensation EA910A10, 5 retete, presiune 15 bari, 1450 W, Sistem Thermoblock Compact, negru argint",
-"pret": 1999.0,
-"imagine": "https://gomagcdn.ro/domains3/brico.ro/files/product/original/espressor-automat-krups-sensation-ea910a10-5-retete-presiune-15-bari-1450-w-sistem-thermoblock-compact-negru-argintiu-011253.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.brico.ro%2Felectrocasnice-332%2Fespressor-automat-krups-sensation-ea910a10-5-retete-presiune-15-bari-1450-w-sistem-thermoblock-compact-negru-argintiu.html",
-"magazin": "brico.ro",
-"id": "5ZK-fl9nCX1x",
-"brand": "Krups",
-"url_magazin": "https://www.brico.ro/electrocasnice-332/espressor-automat-krups-sensation-ea910a10-5-retete-presiune-15-bari-1450-w-sistem-thermoblock-compact-negru-argintiu.html",
-"pret_vechi": null,
-"verificat": "2026-11-04"
-},
-{
 "titlu": "Espressor automat Krups Sensation EA910B10, 1450W, 15 bari, 5 retete, ecran tactil, rezervor cafea 260g, duza de abur, S",
 "pret": 1999.0,
 "imagine": "https://gomagcdn.ro/domains3/brico.ro/files/product/original/espressor-automat-krups-sensation-ea910b10-1450w-15-bari-5-retete-ecran-tactil-rezervor-cafea-260g-duza-de-abur-sistem-thermoblock-compact-n-652608.jpg",
@@ -4250,18 +4094,6 @@
 "verificat": "2026-11-04"
 },
 {
-"titlu": "Espressor automat, GAGGIA Naviglio Black",
-"pret": 2000.0,
-"imagine": "https://cdn.shopify.com/s/files/1/0854/0350/0875/files/espressor-automat-gaggia-naviglio-black-7363458.jpg?v=1765392196",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fbaristelli.ro%2Fproducts%2Fespressor-automat-gaggia-naviglio-black%3Fvariant%3D52308590625099",
-"magazin": "baristelli.ro",
-"id": "pelhjR_YuL-C",
-"brand": "Gaggia",
-"url_magazin": "https://baristelli.ro/products/espressor-automat-gaggia-naviglio-black?variant=52308590625099",
-"pret_vechi": 2100.0,
-"verificat": "2026-11-04"
-},
-{
 "titlu": "Espressor automat Krups Picto Arabica EA811010, 1450W, 15 bari, 1.7L, rasnita 3 nivele, Negru",
 "pret": 2014.0,
 "imagine": "https://gomagcdn.ro/domains3/brico.ro/files/product/original/espressor-automat-krups-picto-arabica-ea811010-1450w-15-bari-1-7l-rasnita-3-nivele-negru-475190.jpg",
@@ -4270,44 +4102,20 @@
 "id": "c1GgFw14FmDY",
 "brand": "Krups",
 "url_magazin": "https://www.brico.ro/electrocasnice-332/espressor-automat-krups-picto-arabica-ea811010-1450w-15-bari-1-7l-rasnita-3-nivele-negru.html",
-"pret_vechi": null,
+"pret_vechi": 2114.7,
 "verificat": "2026-11-04"
 },
 {
-"titlu": "Espressor automat Delonghi ECAM220.22.GB, Magnifica Start, tip espressor automat, purete w 1450, presiune bar 15",
-"pret": 2020.0,
-"imagine": "https://gomagcdn.ro/domains3/brico.ro/files/product/original/espressor-automat-delonghi-ecam220-22-gb-magnifica-start-tip-espressor-automat-purete-w-1450-presiune-bar-15-679538.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.brico.ro%2Felectrocasnice-332%2Fespressor-automat-delonghi-ecam220-22-gb-magnifica-start-tip-espressor-automat-purete-w-1450-presiune-bar-15.html",
+"titlu": "Espressor automat Krups Evidence Eco Design EA8968E0, 1450W, 15 bari, 5 retete, 5 trepte rasnita, rezervor cafea 260g, r",
+"pret": 2098.95,
+"imagine": "https://gomagcdn.ro/domains3/brico.ro/files/product/original/espressor-automat-krups-evidence-eco-design-ea8968e0-1450w-15-bari-5-retete-5-trepte-rasnita-rezervor-cafea-260g-rezervor-apa-detasabil-2-3l-3-891210.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.brico.ro%2Felectrocasnice-332%2Fespressor-automat-krups-evidence-eco-design-ea8968e0-1450w-15-bari-5-retete-5-trepte-rasnita-rezervor-cafea-260g-rezervor-apa-detasabil-2-3l-3.html",
 "magazin": "brico.ro",
-"id": "SvXVv9IQeLkl",
-"brand": "DeLonghi",
-"url_magazin": "https://www.brico.ro/electrocasnice-332/espressor-automat-delonghi-ecam220-22-gb-magnifica-start-tip-espressor-automat-purete-w-1450-presiune-bar-15.html",
-"pret_vechi": 2525.0,
-"verificat": "2026-11-04"
-},
-{
-"titlu": "Espressor automat, GAGGIA Naviglio Deluxe cu capuccinator",
-"pret": 2100.0,
-"imagine": "https://cdn.shopify.com/s/files/1/0854/0350/0875/files/espressor-automat-gaggia-naviglio-deluxe-cu-capuccinator-2842396.jpg?v=1765392195",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fbaristelli.ro%2Fproducts%2Fespressor-automat-gaggia-naviglio-deluxe-cu-capuccinator%3Fvariant%3D52308594884939",
-"magazin": "baristelli.ro",
-"id": "qvhbiI9Jl0j5",
-"brand": "Gaggia",
-"url_magazin": "https://baristelli.ro/products/espressor-automat-gaggia-naviglio-deluxe-cu-capuccinator?variant=52308594884939",
-"pret_vechi": 2200.0,
-"verificat": "2026-11-04"
-},
-{
-"titlu": "Espressor automat, GAGGIA Brera - Negru",
-"pret": 2100.0,
-"imagine": "https://cdn.shopify.com/s/files/1/0854/0350/0875/files/espressor-automat-gaggia-brera-9113589.jpg?v=1765392253",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fbaristelli.ro%2Fproducts%2Fespressor-automat-gaggia-brera%3Fvariant%3D52308374847819",
-"magazin": "baristelli.ro",
-"id": "7n1QpzUkvAs7",
-"brand": "Gaggia",
-"url_magazin": "https://baristelli.ro/products/espressor-automat-gaggia-brera?variant=52308374847819",
-"pret_vechi": 2200.0,
-"verificat": "2026-11-04"
+"id": "GNrKXJmRCWeB",
+"brand": "Krups",
+"url_magazin": "https://www.brico.ro/electrocasnice-332/espressor-automat-krups-evidence-eco-design-ea8968e0-1450w-15-bari-5-retete-5-trepte-rasnita-rezervor-cafea-260g-rezervor-apa-detasabil-2-3l-3.html",
+"pret_vechi": 2676.45,
+"verificat": "2026-11-13"
 },
 {
 "titlu": "Espressor automat Philips EP1223/00, 1200, tip espressor automat, purete w 1500, calitate superioara pentru baia ta",
@@ -4334,76 +4142,16 @@
 "verificat": "2026-11-04"
 },
 {
-"titlu": "Espressor automat, GAGGIA Velasca",
-"pret": 2300.0,
-"imagine": "https://cdn.shopify.com/s/files/1/0854/0350/0875/files/espressor-automat-gaggia-velasca-8298081.jpg?v=1765392194",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fbaristelli.ro%2Fproducts%2Fespressor-automat-gaggia-velasca-black%3Fvariant%3D52308633649483",
-"magazin": "baristelli.ro",
-"id": "Aquzay-HceEb",
-"brand": "Gaggia",
-"url_magazin": "https://baristelli.ro/products/espressor-automat-gaggia-velasca-black?variant=52308633649483",
-"pret_vechi": 2530.0,
-"verificat": "2026-11-04"
-},
-{
-"titlu": "Espressor automat, GAGGIA Anima Barista Plus",
-"pret": 2390.0,
-"imagine": "https://cdn.shopify.com/s/files/1/0854/0350/0875/files/espressor-automat-gaggia-anima-barista-plus-9761367.jpg?v=1765392251",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fbaristelli.ro%2Fproducts%2Fespressor-automat-gaggia-anima-barista-plus%3Fvariant%3D52308303577419",
-"magazin": "baristelli.ro",
-"id": "QPDyQ0g2IH_l",
-"brand": "Gaggia",
-"url_magazin": "https://baristelli.ro/products/espressor-automat-gaggia-anima-barista-plus?variant=52308303577419",
-"pret_vechi": 2500.0,
-"verificat": "2026-11-04"
-},
-{
-"titlu": "Espressor automat, GAGGIA Cadorna Style",
-"pret": 2450.0,
-"imagine": "https://cdn.shopify.com/s/files/1/0854/0350/0875/files/espressor-automat-gaggia-cadorna-style-8938326.jpg?v=1765392250",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fbaristelli.ro%2Fproducts%2Fespressor-automat-gaggia-cadorna-style%3Fvariant%3D52308480590155",
-"magazin": "baristelli.ro",
-"id": "6ENsc3FzzJT5",
-"brand": "Gaggia",
-"url_magazin": "https://baristelli.ro/products/espressor-automat-gaggia-cadorna-style?variant=52308480590155",
-"pret_vechi": 2650.0,
-"verificat": "2026-11-04"
-},
-{
-"titlu": "Espressor automat, GAGGIA Anima Class",
-"pret": 2500.0,
-"imagine": "https://cdn.shopify.com/s/files/1/0854/0350/0875/files/espressor-automat-gaggia-anima-class-2475840.jpg?v=1765392251",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fbaristelli.ro%2Fproducts%2Fespressor-automat-gaggia-anima-class%3Fvariant%3D52308327825739",
-"magazin": "baristelli.ro",
-"id": "Wu7RFLVc0OSk",
-"brand": "Gaggia",
-"url_magazin": "https://baristelli.ro/products/espressor-automat-gaggia-anima-class?variant=52308327825739",
-"pret_vechi": 2800.0,
-"verificat": "2026-11-04"
-},
-{
-"titlu": "Espressor automat Krups Sensation Milk EA912HF0, 1450W, 15 bari, 6 retete, 5 trepte rasnita, rezervor cafea 260g, rezerv",
-"pret": 2549.0,
-"imagine": "https://gomagcdn.ro/domains3/brico.ro/files/product/original/espressor-automat-krups-sensation-milk-ea912hf0-1450w-15-bari-6-retete-5-trepte-rasnita-rezervor-cafea-260g-rezervor-apa-detasabil-1-7l-3-trept-715011.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.brico.ro%2Felectrocasnice-332%2Fespressor-automat-krups-sensation-milk-ea912hf0-1450w-15-bari-6-retete-5-trepte-rasnita-rezervor-cafea-260g-rezervor-apa-detasabil-1-7l-3-trept.html",
+"titlu": "Espressor automat Krups Evidence One EA895831, 1450 W, tehnologia Quattro Force, 12 retete, rasnita metalica, negru",
+"pret": 2623.95,
+"imagine": "https://gomagcdn.ro/domains3/brico.ro/files/product/original/espressor-automat-krups-evidence-one-ea895831-1450-w-tehnologia-quattro-force-12-retete-rasnita-metalica-negru-071025.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.brico.ro%2Felectrocasnice-332%2Fespressor-automat-krups-evidence-one-ea895831-1450-w-tehnologia-quattro-force-12-retete-rasnita-metalica-negru.html",
 "magazin": "brico.ro",
-"id": "qKDgj91s_lOP",
+"id": "yPRBBQiKHMBg",
 "brand": "Krups",
-"url_magazin": "https://www.brico.ro/electrocasnice-332/espressor-automat-krups-sensation-milk-ea912hf0-1450w-15-bari-6-retete-5-trepte-rasnita-rezervor-cafea-260g-rezervor-apa-detasabil-1-7l-3-trept.html",
-"pret_vechi": null,
-"verificat": "2026-11-04"
-},
-{
-"titlu": "Espressor automat, GAGGIA Anima Deluxe",
-"pret": 2590.0,
-"imagine": "https://cdn.shopify.com/s/files/1/0854/0350/0875/files/espressor-automat-gaggia-anima-deluxe-8589501.jpg?v=1765392252",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fbaristelli.ro%2Fproducts%2Fespressor-automat-gaggia-anima-deluxe%3Fvariant%3D52308336148811",
-"magazin": "baristelli.ro",
-"id": "HbWV--zXH7bs",
-"brand": "Gaggia",
-"url_magazin": "https://baristelli.ro/products/espressor-automat-gaggia-anima-deluxe?variant=52308336148811",
-"pret_vechi": 2700.0,
-"verificat": "2026-11-05"
+"url_magazin": "https://www.brico.ro/electrocasnice-332/espressor-automat-krups-evidence-one-ea895831-1450-w-tehnologia-quattro-force-12-retete-rasnita-metalica-negru.html",
+"pret_vechi": 3416.7,
+"verificat": "2026-11-13"
 },
 {
 "titlu": "Espressor automat Saeco GranAroma SM6580/10 automat boabe Gri",
@@ -4419,7 +4167,6 @@
 }
 ],
 "magazine": [
-"baristelli.ro",
 "brico.ro",
 "itarena.ro"
 ],
@@ -4432,7 +4179,7 @@
 "titlu": "Espressoare cu capsule",
 "nota": null,
 "in_text": "\\bcapsule\\b",
-"actualizat": "2026-11-05",
+"actualizat": "2026-11-13",
 "feeduri": [
 {
 "id": 9053,
@@ -4501,18 +4248,6 @@
 "verificat": "2026-11-04"
 },
 {
-"titlu": "Espressor cu capsule Tchibo Cafissimo Pure Plus, Rezervor 1 l, 15 bari, 1250W (Galben)",
-"pret": 222.99,
-"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4318%2F4318807%2F4068947286570-6ac8b6d8f3de2.jpg&type=auto&width=500&sign=dbZODpPVlgT4RE96lARxvshxY128l06iK36vu2pLd1o",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Felectrocasnice-aparate-de-cafea-aparate-si-espressoare-de-cafea-automate-si-manuale%2Ftchibo-espressor-cu-capsule-tchibo-cafissimo-pure-plus-rezervor-1-l-15-bari-1250w-galben-4318807.html",
-"magazin": "evomag.ro",
-"id": "ZfkShNflmmDo",
-"brand": "Tchibo",
-"url_magazin": "https://www.evomag.ro/electrocasnice-aparate-de-cafea-aparate-si-espressoare-de-cafea-automate-si-manuale/tchibo-espressor-cu-capsule-tchibo-cafissimo-pure-plus-rezervor-1-l-15-bari-1250w-galben-4318807.html",
-"pret_vechi": null,
-"verificat": "2026-11-05"
-},
-{
 "titlu": "Espressor automat cu capsule BOSCH TASSIMO STYLE TAS114E, 1400 W, 8 bauturi, 0.7 l (Alb)",
 "pret": 222.99,
 "imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4206%2F4206054%2Ftas114e-67b82b8a7e187.jpg&type=auto&width=500&sign=Tn_dgUj_0pt3KnocWvU_fd5xYNg-lsDla9Fh2CcjKvA",
@@ -4525,19 +4260,7 @@
 "verificat": "2026-11-05"
 },
 {
-"titlu": "Tchibo Espressor Tchibo Cafissimo Pure Plus, 1 l, 15 bari, 1250W, capsule, Galben",
-"pret": 226.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202606122129/483841/full/tchibo-espressor-tchibo-cafissimo-pure-plus-1-l-15-bari-1250w-capsule-galben-1526113.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fcafetiera-espressor%2Ftchibo%2F483841-espressor-tchibo-cafissimo-pure-plus-1-l-15-bari-1250w-capsule-galben%2F",
-"magazin": "dwyn.ro",
-"id": "faTPJ_FQSBr_",
-"brand": "Tchibo",
-"url_magazin": "https://www.dwyn.ro/cafetiera-espressor/tchibo/483841-espressor-tchibo-cafissimo-pure-plus-1-l-15-bari-1250w-capsule-galben/",
-"pret_vechi": null,
-"verificat": "2026-11-04"
-},
-{
-"titlu": "Espressor Bosch Tassimo Finesse TAS162E, 1400w, 3.3 bar, 0.7l, IntensityBoost, Autocuratare si decalcifiere, Capsule, N",
+"titlu": "Espressor Bosch Tassimo Finesse TAS162E, 1400w, 3.3 bar, 0.7l, IntensityBoost, Autocuratare si decalcifiere, Capsule, Ne",
 "pret": 235.99,
 "imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4293%2F4293147%2F69e766b863b19.jpg&type=auto&width=500&sign=88j0NEny2kBq4O58jM6BpDhtCf2PVRT0WuwJuIIh1ug",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Felectrocasnice-aparate-de-cafea-aparate-si-espressoare-de-cafea-automate-si-manuale%2Fbosch-espressor-bosch-tassimo-finesse-tas162e-1400w-3.3-bar-0.7l-intensityboost-autocuratare-si-decalcifiere-capsule-negru-4293147.html",
@@ -4573,26 +4296,14 @@
 "verificat": "2026-11-04"
 },
 {
-"titlu": "Espressor cu capsule Krups NESCAFÉ® Dolce Gusto® Piccolo XS KP1A3AF0, 1600W, 15 bari, rezervor apa 0.8L, bauturi reci &",
-"pret": 281.99,
-"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4321%2F4321934%2F3045380028180-6ae9faf0d1921.jpg&type=auto&width=500&sign=wYdF7a3OHPp_vbgqUfl4wcgZerrWDJy62IssI9Wy6L8",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Felectrocasnice-aparate-de-cafea-aparate-si-espressoare-de-cafea-automate-si-manuale%2Fkrups-espressor-cu-capsule-krups-nescaf-dolce-gusto-piccolo-xs-kp1a3af0-1600w-15-bari-rezervor-apa-0.8l-bauturi-reci-calde-gri-4321934.html",
-"magazin": "evomag.ro",
-"id": "MSUEG2-1MSjn",
+"titlu": "Espressor cu capsule Krups NESCAFÉ Dolce Gusto Piccolo XS KP1A3B10, 1600W, 15 bari, functie eco, 0.8L, negru-gri",
+"pret": 309.0,
+"imagine": "https://gomagcdn.ro/domains3/brico.ro/files/product/original/espressor-cu-capsule-krups-nescafe-dolce-gusto-piccolo-xs-kp1a3b10-1600w-15-bari-functie-eco-0-8l-negru-gri-309666.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.brico.ro%2Felectrocasnice-332%2Fespressor-cu-capsule-krups-nescaf%C3%A9-dolce-gusto-piccolo-xs-kp1a3b10-1600w-15-bari-functie-eco-0-8l-negru-gri.html",
+"magazin": "brico.ro",
+"id": "8JV6aWRzsQmG",
 "brand": "Krups",
-"url_magazin": "https://www.evomag.ro/electrocasnice-aparate-de-cafea-aparate-si-espressoare-de-cafea-automate-si-manuale/krups-espressor-cu-capsule-krups-nescaf-dolce-gusto-piccolo-xs-kp1a3af0-1600w-15-bari-rezervor-apa-0.8l-bauturi-reci-calde-gri-4321934.html",
-"pret_vechi": null,
-"verificat": "2026-11-05"
-},
-{
-"titlu": "KRUPS Espressor cu capsule Krups NESCAFÉ® Dolce Gusto® Piccolo XS KP1A3AF0, 1600W, 15 bari, rezervor apa 0.8L, peste 30",
-"pret": 286.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202508191322/323896/full/krups-espressor-cu-capsule-krups-nescaf-dolce-gusto-piccolo-xs-kp1a3af0-1600w-15-bari-rezervor-apa-0-8l-peste-30-de-bauturi-calde-sau-reci-functie-hot-cold-functie-eco-crem-896792.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fcafetiera-espressor%2Fkrups%2F323896-espressor-cu-capsule-krups-nescaf-dolce-gusto-piccolo-xs-kp1a3af0-1600w-15-bari-rezervor-apa-0-8l-peste-30-de-bauturi-calde-sau-reci-functie-hot-cold-functie-eco-crem%2F",
-"magazin": "dwyn.ro",
-"id": "qcC2DYSMAA8Y",
-"brand": "KRUPS",
-"url_magazin": "https://www.dwyn.ro/cafetiera-espressor/krups/323896-espressor-cu-capsule-krups-nescaf-dolce-gusto-piccolo-xs-kp1a3af0-1600w-15-bari-rezervor-apa-0-8l-peste-30-de-bauturi-calde-sau-reci-functie-hot-cold-functie-eco-crem/",
+"url_magazin": "https://www.brico.ro/electrocasnice-332/espressor-cu-capsule-krups-nescafé-dolce-gusto-piccolo-xs-kp1a3b10-1600w-15-bari-functie-eco-0-8l-negru-gri.html",
 "pret_vechi": null,
 "verificat": "2026-11-04"
 },
@@ -4609,18 +4320,6 @@
 "verificat": "2026-11-05"
 },
 {
-"titlu": "Espressor cu capsule Krups NESCAFÉ Dolce Gusto Piccolo XS KP1A3B10, 1600W, 15 bari, functie eco, 0.8L, negru-gri",
-"pret": 309.0,
-"imagine": "https://gomagcdn.ro/domains3/brico.ro/files/product/original/espressor-cu-capsule-krups-nescafe-dolce-gusto-piccolo-xs-kp1a3b10-1600w-15-bari-functie-eco-0-8l-negru-gri-309666.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.brico.ro%2Felectrocasnice-332%2Fespressor-cu-capsule-krups-nescaf%C3%A9-dolce-gusto-piccolo-xs-kp1a3b10-1600w-15-bari-functie-eco-0-8l-negru-gri.html",
-"magazin": "brico.ro",
-"id": "8JV6aWRzsQmG",
-"brand": "Krups",
-"url_magazin": "https://www.brico.ro/electrocasnice-332/espressor-cu-capsule-krups-nescafé-dolce-gusto-piccolo-xs-kp1a3b10-1600w-15-bari-functie-eco-0-8l-negru-gri.html",
-"pret_vechi": null,
-"verificat": "2026-11-04"
-},
-{
 "titlu": "Espressor cu capsule HEINNER HEMC-DD20WHBK, 1140 W, 20 bari, Rezervor apa 0.6 L, NTC, Oprire automata (Alb/Negru)",
 "pret": 309.99,
 "imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4311%2F4311834%2Foverlay_ae4df7efdfc1afc3ef70aed1e6d53c00.jpg&type=auto&width=500&sign=Gd_SUSRkfT2tltJRH-HhjiNcED-3Mso1bAM9imVsY4Y",
@@ -4631,6 +4330,42 @@
 "url_magazin": "https://www.evomag.ro/electrocasnice-aparate-de-cafea-aparate-si-espressoare-de-cafea-automate-si-manuale/heinner-espressor-cu-capsule-heinner-hemc-dd20whbk-1140-w-20-bari-rezervor-apa-0.6-l-ntc-oprire-automata-alb-negru-4311834.html",
 "pret_vechi": null,
 "verificat": "2026-11-05"
+},
+{
+"titlu": "Espressor cu capsule Krups NESCAFÉ Dolce Gusto Mini Me 2 KP1438F0, 1600 W, 15 bari presiune, rezervor apa 0.8 L, oprire",
+"pret": 324.45,
+"imagine": "https://gomagcdn.ro/domains3/brico.ro/files/product/original/espressor-cu-capsule-krups-nescafe-dolce-gusto-mini-me-2-kp1438f0-1600-w-15-bari-presiune-rezervor-apa-0-8-l-oprire-automata-negru-384259.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.brico.ro%2Felectrocasnice-332%2Fespressor-cu-capsule-krups-nescaf%C3%A9-dolce-gusto-mini-me-2-kp1438f0-1600-w-15-bari-presiune-rezervor-apa-0-8-l-oprire-automata-negru.html",
+"magazin": "brico.ro",
+"id": "aJVWuSawH3WE",
+"brand": "Krups",
+"url_magazin": "https://www.brico.ro/electrocasnice-332/espressor-cu-capsule-krups-nescafé-dolce-gusto-mini-me-2-kp1438f0-1600-w-15-bari-presiune-rezervor-apa-0-8-l-oprire-automata-negru.html",
+"pret_vechi": null,
+"verificat": "2026-11-13"
+},
+{
+"titlu": "Espressor cu capsule Krups NESCAFÉ Dolce Gusto Mini Me 2 KP143GF0, 1600 W, 15 bari presiune, rezervor apa 0.8 L, oprire",
+"pret": 324.45,
+"imagine": "https://gomagcdn.ro/domains3/brico.ro/files/product/original/espressor-cu-capsule-krups-nescafe-dolce-gusto-mini-me-2-kp143gf0-1600-w-15-bari-presiune-rezervor-apa-0-8-l-oprire-automata-gri-707942.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.brico.ro%2Felectrocasnice-332%2Fespressor-cu-capsule-krups-nescaf%C3%A9-dolce-gusto-mini-me-2-kp143gf0-1600-w-15-bari-presiune-rezervor-apa-0-8-l-oprire-automata-gri.html",
+"magazin": "brico.ro",
+"id": "sJBpzdMA-x6f",
+"brand": "Krups",
+"url_magazin": "https://www.brico.ro/electrocasnice-332/espressor-cu-capsule-krups-nescafé-dolce-gusto-mini-me-2-kp143gf0-1600-w-15-bari-presiune-rezervor-apa-0-8-l-oprire-automata-gri.html",
+"pret_vechi": null,
+"verificat": "2026-11-13"
+},
+{
+"titlu": "Espressor cu capsule Nespresso Essenza Mini by Krups XN110110, 1310W, presiune 19 bari, rezervor 0.6 L, oprire automata,",
+"pret": 334.95,
+"imagine": "https://gomagcdn.ro/domains3/brico.ro/files/product/original/espressor-cu-capsule-nespresso-essenza-mini-by-krups-xn110110-1310w-presiune-19-bari-rezervor-0-6-l-oprire-automata-alb-982456.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.brico.ro%2Felectrocasnice-332%2Fespressor-cu-capsule-nespresso-essenza-mini-by-krups-xn110110-1310w-presiune-19-bari-rezervor-0-6-l-oprire-automata-alb.html",
+"magazin": "brico.ro",
+"id": "kTS-vynq1EU-",
+"brand": "Krups",
+"url_magazin": "https://www.brico.ro/electrocasnice-332/espressor-cu-capsule-nespresso-essenza-mini-by-krups-xn110110-1310w-presiune-19-bari-rezervor-0-6-l-oprire-automata-alb.html",
+"pret_vechi": 471.45,
+"verificat": "2026-11-13"
 },
 {
 "titlu": "Delonghi Espressor cu capsule presurizate De'Longhi Dolce Gusto Piccolo XS EDG210.A Cold Coffee, 1400 W, 15 bar, Antraci",
@@ -4657,30 +4392,6 @@
 "verificat": "2026-11-04"
 },
 {
-"titlu": "Espressor cu capsule Krups NESCAFÉ Dolce Gusto Genio S KP243AF0, 1500W, 15 bari, rezervor 0.8L, functie XL, peste 30 de",
-"pret": 349.0,
-"imagine": "https://gomagcdn.ro/domains3/brico.ro/files/product/original/espressor-cu-capsule-krups-nescafe-dolce-gusto-genio-s-kp243af0-1500w-15-bari-rezervor-0-8l-functie-xl-peste-30-de-retete-calde-si-reci-384221.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.brico.ro%2Felectrocasnice-332%2Fespressor-cu-capsule-krups-nescaf%C3%A9-dolce-gusto-genio-s-kp243af0-1500w-15-bari-rezervor-0-8l-functie-xl-peste-30-de-retete-calde-si-reci.html",
-"magazin": "brico.ro",
-"id": "CNgH7L_nwMcC",
-"brand": "Krups",
-"url_magazin": "https://www.brico.ro/electrocasnice-332/espressor-cu-capsule-krups-nescafé-dolce-gusto-genio-s-kp243af0-1500w-15-bari-rezervor-0-8l-functie-xl-peste-30-de-retete-calde-si-reci.html",
-"pret_vechi": null,
-"verificat": "2026-11-04"
-},
-{
-"titlu": "Espressor de cafea HAEGER SUPER ESPRESSO, Presiune 20 bar (pompa ULKA Italia), Cafea macinata si capsule, 1.6L, Extracti",
-"pret": 369.99,
-"imagine": "https://gomagcdn.ro/domains3/brico.ro/files/product/original/espressor-de-cafea-haeger-super-espresso-presiune-20-bar-pompa-ulka-cafea-macinata-si-capsule-1-6l-extractie-intensa-cu-aroma-bogata-incalzire-cesti-a-042449.png",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.brico.ro%2Felectrocasnice-332%2Fespressor-de-cafea-haeger-super-espresso-presiune-20-bar-pompa-ulka-rezervor-apa-1-6l-extractie-intensa-cu-aroma-bogata-suport-inox-pentru-incalzire-cesti.html",
-"magazin": "brico.ro",
-"id": "j7aO4OzpZCoA",
-"brand": "HAEGER",
-"url_magazin": "https://www.brico.ro/electrocasnice-332/espressor-de-cafea-haeger-super-espresso-presiune-20-bar-pompa-ulka-rezervor-apa-1-6l-extractie-intensa-cu-aroma-bogata-suport-inox-pentru-incalzire-cesti.html",
-"pret_vechi": 529.0,
-"verificat": "2026-11-04"
-},
-{
 "titlu": "Espressor cu capsule KRUPS NESCAFÉ Dolce Gusto Genio S KP243110, 1500W, 15 bari presiune, rezervor 0.8 L, functie XL, pe",
 "pret": 373.0,
 "imagine": "https://gomagcdn.ro/domains3/brico.ro/files/product/original/espressor-cu-capsule-krups-nescafe-dolce-gusto-genio-s-kp243110-1500w-15-bari-presiune-rezervor-0-8-l-functie-xl-peste-30-retete-bauturi-765401.jpg",
@@ -4689,19 +4400,7 @@
 "id": "2XgAwCZ1-DW5",
 "brand": "Krups",
 "url_magazin": "https://www.brico.ro/electrocasnice-332/espressor-cu-capsule-krups-nescafé-dolce-gusto-genio-s-kp243110-1500w-15-bari-presiune-rezervor-0-8-l-functie-xl-peste-30-retete-bauturi.html",
-"pret_vechi": null,
-"verificat": "2026-11-04"
-},
-{
-"titlu": "Espressor cu capsule Krups NESCAFÉ Dolce Gusto Mini Me 2 KP1435F0, 1600 W, 15 bari presiune, rezervor apa 0.8 L, oprire",
-"pret": 389.0,
-"imagine": "https://gomagcdn.ro/domains3/brico.ro/files/product/original/espressor-cu-capsule-krups-nescafe-dolce-gusto-mini-me-2-kp1435f0-1600-w-15-bari-presiune-rezervor-apa-0-8-l-oprire-automata-rosu-840872.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.brico.ro%2Felectrocasnice-332%2Fespressor-cu-capsule-krups-nescaf%C3%A9-dolce-gusto-mini-me-2-kp1435f0-1600-w-15-bari-presiune-rezervor-apa-0-8-l-oprire-automata-rosu.html",
-"magazin": "brico.ro",
-"id": "PxBCYzETSgyD",
-"brand": "Krups",
-"url_magazin": "https://www.brico.ro/electrocasnice-332/espressor-cu-capsule-krups-nescafé-dolce-gusto-mini-me-2-kp1435f0-1600-w-15-bari-presiune-rezervor-apa-0-8-l-oprire-automata-rosu.html",
-"pret_vechi": null,
+"pret_vechi": 391.65,
 "verificat": "2026-11-04"
 },
 {
@@ -4715,12 +4414,25 @@
 "url_magazin": "https://www.brico.ro/electrocasnice-332/espressor-cu-capsule-krups-nescafé-dolce-gusto-mini-me-2-kp143bf0-1600-w-15-bari-presiune-rezervor-apa-0-8-l-oprire-automata-gri-albastru.html",
 "pret_vechi": null,
 "verificat": "2026-11-04"
+},
+{
+"titlu": "Espressor KRUPS cu capsule NESCAFÉ® Dolce Gusto® Piccolo XS KP1A3110, 1600 W, functie Eco, alb & rosu",
+"pret": 389.34,
+"imagine": "https://infinityro.vteximg.com.br/arquivos/ids/276027604/Image-4.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Finfinity.ro%2Fespressor-krups-cu-capsule-nescafe-dolce-gusto-piccolo-xs-kp1a3110-1600-w-functie-eco-alb-rosu-9204418%2Fp%3Futm_source%3D2performant",
+"magazin": "infinity.ro",
+"id": "Udx5w69nr1X4",
+"brand": "Krups",
+"url_magazin": "https://infinity.ro/espressor-krups-cu-capsule-nescafe-dolce-gusto-piccolo-xs-kp1a3110-1600-w-functie-eco-alb-rosu-9204418/p?utm_source=2performant",
+"pret_vechi": null,
+"verificat": "2026-11-13"
 }
 ],
 "magazine": [
 "brico.ro",
 "dwyn.ro",
-"evomag.ro"
+"evomag.ro",
+"infinity.ro"
 ],
 "publicat": true
 },
@@ -4731,7 +4443,7 @@
 "titlu": "Laptopuri cu 16 GB RAM",
 "nota": null,
 "in_text": "\\b16 GB\\b",
-"actualizat": "2026-11-05",
+"actualizat": "2026-11-13",
 "feeduri": [
 {
 "id": 1539,
@@ -4756,18 +4468,6 @@
 "verificat": "2026-11-04"
 },
 {
-"titlu": "Laptop ASUS - Vivobook, 15.6'', FHD, Core 5, 16GB/512GB, Albastru liniștit",
-"pret": 3285.99,
-"imagine": "https://www.ozone.ro/media/catalog/product/l/a/laptop_asus_vivobook_15_6_fhd_core_5_16gb_512gb_quiet_blue_1792658909_0.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ozone.ro%2Fproduct%2Flaptop-asus-vivobook-15-6-fhd-core-5-16gb-512gb-albastru-linistit%2F",
-"magazin": "ozone.ro",
-"id": "FBjACGCuOeNp",
-"brand": "ASUS",
-"url_magazin": "https://www.ozone.ro/product/laptop-asus-vivobook-15-6-fhd-core-5-16gb-512gb-albastru-linistit/",
-"pret_vechi": null,
-"verificat": "2026-11-04"
-},
-{
 "titlu": "Acer Laptop Acer Extensa EXO16-71-577R, Intel Core Ultra 5 125H, 16 inch WUXGA, 16GB RAM, 512GB SSD, Free DOS, Gri",
 "pret": 3371.25,
 "imagine": "https://www.dwyn.ro/images/products/img_202606122129/456055/full/acer-laptop-acer-extensa-exo16-71-577r-intel-core-ultra-5-125h-16-inch-wuxga-16gb-ram-512gb-ssd-free-dos-gri-1521454.jpg",
@@ -4782,7 +4482,7 @@
 {
 "titlu": "Laptop de gaming ASUS - TUF F16 FX607VJR-TU307, 16\", WUXGA, Core 7, 144Hz, RTX 3050, 16GB/512GB",
 "pret": 4240.99,
-"imagine": "https://www.ozone.ro/media/catalog/product/g/e/geyming_laptop_asus_tuf_f16_fx607vjr_tu307_16_wuxga_core_7_144hz_rtx_3050_1790230845_0.jpg",
+"imagine": "https://www.ozone.ro/media/catalog/product/g/e/geyming_laptop_asus_tuf_f16_fx607vjr_tu307_16_wuxga_core_7_144hz_rtx_3050_16gb_512gb_1794558807_9.jpg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ozone.ro%2Fproduct%2Flaptop-de-gaming-asus-tuf-f16-fx607vjr-tu307-16-wuxga-core-7-144hz-rtx-3050%2F",
 "magazin": "ozone.ro",
 "id": "kiskxnGZbL5L",
@@ -4850,18 +4550,6 @@
 "url_magazin": "https://www.dwyn.ro/laptop-notebook/lenovo/454798-laptop-lenovo-ideapad-slim-5-14agp11-amd-ryzen-ai-5-430-14-inch-wuxga-16gb-ram-512gb-ssd-free-dos-gri/",
 "pret_vechi": null,
 "verificat": "2026-11-04"
-},
-{
-"titlu": "Lenovo Laptop 2 in 1 Lenovo IdeaPad 5 14AHP11, AMD Ryzen 7 250, 14 inch WUXGA Touch, 16GB RAM, 1TB SSD, Free DOS, Albast",
-"pret": 5431.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202606122129/454879/full/lenovo-laptop-2-in-1-lenovo-ideapad-5-14ahp11-amd-ryzen-7-250-14-inch-wuxga-touch-16gb-ram-1tb-ssd-free-dos-albastru-1518397.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Flaptop-notebook%2Flenovo%2F454879-laptop-2-in-1-lenovo-ideapad-5-14ahp11-amd-ryzen-7-250-14-inch-wuxga-touch-16gb-ram-1tb-ssd-free-dos-albastru%2F",
-"magazin": "dwyn.ro",
-"id": "nyCeL0RK-6G7",
-"brand": "Lenovo",
-"url_magazin": "https://www.dwyn.ro/laptop-notebook/lenovo/454879-laptop-2-in-1-lenovo-ideapad-5-14ahp11-amd-ryzen-7-250-14-inch-wuxga-touch-16gb-ram-1tb-ssd-free-dos-albastru/",
-"pret_vechi": null,
-"verificat": "2026-11-04"
 }
 ],
 "magazine": [
@@ -4877,7 +4565,7 @@
 "titlu": "Laptopuri cu 32 GB RAM",
 "nota": null,
 "in_text": "\\b32 GB\\b",
-"actualizat": "2026-11-05",
+"actualizat": "2026-11-13",
 "feeduri": [
 {
 "id": 1539,
@@ -4938,18 +4626,6 @@
 "verificat": "2026-11-04"
 },
 {
-"titlu": "Laptop Lenovo - IdeaPad Slim 5 16AHP11, 16'', WUXGA, Ryzen 7, 32GB/512GB",
-"pret": 6899.99,
-"imagine": "https://www.ozone.ro/media/catalog/product/l/a/laptop_lenovo_ideapad_slim_5_16ahp11_16_wuxga_ryzen_7_32gb_512gb_1781761747_0.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ozone.ro%2Fproduct%2Flaptop-lenovo-ideapad-slim-5-16ahp11-16-wuxga-ryzen-7-32gb-512gb%2F",
-"magazin": "ozone.ro",
-"id": "HGejjgkAHf67",
-"brand": "Lenovo",
-"url_magazin": "https://www.ozone.ro/product/laptop-lenovo-ideapad-slim-5-16ahp11-16-wuxga-ryzen-7-32gb-512gb/",
-"pret_vechi": null,
-"verificat": "2026-11-04"
-},
-{
 "titlu": "Laptop de gaming Acer - Nitro V 16 ANV16-42-R6RY, 16\", Ryzen 7, 180Hz, RTX 5050, 32GB/512GB",
 "pret": 7059.99,
 "imagine": "https://www.ozone.ro/media/catalog/product/g/e/geyming_laptop_acer_nitro_v_16_anv16_42_r6ry_16_ryzen_7_180hz_rtx_5050_1787234205_0_2.jpg",
@@ -4958,30 +4634,6 @@
 "id": "4qN-pANejjaU",
 "brand": "Acer",
 "url_magazin": "https://www.ozone.ro/product/laptop-de-gaming-acer-nitro-v-16-anv16-42-r6ry-16-ryzen-7-180hz-rtx-5050-32gb-512gb/",
-"pret_vechi": null,
-"verificat": "2026-11-04"
-},
-{
-"titlu": "Asus Laptop Asus Zenbook 14 UM3406GA cu procesor AMD Ryzen 7, 14 inch WUXGA OLED, 32 GB RAM, 1 TB SSD, Windows 11 Pro",
-"pret": 8577.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202606122129/426154/full/asus-as-14-r7-445-32-1tb-wuxga-oled-w11p-um3406ga-qd094x-timbru-verde-3-5-lei-1376659.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Flaptop-notebook%2Fasus%2F426154-laptop-asus-zenbook-14-um3406ga-cu-procesor-amd-ryzen-7-14-inch-wuxga-oled-32-gb-ram-1-tb-ssd-windows-11-pro%2F",
-"magazin": "dwyn.ro",
-"id": "I6U4wOk8ZdHa",
-"brand": "Asus",
-"url_magazin": "https://www.dwyn.ro/laptop-notebook/asus/426154-laptop-asus-zenbook-14-um3406ga-cu-procesor-amd-ryzen-7-14-inch-wuxga-oled-32-gb-ram-1-tb-ssd-windows-11-pro/",
-"pret_vechi": null,
-"verificat": "2026-11-04"
-},
-{
-"titlu": "Lenovo Laptop Lenovo IdeaPad Slim 5 16IPH11, Intel Core Ultra 7 356H, 16 inch 2.8K, 32GB RAM, 1TB SSD, Free DOS, Albastr",
-"pret": 9084.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202606122129/455170/full/lenovo-laptop-lenovo-ideapad-slim-5-16iph11-intel-core-ultra-7-356h-16-inch-2-8k-32gb-ram-1tb-ssd-free-dos-albastru-1521166.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Flaptop-notebook%2Flenovo%2F455170-laptop-lenovo-ideapad-slim-5-16iph11-intel-core-ultra-7-356h-16-inch-2-8k-32gb-ram-1tb-ssd-free-dos-albastru%2F",
-"magazin": "dwyn.ro",
-"id": "_EQw56bE4XW2",
-"brand": "Lenovo",
-"url_magazin": "https://www.dwyn.ro/laptop-notebook/lenovo/455170-laptop-lenovo-ideapad-slim-5-16iph11-intel-core-ultra-7-356h-16-inch-2-8k-32gb-ram-1tb-ssd-free-dos-albastru/",
 "pret_vechi": null,
 "verificat": "2026-11-04"
 },
@@ -5035,7 +4687,7 @@
 "titlu": "Laptopuri de gaming",
 "nota": null,
 "in_text": "\\bgaming\\b",
-"actualizat": "2026-11-05",
+"actualizat": "2026-11-13",
 "feeduri": [
 {
 "id": 5717,
@@ -5050,7 +4702,7 @@
 {
 "titlu": "Laptop de gaming ASUS - TUF F16 FX607VJR-TU307, 16\", WUXGA, Core 7, 144Hz, RTX 3050, 16GB/512GB",
 "pret": 4240.99,
-"imagine": "https://www.ozone.ro/media/catalog/product/g/e/geyming_laptop_asus_tuf_f16_fx607vjr_tu307_16_wuxga_core_7_144hz_rtx_3050_1790230845_0.jpg",
+"imagine": "https://www.ozone.ro/media/catalog/product/g/e/geyming_laptop_asus_tuf_f16_fx607vjr_tu307_16_wuxga_core_7_144hz_rtx_3050_16gb_512gb_1794558807_9.jpg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ozone.ro%2Fproduct%2Flaptop-de-gaming-asus-tuf-f16-fx607vjr-tu307-16-wuxga-core-7-144hz-rtx-3050%2F",
 "magazin": "ozone.ro",
 "id": "kiskxnGZbL5L",
@@ -5108,18 +4760,6 @@
 "verificat": "2026-11-04"
 },
 {
-"titlu": "Laptop gaming ASUS - TUF F16 FA607NUG-RL117, 16'', WUXGA, Ryzen 7, 144 Hz, RTX 4050, 32GB/512GB",
-"pret": 5839.99,
-"imagine": "https://www.ozone.ro/media/catalog/product/g/e/geyming_laptop_asus_tuf_f16_fa607nug_rl117_16_wuxga_ryzen_7_144_hz_rtx_4050_1780339827_0_2.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ozone.ro%2Fproduct%2Flaptop-gaming-asus-tuf-f16-fa607nug-rl117-16-wuxga-ryzen-7-144-hz-rtx-4050-32gb-512gb%2F",
-"magazin": "ozone.ro",
-"id": "8KgEk-YLMhtj",
-"brand": "ASUS",
-"url_magazin": "https://www.ozone.ro/product/laptop-gaming-asus-tuf-f16-fa607nug-rl117-16-wuxga-ryzen-7-144-hz-rtx-4050-32gb-512gb/",
-"pret_vechi": null,
-"verificat": "2026-11-04"
-},
-{
 "titlu": "Laptop gaming MSI - Cyborg 15 A13VEK, 15.6'', i5, RTX4050, 32GB/512GB, negru",
 "pret": 5839.99,
 "imagine": "https://www.ozone.ro/media/catalog/product/g/e/geyming_laptop_msi_cyborg_15_a13vek_15_6_i5_rtx4050_cheren_1777398996_0_2.jpg",
@@ -5128,6 +4768,18 @@
 "id": "16N4efqQZvsc",
 "brand": "MSI",
 "url_magazin": "https://www.ozone.ro/product/laptop-gaming-msi-cyborg-15-a13vek-15-6-i5-rtx4050-32gb-512gb-negru/",
+"pret_vechi": null,
+"verificat": "2026-11-04"
+},
+{
+"titlu": "Laptop gaming ASUS - TUF F16 FA607NUG-RL117, 16'', WUXGA, Ryzen 7, 144 Hz, RTX 4050, 32GB/512GB",
+"pret": 5839.99,
+"imagine": "https://www.ozone.ro/media/catalog/product/g/e/geyming_laptop_asus_tuf_f16_fa607nug_rl117_16_wuxga_ryzen_7_144_hz_rtx_4050_1780339827_0_2.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ozone.ro%2Fproduct%2Flaptop-gaming-asus-tuf-f16-fa607nug-rl117-16-wuxga-ryzen-7-144-hz-rtx-4050-32gb-512gb%2F",
+"magazin": "ozone.ro",
+"id": "8KgEk-YLMhtj",
+"brand": "ASUS",
+"url_magazin": "https://www.ozone.ro/product/laptop-gaming-asus-tuf-f16-fa607nug-rl117-16-wuxga-ryzen-7-144-hz-rtx-4050-32gb-512gb/",
 "pret_vechi": null,
 "verificat": "2026-11-04"
 }
@@ -5144,7 +4796,7 @@
 "titlu": "Laptopuri cu AMD Ryzen 7",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-05",
+"actualizat": "2026-11-13",
 "feeduri": [
 {
 "id": 8969,
@@ -5261,11 +4913,11 @@
 "id": "BaaCuIK3o5v8",
 "brand": "Acer",
 "url_magazin": "https://www.ozone.ro/product/laptop-de-gaming-acer-nitro-v-16-anv16-42-r6ry-16-ryzen-7-180hz-rtx-5050/",
-"pret_vechi": 6209.99,
+"pret_vechi": null,
 "verificat": "2026-11-04"
 },
 {
-"titlu": "Lenovo Laptop Lenovo ThinkBook 16 G9 AHP, 16, WUXGA IPS, Procesor AMD Ryzen 7 250 (16M Cache, up to 5.10 GHz), 16GB DDR",
+"titlu": "Lenovo Laptop Lenovo ThinkBook 16 G9 AHP, 16, WUXGA IPS, Procesor AMD Ryzen 7 250 (16M Cache, up to 5.10 GHz), 16GB DDR5",
 "pret": 6142.99,
 "imagine": "https://www.dwyn.ro/images/products/img_202606122129/483496/full/lenovo-lenovo-thinkbook-16-g9-amd-ryzen-7-250-16inch-wuxga-16gb-512gb-ssd-noos-1524367.jpg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Flaptop-notebook%2Flenovo%2F483496-laptop-lenovo-thinkbook-16-g9-ahp-16-wuxga-ips-procesor-amd-ryzen-7-250-16m-cache-up-to-5-10-ghz-16gb-ddr5-512gb-ssd-amd-radeon-780m-no-os-gri-artic%2F",
@@ -5299,30 +4951,6 @@
 "url_magazin": "https://www.dwyn.ro/laptop-notebook/asus/456976-laptop-asus-gaming-16-tuf-a16-fa608umi-fhd-plus-144hz-procesor-amd-ryzen-7-260-16m-cache-up-to-5-1-ghz-16gb-ram-512gb-ssd-geforce-rtx-5060-8gb-no-os-gri/",
 "pret_vechi": null,
 "verificat": "2026-11-04"
-},
-{
-"titlu": "Asus Laptop Asus Zenbook 14 UM3406GA cu procesor AMD Ryzen 7, 14 inch WUXGA OLED, 32 GB RAM, 1 TB SSD, Windows 11 Pro",
-"pret": 8577.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202606122129/426154/full/asus-as-14-r7-445-32-1tb-wuxga-oled-w11p-um3406ga-qd094x-timbru-verde-3-5-lei-1376659.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Flaptop-notebook%2Fasus%2F426154-laptop-asus-zenbook-14-um3406ga-cu-procesor-amd-ryzen-7-14-inch-wuxga-oled-32-gb-ram-1-tb-ssd-windows-11-pro%2F",
-"magazin": "dwyn.ro",
-"id": "I6U4wOk8ZdHa",
-"brand": "Asus",
-"url_magazin": "https://www.dwyn.ro/laptop-notebook/asus/426154-laptop-asus-zenbook-14-um3406ga-cu-procesor-amd-ryzen-7-14-inch-wuxga-oled-32-gb-ram-1-tb-ssd-windows-11-pro/",
-"pret_vechi": null,
-"verificat": "2026-11-04"
-},
-{
-"titlu": "Gigabyte Laptop Gaming GIGABYTE A18 3VH, AMD Ryzen 7 260, 18 inch WQXGA, 16GB RAM, 512GB SSD, nVidia RTX 5060 8GB, Windo",
-"pret": 8724.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202512311121/367319/full/gigabyte-laptop-gaming-gigabyte-a18-3vh-amd-ryzen-7-260-18-inch-wqxga-16gb-ram-512gb-ssd-nvidia-rtx-5060-8gb-windows-11-home-negru-1070744.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Flaptop-notebook%2Fgigabyte%2F367319-laptop-gaming-gigabyte-a18-3vh-amd-ryzen-7-260-18-inch-wqxga-16gb-ram-512gb-ssd-nvidia-rtx-5060-8gb-windows-11-home-negru%2F",
-"magazin": "dwyn.ro",
-"id": "2d5i9zZpvwxS",
-"brand": "Gigabyte",
-"url_magazin": "https://www.dwyn.ro/laptop-notebook/gigabyte/367319-laptop-gaming-gigabyte-a18-3vh-amd-ryzen-7-260-18-inch-wqxga-16gb-ram-512gb-ssd-nvidia-rtx-5060-8gb-windows-11-home-negru/",
-"pret_vechi": null,
-"verificat": "2026-11-04"
 }
 ],
 "magazine": [
@@ -5338,7 +4966,7 @@
 "titlu": "Telefoane cu 256 GB",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-05",
+"actualizat": "2026-11-13",
 "feeduri": [
 {
 "id": 1539,
@@ -18073,7 +17701,7 @@
 "titlu": "Puzzle de 1000 de piese",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-05",
+"actualizat": "2026-11-13",
 "feeduri": [
 {
 "id": 8767,
@@ -18093,18 +17721,6 @@
 }
 ],
 "produse": [
-{
-"titlu": "Puzzle Culorile Padurii, 1000 piese",
-"pret": 38.9,
-"imagine": "https://www.ookee.ro/417774-large_default/puzzle-culorile-padurii-1000-piese.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ookee.ro%2Fpuzzle%2F134500-puzzle-culorile-padurii-1000-piese-4823115901163.html",
-"magazin": "ookee.ro",
-"id": "VbvOnhO9IElu",
-"brand": "Dodo Toys",
-"url_magazin": "https://www.ookee.ro/puzzle/134500-puzzle-culorile-padurii-1000-piese-4823115901163.html",
-"pret_vechi": null,
-"verificat": "2026-11-05"
-},
 {
 "titlu": "Puzzle Mini 1000 Piese Tablou Fata cu Cercel de Perla Johannes Vermeer, Format Compact 30 x 42 cm, Carton Rezistent",
 "pret": 43.56,
@@ -18130,18 +17746,6 @@
 "verificat": "2026-11-05"
 },
 {
-"titlu": "Puzzle Hagia Sophia, Turcia, 1000 piese",
-"pret": 48.9,
-"imagine": "https://www.ookee.ro/416813-large_default/puzzle-hagia-sophia-turcia-1000-piese.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ookee.ro%2Fpuzzle%2F134222-puzzle-hagia-sophia-turcia-1000-piese-4823115901156.html",
-"magazin": "ookee.ro",
-"id": "SGAAdy1rUSS6",
-"brand": "Dodo Toys",
-"url_magazin": "https://www.ookee.ro/puzzle/134222-puzzle-hagia-sophia-turcia-1000-piese-4823115901156.html",
-"pret_vechi": null,
-"verificat": "2026-11-05"
-},
-{
 "titlu": "Puzzle Iapa cu manz, 1000 piese",
 "pret": 48.9,
 "imagine": "https://www.ookee.ro/416810-large_default/puzzle-iapa-cu-manz-1000-piese.jpg",
@@ -18150,6 +17754,18 @@
 "id": "Xcw67q0vQ5b0",
 "brand": "Dodo Toys",
 "url_magazin": "https://www.ookee.ro/puzzle/134221-puzzle-iapa-cu-manz-1000-piese-4823115901149.html",
+"pret_vechi": null,
+"verificat": "2026-11-05"
+},
+{
+"titlu": "Puzzle Hagia Sophia, Turcia, 1000 piese",
+"pret": 48.9,
+"imagine": "https://www.ookee.ro/416813-large_default/puzzle-hagia-sophia-turcia-1000-piese.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ookee.ro%2Fpuzzle%2F134222-puzzle-hagia-sophia-turcia-1000-piese-4823115901156.html",
+"magazin": "ookee.ro",
+"id": "SGAAdy1rUSS6",
+"brand": "Dodo Toys",
+"url_magazin": "https://www.ookee.ro/puzzle/134222-puzzle-hagia-sophia-turcia-1000-piese-4823115901156.html",
 "pret_vechi": null,
 "verificat": "2026-11-05"
 },
@@ -18166,42 +17782,6 @@
 "verificat": "2026-11-05"
 },
 {
-"titlu": "Puzzle 1000 Piese pentru Adulti, Deico, Cascada Bigar",
-"pret": 51.99,
-"imagine": "https://www.trada.ro/img/puzzle-1000-piese-pentru-adulti-deico-cascada-bigar-146188html_tr-295676-large.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.trada.ro%2Fpuzzle-1000-piese-pentru-adulti-deico-cascada-bigar-146188.html",
-"magazin": "trada.ro",
-"id": "zDor_PxJMOYx",
-"brand": "Deico",
-"url_magazin": "https://www.trada.ro/puzzle-1000-piese-pentru-adulti-deico-cascada-bigar-146188.html",
-"pret_vechi": 60.45,
-"verificat": "2026-11-05"
-},
-{
-"titlu": "Puzzle 1000 Piese, Roovi, Padurea Magica, Primavara",
-"pret": 51.99,
-"imagine": "https://www.trada.ro/img/puzzle-1000-piese-roovi-padurea-magica-primavara-146189html_tr-295677-large.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.trada.ro%2Fpuzzle-1000-piese-roovi-padurea-magica-primavara-146189.html",
-"magazin": "trada.ro",
-"id": "zVC63mIj7X67",
-"brand": "Roovi",
-"url_magazin": "https://www.trada.ro/puzzle-1000-piese-roovi-padurea-magica-primavara-146189.html",
-"pret_vechi": 60.45,
-"verificat": "2026-11-05"
-},
-{
-"titlu": "Puzzle 1000 Piese, Roovi, Padurea Magica, Vara",
-"pret": 51.99,
-"imagine": "https://www.trada.ro/img/puzzle-1000-piese-roovi-padurea-magica-vara-146190html_tr-295684-large.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.trada.ro%2Fpuzzle-1000-piese-roovi-padurea-magica-vara-146190.html",
-"magazin": "trada.ro",
-"id": "XEoE16kLuPuf",
-"brand": "Roovi",
-"url_magazin": "https://www.trada.ro/puzzle-1000-piese-roovi-padurea-magica-vara-146190.html",
-"pret_vechi": 60.45,
-"verificat": "2026-11-05"
-},
-{
 "titlu": "Puzzle 1000 Piese, Roovi, Padurea Magica, Toamna",
 "pret": 51.99,
 "imagine": "https://www.trada.ro/img/puzzle-1000-piese-roovi-padurea-magica-toamna-146191html_tr-295691-large.jpg",
@@ -18214,40 +17794,76 @@
 "verificat": "2026-11-05"
 },
 {
-"titlu": "Puzzle 1000 Piese, Roovi, Padurea Magica, Iarna",
+"titlu": "Puzzle 1000 Piese, Deico, Lumea Acvatica",
 "pret": 51.99,
-"imagine": "https://www.trada.ro/img/puzzle-1000-piese-roovi-padurea-magica-iarna-146192html_tr-295698-large.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.trada.ro%2Fpuzzle-1000-piese-roovi-padurea-magica-iarna-146192.html",
+"imagine": "https://www.trada.ro/img/puzzle-1000-piese-deico-lumea-acvatica-146196html_tr-295714-large.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.trada.ro%2Fpuzzle-1000-piese-deico-lumea-acvatica-146196.html",
 "magazin": "trada.ro",
-"id": "EEIQzcMaF87_",
-"brand": "Roovi",
-"url_magazin": "https://www.trada.ro/puzzle-1000-piese-roovi-padurea-magica-iarna-146192.html",
+"id": "WXPH-bGJM3-s",
+"brand": "Deico",
+"url_magazin": "https://www.trada.ro/puzzle-1000-piese-deico-lumea-acvatica-146196.html",
 "pret_vechi": 60.45,
-"verificat": "2026-11-05"
+"verificat": "2026-11-13"
 },
 {
-"titlu": "Puzzle 1000 Piese, Deico, Animale de Padure",
+"titlu": "Puzzle 1000 Piese, Deico, Zana Zapezii de Groos Zselyke",
 "pret": 51.99,
-"imagine": "https://www.trada.ro/img/puzzle-1000-piese-deico-animale-de-padure-146194html_tr-295712-large.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.trada.ro%2Fpuzzle-1000-piese-deico-animale-de-padure-146194.html",
+"imagine": "https://www.trada.ro/img/puzzle-1000-piese-deico-zana-zapezii-de-groos-zselyke-146215html_tr-295797-large.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.trada.ro%2Fpuzzle-1000-piese-deico-zana-zapezii-de-groos-zselyke-146215.html",
 "magazin": "trada.ro",
-"id": "f9vfdk2MLqWN",
+"id": "gNZJA3Zbn0br",
 "brand": "Deico",
-"url_magazin": "https://www.trada.ro/puzzle-1000-piese-deico-animale-de-padure-146194.html",
+"url_magazin": "https://www.trada.ro/puzzle-1000-piese-deico-zana-zapezii-de-groos-zselyke-146215.html",
 "pret_vechi": 60.45,
-"verificat": "2026-11-05"
+"verificat": "2026-11-13"
 },
 {
-"titlu": "Puzzle 1000 Piese, Deico, Caini",
+"titlu": "Puzzle 1000 Piese pentru Adulti, Deico, Marie Spartali Stillman, Fiammetta Singing",
 "pret": 51.99,
-"imagine": "https://www.trada.ro/img/puzzle-1000-piese-deico-caini-146195html_tr-295713-large.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.trada.ro%2Fpuzzle-1000-piese-deico-caini-146195.html",
+"imagine": "https://www.trada.ro/img/puzzle-1000-piese-pentru-adulti-deico-marie-spartali-stillman-fiammetta-singing-146216html_tr-295805-large.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.trada.ro%2Fpuzzle-1000-piese-pentru-adulti-deico-marie-spartali-stillman-fiammetta-singing-146216.html",
 "magazin": "trada.ro",
-"id": "Kb0AJ82b4P51",
+"id": "ZGzQF3xXeXP8",
 "brand": "Deico",
-"url_magazin": "https://www.trada.ro/puzzle-1000-piese-deico-caini-146195.html",
+"url_magazin": "https://www.trada.ro/puzzle-1000-piese-pentru-adulti-deico-marie-spartali-stillman-fiammetta-singing-146216.html",
 "pret_vechi": 60.45,
-"verificat": "2026-11-05"
+"verificat": "2026-11-13"
+},
+{
+"titlu": "Puzzle 1000 Piese pentru Adulti, Deico, Robert Delaunay, Rythme",
+"pret": 51.99,
+"imagine": "https://www.trada.ro/img/puzzle-1000-piese-pentru-adulti-deico-robert-delaunay-rythme-146219html_tr-295825-large.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.trada.ro%2Fpuzzle-1000-piese-pentru-adulti-deico-robert-delaunay-rythme-146219.html",
+"magazin": "trada.ro",
+"id": "Z9sd83S_MfHq",
+"brand": "Deico",
+"url_magazin": "https://www.trada.ro/puzzle-1000-piese-pentru-adulti-deico-robert-delaunay-rythme-146219.html",
+"pret_vechi": 60.45,
+"verificat": "2026-11-13"
+},
+{
+"titlu": "Puzzle 1000 Piese pentru Adulti, Deico, Robert Delaunay Tour Eiffel",
+"pret": 51.99,
+"imagine": "https://www.trada.ro/img/puzzle-1000-piese-pentru-adulti-deico-robert-delaunay-tour-eiffel-146220html_tr-295832-large.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.trada.ro%2Fpuzzle-1000-piese-pentru-adulti-deico-robert-delaunay-tour-eiffel-146220.html",
+"magazin": "trada.ro",
+"id": "g7td9rB3Tytx",
+"brand": "Deico",
+"url_magazin": "https://www.trada.ro/puzzle-1000-piese-pentru-adulti-deico-robert-delaunay-tour-eiffel-146220.html",
+"pret_vechi": 60.45,
+"verificat": "2026-11-13"
+},
+{
+"titlu": "Puzzle 1000 Piese pentru Adulti, Deico, Emile Vernon, The Flower Garden",
+"pret": 51.99,
+"imagine": "https://www.trada.ro/img/puzzle-1000-piese-pentru-adulti-deico-emile-vernon-the-flower-garden-146223html_tr-295849-large.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.trada.ro%2Fpuzzle-1000-piese-pentru-adulti-deico-emile-vernon-the-flower-garden-146223.html",
+"magazin": "trada.ro",
+"id": "sLrKa2WVz9kD",
+"brand": "Deico",
+"url_magazin": "https://www.trada.ro/puzzle-1000-piese-pentru-adulti-deico-emile-vernon-the-flower-garden-146223.html",
+"pret_vechi": 60.45,
+"verificat": "2026-11-13"
 },
 {
 "titlu": "Puzzle Rotund Pamantul - 1000 Piese",
@@ -18262,6 +17878,66 @@
 "verificat": "2026-11-05"
 },
 {
+"titlu": "Puzzle orașe, Londra, 1000 piese",
+"pret": 57.9,
+"imagine": "https://www.ookee.ro/423891-large_default/puzzle-orae-londra-1000-piese.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ookee.ro%2Fpuzzle%2F135730-puzzle-orae-londra-1000-piese-4823115911216.html",
+"magazin": "ookee.ro",
+"id": "c-DVkQFNLisF",
+"brand": "Dodo Toys",
+"url_magazin": "https://www.ookee.ro/puzzle/135730-puzzle-orae-londra-1000-piese-4823115911216.html",
+"pret_vechi": null,
+"verificat": "2026-11-13"
+},
+{
+"titlu": "Puzzle orașe, Paris, 1000 piese",
+"pret": 57.9,
+"imagine": "https://www.ookee.ro/423894-large_default/puzzle-orae-paris-1000-piese.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ookee.ro%2Fpuzzle%2F135731-puzzle-orae-paris-1000-piese-4823115911223.html",
+"magazin": "ookee.ro",
+"id": "ASo9WkagyTrF",
+"brand": "Dodo Toys",
+"url_magazin": "https://www.ookee.ro/puzzle/135731-puzzle-orae-paris-1000-piese-4823115911223.html",
+"pret_vechi": null,
+"verificat": "2026-11-13"
+},
+{
+"titlu": "Puzzle Stranger Things 1000 De Piese Clementoni",
+"pret": 57.9,
+"imagine": "https://www.ookee.ro/199396-large_default/puzzle-stranger-things-1000-de-piese-clementoni.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ookee.ro%2Fpuzzle%2F87436-puzzle-stranger-things-1000-de-piese-clementoni-8005125395422.html",
+"magazin": "ookee.ro",
+"id": "X7edGjHqfwDy",
+"brand": "AS",
+"url_magazin": "https://www.ookee.ro/puzzle/87436-puzzle-stranger-things-1000-de-piese-clementoni-8005125395422.html",
+"pret_vechi": null,
+"verificat": "2026-11-13"
+},
+{
+"titlu": "Puzzle Impossible La Casa De Papel 1000 De Piese Clementoni",
+"pret": 57.9,
+"imagine": "https://www.ookee.ro/199391-large_default/puzzle-impossible-la-casa-de-papel-1000-de-piese-clementoni.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ookee.ro%2Fpuzzle%2F87434-puzzle-impossible-la-casa-de-papel-1000-de-piese-clementoni-800512539529.html",
+"magazin": "ookee.ro",
+"id": "nYyOXd7hsOyn",
+"brand": "AS",
+"url_magazin": "https://www.ookee.ro/puzzle/87434-puzzle-impossible-la-casa-de-papel-1000-de-piese-clementoni-800512539529.html",
+"pret_vechi": null,
+"verificat": "2026-11-13"
+},
+{
+"titlu": "Puzzle La Casa De Papel 1000 De Piese Clementoni",
+"pret": 57.9,
+"imagine": "https://www.ookee.ro/199399-large_default/puzzle-la-casa-de-papel-1000-de-piese-clementoni.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ookee.ro%2Fpuzzle%2F87437-puzzle-la-casa-de-papel-1000-de-piese-clementoni-8005125395323.html",
+"magazin": "ookee.ro",
+"id": "4wnwtnrdKiCV",
+"brand": "AS",
+"url_magazin": "https://www.ookee.ro/puzzle/87437-puzzle-la-casa-de-papel-1000-de-piese-clementoni-8005125395323.html",
+"pret_vechi": null,
+"verificat": "2026-11-13"
+},
+{
 "titlu": "Puzzle Rotund Luna 1000 Piese",
 "pret": 64.8,
 "imagine": "https://cdnmpro.com/780585630/p/raw/1/puzzle-rotund-luna-1000-piese~2871.jpg",
@@ -18274,88 +17950,28 @@
 "verificat": "2026-11-05"
 },
 {
-"titlu": "Puzzle Rotund 1000 Piese Zodiac Astrologie si Simboluri Astrale, Carton Premium, Diametru 68 cm, Antistres, 14 ani+",
-"pret": 89.54,
-"imagine": "https://infinityro.vteximg.com.br/arquivos/ids/275225518/image-a14c273ceea449d39683c8615294d090.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Finfinity.ro%2Fpuzzle-rotund-1000-piese-zodiac-astrologie-si-simboluri-astrale-carton-premium-diametru-68-cm-antistres-14-ani--9381417%2Fp%3Futm_source%3D2performant",
+"titlu": "Puzzle carton, in cutie, Zodiac, 1000 piese",
+"pret": 70.18,
+"imagine": "https://infinityro.vteximg.com.br/arquivos/ids/234134368/image-2c5777d79202427bbce260e586551c55.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Finfinity.ro%2Fpuzzle-carton-in-cutie-zodiac-1000-piese-672470%2Fp%3Futm_source%3D2performant",
 "magazin": "infinity.ro",
-"id": "n21nNsUSmu3V",
-"brand": "Daemi",
-"url_magazin": "https://infinity.ro/puzzle-rotund-1000-piese-zodiac-astrologie-si-simboluri-astrale-carton-premium-diametru-68-cm-antistres-14-ani--9381417/p?utm_source=2performant",
+"id": "m3C1qW3fmtkd",
+"brand": "ROBEN",
+"url_magazin": "https://infinity.ro/puzzle-carton-in-cutie-zodiac-1000-piese-672470/p?utm_source=2performant",
 "pret_vechi": null,
-"verificat": "2026-11-05"
+"verificat": "2026-11-13"
 },
 {
-"titlu": "Ravensburger - Puzzle provocarea Pokemon 1000 piese design nou",
-"pret": 91.9,
-"imagine": "https://www.ookee.ro/365826-large_default/ravensburger-puzzle-provocarea-pokemon-1000-piese-design-nou.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ookee.ro%2Fpuzzle-ravensburger%2F123228-ravensburger-puzzle-provocarea-pokemon-1000-piese-design-nou.html",
-"magazin": "ookee.ro",
-"id": "IGCWjjicw8fG",
-"brand": "Ravensburger",
-"url_magazin": "https://www.ookee.ro/puzzle-ravensburger/123228-ravensburger-puzzle-provocarea-pokemon-1000-piese-design-nou.html",
-"pret_vechi": null,
-"verificat": "2026-11-05"
-},
-{
-"titlu": "Ravensburger - Puzzle Lamborghini Huracan 1000 piese design nou",
-"pret": 91.9,
-"imagine": "https://www.ookee.ro/361424-large_default/ravensburger-puzzle-lamborghini-huracan-1000-piese-design-nou.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ookee.ro%2Fpuzzle-1000-1499-piese%2F122667-ravensburger-puzzle-lamborghini-huracan-1000-piese-design-nou.html",
-"magazin": "ookee.ro",
-"id": "BnW60P5Q5yjk",
-"brand": "Ravensburger",
-"url_magazin": "https://www.ookee.ro/puzzle-1000-1499-piese/122667-ravensburger-puzzle-lamborghini-huracan-1000-piese-design-nou.html",
-"pret_vechi": null,
-"verificat": "2026-11-05"
-},
-{
-"titlu": "Ravensburger - Puzzle Praga 1000 piese design nou",
-"pret": 91.9,
-"imagine": "https://www.ookee.ro/361570-large_default/ravensburger-puzzle-praga-1000-piese-design-nou.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ookee.ro%2Fpuzzle-1000-1499-piese%2F122690-ravensburger-puzzle-praga-1000-piese-design-nou.html",
-"magazin": "ookee.ro",
-"id": "ETxJoziTfpEj",
-"brand": "Ravensburger",
-"url_magazin": "https://www.ookee.ro/puzzle-1000-1499-piese/122690-ravensburger-puzzle-praga-1000-piese-design-nou.html",
-"pret_vechi": null,
-"verificat": "2026-11-05"
-},
-{
-"titlu": "Ravensburger - Puzzle Praga noaptea 1000 piese design nou",
-"pret": 91.9,
-"imagine": "https://www.ookee.ro/361576-large_default/ravensburger-puzzle-praga-noaptea-1000-piese-design-nou.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ookee.ro%2Fpuzzle-1000-1499-piese%2F122691-ravensburger-puzzle-praga-noaptea-1000-piese-design-nou.html",
-"magazin": "ookee.ro",
-"id": "N76kpjbaWtXE",
-"brand": "Ravensburger",
-"url_magazin": "https://www.ookee.ro/puzzle-1000-1499-piese/122691-ravensburger-puzzle-praga-noaptea-1000-piese-design-nou.html",
-"pret_vechi": null,
-"verificat": "2026-11-05"
-},
-{
-"titlu": "Puzzle Lamborghini Huracán, 1000 Piese",
-"pret": 91.9,
-"imagine": "https://www.ookee.ro/286286-large_default/puzzle-lamborghini-huracan-1000-piese.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ookee.ro%2Fpuzzle-1000-1499-piese%2F109155-puzzle-lamborghini-huracan-1000-piese.html",
-"magazin": "ookee.ro",
-"id": "CPoMCpovC6LB",
-"brand": "Ravensburger",
-"url_magazin": "https://www.ookee.ro/puzzle-1000-1499-piese/109155-puzzle-lamborghini-huracan-1000-piese.html",
-"pret_vechi": null,
-"verificat": "2026-11-05"
-},
-{
-"titlu": "Puzzle 1000 piese, Acadele",
-"pret": 94.17,
-"imagine": "https://infinityro.vteximg.com.br/arquivos/ids/267082159/image-9cfeab7d6bc24b239044260f5d5ea0cc.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Finfinity.ro%2Fpuzzle-1000-piese-acadele-1293084%2Fp%3Futm_source%3D2performant",
+"titlu": "Puzzle Vintage cu Mos Craciun si Brad de Craciun, 1000 piese, Multicolor",
+"pret": 71.97,
+"imagine": "https://infinityro.vteximg.com.br/arquivos/ids/274907853/2.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Finfinity.ro%2Fpuzzle-vintage-cu-mos-craciun-si-brad-de-craciun-1000-piese-multicolor-9360650%2Fp%3Futm_source%3D2performant",
 "magazin": "infinity.ro",
-"id": "OaMKJsNd3Bah",
-"brand": "TREFL",
-"url_magazin": "https://infinity.ro/puzzle-1000-piese-acadele-1293084/p?utm_source=2performant",
-"pret_vechi": null,
-"verificat": "2026-11-05"
+"id": "Vc-3GpEUkR_U",
+"brand": "OEM",
+"url_magazin": "https://infinity.ro/puzzle-vintage-cu-mos-craciun-si-brad-de-craciun-1000-piese-multicolor-9360650/p?utm_source=2performant",
+"pret_vechi": 95.96,
+"verificat": "2026-11-13"
 },
 {
 "titlu": "Puzzle Vintage cu Mos Craciun, Sac Cadouri si Vasc, 1000 de piese, Multicolor",
@@ -18368,6 +17984,18 @@
 "url_magazin": "https://infinity.ro/puzzle-vintage-cu-mos-craciun-sac-cadouri-si-vasc-1000-de-piese-multicolor-9360649/p?utm_source=2performant",
 "pret_vechi": null,
 "verificat": "2026-11-05"
+},
+{
+"titlu": "Puzzle 1000 de piese, Wicked, Multicolor",
+"pret": 95.96,
+"imagine": "https://infinityro.vteximg.com.br/arquivos/ids/274907460/0.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Finfinity.ro%2Fpuzzle-1000-de-piese-wicked-multicolor-9360518%2Fp%3Futm_source%3D2performant",
+"magazin": "infinity.ro",
+"id": "cIXL5NqVA3w-",
+"brand": "OEM",
+"url_magazin": "https://infinity.ro/puzzle-1000-de-piese-wicked-multicolor-9360518/p?utm_source=2performant",
+"pret_vechi": null,
+"verificat": "2026-11-13"
 }
 ],
 "magazine": [

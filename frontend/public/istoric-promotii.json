@@ -596,8 +596,8 @@
    "magazine": 157
   },
   "2026-11-13": {
-   "promotii": 275,
-   "magazine": 160
+   "promotii": 270,
+   "magazine": 155
   }
  },
  "magazine": {
@@ -1122,7 +1122,7 @@
     "prima": "2026-11-05",
     "ultima": "2026-11-13",
     "expira": "2026-11-13",
-    "activa": true
+    "activa": false
    },
    {
     "k": "reduceridepanala41laarticoleledinlemn10extracucodatelier49|atelier49",
@@ -4677,7 +4677,7 @@
     "prima": "2026-10-31",
     "ultima": "2026-11-13",
     "expira": "2026-11-13",
-    "activa": true
+    "activa": false
    }
   ],
   "fsm-romania.ro": [
@@ -5067,7 +5067,7 @@
     "prima": "2026-10-27",
     "ultima": "2026-11-13",
     "expira": "2026-11-13",
-    "activa": true
+    "activa": false
    },
    {
     "k": "halloweenpegiftdesignro13cadoula200lei13offfreegift|",
@@ -5448,6 +5448,17 @@
     "prima": "2026-11-12",
     "ultima": "2026-11-13",
     "expira": "2026-11-19",
+    "activa": true
+   }
+  ],
+  "ietraditionala.com": [
+   {
+    "k": "ainceputcampaniade1decembrie|",
+    "titlu": "A început campania de 1 Decembrie!",
+    "cod": false,
+    "prima": "2026-11-13",
+    "ultima": "2026-11-13",
+    "expira": "2026-11-30",
     "activa": true
    }
   ],
@@ -7163,7 +7174,7 @@
     "prima": "2026-11-10",
     "ultima": "2026-11-13",
     "expira": "2026-11-14",
-    "activa": true
+    "activa": false
    }
   ],
   "magichotelgroup.com": [
@@ -7853,7 +7864,7 @@
     "prima": "2026-10-28",
     "ultima": "2026-11-13",
     "expira": "2026-11-13",
-    "activa": true
+    "activa": false
    },
    {
     "k": "reduceridepanala28lavopsea|",
@@ -8902,7 +8913,7 @@
     "prima": "2026-11-06",
     "ultima": "2026-11-13",
     "expira": "2026-11-13",
-    "activa": true
+    "activa": false
    }
   ],
   "pickndazzle.com": [
