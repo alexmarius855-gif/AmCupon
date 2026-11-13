@@ -1,11 +1,11 @@
 {
  "_nota": "Generat de scripts/calendar_black_friday.py din promotiile anuntate de magazine in 2Performant (data/promotii_2p.csv si ofertele 2P active din output.json). Doar parteneri cu link platit. Nu edita de mana.",
- "generat": "2026-11-12",
+ "generat": "2026-11-13",
  "categorii": [
   {
    "slug": "casa-gradina",
    "nume": "casă și grădină",
-   "campanii": 21
+   "campanii": 22
   },
   {
    "slug": "fashion",
@@ -20,7 +20,7 @@
   {
    "slug": "electronice",
    "nume": "electronice și IT",
-   "campanii": 11
+   "campanii": 12
   },
   {
    "slug": "carti-educatie",
@@ -1113,6 +1113,26 @@
    "descriere": "Prima ta comandă pe Infinity vine cu un beneficiu de Black Friday: 10% reducere. Ai și tu o listă de produse pe care le urmărești de ceva timp în speranța că le vei găsi la un preț bun? Momentul a venit. Între 13 și 30 noiembrie 2026, ai 18 zile de promoții la mii de produse din zeci de categorii. Anul acesta, reducerile acoperă cele mai importante nevoi de sezon: Casă și grădină: pentru proiectele de reamenajare și confortul locuinței tale.",
    "are_cod": true,
    "categorie": "marketplace"
+  },
+  {
+   "magazin": "mobilstore.ro",
+   "nume": "Mobilstore",
+   "start": "2026-11-13",
+   "final": "2026-11-15",
+   "nota": "Black Friday MobilStore: -20% la accesorii",
+   "descriere": "Black Friday la MobilStore.ro: -20% la accesorii pentru telefoane – huse, folii de protecție, încărcătoare, cabluri, căști și multe altele. Reducerea se aplică automat în coș, fără cod. Valabil vineri–duminică, 13–15 noiembrie 2026. Alegi marca și modelul telefonului și vezi doar accesoriile compatibile. Expediere în 1 zi lucrătoare, livrare gratuită peste 200 lei, retur 30 de zile.",
+   "are_cod": false,
+   "categorie": "electronice"
+  },
+  {
+   "magazin": "paa-home.ro",
+   "nume": "Paa Home",
+   "start": "2026-11-13",
+   "final": "2026-11-15",
+   "nota": "Black Friday PAA-home: reduceri de 25–50% la peste 1.000 de produse!",
+   "descriere": "Casa curata incepe cu reduceri mari! Intre 13 si 15 noiembrie 2026, descopera reduceri de 25–50% la peste 1.000 de produse din campania Black Friday PAA-home. Alege filtre, saci, perii si accesorii pentru aspiratoare clasice, verticale si robot, accesorii pentru purificatoare de aer si produse de curatenie. Ofertele sunt valabile din 13 noiembrie, ora 00:00, pana pe 15 noiembrie, ora 23:59. Preturile reduse se afiseaza automat pe site, fara cod.",
+   "are_cod": false,
+   "categorie": "casa-gradina"
   },
   {
    "magazin": "doctorshield.ro",

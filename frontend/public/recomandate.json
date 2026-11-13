@@ -80,19 +80,19 @@
   "oferta": "Cupon cadou la prima comanda"
  },
  {
+  "magazin": "everin.ro",
+  "nume": "Everin",
+  "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/10157/medium/10157.jpg",
+  "categorie": "Beauty & Îngrijire",
+  "are_cod": false,
+  "oferta": "Black Friday 2026 cu reduceri de pana la 80%"
+ },
+ {
   "magazin": "havit-romania.ro",
   "nume": "Havit România",
   "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/14600/medium/14600.png",
   "categorie": "Electronice & IT",
   "are_cod": false,
   "oferta": "Black Friday HAVIT România: 30% reducere la tot, 6-15 Noiembrie"
- },
- {
-  "magazin": "labelshop.ro",
-  "nume": "Labelshop",
-  "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/9364/medium/9364.png",
-  "categorie": "Fashion",
-  "are_cod": false,
-  "oferta": "Profita acum de reduceri intre 5% si 15% la echipamente si consumabile"
  }
 ]

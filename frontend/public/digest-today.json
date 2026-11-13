@@ -1,8 +1,8 @@
 {
-  "data": "2026-11-12",
-  "data_afisata": "12 noiembrie 2026",
-  "titlu": "Radarul AmCupon — 12 noiembrie 2026",
-  "intro": "Selecția de azi e făcută automat din ofertele active, după reducere, cod și termen. Primele sunt Iaohi și Laavooextensions, dar mai jos ai toată selecția. Ofertele vin de la magazine prin rețeaua de afiliere; nu le încercăm în coș, așa că citește condițiile înainte să comanzi. Cele care expiră curând sunt marcate.",
+  "data": "2026-11-13",
+  "data_afisata": "13 noiembrie 2026",
+  "titlu": "Radarul AmCupon — 13 noiembrie 2026",
+  "intro": "Selecția de azi e făcută automat din ofertele active, după reducere, cod și termen. Primele sunt Iaohi și Videt, dar mai jos ai toată selecția. Ofertele vin de la magazine prin rețeaua de afiliere; nu le încercăm în coș, așa că citește condițiile înainte să comanzi. Cele care expiră curând sunt marcate.",
   "picks": [
     {
       "scor": 100,
@@ -15,22 +15,8 @@
       "descriere": "AOHi's Black Friday Sale is now LIVE!",
       "cod": "15BF",
       "url": "https://amcupon.ro/cod-reducere/iaohi.com",
-      "zile_ramase": 7,
+      "zile_ramase": 6,
       "take": "Ofertă activă — bună dacă te încadrezi în categorie."
-    },
-    {
-      "scor": 100,
-      "magazin": "laavooextensions.com",
-      "nume_afisat": "Laavooextensions",
-      "categorie": "Marketplace",
-      "categorie_slug": "marketplace",
-      "logo_url": "https://www.google.com/s2/favicons?domain=laavooextensions.com&sz=128",
-      "titlu": "Injection Tape in Hair Black Friday Flash Sale",
-      "descriere": "Injection Tape in Hair Black Friday Flash Sale",
-      "cod": "VT27",
-      "url": "https://amcupon.ro/cod-reducere/laavooextensions.com",
-      "zile_ramase": 1,
-      "take": "Grăbește-te: expiră în 1 zi. Ofertă activă — bună dacă te încadrezi în categorie."
     },
     {
       "scor": 100,
@@ -43,8 +29,8 @@
       "descriere": "La Videt a început campania „Black Friday:-40% la TOȚI ochelarii de vedere și de soare”, disponibilă atât online, cât și în showroom-uri. Oferta: -40% la TOȚI ochelarii de vedere și de soare, folosind codul de reducere *Reducerea se aplică la rame, ochelari de vedere compleți (ramă + lentile), lentile de vedere și ochelari de soare. Mulțumim!",
       "cod": "BLACK40",
       "url": "https://amcupon.ro/cod-reducere/videt.ro",
-      "zile_ramase": 3,
-      "take": "Grăbește-te: expiră în 3 zile. Bun de prins dacă oricum voiai să-ți reîmprospătezi garderoba."
+      "zile_ramase": 2,
+      "take": "Grăbește-te: expiră în 2 zile. Bun de prins dacă oricum voiai să-ți reîmprospătezi garderoba."
     },
     {
       "scor": 100,
@@ -57,22 +43,8 @@
       "descriere": "Pregătim o săptămână de oferte speciale la Agroclima.ro, cu reduceri de până la 40% la produse din categoriile Grădină, Aer Condiționat & Montaj și Construcții.",
       "cod": "CADOU5",
       "url": "https://amcupon.ro/cod-reducere/agroclima.ro",
-      "zile_ramase": 3,
-      "take": "Grăbește-te: expiră în 3 zile. Ofertă activă — bună dacă te încadrezi în categorie."
-    },
-    {
-      "scor": 100,
-      "magazin": "frapperie.ro",
-      "nume_afisat": "Frapperie",
-      "categorie": "Mâncare & Băuturi",
-      "categorie_slug": "mancare-bauturi",
-      "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/13449/medium/13449.png",
-      "titlu": "Black Friday Frapperie – 10% reducere la tot site-ul",
-      "descriere": "Black Friday la Frapperie! 10% reducere la toate produsele: pudre de frappe, milkshake și ciocolată caldă din producție proprie, siropuri pentru cafea, piureuri de fructe și toppinguri, valabil între 6 și 13 noiembrie 2026, pentru comenzi de minimum 100 lei. Transport gratuit pentru comenzile de peste 200 lei. Codul nu se cumulează cu alte reduceri. Ideal atât pentru cafenele, cât și pentru acasă, mai ales cu ciocolata caldă în sezonul rece.",
-      "cod": "BLACKFRIDAY10",
-      "url": "https://amcupon.ro/cod-reducere/frapperie.ro",
-      "zile_ramase": 1,
-      "take": "Grăbește-te: expiră în 1 zi. Ofertă activă — bună dacă te încadrezi în categorie."
+      "zile_ramase": 2,
+      "take": "Grăbește-te: expiră în 2 zile. Ofertă activă — bună dacă te încadrezi în categorie."
     },
     {
       "scor": 100,
@@ -85,8 +57,36 @@
       "descriere": "Make your November getaway even more unforgettable with exclusive savings and added perks at Desire Riviera Maya Resort. Up to 35% OFF Your Stay Complimentary Round-Trip Transfers from Cancun Airport 15% OFF at the Glam Shop 15% OFF Premium Bev",
       "cod": "VELVET26",
       "url": "https://amcupon.ro/cod-reducere/original-group.com",
-      "zile_ramase": 4,
-      "take": "Grăbește-te: expiră în 4 zile. Ofertă activă — bună dacă te încadrezi în categorie."
+      "zile_ramase": 3,
+      "take": "Grăbește-te: expiră în 3 zile. Ofertă activă — bună dacă te încadrezi în categorie."
+    },
+    {
+      "scor": 100,
+      "magazin": "nadula.com",
+      "nume_afisat": "Nadula",
+      "categorie": "Marketplace",
+      "categorie_slug": "marketplace",
+      "logo_url": "https://www.google.com/s2/favicons?domain=nadula.com&sz=128",
+      "titlu": "Extra 15% Off Human Hair Bye Bye Knots Wig with code：nadula15",
+      "descriere": "2026 Nadula Hair Extra 15% Off Human Hair Bye Bye Knots Wig with code：nadula15",
+      "cod": "nadula15",
+      "url": "https://amcupon.ro/cod-reducere/nadula.com",
+      "zile_ramase": 2,
+      "take": "Grăbește-te: expiră în 2 zile. Ofertă activă — bună dacă te încadrezi în categorie."
+    },
+    {
+      "scor": 75,
+      "magazin": "carturesti.ro",
+      "nume_afisat": "Carturesti",
+      "categorie": "Cărți & Educație",
+      "categorie_slug": "carti-educatie",
+      "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/11380/medium/11380.png",
+      "titlu": "Un plan de lectură cu rezultate pe măsură",
+      "descriere": "",
+      "cod": "",
+      "url": "https://amcupon.ro/cod-reducere/carturesti.ro",
+      "zile_ramase": 3,
+      "take": "Grăbește-te: expiră în 3 zile. Ofertă activă — bună dacă te încadrezi în categorie."
     }
   ],
   "outro": "Revino mâine la Radar: selecția se reface în fiecare dimineață, din ofertele active atunci.",

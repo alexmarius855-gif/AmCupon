@@ -1,5 +1,70 @@
 [
   {
+    "id": 274689,
+    "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/274648/original/274648.jpg",
+    "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=6e4570000&aff_code=541547473&campaign_unique=bb3071a7d",
+    "landing_raw": "https://noriel.ro/",
+    "width": 1200,
+    "height": 1200,
+    "merchant": "noriel.ro ",
+    "merchant_slug": "noriel-ro",
+    "name": "Xmas",
+    "category": "Xmas",
+    "b_type": "image"
+  },
+  {
+    "id": 274674,
+    "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/274633/original/274633.jpeg",
+    "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=46cfbbe19&aff_code=541547473&campaign_unique=59076b6bf",
+    "landing_raw": "https://nano-auto.ro/product/ANTIFROST%20GUARD%20PLUS%20%E2%80%93%20Produs%20pentru%20dezghetarea%20si%20deszapezirea%20suprafetelor%20carosabile%20si%20pietonale",
+    "width": 1080,
+    "height": 1080,
+    "merchant": "nano-auto.ro",
+    "merchant_slug": "nano-auto-ro",
+    "name": "Promotii",
+    "category": "Promotii",
+    "b_type": "image"
+  },
+  {
+    "id": 274663,
+    "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/274622/original/274622.jpg",
+    "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=5f761976a&aff_code=541547473&campaign_unique=cc08e2536",
+    "landing_raw": "https://www.pensulemachiaj.ro",
+    "width": 1200,
+    "height": 1200,
+    "merchant": "pensulemachiaj.ro",
+    "merchant_slug": "pensulemachiaj-ro",
+    "name": "-80 BLACK FRIDAY CELEBRITY SECRET BAG GRATUIT ",
+    "category": "-80 BLACK FRIDAY CELEBRITY SECRET BAG GRATUIT ",
+    "b_type": "image"
+  },
+  {
+    "id": 274653,
+    "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/274612/original/274612.jpg",
+    "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=7573ff0d1&aff_code=541547473&campaign_unique=4b9a6d5ea",
+    "landing_raw": "https://www.kitunghii.ro",
+    "width": 1200,
+    "height": 1200,
+    "merchant": "kitunghii.ro",
+    "merchant_slug": "kitunghii-ro",
+    "name": "-80% BLACK FRIDAY,SECRET BEAUTY BAG GRATUIT",
+    "category": "-80% BLACK FRIDAY,SECRET BEAUTY BAG GRATUIT",
+    "b_type": "image"
+  },
+  {
+    "id": 274641,
+    "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/274600/original/274600.JPG",
+    "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=1d9386e3a&aff_code=541547473&campaign_unique=9a6f02fef",
+    "landing_raw": "https://www.libris.ro/lp/englishreading",
+    "width": 967,
+    "height": 962,
+    "merchant": "libris.ro ",
+    "merchant_slug": "libris-ro",
+    "name": "Seri mai lungi?English Books -20% -50% șiii Transport GRATUIT*Hai la răsfoit!",
+    "category": "Seri mai lungi?English Books -20% -50% șiii Transport GRATUIT*Hai la răsfoit!",
+    "b_type": "image"
+  },
+  {
     "id": 274540,
     "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/274499/original/274499.JPG",
     "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=f256de08d&aff_code=541547473&campaign_unique=9a6f02fef",
@@ -26,32 +91,6 @@
     "b_type": "image"
   },
   {
-    "id": 274451,
-    "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/274410/original/274410.jpg",
-    "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=26aff39a0&aff_code=541547473&campaign_unique=cc08e2536",
-    "landing_raw": "https://www.pensulemachiaj.ro",
-    "width": 1200,
-    "height": 1200,
-    "merchant": "pensulemachiaj.ro",
-    "merchant_slug": "pensulemachiaj-ro",
-    "name": "-80 BLACK FRIDAY CELEBRITY SECRET BAG GRATUIT ",
-    "category": "-80 BLACK FRIDAY CELEBRITY SECRET BAG GRATUIT ",
-    "b_type": "image"
-  },
-  {
-    "id": 274441,
-    "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/274400/original/274400.jpg",
-    "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=f013a7bc2&aff_code=541547473&campaign_unique=4b9a6d5ea",
-    "landing_raw": "https://www.kitunghii.ro",
-    "width": 1200,
-    "height": 1200,
-    "merchant": "kitunghii.ro",
-    "merchant_slug": "kitunghii-ro",
-    "name": "-80% BLACK FRIDAY,SECRET BEAUTY BAG GRATUIT",
-    "category": "-80% BLACK FRIDAY,SECRET BEAUTY BAG GRATUIT",
-    "b_type": "image"
-  },
-  {
     "id": 274430,
     "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/274389/original/274389.jpg",
     "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=a8c839946&aff_code=541547473&campaign_unique=6390e3cfb",
@@ -62,32 +101,6 @@
     "merchant_slug": "drmax-ro",
     "name": "Campanie MAX DEALS",
     "category": "Campanie MAX DEALS",
-    "b_type": "image"
-  },
-  {
-    "id": 274358,
-    "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/274317/original/274317.jpeg",
-    "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=0a570a16a&aff_code=541547473&campaign_unique=6390e3cfb",
-    "landing_raw": "https://www.drmax.ro/black-friday",
-    "width": 1080,
-    "height": 1080,
-    "merchant": "drmax.ro/",
-    "merchant_slug": "drmax-ro",
-    "name": "Black Friday 2026",
-    "category": "Black Friday 2026",
-    "b_type": "image"
-  },
-  {
-    "id": 274325,
-    "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/274284/original/274284.jpg",
-    "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=4c23f9855&aff_code=541547473&campaign_unique=a3076d4a0",
-    "landing_raw": "https://www.apolino.ro/sale",
-    "width": 769,
-    "height": 840,
-    "merchant": "apolino.ro",
-    "merchant_slug": "apolino-ro",
-    "name": "https://www.apolino.ro/femei",
-    "category": "https://www.apolino.ro/femei",
     "b_type": "image"
   }
 ]

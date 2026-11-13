@@ -64,17 +64,17 @@
   },
   "2026-11-13": {
    "zi": "2026-11-13",
-   "produse_urmarite": 4133,
-   "excluse": 10,
-   "ieftinite": 295,
-   "reale": 271,
-   "nu_sub_minim": 24,
-   "pct_reale_din_ieftinite": 91.9,
+   "produse_urmarite": 4155,
+   "excluse": 7,
+   "ieftinite": 301,
+   "reale": 275,
+   "nu_sub_minim": 26,
+   "pct_reale_din_ieftinite": 91.4,
    "mediana_reducere_reala_pct": 15.1,
-   "mediana_reducere_aparenta_pct": 11.9,
-   "scumpite": 156,
-   "neschimbate": 3682,
-   "scumpite_in_luna_dinainte": 224,
+   "mediana_reducere_aparenta_pct": 14.4,
+   "scumpite": 141,
+   "neschimbate": 3713,
+   "scumpite_in_luna_dinainte": 226,
    "pct_scumpite_in_luna_dinainte": 5.4
   }
  }
