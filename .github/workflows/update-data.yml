@@ -284,6 +284,12 @@ jobs:
         working-directory: scripts
         run: python categorii_produse.py
 
+      # 13.11.2026: un produs cu text stricat din feed-ul altui magazin oprea publicarea intregului site (de sase ori
+      # intre 07 si 13.11). Carantina il scoate la intrare, cu regulile garzii finale; o sursa intreaga stricata opreste tot.
+      - name: Carantina datelor de la retele (inainte de articole)
+        working-directory: scripts
+        run: python carantina_date.py
+
 
       # ── 7. Bannere campanii (2Performant) — doar pipeline complet ─────────
       - name: Fetch bannere campanii (2Performant API)
@@ -514,6 +520,7 @@ jobs:
         env:
           NEXT_TELEMETRY_DISABLED: "1"
         run: |
+          (cd ../scripts && python carantina_date.py)
           npm ci --no-audit --no-fund
           # Fontul Google se descarca la build; de doua ori (08-10.11) n-a raspuns si a oprit publicarea.
           # O singura reluare: o eroare reala de cod pica si a doua oara, deci poarta ramane.
