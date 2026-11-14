@@ -111,8 +111,20 @@ for (const [tema, lista] of Object.entries(LEGATURI_TEMA)) {
     }
   }
 }
+// Produsele confirmate de pe /alege au prioritate pe /top (page.tsx: `cuModele`, cel putin 4). Aceeasi regula ca
+// lib/criterii.ts::criterii (care nu se poate importa: importuri fara extensie): pagina publicata, produse verificate.
+const crit = JSON.parse(readFileSync("public/criterii.json", "utf-8")).criterii || [];
+const confirmate = new Map();
+for (const c of crit) {
+  const produse = (c.produse || []).filter((p) => p.verificat);
+  if (c.publicat !== true || produse.length < 4) continue;
+  const s = confirmate.get(c.tema) || new Set();
+  for (const p of produse) s.add(p.url);
+  confirmate.set(c.tema, s);
+}
+const areModele = (tema) => (confirmate.get(tema)?.size || 0) >= 4;
 const fara = top.categorii
-  .filter((c) => !areSectiune(c.slug) && legaturiTema(c.slug, linkuri).length === 0)
+  .filter((c) => !areModele(c.slug) && !areSectiune(c.slug) && legaturiTema(c.slug, linkuri).length === 0)
   .map((c) => c.slug);
 verifica("fiecare pagina /top are oferte sau legaturi spre parteneri", fara, []);
 const L = legaturiTema("televizoare", new Map([["evomag.ro", LINK]]));

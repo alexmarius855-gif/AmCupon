@@ -23,6 +23,7 @@ const notino = (termen: string) => `https://www.notino.ro/search.asp?exps=${enco
 const noriel = (termen: string) => `https://noriel.ro/catalogsearch/result/?q=${encodeURIComponent(termen).replace(/%20/g, "+")}`;
 const evomag = (termen: string) => `https://www.evomag.ro/?sn.q=${encodeURIComponent(termen).replace(/%20/g, "+")}`;
 const answear = (cale: string) => `https://answear.ro${cale}`;
+const vidaxl = (termen: string) => `https://www.vidaxl.ro/catalogsearch/result?q=${encodeURIComponent(termen).replace(/%20/g, "+")}`;
 
 export const DESTINATII_TOP: Record<string, Record<string, DestinatieTop | null>> = {
   "notino.ro": {
@@ -70,6 +71,18 @@ export const DESTINATII_TOP: Record<string, Record<string, DestinatieTop | null>
     "Cercei argint 925 tortite": { url: answear("/k/femei/accesorii/bijuterii/cercei"), modele: true },
     "Set argint colier + cercei": { url: answear("/k/femei/accesorii/bijuterii/seturi"), modele: true },
     "Bratara argint cu charm": { url: answear("/k/femei/accesorii/bijuterii/bratari"), modele: true },
+  },
+  // Verificat in browser pe 14.11.2026: vidaXL nu vinde biciclete electrice (cautarea da suporturi,
+  // huse si biciclete de copii; „Engwe" da un set de safturi), dar are scaune de birou (509 rezultate,
+  // 6 cu plasa). Scaunele din top sunt generice, deci „Vezi modele".
+  "vidaxl.ro": {
+    "Blaupunkt Fiene 500": null,
+    "Ancheer 26 Mountain E-Bike": null,
+    "Engwe EP-2 Pro": null,
+    "Scaun ergonomic mesh premium": { url: vidaxl("scaun birou plasa"), modele: true },
+    "Scaun birou mesh mid-back": { url: vidaxl("scaun birou plasa"), modele: true },
+    "Scaun executiv piele ecologica": { url: vidaxl("scaun birou piele ecologica"), modele: true },
+    "Scaun birou simplu reglabil": { url: vidaxl("scaun birou"), modele: true },
   },
   // Cautarea n-a gasit modelele (Rowenta, Levoit, Secretlab, DXRacer, bicicleta Xiaomi), iar
   // „Xiaomi Smart Air Purifier 4" a dat doar alte modele si filtre.
