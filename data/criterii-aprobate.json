@@ -41,12 +41,20 @@
 "data": "2026-11-04",
 "nota": "titluri citite produs cu produs"
 },
+"banda-de-alergare": {
+"data": "2026-11-14",
+"nota": "titluri citite produs cu produs"
+},
 "bicicleta-copii-16-inch": {
 "data": "2026-11-05",
 "nota": "titluri citite produs cu produs"
 },
 "bicicleta-electrica": {
 "data": "2026-11-04",
+"nota": "titluri citite produs cu produs"
+},
+"bicicleta-fitness": {
+"data": "2026-11-14",
 "nota": "titluri citite produs cu produs"
 },
 "bormasina-cu-acumulator": {
@@ -215,6 +223,10 @@
 },
 "laptop-gaming": {
 "data": "2026-11-04",
+"nota": "titluri citite produs cu produs"
+},
+"laptop-intel-core-i7": {
+"data": "2026-11-14",
 "nota": "titluri citite produs cu produs"
 },
 "laptop-ryzen-7": {

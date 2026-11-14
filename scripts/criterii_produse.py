@@ -34,6 +34,9 @@ from urllib.parse import quote_plus, unquote, urlsplit
 if hasattr(sys.stdout, "reconfigure"):
     sys.stdout.reconfigure(encoding="utf-8", errors="replace", line_buffering=True)
 
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from reguli_produse import stare_produs  # noqa: E402
+
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 IESIRE = os.path.join(ROOT, "frontend", "public", "criterii.json")
 OUTPUT = os.path.join(ROOT, "frontend", "public", "output.json")
@@ -706,7 +709,8 @@ def ruleaza() -> int:
         for p in x["produse"]:
             p["titlu"] = titlu_curat(p["titlu"], p.get("brand") or "")
         x["produse"] = [p for p in x["produse"] if se_potriveste(p["titlu"], c, p["pret"]) and not fpf.adresa_moarta(p.get("url_magazin") or "")
-                        and p["magazin"] not in MAGAZINE_RECONDITIONATE and p["magazin"] in plati]  # magazin iesit din program = fara comision
+                        and p["magazin"] not in MAGAZINE_RECONDITIONATE and p["magazin"] in plati  # magazin iesit din program = fara comision
+                        and not stare_produs(p.get("url_magazin") or "", p["titlu"])]  # 14.11: resigilatele evoMAG pareau noi
     verifica_la_magazine(lista, azi)
     # Pretul citit acum pe site-ul magazinului poate iesi din intervalul paginii (06.11.2026: serul cu retinol de la
     # Dr. Max, 21 lei, sub pragul de 25): regula se reaplica pe pretul confirmat, altfel `--verifica` opreste publicarea.
@@ -919,6 +923,8 @@ def verifica_date() -> int:
                 rele.append(f"{nume}: pret neconfirmat pe site-ul magazinului")
             if not se_potriveste(p["titlu"], c, p["pret"]):
                 rele.append(f"{nume}: nu respecta regula")
+            if stare_produs(p.get("url_magazin") or "", p["titlu"]):
+                rele.append(f"{nume}: produs {stare_produs(p.get('url_magazin') or '', p['titlu'])} pe o pagina de produse noi")
             if "event.2performant.com" not in p["url"] or "redirect_to=" not in p["url"]:
                 rele.append(f"{nume}: link fara tracking")
             if not p["imagine"].startswith("http"):

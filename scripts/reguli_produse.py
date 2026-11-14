@@ -93,3 +93,31 @@ def preturi_in_alta_moneda(produse: list) -> dict:
         if moneda != "RON":
             rez[slug] = (moneda, sum(1 for p in lista if (p.get("price") or 0) > 0))
     return rez
+
+
+# --- Produse resigilate / reconditionate / second hand (14.11.2026) -------------------------------------
+# evoMAG pune produsele resigilate in categoria /resigilate-produse-resigilate/, dar titlul din feed nu o
+# spune: pe /alege, un iPad Pro, un televizor si doua masini de spalat vase apareau ca produse noi, la pret
+# de resigilat. Starea se citeste din ADRESA produsului; majoritatea magazinelor o scriu oricum in titlu.
+_RE_STARE = {
+    "resigilat": _re.compile(r"resigilat", _re.I),
+    "recondiționat": _re.compile(r"recondi[tț]ionat|refurbish|renewed", _re.I),
+    "second hand": _re.compile(r"second[-_ ]?hand", _re.I),
+}
+
+
+def stare_produs(url: str = "", titlu: str = "") -> str:
+    """„resigilat" / „recondiționat" / „second hand" dupa adresa sau titlu; „" pentru produs nou."""
+    text = _unquote(url or "") + " " + (titlu or "")
+    for nume, rx in _RE_STARE.items():
+        if rx.search(text):
+            return nume
+    return ""
+
+
+def titlu_cu_stare(titlu: str, url: str) -> str:
+    """Titlul spune starea cand adresa o arata si titlul nu: „... (resigilat)". Idempotent."""
+    stare = stare_produs(url)
+    if not stare or stare_produs("", titlu):
+        return titlu
+    return f"{titlu} ({stare})"

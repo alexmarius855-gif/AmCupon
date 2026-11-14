@@ -70,5 +70,24 @@ amestec = [p("cloud10beauty.com", "ghd Gold Gift Set", 229, C10), p("noriel.ro",
 verifica("magazinele scoase si cate produse CU PRET au",
          preturi_in_alta_moneda(amestec), {"cloud10beauty.com": ("EUR", 1), "iclothing.com": (None, 1)})
 
+print("5. Produse resigilate fara eticheta (14.11.2026: evoMAG le pune in /resigilate-produse-resigilate/)")
+from reguli_produse import stare_produs, titlu_cu_stare  # noqa: E402
+U_EVO = "https://www.evomag.ro/resigilate-produse-resigilate/apple-tableta-apple-ipad-pro-13-2025"
+verifica("resigilat dupa adresa primeste eticheta", titlu_cu_stare("Tableta Apple iPad Pro 13 2025", U_EVO),
+         "Tableta Apple iPad Pro 13 2025 (resigilat)")
+verifica("a doua trecere nu dubleaza eticheta", titlu_cu_stare(titlu_cu_stare("Tableta iPad", U_EVO), U_EVO), "Tableta iPad (resigilat)")
+verifica("titlul care spune deja starea ramane",
+         titlu_cu_stare("Resigilat - Joc Legless", "https://www.gameology.ro/resigilat-joc-legless.html"), "Resigilat - Joc Legless")
+verifica("second hand scris in titlu ramane",
+         titlu_cu_stare("Laptop Second Hand DELL", "https://www.interlink.ro/laptop-second-hand-p1"), "Laptop Second Hand DELL")
+verifica("outlet nu e resigilat", titlu_cu_stare("Partea de lucru Staleks", "https://www.nailshop.ro/outlet/12912/x"),
+         "Partea de lucru Staleks")
+verifica("produs nou ramane nou", stare_produs("https://www.evomag.ro/sport-fitness/rebel-bicicleta-rba-1016", "Bicicleta spinning"), "")
+verifica("adresa codata in linkul 2P se citeste",
+         stare_produs("https://event.2performant.com/events/click?redirect_to=https%3A%2F%2Fwww.evomag.ro%2Fresigilate-produse-resigilate%2Fx"),
+         "resigilat")
+verifica("reconditionat dupa adresa", titlu_cu_stare("Telefon Samsung", "https://x.ro/reconditionate/telefon"),
+         "Telefon Samsung (recondiționat)")
+
 print(f"\n{'PICAT' if esecuri else 'OK'}: {esecuri} asteptari incalcate")
 sys.exit(1 if esecuri else 0)

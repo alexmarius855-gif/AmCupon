@@ -22,6 +22,7 @@ import sys
 import unicodedata
 
 from continut_restrictionat import e_restrictionat
+from reguli_produse import titlu_cu_stare  # noqa: E402
 from text_curat import fara_entitati, punctuatie, titlu_produs
 from fetch_product_feeds import CATEGORY_SLUG_MAP, MERCHANT_SLUG_FALLBACK
 
@@ -158,6 +159,8 @@ def ruleaza() -> int:
         titlu = re.sub(r"^descriere\s+", "", p.get("title") or "", flags=re.I)
         if (p.get("merchant_slug") or "").lower() in MAGAZINE_RECONDITIONATE and "recondi" not in titlu.lower():
             titlu += ETICHETA_RECONDITIONAT
+        # 14.11.2026: resigilat dupa adresa (evoMAG /resigilate-produse-resigilate/), cand titlul nu o spune
+        titlu = titlu_cu_stare(titlu, p.get("url_original") or p.get("url") or "")
         # 06.11.2026: entitati („Tom&nbsp;Ford"), punctuatie („sterilizate,, cu somon") si marca dubla („Seiko Seiko").
         if p.get("brand"):
             p["brand"] = punctuatie(fara_entitati(p["brand"]))
@@ -182,7 +185,7 @@ def ruleaza() -> int:
                 p["brand"] = punctuatie(fara_entitati(p["brand"]))
             if isinstance(p.get("category"), str):
                 p["category"] = fara_entitati(p["category"])
-            p["title"] = titlu_produs(p.get("title") or "", p.get("brand") or "")
+            p["title"] = titlu_produs(titlu_cu_stare(p.get("title") or "", p.get("url_original") or p.get("url") or ""), p.get("brand") or "")
         with io.open(cale_r, "w", encoding="utf-8", newline="") as h:
             json.dump(dr, h, ensure_ascii=False, indent=INDENT)
     return 0
