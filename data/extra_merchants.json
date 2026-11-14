@@ -9406,14 +9406,14 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 320,
+    "zile_ramase": 319,
     "promotii": [
       {
         "nume": "New Autumn and winter collection",
         "descriere": "New Autumn and winter collection",
         "cod_cupon": "",
         "landing_page": "https://fitory.com/collections/new-arrivals",
-        "zile_ramase": 320,
+        "zile_ramase": 319,
         "expira": "2027-09-30",
         "sursa": "impact_deals_api"
       }
