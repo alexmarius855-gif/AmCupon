@@ -616,6 +616,8 @@ jobs:
           BREVO_SENDER_NAME:  AmCupon.ro
         run: |
           if [ -n "$BREVO_API_KEY" ]; then
+            echo "Atributul ALERT_STORES (Brevo ignora tacit atributele care nu exista):"
+            python brevo_atribute.py || echo "atributele Brevo n-au putut fi verificate"
             echo "Verific coduri noi si trimit alerte..."
             python check_price_alerts.py
           else
