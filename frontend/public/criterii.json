@@ -5128,7 +5128,7 @@
 "titlu": "Telefoane 5G",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-06",
+"actualizat": "2026-11-14",
 "feeduri": [
 {
 "id": 1539,
@@ -5144,18 +5144,6 @@
 }
 ],
 "produse": [
-{
-"titlu": "Xiaomi Telefon mobil Xiaomi Redmi 17 5G, 4GB RAM, 128GB, Negru",
-"pret": 1111.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202606122129/480388/full/xiaomi-xiaomi-redmi-17-5g-4gb-128gb-black-eu-1515742.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Ftelefoane-gsm%2Fxiaomi%2F480388-telefon-mobil-xiaomi-redmi-17-5g-4gb-ram-128gb-negru%2F",
-"magazin": "dwyn.ro",
-"id": "ackbxeArpHGg",
-"brand": "Xiaomi",
-"url_magazin": "https://www.dwyn.ro/telefoane-gsm/xiaomi/480388-telefon-mobil-xiaomi-redmi-17-5g-4gb-ram-128gb-negru/",
-"pret_vechi": null,
-"verificat": "2026-11-04"
-},
 {
 "titlu": "Honor Telefon mobil Honor 600 Smart 5G, 4GB RAM, 256GB, 6.87 inch, Snapdragon 4 Gen 4, 7700 mAh, Negru Velvet Black",
 "pret": 1240.99,
@@ -5177,6 +5165,18 @@
 "id": "ut6mhxxSH039",
 "brand": "VIVO",
 "url_magazin": "https://www.dwyn.ro/telefoane-gsm/vivo/480280-telefon-mobil-vivo-y31e-5g-dual-sim-6gb-ram-256gb-lcd-6-72-inch-120-hz-camera-50-mp-5200-mah-ip68-ip69-negru/",
+"pret_vechi": null,
+"verificat": "2026-11-04"
+},
+{
+"titlu": "REALME Telefon mobil realme 16 5G Dual SIM, 8GB RAM, 256GB, AMOLED 6.57 inch 120 Hz, camere 50 MP, 6550 mAh, Negru Air B",
+"pret": 1820.99,
+"imagine": "https://www.dwyn.ro/images/products/img_202606122129/480313/full/realme-telefon-mobil-realme-16-5g-dual-sim-8gb-ram-256gb-amoled-6-57-inch-120-hz-camere-50-mp-6550-mah-negru-air-black-1518676.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Ftelefoane-gsm%2Frealme%2F480313-telefon-mobil-realme-16-5g-dual-sim-8gb-ram-256gb-amoled-6-57-inch-120-hz-camere-50-mp-6550-mah-negru-air-black%2F",
+"magazin": "dwyn.ro",
+"id": "A4QjPwQbxUB2",
+"brand": "REALME",
+"url_magazin": "https://www.dwyn.ro/telefoane-gsm/realme/480313-telefon-mobil-realme-16-5g-dual-sim-8gb-ram-256gb-amoled-6-57-inch-120-hz-camere-50-mp-6550-mah-negru-air-black/",
 "pret_vechi": null,
 "verificat": "2026-11-04"
 },
@@ -5215,18 +5215,6 @@
 "url_magazin": "https://www.dwyn.ro/telefoane-gsm/xiaomi/480337-telefon-mobil-xiaomi-redmi-note-17-pro-max-5g-dual-sim-8gb-ram-256gb-amoled-6-83-inch-120-hz-camera-50-mp-ois-9210-mah-negru/",
 "pret_vechi": null,
 "verificat": "2026-11-04"
-},
-{
-"titlu": "Xiaomi Telefon mobil Xiaomi Redmi Note 17 Pro 5G Dual SIM, 8GB RAM, 512GB, AMOLED 6.83 inch 120 Hz, camera 50 MP OIS, 83",
-"pret": 2350.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202606122129/480334/full/xiaomi-telefon-mobil-xiaomi-redmi-note-17-pro-5g-dual-sim-8gb-ram-512gb-amoled-6-83-inch-120-hz-camera-50-mp-ois-8340-mah-violet-1519207.png",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Ftelefoane-gsm%2Fxiaomi%2F480334-telefon-mobil-xiaomi-redmi-note-17-pro-5g-dual-sim-8gb-ram-512gb-amoled-6-83-inch-120-hz-camera-50-mp-ois-8340-mah-violet%2F",
-"magazin": "dwyn.ro",
-"id": "K1GEUQBmGka2",
-"brand": "Xiaomi",
-"url_magazin": "https://www.dwyn.ro/telefoane-gsm/xiaomi/480334-telefon-mobil-xiaomi-redmi-note-17-pro-5g-dual-sim-8gb-ram-512gb-amoled-6-83-inch-120-hz-camera-50-mp-ois-8340-mah-violet/",
-"pret_vechi": null,
-"verificat": "2026-11-04"
 }
 ],
 "magazine": [
@@ -5241,7 +5229,7 @@
 "titlu": "Telefoane Samsung",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-06",
+"actualizat": "2026-11-14",
 "feeduri": [
 {
 "id": 1539,
@@ -5336,18 +5324,6 @@
 "url_magazin": "https://www.dwyn.ro/telefoane-gsm/samsung/217236-telefon-mobil-samsung-galaxy-z-fold5-12gb-ram-512gb-5g-negru/",
 "pret_vechi": null,
 "verificat": "2026-11-04"
-},
-{
-"titlu": "Samsung Telefon mobil Samsung Galaxy S26+, Dual SIM, 12GB RAM, 512GB, 5G, 6.7 inch, Gri-Argintiu",
-"pret": 5976.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202606122129/422050/full/samsung-samsung-galaxy-s26-plus-ds-silver-shadow-5g-6-7-quot-oc-12gb-512gb-12mp-12mp-plus50mp-plus10mp-4900mah-1365031.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Ftelefoane-gsm%2Fsamsung%2F422050-telefon-mobil-samsung-galaxy-s26-plus-dual-sim-12gb-ram-512gb-5g-6-7-inch-gri-argintiu%2F",
-"magazin": "dwyn.ro",
-"id": "zdqGfFrUK_bm",
-"brand": "Samsung",
-"url_magazin": "https://www.dwyn.ro/telefoane-gsm/samsung/422050-telefon-mobil-samsung-galaxy-s26-plus-dual-sim-12gb-ram-512gb-5g-6-7-inch-gri-argintiu/",
-"pret_vechi": null,
-"verificat": "2026-11-04"
 }
 ],
 "magazine": [
@@ -5362,7 +5338,7 @@
 "titlu": "Telefoane Xiaomi",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-06",
+"actualizat": "2026-11-14",
 "feeduri": [
 {
 "id": 8326,
@@ -5447,18 +5423,6 @@
 "verificat": "2026-11-04"
 },
 {
-"titlu": "Xiaomi Telefon mobil Xiaomi Redmi 17 4G Dual SIM, 4GB RAM, 256GB, ecran 6.9 inch 120 Hz, camera 50 MP, 7500 mAh, Verde O",
-"pret": 1146.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202606122129/480328/full/xiaomi-telefon-mobil-xiaomi-redmi-17-4g-dual-sim-4gb-ram-256gb-ecran-6-9-inch-120-hz-camera-50-mp-7500-mah-verde-oak-green-1519153.png",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Ftelefoane-gsm%2Fxiaomi%2F480328-telefon-mobil-xiaomi-redmi-17-4g-dual-sim-4gb-ram-256gb-ecran-6-9-inch-120-hz-camera-50-mp-7500-mah-verde-oak-green%2F",
-"magazin": "dwyn.ro",
-"id": "m4Nw2LB-WluO",
-"brand": "Xiaomi",
-"url_magazin": "https://www.dwyn.ro/telefoane-gsm/xiaomi/480328-telefon-mobil-xiaomi-redmi-17-4g-dual-sim-4gb-ram-256gb-ecran-6-9-inch-120-hz-camera-50-mp-7500-mah-verde-oak-green/",
-"pret_vechi": null,
-"verificat": "2026-11-04"
-},
-{
 "titlu": "Xiaomi Telefon Mobil Xiaomi Redmi 17, Procesor Mediatek Helio G91 Ultra Octa-Core, IPS LCD 6.9, 4GB RAM, 128GB Flash, Ca",
 "pret": 1152.99,
 "imagine": "https://www.dwyn.ro/images/products/img_202606122129/459895/full/xiaomi-telefon-mobil-xiaomi-redmi-17-128gb-4gb-ram-dual-sim-green-1474336.jpg",
@@ -5483,7 +5447,7 @@
 "titlu": "Telefoane iPhone",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-06",
+"actualizat": "2026-11-14",
 "feeduri": [
 {
 "id": 1539,
@@ -5524,18 +5488,6 @@
 "id": "9bzY6KnVg8Z1",
 "brand": "Apple",
 "url_magazin": "https://www.dwyn.ro/telefoane-gsm/apple/479668-telefon-mobil-apple-iphone-18-pro-max-12gb-ram-256gb-5g-black/",
-"pret_vechi": null,
-"verificat": "2026-11-04"
-},
-{
-"titlu": "Apple Telefon mobil Apple iPhone 18 Pro, 12GB RAM, 512GB, 5G, Black",
-"pret": 9927.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202606122129/478315/full/apple-telefon-mobil-apple-iphone-18-pro-12gb-ram-512gb-5g-black-1505446.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Ftelefoane-gsm%2Fapple%2F478315-telefon-mobil-apple-iphone-18-pro-12gb-ram-512gb-5g-black%2F",
-"magazin": "dwyn.ro",
-"id": "HmuSeV07e7jM",
-"brand": "Apple",
-"url_magazin": "https://www.dwyn.ro/telefoane-gsm/apple/478315-telefon-mobil-apple-iphone-18-pro-12gb-ram-512gb-5g-black/",
 "pret_vechi": null,
 "verificat": "2026-11-04"
 },
@@ -20291,7 +20243,7 @@
 "titlu": "Panouri radiante",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-05",
+"actualizat": "2026-11-14",
 "feeduri": [
 {
 "id": 6225,
@@ -20362,7 +20314,7 @@
 {
 "titlu": "Panou radiant pentru tavan MAGNUM Sol Tip 250: 59 x 59 x 4 cm 300 W",
 "pret": 826.92,
-"imagine": "https://storage.googleapis.com/backupmateriale2018/product/450x450/36326.png",
+"imagine": "https://storage.googleapis.com/backupmateriale2018/product/800x600/36326.png",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.materialeelectrice.ro%2Fpanou-radiant-pentru-tavan-magnum-sol-tip-250-59-x-59-x-4-cm-240-w%3Fshare%3D55742",
 "magazin": "materialeelectrice.ro",
 "id": "5aa2811db",
@@ -20374,7 +20326,7 @@
 {
 "titlu": "Panou radiant Sunpower 350W, IP44, TÜV, max 105°C",
 "pret": 851.98,
-"imagine": "https://storage.googleapis.com/backupmateriale2018/product/450x450/1427355.png",
+"imagine": "https://storage.googleapis.com/backupmateriale2018/product/800x600/1427355.png",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.materialeelectrice.ro%2Fpanou-radiant-sunpower-350w-ip44-tuev-max-1050c-270857%3Fshare%3D55742",
 "magazin": "materialeelectrice.ro",
 "id": "ea6f5519d",
@@ -20386,7 +20338,7 @@
 {
 "titlu": "Panou radiant de perete din marmura 250W 60x40 cm",
 "pret": 950.35,
-"imagine": "https://storage.googleapis.com/backupmateriale2018/product/450x450/45671.png",
+"imagine": "https://storage.googleapis.com/backupmateriale2018/product/800x600/45671.png",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.materialeelectrice.ro%2Fpanou-radiant-de-perete-din-marmura-magnum-marbel-650w%3Fshare%3D55742",
 "magazin": "materialeelectrice.ro",
 "id": "d2b1622bb",
@@ -20398,7 +20350,7 @@
 {
 "titlu": "Panou radiant Sunpower 550W, IP44, TÜV, max 105°C",
 "pret": 1190.65,
-"imagine": "https://storage.googleapis.com/backupmateriale2018/product/450x450/1427356.png",
+"imagine": "https://storage.googleapis.com/backupmateriale2018/product/800x600/1427356.png",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.materialeelectrice.ro%2Fpanou-radiant-sunpower-550w-ip44-tuev-max-1050c-270858%3Fshare%3D55742",
 "magazin": "materialeelectrice.ro",
 "id": "48b090f3f",
@@ -20410,7 +20362,7 @@
 {
 "titlu": "Panou radiant pentru tavan MAGNUM Sol Tip 500: 119 x 59 x 4 cm 500 W",
 "pret": 1240.4,
-"imagine": "https://storage.googleapis.com/backupmateriale2018/product/450x450/36327.png",
+"imagine": "https://storage.googleapis.com/backupmateriale2018/product/800x600/36327.png",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.materialeelectrice.ro%2Fpanou-radiant-pentru-tavan-magnum-sol-tip-500-119-x-59-x-4-cm-500-w%3Fshare%3D55742",
 "magazin": "materialeelectrice.ro",
 "id": "c0f6dc3a4",
@@ -20422,7 +20374,7 @@
 {
 "titlu": "Panou radiant MAGNUM Infrarosu 1000W",
 "pret": 1298.65,
-"imagine": "https://storage.googleapis.com/backupmateriale2018/product/450x450/36320.png",
+"imagine": "https://storage.googleapis.com/backupmateriale2018/product/800x600/36320.png",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.materialeelectrice.ro%2Fpanou-radiant-magnum-infrarosu-1000w%3Fshare%3D55742",
 "magazin": "materialeelectrice.ro",
 "id": "f80a9880b",
@@ -20434,7 +20386,7 @@
 {
 "titlu": "Panou radiant Sunpower 750W, IP44, TÜV, max 105°C",
 "pret": 1352.45,
-"imagine": "https://storage.googleapis.com/backupmateriale2018/product/450x450/1427357.png",
+"imagine": "https://storage.googleapis.com/backupmateriale2018/product/800x600/1427357.png",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.materialeelectrice.ro%2Fpanou-radiant-sunpower-750w-ip44-tuev-max-1050c-270859%3Fshare%3D55742",
 "magazin": "materialeelectrice.ro",
 "id": "c8d930dbc",
@@ -20446,7 +20398,7 @@
 {
 "titlu": "Panou radiant MAGNUM Infrarosu 1500W",
 "pret": 1520.21,
-"imagine": "https://storage.googleapis.com/backupmateriale2018/product/450x450/36321.png",
+"imagine": "https://storage.googleapis.com/backupmateriale2018/product/800x600/36321.png",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.materialeelectrice.ro%2Fpanou-radiant-magnum-infrarosu-1500w%3Fshare%3D55742",
 "magazin": "materialeelectrice.ro",
 "id": "2a6d525dd",
@@ -20934,7 +20886,7 @@
 "titlu": "Cercei din argint",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-05",
+"actualizat": "2026-11-14",
 "feeduri": [
 {
 "id": 5672,
@@ -20983,18 +20935,6 @@
 "verificat": "2026-11-05"
 },
 {
-"titlu": "Cercei Perlati – Picaturi Negre de Mister - Argint 925",
-"pret": 109.0,
-"imagine": "https://cdn7.avanticart.ro/chicbijoux.ro/pictures/products/1500/cercei-perlati-picaturi-negre-de-mister-argint-925-103829.jpeg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fchicbijoux.ro%2Fcercei-perlati-picaturi-negre-de-mister-argint-925.html",
-"magazin": "chicbijoux.ro",
-"id": "AUDhsM3YAiib",
-"brand": "Chic Bijoux",
-"url_magazin": "https://chicbijoux.ro/cercei-perlati-picaturi-negre-de-mister-argint-925.html",
-"pret_vechi": null,
-"verificat": "2026-11-05"
-},
-{
 "titlu": "Cercei inima - model cu decupaje fine - Argint 925 - inchidere surub",
 "pret": 126.0,
 "imagine": "https://cdn13.avanticart.ro/chicbijoux.ro/pictures/products/1500/cercei-inima-model-cu-decupaje-fine-argint-925-inchidere-surub-127125.jpeg",
@@ -21007,18 +20947,6 @@
 "verificat": "2026-11-05"
 },
 {
-"titlu": "Cercei stea - model cu decupaje delicate - Argint 925 - inchidere surub",
-"pret": 126.0,
-"imagine": "https://cdn13.avanticart.ro/chicbijoux.ro/pictures/products/1500/cercei-stea-model-cu-decupaje-delicate-argint-925-inchidere-surub-127140.jpeg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fchicbijoux.ro%2Fcercei-stea-model-cu-decupaje-delicate-argint-925-inchidere-surub.html",
-"magazin": "chicbijoux.ro",
-"id": "_kZ63GJ0YiLI",
-"brand": "Chic Bijoux",
-"url_magazin": "https://chicbijoux.ro/cercei-stea-model-cu-decupaje-delicate-argint-925-inchidere-surub.html",
-"pret_vechi": 149.0,
-"verificat": "2026-11-05"
-},
-{
 "titlu": "Cercei copacul vietii si radacini - model cu decupaje elegante - Argint 925 - inchidere surub",
 "pret": 126.0,
 "imagine": "https://cdn13.avanticart.ro/chicbijoux.ro/pictures/products/1500/cercei-copacul-vietii-si-radacini-model-cu-decupaje-elegante-argint-925-inchidere-surub-127110.jpeg",
@@ -21027,18 +20955,6 @@
 "id": "ymd7VAO-bcaC",
 "brand": "Chic Bijoux",
 "url_magazin": "https://chicbijoux.ro/cercei-copacul-vietii-si-radacini-model-cu-decupaje-elegante-argint-925-inchidere-surub.html",
-"pret_vechi": 149.0,
-"verificat": "2026-11-05"
-},
-{
-"titlu": "Cercei fundite - model cu decupaje delicate - Argint 925 - inchidere surub",
-"pret": 126.0,
-"imagine": "https://cdn13.avanticart.ro/chicbijoux.ro/pictures/products/1500/cercei-fundite-model-cu-decupaje-delicate-argint-925-inchidere-surub-127080.jpeg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fchicbijoux.ro%2Fcercei-fundite-model-cu-decupaje-delicate-argint-925-inchidere-surub.html",
-"magazin": "chicbijoux.ro",
-"id": "JAsYxpORlgBi",
-"brand": "Chic Bijoux",
-"url_magazin": "https://chicbijoux.ro/cercei-fundite-model-cu-decupaje-delicate-argint-925-inchidere-surub.html",
 "pret_vechi": 149.0,
 "verificat": "2026-11-05"
 }
@@ -21055,7 +20971,7 @@
 "titlu": "Benzi de alergare",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-05",
+"actualizat": "2026-11-14",
 "feeduri": [
 {
 "id": 9311,
@@ -21072,24 +20988,12 @@
 ],
 "produse": [
 {
-"titlu": "Banda de alergare electrica, pliabilă PHYSIONICS",
-"pret": 1579.9,
-"imagine": "https://cdn.shopify.com/s/files/1/0576/5031/5369/files/LFBD01_galeri_01.jpg?v=1709996721",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.gorillasports.ro%2Fproducts%2Fbanda-de-alergare-electrica-pliabila-physionics%3Fvariant%3D41143898013801",
-"magazin": "gorillasports.ro",
-"id": "84oeo2vVuH6V",
-"brand": "PHYSIONICS",
-"url_magazin": "https://www.gorillasports.ro/products/banda-de-alergare-electrica-pliabila-physionics?variant=41143898013801",
-"pret_vechi": null,
-"verificat": "2026-11-05"
-},
-{
 "titlu": "Banda de alergare TM 2400 S, cu control gestual, Christopeit",
 "pret": 1839.9,
 "imagine": "https://cdn.shopify.com/s/files/1/0576/5031/5369/files/download_27_42cd5454-6cc8-435c-bab4-ec53d10e17ef.png?v=1749535420",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.gorillasports.ro%2Fproducts%2Fbanda-de-alergare-tm-2400-s-cu-control-gestual-christopeit-1%3Fvariant%3D55608129945983",
 "magazin": "gorillasports.ro",
-"id": "_J_h06xNPafg",
+"id": "f0DeVPtz6T7R",
 "brand": "Christopeit",
 "url_magazin": "https://www.gorillasports.ro/products/banda-de-alergare-tm-2400-s-cu-control-gestual-christopeit-1?variant=55608129945983",
 "pret_vechi": null,
@@ -21104,7 +21008,7 @@
 "id": "FAVLHTicftFG",
 "brand": "YESOUL",
 "url_magazin": "https://blacktech.ro/products/banda-de-alergare-pliabila-yesoul-t3-foldable-treadmill-black-viteza-maxima-14-km-h?variant=57596704293199",
-"pret_vechi": null,
+"pret_vechi": 2399.0,
 "verificat": "2026-11-05"
 },
 {
@@ -21185,34 +21089,10 @@
 "imagine": "https://cdn.shopify.com/s/files/1/0576/5031/5369/products/5dd15556-457e-421b-93ac-1385455982f6_1.jpg?v=1750417876",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.gorillasports.ro%2Fproducts%2Fbanda-de-alergare-maxxus-m8-argintie%3Fvariant%3D55607962567039",
 "magazin": "gorillasports.ro",
-"id": "Rv_ODgitdDqp",
+"id": "ANKMCALCZSVS",
 "brand": "MAXXUS",
 "url_magazin": "https://www.gorillasports.ro/products/banda-de-alergare-maxxus-m8-argintie?variant=55607962567039",
 "pret_vechi": null,
-"verificat": "2026-11-05"
-},
-{
-"titlu": "Banda de alergare TM 5000S, Christopeit",
-"pret": 5649.9,
-"imagine": "https://cdn.shopify.com/s/files/1/0576/5031/5369/files/TM5000S_1840_cover.png?v=1761987246",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.gorillasports.ro%2Fproducts%2Fbanda-de-alergare-tm-5000s-christopeit%3Fvariant%3D56320607453567",
-"magazin": "gorillasports.ro",
-"id": "9uBGpkgK-iPr",
-"brand": "Christopeit",
-"url_magazin": "https://www.gorillasports.ro/products/banda-de-alergare-tm-5000s-christopeit?variant=56320607453567",
-"pret_vechi": null,
-"verificat": "2026-11-05"
-},
-{
-"titlu": "Banda de alergare RunMaxx U9 PRO MAXXUS",
-"pret": 18499.89,
-"imagine": "https://cdn.shopify.com/s/files/1/0576/5031/5369/files/GSMX-600428-00019-0001_P1.jpg?v=1792759294",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.gorillasports.ro%2Fproducts%2Fbanda-de-alergare-runmaxx-u9-pro-maxxus-negru%3Fvariant%3D58918253232511",
-"magazin": "gorillasports.ro",
-"id": "9AgFfE6XEqWL",
-"brand": "MAXXUS",
-"url_magazin": "https://www.gorillasports.ro/products/banda-de-alergare-runmaxx-u9-pro-maxxus-negru?variant=58918253232511",
-"pret_vechi": 20699.9,
 "verificat": "2026-11-05"
 }
 ],
@@ -21229,7 +21109,7 @@
 "titlu": "Biciclete de fitness",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-05",
+"actualizat": "2026-11-14",
 "feeduri": [
 {
 "id": 3197,
@@ -21266,18 +21146,6 @@
 "id": "FGEhInc4jydh",
 "brand": "VidaXL",
 "url_magazin": "https://infinity.ro/bicicleta-de-fitness-cu-scaun-504342/p?utm_source=2performant",
-"pret_vechi": null,
-"verificat": "2026-11-05"
-},
-{
-"titlu": "Bicicleta spinning Rebel Active RBA-1016, volant 4 kg",
-"pret": 653.99,
-"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4191%2F4191271%2Fbicicleta-spinning-rebel-activ-6745748b9438d.PNG&type=auto&width=500&sign=L1hxVJlq5gQmvzWbPldkpmu-6RD6lGahuiaNxseheWQ",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Fsport-fitness-fitness-biciclete-fitness-magnetice-eliptice%2Frebel-bicicleta-spinning-rebel-active-rba-1016-volant-4-kg-4191271.html",
-"magazin": "evomag.ro",
-"id": "9H3yq_EAKi-y",
-"brand": "Rebel",
-"url_magazin": "https://www.evomag.ro/sport-fitness-fitness-biciclete-fitness-magnetice-eliptice/rebel-bicicleta-spinning-rebel-active-rba-1016-volant-4-kg-4191271.html",
 "pret_vechi": null,
 "verificat": "2026-11-05"
 },
@@ -21355,7 +21223,7 @@
 "titlu": "Dicționare englez-român",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-05",
+"actualizat": "2026-11-14",
 "feeduri": [
 {
 "id": 1576,
@@ -21457,18 +21325,6 @@
 "brand": "Loredana Stefan",
 "url_magazin": "https://www.libris.ro/carte/dictionar-roman-englez-englez-roman-loredana-stefan/862519?utm_source=2parale&utm_medium=feed",
 "pret_vechi": null,
-"verificat": "2026-11-05"
-},
-{
-"titlu": "Dictionar de marketing englez-roman - A. Ivanovic, P.H. Collin",
-"pret": 25.6,
-"imagine": "https://www.libris.ro/img/pozeprod/570/569927-1-small-1.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.libris.ro%2Fcarte%2Fdictionar-de-marketing-englez-roman-a-ivanovic-p-h-collin%2F569927%3Futm_source%3D2parale%26utm_medium%3Dfeed",
-"magazin": "libris.ro",
-"id": "YQNlf3lq7iug",
-"brand": "-",
-"url_magazin": "https://www.libris.ro/carte/dictionar-de-marketing-englez-roman-a-ivanovic-p-h-collin/569927?utm_source=2parale&utm_medium=feed",
-"pret_vechi": 32.0,
 "verificat": "2026-11-05"
 }
 ],

@@ -6422,7 +6422,7 @@
 "titlu": "Telefoane 5G",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-06",
+"actualizat": "2026-11-14",
 "feeduri": [
 {
 "id": 1539,
@@ -6439,16 +6439,15 @@
 ],
 "produse": [
 {
-"titlu": "Xiaomi Telefon mobil Xiaomi Redmi 17 5G, 4GB RAM, 128GB, Negru",
-"pret": 1111.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202606122129/480388/full/xiaomi-xiaomi-redmi-17-5g-4gb-128gb-black-eu-1515742.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Ftelefoane-gsm%2Fxiaomi%2F480388-telefon-mobil-xiaomi-redmi-17-5g-4gb-ram-128gb-negru%2F",
+"titlu": "Honor Telefon mobil Honor 600 Smart 5G, 4GB RAM, 128GB, 6.87 inch, Snapdragon 4 Gen 4, 7700 mAh, Negru Velvet Black",
+"pret": 1149.0,
+"imagine": "https://www.dwyn.ro/images/products/img_202611101603/487897/full/honor-telefon-mobil-honor-600-smart-5g-4gb-ram-256gb-6-87-inch-snapdragon-4-gen-4-7700-mah-negru-velvet-black-1542598.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Ftelefoane-gsm%2Fhonor%2F487897-telefon-mobil-honor-600-smart-5g-4gb-ram-128gb-6-87-inch-snapdragon-4-gen-4-7700-mah-negru-velvet-black%2F",
 "magazin": "dwyn.ro",
-"id": "ackbxeArpHGg",
-"brand": "Xiaomi",
-"url_magazin": "https://www.dwyn.ro/telefoane-gsm/xiaomi/480388-telefon-mobil-xiaomi-redmi-17-5g-4gb-ram-128gb-negru/",
-"pret_vechi": null,
-"verificat": "2026-11-04"
+"id": "pc43qGv0mdba",
+"brand": "Honor",
+"url_magazin": "https://www.dwyn.ro/telefoane-gsm/honor/487897-telefon-mobil-honor-600-smart-5g-4gb-ram-128gb-6-87-inch-snapdragon-4-gen-4-7700-mah-negru-velvet-black/",
+"pret_vechi": null
 },
 {
 "titlu": "Honor Telefon mobil Honor 600 Smart 5G, 4GB RAM, 256GB, 6.87 inch, Snapdragon 4 Gen 4, 7700 mAh, Negru Velvet Black",
@@ -6463,6 +6462,17 @@
 "verificat": "2026-11-04"
 },
 {
+"titlu": "Honor Telefon mobil Honor 600 Lite 5G Dual SIM, 8GB RAM, 128GB, AMOLED 6.6 inch 120 Hz, camera 108 MP, 6520 mAh, Negru V",
+"pret": 1437.99,
+"imagine": "https://www.dwyn.ro/images/products/img_202606122129/480325/full/honor-telefon-mobil-honor-600-lite-5g-dual-sim-8gb-ram-128gb-amoled-6-6-inch-120-hz-camera-108-mp-6520-mah-negru-velvet-black-1518670.png",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Ftelefoane-gsm%2Fhonor%2F480325-telefon-mobil-honor-600-lite-5g-dual-sim-8gb-ram-128gb-amoled-6-6-inch-120-hz-camera-108-mp-6520-mah-negru-velvet-black%2F",
+"magazin": "dwyn.ro",
+"id": "CrAvfGsIEeSG",
+"brand": "Honor",
+"url_magazin": "https://www.dwyn.ro/telefoane-gsm/honor/480325-telefon-mobil-honor-600-lite-5g-dual-sim-8gb-ram-128gb-amoled-6-6-inch-120-hz-camera-108-mp-6520-mah-negru-velvet-black/",
+"pret_vechi": null
+},
+{
 "titlu": "VIVO Telefon mobil vivo Y31e 5G Dual SIM, 6GB RAM, 256GB, LCD 6.72 inch 120 Hz, camera 50 MP, 5200 mAh, IP68/IP69, Negru",
 "pret": 1581.99,
 "imagine": "https://www.dwyn.ro/images/products/img_202606122129/480280/full/vivo-telefon-mobil-vivo-y31e-5g-dual-sim-6gb-ram-256gb-lcd-6-72-inch-120-hz-camera-50-mp-5200-mah-ip68-ip69-negru-1518703.png",
@@ -6475,15 +6485,16 @@
 "verificat": "2026-11-04"
 },
 {
-"titlu": "Honor Telefon mobil Honor 600 Lite, Dual SIM, 8GB RAM, 128GB, 5G, Verde",
-"pret": 1724.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202606122129/480379/full/honor-telefon-mobil-honor-600-lite-dual-sim-8gb-ram-128gb-5g-verde-1515676.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Ftelefoane-gsm%2Fhonor%2F480379-telefon-mobil-honor-600-lite-dual-sim-8gb-ram-128gb-5g-verde%2F",
+"titlu": "REALME Telefon mobil realme 16 5G Dual SIM, 8GB RAM, 256GB, AMOLED 6.57 inch 120 Hz, camere 50 MP, 6550 mAh, Negru Air B",
+"pret": 1820.99,
+"imagine": "https://www.dwyn.ro/images/products/img_202606122129/480313/full/realme-telefon-mobil-realme-16-5g-dual-sim-8gb-ram-256gb-amoled-6-57-inch-120-hz-camere-50-mp-6550-mah-negru-air-black-1518676.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Ftelefoane-gsm%2Frealme%2F480313-telefon-mobil-realme-16-5g-dual-sim-8gb-ram-256gb-amoled-6-57-inch-120-hz-camere-50-mp-6550-mah-negru-air-black%2F",
 "magazin": "dwyn.ro",
-"id": "-IAyHKrzJXc_",
-"brand": "Honor",
-"url_magazin": "https://www.dwyn.ro/telefoane-gsm/honor/480379-telefon-mobil-honor-600-lite-dual-sim-8gb-ram-128gb-5g-verde/",
-"pret_vechi": null
+"id": "A4QjPwQbxUB2",
+"brand": "REALME",
+"url_magazin": "https://www.dwyn.ro/telefoane-gsm/realme/480313-telefon-mobil-realme-16-5g-dual-sim-8gb-ram-256gb-amoled-6-57-inch-120-hz-camere-50-mp-6550-mah-negru-air-black/",
+"pret_vechi": null,
+"verificat": "2026-11-04"
 },
 {
 "titlu": "VIVO Telefon mobil vivo V70 Lite 5G Dual SIM, 6GB RAM, 256GB, AMOLED 6.77 inch 120 Hz, camera Sony 50 MP, incarcare 90 W",
@@ -6520,18 +6531,6 @@
 "url_magazin": "https://www.dwyn.ro/telefoane-gsm/xiaomi/480337-telefon-mobil-xiaomi-redmi-note-17-pro-max-5g-dual-sim-8gb-ram-256gb-amoled-6-83-inch-120-hz-camera-50-mp-ois-9210-mah-negru/",
 "pret_vechi": null,
 "verificat": "2026-11-04"
-},
-{
-"titlu": "Xiaomi Telefon mobil Xiaomi Redmi Note 17 Pro 5G Dual SIM, 8GB RAM, 512GB, AMOLED 6.83 inch 120 Hz, camera 50 MP OIS, 83",
-"pret": 2350.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202606122129/480334/full/xiaomi-telefon-mobil-xiaomi-redmi-note-17-pro-5g-dual-sim-8gb-ram-512gb-amoled-6-83-inch-120-hz-camera-50-mp-ois-8340-mah-violet-1519207.png",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Ftelefoane-gsm%2Fxiaomi%2F480334-telefon-mobil-xiaomi-redmi-note-17-pro-5g-dual-sim-8gb-ram-512gb-amoled-6-83-inch-120-hz-camera-50-mp-ois-8340-mah-violet%2F",
-"magazin": "dwyn.ro",
-"id": "K1GEUQBmGka2",
-"brand": "Xiaomi",
-"url_magazin": "https://www.dwyn.ro/telefoane-gsm/xiaomi/480334-telefon-mobil-xiaomi-redmi-note-17-pro-5g-dual-sim-8gb-ram-512gb-amoled-6-83-inch-120-hz-camera-50-mp-ois-8340-mah-violet/",
-"pret_vechi": null,
-"verificat": "2026-11-04"
 }
 ],
 "magazine": [
@@ -6545,7 +6544,7 @@
 "titlu": "Telefoane Samsung",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-06",
+"actualizat": "2026-11-14",
 "feeduri": [
 {
 "id": 1539,
@@ -6630,6 +6629,17 @@
 "verificat": "2026-11-04"
 },
 {
+"titlu": "Samsung Telefon mobil Samsung Galaxy S26 FE, Dual SIM, 8GB RAM, 512GB, 5G, Exynos 2500, Verde deschis",
+"pret": 4740.99,
+"imagine": "https://www.dwyn.ro/images/products/img_202606122129/455560/full/samsung-telefon-mobil-samsung-galaxy-s26-fe-dual-sim-8gb-ram-512gb-5g-pistachio-1474393.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Ftelefoane-gsm%2Fsamsung%2F455560-telefon-mobil-samsung-galaxy-s26-fe-dual-sim-8gb-ram-512gb-5g-exynos-2500-verde-deschis%2F",
+"magazin": "dwyn.ro",
+"id": "W5NWl7LU8h7P",
+"brand": "Samsung",
+"url_magazin": "https://www.dwyn.ro/telefoane-gsm/samsung/455560-telefon-mobil-samsung-galaxy-s26-fe-dual-sim-8gb-ram-512gb-5g-exynos-2500-verde-deschis/",
+"pret_vechi": null
+},
+{
 "titlu": "Samsung Telefon mobil Samsung Galaxy Z Fold5, 12GB RAM, 512GB, 5G, Negru",
 "pret": 4802.99,
 "imagine": "https://www.dwyn.ro/images/products/img_202305231058/217236/full/samsung-telefon-mobil-samsung-galaxy-z-fold5-12gb-ram-512gb-5g-negru-401459.jpg",
@@ -6638,18 +6648,6 @@
 "id": "ybkc8CktWwjC",
 "brand": "Samsung",
 "url_magazin": "https://www.dwyn.ro/telefoane-gsm/samsung/217236-telefon-mobil-samsung-galaxy-z-fold5-12gb-ram-512gb-5g-negru/",
-"pret_vechi": null,
-"verificat": "2026-11-04"
-},
-{
-"titlu": "Samsung Telefon mobil Samsung Galaxy S26+, Dual SIM, 12GB RAM, 512GB, 5G, 6.7 inch, Gri-Argintiu",
-"pret": 5976.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202606122129/422050/full/samsung-samsung-galaxy-s26-plus-ds-silver-shadow-5g-6-7-quot-oc-12gb-512gb-12mp-12mp-plus50mp-plus10mp-4900mah-1365031.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Ftelefoane-gsm%2Fsamsung%2F422050-telefon-mobil-samsung-galaxy-s26-plus-dual-sim-12gb-ram-512gb-5g-6-7-inch-gri-argintiu%2F",
-"magazin": "dwyn.ro",
-"id": "zdqGfFrUK_bm",
-"brand": "Samsung",
-"url_magazin": "https://www.dwyn.ro/telefoane-gsm/samsung/422050-telefon-mobil-samsung-galaxy-s26-plus-dual-sim-12gb-ram-512gb-5g-6-7-inch-gri-argintiu/",
 "pret_vechi": null,
 "verificat": "2026-11-04"
 }
@@ -6665,7 +6663,7 @@
 "titlu": "Telefoane Xiaomi",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-06",
+"actualizat": "2026-11-14",
 "feeduri": [
 {
 "id": 8326,
@@ -6688,6 +6686,17 @@
 "url_magazin": "https://www.dwyn.ro/telefoane-gsm/xiaomi/286365-telefon-mobil-xiaomi-redmi-a5-4g-dual-sim-4gb-ram-128gb-ocean-blue/",
 "pret_vechi": null,
 "verificat": "2026-11-04"
+},
+{
+"titlu": "Xiaomi Telefon mobil Xiaomi Redmi 15C, 4GB RAM, 128GB,4G LTE, Dual SIM, Negru",
+"pret": 910.99,
+"imagine": "https://www.dwyn.ro/images/products/img_202508191322/358193/full/xiaomi-xiaomi-redmi-15c-4-128gb-czarny-1004312.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Ftelefoane-gsm%2Fxiaomi%2F358193-telefon-mobil-xiaomi-redmi-15c-4gb-ram-128gb-4g-lte-dual-sim-negru%2F",
+"magazin": "dwyn.ro",
+"id": "qI1QFsuQsWbY",
+"brand": "Xiaomi",
+"url_magazin": "https://www.dwyn.ro/telefoane-gsm/xiaomi/358193-telefon-mobil-xiaomi-redmi-15c-4gb-ram-128gb-4g-lte-dual-sim-negru/",
+"pret_vechi": null
 },
 {
 "titlu": "Xiaomi Telefon mobil Xiaomi 12 Lite, Dual SIM, 8GB RAM, 128GB, 5G, Negru",
@@ -6750,18 +6759,6 @@
 "verificat": "2026-11-04"
 },
 {
-"titlu": "Xiaomi Telefon mobil Xiaomi Redmi 17 4G Dual SIM, 4GB RAM, 256GB, ecran 6.9 inch 120 Hz, camera 50 MP, 7500 mAh, Verde O",
-"pret": 1146.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202606122129/480328/full/xiaomi-telefon-mobil-xiaomi-redmi-17-4g-dual-sim-4gb-ram-256gb-ecran-6-9-inch-120-hz-camera-50-mp-7500-mah-verde-oak-green-1519153.png",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Ftelefoane-gsm%2Fxiaomi%2F480328-telefon-mobil-xiaomi-redmi-17-4g-dual-sim-4gb-ram-256gb-ecran-6-9-inch-120-hz-camera-50-mp-7500-mah-verde-oak-green%2F",
-"magazin": "dwyn.ro",
-"id": "m4Nw2LB-WluO",
-"brand": "Xiaomi",
-"url_magazin": "https://www.dwyn.ro/telefoane-gsm/xiaomi/480328-telefon-mobil-xiaomi-redmi-17-4g-dual-sim-4gb-ram-256gb-ecran-6-9-inch-120-hz-camera-50-mp-7500-mah-verde-oak-green/",
-"pret_vechi": null,
-"verificat": "2026-11-04"
-},
-{
 "titlu": "Xiaomi Telefon Mobil Xiaomi Redmi 17, Procesor Mediatek Helio G91 Ultra Octa-Core, IPS LCD 6.9, 4GB RAM, 128GB Flash, Ca",
 "pret": 1152.99,
 "imagine": "https://www.dwyn.ro/images/products/img_202606122129/459895/full/xiaomi-telefon-mobil-xiaomi-redmi-17-128gb-4gb-ram-dual-sim-green-1474336.jpg",
@@ -6785,7 +6782,7 @@
 "titlu": "Telefoane iPhone",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-06",
+"actualizat": "2026-11-14",
 "feeduri": [
 {
 "id": 1539,
@@ -6830,18 +6827,6 @@
 "verificat": "2026-11-04"
 },
 {
-"titlu": "Apple Telefon mobil Apple iPhone 18 Pro, 12GB RAM, 512GB, 5G, Black",
-"pret": 9927.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202606122129/478315/full/apple-telefon-mobil-apple-iphone-18-pro-12gb-ram-512gb-5g-black-1505446.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Ftelefoane-gsm%2Fapple%2F478315-telefon-mobil-apple-iphone-18-pro-12gb-ram-512gb-5g-black%2F",
-"magazin": "dwyn.ro",
-"id": "HmuSeV07e7jM",
-"brand": "Apple",
-"url_magazin": "https://www.dwyn.ro/telefoane-gsm/apple/478315-telefon-mobil-apple-iphone-18-pro-12gb-ram-512gb-5g-black/",
-"pret_vechi": null,
-"verificat": "2026-11-04"
-},
-{
 "titlu": "Apple Telefon mobil Apple iPhone 18 Pro, 12GB RAM, 512GB, 5G, Glacier",
 "pret": 10376.99,
 "imagine": "https://www.dwyn.ro/images/products/img_202606122129/479656/full/apple-telefon-mobil-apple-iphone-18-pro-12gb-ram-512gb-5g-glacier-1505386.jpg",
@@ -6852,6 +6837,17 @@
 "url_magazin": "https://www.dwyn.ro/telefoane-gsm/apple/479656-telefon-mobil-apple-iphone-18-pro-12gb-ram-512gb-5g-glacier/",
 "pret_vechi": null,
 "verificat": "2026-11-04"
+},
+{
+"titlu": "Apple Telefon mobil Apple iPhone 18 Pro, 12GB RAM, 1TB, 5G, Black",
+"pret": 12548.99,
+"imagine": "https://www.dwyn.ro/images/products/img_202606122129/478288/full/apple-telefon-mobil-apple-iphone-18-pro-12gb-ram-1tb-5g-black-1505515.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Ftelefoane-gsm%2Fapple%2F478288-telefon-mobil-apple-iphone-18-pro-12gb-ram-1tb-5g-black%2F",
+"magazin": "dwyn.ro",
+"id": "Q95YZjnXg4zX",
+"brand": "Apple",
+"url_magazin": "https://www.dwyn.ro/telefoane-gsm/apple/478288-telefon-mobil-apple-iphone-18-pro-12gb-ram-1tb-5g-black/",
+"pret_vechi": null
 },
 {
 "titlu": "Apple Telefon mobil Apple iPhone 18 Pro, 12GB RAM, 1TB, 5G, Glacier",
@@ -6866,25 +6862,25 @@
 "verificat": "2026-11-04"
 },
 {
-"titlu": "Apple Telefon mobil Apple iPhone 18 Pro, 12GB RAM, 1TB, 5G, Black",
-"pret": 12587.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202606122129/478288/full/apple-telefon-mobil-apple-iphone-18-pro-12gb-ram-1tb-5g-black-1505515.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Ftelefoane-gsm%2Fapple%2F478288-telefon-mobil-apple-iphone-18-pro-12gb-ram-1tb-5g-black%2F",
-"magazin": "dwyn.ro",
-"id": "Q95YZjnXg4zX",
-"brand": "Apple",
-"url_magazin": "https://www.dwyn.ro/telefoane-gsm/apple/478288-telefon-mobil-apple-iphone-18-pro-12gb-ram-1tb-5g-black/",
-"pret_vechi": null
-},
-{
 "titlu": "Apple Telefon mobil Apple iPhone 18 Pro, 12GB RAM, 1TB, 5G, Silver",
-"pret": 12660.99,
+"pret": 12620.99,
 "imagine": "https://www.dwyn.ro/images/products/img_202606122129/479659/full/apple-telefon-mobil-apple-iphone-18-pro-12gb-ram-1tb-5g-silver-1505374.jpg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Ftelefoane-gsm%2Fapple%2F479659-telefon-mobil-apple-iphone-18-pro-12gb-ram-1tb-5g-silver%2F",
 "magazin": "dwyn.ro",
 "id": "dsUIJGrWlm7N",
 "brand": "Apple",
 "url_magazin": "https://www.dwyn.ro/telefoane-gsm/apple/479659-telefon-mobil-apple-iphone-18-pro-12gb-ram-1tb-5g-silver/",
+"pret_vechi": null
+},
+{
+"titlu": "Apple Telefon mobil Apple iPhone 18 Pro, 12GB RAM, 1TB, 5G, Burgundy",
+"pret": 12620.99,
+"imagine": "https://www.dwyn.ro/images/products/img_202606122129/479662/full/apple-telefon-mobil-apple-iphone-18-pro-12gb-ram-1tb-5g-burgundy-1505362.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Ftelefoane-gsm%2Fapple%2F479662-telefon-mobil-apple-iphone-18-pro-12gb-ram-1tb-5g-burgundy%2F",
+"magazin": "dwyn.ro",
+"id": "rqc5aeOD1BiK",
+"brand": "Apple",
+"url_magazin": "https://www.dwyn.ro/telefoane-gsm/apple/479662-telefon-mobil-apple-iphone-18-pro-12gb-ram-1tb-5g-burgundy/",
 "pret_vechi": null
 }
 ],
@@ -6900,16 +6896,7 @@
 "nota": null,
 "in_text": null,
 "actualizat": "2026-11-06",
-"feeduri": [
-{
-"id": 8637,
-"magazin": "ceasuri-shop.ro"
-},
-{
-"id": 1539,
-"magazin": "dwyn.ro"
-}
-],
+"feeduri": [],
 "produse": [
 {
 "titlu": "ZTE Telefon mobil ZTE Blade A56, 4GB RAM, 64GB, 4G LTE, Dual SIM, Unisoc T7200, Negru",
@@ -25929,7 +25916,7 @@
 "titlu": "Panouri radiante",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-05",
+"actualizat": "2026-11-14",
 "feeduri": [
 {
 "id": 6225,
@@ -26000,7 +25987,7 @@
 {
 "titlu": "Panou radiant pentru tavan MAGNUM Sol Tip 250: 59 x 59 x 4 cm 300 W",
 "pret": 826.92,
-"imagine": "https://storage.googleapis.com/backupmateriale2018/product/450x450/36326.png",
+"imagine": "https://storage.googleapis.com/backupmateriale2018/product/800x600/36326.png",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.materialeelectrice.ro%2Fpanou-radiant-pentru-tavan-magnum-sol-tip-250-59-x-59-x-4-cm-240-w%3Fshare%3D55742",
 "magazin": "materialeelectrice.ro",
 "id": "5aa2811db",
@@ -26012,7 +25999,7 @@
 {
 "titlu": "Panou radiant Sunpower 350W, IP44, TÜV, max 105°C",
 "pret": 851.98,
-"imagine": "https://storage.googleapis.com/backupmateriale2018/product/450x450/1427355.png",
+"imagine": "https://storage.googleapis.com/backupmateriale2018/product/800x600/1427355.png",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.materialeelectrice.ro%2Fpanou-radiant-sunpower-350w-ip44-tuev-max-1050c-270857%3Fshare%3D55742",
 "magazin": "materialeelectrice.ro",
 "id": "ea6f5519d",
@@ -26024,7 +26011,7 @@
 {
 "titlu": "Panou radiant de perete din marmura 250W 60x40 cm",
 "pret": 950.35,
-"imagine": "https://storage.googleapis.com/backupmateriale2018/product/450x450/45671.png",
+"imagine": "https://storage.googleapis.com/backupmateriale2018/product/800x600/45671.png",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.materialeelectrice.ro%2Fpanou-radiant-de-perete-din-marmura-magnum-marbel-650w%3Fshare%3D55742",
 "magazin": "materialeelectrice.ro",
 "id": "d2b1622bb",
@@ -26036,7 +26023,7 @@
 {
 "titlu": "Panou radiant Sunpower 550W, IP44, TÜV, max 105°C",
 "pret": 1190.65,
-"imagine": "https://storage.googleapis.com/backupmateriale2018/product/450x450/1427356.png",
+"imagine": "https://storage.googleapis.com/backupmateriale2018/product/800x600/1427356.png",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.materialeelectrice.ro%2Fpanou-radiant-sunpower-550w-ip44-tuev-max-1050c-270858%3Fshare%3D55742",
 "magazin": "materialeelectrice.ro",
 "id": "48b090f3f",
@@ -26048,7 +26035,7 @@
 {
 "titlu": "Panou radiant pentru tavan MAGNUM Sol Tip 500: 119 x 59 x 4 cm 500 W",
 "pret": 1240.4,
-"imagine": "https://storage.googleapis.com/backupmateriale2018/product/450x450/36327.png",
+"imagine": "https://storage.googleapis.com/backupmateriale2018/product/800x600/36327.png",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.materialeelectrice.ro%2Fpanou-radiant-pentru-tavan-magnum-sol-tip-500-119-x-59-x-4-cm-500-w%3Fshare%3D55742",
 "magazin": "materialeelectrice.ro",
 "id": "c0f6dc3a4",
@@ -26060,7 +26047,7 @@
 {
 "titlu": "Panou radiant MAGNUM Infrarosu 1000W",
 "pret": 1298.65,
-"imagine": "https://storage.googleapis.com/backupmateriale2018/product/450x450/36320.png",
+"imagine": "https://storage.googleapis.com/backupmateriale2018/product/800x600/36320.png",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.materialeelectrice.ro%2Fpanou-radiant-magnum-infrarosu-1000w%3Fshare%3D55742",
 "magazin": "materialeelectrice.ro",
 "id": "f80a9880b",
@@ -26072,7 +26059,7 @@
 {
 "titlu": "Panou radiant Sunpower 750W, IP44, TÜV, max 105°C",
 "pret": 1352.45,
-"imagine": "https://storage.googleapis.com/backupmateriale2018/product/450x450/1427357.png",
+"imagine": "https://storage.googleapis.com/backupmateriale2018/product/800x600/1427357.png",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.materialeelectrice.ro%2Fpanou-radiant-sunpower-750w-ip44-tuev-max-1050c-270859%3Fshare%3D55742",
 "magazin": "materialeelectrice.ro",
 "id": "c8d930dbc",
@@ -26084,7 +26071,7 @@
 {
 "titlu": "Panou radiant MAGNUM Infrarosu 1500W",
 "pret": 1520.21,
-"imagine": "https://storage.googleapis.com/backupmateriale2018/product/450x450/36321.png",
+"imagine": "https://storage.googleapis.com/backupmateriale2018/product/800x600/36321.png",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.materialeelectrice.ro%2Fpanou-radiant-magnum-infrarosu-1500w%3Fshare%3D55742",
 "magazin": "materialeelectrice.ro",
 "id": "2a6d525dd",
@@ -26691,7 +26678,7 @@
 "titlu": "Cercei din argint",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-05",
+"actualizat": "2026-11-14",
 "feeduri": [
 {
 "id": 5672,
@@ -26703,6 +26690,17 @@
 }
 ],
 "produse": [
+{
+"titlu": "Cercei argint lapis lazuli | Marquise 7",
+"pret": 106.0,
+"imagine": "https://cdn.shopify.com/s/files/1/0666/5165/2389/files/rn-image_picker_lib_temp_a98fbc5d-4969-4236-abc6-9143d556689c.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fdruzy.ro%2Fproducts%2Fcercei-argint-lapis-lazuli-marquise-7%3Fvariant%3D56618595713348",
+"magazin": "druzy.ro",
+"id": "A27pe-fSqV4F",
+"brand": "druzy.ro - Cristale, Home Deco",
+"url_magazin": "https://druzy.ro/products/cercei-argint-lapis-lazuli-marquise-7?variant=56618595713348",
+"pret_vechi": null
+},
 {
 "titlu": "Cercei Perlati – Picaturi Albe de Eleganta - Argint 925",
 "pret": 109.0,
@@ -26740,16 +26738,26 @@
 "verificat": "2026-11-05"
 },
 {
-"titlu": "Cercei Perlati – Picaturi Negre de Mister - Argint 925",
-"pret": 109.0,
-"imagine": "https://cdn7.avanticart.ro/chicbijoux.ro/pictures/products/1500/cercei-perlati-picaturi-negre-de-mister-argint-925-103829.jpeg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fchicbijoux.ro%2Fcercei-perlati-picaturi-negre-de-mister-argint-925.html",
+"titlu": "Cercei fluturasi - model cu decupaje elegante - Argint 925 - inchidere surub",
+"pret": 119.0,
+"imagine": "https://cdn13.avanticart.ro/chicbijoux.ro/pictures/products/1500/cercei-fluturasi-model-cu-decupaje-elegante-argint-925-inchidere-surub-127065.jpeg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fchicbijoux.ro%2Fcercei-fluturasi-model-cu-decupaje-elegante-argint-925-inchidere-surub.html",
 "magazin": "chicbijoux.ro",
-"id": "AUDhsM3YAiib",
+"id": "0IVzeDzO4_Vw",
 "brand": "Chic Bijoux",
-"url_magazin": "https://chicbijoux.ro/cercei-perlati-picaturi-negre-de-mister-argint-925.html",
-"pret_vechi": null,
-"verificat": "2026-11-05"
+"url_magazin": "https://chicbijoux.ro/cercei-fluturasi-model-cu-decupaje-elegante-argint-925-inchidere-surub.html",
+"pret_vechi": 149.0
+},
+{
+"titlu": "Cercei Curgatori cu Pietre Bambus – Argint 925",
+"pret": 125.0,
+"imagine": "https://cdn13.avanticart.ro/chicbijoux.ro/pictures/products/1500/cercei-curgatori-cu-perle-bambus-argint-925-placat-cu-aur-18k-104658.jpeg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fchicbijoux.ro%2Fcercei-curgatori-cu-perle-bambus-argint-925-placat-cu-aur-18k.html",
+"magazin": "chicbijoux.ro",
+"id": "_T-AoLX5wE1A",
+"brand": "Chic Bijoux",
+"url_magazin": "https://chicbijoux.ro/cercei-curgatori-cu-perle-bambus-argint-925-placat-cu-aur-18k.html",
+"pret_vechi": 139.0
 },
 {
 "titlu": "Cercei inima - model cu decupaje fine - Argint 925 - inchidere surub",
@@ -26760,18 +26768,6 @@
 "id": "XsJwUcluarVh",
 "brand": "Chic Bijoux",
 "url_magazin": "https://chicbijoux.ro/cercei-inima-model-cu-decupaje-fine-argint-925-inchidere-surub.html",
-"pret_vechi": 149.0,
-"verificat": "2026-11-05"
-},
-{
-"titlu": "Cercei stea - model cu decupaje delicate - Argint 925 - inchidere surub",
-"pret": 126.0,
-"imagine": "https://cdn13.avanticart.ro/chicbijoux.ro/pictures/products/1500/cercei-stea-model-cu-decupaje-delicate-argint-925-inchidere-surub-127140.jpeg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fchicbijoux.ro%2Fcercei-stea-model-cu-decupaje-delicate-argint-925-inchidere-surub.html",
-"magazin": "chicbijoux.ro",
-"id": "_kZ63GJ0YiLI",
-"brand": "Chic Bijoux",
-"url_magazin": "https://chicbijoux.ro/cercei-stea-model-cu-decupaje-delicate-argint-925-inchidere-surub.html",
 "pret_vechi": 149.0,
 "verificat": "2026-11-05"
 },
@@ -26788,20 +26784,97 @@
 "verificat": "2026-11-05"
 },
 {
-"titlu": "Cercei fundite - model cu decupaje delicate - Argint 925 - inchidere surub",
+"titlu": "Cercei contur inima si trifoi in interior - Argint 925 - inchidere surub",
 "pret": 126.0,
-"imagine": "https://cdn13.avanticart.ro/chicbijoux.ro/pictures/products/1500/cercei-fundite-model-cu-decupaje-delicate-argint-925-inchidere-surub-127080.jpeg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fchicbijoux.ro%2Fcercei-fundite-model-cu-decupaje-delicate-argint-925-inchidere-surub.html",
+"imagine": "https://cdn13.avanticart.ro/chicbijoux.ro/pictures/products/1500/cercei-contur-inima-si-trifoi-in-interior-argint-925-inchidere-surub-127155.jpeg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fchicbijoux.ro%2Fcercei-contur-inima-si-trifoi-in-interior-argint-925-inchidere-surub.html",
 "magazin": "chicbijoux.ro",
-"id": "JAsYxpORlgBi",
+"id": "dxGVvEpyNupg",
 "brand": "Chic Bijoux",
-"url_magazin": "https://chicbijoux.ro/cercei-fundite-model-cu-decupaje-delicate-argint-925-inchidere-surub.html",
-"pret_vechi": 149.0,
-"verificat": "2026-11-05"
+"url_magazin": "https://chicbijoux.ro/cercei-contur-inima-si-trifoi-in-interior-argint-925-inchidere-surub.html",
+"pret_vechi": 149.0
+},
+{
+"titlu": "Cercei stud peridot din argint | Oval 5 X 7 mm",
+"pret": 135.0,
+"imagine": "https://cdn.shopify.com/s/files/1/0666/5165/2389/files/rn-image_picker_lib_temp_07d36a94-b6f3-4568-aeba-e079fa72961c.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fdruzy.ro%2Fproducts%2Fcercei-stud-peridot-din-argint-oval-5-x-7-mm%3Fvariant%3D57282491810116",
+"magazin": "druzy.ro",
+"id": "c0MDoX0iXbh8",
+"brand": "druzy.ro - Cristale, Home Deco",
+"url_magazin": "https://druzy.ro/products/cercei-stud-peridot-din-argint-oval-5-x-7-mm?variant=57282491810116",
+"pret_vechi": null
+},
+{
+"titlu": "Cercei argint 925 ametist | Lily",
+"pret": 139.0,
+"imagine": "https://cdn.shopify.com/s/files/1/0666/5165/2389/files/R6100029-1.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fdruzy.ro%2Fproducts%2Fcercei-argint-925-ametist-lily%3Fvariant%3D57548630032708",
+"magazin": "druzy.ro",
+"id": "EOtTdMuFzJRB",
+"brand": "druzy.ro - Cristale, Home Deco",
+"url_magazin": "https://druzy.ro/products/cercei-argint-925-ametist-lily?variant=57548630032708",
+"pret_vechi": null
+},
+{
+"titlu": "Cercei argint 925 ametist | Lily 2",
+"pret": 139.0,
+"imagine": "https://cdn.shopify.com/s/files/1/0666/5165/2389/files/R6100410-51.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fdruzy.ro%2Fproducts%2Fcercei-argint-925-ametist-lily-2%3Fvariant%3D57548668961092",
+"magazin": "druzy.ro",
+"id": "ldszd5B6NSOc",
+"brand": "druzy.ro - Cristale, Home Deco",
+"url_magazin": "https://druzy.ro/products/cercei-argint-925-ametist-lily-2?variant=57548668961092",
+"pret_vechi": null
+},
+{
+"titlu": "Cercei argint 925 piatra lunii | Clasic 3",
+"pret": 139.0,
+"imagine": "https://cdn.shopify.com/s/files/1/0666/5165/2389/files/130753.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fdruzy.ro%2Fproducts%2Fcercei-argint-925-piatra-lunii-clasic-3%3Fvariant%3D57548779290948",
+"magazin": "druzy.ro",
+"id": "iua1zWolz8U7",
+"brand": "druzy.ro - Cristale, Home Deco",
+"url_magazin": "https://druzy.ro/products/cercei-argint-925-piatra-lunii-clasic-3?variant=57548779290948",
+"pret_vechi": null
+},
+{
+"titlu": "Cercei argint 925 piatra lunii | Clasic 2",
+"pret": 146.0,
+"imagine": "https://cdn.shopify.com/s/files/1/0666/5165/2389/files/130752.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fdruzy.ro%2Fproducts%2Fcercei-argint-925-piatra-lunii-clasic-1%3Fvariant%3D57548774768964",
+"magazin": "druzy.ro",
+"id": "dZrYmxF-UCEm",
+"brand": "druzy.ro - Cristale, Home Deco",
+"url_magazin": "https://druzy.ro/products/cercei-argint-925-piatra-lunii-clasic-1?variant=57548774768964",
+"pret_vechi": null
+},
+{
+"titlu": "Cercei argint pink oyster | AURA",
+"pret": 147.0,
+"imagine": "https://cdn.shopify.com/s/files/1/0666/5165/2389/files/130756.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fdruzy.ro%2Fproducts%2Fcercei-argint-pink-oyster-aura%3Fvariant%3D55891787252036",
+"magazin": "druzy.ro",
+"id": "Y5IvwZaGrZAO",
+"brand": "DRUZY",
+"url_magazin": "https://druzy.ro/products/cercei-argint-pink-oyster-aura?variant=55891787252036",
+"pret_vechi": null
+},
+{
+"titlu": "Cercei argint 925 granat | Clasic",
+"pret": 152.0,
+"imagine": "https://cdn.shopify.com/s/files/1/0666/5165/2389/files/130732.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fdruzy.ro%2Fproducts%2Fcercei-argint-925-granat-clasic%3Fvariant%3D57548677382468",
+"magazin": "druzy.ro",
+"id": "eYI6gft9-i3-",
+"brand": "druzy.ro - Cristale, Home Deco",
+"url_magazin": "https://druzy.ro/products/cercei-argint-925-granat-clasic?variant=57548677382468",
+"pret_vechi": null
 }
 ],
 "magazine": [
-"chicbijoux.ro"
+"chicbijoux.ro",
+"druzy.ro"
 ]
 },
 {
@@ -26811,7 +26884,7 @@
 "titlu": "Coliere din argint",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-05",
+"actualizat": "2026-11-14",
 "feeduri": [
 {
 "id": 6178,
@@ -26831,6 +26904,39 @@
 }
 ],
 "produse": [
+{
+"titlu": "Colier din argint 925 EN00027194 - Engross",
+"pret": 52.07,
+"imagine": "https://bazarulonline.ro/images/detailed/2912/en00027194.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fbazarulonline.ro%2Fcolier-din-argint-925-en00027194-engross",
+"magazin": "bazarulonline.ro",
+"id": "IZLqCuIVvzJY",
+"brand": "",
+"url_magazin": "https://bazarulonline.ro/colier-din-argint-925-en00027194-engross",
+"pret_vechi": null
+},
+{
+"titlu": "Colier din argint 925 NE3564121 - Engross",
+"pret": 58.68,
+"imagine": "https://bazarulonline.ro/images/detailed/2912/ne3564121.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fbazarulonline.ro%2Fcolier-din-argint-925-ne3564121-engross",
+"magazin": "bazarulonline.ro",
+"id": "dC7Np-BiiVvX",
+"brand": "",
+"url_magazin": "https://bazarulonline.ro/colier-din-argint-925-ne3564121-engross",
+"pret_vechi": null
+},
+{
+"titlu": "Colier din argint 925 E303N-15189 - Engross",
+"pret": 62.81,
+"imagine": "https://bazarulonline.ro/images/detailed/2912/e303n-15189.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fbazarulonline.ro%2Fcolier-din-argint-925-e303n-15189-engross",
+"magazin": "bazarulonline.ro",
+"id": "wJ2_eyvnNHDL",
+"brand": "",
+"url_magazin": "https://bazarulonline.ro/colier-din-argint-925-e303n-15189-engross",
+"pret_vechi": null
+},
 {
 "titlu": "Colier din argint 925 EN00662192 - Engross",
 "pret": 62.81,
@@ -26854,25 +26960,14 @@
 "pret_vechi": null
 },
 {
-"titlu": "Colier din argint 925 C305L51335 - Engross",
-"pret": 68.6,
-"imagine": "https://bazarulonline.ro/images/detailed/2912/c305l51335.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fbazarulonline.ro%2Fcolier-din-argint-925-c305l51335-engross",
-"magazin": "bazarulonline.ro",
-"id": "k2RUuoUwdaDR",
-"brand": "",
-"url_magazin": "https://bazarulonline.ro/colier-din-argint-925-c305l51335-engross",
-"pret_vechi": null
-},
-{
-"titlu": "Colier din argint 925 D6N19213 - Engross",
+"titlu": "Colier din argint 925 P14C1223 - Engross",
 "pret": 71.9,
-"imagine": "https://bazarulonline.ro/images/detailed/2912/d6n19213.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fbazarulonline.ro%2Fcolier-din-argint-925-d6n19213-engross",
+"imagine": "https://bazarulonline.ro/images/detailed/2912/p14c1223.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fbazarulonline.ro%2Fcolier-din-argint-925-p14c1223-engross",
 "magazin": "bazarulonline.ro",
-"id": "20v_pfp810nV",
+"id": "l2mB_7GZb6jT",
 "brand": "",
-"url_magazin": "https://bazarulonline.ro/colier-din-argint-925-d6n19213-engross",
+"url_magazin": "https://bazarulonline.ro/colier-din-argint-925-p14c1223-engross",
 "pret_vechi": null
 },
 {
@@ -26898,26 +26993,15 @@
 "pret_vechi": null
 },
 {
-"titlu": "Colier din argint 925 CN8164 - Engross",
-"pret": 74.38,
-"imagine": "https://bazarulonline.ro/images/detailed/2912/cn8164.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fbazarulonline.ro%2Fcolier-din-argint-925-cn8164-engross",
-"magazin": "bazarulonline.ro",
-"id": "X6FH0rOxGqQy",
-"brand": "",
-"url_magazin": "https://bazarulonline.ro/colier-din-argint-925-cn8164-engross",
-"pret_vechi": null
-},
-{
-"titlu": "Colier din argint 925 DZT04340 - Engross",
-"pret": 77.69,
-"imagine": "https://bazarulonline.ro/images/detailed/2912/dzt04340.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fbazarulonline.ro%2Fcolier-din-argint-925-dzt04340-engross",
-"magazin": "bazarulonline.ro",
-"id": "xOFZOCzoUzH-",
-"brand": "",
-"url_magazin": "https://bazarulonline.ro/colier-din-argint-925-dzt04340-engross",
-"pret_vechi": null
+"titlu": "Colier Argint 925 cu Citrin Oval fatetat- Lumina Interioara si Abundenta",
+"pret": 153.0,
+"imagine": "https://cdn.shopify.com/s/files/1/1029/7249/0058/files/energie-si-abundenta-zilnica-colier-argint-925-cu-citrin-cluster-brazilia-copie-495782.jpg?v=1780690763",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.craftmystic.ro%2Fproducts%2Fcolier-argint-925-cu-citrin-oval-fatetat-lumina-interioara-si-abundenta%3Fvariant%3D62005241217354",
+"magazin": "craftmystic.ro",
+"id": "xs77NTgjiXbj",
+"brand": "CraftMystic",
+"url_magazin": "https://www.craftmystic.ro/products/colier-argint-925-cu-citrin-oval-fatetat-lumina-interioara-si-abundenta?variant=62005241217354",
+"pret_vechi": 203.0
 },
 {
 "titlu": "Zafira - Colier personalizat infinit si doua nume nume din argint 925",
@@ -27010,18 +27094,6 @@
 "verificat": "2026-11-05"
 },
 {
-"titlu": "Colier cu Labradorit Oval 40+5 cm 1,4 g, Argint 925 - Protecție energetică",
-"pret": 259.0,
-"imagine": "https://cdn.shopify.com/s/files/1/1029/7249/0058/files/VGP95_studio_alb.webp?v=1793103177",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.craftmystic.ro%2Fproducts%2Fcolier-cu-labradorit-oval-40-5-cm-1-4-g-argint-925-protectie-energetica%3Fvariant%3D64117183152458",
-"magazin": "craftmystic.ro",
-"id": "sc8ezKoTPmVp",
-"brand": "CraftMystic",
-"url_magazin": "https://www.craftmystic.ro/products/colier-cu-labradorit-oval-40-5-cm-1-4-g-argint-925-protectie-energetica?variant=64117183152458",
-"pret_vechi": 369.0,
-"verificat": "2026-11-05"
-},
-{
 "titlu": "Ivona - Colier lant plat din argint 925 personalizat cu nume",
 "pret": 269.99,
 "imagine": "https://bijubox.ro/image/catalog/bijuterii_personalizate/Ivona/colier-din-argint-nume-ondulat-bijubox-argint.jpg",
@@ -27031,6 +27103,17 @@
 "brand": "BijuBOX",
 "url_magazin": "https://bijubox.ro/ivona-colier-lant-plat-argint-925-personalizat-cu-nume-xp167",
 "pret_vechi": null
+},
+{
+"titlu": "Colier Cuarț Lemurian Natural Argint 925 Brut - Claritate",
+"pret": 275.0,
+"imagine": "https://cdn.shopify.com/s/files/1/1029/7249/0058/files/1_63ca6f0b-886f-4ca3-8d3a-b7093457ecac.jpg?v=1788271422",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.craftmystic.ro%2Fproducts%2Fcolier-cuart-lemurian-natural-argint-925-brut-claritate%3Fvariant%3D62005198586186",
+"magazin": "craftmystic.ro",
+"id": "1t1QIctm8YyN",
+"brand": "CraftMystic",
+"url_magazin": "https://www.craftmystic.ro/products/colier-cuart-lemurian-natural-argint-925-brut-claritate?variant=62005198586186",
+"pret_vechi": 300.0
 },
 {
 "titlu": "Colier cu chihlimbar autentic, săgeată, piesă unică, Argint 925",
@@ -27081,18 +27164,6 @@
 "verificat": "2026-11-05"
 },
 {
-"titlu": "Colier cu Labradorit natural rotund fațetat, Argint 925 - Protecție energetică",
-"pret": 279.0,
-"imagine": "https://cdn.shopify.com/s/files/1/1029/7249/0058/files/VGP99_studio_alb.webp?v=1793102363",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.craftmystic.ro%2Fproducts%2Fcolier-cu-labradorit-natural-rotund-fatetat-argint-925-protectie-energetica%3Fvariant%3D64117087600970",
-"magazin": "craftmystic.ro",
-"id": "CLiyRx7ppmAU",
-"brand": "CraftMystic",
-"url_magazin": "https://www.craftmystic.ro/products/colier-cu-labradorit-natural-rotund-fatetat-argint-925-protectie-energetica?variant=64117087600970",
-"pret_vechi": 369.0,
-"verificat": "2026-11-05"
-},
-{
 "titlu": "Lantisor personalizat cu Nume si pandantiv lateral Semiluna- Argint 925",
 "pret": 294.0,
 "imagine": "https://cdn20.avanticart.ro/chicbijoux.ro/pictures/products/1500/lantisor-personalizat-cu-nume-si-pandantiv-lateral-semiluna-argint-925-115075.jpeg",
@@ -27119,7 +27190,7 @@
 "titlu": "Benzi de alergare",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-05",
+"actualizat": "2026-11-14",
 "feeduri": [
 {
 "id": 9311,
@@ -27136,24 +27207,12 @@
 ],
 "produse": [
 {
-"titlu": "Banda de alergare electrica, pliabilă PHYSIONICS",
-"pret": 1579.9,
-"imagine": "https://cdn.shopify.com/s/files/1/0576/5031/5369/files/LFBD01_galeri_01.jpg?v=1709996721",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.gorillasports.ro%2Fproducts%2Fbanda-de-alergare-electrica-pliabila-physionics%3Fvariant%3D41143898013801",
-"magazin": "gorillasports.ro",
-"id": "84oeo2vVuH6V",
-"brand": "PHYSIONICS",
-"url_magazin": "https://www.gorillasports.ro/products/banda-de-alergare-electrica-pliabila-physionics?variant=41143898013801",
-"pret_vechi": null,
-"verificat": "2026-11-05"
-},
-{
 "titlu": "Banda de alergare TM 2400 S, cu control gestual, Christopeit",
 "pret": 1839.9,
 "imagine": "https://cdn.shopify.com/s/files/1/0576/5031/5369/files/download_27_42cd5454-6cc8-435c-bab4-ec53d10e17ef.png?v=1749535420",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.gorillasports.ro%2Fproducts%2Fbanda-de-alergare-tm-2400-s-cu-control-gestual-christopeit-1%3Fvariant%3D55608129945983",
 "magazin": "gorillasports.ro",
-"id": "_J_h06xNPafg",
+"id": "f0DeVPtz6T7R",
 "brand": "Christopeit",
 "url_magazin": "https://www.gorillasports.ro/products/banda-de-alergare-tm-2400-s-cu-control-gestual-christopeit-1?variant=55608129945983",
 "pret_vechi": null,
@@ -27168,7 +27227,7 @@
 "id": "FAVLHTicftFG",
 "brand": "YESOUL",
 "url_magazin": "https://blacktech.ro/products/banda-de-alergare-pliabila-yesoul-t3-foldable-treadmill-black-viteza-maxima-14-km-h?variant=57596704293199",
-"pret_vechi": null,
+"pret_vechi": 2399.0,
 "verificat": "2026-11-05"
 },
 {
@@ -27249,34 +27308,10 @@
 "imagine": "https://cdn.shopify.com/s/files/1/0576/5031/5369/products/5dd15556-457e-421b-93ac-1385455982f6_1.jpg?v=1750417876",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.gorillasports.ro%2Fproducts%2Fbanda-de-alergare-maxxus-m8-argintie%3Fvariant%3D55607962567039",
 "magazin": "gorillasports.ro",
-"id": "Rv_ODgitdDqp",
+"id": "ANKMCALCZSVS",
 "brand": "MAXXUS",
 "url_magazin": "https://www.gorillasports.ro/products/banda-de-alergare-maxxus-m8-argintie?variant=55607962567039",
 "pret_vechi": null,
-"verificat": "2026-11-05"
-},
-{
-"titlu": "Banda de alergare TM 5000S, Christopeit",
-"pret": 5649.9,
-"imagine": "https://cdn.shopify.com/s/files/1/0576/5031/5369/files/TM5000S_1840_cover.png?v=1761987246",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.gorillasports.ro%2Fproducts%2Fbanda-de-alergare-tm-5000s-christopeit%3Fvariant%3D56320607453567",
-"magazin": "gorillasports.ro",
-"id": "9uBGpkgK-iPr",
-"brand": "Christopeit",
-"url_magazin": "https://www.gorillasports.ro/products/banda-de-alergare-tm-5000s-christopeit?variant=56320607453567",
-"pret_vechi": null,
-"verificat": "2026-11-05"
-},
-{
-"titlu": "Banda de alergare RunMaxx U9 PRO MAXXUS",
-"pret": 18499.89,
-"imagine": "https://cdn.shopify.com/s/files/1/0576/5031/5369/files/GSMX-600428-00019-0001_P1.jpg?v=1792759294",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.gorillasports.ro%2Fproducts%2Fbanda-de-alergare-runmaxx-u9-pro-maxxus-negru%3Fvariant%3D58918253232511",
-"magazin": "gorillasports.ro",
-"id": "9AgFfE6XEqWL",
-"brand": "MAXXUS",
-"url_magazin": "https://www.gorillasports.ro/products/banda-de-alergare-runmaxx-u9-pro-maxxus-negru?variant=58918253232511",
-"pret_vechi": 20699.9,
 "verificat": "2026-11-05"
 }
 ],
@@ -27292,7 +27327,7 @@
 "titlu": "Biciclete de fitness",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-05",
+"actualizat": "2026-11-14",
 "feeduri": [
 {
 "id": 3197,
@@ -27308,6 +27343,17 @@
 }
 ],
 "produse": [
+{
+"titlu": "Bicicleta fitness Rebel Active RBA-1013, volanta 1 kg, Greutate maxima utilizator 100 kg",
+"pret": 385.99,
+"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4175%2F4175539%2FRBA-1013.jpg&type=auto&width=500&sign=XycBZH0ebmBA7EUXy0vRmWc4aFtDmotB0LwHGMpxqRA",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Fsport-fitness-fitness-biciclete-fitness-magnetice-eliptice%2Frebel-bicicleta-fitness-rebel-active-rba-1013-volanta-1-kg-greutate-maxima-utilizator-100-kg-4175539.html",
+"magazin": "evomag.ro",
+"id": "rq9msRp25g33",
+"brand": "Rebel",
+"url_magazin": "https://www.evomag.ro/sport-fitness-fitness-biciclete-fitness-magnetice-eliptice/rebel-bicicleta-fitness-rebel-active-rba-1013-volanta-1-kg-greutate-maxima-utilizator-100-kg-4175539.html",
+"pret_vechi": null
+},
 {
 "titlu": "Bicicleta fitness cu centura de rezistenta",
 "pret": 554.39,
@@ -27329,18 +27375,6 @@
 "id": "FGEhInc4jydh",
 "brand": "VidaXL",
 "url_magazin": "https://infinity.ro/bicicleta-de-fitness-cu-scaun-504342/p?utm_source=2performant",
-"pret_vechi": null,
-"verificat": "2026-11-05"
-},
-{
-"titlu": "Bicicleta spinning Rebel Active RBA-1016, volant 4 kg",
-"pret": 653.99,
-"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4191%2F4191271%2Fbicicleta-spinning-rebel-activ-6745748b9438d.PNG&type=auto&width=500&sign=L1hxVJlq5gQmvzWbPldkpmu-6RD6lGahuiaNxseheWQ",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Fsport-fitness-fitness-biciclete-fitness-magnetice-eliptice%2Frebel-bicicleta-spinning-rebel-active-rba-1016-volant-4-kg-4191271.html",
-"magazin": "evomag.ro",
-"id": "9H3yq_EAKi-y",
-"brand": "Rebel",
-"url_magazin": "https://www.evomag.ro/sport-fitness-fitness-biciclete-fitness-magnetice-eliptice/rebel-bicicleta-spinning-rebel-active-rba-1016-volant-4-kg-4191271.html",
 "pret_vechi": null,
 "verificat": "2026-11-05"
 },
@@ -27417,7 +27451,7 @@
 "titlu": "Gantere reglabile",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-05",
+"actualizat": "2026-11-14",
 "feeduri": [
 {
 "id": 3197,
@@ -27438,6 +27472,17 @@
 ],
 "produse": [
 {
+"titlu": "Set gantere reglabile din ciment cu grip de 60 lb - US EDITION",
+"pret": 139.9,
+"imagine": "https://cdn.shopify.com/s/files/1/0576/5031/5369/files/Gemini_Generated_Image_y2pqoty2pqoty2pq.jpg?v=1787514155",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.gorillasports.ro%2Fproducts%2Fset-gantere-reglabile-50-lbs%3Fvariant%3D58243728703871",
+"magazin": "gorillasports.ro",
+"id": "Xqi75VqYKoqe",
+"brand": "Gorilla Sports",
+"url_magazin": "https://www.gorillasports.ro/products/set-gantere-reglabile-50-lbs?variant=58243728703871",
+"pret_vechi": null
+},
+{
 "titlu": "Set gantere reglabile 10 - 25 KG cu discuri din ciment Gorilla Sports",
 "pret": 177.9,
 "imagine": "https://cdn.shopify.com/s/files/1/0576/5031/5369/products/1-2.jpg?v=1749808032",
@@ -27450,36 +27495,12 @@
 "verificat": "2026-11-05"
 },
 {
-"titlu": "Set gantere reglabile 10 - 25 KG cu discuri din ciment Gorilla Sports - 10 KG",
-"pret": 177.9,
-"imagine": "https://cdn.shopify.com/s/files/1/0576/5031/5369/products/1-2.jpg?v=1749808032",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.gorillasports.ro%2Fproducts%2Fset-gantere-reglabile-10-25-kg-cu-discuri-din-ciment%3Fvariant%3D55424652509567",
-"magazin": "gorillasports.ro",
-"id": "alqFTG_BeLMK",
-"brand": "Gorilla Sports",
-"url_magazin": "https://www.gorillasports.ro/products/set-gantere-reglabile-10-25-kg-cu-discuri-din-ciment?variant=55424652509567",
-"pret_vechi": null,
-"verificat": "2026-11-05"
-},
-{
 "titlu": "Set gantere reglabile din ciment cu grip de 10 - 45 KG Gorilla Sports",
 "pret": 182.9,
 "imagine": "https://cdn.shopify.com/s/files/1/0576/5031/5369/products/7-2.jpg?v=1749808432",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.gorillasports.ro%2Fproducts%2Fset-gantere-reglabile-din-ciment-cu-grip-de-10-45-kg%3Fvariant%3D55424104071551",
 "magazin": "gorillasports.ro",
 "id": "IRdG5199Rcgr",
-"brand": "Gorilla Sports",
-"url_magazin": "https://www.gorillasports.ro/products/set-gantere-reglabile-din-ciment-cu-grip-de-10-45-kg?variant=55424104071551",
-"pret_vechi": null,
-"verificat": "2026-11-05"
-},
-{
-"titlu": "Set gantere reglabile din ciment cu grip de 10 - 45 KG Gorilla Sports - 10 KG",
-"pret": 182.9,
-"imagine": "https://cdn.shopify.com/s/files/1/0576/5031/5369/products/7-2.jpg?v=1749808432",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.gorillasports.ro%2Fproducts%2Fset-gantere-reglabile-din-ciment-cu-grip-de-10-45-kg%3Fvariant%3D55424104071551",
-"magazin": "gorillasports.ro",
-"id": "6CqLmadCrvg7",
 "brand": "Gorilla Sports",
 "url_magazin": "https://www.gorillasports.ro/products/set-gantere-reglabile-din-ciment-cu-grip-de-10-45-kg?variant=55424104071551",
 "pret_vechi": null,
@@ -27510,28 +27531,15 @@
 "verificat": "2026-11-05"
 },
 {
-"titlu": "Set gantere reglabile, 15 - 45 KG, Gorilla Sports - 15 KG",
-"pret": 228.9,
-"imagine": "https://cdn.shopify.com/s/files/1/0576/5031/5369/products/2-1_1.jpg?v=1749808134",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.gorillasports.ro%2Fproducts%2Fset-gantere-de-15-45-kg%3Fvariant%3D55424639926655",
+"titlu": "Set gantere reglabile 25 kg (2 x 12,5 kg)",
+"pret": 1169.9,
+"imagine": "https://cdn.shopify.com/s/files/1/0576/5031/5369/files/101363-00019-0001_P1.jpg?v=1792759202",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.gorillasports.ro%2Fproducts%2Fset-gantere-reglabile-2x12-5-kg-negru%3Fvariant%3D58918249005439",
 "magazin": "gorillasports.ro",
-"id": "4TzCdHjdl44I",
+"id": "_zTNTbQ9zSwk",
 "brand": "Gorilla Sports",
-"url_magazin": "https://www.gorillasports.ro/products/set-gantere-de-15-45-kg?variant=55424639926655",
-"pret_vechi": null,
-"verificat": "2026-11-05"
-},
-{
-"titlu": "Set gantere reglabile, 15 - 45 KG, Gorilla Sports - 35 KG",
-"pret": 355.9,
-"imagine": "https://cdn.shopify.com/s/files/1/0576/5031/5369/files/5-3.jpg?v=1749808134",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.gorillasports.ro%2Fproducts%2Fset-gantere-de-15-45-kg%3Fvariant%3D55424639959423",
-"magazin": "gorillasports.ro",
-"id": "0ESlgx75pLfh",
-"brand": "Gorilla Sports",
-"url_magazin": "https://www.gorillasports.ro/products/set-gantere-de-15-45-kg?variant=55424639959423",
-"pret_vechi": 396.9,
-"verificat": "2026-11-05"
+"url_magazin": "https://www.gorillasports.ro/products/set-gantere-reglabile-2x12-5-kg-negru?variant=58918249005439",
+"pret_vechi": null
 }
 ],
 "magazine": [
@@ -27557,7 +27565,7 @@
 "titlu": "Dicționare englez-român",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-05",
+"actualizat": "2026-11-14",
 "feeduri": [
 {
 "id": 1576,
@@ -27578,6 +27586,28 @@
 ],
 "produse": [
 {
+"titlu": "Stefan Iacobescu - Dictionar de electrotehnica, electronica, telecomunicatii, automatica si cibernetica englez-roman",
+"pret": 15.0,
+"imagine": "https://imagini.printrecarti.ro/images/products/originals/167/stefan-iacobescu-dictionar-de-electrotehnica-electronica-telecomunicatii-automatica-si-cibernetica-englez-roman_166690.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.printrecarti.ro%2F166690-stefan-iacobescu-dictionar-de-electrotehnica-electronica-telecomunicatii-automatica-si-cibernetica-englez-roman.html",
+"magazin": "printrecarti.ro",
+"id": "YrFMun1boPHP",
+"brand": "Tehnica",
+"url_magazin": "https://www.printrecarti.ro/166690-stefan-iacobescu-dictionar-de-electrotehnica-electronica-telecomunicatii-automatica-si-cibernetica-englez-roman.html",
+"pret_vechi": null
+},
+{
+"titlu": "Georgeta Nichifor - Dictionar englez-roman, roman-englez",
+"pret": 15.0,
+"imagine": "https://imagini.printrecarti.ro/images/products/originals/472/georgeta-nichifor-dictionar-englez-roman-roman-englez_471898.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.printrecarti.ro%2F471898-georgeta-nichifor-dictionar-englez-roman-roman-englez.html",
+"magazin": "printrecarti.ro",
+"id": "p-_f5RtcKxXB",
+"brand": "Niculescu",
+"url_magazin": "https://www.printrecarti.ro/471898-georgeta-nichifor-dictionar-englez-roman-roman-englez.html",
+"pret_vechi": 25.0
+},
+{
 "titlu": "Dictionar de expresii uzuale. Limba engleza - Cosmina Draghici",
 "pret": 15.0,
 "imagine": "https://www.libris.ro/img/pozeprod/1072/1071780-1-small-1.jpg",
@@ -27590,26 +27620,26 @@
 "verificat": "2026-11-05"
 },
 {
-"titlu": "Georgeta Nichifor - Dictionar englez-roman, roman-englez",
-"pret": 17.5,
-"imagine": "https://imagini.printrecarti.ro/images/products/originals/472/georgeta-nichifor-dictionar-englez-roman-roman-englez_471898.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.printrecarti.ro%2F471898-georgeta-nichifor-dictionar-englez-roman-roman-englez.html",
+"titlu": "Felicity Brooks - Primul meu dictionar englez-roman",
+"pret": 17.0,
+"imagine": "https://imagini.printrecarti.ro/images/products/originals/443/felicity-brooks-primul-meu-dictionar-englez-roman_442999.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.printrecarti.ro%2F442999-felicity-brooks-primul-meu-dictionar-englez-roman.html",
 "magazin": "printrecarti.ro",
-"id": "p-_f5RtcKxXB",
+"id": "RqWPXZGAZEuJ",
 "brand": "Niculescu",
-"url_magazin": "https://www.printrecarti.ro/471898-georgeta-nichifor-dictionar-englez-roman-roman-englez.html",
-"pret_vechi": 25.0
+"url_magazin": "https://www.printrecarti.ro/442999-felicity-brooks-primul-meu-dictionar-englez-roman.html",
+"pret_vechi": null
 },
 {
-"titlu": "Dictionar tehnic Roman-Englez",
-"pret": 18.2,
-"imagine": "https://imagini.printrecarti.ro/images/products/originals/4/dictionar-tehnic-roman-englez_3843.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.printrecarti.ro%2F3843-dictionar-tehnic-roman-englez.html",
+"titlu": "A. Beziris - Dictionar maritim roman-englez",
+"pret": 18.0,
+"imagine": "https://imagini.printrecarti.ro/images/products/originals/18/a-beziris-dictionar-maritim-roman-englez_18031.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.printrecarti.ro%2F18031-a-beziris-dictionar-maritim-roman-englez.html",
 "magazin": "printrecarti.ro",
-"id": "5OpxiNlvBU-p",
+"id": "UUxtcKFDyfN0",
 "brand": "Tehnica",
-"url_magazin": "https://www.printrecarti.ro/3843-dictionar-tehnic-roman-englez.html",
-"pret_vechi": 28.0
+"url_magazin": "https://www.printrecarti.ro/18031-a-beziris-dictionar-maritim-roman-englez.html",
+"pret_vechi": 30.0
 },
 {
 "titlu": "Dictionar roman-englez, englez-roman - Emilia Neculai",
@@ -27624,25 +27654,47 @@
 "verificat": "2026-11-05"
 },
 {
-"titlu": "A. Beziris - Dictionar maritim roman-englez",
-"pret": 19.5,
-"imagine": "https://imagini.printrecarti.ro/images/products/originals/18/a-beziris-dictionar-maritim-roman-englez_18031.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.printrecarti.ro%2F18031-a-beziris-dictionar-maritim-roman-englez.html",
+"titlu": "Dan Brudascu - Dictionar roman-englez pentru economisti, manageri si oameni de afaceri",
+"pret": 20.0,
+"imagine": "https://imagini.printrecarti.ro/images/products/originals/417/dan-brudascu-dictionar-roman-englez-pentru-economisti-manageri-si-oameni-de-afaceri_416904.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.printrecarti.ro%2F416904-dan-brudascu-dictionar-roman-englez-pentru-economisti-manageri-si-oameni-de-afaceri.html",
 "magazin": "printrecarti.ro",
-"id": "UUxtcKFDyfN0",
-"brand": "Tehnica",
-"url_magazin": "https://www.printrecarti.ro/18031-a-beziris-dictionar-maritim-roman-englez.html",
-"pret_vechi": 30.0
+"id": "M7KaR1-n3gAk",
+"brand": "Sedan",
+"url_magazin": "https://www.printrecarti.ro/416904-dan-brudascu-dictionar-roman-englez-pentru-economisti-manageri-si-oameni-de-afaceri.html",
+"pret_vechi": 25.0
 },
 {
-"titlu": "Oxford Business. Dictionar englez-roman",
-"pret": 19.5,
-"imagine": "https://imagini.printrecarti.ro/images/products/originals/111/oxford-business-dictionar-englez-roman_111257.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.printrecarti.ro%2F111257-oxford-business-dictionar-englez-roman.html",
+"titlu": "Irina Panovf - Dictionar roman-englez, englez-roman",
+"pret": 20.0,
+"imagine": "https://imagini.printrecarti.ro/images/products/originals/180/irina-panovf-dictionar-roman-englez-englez-roman_179799.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.printrecarti.ro%2F179799-irina-panovf-dictionar-roman-englez-englez-roman.html",
 "magazin": "printrecarti.ro",
-"id": "7UIRZ3bpXh3O",
-"brand": "All",
-"url_magazin": "https://www.printrecarti.ro/111257-oxford-business-dictionar-englez-roman.html",
+"id": "QNCwRB8adBgq",
+"brand": "Stiintifica",
+"url_magazin": "https://www.printrecarti.ro/179799-irina-panovf-dictionar-roman-englez-englez-roman.html",
+"pret_vechi": null
+},
+{
+"titlu": "Irina Panovf - Dictionar englez-roman ilustrat (2 volume)",
+"pret": 20.8,
+"imagine": "https://imagini.printrecarti.ro/images/products/originals/443/irina-panovf-dictionar-englez-roman-ilustrat-2-volume_442960.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.printrecarti.ro%2F442960-irina-panovf-dictionar-englez-roman-ilustrat-2-volume.html",
+"magazin": "printrecarti.ro",
+"id": "WiTM5VLg1Efz",
+"brand": "Litera",
+"url_magazin": "https://www.printrecarti.ro/442960-irina-panovf-dictionar-englez-roman-ilustrat-2-volume.html",
+"pret_vechi": 26.0
+},
+{
+"titlu": "Primul meu dictionar vizual englez-francez-roman Larousse",
+"pret": 21.0,
+"imagine": "https://imagini.printrecarti.ro/images/products/originals/573/primul-meu-dictionar-vizual-englez-francez-roman-larousse_573249.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.printrecarti.ro%2F573249-primul-meu-dictionar-vizual-englez-francez-roman-larousse.html",
+"magazin": "printrecarti.ro",
+"id": "tFGudq1nk8_l",
+"brand": "Niculescu",
+"url_magazin": "https://www.printrecarti.ro/573249-primul-meu-dictionar-vizual-englez-francez-roman-larousse.html",
 "pret_vechi": 30.0
 },
 {
@@ -27656,28 +27708,6 @@
 "url_magazin": "https://www.libris.ro/carte/dictionar-englez-roman-cosmina-draghici/377035?utm_source=2parale&utm_medium=feed",
 "pret_vechi": null,
 "verificat": "2026-11-05"
-},
-{
-"titlu": "Georgeta Nichifor - Dictionar englez-roman (75.000 cuvinte si expresii)",
-"pret": 21.75,
-"imagine": "https://imagini.printrecarti.ro/images/products/originals/58/georgeta-nichifor-dictionar-englez-roman-75-000-cuvinte-si-expresii_58258.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.printrecarti.ro%2F58258-georgeta-nichifor-dictionar-englez-roman-75-000-cuvinte-si-expresii.html",
-"magazin": "printrecarti.ro",
-"id": "VyMBloop5J5o",
-"brand": "Niculescu",
-"url_magazin": "https://www.printrecarti.ro/58258-georgeta-nichifor-dictionar-englez-roman-75-000-cuvinte-si-expresii.html",
-"pret_vechi": 29.0
-},
-{
-"titlu": "Primul meu dictionar vizual englez-francez-roman Larousse",
-"pret": 22.5,
-"imagine": "https://imagini.printrecarti.ro/images/products/originals/573/primul-meu-dictionar-vizual-englez-francez-roman-larousse_573249.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.printrecarti.ro%2F573249-primul-meu-dictionar-vizual-englez-francez-roman-larousse.html",
-"magazin": "printrecarti.ro",
-"id": "tFGudq1nk8_l",
-"brand": "Niculescu",
-"url_magazin": "https://www.printrecarti.ro/573249-primul-meu-dictionar-vizual-englez-francez-roman-larousse.html",
-"pret_vechi": 30.0
 },
 {
 "titlu": "Primul meu dictionar german-englez-roman",
@@ -27704,17 +27734,6 @@
 "verificat": "2026-11-05"
 },
 {
-"titlu": "Dan Brudascu - Dictionar roman-englez pentru economisti, manageri si oameni de afaceri",
-"pret": 25.0,
-"imagine": "https://imagini.printrecarti.ro/images/products/originals/417/dan-brudascu-dictionar-roman-englez-pentru-economisti-manageri-si-oameni-de-afaceri_416904.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.printrecarti.ro%2F416904-dan-brudascu-dictionar-roman-englez-pentru-economisti-manageri-si-oameni-de-afaceri.html",
-"magazin": "printrecarti.ro",
-"id": "M7KaR1-n3gAk",
-"brand": "Sedan",
-"url_magazin": "https://www.printrecarti.ro/416904-dan-brudascu-dictionar-roman-englez-pentru-economisti-manageri-si-oameni-de-afaceri.html",
-"pret_vechi": null
-},
-{
 "titlu": "Dictionar roman-englez, englez-roman - David Zamfirescu",
 "pret": 25.0,
 "imagine": "https://www.libris.ro/img/pozeprod/947/946870-1-small-1.jpg",
@@ -27739,27 +27758,15 @@
 "verificat": "2026-11-05"
 },
 {
-"titlu": "Dictionar de marketing englez-roman - A. Ivanovic, P.H. Collin",
-"pret": 25.6,
-"imagine": "https://www.libris.ro/img/pozeprod/570/569927-1-small-1.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.libris.ro%2Fcarte%2Fdictionar-de-marketing-englez-roman-a-ivanovic-p-h-collin%2F569927%3Futm_source%3D2parale%26utm_medium%3Dfeed",
+"titlu": "Dictionar ilustrat englez-roman",
+"pret": 27.74,
+"imagine": "https://www.libris.ro/img/pozeprod/1163/1162544-1-small-1.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.libris.ro%2Fcarte%2Fdictionar-ilustrat-englez-roman%2F1162544%3Futm_source%3D2parale%26utm_medium%3Dfeed",
 "magazin": "libris.ro",
-"id": "YQNlf3lq7iug",
+"id": "1463559c8",
 "brand": "-",
-"url_magazin": "https://www.libris.ro/carte/dictionar-de-marketing-englez-roman-a-ivanovic-p-h-collin/569927?utm_source=2parale&utm_medium=feed",
-"pret_vechi": 32.0,
-"verificat": "2026-11-05"
-},
-{
-"titlu": "Leon Levitchi, Andrei Bantas - Dictionar englez-roman",
-"pret": 26.65,
-"imagine": "https://imagini.printrecarti.ro/images/products/originals/441/leon-levitchi-andrei-bantas-dictionar-englez-roman_441423.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.printrecarti.ro%2F441423-leon-levitchi-andrei-bantas-dictionar-englez-roman.html",
-"magazin": "printrecarti.ro",
-"id": "uRjJ5dAaxp76",
-"brand": "Teora",
-"url_magazin": "https://www.printrecarti.ro/441423-leon-levitchi-andrei-bantas-dictionar-englez-roman.html",
-"pret_vechi": 41.0
+"url_magazin": "https://www.libris.ro/carte/dictionar-ilustrat-englez-roman/1162544?utm_source=2parale&utm_medium=feed",
+"pret_vechi": 36.99
 },
 {
 "titlu": "Dictionar ilustrat roman-englez",

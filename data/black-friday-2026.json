@@ -79,7 +79,7 @@
   },
   "2026-11-14": {
    "zi": "2026-11-14",
-   "produse_urmarite": 4325,
+   "produse_urmarite": 4327,
    "excluse": 7,
    "ieftinite": 321,
    "reale": 293,
@@ -88,9 +88,9 @@
    "mediana_reducere_reala_pct": 15.1,
    "mediana_reducere_aparenta_pct": 12.5,
    "scumpite": 210,
-   "neschimbate": 3794,
-   "scumpite_in_luna_dinainte": 231,
-   "pct_scumpite_in_luna_dinainte": 5.3
+   "neschimbate": 3796,
+   "scumpite_in_luna_dinainte": 232,
+   "pct_scumpite_in_luna_dinainte": 5.4
   }
  }
 }
