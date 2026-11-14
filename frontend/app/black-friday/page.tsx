@@ -125,7 +125,7 @@ function RandCampanie({ p }: { p: (typeof BF.parteneri)[number] }) {
   return (
     <li className="bg-[var(--surface)] border border-[var(--border)] rounded-xl px-3.5 py-2.5">
       <div className="flex items-baseline justify-between gap-3">
-        <Link href={`/black-friday/${p.magazin}`} className="font-bold hover:text-[var(--accent-text)] truncate">Black Friday {p.nume}</Link>
+        <Link href={`/black-friday/${p.magazin}`} className="min-w-0 font-bold hover:text-[var(--accent-text)] truncate">Black Friday {p.nume}</Link>
         <span className="text-xs text-[var(--text-muted)] whitespace-nowrap">{p.interval}</span>
       </div>
       {p.nota && (
@@ -144,7 +144,7 @@ function ListaCampanii({ titlu, lista }: { titlu: string; lista: typeof BF.parte
   if (lista.length === 0) return null;
   const VIZIBILE = 6;
   return (
-    <div>
+    <div className="min-w-0">
       <h3 className="font-black mb-2">{titlu} ({lista.length})</h3>
       <ul className="space-y-2">
         {lista.slice(0, VIZIBILE).map((p) => <RandCampanie key={p.magazin} p={p} />)}

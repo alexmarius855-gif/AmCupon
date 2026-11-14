@@ -17,6 +17,8 @@ import { poolOferte, grilaOferte, type MagazinGrila } from "@/lib/grilaOferte";
 import { campaniiBF } from "@/lib/campaniiBlackFriday";
 import { aziRomania, calendarScurt, fazaBF, type DateBF } from "@/lib/momentBF";
 import { sectiunePentru } from "@/lib/oferteTema";
+import { criterii as toateCriteriile } from "@/lib/criterii";
+import { topuri as toateTopurile } from "@/lib/legaturiInterne";
 
 /**
  * Prima pagina, rearanjata pe 03.11.2026 („pe criterii corecte, vizibilitate, hook"), din masuratori:
@@ -75,27 +77,27 @@ function intrebariAcasa(peste: string): { q: string; a: string }[] {
   return [
     {
       q: "Cum folosesc un cod de reducere de pe AmCupon.ro?",
-      a: "Alegi magazinul dorit, apeși pe cod ca sa îl copiezi, apoi mergi la magazin prin butonul nostru. La finalizarea comenzii (checkout) lipești codul în câmpul \"Cod reducere\" sau \"Voucher\" și reducerea se aplica automat.",
+      a: "Alegi magazinul dorit, apeși pe cod ca să îl copiezi, apoi mergi la magazin prin butonul nostru. La finalizarea comenzii (checkout) lipești codul în câmpul \"Cod reducere\" sau \"Voucher\" și reducerea se aplică automat.",
     },
     {
       q: "Codurile de reducere sunt gratuite?",
       a: "Da, 100% gratuit. Nu plătești nimic și nu ai nevoie de cont. AmCupon.ro este gratuit pentru toți utilizatorii, fără costuri ascunse.",
     },
     {
-      q: "Cat de des se actualizează ofertele și codurile?",
-      a: `Ofertele se actualizează automat de trei ori pe zi, de la ${peste} partenere. Cele expirate dispar după data lor, iar cele noi apar la următoarea actualizare. Codurile nu le testam în cos.`,
+      q: "Cât de des se actualizează ofertele și codurile?",
+      a: `Ofertele se actualizează automat de trei ori pe zi, de la ${peste} partenere. Cele expirate dispar după data lor, iar cele noi apar la următoarea actualizare. Codurile nu le testăm în coș.`,
     },
     {
       q: "De ce unele coduri nu mai funcționează?",
-      a: "Magazinele pot opri o promoție înainte de data anuntata sau pot limita stocul. Dacă un cod nu mai merge, încearcă alt cod activ din aceeași pagina de magazin sau verifica ofertele fără cod, care se aplica automat.",
+      a: "Magazinele pot opri o promoție înainte de data anunțată sau pot limita stocul. Dacă un cod nu mai merge, încearcă alt cod activ din aceeași pagină de magazin sau verifică ofertele fără cod, care se aplică automat.",
     },
     {
-      q: "Trebuie sa îmi fac cont ca sa folosesc codurile?",
-      a: "Nu. Toate codurile și ofertele sunt disponibile fără cont și fără înregistrare. Opțional, te poți abona la newsletter pentru a primi ofertele active, o data pe zi, pe email.",
+      q: "Trebuie să îmi fac cont ca să folosesc codurile?",
+      a: "Nu. Toate codurile și ofertele sunt disponibile fără cont și fără înregistrare. Opțional, te poți abona la newsletter pentru a primi ofertele active, o dată pe zi, pe email.",
     },
     {
-      q: "Cum castiga bani AmCupon.ro?",
-      a: "Primim un comision de la magazine atunci când cumperi prin link-urile noastre, din bugetul lor de marketing. Pentru tine prețul rămâne același, fără costuri suplimentare. Asa putem menține serviciul gratuit.",
+      q: "Cum câștigă bani AmCupon.ro?",
+      a: "Primim un comision de la magazine atunci când cumperi prin link-urile noastre, din bugetul lor de marketing. Pentru tine prețul rămâne același, fără costuri suplimentare. Așa putem menține serviciul gratuit.",
     },
   ];
 }
@@ -171,6 +173,9 @@ export default function Page() {
     .filter((p) => p.surse_din)
     .sort((a, b) => a.title.localeCompare(b.title, "ro"));
   const intrebari = intrebariAcasa(pesteMagazine());
+  // 14.11.2026: /alege aduce 77 din 86 de clicuri reale pe 7 zile; topurile n-aveau alt link din site (04.11).
+  const alege = toateCriteriile().map((c) => ({ slug: c.slug, titlu: c.titlu })).sort((x, y) => x.titlu.localeCompare(y.titlu, "ro"));
+  const listaTopuri = toateTopurile();
 
   return (
     <div className="bg-[var(--background)] text-[var(--foreground)]">
@@ -281,6 +286,31 @@ export default function Page() {
           </section>
         )}
 
+        {alege.length > 0 && (
+          <section aria-labelledby="alege-h">
+            <div className="flex items-end justify-between gap-4 mb-1">
+              <h2 id="alege-h" className={H2}>Alege după caracteristică</h2>
+              <Link href="/alege" className={LINK}>Toate →</Link>
+            </div>
+            <p className="text-sm text-[var(--text-soft)] mb-4">Produse cu prețul verificat pe site-ul magazinului, grupate după ce contează la cumpărare.</p>
+            <ul className="grid sm:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-2 text-sm">
+              {alege.slice(0, 12).map((c) => (
+                <li key={c.slug}><Link href={`/alege/${c.slug}`} className="text-[var(--text-soft)] hover:text-[var(--accent-text)]">{c.titlu}</Link></li>
+              ))}
+            </ul>
+            {alege.length > 12 && (
+              <details className="mt-3">
+                <summary className="cursor-pointer text-sm font-bold text-[var(--accent-text)]">Toate cele {cuNumar(alege.length, "pagină", "pagini")}</summary>
+                <ul className="grid sm:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-2 text-sm mt-3">
+                  {alege.slice(12).map((c) => (
+                    <li key={c.slug}><Link href={`/alege/${c.slug}`} className="text-[var(--text-soft)] hover:text-[var(--accent-text)]">{c.titlu}</Link></li>
+                  ))}
+                </ul>
+              </details>
+            )}
+          </section>
+        )}
+
         <section aria-labelledby="cat-h">
           <div className="flex items-end justify-between gap-4 mb-4">
             <h2 id="cat-h" className={H2}>Categorii</h2>
@@ -345,6 +375,20 @@ export default function Page() {
               </details>
             )}
           </section>
+        )}
+
+        {listaTopuri.length > 0 && (
+          <nav aria-labelledby="top-h">
+            <div className="flex items-end justify-between gap-4 mb-4">
+              <h2 id="top-h" className={H2}>Topuri de produse</h2>
+              <Link href="/top" className={LINK}>Toate →</Link>
+            </div>
+            <ul className="grid sm:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-2 text-sm">
+              {listaTopuri.map((t) => (
+                <li key={t.slug}><Link href={`/top/${t.slug}`} className="text-[var(--text-soft)] hover:text-[var(--accent-text)]">{t.titlu}</Link></li>
+              ))}
+            </ul>
+          </nav>
         )}
 
         <section aria-labelledby="faq-h" className="max-w-3xl">
