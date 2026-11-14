@@ -1,5 +1,5 @@
 {
-"actualizat": "2026-11-13",
+"actualizat": "2026-11-14",
 "magazine": {
 "10qaroma.ro": {
 "cupoane": "yes",
@@ -652,11 +652,6 @@
 "cashback": "yes"
 },
 "doctorshield.ro": {
-"cupoane": "yes",
-"google_ads": "yes",
-"cashback": "yes"
-},
-"dogpro.ro": {
 "cupoane": "yes",
 "google_ads": "yes",
 "cashback": "yes"
@@ -2346,11 +2341,6 @@
 "google_ads": "yes",
 "cashback": "yes"
 },
-"ufit.ro": {
-"cupoane": "maybe",
-"google_ads": "maybe",
-"cashback": "maybe"
-},
 "underarmour.bg": {
 "cupoane": "yes",
 "google_ads": "no",
@@ -2460,11 +2450,6 @@
 "cupoane": "no",
 "google_ads": "yes",
 "cashback": "no"
-},
-"wolfy.ro": {
-"cupoane": "yes",
-"google_ads": "yes",
-"cashback": "yes"
 },
 "workfit.ro": {
 "cupoane": "yes",

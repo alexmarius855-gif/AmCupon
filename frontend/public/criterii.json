@@ -1,6 +1,6 @@
 {
 "_nota": "Generat de scripts/criterii_produse.py. Doar pagini aprobate, doar produse cu pretul confirmat pe site-ul magazinului.",
-"actualizat": "2026-11-13",
+"actualizat": "2026-11-14",
 "criterii": [
 {
 "slug": "masina-de-spalat-6-kg",
@@ -145,6 +145,18 @@
 "url_magazin": "https://www.evomag.ro/electrocasnice-electrocasnice-mari-masini-de-spalat-rufe-si-accesorii-masini-de-spalat-rufe/candy-masina-de-spalat-rufe-candy-smart-pro-cs-1272drre-1-s-incarcare-frontala-7-kg-1200-rpm-clasa-d-gri-4129485.html",
 "pret_vechi": 1349.99,
 "verificat": "2026-11-04"
+},
+{
+"titlu": "Masina de spalat rufe Fram FWM-V714T2IXD+++, 7 kg, 1400 RPM, Clasa D (Gri)",
+"pret": 1269.99,
+"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F3819%2F3819299%2Fmasina-de-spalat-fram-fwm-v714-60e58b16a85bd.JPG&type=auto&width=500&sign=d20b7pVfIAABgCGi6JNZXnUnGMxvHIwx2ygxq_GgAoA",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Felectrocasnice-electrocasnice-mari-masini-de-spalat-rufe-si-accesorii-masini-de-spalat-rufe%2Ffram-masina-de-spalat-rufe-fram-fwm-v714t2ixd-7-kg-1400-rpm-clasa-d-gri-3819299.html",
+"magazin": "evomag.ro",
+"id": "1qvw8ZzLs4ku",
+"brand": "Fram",
+"url_magazin": "https://www.evomag.ro/electrocasnice-electrocasnice-mari-masini-de-spalat-rufe-si-accesorii-masini-de-spalat-rufe/fram-masina-de-spalat-rufe-fram-fwm-v714t2ixd-7-kg-1400-rpm-clasa-d-gri-3819299.html",
+"pret_vechi": null,
+"verificat": "2026-11-14"
 },
 {
 "titlu": "Masina de spalat rufe Candy Pro Wash 300 GD 27SB7-S, 7 kg, 1200 rpm, 16 programe, ProActive Wash, AI Silent Motion (Alb)",
@@ -4738,6 +4750,83 @@
 ],
 "magazine": [
 "ozone.ro"
+],
+"publicat": true
+},
+{
+"slug": "laptop-intel-core-i7",
+"tema": "laptopuri",
+"tema_nume": "Laptopuri",
+"titlu": "Laptopuri cu Intel Core i7",
+"nota": null,
+"in_text": null,
+"actualizat": "2026-11-13",
+"feeduri": [
+{
+"id": 1096,
+"magazin": "evomag.ro"
+},
+{
+"id": 9391,
+"magazin": "interlink.ro"
+},
+{
+"id": 2746,
+"magazin": "evomag.ro"
+}
+],
+"produse": [
+{
+"titlu": "Laptop Gaming Lenovo LOQ 15IRX10 (Procesor Intel® Core™ i7-14700HX (33M Cache, up to 5.50 GHz), 15.6inch FHD IPS 144Hz,",
+"pret": 8399.99,
+"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4321%2F4321455%2Flaptop-gaming-lenovo-loq-15irx-6874f95f0b599.jpg&type=auto&width=500&sign=fLrYDoz9QphiABYZy4R84cRJ6M-5xApSFd5XLhnWg4A",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Fportabile-laptopuri-notebook%2Flenovo-laptop-gaming-lenovo-loq-15irx10-procesor-intel-core-i7-14700hx-33m-cache-up-to-5.50-ghz-15.6-fhd-ips-144hz-16gb-ddr5-1tb-ssd-nvidia-geforce-rtx-5050-8gb-gri-4321455.html",
+"magazin": "evomag.ro",
+"id": "w5RgDE2QMM3v",
+"brand": "Lenovo",
+"url_magazin": "https://www.evomag.ro/portabile-laptopuri-notebook/lenovo-laptop-gaming-lenovo-loq-15irx10-procesor-intel-core-i7-14700hx-33m-cache-up-to-5.50-ghz-15.6-fhd-ips-144hz-16gb-ddr5-1tb-ssd-nvidia-geforce-rtx-5050-8gb-gri-4321455.html",
+"pret_vechi": null,
+"verificat": "2026-11-05"
+},
+{
+"titlu": "Laptop Gaming Lenovo Legion 5 15IRX10 (Procesor Intel® Core™ i7-14700HX (33M Cache, up to 5.50 GH), 15.1inch WQXGA OLED",
+"pret": 8747.99,
+"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4319%2F4319894%2Flaptop-gaming-lenovo-legion-5-683ef7fcc76ff.jpg&type=auto&width=500&sign=ZaGv0w1vtpGQJl7bzfGOYH_tMlqjYt58ngTuUnWje_4",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Fportabile-laptopuri-notebook%2Flenovo-laptop-gaming-lenovo-legion-5-15irx10-procesor-intel-core-i7-14700hx-33m-cache-up-to-5.50-gh-15.1-wqxga-oled-165hz-16gb-ddr5-512gb-ssd-nvidia-geforce-rtx-5050-8gb-negru-4319894.html",
+"magazin": "evomag.ro",
+"id": "hcxHMQAI-mE-",
+"brand": "Lenovo",
+"url_magazin": "https://www.evomag.ro/portabile-laptopuri-notebook/lenovo-laptop-gaming-lenovo-legion-5-15irx10-procesor-intel-core-i7-14700hx-33m-cache-up-to-5.50-gh-15.1-wqxga-oled-165hz-16gb-ddr5-512gb-ssd-nvidia-geforce-rtx-5050-8gb-negru-4319894.html",
+"pret_vechi": null,
+"verificat": "2026-11-05"
+},
+{
+"titlu": "Laptop Gaming ASUS TUF F16 FX610JH (Procesor Intel® Core™ i7-14650HX (30M Cache, up to 5.2 GHz), 16inch FHD+ 144Hz, 16GB",
+"pret": 8799.99,
+"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4322%2F4322208%2Flaptop-gaming-asus-tuf-f16-fx6-6a9927d0be0c3.jpg&type=auto&width=500&sign=j5SCn8zrx0w6ldw3hxFFk79G5CiulkpPPYUmZACJQ5c",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Fportabile-laptopuri-notebook%2Fasus-laptop-gaming-asus-tuf-f16-fx610jh-procesor-intel-core-i7-14650hx-30m-cache-up-to-5.2-ghz-16-fhd-144hz-16gb-512gb-ssd-nvidia-geforce-rtx-5050-8gb-negru-4322208.html",
+"magazin": "evomag.ro",
+"id": "WMhOBTqsbcMx",
+"brand": "ASUS",
+"url_magazin": "https://www.evomag.ro/portabile-laptopuri-notebook/asus-laptop-gaming-asus-tuf-f16-fx610jh-procesor-intel-core-i7-14650hx-30m-cache-up-to-5.2-ghz-16-fhd-144hz-16gb-512gb-ssd-nvidia-geforce-rtx-5050-8gb-negru-4322208.html",
+"pret_vechi": null,
+"verificat": "2026-11-05"
+},
+{
+"titlu": "Laptop Gaming ASUS ROG Strix G16 G615JPR (Procesor Intel® Core™ i7-14650HX (30M Cache, up to 5.2 GHz), 16inch 2.5K 240Hz",
+"pret": 12799.99,
+"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4321%2F4321929%2Flaptop-gaming-asus-rog-strix-g-6ae9f034386e0.jpg&type=auto&width=500&sign=zBvHdHOiA1ivrkVzq0NA8e0E4ltt1fC5ti2BTatXRzA",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Fportabile-laptopuri-notebook%2Fasus-laptop-gaming-asus-rog-strix-g16-g615jpr-procesor-intel-core-i7-14650hx-30m-cache-up-to-5.2-ghz-16-2.5k-240hz-16gb-512gb-ssd-nvidia-geforce-rtx-5070-8gb-negru-gri-4321929.html",
+"magazin": "evomag.ro",
+"id": "8MFM3wmJBXwl",
+"brand": "ASUS",
+"url_magazin": "https://www.evomag.ro/portabile-laptopuri-notebook/asus-laptop-gaming-asus-rog-strix-g16-g615jpr-procesor-intel-core-i7-14650hx-30m-cache-up-to-5.2-ghz-16-2.5k-240hz-16gb-512gb-ssd-nvidia-geforce-rtx-5070-8gb-negru-gri-4321929.html",
+"pret_vechi": null,
+"verificat": "2026-11-05"
+}
+],
+"magazine": [
+"evomag.ro"
 ],
 "publicat": true
 },
@@ -17905,7 +17994,7 @@
 "titlu": "Puzzle de 500 de piese",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-05",
+"actualizat": "2026-11-14",
 "feeduri": [
 {
 "id": 1528,
@@ -17950,40 +18039,112 @@
 "verificat": "2026-11-05"
 },
 {
-"titlu": "Ravensburger - Puzzle sistemul solar 500 piese design nou",
+"titlu": "Puzzle Ravensburger Sistemul Solar 500 piese design nou",
 "pret": 35.98,
-"imagine": "https://www.ookee.ro/378349-large_default/ravensburger-puzzle-sistemul-solar-500-piese-design-nou.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ookee.ro%2Fpuzzle-ravensburger%2F125751-ravensburger-puzzle-sistemul-solar-500-piese-design-nou.html",
+"imagine": "https://www.ookee.ro/378349-large_default/puzzle-ravensburger-sistemul-solar-500-piese-design-nou.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ookee.ro%2Fpuzzle-ravensburger%2F125751-puzzle-ravensburger-sistemul-solar-500-piese-design-nou.html",
 "magazin": "ookee.ro",
 "id": "jkOmHROVr3RQ",
 "brand": "Ravensburger",
-"url_magazin": "https://www.ookee.ro/puzzle-ravensburger/125751-ravensburger-puzzle-sistemul-solar-500-piese-design-nou.html",
-"pret_vechi": null,
-"verificat": "2026-11-05"
+"url_magazin": "https://www.ookee.ro/puzzle-ravensburger/125751-puzzle-ravensburger-sistemul-solar-500-piese-design-nou.html",
+"pret_vechi": 65.9,
+"verificat": "2026-11-14"
 },
 {
-"titlu": "Puzzle Motorbike Garage, 500 piese",
-"pret": 38.9,
-"imagine": "https://www.ookee.ro/417812-large_default/puzzle-motorbike-garage-500-piese.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ookee.ro%2Fpuzzle%2F134523-puzzle-motorbike-garage-500-piese-4823115910875.html",
+"titlu": "Ravensburger - Puzzle Poneii din Hadlow 500 piese",
+"pret": 35.98,
+"imagine": "https://www.ookee.ro/373071-large_default/ravensburger-puzzle-poneii-din-hadlow-500-piese.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ookee.ro%2Fpuzzle%2F124769-ravensburger-puzzle-poneii-din-hadlow-500-piese.html",
 "magazin": "ookee.ro",
-"id": "9AFvO8Ai-l8L",
-"brand": "Dodo Toys",
-"url_magazin": "https://www.ookee.ro/puzzle/134523-puzzle-motorbike-garage-500-piese-4823115910875.html",
-"pret_vechi": null,
-"verificat": "2026-11-05"
+"id": "5G19yVuWG8Se",
+"brand": "Ravensburger",
+"url_magazin": "https://www.ookee.ro/puzzle/124769-ravensburger-puzzle-poneii-din-hadlow-500-piese.html",
+"pret_vechi": 65.9,
+"verificat": "2026-11-14"
 },
 {
-"titlu": "Puzzle Oia village, Grecia, 500 piese",
-"pret": 48.9,
-"imagine": "https://www.ookee.ro/416804-large_default/puzzle-oia-village-grecia-500-piese.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ookee.ro%2Fpuzzle%2F134219-puzzle-oia-village-grecia-500-piese-4823115900906.html",
+"titlu": "Puzzle Ravensburger Cabana 500 piese design nou",
+"pret": 35.98,
+"imagine": "https://www.ookee.ro/330599-large_default/puzzle-ravensburger-cabana-500-piese-design-nou.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ookee.ro%2Fpuzzle-ravensburger%2F119400-puzzle-ravensburger-cabana-500-piese-design-nou.html",
 "magazin": "ookee.ro",
-"id": "TTEg33q1rqKJ",
-"brand": "Dodo Toys",
-"url_magazin": "https://www.ookee.ro/puzzle/134219-puzzle-oia-village-grecia-500-piese-4823115900906.html",
-"pret_vechi": null,
-"verificat": "2026-11-05"
+"id": "679f8c93f",
+"brand": "Ravensburger",
+"url_magazin": "https://www.ookee.ro/puzzle-ravensburger/119400-puzzle-ravensburger-cabana-500-piese-design-nou.html",
+"pret_vechi": 65.9,
+"verificat": "2026-11-14"
+},
+{
+"titlu": "Puzzle Ravensburger animale colorate fluture 500 piese",
+"pret": 35.98,
+"imagine": "https://www.ookee.ro/365910-large_default/puzzle-ravensburger-animale-colorate-fluture-500-piese.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ookee.ro%2Fpuzzle-ravensburger%2F123242-puzzle-ravensburger-animale-colorate-fluture-500-piese.html",
+"magazin": "ookee.ro",
+"id": "c82245920",
+"brand": "Ravensburger",
+"url_magazin": "https://www.ookee.ro/puzzle-ravensburger/123242-puzzle-ravensburger-animale-colorate-fluture-500-piese.html",
+"pret_vechi": 65.9,
+"verificat": "2026-11-14"
+},
+{
+"titlu": "Puzzle Ravensburger animale colorate cameleon 500 piese",
+"pret": 35.98,
+"imagine": "https://www.ookee.ro/365898-large_default/puzzle-ravensburger-animale-colorate-cameleon-500-piese.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ookee.ro%2Fpuzzle-ravensburger%2F123240-puzzle-ravensburger-animale-colorate-cameleon-500-piese.html",
+"magazin": "ookee.ro",
+"id": "a63201ff6",
+"brand": "Ravensburger",
+"url_magazin": "https://www.ookee.ro/puzzle-ravensburger/123240-puzzle-ravensburger-animale-colorate-cameleon-500-piese.html",
+"pret_vechi": 65.9,
+"verificat": "2026-11-14"
+},
+{
+"titlu": "Puzzle Ravensburger animale colorate Peste leu rosu 500 piese",
+"pret": 35.98,
+"imagine": "https://www.ookee.ro/365904-large_default/puzzle-ravensburger-animale-colorate-peste-leu-rosu-500-piese.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ookee.ro%2Fpuzzle-ravensburger%2F123241-puzzle-ravensburger-animale-colorate-peste-leu-rosu-500-piese.html",
+"magazin": "ookee.ro",
+"id": "2f2699a98",
+"brand": "Ravensburger",
+"url_magazin": "https://www.ookee.ro/puzzle-ravensburger/123241-puzzle-ravensburger-animale-colorate-peste-leu-rosu-500-piese.html",
+"pret_vechi": 65.9,
+"verificat": "2026-11-14"
+},
+{
+"titlu": "Puzzle Ravensburger Puterea Naturii Calatorie Epica 500 piese",
+"pret": 35.98,
+"imagine": "https://www.ookee.ro/366060-large_default/puzzle-ravensburger-puterea-naturii-calatorie-epica-500-piese.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ookee.ro%2Fpuzzle-ravensburger%2F123268-puzzle-ravensburger-puterea-naturii-calatorie-epica-500-piese.html",
+"magazin": "ookee.ro",
+"id": "b8b1e099e",
+"brand": "Ravensburger",
+"url_magazin": "https://www.ookee.ro/puzzle-ravensburger/123268-puzzle-ravensburger-puterea-naturii-calatorie-epica-500-piese.html",
+"pret_vechi": 65.9,
+"verificat": "2026-11-14"
+},
+{
+"titlu": "Puzzle cerc Ravensburger Barbie 500 piese",
+"pret": 38.75,
+"imagine": "https://www.ookee.ro/366800-large_default/puzzle-cerc-ravensburger-barbie-500-piese.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ookee.ro%2Fpuzzle-ravensburger%2F123425-puzzle-cerc-ravensburger-barbie-500-piese.html",
+"magazin": "ookee.ro",
+"id": "8dc69c8de",
+"brand": "Ravensburger",
+"url_magazin": "https://www.ookee.ro/puzzle-ravensburger/123425-puzzle-cerc-ravensburger-barbie-500-piese.html",
+"pret_vechi": 71.9,
+"verificat": "2026-11-14"
+},
+{
+"titlu": "Puzzle cu Balerina Vintage, 500 de piese, Multicolor",
+"pret": 58.64,
+"imagine": "https://infinityro.vteximg.com.br/arquivos/ids/274907627/0.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Finfinity.ro%2Fpuzzle-cu-balerina-vintage-500-de-piese-multicolor-9360574%2Fp%3Futm_source%3D2performant",
+"magazin": "infinity.ro",
+"id": "XMw2fRudEqtw",
+"brand": "OEM",
+"url_magazin": "https://infinity.ro/puzzle-cu-balerina-vintage-500-de-piese-multicolor-9360574/p?utm_source=2performant",
+"pret_vechi": 78.19,
+"verificat": "2026-11-14"
 },
 {
 "titlu": "Puzzle 500 piese, Manarola Cinque Terre, Multicolor, 50x70 cm",
@@ -18020,78 +18181,6 @@
 "url_magazin": "https://infinity.ro/puzzle-de-craciun-cu-model-grinch-500-piese-508x360-mm-9360590/p?utm_source=2performant",
 "pret_vechi": null,
 "verificat": "2026-11-05"
-},
-{
-"titlu": "Ravensburger - Puzzle casuta langa rau 500 piese design nou",
-"pret": 65.9,
-"imagine": "https://www.ookee.ro/361436-large_default/ravensburger-puzzle-casuta-langa-rau-500-piese-design-nou.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ookee.ro%2Fpuzzle-500-999-piese%2F122669-ravensburger-puzzle-casuta-langa-rau-500-piese-design-nou.html",
-"magazin": "ookee.ro",
-"id": "xunj-MjRW3zA",
-"brand": "Ravensburger",
-"url_magazin": "https://www.ookee.ro/puzzle-500-999-piese/122669-ravensburger-puzzle-casuta-langa-rau-500-piese-design-nou.html",
-"pret_vechi": null,
-"verificat": "2026-11-05"
-},
-{
-"titlu": "PUZZLE CAL PE PLAJA, 500 PIESE",
-"pret": 65.9,
-"imagine": "https://www.ookee.ro/213483-large_default/puzzle-cal-pe-plaja-500-piese.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ookee.ro%2Fpuzzle-ravensburger%2F90674-puzzle-cal-pe-plaja-500-piese.html",
-"magazin": "ookee.ro",
-"id": "KS9YkHzVjuhi",
-"brand": "Ravensburger",
-"url_magazin": "https://www.ookee.ro/puzzle-ravensburger/90674-puzzle-cal-pe-plaja-500-piese.html",
-"pret_vechi": null,
-"verificat": "2026-11-05"
-},
-{
-"titlu": "Ravensburger - Puzzle pasari 500 piese design nou",
-"pret": 65.9,
-"imagine": "https://www.ookee.ro/341904-large_default/ravensburger-puzzle-pasari-500-piese-design-nou.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ookee.ro%2Fpuzzle-ravensburger%2F120825-ravensburger-puzzle-pasari-500-piese-design-nou.html",
-"magazin": "ookee.ro",
-"id": "RmYC6crcQ7cy",
-"brand": "Ravensburger",
-"url_magazin": "https://www.ookee.ro/puzzle-ravensburger/120825-ravensburger-puzzle-pasari-500-piese-design-nou.html",
-"pret_vechi": null,
-"verificat": "2026-11-05"
-},
-{
-"titlu": "Ravensburger - Puzzle selfie cu catelusi 500 piese design nou",
-"pret": 65.9,
-"imagine": "https://www.ookee.ro/318066-large_default/ravensburger-puzzle-selfie-cu-catelusi-500-piese-design-nou.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ookee.ro%2Fpuzzle-ravensburger%2F117422-ravensburger-puzzle-selfie-cu-catelusi-500-piese-design-nou.html",
-"magazin": "ookee.ro",
-"id": "xVFfOxQrylhw",
-"brand": "Ravensburger",
-"url_magazin": "https://www.ookee.ro/puzzle-ravensburger/117422-ravensburger-puzzle-selfie-cu-catelusi-500-piese-design-nou.html",
-"pret_vechi": null,
-"verificat": "2026-11-05"
-},
-{
-"titlu": "Puzzle Dimineata In Gradina, 500 Piese",
-"pret": 65.9,
-"imagine": "https://www.ookee.ro/284389-large_default/puzzle-dimineata-in-gradina-500-piese.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ookee.ro%2Fpuzzle-500-999-piese%2F108839-puzzle-dimineata-in-gradina-500-piese.html",
-"magazin": "ookee.ro",
-"id": "AFG2ZVdMWHHt",
-"brand": "Ravensburger",
-"url_magazin": "https://www.ookee.ro/puzzle-500-999-piese/108839-puzzle-dimineata-in-gradina-500-piese.html",
-"pret_vechi": null,
-"verificat": "2026-11-05"
-},
-{
-"titlu": "Puzzle Moomin, 500 piese",
-"pret": 72.24,
-"imagine": "https://static.cartepedia.ro/image/302607/imagine_url.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.cartepedia.ro%2Fcarte%2Fmoomin-puzzle-500-piese-421566.html",
-"magazin": "cartepedia.ro",
-"id": "dc0635999",
-"brand": "",
-"url_magazin": "https://www.cartepedia.ro/carte/moomin-puzzle-500-piese-421566.html",
-"pret_vechi": 84.99,
-"verificat": "2026-11-05"
 }
 ],
 "magazine": [
@@ -18108,7 +18197,7 @@
 "titlu": "Puzzle 3D",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-05",
+"actualizat": "2026-11-14",
 "feeduri": [
 {
 "id": 1528,
@@ -18129,18 +18218,6 @@
 ],
 "produse": [
 {
-"titlu": "Puzzle 3D: Pitigoi albastru",
-"pret": 37.0,
-"imagine": "https://www.libris.ro/img/pozeprod/48753/48752753-1-small-1.jpg?ver=1792669992",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.libris.ro%2Fjoc%2Fpuzzle-3d-pitigoi-albastru%2F48752753",
-"magazin": "libris.ro",
-"id": "YMPZZivZIoNi",
-"brand": "-",
-"url_magazin": "https://www.libris.ro/joc/puzzle-3d-pitigoi-albastru/48752753",
-"pret_vechi": null,
-"verificat": "2026-11-05"
-},
-{
 "titlu": "Puzzle 3D: Vrabie",
 "pret": 37.0,
 "imagine": "https://www.libris.ro/img/pozeprod/48753/48752739-1-small-1.jpg?ver=1792669688",
@@ -18153,18 +18230,6 @@
 "verificat": "2026-11-05"
 },
 {
-"titlu": "Puzzle 3D: Ciocanitoare",
-"pret": 37.0,
-"imagine": "https://www.libris.ro/img/pozeprod/48753/48752732-1-small-1.jpg?ver=1792669455",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.libris.ro%2Fjoc%2Fpuzzle-3d-ciocanitoare%2F48752732",
-"magazin": "libris.ro",
-"id": "tuWWNE4LOorH",
-"brand": "-",
-"url_magazin": "https://www.libris.ro/joc/puzzle-3d-ciocanitoare/48752732",
-"pret_vechi": null,
-"verificat": "2026-11-05"
-},
-{
 "titlu": "Puzzle 3D. Sticlete european",
 "pret": 37.0,
 "imagine": "https://www.libris.ro/img/pozeprod/48753/48752746-1-small-1.jpg?ver=1792668313",
@@ -18173,6 +18238,30 @@
 "id": "YjP-ZSbuJkXa",
 "brand": "-",
 "url_magazin": "https://www.libris.ro/joc/puzzle-3d-sticlete-european/48752746",
+"pret_vechi": null,
+"verificat": "2026-11-05"
+},
+{
+"titlu": "Puzzle 3D: Pitigoi albastru",
+"pret": 37.0,
+"imagine": "https://www.libris.ro/img/pozeprod/48753/48752753-1-small-1.jpg?ver=1792669992",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.libris.ro%2Fjoc%2Fpuzzle-3d-pitigoi-albastru%2F48752753",
+"magazin": "libris.ro",
+"id": "YMPZZivZIoNi",
+"brand": "-",
+"url_magazin": "https://www.libris.ro/joc/puzzle-3d-pitigoi-albastru/48752753",
+"pret_vechi": null,
+"verificat": "2026-11-05"
+},
+{
+"titlu": "Puzzle 3D: Ciocanitoare",
+"pret": 37.0,
+"imagine": "https://www.libris.ro/img/pozeprod/48753/48752732-1-small-1.jpg?ver=1792669455",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.libris.ro%2Fjoc%2Fpuzzle-3d-ciocanitoare%2F48752732",
+"magazin": "libris.ro",
+"id": "tuWWNE4LOorH",
+"brand": "-",
+"url_magazin": "https://www.libris.ro/joc/puzzle-3d-ciocanitoare/48752732",
 "pret_vechi": null,
 "verificat": "2026-11-05"
 },
@@ -18209,7 +18298,7 @@
 "id": "UqT9ZqaWe3QL",
 "brand": "-",
 "url_magazin": "https://www.libris.ro/joc/puzzle-3d-din-lemn-cu-litere-si-cifre-cocos-colorat/42139027",
-"pret_vechi": 54.99,
+"pret_vechi": null,
 "verificat": "2026-11-05"
 },
 {
@@ -18245,32 +18334,20 @@
 "id": "UrUHRawrUNLQ",
 "brand": "-",
 "url_magazin": "https://www.libris.ro/joc/puzzle-3d-mini-bila-disney-stitch-angel-si-stitch/47022661",
-"pret_vechi": 55.9,
-"verificat": "2026-11-05"
-},
-{
-"titlu": "Ravensburger - Puzzle 3D bila Disney Stitch Angel 54 piese",
-"pret": 50.9,
-"imagine": "https://www.ookee.ro/365628-large_default/ravensburger-puzzle-3d-bila-disney-stitch-angel-54-piese.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ookee.ro%2Fpuzzles-3d%2F123195-ravensburger-puzzle-3d-bila-disney-stitch-angel-54-piese.html",
-"magazin": "ookee.ro",
-"id": "ZrkJFdRA4Hcy",
-"brand": "Ravensburger",
-"url_magazin": "https://www.ookee.ro/puzzles-3d/123195-ravensburger-puzzle-3d-bila-disney-stitch-angel-54-piese.html",
 "pret_vechi": null,
 "verificat": "2026-11-05"
 },
 {
-"titlu": "Puzzle din lemn 3D cu litere si cifre. Broscuta testoasa",
-"pret": 52.0,
-"imagine": "https://www.libris.ro/img/pozeprod/47007/47006792-1-small-1.jpg?ver=1781689650",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.libris.ro%2Fjoc%2Fpuzzle-din-lemn-3d-cu-litere-si-cifre-broscuta-testoasa%2F47006792",
+"titlu": "Puzzle 3D: Mini Turnul din Pisa",
+"pret": 63.9,
+"imagine": "https://www.libris.ro/img/pozeprod/47023/47022633-1-small-1.jpg?ver=1786452104",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.libris.ro%2Fjoc%2Fpuzzle-3d-mini-turnul-din-pisa%2F47022633",
 "magazin": "libris.ro",
-"id": "Nn1HPxXQvqCE",
+"id": "pxAt-6Ud8Epb",
 "brand": "-",
-"url_magazin": "https://www.libris.ro/joc/puzzle-din-lemn-3d-cu-litere-si-cifre-broscuta-testoasa/47006792",
-"pret_vechi": 65.0,
-"verificat": "2026-11-05"
+"url_magazin": "https://www.libris.ro/joc/puzzle-3d-mini-turnul-din-pisa/47022633",
+"pret_vechi": null,
+"verificat": "2026-11-14"
 },
 {
 "titlu": "Puzzle 3D Animale",
@@ -18281,18 +18358,6 @@
 "id": "qEmv3yk0xT2i",
 "brand": "Imagimake",
 "url_magazin": "https://www.hobiktoys.ro/cumpara/puzzle-3d-animale-667",
-"pret_vechi": null,
-"verificat": "2026-11-05"
-},
-{
-"titlu": "Puzzle 3D Miraculous, 72 Piese",
-"pret": 81.9,
-"imagine": "https://www.ookee.ro/284577-large_default/puzzle-3d-miraculous-72-piese.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ookee.ro%2Fpuzzle-50-100-piese%2F108859-puzzle-3d-miraculous-72-piese.html",
-"magazin": "ookee.ro",
-"id": "fQVuqVcWDgVZ",
-"brand": "Ravensburger",
-"url_magazin": "https://www.ookee.ro/puzzle-50-100-piese/108859-puzzle-3d-miraculous-72-piese.html",
 "pret_vechi": null,
 "verificat": "2026-11-05"
 },
@@ -18319,6 +18384,30 @@
 "url_magazin": "https://www.hobiktoys.ro/cumpara/puzzle-3d-monumente-1460",
 "pret_vechi": null,
 "verificat": "2026-11-05"
+},
+{
+"titlu": "Puzzle 3D Pasari",
+"pret": 84.7,
+"imagine": "https://cdnmpro.com/780585630/p/raw/1/puzzle-3d-pasari~3561.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.hobiktoys.ro%2Fcumpara%2Fpuzzle-3d-pasari-1461",
+"magazin": "hobiktoys.ro",
+"id": "hXlVRzQizMCw",
+"brand": "Imagimake",
+"url_magazin": "https://www.hobiktoys.ro/cumpara/puzzle-3d-pasari-1461",
+"pret_vechi": null,
+"verificat": "2026-11-14"
+},
+{
+"titlu": "Puzzle 3D cu animale, Orange Tree Toys",
+"pret": 104.9,
+"imagine": "https://www.ookee.ro/425557-large_default/puzzle-3d-cu-animale-orange-tree-toys.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ookee.ro%2Fpuzzles-lemn%2F136358-puzzle-3d-cu-animale-orange-tree-toys.html",
+"magazin": "ookee.ro",
+"id": "g8LXY7pg_dWA",
+"brand": "Orange Tree Toys",
+"url_magazin": "https://www.ookee.ro/puzzles-lemn/136358-puzzle-3d-cu-animale-orange-tree-toys.html",
+"pret_vechi": null,
+"verificat": "2026-11-14"
 }
 ],
 "magazine": [
@@ -18335,7 +18424,7 @@
 "titlu": "Mașini cu telecomandă",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-05",
+"actualizat": "2026-11-14",
 "feeduri": [
 {
 "id": 8740,
@@ -18355,6 +18444,18 @@
 }
 ],
 "produse": [
+{
+"titlu": "Masina cu telecomanda tip Camion Teleghidat Timebox Off-Road 4x4, Scara 1:35",
+"pret": 79.99,
+"imagine": "https://cdn.shopify.com/s/files/1/0914/5810/9824/files/26653-1792760043906-tu3hy7.png?v=1793111628",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Ftimebox.ro%2Fproducts%2Fcamion-teleghidat-timebox-off-road-4x4-scara-1-35%3Fvariant%3D60232544485760",
+"magazin": "timebox.ro",
+"id": "INfH7I7nL7Hx",
+"brand": "Timebox",
+"url_magazin": "https://timebox.ro/products/camion-teleghidat-timebox-off-road-4x4-scara-1-35?variant=60232544485760",
+"pret_vechi": 87.99,
+"verificat": "2026-11-14"
+},
 {
 "titlu": "Masinuta cu Telecomanda iUni YHC021, Scara 1:18, Off-Road Climbing Car, 27MHz, Verde",
 "pret": 79.99,
@@ -18380,6 +18481,54 @@
 "verificat": "2026-11-05"
 },
 {
+"titlu": "Masina Cu Telecomanda Porsche Macan Turbo Rosu Cu Scara 1 La 24",
+"pret": 116.9,
+"imagine": "https://www.ookee.ro/422552-large_default/masina-cu-telecomanda-porsche-macan-turbo-rosu-cu-scara-1-la-24.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ookee.ro%2Fradiocomandate%2F135514-masina-cu-telecomanda-porsche-macan-turbo-rosu-cu-scara-1-la-24-6427037020339.html",
+"magazin": "ookee.ro",
+"id": "ZzF6JhTBxvu3",
+"brand": "Rastar",
+"url_magazin": "https://www.ookee.ro/radiocomandate/135514-masina-cu-telecomanda-porsche-macan-turbo-rosu-cu-scara-1-la-24-6427037020339.html",
+"pret_vechi": null,
+"verificat": "2026-11-14"
+},
+{
+"titlu": "Masina Cu Telecomanda Bmw I5 Rosu Scara 1 La 24",
+"pret": 116.9,
+"imagine": "https://www.ookee.ro/422327-large_default/masina-cu-telecomanda-bmw-i5-rosu-scara-1-la-24.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ookee.ro%2Fradiocomandate%2F135477-masina-cu-telecomanda-bmw-i5-rosu-scara-1-la-24-6427037051289.html",
+"magazin": "ookee.ro",
+"id": "4zSaJZlAVlkA",
+"brand": "Rastar",
+"url_magazin": "https://www.ookee.ro/radiocomandate/135477-masina-cu-telecomanda-bmw-i5-rosu-scara-1-la-24-6427037051289.html",
+"pret_vechi": null,
+"verificat": "2026-11-14"
+},
+{
+"titlu": "Masina Cu Telecomanda Porsche Macan Turbo Galben Cu Scara 1 La 24",
+"pret": 116.9,
+"imagine": "https://www.ookee.ro/422546-large_default/masina-cu-telecomanda-porsche-macan-turbo-galben-cu-scara-1-la-24.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ookee.ro%2Fradiocomandate%2F135513-masina-cu-telecomanda-porsche-macan-turbo-galben-cu-scara-1-la-24-6427037020322.html",
+"magazin": "ookee.ro",
+"id": "1t26t4D-e0aW",
+"brand": "Rastar",
+"url_magazin": "https://www.ookee.ro/radiocomandate/135513-masina-cu-telecomanda-porsche-macan-turbo-galben-cu-scara-1-la-24-6427037020322.html",
+"pret_vechi": null,
+"verificat": "2026-11-14"
+},
+{
+"titlu": "Masina Cu Telecomanda Mercedes-benz G63 Alb Scara 1 La 24",
+"pret": 116.9,
+"imagine": "https://www.ookee.ro/422692-large_default/masina-cu-telecomanda-mercedes-benz-g63-alb-scara-1-la-24.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ookee.ro%2Fradiocomandate%2F135534-masina-cu-telecomanda-mercedes-benz-g63-alb-scara-1-la-24-6427037025266.html",
+"magazin": "ookee.ro",
+"id": "wZxg_n-KJZAW",
+"brand": "Rastar",
+"url_magazin": "https://www.ookee.ro/radiocomandate/135534-masina-cu-telecomanda-mercedes-benz-g63-alb-scara-1-la-24-6427037025266.html",
+"pret_vechi": null,
+"verificat": "2026-11-14"
+},
+{
 "titlu": "Masina Cu Telecomanda Lamborghini Galben Cu Scara 1 La 24",
 "pret": 116.9,
 "imagine": "https://www.ookee.ro/422358-large_default/masina-cu-telecomanda-lamborghini-galben-cu-scara-1-la-24.jpg",
@@ -18388,18 +18537,6 @@
 "id": "_2Fe3akhkaH1",
 "brand": "Rastar",
 "url_magazin": "https://www.ookee.ro/radiocomandate/135482-masina-cu-telecomanda-lamborghini-galben-cu-scara-1-la-24-6427037025556.html",
-"pret_vechi": null,
-"verificat": "2026-11-05"
-},
-{
-"titlu": "Masina Cu Telecomanda Lamborghini Superleggera Negru Cu Scara 1 La 24",
-"pret": 116.9,
-"imagine": "https://www.ookee.ro/422363-large_default/masina-cu-telecomanda-lamborghini-superleggera-negru-cu-scara-1-la-24.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ookee.ro%2Fradiocomandate%2F135483-masina-cu-telecomanda-lamborghini-superleggera-negru-cu-scara-1-la-24-6427037056628.html",
-"magazin": "ookee.ro",
-"id": "OZmrGyAEFXFO",
-"brand": "Rastar",
-"url_magazin": "https://www.ookee.ro/radiocomandate/135483-masina-cu-telecomanda-lamborghini-superleggera-negru-cu-scara-1-la-24-6427037056628.html",
 "pret_vechi": null,
 "verificat": "2026-11-05"
 },
@@ -18416,30 +18553,6 @@
 "verificat": "2026-11-05"
 },
 {
-"titlu": "Masina Cu Telecomanda Pagani Zonda R Negru Cu Scara 1 La 24",
-"pret": 116.9,
-"imagine": "https://www.ookee.ro/422379-large_default/masina-cu-telecomanda-pagani-zonda-r-negru-cu-scara-1-la-24.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ookee.ro%2Fradiocomandate%2F135486-masina-cu-telecomanda-pagani-zonda-r-negru-cu-scara-1-la-24-6427037020773.html",
-"magazin": "ookee.ro",
-"id": "8a9Drz7TkJSV",
-"brand": "Rastar",
-"url_magazin": "https://www.ookee.ro/radiocomandate/135486-masina-cu-telecomanda-pagani-zonda-r-negru-cu-scara-1-la-24-6427037020773.html",
-"pret_vechi": null,
-"verificat": "2026-11-05"
-},
-{
-"titlu": "Masina Cu Telecomanda Lamborghini Murcielago Lp670-4 Superveloce China Limited Edition Cu Scara 1 La 24",
-"pret": 116.9,
-"imagine": "https://www.ookee.ro/422383-large_default/masina-cu-telecomanda-lamborghini-murcielago-lp670-4-superveloce-china-limited-edition-cu-scara-1-la-24.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ookee.ro%2Fradiocomandate%2F135487-masina-cu-telecomanda-lamborghini-murcielago-lp670-4-superveloce-china-limited-edition-cu-scara-1-la-24-6930751304970.html",
-"magazin": "ookee.ro",
-"id": "1tOQAvJw-zyk",
-"brand": "Rastar",
-"url_magazin": "https://www.ookee.ro/radiocomandate/135487-masina-cu-telecomanda-lamborghini-murcielago-lp670-4-superveloce-china-limited-edition-cu-scara-1-la-24-6930751304970.html",
-"pret_vechi": null,
-"verificat": "2026-11-05"
-},
-{
 "titlu": "Masina Cu Telecomanda Bmw Z4 Rosu Scara 1 La 24",
 "pret": 116.9,
 "imagine": "https://www.ookee.ro/422389-large_default/masina-cu-telecomanda-bmw-z4-rosu-scara-1-la-24.jpg",
@@ -18452,28 +18565,16 @@
 "verificat": "2026-11-05"
 },
 {
-"titlu": "Masina Cu Telecomanda Porsche Gt3 Rs Alb Cu Scara 1 La 24",
-"pret": 116.9,
-"imagine": "https://www.ookee.ro/422395-large_default/masina-cu-telecomanda-porsche-gt3-rs-alb-cu-scara-1-la-24.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ookee.ro%2Fradiocomandate%2F135489-masina-cu-telecomanda-porsche-gt3-rs-alb-cu-scara-1-la-24-6427037021022.html",
-"magazin": "ookee.ro",
-"id": "UvR7TdOgaU1j",
-"brand": "Rastar",
-"url_magazin": "https://www.ookee.ro/radiocomandate/135489-masina-cu-telecomanda-porsche-gt3-rs-alb-cu-scara-1-la-24-6427037021022.html",
+"titlu": "Masina cu telecomanda bentley continental gt negru cu scara 1 la 24",
+"pret": 119.39,
+"imagine": "https://infinityro.vteximg.com.br/arquivos/ids/266341024/image-ed90b245a03f443f88fe59e2430aa15d.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Finfinity.ro%2Fmasina-cu-telecomanda-bentley-continental-gt-negru-cu-scara-1-la-24-1139674%2Fp%3Futm_source%3D2performant",
+"magazin": "infinity.ro",
+"id": "-V-PLRXO8LE_",
+"brand": "Rastar 1:24",
+"url_magazin": "https://infinity.ro/masina-cu-telecomanda-bentley-continental-gt-negru-cu-scara-1-la-24-1139674/p?utm_source=2performant",
 "pret_vechi": null,
-"verificat": "2026-11-05"
-},
-{
-"titlu": "Masina Cu Telecomanda Porsche Gt3 Rs Negru Rs Scara 1 La 24",
-"pret": 116.9,
-"imagine": "https://www.ookee.ro/422404-large_default/masina-cu-telecomanda-porsche-gt3-rs-negru-rs-scara-1-la-24.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ookee.ro%2Fradiocomandate%2F135490-masina-cu-telecomanda-porsche-gt3-rs-negru-rs-scara-1-la-24-6427037021015.html",
-"magazin": "ookee.ro",
-"id": "gjgTIOhRhfvR",
-"brand": "Rastar",
-"url_magazin": "https://www.ookee.ro/radiocomandate/135490-masina-cu-telecomanda-porsche-gt3-rs-negru-rs-scara-1-la-24-6427037021015.html",
-"pret_vechi": null,
-"verificat": "2026-11-05"
+"verificat": "2026-11-14"
 },
 {
 "titlu": "Masina cu telecomanda lamborghini galben cu scara 1 la 24",
@@ -18496,30 +18597,6 @@
 "id": "mgICASGp7uKt",
 "brand": "Rastar 1:24",
 "url_magazin": "https://infinity.ro/masina-cu-telecomanda-bmw-z4-alba-scara-1-la-24-612188/p?utm_source=2performant",
-"pret_vechi": null,
-"verificat": "2026-11-05"
-},
-{
-"titlu": "Masina cu telecomanda bmw z4 negru scara 1 la 24",
-"pret": 119.39,
-"imagine": "https://infinityro.vteximg.com.br/arquivos/ids/268323087/image-f6664e70732440f2b567fc126afc5531.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Finfinity.ro%2Fmasina-cu-telecomanda-bmw-z4-negru-scara-1-la-24-1580749%2Fp%3Futm_source%3D2performant",
-"magazin": "infinity.ro",
-"id": "poRxwuRaqOVF",
-"brand": "Rastar",
-"url_magazin": "https://infinity.ro/masina-cu-telecomanda-bmw-z4-negru-scara-1-la-24-1580749/p?utm_source=2performant",
-"pret_vechi": null,
-"verificat": "2026-11-05"
-},
-{
-"titlu": "Masina cu telecomanda lamborghini aventador rosu cu scara 1 la 24",
-"pret": 119.39,
-"imagine": "https://infinityro.vteximg.com.br/arquivos/ids/268323177/image-16fb52df3ed746f88f194c6321adef71.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Finfinity.ro%2Fmasina-cu-telecomanda-lamborghini-aventador-rosu-cu-scara-1-la-24-1580760%2Fp%3Futm_source%3D2performant",
-"magazin": "infinity.ro",
-"id": "bsCvdKPiGwdq",
-"brand": "Rastar",
-"url_magazin": "https://infinity.ro/masina-cu-telecomanda-lamborghini-aventador-rosu-cu-scara-1-la-24-1580760/p?utm_source=2performant",
 "pret_vechi": null,
 "verificat": "2026-11-05"
 },
@@ -18550,7 +18627,8 @@
 ],
 "magazine": [
 "infinity.ro",
-"ookee.ro"
+"ookee.ro",
+"timebox.ro"
 ],
 "publicat": true
 },
@@ -18561,7 +18639,7 @@
 "titlu": "Mașinuțe electrice pentru copii",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-05",
+"actualizat": "2026-11-14",
 "feeduri": [
 {
 "id": 8404,
@@ -18650,7 +18728,7 @@
 "id": "GhH4cgMmgiVs",
 "brand": "Chipolino",
 "url_magazin": "https://www.ookee.ro/vehicule-electrice/130643-masinuta-electrica-chipolino-buggy-off-road-black.html",
-"pret_vechi": 2148.9,
+"pret_vechi": 2158.9,
 "verificat": "2026-11-05"
 },
 {
@@ -18662,7 +18740,7 @@
 "id": "e782002e2",
 "brand": "Chipolino",
 "url_magazin": "https://www.ookee.ro/vehicule-electrice/116570-masinuta-electrica-chipolino-police-black.html",
-"pret_vechi": 1336.9,
+"pret_vechi": 1474.9,
 "verificat": "2026-11-05"
 },
 {
@@ -18698,7 +18776,7 @@
 "id": "24ac3b0d2",
 "brand": "Chipolino",
 "url_magazin": "https://www.ookee.ro/vehicule-electrice/123335-masinuta-electrica-chipolino-suv-ford-police.html",
-"pret_vechi": 1625.9,
+"pret_vechi": 1788.9,
 "verificat": "2026-11-05"
 },
 {
@@ -18762,6 +18840,18 @@
 "verificat": "2026-11-05"
 },
 {
+"titlu": "Masinuta electrica pentru copii 3 ani+, Mercedes Benz AMG SL65S, rosu",
+"pret": 1289.21,
+"imagine": "https://infinityro.vteximg.com.br/arquivos/ids/266621998/image-cbcb4a9f5fdb4ceea41a502b0b8fc3a8.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Finfinity.ro%2Fmasinuta-electrica-pentru-copii-3-ani-mercedes-benz-amg-sl65s-rosu-1206637%2Fp%3Futm_source%3D2performant",
+"magazin": "infinity.ro",
+"id": "bJxFIBQG6AzU",
+"brand": "ramiz",
+"url_magazin": "https://infinity.ro/masinuta-electrica-pentru-copii-3-ani-mercedes-benz-amg-sl65s-rosu-1206637/p?utm_source=2performant",
+"pret_vechi": 1718.94,
+"verificat": "2026-11-14"
+},
+{
 "titlu": "Masinuta electrica pentru copii 3 ani+, Turbo S, cu faruri LED si comenzi pe volan si muzica, rosu",
 "pret": 1290.74,
 "imagine": "https://infinityro.vteximg.com.br/arquivos/ids/266621800/image-5a5449a383c9421ba27abcf4edfe80b2.jpg",
@@ -18772,6 +18862,18 @@
 "url_magazin": "https://infinity.ro/masinuta-electrica-pentru-copii-3-ani-turbo-s-cu-faruri-led-si-comenzi-pe-volan-si-muzica-rosu-1206583/p?utm_source=2performant",
 "pret_vechi": 1548.88,
 "verificat": "2026-11-05"
+},
+{
+"titlu": "Masinuta electrica pentru copii Mercedes Benz AMG SL63 4x4 12V 200W, roti EVA, scaun piele, telecomanda parentala, Rosu",
+"pret": 1390.0,
+"imagine": "https://autokids.ro/upload/images/seo_friendly_pictures/merc_SL63/masinuta-electrica-pentru-copii-mercedes-benz-amg-sl63-rosu-3.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fautokids.ro%2Fmasinuta-electrica-pentru-copii-autokids-mercedes-benz-amg-sl63-12v-4x4-rosu.html",
+"magazin": "autokids.ro",
+"id": "mYbLV3k2hKlf",
+"brand": "Mercedes",
+"url_magazin": "https://autokids.ro/masinuta-electrica-pentru-copii-autokids-mercedes-benz-amg-sl63-12v-4x4-rosu.html",
+"pret_vechi": null,
+"verificat": "2026-11-14"
 },
 {
 "titlu": "Masina electrica copii mini countryman, 12v",
@@ -18844,18 +18946,6 @@
 "url_magazin": "https://infinity.ro/masinuta-electrica-pentru-copii-3-ani-mercedes-benz-amg-sl65s-alb-1206593/p?utm_source=2performant",
 "pret_vechi": 1718.94,
 "verificat": "2026-11-05"
-},
-{
-"titlu": "Masinuta electrica pentru copii Mercedes Benz AMG SL63 4x4 12V 200W, roti EVA, scaun piele, telecomanda parentala, Albas",
-"pret": 1490.0,
-"imagine": "https://autokids.ro/upload/images/seo_friendly_pictures/merc_SL63/masinuta-electrica-pentru-copii-mercedes-benz-amg-sl63-albastru-1.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fautokids.ro%2Fmasinuta-electrica-pentru-copii-autokids-mercedes-benz-amg-sl63-12v-4x4-albastru-metalizat.html",
-"magazin": "autokids.ro",
-"id": "YTKYyGyUCt1q",
-"brand": "Mercedes",
-"url_magazin": "https://autokids.ro/masinuta-electrica-pentru-copii-autokids-mercedes-benz-amg-sl63-12v-4x4-albastru-metalizat.html",
-"pret_vechi": null,
-"verificat": "2026-11-05"
 }
 ],
 "magazine": [
@@ -18873,7 +18963,7 @@
 "titlu": "Jucării Montessori",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-05",
+"actualizat": "2026-11-14",
 "feeduri": [
 {
 "id": 5171,
@@ -19063,7 +19153,7 @@
 "titlu": "Păpuși Barbie",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-05",
+"actualizat": "2026-11-14",
 "feeduri": [
 {
 "id": 8314,
@@ -19084,185 +19174,104 @@
 ],
 "produse": [
 {
-"titlu": "Papusa Barbie, La plaja in costum de baie, Tropical Blue",
-"pret": 68.57,
-"imagine": "https://infinityro.vteximg.com.br/arquivos/ids/270504727/image-118846378fd74a1faf671afcd081f6ca.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Finfinity.ro%2Fpapusa-barbie-la-plaja-in-costum-de-baie-tropical-blue-9021698%2Fp%3Futm_source%3D2performant",
+"titlu": "Papusa barbie blonda cu costum de baie roz la piscina",
+"pret": 41.08,
+"imagine": "https://infinityro.vteximg.com.br/arquivos/ids/269763873/image-58ebe3ae0ef34bcda7123e302c3d733c.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Finfinity.ro%2Fpapusa-barbie-blonda-cu-costum-de-baie-roz-la-piscina-1815683%2Fp%3Futm_source%3D2performant",
 "magazin": "infinity.ro",
-"id": "uFVZFF-Ru-bb",
-"brand": "Barbie",
-"url_magazin": "https://infinity.ro/papusa-barbie-la-plaja-in-costum-de-baie-tropical-blue-9021698/p?utm_source=2performant",
+"id": "NjXShSK7Vr_J",
+"brand": "BARBIE - I can be",
+"url_magazin": "https://infinity.ro/papusa-barbie-blonda-cu-costum-de-baie-roz-la-piscina-1815683/p?utm_source=2performant",
 "pret_vechi": null,
-"verificat": "2026-11-05"
+"verificat": "2026-11-14"
 },
 {
-"titlu": "Papusa Barbie Asistenta medicala, satena",
-"pret": 95.59,
-"imagine": "https://infinityro.vteximg.com.br/arquivos/ids/275825237/Image-5.webp",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Finfinity.ro%2Fpapusa-barbie-asistenta-medicala-satena-1879512%2Fp%3Futm_source%3D2performant",
+"titlu": "Papusa barbie bruneta cu costum de baie in doua culori",
+"pret": 47.27,
+"imagine": "https://infinityro.vteximg.com.br/arquivos/ids/269755636/image-23b541584e6f4db3b101858719a8033e.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Finfinity.ro%2Fpapusa-barbie-bruneta-cu-costum-de-baie-in-doua-culori-1811482%2Fp%3Futm_source%3D2performant",
 "magazin": "infinity.ro",
-"id": "qqdnXczCc8oR",
-"brand": "Barbie",
-"url_magazin": "https://infinity.ro/papusa-barbie-asistenta-medicala-satena-1879512/p?utm_source=2performant",
+"id": "msqErxz3fhEI",
+"brand": "BARBIE - I can be",
+"url_magazin": "https://infinity.ro/papusa-barbie-bruneta-cu-costum-de-baie-in-doua-culori-1811482/p?utm_source=2performant",
 "pret_vechi": null,
-"verificat": "2026-11-05"
+"verificat": "2026-11-14"
 },
 {
-"titlu": "Papusa Barbie Colectie Aniversara 80 de Ani Blonda cu Rochie Rosie Rubin",
-"pret": 114.95,
-"imagine": "https://infinityro.vteximg.com.br/arquivos/ids/270193429/image-c6dc66374d93473fa3ece0284a9708c7.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Finfinity.ro%2Fpapusa-barbie-colectie-aniversara-80-de-ani-blonda-cu-rochie-rosie-rubin-1879545%2Fp%3Futm_source%3D2performant",
+"titlu": "Barbie papusa cariere asistenta medicala",
+"pret": 81.54,
+"imagine": "https://infinityro.vteximg.com.br/arquivos/ids/1653245/image-6cffd7e631d743dd9ef0b9816faa49f6.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Finfinity.ro%2Fbarbie-papusa-cariere-asistenta-medicala-380606%2Fp%3Futm_source%3D2performant",
 "magazin": "infinity.ro",
-"id": "eX5mCb7glkly",
-"brand": "Barbie",
-"url_magazin": "https://infinity.ro/papusa-barbie-colectie-aniversara-80-de-ani-blonda-cu-rochie-rosie-rubin-1879545/p?utm_source=2performant",
-"pret_vechi": null,
-"verificat": "2026-11-05"
+"id": "H2v2x0mieEax",
+"brand": "OEM",
+"url_magazin": "https://infinity.ro/barbie-papusa-cariere-asistenta-medicala-380606/p?utm_source=2performant",
+"pret_vechi": 95.93,
+"verificat": "2026-11-14"
 },
 {
-"titlu": "Papusa Barbie Dansatoare Latino",
-"pret": 120.18,
-"imagine": "https://infinityro.vteximg.com.br/arquivos/ids/270504876/image-068baac0e1da466983719a9c1de4ebf0.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Finfinity.ro%2Fpapusa-barbie-dansatoare-latino-9021724%2Fp%3Futm_source%3D2performant",
+"titlu": "Papusa Barbie pop star cu microfon, varsta 3+ ani",
+"pret": 88.2,
+"imagine": "https://infinityro.vteximg.com.br/arquivos/ids/274037458/3.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Finfinity.ro%2Fpapusa-barbie-pop-star-cu-microfon-varsta-3-ani-9318049%2Fp%3Futm_source%3D2performant",
 "magazin": "infinity.ro",
-"id": "hTUI35Mbr_8j",
+"id": "4d2ngb61_KiL",
 "brand": "Barbie",
-"url_magazin": "https://infinity.ro/papusa-barbie-dansatoare-latino-9021724/p?utm_source=2performant",
-"pret_vechi": null,
-"verificat": "2026-11-05"
+"url_magazin": "https://infinity.ro/papusa-barbie-pop-star-cu-microfon-varsta-3-ani-9318049/p?utm_source=2performant",
+"pret_vechi": 131.16,
+"verificat": "2026-11-14"
 },
 {
-"titlu": "Papusa Barbie Bruneta cu Sindrom Down",
-"pret": 131.89,
-"imagine": "https://infinityro.vteximg.com.br/arquivos/ids/270193360/image-765874fe615241e9801a8f0bd5fae1cf.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Finfinity.ro%2Fpapusa-barbie-bruneta-cu-sindrom-down-1879529%2Fp%3Futm_source%3D2performant",
+"titlu": "Papusa barbie fashionista blonda",
+"pret": 96.33,
+"imagine": "https://infinityro.vteximg.com.br/arquivos/ids/266357587/image-559fb08866e54decb99281dc90151e2b.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Finfinity.ro%2Fpapusa-barbie-fashionista-blonda-1143739%2Fp%3Futm_source%3D2performant",
 "magazin": "infinity.ro",
-"id": "Sb5w_JGYaHqK",
-"brand": "Barbie",
-"url_magazin": "https://infinity.ro/papusa-barbie-bruneta-cu-sindrom-down-1879529/p?utm_source=2performant",
-"pret_vechi": null,
-"verificat": "2026-11-05"
+"id": "gFjlKjZDejNE",
+"brand": "BARBIE - Fashionistas",
+"url_magazin": "https://infinity.ro/papusa-barbie-fashionista-blonda-1143739/p?utm_source=2performant",
+"pret_vechi": 113.33,
+"verificat": "2026-11-14"
 },
 {
-"titlu": "Papusa Barbie Fashionista Bruneta Cu Rochie Mov",
-"pret": 131.89,
-"imagine": "https://infinityro.vteximg.com.br/arquivos/ids/270193420/image-85ab930e051040c2a167dcf1b898b063.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Finfinity.ro%2Fpapusa-barbie-fashionista-bruneta-cu-rochie-mov-1879539%2Fp%3Futm_source%3D2performant",
+"titlu": "Papusa barbie fashionista blonda cu parul prin in coada si fusta roz",
+"pret": 96.33,
+"imagine": "https://infinityro.vteximg.com.br/arquivos/ids/266357657/image-3ceac4c28b3541648ddb7f557f16b80e.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Finfinity.ro%2Fpapusa-barbie-fashionista-blonda-cu-parul-prin-in-coada-si-fusta-roz-1143755%2Fp%3Futm_source%3D2performant",
 "magazin": "infinity.ro",
-"id": "Ss-dK_-sGyap",
-"brand": "Barbie",
-"url_magazin": "https://infinity.ro/papusa-barbie-fashionista-bruneta-cu-rochie-mov-1879539/p?utm_source=2performant",
-"pret_vechi": null,
-"verificat": "2026-11-05"
+"id": "nk_rNRNOhpvz",
+"brand": "BARBIE - Fashionistas",
+"url_magazin": "https://infinity.ro/papusa-barbie-fashionista-blonda-cu-parul-prin-in-coada-si-fusta-roz-1143755/p?utm_source=2performant",
+"pret_vechi": 113.33,
+"verificat": "2026-11-14"
 },
 {
-"titlu": "Papusa Barbie Blonda Cu Rochie Albastra Cu Fundita",
-"pret": 131.89,
-"imagine": "https://infinityro.vteximg.com.br/arquivos/ids/270193418/image-bc1e112f9bae4d3d9dbf2053b18ea8a5.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Finfinity.ro%2Fpapusa-barbie-blonda-cu-rochie-albastra-cu-fundita-1879540%2Fp%3Futm_source%3D2performant",
+"titlu": "Papusa barbie fashionista bruneta cu salopeta verde",
+"pret": 96.33,
+"imagine": "https://infinityro.vteximg.com.br/arquivos/ids/266358390/image-71703d92d0754b90a45751d46772bac4.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Finfinity.ro%2Fpapusa-barbie-fashionista-bruneta-cu-salopeta-verde-1143910%2Fp%3Futm_source%3D2performant",
 "magazin": "infinity.ro",
-"id": "ML5T5O1dRs4n",
-"brand": "Barbie",
-"url_magazin": "https://infinity.ro/papusa-barbie-blonda-cu-rochie-albastra-cu-fundita-1879540/p?utm_source=2performant",
-"pret_vechi": null,
-"verificat": "2026-11-05"
+"id": "Aw7x8t77wvo9",
+"brand": "BARBIE - Fashionistas",
+"url_magazin": "https://infinity.ro/papusa-barbie-fashionista-bruneta-cu-salopeta-verde-1143910/p?utm_source=2performant",
+"pret_vechi": 113.33,
+"verificat": "2026-11-14"
 },
 {
-"titlu": "Papusa Barbie Detectiv Pe Plaja",
-"pret": 131.89,
-"imagine": "https://infinityro.vteximg.com.br/arquivos/ids/270193492/image-56e55f1b6e314db6a7f7972bbd2d2335.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Finfinity.ro%2Fpapusa-barbie-detectiv-pe-plaja-1879553%2Fp%3Futm_source%3D2performant",
+"titlu": "Papusa barbie fashionista blonda cu aparat dentar",
+"pret": 102.42,
+"imagine": "https://infinityro.vteximg.com.br/arquivos/ids/269760452/image-6004c58e62874a76b02dc574aef1fd9f.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Finfinity.ro%2Fpapusa-barbie-fashionista-blonda-cu-aparat-dentar-1813889%2Fp%3Futm_source%3D2performant",
 "magazin": "infinity.ro",
-"id": "p6hGZGe7jCYn",
-"brand": "Barbie",
-"url_magazin": "https://infinity.ro/papusa-barbie-detectiv-pe-plaja-1879553/p?utm_source=2performant",
+"id": "zRG4yxos1TZu",
+"brand": "BARBIE - Fashionistas",
+"url_magazin": "https://infinity.ro/papusa-barbie-fashionista-blonda-cu-aparat-dentar-1813889/p?utm_source=2performant",
 "pret_vechi": null,
-"verificat": "2026-11-05"
+"verificat": "2026-11-14"
 }
 ],
 "magazine": [
 "infinity.ro"
-],
-"publicat": true
-},
-{
-"slug": "joc-de-societate",
-"tema": "jucarii-copii",
-"tema_nume": "Jucării",
-"titlu": "Jocuri de societate",
-"nota": null,
-"in_text": null,
-"actualizat": "2026-11-05",
-"feeduri": [
-{
-"id": 811,
-"magazin": "libris.ro"
-},
-{
-"id": 5887,
-"magazin": "grupdzc.ro"
-},
-{
-"id": 8969,
-"magazin": "ozone.ro"
-},
-{
-"id": 5171,
-"magazin": "bazarulonline.ro"
-}
-],
-"produse": [
-{
-"titlu": "Joc de societate: 4 in a Row",
-"pret": 48.45,
-"imagine": "https://www.libris.ro/img/pozeprod/48673/48672400-1-small-1.jpg?ver=1791807570",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.libris.ro%2Fjoc%2Fjoc-de-societate-4-in-a-row%2F48672400",
-"magazin": "libris.ro",
-"id": "KSWh54Hmoy6J",
-"brand": "-",
-"url_magazin": "https://www.libris.ro/joc/joc-de-societate-4-in-a-row/48672400",
-"pret_vechi": 57.0,
-"verificat": "2026-11-05"
-},
-{
-"titlu": "Joc de societate: Hai-Hui prin Romania",
-"pret": 50.99,
-"imagine": "https://www.libris.ro/img/pozeprod/36454/36453760-1-small-1.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.libris.ro%2Fjoc%2Fjoc-de-societate-hai-hui-prin-romania%2F36453760",
-"magazin": "libris.ro",
-"id": "oVvYH4bF3g73",
-"brand": "-",
-"url_magazin": "https://www.libris.ro/joc/joc-de-societate-hai-hui-prin-romania/36453760",
-"pret_vechi": 59.99,
-"verificat": "2026-11-05"
-},
-{
-"titlu": "Joc de societate. Panic Lab",
-"pret": 69.99,
-"imagine": "https://www.libris.ro/img/pozeprod/48907/48906487-1-small-1.jpg?ver=1793689415",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.libris.ro%2Fjoc%2Fjoc-de-societate-panic-lab%2F48906487",
-"magazin": "libris.ro",
-"id": "0Zesy7b0w78J",
-"brand": "-",
-"url_magazin": "https://www.libris.ro/joc/joc-de-societate-panic-lab/48906487",
-"pret_vechi": null,
-"verificat": "2026-11-05"
-},
-{
-"titlu": "Joc de societate: Serpi si scari. My First Snakes and Ladders",
-"pret": 79.05,
-"imagine": "https://www.libris.ro/img/pozeprod/29130/29129212-1-small-1.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.libris.ro%2Fjoc%2Fjoc-de-societate-serpi-si-scari-my-first-snakes-and-ladders%2F29129212",
-"magazin": "libris.ro",
-"id": "CegAL8IJGub5",
-"brand": "-",
-"url_magazin": "https://www.libris.ro/joc/joc-de-societate-serpi-si-scari-my-first-snakes-and-ladders/29129212",
-"pret_vechi": 93.0,
-"verificat": "2026-11-05"
-}
-],
-"magazine": [
-"libris.ro"
 ],
 "publicat": true
 },
@@ -19273,7 +19282,7 @@
 "titlu": "Trenulețe electrice",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-05",
+"actualizat": "2026-11-14",
 "feeduri": [
 {
 "id": 8811,
@@ -19362,7 +19371,7 @@
 "id": "713694efa",
 "brand": "Hollicy",
 "url_magazin": "https://www.kinderauto.ro/trenulet-electrica-pentru-copii-sx1919-90w-12v-standard-albastru.html",
-"pret_vechi": null,
+"pret_vechi": 810.0,
 "verificat": "2026-11-05"
 },
 {
@@ -19374,7 +19383,7 @@
 "id": "229cad387",
 "brand": "Hollicy",
 "url_magazin": "https://www.kinderauto.ro/trenulet-electric-sx1919-verde-pentru-2-copii-baterie-12v-detasabila-putere-90w-roti-moi-music-player.html",
-"pret_vechi": null,
+"pret_vechi": 810.0,
 "verificat": "2026-11-05"
 },
 {
@@ -19398,7 +19407,7 @@
 "id": "8a17f76b4",
 "brand": "Hollicy",
 "url_magazin": "https://www.kinderauto.ro/trenulet-electric-cu-vagon-suplimentar-pentru-3-copii-sx1919-baterie-12v-putere-180w-roti-moi-music-player-verde.html",
-"pret_vechi": null,
+"pret_vechi": 1019.0,
 "verificat": "2026-11-05"
 },
 {
@@ -19422,7 +19431,7 @@
 "id": "JqDu-KqGL6zO",
 "brand": "Hollicy",
 "url_magazin": "https://www.kinderauto.ro/https-www-kinderauto-ro-masinute-electrice-trenulet-electric-cu-2-vagone-suplimentare-pentru-4-copii-sx1919-baterie-12v-putere-180w-roti-moi-music-player-verde-html.html",
-"pret_vechi": null,
+"pret_vechi": 1150.0,
 "verificat": "2026-11-05"
 }
 ],
@@ -19439,7 +19448,7 @@
 "titlu": "Bucătării de jucărie",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-05",
+"actualizat": "2026-11-14",
 "feeduri": [
 {
 "id": 5171,
@@ -19556,16 +19565,16 @@
 "verificat": "2026-11-05"
 },
 {
-"titlu": "Bucatarie de jucarie pentru copii 3+ ani, cu sunete realiste, 44 accesorii, plastic, 61 x 33 x 72.5 cm",
-"pret": 306.6,
-"imagine": "https://infinityro.vteximg.com.br/arquivos/ids/268724902/image-f9f380a274bf499b9a4992a4895b1a0e.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Finfinity.ro%2Fbucatarie-de-jucarie-pentru-copii-3-ani-cu-sunete-realiste-44-accesorii-plastic-61-x-33-x-72-5-cm-1658895%2Fp%3Futm_source%3D2performant",
+"titlu": "Bucatarie de jucarie pentru copii 3+ ani, cu sunete realiste, 44 accesorii, plastic, 61 x 33 x 72.5 cm, ro-multicolor",
+"pret": 292.01,
+"imagine": "https://infinityro.vteximg.com.br/arquivos/ids/268720674/image-5f88eb670ac24f3da40cb38a0d08b3e9.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Finfinity.ro%2Fbucatarie-de-jucarie-pentru-copii-3-ani-cu-sunete-realiste-44-accesorii-plastic-61-x-33-x-72-5-cm-ro-multicolor-1658102%2Fp%3Futm_source%3D2performant",
 "magazin": "infinity.ro",
-"id": "KUiqTcTx7p_g",
+"id": "XMgtYnrRd4BZ",
 "brand": "Welora",
-"url_magazin": "https://infinity.ro/bucatarie-de-jucarie-pentru-copii-3-ani-cu-sunete-realiste-44-accesorii-plastic-61-x-33-x-72-5-cm-1658895/p?utm_source=2performant",
+"url_magazin": "https://infinity.ro/bucatarie-de-jucarie-pentru-copii-3-ani-cu-sunete-realiste-44-accesorii-plastic-61-x-33-x-72-5-cm-ro-multicolor-1658102/p?utm_source=2performant",
 "pret_vechi": 493.9,
-"verificat": "2026-11-05"
+"verificat": "2026-11-14"
 },
 {
 "titlu": "Bucatarie de jucarie, cu 30 accesorii, cu blat de lucru, sunete si lumini, multicolora",
@@ -21284,6 +21293,306 @@
 ],
 "magazine": [
 "chicbijoux.ro"
+],
+"publicat": true
+},
+{
+"slug": "banda-de-alergare",
+"tema": "sport",
+"tema_nume": "Sport",
+"titlu": "Benzi de alergare",
+"nota": null,
+"in_text": null,
+"actualizat": "2026-11-05",
+"feeduri": [
+{
+"id": 9311,
+"magazin": "gorillasports.ro"
+},
+{
+"id": 8469,
+"magazin": "gorillasports.ro"
+},
+{
+"id": 8964,
+"magazin": "blacktech.ro"
+}
+],
+"produse": [
+{
+"titlu": "Banda de alergare electrica, pliabilă PHYSIONICS",
+"pret": 1579.9,
+"imagine": "https://cdn.shopify.com/s/files/1/0576/5031/5369/files/LFBD01_galeri_01.jpg?v=1709996721",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.gorillasports.ro%2Fproducts%2Fbanda-de-alergare-electrica-pliabila-physionics%3Fvariant%3D41143898013801",
+"magazin": "gorillasports.ro",
+"id": "84oeo2vVuH6V",
+"brand": "PHYSIONICS",
+"url_magazin": "https://www.gorillasports.ro/products/banda-de-alergare-electrica-pliabila-physionics?variant=41143898013801",
+"pret_vechi": null,
+"verificat": "2026-11-05"
+},
+{
+"titlu": "Banda de alergare TM 2400 S, cu control gestual, Christopeit",
+"pret": 1839.9,
+"imagine": "https://cdn.shopify.com/s/files/1/0576/5031/5369/files/download_27_42cd5454-6cc8-435c-bab4-ec53d10e17ef.png?v=1749535420",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.gorillasports.ro%2Fproducts%2Fbanda-de-alergare-tm-2400-s-cu-control-gestual-christopeit-1%3Fvariant%3D55608129945983",
+"magazin": "gorillasports.ro",
+"id": "_J_h06xNPafg",
+"brand": "Christopeit",
+"url_magazin": "https://www.gorillasports.ro/products/banda-de-alergare-tm-2400-s-cu-control-gestual-christopeit-1?variant=55608129945983",
+"pret_vechi": null,
+"verificat": "2026-11-05"
+},
+{
+"titlu": "Banda de alergare pliabila YESOUL T3 Foldable Treadmill, Black, viteza maxima 14 km/h",
+"pret": 1899.0,
+"imagine": "https://cdn.shopify.com/s/files/1/0954/2244/7951/files/YESOUL-T3-_21.jpg?v=1778067125",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fblacktech.ro%2Fproducts%2Fbanda-de-alergare-pliabila-yesoul-t3-foldable-treadmill-black-viteza-maxima-14-km-h%3Fvariant%3D57596704293199",
+"magazin": "blacktech.ro",
+"id": "FAVLHTicftFG",
+"brand": "YESOUL",
+"url_magazin": "https://blacktech.ro/products/banda-de-alergare-pliabila-yesoul-t3-foldable-treadmill-black-viteza-maxima-14-km-h?variant=57596704293199",
+"pret_vechi": null,
+"verificat": "2026-11-05"
+},
+{
+"titlu": "Banda de alergare pliabila Kingsmith WalkingPad G1 Treadmill, Black, viteza maxima 12km/h",
+"pret": 2099.0,
+"imagine": "https://cdn.shopify.com/s/files/1/0954/2244/7951/files/11123.jpg?v=1759585776",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fblacktech.ro%2Fproducts%2Fbanda-de-alergare-pliabila-kingsmith-walkingpad-g1-treadmill-black-viteza-maxima-12km-h%3Fvariant%3D56071289373007",
+"magazin": "blacktech.ro",
+"id": "HYE1ejge1t25",
+"brand": "Kingsmith",
+"url_magazin": "https://blacktech.ro/products/banda-de-alergare-pliabila-kingsmith-walkingpad-g1-treadmill-black-viteza-maxima-12km-h?variant=56071289373007",
+"pret_vechi": 2499.0,
+"verificat": "2026-11-05"
+},
+{
+"titlu": "Banda de alergare YESOUL T3Pro Treadmill, inclinare 10%, Sistem Pliere, viteza maxima 14km/h, Kinomap / Ziwft",
+"pret": 2449.0,
+"imagine": "https://cdn.shopify.com/s/files/1/0954/2244/7951/files/14265.jpg?v=1762171807",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fblacktech.ro%2Fproducts%2Fbanda-de-alergare-yesoul-t3pro-treadmill-inclinare-10-sistem-pliere-viteza-maxima-14km-h-kinomap-ziwft%3Fvariant%3D56323055878479",
+"magazin": "blacktech.ro",
+"id": "N3lcQeRTMqXn",
+"brand": "YESOUL",
+"url_magazin": "https://blacktech.ro/products/banda-de-alergare-yesoul-t3pro-treadmill-inclinare-10-sistem-pliere-viteza-maxima-14km-h-kinomap-ziwft?variant=56323055878479",
+"pret_vechi": 2599.0,
+"verificat": "2026-11-05"
+},
+{
+"titlu": "Banda de alergare pliabila KINGSMITH WalkingPad Z3 Hybrid Treadmill, Gray viteza maxima 10 km/h",
+"pret": 2899.0,
+"imagine": "https://cdn.shopify.com/s/files/1/0954/2244/7951/files/12591.jpg?v=1759586727",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fblacktech.ro%2Fproducts%2Fbanda-de-alergare-pliabila-kingsmith-walkingpad-z3-hybrid-treadmill-gray-viteza-maxima-10-km-h%3Fvariant%3D56071313916239",
+"magazin": "blacktech.ro",
+"id": "A7D-0asQvFn5",
+"brand": "Kingsmith",
+"url_magazin": "https://blacktech.ro/products/banda-de-alergare-pliabila-kingsmith-walkingpad-z3-hybrid-treadmill-gray-viteza-maxima-10-km-h?variant=56071313916239",
+"pret_vechi": null,
+"verificat": "2026-11-05"
+},
+{
+"titlu": "Banda de alergare pliabila Kingsmith WalkingPad Treadmill TRX21F, viteza maxima 12km/ora",
+"pret": 2999.0,
+"imagine": "https://cdn.shopify.com/s/files/1/0954/2244/7951/files/6300.jpg?v=1759584056",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fblacktech.ro%2Fproducts%2Fbanda-de-alergare-pliabila-kingsmith-walkingpad-treadmill-trx21f-viteza-maxima-12km-ora%3Fvariant%3D56071230292303",
+"magazin": "blacktech.ro",
+"id": "pHPccHGo6xJz",
+"brand": "Kingsmith",
+"url_magazin": "https://blacktech.ro/products/banda-de-alergare-pliabila-kingsmith-walkingpad-treadmill-trx21f-viteza-maxima-12km-ora?variant=56071230292303",
+"pret_vechi": 3399.0,
+"verificat": "2026-11-05"
+},
+{
+"titlu": "Banda de alergare pliabila KINGSMITH WalkingPad Z3 Hybrid+ Treadmill, Gray viteza maxima 10 km/h",
+"pret": 3299.0,
+"imagine": "https://cdn.shopify.com/s/files/1/0954/2244/7951/files/12659.jpg?v=1759586756",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fblacktech.ro%2Fproducts%2Fbanda-de-alergare-pliabila-kingsmith-walkingpad-z3-hybrid-treadmill-gray-viteza-maxima-10-km-h-1%3Fvariant%3D56071316144463",
+"magazin": "blacktech.ro",
+"id": "79uHKXj02mRW",
+"brand": "Kingsmith",
+"url_magazin": "https://blacktech.ro/products/banda-de-alergare-pliabila-kingsmith-walkingpad-z3-hybrid-treadmill-gray-viteza-maxima-10-km-h-1?variant=56071316144463",
+"pret_vechi": null,
+"verificat": "2026-11-05"
+},
+{
+"titlu": "Banda de alergare YESOUL T3 Plus Treadmill, Black, inclinare 10%, pliere hidraulica, viteza max 14km/ora",
+"pret": 3799.0,
+"imagine": "https://cdn.shopify.com/s/files/1/0954/2244/7951/files/14255.jpg?v=1762171309",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fblacktech.ro%2Fproducts%2Fbanda-de-alergare-yesoul-t3-plus-treadmill-black-inclinare-10-pliere-hidraulica-viteza-max-14km-ora%3Fvariant%3D56322976448847",
+"magazin": "blacktech.ro",
+"id": "61KA3Ba-P7ej",
+"brand": "YESOUL",
+"url_magazin": "https://blacktech.ro/products/banda-de-alergare-yesoul-t3-plus-treadmill-black-inclinare-10-pliere-hidraulica-viteza-max-14km-ora?variant=56322976448847",
+"pret_vechi": null,
+"verificat": "2026-11-05"
+},
+{
+"titlu": "Banda de alergare MAXXUS M8 Argintie",
+"pret": 4799.9,
+"imagine": "https://cdn.shopify.com/s/files/1/0576/5031/5369/products/5dd15556-457e-421b-93ac-1385455982f6_1.jpg?v=1750417876",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.gorillasports.ro%2Fproducts%2Fbanda-de-alergare-maxxus-m8-argintie%3Fvariant%3D55607962567039",
+"magazin": "gorillasports.ro",
+"id": "Rv_ODgitdDqp",
+"brand": "MAXXUS",
+"url_magazin": "https://www.gorillasports.ro/products/banda-de-alergare-maxxus-m8-argintie?variant=55607962567039",
+"pret_vechi": null,
+"verificat": "2026-11-05"
+},
+{
+"titlu": "Banda de alergare TM 5000S, Christopeit",
+"pret": 5649.9,
+"imagine": "https://cdn.shopify.com/s/files/1/0576/5031/5369/files/TM5000S_1840_cover.png?v=1761987246",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.gorillasports.ro%2Fproducts%2Fbanda-de-alergare-tm-5000s-christopeit%3Fvariant%3D56320607453567",
+"magazin": "gorillasports.ro",
+"id": "9uBGpkgK-iPr",
+"brand": "Christopeit",
+"url_magazin": "https://www.gorillasports.ro/products/banda-de-alergare-tm-5000s-christopeit?variant=56320607453567",
+"pret_vechi": null,
+"verificat": "2026-11-05"
+},
+{
+"titlu": "Banda de alergare RunMaxx U9 PRO MAXXUS",
+"pret": 18499.89,
+"imagine": "https://cdn.shopify.com/s/files/1/0576/5031/5369/files/GSMX-600428-00019-0001_P1.jpg?v=1792759294",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.gorillasports.ro%2Fproducts%2Fbanda-de-alergare-runmaxx-u9-pro-maxxus-negru%3Fvariant%3D58918253232511",
+"magazin": "gorillasports.ro",
+"id": "9AgFfE6XEqWL",
+"brand": "MAXXUS",
+"url_magazin": "https://www.gorillasports.ro/products/banda-de-alergare-runmaxx-u9-pro-maxxus-negru?variant=58918253232511",
+"pret_vechi": 20699.9,
+"verificat": "2026-11-05"
+}
+],
+"magazine": [
+"blacktech.ro",
+"gorillasports.ro"
+],
+"publicat": true
+},
+{
+"slug": "bicicleta-fitness",
+"tema": "sport",
+"tema_nume": "Sport",
+"titlu": "Biciclete de fitness",
+"nota": null,
+"in_text": null,
+"actualizat": "2026-11-05",
+"feeduri": [
+{
+"id": 3197,
+"magazin": "kivi.ro"
+},
+{
+"id": 9367,
+"magazin": "infinity.ro"
+},
+{
+"id": 1096,
+"magazin": "evomag.ro"
+}
+],
+"produse": [
+{
+"titlu": "Bicicleta fitness cu centura de rezistenta",
+"pret": 554.39,
+"imagine": "https://infinityro.vteximg.com.br/arquivos/ids/261261115/8719883721149_a_en_hd_1.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Finfinity.ro%2Fbicicleta-fitness-cu-centura-de-rezistenta-504538%2Fp%3Futm_source%3D2performant",
+"magazin": "infinity.ro",
+"id": "LMz5g88OwwpK",
+"brand": "VidaXL",
+"url_magazin": "https://infinity.ro/bicicleta-fitness-cu-centura-de-rezistenta-504538/p?utm_source=2performant",
+"pret_vechi": null,
+"verificat": "2026-11-05"
+},
+{
+"titlu": "Bicicleta de fitness cu scaun",
+"pret": 568.25,
+"imagine": "https://infinityro.vteximg.com.br/arquivos/ids/261295152/8718475885139_a_en_hd_1.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Finfinity.ro%2Fbicicleta-de-fitness-cu-scaun-504342%2Fp%3Futm_source%3D2performant",
+"magazin": "infinity.ro",
+"id": "FGEhInc4jydh",
+"brand": "VidaXL",
+"url_magazin": "https://infinity.ro/bicicleta-de-fitness-cu-scaun-504342/p?utm_source=2performant",
+"pret_vechi": null,
+"verificat": "2026-11-05"
+},
+{
+"titlu": "Bicicleta spinning Rebel Active RBA-1016, volant 4 kg",
+"pret": 653.99,
+"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4191%2F4191271%2Fbicicleta-spinning-rebel-activ-6745748b9438d.PNG&type=auto&width=500&sign=L1hxVJlq5gQmvzWbPldkpmu-6RD6lGahuiaNxseheWQ",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Fsport-fitness-fitness-biciclete-fitness-magnetice-eliptice%2Frebel-bicicleta-spinning-rebel-active-rba-1016-volant-4-kg-4191271.html",
+"magazin": "evomag.ro",
+"id": "9H3yq_EAKi-y",
+"brand": "Rebel",
+"url_magazin": "https://www.evomag.ro/sport-fitness-fitness-biciclete-fitness-magnetice-eliptice/rebel-bicicleta-spinning-rebel-active-rba-1016-volant-4-kg-4191271.html",
+"pret_vechi": null,
+"verificat": "2026-11-05"
+},
+{
+"titlu": "Bicicleta fitness eliptica Rebel Active RBA-1011",
+"pret": 772.99,
+"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4146%2F4146112%2Fbicicleta-fitness-eliptica-reb-65e84f791f19a.jpg&type=auto&width=500&sign=Axy-BFnBcvhVqE4HT2c6M9gk2iFWzv-UeUgUQFDFDKA",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Fsport-fitness-fitness-biciclete-fitness-magnetice-eliptice%2Frebel-bicicleta-fitness-eliptica-rebel-active-rba-1011-4146112.html",
+"magazin": "evomag.ro",
+"id": "yC7ra8gj1q1X",
+"brand": "Rebel",
+"url_magazin": "https://www.evomag.ro/sport-fitness-fitness-biciclete-fitness-magnetice-eliptice/rebel-bicicleta-fitness-eliptica-rebel-active-rba-1011-4146112.html",
+"pret_vechi": null,
+"verificat": "2026-11-05"
+},
+{
+"titlu": "Bicicleta spinning REBEL ACTIVE RBA-1007",
+"pret": 1157.99,
+"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4146%2F4146138%2Fbicicleta-spinning-rebel-activ-65e862201010a.jpg&type=auto&width=500&sign=wHvlpAnyGAO5p-SEojAhURQG2vGSto32JaNrx2ic8AY",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Fsport-fitness-fitness-biciclete-fitness-magnetice-eliptice%2Frebel-bicicleta-spinning-rebel-active-rba-1007-4146138.html",
+"magazin": "evomag.ro",
+"id": "xH_5ZswgdcMn",
+"brand": "Rebel",
+"url_magazin": "https://www.evomag.ro/sport-fitness-fitness-biciclete-fitness-magnetice-eliptice/rebel-bicicleta-spinning-rebel-active-rba-1007-4146138.html",
+"pret_vechi": null,
+"verificat": "2026-11-05"
+},
+{
+"titlu": "Bicicleta fitness eliptica Rebel Active RBA-1012",
+"pret": 1278.99,
+"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4146%2F4146113%2Fbicicleta-fitness-eliptica-reb-65e851b9aeb9c.jpg&type=auto&width=500&sign=F69TL5CCtRmkx6fz872UmiYph4FwcLPOPCVVw5Zky_c",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Fsport-fitness-fitness-biciclete-fitness-magnetice-eliptice%2Frebel-bicicleta-fitness-eliptica-rebel-active-rba-1012-4146113.html",
+"magazin": "evomag.ro",
+"id": "bWWBcU62xDZ5",
+"brand": "Rebel",
+"url_magazin": "https://www.evomag.ro/sport-fitness-fitness-biciclete-fitness-magnetice-eliptice/rebel-bicicleta-fitness-eliptica-rebel-active-rba-1012-4146113.html",
+"pret_vechi": null,
+"verificat": "2026-11-05"
+},
+{
+"titlu": "Bicicleta antrenament fitness",
+"pret": 1620.62,
+"imagine": "https://infinityro.vteximg.com.br/arquivos/ids/261264738/8718475509615_a_en_hd_1.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Finfinity.ro%2Fbicicleta-antrenament-fitness-504170%2Fp%3Futm_source%3D2performant",
+"magazin": "infinity.ro",
+"id": "xGUYF7SJiR0k",
+"brand": "VidaXL",
+"url_magazin": "https://infinity.ro/bicicleta-antrenament-fitness-504170/p?utm_source=2performant",
+"pret_vechi": null,
+"verificat": "2026-11-05"
+},
+{
+"titlu": "Bicicleta Fitness Spinning YESOUL S3 Pro (Alb)",
+"pret": 2299.0,
+"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F3835%2F3835804%2Fbicicleta-fitness-spinning-yes-61a0db74ac41e.jpg&type=auto&width=500&sign=wA2bj6Kyyh78j9T1nlJlULSb8aD3M-zd6LT4Cu3ZSXc",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Fsport-fitness-fitness-biciclete-fitness-magnetice-eliptice%2Fyesoul-bicicleta-fitness-spinning-yesoul-s3-pro-alb-3835804.html",
+"magazin": "evomag.ro",
+"id": "xODGbthnViY0",
+"brand": "YESOUL",
+"url_magazin": "https://www.evomag.ro/sport-fitness-fitness-biciclete-fitness-magnetice-eliptice/yesoul-bicicleta-fitness-spinning-yesoul-s3-pro-alb-3835804.html",
+"pret_vechi": null,
+"verificat": "2026-11-05"
+}
+],
+"magazine": [
+"evomag.ro",
+"infinity.ro"
 ],
 "publicat": true
 },
