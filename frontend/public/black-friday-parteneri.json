@@ -5,7 +5,7 @@
   {
    "slug": "casa-gradina",
    "nume": "casă și grădină",
-   "campanii": 23
+   "campanii": 22
   },
   {
    "slug": "fashion",
@@ -903,16 +903,6 @@
    "descriere": "Pentru fiecare astfel de comandă primește automat un voucher pentru produsele HAVIT de pe printingmall.ro, fără pași în plus. Voucherul pornește de la 50 lei (comenzi până la 500 lei) și ajunge la 15% din valoarea comenzii (comenzi peste 15.000 lei). Se folosește între 16 și 30 Noiembrie, doar pentru produse HAVIT, pe un coș de minimum 1,5 ori valoarea voucherului.",
    "are_cod": false,
    "categorie": "electronice"
-  },
-  {
-   "magazin": "pufrelax.com",
-   "nume": "Pufrelax",
-   "start": "2026-11-06",
-   "final": "2026-11-26",
-   "nota": "Black Friday",
-   "descriere": "Reduceri de pana la 50%, in limita stocului disponibil.",
-   "are_cod": false,
-   "categorie": "casa-gradina"
   },
   {
    "magazin": "re-bloom.ro",

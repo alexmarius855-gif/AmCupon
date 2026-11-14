@@ -600,8 +600,8 @@
    "magazine": 155
   },
   "2026-11-14": {
-   "promotii": 272,
-   "magazine": 156
+   "promotii": 271,
+   "magazine": 155
   }
  },
  "magazine": {
@@ -9102,7 +9102,7 @@
     "prima": "2026-11-06",
     "ultima": "2026-11-14",
     "expira": "2026-11-26",
-    "activa": true
+    "activa": false
    }
   ],
   "re-bloom.ro": [

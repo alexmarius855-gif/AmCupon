@@ -1356,6 +1356,11 @@
 "google_ads": "yes",
 "cashback": "yes"
 },
+"librex.ro": {
+"cupoane": "yes",
+"google_ads": "yes",
+"cashback": "yes"
+},
 "libris.ro": {
 "cupoane": "yes",
 "google_ads": "no",
@@ -1986,11 +1991,6 @@
 "google_ads": "maybe",
 "cashback": "yes"
 },
-"pufrelax.com": {
-"cupoane": "yes",
-"google_ads": "yes",
-"cashback": "yes"
-},
 "qudo.ro": {
 "cupoane": "yes",
 "google_ads": "yes",
@@ -2182,11 +2182,6 @@
 "cashback": "yes"
 },
 "somnart.ro": {
-"cupoane": "yes",
-"google_ads": "yes",
-"cashback": "yes"
-},
-"spectral.ro": {
 "cupoane": "yes",
 "google_ads": "yes",
 "cashback": "yes"

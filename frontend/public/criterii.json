@@ -7095,7 +7095,7 @@
 "titlu": "Aspiratoare robot cu mop",
 "nota": null,
 "in_text": "\\bmop\\w*\\b",
-"actualizat": "2026-11-06",
+"actualizat": "2026-11-14",
 "feeduri": [
 {
 "id": 8964,
@@ -7126,18 +7126,6 @@
 "url_magazin": "https://blacktech.ro/products/aspirator-robot-cu-mop-mova-e20s-pro-robot-vacuum-cleaner-13000pa-3200mah-3dadapt%E2%84%A2-obstacle-avoidance-statie-de-incarcare?variant=56966408175951",
 "pret_vechi": 999.0,
 "verificat": "2026-11-04"
-},
-{
-"titlu": "Aspirator robot LENOVO T1S, 0.4 L, Autonomie max 150 min, Wi-Fi, Functie mop (Alb/Auriu)",
-"pret": 715.99,
-"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F3983%2F3983383%2Faspirator-robot-lenovo-t1s-0-62c3e4b640989.JPG&type=auto&width=500&sign=vtfDqklSFESrYmNz_FMyuDbYiacG4RZ_2ZFfJQRh1wc",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Felectrocasnice-aspiratoare-aspiratoare-robot%2Flenovo-aspirator-robot-lenovo-t1s-0.4-l-autonomie-max-150-min-wi-fi-functie-mop-alb-auriu-3983383.html",
-"magazin": "evomag.ro",
-"id": "gXrvMi47MQbb",
-"brand": "Lenovo",
-"url_magazin": "https://www.evomag.ro/electrocasnice-aspiratoare-aspiratoare-robot/lenovo-aspirator-robot-lenovo-t1s-0.4-l-autonomie-max-150-min-wi-fi-functie-mop-alb-auriu-3983383.html",
-"pret_vechi": null,
-"verificat": "2026-11-06"
 },
 {
 "titlu": "Aspirator robot cu mop MOVA E20S Pro Plus Robot Vacuum Cleaner, 13000Pa, 3200mAh, 3DAdapt™ Obstacle Avoidance, statie co",
@@ -7200,18 +7188,6 @@
 "verificat": "2026-11-04"
 },
 {
-"titlu": "Aspirator robot cu mop MOVA E50 Ultra Robot Vacuum, 30.000 Pa, 5.200mAh, 200 min, MaxiReach™, statie inteligenta (Alb)",
-"pret": 1399.0,
-"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4312%2F4312875%2Frle15seu-wh-6a954e0e70235.jpg&type=auto&width=500&sign=lMoAdhmL2euZv6dRKJEFAXEhVfdPOespauCxkJ6rjks",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Felectrocasnice-aspiratoare-aspiratoare-robot%2Fmova-aspirator-robot-cu-mop-mova-e50-ultra-robot-vacuum-30.000-pa-5.200mah-200-min-maxireach-statie-inteligenta-alb-4312875.html",
-"magazin": "evomag.ro",
-"id": "3DnJJYACNFzH",
-"brand": "Mova",
-"url_magazin": "https://www.evomag.ro/electrocasnice-aspiratoare-aspiratoare-robot/mova-aspirator-robot-cu-mop-mova-e50-ultra-robot-vacuum-30.000-pa-5.200mah-200-min-maxireach-statie-inteligenta-alb-4312875.html",
-"pret_vechi": null,
-"verificat": "2026-11-04"
-},
-{
 "titlu": "Aspirator robot cu mop Viomi Robot Vacuum V2 Pro EU, 33 W, 2100Pa",
 "pret": 1749.0,
 "imagine": "https://cdn.shopify.com/s/files/1/0954/2244/7951/files/7241.jpg?v=1759583382",
@@ -7224,16 +7200,16 @@
 "verificat": "2026-11-04"
 },
 {
-"titlu": "Aspirator robot cu mop Dreame D30 Ultra RTD31TE-WH, 25.000 Pa, statie multifunctionala, golire automata (Alb)",
-"pret": 2115.99,
-"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4322%2F4322233%2Fvacuum-cleaner-robot-d30-ultra-6aeb1e4e9984f.jpg&type=auto&width=500&sign=N3rwW3xlEL5S0xGZmkeKyDsIcvlXTC55jET_qBDkSZc",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Felectrocasnice-aspiratoare-aspiratoare-robot%2Fdreame-aspirator-robot-cu-mop-dreame-d30-ultra-rtd31te-wh-25.000-pa-statie-multifunctionala-golire-automata-alb-4322233.html",
-"magazin": "evomag.ro",
-"id": "pgLjVrcLtQO7",
-"brand": "Dreame",
-"url_magazin": "https://www.evomag.ro/electrocasnice-aspiratoare-aspiratoare-robot/dreame-aspirator-robot-cu-mop-dreame-d30-ultra-rtd31te-wh-25.000-pa-statie-multifunctionala-golire-automata-alb-4322233.html",
-"pret_vechi": null,
-"verificat": "2026-11-06"
+"titlu": "Aspirator robot cu mop MOVA E50 Pro Ultra Robot Vacuum, 30.000 Pa, 5.200mAh, 200 min, MaxiReach™, statie inteligenta, Wh",
+"pret": 1899.0,
+"imagine": "https://cdn.shopify.com/s/files/1/0954/2244/7951/files/E50-PRO-ULTRA-white.jpg?v=1782911112",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fblacktech.ro%2Fproducts%2Faspirator-robot-cu-mop-mova-e50-pro-ultra-robot-vacuum-30-000-pa-5-200mah-200-min-maxireach%E2%84%A2-statie-inteligenta-white%3Fvariant%3D58107757101391",
+"magazin": "blacktech.ro",
+"id": "geMY_yj1oKer",
+"brand": "Mova",
+"url_magazin": "https://blacktech.ro/products/aspirator-robot-cu-mop-mova-e50-pro-ultra-robot-vacuum-30-000-pa-5-200mah-200-min-maxireach%E2%84%A2-statie-inteligenta-white?variant=58107757101391",
+"pret_vechi": 2599.0,
+"verificat": "2026-11-14"
 },
 {
 "titlu": "Aspirator robot cu mop MOVA S70 Roller Robot Vacuum, 28000Pa, 5200mAh, HydroForce Mopping, statie inteligenta, White",
@@ -7272,18 +7248,6 @@
 "verificat": "2026-11-06"
 },
 {
-"titlu": "Aspirator robot cu mop MOVA P70 Pro Ultra Robot Vacuum, 30.000 Pa, 5.200mAh, 160 min, MaxiReach™ Edge, statie inteligent",
-"pret": 2529.0,
-"imagine": "https://cdn.shopify.com/s/files/1/0954/2244/7951/files/mova-p70-pro-ultra-negru-_4.jpg?v=1779885574",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fblacktech.ro%2Fproducts%2Faspirator-robot-cu-mop-mova-p70-pro-ultra-robot-vacuum-30-000-pa-5-200mah-160-min-maxireach%E2%84%A2-edge-statie-inteligenta-black%3Fvariant%3D57788899033423",
-"magazin": "blacktech.ro",
-"id": "IK-ShXpdATzx",
-"brand": "Mova",
-"url_magazin": "https://blacktech.ro/products/aspirator-robot-cu-mop-mova-p70-pro-ultra-robot-vacuum-30-000-pa-5-200mah-160-min-maxireach%E2%84%A2-edge-statie-inteligenta-black?variant=57788899033423",
-"pret_vechi": 3599.0,
-"verificat": "2026-11-04"
-},
-{
 "titlu": "Aspirator robot cu mop MOVA P70 Pro Ultra RLP54HE-BK, 30.000 Pa, Autonomie 160 minute, MaxiReach Edge, Statie inteligent",
 "pret": 2529.0,
 "imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4300%2F4300368%2Frlp54he-bk-6a213a32424bf.png&type=auto&width=500&sign=u-IxsWECl6WI_X9F-_QrkzIsZfGr4zzeCNIr7V5QtyI",
@@ -7306,18 +7270,6 @@
 "url_magazin": "https://blacktech.ro/products/aspirator-robot-cu-mop-mova-e40-ultra-new-19-000-pa-5-200mah-260-min-single-line-laser-statie-colectare-inteligenta?variant=57756886073679",
 "pret_vechi": null,
 "verificat": "2026-11-04"
-},
-{
-"titlu": "Aspirator robot cu mop Mova S10 Plus, 7000Pa, 5200mAh, Autonomie pana la 260 minute, Statie colectare automata (Alb)",
-"pret": 2777.99,
-"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4183%2F4183700%2Frls42sd-66ffa37a0b739.jpg&type=auto&width=500&sign=pCx-Vz9MRCjKt-YcOSBzRjRDC4Hjpj_LNVxLJh3i1sw",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Felectrocasnice-aspiratoare-aspiratoare-robot%2Fmova-aspirator-robot-cu-mop-mova-s10-plus-7000pa-5200mah-autonomie-pana-la-260-minute-statie-colectare-automata-alb-4183700.html",
-"magazin": "evomag.ro",
-"id": "_pCZBqyThCUV",
-"brand": "Mova",
-"url_magazin": "https://www.evomag.ro/electrocasnice-aspiratoare-aspiratoare-robot/mova-aspirator-robot-cu-mop-mova-s10-plus-7000pa-5200mah-autonomie-pana-la-260-minute-statie-colectare-automata-alb-4183700.html",
-"pret_vechi": null,
-"verificat": "2026-11-06"
 },
 {
 "titlu": "Aspirator robot Karcher - RVM 4 Comfort, cu mop, alb",
@@ -7347,7 +7299,7 @@
 "titlu": "Aspiratoare robot sub 1.000 lei",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-06",
+"actualizat": "2026-11-14",
 "feeduri": [
 {
 "id": 8964,
@@ -7454,7 +7406,7 @@
 "titlu": "Aspiratoare verticale fără fir",
 "nota": null,
 "in_text": "\\bfără fir\\b",
-"actualizat": "2026-11-06",
+"actualizat": "2026-11-14",
 "feeduri": [
 {
 "id": 8964,
@@ -7523,18 +7475,6 @@
 "verificat": "2026-11-04"
 },
 {
-"titlu": "Samus Aspirator vertical fara fir 2 in 1 Samus Hurricane Max Pro, Gri -Rosu",
-"pret": 677.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202404261115/254431/full/samus-aspirator-vertical-fara-fir-2-in-1-samus-hurricane-max-pro-gri-rosu-538939.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Faspiratoare%2Fsamus%2F254431-aspirator-vertical-fara-fir-2-in-1-samus-hurricane-max-pro-gri-rosu%2F",
-"magazin": "dwyn.ro",
-"id": "8vAj-oDS9vC-",
-"brand": "Samus",
-"url_magazin": "https://www.dwyn.ro/aspiratoare/samus/254431-aspirator-vertical-fara-fir-2-in-1-samus-hurricane-max-pro-gri-rosu/",
-"pret_vechi": null,
-"verificat": "2026-11-04"
-},
-{
 "titlu": "Samus Aspirator vertical fara fir 2 in 1 Samus Hurricane 2, 600 W, Negru-Rosu",
 "pret": 677.99,
 "imagine": "https://www.dwyn.ro/images/products/img_202512311121/408472/full/samus-aspirator-vertical-fara-fir-2-in-1-samus-hurricane-2-600-w-negru-rosu-1305406.jpg",
@@ -7543,6 +7483,18 @@
 "id": "zIUbpq_BVlJ2",
 "brand": "Samus",
 "url_magazin": "https://www.dwyn.ro/aspiratoare/samus/408472-aspirator-vertical-fara-fir-2-in-1-samus-hurricane-2-600-w-negru-rosu/",
+"pret_vechi": null,
+"verificat": "2026-11-04"
+},
+{
+"titlu": "Samus Aspirator vertical fara fir 2 in 1 Samus Hurricane Max Pro, Gri -Rosu",
+"pret": 677.99,
+"imagine": "https://www.dwyn.ro/images/products/img_202404261115/254431/full/samus-aspirator-vertical-fara-fir-2-in-1-samus-hurricane-max-pro-gri-rosu-538939.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Faspiratoare%2Fsamus%2F254431-aspirator-vertical-fara-fir-2-in-1-samus-hurricane-max-pro-gri-rosu%2F",
+"magazin": "dwyn.ro",
+"id": "8vAj-oDS9vC-",
+"brand": "Samus",
+"url_magazin": "https://www.dwyn.ro/aspiratoare/samus/254431-aspirator-vertical-fara-fir-2-in-1-samus-hurricane-max-pro-gri-rosu/",
 "pret_vechi": null,
 "verificat": "2026-11-04"
 },
@@ -7595,6 +7547,18 @@
 "verificat": "2026-11-04"
 },
 {
+"titlu": "Aspirator vertical fara fir cu mop Roidmi X30 Pro, putere aspirare 150W, autonomie 70 min",
+"pret": 999.0,
+"imagine": "https://cdn.shopify.com/s/files/1/0954/2244/7951/files/5354.jpg?v=1759583850",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fblacktech.ro%2Fproducts%2Faspirator-vertical-fara-fir-cu-mop-roidmi-x30-pro-putere-aspirare-150w-autonomie-70-min%3Fvariant%3D56071224885583",
+"magazin": "blacktech.ro",
+"id": "JXzgbErSk3Ro",
+"brand": "Roidmi",
+"url_magazin": "https://blacktech.ro/products/aspirator-vertical-fara-fir-cu-mop-roidmi-x30-pro-putere-aspirare-150w-autonomie-70-min?variant=56071224885583",
+"pret_vechi": 1899.0,
+"verificat": "2026-11-14"
+},
+{
 "titlu": "Aspirator vertical fara fir JIMMY JV85 Pro",
 "pret": 1099.0,
 "imagine": "https://cdn.shopify.com/s/files/1/0954/2244/7951/files/3304.jpg?v=1759583453",
@@ -7603,42 +7567,6 @@
 "id": "MNWA9sG39lWC",
 "brand": "Jimmy",
 "url_magazin": "https://blacktech.ro/products/aspirator-vertical-fara-fir-jimmy-jv85-pro?variant=56071191527759",
-"pret_vechi": null,
-"verificat": "2026-11-04"
-},
-{
-"titlu": "Aspirator vertical fara fir JIMMY H8 Upgraded, putere aspirare 160AW, autonomie 60 min",
-"pret": 1149.0,
-"imagine": "https://cdn.shopify.com/s/files/1/0954/2244/7951/files/7893.jpg?v=1759584566",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fblacktech.ro%2Fproducts%2Faspirator-vertical-fara-fir-jimmy-h8-upgraded-putere-aspirare-160aw-autonomie-60-min%3Fvariant%3D56071244120399",
-"magazin": "blacktech.ro",
-"id": "WNleo_kN6r6a",
-"brand": "Jimmy",
-"url_magazin": "https://blacktech.ro/products/aspirator-vertical-fara-fir-jimmy-h8-upgraded-putere-aspirare-160aw-autonomie-60-min?variant=56071244120399",
-"pret_vechi": null,
-"verificat": "2026-11-04"
-},
-{
-"titlu": "Aspirator vertical fara fir Jimmy H8 FLEX, putere 550W, 185 AW, autonomie 65 min (Negru)",
-"pret": 1149.99,
-"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4097%2F4097775%2F6479c93b4f938.jpg&type=auto&width=500&sign=ecSzb8LpQ-iOh6THF_jNoAWZqmW3ddwgFCBbcpgy2h8",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Felectrocasnice-aspiratoare-aspiratoare-verticale%2Fjimmy-aspirator-vertical-fara-fir-jimmy-h8-flex-putere-550w-185-aw-autonomie-65-min-negru-4097775.html",
-"magazin": "evomag.ro",
-"id": "ZcFQT_gprYWp",
-"brand": "Jimmy",
-"url_magazin": "https://www.evomag.ro/electrocasnice-aspiratoare-aspiratoare-verticale/jimmy-aspirator-vertical-fara-fir-jimmy-h8-flex-putere-550w-185-aw-autonomie-65-min-negru-4097775.html",
-"pret_vechi": null,
-"verificat": "2026-11-06"
-},
-{
-"titlu": "JIMMY Aspirator vertical fara fir JIMMY H8 FLEX Cordless Vacuum Cleaner, putere 550W, 185 AW, autonomie 65 min, Negru/Gr",
-"pret": 1175.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202305231058/223457/full/jimmy-aspirator-vertical-fara-fir-jimmy-h8-flex-cordless-vacuum-cleaner-putere-550w-185-aw-autonomie-65-min-negru-gri-434367.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Faspiratoare%2Fjimmy%2F223457-aspirator-vertical-fara-fir-jimmy-h8-flex-cordless-vacuum-cleaner-putere-550w-185-aw-autonomie-65-min-negru-gri%2F",
-"magazin": "dwyn.ro",
-"id": "t4cUa6Osours",
-"brand": "JIMMY",
-"url_magazin": "https://www.dwyn.ro/aspiratoare/jimmy/223457-aspirator-vertical-fara-fir-jimmy-h8-flex-cordless-vacuum-cleaner-putere-550w-185-aw-autonomie-65-min-negru-gri/",
 "pret_vechi": null,
 "verificat": "2026-11-04"
 },
@@ -7717,7 +7645,7 @@
 "titlu": "Aspiratoare de mână",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-06",
+"actualizat": "2026-11-14",
 "feeduri": [
 {
 "id": 1096,
@@ -7818,7 +7746,7 @@
 "id": "WxdPD3avphSV",
 "brand": "BLACK+DECKER",
 "url_magazin": "https://www.evomag.ro/electrocasnice-aspiratoare-aspiratoare-de-mana-portabile/black-decker-aspirator-de-mana-black-decker-dvd320j-qw-bagless-autonomie-17-minute-negru-4305840.html",
-"pret_vechi": 289.99,
+"pret_vechi": null,
 "verificat": "2026-11-06"
 },
 {
@@ -7842,7 +7770,7 @@
 "id": "zqHYOl0A83YM",
 "brand": "BLACK+DECKER",
 "url_magazin": "https://www.evomag.ro/electrocasnice-aspiratoare-aspiratoare-de-mana-portabile/black-decker-aspirator-de-mana-black-decker-dvd320bp-bagless-12v-16-minute-negru-4305838.html",
-"pret_vechi": 347.99,
+"pret_vechi": null,
 "verificat": "2026-11-06"
 },
 {
@@ -7854,7 +7782,7 @@
 "id": "-15hTB2Umhp0",
 "brand": "ETA",
 "url_magazin": "https://www.evomag.ro/electrocasnice-aspiratoare-aspiratoare-de-mana-portabile/eta-aspirator-de-mana-eta-eta142590000-14.4-v-0.4-l-autonomie-25-min-alb-negru-3820847.html",
-"pret_vechi": 388.99,
+"pret_vechi": null,
 "verificat": "2026-11-06"
 },
 {
@@ -7895,7 +7823,7 @@
 "titlu": "Aparate de aer condiționat de 9000 BTU",
 "nota": null,
 "in_text": "\\b9000\\s*BTU\\b",
-"actualizat": "2026-11-06",
+"actualizat": "2026-11-14",
 "feeduri": [
 {
 "id": 4152,
@@ -8099,7 +8027,7 @@
 "titlu": "Aparate de aer condiționat de 12000 BTU",
 "nota": null,
 "in_text": "\\b12000\\s*BTU\\b",
-"actualizat": "2026-11-06",
+"actualizat": "2026-11-14",
 "feeduri": [
 {
 "id": 1539,
@@ -8132,18 +8060,6 @@
 "verificat": "2026-11-06"
 },
 {
-"titlu": "Aparat de aer conditionat HEINNER HAC-CRP12WH++, 12000 BTU, Clasa A++/A+, ECO+, Follow Me, Autocuratare (Alb)",
-"pret": 1299.99,
-"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4298%2F4298624%2Foverlay_377c2e41055362e871b3b5391c912a26.png&type=auto&width=500&sign=FaqyqohDqJIdBJ7BUez9NbFZ-Yene5DZ8J3h8G3mk1A",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Felectrocasnice-racire-aparate-de-aer-conditionat%2Fheinner-aparat-de-aer-conditionat-heinner-hac-crp12wh-12000-btu-clasa-a-a-eco-follow-me-autocuratare-alb-4298624.html",
-"magazin": "evomag.ro",
-"id": "C586h8fVzek6",
-"brand": "Heinner",
-"url_magazin": "https://www.evomag.ro/electrocasnice-racire-aparate-de-aer-conditionat/heinner-aparat-de-aer-conditionat-heinner-hac-crp12wh-12000-btu-clasa-a-a-eco-follow-me-autocuratare-alb-4298624.html",
-"pret_vechi": null,
-"verificat": "2026-11-06"
-},
-{
 "titlu": "Aparat aer conditionat Nobus CS35-V3G 12000 BTU, Clasa A++/A+, Inverter, Wi-Fi inclus, model 2025",
 "pret": 1463.18,
 "imagine": "https://cdn.contentspeed.ro/fornello.websales.ro/cs-content/cs-photos/products/original/aparat-aer-conditionat-nobus-cs25-v3g-9000-btu-cl_7291_1_17519674606354.jpg",
@@ -8152,18 +8068,6 @@
 "id": "bcjYWySu2iin",
 "brand": "Nobus",
 "url_magazin": "https://www.fornello.ro/incalzire/aparate-de-aer-conditionat/aparat-aer-conditionat-nobus-cs35-v3g-12000-btu-clasa-a-/a-inverter-wi-fi-inclus-model-2025-cs35-v3g.html",
-"pret_vechi": null,
-"verificat": "2026-11-04"
-},
-{
-"titlu": "HEINNER Aparat de aer conditionat Heinner Crystal PLus HAC-CRP12WH++, 12000 BTU, Clasa A++, Control inteligent al umidit",
-"pret": 1500.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202606122129/455908/full/heinner-aparat-de-aer-conditionat-heinner-crystal-plus-hac-crp12wh-plus-plus-12000-btu-clasa-a-plus-plus-control-inteligent-al-umiditatii-breeze-away-eco-plus-follow-me-autocuratare-alb-1448080.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Faparate-de-aer-conditionat%2Fheinner%2F455908-aparat-de-aer-conditionat-heinner-crystal-plus-hac-crp12wh-plus-plus-12000-btu-clasa-a-plus-plus-control-inteligent-al-umiditatii-breeze-away-eco-plus-follow-me-autocuratare-alb%2F",
-"magazin": "dwyn.ro",
-"id": "-FT2-Aq9VH_m",
-"brand": "HEINNER",
-"url_magazin": "https://www.dwyn.ro/aparate-de-aer-conditionat/heinner/455908-aparat-de-aer-conditionat-heinner-crystal-plus-hac-crp12wh-plus-plus-12000-btu-clasa-a-plus-plus-control-inteligent-al-umiditatii-breeze-away-eco-plus-follow-me-autocuratare-alb/",
 "pret_vechi": null,
 "verificat": "2026-11-04"
 },
@@ -8214,18 +8118,6 @@
 "url_magazin": "https://www.fornello.ro/incalzire/aparate-de-aer-conditionat/aer-conditionat-ariston-alys-r32-35-c35-mud0-12000-btu-follow-me-agent-frigorific-r32-clasa-energetica-a-3381412.html",
 "pret_vechi": null,
 "verificat": "2026-11-04"
-},
-{
-"titlu": "Aparat de aer conditionat Bosch Climate 2000, 12000 BTU, Clasa A++/A+, Inverter, Catalizator rece, Ionizare, Follow Me,",
-"pret": 1818.99,
-"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4206%2F4206284%2F7733702189-7733701988-7733-67bc1e22ba44b.png&type=auto&width=500&sign=lQa4V0CUZnzpmL93keAq4asuDzeOSWnqA0qpBjk4sR8",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Felectrocasnice-racire-aparate-de-aer-conditionat%2Fbosch-aparat-de-aer-conditionat-bosch-climate-2000-12000-btu-clasa-a-a-inverter-catalizator-rece-ionizare-follow-me-wind-avoid-me-alb-4206284.html",
-"magazin": "evomag.ro",
-"id": "BI8O8otlcBOX",
-"brand": "BOSCH",
-"url_magazin": "https://www.evomag.ro/electrocasnice-racire-aparate-de-aer-conditionat/bosch-aparat-de-aer-conditionat-bosch-climate-2000-12000-btu-clasa-a-a-inverter-catalizator-rece-ionizare-follow-me-wind-avoid-me-alb-4206284.html",
-"pret_vechi": null,
-"verificat": "2026-11-06"
 },
 {
 "titlu": "Aer conditionat Midea Xtreme Fresh, 12000 BTU, Clasa A++, Wi-Fi, Inverter 12 000 BTU, A++, A+",
@@ -8312,6 +8204,18 @@
 "verificat": "2026-11-04"
 },
 {
+"titlu": "Aer condiționat tip casetă TCL 12000 BTU, Inverter, A++, R32, răcire și încălzire",
+"pret": 3937.69,
+"imagine": "https://gomagcdn.ro/domains2/agroclima.ro/files/product/original/aer-conditionat-tip-caseta-tcl-12000-btu-inverter-a-r32-racire-si-incalzire-922799.png",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.agroclima.ro%2Faparat-aer-conditionat-si-montaj%2Faer-conditionat-tip-caseta-tcl-12000-btu.html",
+"magazin": "agroclima.ro",
+"id": "4v5V-SALZBho",
+"brand": "TCL",
+"url_magazin": "https://www.agroclima.ro/aparat-aer-conditionat-si-montaj/aer-conditionat-tip-caseta-tcl-12000-btu.html",
+"pret_vechi": null,
+"verificat": "2026-11-14"
+},
+{
 "titlu": "Aer conditionat Mitsubishi Heavy Hikari SRK35ZTL-W SRC35ZTL-W, 12000 BTU, A++/A++, Inverter Profesional, Functie incalzi",
 "pret": 4671.05,
 "imagine": "https://gomagcdn.ro/domains2/agroclima.ro/files/product/original/aer-conditionat-mitsubishi-electric-msz-dw50vf-muz-dw50vf-r32-inverter-18000-btu-h-copie-551883.png",
@@ -8339,7 +8243,7 @@
 "titlu": "Aparate de aer condiționat de 18000 BTU",
 "nota": null,
 "in_text": "\\b18000\\s*BTU\\b",
-"actualizat": "2026-11-06",
+"actualizat": "2026-11-14",
 "feeduri": [
 {
 "id": 4152,
@@ -8480,6 +8384,18 @@
 "verificat": "2026-11-04"
 },
 {
+"titlu": "Aer condiționat tip casetă TCL 18000 BTU, Inverter, A++, R32, răcire și încălzire",
+"pret": 4444.45,
+"imagine": "https://gomagcdn.ro/domains2/agroclima.ro/files/product/original/aer-conditionat-tip-caseta-tcl-12000-btu-inverter-a-r32-racire-si-incalzire-9227996366.png",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.agroclima.ro%2Faparat-aer-conditionat-si-montaj%2Faer-conditionat-tip-caseta-tcl-18000-btu.html",
+"magazin": "agroclima.ro",
+"id": "gPXP4mourALj",
+"brand": "TCL",
+"url_magazin": "https://www.agroclima.ro/aparat-aer-conditionat-si-montaj/aer-conditionat-tip-caseta-tcl-18000-btu.html",
+"pret_vechi": null,
+"verificat": "2026-11-14"
+},
+{
 "titlu": "Aer conditionat Mitsubishi Heavy Nyoko Plus SRK50ZSP-W1 SRC50ZSP-W1, 18000 BTU, A++/A+, Inverter Profesional, Functie in",
 "pret": 4819.37,
 "imagine": "https://gomagcdn.ro/domains2/agroclima.ro/files/product/original/aer-conditionat-mitsubishi-electric-msz-dw50vf-muz-dw50vf-r32-inverter-18000-btu-h-copie-5518834167.png",
@@ -8518,7 +8434,7 @@
 "titlu": "Aparate de aer condiționat de 24000 BTU",
 "nota": null,
 "in_text": "\\b24000\\s*BTU\\b",
-"actualizat": "2026-11-06",
+"actualizat": "2026-11-14",
 "feeduri": [
 {
 "id": 4152,
@@ -8777,6 +8693,18 @@
 "url_magazin": "https://www.dwyn.ro/aparate-de-aer-conditionat/tcl/443590-aparat-de-aer-conditionat-tcl-breezein-ultra-24000-btu-a-plus-plus-plus-ai-energy-saving-purificare-avansata-cu-ioni-bipolari-si-lumina-uvc-gentle-breeze-wifi-optimizat-incalzire-mod-hotel-alb/",
 "pret_vechi": null,
 "verificat": "2026-11-04"
+},
+{
+"titlu": "Aer condiționat tip casetă TCL 24000 BTU, Inverter, R32, răcire și încălzire",
+"pret": 6055.37,
+"imagine": "https://gomagcdn.ro/domains2/agroclima.ro/files/product/original/aer-conditionat-tip-caseta-tcl-12000-btu-inverter-a-r32-racire-si-incalzire-92279963666655.png",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.agroclima.ro%2Faparat-aer-conditionat-si-montaj%2Faer-conditionat-tip-caseta-tcl-24000-btu.html",
+"magazin": "agroclima.ro",
+"id": "QIusxbix9kdz",
+"brand": "TCL",
+"url_magazin": "https://www.agroclima.ro/aparat-aer-conditionat-si-montaj/aer-conditionat-tip-caseta-tcl-24000-btu.html",
+"pret_vechi": null,
+"verificat": "2026-11-14"
 }
 ],
 "magazine": [
