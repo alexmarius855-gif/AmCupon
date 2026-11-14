@@ -151,7 +151,7 @@ function ListaCampanii({ titlu, lista }: { titlu: string; lista: typeof BF.parte
       </ul>
       {lista.length > VIZIBILE && (
         <details className="mt-2">
-          <summary className="cursor-pointer text-sm font-bold text-[var(--accent-text)]">Încă {lista.length - VIZIBILE}</summary>
+          <summary className="cursor-pointer text-sm font-bold text-[var(--accent-text)]">Încă {cuNumar(lista.length - VIZIBILE, "campanie", "campanii")}</summary>
           <ul className="space-y-2 mt-2">
             {lista.slice(VIZIBILE).map((p) => <RandCampanie key={p.magazin} p={p} />)}
           </ul>

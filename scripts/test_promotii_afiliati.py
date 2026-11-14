@@ -50,9 +50,11 @@ for slug_, titlu_ in [
     ("kinderauto.ro", "🔥Black Friday Kinderauto.ro 2026 | Comision 8% | Coș mediu peste 1.000 RON | Kit Media disponibil!"),
     ("underarmour.ro", "Comision de afiliere majorat pentru o perioada limitata | Under Armour"),
     ("printingmall.ro", "Voucher Black Friday 6-15 Noiembrie + comision HAVIT 10%"),
-    ("x-sense.com", "X-Sense Exclusive Affiliate Offer – 12% Off Your Entire Order"),
 ]:
     verifica(f"{slug_}: {titlu_[:50]}", verdict(slug_, titlu_), "scoate")
+# 04.11.2026: „Affiliate Offer / Discount Code" la X-Sense e o oferta PENTRU CUMPARATOR (12% la comanda), nu text pentru afiliati.
+verifica("x-sense.com: „Exclusive Affiliate Offer – 12% Off\" e oferta pentru cumparator",
+         verdict("x-sense.com", "X-Sense Exclusive Affiliate Offer – 12% Off Your Entire Order"), None)
 verifica("ikier.com: „Your audience can save\" e fraza, oferta ramane",
          text_pentru_afiliati(P("IKIER K70 MAX 200€ OFF", "Upgrade to the powerful IKIER K70 MAX. Your audience can save 200€ instantly."),
                               M("ikier.com")), ("curata", "Upgrade to the powerful IKIER K70 MAX."))
@@ -276,6 +278,11 @@ for nume_caz, titlu, m_caz, asteptat in [
     ("capcana: challenge cu reducere ramane", "Fitness Challenge -20%", None, "Fitness Challenge -20%"),
     ("capcana: 1 + 1 nu se rupe", "Oferta 1 + 1 gratis", None, "Oferta 1 + 1 gratis"),
     ("titlu obisnuit neatins", "Black Friday: -30% la tot", None, "Black Friday: -30% la tot"),
+    # 14.11.2026, din exportul 2P: oferta ramane, bucata pentru afiliati iese (inainte se scotea toata oferta).
+    ("kit media dupa bara", "Black Friday Kinderauto.ro 2026 | Kit Media disponibil!", None, "Black Friday Kinderauto.ro 2026"),
+    ("fraza pentru afiliati dupa semnul exclamarii", "BLACK FRIDAY Automobilus: Reduceri de până la 35%! Accelerează-ți comisioanele!",
+     None, "BLACK FRIDAY Automobilus: Reduceri de până la 35%!"),
+    ("capcana: doua fraze pentru client raman", "Reducere 20%! Livrare gratuita", None, "Reducere 20%! Livrare gratuita"),
 ]:
     verifica(f"segmente — {nume_caz}", fara_segmente_afiliati(titlu, m_caz), asteptat)
 

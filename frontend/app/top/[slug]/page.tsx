@@ -176,6 +176,8 @@ export default async function TopCategoriePage({
   // Produse cu pretul citit la magazin (/alege): au prioritate fata de lista din feed, unde pretul poate fi ramas in urma.
   const modele = produseTema(slug, 8);
   const cuModele = modele.length >= 4;
+  // Butonul de sus spune „de la X lei" doar cand pretul e citit azi: la magazin (/alege) sau in feed.
+  const pretAziMinim = cuModele ? Math.min(...modele.map((p) => p.pret)) : sectiune ? sectiune.min : null;
   const numeLegaturi = legaturi.map(l => l.eticheta).join(", ");
   const ghiduriTema = ghiduriPentruTema(slug);
   const actualizat = dataFeed();
@@ -302,12 +304,12 @@ export default async function TopCategoriePage({
                   sunt evaluarea noastră, nu rezultate de laborator, iar prețurile din top sunt de referință,
                   notate la selecție. Linkurile către magazine sunt afiliate — prețul tău rămâne același.
                 </p>
-                {(sectiune || legaturi.length > 0) && (
+                {(cuModele || sectiune || legaturi.length > 0) && (
                   <Link
                     href="#unde-cumperi"
                     className="inline-flex items-center gap-2 mt-4 bg-[#ddf93c] hover:bg-[#c3dd2c] text-[#0c1000] text-sm font-bold px-4 py-2 rounded-xl transition-colors"
                   >
-                    Prețurile de azi, de la {pret(sectiune.min)} &darr;
+                    {pretAziMinim !== null ? <>Prețurile de azi, de la {pret(pretAziMinim)}</> : <>Unde găsești {numeTema} azi</>} &darr;
                   </Link>
                 )}
               </div>

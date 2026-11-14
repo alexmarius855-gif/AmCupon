@@ -62,7 +62,6 @@ RE_PENTRU_AFILIATI = re.compile(r"""
     | \bcomision\s+de\s+afiliere
     | \bkit\s+media\b
     | \bco[sșş]\s+mediu\b
-    | \baffiliate\s+(?:discount\s+)?(?:code|offer|coupon)\b
     | \byour\s+audience\b
     | \bv[aâ]nz[aă]r(?:e|ea|i|ile)\s+valid              # „din fiecare vânzare validă"
     | \bmateriale(?:le)?\s+(?:de\s+)?marketing
@@ -481,6 +480,9 @@ def campuri_client(nume: str, text_client: str, coupon) -> tuple:
 # -20%") tot pentru client e.
 RE_SEGMENT_AFILIATI = re.compile(
     r"\bcomision\w*|\bco[sș]\w*\s+mediu\b|\bconversii\b|\bafilia\w*"
+    # 14.11.2026: bucatile pentru afiliati din exportul 2P se taie din titlu, iar oferta ramane
+    # („Black Friday Kinderauto.ro 2026 | Kit Media disponibil!", „... 35%! Accelerează-ți comisioanele!").
+    r"|\bkit\s+media\b|\baccelereaz\w*(?:-[tț]i)?\s+comisi|\bq[1-4]\s+opportunity\b"
     r"|^(?!.*(?:\d\s*%|reducer|discount|\boff\b)).*\bchallenge\b", re.I)
 RE_COMISION_CLIENT = re.compile(
     r"\bf[aă]r[aă]\s+comision|\b0\s*%\s*comision|\bcomision\w*\s+(?:de\s+)?0(?![\d.,])|\bzero\s+comision", re.I)
@@ -503,7 +505,8 @@ def fara_segmente_afiliati(nume, m: dict = None):
     def pentru_afiliati(s: str) -> bool:
         return bool(RE_SEGMENT_AFILIATI.search(s)) and not RE_COMISION_CLIENT.search(s)
 
-    parti = [s for s in re.split(r"\s*\|\s*|\s+\+\s+", nume) if s.strip()]
+    # Si dupa „!"/„?": fraza pentru afiliati lipita de oferta („Reduceri de până la 35%! Accelerează-ți comisioanele!").
+    parti = [s for s in re.split(r"\s*\|\s*|\s+\+\s+|(?<=[!?])\s+", nume) if s.strip()]
     if not any(pentru_afiliati(s) for s in parti):
         return nume
     ramase = [s.strip() for s in parti if not pentru_afiliati(s)]

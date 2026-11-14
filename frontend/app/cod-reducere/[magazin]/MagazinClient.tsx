@@ -416,14 +416,14 @@ export default function MagazinClient({ magazin: m, produse = [], similare = [],
             <section aria-labelledby="produse-h">
               <div className="flex items-baseline justify-between gap-3 mb-3">
                 <h2 id="produse-h" className={H2}>Produse {nume}</h2>
-                <span className="text-sm text-[var(--text-muted)] whitespace-nowrap">{produse.length} produse</span>
+                <span className="text-sm text-[var(--text-muted)] whitespace-nowrap">{cuNumar(produse.length, "produs", "produse")}</span>
               </div>
               <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">
                 {produse.slice(0, 8).map((p, i) => <CardProdus key={i} p={{ ...p, merchant_slug: m.magazin }} />)}
               </div>
               {produse.length > 8 && (
                 <details className="mt-3">
-                  <summary className="cursor-pointer text-sm font-bold text-[var(--accent-text)]">Încă {produse.length - 8} produse</summary>
+                  <summary className="cursor-pointer text-sm font-bold text-[var(--accent-text)]">Încă {cuNumar(produse.length - 8, "produs", "produse")}</summary>
                   <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3 mt-3">
                     {produse.slice(8).map((p, i) => <CardProdus key={i} p={{ ...p, merchant_slug: m.magazin }} />)}
                   </div>

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { cuNumar } from "@/lib/acordNumeral";
 import LogoMagazin from "./LogoMagazin";
 import { numeAfisat } from "@/lib/numeMagazin";
 
@@ -30,7 +31,7 @@ export default function MagazineCompacte({ magazine, vizibile = 18 }: {
       {grila(magazine.slice(0, vizibile))}
       {magazine.length > vizibile && (
         <details className="mt-3">
-          <summary className="cursor-pointer text-sm font-bold text-[var(--accent-text)]">Încă {magazine.length - vizibile} magazine</summary>
+          <summary className="cursor-pointer text-sm font-bold text-[var(--accent-text)]">Încă {cuNumar(magazine.length - vizibile, "magazin", "magazine")}</summary>
           <div className="mt-3">{grila(magazine.slice(vizibile))}</div>
         </details>
       )}

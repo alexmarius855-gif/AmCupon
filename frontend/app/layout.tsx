@@ -1,4 +1,5 @@
 import type { Metadata, Viewport } from "next";
+import { cuNumar } from "@/lib/acordNumeral";
 import { Geist, Geist_Mono } from "next/font/google";
 import dynamic from "next/dynamic";
 import { Analytics } from "@vercel/analytics/react";
@@ -146,7 +147,7 @@ function anuntBF(): string {
     const azi = aziRomania();
     if (fazaBF(azi, d) === "inchis") return "";
     const { inCurs } = calendarScurt(azi, campaniiBF(azi));
-    return inCurs > 0 ? `Black Friday: campanii active la ${inCurs} magazine partenere` : "Black Friday: calendarul magazinelor partenere";
+    return inCurs > 0 ? `Black Friday: campanii active la ${cuNumar(inCurs, "magazin partener", "magazine partenere")}` : "Black Friday: calendarul magazinelor partenere";
   } catch {
     return "";
   }

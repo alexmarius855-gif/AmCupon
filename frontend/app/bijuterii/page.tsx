@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { deNumar } from "@/lib/acordNumeral";
 import { Metadata } from "next";
 import OferteNisa, { AntetNisa } from "../components/OferteNisa";
 import fs from "fs";
@@ -67,7 +68,7 @@ export default function BijuteriiPage() {
         <div className="bg-[var(--surface)] border-[var(--border)] py-3 px-4">
           <div className="max-w-6xl mx-auto flex flex-wrap justify-center gap-6 text-sm">
             <span className="text-[var(--accent-text)] font-semibold">
-              <span className="font-black text-[var(--accent-text)]">{magazine.length}</span> magazine bijuterii
+              <span className="font-black text-[var(--accent-text)]">{magazine.length}</span>{deNumar(magazine.length)} magazine bijuterii
             </span>
             <span className="text-[var(--accent-text)] font-semibold">
               <span className="font-black text-[var(--accent-text)]">{cuPromo.length}</span> cu promotii active

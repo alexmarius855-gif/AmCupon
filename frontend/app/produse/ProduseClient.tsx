@@ -7,7 +7,7 @@ import { CAT_META } from "./categorie-meta";
 import { linkAfiliat, linkPromotie } from "@/lib/linkMagazin";
 import { numeAfisat } from "@/lib/numeMagazin";
 import { titluPromotie } from "@/lib/oferta";
-import { cuNumar } from "@/lib/acordNumeral";
+import { cuNumar, deNumar } from "@/lib/acordNumeral";
 
 /* ─── Types ──────────────────────────────────────────────────────────────── */
 export interface Produs {
@@ -678,7 +678,7 @@ export default function ProduseClient({
               {/* Count */}
               <div className="flex items-center justify-between mb-4">
                 <p className="text-sm text-[var(--text-soft)]">
-                  <span className="font-bold text-[var(--text-soft)]">{filtrate.length.toLocaleString()}</span> produse găsite
+                  <span className="font-bold text-[var(--text-soft)]">{filtrate.length.toLocaleString()}</span>{deNumar(filtrate.length)} produse găsite
                 </p>
                 {statsProds.cuImag > 0 && (
                   <span className="text-xs text-[var(--text-soft)]">{statsProds.cuImag} cu imagine</span>
