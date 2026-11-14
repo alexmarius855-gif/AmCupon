@@ -192,7 +192,7 @@ export default async function TopCategoriePage({
     cat.produse.reduce((a, p) => a + p.scor_total, 0) / cat.produse.length
   ).toFixed(1);
 
-  const bestPick = produse.find(p => p.badge === "Alegerea Redactiei") || produse[0];
+  const bestPick = produse.find(p => p.badge === "Alegerea Redacției") || produse[0];
 
   // JSON-LD: ItemList schema
   const itemListSchema = {

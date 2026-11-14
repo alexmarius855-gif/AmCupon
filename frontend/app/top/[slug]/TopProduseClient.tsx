@@ -112,7 +112,7 @@ export default function TopProduseClient({ produse, culoare, areSectiune, select
     return arr;
   }, [produse, sortare]);
 
-  const bestPick = produse.find(p => p.badge === "Alegerea Redactiei") || produse[0];
+  const bestPick = produse.find(p => p.badge === "Alegerea Redacției") || produse[0];
   const destBest = bestPick ? destinatie(bestPick, areSectiune) : null;
 
   return (
@@ -240,7 +240,7 @@ export default function TopProduseClient({ produse, culoare, areSectiune, select
             <div
               key={p.pozitie}
               className={`bg-[var(--surface-alt)] rounded-xl border transition-all duration-200 overflow-hidden ${
-                p.badge === "Alegerea Redactiei"
+                p.badge === "Alegerea Redacției"
                   ? `border-[#c3dd2c] dark:border-[#c3dd2c] ring-1 ${accent.ring}`
                   : "border-[var(--border-strong)]"
               }`}
