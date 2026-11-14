@@ -1,5 +1,31 @@
 [
   {
+    "id": 274740,
+    "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/274699/original/274699.jpeg",
+    "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=3ba93d335&aff_code=541547473&campaign_unique=6390e3cfb",
+    "landing_raw": "https://www.drmax.ro/cadouri",
+    "width": 1080,
+    "height": 1080,
+    "merchant": "drmax.ro/",
+    "merchant_slug": "drmax-ro",
+    "name": "Campanie Christmas ",
+    "category": "Campanie Christmas ",
+    "b_type": "image"
+  },
+  {
+    "id": 274695,
+    "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/274654/original/274654.jpg",
+    "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=c8db6bca7&aff_code=541547473&campaign_unique=e79c3922a",
+    "landing_raw": "https://www.ozone.ro",
+    "width": 1200,
+    "height": 1200,
+    "merchant": "ozone.ro",
+    "merchant_slug": "ozone-ro",
+    "name": "Black Friday TBI",
+    "category": "Black Friday TBI",
+    "b_type": "image"
+  },
+  {
     "id": 274689,
     "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/274648/original/274648.jpg",
     "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=6e4570000&aff_code=541547473&campaign_unique=bb3071a7d",

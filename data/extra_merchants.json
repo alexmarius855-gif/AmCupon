@@ -4349,14 +4349,14 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 18,
+    "zile_ramase": 17,
     "promotii": [
       {
         "nume": "BLACKEST",
         "descriere": "Discount: 15% Region: Europe Promo code valid until: December 2, 2026, 00:00:00 Validity after activation: 2 days Number of promo codes: 1,000,000 Limit per user: 1 use Applies to: all categories Cannot be combined with other coupons Exceptions: 13% discount Korean products Japanese products Indian products Products from the Marshall Islands Exceptions: coupon does not apply (0% discount) AirPods Flipper multi-tool Automatic window cleaning robots Branded smartwatches and fitness trackers A-bran",
         "cod_cupon": "",
         "landing_page": "https://www.joom.com",
-        "zile_ramase": 18,
+        "zile_ramase": 17,
         "expira": "2026-12-02",
         "sursa": "impact_deals_api"
       }
@@ -5189,14 +5189,14 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": true,
-    "zile_ramase": 351,
+    "zile_ramase": 350,
     "promotii": [
       {
         "nume": "Quber Savings",
         "descriere": "Quber Savings",
         "cod_cupon": "QUBER10",
         "landing_page": "https://orbitmobile.com",
-        "zile_ramase": 351,
+        "zile_ramase": 350,
         "expira": "2027-10-31",
         "sursa": "impact_deals_api"
       }
@@ -7079,14 +7079,14 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 63,
+    "zile_ramase": 62,
     "promotii": [
       {
         "nume": "8% Sitewide：AFFNEW8",
         "descriere": "Code:AFFNEW8 For new customers only, one use per person",
         "cod_cupon": "",
         "landing_page": "https://www.autofull.com",
-        "zile_ramase": 63,
+        "zile_ramase": 62,
         "expira": "2027-01-16",
         "sursa": "impact_deals_api"
       },
@@ -8923,7 +8923,7 @@
         "descriere": "yilite hair 53% off all products",
         "cod_cupon": "",
         "landing_page": "https://www.yilitehair.com",
-        "zile_ramase": 1239,
+        "zile_ramase": 1238,
         "expira": "2030-04-06",
         "sursa": "impact_deals_api"
       },
@@ -16887,14 +16887,14 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": true,
-    "zile_ramase": 47,
+    "zile_ramase": 46,
     "promotii": [
       {
         "nume": "Affiliate offer - free Moss Eyeliner with +£30 spend",
         "descriere": "Customers can get a free Moss Eyeliner & Sharpener with their £30+ spend on one order. Oncer per customer.",
         "cod_cupon": "rolling-moss",
         "landing_page": "https://etalbeautycollective.co.uk",
-        "zile_ramase": 47,
+        "zile_ramase": 46,
         "expira": "2026-12-31",
         "sursa": "impact_deals_api"
       }

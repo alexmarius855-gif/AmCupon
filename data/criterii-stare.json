@@ -6922,7 +6922,7 @@
 "titlu": "Monitoare de 24 inch",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-06",
+"actualizat": "2026-11-14",
 "feeduri": [
 {
 "id": 8527,
@@ -7027,28 +7027,15 @@
 "verificat": "2026-11-04"
 },
 {
-"titlu": "Monitor Consumer ASUS VA24DQFS, 24\", 1920 x 1080 pixeli, Black, 3 ani Garantie",
-"pret": 854.06,
-"imagine": "http://1cctv.ro/152524/monitor-consumer-asus-va24dqfs-24-1920-x-1080-pixeli-black-3-ani-garantie.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2F1cctv.ro%2Fro%2Fmonitoare%2F40498-monitor-consumer-asus-va24dqfs-24-1920-x-1080-pixeli-black-3-ani-garantie.html%3Futm_source%3D2performant",
-"magazin": "1cctv.ro",
-"id": "bbQgGpH9RlfC",
-"brand": "ASUS",
-"url_magazin": "https://1cctv.ro/ro/monitoare/40498-monitor-consumer-asus-va24dqfs-24-1920-x-1080-pixeli-black-3-ani-garantie.html?utm_source=2performant",
-"pret_vechi": null,
-"verificat": "2026-11-04"
-},
-{
-"titlu": "AROZZI Monitor Gaming IPS LED Arozzi Nova 24T1K200, 24 inch, Full HD 1920 x 1080 pixeli, HDMI, DisplayPort, 200 Hz, 1 ms",
-"pret": 1094.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202512311121/382112/full/arozzi-monitor-gaming-ips-led-arozzi-nova-24t1k200-24-inch-full-hd-1920-x-1080-pixeli-hdmi-displayport-200-hz-1-ms-roz-1157123.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fmonitoare-lcd-led%2Farozzi%2F382112-monitor-gaming-ips-led-arozzi-nova-24t1k200-24-inch-full-hd-1920-x-1080-pixeli-hdmi-displayport-200-hz-1-ms-roz%2F",
+"titlu": "VIEWSONIC Monitor LED ViewSonic VG2409U-2, 24 inch, 1920 x 1080 pixeli, 4 ms GTG, Negru",
+"pret": 867.99,
+"imagine": "https://www.dwyn.ro/images/products/img_202512311121/392308/full/viewsonic-monitor-led-viewsonic-vg2409u-2-24-inch-1920-x-1080-pixeli-4-ms-gtg-negru-1205467.png",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fmonitoare-lcd-led%2Fviewsonic%2F392308-monitor-led-viewsonic-vg2409u-2-24-inch-1920-x-1080-pixeli-4-ms-gtg-negru%2F",
 "magazin": "dwyn.ro",
-"id": "jGgQOm4udvFZ",
-"brand": "AROZZI",
-"url_magazin": "https://www.dwyn.ro/monitoare-lcd-led/arozzi/382112-monitor-gaming-ips-led-arozzi-nova-24t1k200-24-inch-full-hd-1920-x-1080-pixeli-hdmi-displayport-200-hz-1-ms-roz/",
-"pret_vechi": null,
-"verificat": "2026-11-04"
+"id": "TdBQ6LFdAtnP",
+"brand": "VIEWSONIC",
+"url_magazin": "https://www.dwyn.ro/monitoare-lcd-led/viewsonic/392308-monitor-led-viewsonic-vg2409u-2-24-inch-1920-x-1080-pixeli-4-ms-gtg-negru/",
+"pret_vechi": null
 },
 {
 "titlu": "Monitor Consumer AOC X24E4U, 24\", 1920 x 1200 pixeli, Black, 5 ani Garantie",
@@ -7100,7 +7087,7 @@
 "titlu": "Monitoare de 27 inch",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-06",
+"actualizat": "2026-11-14",
 "feeduri": [
 {
 "id": 8527,
@@ -7237,7 +7224,7 @@
 "titlu": "Monitoare de 32 inch",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-06",
+"actualizat": "2026-11-14",
 "feeduri": [
 {
 "id": 8527,
@@ -7264,7 +7251,7 @@
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.interlink.ro%2Fmonitor-led-office-pro-curbat-32-inch-optimx-mt32j-1-full-hd-192-p77743",
 "magazin": "interlink.ro",
 "id": "zfWLkdwpg7vw",
-"brand": "",
+"brand": "OptimX",
 "url_magazin": "https://www.interlink.ro/monitor-led-office-pro-curbat-32-inch-optimx-mt32j-1-full-hd-192-p77743",
 "pret_vechi": null,
 "verificat": "2026-11-04"
@@ -7276,7 +7263,7 @@
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.interlink.ro%2Fmonitor-led-gaming-curbat-32-inch-optimx-mt32j-full-hd-1920x1020-p75256",
 "magazin": "interlink.ro",
 "id": "e0eEQzP0sAmN",
-"brand": "",
+"brand": "OptimX",
 "url_magazin": "https://www.interlink.ro/monitor-led-gaming-curbat-32-inch-optimx-mt32j-full-hd-1920x1020-p75256",
 "pret_vechi": null,
 "verificat": "2026-11-04"
@@ -7304,6 +7291,18 @@
 "url_magazin": "https://1cctv.ro/ro/monitoare/42290-monitor-samsung-32-ls32fg502euxen-diagonal-inch-32-diagonal-cm-81-aspect-ratio-169-panel-ips-resolution-2560x144.html?utm_source=2performant",
 "pret_vechi": null,
 "verificat": "2026-11-04"
+},
+{
+"titlu": "Monitor Samsung 32\" LS32FM700UUXDU, Diagonal (inch): 32, Diagonal (cm): 81, Aspect ratio: 16:9, Panel: VA, Resolution: 3",
+"pret": 1682.45,
+"imagine": "http://1cctv.ro/165217/monitor-samsung-32-ls32fm700uuxdu-diagonal-inch-32-diagonal-cm-81-aspect-ratio-169-panel-va-resolution-3840x2160.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2F1cctv.ro%2Fro%2Fmonitoare%2F41638-monitor-samsung-32-ls32fm700uuxdu-diagonal-inch-32-diagonal-cm-81-aspect-ratio-169-panel-va-resolution-3840x2160.html%3Futm_source%3D2performant",
+"magazin": "1cctv.ro",
+"id": "ghZOQP0uZdNL",
+"brand": "SAMSUNG",
+"url_magazin": "https://1cctv.ro/ro/monitoare/41638-monitor-samsung-32-ls32fm700uuxdu-diagonal-inch-32-diagonal-cm-81-aspect-ratio-169-panel-va-resolution-3840x2160.html?utm_source=2performant",
+"pret_vechi": null,
+"verificat": "2026-11-14"
 },
 {
 "titlu": "Monitor Samsung 32\" LS32H800UAUXEN, Diagonal (inch): 32, Diagonal (cm): 81, Aspect ratio: 16:9, Panel: VA, Resolution: 3",
@@ -7400,30 +7399,6 @@
 "url_magazin": "https://www.dacris.net/aw3225qf-32---gaming-monitor-aw3225qf-3840x2160/p?skuId=220133",
 "pret_vechi": null,
 "verificat": "2026-11-04"
-},
-{
-"titlu": "DL MONITOR 4K 32'' U3225QE LED 3840x2160",
-"pret": 4731.64,
-"imagine": "https://dacris.vteximg.com.br/arquivos/ids/985479/DL-MONITOR-4K-32-U3225QE-LED-3840x2160-0.jpg?v=638962970706870000",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dacris.net%2Fu3225qe-dl-monitor-4k-32---u3225qe-led-3840x2160%2Fp%3FskuId%3D231245",
-"magazin": "dacris.net",
-"id": "UsZythwocuTa",
-"brand": "Dell",
-"url_magazin": "https://www.dacris.net/u3225qe-dl-monitor-4k-32---u3225qe-led-3840x2160/p?skuId=231245",
-"pret_vechi": null,
-"verificat": "2026-11-04"
-},
-{
-"titlu": "Monitor Samsung 32\" LS32HG800SUXEN, Diagonal (inch): 32, Diagonal (cm): 80, Aspect ratio: 16:9, Panel: OLED, Resolution:",
-"pret": 4921.0,
-"imagine": "http://1cctv.ro/167853/monitor-samsung-32-ls32hg800suxen-diagonal-inch-32-diagonal-cm-80-aspect-ratio-169-panel-oled-resolution-3840x21.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2F1cctv.ro%2Fro%2Fmonitoare%2F42850-monitor-samsung-32-ls32hg800suxen-diagonal-inch-32-diagonal-cm-80-aspect-ratio-169-panel-oled-resolution-3840x21.html%3Futm_source%3D2performant",
-"magazin": "1cctv.ro",
-"id": "ZchVX9xY_IBZ",
-"brand": "SAMSUNG",
-"url_magazin": "https://1cctv.ro/ro/monitoare/42850-monitor-samsung-32-ls32hg800suxen-diagonal-inch-32-diagonal-cm-80-aspect-ratio-169-panel-oled-resolution-3840x21.html?utm_source=2performant",
-"pret_vechi": null,
-"verificat": "2026-11-06"
 }
 ],
 "magazine": [
@@ -7439,7 +7414,7 @@
 "titlu": "Monitoare de 144 Hz sau mai rapide",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-06",
+"actualizat": "2026-11-14",
 "feeduri": [
 {
 "id": 8969,
@@ -7455,30 +7430,6 @@
 }
 ],
 "produse": [
-{
-"titlu": "Monitor gaming Acer - EK1 EK251QP6BI, 24.5'', FHD, IPS, 144Hz, 1ms",
-"pret": 424.55,
-"imagine": "https://www.ozone.ro/media/catalog/product/m/o/monitor_acer_ek1_ek251qp6bi_24_5_fhd_ips_144hz_cheren_1777450923_0.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ozone.ro%2Fproduct%2Fmonitor-acer-ek1-ek251qp6bi-24-5-fhd-ips-144hz-negru%2F",
-"magazin": "ozone.ro",
-"id": "Tgcays4iWOqn",
-"brand": "Acer",
-"url_magazin": "https://www.ozone.ro/product/monitor-acer-ek1-ek251qp6bi-24-5-fhd-ips-144hz-negru/",
-"pret_vechi": null,
-"verificat": "2026-11-04"
-},
-{
-"titlu": "Monitor gaming Acer - Nitro QG241YP6bmipx, 23.8'', 144Hz, 1ms, FreeSync",
-"pret": 424.55,
-"imagine": "https://www.ozone.ro/media/catalog/product/g/e/geyming_monitor_acer_nitro_qg241yp6bmipx_23_8_144hz_1ms_freesync_1773410498_0.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ozone.ro%2Fproduct%2Fmonitor-gaming-acer-nitro-qg241yp6bmipx-23-8-144hz-1ms-freesync%2F",
-"magazin": "ozone.ro",
-"id": "NCb-eHTE0XBd",
-"brand": "Acer",
-"url_magazin": "https://www.ozone.ro/product/monitor-gaming-acer-nitro-qg241yp6bmipx-23-8-144hz-1ms-freesync/",
-"pret_vechi": null,
-"verificat": "2026-11-04"
-},
 {
 "titlu": "Monitor gaming AOC - B3 24B36X, 23.8'', 144Hz, 4ms, IPS, negru",
 "pret": 451.1,
@@ -7516,16 +7467,15 @@
 "verificat": "2026-11-04"
 },
 {
-"titlu": "Monitor KOORUI – E2712K, 27'', FHD, VA, 144Hz, FreeSync, negru",
-"pret": 504.15,
-"imagine": "https://www.ozone.ro/media/catalog/product/m/o/monitor_koorui_e2712k_27_fhd_va_144hz_freesync_cheren_1782113159_0.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ozone.ro%2Fproduct%2Fmonitor-koorui-e2712k-27-fhd-va-144hz-freesync-negru%2F",
+"titlu": "Monitor gaming Gigabyte – GS25F14, 24,5'', 144Hz, 1ms, IPS, FreeSync",
+"pret": 493.55,
+"imagine": "https://www.ozone.ro/media/catalog/product/g/e/geyming_monitor_gigabyte_gs25f14_24_5_144hz_1ms_ips_freesync_1777544430_0.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ozone.ro%2Fproduct%2Fmonitor-gaming-gigabyte-gs25f14-24-5-144hz-1ms-ips-freesync%2F",
 "magazin": "ozone.ro",
-"id": "rkzZjPUaZSxa",
-"brand": "KOORUI",
-"url_magazin": "https://www.ozone.ro/product/monitor-koorui-e2712k-27-fhd-va-144hz-freesync-negru/",
-"pret_vechi": null,
-"verificat": "2026-11-04"
+"id": "4gr0AULIHReg",
+"brand": "Gigabyte",
+"url_magazin": "https://www.ozone.ro/product/monitor-gaming-gigabyte-gs25f14-24-5-144hz-1ms-ips-freesync/",
+"pret_vechi": null
 },
 {
 "titlu": "Monitor de gaming LG - UltraGear 24G411A-B, 23.8'', 144Hz, 1ms, negru",
@@ -7540,14 +7490,14 @@
 "verificat": "2026-11-04"
 },
 {
-"titlu": "Monitor de gaming Philips - Evnia, 27'', 144Hz, 0.5ms, IPS, Adaptive-Sync",
-"pret": 514.79,
-"imagine": "https://www.ozone.ro/media/catalog/product/g/e/geyming_monitor_philips_evnia_27_144hz_0_5ms_ips_adaptive_sync_1753178905_0.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ozone.ro%2Fproduct%2Fmonitor-de-gaming-philips-evnia-27-144hz-0-5ms-ips-adaptive-sync%2F",
+"titlu": "Monitor KOORUI – E2712K, 27'', FHD, VA, 144Hz, FreeSync, negru",
+"pret": 504.15,
+"imagine": "https://www.ozone.ro/media/catalog/product/m/o/monitor_koorui_e2712k_27_fhd_va_144hz_freesync_cheren_1782113159_0.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ozone.ro%2Fproduct%2Fmonitor-koorui-e2712k-27-fhd-va-144hz-freesync-negru%2F",
 "magazin": "ozone.ro",
-"id": "noSTGN-ds7KP",
-"brand": "Philips",
-"url_magazin": "https://www.ozone.ro/product/monitor-de-gaming-philips-evnia-27-144hz-0-5ms-ips-adaptive-sync/",
+"id": "rkzZjPUaZSxa",
+"brand": "KOORUI",
+"url_magazin": "https://www.ozone.ro/product/monitor-koorui-e2712k-27-fhd-va-144hz-freesync-negru/",
 "pret_vechi": null,
 "verificat": "2026-11-04"
 },
@@ -7560,6 +7510,29 @@
 "id": "582aG3m5S5pp",
 "brand": "Acer",
 "url_magazin": "https://www.dwyn.ro/monitoare-lcd-led/acer/367499-monitor-acer-ek251q-p6-24-5-62-2-cm-ips-full-hd-144-hz-1-ms-negru/",
+"pret_vechi": null,
+"verificat": "2026-11-04"
+},
+{
+"titlu": "Monitor de gaming LG - UltraGear 27G411A-B, 27'', 144Hz, 1ms, negru",
+"pret": 530.19,
+"imagine": "https://www.ozone.ro/media/catalog/product/g/e/geyming_monitor_lg_ultragear_27g411a_b_27_144hz_1ms_cheren_1771435887_0.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ozone.ro%2Fproduct%2Fmonitor-de-gaming-lg-ultragear-27g411a-b-27-144hz-1ms-negru%2F",
+"magazin": "ozone.ro",
+"id": "a0hnBjSc-WCg",
+"brand": "LG",
+"url_magazin": "https://www.ozone.ro/product/monitor-de-gaming-lg-ultragear-27g411a-b-27-144hz-1ms-negru/",
+"pret_vechi": null
+},
+{
+"titlu": "Monitor gaming LG – UltraGear 24G411B-B, 23.8'', FHD, 144Hz, 5ms, IPS",
+"pret": 531.79,
+"imagine": "https://www.ozone.ro/media/catalog/product/g/e/geyming_monitor_lg_ultragear_24g411b_b_23_8_fhd_144hz_5ms_ips_1791867921_0.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ozone.ro%2Fproduct%2Fmonitor-gaming-lg-ultragear-24g411b-b-23-8-fhd-144hz-5ms-ips%2F",
+"magazin": "ozone.ro",
+"id": "sr-R-Ufk6YrI",
+"brand": "LG",
+"url_magazin": "https://www.ozone.ro/product/monitor-gaming-lg-ultragear-24g411b-b-23-8-fhd-144hz-5ms-ips/",
 "pret_vechi": null,
 "verificat": "2026-11-04"
 },
@@ -7661,7 +7634,7 @@
 "titlu": "Monitoare de gaming",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-06",
+"actualizat": "2026-11-14",
 "feeduri": [
 {
 "id": 8969,
@@ -7700,7 +7673,7 @@
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.interlink.ro%2Fmonitor-led-gaming-curbat-27-inch-optimx-mt27y-full-hd-1920x1020-p75255",
 "magazin": "interlink.ro",
 "id": "tle8AR119jT4",
-"brand": "",
+"brand": "OptimX",
 "url_magazin": "https://www.interlink.ro/monitor-led-gaming-curbat-27-inch-optimx-mt27y-full-hd-1920x1020-p75255",
 "pret_vechi": null,
 "verificat": "2026-11-04"
@@ -7754,18 +7727,6 @@
 "verificat": "2026-11-04"
 },
 {
-"titlu": "Monitor Gaming LG UltraGear G4, 24\", 1920 x 1080 pixeli, Black, 2 ani Garantie",
-"pret": 532.0,
-"imagine": "http://1cctv.ro/168231/monitor-gaming-lg-ultragear-g4-24-1920-x-1080-pixeli-black-2-ani-garantie.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2F1cctv.ro%2Fro%2Fmonitoare%2F43422-monitor-gaming-lg-ultragear-g4-24-1920-x-1080-pixeli-black-2-ani-garantie.html%3Futm_source%3D2performant",
-"magazin": "1cctv.ro",
-"id": "N7_miu5MFETY",
-"brand": "LG",
-"url_magazin": "https://1cctv.ro/ro/monitoare/43422-monitor-gaming-lg-ultragear-g4-24-1920-x-1080-pixeli-black-2-ani-garantie.html?utm_source=2performant",
-"pret_vechi": null,
-"verificat": "2026-11-04"
-},
-{
 "titlu": "Monitor gaming Aopen - 27KG3S1bipx, 27'', 180Hz, 1ms, IPS, FHD",
 "pret": 557.19,
 "imagine": "https://www.ozone.ro/media/catalog/product/g/e/geyming_monitor_aopen_27kg3s1bipx_27_180hz_1ms_ips_fhd_1790844576_0.jpg",
@@ -7796,20 +7757,8 @@
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.interlink.ro%2Fmonitor-led-gaming-curbat-32-inch-optimx-mt32j-full-hd-1920x1020-p75256",
 "magazin": "interlink.ro",
 "id": "e0eEQzP0sAmN",
-"brand": "",
+"brand": "OptimX",
 "url_magazin": "https://www.interlink.ro/monitor-led-gaming-curbat-32-inch-optimx-mt32j-full-hd-1920x1020-p75256",
-"pret_vechi": null,
-"verificat": "2026-11-04"
-},
-{
-"titlu": "Monitor Gaming LG 27G411B-B, 27\", 1920 x 1080 pixeli, Black, 2 ani Garantie",
-"pret": 704.9,
-"imagine": "http://1cctv.ro/168230/monitor-gaming-lg-27g411b-b-27-1920-x-1080-pixeli-black-2-ani-garantie.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2F1cctv.ro%2Fro%2Fmonitoare%2F43421-monitor-gaming-lg-27g411b-b-27-1920-x-1080-pixeli-black-2-ani-garantie.html%3Futm_source%3D2performant",
-"magazin": "1cctv.ro",
-"id": "muBi1SBcqpw1",
-"brand": "LG",
-"url_magazin": "https://1cctv.ro/ro/monitoare/43421-monitor-gaming-lg-27g411b-b-27-1920-x-1080-pixeli-black-2-ani-garantie.html?utm_source=2performant",
 "pret_vechi": null,
 "verificat": "2026-11-04"
 },
@@ -7824,6 +7773,18 @@
 "url_magazin": "https://1cctv.ro/ro/monitoare/43364-monitor-gaming-msi-mag-275f-e20-27-1920-x-1080-pixeli-black-2-ani-garantie.html?utm_source=2performant",
 "pret_vechi": null,
 "verificat": "2026-11-04"
+},
+{
+"titlu": "Monitor Gaming AOC G4 25G4ZR, 24.5\", 1920 x 1080 pixeli, Black, Red, 3 ani Garantie",
+"pret": 713.05,
+"imagine": "http://1cctv.ro/168330/monitor-gaming-aoc-g4-25g4zr-245-1920-x-1080-pixeli-black-red-3-ani-garantie.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2F1cctv.ro%2Fro%2Fmonitoare%2F43476-monitor-gaming-aoc-g4-25g4zr-245-1920-x-1080-pixeli-black-red-3-ani-garantie.html%3Futm_source%3D2performant",
+"magazin": "1cctv.ro",
+"id": "tdtaq59SBlh2",
+"brand": "AOC",
+"url_magazin": "https://1cctv.ro/ro/monitoare/43476-monitor-gaming-aoc-g4-25g4zr-245-1920-x-1080-pixeli-black-red-3-ani-garantie.html?utm_source=2performant",
+"pret_vechi": null,
+"verificat": "2026-11-14"
 },
 {
 "titlu": "Monitor Gaming LG 25G523B-B, 24.4\", 1920 x 1080 pixeli, Black, 2 ani Garantie",
@@ -7850,6 +7811,18 @@
 "verificat": "2026-11-04"
 },
 {
+"titlu": "Monitor de gaming Lenovo - L27-4r, 27'', FHD, IPS, 165Hz, 1 ms, FreeSync",
+"pret": 790.75,
+"imagine": "https://www.ozone.ro/media/catalog/product/g/e/geyming_monitor_lenovo_l27_4r_27_fhd_ips_165hz_1_ms_freesync_1790690114_0.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ozone.ro%2Fproduct%2Fmonitor-de-gaming-lenovo-l27-4r-27-fhd-ips-165hz-1-ms-freesync%2F",
+"magazin": "ozone.ro",
+"id": "Q6LUVYJSEKgm",
+"brand": "Lenovo",
+"url_magazin": "https://www.ozone.ro/product/monitor-de-gaming-lenovo-l27-4r-27-fhd-ips-165hz-1-ms-freesync/",
+"pret_vechi": 896.89,
+"verificat": "2026-11-04"
+},
+{
 "titlu": "Monitor de gaming Lenovo - LOQ 27Q-10, 27'', QHD, 180Hz, 0,5ms, IPS, HDR10",
 "pret": 790.75,
 "imagine": "https://www.ozone.ro/media/catalog/product/g/e/geyming_monitor_lenovo_loq_27q_10_27_qhd_180hz_0_5ms_ips_hdr10_1790687920_0.jpg",
@@ -7858,7 +7831,7 @@
 "id": "HkSQj1DAvDft",
 "brand": "Lenovo",
 "url_magazin": "https://www.ozone.ro/product/monitor-de-gaming-lenovo-loq-27q-10-27-qhd-180hz-0-5ms-ips-hdr10/",
-"pret_vechi": 1003.99,
+"pret_vechi": null,
 "verificat": "2026-11-04"
 },
 {
@@ -7873,18 +7846,6 @@
 "pret_vechi": 949.99
 },
 {
-"titlu": "Monitor de gaming Lenovo - L27-4r, 27'', FHD, IPS, 165Hz, 1 ms, FreeSync",
-"pret": 790.75,
-"imagine": "https://www.ozone.ro/media/catalog/product/g/e/geyming_monitor_lenovo_l27_4r_27_fhd_ips_165hz_1_ms_freesync_1790690114_0.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ozone.ro%2Fproduct%2Fmonitor-de-gaming-lenovo-l27-4r-27-fhd-ips-165hz-1-ms-freesync%2F",
-"magazin": "ozone.ro",
-"id": "Q6LUVYJSEKgm",
-"brand": "Lenovo",
-"url_magazin": "https://www.ozone.ro/product/monitor-de-gaming-lenovo-l27-4r-27-fhd-ips-165hz-1-ms-freesync/",
-"pret_vechi": 896.89,
-"verificat": "2026-11-04"
-},
-{
 "titlu": "Monitor Gaming Philips Evnia 5000 27M2N5201P/00, 27\", 1920 x 1080 pixeli, White, 3 ani Garantie",
 "pret": 896.69,
 "imagine": "http://1cctv.ro/168139/monitor-gaming-philips-evnia-5000-27m2n5201p-00-27-1920-x-1080-pixeli-white-3-ani-garantie.jpg",
@@ -7893,6 +7854,18 @@
 "id": "KdkiEemcScDd",
 "brand": "PHILIPS",
 "url_magazin": "https://1cctv.ro/ro/monitoare/43382-monitor-gaming-philips-evnia-5000-27m2n5201p-00-27-1920-x-1080-pixeli-white-3-ani-garantie.html?utm_source=2performant",
+"pret_vechi": null,
+"verificat": "2026-11-04"
+},
+{
+"titlu": "Monitor Gaming ViewSonic VX2757-2K-PRO, 27\", 2560x1440 pixeli, Black, 2 ani garantie",
+"pret": 946.41,
+"imagine": "http://1cctv.ro/167964/monitor-gaming-viewsonic-vx2757-2k-pro-27-2560x1440-pixeli-black-2-ani-garantie.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2F1cctv.ro%2Fro%2Fmonitoare%2F43295-monitor-gaming-viewsonic-vx2757-2k-pro-27-2560x1440-pixeli-black-2-ani-garantie.html%3Futm_source%3D2performant",
+"magazin": "1cctv.ro",
+"id": "Rv8nPSHxSB-3",
+"brand": "VIEWSONIC",
+"url_magazin": "https://1cctv.ro/ro/monitoare/43295-monitor-gaming-viewsonic-vx2757-2k-pro-27-2560x1440-pixeli-black-2-ani-garantie.html?utm_source=2performant",
 "pret_vechi": null,
 "verificat": "2026-11-04"
 },
@@ -7915,21 +7888,9 @@
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.interlink.ro%2Fmonitor-led-gaming-curbat-34-inch-optimx-mt34j-ultra-wide-quad-h-p75258",
 "magazin": "interlink.ro",
 "id": "pOZfMllVugUk",
-"brand": "",
+"brand": "OptimX",
 "url_magazin": "https://www.interlink.ro/monitor-led-gaming-curbat-34-inch-optimx-mt34j-ultra-wide-quad-h-p75258",
 "pret_vechi": 1899.0,
-"verificat": "2026-11-04"
-},
-{
-"titlu": "25'' Gaming Monitor AW2525HM 1920x1080",
-"pret": 1208.51,
-"imagine": "https://dacris.vteximg.com.br/arquivos/ids/1039129/aeb286579f22a46c9ae12785d35fec29.png?v=638934940734170000",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dacris.net%2Faw2525hm-25---gaming-monitor-aw2525hm-1920x1080%2Fp%3FskuId%3D240861",
-"magazin": "dacris.net",
-"id": "mUG_q6lik3mb",
-"brand": "Dell",
-"url_magazin": "https://www.dacris.net/aw2525hm-25---gaming-monitor-aw2525hm-1920x1080/p?skuId=240861",
-"pret_vechi": null,
 "verificat": "2026-11-04"
 },
 {
@@ -7967,6 +7928,18 @@
 "url_magazin": "https://www.dacris.net/aw3226dm-32--gaming-monitor-aw3226dm-2560x1440/p?skuId=252307",
 "pret_vechi": null,
 "verificat": "2026-11-04"
+},
+{
+"titlu": "34'' Gaming Monitor AW3426DWM 3440x1440",
+"pret": 2041.11,
+"imagine": "https://dacris.vteximg.com.br/arquivos/ids/1089236/20e9b5eb989b25b3cf5f099751185764.png.png?v=639222202367600000",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dacris.net%2Faw3426dwm-34---gaming-monitor-aw3426dwm-3440x1440%2Fp%3FskuId%3D252276",
+"magazin": "dacris.net",
+"id": "xOKB7NmeyNOQ",
+"brand": "Dell",
+"url_magazin": "https://www.dacris.net/aw3426dwm-34---gaming-monitor-aw3426dwm-3440x1440/p?skuId=252276",
+"pret_vechi": null,
+"verificat": "2026-11-14"
 }
 ],
 "magazine": [
@@ -7983,7 +7956,7 @@
 "titlu": "Monitoare 4K",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-06",
+"actualizat": "2026-11-14",
 "feeduri": [
 {
 "id": 1256,
@@ -8052,18 +8025,6 @@
 "verificat": "2026-11-04"
 },
 {
-"titlu": "Monitor Samsung - ViewFinity S7 S70H, 32'', 4K, IPS, FreeSync",
-"pret": 1247.99,
-"imagine": "https://www.ozone.ro/media/catalog/product/m/o/monitor_samsung_viewfinity_s7_s70h_32_4k_ips_freesync_1786713744_0.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ozone.ro%2Fproduct%2Fmonitor-samsung-viewfinity-s7-s70h-32-4k-ips-freesync%2F",
-"magazin": "ozone.ro",
-"id": "wUdcECmx83Y-",
-"brand": "Samsung",
-"url_magazin": "https://www.ozone.ro/product/monitor-samsung-viewfinity-s7-s70h-32-4k-ips-freesync/",
-"pret_vechi": null,
-"verificat": "2026-11-04"
-},
-{
 "titlu": "Monitor LED AOC U27B3A 27\" 4K Ultra HD 60Hz HDMI DP Black",
 "pret": 1338.59,
 "imagine": "http://www.itarena.ro/images/products/2024-11-05/original/474614_jpg.webp",
@@ -8100,6 +8061,18 @@
 "verificat": "2026-11-04"
 },
 {
+"titlu": "Monitor SAMSUNG Smart LS32FM700UUXDU 32\" 4K Ultra HD 60Hz 4ms Negru",
+"pret": 1608.01,
+"imagine": "http://www.itarena.ro/images/products/2026-05-12/original/517437_jpg.webp",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.itarena.ro%2Fmonitoare%2Fmonitor_samsung_smart_ls32fm700uuxdu_32_4k_ultra_hd_60hz_4ms_negru.html",
+"magazin": "itarena.ro",
+"id": "5sKru7dUm3Zv",
+"brand": "Samsung",
+"url_magazin": "https://www.itarena.ro/monitoare/monitor_samsung_smart_ls32fm700uuxdu_32_4k_ultra_hd_60hz_4ms_negru.html",
+"pret_vechi": null,
+"verificat": "2026-11-14"
+},
+{
 "titlu": "Philips Monitor Gaming Philips Evnia 27M2N3800A/00, 27, Dual Mode 4K UHD (3840x2160) 160Hz/Full HD (1920x1080) 320Hz, Fa",
 "pret": 1627.99,
 "imagine": "https://www.dwyn.ro/images/products/img_202606122129/454147/full/philips-monitor-gaming-philips-evnia-27m2n3800a-00-27-dual-mode-4k-uhd-3840x2160-160hz-full-hd-1920x1080-320hz-fast-ips-wled-1ms-gtg-g-sync-compatible-adaptive-sync-stark-shadow-boost-smart-crosshair--1527481.jpg",
@@ -8120,18 +8093,6 @@
 "id": "6lxcbzE7COFw",
 "brand": "Samsung",
 "url_magazin": "https://www.dwyn.ro/monitoare-lcd-led/samsung/438811-monitor-samsung-ls27h804eauxen-viewfinity-s8-27inch-ips-lcd-3840-2160-pixeli-4k-ultra-hd-60hz-5ms-1-hdmi-1-4-1-displayport-1-2-1-usb-type-c-negru/",
-"pret_vechi": null,
-"verificat": "2026-11-04"
-},
-{
-"titlu": "Monitor LED AOC U27E4CV 27\" 4K Ultra HD 60Hz 4ms Black",
-"pret": 1672.52,
-"imagine": "http://www.itarena.ro/images/products/2026-09-30/original/530235_jpg.webp",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.itarena.ro%2Fmonitoare%2Fmonitor_led_aoc_u27e4cv_27_4k_ultra_hd_60hz_4ms_black.html",
-"magazin": "itarena.ro",
-"id": "qh5Wew9v7wY0",
-"brand": "AOC",
-"url_magazin": "https://www.itarena.ro/monitoare/monitor_led_aoc_u27e4cv_27_4k_ultra_hd_60hz_4ms_black.html",
 "pret_vechi": null,
 "verificat": "2026-11-04"
 },
@@ -8160,6 +8121,28 @@
 "verificat": "2026-11-04"
 },
 {
+"titlu": "Monitor LG -27U730A-B, 27'', 4K UHD, IPS, Anti-Glare, negru",
+"pret": 1746.99,
+"imagine": "https://www.ozone.ro/media/catalog/product/m/o/monitor_lg_27u730a_b_27_4k_uhd_ips_anti_glare_cheren_1763987270_0.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ozone.ro%2Fproduct%2Fmonitor-lg-27u730a-b-27-4k-uhd-ips-anti-glare-negru%2F",
+"magazin": "ozone.ro",
+"id": "sZ8CMbGOCwAn",
+"brand": "LG",
+"url_magazin": "https://www.ozone.ro/product/monitor-lg-27u730a-b-27-4k-uhd-ips-anti-glare-negru/",
+"pret_vechi": null
+},
+{
+"titlu": "Acer Monitor LED Acer Predator XB3 XB273KV4bmiiprx, 27 inch, 4K UHD, IPS, 1 ms, 160 Hz",
+"pret": 1754.99,
+"imagine": "https://www.dwyn.ro/images/products/img_202512311121/399982/full/acer-acer-predator-xb3-xb273kv4bmiiprx-27-ips-3840x2160-16-9-1ms-hdmi-displayport-black-1240468.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fmonitoare-lcd-led%2Facer%2F399982-monitor-led-acer-predator-xb3-xb273kv4bmiiprx-27-inch-4k-uhd-ips-1-ms-160-hz%2F",
+"magazin": "dwyn.ro",
+"id": "RQ3REgVZ1evr",
+"brand": "Acer",
+"url_magazin": "https://www.dwyn.ro/monitoare-lcd-led/acer/399982-monitor-led-acer-predator-xb3-xb273kv4bmiiprx-27-inch-4k-uhd-ips-1-ms-160-hz/",
+"pret_vechi": null
+},
+{
 "titlu": "Monitor LED Iiyama G-Master GB3261UHSCP-B1 31.5\" 4K Ultra HD 144Hz 0.6ms Black",
 "pret": 1831.42,
 "imagine": "http://www.itarena.ro/images/products/2026-10-12/original/532690_jpg.webp",
@@ -8172,16 +8155,28 @@
 "verificat": "2026-11-06"
 },
 {
-"titlu": "Monitor Samsung - ViewFinity S8 S80UH, 27'', 4K, IPS, negru",
-"pret": 1968.99,
-"imagine": "https://www.ozone.ro/media/catalog/product/m/o/monitor_samsung_viewfinity_s8_s80uh_27_4k_ips_cheren_1793007943_0.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ozone.ro%2Fproduct%2Fmonitor-samsung-viewfinity-s8-s80uh-27-4k-ips-negru%2F",
-"magazin": "ozone.ro",
-"id": "GGUgVHVqVEcF",
-"brand": "Samsung",
-"url_magazin": "https://www.ozone.ro/product/monitor-samsung-viewfinity-s8-s80uh-27-4k-ips-negru/",
+"titlu": "DL MONITOR 31.5 S3225QS 4K UHD 3840x216 DL MONITOR 31.5` S3225QS 4K UHD 3840x216",
+"pret": 1863.47,
+"imagine": "https://dacris.vteximg.com.br/arquivos/ids/1008532/DL-MONITOR-31-5-S3225QS-4K-UHD-3840x216-0.jpg?v=638963014605900000",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dacris.net%2Fs3225qs-dl-monitor-31-5--s3225qs-4k-uhd-3840x216%2Fp%3FskuId%3D233742",
+"magazin": "dacris.net",
+"id": "bYGcvszPvR89",
+"brand": "Dell",
+"url_magazin": "https://www.dacris.net/s3225qs-dl-monitor-31-5--s3225qs-4k-uhd-3840x216/p?skuId=233742",
 "pret_vechi": null,
-"verificat": "2026-11-04"
+"verificat": "2026-11-14"
+},
+{
+"titlu": "DL MONITOR 27 S2725QC 4K 3840 x 2160 DL MONITOR 27` S2725QC 4K 3840 x 2160",
+"pret": 1988.79,
+"imagine": "https://dacris.vteximg.com.br/arquivos/ids/1008528/DL-MONITOR-27-S2725QC-4K-3840-x-2160-0.jpg?v=638963014523600000",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dacris.net%2Fs2725qc-dl-monitor-27--s2725qc-4k-3840-x-2160%2Fp%3FskuId%3D233740",
+"magazin": "dacris.net",
+"id": "b2Hk3iOwmKtB",
+"brand": "Dell",
+"url_magazin": "https://www.dacris.net/s2725qc-dl-monitor-27--s2725qc-4k-3840-x-2160/p?skuId=233740",
+"pret_vechi": null,
+"verificat": "2026-11-14"
 },
 {
 "titlu": "Samsung Monitor Samsung LS37D800EAUXEN, 37inch, VA, 3840 × 2160 pixeli (4K Ultra HD), 5ms, 60Hz, 1 × HDMI 2.0, 1 × Displ",
@@ -8265,30 +8260,6 @@
 "brand": "HP",
 "url_magazin": "https://www.ozone.ro/product/monitor-hp-727pk-7-pro-27-4k-ips-anti-glare/",
 "pret_vechi": null
-},
-{
-"titlu": "DL MONITOR 31.5 S3225QC 4K UHD 3840x2160",
-"pret": 3046.18,
-"imagine": "https://dacris.vteximg.com.br/arquivos/ids/1071224/overlay_dd1fd0667576d5444d1982399269e166.jpeg.jpg?v=639150088699330000",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dacris.net%2Fs3225qc-dl-monitor-31-5-s3225qc-4k-uhd-3840x2160%2Fp%3FskuId%3D248710",
-"magazin": "dacris.net",
-"id": "N_ZQ2EA7H8CG",
-"brand": "Dell",
-"url_magazin": "https://www.dacris.net/s3225qc-dl-monitor-31-5-s3225qc-4k-uhd-3840x2160/p?skuId=248710",
-"pret_vechi": null,
-"verificat": "2026-11-04"
-},
-{
-"titlu": "LED MONITOR HIKVISION 27” 4K LED MONITOR HIKVISION 27” 4K",
-"pret": 3846.02,
-"imagine": "https://dacris.vteximg.com.br/arquivos/ids/940935/LED-MONITOR-HIKVISION-27-4K-0.jpg?v=638962793222170000",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dacris.net%2Fds-d5227u3-1p0-led-monitor-hikvision-27%E2%80%9D-4k%2Fp%3FskuId%3D224165",
-"magazin": "dacris.net",
-"id": "t9q45HLTnCgY",
-"brand": "Hikvision",
-"url_magazin": "https://www.dacris.net/ds-d5227u3-1p0-led-monitor-hikvision-27”-4k/p?skuId=224165",
-"pret_vechi": null,
-"verificat": "2026-11-04"
 }
 ],
 "magazine": [
@@ -8305,7 +8276,7 @@
 "titlu": "Tablete Samsung",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-06",
+"actualizat": "2026-11-14",
 "feeduri": [
 {
 "id": 1539,
@@ -8346,8 +8317,19 @@
 "id": "P00lFFbApcaU",
 "brand": "Samsung",
 "url_magazin": "https://www.evomag.ro/telefoane-tablete-accesorii-tablete-si-accesorii-tablete/samsung-tableta-samsung-galaxy-tab-a11-x135-procesor-mediatek-helio-g99-octa-core-ecran-tft-8.7-4gb-ram-64gb-flash-8mp-wi-fi-bluetooth-gps-4g-android-argintiu-4252915.html",
-"pret_vechi": null,
+"pret_vechi": 988.99,
 "verificat": "2026-11-06"
+},
+{
+"titlu": "Samsung Tableta Samsung Galaxy Tab A11+, Octa-Core, 11, 6GB RAM, 128GB, WIFI, Gri",
+"pret": 1270.99,
+"imagine": "https://www.dwyn.ro/images/products/img_202508191322/352955/full/samsung-tableta-samsung-galaxy-tab-a11-plus-octa-core-11-6gb-ram-128gb-wifi-gri-987464.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Ftablete-pc%2Fsamsung%2F352955-tableta-samsung-galaxy-tab-a11-plus-octa-core-11-6gb-ram-128gb-wifi-gri%2F",
+"magazin": "dwyn.ro",
+"id": "jZScaDKwvKUH",
+"brand": "Samsung",
+"url_magazin": "https://www.dwyn.ro/tablete-pc/samsung/352955-tableta-samsung-galaxy-tab-a11-plus-octa-core-11-6gb-ram-128gb-wifi-gri/",
+"pret_vechi": null
 },
 {
 "titlu": "Tableta Samsung Galaxy Tab S6 Lite P620 (2024), Procesor Exynos 1280 Octa-Core, Ecran TFT 2K 10.4inch, 4GB RAM, 64GB Fla",
@@ -8384,6 +8366,17 @@
 "url_magazin": "https://www.evomag.ro/telefoane-tablete-accesorii-tablete-si-accesorii-tablete/samsung-tableta-samsung-galaxy-tab-a11-x236-enterprise-edition-procesor-mediatek-dimensity-7300-octa-core-ecran-tft-11-6gb-ram-128gb-flash-8mp-wi-fi-bluetooth-gps-5g-android-gri-4303330.html",
 "pret_vechi": null,
 "verificat": "2026-11-06"
+},
+{
+"titlu": "Samsung Tableta Samsung Galaxy Tab A11+, Octa-Core, 11, 8GB RAM, 256GB, WIFI, Argintiu",
+"pret": 1479.0,
+"imagine": "https://www.dwyn.ro/images/products/img_202508191322/352943/full/samsung-tableta-samsung-galaxy-tab-a11-plus-octa-core-11-8gb-ram-256gb-wifi-argintiu-987377.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Ftablete-pc%2Fsamsung%2F352943-tableta-samsung-galaxy-tab-a11-plus-octa-core-11-8gb-ram-256gb-wifi-argintiu%2F",
+"magazin": "dwyn.ro",
+"id": "wvj-Tw_ywrrk",
+"brand": "Samsung",
+"url_magazin": "https://www.dwyn.ro/tablete-pc/samsung/352943-tableta-samsung-galaxy-tab-a11-plus-octa-core-11-8gb-ram-256gb-wifi-argintiu/",
+"pret_vechi": null
 },
 {
 "titlu": "Tableta Samsung Galaxy Tab A11+ X230, Procesor MediaTek Dimensity 7300 Octa-Core, Ecran TFT 11inch, 8GB RAM, 256GB Flash",
@@ -8430,18 +8423,6 @@
 "id": "02OHRljxXqS8",
 "brand": "Samsung",
 "url_magazin": "https://www.dwyn.ro/tablete-pc/samsung/363929-tableta-samsung-galaxy-tab-s10-fe-procesor-exynos-1580-octa-core-ecran-tft-90hz-10-9-8gb-ram-128gb-flash-gps-wi-fi-bluetooth-android-s-pen-albastru/",
-"pret_vechi": null,
-"verificat": "2026-11-04"
-},
-{
-"titlu": "Samsung Tableta Samsung Galaxy Tab S10 FE, 10.9, 12GB, 256GB, Wi-Fi, Blue",
-"pret": 2949.0,
-"imagine": "https://www.dwyn.ro/images/products/img_202512311121/373754/full/samsung-tableta-samsung-galaxy-tab-s10-fe-10-9-12gb-256gb-wi-fi-blue-1068287.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Ftablete-pc%2Fsamsung%2F373754-tableta-samsung-galaxy-tab-s10-fe-10-9-12gb-256gb-wi-fi-blue%2F",
-"magazin": "dwyn.ro",
-"id": "8NewRB7UpuW5",
-"brand": "Samsung",
-"url_magazin": "https://www.dwyn.ro/tablete-pc/samsung/373754-tableta-samsung-galaxy-tab-s10-fe-10-9-12gb-256gb-wi-fi-blue/",
 "pret_vechi": null,
 "verificat": "2026-11-04"
 },
@@ -8502,18 +8483,6 @@
 "url_magazin": "https://www.dwyn.ro/tablete-pc/samsung/376670-tableta-samsung-galaxy-tab-s11-diagonala-ecran-11-12gb-ram-512gb-wifi-8400-mah-ip68-s-pen-silver/",
 "pret_vechi": null,
 "verificat": "2026-11-04"
-},
-{
-"titlu": "Samsung Tableta Samsung Galaxy Tab S11, Ecran 11, 12GB RAM, 512GB, 5G, 8400mAh, GRAY",
-"pret": 5934.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202512311121/376673/full/samsung-tableta-samsung-galaxy-tab-s11-ecran-11-12gb-ram-512gb-5g-8400mah-gray-1147319.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Ftablete-pc%2Fsamsung%2F376673-tableta-samsung-galaxy-tab-s11-ecran-11-12gb-ram-512gb-5g-8400mah-gray%2F",
-"magazin": "dwyn.ro",
-"id": "EKJaggiqtwOJ",
-"brand": "Samsung",
-"url_magazin": "https://www.dwyn.ro/tablete-pc/samsung/376673-tableta-samsung-galaxy-tab-s11-ecran-11-12gb-ram-512gb-5g-8400mah-gray/",
-"pret_vechi": null,
-"verificat": "2026-11-04"
 }
 ],
 "magazine": [
@@ -8528,7 +8497,7 @@
 "titlu": "Tablete iPad",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-06",
+"actualizat": "2026-11-14",
 "feeduri": [
 {
 "id": 1096,
@@ -8561,27 +8530,37 @@
 "verificat": "2026-11-06"
 },
 {
-"titlu": "Apple Tableta Apple iPad Air 11 (2026), Apple M4 Octa Core, 11 inch, RAM 12GB, 128GB, Wi-Fi, BT, iPadOS 26.3, Albastru",
-"pret": 4524.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202512311121/395689/full/apple-apple-11-inch-ipad-air-m4-wi-fi-128gb-blue-1220188.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Ftablete-pc%2Fapple%2F395689-tableta-apple-ipad-air-11-2026-apple-m4-octa-core-11-inch-ram-12gb-128gb-wi-fi-bt-ipados-26-3-albastru%2F",
-"magazin": "dwyn.ro",
-"id": "1HR5sf2eCUPS",
+"titlu": "Tableta Apple iPad 11 Cellular (A16), Procesor A16 Penta-Core, Liquid Retina IPS 11inch, 256GB Flash, Camera 12MP, Wi-Fi",
+"pret": 4099.99,
+"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4212%2F4212716%2Ftablet-apple-ipad-11-11gen-25-67d40024e8442.png&type=auto&width=500&sign=cDYZqJovhHMrRzG9NZY5UMJWN3EYrimMB0YKGRlzmfU",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Ftelefoane-tablete-accesorii-tablete-si-accesorii-tablete%2Fapple-tableta-apple-ipad-11-cellular-a16-procesor-a16-penta-core-liquid-retina-ips-11-256gb-flash-camera-12mp-wi-fi-bluetooth-5g-ipados-albastru-4212716.html",
+"magazin": "evomag.ro",
+"id": "HZN8CBezJH2p",
 "brand": "Apple",
-"url_magazin": "https://www.dwyn.ro/tablete-pc/apple/395689-tableta-apple-ipad-air-11-2026-apple-m4-octa-core-11-inch-ram-12gb-128gb-wi-fi-bt-ipados-26-3-albastru/",
+"url_magazin": "https://www.evomag.ro/telefoane-tablete-accesorii-tablete-si-accesorii-tablete/apple-tableta-apple-ipad-11-cellular-a16-procesor-a16-penta-core-liquid-retina-ips-11-256gb-flash-camera-12mp-wi-fi-bluetooth-5g-ipados-albastru-4212716.html",
 "pret_vechi": null
 },
 {
-"titlu": "Tableta Apple iPad Air 11 (2024) + Cellular, Procesor Apple M2 Octa-Core, Ecran Liquid Retina Multi-Touch IPS 11inch, 8G",
-"pret": 4699.99,
-"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4173%2F4173810%2Fapple-ipad-air-13-m2-wi-fi-12-6644ae641b015.jpg&type=auto&width=500&sign=wgCyPlaIWWNxcPu7GExuYG6HqQp9D3rnYMlflazl-Ok",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Ftelefoane-tablete-accesorii-tablete-si-accesorii-tablete%2Fapple-tableta-apple-ipad-air-11-2024-cellular-procesor-apple-m2-octa-core-ecran-liquid-retina-multi-touch-ips-11-8gb-ram-512gb-flash-12mp-wi-fi-bluetooth-5g-ipados-argintiu-4173810.html",
+"titlu": "Tableta Apple iPad mini 8 (2026), Procesor A20 Pro, Super Retina XDR OLED 8.5inch, 128GB, 12MP, Wi‑Fi, Bluetooth, Standa",
+"pret": 4436.99,
+"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4322%2F4322963%2F6af4a5457c4ea.jpg&type=auto&width=500&sign=-BUNFSw1gBOP68ETgo_IXhqJZ1qyJE4fLz3jFJvc2Y0",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Ftelefoane-tablete-accesorii-tablete-si-accesorii-tablete%2Fapple-tableta-apple-ipad-mini-8-2026-procesor-a20-pro-super-retina-xdr-oled-8.5-128gb-12mp-wi-fi-bluetooth-standard-glass-ipados-negru-4322963.html",
 "magazin": "evomag.ro",
-"id": "NGVlcbTuIB8o",
+"id": "dkR96R05L6SF",
 "brand": "Apple",
-"url_magazin": "https://www.evomag.ro/telefoane-tablete-accesorii-tablete-si-accesorii-tablete/apple-tableta-apple-ipad-air-11-2024-cellular-procesor-apple-m2-octa-core-ecran-liquid-retina-multi-touch-ips-11-8gb-ram-512gb-flash-12mp-wi-fi-bluetooth-5g-ipados-argintiu-4173810.html",
-"pret_vechi": 6342.99,
-"verificat": "2026-11-06"
+"url_magazin": "https://www.evomag.ro/telefoane-tablete-accesorii-tablete-si-accesorii-tablete/apple-tableta-apple-ipad-mini-8-2026-procesor-a20-pro-super-retina-xdr-oled-8.5-128gb-12mp-wi-fi-bluetooth-standard-glass-ipados-negru-4322963.html",
+"pret_vechi": null
+},
+{
+"titlu": "Apple Tableta Apple iPad Air 11 (2026), Apple M4 Octa Core, 11 inch, RAM 12GB, 128GB, Wi-Fi, BT, iPadOS 26.3, Mov",
+"pret": 4936.99,
+"imagine": "https://www.dwyn.ro/images/products/img_202512311121/395692/full/apple-apple-11-inch-ipad-air-m4-wi-fi-128gb-purple-1220194.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Ftablete-pc%2Fapple%2F395692-tableta-apple-ipad-air-11-2026-apple-m4-octa-core-11-inch-ram-12gb-128gb-wi-fi-bt-ipados-26-3-mov%2F",
+"magazin": "dwyn.ro",
+"id": "x988xQwFaHbJ",
+"brand": "Apple",
+"url_magazin": "https://www.dwyn.ro/tablete-pc/apple/395692-tableta-apple-ipad-air-11-2026-apple-m4-octa-core-11-inch-ram-12gb-128gb-wi-fi-bt-ipados-26-3-mov/",
+"pret_vechi": null
 },
 {
 "titlu": "Tableta Apple iPad Air 11 M4, Procesor Apple M4 Octa-Core, Ecran Liquid Retina IPS 11inch, 12GB RAM, 256GB Flash, Camera",
@@ -8592,8 +8571,19 @@
 "id": "r2KjrOQCajSJ",
 "brand": "Apple",
 "url_magazin": "https://www.evomag.ro/telefoane-tablete-accesorii-tablete-si-accesorii-tablete/apple-tableta-apple-ipad-air-11-m4-procesor-apple-m4-octa-core-ecran-liquid-retina-ips-11-12gb-ram-256gb-flash-camera-12mp-wi-fi-bluetooth-ipados-gri-4288587.html",
-"pret_vechi": 5199.99,
+"pret_vechi": null,
 "verificat": "2026-11-06"
+},
+{
+"titlu": "Tableta Apple iPad mini 8 (2026) Cellular, Procesor A20 Pro, Super Retina XDR OLED 8.5inch, 128GB, 12MP, Wi‑Fi, Bluetoot",
+"pret": 5399.99,
+"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4322%2F4322967%2F6af4a5453115b.jpg&type=auto&width=500&sign=3ekc4c6H8sjJmAPiCRQuE34Vxaw2jCGuf2o-IQVgNTY",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Ftelefoane-tablete-accesorii-tablete-si-accesorii-tablete%2Fapple-tableta-apple-ipad-mini-8-2026-cellular-procesor-a20-pro-super-retina-xdr-oled-8.5-128gb-12mp-wi-fi-bluetooth-5g-standard-glass-ipados-auriu-4322967.html",
+"magazin": "evomag.ro",
+"id": "7rvtoKCP43wB",
+"brand": "Apple",
+"url_magazin": "https://www.evomag.ro/telefoane-tablete-accesorii-tablete-si-accesorii-tablete/apple-tableta-apple-ipad-mini-8-2026-cellular-procesor-a20-pro-super-retina-xdr-oled-8.5-128gb-12mp-wi-fi-bluetooth-5g-standard-glass-ipados-auriu-4322967.html",
+"pret_vechi": null
 },
 {
 "titlu": "Apple Tableta Apple iPad Air 11 M4 Cellular, Procesor Apple M4 Octa-Core, Ecran Liquid Retina IPS 11, 12GB RAM, 128GB Fl",
@@ -8620,44 +8610,19 @@
 "verificat": "2026-11-04"
 },
 {
-"titlu": "Tableta Apple iPad Air 11 M4 Cellular, Procesor Apple M4 Octa-Core, Ecran Liquid Retina IPS 11inch, 12GB RAM, 128GB Flas",
-"pret": 5544.99,
-"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4288%2F4288806%2Fapple-ipad-air-11-m4-wifi-l-69b84f5a54ed5.jpg&type=auto&width=500&sign=D2pm988A7nt2dx11ElmEsVJPCiCddFfPFe4_g_E8xVA",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Ftelefoane-tablete-accesorii-tablete-si-accesorii-tablete%2Fapple-tableta-apple-ipad-air-11-m4-cellular-procesor-apple-m4-octa-core-ecran-liquid-retina-ips-11-12gb-ram-128gb-flash-camera-12mp-wi-fi-bluetooth-gps-5g-ipados-albastru-4288806.html",
+"titlu": "Tableta Apple iPad Air 11 M4 Cellular, Procesor Apple M4 Octa-Core, Ecran Liquid Retina IPS 11inch, 12GB RAM, 256GB Flas",
+"pret": 5899.99,
+"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4290%2F4290267%2Ftableta-apple-ipad-air-11-m4-c-69c661cd82231.jpg&type=auto&width=500&sign=3y0WLL9ugpeu9kiT7grouD-srplNabh3MkdQa5wzqNQ",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Ftelefoane-tablete-accesorii-tablete-si-accesorii-tablete%2Fapple-tableta-apple-ipad-air-11-m4-cellular-procesor-apple-m4-octa-core-ecran-liquid-retina-ips-11-12gb-ram-256gb-flash-camera-12mp-wi-fi-bluetooth-gps-5g-ipados-albastru-4290267.html",
 "magazin": "evomag.ro",
-"id": "fwxkX6jC7Q0a",
+"id": "LXd66G7xkEuy",
 "brand": "Apple",
-"url_magazin": "https://www.evomag.ro/telefoane-tablete-accesorii-tablete-si-accesorii-tablete/apple-tableta-apple-ipad-air-11-m4-cellular-procesor-apple-m4-octa-core-ecran-liquid-retina-ips-11-12gb-ram-128gb-flash-camera-12mp-wi-fi-bluetooth-gps-5g-ipados-albastru-4288806.html",
-"pret_vechi": null,
-"verificat": "2026-11-06"
-},
-{
-"titlu": "Tableta Apple iPad Air 13 M4, Procesor Apple M4 Octa-Core, Ecran Liquid Retina IPS 13inch, 12GB RAM, 128GB Flash, Camera",
-"pret": 5858.99,
-"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4289%2F4289028%2Ftableta-apple-ipad-air-13-m4-69ba66c61c288.jpg&type=auto&width=500&sign=Pkx-q7RAtbTJxAklg8FbwQkKo9LaY_T9DmqdOARGjnw",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Ftelefoane-tablete-accesorii-tablete-si-accesorii-tablete%2Fapple-tableta-apple-ipad-air-13-m4-procesor-apple-m4-octa-core-ecran-liquid-retina-ips-13-12gb-ram-128gb-flash-camera-12mp-wi-fi-bluetooth-ipados-violet-4289028.html",
-"magazin": "evomag.ro",
-"id": "a94GXszmkb1d",
-"brand": "Apple",
-"url_magazin": "https://www.evomag.ro/telefoane-tablete-accesorii-tablete-si-accesorii-tablete/apple-tableta-apple-ipad-air-13-m4-procesor-apple-m4-octa-core-ecran-liquid-retina-ips-13-12gb-ram-128gb-flash-camera-12mp-wi-fi-bluetooth-ipados-violet-4289028.html",
-"pret_vechi": null,
-"verificat": "2026-11-06"
-},
-{
-"titlu": "Apple Tableta Apple iPad Air 13 M4 Cellular, Procesor Apple M4 Octa-Core, Ecran Liquid Retina IPS 13, 12GB RAM, 128GB Fl",
-"pret": 6516.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202512311121/398032/full/apple-tableta-apple-ipad-air-13-m4-cellular-procesor-apple-m4-octa-core-ecran-liquid-retina-ips-13-12gb-ram-128gb-flash-camera-12mp-wi-fi-bluetooth-5g-ipados-violet-1229866.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Ftablete-pc%2Fapple%2F398032-tableta-apple-ipad-air-13-m4-cellular-procesor-apple-m4-octa-core-ecran-liquid-retina-ips-13-12gb-ram-128gb-flash-camera-12mp-wi-fi-bluetooth-5g-ipados-violet%2F",
-"magazin": "dwyn.ro",
-"id": "CBJOEvX3q9El",
-"brand": "Apple",
-"url_magazin": "https://www.dwyn.ro/tablete-pc/apple/398032-tableta-apple-ipad-air-13-m4-cellular-procesor-apple-m4-octa-core-ecran-liquid-retina-ips-13-12gb-ram-128gb-flash-camera-12mp-wi-fi-bluetooth-5g-ipados-violet/",
-"pret_vechi": null,
-"verificat": "2026-11-04"
+"url_magazin": "https://www.evomag.ro/telefoane-tablete-accesorii-tablete-si-accesorii-tablete/apple-tableta-apple-ipad-air-11-m4-cellular-procesor-apple-m4-octa-core-ecran-liquid-retina-ips-11-12gb-ram-256gb-flash-camera-12mp-wi-fi-bluetooth-gps-5g-ipados-albastru-4290267.html",
+"pret_vechi": null
 },
 {
 "titlu": "Apple Tableta Apple iPad Air 11 M4, Procesor Apple M4 Octa-Core, Ecran Liquid Retina IPS 11, 12GB RAM, 512GB Flash, Came",
-"pret": 6573.99,
+"pret": 6455.99,
 "imagine": "https://www.dwyn.ro/images/products/img_202512311121/398053/full/apple-tableta-apple-ipad-air-11-m4-procesor-apple-m4-octa-core-ecran-liquid-retina-ips-11-12gb-ram-512gb-flash-camera-12mp-wi-fi-bluetooth-ipados-gri-1229857.jpg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Ftablete-pc%2Fapple%2F398053-tableta-apple-ipad-air-11-m4-procesor-apple-m4-octa-core-ecran-liquid-retina-ips-11-12gb-ram-512gb-flash-camera-12mp-wi-fi-bluetooth-ipados-gri%2F",
 "magazin": "dwyn.ro",
@@ -8675,8 +8640,30 @@
 "id": "JNH-4uwTi_VS",
 "brand": "Apple",
 "url_magazin": "https://www.evomag.ro/telefoane-tablete-accesorii-tablete-si-accesorii-tablete/apple-tableta-apple-ipad-air-13-m4-cellular-procesor-apple-m4-octa-core-ecran-liquid-retina-ips-13-12gb-ram-256gb-flash-camera-12mp-wi-fi-bluetooth-5g-ipados-violet-4290280.html",
-"pret_vechi": 7399.99,
+"pret_vechi": null,
 "verificat": "2026-11-06"
+},
+{
+"titlu": "Tableta Apple iPad Air 13 M4, Procesor Apple M4 Octa-Core, Ecran Liquid Retina IPS 13inch, 12GB RAM, 512GB Flash, Camera",
+"pret": 7749.99,
+"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4290%2F4290299%2Fapple-13-inch-ipad-air-m4-wi-69c682f893cdd.jpg&type=auto&width=500&sign=sLWFlT5MVPrxaZpiDRn25Mbixv1ptRpPIQIQt1yLSMg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Ftelefoane-tablete-accesorii-tablete-si-accesorii-tablete%2Fapple-tableta-apple-ipad-air-13-m4-procesor-apple-m4-octa-core-ecran-liquid-retina-ips-13-12gb-ram-512gb-flash-camera-12mp-wi-fi-bluetooth-ipados-auriu-4290299.html",
+"magazin": "evomag.ro",
+"id": "J8RX8hfOu8_K",
+"brand": "Apple",
+"url_magazin": "https://www.evomag.ro/telefoane-tablete-accesorii-tablete-si-accesorii-tablete/apple-tableta-apple-ipad-air-13-m4-procesor-apple-m4-octa-core-ecran-liquid-retina-ips-13-12gb-ram-512gb-flash-camera-12mp-wi-fi-bluetooth-ipados-auriu-4290299.html",
+"pret_vechi": null
+},
+{
+"titlu": "Apple Tableta Apple iPad Air 13 M4 Cellular, Procesor Apple M4 Octa-Core, Ecran Liquid Retina IPS 13, 12GB RAM, 256GB Fl",
+"pret": 8146.99,
+"imagine": "https://www.dwyn.ro/images/products/img_202512311121/398026/full/apple-tableta-apple-ipad-air-13-m4-cellular-procesor-apple-m4-octa-core-ecran-liquid-retina-ips-13-12gb-ram-256gb-flash-camera-12mp-wi-fi-bluetooth-5g-ipados-auriu-1229938.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Ftablete-pc%2Fapple%2F398026-tableta-apple-ipad-air-13-m4-cellular-procesor-apple-m4-octa-core-ecran-liquid-retina-ips-13-12gb-ram-256gb-flash-camera-12mp-wi-fi-bluetooth-5g-ipados-auriu%2F",
+"magazin": "dwyn.ro",
+"id": "khaV-PH9c13M",
+"brand": "Apple",
+"url_magazin": "https://www.dwyn.ro/tablete-pc/apple/398026-tableta-apple-ipad-air-13-m4-cellular-procesor-apple-m4-octa-core-ecran-liquid-retina-ips-13-12gb-ram-256gb-flash-camera-12mp-wi-fi-bluetooth-5g-ipados-auriu/",
+"pret_vechi": null
 },
 {
 "titlu": "Apple Tableta Apple iPad Air 11 (M4) Wi-Fi 1TB, Procesor Apple M4, Ecran Liquid Retina 11, 12GB RAM, 1TB Flash, Wi-Fi 7,",
@@ -8692,7 +8679,7 @@
 },
 {
 "titlu": "Apple Tableta Apple iPad Air 13 M4, Procesor Apple M4 Octa-Core, Ecran Liquid Retina IPS 13, 12GB RAM, 1TB Flash, Camera",
-"pret": 9756.99,
+"pret": 9759.99,
 "imagine": "https://www.dwyn.ro/images/products/img_202606122129/428146/full/apple-ipad-air-13-m4-wifi-1tb-starlight-mh654hc-a-timbru-verde-0-9-lei-1381855.jpg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Ftablete-pc%2Fapple%2F428146-tableta-apple-ipad-air-13-m4-procesor-apple-m4-octa-core-ecran-liquid-retina-ips-13-12gb-ram-1tb-flash-camera-12mp-wi-fi-bluetooth-ipados-auriu%2F",
 "magazin": "dwyn.ro",
@@ -8702,27 +8689,15 @@
 "pret_vechi": null
 },
 {
-"titlu": "Apple Tableta Apple iPad Pro 11 (2025) Standard Glass, Apple M5 Deca Core, 11 inch, RAM 16GB, 1TB, Wi-Fi, BT, iPadOS 26,",
-"pret": 11102.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202512311121/383303/full/apple-tableta-apple-ipad-pro-11-2025-standard-glass-apple-m5-deca-core-11-inch-ram-16gb-1tb-wi-fi-bt-ipados-26-argintiu-1163090.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Ftablete-pc%2Fapple%2F383303-tableta-apple-ipad-pro-11-2025-standard-glass-apple-m5-deca-core-11-inch-ram-16gb-1tb-wi-fi-bt-ipados-26-argintiu%2F",
+"titlu": "Apple Tableta Apple iPad Pro 13 2025, Procesor Apple M5, Ecran Ultra Retina OLED 13, 12GB RAM, 512GB Flash, Camera 12 MP",
+"pret": 10213.99,
+"imagine": "https://www.dwyn.ro/images/products/img_202508191322/344723/full/apple-tableta-apple-ipad-pro-13-2025-procesor-apple-m5-ecran-ultra-retina-oled-13-12gb-ram-512gb-flash-camera-12-mp-wi-fi-bluetooth-gps-ipados-argintiu-933257.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Ftablete-pc%2Fapple%2F344723-tableta-apple-ipad-pro-13-2025-procesor-apple-m5-ecran-ultra-retina-oled-13-12gb-ram-512gb-flash-camera-12-mp-wi-fi-bluetooth-gps-ipados-argintiu%2F",
 "magazin": "dwyn.ro",
-"id": "-azYdg8ZeUiF",
+"id": "p4y2FEG23PBJ",
 "brand": "Apple",
-"url_magazin": "https://www.dwyn.ro/tablete-pc/apple/383303-tableta-apple-ipad-pro-11-2025-standard-glass-apple-m5-deca-core-11-inch-ram-16gb-1tb-wi-fi-bt-ipados-26-argintiu/",
+"url_magazin": "https://www.dwyn.ro/tablete-pc/apple/344723-tableta-apple-ipad-pro-13-2025-procesor-apple-m5-ecran-ultra-retina-oled-13-12gb-ram-512gb-flash-camera-12-mp-wi-fi-bluetooth-gps-ipados-argintiu/",
 "pret_vechi": null
-},
-{
-"titlu": "Tableta Apple iPad Pro 13 2025 Cellular, Procesor Apple M5, Ecran Ultra Retina OLED 13inch, Nano Texture, 16GB RAM, 2TB",
-"pret": 17599.99,
-"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4255%2F4255550%2Fapple-13-inch-ipad-pro-m5-ce-68f6686a869b1.jpg&type=auto&width=500&sign=GHDNJD5kl7jXQkBxyFo8WfZfLd1_UdtPYlYAgAbvrGc",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Ftelefoane-tablete-accesorii-tablete-si-accesorii-tablete%2Fapple-tableta-apple-ipad-pro-13-2025-cellular-procesor-apple-m5-ecran-ultra-retina-oled-13-nano-texture-16gb-ram-2tb-flash-camera-12-mp-wi-fi-bluetooth-gps-5g-ipados-argintiu-4255550.html",
-"magazin": "evomag.ro",
-"id": "xmHYUSgt5qzX",
-"brand": "Apple",
-"url_magazin": "https://www.evomag.ro/telefoane-tablete-accesorii-tablete-si-accesorii-tablete/apple-tableta-apple-ipad-pro-13-2025-cellular-procesor-apple-m5-ecran-ultra-retina-oled-13-nano-texture-16gb-ram-2tb-flash-camera-12-mp-wi-fi-bluetooth-gps-5g-ipados-argintiu-4255550.html",
-"pret_vechi": null,
-"verificat": "2026-11-06"
 }
 ],
 "magazine": [
