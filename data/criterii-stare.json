@@ -188,7 +188,8 @@
 "id": "sQ3a69iE0glQ",
 "brand": "Heinner",
 "url_magazin": "https://www.evomag.ro/electrocasnice-electrocasnice-mari-masini-de-spalat-rufe-si-accesorii-masini-de-spalat-rufe/heinner-masina-de-spalat-rufe-cu-incarcare-verticala-heinner-hwm-tl7012c-7-kg-1200-rpm-15-programe-a-61-cm-alb-4223355.html",
-"pret_vechi": null
+"pret_vechi": null,
+"verificat": "2026-11-15"
 },
 {
 "titlu": "CANDY Masina de spalat rufe cu incarcare verticala Candy, Control digita, l 7kg, Start intarziat, 1200rpm, Clasa C, Alba",
@@ -6272,6 +6273,18 @@
 ]
 },
 {
+"slug": "laptop-sub-3000-lei",
+"tema": "laptopuri",
+"tema_nume": "Laptopuri",
+"titlu": "Laptopuri sub 3.000 lei",
+"nota": null,
+"in_text": null,
+"actualizat": "2026-11-15",
+"feeduri": [],
+"produse": [],
+"magazine": []
+},
+{
 "slug": "telefon-256-gb",
 "tema": "telefoane",
 "tema_nume": "Telefoane",
@@ -6390,6 +6403,18 @@
 "magazine": [
 "dwyn.ro"
 ]
+},
+{
+"slug": "telefon-128-gb",
+"tema": "telefoane",
+"tema_nume": "Telefoane",
+"titlu": "Telefoane cu 128 GB",
+"nota": null,
+"in_text": null,
+"actualizat": "2026-11-15",
+"feeduri": [],
+"produse": [],
+"magazine": []
 },
 {
 "slug": "telefon-5g",
@@ -8680,6 +8705,18 @@
 "dwyn.ro",
 "evomag.ro"
 ]
+},
+{
+"slug": "tableta-sub-1000-lei",
+"tema": "tablete",
+"tema_nume": "Tablete",
+"titlu": "Tablete sub 1.000 lei",
+"nota": null,
+"in_text": null,
+"actualizat": "2026-11-15",
+"feeduri": [],
+"produse": [],
+"magazine": []
 },
 {
 "slug": "aspirator-robot-cu-mop",
@@ -12622,7 +12659,7 @@
 "titlu": "Cuptoare cu microunde",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-06",
+"actualizat": "2026-11-15",
 "feeduri": [
 {
 "id": 7871,
@@ -12655,18 +12692,6 @@
 "verificat": "2026-11-04"
 },
 {
-"titlu": "Cuptor cu microunde HEINNER HMW-20MSS, 700 W, 20 L, Timer, 5 trepte putere, Decongelare (Negru/Inox)",
-"pret": 282.99,
-"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4311%2F4311247%2Foverlay_e8c52ffcb00782d115a1a308ac5a6e43.png&type=auto&width=500&sign=tsZiQF_iDS0gg2LHK1qsKpjxcUOvBn-pkxrdbcTh8aM",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Felectrocasnice-cuptoare-cu-microunde%2Fheinner-cuptor-cu-microunde-heinner-hmw-20mss-700-w-20-l-timer-5-trepte-putere-decongelare-negru-inox-4311247.html",
-"magazin": "evomag.ro",
-"id": "B2QJfgr4nvQ2",
-"brand": "Heinner",
-"url_magazin": "https://www.evomag.ro/electrocasnice-cuptoare-cu-microunde/heinner-cuptor-cu-microunde-heinner-hmw-20mss-700-w-20-l-timer-5-trepte-putere-decongelare-negru-inox-4311247.html",
-"pret_vechi": null,
-"verificat": "2026-11-06"
-},
-{
 "titlu": "Cuptor cu microunde Beko MOC20100WFB, 700 W, 20 L, 6 trepte putere, Functie dezghetare (Alb)",
 "pret": 292.99,
 "imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4028%2F4028037%2Fcuptor-cu-microunde-beko-moc20-6357d6a0f2532.JPG&type=auto&width=500&sign=3e9ZnFr3UOsNt6wfdi9coQt3GWRQuZEOYjriDHAfXDA",
@@ -12691,6 +12716,17 @@
 "verificat": "2026-11-04"
 },
 {
+"titlu": "Daewoo Cuptor cu microunde Daewoo KOR-6S20W, 20 l, 700 W, Mecanic, Alb",
+"pret": 368.99,
+"imagine": "https://www.dwyn.ro/images/products/img_202106242018/164940/full/daewoo-cuptor-cu-microunde-daewoo-kor-6s20w-20-l-700-w-mecanic-alb-274489.webp",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fcuptor-cu-microunde%2Fdaewoo%2F164940-cuptor-cu-microunde-daewoo-kor-6s20w-20-l-700-w-mecanic-alb%2F",
+"magazin": "dwyn.ro",
+"id": "bSuMBN-1ShqB",
+"brand": "Daewoo",
+"url_magazin": "https://www.dwyn.ro/cuptor-cu-microunde/daewoo/164940-cuptor-cu-microunde-daewoo-kor-6s20w-20-l-700-w-mecanic-alb/",
+"pret_vechi": null
+},
+{
 "titlu": "Toshiba Cuptor cu microunde Toshiba MWP-MG20P(BK), 700W, 20 litri, panou mecanic, 5 trepte, grill, Negru",
 "pret": 420.99,
 "imagine": "https://www.dwyn.ro/images/products/img_202305231058/203196/full/toshiba-cuptor-cu-microunde-toshiba-mwp-mg20p-bk-700w-20-litri-panou-mecanic-5-trepte-grill-negru-423966.jpg",
@@ -12700,18 +12736,6 @@
 "brand": "Toshiba",
 "url_magazin": "https://www.dwyn.ro/cuptor-cu-microunde/toshiba/203196-cuptor-cu-microunde-toshiba-mwp-mg20p-bk-700w-20-litri-panou-mecanic-5-trepte-grill-negru/",
 "pret_vechi": null,
-"verificat": "2026-11-04"
-},
-{
-"titlu": "Cuptor cu microunde Beko MOC20100BFB, Putere 700 W, 20 L, Functie Dezghetare",
-"pret": 429.01,
-"imagine": "https://infinityro.vteximg.com.br/arquivos/ids/269835651/image-af6c8bad565b43509957da6e6ab645c7.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Finfinity.ro%2Fcuptor-cu-microunde-beko-moc20100bfb-putere-700-w-20-l-functie-dezghetare-1830712%2Fp%3Futm_source%3D2performant",
-"magazin": "infinity.ro",
-"id": "b6l8hLw46MTG",
-"brand": "BEKO",
-"url_magazin": "https://infinity.ro/cuptor-cu-microunde-beko-moc20100bfb-putere-700-w-20-l-functie-dezghetare-1830712/p?utm_source=2performant",
-"pret_vechi": 560.0,
 "verificat": "2026-11-04"
 },
 {
@@ -12735,7 +12759,7 @@
 "id": "T7b5Fdp8OTGK",
 "brand": "BEKO",
 "url_magazin": "https://infinity.ro/cuptor-cu-microunde-beko-moc20100sfb-20l-700w-argintiu-negru-1830711/p?utm_source=2performant",
-"pret_vechi": 600.0,
+"pret_vechi": 624.2,
 "verificat": "2026-11-04"
 },
 {
@@ -12751,16 +12775,26 @@
 "verificat": "2026-11-04"
 },
 {
-"titlu": "Sharp Cuptor cu microunde, Sharp, Semi-digital, 700 W, 20 L, 6 nivele, Iluminare LED, Argintiu",
-"pret": 568.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202404261115/245513/full/sharp-cuptor-cu-microunde-sharp-semi-digital-700-w-20-l-6-nivele-iluminare-led-argintiu-535235.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fcuptor-cu-microunde%2Fsharp%2F245513-cuptor-cu-microunde-sharp-semi-digital-700-w-20-l-6-nivele-iluminare-led-argintiu%2F",
+"titlu": "Samsung Cuptor cu microunde Samsung MS20A3010AL/EC, 700W, 20L, Temporizator, Negru",
+"pret": 503.99,
+"imagine": "https://www.dwyn.ro/images/products/img_202606122129/425182/full/samsung-ms20a3010al-ec-1371382.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fcuptor-cu-microunde%2Fsamsung%2F425182-cuptor-cu-microunde-samsung-ms20a3010al-ec-700w-20l-temporizator-negru%2F",
 "magazin": "dwyn.ro",
-"id": "YKJl-QNmmCRj",
-"brand": "Sharp",
-"url_magazin": "https://www.dwyn.ro/cuptor-cu-microunde/sharp/245513-cuptor-cu-microunde-sharp-semi-digital-700-w-20-l-6-nivele-iluminare-led-argintiu/",
-"pret_vechi": null,
-"verificat": "2026-11-04"
+"id": "QXx9D88lLpa7",
+"brand": "Samsung",
+"url_magazin": "https://www.dwyn.ro/cuptor-cu-microunde/samsung/425182-cuptor-cu-microunde-samsung-ms20a3010al-ec-700w-20l-temporizator-negru/",
+"pret_vechi": null
+},
+{
+"titlu": "Cuptor cu microunde Beko MOC20100BFB, 700 W, 20 L, Functie dezghetare (Negru)",
+"pret": 524.99,
+"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4088%2F4088408%2Fcuptor-cu-microunde-beko-moc20-64368922cb983.JPG&type=auto&width=500&sign=ca_nJOfmZSqCuhz8yifm1vhEpVpRssm77X_8qj7KufA",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Felectrocasnice-cuptoare-cu-microunde%2Fbeko-cuptor-cu-microunde-beko-moc20100bfb-700-w-20-l-functie-dezghetare-negru-4088408.html",
+"magazin": "evomag.ro",
+"id": "jFS6zOXUekCS",
+"brand": "Beko",
+"url_magazin": "https://www.evomag.ro/electrocasnice-cuptoare-cu-microunde/beko-cuptor-cu-microunde-beko-moc20100bfb-700-w-20-l-functie-dezghetare-negru-4088408.html",
+"pret_vechi": null
 },
 {
 "titlu": "Sencor Cuptor cu microunde Sencor SMW 1920RD, 20 l, 700 W, 5 trepte, mecanic, Rosu",
@@ -12811,26 +12845,48 @@
 "verificat": "2026-11-06"
 },
 {
-"titlu": "Panasonic Cuptor cu microunde Panasonic, NN-GM22QBEPG, grill, 20 Litri, 800 W, Negru",
-"pret": 667.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202606122129/433804/full/panasonic-cuptor-cu-microunde-panasonic-nn-gm22qbepg-grill-20-litri-800-w-negru-1395010.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fcuptor-cu-microunde%2Fpanasonic%2F433804-cuptor-cu-microunde-panasonic-nn-gm22qbepg-grill-20-litri-800-w-negru%2F",
-"magazin": "dwyn.ro",
-"id": "pv0ssjIVNwG2",
-"brand": "Panasonic",
-"url_magazin": "https://www.dwyn.ro/cuptor-cu-microunde/panasonic/433804-cuptor-cu-microunde-panasonic-nn-gm22qbepg-grill-20-litri-800-w-negru/",
+"titlu": "Cuptor cu microunde Electrolux EMZ421MMTI, 20 L, 800 W, Grill (Argintiu)",
+"pret": 626.99,
+"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4075%2F4075138%2Femz421mmti-63c6b28a09b91.JPG&type=auto&width=500&sign=5uGK79gGiMGPhMW0vhC-y0QAzBxjPHjoAVRBtkdMN2s",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Felectrocasnice-cuptoare-cu-microunde%2Felectrolux-cuptor-cu-microunde-electrolux-emz421mmti-20-l-800-w-grill-argintiu-4075138.html",
+"magazin": "evomag.ro",
+"id": "2Nj50em4KFeq",
+"brand": "Electrolux",
+"url_magazin": "https://www.evomag.ro/electrocasnice-cuptoare-cu-microunde/electrolux-cuptor-cu-microunde-electrolux-emz421mmti-20-l-800-w-grill-argintiu-4075138.html",
+"pret_vechi": 762.99
+},
+{
+"titlu": "Cuptor cu microunde LG MH6032GAS, 20 L, 700 W, Grill (Negru)",
+"pret": 681.99,
+"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4316%2F4316519%2Flg-mh6032gas-6ab0f51783b6a.jpg&type=auto&width=500&sign=W_dGMipGv8wwOFoLO4sK8R_IAXVLXgKmcSI63Ao3u60",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Felectrocasnice-cuptoare-cu-microunde%2Flg-cuptor-cu-microunde-lg-mh6032gas-20-l-700-w-grill-negru-4316519.html",
+"magazin": "evomag.ro",
+"id": "ztPjPEHeketd",
+"brand": "LG",
+"url_magazin": "https://www.evomag.ro/electrocasnice-cuptoare-cu-microunde/lg-cuptor-cu-microunde-lg-mh6032gas-20-l-700-w-grill-negru-4316519.html",
+"pret_vechi": null
+},
+{
+"titlu": "Cuptor cu microunde Samsung Bespoke MG23T5018CK/BA, 23 L, 800 W, Grill, 6 trepte putere (Negru)",
+"pret": 699.99,
+"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4316%2F4316507%2Fcuptor-cu-microunde-samsung-be-6ab0eae795bf9.png&type=auto&width=500&sign=Jh__m9HjK9Y4G4KsCt55aKW1H1jAy9AHThhmFxjiqKM",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Felectrocasnice-cuptoare-cu-microunde%2Fsamsung-cuptor-cu-microunde-samsung-bespoke-mg23t5018ck-ba-23-l-800-w-grill-6-trepte-putere-negru-4316507.html",
+"magazin": "evomag.ro",
+"id": "CDXRnF3FWNHr",
+"brand": "Samsung",
+"url_magazin": "https://www.evomag.ro/electrocasnice-cuptoare-cu-microunde/samsung-cuptor-cu-microunde-samsung-bespoke-mg23t5018ck-ba-23-l-800-w-grill-6-trepte-putere-negru-4316507.html",
 "pret_vechi": null
 },
 {
 "titlu": "Cuptor cu microunde BMGB25332BG, Putere 900 W, 25 L, Functie AutoCook, Negru / Gri",
 "pret": 817.94,
-"imagine": "https://infinityro.vteximg.com.br/arquivos/ids/275804460/Image-1.png",
+"imagine": "https://infinityro.vteximg.com.br/arquivos/ids/276028021/Image-1.png",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Finfinity.ro%2Fcuptor-cu-microunde-bmgb25332bg-putere-900-w-25-l-functie-autocook-negru-gri-1830714%2Fp%3Futm_source%3D2performant",
 "magazin": "infinity.ro",
 "id": "s4V0TLBEcnlS",
 "brand": "BEKO",
 "url_magazin": "https://infinity.ro/cuptor-cu-microunde-bmgb25332bg-putere-900-w-25-l-functie-autocook-negru-gri-1830714/p?utm_source=2performant",
-"pret_vechi": null,
+"pret_vechi": 1323.2,
 "verificat": "2026-11-04"
 }
 ],
@@ -12847,7 +12903,7 @@
 "titlu": "Cuptoare încorporabile",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-06",
+"actualizat": "2026-11-15",
 "feeduri": [
 {
 "id": 1539,
@@ -12887,18 +12943,6 @@
 "verificat": "2026-11-04"
 },
 {
-"titlu": "Cuptor incorporabil Nobeltek NBIO-614IX-1, Electric, 5 functii, 3 butoane, timer mecanic, 56L, sticla dubla, ventilator",
-"pret": 927.99,
-"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4263%2F4263246%2Fnbio-614ix-1-69281ffb994bd.jpg&type=auto&width=500&sign=qmfxMBMVZ7QkqwxywPFsH9rhtgrC-bOCzy0vpv4aatg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Felectrocasnice-electrocasnice-mari-cuptoare-incorporabile%2Fnobeltek-cuptor-incorporabil-nobeltek-nbio-614ix-1-electric-5-functii-3-butoane-timer-mecanic-56l-sticla-dubla-ventilator-de-racire-inox-4263246.html",
-"magazin": "evomag.ro",
-"id": "0rIrAeX02K_s",
-"brand": "Nobeltek",
-"url_magazin": "https://www.evomag.ro/electrocasnice-electrocasnice-mari-cuptoare-incorporabile/nobeltek-cuptor-incorporabil-nobeltek-nbio-614ix-1-electric-5-functii-3-butoane-timer-mecanic-56l-sticla-dubla-ventilator-de-racire-inox-4263246.html",
-"pret_vechi": null,
-"verificat": "2026-11-04"
-},
-{
 "titlu": "NobeLTek Cuptor incorporabil Nobeltek NBIO-614BK-1, electric, 56L, 5 functii, timer mecanic, ventilator de racire, Negru",
 "pret": 929.99,
 "imagine": "https://www.dwyn.ro/images/products/img_202512311121/241443/full/nobeltek-cuptor-incorporabil-nobeltek-nbio-614bk-1-electric-56-l-5-functii-timer-mecanic-ventilator-de-racire-negru-1194796.jpg",
@@ -12919,30 +12963,6 @@
 "id": "ZSA6MCo50JEL",
 "brand": "NobeLTek",
 "url_magazin": "https://www.dwyn.ro/cuptor-incorporabil/nobeltek/186954-cuptor-incorporabil-electric-6-functii-3-butoane-timer-mecanic-76l-sticla-dubla-ventilator-de-racire-inox/",
-"pret_vechi": null,
-"verificat": "2026-11-04"
-},
-{
-"titlu": "Cuptor incorporabil Nobeltek NBIO-614BK-1, Electric, 56 l, 5 functii, Timer mecanic, Ventilator de racire (Negru)",
-"pret": 956.99,
-"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4239%2F4239071%2F688b1094d439e.jpg&type=auto&width=500&sign=atYdgKp5NQhssxOJTC03-cIIXuQZZPeyQdOR1bKfb_I",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Felectrocasnice-electrocasnice-mari-cuptoare-incorporabile%2Fnobeltek-cuptor-incorporabil-nobeltek-nbio-614bk-1-electric-56-l-5-functii-timer-mecanic-ventilator-de-racire-negru-4239071.html",
-"magazin": "evomag.ro",
-"id": "dQithDFW28kx",
-"brand": "Nobeltek",
-"url_magazin": "https://www.evomag.ro/electrocasnice-electrocasnice-mari-cuptoare-incorporabile/nobeltek-cuptor-incorporabil-nobeltek-nbio-614bk-1-electric-56-l-5-functii-timer-mecanic-ventilator-de-racire-negru-4239071.html",
-"pret_vechi": null,
-"verificat": "2026-11-04"
-},
-{
-"titlu": "Cuptor incorporabil Fram FBO-V659GCA-RGBG, Electric, 65 l, Autocuratare catalitica, Clasa A, Timer Analog, Grill, Ilumin",
-"pret": 1088.99,
-"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4131%2F4131588%2F656ee6ea8b5d5.jpg&type=auto&width=500&sign=GWwruRFMw9y_DZQ4_Nwjudebffr2M5jSeLiieerTZ-4",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Felectrocasnice-electrocasnice-mari-cuptoare-incorporabile%2Ffram-cuptor-incorporabil-fram-fbo-v659gca-rgbg-electric-65-l-autocuratare-catalitica-clasa-a-timer-analog-grill-iluminare-design-rustic-crem-4131588.html",
-"magazin": "evomag.ro",
-"id": "hecGbDIimYJC",
-"brand": "Fram",
-"url_magazin": "https://www.evomag.ro/electrocasnice-electrocasnice-mari-cuptoare-incorporabile/fram-cuptor-incorporabil-fram-fbo-v659gca-rgbg-electric-65-l-autocuratare-catalitica-clasa-a-timer-analog-grill-iluminare-design-rustic-crem-4131588.html",
 "pret_vechi": null,
 "verificat": "2026-11-04"
 },
@@ -12993,18 +13013,6 @@
 "pret_vechi": 2299.99
 },
 {
-"titlu": "hansa Cuptor incorporabil Hansa BOEI684097, X-Type, 9 functii, 77 l, Grill, Timer electronic, Clasa A, Inox",
-"pret": 1407.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202106242018/173794/full/hansa-cuptor-incorporabil-hansa-boei684097-x-type-9-functii-77-l-grill-timer-electronic-clasa-a-inox-303966.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fcuptor-incorporabil%2Fhansa%2F173794-cuptor-incorporabil-hansa-boei684097-x-type-9-functii-77-l-grill-timer-electronic-clasa-a-inox%2F",
-"magazin": "dwyn.ro",
-"id": "hfuB0QgD0YD8",
-"brand": "hansa",
-"url_magazin": "https://www.dwyn.ro/cuptor-incorporabil/hansa/173794-cuptor-incorporabil-hansa-boei684097-x-type-9-functii-77-l-grill-timer-electronic-clasa-a-inox/",
-"pret_vechi": null,
-"verificat": "2026-11-04"
-},
-{
 "titlu": "Cuptor incorporabil Electrolux EOF3H50BK, Electric, 65 l, 9 programe, Convectie, SourroundCook, Grill, Clasa A, Negru",
 "pret": 1414.99,
 "imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4028%2F4028054%2F633e896a422c1.jpg&type=auto&width=500&sign=0t9fed_R2o3mbcmlAfF8W4eFuYT3Qp_jKvjcwa78n70",
@@ -13013,8 +13021,19 @@
 "id": "Zydj97mfIFET",
 "brand": "Electrolux",
 "url_magazin": "https://www.evomag.ro/electrocasnice-electrocasnice-mari-cuptoare-incorporabile/electrolux-cuptor-incorporabil-electrolux-eof3h50bk-electric-65-l-9-programe-convectie-sourroundcook-grill-clasa-a-negru-4028054.html",
-"pret_vechi": 1499.99,
+"pret_vechi": null,
 "verificat": "2026-11-04"
+},
+{
+"titlu": "Cuptor incorporabil ELECTROLUX SurroundCook EOF3H40BK, 65 L, Clasa A, Control Thermotimer (Negru)",
+"pret": 1599.99,
+"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4322%2F4322720%2Fcuptor-incorporabil-electrolux-6af2d66bbe0f2.jpg&type=auto&width=500&sign=5Rq2Jx9Y3Qyzf8V8lL041tRnkkYDgg-tTa-41xGzdz0",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Felectrocasnice-electrocasnice-mari-cuptoare-incorporabile%2Felectrolux-cuptor-incorporabil-electrolux-surroundcook-eof3h40bk-65-l-clasa-a-control-thermotimer-negru-4322720.html",
+"magazin": "evomag.ro",
+"id": "Jooro7xIwh4b",
+"brand": "Electrolux",
+"url_magazin": "https://www.evomag.ro/electrocasnice-electrocasnice-mari-cuptoare-incorporabile/electrolux-cuptor-incorporabil-electrolux-surroundcook-eof3h40bk-65-l-clasa-a-control-thermotimer-negru-4322720.html",
+"pret_vechi": null
 },
 {
 "titlu": "MPM Cuptor electric multifunctional incorporabil MPM-63-BO-30, 76L, clasa A, STEAMCLEAN, Negru",
@@ -13029,8 +13048,19 @@
 "verificat": "2026-11-04"
 },
 {
+"titlu": "Cuptor incorporabil Electrolux EOF5H40BX, Electric, 65 L, Grill, Clasa A (Negru/Argintiu)",
+"pret": 1699.99,
+"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4074%2F4074092%2Feof5h40bx-63bd18785c6cd.JPG&type=auto&width=500&sign=mJQzwNHPOJi9Nr4mAjol06Vofjz4FL2uByjBSBW8tRk",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Felectrocasnice-electrocasnice-mari-cuptoare-incorporabile%2Felectrolux-cuptor-incorporabil-electrolux-eof5h40bx-electric-65-l-grill-clasa-a-negru-argintiu-4074092.html",
+"magazin": "evomag.ro",
+"id": "TsEOdHE9YSSe",
+"brand": "Electrolux",
+"url_magazin": "https://www.evomag.ro/electrocasnice-electrocasnice-mari-cuptoare-incorporabile/electrolux-cuptor-incorporabil-electrolux-eof5h40bx-electric-65-l-grill-clasa-a-negru-argintiu-4074092.html",
+"pret_vechi": null
+},
+{
 "titlu": "Electrolux Cuptor electric incorporabil Electrolux SurroundCook EOF5F50BX, 3 niveluri curatare, 65L, Negru-Inox",
-"pret": 1766.99,
+"pret": 1762.99,
 "imagine": "https://www.dwyn.ro/images/products/img_202606122129/439906/full/electrolux-cuptor-electric-electrolux-surroundcook-eof5f50bx-3-niveluri-curatare-eficienta-culoare-inox-1410478.jpg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fcuptor-incorporabil%2Felectrolux%2F439906-cuptor-electric-incorporabil-electrolux-surroundcook-eof5f50bx-3-niveluri-curatare-65l-negru-inox%2F",
 "magazin": "dwyn.ro",
@@ -13040,14 +13070,36 @@
 "pret_vechi": null
 },
 {
+"titlu": "Cuptor incorporabil BOSCH HBF153BB0, Clasa A, Capacitate 66 l, Electric, 5 functii, Grill, Timer, EcoClean (Negru)",
+"pret": 1921.99,
+"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4305%2F4305536%2F6a55ba423bee1.jpg&type=auto&width=500&sign=3ksBNzhOWImROirs7A6vzN6ARY9iD5OWa7SUtiaC_gI",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Felectrocasnice-electrocasnice-mari-cuptoare-incorporabile%2Fbosch-cuptor-incorporabil-bosch-hbf153bb0-clasa-a-capacitate-66-l-electric-5-functii-grill-timer-ecoclean-negru-4305536.html",
+"magazin": "evomag.ro",
+"id": "PcaIobmu47Im",
+"brand": "BOSCH",
+"url_magazin": "https://www.evomag.ro/electrocasnice-electrocasnice-mari-cuptoare-incorporabile/bosch-cuptor-incorporabil-bosch-hbf153bb0-clasa-a-capacitate-66-l-electric-5-functii-grill-timer-ecoclean-negru-4305536.html",
+"pret_vechi": null
+},
+{
 "titlu": "Whirlpool Cuptor electric incorporabil Whirlpool WOI5S8HM1SXA, 73L, Clasa A+, Negru - Otel inoxidabil",
-"pret": 2041.99,
+"pret": 2037.99,
 "imagine": "https://www.dwyn.ro/images/products/img_202606122129/439918/full/whirlpool-oven-woi5s8hm1sxa-1410532.jpg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fcuptor-incorporabil%2Fwhirlpool%2F439918-cuptor-electric-incorporabil-whirlpool-woi5s8hm1sxa-73l-clasa-a-plus-negru-otel-inoxidabil%2F",
 "magazin": "dwyn.ro",
 "id": "DQVu6sjOiXqv",
 "brand": "Whirlpool",
 "url_magazin": "https://www.dwyn.ro/cuptor-incorporabil/whirlpool/439918-cuptor-electric-incorporabil-whirlpool-woi5s8hm1sxa-73l-clasa-a-plus-negru-otel-inoxidabil/",
+"pret_vechi": null
+},
+{
+"titlu": "AMICA Cuptor electric incorporabil Amica EB7541B FINE SOFT, 65L, 3,1kW, Negru",
+"pret": 2063.99,
+"imagine": "https://www.dwyn.ro/images/products/img_202606122129/439900/full/amica-oven-eb7541b-fine-soft-1417828.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fcuptor-incorporabil%2Famica%2F439900-cuptor-electric-incorporabil-amica-eb7541b-fine-soft-65l-3-1kw-negru%2F",
+"magazin": "dwyn.ro",
+"id": "Wmt5wYxb4_SG",
+"brand": "AMICA",
+"url_magazin": "https://www.dwyn.ro/cuptor-incorporabil/amica/439900-cuptor-electric-incorporabil-amica-eb7541b-fine-soft-65l-3-1kw-negru/",
 "pret_vechi": null
 }
 ],
@@ -13063,7 +13115,7 @@
 "titlu": "Plite cu inducție",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-06",
+"actualizat": "2026-11-15",
 "feeduri": [
 {
 "id": 1539,
@@ -13191,18 +13243,6 @@
 "verificat": "2026-11-04"
 },
 {
-"titlu": "Plita cu inductie HEINNER HFSHI-M2ZBTC, 2 zone, Timer, 10/8 nivele de putere, Boost, 3500 W (Negru)",
-"pret": 462.99,
-"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4310%2F4310306%2Foverlay_cf806e027f60cc97b27dea5ab4f8d318.jpg&type=auto&width=500&sign=hR187wSKDRGo8CVmiPiCCtEkGffk-C8Oq3xqfXiNd0k",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Felectrocasnice-electrocasnice-pentru-bucatarie-plite-electrice-si-pe-gaz%2Fheinner-plita-cu-inductie-heinner-hfshi-m2zbtc-2-zone-timer-10-8-nivele-de-putere-boost-3500-w-negru-4310306.html",
-"magazin": "evomag.ro",
-"id": "nLfCZ7XYB-K2",
-"brand": "Heinner",
-"url_magazin": "https://www.evomag.ro/electrocasnice-electrocasnice-pentru-bucatarie-plite-electrice-si-pe-gaz/heinner-plita-cu-inductie-heinner-hfshi-m2zbtc-2-zone-timer-10-8-nivele-de-putere-boost-3500-w-negru-4310306.html",
-"pret_vechi": null,
-"verificat": "2026-11-04"
-},
-{
 "titlu": "Plita cu inductie profesionala, 2000W, control digital, corp inox, HENDI, 296x370x(H)46 mm",
 "pret": 469.0,
 "imagine": "https://micul-meserias.ro/image/cache/catalog/Plita-cu-inductie-profesionala",
@@ -13211,7 +13251,7 @@
 "id": "fc7eaeb9e",
 "brand": "Hendi",
 "url_magazin": "https://micul-meserias.ro/plita-cu-inductie-profesionala-2000w-control-digital-corp-inox-hendi-296x370x-h-46-mm",
-"pret_vechi": 586.0,
+"pret_vechi": 605.0,
 "verificat": "2026-11-04"
 },
 {
@@ -13251,6 +13291,17 @@
 "verificat": "2026-11-04"
 },
 {
+"titlu": "Plita incorporabila HEINNER HBHI-M4ZBSTC, Inductie, 4 zone de gatit, 7400 W, Timer, Control touch (Negru)",
+"pret": 702.99,
+"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4196%2F4196315%2Foverlay_21f50d653f259b9b0bac76877961ae64.png&type=auto&width=500&sign=KKNaZLHJe32aAdhPZ0otbBOKTHFQgaLbIKkhaWehOqI",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Felectrocasnice-electrocasnice-mari-plite-incorporabile%2Fheinner-plita-incorporabila-heinner-hbhi-m4zbstc-inductie-4-zone-de-gatit-7400-w-timer-control-touch-negru-4196315.html",
+"magazin": "evomag.ro",
+"id": "uCjMJag9UOO4",
+"brand": "Heinner",
+"url_magazin": "https://www.evomag.ro/electrocasnice-electrocasnice-mari-plite-incorporabile/heinner-plita-incorporabila-heinner-hbhi-m4zbstc-inductie-4-zone-de-gatit-7400-w-timer-control-touch-negru-4196315.html",
+"pret_vechi": null
+},
+{
 "titlu": "Plita incorporabila Samus PSI-64BG8, Inductie, 4 Zone de gatit (Negru)",
 "pret": 748.99,
 "imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F3792%2F3792486%2F1593766240PSI-64BG8.JPG&type=auto&width=500&sign=Y-Cg2nIVPa0HuRgz0RlRXu31D6VbAhtOwrPGkAqrVPw",
@@ -13261,6 +13312,17 @@
 "url_magazin": "https://www.evomag.ro/electrocasnice-electrocasnice-mari-plite-incorporabile/samus-plita-incorporabila-samus-psi-64bg8-inductie-4-zone-de-gatit-negru-3792486.html",
 "pret_vechi": null,
 "verificat": "2026-11-04"
+},
+{
+"titlu": "Plita incorporabila Hansa BHI68323, Inductie, 4 zone de gatit, Booster, Control touch+/-, Slider cu 9 nivele de putere,",
+"pret": 773.99,
+"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4321%2F4321473%2F6ae892a50927f.jpg&type=auto&width=500&sign=XalBw6_40cZYUF7PfwHfr2dJ6nLkVN_gH1QcYZbsays",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Felectrocasnice-electrocasnice-mari-plite-incorporabile%2Fhansa-plita-incorporabila-hansa-bhi68323-inductie-4-zone-de-gatit-booster-control-touch-slider-cu-9-nivele-de-putere-protectie-copii-negru-4321473.html",
+"magazin": "evomag.ro",
+"id": "5HG0oWEqgLnE",
+"brand": "Hansa",
+"url_magazin": "https://www.evomag.ro/electrocasnice-electrocasnice-mari-plite-incorporabile/hansa-plita-incorporabila-hansa-bhi68323-inductie-4-zone-de-gatit-booster-control-touch-slider-cu-9-nivele-de-putere-protectie-copii-negru-4321473.html",
+"pret_vechi": null
 },
 {
 "titlu": "Samus Plita cu Inductie Samus PSI-64BG8, Latime 60 cm, Touch Control, Negru",
@@ -13294,7 +13356,7 @@
 "id": "qjQ-EM7camzO",
 "brand": "Hendi",
 "url_magazin": "https://micul-meserias.ro/plita-cu-inductie-3500-d-xl-hendi-negru-220240v-3500w-355x400x-i-100mm",
-"pret_vechi": 1155.0,
+"pret_vechi": 1275.0,
 "verificat": "2026-11-04"
 },
 {
@@ -13306,7 +13368,7 @@
 "id": "86ed165fe",
 "brand": "Hendi",
 "url_magazin": "https://micul-meserias.ro/plita-inductie-hendi-black-line-800w-455x333x-h-62mm",
-"pret_vechi": 1186.0,
+"pret_vechi": 1347.0,
 "verificat": "2026-11-04"
 },
 {
@@ -13318,7 +13380,7 @@
 "id": "0c4730b35",
 "brand": "Hendi",
 "url_magazin": "https://micul-meserias.ro/set-plita-cu-inductie-3500w-cratita-tigaie-hendi-negru-220-240v-3500w-320x395x-h-95mm",
-"pret_vechi": 1262.0,
+"pret_vechi": 1302.0,
 "verificat": "2026-11-04"
 },
 {
@@ -13334,39 +13396,26 @@
 "verificat": "2026-11-04"
 },
 {
-"titlu": "Cata Plita cu inductie incorporabila Cata IB 6324E2 BK, 59cm, 4 zone de gatit, Touch control, Neagra",
-"pret": 1137.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202512311121/377393/full/cata-cata-ib-6304e2-bk-hob-induction-width-59-cm-4-cooking-zones-touch-control-black-1092188.png",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fplite%2Fcata%2F377393-plita-cu-inductie-incorporabila-cata-ib-6324e2-bk-59cm-4-zone-de-gatit-touch-control-neagra%2F",
+"titlu": "Plita incorporabila Amica PI6501TU, Inductie, 4 zone de gatit, 7 kW, 9 trepte putere (Negru)",
+"pret": 1088.99,
+"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4316%2F4316186%2F5906006906696-6aabfb54511f5.png&type=auto&width=500&sign=kFBTaHDtW8x3jY4HprZVSDHnfsPkB6Hl2nb_ftwZeNA",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Felectrocasnice-electrocasnice-mari-plite-incorporabile%2Famica-plita-incorporabila-amica-pi6501tu-inductie-4-zone-de-gatit-7-kw-9-trepte-putere-negru-4316186.html",
+"magazin": "evomag.ro",
+"id": "j06ZMHJ0xnkS",
+"brand": "Amica",
+"url_magazin": "https://www.evomag.ro/electrocasnice-electrocasnice-mari-plite-incorporabile/amica-plita-incorporabila-amica-pi6501tu-inductie-4-zone-de-gatit-7-kw-9-trepte-putere-negru-4316186.html",
+"pret_vechi": 1256.99
+},
+{
+"titlu": "hansa Plita inductie Hansa BHI68323, incorporabila sticla vitroceramica, 60 cm, 4 zone, functie Booster 4 zone, 9 trepte",
+"pret": 1097.99,
+"imagine": "https://www.dwyn.ro/images/products/img_202606122129/446707/full/hansa-plita-inductie-hansa-sticla-vitroceramica-60-cm-4-zone-functie-booster-4-zone-9-trepte-de-putere-timer-electronic-cotrol-slider-control-cu-senzor-mentinere-caldura-indicator-caldura-reziduala-ne-1433353.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fplite%2Fhansa%2F446707-plita-inductie-hansa-bhi68323-incorporabila-sticla-vitroceramica-60-cm-4-zone-functie-booster-4-zone-9-trepte-de-putere-timer-electronic-cotrol-slider-control-cu-senzor-mentinere-caldura-indicator-cal%2F",
 "magazin": "dwyn.ro",
-"id": "flFuocVLF6_K",
-"brand": "Cata",
-"url_magazin": "https://www.dwyn.ro/plite/cata/377393-plita-cu-inductie-incorporabila-cata-ib-6324e2-bk-59cm-4-zone-de-gatit-touch-control-neagra/",
+"id": "Gw1e13jU_UeY",
+"brand": "hansa",
+"url_magazin": "https://www.dwyn.ro/plite/hansa/446707-plita-inductie-hansa-bhi68323-incorporabila-sticla-vitroceramica-60-cm-4-zone-functie-booster-4-zone-9-trepte-de-putere-timer-electronic-cotrol-slider-control-cu-senzor-mentinere-caldura-indicator-cal/",
 "pret_vechi": null
-},
-{
-"titlu": "Plita inductie model 3500 M",
-"pret": 1189.0,
-"imagine": "https://micul-meserias.ro/image/cache/catalog/autofeed/12589883_big-1300x1300_0.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fmicul-meserias.ro%2Fplita-inductie-model-3500-m",
-"magazin": "micul-meserias.ro",
-"id": "MoBzXBbYHAzD",
-"brand": "Hendi",
-"url_magazin": "https://micul-meserias.ro/plita-inductie-model-3500-m",
-"pret_vechi": 1486.0,
-"verificat": "2026-11-04"
-},
-{
-"titlu": "Plita dubla cu inductie Black Line, 3500W, 608x370x(H)61mm",
-"pret": 1219.0,
-"imagine": "https://micul-meserias.ro/image/cache/catalog/Plita-dubla-cu-inductie-Black-Line",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fmicul-meserias.ro%2Fplita-dubla-cu-inductie-black-line-3500w-608x370x-h-61mm",
-"magazin": "micul-meserias.ro",
-"id": "93498dde3",
-"brand": "Hendi",
-"url_magazin": "https://micul-meserias.ro/plita-dubla-cu-inductie-black-line-3500w-608x370x-h-61mm",
-"pret_vechi": 1523.0,
-"verificat": "2026-11-04"
 }
 ],
 "magazine": [
@@ -13383,7 +13432,7 @@
 "titlu": "Scaune de gaming",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-06",
+"actualizat": "2026-11-15",
 "feeduri": [
 {
 "id": 6142,
@@ -13523,21 +13572,21 @@
 "pret_vechi": null
 },
 {
-"titlu": "Scaun de Gaming, WF-6049, Negru/Rosu/Alb",
+"titlu": "Scaun de gaming, NexaGlide, Black-Blue WF-6040",
 "pret": 489.0,
-"imagine": "https://cumparamisim.ro/?route=extension/feed/product_feed/image&mid=55&pid=116027&v=c672549c6586f305faff035949cede70",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fcumparamisim.ro%2Fscaun-de-gaming-wf6049-negrurosualb",
+"imagine": "https://cumparamisim.ro/?route=extension/feed/product_feed/image&mid=55&pid=116011&v=32d1e4023d9bdb6c0f0d5a84e68a7267",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fcumparamisim.ro%2Fscaun-de-gaming-nexaglide-blackblue-wf6040",
 "magazin": "cumparamisim.ro",
-"id": "Yd3UHQyw0Vjm",
+"id": "phfSVnnChqP8",
 "brand": "RFAN",
-"url_magazin": "https://cumparamisim.ro/scaun-de-gaming-wf6049-negrurosualb",
+"url_magazin": "https://cumparamisim.ro/scaun-de-gaming-nexaglide-blackblue-wf6040",
 "pret_vechi": null,
-"verificat": "2026-11-06"
+"verificat": "2026-11-15"
 },
 {
 "titlu": "Scaun de gaming OFF 296 negru",
 "pret": 499.73,
-"imagine": "https://www.scauneonline.ro/image/cache/catalog/OFF296/scaun-gaming-off-296-negru-1-1000x1000.jpg",
+"imagine": "https://www.scauneonline.ro/image/cache/catalog/OFF296/scaun-gaming-negru-stofa-off-296-1-1000x1000.jpg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.scauneonline.ro%2Fscaun-gaming-off-296-negru",
 "magazin": "scauneonline.ro",
 "id": "50298acad",
@@ -13619,16 +13668,26 @@
 "verificat": "2026-11-04"
 },
 {
-"titlu": "Scaun gaming Genesis - Nitro 550, G2, gri/negru",
-"pret": 869.0,
-"imagine": "https://www.ozone.ro/media/catalog/product/g/e/geyming_stol_genesis_nitro_550_g2_sivo_cherno_1791554332_5.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ozone.ro%2Fproduct%2Fscaun-gaming-genesis-nitro-550-g2-gri-negru%2F",
+"titlu": "Scaun de gaming COUGAR - Armor Elite, Royal",
+"pret": 836.99,
+"imagine": "https://www.ozone.ro/media/catalog/product/g/e/geyming_stol_cougar_armor_elite_royal_1703166188_0.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ozone.ro%2Fproduct%2Fscaun-de-gaming-cougar-armor-elite-royal%2F",
 "magazin": "ozone.ro",
-"id": "RKLzBexC0kab",
-"brand": "Genesis",
-"url_magazin": "https://www.ozone.ro/product/scaun-gaming-genesis-nitro-550-g2-gri-negru/",
-"pret_vechi": 1031.99,
-"verificat": "2026-11-04"
+"id": "kcDN2-arJwRw",
+"brand": "COUGAR",
+"url_magazin": "https://www.ozone.ro/product/scaun-de-gaming-cougar-armor-elite-royal/",
+"pret_vechi": 1090.83
+},
+{
+"titlu": "Scaun de gaming COUGAR - Armor Elite, negru",
+"pret": 836.99,
+"imagine": "https://www.ozone.ro/media/catalog/product/g/e/geyming_stol_cougar_armor_elite_cheren_1703166225_0.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ozone.ro%2Fproduct%2Fscaun-de-gaming-cougar-armor-elite-negru%2F",
+"magazin": "ozone.ro",
+"id": "FDU06JTeXoso",
+"brand": "COUGAR",
+"url_magazin": "https://www.ozone.ro/product/scaun-de-gaming-cougar-armor-elite-negru/",
+"pret_vechi": 1090.83
 },
 {
 "titlu": "Scaun de gaming Cougar - Stryder, negru",
@@ -13653,18 +13712,6 @@
 "url_magazin": "https://www.ozone.ro/product/scaun-de-gaming-cougar-stryder-alb/",
 "pret_vechi": null,
 "verificat": "2026-11-04"
-},
-{
-"titlu": "Scaun de gaming RFG - XTREME, negru/galben",
-"pret": 931.99,
-"imagine": "https://www.ozone.ro/media/catalog/product/g/e/geyming_stol_rfg_xtreme_cheren_zhalt_1723624387_0.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ozone.ro%2Fproduct%2Fscaun-de-gaming-rfg-xtreme-negru-galben%2F",
-"magazin": "ozone.ro",
-"id": "nfW_5BY7KWLQ",
-"brand": "RFG",
-"url_magazin": "https://www.ozone.ro/product/scaun-de-gaming-rfg-xtreme-negru-galben/",
-"pret_vechi": null,
-"verificat": "2026-11-04"
 }
 ],
 "magazine": [
@@ -13681,7 +13728,7 @@
 "titlu": "Scaune de birou ergonomice",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-06",
+"actualizat": "2026-11-15",
 "feeduri": [
 {
 "id": 7871,
@@ -13714,16 +13761,60 @@
 "verificat": "2026-11-04"
 },
 {
-"titlu": "Scaun de birou ergonomic, inaltime reglabila, balans 90-105 grade, 63x63x110-120 cm, gri",
+"titlu": "SCAUN DE BIROU ergonomic cu spătar din plasă permeabilă la aer, negru",
+"pret": 485.0,
+"imagine": "https://media.xxxlutz.com/i/xxxlutz/NCvc9A2XF_dVBexd49trR4Ag.jpg?$feedGoogleProduct$",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.xxxlutz.ro%2Fp%2Fscaun-de-birou-ergonomic-cu-spatar-din-plasa-permeabila-la-aer-negru-800002092539",
+"magazin": "xxxlutz.ro",
+"id": "-uYZG0E9VkGw",
+"brand": "COSTWAY",
+"url_magazin": "https://www.xxxlutz.ro/p/scaun-de-birou-ergonomic-cu-spatar-din-plasa-permeabila-la-aer-negru-800002092539",
+"pret_vechi": null
+},
+{
+"titlu": "Scaun de birou ergonomic, reglabil pe inaltime, functie balans, 64x64x110-120 cm, bej",
 "pret": 509.99,
-"imagine": "https://cdn.shopify.com/s/files/1/0914/5810/9824/files/songmics-scaun-de-birou-ergonomic-reglabil-EZ-OBN034G01-1.png?v=1792678039",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Ftimebox.ro%2Fproducts%2Fsongmics-scaun-de-birou-ergonomic-reglabil-pe-inaltime-functie-balans-maxim-120-kg-63x63x120-cm-gri%3Fvariant%3D60184887492992",
+"imagine": "https://cdn.shopify.com/s/files/1/0914/5810/9824/files/scaun-de-birou-ergonomic-reglabil-pe-EZ-OBN034K01-1.png?v=1794478510",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Ftimebox.ro%2Fproducts%2Fscaun-de-birou-ergonomic-reglabil-pe-inaltime-functie-balans-maxim-120-kg-64x64x120-cm-bej%3Fvariant%3D60373538832768",
 "magazin": "timebox.ro",
-"id": "r72k3imejz61",
+"id": "maLh5mfqixxk",
 "brand": "Timebox",
-"url_magazin": "https://timebox.ro/products/songmics-scaun-de-birou-ergonomic-reglabil-pe-inaltime-functie-balans-maxim-120-kg-63x63x120-cm-gri?variant=60184887492992",
-"pret_vechi": 599.99,
-"verificat": "2026-11-04"
+"url_magazin": "https://timebox.ro/products/scaun-de-birou-ergonomic-reglabil-pe-inaltime-functie-balans-maxim-120-kg-64x64x120-cm-bej?variant=60373538832768",
+"pret_vechi": 619.99,
+"verificat": "2026-11-15"
+},
+{
+"titlu": "SCAUN DE BIROU ergonomic din piele sintetică, gri",
+"pret": 519.0,
+"imagine": "https://media.xxxlutz.com/i/xxxlutz/NCxmWkVkbLStdnJieTTvt7wQ.jpg?$feedGoogleProduct$",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.xxxlutz.ro%2Fp%2Fscaun-de-birou-ergonomic-din-piele-sintetica-gri-800002092658",
+"magazin": "xxxlutz.ro",
+"id": "oAa1MlDc0N5j",
+"brand": "COSTWAY",
+"url_magazin": "https://www.xxxlutz.ro/p/scaun-de-birou-ergonomic-din-piele-sintetica-gri-800002092658",
+"pret_vechi": null
+},
+{
+"titlu": "SCAUN DE BIROU ergonomic din piele sintetică albă",
+"pret": 525.0,
+"imagine": "https://media.xxxlutz.com/i/xxxlutz/NCwhmk6TWK48wphAyOG3bAWw.jpg?$feedGoogleProduct$",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.xxxlutz.ro%2Fp%2Fscaun-de-birou-ergonomic-din-piele-sintetica-alb-800002092655",
+"magazin": "xxxlutz.ro",
+"id": "1TjcQGEPeRzS",
+"brand": "COSTWAY",
+"url_magazin": "https://www.xxxlutz.ro/p/scaun-de-birou-ergonomic-din-piele-sintetica-alb-800002092655",
+"pret_vechi": null
+},
+{
+"titlu": "SCAUN DE BIROU ergonomic cu spătar din plasă permeabilă la aer, roșu",
+"pret": 537.0,
+"imagine": "https://media.xxxlutz.com/i/xxxlutz/NC8qK7Vgw7YMGhUYr_N0RZNg.jpg?$feedGoogleProduct$",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.xxxlutz.ro%2Fp%2Fscaun-de-birou-ergonomic-cu-spatar-din-plasa-permeabila-la-aer-rosu-800002092541",
+"magazin": "xxxlutz.ro",
+"id": "nn6qaYEkY0h2",
+"brand": "COSTWAY",
+"url_magazin": "https://www.xxxlutz.ro/p/scaun-de-birou-ergonomic-cu-spatar-din-plasa-permeabila-la-aer-rosu-800002092541",
+"pret_vechi": null
 },
 {
 "titlu": "Scaun de birou ergonomic din mesh cu tetieră și brațe 3D OFF 404 negru",
@@ -13738,6 +13829,17 @@
 "verificat": "2026-11-04"
 },
 {
+"titlu": "SCAUN DE BIROU ergonomic cu tapițerie din piele de căprioară albastră",
+"pret": 603.0,
+"imagine": "https://media.xxxlutz.com/i/xxxlutz/NCOGnPhP22TgNBqp6g5xJ6Mg.jpg?$feedGoogleProduct$",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.xxxlutz.ro%2Fp%2Fscaun-de-birou-ergonomic-cu-tapiterie-din-piele-de-caprioara-albastr-800002092718",
+"magazin": "xxxlutz.ro",
+"id": "AmxsxJJa7nw5",
+"brand": "COSTWAY",
+"url_magazin": "https://www.xxxlutz.ro/p/scaun-de-birou-ergonomic-cu-tapiterie-din-piele-de-caprioara-albastr-800002092718",
+"pret_vechi": null
+},
+{
 "titlu": "Scaun de birou ergonomic din mesh cu tetieră și brațe rabatabile OFF 440 alb",
 "pret": 699.38,
 "imagine": "https://www.scauneonline.ro/image/cache/catalog/OFF440/scaun-birou-ergonomic-mesh-tetiera-brate-rabatabile-off-440-alb-1-1000x1000.jpg",
@@ -13750,16 +13852,15 @@
 "verificat": "2026-11-04"
 },
 {
-"titlu": "Scaun ergonomic de birou reglabil, rotativ, piele ecologica, 53x54x115 cm, negru",
-"pret": 699.99,
-"imagine": "https://cdn.shopify.com/s/files/1/0914/5810/9824/files/scaun-ergonomic-de-birou-reglabil-rotativ-EZ-OBG21B-1.png?v=1793636826",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Ftimebox.ro%2Fproducts%2Fscaun-ergonomic-de-birou-reglabil-pe-inaltime-piele-ecologica-maxim-150-kg-53x54x115-cm-negru%3Fvariant%3D60229950570880",
-"magazin": "timebox.ro",
-"id": "TtZTD4F4iRu4",
-"brand": "Timebox",
-"url_magazin": "https://timebox.ro/products/scaun-ergonomic-de-birou-reglabil-pe-inaltime-piele-ecologica-maxim-150-kg-53x54x115-cm-negru?variant=60229950570880",
-"pret_vechi": 859.99,
-"verificat": "2026-11-04"
+"titlu": "SCAUN DIRECTORIAL: scaun de birou ergonomic cu brațe rabatabile, negru",
+"pret": 779.0,
+"imagine": "https://media.xxxlutz.com/i/xxxlutz/NCX_WNmrTW0POx60kDo01EgQ.jpg?$feedGoogleProduct$",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.xxxlutz.ro%2Fp%2Fscaun-directorial-scaun-de-birou-ergonomic-cu-brate-rabatabile-negru-800002092806",
+"magazin": "xxxlutz.ro",
+"id": "TSDvtsJWzMZL",
+"brand": "COSTWAY",
+"url_magazin": "https://www.xxxlutz.ro/p/scaun-directorial-scaun-de-birou-ergonomic-cu-brate-rabatabile-negru-800002092806",
+"pret_vechi": null
 },
 {
 "titlu": "Scaun birou ergonomic gri din mesh cu tetieră reglabilă, brațe 4D și șezut culisant SYYT 9520",
@@ -13810,6 +13911,18 @@
 "verificat": "2026-11-04"
 },
 {
+"titlu": "Scaun de birou ergonomic cu plasa negru AXIS",
+"pret": 990.0,
+"imagine": "https://dacris.vteximg.com.br/arquivos/ids/1104172/2515_axis_mesh-black_wiz_03.jpg.jpg?v=639275354182530000",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dacris.net%2F2515-jnf-scaun-de-birou-ergonomic-cu-plasa-negru-axis%2Fp%3FskuId%3D255789",
+"magazin": "dacris.net",
+"id": "cdEs-QKfQq23",
+"brand": "Jan Nowak",
+"url_magazin": "https://www.dacris.net/2515-jnf-scaun-de-birou-ergonomic-cu-plasa-negru-axis/p?skuId=255789",
+"pret_vechi": null,
+"verificat": "2026-11-04"
+},
+{
 "titlu": "Scaun de birou ergonomic maro AXIS",
 "pret": 990.0,
 "imagine": "https://dacris.vteximg.com.br/arquivos/ids/1104191/2520_axis_fabric_brown_feature_ro_02.jpg.jpg?v=639275354194900000",
@@ -13818,18 +13931,6 @@
 "id": "rUJbltomRozr",
 "brand": "Jan Nowak",
 "url_magazin": "https://www.dacris.net/2520-jnf-scaun-de-birou-ergonomic-maro-axis/p?skuId=255793",
-"pret_vechi": null,
-"verificat": "2026-11-04"
-},
-{
-"titlu": "Scaun de birou ergonomic negru AXIS",
-"pret": 990.0,
-"imagine": "https://dacris.vteximg.com.br/arquivos/ids/1114469/2519_axis_fabric-black_01.jpg.jpg?v=639292866166570000",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dacris.net%2F2519-jnf-scaun-de-birou-ergonomic-negru-axis%2Fp%3FskuId%3D255792",
-"magazin": "dacris.net",
-"id": "777ioFAU3miX",
-"brand": "Jan Nowak",
-"url_magazin": "https://www.dacris.net/2519-jnf-scaun-de-birou-ergonomic-negru-axis/p?skuId=255792",
 "pret_vechi": null,
 "verificat": "2026-11-04"
 },
@@ -13846,30 +13947,6 @@
 "verificat": "2026-11-04"
 },
 {
-"titlu": "Scaun de birou ergonomic gri inchis AXIS Scaun de birou ergonomic gri închis AXIS",
-"pret": 990.0,
-"imagine": "https://dacris.vteximg.com.br/arquivos/ids/1104174/2517_axis_fabric-dark-grey_01.jpg.jpg?v=639275354183630000",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dacris.net%2F2517-jnf-scaun-de-birou-ergonomic-gri-inchis-axis%2Fp%3FskuId%3D255790",
-"magazin": "dacris.net",
-"id": "Z5C6cPDv-IDW",
-"brand": "Jan Nowak",
-"url_magazin": "https://www.dacris.net/2517-jnf-scaun-de-birou-ergonomic-gri-inchis-axis/p?skuId=255790",
-"pret_vechi": null,
-"verificat": "2026-11-04"
-},
-{
-"titlu": "Scaun de birou ergonomic cu plasa negru AXIS",
-"pret": 990.0,
-"imagine": "https://dacris.vteximg.com.br/arquivos/ids/1104172/2515_axis_mesh-black_wiz_03.jpg.jpg?v=639275354182530000",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dacris.net%2F2515-jnf-scaun-de-birou-ergonomic-cu-plasa-negru-axis%2Fp%3FskuId%3D255789",
-"magazin": "dacris.net",
-"id": "cdEs-QKfQq23",
-"brand": "Jan Nowak",
-"url_magazin": "https://www.dacris.net/2515-jnf-scaun-de-birou-ergonomic-cu-plasa-negru-axis/p?skuId=255789",
-"pret_vechi": null,
-"verificat": "2026-11-04"
-},
-{
 "titlu": "Scaun de birou ergonomic cu plasa gri inchis AXIS",
 "pret": 990.0,
 "imagine": "https://dacris.vteximg.com.br/arquivos/ids/1104173/2516_axis_mesh-dark-grey_wiz_3.jpg.jpg?v=639275354183000000",
@@ -13878,6 +13955,30 @@
 "id": "ECJGwxZ-q6Vr",
 "brand": "Jan Nowak",
 "url_magazin": "https://www.dacris.net/2516-jnf-scaun-de-birou-ergonomic-cu-plasa-gri-inchis-axis/p?skuId=255788",
+"pret_vechi": null,
+"verificat": "2026-11-04"
+},
+{
+"titlu": "Scaun de birou ergonomic negru AXIS",
+"pret": 990.0,
+"imagine": "https://dacris.vteximg.com.br/arquivos/ids/1114469/2519_axis_fabric-black_01.jpg.jpg?v=639292866166570000",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dacris.net%2F2519-jnf-scaun-de-birou-ergonomic-negru-axis%2Fp%3FskuId%3D255792",
+"magazin": "dacris.net",
+"id": "777ioFAU3miX",
+"brand": "Jan Nowak",
+"url_magazin": "https://www.dacris.net/2519-jnf-scaun-de-birou-ergonomic-negru-axis/p?skuId=255792",
+"pret_vechi": null,
+"verificat": "2026-11-04"
+},
+{
+"titlu": "Scaun de birou ergonomic gri inchis AXIS Scaun de birou ergonomic gri închis AXIS",
+"pret": 990.0,
+"imagine": "https://dacris.vteximg.com.br/arquivos/ids/1104174/2517_axis_fabric-dark-grey_01.jpg.jpg?v=639275354183630000",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dacris.net%2F2517-jnf-scaun-de-birou-ergonomic-gri-inchis-axis%2Fp%3FskuId%3D255790",
+"magazin": "dacris.net",
+"id": "Z5C6cPDv-IDW",
+"brand": "Jan Nowak",
+"url_magazin": "https://www.dacris.net/2517-jnf-scaun-de-birou-ergonomic-gri-inchis-axis/p?skuId=255790",
 "pret_vechi": null,
 "verificat": "2026-11-04"
 },
@@ -13894,27 +13995,16 @@
 "verificat": "2026-11-06"
 },
 {
-"titlu": "Scaun de birou ergonomic rotativ negru: VECTOR",
-"pret": 1120.0,
-"imagine": "https://dacris.vteximg.com.br/arquivos/ids/1104181/2527_vector_fabric-black_feature_pl_01.jpg.jpg?v=639275354191600000",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dacris.net%2F2527-jnf-scaun-de-birou-ergonomic-rotativ-negru--vector%2Fp%3FskuId%3D255799",
+"titlu": "Scaun de birou ergonomic rotativ cu spatar din plasa negru: VECTOR",
+"pret": 1100.0,
+"imagine": "https://dacris.vteximg.com.br/arquivos/ids/1104180/2521_vector_mesh-black_feature_cz_01.jpg.jpg?v=639275354189730000",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dacris.net%2F2521-jnf-scaun-de-birou-ergonomic-rotativ-cu-spatar-din-plasa-negru--vector%2Fp%3FskuId%3D255794",
 "magazin": "dacris.net",
-"id": "3mAqershmR70",
+"id": "eJbumU9sdiip",
 "brand": "Jan Nowak",
-"url_magazin": "https://www.dacris.net/2527-jnf-scaun-de-birou-ergonomic-rotativ-negru--vector/p?skuId=255799",
+"url_magazin": "https://www.dacris.net/2521-jnf-scaun-de-birou-ergonomic-rotativ-cu-spatar-din-plasa-negru--vector/p?skuId=255794",
 "pret_vechi": null,
-"verificat": "2026-11-06"
-},
-{
-"titlu": "SCAUN de birou ergonomic din stofă gri",
-"pret": 1128.99,
-"imagine": "https://media.xxxlutz.com/i/xxxlutz/NC3v--4F0O9LM5RzgQY8CJxA.jpg?$feedGoogleProduct$",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.xxxlutz.ro%2Fp%2Fscaun-de-birou-ergonomic-din-stofa-gri-800002033635",
-"magazin": "xxxlutz.ro",
-"id": "V6JNVRacqbkz",
-"brand": "",
-"url_magazin": "https://www.xxxlutz.ro/p/scaun-de-birou-ergonomic-din-stofa-gri-800002033635",
-"pret_vechi": null
+"verificat": "2026-11-15"
 },
 {
 "titlu": "Scaun de birou ergonomic rotativ maro: VECTOR",
@@ -13927,17 +14017,6 @@
 "url_magazin": "https://www.dacris.net/2526-jnf-scaun-de-birou-ergonomic-rotativ-maro--vector/p?skuId=258049",
 "pret_vechi": null,
 "verificat": "2026-11-04"
-},
-{
-"titlu": "SCAUN de birou ergonomic negru cu tetieră 2D și pernă lombară",
-"pret": 1414.99,
-"imagine": "https://media.xxxlutz.com/i/xxxlutz/NC3cRJ68FIo0fiIH4Carz1YA.jpg?$feedGoogleProduct$",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.xxxlutz.ro%2Fp%2Fscaun-de-birou-ergonomic-negru-cu-tetiera-2d-si-perna-lombar-800002033584",
-"magazin": "xxxlutz.ro",
-"id": "q044749OGr_t",
-"brand": "",
-"url_magazin": "https://www.xxxlutz.ro/p/scaun-de-birou-ergonomic-negru-cu-tetiera-2d-si-perna-lombar-800002033584",
-"pret_vechi": null
 }
 ],
 "magazine": [
@@ -13954,7 +14033,7 @@
 "titlu": "Căști True Wireless",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-06",
+"actualizat": "2026-11-15",
 "feeduri": [
 {
 "id": 233,
@@ -13975,7 +14054,7 @@
 "id": "-PG5S3PR02k1",
 "brand": "ESPERANZA",
 "url_magazin": "https://www.evomag.ro/telefoane-tablete-accesorii-accesorii-telefoane-casti-bluetooth-wireless-airpods-si-audio/esperanza-casti-true-wireless-esperanza-laurel-95830-bluetooth-statie-de-incarcare-si-snur-microfon-negru-4099528.html",
-"pret_vechi": 57.99,
+"pret_vechi": null,
 "verificat": "2026-11-04"
 },
 {
@@ -14036,27 +14115,26 @@
 "verificat": "2026-11-04"
 },
 {
-"titlu": "Casti True Wireless In Ear HiFuture Colorbuds3, Bluetooth 5.4, Soft Bass, ENC, Pana la 25 de ore autonomie, IPX5 (Roz/Au",
-"pret": 99.99,
-"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4317%2F4317778%2Fcasti-true-wireless-in-ear-hif-6abe6a8422d96.jpg&type=auto&width=500&sign=DokE_GbPXsI5RCTQJ40SA8YgvpzV2rRfnAd9-04VRjY",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Ftelefoane-tablete-accesorii-accesorii-telefoane-casti-bluetooth-wireless-airpods-si-audio%2Fhifuture-casti-true-wireless-in-ear-hifuture-colorbuds3-bluetooth-5.4-soft-bass-enc-pana-la-25-de-ore-autonomie-ipx5-roz-auriu-4317778.html",
+"titlu": "Casti True Wireless Hama Action One, Bluetooth, Microfon, Alb",
+"pret": 92.99,
+"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4322%2F4322716%2Faction-one-bluetoothr-h-6af2d2f182072.JPG&type=auto&width=500&sign=jhO0JBWFBdO2hphOGynTqsi4lY5RddMGqOjbSMBW6Ps",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Ftelefoane-tablete-accesorii-accesorii-telefoane-casti-bluetooth-wireless-airpods-si-audio%2Fhama-casti-true-wireless-hama-action-one-bluetooth-microfon-alb-4322716.html",
 "magazin": "evomag.ro",
-"id": "uK4jK5jpWmBy",
-"brand": "HiFuture",
-"url_magazin": "https://www.evomag.ro/telefoane-tablete-accesorii-accesorii-telefoane-casti-bluetooth-wireless-airpods-si-audio/hifuture-casti-true-wireless-in-ear-hifuture-colorbuds3-bluetooth-5.4-soft-bass-enc-pana-la-25-de-ore-autonomie-ipx5-roz-auriu-4317778.html",
-"pret_vechi": 169.99
+"id": "fRVt5csoXsn3",
+"brand": "Hama",
+"url_magazin": "https://www.evomag.ro/telefoane-tablete-accesorii-accesorii-telefoane-casti-bluetooth-wireless-airpods-si-audio/hama-casti-true-wireless-hama-action-one-bluetooth-microfon-alb-4322716.html",
+"pret_vechi": null
 },
 {
-"titlu": "Casti True Wireless Canyon CNE-CBTHS1B, Bluetooth, Rezistent la apa, Microfon (Negru)",
-"pret": 105.99,
-"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F3985%2F3985774%2Fcasti-stereo-canyon-cne-cbths1-62d014c9d3649.JPG&type=auto&width=500&sign=3PNIlAEKWlmj9plxaVGL9n2bUvXyON71riuXvMl4qQ0",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Ftelefoane-tablete-accesorii-accesorii-telefoane-casti-bluetooth-wireless-airpods-si-audio%2Fcanyon-casti-true-wireless-canyon-cne-cbths1b-bluetooth-rezistent-la-apa-microfon-negru-3985774.html",
+"titlu": "Casti True Wireless Hama Action One, Bluetooth, Microfon, Negru",
+"pret": 92.99,
+"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4322%2F4322717%2Faction-one-bluetoothr-h-6af2d3d0e7f6a.JPG&type=auto&width=500&sign=WBREgkzvNVi9B115xNyqq--KMnQv0hZzVTaqETijS_Q",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Ftelefoane-tablete-accesorii-accesorii-telefoane-casti-bluetooth-wireless-airpods-si-audio%2Fhama-casti-true-wireless-hama-action-one-bluetooth-microfon-negru-4322717.html",
 "magazin": "evomag.ro",
-"id": "OXf_TUTQreHu",
-"brand": "Canyon",
-"url_magazin": "https://www.evomag.ro/telefoane-tablete-accesorii-accesorii-telefoane-casti-bluetooth-wireless-airpods-si-audio/canyon-casti-true-wireless-canyon-cne-cbths1b-bluetooth-rezistent-la-apa-microfon-negru-3985774.html",
-"pret_vechi": null,
-"verificat": "2026-11-04"
+"id": "ljDedAmdcoLh",
+"brand": "Hama",
+"url_magazin": "https://www.evomag.ro/telefoane-tablete-accesorii-accesorii-telefoane-casti-bluetooth-wireless-airpods-si-audio/hama-casti-true-wireless-hama-action-one-bluetooth-microfon-negru-4322717.html",
+"pret_vechi": null
 }
 ],
 "magazine": [
@@ -14070,7 +14148,7 @@
 "titlu": "Căști cu anulare a zgomotului",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-06",
+"actualizat": "2026-11-15",
 "feeduri": [
 {
 "id": 1539,
@@ -14150,7 +14228,7 @@
 },
 {
 "titlu": "Casti True Wireless In-Ear Xiaomi Redmi Buds 8 Lite BHR08OJGL, Bluetooth, ANC, Microfon, Smart Tap Control, IP54 (Albast",
-"pret": 131.99,
+"pret": 130.99,
 "imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4277%2F4277221%2Fbhr08ojgl-6979b62071042.jpg&type=auto&width=500&sign=3UkQ-wfw8PX1k7dyrl1MGMk9iIAJm5IJbKu14nlifR8",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Ftelefoane-tablete-accesorii-accesorii-telefoane-casti-bluetooth-wireless-airpods-si-audio%2Fxiaomi-casti-true-wireless-in-ear-xiaomi-redmi-buds-8-lite-bhr08ojgl-bluetooth-anc-microfon-smart-tap-control-ip54-albastru-4277221.html",
 "magazin": "evomag.ro",
@@ -14160,25 +14238,25 @@
 "pret_vechi": null
 },
 {
-"titlu": "Casti True Wireless In-Ear Xiaomi Redmi Buds 8 Lite BHR08OLGL, Bluetooth, ANC, Microfon, Smart Tap Control, IP54 (Alb)",
-"pret": 134.99,
-"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4271%2F4271407%2Fhandsfree-bluetooth-xiaomi-red-695f5f402b2d1.png&type=auto&width=500&sign=l8D1tVtAKXGfTtWi-U83pYPSAsA4GK7m5kjrmM2bkLI",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Ftelefoane-tablete-accesorii-accesorii-telefoane-casti-bluetooth-wireless-airpods-si-audio%2Fxiaomi-casti-true-wireless-in-ear-xiaomi-redmi-buds-8-lite-bhr08olgl-bluetooth-anc-microfon-smart-tap-control-ip54-alb-4271407.html",
-"magazin": "evomag.ro",
-"id": "04ffBVjZihKU",
-"brand": "Xiaomi",
-"url_magazin": "https://www.evomag.ro/telefoane-tablete-accesorii-accesorii-telefoane-casti-bluetooth-wireless-airpods-si-audio/xiaomi-casti-true-wireless-in-ear-xiaomi-redmi-buds-8-lite-bhr08olgl-bluetooth-anc-microfon-smart-tap-control-ip54-alb-4271407.html",
-"pret_vechi": null
-},
-{
 "titlu": "Casti True Wireless In-Ear Xiaomi Redmi Buds 8 Lite BHR08OMGL, Bluetooth, ANC, Microfon, Smart Tap Control, IP54 (Negru)",
-"pret": 136.99,
+"pret": 135.99,
 "imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4271%2F4271406%2Fhandsfree-bluetooth-xiaomi-red-695f5eb172d88.jpg&type=auto&width=500&sign=4DfcDL7VhHh7laRDy6PBGdaVxuze-FJEG8sMDk8SjnE",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Ftelefoane-tablete-accesorii-accesorii-telefoane-casti-bluetooth-wireless-airpods-si-audio%2Fxiaomi-casti-true-wireless-in-ear-xiaomi-redmi-buds-8-lite-bhr08omgl-bluetooth-anc-microfon-smart-tap-control-ip54-negru-4271406.html",
 "magazin": "evomag.ro",
 "id": "en3iqhk2md7Q",
 "brand": "Xiaomi",
 "url_magazin": "https://www.evomag.ro/telefoane-tablete-accesorii-accesorii-telefoane-casti-bluetooth-wireless-airpods-si-audio/xiaomi-casti-true-wireless-in-ear-xiaomi-redmi-buds-8-lite-bhr08omgl-bluetooth-anc-microfon-smart-tap-control-ip54-negru-4271406.html",
+"pret_vechi": null
+},
+{
+"titlu": "Casti True Wireless In-Ear Xiaomi Redmi Buds 8 Lite BHR08OLGL, Bluetooth, ANC, Microfon, Smart Tap Control, IP54 (Alb)",
+"pret": 135.99,
+"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4271%2F4271407%2Fhandsfree-bluetooth-xiaomi-red-695f5f402b2d1.png&type=auto&width=500&sign=l8D1tVtAKXGfTtWi-U83pYPSAsA4GK7m5kjrmM2bkLI",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Ftelefoane-tablete-accesorii-accesorii-telefoane-casti-bluetooth-wireless-airpods-si-audio%2Fxiaomi-casti-true-wireless-in-ear-xiaomi-redmi-buds-8-lite-bhr08olgl-bluetooth-anc-microfon-smart-tap-control-ip54-alb-4271407.html",
+"magazin": "evomag.ro",
+"id": "04ffBVjZihKU",
+"brand": "Xiaomi",
+"url_magazin": "https://www.evomag.ro/telefoane-tablete-accesorii-accesorii-telefoane-casti-bluetooth-wireless-airpods-si-audio/xiaomi-casti-true-wireless-in-ear-xiaomi-redmi-buds-8-lite-bhr08olgl-bluetooth-anc-microfon-smart-tap-control-ip54-alb-4271407.html",
 "pret_vechi": null
 },
 {
@@ -14217,13 +14295,24 @@
 },
 {
 "titlu": "Jabra Casti Jabra, 4999-829-269, cu anulare zgomot, 1.2m, USB, Negru",
-"pret": 253.99,
+"pret": 255.99,
 "imagine": "https://www.dwyn.ro/images/products/img_202508191322/333782/full/jabra-casti-jabra-4999-829-269-cu-anulare-zgomot-1-2m-usb-negru-941681.jpg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fcasti%2Fjabra%2F333782-casti-jabra-4999-829-269-cu-anulare-zgomot-1-2m-usb-negru%2F",
 "magazin": "dwyn.ro",
 "id": "LP6Y5Ky-kZ1P",
 "brand": "Jabra",
 "url_magazin": "https://www.dwyn.ro/casti/jabra/333782-casti-jabra-4999-829-269-cu-anulare-zgomot-1-2m-usb-negru/",
+"pret_vechi": null
+},
+{
+"titlu": "JBL Casti In-Ear JBL Tune Flex 2, True Wireless, Bluetooth, ANC, Autonomie 48 ore, IP54, Spatial Sound, Multi-point, Alb",
+"pret": 320.99,
+"imagine": "https://www.dwyn.ro/images/products/img_202512311121/391246/full/jbl-casti-in-ear-jbl-tune-flex-2-true-wireless-bluetooth-anc-autonomie-48-ore-ip54-spatial-sound-multi-point-alb-1216088.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fcasti%2Fjbl%2F391246-casti-in-ear-jbl-tune-flex-2-true-wireless-bluetooth-anc-autonomie-48-ore-ip54-spatial-sound-multi-point-alb%2F",
+"magazin": "dwyn.ro",
+"id": "9Ber8Qejjsif",
+"brand": "JBL",
+"url_magazin": "https://www.dwyn.ro/casti/jbl/391246-casti-in-ear-jbl-tune-flex-2-true-wireless-bluetooth-anc-autonomie-48-ore-ip54-spatial-sound-multi-point-alb/",
 "pret_vechi": null
 },
 {
@@ -14260,18 +14349,6 @@
 "url_magazin": "https://www.dwyn.ro/casti/jbl/435010-casti-in-ear-jbl-tune-buds-2-jbltbuds2wht-true-wireless-bluetooth-anc-autonomie-48-ore-ip54-multi-point-alb/",
 "pret_vechi": null,
 "verificat": "2026-11-04"
-},
-{
-"titlu": "JBL Casti In-Ear JBL Tune Buds 2, True Wireless, Bluetooth, ANC, Autonomie 48 ore, IP54, Multi-point, Turcoaz",
-"pret": 400.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202512311121/391234/full/jbl-casti-in-ear-jbl-tune-buds-2-true-wireless-bluetooth-anc-autonomie-48-ore-ip54-multi-point-turcoaz-1215989.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fcasti%2Fjbl%2F391234-casti-in-ear-jbl-tune-buds-2-true-wireless-bluetooth-anc-autonomie-48-ore-ip54-multi-point-turcoaz%2F",
-"magazin": "dwyn.ro",
-"id": "JfHFM6QAZIrs",
-"brand": "JBL",
-"url_magazin": "https://www.dwyn.ro/casti/jbl/391234-casti-in-ear-jbl-tune-buds-2-true-wireless-bluetooth-anc-autonomie-48-ore-ip54-multi-point-turcoaz/",
-"pret_vechi": null,
-"verificat": "2026-11-04"
 }
 ],
 "magazine": [
@@ -14287,7 +14364,7 @@
 "titlu": "Căști de gaming",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-06",
+"actualizat": "2026-11-15",
 "feeduri": [
 {
 "id": 1096,
@@ -14320,28 +14397,15 @@
 "verificat": "2026-11-04"
 },
 {
-"titlu": "Casti Gaming Havit Gamenote Fuxi H5D, Jack 3.5mm, 50mm, Microfon (Negru)",
-"pret": 69.99,
-"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4318%2F4318003%2Fcasti-gaming-havit-gamenote-fu-6ac34ecf74b42.jpg&type=auto&width=500&sign=xNW6YRSooCl9-Qrs_f3rdiivOJnfkaWuhVLvjFn5PiQ",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Fcomponente-pc-gaming-casti-microfoane%2Fhavit-gamenote-casti-gaming-havit-gamenote-fuxi-h5d-jack-3.5mm-50mm-microfon-negru-4318003.html",
+"titlu": "Casti Gaming White Shark GH-2444 PEACOCK-2, Cu fir, Jack 3.5mm (Alb)",
+"pret": 91.99,
+"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4323%2F4323042%2Fcasti-gaming-white-shark-gh-24-6af5804ca9f13.JPG&type=auto&width=500&sign=rgbiNOhGODudB_e7E4ToFmY-wwPz7Nzy5jiuRJH8y9E",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Fcomponente-pc-gaming-casti-microfoane%2Fwhite-shark-casti-gaming-white-shark-gh-2444-peacock-2-cu-fir-jack-3.5mm-alb-4323042.html",
 "magazin": "evomag.ro",
-"id": "QUmYoj7HKF3X",
-"brand": "Havit",
-"url_magazin": "https://www.evomag.ro/componente-pc-gaming-casti-microfoane/havit-gamenote-casti-gaming-havit-gamenote-fuxi-h5d-jack-3.5mm-50mm-microfon-negru-4318003.html",
-"pret_vechi": null,
-"verificat": "2026-11-04"
-},
-{
-"titlu": "Casti Gaming Havit Gamenote Fuxi H5D, Jack 3.5mm, 50mm, Microfon (Alb)",
-"pret": 69.99,
-"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4318%2F4318002%2Fcasti-gaming-havit-gamenote-fu-6ac34dabcc251.jpg&type=auto&width=500&sign=C9y11JITX8qLmhFs2jvuwgK47z_RsxMwD9ctKG_fTlI",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Fcomponente-pc-gaming-casti-microfoane%2Fhavit-gamenote-casti-gaming-havit-gamenote-fuxi-h5d-jack-3.5mm-50mm-microfon-alb-4318002.html",
-"magazin": "evomag.ro",
-"id": "550wmOcQ6S31",
-"brand": "Havit",
-"url_magazin": "https://www.evomag.ro/componente-pc-gaming-casti-microfoane/havit-gamenote-casti-gaming-havit-gamenote-fuxi-h5d-jack-3.5mm-50mm-microfon-alb-4318002.html",
-"pret_vechi": null,
-"verificat": "2026-11-04"
+"id": "tBIHxmE58TMn",
+"brand": "White Shark",
+"url_magazin": "https://www.evomag.ro/componente-pc-gaming-casti-microfoane/white-shark-casti-gaming-white-shark-gh-2444-peacock-2-cu-fir-jack-3.5mm-alb-4323042.html",
+"pret_vechi": null
 },
 {
 "titlu": "Casti Gaming Canyon Interceptor GH-8A Black",
@@ -14354,6 +14418,28 @@
 "url_magazin": "https://www.itarena.ro/casti_microfon/casti_gaming_canyon_interceptor_gh8a_black.html",
 "pret_vechi": null,
 "verificat": "2026-11-04"
+},
+{
+"titlu": "Casti Gaming Marvo HG8928, Microfon (Negru/Rosu)",
+"pret": 101.99,
+"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F3677%2F3677215%2F1550773201fsdf.JPG&type=auto&width=500&sign=UD-O_tFLKX8Hmy1ytlZE2-VoTeeFHTq7qTJjc7FhBGg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Fcomponente-pc-gaming-casti-microfoane%2Fmarvo-casti-gaming-marvo-hg8928-microfon-negru-rosu-3677215.html",
+"magazin": "evomag.ro",
+"id": "3awTooGaBt3X",
+"brand": "Marvo",
+"url_magazin": "https://www.evomag.ro/componente-pc-gaming-casti-microfoane/marvo-casti-gaming-marvo-hg8928-microfon-negru-rosu-3677215.html",
+"pret_vechi": 113.99
+},
+{
+"titlu": "Casti Gaming Marvo HG8935, iluminare Rainbow, USB (Negru)",
+"pret": 104.99,
+"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F3801%2F3801389%2F0.jpg&type=auto&width=500&sign=BwCvOe2SuJXuMHV_MJnJgxJ4szvWCNtKZMhKKN0JPXM",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Fcomponente-pc-gaming-casti-microfoane%2Fmarvo-casti-gaming-marvo-hg8935-iluminare-rainbow-usb-negru-3801389.html",
+"magazin": "evomag.ro",
+"id": "zKgdXtP8fTA6",
+"brand": "Marvo",
+"url_magazin": "https://www.evomag.ro/componente-pc-gaming-casti-microfoane/marvo-casti-gaming-marvo-hg8935-iluminare-rainbow-usb-negru-3801389.html",
+"pret_vechi": null
 },
 {
 "titlu": "Yesido Casti Gaming 3.5mm Yesido EK03, RGB, 2m, Negru",
@@ -14377,6 +14463,17 @@
 "brand": "Trust",
 "url_magazin": "https://www.evomag.ro/componente-pc-gaming-casti-microfoane/trust-casti-gaming-trust-gxt-415bm-zirox-negru-galben-4322441.html",
 "pret_vechi": null
+},
+{
+"titlu": "Casti Gaming Marvo HG8958, Microfon, Iluminare RGB, Jack 3.5mm (Negru)",
+"pret": 119.99,
+"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F3822%2F3822890%2F0.jpg&type=auto&width=500&sign=Am_RkLNyFVnMGaQ9-YFXAJ8rV1ReFaLdEnQuN8vI4pw",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Fcomponente-pc-gaming-casti-microfoane%2Fmarvo-casti-gaming-marvo-hg8958-microfon-iluminare-rgb-jack-3.5mm-negru-3822890.html",
+"magazin": "evomag.ro",
+"id": "C28HnDvIH_2s",
+"brand": "Marvo",
+"url_magazin": "https://www.evomag.ro/componente-pc-gaming-casti-microfoane/marvo-casti-gaming-marvo-hg8958-microfon-iluminare-rgb-jack-3.5mm-negru-3822890.html",
+"pret_vechi": 129.99
 },
 {
 "titlu": "Yesido Casti Gaming 3.5m Yesido EK02, USB, Jack, RGB, 2.2m, Negru",
@@ -14403,37 +14500,26 @@
 "verificat": "2026-11-04"
 },
 {
-"titlu": "Casti Gaming Tracer GameZone Mobile Hybrid, Bluetooth+2.4G, RGB, Microfon (Negru)",
-"pret": 133.99,
-"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4232%2F4232806%2Ftracer-headphones-gamezone-mob-68664fcfe5c32.jpg&type=auto&width=500&sign=5C1l6zM6QgT82OX2K5602Jw76wmEwvj_853EKkYN4X4",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Fcomponente-pc-gaming-casti-microfoane%2Ftracer-casti-gaming-tracer-gamezone-mobile-hybrid-bluetooth-2.4g-rgb-microfon-negru-4232806.html",
+"titlu": "Casti Gaming Nacon Rig 300 PRO HS, Cu fir, Microfon (Alb)",
+"pret": 130.99,
+"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4161%2F4161139%2Frig-300-pro-hs-gamind-headset-6656c8bb9b04b.jpg&type=auto&width=500&sign=rc7FS5Q1FX2cZpzXaWIcPWQD8oRYqNNl6og1hXvgwEI",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Fcomponente-pc-gaming-casti-microfoane%2Fnacon-casti-gaming-nacon-rig-300-pro-hs-cu-fir-microfon-alb-4161139.html",
 "magazin": "evomag.ro",
-"id": "EcGAodHSUznA",
-"brand": "Tracer",
-"url_magazin": "https://www.evomag.ro/componente-pc-gaming-casti-microfoane/tracer-casti-gaming-tracer-gamezone-mobile-hybrid-bluetooth-2.4g-rgb-microfon-negru-4232806.html",
-"pret_vechi": 159.99
+"id": "x6J3yEHfdI1K",
+"brand": "Nacon",
+"url_magazin": "https://www.evomag.ro/componente-pc-gaming-casti-microfoane/nacon-casti-gaming-nacon-rig-300-pro-hs-cu-fir-microfon-alb-4161139.html",
+"pret_vechi": 167.99
 },
 {
-"titlu": "Casti Gaming Genesis Neon 614, 7.1, RGB, USB, Negru",
-"pret": 147.99,
-"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4322%2F4322456%2Fcasti-cu-fir-genesis-neon-614-6aedcf07ddc52.JPG&type=auto&width=500&sign=QPFo4Ic2gwBTF8j_AtYsWw2qT0BknwQ3TR3ROOJQfa8",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Fcomponente-pc-gaming-casti-microfoane%2Fnatec-genesis-casti-gaming-genesis-neon-614-7.1-rgb-usb-negru-4322456.html",
+"titlu": "Casti Gaming Marvo HG9065, Microfon, Iluminare RGB, USB (Negru)",
+"pret": 134.99,
+"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F3822%2F3822891%2F0.jpg&type=auto&width=500&sign=y3KvVwzoK81PsgCiOdjSqLgq7WARGyeWJ_UeDXBRQuo",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Fcomponente-pc-gaming-casti-microfoane%2Fmarvo-casti-gaming-marvo-hg9065-microfon-iluminare-rgb-usb-negru-3822891.html",
 "magazin": "evomag.ro",
-"id": "Lo1dJ4WE_NL2",
-"brand": "Genesis",
-"url_magazin": "https://www.evomag.ro/componente-pc-gaming-casti-microfoane/natec-genesis-casti-gaming-genesis-neon-614-7.1-rgb-usb-negru-4322456.html",
-"pret_vechi": null
-},
-{
-"titlu": "Casti Gaming Fury Metsu M1, Microfon (Negru)",
-"pret": 147.99,
-"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4322%2F4322460%2Fcasti-wireless-fury-metsu-m1-6aedd4b7c572a.JPG&type=auto&width=500&sign=NY5HDgIP0P1zruU73nS573qlWag7Is44R00jyFLHEoY",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Fcomponente-pc-gaming-casti-microfoane%2Ffury-casti-gaming-fury-metsu-m1-microfon-negru-4322460.html",
-"magazin": "evomag.ro",
-"id": "UttIuAUIiA0z",
-"brand": "Fury",
-"url_magazin": "https://www.evomag.ro/componente-pc-gaming-casti-microfoane/fury-casti-gaming-fury-metsu-m1-microfon-negru-4322460.html",
-"pret_vechi": null
+"id": "4QvUqgB5GdJO",
+"brand": "Marvo",
+"url_magazin": "https://www.evomag.ro/componente-pc-gaming-casti-microfoane/marvo-casti-gaming-marvo-hg9065-microfon-iluminare-rgb-usb-negru-3822891.html",
+"pret_vechi": 161.99
 },
 {
 "titlu": "omega Casti Gaming Varr VH8020, Iluminare RGB, Negru",
@@ -14444,30 +14530,6 @@
 "id": "o5OO8rZePPyI",
 "brand": "omega",
 "url_magazin": "https://www.dwyn.ro/casti/omega/167581-casti-gaming-varr-vh8020-iluminare-rgb-negru/",
-"pret_vechi": null,
-"verificat": "2026-11-04"
-},
-{
-"titlu": "White Shark Casti gaming White Shark GH-1947 MARGAY",
-"pret": 165.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202106242018/167445/full/white-shark-casti-gaming-white-shark-gh-1947-margay-282907.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fcasti%2Fwhite-shark%2F167445-casti-gaming-white-shark-gh-1947-margay%2F",
-"magazin": "dwyn.ro",
-"id": "3zIyyYEZZy4U",
-"brand": "White&nbsp;Shark",
-"url_magazin": "https://www.dwyn.ro/casti/white-shark/167445-casti-gaming-white-shark-gh-1947-margay/",
-"pret_vechi": null,
-"verificat": "2026-11-04"
-},
-{
-"titlu": "Casti Gaming Redragon Vibecore 600X ANC, Alb",
-"pret": 190.99,
-"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4320%2F4320923%2Fcasti-gaming-bluetooth-si-cu-f-6ae1a21d9702e.JPG&type=auto&width=500&sign=0bCnR9-EMABqpsfkdtaKfy6eE9qOx88GZFYzEVp-WEY",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Ftelefoane-tablete-accesorii-accesorii-telefoane-casti-bluetooth-wireless-airpods-si-audio%2Fredragon-casti-gaming-redragon-vibecore-600x-anc-alb-4320923.html",
-"magazin": "evomag.ro",
-"id": "zNkMC6BMUcl9",
-"brand": "Redragon",
-"url_magazin": "https://www.evomag.ro/telefoane-tablete-accesorii-accesorii-telefoane-casti-bluetooth-wireless-airpods-si-audio/redragon-casti-gaming-redragon-vibecore-600x-anc-alb-4320923.html",
 "pret_vechi": null,
 "verificat": "2026-11-04"
 },
@@ -14531,6 +14593,17 @@
 "pret_vechi": null
 },
 {
+"titlu": "LEXIP Casti gaming Lexip x Tsume, Bluetooth 5.1, USB-C, 50 mm, Naruto Shippuden, Kakashi Edition",
+"pret": 229.99,
+"imagine": "https://www.dwyn.ro/images/products/img_202606122129/425050/full/lexip-casti-gaming-lexip-x-tsume-bluetooth-5-1-usb-c-50-mm-naruto-shippuden-kakashi-edition-1443163.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fcasti%2Flexip%2F425050-casti-gaming-lexip-x-tsume-bluetooth-5-1-usb-c-50-mm-naruto-shippuden-kakashi-edition%2F",
+"magazin": "dwyn.ro",
+"id": "iM0r7DNX_8ie",
+"brand": "LEXIP",
+"url_magazin": "https://www.dwyn.ro/casti/lexip/425050-casti-gaming-lexip-x-tsume-bluetooth-5-1-usb-c-50-mm-naruto-shippuden-kakashi-edition/",
+"pret_vechi": null
+},
+{
 "titlu": "Casti Gaming cu fir Corsair HS35 V3 Alb",
 "pret": 269.26,
 "imagine": "https://dacris.vteximg.com.br/arquivos/ids/1073928/128fc065828cb043dcafe61fc8c1161e.png.png?v=639161309622370000",
@@ -14579,16 +14652,16 @@
 "verificat": "2026-11-04"
 },
 {
-"titlu": "Casti Gaming Logitech Astro A10 Black",
-"pret": 322.92,
-"imagine": "http://www.itarena.ro/images/products/2023-11-28/original/425143_jpg.webp",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.itarena.ro%2Fcasti_microfon%2Fcasti_gaming_logitech_astro_a10_black.html",
+"titlu": "Casti Gaming Logitech G335 White",
+"pret": 317.0,
+"imagine": "http://www.itarena.ro/images/products/2021-12-21/original/345276_jpg.webp",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.itarena.ro%2Fcasti_microfon%2Fcasti_gaming_logitech_g335_white.html",
 "magazin": "itarena.ro",
-"id": "2ca214a98",
+"id": "700386f30",
 "brand": "Logitech",
-"url_magazin": "https://www.itarena.ro/casti_microfon/casti_gaming_logitech_astro_a10_black.html",
+"url_magazin": "https://www.itarena.ro/casti_microfon/casti_gaming_logitech_g335_white.html",
 "pret_vechi": null,
-"verificat": "2026-11-04"
+"verificat": "2026-11-15"
 }
 ],
 "magazine": [
@@ -15507,6 +15580,18 @@
 ]
 },
 {
+"slug": "smartwatch-gps",
+"tema": "smartwatch-uri",
+"tema_nume": "Smartwatch-uri",
+"titlu": "Smartwatch-uri cu GPS",
+"nota": null,
+"in_text": null,
+"actualizat": "2026-11-15",
+"feeduri": [],
+"produse": [],
+"magazine": []
+},
+{
 "slug": "imprimanta-laser",
 "tema": "imprimante",
 "tema_nume": "Imprimante",
@@ -16032,6 +16117,42 @@
 "magazine": [
 "afisport.ro"
 ]
+},
+{
+"slug": "anvelope-iarna-205-55-r16",
+"tema": "anvelope",
+"tema_nume": "Anvelope",
+"titlu": "Anvelope de iarnă 205/55 R16",
+"nota": null,
+"in_text": null,
+"actualizat": "2026-11-15",
+"feeduri": [],
+"produse": [],
+"magazine": []
+},
+{
+"slug": "anvelope-iarna-195-65-r15",
+"tema": "anvelope",
+"tema_nume": "Anvelope",
+"titlu": "Anvelope de iarnă 195/65 R15",
+"nota": null,
+"in_text": null,
+"actualizat": "2026-11-15",
+"feeduri": [],
+"produse": [],
+"magazine": []
+},
+{
+"slug": "anvelope-iarna-225-45-r17",
+"tema": "anvelope",
+"tema_nume": "Anvelope",
+"titlu": "Anvelope de iarnă 225/45 R17",
+"nota": null,
+"in_text": null,
+"actualizat": "2026-11-15",
+"feeduri": [],
+"produse": [],
+"magazine": []
 },
 {
 "slug": "parfum-dior-sauvage",
@@ -20274,6 +20395,18 @@
 ]
 },
 {
+"slug": "adidasi-barbati",
+"tema": "incaltaminte",
+"tema_nume": "Încălțăminte",
+"titlu": "Adidași pentru bărbați",
+"nota": null,
+"in_text": null,
+"actualizat": "2026-11-15",
+"feeduri": [],
+"produse": [],
+"magazine": []
+},
+{
 "slug": "adidasi-dama",
 "tema": "incaltaminte",
 "tema_nume": "Încălțăminte",
@@ -20394,6 +20527,18 @@
 ]
 },
 {
+"slug": "ghete-dama",
+"tema": "incaltaminte",
+"tema_nume": "Încălțăminte",
+"titlu": "Ghete și botine de damă",
+"nota": null,
+"in_text": null,
+"actualizat": "2026-11-15",
+"feeduri": [],
+"produse": [],
+"magazine": []
+},
+{
 "slug": "geaca-iarna-barbati",
 "tema": "imbracaminte",
 "tema_nume": "Îmbrăcăminte",
@@ -20508,6 +20653,18 @@
 "magazine": [
 "dehaine.ro"
 ]
+},
+{
+"slug": "geaca-iarna-dama",
+"tema": "imbracaminte",
+"tema_nume": "Îmbrăcăminte",
+"titlu": "Geci de iarnă pentru damă",
+"nota": null,
+"in_text": null,
+"actualizat": "2026-11-15",
+"feeduri": [],
+"produse": [],
+"magazine": []
 },
 {
 "slug": "carucior-3-in-1",
