@@ -1,5 +1,5 @@
 {
-"actualizat": "2026-11-14",
+"actualizat": "2026-11-15",
 "criterii": [
 {
 "slug": "masina-de-spalat-6-kg",
@@ -6272,18 +6272,6 @@
 ]
 },
 {
-"slug": "laptop-sub-3000-lei",
-"tema": "laptopuri",
-"tema_nume": "Laptopuri",
-"titlu": "Laptopuri sub 3.000 lei",
-"nota": null,
-"in_text": null,
-"actualizat": "2026-11-04",
-"feeduri": [],
-"produse": [],
-"magazine": []
-},
-{
 "slug": "telefon-256-gb",
 "tema": "telefoane",
 "tema_nume": "Telefoane",
@@ -6402,18 +6390,6 @@
 "magazine": [
 "dwyn.ro"
 ]
-},
-{
-"slug": "telefon-128-gb",
-"tema": "telefoane",
-"tema_nume": "Telefoane",
-"titlu": "Telefoane cu 128 GB",
-"nota": null,
-"in_text": null,
-"actualizat": "2026-11-04",
-"feeduri": [],
-"produse": [],
-"magazine": []
 },
 {
 "slug": "telefon-5g",
@@ -8706,18 +8682,6 @@
 ]
 },
 {
-"slug": "tableta-sub-1000-lei",
-"tema": "tablete",
-"tema_nume": "Tablete",
-"titlu": "Tablete sub 1.000 lei",
-"nota": null,
-"in_text": null,
-"actualizat": "2026-11-04",
-"feeduri": [],
-"produse": [],
-"magazine": []
-},
-{
 "slug": "aspirator-robot-cu-mop",
 "tema": "aspiratoare-robot",
 "tema_nume": "Aspiratoare robot",
@@ -10685,7 +10649,7 @@
 "titlu": "Saltele 90x200",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-06",
+"actualizat": "2026-11-15",
 "feeduri": [
 {
 "id": 6761,
@@ -10778,6 +10742,17 @@
 "verificat": "2026-11-04"
 },
 {
+"titlu": "Saltea, de spuma, 90x200, LEJSA",
+"pret": 676.57,
+"imagine": "https://infinityro.vteximg.com.br/arquivos/ids/275208565/1fd868caa3cc8a9aa6b3d43fa2f8d609.png",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Finfinity.ro%2Fsaltea-de-spuma-90x200-lejsa-9378970%2Fp%3Futm_source%3D2performant",
+"magazin": "infinity.ro",
+"id": "EKuV77Pd30eM",
+"brand": "Tempo Kondela",
+"url_magazin": "https://infinity.ro/saltea-de-spuma-90x200-lejsa-9378970/p?utm_source=2performant",
+"pret_vechi": 775.0
+},
+{
 "titlu": "Saltea, cu arcuri, 90x200, KOKOS MEDIUM",
 "pret": 682.39,
 "imagine": "https://infinityro.vteximg.com.br/arquivos/ids/274932235/736105ba40133a728f821bb893c9211a.png",
@@ -10798,18 +10773,6 @@
 "id": "q7XsESSD8MdE",
 "brand": "VidaXL",
 "url_magazin": "https://infinity.ro/saltea-din-spuma-fermitate-medie-moale-90x200-cm-715259/p?utm_source=2performant",
-"pret_vechi": null,
-"verificat": "2026-11-04"
-},
-{
-"titlu": "Saltea cu arcuri bonnell, fermitate medie, 90x200 cm",
-"pret": 708.83,
-"imagine": "https://infinityro.vteximg.com.br/arquivos/ids/254815757/8721012206038_a_en_hd_1.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Finfinity.ro%2Fsaltea-cu-arcuri-bonnell-fermitate-medie-90x200-cm-715202%2Fp%3Futm_source%3D2performant",
-"magazin": "infinity.ro",
-"id": "SfOtFii6LcIr",
-"brand": "VidaXL",
-"url_magazin": "https://infinity.ro/saltea-cu-arcuri-bonnell-fermitate-medie-90x200-cm-715202/p?utm_source=2performant",
 "pret_vechi": null,
 "verificat": "2026-11-04"
 },
@@ -10862,18 +10825,6 @@
 "verificat": "2026-11-04"
 },
 {
-"titlu": "Saltea de Pat Ortopedica, Memory Fresh 15+5+1, Aloe Vera, 90x200",
-"pret": 1099.0,
-"imagine": "http://ortopedicus.com/wp-content/uploads/2026/03/Saltea-de-Pat-Ortopedica-Memory-Fresh-1551-Aloe-Vera-Ortopedicus-7.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fortopedicus.com%2Fprodus%2Fsaltea-de-pat-ortopedica-memory-fresh-1551-aloe-vera-90x200%2F%3Futm_source%3DCustom%2BTemplate%2B1%26utm_medium%3Dcpc%26utm_campaign%3D2performant_feed",
-"magazin": "ortopedicus.com",
-"id": "Wx071A8HUcGt",
-"brand": "",
-"url_magazin": "https://ortopedicus.com/produs/saltea-de-pat-ortopedica-memory-fresh-1551-aloe-vera-90x200/?utm_source=Custom+Template+1&utm_medium=cpc&utm_campaign=2performant_feed",
-"pret_vechi": null,
-"verificat": "2026-11-04"
-},
-{
 "titlu": "Saltea de Pat Ortopedica, Bio Cocos, Bio Bambus, 15+2+6 cm, 90x200",
 "pret": 1179.0,
 "imagine": "http://ortopedicus.com/wp-content/uploads/2026/03/Ortopedicus_2-075-Edit-Edit-4.png",
@@ -10908,6 +10859,17 @@
 "url_magazin": "https://ortopedicus.com/produs/saltea-de-pat-ortopedica-memory-2034-ioni-de-argint-top-line-fara-arcuri-90x200/?utm_source=Custom+Template+1&utm_medium=cpc&utm_campaign=2performant_feed",
 "pret_vechi": null,
 "verificat": "2026-11-04"
+},
+{
+"titlu": "Saltea de pat Ortopedica Memory Hd 15+6+3+1, Bio Bumbac Trio Hotel Range, fara arcuri, 90x200",
+"pret": 1449.0,
+"imagine": "http://ortopedicus.com/wp-content/uploads/2026/03/Saltea-de-pat-Ortopedica-Memory-Hd-11631-Bio-Bumbac-Trio-Hotel-Line-fara-arcuri-colt-gol-3.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fortopedicus.com%2Fprodus%2Fsaltea-de-pat-ortopedica-memory-hd-11631-bio-bumbac-trio-hotel-line-fara-arcuri-90x200%2F%3Futm_source%3DCustom%2BTemplate%2B1%26utm_medium%3Dcpc%26utm_campaign%3D2performant_feed",
+"magazin": "ortopedicus.com",
+"id": "UpxgrYPlzOkN",
+"brand": "",
+"url_magazin": "https://ortopedicus.com/produs/saltea-de-pat-ortopedica-memory-hd-11631-bio-bumbac-trio-hotel-line-fara-arcuri-90x200/?utm_source=Custom+Template+1&utm_medium=cpc&utm_campaign=2performant_feed",
+"pret_vechi": null
 }
 ],
 "magazine": [
@@ -10923,7 +10885,7 @@
 "titlu": "Saltele 140x200",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-06",
+"actualizat": "2026-11-15",
 "feeduri": [
 {
 "id": 6761,
@@ -11147,7 +11109,7 @@
 "titlu": "Saltele 160x200",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-06",
+"actualizat": "2026-11-15",
 "feeduri": [
 {
 "id": 6761,
@@ -11190,17 +11152,6 @@
 "url_magazin": "https://infinity.ro/saltea-din-spuma-160x200-valeri-9378964/p?utm_source=2performant",
 "pret_vechi": 795.0,
 "verificat": "2026-11-06"
-},
-{
-"titlu": "SALTEA 160x200 cm din Spumă Hipoalergenică; Înălțime 16 cm; Ortopedică și Hipoalergenică",
-"pret": 996.45,
-"imagine": "https://media.xxxlutz.com/i/xxxlutz/NCJKs3GgOfeyne8KUtu4qWTw.jpg?$feedGoogleProduct$",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.xxxlutz.ro%2Fp%2Fthe-white-stone-saltea-160x200-cm-din-spuma-hipoalergenica-inaltime-16-cm-ortopedica-si-hipoalergenic-800001284608",
-"magazin": "xxxlutz.ro",
-"id": "jRHf_QiUnKow",
-"brand": "The White Stone",
-"url_magazin": "https://www.xxxlutz.ro/p/the-white-stone-saltea-160x200-cm-din-spuma-hipoalergenica-inaltime-16-cm-ortopedica-si-hipoalergenic-800001284608",
-"pret_vechi": null
 },
 {
 "titlu": "Saltea din spuma, fermitate medie moale, 160x200 cm",
@@ -11275,40 +11226,37 @@
 "verificat": "2026-11-06"
 },
 {
-"titlu": "Saltea de Pat Ortopedica, Family Hybrid, Bio Bambus, Memory HD, 12+8+2, 160x200, Fara Arcuri",
-"pret": 1689.0,
-"imagine": "http://ortopedicus.com/wp-content/uploads/2026/03/Family-din-colt-dezbracat.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fortopedicus.com%2Fprodus%2Fsaltea-de-pat-ortopedica-family-hybrid-bio-bambus-memory-hd-1282-160x200-fara-arcuri%2F%3Futm_source%3DCustom%2BTemplate%2B1%26utm_medium%3Dcpc%26utm_campaign%3D2performant_feed",
+"titlu": "Saltea de pat Ortopedica Reversibila, Bio Bambus Medical Strong, 160x200",
+"pret": 1529.0,
+"imagine": "http://ortopedicus.com/wp-content/uploads/2026/03/Saltea-de-pat-Ortopedica-Reversibila-Bio-Bambus-Medical-Strong-1.png",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fortopedicus.com%2Fprodus%2Fsaltea-de-pat-ortopedica-reversibila-bio-bambus-medical-strong-160x200%2F%3Futm_source%3DCustom%2BTemplate%2B1%26utm_medium%3Dcpc%26utm_campaign%3D2performant_feed",
 "magazin": "ortopedicus.com",
-"id": "a7Xw2tMmiPxa",
+"id": "U3arikCCNbw7",
 "brand": "",
-"url_magazin": "https://ortopedicus.com/produs/saltea-de-pat-ortopedica-family-hybrid-bio-bambus-memory-hd-1282-160x200-fara-arcuri/?utm_source=Custom+Template+1&utm_medium=cpc&utm_campaign=2performant_feed",
-"pret_vechi": null,
-"verificat": "2026-11-04"
+"url_magazin": "https://ortopedicus.com/produs/saltea-de-pat-ortopedica-reversibila-bio-bambus-medical-strong-160x200/?utm_source=Custom+Template+1&utm_medium=cpc&utm_campaign=2performant_feed",
+"pret_vechi": null
 },
 {
-"titlu": "Saltea de Pat Ortopedica, Memory Fresh 15+5+1, Aloe Vera, 160x200",
-"pret": 1739.0,
-"imagine": "http://ortopedicus.com/wp-content/uploads/2026/03/Saltea-de-Pat-Ortopedica-Memory-Fresh-1551-Aloe-Vera-Ortopedicus-1.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fortopedicus.com%2Fprodus%2Fsaltea-de-pat-ortopedica-memory-fresh-1552-aloe-vera-160x200%2F%3Futm_source%3DCustom%2BTemplate%2B1%26utm_medium%3Dcpc%26utm_campaign%3D2performant_feed",
+"titlu": "Saltea de pat Ortopedica Lavanda 4 Fit, Reversibila 2 in 1, 160 x 200 cm",
+"pret": 2149.0,
+"imagine": "http://ortopedicus.com/wp-content/uploads/2026/03/Saltea-de-pat-Ortopedica-Lavanda-4-Fit-Reversibila-2-in-1.png",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fortopedicus.com%2Fprodus%2Fsaltea-de-pat-ortopedica-lavanda-4-fit-reversibila-2-in-1-160-x-200-cm%2F%3Futm_source%3DCustom%2BTemplate%2B1%26utm_medium%3Dcpc%26utm_campaign%3D2performant_feed",
 "magazin": "ortopedicus.com",
-"id": "R0PWlmv0bwDI",
+"id": "QBqNTav2pngf",
 "brand": "",
-"url_magazin": "https://ortopedicus.com/produs/saltea-de-pat-ortopedica-memory-fresh-1552-aloe-vera-160x200/?utm_source=Custom+Template+1&utm_medium=cpc&utm_campaign=2performant_feed",
-"pret_vechi": null,
-"verificat": "2026-11-04"
+"url_magazin": "https://ortopedicus.com/produs/saltea-de-pat-ortopedica-lavanda-4-fit-reversibila-2-in-1-160-x-200-cm/?utm_source=Custom+Template+1&utm_medium=cpc&utm_campaign=2performant_feed",
+"pret_vechi": null
 },
 {
-"titlu": "Saltea de Pat Ortopedica, Tencel Air Hybrid 3+12+3, Doua Fete, 160x200",
-"pret": 1899.0,
-"imagine": "http://ortopedicus.com/wp-content/uploads/2026/03/m6-si-m8-colt-desfacut-mic-cu-arcuri2.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fortopedicus.com%2Fprodus%2Fsaltea-de-pat-ortopedica-tencel-air-hybrid-3123-doua-fete-160x200%2F%3Futm_source%3DCustom%2BTemplate%2B1%26utm_medium%3Dcpc%26utm_campaign%3D2performant_feed",
+"titlu": "Saltea de pat Ortopedica, Memory HD 17+5+1, Lavanda Strong, 160x200",
+"pret": 2149.0,
+"imagine": "http://ortopedicus.com/wp-content/uploads/2026/03/Saltea-de-pat-Ortopedica-Memory-HD-1751-Lavanda-Strong-160×200.png",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fortopedicus.com%2Fprodus%2Fsaltea-de-pat-ortopedica-memory-hd-17-5-1-lavanda-strong-160x200%2F%3Futm_source%3DCustom%2BTemplate%2B1%26utm_medium%3Dcpc%26utm_campaign%3D2performant_feed",
 "magazin": "ortopedicus.com",
-"id": "QP5dE84M1uaH",
+"id": "RNdPo9orFXZx",
 "brand": "",
-"url_magazin": "https://ortopedicus.com/produs/saltea-de-pat-ortopedica-tencel-air-hybrid-3123-doua-fete-160x200/?utm_source=Custom+Template+1&utm_medium=cpc&utm_campaign=2performant_feed",
-"pret_vechi": null,
-"verificat": "2026-11-04"
+"url_magazin": "https://ortopedicus.com/produs/saltea-de-pat-ortopedica-memory-hd-17-5-1-lavanda-strong-160x200/?utm_source=Custom+Template+1&utm_medium=cpc&utm_campaign=2performant_feed",
+"pret_vechi": null
 },
 {
 "titlu": "Saltea de pat Super Ortopedica, Bio Bambus, Top Line, 26 cm, fara arcuri, 160x200",
@@ -11323,18 +11271,6 @@
 "verificat": "2026-11-04"
 },
 {
-"titlu": "Saltea de pat Ortopedica Memory Hd 15+6+3+1, Bio Bumbac Trio Hotel Range, fara arcuri, 160x200",
-"pret": 2149.0,
-"imagine": "http://ortopedicus.com/wp-content/uploads/2026/03/Saltea-de-pat-Ortopedica-Memory-Hd-11631-Bio-Bumbac-Trio-Hotel-Line-fara-arcuri-colt-gol.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fortopedicus.com%2Fprodus%2Fsaltea-de-pat-ortopedica-memory-hd-11631-bio-bumbac-trio-hotel-line-fara-arcuri-160x200%2F%3Futm_source%3DCustom%2BTemplate%2B1%26utm_medium%3Dcpc%26utm_campaign%3D2performant_feed",
-"magazin": "ortopedicus.com",
-"id": "w2PzPv1eko0f",
-"brand": "",
-"url_magazin": "https://ortopedicus.com/produs/saltea-de-pat-ortopedica-memory-hd-11631-bio-bumbac-trio-hotel-line-fara-arcuri-160x200/?utm_source=Custom+Template+1&utm_medium=cpc&utm_campaign=2performant_feed",
-"pret_vechi": null,
-"verificat": "2026-11-06"
-},
-{
 "titlu": "Saltea de Pat Ortopedica Memory 7 cm HD, Bio Cocos, Bio Bambus, 14+2+7, 160x200",
 "pret": 2329.0,
 "imagine": "http://ortopedicus.com/wp-content/uploads/2026/03/husa-buna-core-bun.png",
@@ -11345,18 +11281,6 @@
 "url_magazin": "https://ortopedicus.com/produs/saltea-ortopedica-memory-7-cm-hd-bio-cocos-bio-bambus-1427-160x200/?utm_source=Custom+Template+1&utm_medium=cpc&utm_campaign=2performant_feed",
 "pret_vechi": null,
 "verificat": "2026-11-04"
-},
-{
-"titlu": "Saltea de pat Ortopedica Memory 20+3+3, Ioni de Argint, Top Line, fara arcuri, 160x200",
-"pret": 2499.0,
-"imagine": "http://ortopedicus.com/wp-content/uploads/2026/03/1-18.png",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fortopedicus.com%2Fprodus%2Fsaltea-de-pat-ortopedica-memory-2034-ioni-de-argint-xxl-supraponderal-160x200%2F%3Futm_source%3DCustom%2BTemplate%2B1%26utm_medium%3Dcpc%26utm_campaign%3D2performant_feed",
-"magazin": "ortopedicus.com",
-"id": "Dejexd2jXGoC",
-"brand": "",
-"url_magazin": "https://ortopedicus.com/produs/saltea-de-pat-ortopedica-memory-2034-ioni-de-argint-xxl-supraponderal-160x200/?utm_source=Custom+Template+1&utm_medium=cpc&utm_campaign=2performant_feed",
-"pret_vechi": null,
-"verificat": "2026-11-06"
 },
 {
 "titlu": "Saltea pat Ortopedica, Bio Bumbac Air, Memory HD, Hotel Range 5+12+5+2, 160x200",
@@ -11373,8 +11297,7 @@
 ],
 "magazine": [
 "infinity.ro",
-"ortopedicus.com",
-"xxxlutz.ro"
+"ortopedicus.com"
 ]
 },
 {
@@ -11384,7 +11307,7 @@
 "titlu": "Saltele 180x200",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-06",
+"actualizat": "2026-11-15",
 "feeduri": [
 {
 "id": 6761,
@@ -11405,6 +11328,17 @@
 ],
 "produse": [
 {
+"titlu": "Saltea, din spuma, 180x200, VALERI",
+"pret": 776.1,
+"imagine": "https://infinityro.vteximg.com.br/arquivos/ids/275208533/2646a0ffd907023e23bb4baed2e9c84c.png",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Finfinity.ro%2Fsaltea-din-spuma-180x200-valeri-9378963%2Fp%3Futm_source%3D2performant",
+"magazin": "infinity.ro",
+"id": "TFGe-BYJFpBJ",
+"brand": "Tempo Kondela",
+"url_magazin": "https://infinity.ro/saltea-din-spuma-180x200-valeri-9378963/p?utm_source=2performant",
+"pret_vechi": 889.0
+},
+{
 "titlu": "Saltea din spuma, alb, 180x200 cm, 7 zone, duritate 20 ILD",
 "pret": 842.48,
 "imagine": "https://infinityro.vteximg.com.br/arquivos/ids/259075977/8720845436971_a_en_hd_1.jpg",
@@ -11415,17 +11349,6 @@
 "url_magazin": "https://infinity.ro/saltea-din-spuma-alb-180x200-cm-7-zone-duritate-20-ild-701237/p?utm_source=2performant",
 "pret_vechi": null,
 "verificat": "2026-11-04"
-},
-{
-"titlu": "Saltea, din spuma, 180x200, VALERI",
-"pret": 862.33,
-"imagine": "https://infinityro.vteximg.com.br/arquivos/ids/275208533/2646a0ffd907023e23bb4baed2e9c84c.png",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Finfinity.ro%2Fsaltea-din-spuma-180x200-valeri-9378963%2Fp%3Futm_source%3D2performant",
-"magazin": "infinity.ro",
-"id": "TFGe-BYJFpBJ",
-"brand": "Tempo Kondela",
-"url_magazin": "https://infinity.ro/saltea-din-spuma-180x200-valeri-9378963/p?utm_source=2performant",
-"pret_vechi": 889.0
 },
 {
 "titlu": "Saltea din spuma, fermitate medie moale, 180x200 cm",
@@ -11442,11 +11365,11 @@
 "titlu": "SALTEA 180x200 ergonomică și respirabilă 20 cm; Confort natural și design scandinav cu fermitate ridicată; Made in Italy",
 "pret": 1049.69,
 "imagine": "https://media.xxxlutz.com/i/xxxlutz/NC5N8xELomR9TxHuH1fmlxLA.jpg?$feedGoogleProduct$",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.xxxlutz.ro%2Fp%2Fthe-white-stone-saltea-180x200-ergonomica-si-respirabila-20-cm-confort-natural-si-design-scandinav-cu-fermitate-ridicata-made-in-italy-800001389217",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.xxxlutz.ro%2Fp%2Fsaltea-180x200-ergonomica-si-respirabila-20-cm-confort-natural-si-design-scandinav-cu-fermitate-ridicata-made-in-italy-800001389217",
 "magazin": "xxxlutz.ro",
 "id": "HgNykY0IWBlp",
 "brand": "The White Stone",
-"url_magazin": "https://www.xxxlutz.ro/p/the-white-stone-saltea-180x200-ergonomica-si-respirabila-20-cm-confort-natural-si-design-scandinav-cu-fermitate-ridicata-made-in-italy-800001389217",
+"url_magazin": "https://www.xxxlutz.ro/p/saltea-180x200-ergonomica-si-respirabila-20-cm-confort-natural-si-design-scandinav-cu-fermitate-ridicata-made-in-italy-800001389217",
 "pret_vechi": null
 },
 {
@@ -11465,11 +11388,11 @@
 "titlu": "SALTEA Ortopedică 180x200 cm Rigiditate Medie; Înălțime 16 cm; Țesătură Hipoalergenică și Respirabilă; Proprietăți Ergon",
 "pret": 1115.65,
 "imagine": "https://media.xxxlutz.com/i/xxxlutz/NCOMCCQDV7FKF66PUUMDws9Q.jpg?$feedGoogleProduct$",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.xxxlutz.ro%2Fp%2Fthe-white-stone-saltea-ortopedica-180x200-cm-rigiditate-medie-inaltime-16-cm-tesatura-hipoalergenica-si-respirabila-proprietati-ergonomice-si-autoconformante-800000677948",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.xxxlutz.ro%2Fp%2Fsaltea-ortopedica-180x200-cm-rigiditate-medie-inaltime-16-cm-tesatura-hipoalergenica-si-respirabila-proprietati-ergonomice-si-autoconformante-800000677948",
 "magazin": "xxxlutz.ro",
 "id": "w8LeIPxQlWlB",
 "brand": "The White Stone",
-"url_magazin": "https://www.xxxlutz.ro/p/the-white-stone-saltea-ortopedica-180x200-cm-rigiditate-medie-inaltime-16-cm-tesatura-hipoalergenica-si-respirabila-proprietati-ergonomice-si-autoconformante-800000677948",
+"url_magazin": "https://www.xxxlutz.ro/p/saltea-ortopedica-180x200-cm-rigiditate-medie-inaltime-16-cm-tesatura-hipoalergenica-si-respirabila-proprietati-ergonomice-si-autoconformante-800000677948",
 "pret_vechi": null
 },
 {
@@ -11500,22 +11423,22 @@
 "titlu": "SALTEA Ortopedică 180x200 cm Rigiditate Medie; Înălțime 25 cm; Țesătură Hipoalergenică și Respirabilă; Proprietăți Ergon",
 "pret": 1259.9,
 "imagine": "https://media.xxxlutz.com/i/xxxlutz/NC7sDdC1VP-r_YU21KzXYfww.jpg?$feedGoogleProduct$",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.xxxlutz.ro%2Fp%2Fthe-white-stone-saltea-ortopedica-180x200-cm-rigiditate-medie-inaltime-25-cm-tesatura-hipoalergenica-si-respirabila-proprietati-ergonomice-si-autoconformante-800000677867",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.xxxlutz.ro%2Fp%2Fsaltea-ortopedica-180x200-cm-rigiditate-medie-inaltime-25-cm-tesatura-hipoalergenica-si-respirabila-proprietati-ergonomice-si-autoconformante-800000677867",
 "magazin": "xxxlutz.ro",
 "id": "82bE6RO0-mXA",
 "brand": "The White Stone",
-"url_magazin": "https://www.xxxlutz.ro/p/the-white-stone-saltea-ortopedica-180x200-cm-rigiditate-medie-inaltime-25-cm-tesatura-hipoalergenica-si-respirabila-proprietati-ergonomice-si-autoconformante-800000677867",
+"url_magazin": "https://www.xxxlutz.ro/p/saltea-ortopedica-180x200-cm-rigiditate-medie-inaltime-25-cm-tesatura-hipoalergenica-si-respirabila-proprietati-ergonomice-si-autoconformante-800000677867",
 "pret_vechi": null
 },
 {
 "titlu": "SALTEA 180x200 cm din Waterfoam Hipoalergenică Înălțime 20 cm; Mediu Ferm, Antibacterian și Respirabil",
 "pret": 1265.19,
 "imagine": "https://media.xxxlutz.com/i/xxxlutz/NCq2F9MsRZLpGHkXDbiDoeLw.jpg?$feedGoogleProduct$",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.xxxlutz.ro%2Fp%2Fthe-white-stone-saltea-180x200-cm-din-waterfoam-hipoalergenica-inaltime-20-cm-mediu-ferm-antibacterian-si-respirabil-800001110896",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.xxxlutz.ro%2Fp%2Fsaltea-180x200-cm-din-waterfoam-hipoalergenica-inaltime-20-cm-mediu-ferm-antibacterian-si-respirabil-800001110896",
 "magazin": "xxxlutz.ro",
 "id": "AJXlHBEk7EWY",
 "brand": "The White Stone",
-"url_magazin": "https://www.xxxlutz.ro/p/the-white-stone-saltea-180x200-cm-din-waterfoam-hipoalergenica-inaltime-20-cm-mediu-ferm-antibacterian-si-respirabil-800001110896",
+"url_magazin": "https://www.xxxlutz.ro/p/saltea-180x200-cm-din-waterfoam-hipoalergenica-inaltime-20-cm-mediu-ferm-antibacterian-si-respirabil-800001110896",
 "pret_vechi": null
 },
 {
@@ -11558,11 +11481,11 @@
 "titlu": "SALTEA 180x200 cm din Spumă Memory Foam; Înălțime 20 cm; Saltea Ortopedică cu 9 Zone, Hipoalergenică",
 "pret": 1328.53,
 "imagine": "https://media.xxxlutz.com/i/xxxlutz/NC-9GylzwiBzMBFaUByu2Skg.jpg?$feedGoogleProduct$",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.xxxlutz.ro%2Fp%2Fthe-white-stone-saltea-180x200-cm-din-spuma-memory-foam-inaltime-20-cm-saltea-ortopedica-cu-9-zone-hipoalergenic-800001403729",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.xxxlutz.ro%2Fp%2Fsaltea-180x200-cm-din-spuma-memory-foam-inaltime-20-cm-saltea-ortopedica-cu-9-zone-hipoalergenic-800001403729",
 "magazin": "xxxlutz.ro",
 "id": "lrJTGicc6ZZR",
 "brand": "The White Stone",
-"url_magazin": "https://www.xxxlutz.ro/p/the-white-stone-saltea-180x200-cm-din-spuma-memory-foam-inaltime-20-cm-saltea-ortopedica-cu-9-zone-hipoalergenic-800001403729",
+"url_magazin": "https://www.xxxlutz.ro/p/saltea-180x200-cm-din-spuma-memory-foam-inaltime-20-cm-saltea-ortopedica-cu-9-zone-hipoalergenic-800001403729",
 "pret_vechi": null
 },
 {
@@ -11578,25 +11501,14 @@
 "verificat": "2026-11-04"
 },
 {
-"titlu": "SALTEA cu Pocket și Memory 180x200 20 cm; Mediu-ferme, auto-modelantă, ortopedică",
-"pret": 1366.29,
-"imagine": "https://media.xxxlutz.com/i/xxxlutz/NC2P559ECjKAoHUPiBY82WLw.jpg?$feedGoogleProduct$",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.xxxlutz.ro%2Fp%2Fthe-white-stone-saltea-cu-pocket-si-memory-180x200-20-cm-mediu-ferme-auto-modelanta-ortopedic-800000684201",
-"magazin": "xxxlutz.ro",
-"id": "wydPZJGpy4ws",
-"brand": "The White Stone",
-"url_magazin": "https://www.xxxlutz.ro/p/the-white-stone-saltea-cu-pocket-si-memory-180x200-20-cm-mediu-ferme-auto-modelanta-ortopedic-800000684201",
-"pret_vechi": null
-},
-{
 "titlu": "SALTEA Ortopedică 180x200 cm Înălțime 21 cm; Ergonomică și Respirabilă",
 "pret": 1459.53,
 "imagine": "https://media.xxxlutz.com/i/xxxlutz/NCc7vOw_5kA3nKJvcWGMVUfg.jpg?$feedGoogleProduct$",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.xxxlutz.ro%2Fp%2Fthe-white-stone-saltea-ortopedica-180x200-cm-inaltime-21-cm-ergonomica-si-respirabil-800001860765",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.xxxlutz.ro%2Fp%2Fsaltea-ortopedica-180x200-cm-inaltime-21-cm-ergonomica-si-respirabil-800001860765",
 "magazin": "xxxlutz.ro",
 "id": "IPCNz6BRnFYk",
 "brand": "The White Stone",
-"url_magazin": "https://www.xxxlutz.ro/p/the-white-stone-saltea-ortopedica-180x200-cm-inaltime-21-cm-ergonomica-si-respirabil-800001860765",
+"url_magazin": "https://www.xxxlutz.ro/p/saltea-ortopedica-180x200-cm-inaltime-21-cm-ergonomica-si-respirabil-800001860765",
 "pret_vechi": null
 },
 {
@@ -11627,11 +11539,11 @@
 "titlu": "SALTEA 180x200 cm din Spumă Hipoalergenică și Memory Foam Înălțime 22 cm; Antibacterian și Anti-acarieni",
 "pret": 1805.23,
 "imagine": "https://media.xxxlutz.com/i/xxxlutz/NCc7vOw_5kA3nKJvcWGMVUfg.jpg?$feedGoogleProduct$",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.xxxlutz.ro%2Fp%2Fthe-white-stone-saltea-180x200-cm-din-spuma-hipoalergenica-si-memory-foam-inaltime-22-cm-antibacterian-si-anti-acarieni-800001403775",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.xxxlutz.ro%2Fp%2Fsaltea-180x200-cm-din-spuma-hipoalergenica-si-memory-foam-inaltime-22-cm-antibacterian-si-anti-acarieni-800001403775",
 "magazin": "xxxlutz.ro",
 "id": "Bv_aVxCGdAFs",
 "brand": "The White Stone",
-"url_magazin": "https://www.xxxlutz.ro/p/the-white-stone-saltea-180x200-cm-din-spuma-hipoalergenica-si-memory-foam-inaltime-22-cm-antibacterian-si-anti-acarieni-800001403775",
+"url_magazin": "https://www.xxxlutz.ro/p/saltea-180x200-cm-din-spuma-hipoalergenica-si-memory-foam-inaltime-22-cm-antibacterian-si-anti-acarieni-800001403775",
 "pret_vechi": null
 },
 {
@@ -11657,6 +11569,17 @@
 "url_magazin": "https://ortopedicus.com/produs/saltea-de-pat-ortopedica-memory-fresh-1552-aloe-vera-180x200/?utm_source=Custom+Template+1&utm_medium=cpc&utm_campaign=2performant_feed",
 "pret_vechi": null,
 "verificat": "2026-11-04"
+},
+{
+"titlu": "SALTEA 180x200 Arcuri Împachetate și Spumă Viscoelastică; Înălțime 30 cm; Ergonomic, Hipoalergenic și Antibacterian",
+"pret": 1919.79,
+"imagine": "https://media.xxxlutz.com/i/xxxlutz/NC3iXX9GzUP-ewy27d_J5Ljw.jpg?$feedGoogleProduct$",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.xxxlutz.ro%2Fp%2Fsaltea-180x200-arcuri-impachetate-si-spuma-viscoelastica-inaltime-30-cm-ergonomic-hipoalergenic-si-antibacterian-800001284572",
+"magazin": "xxxlutz.ro",
+"id": "5zgRkSqeiRp9",
+"brand": "The White Stone",
+"url_magazin": "https://www.xxxlutz.ro/p/saltea-180x200-arcuri-impachetate-si-spuma-viscoelastica-inaltime-30-cm-ergonomic-hipoalergenic-si-antibacterian-800001284572",
+"pret_vechi": null
 },
 {
 "titlu": "Saltea de Pat Ortopedica, Tencel Air Hybrid 3+12+3, Doua Fete, 180x200",
@@ -11696,7 +11619,7 @@
 "titlu": "Saltele ortopedice",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-06",
+"actualizat": "2026-11-15",
 "feeduri": [
 {
 "id": 6761,
@@ -11812,7 +11735,7 @@
 "titlu": "Frigidere No Frost",
 "nota": null,
 "in_text": "\\bNo Frost\\b",
-"actualizat": "2026-11-06",
+"actualizat": "2026-11-15",
 "feeduri": [
 {
 "id": 1539,
@@ -11820,6 +11743,28 @@
 }
 ],
 "produse": [
+{
+"titlu": "HEINNER Combina frigorifica Heinner HCNF-HM253INVDGE++, 253 l, Clasa E, No frost, Compresor inverter, Control electronic",
+"pret": 1299.0,
+"imagine": "https://www.dwyn.ro/images/products/img_202512311121/411907/full/heinner-combina-frigorifica-heinner-hcnf-hm253invdge-plus-plus-253-l-clasa-e-no-frost-compresor-inverter-control-electronic-cu-termostat-ajustabil-lumina-led-3-rafturi-din-sticla-frigider-3-sertare-co-1337668.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Ffrigider%2Fheinner%2F411907-combina-frigorifica-heinner-hcnf-hm253invdge-plus-plus-253-l-clasa-e-no-frost-compresor-inverter-control-electronic-cu-termostat-ajustabil-lumina-led-3-rafturi-din-sticla-frigider-3-sertare-congelator%2F",
+"magazin": "dwyn.ro",
+"id": "bIC0y1XUIlrn",
+"brand": "HEINNER",
+"url_magazin": "https://www.dwyn.ro/frigider/heinner/411907-combina-frigorifica-heinner-hcnf-hm253invdge-plus-plus-253-l-clasa-e-no-frost-compresor-inverter-control-electronic-cu-termostat-ajustabil-lumina-led-3-rafturi-din-sticla-frigider-3-sertare-congelator/",
+"pret_vechi": null
+},
+{
+"titlu": "HEINNER Combina frigorifica Heinner HCNF-HM293INVD, 293 l, Clasa D, No frost, Compresor inverter, Control electronic cu",
+"pret": 1439.0,
+"imagine": "https://www.dwyn.ro/images/products/img_202606122129/478642/full/heinner-combina-frigorifica-heinner-hcnf-hm293invd-293-l-clasa-d-no-frost-compresor-inverter-control-electronic-cu-termostat-ajustabil-lumina-led-h-185-cm-alb-1515934.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Ffrigider%2Fheinner%2F478642-combina-frigorifica-heinner-hcnf-hm293invd-293-l-clasa-d-no-frost-compresor-inverter-control-electronic-cu-termostat-ajustabil-lumina-led-h-185-cm-alb%2F",
+"magazin": "dwyn.ro",
+"id": "bbFj6Y90xLFz",
+"brand": "HEINNER",
+"url_magazin": "https://www.dwyn.ro/frigider/heinner/478642-combina-frigorifica-heinner-hcnf-hm293invd-293-l-clasa-d-no-frost-compresor-inverter-control-electronic-cu-termostat-ajustabil-lumina-led-h-185-cm-alb/",
+"pret_vechi": null
+},
 {
 "titlu": "HEINNER Combina frigorifica Heinner HCNF-HM253INVBKE++, 253 l, Clasa E, No frost, Compresor Inverter, Control electronic",
 "pret": 1459.99,
@@ -11843,6 +11788,28 @@
 "pret_vechi": null
 },
 {
+"titlu": "HEINNER Combina frigorifica Heinner HCNF-HM291INVWDD, 291 l, Clasa D, No frost, Compresor inverter, Control electronic c",
+"pret": 1479.0,
+"imagine": "https://www.dwyn.ro/images/products/img_202606122129/478645/full/heinner-combina-frigorifica-heinner-hcnf-hm291invwdd-291-l-clasa-d-no-frost-compresor-inverter-control-electronic-cu-termostat-ajustabil-lumina-led-h-185-cm-alb-1515943.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Ffrigider%2Fheinner%2F478645-combina-frigorifica-heinner-hcnf-hm291invwdd-291-l-clasa-d-no-frost-compresor-inverter-control-electronic-cu-termostat-ajustabil-lumina-led-h-185-cm-alb%2F",
+"magazin": "dwyn.ro",
+"id": "FYA41LFKCom7",
+"brand": "HEINNER",
+"url_magazin": "https://www.dwyn.ro/frigider/heinner/478645-combina-frigorifica-heinner-hcnf-hm291invwdd-291-l-clasa-d-no-frost-compresor-inverter-control-electronic-cu-termostat-ajustabil-lumina-led-h-185-cm-alb/",
+"pret_vechi": null
+},
+{
+"titlu": "HEINNER Combina frigorifica Heinner HCNF-HM293INVDGD, 293 l, Clasa D, No frost, Compresor Inverter, Control electronic c",
+"pret": 1499.0,
+"imagine": "https://www.dwyn.ro/images/products/img_202606122129/478630/full/heinner-combina-frigorifica-heinner-hcnf-hm293invdgd-293-l-clasa-d-no-frost-compresor-inverter-control-electronic-cu-termostat-ajustabil-lumina-led-h-185-cm-gri-antracit-texturat-1515898.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Ffrigider%2Fheinner%2F478630-combina-frigorifica-heinner-hcnf-hm293invdgd-293-l-clasa-d-no-frost-compresor-inverter-control-electronic-cu-termostat-ajustabil-lumina-led-h-185-cm-gri-antracit-texturat%2F",
+"magazin": "dwyn.ro",
+"id": "mC7yHuQtcpOf",
+"brand": "HEINNER",
+"url_magazin": "https://www.dwyn.ro/frigider/heinner/478630-combina-frigorifica-heinner-hcnf-hm293invdgd-293-l-clasa-d-no-frost-compresor-inverter-control-electronic-cu-termostat-ajustabil-lumina-led-h-185-cm-gri-antracit-texturat/",
+"pret_vechi": null
+},
+{
 "titlu": "CANDY Combina frigorifica Candy CCH1S518EX, 262 l, No Frost, Clasa E, H 180 cm, 180x55 cm, static, LED, Inox",
 "pret": 1647.99,
 "imagine": "https://www.dwyn.ro/images/products/img_202606122129/425170/full/candy-combina-frigorifica-candy-cch1s518ex-262-l-clasa-e-h-180-cm-180x55-cm-static-led-inox-1371427.jpg",
@@ -11863,50 +11830,6 @@
 "brand": "HEINNER",
 "url_magazin": "https://www.dwyn.ro/frigider/heinner/411883-combina-frigorifica-heinner-hcnf-hm291invwde-plus-plus-291-l-clasa-e-no-frost-compresor-inverter-dozator-de-apa-control-electronic-cu-termostat-ajustabil-lumina-led-3-rafturi-din-sticla-frigider-3-ser/",
 "pret_vechi": null
-},
-{
-"titlu": "HEINNER Combina frigorifica Heinner HCNF-HM253INVDGE++, 253 l, Clasa E, No frost, Compresor inverter, Control electronic",
-"pret": 1789.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202512311121/411907/full/heinner-combina-frigorifica-heinner-hcnf-hm253invdge-plus-plus-253-l-clasa-e-no-frost-compresor-inverter-control-electronic-cu-termostat-ajustabil-lumina-led-3-rafturi-din-sticla-frigider-3-sertare-co-1337668.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Ffrigider%2Fheinner%2F411907-combina-frigorifica-heinner-hcnf-hm253invdge-plus-plus-253-l-clasa-e-no-frost-compresor-inverter-control-electronic-cu-termostat-ajustabil-lumina-led-3-rafturi-din-sticla-frigider-3-sertare-congelator%2F",
-"magazin": "dwyn.ro",
-"id": "bIC0y1XUIlrn",
-"brand": "HEINNER",
-"url_magazin": "https://www.dwyn.ro/frigider/heinner/411907-combina-frigorifica-heinner-hcnf-hm253invdge-plus-plus-253-l-clasa-e-no-frost-compresor-inverter-control-electronic-cu-termostat-ajustabil-lumina-led-3-rafturi-din-sticla-frigider-3-sertare-congelator/",
-"pret_vechi": null
-},
-{
-"titlu": "TESLA Combina frigorifica Tesla RC3300FHXE, 326L, clasa E, No Frost, Inverter, control electronic, LED, Inox",
-"pret": 1849.0,
-"imagine": "https://www.dwyn.ro/images/products/img_202606122129/425440/full/tesla-combina-frigorifica-tesla-rc3300fhxe-326l-clasa-e-no-frost-inverter-control-electronic-led-inox-1373227.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Ffrigider%2Ftesla%2F425440-combina-frigorifica-tesla-rc3300fhxe-326l-clasa-e-no-frost-inverter-control-electronic-led-inox%2F",
-"magazin": "dwyn.ro",
-"id": "0sQBArQE1edn",
-"brand": "TESLA",
-"url_magazin": "https://www.dwyn.ro/frigider/tesla/425440-combina-frigorifica-tesla-rc3300fhxe-326l-clasa-e-no-frost-inverter-control-electronic-led-inox/",
-"pret_vechi": null
-},
-{
-"titlu": "CANDY Combina Frigorifica Candy CNCQ2T518EX, No Frost, 279 l, H 182.5 cm, Clasa E, Inox",
-"pret": 1876.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202606122129/425167/full/candy-combina-frigorifica-candy-cncq2t518ex-no-frost-279-l-h-182-5-cm-clasa-e-inox-1371394.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Ffrigider%2Fcandy%2F425167-combina-frigorifica-candy-cncq2t518ex-no-frost-279-l-h-182-5-cm-clasa-e-inox%2F",
-"magazin": "dwyn.ro",
-"id": "NcaOdzI3wQWQ",
-"brand": "CANDY",
-"url_magazin": "https://www.dwyn.ro/frigider/candy/425167-combina-frigorifica-candy-cncq2t518ex-no-frost-279-l-h-182-5-cm-clasa-e-inox/",
-"pret_vechi": null
-},
-{
-"titlu": "TESLA Combina frigorifica Tesla RC3201FHXE, 293L, E, NO Frost, inverter, iluminare LED, Inox",
-"pret": 1954.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202512311121/393691/full/tesla-combina-frigorifica-tesla-rc3201fhxe-293l-e-no-frost-inverter-iluminare-led-inox-1337791.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Ffrigider%2Ftesla%2F393691-combina-frigorifica-tesla-rc3201fhxe-293l-e-no-frost-inverter-iluminare-led-inox%2F",
-"magazin": "dwyn.ro",
-"id": "Vvg64h7nJXxO",
-"brand": "TESLA",
-"url_magazin": "https://www.dwyn.ro/frigider/tesla/393691-combina-frigorifica-tesla-rc3201fhxe-293l-e-no-frost-inverter-iluminare-led-inox/",
-"pret_vechi": null
 }
 ],
 "magazine": [
@@ -11920,7 +11843,7 @@
 "titlu": "Frigidere Side by Side",
 "nota": null,
 "in_text": "\\bSide by Side\\b",
-"actualizat": "2026-11-06",
+"actualizat": "2026-11-15",
 "feeduri": [
 {
 "id": 1539,
@@ -11941,18 +11864,6 @@
 "verificat": "2026-11-04"
 },
 {
-"titlu": "HEINNER Frigider Side By Side Heinner HSBS-HM439NFINVDGWDE++, 439 L, Clasa E, Full No Frost, Inverter, Dozator apa, Cont",
-"pret": 3238.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202606122129/456427/full/heinner-side-by-side-heinner-hsbs-hm439nfinvdgwd-1452229.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Ffrigider%2Fheinner%2F456427-frigider-side-by-side-heinner-hsbs-hm439nfinvdgwde-plus-plus-439-l-clasa-e-full-no-frost-inverter-dozator-apa-control-electronic-177-cm-antracit%2F",
-"magazin": "dwyn.ro",
-"id": "wooXmRlBhDJy",
-"brand": "HEINNER",
-"url_magazin": "https://www.dwyn.ro/frigider/heinner/456427-frigider-side-by-side-heinner-hsbs-hm439nfinvdgwde-plus-plus-439-l-clasa-e-full-no-frost-inverter-dozator-apa-control-electronic-177-cm-antracit/",
-"pret_vechi": null,
-"verificat": "2026-11-04"
-},
-{
 "titlu": "TESLA Frigider side by side Tesla RM3400FHXE, 362 l, Full No Frost, LED touch screen, Clasa E, H 180 cm, Inox",
 "pret": 3391.99,
 "imagine": "https://www.dwyn.ro/images/products/img_202404261115/247925/full/tesla-wg-frigider-side-by-side-tesla-rm3400fhxe-362-l-eh180-full-no-frost-led-touch-screen-inox-502497.png",
@@ -11965,20 +11876,8 @@
 "verificat": "2026-11-04"
 },
 {
-"titlu": "HEINNER Frigider Side By Side Heinner HSBS-M548NFINVBKE++, 548 L, Clasa E, Full No Frost, Inverter, Control electronic,",
-"pret": 3461.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202606122129/456433/full/heinner-side-by-side-heinner-hsbs-m548nfinvbke-plus-plus-1452247.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Ffrigider%2Fheinner%2F456433-frigider-side-by-side-heinner-hsbs-m548nfinvbke-plus-plus-548-l-clasa-e-full-no-frost-inverter-control-electronic-176-cm-negru%2F",
-"magazin": "dwyn.ro",
-"id": "XNUAQVzN1j0P",
-"brand": "HEINNER",
-"url_magazin": "https://www.dwyn.ro/frigider/heinner/456433-frigider-side-by-side-heinner-hsbs-m548nfinvbke-plus-plus-548-l-clasa-e-full-no-frost-inverter-control-electronic-176-cm-negru/",
-"pret_vechi": null,
-"verificat": "2026-11-04"
-},
-{
 "titlu": "MPM Frigider Side By Side MPM-427-SBS-05/NL, Volum Net Frigider 288 l, Congelator 151 l, Clasa E, No Frost, Alb",
-"pret": 4533.99,
+"pret": 4526.99,
 "imagine": "https://www.dwyn.ro/images/products/img_202503142150/274563/full/mpm-frigider-side-by-side-mpm-427-sbs-05-nl-volum-net-frigider-288-l-congelator-151-l-clasa-e-no-frost-alb-720465.jpg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Ffrigider%2Fmpm%2F274563-frigider-side-by-side-mpm-427-sbs-05-nl-volum-net-frigider-288-l-congelator-151-l-clasa-e-no-frost-alb%2F",
 "magazin": "dwyn.ro",
@@ -11986,18 +11885,6 @@
 "brand": "MPM",
 "url_magazin": "https://www.dwyn.ro/frigider/mpm/274563-frigider-side-by-side-mpm-427-sbs-05-nl-volum-net-frigider-288-l-congelator-151-l-clasa-e-no-frost-alb/",
 "pret_vechi": null
-},
-{
-"titlu": "HISENSE Frigider Hisense Hi7 Autonom RF728N4SBFE, Side by Side, No Frost, Negru",
-"pret": 14817.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202512311121/274571/full/hisense-frigider-hisense-rf728n4sbfe-side-by-side-no-frost-negru-1297663.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Ffrigider%2Fhisense%2F274571-frigider-hisense-hi7-autonom-rf728n4sbfe-side-by-side-no-frost-negru%2F",
-"magazin": "dwyn.ro",
-"id": "Tj7CB4yLX6wR",
-"brand": "HISENSE",
-"url_magazin": "https://www.dwyn.ro/frigider/hisense/274571-frigider-hisense-hi7-autonom-rf728n4sbfe-side-by-side-no-frost-negru/",
-"pret_vechi": null,
-"verificat": "2026-11-04"
 }
 ],
 "magazine": [
@@ -12011,7 +11898,7 @@
 "titlu": "Combine frigorifice",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-06",
+"actualizat": "2026-11-15",
 "feeduri": [
 {
 "id": 1539,
@@ -12040,16 +11927,26 @@
 "verificat": "2026-11-04"
 },
 {
-"titlu": "Combina frigorifica CANDY CCT3L517ES, Low Frost, 260 l, H 176 cm, Clasa E (Argintiu)",
-"pret": 1224.99,
-"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4203%2F4203664%2Ffrigider-candy-cct3l517es-67a4a8cf4a366.jpg&type=auto&width=500&sign=dzVzXH3gx_RdLkBEwB24Mm3sMIPZq_E55mV_LqhClMo",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Felectrocasnice-electrocasnice-mari-aparate-frigorifice-combine-frigorifice%2Fcandy-combina-frigorifica-candy-cct3l517es-low-frost-260-l-h-176-cm-clasa-e-argintiu-4203664.html",
-"magazin": "evomag.ro",
-"id": "jQHtoghhuLbW",
-"brand": "Candy",
-"url_magazin": "https://www.evomag.ro/electrocasnice-electrocasnice-mari-aparate-frigorifice-combine-frigorifice/candy-combina-frigorifica-candy-cct3l517es-low-frost-260-l-h-176-cm-clasa-e-argintiu-4203664.html",
-"pret_vechi": null,
-"verificat": "2026-11-04"
+"titlu": "HEINNER Combina frigorifica Heinner HC-HM313WDE++, 313 l, Clasa E, Dozator de apa, Control electronic cu termostat ajust",
+"pret": 1299.0,
+"imagine": "https://www.dwyn.ro/images/products/img_202606122129/478636/full/heinner-combina-frigorifica-heinner-hc-hm313wde-plus-plus-313-l-clasa-e-dozator-de-apa-control-electronic-cu-termostat-ajustabil-lumina-led-decoratiuni-cromate-h-185-8-cm-alb-1515916.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Ffrigider%2Fheinner%2F478636-combina-frigorifica-heinner-hc-hm313wde-plus-plus-313-l-clasa-e-dozator-de-apa-control-electronic-cu-termostat-ajustabil-lumina-led-decoratiuni-cromate-h-185-8-cm-alb%2F",
+"magazin": "dwyn.ro",
+"id": "6JHBUKhC7noi",
+"brand": "HEINNER",
+"url_magazin": "https://www.dwyn.ro/frigider/heinner/478636-combina-frigorifica-heinner-hc-hm313wde-plus-plus-313-l-clasa-e-dozator-de-apa-control-electronic-cu-termostat-ajustabil-lumina-led-decoratiuni-cromate-h-185-8-cm-alb/",
+"pret_vechi": null
+},
+{
+"titlu": "HEINNER Combina frigorifica Heinner HCNF-HM253INVDGE++, 253 l, Clasa E, No frost, Compresor inverter, Control electronic",
+"pret": 1299.0,
+"imagine": "https://www.dwyn.ro/images/products/img_202512311121/411907/full/heinner-combina-frigorifica-heinner-hcnf-hm253invdge-plus-plus-253-l-clasa-e-no-frost-compresor-inverter-control-electronic-cu-termostat-ajustabil-lumina-led-3-rafturi-din-sticla-frigider-3-sertare-co-1337668.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Ffrigider%2Fheinner%2F411907-combina-frigorifica-heinner-hcnf-hm253invdge-plus-plus-253-l-clasa-e-no-frost-compresor-inverter-control-electronic-cu-termostat-ajustabil-lumina-led-3-rafturi-din-sticla-frigider-3-sertare-congelator%2F",
+"magazin": "dwyn.ro",
+"id": "bIC0y1XUIlrn",
+"brand": "HEINNER",
+"url_magazin": "https://www.dwyn.ro/frigider/heinner/411907-combina-frigorifica-heinner-hcnf-hm253invdge-plus-plus-253-l-clasa-e-no-frost-compresor-inverter-control-electronic-cu-termostat-ajustabil-lumina-led-3-rafturi-din-sticla-frigider-3-sertare-congelator/",
+"pret_vechi": null
 },
 {
 "titlu": "Combina frigorifica HEINNER HCNF-HM293INVDGE++, 293 L, Total No Frost, Clasa E, Lumina LED, H 186 cm (Gri antracit)",
@@ -12064,16 +11961,15 @@
 "verificat": "2026-11-04"
 },
 {
-"titlu": "Combina frigorifica Nobeltek NRD-268ESW, 268 (197+71) litri, Clasa E, Static (Alb)",
-"pret": 1435.99,
-"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4321%2F4321785%2F6ae88f9694212.jpg&type=auto&width=500&sign=1JaCxMJv7iRC_WqTMA1qaehdrJhbe64sQepf0v42sTU",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Felectrocasnice-electrocasnice-mari-aparate-frigorifice-combine-frigorifice%2Fnobeltek-combina-frigorifica-nobeltek-nrd-268esw-268-197-71-litri-clasa-e-static-alb-4321785.html",
-"magazin": "evomag.ro",
-"id": "-eUPCVYMmLy6",
-"brand": "Nobeltek",
-"url_magazin": "https://www.evomag.ro/electrocasnice-electrocasnice-mari-aparate-frigorifice-combine-frigorifice/nobeltek-combina-frigorifica-nobeltek-nrd-268esw-268-197-71-litri-clasa-e-static-alb-4321785.html",
-"pret_vechi": null,
-"verificat": "2026-11-04"
+"titlu": "HEINNER Combina frigorifica Heinner HCNF-HM293INVD, 293 l, Clasa D, No frost, Compresor inverter, Control electronic cu",
+"pret": 1439.0,
+"imagine": "https://www.dwyn.ro/images/products/img_202606122129/478642/full/heinner-combina-frigorifica-heinner-hcnf-hm293invd-293-l-clasa-d-no-frost-compresor-inverter-control-electronic-cu-termostat-ajustabil-lumina-led-h-185-cm-alb-1515934.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Ffrigider%2Fheinner%2F478642-combina-frigorifica-heinner-hcnf-hm293invd-293-l-clasa-d-no-frost-compresor-inverter-control-electronic-cu-termostat-ajustabil-lumina-led-h-185-cm-alb%2F",
+"magazin": "dwyn.ro",
+"id": "bbFj6Y90xLFz",
+"brand": "HEINNER",
+"url_magazin": "https://www.dwyn.ro/frigider/heinner/478642-combina-frigorifica-heinner-hcnf-hm293invd-293-l-clasa-d-no-frost-compresor-inverter-control-electronic-cu-termostat-ajustabil-lumina-led-h-185-cm-alb/",
+"pret_vechi": null
 },
 {
 "titlu": "Combina frigorifica Albatros CF335IME, 248 L, Clasa E, Iluminare LED, Usi reversibile, H 172 cm (Alb)",
@@ -12110,96 +12006,81 @@
 "pret_vechi": null
 },
 {
-"titlu": "Combina frigorifica Nobeltek NRD-268ESS, 268 (197+71) litri, Static, Clasa E (Argintiu)",
-"pret": 1499.99,
-"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4321%2F4321783%2F6ae88f9bcb68b.png&type=auto&width=500&sign=rKw1R_OM8EoBEhyjDI1kVGID2nN6WASyw2vgTfXmwls",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Felectrocasnice-electrocasnice-mari-aparate-frigorifice-combine-frigorifice%2Fnobeltek-combina-frigorifica-nobeltek-nrd-268ess-268-197-71-litri-static-clasa-e-argintiu-4321783.html",
-"magazin": "evomag.ro",
-"id": "HNbbe8C2DJo3",
-"brand": "Nobeltek",
-"url_magazin": "https://www.evomag.ro/electrocasnice-electrocasnice-mari-aparate-frigorifice-combine-frigorifice/nobeltek-combina-frigorifica-nobeltek-nrd-268ess-268-197-71-litri-static-clasa-e-argintiu-4321783.html",
-"pret_vechi": null,
-"verificat": "2026-11-04"
-},
-{
-"titlu": "Combina frigorifica Samus SCX399IDE, 313 L, Clasa E, Dozator de apa, Lumina LED, H 186 cm (Inox)",
-"pret": 1542.99,
-"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4317%2F4317539%2Fscx399ide-6abd0f242d122.jpg&type=auto&width=500&sign=O2vXDFscIzLBDNZAfvHKcNNFzumbBdniCDRjtXcqo-Q",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Felectrocasnice-electrocasnice-mari-aparate-frigorifice-combine-frigorifice%2Fsamus-combina-frigorifica-samus-scx399ide-313-l-clasa-e-dozator-de-apa-lumina-led-h-186-cm-inox-4317539.html",
-"magazin": "evomag.ro",
-"id": "VU3w0BVgcXBP",
-"brand": "Samus",
-"url_magazin": "https://www.evomag.ro/electrocasnice-electrocasnice-mari-aparate-frigorifice-combine-frigorifice/samus-combina-frigorifica-samus-scx399ide-313-l-clasa-e-dozator-de-apa-lumina-led-h-186-cm-inox-4317539.html",
-"pret_vechi": null,
-"verificat": "2026-11-04"
-},
-{
-"titlu": "Combina frigorifica Albatros CNF398IME, 293 L, Clasa E, Lumina interioara LED, Usi reversibile, H 186 cm (Alb)",
-"pret": 1554.99,
-"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4316%2F4316696%2Fcombina-frigorifica-albatros-c-6ab28278e2712.jpg&type=auto&width=500&sign=UJQ6CdkM-eMBiDdyAh1-CKTTI7l-evv-MtjTuxUa78Y",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Felectrocasnice-electrocasnice-mari-aparate-frigorifice-combine-frigorifice%2Falbatros-combina-frigorifica-albatros-cnf398ime-293-l-clasa-e-lumina-interioara-led-usi-reversibile-h-186-cm-alb-4316696.html",
-"magazin": "evomag.ro",
-"id": "XW-hRoI1jiwt",
-"brand": "Albatros",
-"url_magazin": "https://www.evomag.ro/electrocasnice-electrocasnice-mari-aparate-frigorifice-combine-frigorifice/albatros-combina-frigorifica-albatros-cnf398ime-293-l-clasa-e-lumina-interioara-led-usi-reversibile-h-186-cm-alb-4316696.html",
-"pret_vechi": null,
-"verificat": "2026-11-04"
-},
-{
-"titlu": "CANDY Combina frigorifica Candy CCH1S518EX, 262 l, No Frost, Clasa E, H 180 cm, 180x55 cm, static, LED, Inox",
-"pret": 1647.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202606122129/425170/full/candy-combina-frigorifica-candy-cch1s518ex-262-l-clasa-e-h-180-cm-180x55-cm-static-led-inox-1371427.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Ffrigider%2Fcandy%2F425170-combina-frigorifica-candy-cch1s518ex-262-l-no-frost-clasa-e-h-180-cm-180x55-cm-static-led-inox%2F",
+"titlu": "HEINNER Combina frigorifica Heinner HCNF-HM291INVWDD, 291 l, Clasa D, No frost, Compresor inverter, Control electronic c",
+"pret": 1479.0,
+"imagine": "https://www.dwyn.ro/images/products/img_202606122129/478645/full/heinner-combina-frigorifica-heinner-hcnf-hm291invwdd-291-l-clasa-d-no-frost-compresor-inverter-control-electronic-cu-termostat-ajustabil-lumina-led-h-185-cm-alb-1515943.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Ffrigider%2Fheinner%2F478645-combina-frigorifica-heinner-hcnf-hm291invwdd-291-l-clasa-d-no-frost-compresor-inverter-control-electronic-cu-termostat-ajustabil-lumina-led-h-185-cm-alb%2F",
 "magazin": "dwyn.ro",
-"id": "kgZaX4Ls5n4H",
-"brand": "CANDY",
-"url_magazin": "https://www.dwyn.ro/frigider/candy/425170-combina-frigorifica-candy-cch1s518ex-262-l-no-frost-clasa-e-h-180-cm-180x55-cm-static-led-inox/",
-"pret_vechi": null
-},
-{
-"titlu": "HEINNER Combina frigorifica Heinner HCNF-HM291INVWDE++, 291 l, Clasa E, No frost, Compresor inverter, Dozator de apa, Co",
-"pret": 1666.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202512311121/411883/full/heinner-combina-frigorifica-heinner-hcnf-hm291invwde-plus-plus-291-l-clasa-e-no-frost-compresor-inverter-dozator-de-apa-control-electronic-cu-termostat-ajustabil-lumina-led-3-rafturi-din-sticla-frigid-1313179.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Ffrigider%2Fheinner%2F411883-combina-frigorifica-heinner-hcnf-hm291invwde-plus-plus-291-l-clasa-e-no-frost-compresor-inverter-dozator-de-apa-control-electronic-cu-termostat-ajustabil-lumina-led-3-rafturi-din-sticla-frigider-3-ser%2F",
-"magazin": "dwyn.ro",
-"id": "cK5xl3SUZW_N",
+"id": "FYA41LFKCom7",
 "brand": "HEINNER",
-"url_magazin": "https://www.dwyn.ro/frigider/heinner/411883-combina-frigorifica-heinner-hcnf-hm291invwde-plus-plus-291-l-clasa-e-no-frost-compresor-inverter-dozator-de-apa-control-electronic-cu-termostat-ajustabil-lumina-led-3-rafturi-din-sticla-frigider-3-ser/",
+"url_magazin": "https://www.dwyn.ro/frigider/heinner/478645-combina-frigorifica-heinner-hcnf-hm291invwdd-291-l-clasa-d-no-frost-compresor-inverter-control-electronic-cu-termostat-ajustabil-lumina-led-h-185-cm-alb/",
 "pret_vechi": null
 },
 {
-"titlu": "TESLA Combina frigorifica Tesla RC3300FHXE, 326L, clasa E, No Frost, Inverter, control electronic, LED, Inox",
-"pret": 1849.0,
-"imagine": "https://www.dwyn.ro/images/products/img_202606122129/425440/full/tesla-combina-frigorifica-tesla-rc3300fhxe-326l-clasa-e-no-frost-inverter-control-electronic-led-inox-1373227.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Ffrigider%2Ftesla%2F425440-combina-frigorifica-tesla-rc3300fhxe-326l-clasa-e-no-frost-inverter-control-electronic-led-inox%2F",
+"titlu": "HEINNER Combina frigorifica Heinner HCNF-HM293INVDGD, 293 l, Clasa D, No frost, Compresor Inverter, Control electronic c",
+"pret": 1499.0,
+"imagine": "https://www.dwyn.ro/images/products/img_202606122129/478630/full/heinner-combina-frigorifica-heinner-hcnf-hm293invdgd-293-l-clasa-d-no-frost-compresor-inverter-control-electronic-cu-termostat-ajustabil-lumina-led-h-185-cm-gri-antracit-texturat-1515898.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Ffrigider%2Fheinner%2F478630-combina-frigorifica-heinner-hcnf-hm293invdgd-293-l-clasa-d-no-frost-compresor-inverter-control-electronic-cu-termostat-ajustabil-lumina-led-h-185-cm-gri-antracit-texturat%2F",
 "magazin": "dwyn.ro",
-"id": "0sQBArQE1edn",
-"brand": "TESLA",
-"url_magazin": "https://www.dwyn.ro/frigider/tesla/425440-combina-frigorifica-tesla-rc3300fhxe-326l-clasa-e-no-frost-inverter-control-electronic-led-inox/",
+"id": "mC7yHuQtcpOf",
+"brand": "HEINNER",
+"url_magazin": "https://www.dwyn.ro/frigider/heinner/478630-combina-frigorifica-heinner-hcnf-hm293invdgd-293-l-clasa-d-no-frost-compresor-inverter-control-electronic-cu-termostat-ajustabil-lumina-led-h-185-cm-gri-antracit-texturat/",
 "pret_vechi": null
 },
 {
-"titlu": "CANDY Combina Frigorifica Candy CNCQ2T518EX, No Frost, 279 l, H 182.5 cm, Clasa E, Inox",
-"pret": 1876.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202606122129/425167/full/candy-combina-frigorifica-candy-cncq2t518ex-no-frost-279-l-h-182-5-cm-clasa-e-inox-1371394.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Ffrigider%2Fcandy%2F425167-combina-frigorifica-candy-cncq2t518ex-no-frost-279-l-h-182-5-cm-clasa-e-inox%2F",
-"magazin": "dwyn.ro",
-"id": "NcaOdzI3wQWQ",
-"brand": "CANDY",
-"url_magazin": "https://www.dwyn.ro/frigider/candy/425167-combina-frigorifica-candy-cncq2t518ex-no-frost-279-l-h-182-5-cm-clasa-e-inox/",
+"titlu": "Combina frigorifica HEINNER HCNF-HS304XWDE++, 304 l, Clasa E, Full No Frost, Control LED Touch, Dozator de apa, Super Co",
+"pret": 1841.99,
+"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4212%2F4212879%2Fcombina-frig-heinner-hcnf-hs3-67ea5957d2695.jpg&type=auto&width=500&sign=2SfNPtXO3sI28m-BCO4gc478cyc8PH0YVoTEsfxgr3g",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Felectrocasnice-electrocasnice-mari-aparate-frigorifice-combine-frigorifice%2Fheinner-combina-frigorifica-heinner-hcnf-hs304xwde-304-l-clasa-e-full-no-frost-control-led-touch-dozator-de-apa-super-congelare-h-186-cm-inox-4212879.html",
+"magazin": "evomag.ro",
+"id": "UU8AJSu3PLEQ",
+"brand": "Heinner",
+"url_magazin": "https://www.evomag.ro/electrocasnice-electrocasnice-mari-aparate-frigorifice-combine-frigorifice/heinner-combina-frigorifica-heinner-hcnf-hs304xwde-304-l-clasa-e-full-no-frost-control-led-touch-dozator-de-apa-super-congelare-h-186-cm-inox-4212879.html",
 "pret_vechi": null
 },
 {
-"titlu": "MPM Combina frigorifica MPM 182-KB-38W, 173L, Clasa E, Alb",
-"pret": 1882.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202512311121/363866/full/mpm-combined-refrigerator-freezer-mpm-182-kb-38w-white-1028198.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Ffrigider%2Fmpm%2F363866-combina-frigorifica-mpm-182-kb-38w-173l-clasa-e-alb%2F",
-"magazin": "dwyn.ro",
-"id": "UMs6-tau24ad",
-"brand": "MPM",
-"url_magazin": "https://www.dwyn.ro/frigider/mpm/363866-combina-frigorifica-mpm-182-kb-38w-173l-clasa-e-alb/",
-"pret_vechi": null,
-"verificat": "2026-11-04"
+"titlu": "Combina frigorifica Bosch KGV36VLEA, 308 L, Static, Clasa E, H 186 cm (Inox)",
+"pret": 2499.99,
+"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4317%2F4317996%2Fcombina-frigorifica-bosch-kgv3-6ac3482700a7d.jpg&type=auto&width=500&sign=bpb8IvNWY63GTO-jnCD9l2C66ugRaG7xHyWSwKgFD5Q",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Felectrocasnice-electrocasnice-mari-aparate-frigorifice-combine-frigorifice%2Fbosch-combina-frigorifica-bosch-kgv36vlea-308-l-static-clasa-e-h-186-cm-inox-4317996.html",
+"magazin": "evomag.ro",
+"id": "D-K-vRmGCilo",
+"brand": "BOSCH",
+"url_magazin": "https://www.evomag.ro/electrocasnice-electrocasnice-mari-aparate-frigorifice-combine-frigorifice/bosch-combina-frigorifica-bosch-kgv36vlea-308-l-static-clasa-e-h-186-cm-inox-4317996.html",
+"pret_vechi": null
+},
+{
+"titlu": "Combina frigorifica Bosch KGV362WEAS, 308 L, Static, Clasa E, H 186 cm (Alb)",
+"pret": 2550.98,
+"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4316%2F4316398%2Fkgv362weas-6aad1ce2bffca.jpg&type=auto&width=500&sign=EtN7dbgpubgGc343XJsdZzXAaAeg7MFAZ4U1K3woWBE",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Felectrocasnice-electrocasnice-mari-aparate-frigorifice-combine-frigorifice%2Fbosch-combina-frigorifica-bosch-kgv362weas-308-l-static-clasa-e-h-186-cm-alb-4316398.html",
+"magazin": "evomag.ro",
+"id": "sX1YIe60dTQC",
+"brand": "BOSCH",
+"url_magazin": "https://www.evomag.ro/electrocasnice-electrocasnice-mari-aparate-frigorifice-combine-frigorifice/bosch-combina-frigorifica-bosch-kgv362weas-308-l-static-clasa-e-h-186-cm-alb-4316398.html",
+"pret_vechi": null
+},
+{
+"titlu": "Combina frigorifica Haier EHD3PWDNPK186, 352 L, Total No Frost, Clasa D, WiFi/ hOn app, Air Surround, MyZone, H 185 cm,",
+"pret": 2799.99,
+"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4321%2F4321781%2F6ae88e09ef571.jpg&type=auto&width=500&sign=oz-7s0b0KRFvOHWMHQQynaXRENJwG6I7cFAy4Wvur64",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Felectrocasnice-electrocasnice-mari-aparate-frigorifice-combine-frigorifice%2Fhaier-combina-frigorifica-haier-ehd3pwdnpk186-352-l-total-no-frost-clasa-d-wifi-hon-app-air-surround-myzone-h-185-cm-supercooling-superfreezing-inox-4321781.html",
+"magazin": "evomag.ro",
+"id": "GSFOnKUkedMa",
+"brand": "Haier",
+"url_magazin": "https://www.evomag.ro/electrocasnice-electrocasnice-mari-aparate-frigorifice-combine-frigorifice/haier-combina-frigorifica-haier-ehd3pwdnpk186-352-l-total-no-frost-clasa-d-wifi-hon-app-air-surround-myzone-h-185-cm-supercooling-superfreezing-inox-4321781.html",
+"pret_vechi": null
+},
+{
+"titlu": "Combina frigorifica Beko B3RCNA404HXB, 355 l, No Frost, HarvestFresh, AeroFlow, Clasa E, Kitchen Fit, Everfresh+, H 203",
+"pret": 2818.99,
+"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4074%2F4074655%2F63c0fd37cfb4d.jpg&type=auto&width=500&sign=dJkmPLXfROBdUwHtmJG2n4TdL01tF66IqAHIVTcz1bY",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Felectrocasnice-electrocasnice-mari-aparate-frigorifice-combine-frigorifice%2Fbeko-combina-frigorifica-beko-b3rcna404hxb-355-l-no-frost-harvestfresh-aeroflow-clasa-e-kitchen-fit-everfresh-h-203-cm-metal-look-4074655.html",
+"magazin": "evomag.ro",
+"id": "nXZl1KJ43ttb",
+"brand": "Beko",
+"url_magazin": "https://www.evomag.ro/electrocasnice-electrocasnice-mari-aparate-frigorifice-combine-frigorifice/beko-combina-frigorifica-beko-b3rcna404hxb-355-l-no-frost-harvestfresh-aeroflow-clasa-e-kitchen-fit-everfresh-h-203-cm-metal-look-4074655.html",
+"pret_vechi": null
 },
 {
 "titlu": "Combina Frigorifica Incorporabila FCB 320 S NE E",
@@ -12281,7 +12162,7 @@
 "titlu": "Roboți de bucătărie",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-06",
+"actualizat": "2026-11-15",
 "feeduri": [
 {
 "id": 9441,
@@ -12338,30 +12219,6 @@
 "verificat": "2026-11-04"
 },
 {
-"titlu": "Robot de bucatarie Bosch MCM3110W, 2 Viteze, 800W, Alb/Gri",
-"pret": 432.99,
-"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4293%2F4293101%2F69e766ace7b6a.jpg&type=auto&width=500&sign=1MgdlxwJoJiOUy9tspT2dvmwfx50mvZ3jbFpyDct1ek",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Felectrocasnice-roboti-mixere-blendere-roboti-bucatarie%2Fbosch-robot-de-bucatarie-bosch-mcm3110w-2-viteze-800w-alb-gri-4293101.html",
-"magazin": "evomag.ro",
-"id": "4Z4fglUS94xj",
-"brand": "BOSCH",
-"url_magazin": "https://www.evomag.ro/electrocasnice-roboti-mixere-blendere-roboti-bucatarie/bosch-robot-de-bucatarie-bosch-mcm3110w-2-viteze-800w-alb-gri-4293101.html",
-"pret_vechi": null,
-"verificat": "2026-11-04"
-},
-{
-"titlu": "Robot de bucatarie Blaupunkt SMM501",
-"pret": 468.99,
-"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F3931%2F3931615%2F628b5ffad8761.JPG&type=auto&width=500&sign=6jzMyc98kSY_EUu57cP2Ao2QkpQBODHF9qaTg_3cBdE",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Felectrocasnice-roboti-mixere-blendere-roboti-bucatarie%2Fblaupunkt-robot-de-bucatarie-blaupunkt-smm501-3931615.html",
-"magazin": "evomag.ro",
-"id": "7-dnKIYGlC3E",
-"brand": "Blaupunkt",
-"url_magazin": "https://www.evomag.ro/electrocasnice-roboti-mixere-blendere-roboti-bucatarie/blaupunkt-robot-de-bucatarie-blaupunkt-smm501-3931615.html",
-"pret_vechi": null,
-"verificat": "2026-11-04"
-},
-{
 "titlu": "Robot de bucatarie Berlinger Haus BH/9511 capacitate - 6l / putere - 1300w. Gri",
 "pret": 483.69,
 "imagine": "https://infinityro.vteximg.com.br/arquivos/ids/271387547/image-3dab4c50477a43a5bfd4370e82f01cfb.jpg",
@@ -12372,6 +12229,17 @@
 "url_magazin": "https://infinity.ro/robot-de-bucatarie-berlinger-haus-bh-9511-capacitate-6l-putere-1300w-gri-9098402/p?utm_source=2performant",
 "pret_vechi": 599.0,
 "verificat": "2026-11-06"
+},
+{
+"titlu": "Robot de bucatarie Philips Viva Collection HR7510/10,800 W, Tehnologie PowerChop, 29 de functii, Vas rezistent de 1.5 L,",
+"pret": 484.99,
+"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F3844%2F3844859%2Frobot-de-bucatarie-philips-viv-6203c92a6811a.JPG&type=auto&width=500&sign=eItsv7W990zNPbfN9Z3KyMTyu72GlRJX7oH4S_daynQ",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Felectrocasnice-roboti-mixere-blendere-roboti-bucatarie%2Fphilips-robot-de-bucatarie-philips-viva-collection-hr7510-10-800-w-tehnologie-powerchop-29-de-functii-vas-rezistent-de-1.5-l-disc-2-in-1-presa-de-citrice-tub-xxl-de-alimentare-negru-3844859.html",
+"magazin": "evomag.ro",
+"id": "6PfcWC7kv4UJ",
+"brand": "Philips",
+"url_magazin": "https://www.evomag.ro/electrocasnice-roboti-mixere-blendere-roboti-bucatarie/philips-robot-de-bucatarie-philips-viva-collection-hr7510-10-800-w-tehnologie-powerchop-29-de-functii-vas-rezistent-de-1.5-l-disc-2-in-1-presa-de-citrice-tub-xxl-de-alimentare-negru-3844859.html",
+"pret_vechi": null
 },
 {
 "titlu": "Robot de bucatarie Trisa STIR N'SLICE 6942.4212, negru",
@@ -12398,18 +12266,6 @@
 "verificat": "2026-11-04"
 },
 {
-"titlu": "Robot de bucatarie Sencor STM3635VT, 1300 W, 5.5 l, 6 viteze si Pulse (Violet)",
-"pret": 518.99,
-"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4283%2F4283207%2Frobot-de-bucatarie-1300w-senco-6995a35961163.jpg&type=auto&width=500&sign=qq8rV5tOvlIqKP-GXHvdf0AifATn8aBqGbNkLjQAZp4",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Felectrocasnice-roboti-mixere-blendere-roboti-bucatarie%2Fsencor-robot-de-bucatarie-sencor-stm3635vt-1300-w-5.5-l-6-viteze-si-pulse-violet-4283207.html",
-"magazin": "evomag.ro",
-"id": "7-r8VSuO_7iA",
-"brand": "Sencor",
-"url_magazin": "https://www.evomag.ro/electrocasnice-roboti-mixere-blendere-roboti-bucatarie/sencor-robot-de-bucatarie-sencor-stm3635vt-1300-w-5.5-l-6-viteze-si-pulse-violet-4283207.html",
-"pret_vechi": null,
-"verificat": "2026-11-06"
-},
-{
 "titlu": "Robot de bucatarie Sencor STM3630WH, 1300 W, 5.5 l, 6 viteze si Pulse (Alb)",
 "pret": 518.99,
 "imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4283%2F4283205%2Frobot-de-bucatarie-1300w-senco-6995a24788738.jpg&type=auto&width=500&sign=hduD6aAqceyjA21SvLcgdI3hGb93Lwagjo65icsAFWs",
@@ -12418,6 +12274,18 @@
 "id": "8eQ9b3qLbS9W",
 "brand": "Sencor",
 "url_magazin": "https://www.evomag.ro/electrocasnice-roboti-mixere-blendere-roboti-bucatarie/sencor-robot-de-bucatarie-sencor-stm3630wh-1300-w-5.5-l-6-viteze-si-pulse-alb-4283205.html",
+"pret_vechi": null,
+"verificat": "2026-11-06"
+},
+{
+"titlu": "Robot de bucatarie Sencor STM3635VT, 1300 W, 5.5 l, 6 viteze si Pulse (Violet)",
+"pret": 518.99,
+"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4283%2F4283207%2Frobot-de-bucatarie-1300w-senco-6995a35961163.jpg&type=auto&width=500&sign=qq8rV5tOvlIqKP-GXHvdf0AifATn8aBqGbNkLjQAZp4",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Felectrocasnice-roboti-mixere-blendere-roboti-bucatarie%2Fsencor-robot-de-bucatarie-sencor-stm3635vt-1300-w-5.5-l-6-viteze-si-pulse-violet-4283207.html",
+"magazin": "evomag.ro",
+"id": "7-r8VSuO_7iA",
+"brand": "Sencor",
+"url_magazin": "https://www.evomag.ro/electrocasnice-roboti-mixere-blendere-roboti-bucatarie/sencor-robot-de-bucatarie-sencor-stm3635vt-1300-w-5.5-l-6-viteze-si-pulse-violet-4283207.html",
 "pret_vechi": null,
 "verificat": "2026-11-06"
 },
@@ -12432,6 +12300,17 @@
 "url_magazin": "https://www.evomag.ro/electrocasnice-roboti-mixere-blendere-roboti-bucatarie/sencor-robot-de-bucatarie-sencor-stm3636yl-1300-w-5.5-l-6-viteze-si-pulse-galben-4283208.html",
 "pret_vechi": null,
 "verificat": "2026-11-06"
+},
+{
+"titlu": "Robot de bucatarie Ravanson RP-1500BS, 1500 W, 6 trepte viteze, 4.5 L, Blender si Masina de tocat (Negru/Inox)",
+"pret": 571.99,
+"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4311%2F4311045%2Fplanetary-robot-with-ravanson-6a82e5c8be982.jpg&type=auto&width=500&sign=lkrJ53cAL71Wq-i_8OWpjIpaJKSPCWNfSj-hCRtmAhw",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Felectrocasnice-roboti-mixere-blendere-roboti-bucatarie%2Fravanson-robot-de-bucatarie-ravanson-rp-1500bs-1500-w-6-trepte-viteze-4.5-l-blender-si-masina-de-tocat-negru-inox-4311045.html",
+"magazin": "evomag.ro",
+"id": "jvXogGqvO8BD",
+"brand": "Ravanson",
+"url_magazin": "https://www.evomag.ro/electrocasnice-roboti-mixere-blendere-roboti-bucatarie/ravanson-robot-de-bucatarie-ravanson-rp-1500bs-1500-w-6-trepte-viteze-4.5-l-blender-si-masina-de-tocat-negru-inox-4311045.html",
+"pret_vechi": null
 },
 {
 "titlu": "Robot de bucatarie Adler AD 4224, 12 functii",
@@ -12506,7 +12385,7 @@
 "titlu": "Mixere planetare",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-06",
+"actualizat": "2026-11-15",
 "feeduri": [
 {
 "id": 8969,
@@ -12596,18 +12475,6 @@
 "brand": "Techwood",
 "url_magazin": "https://infinity.ro/mixer-planetar-techwood-tro-1050-1000w-5l-inox-6-viteze-pulse-1660701/p?utm_source=2performant",
 "pret_vechi": 498.74,
-"verificat": "2026-11-04"
-},
-{
-"titlu": "Mixer planetar Rohnson – R-5880, 1500 W, 7 l, 12 trepte de viteză, bej",
-"pret": 477.99,
-"imagine": "https://www.ozone.ro/media/catalog/product/p/l/planetaren_mikser_rohnson_r_5880_1500w_7_l_12_stepeni_bezhov_1783674657_0.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ozone.ro%2Fproduct%2Fmixer-planetar-rohnson-r-5880-1500-w-7-l-12-trepte-de-vitez-bej%2F",
-"magazin": "ozone.ro",
-"id": "eNdyFMq_Vo20",
-"brand": "Rohnson",
-"url_magazin": "https://www.ozone.ro/product/mixer-planetar-rohnson-r-5880-1500-w-7-l-12-trepte-de-vitez-bej/",
-"pret_vechi": null,
 "verificat": "2026-11-04"
 },
 {
@@ -12728,6 +12595,17 @@
 "url_magazin": "https://www.dacris.net/hpm-1500xmc-v2-mixer-planetar-heinner-hpm-1500xmc-v2/p?skuId=9725",
 "pret_vechi": null,
 "verificat": "2026-11-06"
+},
+{
+"titlu": "Mixer planetar Ariete - Vintage 1588, 2400W, 5.5 l, 7 viteze, bej",
+"pret": 1119.99,
+"imagine": "https://www.ozone.ro/media/catalog/product/p/l/planetaren_mikser_ariete_vintage_1588_2400w_5_5_l_7_skorosti_bezhov_1786453061_0.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ozone.ro%2Fproduct%2Fmixer-planetar-ariete-vintage-1588-2400w-5-5-l-7-viteze-bej%2F",
+"magazin": "ozone.ro",
+"id": "IX2oKSNyAynQ",
+"brand": "Ariete",
+"url_magazin": "https://www.ozone.ro/product/mixer-planetar-ariete-vintage-1588-2400w-5-5-l-7-viteze-bej/",
+"pret_vechi": null
 }
 ],
 "magazine": [
@@ -15629,18 +15507,6 @@
 ]
 },
 {
-"slug": "smartwatch-gps",
-"tema": "smartwatch-uri",
-"tema_nume": "Smartwatch-uri",
-"titlu": "Smartwatch-uri cu GPS",
-"nota": null,
-"in_text": null,
-"actualizat": "2026-11-04",
-"feeduri": [],
-"produse": [],
-"magazine": []
-},
-{
 "slug": "imprimanta-laser",
 "tema": "imprimante",
 "tema_nume": "Imprimante",
@@ -16166,42 +16032,6 @@
 "magazine": [
 "afisport.ro"
 ]
-},
-{
-"slug": "anvelope-iarna-205-55-r16",
-"tema": "anvelope",
-"tema_nume": "Anvelope",
-"titlu": "Anvelope de iarnă 205/55 R16",
-"nota": null,
-"in_text": null,
-"actualizat": "2026-11-04",
-"feeduri": [],
-"produse": [],
-"magazine": []
-},
-{
-"slug": "anvelope-iarna-195-65-r15",
-"tema": "anvelope",
-"tema_nume": "Anvelope",
-"titlu": "Anvelope de iarnă 195/65 R15",
-"nota": null,
-"in_text": null,
-"actualizat": "2026-11-04",
-"feeduri": [],
-"produse": [],
-"magazine": []
-},
-{
-"slug": "anvelope-iarna-225-45-r17",
-"tema": "anvelope",
-"tema_nume": "Anvelope",
-"titlu": "Anvelope de iarnă 225/45 R17",
-"nota": null,
-"in_text": null,
-"actualizat": "2026-11-04",
-"feeduri": [],
-"produse": [],
-"magazine": []
 },
 {
 "slug": "parfum-dior-sauvage",
@@ -20444,18 +20274,6 @@
 ]
 },
 {
-"slug": "adidasi-barbati",
-"tema": "incaltaminte",
-"tema_nume": "Încălțăminte",
-"titlu": "Adidași pentru bărbați",
-"nota": null,
-"in_text": null,
-"actualizat": "2026-11-04",
-"feeduri": [],
-"produse": [],
-"magazine": []
-},
-{
 "slug": "adidasi-dama",
 "tema": "incaltaminte",
 "tema_nume": "Încălțăminte",
@@ -20576,18 +20394,6 @@
 ]
 },
 {
-"slug": "ghete-dama",
-"tema": "incaltaminte",
-"tema_nume": "Încălțăminte",
-"titlu": "Ghete și botine de damă",
-"nota": null,
-"in_text": null,
-"actualizat": "2026-11-04",
-"feeduri": [],
-"produse": [],
-"magazine": []
-},
-{
 "slug": "geaca-iarna-barbati",
 "tema": "imbracaminte",
 "tema_nume": "Îmbrăcăminte",
@@ -20702,18 +20508,6 @@
 "magazine": [
 "dehaine.ro"
 ]
-},
-{
-"slug": "geaca-iarna-dama",
-"tema": "imbracaminte",
-"tema_nume": "Îmbrăcăminte",
-"titlu": "Geci de iarnă pentru damă",
-"nota": null,
-"in_text": null,
-"actualizat": "2026-11-04",
-"feeduri": [],
-"produse": [],
-"magazine": []
 },
 {
 "slug": "carucior-3-in-1",

@@ -1,5 +1,5 @@
 {
-"actualizat": "2026-11-14",
+"actualizat": "2026-11-15",
 "magazine": {
 "10qaroma.ro": {
 "cupoane": "yes",
@@ -446,11 +446,6 @@
 "google_ads": "yes",
 "cashback": "yes"
 },
-"cartuseria.ro": {
-"cupoane": "maybe",
-"google_ads": "yes",
-"cashback": "yes"
-},
 "casadecologistics.ro": {
 "cupoane": "yes",
 "google_ads": "yes",
@@ -529,11 +524,6 @@
 "coltdesanatate.ro": {
 "cupoane": "yes",
 "google_ads": "yes",
-"cashback": "yes"
-},
-"comenzi.ro": {
-"cupoane": "no",
-"google_ads": "maybe",
 "cashback": "yes"
 },
 "conectica.ro": {
@@ -659,11 +649,6 @@
 "drawdetailing.ro": {
 "cupoane": "yes",
 "google_ads": "yes",
-"cashback": "yes"
-},
-"drcalm.ro": {
-"cupoane": "yes",
-"google_ads": "no",
 "cashback": "yes"
 },
 "dreamramp.ro": {
@@ -2186,6 +2171,11 @@
 "google_ads": "yes",
 "cashback": "yes"
 },
+"spectral.ro": {
+"cupoane": "yes",
+"google_ads": "yes",
+"cashback": "yes"
+},
 "sportdepot.ro": {
 "cupoane": "yes",
 "google_ads": "yes",
@@ -2409,11 +2399,6 @@
 "videt.ro": {
 "cupoane": "yes",
 "google_ads": "no",
-"cashback": "yes"
-},
-"vioricacosmetic.ro": {
-"cupoane": "yes",
-"google_ads": "yes",
 "cashback": "yes"
 },
 "vivadeco.ro": {
