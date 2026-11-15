@@ -281,11 +281,6 @@
 "google_ads": "no",
 "cashback": "yes"
 },
-"baterii-lux.ro": {
-"cupoane": "yes",
-"google_ads": "yes",
-"cashback": "yes"
-},
 "bazaiot.ro": {
 "cupoane": "no",
 "google_ads": "yes",
@@ -309,11 +304,6 @@
 "belher.ro": {
 "cupoane": "yes",
 "google_ads": "yes",
-"cashback": "yes"
-},
-"benvenuti.com": {
-"cupoane": "yes",
-"google_ads": "no",
 "cashback": "yes"
 },
 "bestseller.ro": {
@@ -1547,6 +1537,11 @@
 "cashback": "no"
 },
 "mobidea.ro": {
+"cupoane": "yes",
+"google_ads": "yes",
+"cashback": "yes"
+},
+"mobilalaguna.ro": {
 "cupoane": "yes",
 "google_ads": "yes",
 "cashback": "yes"

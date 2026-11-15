@@ -14678,7 +14678,7 @@
 "titlu": "Boxe Bluetooth",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-10",
+"actualizat": "2026-11-15",
 "feeduri": [
 {
 "id": 1539,
@@ -14698,6 +14698,17 @@
 }
 ],
 "produse": [
+{
+"titlu": "Boxă Portabilă Karaoke Elworld ZQS1366, 3\", LED RGB, Microfon Inclus, Bluetooth, 1200 mAh",
+"pret": 50.0,
+"imagine": "https://bazarulonline.ro/images/detailed/11348/df15a191f7699409.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Frobazar.ro%2Fbox-portabil-zqs1366-cu-microfon-difuzor-3",
+"magazin": "robazar.ro",
+"id": "uFUI07dhswX7",
+"brand": "",
+"url_magazin": "https://robazar.ro/box-portabil-zqs1366-cu-microfon-difuzor-3",
+"pret_vechi": null
+},
 {
 "titlu": "Yesido Boxa Bluetooth Yesido YSW33, 3W, Neagra",
 "pret": 62.99,
@@ -14877,17 +14888,6 @@
 "pret_vechi": null
 },
 {
-"titlu": "Boxa portabila cu bluetooth gri 3W NGS ROLLER JOY GREY",
-"pret": 107.19,
-"imagine": "https://bazarulonline.ro/images/detailed/5509/boxa-portabila-cu-bluetooth-gri-3w-ngs-roller-joy-grey.webp",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Frobazar.ro%2Fboxa-portabila-cu-bluetooth-gri-3w-ngs-roller-joy-grey",
-"magazin": "robazar.ro",
-"id": "ztYi6fUFwtq_",
-"brand": "NGS",
-"url_magazin": "https://robazar.ro/boxa-portabila-cu-bluetooth-gri-3w-ngs-roller-joy-grey",
-"pret_vechi": null
-},
-{
 "titlu": "Boxa Bluetooth - Mini Xboy Metallic Blue | Xoopar",
 "pret": 119.2,
 "imagine": "https://carturesti.ro/img-prod/283814812-0.jpeg",
@@ -14989,7 +14989,7 @@
 "titlu": "Boxe portabile",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-10",
+"actualizat": "2026-11-15",
 "feeduri": [
 {
 "id": 1539,
@@ -15101,18 +15101,6 @@
 "id": "gGcDGdmJuKLy",
 "brand": "Yesido",
 "url_magazin": "https://www.dwyn.ro/boxe-portabile/yesido/465907-boxa-portabila-bluetooth-yesido-ysw14-5w-rgb-albastra/",
-"pret_vechi": null,
-"verificat": "2026-11-04"
-},
-{
-"titlu": "Boxa portabila Akai ABTS-V5BL 3W, albstr",
-"pret": 84.78,
-"imagine": "https://dacris.vteximg.com.br/arquivos/ids/829744/Boxa-portabila-Akai-ABTS-V5BL-3W-albstr-0.jpg?v=638962931548330000",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dacris.net%2Fabts-v5bl-boxa-portabila-akai-abts-v5bl-3w--albstr%2Fp%3FskuId%3D229742",
-"magazin": "dacris.net",
-"id": "J0jElFNEZ8bZ",
-"brand": "Akai",
-"url_magazin": "https://www.dacris.net/abts-v5bl-boxa-portabila-akai-abts-v5bl-3w--albstr/p?skuId=229742",
 "pret_vechi": null,
 "verificat": "2026-11-04"
 },
@@ -15288,6 +15276,18 @@
 "url_magazin": "https://www.dacris.net/abts-808l-boxa-portabila-akai-abts-808l-10w--negru/p?skuId=12775",
 "pret_vechi": null,
 "verificat": "2026-11-10"
+},
+{
+"titlu": "Xiaomi Boxa Portabila 40W QBH4275GL Blk",
+"pret": 321.84,
+"imagine": "https://dacris.vteximg.com.br/arquivos/ids/1043697/d37dbf2cb6ec4dd070fdeb573d601719.jpg?v=638987686324770000",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dacris.net%2Fqbh4275gl-xiaomi-boxa-portabila-40w-qbh4275gl-blk%2Fp%3FskuId%3D242319",
+"magazin": "dacris.net",
+"id": "Yicrf9gqkT3h",
+"brand": "Xiaomi",
+"url_magazin": "https://www.dacris.net/qbh4275gl-xiaomi-boxa-portabila-40w-qbh4275gl-blk/p?skuId=242319",
+"pret_vechi": null,
+"verificat": "2026-11-15"
 }
 ],
 "magazine": [
@@ -15303,7 +15303,7 @@
 "titlu": "Smartwatch-uri pentru copii",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-10",
+"actualizat": "2026-11-15",
 "feeduri": [
 {
 "id": 8969,
@@ -15348,6 +15348,17 @@
 "verificat": "2026-11-04"
 },
 {
+"titlu": "Smartwatch copii CANYON Joyce KW-43, Dual Bluetooth, Android/iOS, 25 moduri sport, Camera, IP67 (Albastru)",
+"pret": 135.99,
+"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4233%2F4233312%2Fcanyon-kids-watch-joyce-kw-43-6867d5db8d478.png&type=auto&width=500&sign=m8JkEq1ZhOVHQ79t8QfEpqyQ-CUGslYV_JFjHVZguAM",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Ftelefoane-tablete-accesorii-smartwatch%2Fcanyon-smartwatch-copii-canyon-joyce-kw-43-dual-bluetooth-android-ios-25-moduri-sport-camera-ip67-albastru-4233312.html",
+"magazin": "evomag.ro",
+"id": "0N_F8_uST8f9",
+"brand": "Canyon",
+"url_magazin": "https://www.evomag.ro/telefoane-tablete-accesorii-smartwatch/canyon-smartwatch-copii-canyon-joyce-kw-43-dual-bluetooth-android-ios-25-moduri-sport-camera-ip67-albastru-4233312.html",
+"pret_vechi": 350.99
+},
+{
 "titlu": "Smartwatch copii CANYON My Dino KW-33, 1.3\" IPS full touch screen, IP68 waterproof, verde",
 "pret": 177.68,
 "imagine": "https://infinityro.vteximg.com.br/arquivos/ids/215756693/image-bd88ddc0f2d64de18390047875e406d0.jpg",
@@ -15383,18 +15394,6 @@
 "verificat": "2026-11-04"
 },
 {
-"titlu": "Smartwatch pentru copii Canyon - Sunny KW-44, 1.44'', Blue",
-"pret": 298.51,
-"imagine": "https://www.ozone.ro/media/catalog/product/d/e/detski_smart_chasovnik_canyon_sunny_kw_44_1_44_blue_1766502762_0.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ozone.ro%2Fproduct%2Fsmartwatch-pentru-copii-canyon-sunny-kw-44-1-44-blue%2F",
-"magazin": "ozone.ro",
-"id": "pVWJFwx2hJ1j",
-"brand": "Canyon",
-"url_magazin": "https://www.ozone.ro/product/smartwatch-pentru-copii-canyon-sunny-kw-44-1-44-blue/",
-"pret_vechi": 391.35,
-"verificat": "2026-11-04"
-},
-{
 "titlu": "Smartwatch pentru copii Canyon - Sunny KW-44, 1.44'', Green",
 "pret": 298.51,
 "imagine": "https://www.ozone.ro/media/catalog/product/d/e/detski_smart_chasovnik_canyon_sunny_kw_44_1_44_green_1766502742_0.jpg",
@@ -15403,6 +15402,18 @@
 "id": "LTgkQBay98Lp",
 "brand": "Canyon",
 "url_magazin": "https://www.ozone.ro/product/smartwatch-pentru-copii-canyon-sunny-kw-44-1-44-green/",
+"pret_vechi": 391.35,
+"verificat": "2026-11-04"
+},
+{
+"titlu": "Smartwatch pentru copii Canyon - Sunny KW-44, 1.44'', Blue",
+"pret": 298.51,
+"imagine": "https://www.ozone.ro/media/catalog/product/d/e/detski_smart_chasovnik_canyon_sunny_kw_44_1_44_blue_1766502762_0.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ozone.ro%2Fproduct%2Fsmartwatch-pentru-copii-canyon-sunny-kw-44-1-44-blue%2F",
+"magazin": "ozone.ro",
+"id": "pVWJFwx2hJ1j",
+"brand": "Canyon",
+"url_magazin": "https://www.ozone.ro/product/smartwatch-pentru-copii-canyon-sunny-kw-44-1-44-blue/",
 "pret_vechi": 391.35,
 "verificat": "2026-11-04"
 },
@@ -15419,16 +15430,26 @@
 "verificat": "2026-11-04"
 },
 {
-"titlu": "Smartwatch pentru copii Xmart - K3, 1.7'', GPS, albastru/negru",
-"pret": 338.99,
-"imagine": "https://www.ozone.ro/media/catalog/product/d/e/detski_smart_chasovnik_xmart_k3_1_7_gps_sin_cheren_1769072175_0.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ozone.ro%2Fproduct%2Fsmartwatch-pentru-copii-xmart-k3-1-7-gps-albastru-negru%2F",
+"titlu": "Smartwatch pentru copii Canyon - Sunny KW-48, 1.44'', Violet",
+"pret": 331.08,
+"imagine": "https://www.ozone.ro/media/catalog/product/d/e/detski_smart_chasovnik_canyon_sunny_kw_48_1_44_violet_1742209859_0.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ozone.ro%2Fproduct%2Fsmartwatch-pentru-copii-canyon-sunny-kw-48-1-44-violet%2F",
 "magazin": "ozone.ro",
-"id": "f7MdQmL60hRA",
-"brand": "Xmart",
-"url_magazin": "https://www.ozone.ro/product/smartwatch-pentru-copii-xmart-k3-1-7-gps-albastru-negru/",
-"pret_vechi": null,
-"verificat": "2026-11-04"
+"id": "myUrW0Lisldd",
+"brand": "Canyon",
+"url_magazin": "https://www.ozone.ro/product/smartwatch-pentru-copii-canyon-sunny-kw-48-1-44-violet/",
+"pret_vechi": 393.69
+},
+{
+"titlu": "Smartwatch pentru copii Canyon - Sunny KW-48, 1.44'', Blue",
+"pret": 331.08,
+"imagine": "https://www.ozone.ro/media/catalog/product/d/e/detski_smart_chasovnik_canyon_sunny_kw_48_1_44_blue_1742209935_0.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ozone.ro%2Fproduct%2Fsmartwatch-pentru-copii-canyon-sunny-kw-48-1-44-blue%2F",
+"magazin": "ozone.ro",
+"id": "ZKxXu1eOs54M",
+"brand": "Canyon",
+"url_magazin": "https://www.ozone.ro/product/smartwatch-pentru-copii-canyon-sunny-kw-48-1-44-blue/",
+"pret_vechi": 393.69
 },
 {
 "titlu": "Smartwatch pentru copii Xmart - K3, 1.7'', GPS, roz/mov",
@@ -15443,15 +15464,15 @@
 "verificat": "2026-11-04"
 },
 {
-"titlu": "Smartwatch pentru copii Blackview BVZ30, 1.75'', roz",
-"pret": 368.46,
-"imagine": "https://www.ozone.ro/media/catalog/product/d/e/detski_smart_chasovnik_blackview_bvz30_1_75_rozov_1768805182_0.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ozone.ro%2Fproduct%2Fsmartwatch-pentru-copii-blackview-bvz30-1-75-roz%2F",
+"titlu": "Smartwatch pentru copii Xmart - K3, 1.7'', GPS, albastru/negru",
+"pret": 338.99,
+"imagine": "https://www.ozone.ro/media/catalog/product/d/e/detski_smart_chasovnik_xmart_k3_1_7_gps_sin_cheren_1769072175_0.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ozone.ro%2Fproduct%2Fsmartwatch-pentru-copii-xmart-k3-1-7-gps-albastru-negru%2F",
 "magazin": "ozone.ro",
-"id": "prp3utXRjJgA",
-"brand": "Blackview",
-"url_magazin": "https://www.ozone.ro/product/smartwatch-pentru-copii-blackview-bvz30-1-75-roz/",
-"pret_vechi": 417.65,
+"id": "f7MdQmL60hRA",
+"brand": "Xmart",
+"url_magazin": "https://www.ozone.ro/product/smartwatch-pentru-copii-xmart-k3-1-7-gps-albastru-negru/",
+"pret_vechi": null,
 "verificat": "2026-11-04"
 },
 {
@@ -15467,26 +15488,16 @@
 "verificat": "2026-11-04"
 },
 {
-"titlu": "Smartwatch pentru copii Canyon - Sunny KW-48, 1.44'', Violet",
-"pret": 373.27,
-"imagine": "https://www.ozone.ro/media/catalog/product/d/e/detski_smart_chasovnik_canyon_sunny_kw_48_1_44_violet_1742209859_0.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ozone.ro%2Fproduct%2Fsmartwatch-pentru-copii-canyon-sunny-kw-48-1-44-violet%2F",
+"titlu": "Smartwatch pentru copii Blackview BVZ30, 1.75'', roz",
+"pret": 368.46,
+"imagine": "https://www.ozone.ro/media/catalog/product/d/e/detski_smart_chasovnik_blackview_bvz30_1_75_rozov_1768805182_0.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ozone.ro%2Fproduct%2Fsmartwatch-pentru-copii-blackview-bvz30-1-75-roz%2F",
 "magazin": "ozone.ro",
-"id": "myUrW0Lisldd",
-"brand": "Canyon",
-"url_magazin": "https://www.ozone.ro/product/smartwatch-pentru-copii-canyon-sunny-kw-48-1-44-violet/",
-"pret_vechi": 393.69
-},
-{
-"titlu": "Smartwatch pentru copii Canyon - Sunny KW-48, 1.44'', Blue",
-"pret": 373.27,
-"imagine": "https://www.ozone.ro/media/catalog/product/d/e/detski_smart_chasovnik_canyon_sunny_kw_48_1_44_blue_1742209935_0.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ozone.ro%2Fproduct%2Fsmartwatch-pentru-copii-canyon-sunny-kw-48-1-44-blue%2F",
-"magazin": "ozone.ro",
-"id": "ZKxXu1eOs54M",
-"brand": "Canyon",
-"url_magazin": "https://www.ozone.ro/product/smartwatch-pentru-copii-canyon-sunny-kw-48-1-44-blue/",
-"pret_vechi": 393.69
+"id": "prp3utXRjJgA",
+"brand": "Blackview",
+"url_magazin": "https://www.ozone.ro/product/smartwatch-pentru-copii-blackview-bvz30-1-75-roz/",
+"pret_vechi": 417.65,
+"verificat": "2026-11-04"
 },
 {
 "titlu": "Smartwatch copii CANYON Sunny KW-48, 4G VoLTE, GPS, 512MB Flash, Camera, IP67 (Violet)",
@@ -15558,18 +15569,6 @@
 "url_magazin": "https://www.dacris.net/mt48x-3nlca11-tcl-smartwatch-copii-cosmic-pink/p?skuId=253563",
 "pret_vechi": null,
 "verificat": "2026-11-04"
-},
-{
-"titlu": "TCL Smartwatch copii Galactic Blue",
-"pret": 837.62,
-"imagine": "https://dacris.vteximg.com.br/arquivos/ids/1094295/overlay_7c198c9e6a930c11d60bbebacfd0da97.png.png?v=639264132032030000",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dacris.net%2Fmt48x-3glca11-tcl-smartwatch-copii-galactic-blue%2Fp%3FskuId%3D253546",
-"magazin": "dacris.net",
-"id": "E5DtHR6Ao-mC",
-"brand": "TCL",
-"url_magazin": "https://www.dacris.net/mt48x-3glca11-tcl-smartwatch-copii-galactic-blue/p?skuId=253546",
-"pret_vechi": null,
-"verificat": "2026-11-10"
 }
 ],
 "magazine": [
@@ -15598,7 +15597,7 @@
 "titlu": "Imprimante laser",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-10",
+"actualizat": "2026-11-15",
 "feeduri": [
 {
 "id": 1256,
@@ -15665,6 +15664,18 @@
 "url_magazin": "https://www.evomag.ro/imprimante-imprimante-laser-alb-negru/brother-imprimanta-laser-brother-hl-l2402d-a4-monocrom-30ppm-duplex-usb-2.0-negru-4143174.html",
 "pret_vechi": 599.99,
 "verificat": "2026-11-04"
+},
+{
+"titlu": "Imprimanta Laser Monocrom Brother HL-L2442DW",
+"pret": 642.57,
+"imagine": "http://www.itarena.ro/images/products/2024-01-05/original/428557_jpg.webp",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.itarena.ro%2Fimprimante%2Fimprimanta_laser_monocrom_brother_hll2442dw.html",
+"magazin": "itarena.ro",
+"id": "4ca189cc3",
+"brand": "Brother",
+"url_magazin": "https://www.itarena.ro/imprimante/imprimanta_laser_monocrom_brother_hll2442dw.html",
+"pret_vechi": null,
+"verificat": "2026-11-15"
 },
 {
 "titlu": "Imprimanta laser Brother HL-L2442DW, A4, Monocrom, 30 ppm, Wireless, USB 2.0 (Negru)",
@@ -15739,28 +15750,16 @@
 "verificat": "2026-11-04"
 },
 {
-"titlu": "Imprimanta Laser Monocrom HP LaserJet Pro 4007dw",
-"pret": 1237.37,
-"imagine": "http://www.itarena.ro/images/products/2026-10-26/original/534574_jpg.webp",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.itarena.ro%2Fmultifunctionale%2Fimprimanta_laser_monocrom_hp_laserjet_pro_4007dw.html",
+"titlu": "Imprimanta Laser Monocrom Canon i-SENSYS LBP6030",
+"pret": 1082.37,
+"imagine": "http://www.itarena.ro/images/products/2019-07-30/original/260480_jpg.webp",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.itarena.ro%2Fimprimante%2Fimprimanta_laser_monocrom_canon_isensys_lbp6030.html",
 "magazin": "itarena.ro",
-"id": "YUAqh6wRrvCh",
-"brand": "HP Inc.",
-"url_magazin": "https://www.itarena.ro/multifunctionale/imprimanta_laser_monocrom_hp_laserjet_pro_4007dw.html",
-"pret_vechi": null,
-"verificat": "2026-11-10"
-},
-{
-"titlu": "Imprimanta Laser Monocrom Canon i-SENSYS LBP246dw II",
-"pret": 1258.75,
-"imagine": "http://www.itarena.ro/images/products/2025-11-12/original/505347_jpg.webp",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.itarena.ro%2Fimprimante%2Fimprimanta_laser_monocrom_canon_isensys_lbp246dw_ii.html",
-"magazin": "itarena.ro",
-"id": "0cgUGghGDDE6",
+"id": "68b77548f",
 "brand": "Canon",
-"url_magazin": "https://www.itarena.ro/imprimante/imprimanta_laser_monocrom_canon_isensys_lbp246dw_ii.html",
+"url_magazin": "https://www.itarena.ro/imprimante/imprimanta_laser_monocrom_canon_isensys_lbp6030.html",
 "pret_vechi": null,
-"verificat": "2026-11-04"
+"verificat": "2026-11-15"
 },
 {
 "titlu": "Imprimanta Monocrom Lexmark MS531dw, Laser, A4, Duplex, Retea, Wi-Fi",
@@ -15787,7 +15786,7 @@
 "titlu": "Imprimante multifuncționale",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-10",
+"actualizat": "2026-11-15",
 "feeduri": [
 {
 "id": 1539,
@@ -15808,7 +15807,7 @@
 "id": "VulGlFKcM0FH",
 "brand": "HP",
 "url_magazin": "https://www.evomag.ro/imprimante-multifunctionale/hp-multifunctionala-inkjet-color-hp-deskjet-2910-all-in-one-wireless-7.5-5.5-ppm-eligibil-instant-ink-4274160.html",
-"pret_vechi": null,
+"pret_vechi": 247.99,
 "verificat": "2026-11-04"
 },
 {
@@ -15920,18 +15919,6 @@
 "verificat": "2026-11-04"
 },
 {
-"titlu": "Epson Imprimanta multifunctionala Epson EcoTank L3356W, Inkjet, Wi‑Fi/Wi‑Fi Direct, USB, A4, 5760×1440 dpi, 33 pag./min,",
-"pret": 1379.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202606122129/447043/full/epson-epson-ecotank-l3356-multifunctional-printer-1442464.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fimprimante%2Fepson%2F447043-imprimanta-multifunctionala-epson-ecotank-l3356w-inkjet-wi-fi-wi-fi-direct-usb-a4-5760-1440-dpi-33-pag-min-alb%2F",
-"magazin": "dwyn.ro",
-"id": "x8a00pIODyZ1",
-"brand": "Epson",
-"url_magazin": "https://www.dwyn.ro/imprimante/epson/447043-imprimanta-multifunctionala-epson-ecotank-l3356w-inkjet-wi-fi-wi-fi-direct-usb-a4-5760-1440-dpi-33-pag-min-alb/",
-"pret_vechi": null,
-"verificat": "2026-11-04"
-},
-{
 "titlu": "Epson Imprimanta multifunctionala Epson EcoTank L3351W, imprimanta cu jet de cerneala color, scaner, copiator, wireless",
 "pret": 1390.99,
 "imagine": "https://www.dwyn.ro/images/products/img_202606122129/447040/full/epson-epson-ecotank-l3351-multifunctional-printer-1442419.png",
@@ -15956,7 +15943,7 @@
 "titlu": "Trotinete electrice pentru adulți",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-10",
+"actualizat": "2026-11-15",
 "feeduri": [
 {
 "id": 2800,
@@ -15978,7 +15965,7 @@
 "imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F3621%2F3621501%2F1528088713lpa1.JPG&type=auto&width=500&sign=LwhkBKAtibB5y579qylrDLWMpEV8fWhmdWFa7XUn1Q0",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Fsport-fitness-vehicule-electrice-trotinete-electrice-adulti-copii%2Fquer-trotineta-electrica-quer-fast-wheels-zab0020-23-km-h-negru-3621501.html",
 "magazin": "evomag.ro",
-"id": "5A_ZQBvOgzxm",
+"id": "bc562f8b1",
 "brand": "Quer",
 "url_magazin": "https://www.evomag.ro/sport-fitness-vehicule-electrice-trotinete-electrice-adulti-copii/quer-trotineta-electrica-quer-fast-wheels-zab0020-23-km-h-negru-3621501.html",
 "pret_vechi": null,
@@ -16009,7 +15996,7 @@
 "titlu": "Biciclete electrice",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-10",
+"actualizat": "2026-11-15",
 "feeduri": [
 {
 "id": 5747,
@@ -16161,7 +16148,7 @@
 "titlu": "Parfum Dior Sauvage",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-11",
+"actualizat": "2026-11-15",
 "feeduri": [
 {
 "id": 8969,
@@ -16181,18 +16168,6 @@
 }
 ],
 "produse": [
-{
-"titlu": "Christian Dior Sauvage Apă de toaletă, 10 ml",
-"pret": 164.2,
-"imagine": "https://www.ozone.ro/media/catalog/product/c/h/christian_dior_sauvage_toaletna_voda_10_ml_1783347770_0.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ozone.ro%2Fproduct%2Fchristian-dior-sauvage-ap-de-toalet-10-ml%2F",
-"magazin": "ozone.ro",
-"id": "Mi4Tcihu7aHC",
-"brand": "Christian Dior",
-"url_magazin": "https://www.ozone.ro/product/christian-dior-sauvage-ap-de-toalet-10-ml/",
-"pret_vechi": null,
-"verificat": "2026-11-04"
-},
 {
 "titlu": "DIOR Sauvage gel parfumat pentru duș cu pompa pentru bărbați 250 ml",
 "pret": 275.0,
@@ -16242,6 +16217,17 @@
 "verificat": "2026-11-11"
 },
 {
+"titlu": "DIOR Sauvage Eau de Toilette reincarcabil pentru bărbați 30 ml",
+"pret": 405.0,
+"imagine": "https://cdn.notinoimg.com/export_mergado/dior/3348901520195_01.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.notino.ro%2Fdior%2Fsauvage2015-eau-de-toilette-pentru-barbati%2Fp-16070726%2F",
+"magazin": "notino.ro",
+"id": "901a857e9",
+"brand": "DIOR",
+"url_magazin": "https://www.notino.ro/dior/sauvage2015-eau-de-toilette-pentru-barbati/p-16070726/",
+"pret_vechi": null
+},
+{
 "titlu": "Christian Dior Sauvage Apă de toaletă, 60 ml",
 "pret": 418.74,
 "imagine": "https://www.ozone.ro/media/catalog/product/c/h/christian_dior_sauvage_toaletna_voda_60_ml_1689774593_0.jpg",
@@ -16252,6 +16238,17 @@
 "url_magazin": "https://www.ozone.ro/product/christian-dior-sauvage-ap-de-toalet-60-ml/",
 "pret_vechi": null,
 "verificat": "2026-11-04"
+},
+{
+"titlu": "DIOR Sauvage Eau de Toilette pentru bărbați 60 ml",
+"pret": 435.0,
+"imagine": "https://cdn.notinoimg.com/export_mergado/dior/3348901250153_01__20.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.notino.ro%2Fdior%2Fsauvage2015-eau-de-toilette-pentru-barbati%2Fp-513974%2F",
+"magazin": "notino.ro",
+"id": "817883dba",
+"brand": "DIOR",
+"url_magazin": "https://www.notino.ro/dior/sauvage2015-eau-de-toilette-pentru-barbati/p-513974/",
+"pret_vechi": null
 },
 {
 "titlu": "DIOR Sauvage The Serum ser facial cu extract de cactus pentru bărbați 50 ml",
@@ -16278,18 +16275,6 @@
 "verificat": "2026-11-04"
 },
 {
-"titlu": "Christian Dior Sauvage Apă de toaletă, 100 ml",
-"pret": 506.93,
-"imagine": "https://www.ozone.ro/media/catalog/product/c/h/christian_dior_sauvage_toaletna_voda_100_ml_1733495902_0.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ozone.ro%2Fproduct%2Fchristian-dior-sauvage-ap-de-toalet-100-ml-829182%2F",
-"magazin": "ozone.ro",
-"id": "4b7FwKWA8YbG",
-"brand": "Christian Dior",
-"url_magazin": "https://www.ozone.ro/product/christian-dior-sauvage-ap-de-toalet-100-ml-829182/",
-"pret_vechi": null,
-"verificat": "2026-11-04"
-},
-{
 "titlu": "Christian Dior Sauvage eau de Toilette pentru barbati 60 ml",
 "pret": 511.0,
 "imagine": "https://www.brasty.ro/images/w320/christian-dior-sauvage-eau-de-toilette-pentru-barbati-60-ml/81006-1.jpg",
@@ -16310,18 +16295,6 @@
 "id": "3jzn_Rm4uE_E",
 "brand": "Christian Dior",
 "url_magazin": "https://www.ozone.ro/product/christian-dior-sauvage-parfum-60-ml/",
-"pret_vechi": null,
-"verificat": "2026-11-04"
-},
-{
-"titlu": "Christian Dior Sauvage Apă de Parfum, 60 ml",
-"pret": 515.52,
-"imagine": "https://www.ozone.ro/media/catalog/product/c/h/christian_dior_sauvage_parfyumna_voda_60_ml_1733735941_0.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ozone.ro%2Fproduct%2Fchristian-dior-sauvage-ap-de-parfum-60-ml%2F",
-"magazin": "ozone.ro",
-"id": "ZxnOut7stEC9",
-"brand": "Christian Dior",
-"url_magazin": "https://www.ozone.ro/product/christian-dior-sauvage-ap-de-parfum-60-ml/",
 "pret_vechi": null,
 "verificat": "2026-11-04"
 },
@@ -16362,6 +16335,28 @@
 "verificat": "2026-11-04"
 },
 {
+"titlu": "Christian Dior Sauvage Parfum, 100 ml",
+"pret": 692.99,
+"imagine": "https://www.ozone.ro/media/catalog/product/c/h/christian_dior_sauvage_parfyum_100_ml_1727182985_0.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ozone.ro%2Fproduct%2Fchristian-dior-sauvage-parfum-100-ml%2F",
+"magazin": "ozone.ro",
+"id": "229jRHUNrbZ7",
+"brand": "Christian Dior",
+"url_magazin": "https://www.ozone.ro/product/christian-dior-sauvage-parfum-100-ml/",
+"pret_vechi": null
+},
+{
+"titlu": "Christian Dior Sauvage Eau Forte Apă de parfum, 100 ml",
+"pret": 747.53,
+"imagine": "https://www.ozone.ro/media/catalog/product/c/h/christian_dior_sauvage_eau_forte_parfyumna_voda_100_ml_1743676124_0.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ozone.ro%2Fproduct%2Fchristian-dior-sauvage-eau-forte-ap-de-parfum-100-ml%2F",
+"magazin": "ozone.ro",
+"id": "MIyHFDnu-JeD",
+"brand": "Christian Dior",
+"url_magazin": "https://www.ozone.ro/product/christian-dior-sauvage-eau-forte-ap-de-parfum-100-ml/",
+"pret_vechi": null
+},
+{
 "titlu": "Parfum bărbătesc Dior Sauvage Eau de Parfum, 100 ml",
 "pret": 903.99,
 "imagine": "https://primefarma.ro/wp-content/uploads/2026/09/UtbeLZR94bvWvieqXt9fZF.jpg",
@@ -16370,7 +16365,7 @@
 "id": "k77sE2sNWdaG",
 "brand": "Christian Dior",
 "url_magazin": "https://primefarma.ro/produs/parfum-barbatesc-dior-sauvage-eau-de-parfum-100-ml/",
-"pret_vechi": 1333.99,
+"pret_vechi": 1172.99,
 "verificat": "2026-11-11"
 },
 {
@@ -16394,8 +16389,19 @@
 "id": "O_7v83V6wNw5",
 "brand": "Christian Dior",
 "url_magazin": "https://primefarma.ro/produs/parfum-spray-dior-sauvage-60ml/",
-"pret_vechi": 1268.99,
+"pret_vechi": 1270.99,
 "verificat": "2026-11-11"
+},
+{
+"titlu": "Christian Dior Sauvage Elixir Parfum, 100 ml",
+"pret": 1026.96,
+"imagine": "https://www.ozone.ro/media/catalog/product/c/h/christian_dior_sauvage_parfyumen_ekstrakt_100_ml_1732270558_0.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ozone.ro%2Fproduct%2Fchristian-dior-sauvage-extract-de-parfum-100-ml%2F",
+"magazin": "ozone.ro",
+"id": "dVidBx-vN7m8",
+"brand": "Christian Dior",
+"url_magazin": "https://www.ozone.ro/product/christian-dior-sauvage-extract-de-parfum-100-ml/",
+"pret_vechi": null
 },
 {
 "titlu": "DIOR Sauvage Eau de Parfum pentru bărbați 60 ml",
@@ -16436,7 +16442,7 @@
 "titlu": "Parfum Paco Rabanne Invictus",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-11",
+"actualizat": "2026-11-15",
 "feeduri": [
 {
 "id": 9125,
@@ -16452,30 +16458,6 @@
 }
 ],
 "produse": [
-{
-"titlu": "Paco Rabanne Invictus Apă de toaletă, 100 ml, tester",
-"pret": 267.69,
-"imagine": "https://www.ozone.ro/media/catalog/product/p/a/paco_rabanne_invictus_toaletna_voda_100_ml_tester_1737460157_0.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ozone.ro%2Fproduct%2Fpaco-rabanne-invictus-ap-de-toalet-100-ml-tester%2F",
-"magazin": "ozone.ro",
-"id": "c0kAv8EguOAs",
-"brand": "Paco Rabanne",
-"url_magazin": "https://www.ozone.ro/product/paco-rabanne-invictus-ap-de-toalet-100-ml-tester/",
-"pret_vechi": null,
-"verificat": "2026-11-04"
-},
-{
-"titlu": "Paco Rabanne Invictus Apă de toaletă, 100 ml",
-"pret": 371.6,
-"imagine": "https://www.ozone.ro/media/catalog/product/p/a/paco_rabanne_invictus_toaletna_voda_100_ml_1689759443_0.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ozone.ro%2Fproduct%2Fpaco-rabanne-invictus-ap-de-toalet-100-ml%2F",
-"magazin": "ozone.ro",
-"id": "wAHcNkEF5X3p",
-"brand": "Paco Rabanne",
-"url_magazin": "https://www.ozone.ro/product/paco-rabanne-invictus-ap-de-toalet-100-ml/",
-"pret_vechi": null,
-"verificat": "2026-11-04"
-},
 {
 "titlu": "Paco Rabanne Parfum Invictus, 50 ml",
 "pret": 396.83,
@@ -16580,7 +16562,7 @@
 "id": "VItevzH5V8up",
 "brand": "Paco Rabanne",
 "url_magazin": "https://primefarma.ro/produs/parfum-paco-rabanne-invictus-victory-extreme-50ml/",
-"pret_vechi": 723.99,
+"pret_vechi": 725.99,
 "verificat": "2026-11-04"
 },
 {
@@ -16628,7 +16610,7 @@
 "id": "QhEWofjhXMb4",
 "brand": "Paco Rabanne",
 "url_magazin": "https://primefarma.ro/produs/set-cadou-paco-rabanne-invictus-pentru-barbati-eau-de-toilette-spray-100ml-mini-spray-20ml/",
-"pret_vechi": 897.99,
+"pret_vechi": 899.99,
 "verificat": "2026-11-04"
 }
 ],
@@ -16645,7 +16627,7 @@
 "titlu": "Parfum Lancôme La Vie Est Belle",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-11",
+"actualizat": "2026-11-15",
 "feeduri": [
 {
 "id": 9125,
@@ -16702,17 +16684,6 @@
 "verificat": "2026-11-04"
 },
 {
-"titlu": "Lancome La Vie Est Belle EDP Volum 30 ml",
-"pret": 263.99,
-"imagine": "https://fragranza.ro/26534-large_default/lancome-la-vie-est-belle-edp.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Ffragranza.ro%2Flancome-la-vie-est-belle-edp%23%2F51-volum-30_ml",
-"magazin": "fragranza.ro",
-"id": "YhxiO-dSswny",
-"brand": "Lancome",
-"url_magazin": "https://fragranza.ro/lancome-la-vie-est-belle-edp#/51-volum-30_ml",
-"pret_vechi": null
-},
-{
 "titlu": "Lancome La Vie Est Belle Intensement Apă de parfum pentru Femei Tester EDP Volum 50 ml",
 "pret": 274.99,
 "imagine": "https://fragranza.ro/11801-large_default/lancome-la-vie-est-belle-intensement-apă-de-parfum-pentru-femei-tester-edp.jpg",
@@ -16723,6 +16694,17 @@
 "url_magazin": "https://fragranza.ro/lancome-la-vie-est-belle-intensement-apă-de-parfum-pentru-femei-tester-edp",
 "pret_vechi": null,
 "verificat": "2026-11-04"
+},
+{
+"titlu": "Lancome La Vie Est Belle EDP Volum 30 ml",
+"pret": 279.99,
+"imagine": "https://fragranza.ro/26534-large_default/lancome-la-vie-est-belle-edp.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Ffragranza.ro%2Flancome-la-vie-est-belle-edp%23%2F51-volum-30_ml",
+"magazin": "fragranza.ro",
+"id": "YhxiO-dSswny",
+"brand": "Lancome",
+"url_magazin": "https://fragranza.ro/lancome-la-vie-est-belle-edp#/51-volum-30_ml",
+"pret_vechi": null
 },
 {
 "titlu": "Lancome La Vie Est Belle L'Elixir Apa de parfum pentru femei Tester EDP Volum 50 ml",
@@ -16738,7 +16720,7 @@
 },
 {
 "titlu": "Lancome La Vie Est Belle EDP Volum 50 ml",
-"pret": 385.99,
+"pret": 386.99,
 "imagine": "https://fragranza.ro/26534-large_default/lancome-la-vie-est-belle-edp.jpg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Ffragranza.ro%2Flancome-la-vie-est-belle-edp",
 "magazin": "fragranza.ro",
@@ -16748,16 +16730,15 @@
 "pret_vechi": null
 },
 {
-"titlu": "Lancome La Vie Est Belle Apă de parfum Tester EDP Volum 100 ml",
-"pret": 447.99,
-"imagine": "https://fragranza.ro/33332-large_default/lancome-la-vie-est-belle-parfum-tester-edp.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Ffragranza.ro%2Flancome-la-vie-est-belle-parfum-tester-edp",
+"titlu": "Lancome La Vie Est Belle EDP Volum 100 ml umplutură",
+"pret": 388.99,
+"imagine": "https://fragranza.ro/26534-large_default/lancome-la-vie-est-belle-edp.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Ffragranza.ro%2Flancome-la-vie-est-belle-edp%23%2F2683-volum-100_ml_umplutur%C4%83",
 "magazin": "fragranza.ro",
-"id": "kCp5Xc0y0yyJ",
+"id": "zyCUSF92ODay",
 "brand": "Lancome",
-"url_magazin": "https://fragranza.ro/lancome-la-vie-est-belle-parfum-tester-edp",
-"pret_vechi": null,
-"verificat": "2026-11-11"
+"url_magazin": "https://fragranza.ro/lancome-la-vie-est-belle-edp#/2683-volum-100_ml_umplutură",
+"pret_vechi": null
 },
 {
 "titlu": "Parfum, Lancôme, La Vie est Belle, 30ml",
@@ -16780,7 +16761,7 @@
 "id": "PClH1TMI8YwE",
 "brand": "Lancome",
 "url_magazin": "https://primefarma.ro/produs/parfum-lancome-la-vie-est-belle-50ml/",
-"pret_vechi": 721.99,
+"pret_vechi": 749.99,
 "verificat": "2026-11-04"
 },
 {
@@ -16804,7 +16785,7 @@
 "id": "BapIgYRzy6t0",
 "brand": "Lancome",
 "url_magazin": "https://primefarma.ro/produs/lancome-la-vie-est-belle-eau-de-parfum-set-cadou-50-ml/",
-"pret_vechi": 792.99,
+"pret_vechi": 794.99,
 "verificat": "2026-11-04"
 },
 {
@@ -16816,7 +16797,7 @@
 "id": "O9hDLMPA0BW6",
 "brand": "Lancome",
 "url_magazin": "https://primefarma.ro/produs/parfum-lancome-la-vie-est-belle-iris-absolu-leau-de-parfum-spray-50ml/",
-"pret_vechi": 806.99,
+"pret_vechi": 808.99,
 "verificat": "2026-11-04"
 },
 {
@@ -16840,7 +16821,7 @@
 "id": "Pann6VEA6wtm",
 "brand": "Lancome",
 "url_magazin": "https://primefarma.ro/produs/parfum-lancome-la-vie-est-belle-75ml/",
-"pret_vechi": 1174.99,
+"pret_vechi": 1176.99,
 "verificat": "2026-11-04"
 },
 {
@@ -16870,7 +16851,7 @@
 "titlu": "Parfum Yves Saint Laurent Libre",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-11",
+"actualizat": "2026-11-15",
 "feeduri": [
 {
 "id": 8532,
@@ -17041,7 +17022,7 @@
 "id": "vlVogJpvrLSL",
 "brand": "Yves Saint Laurent",
 "url_magazin": "https://primefarma.ro/produs/parfum-yves-saint-laurent-libre-labsolu-platine-50ml/",
-"pret_vechi": 1148.99,
+"pret_vechi": 1150.99,
 "verificat": "2026-11-11"
 },
 {
@@ -17053,7 +17034,7 @@
 "id": "v3FzzmZ79CbE",
 "brand": "Yves Saint Laurent",
 "url_magazin": "https://primefarma.ro/produs/apa-de-parfum-yves-saint-laurent-libre-intense-50ml/",
-"pret_vechi": 1155.99,
+"pret_vechi": 1157.99,
 "verificat": "2026-11-11"
 },
 {
@@ -17065,7 +17046,7 @@
 "id": "fBolyiKfJmWW",
 "brand": "Yves Saint Laurent",
 "url_magazin": "https://primefarma.ro/produs/parfum-yves-saint-laurent-libre-90ml/",
-"pret_vechi": 1378.99,
+"pret_vechi": 1422.99,
 "verificat": "2026-11-11"
 }
 ],
