@@ -8,7 +8,7 @@
 "titlu": "Mașini de spălat de 6 kg",
 "nota": "Capacitatea se referă la greutatea rufelor uscate pe care le poți pune o dată în cuvă.",
 "in_text": "\\b6\\s*kg\\b",
-"actualizat": "2026-11-12",
+"actualizat": "2026-11-16",
 "feeduri": [
 {
 "id": 1539,
@@ -87,7 +87,7 @@
 "titlu": "Mașini de spălat de 7 kg",
 "nota": "Capacitatea se referă la greutatea rufelor uscate pe care le poți pune o dată în cuvă.",
 "in_text": "\\b7\\s*kg\\b",
-"actualizat": "2026-11-12",
+"actualizat": "2026-11-16",
 "feeduri": [
 {
 "id": 1539,
@@ -152,7 +152,7 @@
 "id": "I5D8-fDicBZi",
 "brand": "Candy",
 "url_magazin": "https://www.evomag.ro/electrocasnice-electrocasnice-mari-masini-de-spalat-rufe-si-accesorii-masini-de-spalat-rufe/candy-masina-de-spalat-rufe-candy-smart-pro-cs-1272drre-1-s-incarcare-frontala-7-kg-1200-rpm-clasa-d-gri-4129485.html",
-"pret_vechi": 1349.99,
+"pret_vechi": 1588.99,
 "verificat": "2026-11-04"
 },
 {
@@ -204,18 +204,6 @@
 "verificat": "2026-11-04"
 },
 {
-"titlu": "Toshiba Masina de spalat Toshiba TW-BL80A2PL(WK), 1200 rpm, 7 kg",
-"pret": 1945.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202404261115/203342/full/toshiba-masina-de-spalat-toshiba-tw-bl80a2pl-wk-1200-rpm-7-kg-477079.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fmasina-de-spalat-rufe%2Ftoshiba%2F203342-masina-de-spalat-toshiba-tw-bl80a2pl-wk-1200-rpm-7-kg%2F",
-"magazin": "dwyn.ro",
-"id": "CizOt4nmUPTe",
-"brand": "Toshiba",
-"url_magazin": "https://www.dwyn.ro/masina-de-spalat-rufe/toshiba/203342-masina-de-spalat-toshiba-tw-bl80a2pl-wk-1200-rpm-7-kg/",
-"pret_vechi": null,
-"verificat": "2026-11-04"
-},
-{
 "titlu": "Toshiba Masina de spalat Toshiba TW-BL80A2PL(SS), 7 kg, 1200 RPM, Clasa B",
 "pret": 1980.99,
 "imagine": "https://www.dwyn.ro/images/products/img_202404261115/203341/full/toshiba-slim-washing-machine-tw-bl80a2pl-ss-477087.jpg",
@@ -252,6 +240,17 @@
 "verificat": "2026-11-04"
 },
 {
+"titlu": "CANDY Masina de spalat rufe CANDY CO4 374TWM6/1-S, 7 kg, 1300 rpm, Clasa A, Wi-Fi",
+"pret": 2051.99,
+"imagine": "https://www.dwyn.ro/images/products/img_202512311121/380042/full/candy-candy-co4-374twm6-1-s-washing-machine-a-front-loading-depth-45-cm-7-kg-white-1116893.png",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fmasina-de-spalat-rufe%2Fcandy%2F380042-masina-de-spalat-rufe-candy-co4-374twm6-1-s-7-kg-1300-rpm-clasa-a-wi-fi%2F",
+"magazin": "dwyn.ro",
+"id": "g3EexfDP4NFn",
+"brand": "CANDY",
+"url_magazin": "https://www.dwyn.ro/masina-de-spalat-rufe/candy/380042-masina-de-spalat-rufe-candy-co4-374twm6-1-s-7-kg-1300-rpm-clasa-a-wi-fi/",
+"pret_vechi": null
+},
+{
 "titlu": "Masina de spalat rufe cu incarcare verticala Candy CSTG 272DVET/1-S, 7 kg, 1200 rpm, Gentle Touch Opening, Easy Iron, Cl",
 "pret": 2071.99,
 "imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4096%2F4096806%2F646dc3ee479e8.jpg&type=auto&width=500&sign=dnOxjCpi8iZag9JeYmV_V1jQhLh4BHveuQzf6wiamVo",
@@ -265,7 +264,7 @@
 },
 {
 "titlu": "INDESIT Masina de spalat rufe INDESIT MTWA 71252 W EE, 7 kg, 1200 rpm, Clasa E, Alb",
-"pret": 2072.99,
+"pret": 2074.99,
 "imagine": "https://www.dwyn.ro/images/products/img_202512311121/380018/full/indesit-indesit-washing-machine-mtwa-71252-w-ee-front-loading-e-washing-capacity-7-kg-1200-rpm-depth-54-cm-white-1116707.png",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fmasina-de-spalat-rufe%2Findesit%2F380018-masina-de-spalat-rufe-indesit-mtwa-71252-w-ee-7-kg-1200-rpm-clasa-e-alb%2F",
 "magazin": "dwyn.ro",
@@ -480,7 +479,8 @@
 "id": "i8HAawYuKRno",
 "brand": "BOSCH",
 "url_magazin": "https://www.evomag.ro/electrocasnice-electrocasnice-mari-masini-de-spalat-rufe-si-accesorii-masini-de-spalat-rufe/bosch-masina-de-spalat-rufe-bosch-wan2426nby-8-kg-1200-rpm-ecosilence-drive-iron-assist-hygiene-plus-control-electronic-touch-program-dark-colors-speed-perfect-clasa-a-60-cm-alb-gri-4295836.html",
-"pret_vechi": null
+"pret_vechi": null,
+"verificat": "2026-11-16"
 }
 ],
 "magazine": [
@@ -18667,7 +18667,8 @@
 "id": "nfJNYSJjiqOY",
 "brand": "SOPHIESKIN",
 "url_magazin": "https://www.farmaciilenapofarm.ro/produse-cosmetice-cu-protectie-solara/crema-depigmentanta-cu-protectie-solara-spf-50-sophieskin-50ml",
-"pret_vechi": null
+"pret_vechi": null,
+"verificat": "2026-11-16"
 },
 {
 "titlu": "Crema coloranta pentru protectie solara cu SPF 50+ Light Tint Medisun, 40ml, ACM",
@@ -19693,7 +19694,7 @@
 "titlu": "Polizoare unghiulare de 125 mm",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-11",
+"actualizat": "2026-11-16",
 "feeduri": [
 {
 "id": 1096,
@@ -19726,6 +19727,17 @@
 "verificat": "2026-11-04"
 },
 {
+"titlu": "Polizor unghiular electric MTX - MAGU125-1200, 1200W, 125 mm",
+"pret": 180.39,
+"imagine": "https://www.ozone.ro/media/catalog/product/e/l/elektricheski_agloshlayf_mtx_magu125_1200_1200w_125_mm_1794480593_0.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ozone.ro%2Fproduct%2Fpolizor-unghiular-electric-mtx-magu125-1200-1200w-125-mm%2F",
+"magazin": "ozone.ro",
+"id": "efDrP0vHZhlJ",
+"brand": "MTX",
+"url_magazin": "https://www.ozone.ro/product/polizor-unghiular-electric-mtx-magu125-1200-1200w-125-mm/",
+"pret_vechi": null
+},
+{
 "titlu": "Polizor unghiular electric Geko - G80800, 900 W, 125 mm, cu reglarea turației",
 "pret": 185.69,
 "imagine": "https://www.ozone.ro/media/catalog/product/e/l/elektricheski_agloshlayf_geko_g80800_900_w_125_mm_s_regulirane_na_oborotite_1782391740_0.jpg",
@@ -19746,6 +19758,18 @@
 "id": "Fb45aX5gE3a9",
 "brand": "MTX",
 "url_magazin": "https://www.ozone.ro/product/polizor-unghiular-cu-acumulator-mtx-agl-bl-20-125-20-v-3-ah-125-mm-motor-fara-perii/",
+"pret_vechi": 222.85,
+"verificat": "2026-11-04"
+},
+{
+"titlu": "Polizor unghiular cu acumulator Bormann - Pro, BBP5305, 125 mm, Solo",
+"pret": 212.25,
+"imagine": "https://www.ozone.ro/media/catalog/product/a/k/akumulatoren_agloshlayf_bormann_pro_bbp5305_125_mm_solo_1781705609_0.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ozone.ro%2Fproduct%2Fpolizor-unghiular-cu-acumulator-bormann-pro-bbp5305-125-mm-solo%2F",
+"magazin": "ozone.ro",
+"id": "C1d_H-l45Hgx",
+"brand": "Bormann",
+"url_magazin": "https://www.ozone.ro/product/polizor-unghiular-cu-acumulator-bormann-pro-bbp5305-125-mm-solo/",
 "pret_vechi": null,
 "verificat": "2026-11-04"
 },
@@ -19758,18 +19782,6 @@
 "id": "Kiv781D581iL",
 "brand": "Black & Decker",
 "url_magazin": "https://www.ozone.ro/product/polizor-unghiular-electric-black-decker-beg220-900w-125-mm/",
-"pret_vechi": null,
-"verificat": "2026-11-04"
-},
-{
-"titlu": "Polizor unghiular cu acumulator Bormann - Pro, BBP5305, 125 mm, Solo",
-"pret": 212.25,
-"imagine": "https://www.ozone.ro/media/catalog/product/a/k/akumulatoren_agloshlayf_bormann_pro_bbp5305_125_mm_solo_1781705609_0.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ozone.ro%2Fproduct%2Fpolizor-unghiular-cu-acumulator-bormann-pro-bbp5305-125-mm-solo%2F",
-"magazin": "ozone.ro",
-"id": "C1d_H-l45Hgx",
-"brand": "Bormann",
-"url_magazin": "https://www.ozone.ro/product/polizor-unghiular-cu-acumulator-bormann-pro-bbp5305-125-mm-solo/",
 "pret_vechi": null,
 "verificat": "2026-11-04"
 },
@@ -19793,7 +19805,7 @@
 "id": "BqXlxwXXobpD",
 "brand": "Hyundai",
 "url_magazin": "https://www.evomag.ro/casa-decoratiuni-bricolaj-unelte-si-scule-polizor-unghiular/hyundai-polizor-unghiular-hyundai-hy-ag-9-125-900-w-125-mm-albastru-negru-3842729.html",
-"pret_vechi": 249.99
+"pret_vechi": null
 },
 {
 "titlu": "Polizor unghiular Yato 125 mm, 850W, 12000 rpm, cablu 3 m",
@@ -19819,6 +19831,17 @@
 "verificat": "2026-11-04"
 },
 {
+"titlu": "Polizor unghiular Yato YT-82096, 125mm 900W, 1300-4000RPM",
+"pret": 242.99,
+"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4300%2F4300508%2F6a17c572c4282.jpg&type=auto&width=500&sign=h_d2trtg0MmzbNFMYU7DyLXoOmfMyq9dlocwNgdOZI8",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Fcasa-decoratiuni-bricolaj-unelte-si-scule-polizor-unghiular%2Fyato-polizor-unghiular-yato-yt-82096-125mm-900w-1300-4000rpm-4300508.html",
+"magazin": "evomag.ro",
+"id": "FSMaAB3jHcL3",
+"brand": "YATO",
+"url_magazin": "https://www.evomag.ro/casa-decoratiuni-bricolaj-unelte-si-scule-polizor-unghiular/yato-polizor-unghiular-yato-yt-82096-125mm-900w-1300-4000rpm-4300508.html",
+"pret_vechi": 287.99
+},
+{
 "titlu": "Polizor unghiular electric RTRMAX - 115/125 mm, 950W",
 "pret": 249.39,
 "imagine": "https://www.ozone.ro/media/catalog/product/e/l/elektricheski_agloshlayf_rtrmax_115_125_mm_950w_1750692892_0.jpg",
@@ -19830,38 +19853,15 @@
 "pret_vechi": null
 },
 {
-"titlu": "Polizor unghiular electric Black & Decker - KG1202, 1200W, 125 mm",
-"pret": 270.6,
-"imagine": "https://www.ozone.ro/media/catalog/product/e/l/elektricheski_agloshlayf_black_decker_kg1202_1200w_125_mm_1761137699_0.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ozone.ro%2Fproduct%2Fpolizor-unghiular-electric-black-decker-kg1202-1200w-125-mm%2F",
-"magazin": "ozone.ro",
-"id": "QvPlPIgXGDVN",
-"brand": "Black & Decker",
-"url_magazin": "https://www.ozone.ro/product/polizor-unghiular-electric-black-decker-kg1202-1200w-125-mm/",
-"pret_vechi": null,
-"verificat": "2026-11-04"
-},
-{
-"titlu": "Polizor unghiular Hikoki-Hitachi, G13SR4, 125 mm, 10000 rpm, 730W, Verde",
-"pret": 276.99,
-"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F3874%2F3874096%2F623ac43b99b7d.jpg&type=auto&width=500&sign=WM3K4tNf-UV5zleJ_YRk-N7HkPJ_3d9K7XuxTD81PH0",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Fcasa-decoratiuni-bricolaj-unelte-si-scule-polizor-unghiular%2Fhikoki-polizor-unghiular-hikoki-hitachi-g13sr4-125-mm-10000-rpm-730w-verde-3874096.html",
+"titlu": "Polizor unghiular Yato YT-821023, 125mm 1700W, 10500 RPM",
+"pret": 272.99,
+"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4300%2F4300507%2F6a17c55c3d4c4.jpg&type=auto&width=500&sign=pVY6awi2MLo_rcV53L5OFpEtCcybmTTkFFTKqi0xASo",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Fcasa-decoratiuni-bricolaj-unelte-si-scule-polizor-unghiular%2Fyato-polizor-unghiular-yato-yt-821023-125mm-1700w-10500-rpm-4300507.html",
 "magazin": "evomag.ro",
-"id": "SsMMn5dynEwK",
-"brand": "HIKOKI",
-"url_magazin": "https://www.evomag.ro/casa-decoratiuni-bricolaj-unelte-si-scule-polizor-unghiular/hikoki-polizor-unghiular-hikoki-hitachi-g13sr4-125-mm-10000-rpm-730w-verde-3874096.html",
-"pret_vechi": null
-},
-{
-"titlu": "Polizor Unghiular 125MM, 1400W, YT-82098",
-"pret": 288.99,
-"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F3997%2F3997534%2F62ff71a754432.jpg&type=auto&width=500&sign=dkUm1ziXuhQwVuyj_fisyd4zXG7JVAZPEQPhqumN0-k",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Fcasa-decoratiuni-bricolaj-unelte-si-scule-polizor-unghiular%2Fyato-polizor-unghiular-125mm-1400w-yt-82098-3997534.html",
-"magazin": "evomag.ro",
-"id": "uQeHtLBgf42J",
+"id": "46hgGQ1ogxkQ",
 "brand": "YATO",
-"url_magazin": "https://www.evomag.ro/casa-decoratiuni-bricolaj-unelte-si-scule-polizor-unghiular/yato-polizor-unghiular-125mm-1400w-yt-82098-3997534.html",
-"pret_vechi": null
+"url_magazin": "https://www.evomag.ro/casa-decoratiuni-bricolaj-unelte-si-scule-polizor-unghiular/yato-polizor-unghiular-yato-yt-821023-125mm-1700w-10500-rpm-4300507.html",
+"pret_vechi": 539.99
 },
 {
 "titlu": "Polizor unghiular Flex L 850 125, 125 mm, 850 W, 12000 rpm",
@@ -19886,17 +19886,6 @@
 "url_magazin": "https://masif.ro/polizor-unghiular-dewalt-dwe4117-950-w-125-mm-12000-rot-min/",
 "pret_vechi": null,
 "verificat": "2026-11-04"
-},
-{
-"titlu": "Polizor unghiular cu fir Bosch UniversalGrind 850-12, 850 W, 125 mm, maner antivibratii, accesorii",
-"pret": 401.99,
-"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4292%2F4292888%2F06033e2102-69e700cf1fe10.JPG&type=auto&width=500&sign=orz0YIioJ-al-_vrRTYKCek7ujI_DHJvE2IWAtGEodM",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Fcasa-decoratiuni-bricolaj-unelte-si-scule-polizor-unghiular%2Fbosch-polizor-unghiular-cu-fir-bosch-universalgrind-850-12-850-w-125-mm-maner-antivibratii-accesorii-4292888.html",
-"magazin": "evomag.ro",
-"id": "16Fdb1oBpk3P",
-"brand": "BOSCH",
-"url_magazin": "https://www.evomag.ro/casa-decoratiuni-bricolaj-unelte-si-scule-polizor-unghiular/bosch-polizor-unghiular-cu-fir-bosch-universalgrind-850-12-850-w-125-mm-maner-antivibratii-accesorii-4292888.html",
-"pret_vechi": null
 },
 {
 "titlu": "Polizor unghiular Stanley SFMCG400B SFMCG400B, 125 mm, fara acumulatori Li-Ion, 18 V",
@@ -19956,6 +19945,17 @@
 "url_magazin": "https://masif.ro/polizor-unghiular-flex-l-1400-125-1400-w-125-mm/",
 "pret_vechi": null,
 "verificat": "2026-11-04"
+},
+{
+"titlu": "Polizor unghiular Flex L 3309 FRG, 125 mm, 1010 W, 11000 rpm",
+"pret": 450.0,
+"imagine": "https://masif.ro/media/catalog/product/4/0/406570_1.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fmasif.ro%2Fpolizor-unghiular-flex-l-3309-frg-125-mm-1010-w-11000-rpm%2F",
+"magazin": "masif.ro",
+"id": "GAOTVMGvcTbm",
+"brand": "Flex",
+"url_magazin": "https://masif.ro/polizor-unghiular-flex-l-3309-frg-125-mm-1010-w-11000-rpm/",
+"pret_vechi": null
 }
 ],
 "magazine": [
@@ -19971,7 +19971,7 @@
 "titlu": "Generatoare de curent",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-11",
+"actualizat": "2026-11-16",
 "feeduri": [
 {
 "id": 4679,
@@ -20028,30 +20028,6 @@
 "verificat": "2026-11-04"
 },
 {
-"titlu": "Generator de curent, Kraft&dele, 3000w, pe benzina, KD136",
-"pret": 1120.04,
-"imagine": "https://infinityro.vteximg.com.br/arquivos/ids/270577793/image-1fede3b33bec4cac87c014f26e596dd9.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Finfinity.ro%2Fgenerator-de-curent-kraft-dele-3000w-pe-benzina-kd136-9036178%2Fp%3Futm_source%3D2performant",
-"magazin": "infinity.ro",
-"id": "cEZGm5xbcv9L",
-"brand": "Kraft&Dele",
-"url_magazin": "https://infinity.ro/generator-de-curent-kraft-dele-3000w-pe-benzina-kd136-9036178/p?utm_source=2performant",
-"pret_vechi": 1317.69,
-"verificat": "2026-11-04"
-},
-{
-"titlu": "Generator de curent Wolfson, digital invertor 2000W, 3.5 CP",
-"pret": 1136.0,
-"imagine": "https://cdn.shopify.com/s/files/1/0885/0571/2906/files/WhatsApp-Image-2023-11-25-at-10.01.17_984e8c38.jpg?v=1741187166",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.atomico.ro%2Fproducts%2Fwolfson-generator-curent-invertor-2000w-3-5cp",
-"magazin": "atomico.ro",
-"id": "MQbWXfmajTN5",
-"brand": "Wolfson",
-"url_magazin": "https://www.atomico.ro/products/wolfson-generator-curent-invertor-2000w-3-5cp",
-"pret_vechi": null,
-"verificat": "2026-11-11"
-},
-{
 "titlu": "Generator de curent WOLFSON GT-3500A - 2600W, 7 CP, AVR + 2 ulei 0.6L",
 "pret": 1148.0,
 "imagine": "https://cdn.shopify.com/s/files/1/0885/0571/2906/files/wfs0029.pachet.jpg?v=1741187095",
@@ -20100,26 +20076,15 @@
 "verificat": "2026-11-04"
 },
 {
-"titlu": "Generator de curent 2.5kW 3.6L Yato YT-85453",
-"pret": 1486.99,
-"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4299%2F4299750%2F6a17c60372c28.jpg&type=auto&width=500&sign=9UFSoMuKgFnnjYsPUIGJCXBeu_tKCyE_WneRsIbFVPY",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Fcasa-decoratiuni-bricolaj-generatoare-curent-electric-accesorii-generator-curent%2Fyato-generator-de-curent-2.5kw-3.6l-yato-yt-85453-4299750.html",
-"magazin": "evomag.ro",
-"id": "wgwIcZxZx4wx",
-"brand": "YATO",
-"url_magazin": "https://www.evomag.ro/casa-decoratiuni-bricolaj-generatoare-curent-electric-accesorii-generator-curent/yato-generator-de-curent-2.5kw-3.6l-yato-yt-85453-4299750.html",
-"pret_vechi": null
-},
-{
 "titlu": "Generator Curent Electric HYUNDAI HY3001, Monofazic, 2,8 kW, 230V (Argintiu)",
-"pret": 1499.99,
+"pret": 1670.99,
 "imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F3828%2F3828597%2Fhy3001-61790eb0af347.jpg&type=auto&width=500&sign=VbUbcPE_fdrDZUL0mGoIjYfAI_gD5VcT7fKbjigNe8c",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Fcasa-decoratiuni-bricolaj-generatoare-curent-electric-accesorii-generator-curent%2Fhyundai-generator-curent-electric-hyundai-hy3001-monofazic-2-8-kw-230v-argintiu-3828597.html",
 "magazin": "evomag.ro",
 "id": "MsZKQzqgYTap",
 "brand": "Hyundai",
 "url_magazin": "https://www.evomag.ro/casa-decoratiuni-bricolaj-generatoare-curent-electric-accesorii-generator-curent/hyundai-generator-curent-electric-hyundai-hy3001-monofazic-2-8-kw-230v-argintiu-3828597.html",
-"pret_vechi": 1684.99
+"pret_vechi": null
 },
 {
 "titlu": "Generator curent invertor, 2.1 kW, KD684, Kraft&Dele",
@@ -20158,6 +20123,18 @@
 "verificat": "2026-11-11"
 },
 {
+"titlu": "Generator de curent, Kraft&Dele, pe benzina, tip invertor, 2000W, 230V, 4CP",
+"pret": 1939.13,
+"imagine": "https://infinityro.vteximg.com.br/arquivos/ids/270577703/image-658ef45bd4b946d1b179afaf624acb57.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Finfinity.ro%2Fgenerator-de-curent-kraft-dele-pe-benzina-tip-invertor-2000w-230v-4cp-9036165%2Fp%3Futm_source%3D2performant",
+"magazin": "infinity.ro",
+"id": "s8GFrtaqi5LE",
+"brand": "Kraft&Dele",
+"url_magazin": "https://infinity.ro/generator-de-curent-kraft-dele-pe-benzina-tip-invertor-2000w-230v-4cp-9036165/p?utm_source=2performant",
+"pret_vechi": 2281.33,
+"verificat": "2026-11-16"
+},
+{
 "titlu": "Generator de curent pe benzina Wolfson Imperio 3000, 3000W, monofazat, 7CP, 212cc",
 "pret": 1970.0,
 "imagine": "https://cdn.shopify.com/s/files/1/0885/0571/2906/files/WFS4650.jpg?v=1741187122",
@@ -20194,7 +20171,7 @@
 },
 {
 "titlu": "Generator curent Tecnoware FGE4200E, monofazat, 4200VA, Negru",
-"pret": 3232.99,
+"pret": 3235.99,
 "imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4320%2F4320835%2Fpetrol-generator-4200vafge420-6ae0a29d23309.JPG&type=auto&width=500&sign=fLFxvSL9PQcgX5oBygKi_MVQ-gXd6eTNtMAe7J7kuJg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Fcasa-decoratiuni-bricolaj-generatoare-curent-electric-accesorii-generator-curent%2Ftecnoware-generator-curent-tecnoware-fge4200e-monofazat-4200va-negru-4320835.html",
 "magazin": "evomag.ro",
@@ -20204,19 +20181,8 @@
 "pret_vechi": null
 },
 {
-"titlu": "Generator curent electric tip inverter Könner & Söhnen KS 2000iG S, 2.5 CP, Pornire motor manuala, Benzina/GPL (Albastru",
-"pret": 3258.99,
-"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F3837%2F3837722%2Fks-2000ig-s-silent-gplben-61b1e4aa31120.JPG&type=auto&width=500&sign=ldvOIVShWEoKQRJcI9rW91ZHMUVA2gjNv4K3X5AdsoA",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Fcasa-decoratiuni-bricolaj-generatoare-curent-electric-accesorii-generator-curent%2Fk-nner-s-hnen-generator-curent-electric-tip-inverter-k-nner-s-hnen-ks-2000ig-s-2.5-cp-pornire-motor-manuala-benzina-gpl-albastru-negru-3837722.html",
-"magazin": "evomag.ro",
-"id": "IMVqSAjQwzUU",
-"brand": "Könner&Söhnen",
-"url_magazin": "https://www.evomag.ro/casa-decoratiuni-bricolaj-generatoare-curent-electric-accesorii-generator-curent/k-nner-s-hnen-generator-curent-electric-tip-inverter-k-nner-s-hnen-ks-2000ig-s-2.5-cp-pornire-motor-manuala-benzina-gpl-albastru-negru-3837722.html",
-"pret_vechi": null
-},
-{
 "titlu": "Generator de curent Dedra pe benzina 5,0kW",
-"pret": 3621.99,
+"pret": 3622.99,
 "imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4117%2F4117295%2F64facc94225ca.jpg&type=auto&width=500&sign=-Q9Uhnkp_8u_CIgMvHhxaijVrqx-mx1TCNrnLBQkSQg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Fcasa-decoratiuni-bricolaj-generatoare-curent-electric-accesorii-generator-curent%2Fdedra-generator-de-curent-dedra-pe-benzina-5-0kw-4117295.html",
 "magazin": "evomag.ro",
@@ -20224,6 +20190,18 @@
 "brand": "Dedra",
 "url_magazin": "https://www.evomag.ro/casa-decoratiuni-bricolaj-generatoare-curent-electric-accesorii-generator-curent/dedra-generator-de-curent-dedra-pe-benzina-5-0kw-4117295.html",
 "pret_vechi": null
+},
+{
+"titlu": "Generator de curent GENMAC Click RG4000HO putere maxima 3,1 kW 230V motor Honda GP200",
+"pret": 3767.4,
+"imagine": "https://c.cdnmp.net/917469284/p/l/0/generator-de-curent-genmac-click-rg4000ho-putere-maxima-3-1-kw-230v~8830040.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.albertool.com%2Fcumpara%2Fgenerator-de-curent-genmac-click-rg4000ho-putere-maxima-3-1-kw-230v-24375%3Futm_source%3Dportal%26utm_medium%3Dweb%26utm_campaign%3D2parale",
+"magazin": "albertool.com",
+"id": "qOl64zsgOUgC",
+"brand": "Genmac",
+"url_magazin": "https://www.albertool.com/cumpara/generator-de-curent-genmac-click-rg4000ho-putere-maxima-3-1-kw-230v-24375?utm_source=portal&utm_medium=web&utm_campaign=2parale",
+"pret_vechi": null,
+"verificat": "2026-11-16"
 },
 {
 "titlu": "Generator de curent 4.2kW inverter si SUDURA 160A SuperHIBRID (GPL + Gaz Natural + Benzina) 230V - CRIANO - CNO-NRG-40i-",
@@ -20236,6 +20214,30 @@
 "url_magazin": "https://www.albertool.com/cumpara/generator-de-curent-4-2kw-inverter-si-sudura-160a-superhibrid-gpl-gaz-25983?utm_source=portal&utm_medium=web&utm_campaign=2parale",
 "pret_vechi": null,
 "verificat": "2026-11-04"
+},
+{
+"titlu": "Generator de curent GENMAC Click RG5000HO putere maxima 4,6 kW 230V motor Honda GX270",
+"pret": 5672.2,
+"imagine": "https://c.cdnmp.net/917469284/p/l/9/generator-de-curent-genmac-click-rg5000ho-putere-maxima-4-6-kw-230v~8830049.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.albertool.com%2Fcumpara%2Fgenerator-de-curent-genmac-click-rg5000ho-putere-maxima-4-6-kw-230v-24378%3Futm_source%3Dportal%26utm_medium%3Dweb%26utm_campaign%3D2parale",
+"magazin": "albertool.com",
+"id": "KbNVR-F52xH-",
+"brand": "Genmac",
+"url_magazin": "https://www.albertool.com/cumpara/generator-de-curent-genmac-click-rg5000ho-putere-maxima-4-6-kw-230v-24378?utm_source=portal&utm_medium=web&utm_campaign=2parale",
+"pret_vechi": null,
+"verificat": "2026-11-16"
+},
+{
+"titlu": "Generator de curent 9 kW inverter SuperHIBRID (GPL + Gaz Natural + Benzina) voltaj selectabil 230V/400V - CRIANO - CNO-N",
+"pret": 5734.19,
+"imagine": "https://c.cdnmp.net/917469284/p/l/1/generator-de-curent-9-kw-inverter-superhibrid-gpl-gaz-natural-benzina~8889671.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.albertool.com%2Fcumpara%2Fgenerator-de-curent-9-kw-inverter-superhibrid-gpl-gaz-natural-benzina-25985%3Futm_source%3Dportal%26utm_medium%3Dweb%26utm_campaign%3D2parale",
+"magazin": "albertool.com",
+"id": "bO4LyHefNfBy",
+"brand": "CRIANO",
+"url_magazin": "https://www.albertool.com/cumpara/generator-de-curent-9-kw-inverter-superhibrid-gpl-gaz-natural-benzina-25985?utm_source=portal&utm_medium=web&utm_campaign=2parale",
+"pret_vechi": 7447.0,
+"verificat": "2026-11-16"
 }
 ],
 "magazine": [
@@ -20252,7 +20254,7 @@
 "titlu": "Mașini de tuns gazon",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-12",
+"actualizat": "2026-11-16",
 "feeduri": [
 {
 "id": 5887,
@@ -20367,18 +20369,6 @@
 "verificat": "2026-11-04"
 },
 {
-"titlu": "Masina de Tuns Iarba pe Benzina Hecht 554 SX 5IN1",
-"pret": 1716.0,
-"imagine": "https://micul-meserias.ro/image/cache/catalog/autofeed/853-1300x1300_0.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fmicul-meserias.ro%2Fmasina-de-tuns-iarba-pe-benzina-hecht-554-sx-5in1",
-"magazin": "micul-meserias.ro",
-"id": "9NWb0SUsp1nv",
-"brand": "Hecht - Cehia",
-"url_magazin": "https://micul-meserias.ro/masina-de-tuns-iarba-pe-benzina-hecht-554-sx-5in1",
-"pret_vechi": 2771.0,
-"verificat": "2026-11-04"
-},
-{
 "titlu": "Dreame Masina de Tuns Iarba-Gazon Mova GL417, Latime de Lucru 43cm, 40V, Gri-Negru",
 "pret": 1845.6,
 "imagine": "https://www.dwyn.ro/images/products/img_202512311121/408757/full/dreame-masina-de-tuns-iarba-gazon-mova-gl417-latime-de-lucru-43cm-40v-gri-negru-1306984.jpg",
@@ -20415,7 +20405,7 @@
 "titlu": "Adidași pentru damă",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-12",
+"actualizat": "2026-11-16",
 "feeduri": [
 {
 "id": 967,
@@ -20547,7 +20537,7 @@
 "titlu": "Geci de iarnă pentru bărbați",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-12",
+"actualizat": "2026-11-16",
 "feeduri": [
 {
 "id": 967,
@@ -20555,6 +20545,30 @@
 }
 ],
 "produse": [
+{
+"titlu": "Geaca barbati de iarna maro 5300",
+"pret": 180.0,
+"imagine": "https://dehaine.ro/image/catalog/-9912/408/5300-geaca-barbati-iarna-maro-a.png",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fdehaine.ro%2F5300-geaca-barbati-iarna-maro-c%26utm_source%3Ddouaparale%26utm_medium%3Dcpc%26utm_campaign%3Ddouaparale",
+"magazin": "dehaine.ro",
+"id": "fUFQsbbo0G54",
+"brand": "",
+"url_magazin": "https://dehaine.ro/5300-geaca-barbati-iarna-maro-c&utm_source=douaparale&utm_medium=cpc&utm_campaign=douaparale",
+"pret_vechi": null,
+"verificat": "2026-11-16"
+},
+{
+"titlu": "Geaca barbati de iarna verde 5300",
+"pret": 180.0,
+"imagine": "https://dehaine.ro/image/catalog/-9912/408/5300-geaca-barbati-iarna-a.png",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fdehaine.ro%2F5300-geaca-barbati-iarna%26utm_source%3Ddouaparale%26utm_medium%3Dcpc%26utm_campaign%3Ddouaparale",
+"magazin": "dehaine.ro",
+"id": "LWHsnOOMmzJF",
+"brand": "",
+"url_magazin": "https://dehaine.ro/5300-geaca-barbati-iarna&utm_source=douaparale&utm_medium=cpc&utm_campaign=douaparale",
+"pret_vechi": null,
+"verificat": "2026-11-16"
+},
 {
 "titlu": "Geaca barbati de iarna bleumarin w208",
 "pret": 180.0,
@@ -20604,6 +20618,18 @@
 "verificat": "2026-11-04"
 },
 {
+"titlu": "Geaca barbati de iarna kaki w224",
+"pret": 180.0,
+"imagine": "https://dehaine.ro/image/catalog/-9912/409/W224-GEACA-BARBATI-GE-BRUDER-b.png",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fdehaine.ro%2FW224-GEACA-BARBATI-GE-BRUDER-a%26utm_source%3Ddouaparale%26utm_medium%3Dcpc%26utm_campaign%3Ddouaparale",
+"magazin": "dehaine.ro",
+"id": "EaT3KKG8TYJR",
+"brand": "",
+"url_magazin": "https://dehaine.ro/W224-GEACA-BARBATI-GE-BRUDER-a&utm_source=douaparale&utm_medium=cpc&utm_campaign=douaparale",
+"pret_vechi": null,
+"verificat": "2026-11-16"
+},
+{
 "titlu": "Geaca barbati de iarna kaki w216",
 "pret": 180.0,
 "imagine": "https://dehaine.ro/image/catalog/-9912/409/W216-geaca-barbati-iarna-sarra-2-c.png",
@@ -20614,42 +20640,6 @@
 "url_magazin": "https://dehaine.ro/W216-geaca-barbati-iarna-sarra-2-b&utm_source=douaparale&utm_medium=cpc&utm_campaign=douaparale",
 "pret_vechi": null,
 "verificat": "2026-11-04"
-},
-{
-"titlu": "Geaca barbati de iarna neagra w216",
-"pret": 180.0,
-"imagine": "https://dehaine.ro/image/catalog/-9912/409/W216-geaca-barbati-iarna-sarra-3-a.png",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fdehaine.ro%2FW216-geaca-barbati-iarna-sarra-3-a%26utm_source%3Ddouaparale%26utm_medium%3Dcpc%26utm_campaign%3Ddouaparale",
-"magazin": "dehaine.ro",
-"id": "Gkfq-B_oFtT1",
-"brand": "",
-"url_magazin": "https://dehaine.ro/W216-geaca-barbati-iarna-sarra-3-a&utm_source=douaparale&utm_medium=cpc&utm_campaign=douaparale",
-"pret_vechi": null,
-"verificat": "2026-11-12"
-},
-{
-"titlu": "Geaca barbati de iarna negara w218",
-"pret": 180.0,
-"imagine": "https://dehaine.ro/image/catalog/-9912/409/W218-geaca-barbati-iarna-Roletti-d-1.png",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fdehaine.ro%2FW218-geaca-barbati-iarna-Roletti-a%26utm_source%3Ddouaparale%26utm_medium%3Dcpc%26utm_campaign%3Ddouaparale",
-"magazin": "dehaine.ro",
-"id": "tZePk8HY8e9e",
-"brand": "",
-"url_magazin": "https://dehaine.ro/W218-geaca-barbati-iarna-Roletti-a&utm_source=douaparale&utm_medium=cpc&utm_campaign=douaparale",
-"pret_vechi": null,
-"verificat": "2026-11-12"
-},
-{
-"titlu": "Geaca barbati de iarna negara w220",
-"pret": 180.0,
-"imagine": "https://dehaine.ro/image/catalog/-9912/409/W220-geaca-barbati-iarna-zagmen-b.png",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fdehaine.ro%2FW220-geaca-barbati-iarna-zagmen-a%26utm_source%3Ddouaparale%26utm_medium%3Dcpc%26utm_campaign%3Ddouaparale",
-"magazin": "dehaine.ro",
-"id": "nyg6SVS88yhZ",
-"brand": "",
-"url_magazin": "https://dehaine.ro/W220-geaca-barbati-iarna-zagmen-a&utm_source=douaparale&utm_medium=cpc&utm_campaign=douaparale",
-"pret_vechi": null,
-"verificat": "2026-11-12"
 }
 ],
 "magazine": [
@@ -20675,7 +20665,7 @@
 "titlu": "Cărucioare 3 în 1",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-12",
+"actualizat": "2026-11-16",
 "feeduri": [
 {
 "id": 1169,
@@ -20744,30 +20734,6 @@
 "verificat": "2026-11-12"
 },
 {
-"titlu": "Carucior 3 in 1, Lionelo, Bianka Grey Stone, Transformabil, Cu landou si salteluta moale, Cu scoica auto, Sustine 22 kg,",
-"pret": 1639.99,
-"imagine": "https://cdn13.avanticart.ro/babyneeds.ro/pictures/products/800/carucior-3-in-1-lionelo-bianka-grey-stone-transformabil-cu-landou-si-salteluta-moale-cu-scoica-auto-sustine-22-kg-cu-muselina-din-bambus-120x120-cm-gri-3435186.jpeg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.babyneeds.ro%2Fcarucior-3-in-1-lionelo-bianka-grey-stone-transformabil-cu-landou-si-salteluta-moale-cu-scoica-auto-sustine-22-kg-cu-muselina-din-bambus-120x120-cm-gri.html",
-"magazin": "babyneeds.ro",
-"id": "k_VBdXVtefch",
-"brand": "Lionelo",
-"url_magazin": "https://www.babyneeds.ro/carucior-3-in-1-lionelo-bianka-grey-stone-transformabil-cu-landou-si-salteluta-moale-cu-scoica-auto-sustine-22-kg-cu-muselina-din-bambus-120x120-cm-gri.html",
-"pret_vechi": 2467.11,
-"verificat": "2026-11-04"
-},
-{
-"titlu": "Carucior 3 in 1, Lionelo, Bianka Bej, Transformabil, Cu landou si salteluta moale, Cu scoica auto, Sustine 22 kg, Cu mus",
-"pret": 1639.99,
-"imagine": "https://cdn13.avanticart.ro/babyneeds.ro/pictures/products/800/carucior-3-in-1-lionelo-bianka-bej-transformabil-cu-landou-si-salteluta-moale-cu-scoica-auto-sustine-22-kg-cu-muselina-din-bambus-120x120-cm-bej-3434823.jpeg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.babyneeds.ro%2Fcarucior-3-in-1-lionelo-bianka-bej-transformabil-cu-landou-si-salteluta-moale-cu-scoica-auto-sustine-22-kg-cu-muselina-din-bambus-120x120-cm-bej.html",
-"magazin": "babyneeds.ro",
-"id": "IeC6MZ8vCIgJ",
-"brand": "Lionelo",
-"url_magazin": "https://www.babyneeds.ro/carucior-3-in-1-lionelo-bianka-bej-transformabil-cu-landou-si-salteluta-moale-cu-scoica-auto-sustine-22-kg-cu-muselina-din-bambus-120x120-cm-bej.html",
-"pret_vechi": 2453.7,
-"verificat": "2026-11-04"
-},
-{
 "titlu": "Carucior Chipolino Euphoria 3 in 1 cashmere",
 "pret": 1641.54,
 "imagine": "https://www.ookee.ro/395460-large_default/carucior-chipolino-euphoria-3-in-1-cashmere.jpg",
@@ -20792,30 +20758,6 @@
 "verificat": "2026-11-12"
 },
 {
-"titlu": "Carucior Chipolino Aurora 3 in 1 cashmere",
-"pret": 1733.95,
-"imagine": "https://www.ookee.ro/395679-large_default/carucior-chipolino-aurora-3-in-1-cashmere.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ookee.ro%2Fcarucioare-3-in-1%2F130661-carucior-chipolino-aurora-3-in-1-cashmere.html",
-"magazin": "ookee.ro",
-"id": "evhe8JUOYx1M",
-"brand": "Chipolino",
-"url_magazin": "https://www.ookee.ro/carucioare-3-in-1/130661-carucior-chipolino-aurora-3-in-1-cashmere.html",
-"pret_vechi": 2938.9,
-"verificat": "2026-11-04"
-},
-{
-"titlu": "Carucior Chipolino Aurora 3 in 1 charcoal",
-"pret": 1733.95,
-"imagine": "https://www.ookee.ro/395745-large_default/carucior-chipolino-aurora-3-in-1-charcoal.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ookee.ro%2Fcarucioare-3-in-1%2F130664-carucior-chipolino-aurora-3-in-1-charcoal.html",
-"magazin": "ookee.ro",
-"id": "SnqEq0O0l3E8",
-"brand": "Chipolino",
-"url_magazin": "https://www.ookee.ro/carucioare-3-in-1/130664-carucior-chipolino-aurora-3-in-1-charcoal.html",
-"pret_vechi": 2938.9,
-"verificat": "2026-11-04"
-},
-{
 "titlu": "Carucior Chipolino Aurora 3 in 1 powder pink",
 "pret": 1733.95,
 "imagine": "https://www.ookee.ro/395623-large_default/carucior-chipolino-aurora-3-in-1-powder-pink.jpg",
@@ -20824,6 +20766,18 @@
 "id": "F2wBcCFn7b_a",
 "brand": "Chipolino",
 "url_magazin": "https://www.ookee.ro/carucioare-3-in-1/130659-carucior-chipolino-aurora-3-in-1-powder-pink.html",
+"pret_vechi": 2938.9,
+"verificat": "2026-11-04"
+},
+{
+"titlu": "Carucior Chipolino Aurora 3 in 1 cashmere",
+"pret": 1733.95,
+"imagine": "https://www.ookee.ro/395679-large_default/carucior-chipolino-aurora-3-in-1-cashmere.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ookee.ro%2Fcarucioare-3-in-1%2F130661-carucior-chipolino-aurora-3-in-1-cashmere.html",
+"magazin": "ookee.ro",
+"id": "evhe8JUOYx1M",
+"brand": "Chipolino",
+"url_magazin": "https://www.ookee.ro/carucioare-3-in-1/130661-carucior-chipolino-aurora-3-in-1-cashmere.html",
 "pret_vechi": 2938.9,
 "verificat": "2026-11-04"
 },
@@ -20852,6 +20806,18 @@
 "verificat": "2026-11-04"
 },
 {
+"titlu": "Carucior Chipolino Aurora 3 in 1 charcoal",
+"pret": 1733.95,
+"imagine": "https://www.ookee.ro/395745-large_default/carucior-chipolino-aurora-3-in-1-charcoal.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ookee.ro%2Fcarucioare-3-in-1%2F130664-carucior-chipolino-aurora-3-in-1-charcoal.html",
+"magazin": "ookee.ro",
+"id": "SnqEq0O0l3E8",
+"brand": "Chipolino",
+"url_magazin": "https://www.ookee.ro/carucioare-3-in-1/130664-carucior-chipolino-aurora-3-in-1-charcoal.html",
+"pret_vechi": 2938.9,
+"verificat": "2026-11-04"
+},
+{
 "titlu": "Carucior 3 in 1 Cangaroo Noble Black",
 "pret": 1790.0,
 "imagine": "https://infinityro.vteximg.com.br/arquivos/ids/265881065/image-a14792dcaf4a49ca8a151f114bb6c928.jpg",
@@ -20876,6 +20842,18 @@
 "verificat": "2026-11-04"
 },
 {
+"titlu": "Carucior 3 in 1, Lionelo Amber Black Onyx, Pana la 22 Kg, Cu scoica auto testata ADAC, Beige Cream",
+"pret": 2021.99,
+"imagine": "https://cdn13.avanticart.ro/babyneeds.ro/pictures/products/800/set-carucior-2-in-1-lionelo-amber-cadru-aluminiu-negru-plus-scoica-auto-i-size-astrid-0-13-kg-40-87-cm-r129-crem-3461655.jpeg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.babyneeds.ro%2Fset-carucior-2-in-1-lionelo-amber-cadru-aluminiu-negru-plus-scoica-auto-i-size-astrid-0-13-kg-40-87-cm-r129-crem.html",
+"magazin": "babyneeds.ro",
+"id": "y53ojEVz1wgf",
+"brand": "Lionelo",
+"url_magazin": "https://www.babyneeds.ro/set-carucior-2-in-1-lionelo-amber-cadru-aluminiu-negru-plus-scoica-auto-i-size-astrid-0-13-kg-40-87-cm-r129-crem.html",
+"pret_vechi": 3344.74,
+"verificat": "2026-11-16"
+},
+{
 "titlu": "Carucior 3 in 1, Lionelo, Amber, Cadru aluminiu, Cu landou intarit si salteluta moale, Cu scoica auto testata ADAC, Reve",
 "pret": 2119.99,
 "imagine": "https://cdn13.avanticart.ro/babyneeds.ro/pictures/products/800/carucior-3-in-1-lionelo-amber-cadru-aluminiu-cu-landou-intarit-si-salteluta-moale-cu-scoica-auto-testata-adac-reversibil-cu-accesorii-geanta-parinti-pana-la-22-kg-verde-3445230.jpeg",
@@ -20890,7 +20868,7 @@
 {
 "titlu": "Set Carucior 3 in 1, Lionelo, Mika Plus, Beige Sand, Cu scoica auto Astrid testata ADAC, Beige Cream",
 "pret": 2497.99,
-"imagine": "https://cdn13.avanticart.ro/babyneeds.ro/pictures/products/800/set-carucior-3-in-1-lionelo-mika-plus-beige-sand-cu-scoica-auto-astrid-testata-adac-beige-cream-3430230.jpeg",
+"imagine": "https://cdn13.avanticart.ro/babyneeds.ro/pictures/products/800/set-carucior-3-in-1-lionelo-mika-plus-beige-sand-cu-scoica-auto-astrid-testata-adac-beige-cream-3460341.jpeg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.babyneeds.ro%2Fset-carucior-3-in-1-lionelo-mika-plus-beige-sand-cu-scoica-auto-astrid-testata-adac-beige-cream.html",
 "magazin": "babyneeds.ro",
 "id": "4RkQWXkNedpK",
@@ -20902,7 +20880,7 @@
 {
 "titlu": "Set Carucior 3 in 1, Lionelo, Mika Plus, Green Olive, Cu scoica auto Astrid testata ADAC, Beige Cream",
 "pret": 2497.99,
-"imagine": "https://cdn13.avanticart.ro/babyneeds.ro/pictures/products/800/set-carucior-3-in-1-lionelo-mika-plus-green-olive-cu-scoica-auto-astrid-testata-adac-beige-cream-3430233.jpeg",
+"imagine": "https://cdn13.avanticart.ro/babyneeds.ro/pictures/products/800/set-carucior-3-in-1-lionelo-mika-plus-green-olive-cu-scoica-auto-astrid-testata-adac-beige-cream-3460359.jpeg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.babyneeds.ro%2Fset-carucior-3-in-1-lionelo-mika-plus-green-olive-cu-scoica-auto-astrid-testata-adac-beige-cream.html",
 "magazin": "babyneeds.ro",
 "id": "eWqWTXf8n7rS",
@@ -20925,7 +20903,7 @@
 "titlu": "Scaune auto pentru copii",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-12",
+"actualizat": "2026-11-16",
 "feeduri": [
 {
 "id": 1528,
@@ -20970,18 +20948,6 @@
 "verificat": "2026-11-12"
 },
 {
-"titlu": "Scaun auto Chipolino Patrol I-Size 100-150 cm cu sistem Isofix noir",
-"pret": 329.96,
-"imagine": "https://www.ookee.ro/390422-large_default/scaun-auto-chipolino-patrol-i-size-100-150-cm-cu-sistem-isofix-noir.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ookee.ro%2Fscaune-auto%2F128698-scaun-auto-chipolino-patrol-i-size-100-150-cm-cu-sistem-isofix-noir.html",
-"magazin": "ookee.ro",
-"id": "A1ZBMhaRfhHJ",
-"brand": "Chipolino",
-"url_magazin": "https://www.ookee.ro/scaune-auto/128698-scaun-auto-chipolino-patrol-i-size-100-150-cm-cu-sistem-isofix-noir.html",
-"pret_vechi": 568.9,
-"verificat": "2026-11-12"
-},
-{
 "titlu": "Scaun auto Chipolino Patrol I-Size 100-150 cm cu sistem Isofix cashmere",
 "pret": 329.96,
 "imagine": "https://www.ookee.ro/390416-large_default/scaun-auto-chipolino-patrol-i-size-100-150-cm-cu-sistem-isofix-cashmere.jpg",
@@ -20994,6 +20960,30 @@
 "verificat": "2026-11-12"
 },
 {
+"titlu": "Scaun auto Chipolino Patrol I-Size 100-150 cm cu sistem Isofix platinum",
+"pret": 329.96,
+"imagine": "https://www.ookee.ro/390419-large_default/scaun-auto-chipolino-patrol-i-size-100-150-cm-cu-sistem-isofix-platinum.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ookee.ro%2Fscaune-auto%2F128697-scaun-auto-chipolino-patrol-i-size-100-150-cm-cu-sistem-isofix-platinum.html",
+"magazin": "ookee.ro",
+"id": "74y8W8dqtBor",
+"brand": "Chipolino",
+"url_magazin": "https://www.ookee.ro/scaune-auto/128697-scaun-auto-chipolino-patrol-i-size-100-150-cm-cu-sistem-isofix-platinum.html",
+"pret_vechi": 568.9,
+"verificat": "2026-11-16"
+},
+{
+"titlu": "Scaun auto Chipolino Patrol I-Size 100-150 cm cu sistem Isofix noir",
+"pret": 329.96,
+"imagine": "https://www.ookee.ro/390422-large_default/scaun-auto-chipolino-patrol-i-size-100-150-cm-cu-sistem-isofix-noir.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ookee.ro%2Fscaune-auto%2F128698-scaun-auto-chipolino-patrol-i-size-100-150-cm-cu-sistem-isofix-noir.html",
+"magazin": "ookee.ro",
+"id": "A1ZBMhaRfhHJ",
+"brand": "Chipolino",
+"url_magazin": "https://www.ookee.ro/scaune-auto/128698-scaun-auto-chipolino-patrol-i-size-100-150-cm-cu-sistem-isofix-noir.html",
+"pret_vechi": 568.9,
+"verificat": "2026-11-12"
+},
+{
 "titlu": "Scaun Auto 2 In 1, 9-36 Kg, Inchidere In 5 Puncte, 6-12 Ani, 40-105 Cm, Negru - HC01",
 "pret": 405.0,
 "imagine": "http://babyroll.ro/8140/scaun-auto-2-in-1-9-36-kg-inchidere-in-5-puncte-6-12-ani-40-105-cm-negru-hc01.jpg",
@@ -21002,7 +20992,7 @@
 "id": "FG6Ep_GafpbI",
 "brand": "BabyRoll.ro",
 "url_magazin": "https://babyroll.ro/scaun-auto-copii/1481-scaun-auto-2-in-1-9-36-kg-inchidere-in-5-puncte-6-12-ani-40-105-cm-negru-hc01.html?utm_source=2performant",
-"pret_vechi": 450.0,
+"pret_vechi": null,
 "verificat": "2026-11-04"
 },
 {
@@ -21014,7 +21004,7 @@
 "id": "mZOTx6fs1_5X",
 "brand": "BabyRoll.ro",
 "url_magazin": "https://babyroll.ro/scaun-auto-copii/1480-scaun-auto-9-36-kg-inchidere-in-5-puncte-1-4-ani-70-105-cm-gri-bs05e.html?utm_source=2performant",
-"pret_vechi": 450.0,
+"pret_vechi": null,
 "verificat": "2026-11-04"
 },
 {
@@ -21037,32 +21027,8 @@
 "id": "DECOK8H6vOQG",
 "brand": "BabyRoll.ro",
 "url_magazin": "https://babyroll.ro/scaun-auto-copii/2264-scaun-auto-pentru-copii-0-36-kg-centura-in-5-puncte-tetiera-reglabila-bleumarin-bs16p.html?utm_source=2performant",
-"pret_vechi": 550.0,
-"verificat": "2026-11-04"
-},
-{
-"titlu": "Scaun auto Chipolino Mondial I-Size 40-150 cm latte",
-"pret": 534.74,
-"imagine": "https://www.ookee.ro/390435-large_default/scaun-auto-chipolino-mondial-i-size-40-150-cm-latte.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ookee.ro%2Fscaune-auto%2F128701-scaun-auto-chipolino-mondial-i-size-40-150-cm-latte.html",
-"magazin": "ookee.ro",
-"id": "HqBk_n40uB8Q",
-"brand": "Chipolino",
-"url_magazin": "https://www.ookee.ro/scaune-auto/128701-scaun-auto-chipolino-mondial-i-size-40-150-cm-latte.html",
-"pret_vechi": 954.9,
-"verificat": "2026-11-12"
-},
-{
-"titlu": "Scaun auto pentru copii Lorelli Rio, Isofix, 76-150 cm, 15 Luni-12 Ani, tetiera reglabila prin mecanism, Negru",
-"pret": 575.99,
-"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4302%2F4302634%2Fscaun-auto-pentru-copii-rio-isofix-cu-top-tether_10282_7_17715071925295.jpg&type=auto&width=500&sign=VX1OyEqr0xyRqMNcd1sISPsndfLLAXNRFRArGXBU8ek",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Fbebe-copii-jucarii-carucioare-transport-bebe-scaune-auto-copii-si-inaltatoare%2Florelli-scaun-auto-pentru-copii-lorelli-rio-isofix-76-150-cm-15-luni-12-ani-tetiera-reglabila-prin-mecanism-negru-4302634.html",
-"magazin": "evomag.ro",
-"id": "Rq2Hi_fVWiUA",
-"brand": "Lorelli",
-"url_magazin": "https://www.evomag.ro/bebe-copii-jucarii-carucioare-transport-bebe-scaune-auto-copii-si-inaltatoare/lorelli-scaun-auto-pentru-copii-lorelli-rio-isofix-76-150-cm-15-luni-12-ani-tetiera-reglabila-prin-mecanism-negru-4302634.html",
 "pret_vechi": null,
-"verificat": "2026-11-05"
+"verificat": "2026-11-04"
 },
 {
 "titlu": "Scaun Auto Pentru Copii Cu Isofix U-Grow, Tetina Reglabila Pe Inaltime, Centuri De Prindere Reglabile, Gri - 302GR",
@@ -21073,7 +21039,7 @@
 "id": "_AQ3HBX1R9eQ",
 "brand": "BabyRoll.ro",
 "url_magazin": "https://babyroll.ro/scaun-auto-copii/788-scaun-auto-pentru-copii-cu-isofix-u-grow-tetina-reglabila-pe-inaltime-centuri-de-prindere-reglabile-gri-302gr-5941994200746.html?utm_source=2performant",
-"pret_vechi": 695.0,
+"pret_vechi": null,
 "verificat": "2026-11-04"
 },
 {
@@ -21121,7 +21087,7 @@
 "id": "A6nyR3cY1Sc6",
 "brand": "",
 "url_magazin": "https://babyroll.ro/scaun-auto-copii/2301-scaun-auto-pentru-copii-0-36-kg-isofix-centura-in-5-puncte-tetiera-reglabila-roz-vals20.html?utm_source=2performant",
-"pret_vechi": 750.0,
+"pret_vechi": null,
 "verificat": "2026-11-04"
 },
 {
@@ -21157,7 +21123,7 @@
 "id": "TtqxDNChcNrx",
 "brand": "",
 "url_magazin": "https://babyroll.ro/scaun-auto-copii/245-scaun-auto-pentru-copii-cu-isofix-i-rotire-360-motion-seat-maro-reglabil-sigurana-i-comfort-maxim-rw11-5941994205406.html?utm_source=2performant",
-"pret_vechi": 760.0,
+"pret_vechi": null,
 "verificat": "2026-11-04"
 },
 {
@@ -21181,7 +21147,7 @@
 "id": "7LNG-CqQ80gG",
 "brand": "BabyRoll.ro",
 "url_magazin": "https://babyroll.ro/scaun-auto-copii/2070-scaun-auto-cu-isofix-cu-rotire-360-grade-0-36-kg-roz-tetiera-reglabila-pe-inaltime-rt83-5941994217928.html?utm_source=2performant",
-"pret_vechi": 790.0,
+"pret_vechi": null,
 "verificat": "2026-11-04"
 },
 {
@@ -21193,8 +21159,20 @@
 "id": "_Dm9ORDSiYTp",
 "brand": "BabyRoll.ro",
 "url_magazin": "https://babyroll.ro/scaun-auto-copii/1482-scaun-auto-cu-isofix-cu-rotire-360-grade-0-36-kg-tetiera-reglabila-pe-inaltime-turcoaz-rt83.html?utm_source=2performant",
-"pret_vechi": 790.0,
+"pret_vechi": null,
 "verificat": "2026-11-04"
+},
+{
+"titlu": "Scaun auto Chipolino Hypnotic Plus I-Size 40-150 cm cu sistem Isofix si sezut rotativ green",
+"pret": 719.45,
+"imagine": "https://www.ookee.ro/407871-large_default/scaun-auto-chipolino-hypnotic-plus-i-size-40-150-cm-cu-sistem-isofix-si-sezut-rotativ-green.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ookee.ro%2Fscaune-auto%2F132638-scaun-auto-chipolino-hypnotic-plus-i-size-40-150-cm-cu-sistem-isofix-si-sezut-rotativ-green.html",
+"magazin": "ookee.ro",
+"id": "1tGjwxa9cO46",
+"brand": "Chipolino",
+"url_magazin": "https://www.ookee.ro/scaune-auto/132638-scaun-auto-chipolino-hypnotic-plus-i-size-40-150-cm-cu-sistem-isofix-si-sezut-rotativ-green.html",
+"pret_vechi": 1438.9,
+"verificat": "2026-11-16"
 },
 {
 "titlu": "Scaun auto Chipolino Maximus I-Size 40-150 cm obsidian cu sistem Isofix",
@@ -21219,6 +21197,17 @@
 "url_magazin": "https://www.ookee.ro/scaune-auto/132633-scaun-auto-chipolino-techno-igrow-i-size-40-150-cm-cu-sistem-isofix-si-sezut-rotativ-powder-pink.html",
 "pret_vechi": 1378.9,
 "verificat": "2026-11-04"
+},
+{
+"titlu": "Scaun auto Kinderkraft I-Grow 2 PLUS, 40-150 cm, Rotire 360°, Negru",
+"pret": 957.99,
+"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4305%2F4305420%2F10_KCIGRO02BLKPL00.jpg&type=auto&width=500&sign=0j0TnWFn__q5Cgnsn9-s-NMBsMUcJZGnjDVEW4VdniA",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Fbebe-copii-jucarii-carucioare-transport-bebe-scaune-auto-copii-si-inaltatoare%2Fkinderkraft-scaun-auto-kinderkraft-i-grow-2-plus-40-150-cm-rotire-360-negru-4305420.html",
+"magazin": "evomag.ro",
+"id": "cp3Yp34o4aeC",
+"brand": "Kinderkraft",
+"url_magazin": "https://www.evomag.ro/bebe-copii-jucarii-carucioare-transport-bebe-scaune-auto-copii-si-inaltatoare/kinderkraft-scaun-auto-kinderkraft-i-grow-2-plus-40-150-cm-rotire-360-negru-4305420.html",
+"pret_vechi": null
 }
 ],
 "magazine": [
@@ -21234,7 +21223,7 @@
 "titlu": "Seturi LEGO",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-12",
+"actualizat": "2026-11-16",
 "feeduri": [
 {
 "id": 3248,
@@ -21310,6 +21299,17 @@
 "pret_vechi": null
 },
 {
+"titlu": "LEGO® Sonic - Sonic: Speedster Lightning 77117, 126 piese",
+"pret": 55.99,
+"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4281%2F4281941%2F698d791a599b5.jpg&type=auto&width=500&sign=VqCAmuMngk-2vlqTsDpBwQqUtXiZ_9fKK2qimN7N_pM",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Fbebe-copii-jucarii-jucarii-jocuri-seturi-de-constructii-lego-lego-ideas%2Flego-lego-sonic-sonic-speedster-lightning-77117-126-piese-4281941.html",
+"magazin": "evomag.ro",
+"id": "zGSBPUccNxL5",
+"brand": "LEGO",
+"url_magazin": "https://www.evomag.ro/bebe-copii-jucarii-jucarii-jocuri-seturi-de-constructii-lego-lego-ideas/lego-lego-sonic-sonic-speedster-lightning-77117-126-piese-4281941.html",
+"pret_vechi": null
+},
+{
 "titlu": "LEGO® Technic - Buldozer de mare capacitate 42163, 195 piese",
 "pret": 59.99,
 "imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4148%2F4148447%2F65f82c8d7badb.jpg&type=auto&width=500&sign=uPb6ziU3pGJeeLJa4RxPwk0Q7k-EOKYa_2PDE9M8-t8",
@@ -21378,25 +21378,14 @@
 "pret_vechi": null
 },
 {
-"titlu": "LEGO® Set de constructie LEGO® 30729 Pokemon - Premierball, 46 piese, 7 ani+",
+"titlu": "LEGO® Set de constructie LEGO® Casa de papusi a lui Gabby Casuta din gradina a Miau-Zanei 11212, Jucarii pentru Copii de",
 "pret": 96.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202606122129/439315/full/lego-set-de-constructie-lego-30729-pokemon-premierball-46-piese-7-plus-ani-1440310.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fjucarii-lego%2Flego%2F439315-set-de-constructie-lego-30729-pokemon-premierball-46-piese-7-ani-plus%2F",
+"imagine": "https://www.dwyn.ro/images/products/img_202606122129/439321/full/lego-set-de-constructie-lego-casa-de-papusi-a-lui-gabby-casuta-din-gradina-a-miau-zanei-11212-jucarii-pentru-copii-de-4-plus-ani-jucarii-pentru-fete-si-baieti-idee-de-cadou-pentru-copii-103-piese-1438375.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fjucarii-lego%2Flego%2F439321-set-de-constructie-lego-casa-de-papusi-a-lui-gabby-casuta-din-gradina-a-miau-zanei-11212-jucarii-pentru-copii-de-4-plus-ani-jucarii-pentru-fete-si-baieti-idee-de-cadou-pentru-copii-103-piese%2F",
 "magazin": "dwyn.ro",
-"id": "5MoD6BwdYEXA",
+"id": "nojjr1aB74ZA",
 "brand": "LEGO®",
-"url_magazin": "https://www.dwyn.ro/jucarii-lego/lego/439315-set-de-constructie-lego-30729-pokemon-premierball-46-piese-7-ani-plus/",
-"pret_vechi": null
-},
-{
-"titlu": "LEGO® Set de constructie LEGO® 30730 Pokemon - Echipamente pentru Antrenori, 56 piese, 6 ani+",
-"pret": 96.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202606122129/439318/full/lego-set-de-constructie-lego-pokemon-30730-echipamente-pentru-antrenori-56-piese-6-ani-plus-1440316.png",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fjucarii-lego%2Flego%2F439318-set-de-constructie-lego-30730-pokemon-echipamente-pentru-antrenori-56-piese-6-ani-plus%2F",
-"magazin": "dwyn.ro",
-"id": "0TgI_Y6IUOf3",
-"brand": "LEGO®",
-"url_magazin": "https://www.dwyn.ro/jucarii-lego/lego/439318-set-de-constructie-lego-30730-pokemon-echipamente-pentru-antrenori-56-piese-6-ani-plus/",
+"url_magazin": "https://www.dwyn.ro/jucarii-lego/lego/439321-set-de-constructie-lego-casa-de-papusi-a-lui-gabby-casuta-din-gradina-a-miau-zanei-11212-jucarii-pentru-copii-de-4-plus-ani-jucarii-pentru-fete-si-baieti-idee-de-cadou-pentru-copii-103-piese/",
 "pret_vechi": null
 },
 {
@@ -21408,17 +21397,6 @@
 "id": "Po8QSW0jN2WA",
 "brand": "LEGO®",
 "url_magazin": "https://www.dwyn.ro/jucarii-lego/lego/439072-set-de-constructie-lego-marvel-omul-de-fier-si-prietenii-lui-uimitori-ultron-vs-iron-man-11209-jucarii-pentru-copii-de-4-plus-ani-jucarii-pentru-baieti-si-fete-idee-de-cadou-pentru-copii/",
-"pret_vechi": null
-},
-{
-"titlu": "LEGO® Set de constructie Technic 42233 - Masini impunatoare, 44 piese, varsta 7+ ani, Multicolor",
-"pret": 102.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202606122129/439435/full/lego-bricks-technic-42233-mighty-machines-1437514.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fjucarii-lego%2Flego%2F439435-set-de-constructie-technic-42233-masini-impunatoare-44-piese-varsta-7-plus-ani-multicolor%2F",
-"magazin": "dwyn.ro",
-"id": "z-GLdIORgkjx",
-"brand": "LEGO®",
-"url_magazin": "https://www.dwyn.ro/jucarii-lego/lego/439435-set-de-constructie-technic-42233-masini-impunatoare-44-piese-varsta-7-plus-ani-multicolor/",
 "pret_vechi": null
 },
 {
@@ -21444,6 +21422,28 @@
 "pret_vechi": null
 },
 {
+"titlu": "LEGO® Set de constructie LEGO® | Disney Princess Miniturnul lui Rapunzel 43294, Jucarii pentru Copii de 5+ ani, Jucarii",
+"pret": 111.99,
+"imagine": "https://www.dwyn.ro/images/products/img_202606122129/439102/full/lego-set-de-constructie-lego-disney-princess-miniturnul-lui-rapunzel-43294-jucarii-pentru-copii-de-5-plus-ani-jucarii-pentru-fete-si-baieti-idee-de-cadou-pentru-copii-1438687.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fjucarii-lego%2Flego%2F439102-set-de-constructie-lego-disney-princess-miniturnul-lui-rapunzel-43294-jucarii-pentru-copii-de-5-plus-ani-jucarii-pentru-fete-si-baieti-idee-de-cadou-pentru-copii%2F",
+"magazin": "dwyn.ro",
+"id": "Q4wmReqMXR3K",
+"brand": "LEGO®",
+"url_magazin": "https://www.dwyn.ro/jucarii-lego/lego/439102-set-de-constructie-lego-disney-princess-miniturnul-lui-rapunzel-43294-jucarii-pentru-copii-de-5-plus-ani-jucarii-pentru-fete-si-baieti-idee-de-cadou-pentru-copii/",
+"pret_vechi": null
+},
+{
+"titlu": "LEGO® Set de constructie LEGO® 43280 Disney - Distractie pe plaja cu Lilo si Stitch, 113 piese, 4 ani+",
+"pret": 116.99,
+"imagine": "https://www.dwyn.ro/images/products/img_202606122129/439078/full/lego-set-de-constructie-lego-43280-disney-distractie-pe-plaja-cu-lilo-si-stitch-113-piese-4-ani-plus-1440415.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fjucarii-lego%2Flego%2F439078-set-de-constructie-lego-43280-disney-distractie-pe-plaja-cu-lilo-si-stitch-113-piese-4-ani-plus%2F",
+"magazin": "dwyn.ro",
+"id": "Xbo2_9Y9iPai",
+"brand": "LEGO®",
+"url_magazin": "https://www.dwyn.ro/jucarii-lego/lego/439078-set-de-constructie-lego-43280-disney-distractie-pe-plaja-cu-lilo-si-stitch-113-piese-4-ani-plus/",
+"pret_vechi": null
+},
+{
 "titlu": "LEGO® Jurassic World Pui de dinozaur: Pteranodon 77977, 373 piese",
 "pret": 121.99,
 "imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4310%2F4310417%2F6a7c1922e9a04.jpg&type=auto&width=500&sign=VwELRcpzzDrm_vONoit5RMLHvSPkG2iPPXAfz55BGqk",
@@ -21456,6 +21456,17 @@
 "verificat": "2026-11-05"
 },
 {
+"titlu": "LEGO® Set de constructie LEGO® Friends Petrecere cu ceai in padure 42690, Jucarii pentru Copii de 6+ ani, Jucarii pentru",
+"pret": 124.99,
+"imagine": "https://www.dwyn.ro/images/products/img_202606122129/439111/full/lego-set-de-constructie-lego-friends-petrecere-cu-ceai-in-padure-42690-jucarii-pentru-copii-de-6-plus-ani-jucarii-pentru-fete-si-baieti-idee-de-cadou-pentru-copii-116-piese-1438210.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fjucarii-lego%2Flego%2F439111-set-de-constructie-lego-friends-petrecere-cu-ceai-in-padure-42690-jucarii-pentru-copii-de-6-plus-ani-jucarii-pentru-fete-si-baieti-idee-de-cadou-pentru-copii-116-piese%2F",
+"magazin": "dwyn.ro",
+"id": "RQ9nFpYVAxCd",
+"brand": "LEGO®",
+"url_magazin": "https://www.dwyn.ro/jucarii-lego/lego/439111-set-de-constructie-lego-friends-petrecere-cu-ceai-in-padure-42690-jucarii-pentru-copii-de-6-plus-ani-jucarii-pentru-fete-si-baieti-idee-de-cadou-pentru-copii-116-piese/",
+"pret_vechi": null
+},
+{
 "titlu": "LEGO® Friends Calendar advent 42698, 211 de piese",
 "pret": 124.99,
 "imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4322%2F4322888%2F6af43e61d4981.jpg&type=auto&width=500&sign=IECBldK7DTY6ekbX2k5jytO1YR7zIY0dZZSoCpp9RA8",
@@ -21465,17 +21476,6 @@
 "brand": "LEGO",
 "url_magazin": "https://www.evomag.ro/bebe-copii-jucarii-jucarii-jocuri-seturi-de-constructii-lego-lego-friends/lego-lego-friends-calendar-advent-42698-211-de-piese-4322888.html",
 "pret_vechi": 130.99
-},
-{
-"titlu": "LEGO® Set de constructie LEGO® Friends Petrecere cu ceai in padure 42690, Jucarii pentru Copii de 6+ ani, Jucarii pentru",
-"pret": 125.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202606122129/439111/full/lego-set-de-constructie-lego-friends-petrecere-cu-ceai-in-padure-42690-jucarii-pentru-copii-de-6-plus-ani-jucarii-pentru-fete-si-baieti-idee-de-cadou-pentru-copii-116-piese-1438210.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fjucarii-lego%2Flego%2F439111-set-de-constructie-lego-friends-petrecere-cu-ceai-in-padure-42690-jucarii-pentru-copii-de-6-plus-ani-jucarii-pentru-fete-si-baieti-idee-de-cadou-pentru-copii-116-piese%2F",
-"magazin": "dwyn.ro",
-"id": "RQ9nFpYVAxCd",
-"brand": "LEGO®",
-"url_magazin": "https://www.dwyn.ro/jucarii-lego/lego/439111-set-de-constructie-lego-friends-petrecere-cu-ceai-in-padure-42690-jucarii-pentru-copii-de-6-plus-ani-jucarii-pentru-fete-si-baieti-idee-de-cadou-pentru-copii-116-piese/",
-"pret_vechi": null
 },
 {
 "titlu": "LEGO® Wicked - Glinda, Elphaba si Nessarose la Universitatea Shiz 75681, 304 piese",
@@ -21490,37 +21490,25 @@
 "verificat": "2026-11-05"
 },
 {
-"titlu": "LEGO® ONE PIECE Ascunzatoarea doctorului Hiriluk si Minifigurine 75641, 271 piese",
-"pret": 141.99,
-"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4310%2F4310416%2F6a7c192310748.jpg&type=auto&width=500&sign=QUFYOMQRudFiAR_ytbZ6q2q5IfEIaRLvr3VOFnZh2WQ",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Fbebe-copii-jucarii-jucarii-jocuri-seturi-de-constructii-lego-lego-super-heroes%2Flego-lego-one-piece-ascunzatoarea-doctorului-hiriluk-si-minifigurine-75641-271-piese-4310416.html",
-"magazin": "evomag.ro",
-"id": "uoeuznCsY8rZ",
-"brand": "LEGO",
-"url_magazin": "https://www.evomag.ro/bebe-copii-jucarii-jucarii-jocuri-seturi-de-constructii-lego-lego-super-heroes/lego-lego-one-piece-ascunzatoarea-doctorului-hiriluk-si-minifigurine-75641-271-piese-4310416.html",
-"pret_vechi": null,
-"verificat": "2026-11-05"
-},
-{
-"titlu": "LEGO® Set de constructie LEGO® Casa de papusi a lui Gabby Casuta din gradina a Miau-Zanei 11212, Jucarii pentru Copii de",
-"pret": 144.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202606122129/439321/full/lego-set-de-constructie-lego-casa-de-papusi-a-lui-gabby-casuta-din-gradina-a-miau-zanei-11212-jucarii-pentru-copii-de-4-plus-ani-jucarii-pentru-fete-si-baieti-idee-de-cadou-pentru-copii-103-piese-1438375.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fjucarii-lego%2Flego%2F439321-set-de-constructie-lego-casa-de-papusi-a-lui-gabby-casuta-din-gradina-a-miau-zanei-11212-jucarii-pentru-copii-de-4-plus-ani-jucarii-pentru-fete-si-baieti-idee-de-cadou-pentru-copii-103-piese%2F",
+"titlu": "LEGO® Set de constructie LEGO® Speed Champions Ferrari 499P 77261, Jucarii pentru Copii, Jucarii pentru Baieti si Fete,",
+"pret": 150.99,
+"imagine": "https://www.dwyn.ro/images/products/img_202606122129/439204/full/lego-set-de-constructie-lego-speed-champions-ferrari-499p-77261-jucarii-pentru-copii-jucarii-pentru-baieti-si-fete-masina-de-jucarie-idee-de-cadou-pentru-copii-1438621.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fjucarii-lego%2Flego%2F439204-set-de-constructie-lego-speed-champions-ferrari-499p-77261-jucarii-pentru-copii-jucarii-pentru-baieti-si-fete-masina-de-jucarie-idee-de-cadou-pentru-copii%2F",
 "magazin": "dwyn.ro",
-"id": "nojjr1aB74ZA",
+"id": "q0DZGNnzlUAX",
 "brand": "LEGO®",
-"url_magazin": "https://www.dwyn.ro/jucarii-lego/lego/439321-set-de-constructie-lego-casa-de-papusi-a-lui-gabby-casuta-din-gradina-a-miau-zanei-11212-jucarii-pentru-copii-de-4-plus-ani-jucarii-pentru-fete-si-baieti-idee-de-cadou-pentru-copii-103-piese/",
+"url_magazin": "https://www.dwyn.ro/jucarii-lego/lego/439204-set-de-constructie-lego-speed-champions-ferrari-499p-77261-jucarii-pentru-copii-jucarii-pentru-baieti-si-fete-masina-de-jucarie-idee-de-cadou-pentru-copii/",
 "pret_vechi": null
 },
 {
-"titlu": "LEGO® Set de constructie Iconic Camioneta cu dovleac sculptat 40822, 177 piese, varsta 8+ ani, Multicolor",
-"pret": 145.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202606122129/439408/full/lego-bricks-iconic-40822-jack-o-lantern-pickup-truck-1437775.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fjucarii-lego%2Flego%2F439408-set-de-constructie-iconic-camioneta-cu-dovleac-sculptat-40822-177-piese-varsta-8-plus-ani-multicolor%2F",
+"titlu": "LEGO® Set de constructie LEGO® Speed Champions BMW M3 (E30) 77263, Jucarii pentru Copii, Jucarii pentru Baieti si Fete,",
+"pret": 153.99,
+"imagine": "https://www.dwyn.ro/images/products/img_202606122129/439381/full/lego-set-de-constructie-lego-speed-champions-bmw-m3-e30-77263-jucarii-pentru-copii-jucarii-pentru-baieti-si-fete-masini-de-jucarie-idee-de-cadou-pentru-copii-358-piese-1438165.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fjucarii-lego%2Flego%2F439381-set-de-constructie-lego-speed-champions-bmw-m3-e30-77263-jucarii-pentru-copii-jucarii-pentru-baieti-si-fete-masini-de-jucarie-idee-de-cadou-pentru-copii-358-piese%2F",
 "magazin": "dwyn.ro",
-"id": "DxTKwyFOaDD8",
+"id": "X0metXgikXZG",
 "brand": "LEGO®",
-"url_magazin": "https://www.dwyn.ro/jucarii-lego/lego/439408-set-de-constructie-iconic-camioneta-cu-dovleac-sculptat-40822-177-piese-varsta-8-plus-ani-multicolor/",
+"url_magazin": "https://www.dwyn.ro/jucarii-lego/lego/439381-set-de-constructie-lego-speed-champions-bmw-m3-e30-77263-jucarii-pentru-copii-jucarii-pentru-baieti-si-fete-masini-de-jucarie-idee-de-cadou-pentru-copii-358-piese/",
 "pret_vechi": null
 }
 ],
@@ -26093,7 +26081,7 @@
 "titlu": "Hrană uscată pentru câini",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-12",
+"actualizat": "2026-11-16",
 "feeduri": [
 {
 "id": 4943,
@@ -26157,19 +26145,7 @@
 "id": "1fQwtXv1S-Pj",
 "brand": "Petline",
 "url_magazin": "https://www.shop4pet.ro/petline-kids-hrana-uscata-caine-junior-miel-3",
-"pret_vechi": 84.0,
-"verificat": "2026-11-12"
-},
-{
-"titlu": "Petline Sensitive, hrana uscata superpremium pentru caini adulti, cu somon, 3 kg",
-"pret": 74.0,
-"imagine": "https://www.shop4pet.ro/image/catalog/PRODS/Caini/petline-hrana-caine-pisica/petline-sensitive-hrana-caine-adult-somon.png",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.shop4pet.ro%2Fpetline-sensitive-hrana-caine-adult-somon-3",
-"magazin": "shop4pet.ro",
-"id": "sa_zjSMeL-JM",
-"brand": "Petline",
-"url_magazin": "https://www.shop4pet.ro/petline-sensitive-hrana-caine-adult-somon-3",
-"pret_vechi": 84.0,
+"pret_vechi": null,
 "verificat": "2026-11-12"
 },
 {
@@ -26221,6 +26197,17 @@
 "verificat": "2026-11-05"
 },
 {
+"titlu": "Hrana uscata pentru caini adulti, talie medie si mare, Peritas Signature, cu miel si orez, 3 kg",
+"pret": 79.0,
+"imagine": "https://www.shop4pet.ro/image/catalog/PRODS/Pisici/peritas-signature-hrana-pisici-caini/peritas-signature-hrana-caine-adult-talie-medie-miel-3.png",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.shop4pet.ro%2Fsignature-peritas-hrana-caine-adult-talie-medie-3-miel",
+"magazin": "shop4pet.ro",
+"id": "4_9UGfc3ycnF",
+"brand": "Peritas Signature",
+"url_magazin": "https://www.shop4pet.ro/signature-peritas-hrana-caine-adult-talie-medie-3-miel",
+"pret_vechi": null
+},
+{
 "titlu": "Hrana uscata completa Club 4 Paws Premium pentru caini adulti de talie mica, 14kg Engros",
 "pret": 143.65,
 "imagine": "https://bazarulonline.ro/images/detailed/2726/427933540_PRODUCT.jpg",
@@ -26255,7 +26242,7 @@
 "titlu": "Hrană uscată pentru pisici",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-12",
+"actualizat": "2026-11-16",
 "feeduri": [
 {
 "id": 4943,
@@ -26372,18 +26359,6 @@
 "verificat": "2026-11-05"
 },
 {
-"titlu": "Hrana uscata pentru pisici adulte, Peritas Signature, cu pui, 2 kg",
-"pret": 69.0,
-"imagine": "https://www.shop4pet.ro/image/catalog/PRODS/Pisici/peritas-signature-hrana-pisici-caini/peritas-signature-hrana-pisica-adult-pui.png",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.shop4pet.ro%2Fperitas-signature-hrana-uscata-pisici-adulte-pui-2",
-"magazin": "shop4pet.ro",
-"id": "cIG3XrobROB-",
-"brand": "Peritas Signature",
-"url_magazin": "https://www.shop4pet.ro/peritas-signature-hrana-uscata-pisici-adulte-pui-2",
-"pret_vechi": null,
-"verificat": "2026-11-12"
-},
-{
 "titlu": "Hrana uscata pentru pisici, junior, Peritas Signature, cu pui, 2 kg",
 "pret": 69.0,
 "imagine": "https://www.shop4pet.ro/image/catalog/PRODS/Pisici/peritas-signature-hrana-pisici-caini/hrana-uscata-pisici-junior-signature-pui.png",
@@ -26394,6 +26369,18 @@
 "url_magazin": "https://www.shop4pet.ro/hrana-uscata-pisici-junior-signature-pui-2",
 "pret_vechi": null,
 "verificat": "2026-11-05"
+},
+{
+"titlu": "Hrana uscata pentru pisici adulte, Peritas Signature, cu pui, 2 kg",
+"pret": 69.0,
+"imagine": "https://www.shop4pet.ro/image/catalog/PRODS/Pisici/peritas-signature-hrana-pisici-caini/peritas-signature-hrana-pisica-adult-pui.png",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.shop4pet.ro%2Fperitas-signature-hrana-uscata-pisici-adulte-pui-2",
+"magazin": "shop4pet.ro",
+"id": "cIG3XrobROB-",
+"brand": "Peritas Signature",
+"url_magazin": "https://www.shop4pet.ro/peritas-signature-hrana-uscata-pisici-adulte-pui-2",
+"pret_vechi": null,
+"verificat": "2026-11-12"
 },
 {
 "titlu": "BRIT Veterinary Diets Cat Grain Free Gastrointestinal Low Fat 2 kg Hrana uscata pisici pentru tulburari ale sistemului d",
@@ -27544,6 +27531,18 @@
 "magazine": [
 "gorillasports.ro"
 ]
+},
+{
+"slug": "carti-de-colorat",
+"tema": "carti",
+"tema_nume": "Cărți",
+"titlu": "Cărți de colorat",
+"nota": null,
+"in_text": null,
+"actualizat": "2026-11-16",
+"feeduri": [],
+"produse": [],
+"magazine": []
 },
 {
 "slug": "dictionar-englez-roman",

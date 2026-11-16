@@ -1,10 +1,10 @@
 {
   "generat": "2026-11-16",
-  "total_magazine": 416,
+  "total_magazine": 417,
   "cu_promotie": 69,
   "cu_cod_real": 17,
   "doar_oferta": 52,
-  "procent_cu_promotie": 16.6,
+  "procent_cu_promotie": 16.5,
   "procent_cu_cod": 4.1,
   "reducere_mediana_generala": 35,
   "magazine_cu_procent_declarat": 45,
@@ -30,7 +30,7 @@
     {
       "slug": "beauty",
       "nume": "Beauty & îngrijire",
-      "magazine": 48,
+      "magazine": 49,
       "cu_promotie": 7,
       "reducere_mediana": 50,
       "reducere_max": 80,
@@ -157,7 +157,7 @@
   "criteriu": "domeniu .ro",
   "international": {
     "total": 499,
-    "cu_promotie": 72,
+    "cu_promotie": 73,
     "cu_cod": 49
   },
   "retele": [

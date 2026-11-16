@@ -608,8 +608,8 @@
    "magazine": 152
   },
   "2026-11-16": {
-   "promotii": 246,
-   "magazine": 138
+   "promotii": 247,
+   "magazine": 139
   }
  },
  "magazine": {
@@ -9464,6 +9464,17 @@
     "prima": "2026-11-13",
     "ultima": "2026-11-16",
     "expira": "2026-12-02",
+    "activa": true
+   }
+  ],
+  "smartwingshome.com": [
+   {
+    "k": "upto15offforsmartwingsblackfriday|",
+    "titlu": "Up to 15% Off For SmartWings Black Friday",
+    "cod": false,
+    "prima": "2026-11-16",
+    "ultima": "2026-11-16",
+    "expira": "2026-11-30",
     "activa": true
    }
   ],

@@ -1659,13 +1659,119 @@
 "publicat": true
 },
 {
+"slug": "generator-curent",
+"tema": "scule",
+"tema_nume": "Scule și grădină",
+"titlu": "Generatoare de curent",
+"nota": null,
+"in_text": null,
+"actualizat": "2026-11-16",
+"feeduri": [
+{
+"id": 4679,
+"magazin": "albertool.com"
+},
+{
+"id": 6119,
+"magazin": "infinity.ro"
+},
+{
+"id": 1096,
+"magazin": "evomag.ro"
+},
+{
+"id": 8570,
+"magazin": "atomico.ro"
+}
+],
+"produse": [
+{
+"titlu": "Generator de curent POWERMAT PM-AGR-3000MNKE 3000W 230V/400V, PM1196",
+"pret": 1911.3,
+"imagine": "https://infinityro.vteximg.com.br/arquivos/ids/271937769/image-fb83640740ec4f0ba0d172cc4b789fd0.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Finfinity.ro%2Fgenerator-de-curent-powermat-pm-agr-3000mnke-3000w-230v-400v-pm1196-9139837%2Fp%3Futm_source%3D2performant",
+"magazin": "infinity.ro",
+"id": "QaiO0Fm2phZZ",
+"brand": "Powermat",
+"url_magazin": "https://infinity.ro/generator-de-curent-powermat-pm-agr-3000mnke-3000w-230v-400v-pm1196-9139837/p?utm_source=2performant",
+"pret_vechi": null,
+"verificat": "2026-11-11"
+},
+{
+"titlu": "Generator de curent, Kraft&Dele, KD163, 3500W, 12/230V/380V, 15L",
+"pret": 1921.03,
+"imagine": "https://infinityro.vteximg.com.br/arquivos/ids/270577493/image-e46056c849494382a1d12488b1f70f53.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Finfinity.ro%2Fgenerator-de-curent-kraft-dele-kd163-3500w-12-230v-380v-15l-9036140%2Fp%3Futm_source%3D2performant",
+"magazin": "infinity.ro",
+"id": "iJ9Im8SlGLk1",
+"brand": "Kraft&Dele",
+"url_magazin": "https://infinity.ro/generator-de-curent-kraft-dele-kd163-3500w-12-230v-380v-15l-9036140/p?utm_source=2performant",
+"pret_vechi": 2260.04,
+"verificat": "2026-11-11"
+},
+{
+"titlu": "Generator de curent, Kraft&Dele, pe benzina, tip invertor, 2000W, 230V, 4CP",
+"pret": 1939.13,
+"imagine": "https://infinityro.vteximg.com.br/arquivos/ids/270577703/image-658ef45bd4b946d1b179afaf624acb57.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Finfinity.ro%2Fgenerator-de-curent-kraft-dele-pe-benzina-tip-invertor-2000w-230v-4cp-9036165%2Fp%3Futm_source%3D2performant",
+"magazin": "infinity.ro",
+"id": "s8GFrtaqi5LE",
+"brand": "Kraft&Dele",
+"url_magazin": "https://infinity.ro/generator-de-curent-kraft-dele-pe-benzina-tip-invertor-2000w-230v-4cp-9036165/p?utm_source=2performant",
+"pret_vechi": 2281.33,
+"verificat": "2026-11-16"
+},
+{
+"titlu": "Generator de curent GENMAC Click RG4000HO putere maxima 3,1 kW 230V motor Honda GP200",
+"pret": 3767.4,
+"imagine": "https://c.cdnmp.net/917469284/p/l/0/generator-de-curent-genmac-click-rg4000ho-putere-maxima-3-1-kw-230v~8830040.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.albertool.com%2Fcumpara%2Fgenerator-de-curent-genmac-click-rg4000ho-putere-maxima-3-1-kw-230v-24375%3Futm_source%3Dportal%26utm_medium%3Dweb%26utm_campaign%3D2parale",
+"magazin": "albertool.com",
+"id": "qOl64zsgOUgC",
+"brand": "Genmac",
+"url_magazin": "https://www.albertool.com/cumpara/generator-de-curent-genmac-click-rg4000ho-putere-maxima-3-1-kw-230v-24375?utm_source=portal&utm_medium=web&utm_campaign=2parale",
+"pret_vechi": null,
+"verificat": "2026-11-16"
+},
+{
+"titlu": "Generator de curent GENMAC Click RG5000HO putere maxima 4,6 kW 230V motor Honda GX270",
+"pret": 5672.2,
+"imagine": "https://c.cdnmp.net/917469284/p/l/9/generator-de-curent-genmac-click-rg5000ho-putere-maxima-4-6-kw-230v~8830049.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.albertool.com%2Fcumpara%2Fgenerator-de-curent-genmac-click-rg5000ho-putere-maxima-4-6-kw-230v-24378%3Futm_source%3Dportal%26utm_medium%3Dweb%26utm_campaign%3D2parale",
+"magazin": "albertool.com",
+"id": "KbNVR-F52xH-",
+"brand": "Genmac",
+"url_magazin": "https://www.albertool.com/cumpara/generator-de-curent-genmac-click-rg5000ho-putere-maxima-4-6-kw-230v-24378?utm_source=portal&utm_medium=web&utm_campaign=2parale",
+"pret_vechi": null,
+"verificat": "2026-11-16"
+},
+{
+"titlu": "Generator de curent 9 kW inverter SuperHIBRID (GPL + Gaz Natural + Benzina) voltaj selectabil 230V/400V - CRIANO - CNO-N",
+"pret": 5734.19,
+"imagine": "https://c.cdnmp.net/917469284/p/l/1/generator-de-curent-9-kw-inverter-superhibrid-gpl-gaz-natural-benzina~8889671.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.albertool.com%2Fcumpara%2Fgenerator-de-curent-9-kw-inverter-superhibrid-gpl-gaz-natural-benzina-25985%3Futm_source%3Dportal%26utm_medium%3Dweb%26utm_campaign%3D2parale",
+"magazin": "albertool.com",
+"id": "bO4LyHefNfBy",
+"brand": "CRIANO",
+"url_magazin": "https://www.albertool.com/cumpara/generator-de-curent-9-kw-inverter-superhibrid-gpl-gaz-natural-benzina-25985?utm_source=portal&utm_medium=web&utm_campaign=2parale",
+"pret_vechi": 7447.0,
+"verificat": "2026-11-16"
+}
+],
+"magazine": [
+"albertool.com",
+"infinity.ro"
+],
+"publicat": true
+},
+{
 "slug": "carucior-3-in-1",
 "tema": "copii",
 "tema_nume": "Copii",
 "titlu": "Cărucioare 3 în 1",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-12",
+"actualizat": "2026-11-16",
 "feeduri": [
 {
 "id": 1169,
@@ -1734,9 +1840,21 @@
 "verificat": "2026-11-12"
 },
 {
+"titlu": "Carucior 3 in 1, Lionelo Amber Black Onyx, Pana la 22 Kg, Cu scoica auto testata ADAC, Beige Cream",
+"pret": 2021.99,
+"imagine": "https://cdn13.avanticart.ro/babyneeds.ro/pictures/products/800/set-carucior-2-in-1-lionelo-amber-cadru-aluminiu-negru-plus-scoica-auto-i-size-astrid-0-13-kg-40-87-cm-r129-crem-3461655.jpeg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.babyneeds.ro%2Fset-carucior-2-in-1-lionelo-amber-cadru-aluminiu-negru-plus-scoica-auto-i-size-astrid-0-13-kg-40-87-cm-r129-crem.html",
+"magazin": "babyneeds.ro",
+"id": "y53ojEVz1wgf",
+"brand": "Lionelo",
+"url_magazin": "https://www.babyneeds.ro/set-carucior-2-in-1-lionelo-amber-cadru-aluminiu-negru-plus-scoica-auto-i-size-astrid-0-13-kg-40-87-cm-r129-crem.html",
+"pret_vechi": 3344.74,
+"verificat": "2026-11-16"
+},
+{
 "titlu": "Set Carucior 3 in 1, Lionelo, Mika Plus, Beige Sand, Cu scoica auto Astrid testata ADAC, Beige Cream",
 "pret": 2497.99,
-"imagine": "https://cdn13.avanticart.ro/babyneeds.ro/pictures/products/800/set-carucior-3-in-1-lionelo-mika-plus-beige-sand-cu-scoica-auto-astrid-testata-adac-beige-cream-3430230.jpeg",
+"imagine": "https://cdn13.avanticart.ro/babyneeds.ro/pictures/products/800/set-carucior-3-in-1-lionelo-mika-plus-beige-sand-cu-scoica-auto-astrid-testata-adac-beige-cream-3460341.jpeg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.babyneeds.ro%2Fset-carucior-3-in-1-lionelo-mika-plus-beige-sand-cu-scoica-auto-astrid-testata-adac-beige-cream.html",
 "magazin": "babyneeds.ro",
 "id": "4RkQWXkNedpK",
@@ -1748,7 +1866,7 @@
 {
 "titlu": "Set Carucior 3 in 1, Lionelo, Mika Plus, Green Olive, Cu scoica auto Astrid testata ADAC, Beige Cream",
 "pret": 2497.99,
-"imagine": "https://cdn13.avanticart.ro/babyneeds.ro/pictures/products/800/set-carucior-3-in-1-lionelo-mika-plus-green-olive-cu-scoica-auto-astrid-testata-adac-beige-cream-3430233.jpeg",
+"imagine": "https://cdn13.avanticart.ro/babyneeds.ro/pictures/products/800/set-carucior-3-in-1-lionelo-mika-plus-green-olive-cu-scoica-auto-astrid-testata-adac-beige-cream-3460359.jpeg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.babyneeds.ro%2Fset-carucior-3-in-1-lionelo-mika-plus-green-olive-cu-scoica-auto-astrid-testata-adac-beige-cream.html",
 "magazin": "babyneeds.ro",
 "id": "eWqWTXf8n7rS",
@@ -1772,7 +1890,7 @@
 "titlu": "Scaune auto pentru copii",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-12",
+"actualizat": "2026-11-16",
 "feeduri": [
 {
 "id": 1528,
@@ -1817,18 +1935,6 @@
 "verificat": "2026-11-12"
 },
 {
-"titlu": "Scaun auto Chipolino Patrol I-Size 100-150 cm cu sistem Isofix noir",
-"pret": 329.96,
-"imagine": "https://www.ookee.ro/390422-large_default/scaun-auto-chipolino-patrol-i-size-100-150-cm-cu-sistem-isofix-noir.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ookee.ro%2Fscaune-auto%2F128698-scaun-auto-chipolino-patrol-i-size-100-150-cm-cu-sistem-isofix-noir.html",
-"magazin": "ookee.ro",
-"id": "A1ZBMhaRfhHJ",
-"brand": "Chipolino",
-"url_magazin": "https://www.ookee.ro/scaune-auto/128698-scaun-auto-chipolino-patrol-i-size-100-150-cm-cu-sistem-isofix-noir.html",
-"pret_vechi": 568.9,
-"verificat": "2026-11-12"
-},
-{
 "titlu": "Scaun auto Chipolino Patrol I-Size 100-150 cm cu sistem Isofix cashmere",
 "pret": 329.96,
 "imagine": "https://www.ookee.ro/390416-large_default/scaun-auto-chipolino-patrol-i-size-100-150-cm-cu-sistem-isofix-cashmere.jpg",
@@ -1841,16 +1947,40 @@
 "verificat": "2026-11-12"
 },
 {
-"titlu": "Scaun auto Chipolino Mondial I-Size 40-150 cm latte",
-"pret": 534.74,
-"imagine": "https://www.ookee.ro/390435-large_default/scaun-auto-chipolino-mondial-i-size-40-150-cm-latte.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ookee.ro%2Fscaune-auto%2F128701-scaun-auto-chipolino-mondial-i-size-40-150-cm-latte.html",
+"titlu": "Scaun auto Chipolino Patrol I-Size 100-150 cm cu sistem Isofix platinum",
+"pret": 329.96,
+"imagine": "https://www.ookee.ro/390419-large_default/scaun-auto-chipolino-patrol-i-size-100-150-cm-cu-sistem-isofix-platinum.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ookee.ro%2Fscaune-auto%2F128697-scaun-auto-chipolino-patrol-i-size-100-150-cm-cu-sistem-isofix-platinum.html",
 "magazin": "ookee.ro",
-"id": "HqBk_n40uB8Q",
+"id": "74y8W8dqtBor",
 "brand": "Chipolino",
-"url_magazin": "https://www.ookee.ro/scaune-auto/128701-scaun-auto-chipolino-mondial-i-size-40-150-cm-latte.html",
-"pret_vechi": 954.9,
+"url_magazin": "https://www.ookee.ro/scaune-auto/128697-scaun-auto-chipolino-patrol-i-size-100-150-cm-cu-sistem-isofix-platinum.html",
+"pret_vechi": 568.9,
+"verificat": "2026-11-16"
+},
+{
+"titlu": "Scaun auto Chipolino Patrol I-Size 100-150 cm cu sistem Isofix noir",
+"pret": 329.96,
+"imagine": "https://www.ookee.ro/390422-large_default/scaun-auto-chipolino-patrol-i-size-100-150-cm-cu-sistem-isofix-noir.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ookee.ro%2Fscaune-auto%2F128698-scaun-auto-chipolino-patrol-i-size-100-150-cm-cu-sistem-isofix-noir.html",
+"magazin": "ookee.ro",
+"id": "A1ZBMhaRfhHJ",
+"brand": "Chipolino",
+"url_magazin": "https://www.ookee.ro/scaune-auto/128698-scaun-auto-chipolino-patrol-i-size-100-150-cm-cu-sistem-isofix-noir.html",
+"pret_vechi": 568.9,
 "verificat": "2026-11-12"
+},
+{
+"titlu": "Scaun auto Chipolino Hypnotic Plus I-Size 40-150 cm cu sistem Isofix si sezut rotativ green",
+"pret": 719.45,
+"imagine": "https://www.ookee.ro/407871-large_default/scaun-auto-chipolino-hypnotic-plus-i-size-40-150-cm-cu-sistem-isofix-si-sezut-rotativ-green.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ookee.ro%2Fscaune-auto%2F132638-scaun-auto-chipolino-hypnotic-plus-i-size-40-150-cm-cu-sistem-isofix-si-sezut-rotativ-green.html",
+"magazin": "ookee.ro",
+"id": "1tGjwxa9cO46",
+"brand": "Chipolino",
+"url_magazin": "https://www.ookee.ro/scaune-auto/132638-scaun-auto-chipolino-hypnotic-plus-i-size-40-150-cm-cu-sistem-isofix-si-sezut-rotativ-green.html",
+"pret_vechi": 1438.9,
+"verificat": "2026-11-16"
 }
 ],
 "magazine": [
