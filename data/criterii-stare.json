@@ -1,5 +1,5 @@
 {
-"actualizat": "2026-11-15",
+"actualizat": "2026-11-16",
 "criterii": [
 {
 "slug": "masina-de-spalat-6-kg",
@@ -17063,7 +17063,7 @@
 "titlu": "Vitamina D3 2000 UI",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-11",
+"actualizat": "2026-11-16",
 "feeduri": [
 {
 "id": 6414,
@@ -17130,29 +17130,6 @@
 "verificat": "2026-11-04"
 },
 {
-"titlu": "OstroVit Vitamina D3 2000 UI, 2x60 capsule",
-"pret": 22.69,
-"imagine": "https://liki24.ro/image/catalog/product/newupload/910227-134382707547716829.png",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fliki24.ro%2Fp%2Fostrovit-vitamina-d3-2000-ui-2x60-capsule%2F%3Fnlr%3D1",
-"magazin": "liki24.ro",
-"id": "3BkfEXxa8O0U",
-"brand": "Ostrovit",
-"url_magazin": "https://liki24.ro/p/ostrovit-vitamina-d3-2000-ui-2x60-capsule/?nlr=1",
-"pret_vechi": null
-},
-{
-"titlu": "Laboratoarele Remedia Vitamina D3 2000 UI + Vitamina K2 75 mcg, 40 comprimate filmate",
-"pret": 22.99,
-"imagine": "https://cdnmpro.com/848326168/p/raw/6/laboratoarele-remedia-vitamina-d3-2000-ui-vitamina-k2-75-mcg-40~150016.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.farmaciilenapofarm.ro%2Fvitamina-d3-adulti%2Flaboratoarele-remedia-vitamina-d3-2000-ui-vitamina-k2-75-mcg-40-comprimate-filmate",
-"magazin": "farmaciilenapofarm.ro",
-"id": "0rfU0f73JsjH",
-"brand": "Laboratoarele Remedia",
-"url_magazin": "https://www.farmaciilenapofarm.ro/vitamina-d3-adulti/laboratoarele-remedia-vitamina-d3-2000-ui-vitamina-k2-75-mcg-40-comprimate-filmate",
-"pret_vechi": null,
-"verificat": "2026-11-04"
-},
-{
 "titlu": "Vitamina D3 Köhler 2.000 UI 20 St",
 "pret": 23.34,
 "imagine": "https://liki24.ro/image/catalog/product/newupload/852176-134259313719716839.jpg",
@@ -17163,6 +17140,17 @@
 "url_magazin": "https://liki24.ro/p/vitamina-d3-koehler-2-000-ui-20-st/?nlr=1",
 "pret_vechi": null,
 "verificat": "2026-11-04"
+},
+{
+"titlu": "OstroVit Vitamina D3 2000 UI, 2x60 capsule",
+"pret": 23.72,
+"imagine": "https://liki24.ro/image/catalog/product/newupload/910227-134382707547716829.png",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fliki24.ro%2Fp%2Fostrovit-vitamina-d3-2000-ui-2x60-capsule%2F%3Fnlr%3D1",
+"magazin": "liki24.ro",
+"id": "3BkfEXxa8O0U",
+"brand": "Ostrovit",
+"url_magazin": "https://liki24.ro/p/ostrovit-vitamina-d3-2000-ui-2x60-capsule/?nlr=1",
+"pret_vechi": null
 },
 {
 "titlu": "Laboratoarele Remedia Complex Imunitate cu vitamina C 1000 mg, zinc 25 mg si vitamina D3 2000 UI, 30 comprimate",
@@ -17283,6 +17271,17 @@
 "verificat": "2026-11-04"
 },
 {
+"titlu": "Equilibra vitamina d3 2000 ui 30 comprimate - supliment imunostimulant",
+"pret": 41.76,
+"imagine": "https://liki24.ro/image/catalog/product/newupload/811236-134253389647819053.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fliki24.ro%2Fp%2Fequilibra-vitamina-d3-2000-ui-30-comprimate-supliment-imunostimulant%2F%3Fnlr%3D1",
+"magazin": "liki24.ro",
+"id": "feLDQx3YcOmL",
+"brand": "Equilibra",
+"url_magazin": "https://liki24.ro/p/equilibra-vitamina-d3-2000-ui-30-comprimate-supliment-imunostimulant/?nlr=1",
+"pret_vechi": null
+},
+{
 "titlu": "Vitamina D3 2000 UI + K2 (MK-7) 30cps moi",
 "pret": 42.11,
 "imagine": "https://cdn.vegis.ro/images/products/img_202406171514/156575/full/cosmopharm-vitamina-d3-2000-ui-plus-k2-mk-7-30cps-moi-357491.png",
@@ -17296,7 +17295,7 @@
 },
 {
 "titlu": "SFD D3 + K2, vitamina D 2000 UI + vitamina K 100 µg, 200 comprimate",
-"pret": 42.25,
+"pret": 42.2,
 "imagine": "https://liki24.ro/image/catalog/product/newupload/311096-133631868576835329.jpg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fliki24.ro%2Fp%2Fsfd-d3-k2-vitamina-d-2000-ui-vitamina-k-100-ug-200-comprimate%2F%3Fnlr%3D1",
 "magazin": "liki24.ro",
@@ -17304,6 +17303,18 @@
 "brand": "SFD",
 "url_magazin": "https://liki24.ro/p/sfd-d3-k2-vitamina-d-2000-ui-vitamina-k-100-ug-200-comprimate/?nlr=1",
 "pret_vechi": null
+},
+{
+"titlu": "Granions LGN Vitamina D3 2000 UI vegetala, 30 comprimate masticabile",
+"pret": 47.72,
+"imagine": "https://cdnmpro.com/848326168/p/raw/4/granions-lgn-vitamina-d3-2000-ui-vegetala-30-comprimate-masticabile~22904.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.farmaciilenapofarm.ro%2Fvitamina-d3-adulti%2Fgranions-lgn-vitamina-d3-2000-ui-vegetala-30-comprimate-masticabile",
+"magazin": "farmaciilenapofarm.ro",
+"id": "VRYCeje_MEjm",
+"brand": "Granions",
+"url_magazin": "https://www.farmaciilenapofarm.ro/vitamina-d3-adulti/granions-lgn-vitamina-d3-2000-ui-vegetala-30-comprimate-masticabile",
+"pret_vechi": 57.5,
+"verificat": "2026-11-16"
 },
 {
 "titlu": "Vitamina D3 2000UI + K2 50mcg 30cps moi",
@@ -17316,17 +17327,6 @@
 "url_magazin": "https://vegis.ro/suplimente-capsule-comprimate/balkan-pharmaceuticals/167167-vitamina-d3-2000ui-plus-k2-50mcg-30cps-moi/",
 "pret_vechi": null,
 "verificat": "2026-11-04"
-},
-{
-"titlu": "VITAMINA D3 IBSA 2000 UI 1×30 buc, supliment alimentar",
-"pret": 51.87,
-"imagine": "https://liki24.ro/image/catalog/product/newupload/876695-134275436330839383.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fliki24.ro%2Fp%2Fvitamina-d3-ibsa-2000-ui-1-30-buc-supliment-alimentar%2F%3Fnlr%3D1",
-"magazin": "liki24.ro",
-"id": "1t95guKrIlLe",
-"brand": "Ibsa Farmaceutici",
-"url_magazin": "https://liki24.ro/p/vitamina-d3-ibsa-2000-ui-1-30-buc-supliment-alimentar/?nlr=1",
-"pret_vechi": null
 },
 {
 "titlu": "Vitamina D3 2000UI 120cps",
@@ -17378,7 +17378,7 @@
 "titlu": "Vitamina C 1000 mg",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-11",
+"actualizat": "2026-11-16",
 "feeduri": [
 {
 "id": 6414,
@@ -17407,18 +17407,6 @@
 "id": "fmMxgJ9uf5mQ",
 "brand": "Pharma-Z",
 "url_magazin": "https://www.farmaciilenapofarm.ro/vitamina-c-adulti/vitamina-c-1000-mg-zinc-d3-2000-ui-20-comprimate-efervescente-pharma-z",
-"pret_vechi": null,
-"verificat": "2026-11-04"
-},
-{
-"titlu": "Vitamina C 1000 mg, 30 comprimate, Laboratoarele Remedia",
-"pret": 19.65,
-"imagine": "https://cdnmpro.com/848326168/p/raw/0/vitamina-c-1000-mg-30-comprimate-laboratoarele-remedia~190300.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.farmaciilenapofarm.ro%2Fvitamina-c-adulti%2Fvitamina-c-1000-mg-30-comprimate-laboratoarele-remedia",
-"magazin": "farmaciilenapofarm.ro",
-"id": "xOSAiHJf6wJ1",
-"brand": "Laboratoarele Remedia",
-"url_magazin": "https://www.farmaciilenapofarm.ro/vitamina-c-adulti/vitamina-c-1000-mg-30-comprimate-laboratoarele-remedia",
 "pret_vechi": null,
 "verificat": "2026-11-04"
 },
@@ -17587,6 +17575,18 @@
 "pret_vechi": null
 },
 {
+"titlu": "Vitamina C Strong 1000 mg, 60 tablete, Naturmil",
+"pret": 64.13,
+"imagine": "https://cdnmpro.com/848326168/p/raw/9/vitamina-c-strong-1000-mg-60-tablete-naturmil~189949.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.farmaciilenapofarm.ro%2Fvitamina-c-adulti%2Fvitamina-c-strong-1000-mg-60-tablete-naturmil",
+"magazin": "farmaciilenapofarm.ro",
+"id": "Ph443pLacV6P",
+"brand": "Naturmil",
+"url_magazin": "https://www.farmaciilenapofarm.ro/vitamina-c-adulti/vitamina-c-strong-1000-mg-60-tablete-naturmil",
+"pret_vechi": null,
+"verificat": "2026-11-16"
+},
+{
 "titlu": "Vitamina C 1000mg 120cps vegetale",
 "pret": 67.96,
 "imagine": "https://cdn.vegis.ro/images/products/img_202406171514/164371/full/alevia-vitamina-c-1000mg-120cps-vegetale-361195.jpg",
@@ -17693,7 +17693,7 @@
 "titlu": "Magneziu în capsule",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-11",
+"actualizat": "2026-11-16",
 "feeduri": [
 {
 "id": 6414,
@@ -17763,7 +17763,7 @@
 },
 {
 "titlu": "WK DZIK Magneziu B6 ( citrat de magneziu ) 120 capsule",
-"pret": 44.1,
+"pret": 44.08,
 "imagine": "https://liki24.ro/image/catalog/product/newupload/745520-134228220783207436.jpg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fliki24.ro%2Fp%2Fwk-dzik-magneziu-b6-citrat-de-magneziu-120-capsule%2F%3Fnlr%3D1",
 "magazin": "liki24.ro",
@@ -17882,7 +17882,7 @@
 "titlu": "Omega 3 în capsule",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-11",
+"actualizat": "2026-11-16",
 "feeduri": [
 {
 "id": 6414,
@@ -18134,7 +18134,7 @@
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fliki24.ro%2Fp%2Fulei-de-peste-omega-3-bp-ultra-30-capsule-moi-balkan-prohealth%2F%3Fnlr%3D1",
 "magazin": "liki24.ro",
 "id": "9Zk22VSVDLCe",
-"brand": "",
+"brand": "Balkan ProHealth",
 "url_magazin": "https://liki24.ro/p/ulei-de-peste-omega-3-bp-ultra-30-capsule-moi-balkan-prohealth/?nlr=1",
 "pret_vechi": null,
 "verificat": "2026-11-04"
@@ -18199,7 +18199,7 @@
 "titlu": "Colagen pulbere",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-11",
+"actualizat": "2026-11-16",
 "feeduri": [
 {
 "id": 6414,
@@ -18337,6 +18337,17 @@
 "pret_vechi": null
 },
 {
+"titlu": "Collal Colagen Halal, pulbere în ambalaj Doypack, 300 g pulbere",
+"pret": 139.42,
+"imagine": "https://liki24.ro/image/catalog/product/newupload/893743-134297051427340124.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fliki24.ro%2Fp%2Fcollal-colagen-halal-pulbere-in-ambalaj-doypack-300-g-pulbere%2F%3Fnlr%3D1",
+"magazin": "liki24.ro",
+"id": "myQZ3fiDvVVc",
+"brand": "",
+"url_magazin": "https://liki24.ro/p/collal-colagen-halal-pulbere-in-ambalaj-doypack-300-g-pulbere/?nlr=1",
+"pret_vechi": null
+},
+{
 "titlu": "Faunus Colagenus Creatine Boost pulbere cu colagen si creatina, aroma lamaie, 457 g",
 "pret": 140.87,
 "imagine": "https://cdnmpro.com/848326168/p/raw/9/faunus-colagenus-creatine-boost-pulbere-cu-colagen-si-creatina-aroma~178399.jpg",
@@ -18347,17 +18358,6 @@
 "url_magazin": "https://www.farmaciilenapofarm.ro/sanatatea-osoasa/faunus-colagenus-creatine-boost-pulbere-cu-colagen-si-creatina-aroma-lamaie-457-g",
 "pret_vechi": null,
 "verificat": "2026-11-04"
-},
-{
-"titlu": "Collal Colagen Halal, pulbere în ambalaj Doypack, 300 g pulbere",
-"pret": 146.35,
-"imagine": "https://liki24.ro/image/catalog/product/newupload/893743-134297051427340124.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fliki24.ro%2Fp%2Fcollal-colagen-halal-pulbere-in-ambalaj-doypack-300-g-pulbere%2F%3Fnlr%3D1",
-"magazin": "liki24.ro",
-"id": "myQZ3fiDvVVc",
-"brand": "",
-"url_magazin": "https://liki24.ro/p/collal-colagen-halal-pulbere-in-ambalaj-doypack-300-g-pulbere/?nlr=1",
-"pret_vechi": null
 },
 {
 "titlu": "Pudra cu colagen marin Collagene Beaute Sublim Lift, 300 g, Granions",
@@ -18372,14 +18372,14 @@
 "verificat": "2026-11-04"
 },
 {
-"titlu": "Pudră de colagen + biotină + vitamina C 480 g",
-"pret": 155.8,
-"imagine": "https://liki24.ro/image/catalog/product/newupload/663047-134197967699470671.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fliki24.ro%2Fp%2Fpudra-de-colagen-biotina-vitamina-c-480-g%2F%3Fnlr%3D1",
+"titlu": "VITAL PROTEINS Colagen Peptide pulbere neutră 284 g",
+"pret": 160.05,
+"imagine": "https://liki24.ro/image/catalog/product/newupload/715913-134212191320371540.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fliki24.ro%2Fp%2Fvital-proteins-colagen-peptide-pulbere-neutra-284-g%2F%3Fnlr%3D1",
 "magazin": "liki24.ro",
-"id": "ovtQvAIVc2na",
-"brand": "",
-"url_magazin": "https://liki24.ro/p/pudra-de-colagen-biotina-vitamina-c-480-g/?nlr=1",
+"id": "pYQDdO1Zvs64",
+"brand": "Vital Proteins",
+"url_magazin": "https://liki24.ro/p/vital-proteins-colagen-peptide-pulbere-neutra-284-g/?nlr=1",
 "pret_vechi": null
 },
 {
@@ -18420,7 +18420,7 @@
 "titlu": "Creme de protecție SPF 50",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-11",
+"actualizat": "2026-11-16",
 "feeduri": [
 {
 "id": 6414,
@@ -18440,6 +18440,17 @@
 }
 ],
 "produse": [
+{
+"titlu": "Crema de fata vegana pentru protectie solara cu SPF 50+ PA++++ Daily Soft Touch, 15ml, Purito",
+"pret": 27.64,
+"imagine": "https://backend.drmax.ro/media/catalog/product/c/r/crema-de-fata-pentru-protectie-solara-cu-spf-50-pa-daily-soft-touch-15-ml-purito-378.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.drmax.ro%2Fcrema-de-fata-vegana-pentru-protectie-solara-cu-spf-50-pa-daily-soft-touch-15ml-purito",
+"magazin": "drmax.ro",
+"id": "3da06507e",
+"brand": "Purito",
+"url_magazin": "https://www.drmax.ro/crema-de-fata-vegana-pentru-protectie-solara-cu-spf-50-pa-daily-soft-touch-15ml-purito",
+"pret_vechi": null
+},
 {
 "titlu": "Crema tonica cu pigmenti naturali Vitamin Energy Pro C + E SPF 50, 30ml, Lirene",
 "pret": 29.49,
@@ -18509,17 +18520,6 @@
 "url_magazin": "https://www.farmaciilenapofarm.ro/protectie-solara-coreeana/crema-de-fata-wonder-releaf-centella-daily-sun-lotion-mini-spf-50-pa-15-ml-purito",
 "pret_vechi": null,
 "verificat": "2026-11-04"
-},
-{
-"titlu": "Crema antirid cu protectie solara SPF50+ Tinted Light, 50ml, Byphasse",
-"pret": 42.49,
-"imagine": "https://backend.drmax.ro/media/catalog/product/6/5/652412229_byphasse_crema_antirid_pt_fata_tinted_light_spf50_50ml.png",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.drmax.ro%2Fcrema-antirid-cu-protectie-solara-spf50-tinted-light-50ml-byphasse",
-"magazin": "drmax.ro",
-"id": "U5JHpnZValKW",
-"brand": "Byphasse",
-"url_magazin": "https://www.drmax.ro/crema-antirid-cu-protectie-solara-spf50-tinted-light-50ml-byphasse",
-"pret_vechi": null
 },
 {
 "titlu": "Crema pentru protectie solara Cica Care Sun Protector SPF 50+/PA++++, 25g, HIDEHERE",
@@ -18647,29 +18647,6 @@
 "pret_vechi": null
 },
 {
-"titlu": "Crema de protectie solara Mineral Sunmuse SPF 50+/ PA++++, 50ml, Beplain",
-"pret": 58.61,
-"imagine": "https://backend.drmax.ro/media/catalog/product/9/_/9_26ac688a-50a9-4648-ac3d-129016421af3-removebg-preview.png",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.drmax.ro%2Fcrema-de-protectie-solara-mineral-sunmuse-spf-50-pa-sunmuse-50ml-beplain",
-"magazin": "drmax.ro",
-"id": "-QZXcJEja6vu",
-"brand": "Beplain",
-"url_magazin": "https://www.drmax.ro/crema-de-protectie-solara-mineral-sunmuse-spf-50-pa-sunmuse-50ml-beplain",
-"pret_vechi": null
-},
-{
-"titlu": "Crema regeneratoare cu protectie solara SPF 50 Sophieskin 50ml",
-"pret": 59.62,
-"imagine": "https://cdnmpro.com/848326168/p/raw/4/crema-regeneratoare-cu-protectie-solara-spf-50-sophieskin-50ml~18494.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.farmaciilenapofarm.ro%2Fproduse-cosmetice-cu-protectie-solara%2Fcrema-regeneratoare-cu-protectie-solara-spf-50-sophieskin-50ml",
-"magazin": "farmaciilenapofarm.ro",
-"id": "VQRmQ2TF_u6f",
-"brand": "SOPHIESKIN",
-"url_magazin": "https://www.farmaciilenapofarm.ro/produse-cosmetice-cu-protectie-solara/crema-regeneratoare-cu-protectie-solara-spf-50-sophieskin-50ml",
-"pret_vechi": null,
-"verificat": "2026-11-11"
-},
-{
 "titlu": "Crema cu protectie solara SPF 50 pentru copii – Sophieskin 50ml",
 "pret": 59.62,
 "imagine": "https://cdnmpro.com/848326168/p/raw/3/crema-cu-protectie-solara-spf-50-pentru-copii-%E2%80%93-sophieskin-50ml~18493.jpg",
@@ -18680,6 +18657,28 @@
 "url_magazin": "https://www.farmaciilenapofarm.ro/produse-cosmetice-cu-protectie-solara/crema-cu-protectie-solara-spf-50-pentru-copii-sophieskin-50ml",
 "pret_vechi": null,
 "verificat": "2026-11-04"
+},
+{
+"titlu": "Crema depigmentanta cu protectie solara SPF 50 Sophieskin 50ml",
+"pret": 60.22,
+"imagine": "https://cdnmpro.com/848326168/p/raw/6/crema-depigmentanta-cu-protectie-solara-spf-50-sophieskin-50ml~18496.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.farmaciilenapofarm.ro%2Fproduse-cosmetice-cu-protectie-solara%2Fcrema-depigmentanta-cu-protectie-solara-spf-50-sophieskin-50ml",
+"magazin": "farmaciilenapofarm.ro",
+"id": "nfJNYSJjiqOY",
+"brand": "SOPHIESKIN",
+"url_magazin": "https://www.farmaciilenapofarm.ro/produse-cosmetice-cu-protectie-solara/crema-depigmentanta-cu-protectie-solara-spf-50-sophieskin-50ml",
+"pret_vechi": null
+},
+{
+"titlu": "Crema coloranta pentru protectie solara cu SPF 50+ Light Tint Medisun, 40ml, ACM",
+"pret": 64.49,
+"imagine": "https://backend.drmax.ro/media/catalog/product/c/r/crema_colorata_medisun_spf_50_acm.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.drmax.ro%2Fcrema-coloranta-light-cu-protectie-solara-spf50-40ml-acm",
+"magazin": "drmax.ro",
+"id": "pCqXW9pqLj1T",
+"brand": "ACM",
+"url_magazin": "https://www.drmax.ro/crema-coloranta-light-cu-protectie-solara-spf50-40ml-acm",
+"pret_vechi": null
 },
 {
 "titlu": "Crema de fata cu SPF 50 pentru protectie solara zilnica Zero Feel, 75 ml, Geek & Gorgeous",
@@ -18693,17 +18692,6 @@
 "pret_vechi": null
 },
 {
-"titlu": "Crema de fata cu protectie solara SPF 50+ Photoderm Xdefense Ultra Fluid Fototip 1, 40 ml, Bioderma",
-"pret": 69.88,
-"imagine": "https://liki24.ro/image/catalog/product/newupload/725225-134215220359308557.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fliki24.ro%2Fp%2Fcrema-de-fata-cu-protectie-solara-spf-50-photoderm-xdefense-ultra-fluid-fototip-1-40-ml-bioderma%2F%3Fnlr%3D1",
-"magazin": "liki24.ro",
-"id": "8ZHtIA4JfkW8",
-"brand": "Bioderma",
-"url_magazin": "https://liki24.ro/p/crema-de-fata-cu-protectie-solara-spf-50-photoderm-xdefense-ultra-fluid-fototip-1-40-ml-bioderma/?nlr=1",
-"pret_vechi": null
-},
-{
 "titlu": "Crema protectie solara fata, RoC Soleil-Protect, SPF 50, 50ml",
 "pret": 71.99,
 "imagine": "https://primefarma.ro/wp-content/uploads/2026/09/crema-protectie-solara-pentru-fata-spf50-soleil-protect-high-fluid-roc21094.gif",
@@ -18714,6 +18702,17 @@
 "url_magazin": "https://primefarma.ro/produs/crema-protectie-solara-fata-roc-soleil-protect-spf-50-50ml/",
 "pret_vechi": 83.99,
 "verificat": "2026-11-04"
+},
+{
+"titlu": "Crema de fata cu protectie solara SPF 50+PA++++ Daily Soothing Sunscreen Inout, 50 ml, Mizon",
+"pret": 77.01,
+"imagine": "https://liki24.ro/image/catalog/product/newupload/726815-134215538733748910.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fliki24.ro%2Fp%2Fcrema-de-fata-cu-protectie-solara-spf-50-pa-daily-soothing-sunscreen-inout-50-ml-mizon%2F%3Fnlr%3D1",
+"magazin": "liki24.ro",
+"id": "lSRnIhGTxjMk",
+"brand": "Mizon",
+"url_magazin": "https://liki24.ro/p/crema-de-fata-cu-protectie-solara-spf-50-pa-daily-soothing-sunscreen-inout-50-ml-mizon/?nlr=1",
+"pret_vechi": null
 }
 ],
 "magazine": [
@@ -18730,7 +18729,7 @@
 "titlu": "Seruri cu retinol",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-11",
+"actualizat": "2026-11-16",
 "feeduri": [
 {
 "id": 4165,
@@ -18751,6 +18750,17 @@
 ],
 "produse": [
 {
+"titlu": "Ser de noapte cu retinol, 30ml, Revuele",
+"pret": 25.99,
+"imagine": "https://backend.drmax.ro/media/catalog/product/5/0/5060565106277.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.drmax.ro%2Frevuele-retinol-ser-de-noapte-30-ml",
+"magazin": "drmax.ro",
+"id": "FGvOj9OriPJ9",
+"brand": "Revuele",
+"url_magazin": "https://www.drmax.ro/revuele-retinol-ser-de-noapte-30-ml",
+"pret_vechi": null
+},
+{
 "titlu": "Astrid Dermocycling ser facial cu retinol",
 "pret": 26.0,
 "imagine": "https://cdn.notinoimg.com/mailing/astrid/8592297012764_01-o.jpg",
@@ -18761,6 +18771,39 @@
 "url_magazin": "https://www.notino.ro/astrid/dermocycling-ser-facial-cu-retinol/p-16385023/",
 "pret_vechi": null,
 "verificat": "2026-11-04"
+},
+{
+"titlu": "Helia-D Pro Active ser pentru ochi cu retinol",
+"pret": 29.0,
+"imagine": "https://cdn.notinoimg.com/mailing/helia_d/5999569023467_01-o.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.notino.ro%2Fhelia-d%2Fpro-active-ser-pentru-ochi-cu-retinol%2Fp-16293860%2F",
+"magazin": "notino.ro",
+"id": "b6c27689d",
+"brand": "Helia-D",
+"url_magazin": "https://www.notino.ro/helia-d/pro-active-ser-pentru-ochi-cu-retinol/p-16293860/",
+"pret_vechi": null
+},
+{
+"titlu": "Ser antirid cu niacinamida retinol si extract de lamaie, 30ml, Cosmetic Plant",
+"pret": 29.49,
+"imagine": "https://backend.drmax.ro/media/catalog/product/s/e/ser-age-shield-glow-good-skin-30-ml-cosmetic-plant-3932.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.drmax.ro%2Fser-antirid-cu-niacinamida-retinol-si-extract-de-lamaie-30ml-cosmetic-plant",
+"magazin": "drmax.ro",
+"id": "7aeb51b54",
+"brand": "Cosmetic Plant",
+"url_magazin": "https://www.drmax.ro/ser-antirid-cu-niacinamida-retinol-si-extract-de-lamaie-30ml-cosmetic-plant",
+"pret_vechi": null
+},
+{
+"titlu": "Ser roll-on pentru ochi impotriva ridurilor cu retinol si squalane, 15ml, Skincyclopedia",
+"pret": 30.0,
+"imagine": "https://backend.drmax.ro/media/catalog/product/3/8/3801017005685.png",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.drmax.ro%2Fser-roll-on-pentru-ochi-impotriva-ridurilor-cu-retinol-si-squalane-15ml-skincyclopedia",
+"magazin": "drmax.ro",
+"id": "JvY0ltsvTTPY",
+"brand": "Skincyclopedia",
+"url_magazin": "https://www.drmax.ro/ser-roll-on-pentru-ochi-impotriva-ridurilor-cu-retinol-si-squalane-15ml-skincyclopedia",
+"pret_vechi": null
 },
 {
 "titlu": "Ser de fata APLB Phantenol Retinol Ampoule Serum",
@@ -18799,14 +18842,14 @@
 "verificat": "2026-11-04"
 },
 {
-"titlu": "Ser pentru fata cu retinol vital, 30ml, Esfolio",
-"pret": 36.36,
-"imagine": "https://backend.drmax.ro/media/catalog/product/e/s/esfolio-serum-retinol.png",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.drmax.ro%2Fser-pentru-fata-cu-retinol-vital-30ml-esfolio",
+"titlu": "Ser facial cu 1% retinol + squalane, 30ml, Skincyclopedia",
+"pret": 35.0,
+"imagine": "https://backend.drmax.ro/media/catalog/product/3/8/3801017001427.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.drmax.ro%2Fser-facial-cu-1-retinol-squalane-30ml-skincyclopedia",
 "magazin": "drmax.ro",
-"id": "TIcRVJGH5DpU",
-"brand": "Esfolio",
-"url_magazin": "https://www.drmax.ro/ser-pentru-fata-cu-retinol-vital-30ml-esfolio",
+"id": "A7lPF3qnzDCU",
+"brand": "Skincyclopedia",
+"url_magazin": "https://www.drmax.ro/ser-facial-cu-1-retinol-squalane-30ml-skincyclopedia",
 "pret_vechi": null
 },
 {
@@ -18822,17 +18865,6 @@
 "verificat": "2026-11-04"
 },
 {
-"titlu": "Ser de fata Retinol'e Retinol pur 0,3 + Vitamina E 2% Super Serum, 30ml, Bio Balance",
-"pret": 45.84,
-"imagine": "https://backend.drmax.ro/media/catalog/product/8/6/8697711600852_1.png",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.drmax.ro%2Fser-de-fata-retinol-e-retinol-pur-0-3-vitamina-e-2-super-serum-30ml-bio-balance",
-"magazin": "drmax.ro",
-"id": "c5378510c",
-"brand": "Bio Balance",
-"url_magazin": "https://www.drmax.ro/ser-de-fata-retinol-e-retinol-pur-0-3-vitamina-e-2-super-serum-30ml-bio-balance",
-"pret_vechi": null
-},
-{
 "titlu": "Ser facial cu Spicule Retinol Shot 180, 55ml, APLB",
 "pret": 47.49,
 "imagine": "https://backend.drmax.ro/media/catalog/product/8/8/8809874685250.jpg",
@@ -18841,6 +18873,17 @@
 "id": "YA87VeJfpsVt",
 "brand": "APLB",
 "url_magazin": "https://www.drmax.ro/ser-facial-cu-spicule-retinol-shot-180-55ml-aplb",
+"pret_vechi": null
+},
+{
+"titlu": "Ser pentru fata cu retinol vital, 30ml, Esfolio",
+"pret": 48.49,
+"imagine": "https://backend.drmax.ro/media/catalog/product/e/s/esfolio-serum-retinol.png",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.drmax.ro%2Fser-pentru-fata-cu-retinol-vital-30ml-esfolio",
+"magazin": "drmax.ro",
+"id": "TIcRVJGH5DpU",
+"brand": "Esfolio",
+"url_magazin": "https://www.drmax.ro/ser-pentru-fata-cu-retinol-vital-30ml-esfolio",
 "pret_vechi": null
 },
 {
@@ -18866,6 +18909,17 @@
 "url_magazin": "https://makeupshop.ro/ingrijire-ten/retinol/ser-cu-retinol-level-3-cos-de-baha-l3-bakuchiol-2-retinol-1-serum-30ml-20642?ref=2p&af=299702",
 "pret_vechi": 84.0,
 "verificat": "2026-11-04"
+},
+{
+"titlu": "Ser pentru fata Pure Retinol, 30ml, La Cabine",
+"pret": 57.74,
+"imagine": "https://backend.drmax.ro/media/catalog/product/a/7/a73d102a-8f38-4d85-962a-8a24ee010a5c.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.drmax.ro%2Fser-pentru-fata-pure-retinol-30ml-la-cabine",
+"magazin": "drmax.ro",
+"id": "4ade3a2f1",
+"brand": "La Cabine",
+"url_magazin": "https://www.drmax.ro/ser-pentru-fata-pure-retinol-30ml-la-cabine",
+"pret_vechi": null
 },
 {
 "titlu": "Ser cu retinol Level 1 - Cos DE BAHA L1 Bakuchiol 2% + Retinol 0.",
@@ -18928,25 +18982,14 @@
 "verificat": "2026-11-04"
 },
 {
-"titlu": "Ser crema Monoactives 0.3% Pro-Retinol, 30ml, La Cabine",
-"pret": 68.49,
-"imagine": "https://backend.drmax.ro/media/catalog/product/c/b/cbb44c66-6499-446c-8439-24accb9fd839.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.drmax.ro%2Fser-crema-monoactives-0-3-pro-retinol-30ml-la-cabine",
+"titlu": "Ser de fata Retinol'e Retinol pur 0,3 + Vitamina E 2% Super Serum, 30ml, Bio Balance",
+"pret": 65.49,
+"imagine": "https://backend.drmax.ro/media/catalog/product/8/6/8697711600852_1.png",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.drmax.ro%2Fser-de-fata-retinol-e-retinol-pur-0-3-vitamina-e-2-super-serum-30ml-bio-balance",
 "magazin": "drmax.ro",
-"id": "8307a6653",
-"brand": "La Cabine",
-"url_magazin": "https://www.drmax.ro/ser-crema-monoactives-0-3-pro-retinol-30ml-la-cabine",
-"pret_vechi": null
-},
-{
-"titlu": "Ser antirid de noapte imbogatit cu 0.2% retinol pur Revitalift Laser, 30ml, L'Oreal Paris",
-"pret": 70.99,
-"imagine": "https://backend.drmax.ro/media/catalog/product/r/e/res_57d00e13f5eb1df811ac8e7a6fec3383.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.drmax.ro%2Fser-antirid-de-noapte-imbogatit-cu-0-2-retinol-pur-revitalift-laser-30ml-l-oreal-paris",
-"magazin": "drmax.ro",
-"id": "cdb6ff4dc",
-"brand": "L'Oreal Paris",
-"url_magazin": "https://www.drmax.ro/ser-antirid-de-noapte-imbogatit-cu-0-2-retinol-pur-revitalift-laser-30ml-l-oreal-paris",
+"id": "c5378510c",
+"brand": "Bio Balance",
+"url_magazin": "https://www.drmax.ro/ser-de-fata-retinol-e-retinol-pur-0-3-vitamina-e-2-super-serum-30ml-bio-balance",
 "pret_vechi": null
 },
 {
@@ -18970,19 +19013,8 @@
 "id": "bxT8MJQi9-SR",
 "brand": "Retinol Complex",
 "url_magazin": "https://primefarma.ro/produs/ser-facial-ultra-retinol-complex-30ml-antioxidant/",
-"pret_vechi": 86.0,
+"pret_vechi": null,
 "verificat": "2026-11-04"
-},
-{
-"titlu": "Ser pentru fata anti-imbatranire Retinol Boost, 30ml, Neutrogena",
-"pret": 74.01,
-"imagine": "https://backend.drmax.ro/media/catalog/product/s/e/ser_pentru_fata_anti-imbatranire_retinol_boost_30ml_neutrogena.png",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.drmax.ro%2Fser-pentru-fata-anti-imbatranire-retinol-boost-30ml-neutrogena",
-"magazin": "drmax.ro",
-"id": "UpzrqYLgcvIo",
-"brand": "Neutrogena",
-"url_magazin": "https://www.drmax.ro/ser-pentru-fata-anti-imbatranire-retinol-boost-30ml-neutrogena",
-"pret_vechi": null
 },
 {
 "titlu": "Ser facial Skinchemists Retinol Bakuchiol 30ml",
@@ -18995,28 +19027,6 @@
 "url_magazin": "https://primefarma.ro/produs/ser-facial-skinchemists-retinol-bakuchiol-30ml/",
 "pret_vechi": 87.99,
 "verificat": "2026-11-04"
-},
-{
-"titlu": "Ser retinol 0.3%, 30ml, Alchemy",
-"pret": 79.99,
-"imagine": "https://backend.drmax.ro/media/catalog/product/8/4/8436587021039.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.drmax.ro%2Fser-retinol-0-3-30ml-alchemy",
-"magazin": "drmax.ro",
-"id": "98ec02160",
-"brand": "Alchemy Care Cosmetics",
-"url_magazin": "https://www.drmax.ro/ser-retinol-0-3-30ml-alchemy",
-"pret_vechi": null
-},
-{
-"titlu": "Ser pentru fata Pure Retinol, 30ml, La Cabine",
-"pret": 82.49,
-"imagine": "https://backend.drmax.ro/media/catalog/product/a/7/a73d102a-8f38-4d85-962a-8a24ee010a5c.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.drmax.ro%2Fser-pentru-fata-pure-retinol-30ml-la-cabine",
-"magazin": "drmax.ro",
-"id": "4ade3a2f1",
-"brand": "La Cabine",
-"url_magazin": "https://www.drmax.ro/ser-pentru-fata-pure-retinol-30ml-la-cabine",
-"pret_vechi": null
 }
 ],
 "magazine": [
@@ -19033,7 +19043,7 @@
 "titlu": "Seruri cu vitamina C",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-11",
+"actualizat": "2026-11-16",
 "feeduri": [
 {
 "id": 6414,
@@ -19054,14 +19064,14 @@
 ],
 "produse": [
 {
-"titlu": "Ser facial iluminator cu Vitamina C pentru adolescenti si tineri, 40ml, BeYoutiful",
-"pret": 26.64,
-"imagine": "https://backend.drmax.ro/media/catalog/product/8/5/850060590658_1.png",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.drmax.ro%2Fser-facial-iluminator-cu-vitamina-c-pentru-adolescenti-si-tineri-40ml-beyoutiful",
+"titlu": "Ser pentru fata cu vitamina C 15%, 30ml, Revuele",
+"pret": 25.49,
+"imagine": "https://backend.drmax.ro/media/catalog/product/5/0/5060565106215.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.drmax.ro%2Fser-pentru-fata-cu-vitamina-c-15-30ml-revuele",
 "magazin": "drmax.ro",
-"id": "bvUSTzWbeYXs",
-"brand": "BeYoutiful",
-"url_magazin": "https://www.drmax.ro/ser-facial-iluminator-cu-vitamina-c-pentru-adolescenti-si-tineri-40ml-beyoutiful",
+"id": "47631e12d",
+"brand": "Revuele",
+"url_magazin": "https://www.drmax.ro/ser-pentru-fata-cu-vitamina-c-15-30ml-revuele",
 "pret_vechi": null
 },
 {
@@ -19088,14 +19098,25 @@
 "pret_vechi": null
 },
 {
-"titlu": "Ser Vitamina C cu extract de portocale si acid hyaluronic, 30ml, Evoluderm",
-"pret": 33.04,
-"imagine": "https://backend.drmax.ro/media/catalog/product/s/e/serum-vitamine-c-800x800.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.drmax.ro%2Fser-vitamina-c-cu-extract-de-portocale-si-acid-hyaluronic-30ml-evoluderm",
+"titlu": "Ser Anti-Age Antioxidant 10% Vitamina C Must Have, 30ml, Gerovital",
+"pret": 31.99,
+"imagine": "https://backend.drmax.ro/media/catalog/product/5/9/5943000115839_2.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.drmax.ro%2Fser-anti-age-antioxidant-10-vitamina-c-must-have-30ml-gerovital",
 "magazin": "drmax.ro",
-"id": "KYttFvApKlB9",
-"brand": "Evoluderm",
-"url_magazin": "https://www.drmax.ro/ser-vitamina-c-cu-extract-de-portocale-si-acid-hyaluronic-30ml-evoluderm",
+"id": "6e6d11aab",
+"brand": "Gerovital",
+"url_magazin": "https://www.drmax.ro/ser-anti-age-antioxidant-10-vitamina-c-must-have-30ml-gerovital",
+"pret_vechi": null
+},
+{
+"titlu": "Ser facial cu Vitamina C, 30ml, Pierre Cardin",
+"pret": 34.43,
+"imagine": "https://backend.drmax.ro/media/catalog/product/8/6/8680570530392_ser_vitamina_c-1.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.drmax.ro%2Fser-facial-cu-vitamina-c-30ml-pierre-cardin",
+"magazin": "drmax.ro",
+"id": "KAmhy-fY9oaO",
+"brand": "Pierre Cardin",
+"url_magazin": "https://www.drmax.ro/ser-facial-cu-vitamina-c-30ml-pierre-cardin",
 "pret_vechi": null
 },
 {
@@ -19111,14 +19132,14 @@
 "verificat": "2026-11-04"
 },
 {
-"titlu": "Ser facial cu Vitamina C Cellular Expert Filler, 30ml, Nivea",
-"pret": 38.69,
-"imagine": "https://backend.drmax.ro/media/catalog/product/i/n/int-94467-xxxxx-33-3-o.png",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.drmax.ro%2Fser-facial-cu-vitamina-c-cellular-expert-filler-30ml-nivea",
+"titlu": "Ser facial iluminator cu Vitamina C pentru adolescenti si tineri, 40ml, BeYoutiful",
+"pret": 40.99,
+"imagine": "https://backend.drmax.ro/media/catalog/product/8/5/850060590658_1.png",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.drmax.ro%2Fser-facial-iluminator-cu-vitamina-c-pentru-adolescenti-si-tineri-40ml-beyoutiful",
 "magazin": "drmax.ro",
-"id": "jIqUHhiWw27G",
-"brand": "Nivea",
-"url_magazin": "https://www.drmax.ro/ser-facial-cu-vitamina-c-cellular-expert-filler-30ml-nivea",
+"id": "bvUSTzWbeYXs",
+"brand": "BeYoutiful",
+"url_magazin": "https://www.drmax.ro/ser-facial-iluminator-cu-vitamina-c-pentru-adolescenti-si-tineri-40ml-beyoutiful",
 "pret_vechi": null
 },
 {
@@ -19142,17 +19163,6 @@
 "id": "tJOxwDqF7NIp",
 "brand": "APLB",
 "url_magazin": "https://www.drmax.ro/ser-kojic-acid-vitamina-c-ampoule-40ml-aplb",
-"pret_vechi": null
-},
-{
-"titlu": "Ser Vitamina C Ampoule PDRN, 40ml, APLB",
-"pret": 46.5,
-"imagine": "https://backend.drmax.ro/media/catalog/product/8/8/8809874685083.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.drmax.ro%2Fser-vitamina-c-ampoule-pdrn-40ml-aplb",
-"magazin": "drmax.ro",
-"id": "aufvKljEzbR_",
-"brand": "APLB",
-"url_magazin": "https://www.drmax.ro/ser-vitamina-c-ampoule-pdrn-40ml-aplb",
 "pret_vechi": null
 },
 {
@@ -19203,6 +19213,17 @@
 "verificat": "2026-11-04"
 },
 {
+"titlu": "Ser pentru Ten cu Vitamina C Radiance Serum 30ml",
+"pret": 118.53,
+"imagine": "https://cdn.vegis.ro/images/products/img_202406171514/140673/full/synergy-therm-ser-de-fata-cu-vitamina-c-radiance-serum-30ml-309703.png",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fvegis.ro%2Fcosmetice-ten%2Fsynergy-therm%2F140673-ser-pentru-ten-cu-vitamina-c-radiance-serum-30ml%2F",
+"magazin": "vegis.ro",
+"id": "707239762",
+"brand": "SYNERGY&nbsp;THERM",
+"url_magazin": "https://vegis.ro/cosmetice-ten/synergy-therm/140673-ser-pentru-ten-cu-vitamina-c-radiance-serum-30ml/",
+"pret_vechi": null
+},
+{
 "titlu": "HORACE SER VITAMINA C + ACID GLICOLIC 30 ML",
 "pret": 134.13,
 "imagine": "https://liki24.ro/image/catalog/product/newupload/904962-134306329489322953.jpg",
@@ -19227,7 +19248,7 @@
 },
 {
 "titlu": "Ser concentrat cu Vitamina C Ampoule, 2x30 ml, SVR",
-"pret": 284.82,
+"pret": 289.32,
 "imagine": "https://liki24.ro/image/catalog/product/newupload/907660-134328212348415470.png",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fliki24.ro%2Fp%2Fser-concentrat-cu-vitamina-c-ampoule-2x30-ml-svr%2F%3Fnlr%3D1",
 "magazin": "liki24.ro",
@@ -19250,7 +19271,7 @@
 "titlu": "Șampoane fără sulfați",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-11",
+"actualizat": "2026-11-16",
 "feeduri": [
 {
 "id": 713,
@@ -19416,7 +19437,7 @@
 "titlu": "Bormașini cu acumulator",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-11",
+"actualizat": "2026-11-16",
 "feeduri": [
 {
 "id": 1539,
@@ -19580,17 +19601,6 @@
 "verificat": "2026-11-11"
 },
 {
-"titlu": "BOSCH Masina de gaurit si insurubat (bormasina) pe acumulator Bosch UniversalDrill 06039D4001, 18 V, 1.5 Ah, 1450 RPM, 2",
-"pret": 494.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202503142150/279075/full/robert-bosch-masina-de-gaurit-si-insurubat-bormasina-pe-acumulator-bosch-universaldrill-06039d4001-18-v-1-5-ah-1450-rpm-23-32-nm-30-mm-diametru-maxim-gaurire-acumulator-incarcator-cap-surubelnita-dubl-644187.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fmasini-de-gaurit%2Fbosch%2F279075-masina-de-gaurit-si-insurubat-bormasina-pe-acumulator-bosch-universaldrill-06039d4001-18-v-1-5-ah-1450-rpm-23-32-nm-30-mm-diametru-maxim-gaurire-acumulator-incarcator-cap-surubelnita-dublu-valiza-prof%2F",
-"magazin": "dwyn.ro",
-"id": "nu4HqVX1anqL",
-"brand": "BOSCH",
-"url_magazin": "https://www.dwyn.ro/masini-de-gaurit/bosch/279075-masina-de-gaurit-si-insurubat-bormasina-pe-acumulator-bosch-universaldrill-06039d4001-18-v-1-5-ah-1450-rpm-23-32-nm-30-mm-diametru-maxim-gaurire-acumulator-incarcator-cap-surubelnita-dublu-valiza-prof/",
-"pret_vechi": null
-},
-{
 "titlu": "Masina de gaurit Bormasina 20V cu Impact 66Nm cu 2 Acumulator, 30000bpm, fara perii, Ingco CIDLI20668E",
 "pret": 508.95,
 "imagine": "https://www.scule365.ro/uploads/feed_curate/produse/29580/16318.jpg",
@@ -19603,8 +19613,19 @@
 "verificat": "2026-11-11"
 },
 {
+"titlu": "BOSCH Masina de gaurit si insurubat (bormasina) pe acumulator Bosch UniversalDrill 06039D4001, 18 V, 1.5 Ah, 1450 RPM, 2",
+"pret": 570.99,
+"imagine": "https://www.dwyn.ro/images/products/img_202503142150/279075/full/robert-bosch-masina-de-gaurit-si-insurubat-bormasina-pe-acumulator-bosch-universaldrill-06039d4001-18-v-1-5-ah-1450-rpm-23-32-nm-30-mm-diametru-maxim-gaurire-acumulator-incarcator-cap-surubelnita-dubl-644187.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fmasini-de-gaurit%2Fbosch%2F279075-masina-de-gaurit-si-insurubat-bormasina-pe-acumulator-bosch-universaldrill-06039d4001-18-v-1-5-ah-1450-rpm-23-32-nm-30-mm-diametru-maxim-gaurire-acumulator-incarcator-cap-surubelnita-dublu-valiza-prof%2F",
+"magazin": "dwyn.ro",
+"id": "nu4HqVX1anqL",
+"brand": "BOSCH",
+"url_magazin": "https://www.dwyn.ro/masini-de-gaurit/bosch/279075-masina-de-gaurit-si-insurubat-bormasina-pe-acumulator-bosch-universaldrill-06039d4001-18-v-1-5-ah-1450-rpm-23-32-nm-30-mm-diametru-maxim-gaurire-acumulator-incarcator-cap-surubelnita-dublu-valiza-prof/",
+"pret_vechi": null
+},
+{
 "titlu": "BOSCH Masina de gaurit si insurubat (bormasina) pe acumulator Bosch,18 V, 1450 RPM, sistem auto-blocare, acumulator, inc",
-"pret": 593.99,
+"pret": 615.99,
 "imagine": "https://www.dwyn.ro/images/products/img_202503142150/279065/full/robert-bosch-masina-de-gaurit-si-insurubat-bormasina-pe-acumulator-bosch-18-v-1450-rpm-sistem-auto-blocare-acumulator-incarcator-644097.jpg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fmasini-de-gaurit%2Fbosch%2F279065-masina-de-gaurit-si-insurubat-bormasina-pe-acumulator-bosch-18-v-1450-rpm-sistem-auto-blocare-acumulator-incarcator%2F",
 "magazin": "dwyn.ro",
@@ -19615,7 +19636,7 @@
 },
 {
 "titlu": "Einhell Masina de gaurit si insurubat (bormasina) cu percutie pe acumulator Einhell Power X-Change TE-CD 18/2 Li-i +64,",
-"pret": 664.99,
+"pret": 663.99,
 "imagine": "https://www.dwyn.ro/images/products/img_202508191322/323230/full/einhell-masina-de-gaurit-si-insurubat-bormasina-cu-percutie-pe-acumulator-einhell-power-x-change-te-cd-18-2-li-i-plus64-18-v-44-nm-2-trepte-de-viteza-2-acumulatori-de-2-ah-incarcator-geanta-set-de-acc-868835.jpg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fmasini-de-gaurit%2Feinhell%2F323230-masina-de-gaurit-si-insurubat-bormasina-cu-percutie-pe-acumulator-einhell-power-x-change-te-cd-18-2-li-i-plus64-18-v-44-nm-2-trepte-de-viteza-2-acumulatori-de-2-ah-incarcator-geanta-set-de-accesorii-6%2F",
 "magazin": "dwyn.ro",
@@ -19626,24 +19647,13 @@
 },
 {
 "titlu": "BOSCH Masina de gaurit si insurubat (bormasina) pe acumulator cu percutie Bosch Professional GSB 120-Li, 12 V, 1300 RPM",
-"pret": 739.99,
+"pret": 737.99,
 "imagine": "https://www.dwyn.ro/images/products/img_202503142150/279007/full/bosch-masina-de-gaurit-si-insurubat-bormasina-pe-acumulator-cu-percutie-bosch-professional-gsb-120-li-12-v-1300-rpm-661137.jpg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fmasini-de-gaurit%2Fbosch%2F279007-masina-de-gaurit-si-insurubat-bormasina-pe-acumulator-cu-percutie-bosch-professional-gsb-120-li-12-v-1300-rpm%2F",
 "magazin": "dwyn.ro",
 "id": "23Y-d1K2zcKu",
 "brand": "BOSCH",
 "url_magazin": "https://www.dwyn.ro/masini-de-gaurit/bosch/279007-masina-de-gaurit-si-insurubat-bormasina-pe-acumulator-cu-percutie-bosch-professional-gsb-120-li-12-v-1300-rpm/",
-"pret_vechi": null
-},
-{
-"titlu": "Einhell Masina de gaurit/insurubat (bormasina) pe acumulatori pe acumulator Einhell Expert Power X-Change Einhell Expert",
-"pret": 747.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202508191322/323242/full/einhell-masina-de-gaurit-insurubat-bormasina-pe-acumulatori-pe-acumulator-einhell-expert-power-x-change-einhell-expert-te-cd-18-40-li-bl-18-v-litiu-ion-motor-fara-perii-angrenaj-cu-2-viteze-2-acumulat-868934.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fmasini-de-gaurit%2Feinhell%2F323242-masina-de-gaurit-insurubat-bormasina-pe-acumulatori-pe-acumulator-einhell-expert-power-x-change-einhell-expert-te-cd-18-40-li-bl-18-v-litiu-ion-motor-fara-perii-angrenaj-cu-2-viteze-2-acumulatori-inca%2F",
-"magazin": "dwyn.ro",
-"id": "PYMG1FEEUzvM",
-"brand": "Einhell",
-"url_magazin": "https://www.dwyn.ro/masini-de-gaurit/einhell/323242-masina-de-gaurit-insurubat-bormasina-pe-acumulatori-pe-acumulator-einhell-expert-power-x-change-einhell-expert-te-cd-18-40-li-bl-18-v-litiu-ion-motor-fara-perii-angrenaj-cu-2-viteze-2-acumulatori-inca/",
 "pret_vechi": null
 },
 {
@@ -19657,6 +19667,17 @@
 "url_magazin": "https://www.scule365.ro/cumpara/masina-de-gaurit-polizor-unghiular-flex-cu-2-acumulator-2-4ah-si-29578",
 "pret_vechi": 1082.9,
 "verificat": "2026-11-11"
+},
+{
+"titlu": "Einhell Masina de gaurit/insurubat (bormasina) pe acumulatori pe acumulator Einhell Expert Power X-Change Einhell Expert",
+"pret": 818.99,
+"imagine": "https://www.dwyn.ro/images/products/img_202508191322/323242/full/einhell-masina-de-gaurit-insurubat-bormasina-pe-acumulatori-pe-acumulator-einhell-expert-power-x-change-einhell-expert-te-cd-18-40-li-bl-18-v-litiu-ion-motor-fara-perii-angrenaj-cu-2-viteze-2-acumulat-868934.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fmasini-de-gaurit%2Feinhell%2F323242-masina-de-gaurit-insurubat-bormasina-pe-acumulatori-pe-acumulator-einhell-expert-power-x-change-einhell-expert-te-cd-18-40-li-bl-18-v-litiu-ion-motor-fara-perii-angrenaj-cu-2-viteze-2-acumulatori-inca%2F",
+"magazin": "dwyn.ro",
+"id": "PYMG1FEEUzvM",
+"brand": "Einhell",
+"url_magazin": "https://www.dwyn.ro/masini-de-gaurit/einhell/323242-masina-de-gaurit-insurubat-bormasina-pe-acumulatori-pe-acumulator-einhell-expert-power-x-change-einhell-expert-te-cd-18-40-li-bl-18-v-litiu-ion-motor-fara-perii-angrenaj-cu-2-viteze-2-acumulatori-inca/",
+"pret_vechi": null
 }
 ],
 "magazine": [
@@ -27523,18 +27544,6 @@
 "magazine": [
 "gorillasports.ro"
 ]
-},
-{
-"slug": "carti-de-colorat",
-"tema": "carti",
-"tema_nume": "Cărți",
-"titlu": "Cărți de colorat",
-"nota": null,
-"in_text": null,
-"actualizat": "2026-11-05",
-"feeduri": [],
-"produse": [],
-"magazine": []
 },
 {
 "slug": "dictionar-englez-roman",

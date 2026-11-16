@@ -1,5 +1,5 @@
 {
-"actualizat": "2026-11-15",
+"actualizat": "2026-11-16",
 "magazine": {
 "10qaroma.ro": {
 "cupoane": "yes",
@@ -39,11 +39,6 @@
 "a2t.ro": {
 "cupoane": "yes",
 "google_ads": "no",
-"cashback": "yes"
-},
-"ada-shoes.ro": {
-"cupoane": "yes",
-"google_ads": "yes",
 "cashback": "yes"
 },
 "adhoreca.eu": {
@@ -159,11 +154,6 @@
 "aquaromania.ro": {
 "cupoane": "yes",
 "google_ads": "yes",
-"cashback": "yes"
-},
-"arabescu.ro": {
-"cupoane": "yes",
-"google_ads": "no",
 "cashback": "yes"
 },
 "arashop.ro": {
@@ -436,6 +426,11 @@
 "google_ads": "yes",
 "cashback": "yes"
 },
+"cartuseria.ro": {
+"cupoane": "maybe",
+"google_ads": "yes",
+"cashback": "yes"
+},
 "casadecologistics.ro": {
 "cupoane": "yes",
 "google_ads": "yes",
@@ -614,11 +609,6 @@
 "detoxmed.ro": {
 "cupoane": "maybe",
 "google_ads": "yes",
-"cashback": "yes"
-},
-"dezmembraru.ro": {
-"cupoane": "yes",
-"google_ads": "no",
 "cashback": "yes"
 },
 "diblongromania.ro": {
@@ -889,11 +879,6 @@
 "flip.bg": {
 "cupoane": "yes",
 "google_ads": "yes",
-"cashback": "yes"
-},
-"flip.gr": {
-"cupoane": "yes",
-"google_ads": "maybe",
 "cashback": "yes"
 },
 "floria.ro": {
@@ -1652,6 +1637,11 @@
 "cashback": "yes"
 },
 "niculescu.ro": {
+"cupoane": "yes",
+"google_ads": "yes",
+"cashback": "yes"
+},
+"nirmoto.ro": {
 "cupoane": "yes",
 "google_ads": "yes",
 "cashback": "yes"
