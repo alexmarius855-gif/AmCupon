@@ -1,10 +1,11 @@
 -- =====================================================================================
--- AmCupon v2 — schema bazei de date (Etapa 2).  CIORNA: NEAPLICATA pe Supabase.
+-- AmCupon v2 — schema bazei de date (Etapa 2), confirmata de Alex pe 17.11.2026.
 --
--- Se aplica doar dupa confirmarea lui Alex, mutata in supabase/migrations/.
--- Verificata pe PostgreSQL 16 local, cu roluri si scheme ca in Supabase (stub-supabase.sql) si
--- cu teste-schema-v2.sql (ARHITECTURA-V2.md, „Verificarea schemei"). Ruleaza intr-o singura
--- tranzactie, deci intra tot sau nimic. Nu atinge tabelele v1 din `public`
+-- Proba locala (PostgreSQL 16, cu roluri si scheme ca in Supabase), intr-o singura tranzactie:
+--   psql -d proba -f docs/arhitectura-v2/stub-supabase.sql
+--   psql -d proba -1 -f supabase/migrations/20261117201003_v2_schema.sql
+--   psql -d proba -f docs/arhitectura-v2/teste-schema-v2.sql
+-- Nu atinge tabelele v1 din `public`
 -- (merchants/products/coupons/price_history sunt goale; clicuri_afiliate, voturi_cupoane,
 -- reviews se muta in Etapa 3).
 --
@@ -21,7 +22,6 @@
 --     Comisionul nu ajunge niciodata in `site`.
 -- =====================================================================================
 
-begin;
 
 create extension if not exists pg_trgm  with schema extensions;
 create extension if not exists unaccent with schema extensions;
@@ -31,6 +31,7 @@ create schema if not exists ops;        -- rulari de import, date brute, caranti
 create schema if not exists track;      -- clicuri si conversii (venitul)
 create schema if not exists community;  -- voturi, recenzii, abonari la alerte
 create schema if not exists ads;        -- spatii promovate (magazine/oferte sponsorizate)
+create schema if not exists research;   -- cererea: ce cauta oamenii, cat, si ce oportunitati ies de aici
 create schema if not exists site;       -- singurul lucru pe care il citeste site-ul
 
 -- Roluri fara login aici; parola se pune separat, NU in repo:
@@ -86,6 +87,9 @@ create table core.merchants (
   logo_source_url     text,
   about_md            text,                             -- doar text scris sau verificat de om; nimic generat
   seo_force_index     boolean not null default false,   -- fostul BRANDURI_CU_CERERE: cerere reala, masurata
+  platform            text check (platform in ('shopify', 'woocommerce', 'magento', 'prestashop', 'gomag',
+                                               'merchantpro', 'vtex', 'other')),  -- pe ce ruleaza magazinul
+  platform_checked_at timestamptz,                      -- Shopify: produsele si preturile se pot citi direct
   hidden_reason       text,                             -- ascuns manual (null = vizibil)
   redirect_to         text check (redirect_to is null or redirect_to ~ '^/'),
   created_at          timestamptz not null default now(),
@@ -111,6 +115,9 @@ create table core.programs (
   merchant_id         bigint references core.merchants(id) on delete set null,  -- null = nepotrivit, asteapta revizuire
   name                text not null,
   status              text not null check (status in ('active', 'pending', 'rejected', 'expired', 'paused')),
+  kind                text not null default 'retail'
+                      check (kind in ('retail', 'marketplace', 'saas', 'service', 'travel', 'finance')),
+                      -- saas/service (Shopify, VPN, hosting): fara pagina de coduri, se promoveaza prin ghiduri
   priority            smallint not null default 100,     -- mai mic = preferat, cand magazinul are mai multe programe
   tracking_url        text check (tracking_url is null or tracking_url ~ '^https://'),  -- link platit spre prima pagina
   deeplink_allowed    boolean not null default false,
@@ -121,6 +128,7 @@ create table core.programs (
   allows_cashback     core.tri_state not null default 'unknown',
   commission_text     text,                              -- PRIVAT: nu iese niciodata in `site`
   commission_pct      numeric(5,2),                      -- PRIVAT
+  commission_model    text check (commission_model in ('cps', 'cpa', 'cpl', 'recurring', 'mixed')),  -- PRIVAT
   cookie_days         smallint,
   rules_raw           jsonb,                             -- PRIVAT: regulile programului, cum le trimite reteaua
   first_seen_at       timestamptz not null default now(),
@@ -209,10 +217,29 @@ create table core.offer_checks (
 );
 create index offer_checks_offer on core.offer_checks (offer_id, checked_at desc);
 
+-- Sursele de produse: feed-urile 2Performant, cataloagele Impact, magazinele Shopify citite direct.
+-- Tine si memoria rotatiei (inlocuieste data/rotatie-feeduri-2p.json): ce s-a citit, cand, cu ce rezultat.
+create table core.feeds (
+  id             bigint generated always as identity primary key,
+  network_code   text not null references core.networks(code),
+  external_id    text not null,                 -- id-ul feed-ului 2P / al catalogului Impact / domeniul Shopify
+  kind           text not null check (kind in ('product_feed', 'catalog', 'shopify_storefront')),
+  program_id     bigint references core.programs(id) on delete set null,
+  merchant_id    bigint references core.merchants(id) on delete cascade,
+  name           text,
+  items_reported integer,                        -- cate produse spune sursa ca are
+  status         text not null default 'active' check (status in ('active', 'paused', 'gone')),
+  last_synced_at timestamptz,
+  last_complete  boolean,                        -- ultima citire a ajuns la capat (fara 429)?
+  last_error     text,
+  unique (network_code, external_id)
+);
+
 create table core.products (
   id              bigint generated always as identity primary key,
   merchant_id     bigint not null references core.merchants(id) on delete cascade,
   program_id      bigint references core.programs(id) on delete set null,
+  feed_id         bigint references core.feeds(id) on delete set null,
   external_id     text not null,
   url             text not null check (url ~ '^https?://'),
   tracking_url    text check (tracking_url is null or tracking_url ~ '^https://'),
@@ -555,6 +582,60 @@ create table ads.stats_daily (
   primary key (creative_id, placement_code, day)
 );
 
+-- ── research: cererea ────────────────────────────────────────────────────────────────
+-- Ce cauta oamenii (Semrush, sugestiile Google/Bing, Search Console), cat exista pentru asta la
+-- parteneri si ce aduce: de aici se aleg paginile noi, magazinele de aplicat si unghiurile postarilor.
+-- Nimic de aici nu ajunge pe site decat prin studiile publicate (site.studies).
+
+create table research.queries (
+  id            bigint generated always as identity primary key,
+  phrase        text not null unique
+                check (phrase = lower(phrase) and length(phrase) between 2 and 120),  -- fara diacritice, pentru potrivire
+  display       text not null,                       -- cum o scriu oamenii (cu diacritice, cand le stim)
+  intent        text not null
+                check (intent in ('coupon', 'product', 'brand', 'informational', 'service', 'navigational')),
+  merchant_id   bigint references core.merchants(id) on delete set null,
+  category_id   smallint references core.categories(id),
+  landing_path  text check (landing_path is null or landing_path ~ '^/'),  -- pagina noastra care o tinteste
+  discovered_by text not null,                       -- 'semrush', 'gsc', 'google_suggest', 'manual'...
+  created_at    timestamptz not null default now()
+);
+create index research_queries_merchant on research.queries (merchant_id) where merchant_id is not null;
+
+-- O masuratoare pe sursa si zi: volumul nu se suprascrie, ca sa se vada tendinta.
+create table research.query_metrics (
+  query_id        bigint not null references research.queries(id) on delete cascade,
+  source          text not null
+                  check (source in ('semrush', 'gsc', 'google_suggest', 'bing_suggest', 'trends', 'supply_2p', 'supply_site')),
+  measured_on     date not null,
+  volume          integer check (volume >= 0),        -- cautari pe luna (Semrush, baza ro)
+  difficulty      smallint check (difficulty between 0 and 100),
+  cpc_eur         numeric(8,2) check (cpc_eur >= 0),
+  impressions     integer check (impressions >= 0),   -- Search Console
+  clicks          integer check (clicks >= 0),
+  position        numeric(5,2) check (position > 0),
+  supply          integer check (supply >= 0),        -- cate produse/oferte exista la parteneri pentru cautare
+  rank_in_suggest smallint check (rank_in_suggest > 0),
+  primary key (query_id, source, measured_on)
+);
+
+-- Studiile de piata. Cifrele din care e scris textul stau in `data`, ca sa poata fi verificate.
+create table research.studies (
+  id           bigint generated always as identity primary key,
+  slug         text not null unique check (slug ~ '^[a-z0-9-]+$'),
+  title        text not null check (length(title) <= 60),
+  period_start date,
+  period_end   date,
+  summary_md   text not null,
+  data         jsonb not null default '{}',
+  sources      text[] not null default '{}',
+  status       text not null default 'draft' check (status in ('draft', 'published', 'retired')),
+  published_at timestamptz,
+  created_at   timestamptz not null default now(),
+  constraint studies_published_has_date check (status <> 'published' or published_at is not null),
+  constraint studies_period check (period_end is null or period_start is null or period_end >= period_start)
+);
+
 -- ── site: tot ce citeste site-ul ─────────────────────────────────────────────────────
 -- Vederile ruleaza cu drepturile proprietarului, deci amc_site nu are nevoie de acces la `core`.
 -- Schema `site` NU se adauga la „Exposed schemas" din Supabase: site-ul se conecteaza direct
@@ -826,10 +907,48 @@ returns integer
   select count(*)::integer from done;
 $$;
 
+create view site.studies as
+select slug, title, period_start, period_end, summary_md, data, sources, published_at
+  from research.studies
+ where status = 'published';
+
+-- Oportunitatile: cererea masurata fata de ce avem. Doar pentru tine (nu e in `site`).
+create view research.opportunities as
+with last_metrics as (
+  select distinct on (qm.query_id, qm.source) qm.*
+    from research.query_metrics qm
+   order by qm.query_id, qm.source, qm.measured_on desc
+)
+select q.id as query_id, q.display, q.intent, q.landing_path,
+       coalesce(m.slug, '-') as merchant_slug,
+       sem.volume, sem.difficulty, gsc.impressions, gsc.clicks, gsc.position, sup.supply,
+       sm.page_mode, sm.indexable, sm.offers_count, sm.products_count,
+       case
+         when q.intent = 'coupon' and q.merchant_id is null
+           then 'magazin cautat, fara program: de aplicat'
+         when q.intent = 'coupon' and sm.page_mode <> 'full'
+           then 'magazin cautat, pagina ' || sm.page_mode
+         when q.intent = 'coupon' and not sm.indexable
+           then 'magazin cautat, pagina noindex: lipsesc ofertele sau produsele'
+         when gsc.position between 5 and 20
+           then 'apare pe pozitiile 5-20: pagina de imbunatatit'
+         when q.landing_path is null and q.intent in ('product', 'informational', 'service') and coalesce(sup.supply, 1) > 0
+           then 'fara pagina: candidat pentru /alege sau ghid'
+       end as action
+  from research.queries q
+  left join core.merchants m on m.id = q.merchant_id
+  left join site.merchants sm on sm.id = q.merchant_id
+  left join last_metrics sem on sem.query_id = q.id and sem.source = 'semrush'
+  left join last_metrics gsc on gsc.query_id = q.id and gsc.source = 'gsc'
+  left join lateral (
+    select max(lm.supply) as supply from last_metrics lm
+     where lm.query_id = q.id and lm.source in ('supply_2p', 'supply_site')
+  ) sup on true;
+
 -- ── Drepturi ─────────────────────────────────────────────────────────────────────────
 -- Functiile noi primesc implicit EXECUTE pentru PUBLIC in Postgres: le inchidem explicit.
-revoke all on schema core, ops, track, community, ads, site from public;
-revoke execute on all functions in schema core, ops, track, community, ads, site from public;
+revoke all on schema core, ops, track, community, ads, research, site from public;
+revoke execute on all functions in schema core, ops, track, community, ads, research, site from public;
 
 grant usage on schema site to amc_site;
 grant select on all tables in schema site to amc_site;     -- doar vederi; codul ofertei e citit pe server
@@ -841,12 +960,16 @@ grant execute on function site.search_products(text, integer),
                           site.ack_revalidation(bigint[])
    to amc_site;
 
-grant usage on schema core, ops, track to amc_ingest;
+grant usage on schema core, ops, track, research to amc_ingest;
 grant select, insert, update, delete on all tables in schema core to amc_ingest;
 grant select, insert, update, delete on all tables in schema ops to amc_ingest;
+grant select, insert, update, delete on all tables in schema research to amc_ingest;
 grant select, insert, update on track.conversions, track.click_daily to amc_ingest;
 grant select on track.clicks to amc_ingest;               -- potrivirea conversiilor cu clicurile
-grant usage, select on all sequences in schema core, ops, track to amc_ingest;
+grant usage, select on all sequences in schema core, ops, track, research to amc_ingest;
+-- amc_ingest citeste si felul paginilor (pentru oportunitati), fara sa poata scrie in `site`.
+grant usage on schema site to amc_ingest;
+grant select on site.merchants, site.offers_live to amc_ingest;
 grant execute on function ops.request_revalidation(text, text) to amc_ingest;
 
 -- ── Date de referinta ────────────────────────────────────────────────────────────────
@@ -856,6 +979,7 @@ insert into core.networks (code, name, subid_param) values
   ('impact',      'Impact.com',  'subId1'),
   ('awin',        'Awin',        'clickref'),
   ('cj',          'CJ Affiliate','sid'),
+  ('shopify',     'Shopify (magazin citit direct, fara afiliere proprie)', null),
   ('direct',      'Program direct', null);
 
 -- Cele 18 categorii reale din output.json (17.11.2026), cu eticheta folosita azi pe site.
@@ -915,4 +1039,3 @@ begin
 end
 $cron$;
 
-commit;

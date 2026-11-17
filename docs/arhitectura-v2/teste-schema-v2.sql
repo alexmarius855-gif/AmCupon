@@ -1,8 +1,10 @@
--- Teste pentru schema-v2.sql, pe un Postgres de proba (NU pe Supabase).
--- Cum se ruleaza (vezi ARHITECTURA-V2.md, „Verificarea schemei"):
---   psql -d proba -f stub-supabase   (schema extensions + rolurile anon/authenticated/service_role)
---   psql -d proba -f schema-v2.sql
---   psql -d proba -f teste-schema-v2.sql
+-- Teste pentru schema v2 (supabase/migrations/20261117201003_v2_schema.sql), pe un Postgres de proba
+-- (NU pe Supabase), pe o baza goala. Cum se ruleaza (vezi ARHITECTURA-V2.md, „Verificarea schemei"):
+--   psql -d proba -f docs/arhitectura-v2/stub-supabase.sql   (schema extensions + rolurile Supabase)
+--   psql -d proba -1 -f supabase/migrations/20261117201003_v2_schema.sql
+--   psql -d proba -1 -f supabase/migrations/20261117203019_v2_oglinda_site.sql      (optional, trec si cu ea)
+--   psql -d proba -1 -f supabase/migrations/20261117203446_v2_oglinda_sursa.sql     (optional)
+--   psql -d proba -f docs/arhitectura-v2/teste-schema-v2.sql
 -- Fiecare rand marcat „asteptat" trebuie sa iasa exact asa; orice „NU A PICAT" e o problema.
 \set ON_ERROR_STOP on
 
@@ -100,3 +102,36 @@ select 'asteptat: magazin 1, program 1, oferta 1' as test, click_id, merchant_id
 select 'asteptat 0' as test, count(*) as coloane_cu_comision_in_site
   from information_schema.columns
  where table_schema = 'site' and (column_name ilike '%commission%' or column_name ilike '%rules%');
+
+-- 6. Shopify: programul Shopify (Impact, saas) si un magazin Shopify citit direct.
+insert into core.merchants (slug, name, platform) values ('shopify.com', 'Shopify', null);
+insert into core.programs (network_code, external_id, merchant_id, name, status, kind, tracking_url, allows_coupon_sites) values
+  ('impact', '13624', (select id from core.merchants where slug = 'shopify.com'), 'Shopify', 'active', 'saas',
+   'https://shopify.pxf.io/c/7401119/1061744/13624', 'unknown');
+insert into core.feeds (network_code, external_id, kind, program_id, merchant_id, name) values
+  ('shopify', 'libris.ro', 'shopify_storefront', 1, 1, 'Magazin citit direct');
+select 'asteptat: shopify.com full (program saas activ)' as test, slug, page_mode from site.merchants where slug = 'shopify.com';
+
+-- 7. Research: cererea fata de ce avem.
+insert into research.queries (phrase, display, intent, merchant_id, discovered_by) values
+  ('cod reducere libris',    'cod reducere libris',    'coupon',  1,    'semrush'),
+  ('cod reducere kitunghii', 'cod reducere kitunghii', 'coupon',  2,    'semrush'),
+  ('cod reducere dedeman',   'cod reducere dedeman',   'coupon',  null, 'gsc'),
+  ('bicicleta electrica',    'bicicletă electrică',    'product', null, 'google_suggest');
+insert into research.query_metrics (query_id, source, measured_on, volume, difficulty) values
+  (1, 'semrush', current_date - 40, 500, 10),
+  (1, 'semrush', current_date, 720, 12),
+  (3, 'semrush', current_date, 1900, 20),
+  (4, 'semrush', current_date, 6600, 30);
+insert into research.query_metrics (query_id, source, measured_on, impressions, clicks, position) values
+  (1, 'gsc', current_date, 120, 3, 8.4);
+insert into research.query_metrics (query_id, source, measured_on, supply) values
+  (4, 'supply_2p', current_date, 340);
+-- asteptat: libris volum 720 (ultima masuratoare) si „pozitiile 5-20"; kitunghii „pagina redirect";
+-- dedeman „de aplicat"; bicicleta „candidat pentru /alege"
+select display, merchant_slug, volume, position, supply, action from research.opportunities order by volume desc nulls last;
+do $$ begin
+  begin insert into research.queries (phrase, display, intent, discovered_by) values ('Cod Reducere X', 'x', 'coupon', 'manual');
+        raise notice 'NU A PICAT: fraza cu majuscule';
+  exception when check_violation then raise notice 'ok: fraza se scrie normalizata (litere mici)'; end;
+end $$;

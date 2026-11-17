@@ -1,9 +1,14 @@
 # AmCupon v2 — arhitectura și schema bazei de date
 
-> Etapele 1 și 2 din planul de reconstrucție. **Propunere, nimic aplicat**: schema e verificată
-> pe un Postgres de probă, nu pe Supabase. Data: 17.11.2026.
-> Fișiere: `schema-v2.sql` (schema), `teste-schema-v2.sql` (testele), `stub-supabase.sql`
-> (ce există deja într-un proiect Supabase, pentru proba locală).
+> Etapele 1 și 2 din planul de reconstrucție. Data: 17.11.2026. **Deciziile din secțiunea 8 au fost
+> aprobate de Alex pe 17.11** („da la toate"). Schema și puntea (5.6) sunt **aplicate pe Supabase** și
+> verificate acolo; site-ul live nu citește încă din bază.
+> Fișiere: `supabase/migrations/20261117201003_v2_schema.sql` (schema),
+> `20261117203019_v2_oglinda_site.sql` + `20261117203446_v2_oglinda_sursa.sql` (puntea),
+> `docs/arhitectura-v2/teste-schema-v2.sql` (testele), `stub-supabase.sql` (ce are deja un proiect
+> Supabase, pentru proba locală), `scripts/v2/proba_oglinda.py` (proba punții).
+>
+> **Atenție (17.11): amcupon.ro e căzut din 14.11** — vezi secțiunea 7.
 
 ## 1. Pe scurt
 
@@ -188,6 +193,20 @@ Ce știm deja despre fiecare rețea (din buguri reale; rămâne scris în adapto
   nu e fals în Python); domeniile de deep-link și țările de livrare vin din campanie; ofertele vin
   din `/Ads?Type=COUPON` (câmpurile `Deal*`), `/Deals` nu există pe cont; potrivirea cu magazinul
   se face pe `CampaignUrl`, niciodată pe `AdvertiserUrl` (site-ul firmei-mamă).
+  Impact are și cataloage de produse (`/Mediapartners/{sid}/Catalogs`, apoi articolele fiecărui
+  catalog): a doua sursă de produse după 2Performant, pentru brandurile Impact. Se sondează întâi
+  (ce câmpuri, ce monedă, câte branduri au catalog) și abia apoi se scrie adaptorul.
+- **Shopify, două lucruri diferite:**
+  1. *Programul de afiliere Shopify* (prin Impact, campania 13624, deep-link permis): comision pe
+     magazinele online deschise prin link. Intră ca program `kind = 'saas'`, cu pagină proprie de tip
+     ghid („cum îți deschizi un magazin online"), scrisă doar cu fapte verificabile — nu ca pagină de
+     cupoane. Testat în schemă: programul activ dă `page_mode = 'full'`.
+  2. *Magazinele construite pe Shopify* (multe branduri Impact): pagina publică `/products.json` dă
+     produsele, variantele, prețurile și stocul direct de la magazin. Se folosește la confirmarea
+     prețului pentru magazinele fără feed sau cu feed rămas în urmă (`core.feeds.kind =
+     'shopify_storefront'`, rețeaua `shopify` în `core.networks`). De verificat înainte, pe câteva
+     magazine reale: moneda (pe 05.11, citit din SUA, un magazin Shopify a arătat dolari în loc de lei),
+     limita de cereri și dacă magazinul o lasă deschisă.
 - **Awin:** API-ul de programe și promoții cere `AWIN_API_TOKEN` (lipsește); până atunci, CSV.
 - **CJ:** blocat până la PID-ul contului.
 - **Conversiile:** endpoint-urile de raportare ale fiecărei rețele se confirmă în Etapa 3 cu o
@@ -315,8 +334,9 @@ un email. Blocajul din săptămâna Black Friday ar fi fost semnalat în aceeaș
 
 ## 5. Schema bazei de date (Etapa 2)
 
-Fișierul complet: `schema-v2.sql` (~900 de linii, o singură tranzacție): 28 de tabele, 13 vederi,
-11 funcții, declanșatoare pentru istoricul de preț și reîmprospătare, 2 joburi `pg_cron`.
+Fișierul complet: `supabase/migrations/20261117201003_v2_schema.sql` (~1.000 de linii, o singură
+tranzacție): 28 de tabele, 13 vederi, 11 funcții, declanșatoare pentru istoricul de preț și
+reîmprospătare, 2 joburi `pg_cron`. Aplicat pe Supabase pe 17.11 (versiunea `20261117201003`).
 
 ### 5.1 Schemele
 
@@ -374,9 +394,13 @@ Supabase:
 ```bash
 createdb proba
 psql -d proba -f docs/arhitectura-v2/stub-supabase.sql
-psql -d proba -f docs/arhitectura-v2/schema-v2.sql
+psql -d proba -1 -f supabase/migrations/20261117201003_v2_schema.sql
+psql -d proba -1 -f supabase/migrations/20261117203019_v2_oglinda_site.sql
+psql -d proba -1 -f supabase/migrations/20261117203446_v2_oglinda_sursa.sql
 psql -d proba -f docs/arhitectura-v2/teste-schema-v2.sql
 ```
+
+(`-1` = o singură tranzacție; migrările nu au `begin`/`commit` scrise, ca Supabase să le poată aplica.)
 
 Rezultat pe 17.11.2026:
 
@@ -392,13 +416,57 @@ Rezultat pe 17.11.2026:
   clicuri, dar înregistrează un clic prin funcție (magazinul și programul se completează singure),
   votează o singură dată pe ofertă și nu poate vota o ofertă expirată.
 
-**Nu** am verificat încă aplicarea pe Supabase (Postgres 17, `pg_cron`, conectarea rolurilor
-proprii prin pooler). Se face în Faza A, după confirmare.
+Pe Supabase (Postgres 17.6, 17.11): schema și puntea se aplică fără erori; amprenta (md5 din
+`pg_get_functiondef`) a celor 13 funcții ale punții e identică cu cea de pe baza de probă; avizele de
+securitate arată doar cele trei constatări vechi, intenționate (RPC-urile de clic și vot); `anon` și
+`authenticated` nu au acces la schemele noi. **Rămas:** conectarea celor două roluri prin pooler
+(parolele le pune Alex, vezi lista din 9).
 
 ### 5.5 Mărime estimată
 
 Primul an: sub 100 MB (magazine ~1.000, oferte câteva mii pe an, produse 20–50 de mii, istoric de
 preț doar la schimbare, clicuri 180 de zile, date brute 14 zile). Planul gratuit Supabase are 500 MB.
+Măsurat pe 17.11, după prima încărcare reală: **54 MB** (cu tot cu tabelele vechi).
+
+### 5.6 Puntea: baza copiază ce publică pipeline-ul de azi (aplicată 17.11)
+
+Importul v2 din rețele are nevoie de un secret pe care doar Alex îl poate pune. Până atunci, baza se
+umple singură din fișierele **publicate** de pipeline (`output.json`, `products.json` și cele două
+liste de magazine scoase), deci v2 pornește exact de la datele care au trecut deja de toate regulile.
+
+- **Cum:** `pg_cron` cere fișierele la 2 ore (`amc-mirror-fetch`), `pg_net` le descarcă, iar
+  `amc-mirror-apply` (la 5 minute) le scrie în `core.*`. Sursa e GitHub (`main`), nu amcupon.ro: pe
+  17.11 site-ul răspundea 402 (secțiunea 7), iar pe `main` ajung oricum doar date care au trecut de
+  poarta de publicare. Adresele stau în `ops.mirror_sources` și se schimbă fără migrare.
+- **Fără descărcări degeaba:** `output.json` și `products.json` (17,6 MB) se cer cu `If-None-Match`;
+  când nu s-a publicat nimic nou, răspunsul e 304. ETag-ul se scrie doar după o aplicare reușită.
+  Magazinele se aplică doar cu toate trei fișierele din aceeași tură (fără lista de excluderi,
+  magazinele scoase ar părea revenite).
+- **Carantina = lista problemelor de acum:** fiecare problemă apare o singură dată cât timp e
+  deschisă și se închide singură când dispare din sursă (prima versiune ar fi adăugat ~1.400 de
+  rânduri identice la fiecare rulare).
+- **Paritate, măsurată pe datele reale din 17.11** (`python scripts/v2/proba_oglinda.py --db ...
+  --descarcare`, apoi aceeași tură pe Supabase):
+
+  | | Fișierele site-ului | Baza v2 |
+  |---|---|---|
+  | Magazine | 919 | 919 (+132 scoase: fără cupoane / fără livrare în RO) |
+  | Oferte active / cu cod | 259 / 120 | 259 / 120 |
+  | Produse publicate | 17.867 | 17.867 |
+  | Pagini de magazin indexabile | 437 | 437 |
+
+  A doua rulare pe aceleași fișiere: 0 schimbări (nicio cerere de reîmprospătare, niciun
+  `updated_at` mutat, niciun punct de preț, niciun rând nou în carantină).
+- **Diferențe voite față de site, cu nume:** (1) **1.191 de produse de la 27 de magazine fără program
+  aprobat** (kiehls.ro, kedoo.ro, lancome.ro...): sunt în `products.json`, dar niciunul nu e printre
+  cele 498 de programe 2P aprobate din `data/2p-reguli.json`, deci clicul lor probabil nu aduce
+  comision — de verificat în 2Performant (rămâne pe lista lui Alex); (2) **224 de produse fără preț**
+  (pe site cu „Vezi prețul"): v2 publică doar produse cu preț; (3) trei oferte (Oleya, Editura Arthur)
+  aveau linkul 2P cu `redirect_to=www...` fără `https://`: în v2 linkul primește adresa completă,
+  ca în formatul documentat al quicklink-ului.
+- **Prinse de probă înainte de Supabase:** programele și ofertele expirau imediat după scriere
+  (comparam „văzut acum" cu ora ceasului, nu a tranzacției); carantina se dubla la fiecare rulare;
+  amprenta ofertei depindea de fusul orar al sesiunii.
 
 ## 6. Planul de migrare
 
@@ -419,9 +487,18 @@ separată, ca să nu se ciocnească de pipeline-ul zilnic și de cealaltă sesiu
   folosea nimic; cu site-ul citind din el, nu mai stă nefolosit. Înainte ca baza să devină sursa
   paginilor (Faza C) recomand fie planul Pro (25 $/lună, cu backup zilnic restaurabil), fie un
   backup zilnic propriu (`pg_dump`) într-un loc privat, **nu** în repo-ul public.
-- **Vercel:** planul Hobby e, după termenii Vercel, pentru uz personal, necomercial; un site de
-  afiliere care câștigă comisioane intră la uz comercial, deci la primele venituri trece pe Pro
-  (20 $/lună).
+- **Vercel — riscul s-a produs: contul e blocat din 14.11.** Măsurat pe 17.11: amcupon.ro răspunde
+  `402 Payment required / DEPLOYMENT_DISABLED`; fiecare commit pe `main` de la 14.11, 21:21 UTC are
+  pe GitHub statusul Vercel „Account is blocked." pe toate cele trei proiecte (`am-cupon-a8dz`,
+  `am-cupon`, `afiliere-site`); ultimul deploy reușit: 14.11, 13:08 UTC; numărătoarea de clicuri:
+  ultimul clic pe 14.11, 17:41 UTC, apoi 0 pe 15, 16 și 17.11. Motivul exact e în panoul Vercel al
+  echipei. Două lucruri sigure, de făcut oricum: (1) planul Hobby e pentru uz personal, necomercial,
+  iar un site de afiliere e uz comercial — Pro costă 20 $/lună (contul are perioada de probă Pro
+  disponibilă); (2) trei proiecte construiesc același repo la fiecare commit: ~7 commit-uri pe zi ×
+  3 proiecte = ~20 de build-uri pe zi, de 5–10 minute fiecare, din care două treimi pentru cele două
+  proiecte duplicate. Se păstrează doar `am-cupon-a8dz` (cel care servește amcupon.ro).
+- **Independența de găzduire:** puntea (5.6) citește din GitHub, nu de pe site, iar paginile v2
+  servite din cache nu depind de un build reușit.
 - **Dependența de bază la cerere:** paginile din cache rămân servite dacă baza nu răspunde; `/go`
   păstrează 60 de secunde ultima destinație citită, iar fără ea trimite la pagina noastră a
   magazinului.
@@ -430,7 +507,7 @@ separată, ca să nu se ciocnească de pipeline-ul zilnic și de cealaltă sesiu
 - **Logurile GitHub Actions sunt publice** cât repo-ul e public: importul nu tipărește comisioane,
   coduri sau tokenuri.
 
-## 8. Decizii pentru Alex
+## 8. Decizii pentru Alex — aprobate pe 17.11 („da la toate")
 
 1. **Abordarea:** v2 construit în paralel, aceleași adrese, comutare pe tip de pagină.
    *Recomand: da.*
@@ -445,3 +522,18 @@ separată, ca să nu se ciocnească de pipeline-ul zilnic și de cealaltă sesiu
    Faza E.*
 
 După confirmare: Faza A, apoi Etapa 3 pornind de la 2Performant, rețeaua în care au loc vânzările.
+
+## 9. Ce poate face doar Alex (17.11)
+
+1. **Urgent — site-ul e căzut:** în vercel.com, echipa „alex-marinescu-s-projects": motivul blocării
+   apare în banner / Settings → Billing. Repornirea cea mai rapidă, dacă motivul e limita planului
+   Hobby: Pro (sau perioada de probă Pro). Apoi: șterge sau deconectează de la Git proiectele duplicate
+   `am-cupon` și `afiliere-site`.
+2. **Parolele rolurilor bazei** (în SQL Editor-ul Supabase, niciodată în repo sau în chat):
+   `alter role amc_ingest login password '...';` și `alter role amc_site login password '...';`.
+3. **Secretele:** în GitHub → Settings → Secrets: `AMC_INGEST_DB_URL` (pooler, utilizator
+   `amc_ingest.ktfoaqprezeqzoeuohnh`); în Vercel → Environment Variables: `AMC_SITE_DB_URL`
+   (utilizator `amc_site.ktfoaqprezeqzoeuohnh`); regiunea funcțiilor Vercel: `fra1` (baza e la
+   Frankfurt).
+4. **2Performant:** cele 27 de magazine cu produse în „My Feeds" fără program aprobat (5.6) — aprobate
+   sau scoase din feed-uri.
