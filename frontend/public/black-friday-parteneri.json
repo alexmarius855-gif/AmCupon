@@ -1,11 +1,11 @@
 {
  "_nota": "Generat de scripts/calendar_black_friday.py din promotiile anuntate de magazine in 2Performant (data/promotii_2p.csv si ofertele 2P active din output.json). Doar parteneri cu link platit. Nu edita de mana.",
- "generat": "2026-11-16",
+ "generat": "2026-11-17",
  "categorii": [
   {
    "slug": "casa-gradina",
    "nume": "casă și grădină",
-   "campanii": 22
+   "campanii": 23
   },
   {
    "slug": "fashion",
@@ -20,7 +20,7 @@
   {
    "slug": "electronice",
    "nume": "electronice și IT",
-   "campanii": 12
+   "campanii": 11
   },
   {
    "slug": "carti-educatie",
@@ -35,7 +35,7 @@
   {
    "slug": "sanatate",
    "nume": "sănătate",
-   "campanii": 11
+   "campanii": 12
   },
   {
    "slug": "auto-moto",
@@ -433,16 +433,6 @@
    "descriere": "În perioada 5–11 noiembrie inclusiv, Afisport.ro dă startul campaniei Black Friday – Mari Reduceri, cu oferte la biciclete, piese, accesorii și echipamente de ciclism, plus o serie de produse fitness&sport. Ce puteți promova: Biciclete electrice, MTB, de oraș și pliabile. Biciclete pentru copii. Căști, lumini, antifurturi, genți, pedale, anvelope și alte accesorii. Îmbrăcăminte și echipamente de ciclism.",
    "are_cod": false,
    "categorie": "sport"
-  },
-  {
-   "magazin": "citgrup.ro",
-   "nume": "Citgrup",
-   "start": "2026-11-05",
-   "final": "2026-11-09",
-   "nota": "BLACK FRIDAY·până la −70%·până la 1.000.000 lei reducere la un singur produs·începe azi, 5 noiembrie, ora 18:00",
-   "descriere": "BLACK FRIDAY·până la −70%·până la 1.000.000 lei reducere la un singur produs·începe azi, 5 noiembrie, ora 18:00 Reduceri la toate produsele.",
-   "are_cod": false,
-   "categorie": "electronice"
   },
   {
    "magazin": "curteaveche.ro",
@@ -905,6 +895,16 @@
    "categorie": "electronice"
   },
   {
+   "magazin": "pufrelax.com",
+   "nume": "Pufrelax",
+   "start": "2026-11-06",
+   "final": "2026-11-26",
+   "nota": "Black Friday",
+   "descriere": "Reduceri de pana la 50%, in limita stocului disponibil.",
+   "are_cod": false,
+   "categorie": "casa-gradina"
+  },
+  {
    "magazin": "re-bloom.ro",
    "nume": "Re Bloom",
    "start": "2026-11-06",
@@ -1143,6 +1143,16 @@
    "descriere": "Prețuri mai mici decât de Black Friday la majoritatea produselor Reducere aplicată direct, fără cod ⏰ Doar până pe 1 decembrie, ora 23:59 Comandă până pe 25 noiembrie, ora 12:00, ca să ajungă înainte de 1 Decembrie",
    "are_cod": false,
    "categorie": "fashion"
+  },
+  {
+   "magazin": "apiland.ro",
+   "nume": "Apiland",
+   "start": "2026-11-17",
+   "final": "2026-11-21",
+   "nota": "BLACK FRIDAY la ApiLand!",
+   "descriere": "BLACK FRIDAY la ApiLand! Între 17 și 21 noiembrie, produsele tale apicole preferate vin cu reduceri de până la 35%! Miere, lăptișor de matcă, tonice apicole și multe alte produse pentru rutina ta de zi cu zi, acum la prețuri speciale. Profită de ofertă și pregătește-ți rezervele pentru sezonul rece! Descoperă reducerile pe",
+   "are_cod": false,
+   "categorie": "sanatate"
   },
   {
    "magazin": "doctorshield.ro",

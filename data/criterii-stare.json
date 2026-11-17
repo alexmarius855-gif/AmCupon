@@ -1,5 +1,5 @@
 {
-"actualizat": "2026-11-16",
+"actualizat": "2026-11-17",
 "criterii": [
 {
 "slug": "masina-de-spalat-6-kg",
@@ -286,7 +286,7 @@
 "titlu": "Mașini de spălat de 8 kg",
 "nota": "Capacitatea se referă la greutatea rufelor uscate pe care le poți pune o dată în cuvă.",
 "in_text": "\\b8\\s*kg\\b",
-"actualizat": "2026-11-13",
+"actualizat": "2026-11-17",
 "feeduri": [
 {
 "id": 1539,
@@ -339,7 +339,7 @@
 "id": "RpvJF_IMSBZJ",
 "brand": "Heinner",
 "url_magazin": "https://www.evomag.ro/electrocasnice-electrocasnice-mari-masini-de-spalat-rufe-si-accesorii-masini-de-spalat-rufe/heinner-masina-de-spalat-rufe-cu-incarcare-verticala-heinner-hwm-tl8013iva-8-kg-clasa-a-1300-rpm-15-programe-alb-4226646.html",
-"pret_vechi": null,
+"pret_vechi": 1728.99,
 "verificat": "2026-11-04"
 },
 {
@@ -495,7 +495,7 @@
 "titlu": "Mașini de spălat de 9 kg",
 "nota": "Capacitatea se referă la greutatea rufelor uscate pe care le poți pune o dată în cuvă.",
 "in_text": "\\b9\\s*kg\\b",
-"actualizat": "2026-11-13",
+"actualizat": "2026-11-17",
 "feeduri": [
 {
 "id": 1539,
@@ -515,6 +515,17 @@
 }
 ],
 "produse": [
+{
+"titlu": "Masina de spalat rufe HEINNER HWM-HMK9014IVA+++, 9 kg, 1400 rpm, Clasa A, Control Touch (Alb)",
+"pret": 1494.99,
+"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4254%2F4254123%2Foverlay_80ad3d03a3219acf23dad8dda821e9de.png&type=auto&width=500&sign=wUQ3WSdFKFAQXIQQQs5t5pBo5IoEhz_zR5OzELCv4Ek",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Felectrocasnice-electrocasnice-mari-masini-de-spalat-rufe-si-accesorii-masini-de-spalat-rufe%2Fheinner-masina-de-spalat-rufe-heinner-hwm-hmk9014iva-9-kg-1400-rpm-clasa-a-control-touch-alb-4254123.html",
+"magazin": "evomag.ro",
+"id": "XvVdjbGtAiti",
+"brand": "Heinner",
+"url_magazin": "https://www.evomag.ro/electrocasnice-electrocasnice-mari-masini-de-spalat-rufe-si-accesorii-masini-de-spalat-rufe/heinner-masina-de-spalat-rufe-heinner-hwm-hmk9014iva-9-kg-1400-rpm-clasa-a-control-touch-alb-4254123.html",
+"pret_vechi": 1557.99
+},
 {
 "titlu": "Masina de spalat rufe Tesla WF91460T, 9 kg, Clasa A, 1400 RPM, Inverter, 16 programe, Delay Start (Alb)",
 "pret": 1499.99,
@@ -595,18 +606,6 @@
 "id": "yyZLfcrM-zxR",
 "brand": "Samsung",
 "url_magazin": "https://www.evomag.ro/electrocasnice-electrocasnice-mari-masini-de-spalat-rufe-si-accesorii-masini-de-spalat-rufe/samsung-masina-de-spalat-rufe-samsung-ww90fg3m05awlf-9-kg-1400-rpm-clasa-a-hygiene-steam-amanare-pornire-drum-clean-clean-road-alb-4259330.html",
-"pret_vechi": null,
-"verificat": "2026-11-04"
-},
-{
-"titlu": "Masina de spalat rufe Samsung WW90CGC04DAHLE, 9 kg, 1400 rpm, Clasa A, Eco Bubble, Digital Inverter, WiFi SmartThings, A",
-"pret": 2279.99,
-"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4306%2F4306148%2Fmasina-de-spalat-rufe-samsung-6a58c7b209f34.jpg&type=auto&width=500&sign=_zxA6ChTDa7xXtVg_u8JZsBvSab0tNw5Dw2nsZLikHU",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Felectrocasnice-electrocasnice-mari-masini-de-spalat-rufe-si-accesorii-masini-de-spalat-rufe%2Fsamsung-masina-de-spalat-rufe-samsung-ww90cgc04dahle-9-kg-1400-rpm-clasa-a-eco-bubble-digital-inverter-wifi-smartthings-ai-energy-alb-4306148.html",
-"magazin": "evomag.ro",
-"id": "DKRiaRYunNyg",
-"brand": "Samsung",
-"url_magazin": "https://www.evomag.ro/electrocasnice-electrocasnice-mari-masini-de-spalat-rufe-si-accesorii-masini-de-spalat-rufe/samsung-masina-de-spalat-rufe-samsung-ww90cgc04dahle-9-kg-1400-rpm-clasa-a-eco-bubble-digital-inverter-wifi-smartthings-ai-energy-alb-4306148.html",
 "pret_vechi": null,
 "verificat": "2026-11-04"
 },
@@ -716,7 +715,7 @@
 "titlu": "Mașini de spălat de 10 kg",
 "nota": "Capacitatea se referă la greutatea rufelor uscate pe care le poți pune o dată în cuvă.",
 "in_text": "\\b10\\s*kg\\b",
-"actualizat": "2026-11-13",
+"actualizat": "2026-11-17",
 "feeduri": [
 {
 "id": 1539,
@@ -868,7 +867,7 @@
 "titlu": "Mașini de spălat cu uscător",
 "nota": null,
 "in_text": "\\buscător\\b",
-"actualizat": "2026-11-13",
+"actualizat": "2026-11-17",
 "feeduri": [
 {
 "id": 1539,
@@ -973,17 +972,6 @@
 "verificat": "2026-11-04"
 },
 {
-"titlu": "Masina de spalat rufe frontala cu uscator SAMSUNG WD90DG5B15BHLE, Wi-Fi, Eco Bubble, 9/6 kg, 1400rpm, Clasa A/D (Alb)",
-"pret": 2399.99,
-"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4263%2F4263239%2Fmasina-de-spalat-rufe-frontala-692814cf347e0.jpg&type=auto&width=500&sign=R9xqZUsoV4b4m1LQyrL7DhjkbT9Ev9b26jyXUNTb6qA",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Felectrocasnice-electrocasnice-mari-masini-de-spalat-rufe-si-accesorii-masini-de-spalat-rufe%2Fsamsung-masina-de-spalat-rufe-frontala-cu-uscator-samsung-wd90dg5b15bhle-wi-fi-eco-bubble-9-6-kg-1400rpm-clasa-a-d-alb-4263239.html",
-"magazin": "evomag.ro",
-"id": "O1yxG_nUJS2G",
-"brand": "Samsung",
-"url_magazin": "https://www.evomag.ro/electrocasnice-electrocasnice-mari-masini-de-spalat-rufe-si-accesorii-masini-de-spalat-rufe/samsung-masina-de-spalat-rufe-frontala-cu-uscator-samsung-wd90dg5b15bhle-wi-fi-eco-bubble-9-6-kg-1400rpm-clasa-a-d-alb-4263239.html",
-"pret_vechi": 4127.99
-},
-{
 "titlu": "Masina de spalat rufe cu uscator incorporabila Candy BC4S485M4D8-S, Wi-Fi, 8/5 kg, 1400 rpm, Clasa A/D, 16 programe (Alb",
 "pret": 2451.99,
 "imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4290%2F4290364%2F69c7c2bd09269.jpg&type=auto&width=500&sign=m1SpNxpICkXAkpbLXd1T73EPmDDcxYTI32Td-BbEtj8",
@@ -996,14 +984,14 @@
 "verificat": "2026-11-04"
 },
 {
-"titlu": "Samsung Masina de spalat rufe frontala cu uscator SAMSUNG WD90DG5B15BHLE, Wi-Fi, Eco Bubble, 9/6 kg, 1400rpm, Clasa A/D,",
-"pret": 2759.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202512311121/410782/full/samsung-masina-de-spalat-rufe-frontala-cu-uscator-samsung-wd90dg5b15bhle-wi-fi-eco-bubble-9-6-kg-1400rpm-clasa-a-d-alb-1335502.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fmasina-de-spalat-rufe%2Fsamsung%2F410782-masina-de-spalat-rufe-frontala-cu-uscator-samsung-wd90dg5b15bhle-wi-fi-eco-bubble-9-6-kg-1400rpm-clasa-a-d-alb%2F",
-"magazin": "dwyn.ro",
-"id": "FnFJHqPUs5H4",
-"brand": "Samsung",
-"url_magazin": "https://www.dwyn.ro/masina-de-spalat-rufe/samsung/410782-masina-de-spalat-rufe-frontala-cu-uscator-samsung-wd90dg5b15bhle-wi-fi-eco-bubble-9-6-kg-1400rpm-clasa-a-d-alb/",
+"titlu": "Masina de spalat rufe cu uscator incorporabila Candy BC4S695M6D8-S, 9/5 kg, 1600 rpm, Clasa A/D, Wi-Fi, ProMix, Easy Iro",
+"pret": 2535.99,
+"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4290%2F4290365%2F69c7c2bd31e21.jpg&type=auto&width=500&sign=lIloj98aLNiBg0HiT2Oy-tsv_tYnnd0ASMb2WDXH-r4",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Felectrocasnice-electrocasnice-mari-masini-de-spalat-rufe-si-accesorii-masini-de-spalat-rufe%2Fcandy-masina-de-spalat-rufe-cu-uscator-incorporabila-candy-bc4s695m6d8-s-9-5-kg-1600-rpm-clasa-a-d-wi-fi-promix-easy-iron-plus-steam-alb-4290365.html",
+"magazin": "evomag.ro",
+"id": "KE2kfdo-QN_B",
+"brand": "Candy",
+"url_magazin": "https://www.evomag.ro/electrocasnice-electrocasnice-mari-masini-de-spalat-rufe-si-accesorii-masini-de-spalat-rufe/candy-masina-de-spalat-rufe-cu-uscator-incorporabila-candy-bc4s695m6d8-s-9-5-kg-1600-rpm-clasa-a-d-wi-fi-promix-easy-iron-plus-steam-alb-4290365.html",
 "pret_vechi": null
 },
 {
@@ -1017,6 +1005,17 @@
 "url_magazin": "https://www.dwyn.ro/masina-de-spalat-rufe/lg/410773-masina-de-spalat-rufe-cu-uscator-lg-f2dr509s1w-9-kg-5-kg-1200-rpm-clasa-e-alb/",
 "pret_vechi": null,
 "verificat": "2026-11-04"
+},
+{
+"titlu": "Electrolux Masina de spalat rufe cu uscator Electrolux EW8W4402QE, Spalare 11 kg, Uscare 7 kg, 1400 rpm, WIFI, LCD, Clas",
+"pret": 4261.99,
+"imagine": "https://www.dwyn.ro/images/products/img_202508191322/320188/full/electrolux-masina-de-spalat-rufe-cu-uscator-electrolux-ew8w4402qe-spalare-11-kg-uscare-7-kg-1400-rpm-wifi-lcd-clase-energie-a-spalare-d-spalare-plususcare-dozator-universal-ultracare-plussteamcare-tim-889946.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fmasina-de-spalat-rufe%2Felectrolux%2F320188-masina-de-spalat-rufe-cu-uscator-electrolux-ew8w4402qe-spalare-11-kg-uscare-7-kg-1400-rpm-wifi-lcd-clase-energie-a-spalare-d-spalare-plususcare-dozator-universal-ultracare-plussteamcare-timemanager-ad%2F",
+"magazin": "dwyn.ro",
+"id": "97qi36-1z6n2",
+"brand": "Electrolux",
+"url_magazin": "https://www.dwyn.ro/masina-de-spalat-rufe/electrolux/320188-masina-de-spalat-rufe-cu-uscator-electrolux-ew8w4402qe-spalare-11-kg-uscare-7-kg-1400-rpm-wifi-lcd-clase-energie-a-spalare-d-spalare-plususcare-dozator-universal-ultracare-plussteamcare-timemanager-ad/",
+"pret_vechi": null
 },
 {
 "titlu": "BOSCH Masina de spalat rufe cu uscator BOSCH Serie 4 WNA13401BY, 8kg spalare, 5kg uscare, 1400rpm, Clasa D, Alb",
@@ -6883,33 +6882,6 @@
 "brand": "Apple",
 "url_magazin": "https://www.dwyn.ro/telefoane-gsm/apple/479662-telefon-mobil-apple-iphone-18-pro-12gb-ram-1tb-5g-burgundy/",
 "pret_vechi": null
-}
-],
-"magazine": [
-"dwyn.ro"
-]
-},
-{
-"slug": "telefon-sub-1000-lei",
-"tema": "telefoane",
-"tema_nume": "Telefoane",
-"titlu": "Telefoane sub 1.000 lei",
-"nota": null,
-"in_text": null,
-"actualizat": "2026-11-06",
-"feeduri": [],
-"produse": [
-{
-"titlu": "ZTE Telefon mobil ZTE Blade A56, 4GB RAM, 64GB, 4G LTE, Dual SIM, Unisoc T7200, Negru",
-"pret": 746.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202512311121/404755/full/zte-telefon-mobil-zte-blade-a56-4gb-ram-128gb-4g-lte-dual-sim-unisoc-t7200-negru-1279549.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Ftelefoane-gsm%2Fzte%2F404755-telefon-mobil-zte-blade-a56-4gb-ram-64gb-4g-lte-dual-sim-unisoc-t7200-negru%2F",
-"magazin": "dwyn.ro",
-"id": "uFAO7oxg8Zyl",
-"brand": "ZTE",
-"url_magazin": "https://www.dwyn.ro/telefoane-gsm/zte/404755-telefon-mobil-zte-blade-a56-4gb-ram-64gb-4g-lte-dual-sim-unisoc-t7200-negru/",
-"pret_vechi": null,
-"verificat": "2026-11-04"
 }
 ],
 "magazine": [
@@ -26467,7 +26439,7 @@
 "titlu": "Inele din argint",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-12",
+"actualizat": "2026-11-17",
 "feeduri": [
 {
 "id": 7045,
@@ -26513,17 +26485,6 @@
 "pret_vechi": null
 },
 {
-"titlu": "Inel argint 925 granat | DUO #2",
-"pret": 134.0,
-"imagine": "https://cdn.shopify.com/s/files/1/0666/5165/2389/files/131174.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fdruzy.ro%2Fproducts%2Finel-argint-925-granat-duo-2%3Fvariant%3D57555401867588",
-"magazin": "druzy.ro",
-"id": "CgcXMpaNR5Cp",
-"brand": "druzy.ro - Cristale, Home Deco",
-"url_magazin": "https://druzy.ro/products/inel-argint-925-granat-duo-2?variant=57555401867588",
-"pret_vechi": null
-},
-{
 "titlu": "Inel argint 925 piatra lunii | Moon",
 "pret": 155.0,
 "imagine": "https://cdn.shopify.com/s/files/1/0666/5165/2389/files/131282.jpg",
@@ -26532,17 +26493,6 @@
 "id": "OSUPaecLnwS_",
 "brand": "druzy.ro - Cristale, Home Deco",
 "url_magazin": "https://druzy.ro/products/inel-argint-925-piatra-lunii-moon?variant=57556129972548",
-"pret_vechi": null
-},
-{
-"titlu": "Inel argint 925 iolit | Clasic #2",
-"pret": 155.0,
-"imagine": "https://cdn.shopify.com/s/files/1/0666/5165/2389/files/131319.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fdruzy.ro%2Fproducts%2Finel-argint-925-iolit-clasic-2%3Fvariant%3D57555451806020",
-"magazin": "druzy.ro",
-"id": "YvCc7FZSeKcl",
-"brand": "druzy.ro - Cristale, Home Deco",
-"url_magazin": "https://druzy.ro/products/inel-argint-925-iolit-clasic-2?variant=57555451806020",
 "pret_vechi": null
 },
 {
@@ -26616,6 +26566,28 @@
 "verificat": "2026-11-05"
 },
 {
+"titlu": "Inel argint 925 granat | DUO",
+"pret": 215.0,
+"imagine": "https://cdn.shopify.com/s/files/1/0666/5165/2389/files/R1002506-2.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fdruzy.ro%2Fproducts%2Finel-argint-925-granat-duo%3Fvariant%3D57555399672132",
+"magazin": "druzy.ro",
+"id": "nKSlSQ0qlpGt",
+"brand": "druzy.ro - Cristale, Home Deco",
+"url_magazin": "https://druzy.ro/products/inel-argint-925-granat-duo?variant=57555399672132",
+"pret_vechi": null
+},
+{
+"titlu": "Inel argint peridot | DUO",
+"pret": 215.0,
+"imagine": "https://cdn.shopify.com/s/files/1/0666/5165/2389/files/R1002506-3.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fdruzy.ro%2Fproducts%2Finel-argint-peridot-duo%3Fvariant%3D57555811565892",
+"magazin": "druzy.ro",
+"id": "lbgn554rKOMc",
+"brand": "druzy.ro - Cristale, Home Deco",
+"url_magazin": "https://druzy.ro/products/inel-argint-peridot-duo?variant=57555811565892",
+"pret_vechi": null
+},
+{
 "titlu": "Inel cu Lăbuță Decupată si Os – Argint 925",
 "pret": 225.0,
 "imagine": "https://cdn7.avanticart.ro/chicbijoux.ro/pictures/products/1500/inel-cu-labuta-decupata-si-os-argint-925-103919.jpeg",
@@ -26650,6 +26622,17 @@
 "url_magazin": "https://chicbijoux.ro/inel-ramura-naturii-argint-925.html",
 "pret_vechi": null,
 "verificat": "2026-11-05"
+},
+{
+"titlu": "Inel Destine Unite - 2 nume si Cristale Zirconia - Argint 925",
+"pret": 254.0,
+"imagine": "https://cdn13.avanticart.ro/chicbijoux.ro/pictures/products/1500/inel-destine-unite-2-nume-si-cristale-zirconia-argint-925-107520.jpeg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fchicbijoux.ro%2Finel-destine-unite-2-nume-si-cristale-zirconia-argint-925.html",
+"magazin": "chicbijoux.ro",
+"id": "vDXLSnZQLx6k",
+"brand": "Chic Bijoux",
+"url_magazin": "https://chicbijoux.ro/inel-destine-unite-2-nume-si-cristale-zirconia-argint-925.html",
+"pret_vechi": null
 }
 ],
 "magazine": [
@@ -27856,7 +27839,7 @@
 "titlu": "Baterii externe de 10.000 mAh",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-12",
+"actualizat": "2026-11-17",
 "feeduri": [
 {
 "id": 1539,
@@ -27876,17 +27859,6 @@
 }
 ],
 "produse": [
-{
-"titlu": "Baterie externa HY-CDB02 10000 mAh cu cabluri integrate 4-în-1 și display LED digital, negru Engros",
-"pret": 40.82,
-"imagine": "https://bazarulonline.ro/images/detailed/11818/baterie-externa-hy-cdb02-10000-mah-cu-cabluri-integrate-4-in-1-si~101270463_8fs4-my.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fbazarulonline.ro%2Fbaterie-externa-hy-cdb02-10000-mah-cu-cabluri-integrate-4-in-1-i-display-led-digital-negru-engros-ro",
-"magazin": "bazarulonline.ro",
-"id": "0wx2FuFClEIb",
-"brand": "",
-"url_magazin": "https://bazarulonline.ro/baterie-externa-hy-cdb02-10000-mah-cu-cabluri-integrate-4-in-1-i-display-led-digital-negru-engros-ro",
-"pret_vechi": null
-},
 {
 "titlu": "Baterie externa Hoco J158 Pro, QC PD, 2A, 22,5W, 10000 mAh, Negru Engros",
 "pret": 41.23,
@@ -27977,6 +27949,17 @@
 "pret_vechi": null
 },
 {
+"titlu": "Baterie externa Veger L10S (W1105PD), PD QC3.0, 2A, 20W, 10000 mAh, Negru Engros",
+"pret": 56.38,
+"imagine": "https://bazarulonline.ro/images/detailed/7860/f22caedd7a59ae06d6d629471d9b9d44-scaled-1.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fbazarulonline.ro%2Fbaterie-externa-veger-l10s-w1105pd-pd-qc3-0-2a-20w-10000-mah-negru-engros",
+"magazin": "bazarulonline.ro",
+"id": "YzpGqOJkD8qI",
+"brand": "",
+"url_magazin": "https://bazarulonline.ro/baterie-externa-veger-l10s-w1105pd-pd-qc3-0-2a-20w-10000-mah-negru-engros",
+"pret_vechi": null
+},
+{
 "titlu": "Baterie externa Borofone BJ80, 10000 mAh, 2x USB, 1x USB-C, 22.5 W (Negru)",
 "pret": 61.99,
 "imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4286%2F4286884%2Fpower-bank-borofone-bj80-10-69abe41a29a92.jpg&type=auto&width=500&sign=sKhnmnVsMBfPJNfXaPswjB_a49iEwrgxMxrUDurK5pg",
@@ -28061,17 +28044,6 @@
 "verificat": "2026-11-04"
 },
 {
-"titlu": "MaXlife Baterie Externa MaXlife MXPB-07, 10000mAh, 10W, 2 x USB-A, Neagra",
-"pret": 72.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202512311121/374531/full/maxlife-baterie-externa-maxlife-mxpb-07-10000mah-10w-2-x-usb-a-neagra-1073033.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fbaterii-powerbank%2Fmaxlife%2F374531-baterie-externa-maxlife-mxpb-07-10000mah-10w-2-x-usb-a-neagra%2F",
-"magazin": "dwyn.ro",
-"id": "xssIWKFvkTVD",
-"brand": "MaXlife",
-"url_magazin": "https://www.dwyn.ro/baterii-powerbank/maxlife/374531-baterie-externa-maxlife-mxpb-07-10000mah-10w-2-x-usb-a-neagra/",
-"pret_vechi": null
-},
-{
 "titlu": "Baterie externa Borofone BJ80, 10000 mAh, 2x USB, 1x USB-C, 22.5 W (Alb)",
 "pret": 73.99,
 "imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4286%2F4286883%2Fpower-bank-borofone-bj80-10-69abe3cfaff88.jpg&type=auto&width=500&sign=1wg7LOK-5VI2bJF6vQE0w6mRy5bNlHG8C8P7yNjrq3A",
@@ -28080,18 +28052,6 @@
 "id": "IcnoAr497618",
 "brand": "Borofone",
 "url_magazin": "https://www.evomag.ro/telefoane-tablete-accesorii-accesorii-telefoane-acumulatori-externi/borofone-baterie-externa-borofone-bj80-10000-mah-2x-usb-1x-usb-c-22.5-w-alb-4286883.html",
-"pret_vechi": null,
-"verificat": "2026-11-04"
-},
-{
-"titlu": "AUKEY Baterie externa AUKEY PB-Y55 WHITE, 10000 mAh, 22.5W, Alb",
-"pret": 78.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202512311121/393169/full/aukey-power-bank-usb-10000mah-pb-y55-white-aukey-1207906.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fbaterii-powerbank%2Faukey%2F393169-baterie-externa-aukey-pb-y55-white-10000-mah-22-5w-alb%2F",
-"magazin": "dwyn.ro",
-"id": "7xhsJK_ALQzy",
-"brand": "AUKEY",
-"url_magazin": "https://www.dwyn.ro/baterii-powerbank/aukey/393169-baterie-externa-aukey-pb-y55-white-10000-mah-22-5w-alb/",
 "pret_vechi": null,
 "verificat": "2026-11-04"
 },
@@ -28153,10 +28113,33 @@
 "url_magazin": "https://www.dwyn.ro/baterii-powerbank/joyroom/477733-baterie-externa-joyroom-jr-pbf12-pro-10000mah-22-5w-qc-plus-pd-1-x-usb-c-2-x-usb-a-neagra/",
 "pret_vechi": null,
 "verificat": "2026-11-04"
+},
+{
+"titlu": "Powerbank 10000 mAh Powerbank 10000 mAh",
+"pret": 100.9,
+"imagine": "https://dacris.vteximg.com.br/arquivos/ids/1096726/mo6770-10.jpg.jpg?v=639271909204570000",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dacris.net%2Fmo6770-85-powerbank-10000-mah%2Fp%3FskuId%3D253992",
+"magazin": "dacris.net",
+"id": "N_dvSTa3uiH0",
+"brand": "Midocean",
+"url_magazin": "https://www.dacris.net/mo6770-85-powerbank-10000-mah/p?skuId=253992",
+"pret_vechi": null
+},
+{
+"titlu": "VEGER Baterie externa Veger W1185, 1 x USB-C, 10000 mAh, Gri",
+"pret": 101.57,
+"imagine": "https://www.dwyn.ro/images/products/img_202512311121/393211/full/veger-baterie-externa-veger-w1185-1-x-usb-c-10000-mah-gri-1295695.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fbaterii-powerbank%2Fveger%2F393211-baterie-externa-veger-w1185-1-x-usb-c-10000-mah-gri%2F",
+"magazin": "dwyn.ro",
+"id": "3O-MRLPPHryI",
+"brand": "VEGER",
+"url_magazin": "https://www.dwyn.ro/baterii-powerbank/veger/393211-baterie-externa-veger-w1185-1-x-usb-c-10000-mah-gri/",
+"pret_vechi": null
 }
 ],
 "magazine": [
 "bazarulonline.ro",
+"dacris.net",
 "dwyn.ro",
 "evomag.ro"
 ]
@@ -28168,7 +28151,7 @@
 "titlu": "Baterii externe de 20.000 mAh",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-12",
+"actualizat": "2026-11-17",
 "feeduri": [
 {
 "id": 1539,
@@ -28188,17 +28171,6 @@
 }
 ],
 "produse": [
-{
-"titlu": "Baterie externa Hoco J151A, 2A, 20000 mAh, USB-A, USB-C, Lightning, Micro USB + Lanterna Engros",
-"pret": 64.33,
-"imagine": "https://bazarulonline.ro/images/detailed/7860/014400931d431a15d656cc7f86be8f7e.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fbazarulonline.ro%2Fbaterie-externa-hoco-j151a-2a-20000-mah-usb-a-usb-c-lightning-micro-usb-lanterna-engros",
-"magazin": "bazarulonline.ro",
-"id": "fE5B5rS-vRnQ",
-"brand": "",
-"url_magazin": "https://bazarulonline.ro/baterie-externa-hoco-j151a-2a-20000-mah-usb-a-usb-c-lightning-micro-usb-lanterna-engros",
-"pret_vechi": null
-},
 {
 "titlu": "Baterie externa Hoco J171A, QC PD, 2A, 22,5W, 20000 mAh, USB-C si Lightning integrate, Alb Engros",
 "pret": 68.84,
@@ -28360,14 +28332,14 @@
 },
 {
 "titlu": "Baterie externa Borofone BJ30A, 20000 mAh, 2x USB, 1x USB-C, 22.5 W (Alb)",
-"pret": 102.99,
+"pret": 103.99,
 "imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4286%2F4286868%2Fbaterie-externa-borofone-bj30a-69abd7ace8009.jpg&type=auto&width=500&sign=jQa4rrI2oVnNBKV9L0LDoGuFRYXW0g1Kt5UT5vqSzUI",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Ftelefoane-tablete-accesorii-accesorii-telefoane-acumulatori-externi%2Fborofone-baterie-externa-borofone-bj30a-20000-mah-2x-usb-1x-usb-c-22.5-w-alb-4286868.html",
 "magazin": "evomag.ro",
 "id": "xt1QIjFwf3S-",
 "brand": "Borofone",
 "url_magazin": "https://www.evomag.ro/telefoane-tablete-accesorii-accesorii-telefoane-acumulatori-externi/borofone-baterie-externa-borofone-bj30a-20000-mah-2x-usb-1x-usb-c-22.5-w-alb-4286868.html",
-"pret_vechi": 117.99
+"pret_vechi": null
 },
 {
 "titlu": "Dudao Baterie Externa Dudao K6Pro+, 20000mAh, 10W, 1 x Lightning - 1 x microUSB - 1 x USB-A - 1 x USB-C, Alba",
@@ -28380,6 +28352,17 @@
 "url_magazin": "https://www.dwyn.ro/baterii-powerbank/dudao/374762-baterie-externa-dudao-k6pro-plus-20000mah-10w-1-x-lightning-1-x-microusb-1-x-usb-a-1-x-usb-c-alba/",
 "pret_vechi": null,
 "verificat": "2026-11-04"
+},
+{
+"titlu": "MaXlife Baterie Externa MaXlife MXPB-02, 20000mAh, 20W, 1 x USB-A, 1 x USB-C, 1 x MicroUSB, Neagra",
+"pret": 108.99,
+"imagine": "https://www.dwyn.ro/images/products/img_202404261115/265137/full/maxlife-baterie-externa-maxlife-mxpb-02-20000mah-20w-1-x-usb-a-1-x-usb-c-neagra-575263.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fbaterii-powerbank%2Fmaxlife%2F265137-baterie-externa-maxlife-mxpb-02-20000mah-20w-1-x-usb-a-1-x-usb-c-1-x-microusb-neagra%2F",
+"magazin": "dwyn.ro",
+"id": "bad8ae040",
+"brand": "MaXlife",
+"url_magazin": "https://www.dwyn.ro/baterii-powerbank/maxlife/265137-baterie-externa-maxlife-mxpb-02-20000mah-20w-1-x-usb-a-1-x-usb-c-1-x-microusb-neagra/",
+"pret_vechi": null
 },
 {
 "titlu": "Baterie Externa HOCO J136A, 20000mAh, 22.5W, QC + PD, 1 x USB-C - 2 x USB-A (Negru)",
@@ -28440,6 +28423,17 @@
 "pret_vechi": null
 },
 {
+"titlu": "Baterie externa Veger K2 (W2068), PD QC3.0, 35W, 20000 mAh, Type-C si Lightning, Negru Engros",
+"pret": 124.21,
+"imagine": "https://bazarulonline.ro/images/detailed/7860/330745ab3fa9eb6d0002a90e8ba43727.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fbazarulonline.ro%2Fbaterie-externa-veger-k2-w2068-pd-qc3-0-35w-20000-mah-type-c-si-lightning-negru-engros",
+"magazin": "bazarulonline.ro",
+"id": "LU_PU9XwDvVk",
+"brand": "",
+"url_magazin": "https://bazarulonline.ro/baterie-externa-veger-k2-w2068-pd-qc3-0-35w-20000-mah-type-c-si-lightning-negru-engros",
+"pret_vechi": null
+},
+{
 "titlu": "Xiaomi Baterie externa universala Xiaomi BHR9740GL, 22.5 W, 20000 mAh, cablu integrat USB-C, Li-Ion, Gri inchis",
 "pret": 125.99,
 "imagine": "https://www.dwyn.ro/images/products/img_202512311121/390517/full/xiaomi-baterie-externa-universala-xiaomi-bhr9740gl-22-5-w-20000-mah-cablu-integrat-usb-c-li-ion-gri-inchis-1198723.jpg",
@@ -28448,18 +28442,6 @@
 "id": "Pi4LoRD47iHt",
 "brand": "Xiaomi",
 "url_magazin": "https://www.dwyn.ro/baterii-powerbank/xiaomi/390517-baterie-externa-universala-xiaomi-bhr9740gl-22-5-w-20000-mah-cablu-integrat-usb-c-li-ion-gri-inchis/",
-"pret_vechi": null,
-"verificat": "2026-11-04"
-},
-{
-"titlu": "Canyon Acumulator Extern Canyon PB-2002, 20000 mAh, 2x USB-A, 1x USB Type-C, PD, 20W, Negru",
-"pret": 127.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202305231058/220444/full/canyon-acumulator-extern-canyon-pb-2002-20000-mah-2x-usb-a-1x-usb-type-c-pd-20w-negru-426210.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fbaterii-powerbank%2Fcanyon%2F220444-acumulator-extern-canyon-pb-2002-20000-mah-2x-usb-a-1x-usb-type-c-pd-20w-negru%2F",
-"magazin": "dwyn.ro",
-"id": "zt-BfQoB_nB2",
-"brand": "Canyon",
-"url_magazin": "https://www.dwyn.ro/baterii-powerbank/canyon/220444-acumulator-extern-canyon-pb-2002-20000-mah-2x-usb-a-1x-usb-type-c-pd-20w-negru/",
 "pret_vechi": null,
 "verificat": "2026-11-04"
 }
@@ -28477,7 +28459,7 @@
 "titlu": "SSD de 1 TB",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-12",
+"actualizat": "2026-11-17",
 "feeduri": [
 {
 "id": 1096,
@@ -28522,18 +28504,6 @@
 "verificat": "2026-11-04"
 },
 {
-"titlu": "SSD Samsung 990 EVO 1TB PCI Express 4.0",
-"pret": 1101.56,
-"imagine": "https://dacris.vteximg.com.br/arquivos/ids/1089181/overlay_5c9b71299f4a54b8f5d45ab2cfb3e631.jpg.jpg?v=639221796795600000",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dacris.net%2Fmz-v9v1t0bw-ssd-samsung-990-evo-1tb-pci-express-4-0%2Fp%3FskuId%3D252262",
-"magazin": "dacris.net",
-"id": "vcf2X8bFTbxP",
-"brand": "Samsung",
-"url_magazin": "https://www.dacris.net/mz-v9v1t0bw-ssd-samsung-990-evo-1tb-pci-express-4-0/p?skuId=252262",
-"pret_vechi": null,
-"verificat": "2026-11-04"
-},
-{
 "titlu": "SSD extern Kingston XS1000R, 1 TB, USB 3.2 Gen 2, Rosu",
 "pret": 1153.44,
 "imagine": "http://1cctv.ro/116201/ssd-extern-kingston-xs1000r-1-tb-usb-32-gen-2-rosu.jpg",
@@ -28570,7 +28540,7 @@
 "titlu": "Plăci video NVIDIA RTX",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-12",
+"actualizat": "2026-11-17",
 "feeduri": [
 {
 "id": 1096,
@@ -28723,7 +28693,7 @@
 },
 {
 "titlu": "Asus Placa video Asus ROG Astral OC Edition, NVIDIA GeForce RTX 5090, 32GB GDDR7, 512 bit, DLSS 4",
-"pret": 56214.99,
+"pret": 56066.99,
 "imagine": "https://www.dwyn.ro/images/products/img_202503142150/295985/full/asus-vga-pcie16-rtx5090-32gb-gddr7-astral-rtx5090-o32g-gam-asus-731623.jpg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fplaci-video%2Fasus%2F295985-placa-video-asus-rog-astral-oc-edition-nvidia-geforce-rtx-5090-32gb-gddr7-512-bit-dlss-4%2F",
 "magazin": "dwyn.ro",
@@ -28734,7 +28704,7 @@
 },
 {
 "titlu": "PNY Placa video PNY NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition, 96 GB GDDR7",
-"pret": 104297.99,
+"pret": 104405.99,
 "imagine": "https://www.dwyn.ro/images/products/img_202512311121/410536/full/pny-placa-video-pny-nvidia-rtx-pro-6000-blackwell-max-q-workstation-edition-96-gb-gddr7-1342036.jpg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fplaci-video%2Fpny%2F410536-placa-video-pny-nvidia-rtx-pro-6000-blackwell-max-q-workstation-edition-96-gb-gddr7%2F",
 "magazin": "dwyn.ro",
@@ -28756,7 +28726,7 @@
 "titlu": "Drone cu cameră",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-12",
+"actualizat": "2026-11-17",
 "feeduri": [
 {
 "id": 6119,
@@ -28856,6 +28826,17 @@
 "verificat": "2026-11-04"
 },
 {
+"titlu": "Drona RC pliabila 2.4G WIFI FPV cu camera HD 1080P, timp de zbor 18 minute, multicolor, dimensiuni 30x30x8cm",
+"pret": 439.81,
+"imagine": "https://infinityro.vteximg.com.br/arquivos/ids/275846994/0.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Finfinity.ro%2Fdrona-rc-pliabila-2-4g-wifi-fpv-cu-camera-hd-1080p-timp-de-zbor-18-minute-multicolor-dimensiuni-30x30x8cm-9406188%2Fp%3Futm_source%3D2performant",
+"magazin": "infinity.ro",
+"id": "3SLWOm0wfFMy",
+"brand": "OEM",
+"url_magazin": "https://infinity.ro/drona-rc-pliabila-2-4g-wifi-fpv-cu-camera-hd-1080p-timp-de-zbor-18-minute-multicolor-dimensiuni-30x30x8cm-9406188/p?utm_source=2performant",
+"pret_vechi": 517.42
+},
+{
 "titlu": "Drona Andowl GST69 cu camera 4K zbor stabilizat pana la 120 metri culoare neagra",
 "pret": 489.0,
 "imagine": "https://gave.ro/image/catalog/CATEGORII_OK/Screenshot 2026-08-05 at 13.15.12.png",
@@ -28865,17 +28846,6 @@
 "brand": "GAVE",
 "url_magazin": "https://gave.ro/drona-andowl-gst69-cu-camera-4k-zbor-stabilizat-pana-la-120-metri-culoare-neagra",
 "pret_vechi": 799.0
-},
-{
-"titlu": "Drona RC pliabila 2.4G WIFI FPV cu camera HD 1080P, timp de zbor 18 minute, multicolor, dimensiuni 30x30x8cm",
-"pret": 517.42,
-"imagine": "https://infinityro.vteximg.com.br/arquivos/ids/275846994/0.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Finfinity.ro%2Fdrona-rc-pliabila-2-4g-wifi-fpv-cu-camera-hd-1080p-timp-de-zbor-18-minute-multicolor-dimensiuni-30x30x8cm-9406188%2Fp%3Futm_source%3D2performant",
-"magazin": "infinity.ro",
-"id": "3SLWOm0wfFMy",
-"brand": "OEM",
-"url_magazin": "https://infinity.ro/drona-rc-pliabila-2-4g-wifi-fpv-cu-camera-hd-1080p-timp-de-zbor-18-minute-multicolor-dimensiuni-30x30x8cm-9406188/p?utm_source=2performant",
-"pret_vechi": null
 },
 {
 "titlu": "Drona Nivazo S166, rotire 360 de grade, functie de evitarea obstacolelor, camera duala 4K, filmare si fotografiere",
@@ -28927,7 +28897,7 @@
 "titlu": "Camere de supraveghere Wi-Fi",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-12",
+"actualizat": "2026-11-17",
 "feeduri": [
 {
 "id": 6119,
@@ -28967,17 +28937,6 @@
 "id": "9CDpL7xHVWM4",
 "brand": "",
 "url_magazin": "https://bazarulonline.ro/sonerie-video-smart-razo-engross-camera-supraveghere-wifi-fara-fir-night-vision-voice-changer-audio-bidirectional-apel-vocal-si-interfon-video-control-aplicatie-android-ios",
-"pret_vechi": null
-},
-{
-"titlu": "Camera Supraveghere, ENGROS, PTZ, UHD, 4MP, WIFI, SD, ICSEE, Rotire, Detectie forma umana, Urmarire automata",
-"pret": 64.9,
-"imagine": "https://bazarulonline.ro/images/detailed/2148/69e059fe-354b-4cc6-9662-a9f39e6e52da-Photoroom_uhfh-g0.png",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fbazarulonline.ro%2Fcamera-supraveghere-engros-ptz-uhd-4mp-wifi-sd-icsee-rotire-detectie-forma-umana-urmarire-automata",
-"magazin": "bazarulonline.ro",
-"id": "e4c214663",
-"brand": "",
-"url_magazin": "https://bazarulonline.ro/camera-supraveghere-engros-ptz-uhd-4mp-wifi-sd-icsee-rotire-detectie-forma-umana-urmarire-automata",
 "pret_vechi": null
 },
 {
@@ -29126,6 +29085,17 @@
 "id": "5LxX0iAJr0St",
 "brand": "",
 "url_magazin": "https://bazarulonline.ro/camera-de-supraveghere-wifi-jortan-doua-lentile-6mp-full-hd-exterior-clone",
+"pret_vechi": null
+},
+{
+"titlu": "Camera de supraveghere WiFi Jortan, doua lentile, 6MP, Full HD, exterior",
+"pret": 135.0,
+"imagine": "https://bazarulonline.ro/images/detailed/4784/20240906125429_jortan_352613_ip_kamera_parakolouthisis_wi_fi_4mp_full_hd_adiavrochi_me_amfidromi_epikoinonia.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fbazarulonline.ro%2Fcamera-de-supraveghere-wifi-jortan-dubla-6mp-full-hd-exterior-clone",
+"magazin": "bazarulonline.ro",
+"id": "DgDg5gOBblLS",
+"brand": "",
+"url_magazin": "https://bazarulonline.ro/camera-de-supraveghere-wifi-jortan-dubla-6mp-full-hd-exterior-clone",
 "pret_vechi": null
 },
 {

@@ -1,5 +1,5 @@
 {
-"actualizat": "2026-11-16",
+"actualizat": "2026-11-17",
 "magazine": {
 "10qaroma.ro": {
 "cupoane": "yes",
@@ -497,11 +497,6 @@
 "cashback": "yes"
 },
 "chocolatemakers.ro": {
-"cupoane": "yes",
-"google_ads": "yes",
-"cashback": "yes"
-},
-"citgrup.ro": {
 "cupoane": "yes",
 "google_ads": "yes",
 "cashback": "yes"
@@ -1961,6 +1956,11 @@
 "google_ads": "maybe",
 "cashback": "yes"
 },
+"pufrelax.com": {
+"cupoane": "yes",
+"google_ads": "yes",
+"cashback": "yes"
+},
 "qudo.ro": {
 "cupoane": "yes",
 "google_ads": "yes",
@@ -2310,6 +2310,11 @@
 "cupoane": "yes",
 "google_ads": "yes",
 "cashback": "yes"
+},
+"ufit.ro": {
+"cupoane": "maybe",
+"google_ads": "maybe",
+"cashback": "maybe"
 },
 "underarmour.bg": {
 "cupoane": "yes",
