@@ -1,5 +1,18 @@
 [
   {
+    "id": 274802,
+    "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/274761/original/274761.png",
+    "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=dfff47f76&aff_code=541547473&campaign_unique=9a6f02fef",
+    "landing_raw": "https://www.libris.ro/lp/mosnicolae",
+    "width": 1080,
+    "height": 1080,
+    "merchant": "libris.ro ",
+    "merchant_slug": "libris-ro",
+    "name": "Moș Nicolae a găsit reducerile! Până la -83% la cărți, jocuri și accesorii »",
+    "category": "Moș Nicolae a găsit reducerile! Până la -83% la cărți, jocuri și accesorii »",
+    "b_type": "image"
+  },
+  {
     "id": 274791,
     "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/274750/original/274750.jpg",
     "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=70cd7b31c&aff_code=541547473&campaign_unique=cc08e2536",

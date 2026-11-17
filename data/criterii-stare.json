@@ -3105,7 +3105,7 @@
 "titlu": "Televizoare de 50 inch",
 "nota": null,
 "in_text": "\\b50\\s*(inch|\\\")",
-"actualizat": "2026-11-13",
+"actualizat": "2026-11-17",
 "feeduri": [
 {
 "id": 235,
@@ -3134,7 +3134,7 @@
 "id": "daPi86ZVG0kU",
 "brand": "TCL",
 "url_magazin": "https://www.evomag.ro/tv-multimedia-televizoare/tcl-televizor-qled-tcl-127-cm-50-50s5l-full-hd-smart-tv-wifi-clasa-f-model-2026-4305566.html",
-"pret_vechi": null,
+"pret_vechi": 1699.99,
 "verificat": "2026-11-05"
 },
 {
@@ -3185,6 +3185,17 @@
 "pret_vechi": null
 },
 {
+"titlu": "Televizor MiniLED Samsung 127 cm (50inch) UE50M1EHAUXXH, Ultra HD 4K, Smart TV, WiFi, CI+",
+"pret": 1599.99,
+"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4322%2F4322522%2Ftelevizor-miniled-samsung-127-6af15dc8bb9a4.JPG&type=auto&width=500&sign=H-28GSfIH7akIjJcyafp0HDXdn_FbmmEjeYucj2bhkY",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Ftv-multimedia-televizoare%2Fsamsung-televizor-miniled-samsung-127-cm-50-ue50m1ehauxxh-ultra-hd-4k-smart-tv-wifi-ci-4322522.html",
+"magazin": "evomag.ro",
+"id": "zimq2Z5VhsU9",
+"brand": "Samsung",
+"url_magazin": "https://www.evomag.ro/tv-multimedia-televizoare/samsung-televizor-miniled-samsung-127-cm-50-ue50m1ehauxxh-ultra-hd-4k-smart-tv-wifi-ci-4322522.html",
+"pret_vechi": 1699.99
+},
+{
 "titlu": "Televizor LED LG 127 cm (50inch) 50NU85CB6LA, Ultra HD 4K, Smart TV, WiFi, CI",
 "pret": 1599.99,
 "imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4318%2F4318043%2Foverlay_abe51ccf4ce3da4457052503b1e07a0d.jpeg&type=auto&width=500&sign=6521_lV1H5LSbD5NnzQQgf-vs1C3m5BfxBFLA93xDvI",
@@ -3193,41 +3204,19 @@
 "id": "joulkxPkn7lK",
 "brand": "LG",
 "url_magazin": "https://www.evomag.ro/tv-multimedia-televizoare/lg-televizor-led-lg-127-cm-50-50nu85cb6la-ultra-hd-4k-smart-tv-wifi-ci-4318043.html",
-"pret_vechi": null,
+"pret_vechi": 1699.99,
 "verificat": "2026-11-05"
 },
 {
-"titlu": "Televizor MiniLED Samsung 127 cm (50inch) UE50M1EHAUXXH, Ultra HD 4K, Smart TV, WiFi, CI+",
-"pret": 1699.99,
-"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4322%2F4322522%2Ftelevizor-miniled-samsung-127-6af15dc8bb9a4.JPG&type=auto&width=500&sign=H-28GSfIH7akIjJcyafp0HDXdn_FbmmEjeYucj2bhkY",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Ftv-multimedia-televizoare%2Fsamsung-televizor-miniled-samsung-127-cm-50-ue50m1ehauxxh-ultra-hd-4k-smart-tv-wifi-ci-4322522.html",
-"magazin": "evomag.ro",
-"id": "zimq2Z5VhsU9",
-"brand": "Samsung",
-"url_magazin": "https://www.evomag.ro/tv-multimedia-televizoare/samsung-televizor-miniled-samsung-127-cm-50-ue50m1ehauxxh-ultra-hd-4k-smart-tv-wifi-ci-4322522.html",
-"pret_vechi": null
-},
-{
 "titlu": "Televizor MiniLED Samsung 127 cm (50inch) UE50M72HAUXXH, Ultra HD 4K, Smart TV, WiFi, CI+",
-"pret": 1699.99,
+"pret": 1599.99,
 "imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4314%2F4314460%2Fsamsung-ue50m72hauxxh-6a9fdb1acf74f.JPG&type=auto&width=500&sign=E5aDnR8Hm7YPlp1xYNX43G5HXhtXZtWhRnMTDgnwS4k",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Ftv-multimedia-televizoare%2Fsamsung-televizor-miniled-samsung-127-cm-50-ue50m72hauxxh-ultra-hd-4k-smart-tv-wifi-ci-4314460.html",
 "magazin": "evomag.ro",
 "id": "B4OfQGKIgEuU",
 "brand": "Samsung",
 "url_magazin": "https://www.evomag.ro/tv-multimedia-televizoare/samsung-televizor-miniled-samsung-127-cm-50-ue50m72hauxxh-ultra-hd-4k-smart-tv-wifi-ci-4314460.html",
-"pret_vechi": 2476.99
-},
-{
-"titlu": "Televizor LED Samsung 127 cm (50inch) UE50U8072HUXXH, ultra HD 4K, Smart TV, WiFi, CI+",
-"pret": 1699.99,
-"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4313%2F4313213%2Ftelevizor-led-samsung-127-cm-6a96c05375fa8.JPG&type=auto&width=500&sign=i1q05_EgChwveAvDAP2Cs-utKzts8e3ktXIOfn092TQ",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Ftv-multimedia-televizoare%2Fsamsung-televizor-led-samsung-127-cm-50-ue50u8072huxxh-ultra-hd-4k-smart-tv-wifi-ci-4313213.html",
-"magazin": "evomag.ro",
-"id": "Kj-97IcUfd1J",
-"brand": "Samsung",
-"url_magazin": "https://www.evomag.ro/tv-multimedia-televizoare/samsung-televizor-led-samsung-127-cm-50-ue50u8072huxxh-ultra-hd-4k-smart-tv-wifi-ci-4313213.html",
-"pret_vechi": 1809.99
+"pret_vechi": 1699.99
 },
 {
 "titlu": "Televizor MiniLED Samsung 127 cm (50inch) UE50M70HAUXXH, Ultra HD 4K, Smart TV, WiFi, CI+",
@@ -3238,7 +3227,7 @@
 "id": "3rSZuBIYa7f0",
 "brand": "Samsung",
 "url_magazin": "https://www.evomag.ro/tv-multimedia-televizoare/samsung-televizor-miniled-samsung-127-cm-50-ue50m70hauxxh-ultra-hd-4k-smart-tv-wifi-ci-4306631.html",
-"pret_vechi": null,
+"pret_vechi": 1899.99,
 "verificat": "2026-11-05"
 },
 {
@@ -3250,20 +3239,19 @@
 "id": "caU9YQqFlAZi",
 "brand": "LG",
 "url_magazin": "https://www.evomag.ro/tv-multimedia-televizoare/lg-televizor-qned-lg-127-cm-50-50qned82a3b-ultra-hd-4k-smart-tv-wifi-ci-4312225.html",
-"pret_vechi": 1849.99,
+"pret_vechi": null,
 "verificat": "2026-11-05"
 },
 {
-"titlu": "Televizor smart LG - 50NU850B3LA, 50\", NANO 4K Super Upscaling, Alpha7 AI Processor Gen9, 20W AI Sound Pro, webOS 26, ne",
-"pret": 1746.99,
-"imagine": "https://www.ozone.ro/media/catalog/product/s/m/smart_televizor_lg_50nu850b3la_50_4k_cheren_1791892535_0.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ozone.ro%2Fproduct%2Ftelevizor-smart-lg-50nu850b3la-50-4k-negru%2F",
-"magazin": "ozone.ro",
-"id": "BYR5QIYt8JBm",
-"brand": "LG",
-"url_magazin": "https://www.ozone.ro/product/televizor-smart-lg-50nu850b3la-50-4k-negru/",
-"pret_vechi": null,
-"verificat": "2026-11-04"
+"titlu": "Televizor LED Samsung 127 cm (50inch) UE50U8072HUXXH, ultra HD 4K, Smart TV, WiFi, CI+",
+"pret": 1776.99,
+"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4313%2F4313213%2Ftelevizor-led-samsung-127-cm-6a96c05375fa8.JPG&type=auto&width=500&sign=i1q05_EgChwveAvDAP2Cs-utKzts8e3ktXIOfn092TQ",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Ftv-multimedia-televizoare%2Fsamsung-televizor-led-samsung-127-cm-50-ue50u8072huxxh-ultra-hd-4k-smart-tv-wifi-ci-4313213.html",
+"magazin": "evomag.ro",
+"id": "Kj-97IcUfd1J",
+"brand": "Samsung",
+"url_magazin": "https://www.evomag.ro/tv-multimedia-televizoare/samsung-televizor-led-samsung-127-cm-50-ue50u8072huxxh-ultra-hd-4k-smart-tv-wifi-ci-4313213.html",
+"pret_vechi": null
 },
 {
 "titlu": "Televizor smart Philips - 50PUS7001/12, 50\", 4K, LED, Pixel Precise Ultra HD, 20W RMS 2x10W Dolby Atmos, negru",
@@ -3324,6 +3312,17 @@
 "verificat": "2026-11-04"
 },
 {
+"titlu": "Televizor smart Metz - 50MQH7500Z, 50\", QLED+, 4K Ultra HD, 120Hz Native, HDR10+, HLG, Dolby Vision-Atmos, 2x10W, negru",
+"pret": 1958.99,
+"imagine": "https://www.ozone.ro/media/catalog/product/s/m/smart_televizor_metz_50mqh7500z_50_qled_4k_120hz_cheren_1787811672_0.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ozone.ro%2Fproduct%2Ftelevizor-smart-metz-50mqh7500z-50-qled-4k-120hz-negru%2F",
+"magazin": "ozone.ro",
+"id": "jombCXANn95V",
+"brand": "METZ",
+"url_magazin": "https://www.ozone.ro/product/televizor-smart-metz-50mqh7500z-50-qled-4k-120hz-negru/",
+"pret_vechi": null
+},
+{
 "titlu": "Samsung Televizor LED Samsung HG50U700FEUXEN, 127 cm / 50 inch, Ultra HD 4K, Smart TV, Mod Hotel, WiFi, CI+, Negru",
 "pret": 2030.99,
 "imagine": "https://www.dwyn.ro/images/products/img_202512311121/385214/full/samsung-televizor-led-samsung-hg50u700feuxen-127-cm-50-inch-ultra-hd-4k-smart-tv-mod-hotel-wifi-ci-plus-negru-1181501.jpg",
@@ -3361,7 +3360,7 @@
 "titlu": "Televizoare de 55 inch",
 "nota": null,
 "in_text": "\\b55\\s*(inch|\\\")",
-"actualizat": "2026-11-13",
+"actualizat": "2026-11-17",
 "feeduri": [
 {
 "id": 235,
@@ -3429,7 +3428,7 @@
 },
 {
 "titlu": "Televizor LED Samsung 139 cm (55inch) UE55U7000HUXZT, Ultra HD 4K, Smart TV, WiFi, CI+",
-"pret": 1847.99,
+"pret": 1848.99,
 "imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4323%2F4323200%2Ftelevizor-led-samsung-139-cm-6af70db4cdebf.JPG&type=auto&width=500&sign=rqt2l8F_-Vul958MeCEV3AVon7Oi_4wduLop_nHSzBs",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Ftv-multimedia-televizoare%2Fsamsung-televizor-led-samsung-139-cm-55-ue55u7000huxzt-ultra-hd-4k-smart-tv-wifi-ci-4323200.html",
 "magazin": "evomag.ro",
@@ -3458,7 +3457,7 @@
 "id": "KIQyfFSEZngt",
 "brand": "LG",
 "url_magazin": "https://www.evomag.ro/tv-multimedia-televizoare/lg-televizor-qned-lg-139-cm-55-55qned82a6b-ultra-hd-4k-smart-tv-wifi-ci-4311147.html",
-"pret_vechi": null
+"pret_vechi": 1999.99
 },
 {
 "titlu": "Televizor smart LG - 55NU850B3LA, 55\", NANO 4K Super Upscaling, Alpha7 AI Processor Gen9, AI Sound Pro 20W, webOS 26, ne",
@@ -3493,8 +3492,19 @@
 "id": "AWwUvZLuNQUL",
 "brand": "Philips",
 "url_magazin": "https://www.ozone.ro/product/televizor-smart-philips-55pus7001-12-55-4k-led-ambilight-negru/",
-"pret_vechi": null,
+"pret_vechi": 2382.99,
 "verificat": "2026-11-04"
+},
+{
+"titlu": "Smart TV Hisense - 55E8S, 55'', 4K, ULED MiniLED 144Hz, Quantum Dot, Devialet sound tuning 40W, Black",
+"pret": 2011.99,
+"imagine": "https://www.ozone.ro/media/catalog/product/s/m/smart_televizor_hisense_55e8s_55_4k_uled_miniled_144hz_quantum_dot_devialet_sound_tuning_40w_black_1791971811_10.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ozone.ro%2Fproduct%2Ftelevizor-smart-hisense-e8s-55e8s-55-4k-uled-miniled-144hz-dolby-vision-atmos-negru%2F",
+"magazin": "ozone.ro",
+"id": "tFBEZKY2sFvN",
+"brand": "Hisense",
+"url_magazin": "https://www.ozone.ro/product/televizor-smart-hisense-e8s-55e8s-55-4k-uled-miniled-144hz-dolby-vision-atmos-negru/",
+"pret_vechi": null
 },
 {
 "titlu": "Televizor LED Samsung 139 cm (55inch) UE55U8092HUXXH, Ultra HD 4K, Smart TV, WiFi, CI+",
@@ -3532,18 +3542,6 @@
 "verificat": "2026-11-05"
 },
 {
-"titlu": "Televizor Smart Hisense - 55A6S, 55'', DLED, 4K Ultra HD, DLED, AI 4K Upscaler, Dolby Vision-Atmos, 2x10W DTS Virtual X,",
-"pret": 2117.99,
-"imagine": "https://www.ozone.ro/media/catalog/product/s/m/smart_televizor_hisense_55a6s_55_dled_4k_ultra_hd_dled_ai_4k_upscaler_dolby_vision_atmos_2x10w_dts_v_1791973391_10.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ozone.ro%2Fproduct%2Ftelevizor-smart-hisense-a6s-55a6s-55-dled-4k-negru%2F",
-"magazin": "ozone.ro",
-"id": "DYiG-A_kyoJK",
-"brand": "Hisense",
-"url_magazin": "https://www.ozone.ro/product/televizor-smart-hisense-a6s-55a6s-55-dled-4k-negru/",
-"pret_vechi": null,
-"verificat": "2026-11-04"
-},
-{
 "titlu": "Televizor smart Hisense - 55E7S, 55\", QLED, 4K AI Scaler, Game Mode Plus, Dolby Atmos, negru",
 "pret": 2117.99,
 "imagine": "https://www.ozone.ro/media/catalog/product/s/m/smart_televizor_hisense_55e7s_55_qled_4k_ai_scaler_game_mode_plus_dolby_atmos_cheren_1791970716_5.jpg",
@@ -3556,6 +3554,18 @@
 "verificat": "2026-11-04"
 },
 {
+"titlu": "Televizor Smart Hisense - 55A6S, 55'', DLED, 4K Ultra HD, DLED, AI 4K Upscaler, Dolby Vision-Atmos, 2x10W DTS Virtual X,",
+"pret": 2117.99,
+"imagine": "https://www.ozone.ro/media/catalog/product/s/m/smart_televizor_hisense_55a6s_55_dled_4k_ultra_hd_dled_ai_4k_upscaler_dolby_vision_atmos_2x10w_dts_v_1791973391_10.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ozone.ro%2Fproduct%2Ftelevizor-smart-hisense-a6s-55a6s-55-dled-4k-negru%2F",
+"magazin": "ozone.ro",
+"id": "DYiG-A_kyoJK",
+"brand": "Hisense",
+"url_magazin": "https://www.ozone.ro/product/televizor-smart-hisense-a6s-55a6s-55-dled-4k-negru/",
+"pret_vechi": null,
+"verificat": "2026-11-04"
+},
+{
 "titlu": "Smart televizor LG - 55NU8E0B3LA, 55'', LED, 4K, NanoCell, negru",
 "pret": 2276.99,
 "imagine": "https://www.ozone.ro/media/catalog/product/s/m/smart_televizor_lg_55nu8e0b3la_55_4k_hdr_uhd_nanocell_ai_alpha_7_hdr_10_thinq_ai_4k_super_upscaling__1780832396_0.jpg",
@@ -3564,18 +3574,6 @@
 "id": "erSzPvg48UnN",
 "brand": "LG",
 "url_magazin": "https://www.ozone.ro/product/smart-tv-lg-55nu8e0b3la-55-led-4k-nanocell-negru/",
-"pret_vechi": null,
-"verificat": "2026-11-04"
-},
-{
-"titlu": "Televizor smart Metz - 55MNH7000Z, 55\", 4K, QD-Mini LED, S AI Processor, Dolby Vision-Atmos, 2x10W, 120Hz Turbo Mode, VR",
-"pret": 2382.99,
-"imagine": "https://www.ozone.ro/media/catalog/product/s/m/smart_televizor_metz_55mnh7000z_55_qd_mini_led_4k_cheren_1787814910_0.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ozone.ro%2Fproduct%2Ftelevizor-smart-metz-55mnh7000z-55-qd-mini-led-4k-negru%2F",
-"magazin": "ozone.ro",
-"id": "mQKbMt3cmOnh",
-"brand": "METZ",
-"url_magazin": "https://www.ozone.ro/product/televizor-smart-metz-55mnh7000z-55-qd-mini-led-4k-negru/",
 "pret_vechi": null,
 "verificat": "2026-11-04"
 },
@@ -3641,7 +3639,7 @@
 "titlu": "Televizoare de 65 inch",
 "nota": null,
 "in_text": "\\b65\\s*(inch|\\\")",
-"actualizat": "2026-11-13",
+"actualizat": "2026-11-17",
 "feeduri": [
 {
 "id": 235,
@@ -3706,7 +3704,7 @@
 "id": "JLVWiRrs7Zz3",
 "brand": "LG",
 "url_magazin": "https://www.evomag.ro/tv-multimedia-televizoare/lg-televizor-led-lg-165-cm-65-65nu85cb6la-ultra-hd-4k-smart-tv-wifi-ci-4318041.html",
-"pret_vechi": null,
+"pret_vechi": 2499.99,
 "verificat": "2026-11-05"
 },
 {
@@ -3757,18 +3755,6 @@
 "verificat": "2026-11-04"
 },
 {
-"titlu": "Televizor LED Samsung 165 cm (65inch) UE65U8092HUXXH, Ultra HD 4K, Smart TV, WiFi, CI+",
-"pret": 2599.99,
-"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4315%2F4315881%2Fsamsung-ue65u8092hu-1651-cm-6aaa773f84e29.JPG&type=auto&width=500&sign=mUa0nBlYOuLba1UGeoL5m9ItOpSURmhJZszY_Ww8oLg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Ftv-multimedia-televizoare%2Fsamsung-televizor-led-samsung-165-cm-65-ue65u8092huxxh-ultra-hd-4k-smart-tv-wifi-ci-4315881.html",
-"magazin": "evomag.ro",
-"id": "kt6ar1xpaZjc",
-"brand": "Samsung",
-"url_magazin": "https://www.evomag.ro/tv-multimedia-televizoare/samsung-televizor-led-samsung-165-cm-65-ue65u8092huxxh-ultra-hd-4k-smart-tv-wifi-ci-4315881.html",
-"pret_vechi": null,
-"verificat": "2026-11-05"
-},
-{
 "titlu": "Televizor LED Kruger&Matz 165 cm (65inch) KM0265UHD-V2, Ultra HD 4K, Smart TV, WiFi, CI+",
 "pret": 2626.99,
 "imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4211%2F4211537%2Ftv-ultrahd-4k-65-inch-165cm-sm-67e29a840bad2.JPG&type=auto&width=500&sign=xK2zmCY3xgdjM9Vx51FVmqfPZymEFaTgxqMRzsZvGfY",
@@ -3781,13 +3767,24 @@
 },
 {
 "titlu": "Televizor smart Hisense - 65E7S, 65\", 4K AI Upscaler, QLED, AI Light Sensor, Dolby Vision și HDR10+, negru",
-"pret": 2754.99,
+"pret": 2648.99,
 "imagine": "https://www.ozone.ro/media/catalog/product/s/m/smart_televizor_hisense_65e7s_65_4k_ai_upscaler_qled_ai_light_sensor_dolby_vision_i_hdr10_cheren_1791970760_5.jpg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ozone.ro%2Fproduct%2Ftelevizor-smart-hisense-e7s-65-qled-4k-quantum-dot%2F",
 "magazin": "ozone.ro",
 "id": "jQNjf0C_4CO5",
 "brand": "Hisense",
 "url_magazin": "https://www.ozone.ro/product/televizor-smart-hisense-e7s-65-qled-4k-quantum-dot/",
+"pret_vechi": null
+},
+{
+"titlu": "Televizor Smart Hisense - 65E8S, 65\", 4K, ULED MiniLED 144Hz, Quantum Dot, Devialet sound tuning 40W, negru",
+"pret": 2913.99,
+"imagine": "https://www.ozone.ro/media/catalog/product/s/m/smart_televizor_hisense_65e8s_65_4k_uled_miniled_144hz_quantum_dot_devialet_sound_tuning_40w_cheren_1791971600_6.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ozone.ro%2Fproduct%2Ftelevizor-smart-hisense-65e8s-65-mini-led-4k-144hz-negru%2F",
+"magazin": "ozone.ro",
+"id": "8CoW65HVP69i",
+"brand": "Hisense",
+"url_magazin": "https://www.ozone.ro/product/televizor-smart-hisense-65e8s-65-mini-led-4k-144hz-negru/",
 "pret_vechi": null
 },
 {
@@ -3802,17 +3799,6 @@
 "pret_vechi": null
 },
 {
-"titlu": "Televizor smart Hisense - 65U7SE, 65'', 4K, ULED MiniLED 144Hz, Quantum Dot, Devialet sound tuning 40W, HomeOS U10, Blac",
-"pret": 2966.99,
-"imagine": "https://www.ozone.ro/media/catalog/product/s/m/smart_televizor_hisense_65u7se_65_4k_uled_miniled_144hz_quantum_dot_devialet_sound_tuning_40w_homeos_1793087986_7.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ozone.ro%2Fproduct%2Ftelevizor-smart-hisense-65u7se-65-4k-uled-mini-led-144hz-quantum-dot-negru%2F",
-"magazin": "ozone.ro",
-"id": "pyTf6-UhfiNE",
-"brand": "Hisense",
-"url_magazin": "https://www.ozone.ro/product/televizor-smart-hisense-65u7se-65-4k-uled-mini-led-144hz-quantum-dot-negru/",
-"pret_vechi": null
-},
-{
 "titlu": "Televizor QLED Sharp 165 cm (65inch) 65HP6265E, Ultra HD 4K, Smart TV, WiFi",
 "pret": 2999.99,
 "imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4321%2F4321213%2Fqled-tv-65-sharp-4k-gtv-65hp6-6ae48052b2468.JPG&type=auto&width=500&sign=K4lb93OQTBBzltKRcNgtqM2wIw4lf_MWsO488NjsYmw",
@@ -3823,6 +3809,17 @@
 "url_magazin": "https://www.evomag.ro/tv-multimedia-televizoare/sharp-televizor-qled-sharp-165-cm-65-65hp6265e-ultra-hd-4k-smart-tv-wifi-4321213.html",
 "pret_vechi": null,
 "verificat": "2026-11-05"
+},
+{
+"titlu": "Televizor QNED LG 165 cm (65inch) 65QNED82A6B, Ultra HD 4k, Smart TV, WiFi, CI",
+"pret": 3048.99,
+"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4312%2F4312731%2Ftelevizor-qned-lg-165-cm-65-6a919b98dfe07.jpg&type=auto&width=500&sign=S2yuzkK60BhxeljDZKj5IpdZlsnjVRzvz3Di5iAdDNM",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Ftv-multimedia-televizoare%2Flg-televizor-qned-lg-165-cm-65-65qned82a6b-ultra-hd-4k-smart-tv-wifi-ci-4312731.html",
+"magazin": "evomag.ro",
+"id": "5xos5cwQdybZ",
+"brand": "LG",
+"url_magazin": "https://www.evomag.ro/tv-multimedia-televizoare/lg-televizor-qned-lg-165-cm-65-65qned82a6b-ultra-hd-4k-smart-tv-wifi-ci-4312731.html",
+"pret_vechi": null
 }
 ],
 "magazine": [
@@ -3837,7 +3834,7 @@
 "titlu": "Televizoare de 75 inch",
 "nota": null,
 "in_text": "\\b75\\s*(inch|\\\")",
-"actualizat": "2026-11-13",
+"actualizat": "2026-11-17",
 "feeduri": [
 {
 "id": 235,
@@ -3890,7 +3887,7 @@
 "id": "nO7VmqxGTjeG",
 "brand": "LG",
 "url_magazin": "https://www.evomag.ro/tv-multimedia-televizoare/lg-televizor-led-lg-190-cm-75-75nu85cb6la-ultra-hd-4k-smart-tv-wifi-ci-4318040.html",
-"pret_vechi": null,
+"pret_vechi": 3599.99,
 "verificat": "2026-11-05"
 },
 {
@@ -3902,7 +3899,7 @@
 "id": "JE_lQoBzqylb",
 "brand": "LG",
 "url_magazin": "https://www.evomag.ro/tv-multimedia-televizoare/lg-televizor-led-lg-190-cm-75-75nu800b3la-ultra-hd-4k-smart-tv-wifi-ci-4314582.html",
-"pret_vechi": null,
+"pret_vechi": 3599.99,
 "verificat": "2026-11-05"
 },
 {
@@ -3915,18 +3912,6 @@
 "brand": "Samsung",
 "url_magazin": "https://www.evomag.ro/tv-multimedia-televizoare/samsung-televizor-qled-samsung-190-cm-75-qe75qef1auxxh-ultra-hd-4k-smart-tv-wifi-ci-4322525.html",
 "pret_vechi": null
-},
-{
-"titlu": "Televizor LED Samsung 190 cm (75inch) UE75U8072HUXXH, ultra HD 4K, Smart TV, WiFi, CI+",
-"pret": 3599.99,
-"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4313%2F4313218%2Ftelevizor-led-samsung-190-cm-6a96c26c4722f.JPG&type=auto&width=500&sign=M2sGClvM6LN2eUG0hLf1tW6OTRcXXbDKYj8STrU-NUM",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Ftv-multimedia-televizoare%2Fsamsung-televizor-led-samsung-190-cm-75-ue75u8072huxxh-ultra-hd-4k-smart-tv-wifi-ci-4313218.html",
-"magazin": "evomag.ro",
-"id": "khx6RmmGuCsI",
-"brand": "Samsung",
-"url_magazin": "https://www.evomag.ro/tv-multimedia-televizoare/samsung-televizor-led-samsung-190-cm-75-ue75u8072huxxh-ultra-hd-4k-smart-tv-wifi-ci-4313218.html",
-"pret_vechi": null,
-"verificat": "2026-11-05"
 },
 {
 "titlu": "Televizor Mini LED TCL 190 cm (75inch) 75C69KS, Ultra HD 4K, Smart TV, WiFi, CI+",
@@ -3949,8 +3934,19 @@
 "id": "_eBpwd1_dikN",
 "brand": "Samsung",
 "url_magazin": "https://www.evomag.ro/tv-multimedia-televizoare/samsung-televizor-miniled-samsung-190-cm-75-ue75m70hauxxh-ultra-hd-4k-smart-tv-wifi-ci-4306633.html",
-"pret_vechi": 4099.99,
+"pret_vechi": null,
 "verificat": "2026-11-05"
+},
+{
+"titlu": "Televizor QLED Kruger&Matz 190 cm (75inch) KM0275UHD-G2, Ultra HD 4K, Smart TV, Google TV, WiFi, CI+",
+"pret": 3854.99,
+"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4320%2F4320271%2Fgoogle-smart-tv-qled-75inch-19-6adaf2b7bb72b.JPG&type=auto&width=500&sign=-k5jbXnY-nb7lHgtyZP4NqbhN1QUx_uxfiTobPQO5Ig",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Ftv-multimedia-televizoare%2Fkruger-matz-televizor-qled-kruger-matz-190-cm-75-km0275uhd-g2-ultra-hd-4k-smart-tv-google-tv-wifi-ci-4320271.html",
+"magazin": "evomag.ro",
+"id": "W0x515sqLuBt",
+"brand": "Kruger&Matz",
+"url_magazin": "https://www.evomag.ro/tv-multimedia-televizoare/kruger-matz-televizor-qled-kruger-matz-190-cm-75-km0275uhd-g2-ultra-hd-4k-smart-tv-google-tv-wifi-ci-4320271.html",
+"pret_vechi": null
 },
 {
 "titlu": "Televizor Smart Hisense – 75E7S Pro, 75\", QLED, 4K, 144Hz AMD FreeSync Premium, Dolby Vision IQ, HDR 10+, VIDAA Smart OS",
@@ -4048,16 +4044,15 @@
 "verificat": "2026-11-04"
 },
 {
-"titlu": "Televizor smart Samsung - 75M80H, 75\", Mini LED, 4K, Motion Xcelerator 144Hz, NQ4 AI Gen2 Processor, Object Tracking Sou",
-"pret": 5039.99,
-"imagine": "https://www.ozone.ro/media/catalog/product/s/m/smart_televizor_samsung_75m80h_75_mini_led_4k_144hz_black_1784795859_0.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ozone.ro%2Fproduct%2Ftelevizor-smart-samsung-75m80h-75-mini-led-4k-144hz-black%2F",
+"titlu": "Televizor Smart TCL - 75Q6C, 75'', 4K, QD-Mini LED, AMD FreeSync Pro 144Hz, ONKYO 2.1 2x10W+SubWoof.1x20W, Google TV, ne",
+"pret": 4771.99,
+"imagine": "https://www.ozone.ro/media/catalog/product/s/m/smart_televizor_tcl_q6c_75_qd_mini_led_4k_144_hz_cheren_1784716784_0.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ozone.ro%2Fproduct%2Ftelevizor-smart-tcl-q6c-75-qd-mini-led-4k-144-hz-negru%2F",
 "magazin": "ozone.ro",
-"id": "6VJPIuVi-GKJ",
-"brand": "Samsung",
-"url_magazin": "https://www.ozone.ro/product/televizor-smart-samsung-75m80h-75-mini-led-4k-144hz-black/",
-"pret_vechi": null,
-"verificat": "2026-11-04"
+"id": "HW8dv3-VZx4-",
+"brand": "TCL",
+"url_magazin": "https://www.ozone.ro/product/televizor-smart-tcl-q6c-75-qd-mini-led-4k-144-hz-negru/",
+"pret_vechi": null
 },
 {
 "titlu": "Philips Televizor Philips 75HFL6214U-12, LED 4K Ultra HD, 75 inch, 189 cm, 3840x2160 pixeli, Android tv OS, clasa energe",
@@ -4097,7 +4092,7 @@
 "titlu": "Televizoare OLED",
 "nota": null,
 "in_text": "\\bOLED\\b",
-"actualizat": "2026-11-13",
+"actualizat": "2026-11-17",
 "feeduri": [
 {
 "id": 1539,
@@ -4126,7 +4121,7 @@
 "id": "2255892d5",
 "brand": "Metz",
 "url_magazin": "https://www.evomag.ro/tv-multimedia-televizoare/metz-televizor-oled-metz-139-cm-55-55moc9010-ultra-hd-4k-smart-tv-wifi-ci-4215349.html",
-"pret_vechi": null,
+"pret_vechi": 3199.99,
 "verificat": "2026-11-05"
 },
 {
@@ -4142,7 +4137,7 @@
 },
 {
 "titlu": "Televizor OLED Samsung 122 cm (48inch) QE48S85HAEXXH, Ultra HD 4K, Smart TV, WiFi, CI+",
-"pret": 4453.99,
+"pret": 4455.99,
 "imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4316%2F4316384%2Fsamsung-qe48s85haexxh-6aad0dacd1e52.JPG&type=auto&width=500&sign=BX8_xLvW8GSvm2RNt0JJEQqbHoUJsTFGCLIpPIiZbDM",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Ftv-multimedia-televizoare%2Fsamsung-televizor-oled-samsung-122-cm-48-qe48s85haexxh-ultra-hd-4k-smart-tv-wifi-ci-4316384.html",
 "magazin": "evomag.ro",
@@ -4150,6 +4145,17 @@
 "brand": "Samsung",
 "url_magazin": "https://www.evomag.ro/tv-multimedia-televizoare/samsung-televizor-oled-samsung-122-cm-48-qe48s85haexxh-ultra-hd-4k-smart-tv-wifi-ci-4316384.html",
 "pret_vechi": 4999.99
+},
+{
+"titlu": "Televizor Smart Philips – 55OLED761/12, 55” 4K, OLED, rată de reîmprospătare nativă de 120 Hz, procesor P5 AI Perfect Pi",
+"pret": 4717.99,
+"imagine": "https://www.ozone.ro/media/catalog/product/s/m/smart_televizor_philips_55oled761_12_55_4k_oled_ambilight_metalen_1794320960_0.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ozone.ro%2Fproduct%2Ftelevizor-smart-philips-55oled761-12-55-4k-oled-ambilight-negru%2F",
+"magazin": "ozone.ro",
+"id": "01X0uTDaQTjk",
+"brand": "Philips",
+"url_magazin": "https://www.ozone.ro/product/televizor-smart-philips-55oled761-12-55-4k-oled-ambilight-negru/",
+"pret_vechi": null
 },
 {
 "titlu": "Televizor smart LG - OLED42C61LA, 42'', 4K, OLED evo, Alpha 11 AI 4K Gen3, 120Hz (up to 165Hz VRR), negru",
@@ -4165,7 +4171,7 @@
 },
 {
 "titlu": "Samsung Televizor SAMSUNG OLED 42S90F, 105 cm, Smart, 4K Ultra HD, 100 Hz, Clasa G (Model 2025), Negru",
-"pret": 4917.99,
+"pret": 4911.99,
 "imagine": "https://www.dwyn.ro/images/products/img_202508191322/319489/full/samsung-televizor-samsung-oled-42s90f-105-cm-smart-4k-ultra-hd-100-hz-clasa-g-model-2025-824029.jpg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Ftelevizoare%2Fsamsung%2F319489-televizor-samsung-oled-42s90f-105-cm-smart-4k-ultra-hd-100-hz-clasa-g-model-2025-negru%2F",
 "magazin": "dwyn.ro",
@@ -4206,7 +4212,7 @@
 "id": "o6d3AN2rN5no",
 "brand": "LG",
 "url_magazin": "https://www.evomag.ro/tv-multimedia-televizoare/lg-televizor-oled-lg-106-cm-42-oled42c61la-ultra-hd-4k-smart-tv-wifi-ci-4316085.html",
-"pret_vechi": 5468.99,
+"pret_vechi": null,
 "verificat": "2026-11-05"
 },
 {
@@ -4218,19 +4224,8 @@
 "id": "Xd9HtjvEiDDb",
 "brand": "Samsung",
 "url_magazin": "https://www.evomag.ro/tv-multimedia-televizoare/samsung-televizor-oled-samsung-122-cm-48-qe48s90haexxh-ultra-hd-4k-smart-tv-wifi-4316391.html",
-"pret_vechi": 5641.99,
+"pret_vechi": null,
 "verificat": "2026-11-05"
-},
-{
-"titlu": "Televizor smart Philips - 55OLED761/12, 55'' 4K, OLED, Ambilight, negru",
-"pret": 5309.99,
-"imagine": "https://www.ozone.ro/media/catalog/product/s/m/smart_televizor_philips_55oled761_12_55_4k_oled_ambilight_metalen_1794320960_0.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ozone.ro%2Fproduct%2Ftelevizor-smart-philips-55oled761-12-55-4k-oled-ambilight-negru%2F",
-"magazin": "ozone.ro",
-"id": "01X0uTDaQTjk",
-"brand": "Philips",
-"url_magazin": "https://www.ozone.ro/product/televizor-smart-philips-55oled761-12-55-4k-oled-ambilight-negru/",
-"pret_vechi": null
 },
 {
 "titlu": "Sony Televizor Sony BRAVIA 6 OLED 55A65, Model 2026, 139 cm, Smart Google TV, 4K Ultra HD, 120Hz, Clasa F, Wi-Fi, Negru",
@@ -4256,8 +4251,19 @@
 "verificat": "2026-11-05"
 },
 {
+"titlu": "Televizor smart LG - OLED48G63LS, 48'', OLED evo, 4K, 165Hz, negru",
+"pret": 5569.99,
+"imagine": "https://www.ozone.ro/media/catalog/product/s/m/smart_televizor_lg_oled48g63ls_oled_evo_48_4k_165hz_cheren_1789566689_0.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ozone.ro%2Fproduct%2Ftelevizor-smart-lg-oled48g63ls-48-oled-evo-4k-165hz-negru%2F",
+"magazin": "ozone.ro",
+"id": "f9djCLhHKFHn",
+"brand": "LG",
+"url_magazin": "https://www.ozone.ro/product/televizor-smart-lg-oled48g63ls-48-oled-evo-4k-165hz-negru/",
+"pret_vechi": null
+},
+{
 "titlu": "LG Televizor LG OLED evo 42C51LA, 105 cm, Smart, 4K Ultra HD, 100 Hz, Clasa G (Model 2025)",
-"pret": 5765.99,
+"pret": 5746.99,
 "imagine": "https://www.dwyn.ro/images/products/img_202508191322/357722/full/lg-televizor-lg-oled-evo-42c51la-105-cm-smart-4k-ultra-hd-100-hz-clasa-g-model-2025-1000823.jpg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Ftelevizoare%2Flg%2F357722-televizor-lg-oled-evo-42c51la-105-cm-smart-4k-ultra-hd-100-hz-clasa-g-model-2025%2F",
 "magazin": "dwyn.ro",
@@ -4277,17 +4283,6 @@
 "url_magazin": "https://www.ozone.ro/product/televizor-smart-lg-oled55c61la-55-oled-evo-4k-120hz-negru/",
 "pret_vechi": 7959.99,
 "verificat": "2026-11-04"
-},
-{
-"titlu": "Samsung Televizor OLED Samsung 139 cm (55) 55S90F, Ultra HD 4K, Vision AI, Smart TV, WiFi, CI+",
-"pret": 5926.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202503142150/287375/full/samsung-televizor-oled-samsung-139-cm-55-qe55s90fa-ultra-hd-4k-vision-ai-smart-tv-wifi-ci-plus-696367.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Ftelevizoare%2Fsamsung%2F287375-televizor-oled-samsung-139-cm-55-55s90f-ultra-hd-4k-vision-ai-smart-tv-wifi-ci-plus%2F",
-"magazin": "dwyn.ro",
-"id": "YbCA1XHCtw8L",
-"brand": "Samsung",
-"url_magazin": "https://www.dwyn.ro/televizoare/samsung/287375-televizor-oled-samsung-139-cm-55-55s90f-ultra-hd-4k-vision-ai-smart-tv-wifi-ci-plus/",
-"pret_vechi": null
 },
 {
 "titlu": "Televizor OLED LG 106 cm (42inch) OLED42C68LA, Ultra HD 4K, Smart TV, WiFi, CI",
@@ -4337,6 +4332,17 @@
 "verificat": "2026-11-04"
 },
 {
+"titlu": "Horizon Televizor HORIZON 55HZ9930U/B, 139 cm, Smart, 4K Ultra HD, OLED, CLASA G, Negru",
+"pret": 6470.99,
+"imagine": "https://www.dwyn.ro/images/products/img_202106242018/169650/full/horizon-televizor-horizon-55hz9930u-b-139-cm-smart-4k-ultra-hd-oled-clasa-g-negru-288514.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Ftelevizoare%2Fhorizon%2F169650-televizor-horizon-55hz9930u-b-139-cm-smart-4k-ultra-hd-oled-clasa-g-negru%2F",
+"magazin": "dwyn.ro",
+"id": "4e30d7ba2",
+"brand": "Horizon",
+"url_magazin": "https://www.dwyn.ro/televizoare/horizon/169650-televizor-horizon-55hz9930u-b-139-cm-smart-4k-ultra-hd-oled-clasa-g-negru/",
+"pret_vechi": null
+},
+{
 "titlu": "Samsung Televizor SAMSUNG OLED 48S95H, 120 cm, Smart, 4K Ultra HD, 165 Hz, Clasa F (Model 2026)",
 "pret": 6541.99,
 "imagine": "https://www.dwyn.ro/images/products/img_202606122129/455281/full/samsung-televizor-samsung-oled-48s95h-120-cm-smart-4k-ultra-hd-165-hz-clasa-f-model-2026-1453294.jpg",
@@ -4349,25 +4355,14 @@
 "verificat": "2026-11-04"
 },
 {
-"titlu": "Televizor smart LG - OLED65C61LA, 65'', OLED evo, 4K, VRR 165Hz, (Native 120Hz), NVIDIA G-SYNC, Alpha 11 AI Processor, 4",
-"pret": 6899.99,
-"imagine": "https://www.ozone.ro/media/catalog/product/s/m/smart_televizor_lg_oled65c61la_65_oled_evo_4k_165hz_cheren_1789566258_0.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ozone.ro%2Fproduct%2Ftelevizor-smart-lg-oled65c61la-65-oled-evo-4k-165hz-negru%2F",
-"magazin": "ozone.ro",
-"id": "CrsJ2L_4uliA",
-"brand": "LG",
-"url_magazin": "https://www.ozone.ro/product/televizor-smart-lg-oled65c61la-65-oled-evo-4k-165hz-negru/",
-"pret_vechi": null
-},
-{
-"titlu": "Philips Televizor OLED Philips 139 cm 55 55OLED761/12, Ultra HD 4K, Smart TV, WiFi, CI+, Negru",
-"pret": 7002.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202606122129/438556/full/philips-televizor-oled-philips-139-cm-55-55oled761-12-ultra-hd-4k-smart-tv-wifi-ci-plus-negru-1422613.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Ftelevizoare%2Fphilips%2F438556-televizor-oled-philips-139-cm-55-55oled761-12-ultra-hd-4k-smart-tv-wifi-ci-plus-negru%2F",
+"titlu": "Philips Televizor Philips AMBILIGHT tv OLED 42OLED811, 106 cm, Smart TV, Ultra HD 4K, 144Hz, Clasa G (Model 2026), Argin",
+"pret": 6934.99,
+"imagine": "https://www.dwyn.ro/images/products/img_202606122129/482005/full/philips-televizor-philips-ambilight-tv-oled-42oled811-106-cm-smart-tv-ultra-hd-4k-144hz-clasa-g-model-2026-1520038.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Ftelevizoare%2Fphilips%2F482005-televizor-philips-ambilight-tv-oled-42oled811-106-cm-smart-tv-ultra-hd-4k-144hz-clasa-g-model-2026-argintiu%2F",
 "magazin": "dwyn.ro",
-"id": "_Nd1La3c67k0",
+"id": "TNpFMCCx-FPV",
 "brand": "Philips",
-"url_magazin": "https://www.dwyn.ro/televizoare/philips/438556-televizor-oled-philips-139-cm-55-55oled761-12-ultra-hd-4k-smart-tv-wifi-ci-plus-negru/",
+"url_magazin": "https://www.dwyn.ro/televizoare/philips/482005-televizor-philips-ambilight-tv-oled-42oled811-106-cm-smart-tv-ultra-hd-4k-144hz-clasa-g-model-2026-argintiu/",
 "pret_vechi": null
 },
 {
@@ -4396,7 +4391,7 @@
 "titlu": "Televizoare QLED",
 "nota": null,
 "in_text": "\\bQLED\\b",
-"actualizat": "2026-11-13",
+"actualizat": "2026-11-17",
 "feeduri": [
 {
 "id": 8969,
@@ -4497,6 +4492,17 @@
 "verificat": "2026-11-04"
 },
 {
+"titlu": "Televizor inteligent Philips - 32PQS6901/12, 32'', QLED, FHD, Titan OS, negru",
+"pret": 1194.99,
+"imagine": "https://www.ozone.ro/media/catalog/product/s/m/smart_televizor_philips_32pqs6901_12_32_qled_fhd_titan_os_cheren_1790750760_0.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ozone.ro%2Fproduct%2Ftelevizor-inteligent-philips-32pqs6901-12-32-qled-fhd-titan-os-negru%2F",
+"magazin": "ozone.ro",
+"id": "JO6SRfAYmTQd",
+"brand": "Philips",
+"url_magazin": "https://www.ozone.ro/product/televizor-inteligent-philips-32pqs6901-12-32-qled-fhd-titan-os-negru/",
+"pret_vechi": null
+},
+{
 "titlu": "Televizor smart Tesla - Q40E665GFS, 40\", 2K, QLED, FHD, 2x10W Dolby Audio, Google TV, gri",
 "pret": 1215.99,
 "imagine": "https://www.ozone.ro/media/catalog/product/s/m/smart_televizor_tesla_q40e665gfs_40_qled_fhd_google_tv_siv_1786978975_0.jpg",
@@ -4518,17 +4524,6 @@
 "url_magazin": "https://www.ozone.ro/product/televizor-smart-hisense-40a5s-40-qled-fhd-negru/",
 "pret_vechi": null,
 "verificat": "2026-11-04"
-},
-{
-"titlu": "Televizor QLED Coocaa 101 cm (40inch) 40CTQH38Z, Full HD, Smart TV, WiFi, CI",
-"pret": 1233.99,
-"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4317%2F4317451%2Foverlay_9d54cf0673a6f487a9bfd7137fcd5fcb.png&type=auto&width=500&sign=_r02bI2l7t6LA2UuLK3V60HGjkt0xq-_fCoCLy1Zhmk",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Ftv-multimedia-televizoare%2Fcoocaa-televizor-qled-coocaa-101-cm-40-40ctqh38z-full-hd-smart-tv-wifi-ci-4317451.html",
-"magazin": "evomag.ro",
-"id": "jkI-8Nuwu8dy",
-"brand": "Coocaa",
-"url_magazin": "https://www.evomag.ro/tv-multimedia-televizoare/coocaa-televizor-qled-coocaa-101-cm-40-40ctqh38z-full-hd-smart-tv-wifi-ci-4317451.html",
-"pret_vechi": null
 },
 {
 "titlu": "Televizor QLED Sharp 101 cm (40inch) 40HF3265E, Full HD, Smart TV, WiFi, CI+",
@@ -4590,14 +4585,25 @@
 "pret_vechi": null
 },
 {
-"titlu": "Televizor inteligent Philips - 32PQS6901/12, 32'', QLED, FHD, Titan OS, negru",
+"titlu": "Televizor Qled CHiQ 101 cm (40inch) L40QM10V, Full HD, Smart TV, WiFi, CI",
+"pret": 1308.99,
+"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4320%2F4320716%2Fl40qm10v-6ae04957e88fe.JPG&type=auto&width=500&sign=IJfU2i38yJkWiinB_teZGZ8frJ5Gj08J9EqXdd5-xFs",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Ftv-multimedia-televizoare%2Fchiq-televizor-qled-chiq-101-cm-40-l40qm10v-full-hd-smart-tv-wifi-ci-4320716.html",
+"magazin": "evomag.ro",
+"id": "4rsvjZ2pEs3R",
+"brand": "CHiQ",
+"url_magazin": "https://www.evomag.ro/tv-multimedia-televizoare/chiq-televizor-qled-chiq-101-cm-40-l40qm10v-full-hd-smart-tv-wifi-ci-4320716.html",
+"pret_vechi": null
+},
+{
+"titlu": "Televizor smart Hisense - 43E7S, 43\", 4K, QLED, Dolby Vision IQ, HDR10+, 2x10W Dolby Atmos, negru",
 "pret": 1321.99,
-"imagine": "https://www.ozone.ro/media/catalog/product/s/m/smart_televizor_philips_32pqs6901_12_32_qled_fhd_titan_os_cheren_1790750760_0.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ozone.ro%2Fproduct%2Ftelevizor-inteligent-philips-32pqs6901-12-32-qled-fhd-titan-os-negru%2F",
+"imagine": "https://www.ozone.ro/media/catalog/product/s/m/smart_televizor_hisense_43e7s_43_4k_qled_dolby_vision_iq_hdr10_2x10w_dolby_atmos_cheren_1791970618_6.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ozone.ro%2Fproduct%2Ftelevizor-smart-hisense-43e7s-43-qled-4k-negru%2F",
 "magazin": "ozone.ro",
-"id": "JO6SRfAYmTQd",
-"brand": "Philips",
-"url_magazin": "https://www.ozone.ro/product/televizor-inteligent-philips-32pqs6901-12-32-qled-fhd-titan-os-negru/",
+"id": "G_33B8VGVatV",
+"brand": "Hisense",
+"url_magazin": "https://www.ozone.ro/product/televizor-smart-hisense-43e7s-43-qled-4k-negru/",
 "pret_vechi": null
 },
 {
@@ -4621,18 +4627,6 @@
 "id": "7GTTorwBozLZ",
 "brand": "Sharp",
 "url_magazin": "https://www.dwyn.ro/televizoare/sharp/478408-televizor-sharp-qled-40hf3265e-101-cm-smart-google-tv-full-hd-clasa-e-negru/",
-"pret_vechi": null,
-"verificat": "2026-11-04"
-},
-{
-"titlu": "Televizor Smart METZ – 43MQF7500Z, 43\", QLED+, 4K, 120 Hz Turbo Mode, Dolby Vision și Dolby Atmos, S AI Engine, 2 x 10 W",
-"pret": 1374.99,
-"imagine": "https://www.ozone.ro/media/catalog/product/s/m/smart_televizor_metz_43mqf7500z_43_qled_4k_google_tv_cheren_1781862426_0.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ozone.ro%2Fproduct%2Ftelevizor-smart-metz-43mqf7500z-43-qled-4k-google-tv-negru%2F",
-"magazin": "ozone.ro",
-"id": "o5c0thRDgye3",
-"brand": "METZ",
-"url_magazin": "https://www.ozone.ro/product/televizor-smart-metz-43mqf7500z-43-qled-4k-google-tv-negru/",
 "pret_vechi": null,
 "verificat": "2026-11-04"
 },
@@ -4707,7 +4701,7 @@
 "titlu": "Televizoare sub 2.000 lei",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-13",
+"actualizat": "2026-11-17",
 "feeduri": [
 {
 "id": 8969,
@@ -4756,8 +4750,20 @@
 "verificat": "2026-11-04"
 },
 {
+"titlu": "Televizor smart TCL – 32S5L, 32\", 2K, QLED, FHD, Dolby Audio 2x8 W, Android TV, negru",
+"pret": 1056.99,
+"imagine": "https://www.ozone.ro/media/catalog/product/s/m/smart_televizor_tcl_32s5l_32_qled_fhd_cheren_1789480640_0.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ozone.ro%2Fproduct%2Ftelevizor-smart-tcl-32s5l-32-qled-fhd-negru%2F",
+"magazin": "ozone.ro",
+"id": "_vafxJUzdNEb",
+"brand": "TCL",
+"url_magazin": "https://www.ozone.ro/product/televizor-smart-tcl-32s5l-32-qled-fhd-negru/",
+"pret_vechi": null,
+"verificat": "2026-11-04"
+},
+{
 "titlu": "Televizor inteligent Philips - 32PQS6901/12, 32'', QLED, FHD, Titan OS, negru",
-"pret": 1321.99,
+"pret": 1194.99,
 "imagine": "https://www.ozone.ro/media/catalog/product/s/m/smart_televizor_philips_32pqs6901_12_32_qled_fhd_titan_os_cheren_1790750760_0.jpg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ozone.ro%2Fproduct%2Ftelevizor-inteligent-philips-32pqs6901-12-32-qled-fhd-titan-os-negru%2F",
 "magazin": "ozone.ro",
@@ -4765,6 +4771,18 @@
 "brand": "Philips",
 "url_magazin": "https://www.ozone.ro/product/televizor-inteligent-philips-32pqs6901-12-32-qled-fhd-titan-os-negru/",
 "pret_vechi": null
+},
+{
+"titlu": "Televizor smart TCL - 40S5L, 40\", 2K, QLED, FHD, Dolby Audio 2x10 W, Android TV, negru",
+"pret": 1268.99,
+"imagine": "https://www.ozone.ro/media/catalog/product/s/m/smart_televizor_tcl_40s5l_40_qled_fhd_android_tv_cheren_1789478599_0.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ozone.ro%2Fproduct%2Ftelevizor-smart-tcl-40s5l-40-qled-fhd-android-tv-negru%2F",
+"magazin": "ozone.ro",
+"id": "BV2fhMCnpSwN",
+"brand": "TCL",
+"url_magazin": "https://www.ozone.ro/product/televizor-smart-tcl-40s5l-40-qled-fhd-android-tv-negru/",
+"pret_vechi": null,
+"verificat": "2026-11-04"
 },
 {
 "titlu": "Televizor smart portabil METZ - 24MPE7300Z, 24'', LED, FHD, roz",
@@ -4776,18 +4794,6 @@
 "brand": "METZ",
 "url_magazin": "https://www.ozone.ro/product/televizor-smart-portabil-metz-24mpe7300z-24-led-fhd-roz/",
 "pret_vechi": null
-},
-{
-"titlu": "Televizor inteligent LG - 43LB65003LA, 43'', FHD, LED, negru",
-"pret": 1426.99,
-"imagine": "https://www.ozone.ro/media/catalog/product/s/m/smart_televizor_lg_43lb65003la_43_fhd_led_cheren_1790846193_0.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ozone.ro%2Fproduct%2Ftelevizor-inteligent-lg-43lb65003la-43-fhd-led-negru%2F",
-"magazin": "ozone.ro",
-"id": "7S0nTY_JH3Xa",
-"brand": "LG",
-"url_magazin": "https://www.ozone.ro/product/televizor-inteligent-lg-43lb65003la-43-fhd-led-negru/",
-"pret_vechi": null,
-"verificat": "2026-11-04"
 },
 {
 "titlu": "Televizor smart LG - 43NU850B3LA, 43\", 4K UHD, negru",
@@ -4802,18 +4808,6 @@
 "verificat": "2026-11-04"
 },
 {
-"titlu": "Televizor smart LG - 43NU85CB6LA, 43\", 4K Super Upscaling, UHD, NanoCell, Alpha7 AI Processor Gen9, 20W AI Sound Pro, we",
-"pret": 1533.99,
-"imagine": "https://www.ozone.ro/media/catalog/product/s/m/smart_televizor_lg_43nu85cb6la_43_4k_uhd_nanocell_cheren_1791893346_0.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ozone.ro%2Fproduct%2Ftelevizor-smart-lg-43nu85cb6la-43-4k-uhd-nanocell-negru%2F",
-"magazin": "ozone.ro",
-"id": "yMb247rR0Ko_",
-"brand": "LG",
-"url_magazin": "https://www.ozone.ro/product/televizor-smart-lg-43nu85cb6la-43-4k-uhd-nanocell-negru/",
-"pret_vechi": null,
-"verificat": "2026-11-04"
-},
-{
 "titlu": "Televizor Smart TCL 32V4C, 80 cm, HD, Clasa F",
 "pret": 1613.34,
 "imagine": "https://infinityro.vteximg.com.br/arquivos/ids/270494935/image-675782a5bf9045019370d0fb235f483a.jpg",
@@ -4822,19 +4816,7 @@
 "id": "U4Q060qMFzBs",
 "brand": "TCL",
 "url_magazin": "https://infinity.ro/televizor-smart-tcl-32v4c-80-cm-hd-clasa-f-9020734/p?utm_source=2performant",
-"pret_vechi": 2083.61,
-"verificat": "2026-11-04"
-},
-{
-"titlu": "Televizor QLED TCL 139 cm 55\" 55T69C, Ultra HD 4K, Smart TV, WiFi, CI+",
-"pret": 1962.49,
-"imagine": "https://infinityro.vteximg.com.br/arquivos/ids/269071875/image-b1635ff14ff34c8e9e6ded7e4c93e09a.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Finfinity.ro%2Ftelevizor-qled-tcl-139-cm-55-55t69c-ultra-hd-4k-smart-tv-wifi-ci-1707099%2Fp%3Futm_source%3D2performant",
-"magazin": "infinity.ro",
-"id": "ig1OU9B4MrD4",
-"brand": "TCL",
-"url_magazin": "https://infinity.ro/televizor-qled-tcl-139-cm-55-55t69c-ultra-hd-4k-smart-tv-wifi-ci-1707099/p?utm_source=2performant",
-"pret_vechi": 2519.39,
+"pret_vechi": 2084.88,
 "verificat": "2026-11-04"
 }
 ],
@@ -4850,7 +4832,7 @@
 "titlu": "Espressoare automate",
 "nota": null,
 "in_text": "\\bautomat\\w*\\b",
-"actualizat": "2026-11-13",
+"actualizat": "2026-11-17",
 "feeduri": [
 {
 "id": 9051,
@@ -4975,7 +4957,7 @@
 "id": "A113cdHgCp8a",
 "brand": "Philips",
 "url_magazin": "https://www.brico.ro/electrocasnice-332/espressor-automat-philips-ep1223-00-1200-tip-espressor-automat-purete-w-1500-calitate-superioara-pentru-baia-ta.html",
-"pret_vechi": 2719.0,
+"pret_vechi": 2711.0,
 "verificat": "2026-11-04"
 },
 {
@@ -5027,7 +5009,7 @@
 "titlu": "Espressoare cu capsule",
 "nota": null,
 "in_text": "\\bcapsule\\b",
-"actualizat": "2026-11-13",
+"actualizat": "2026-11-17",
 "feeduri": [
 {
 "id": 9053,
@@ -5120,18 +5102,6 @@
 "verificat": "2026-11-05"
 },
 {
-"titlu": "Espressor cu capsule Krups NESCAFE Dolce Gusto Piccolo XS KP1A35, 48 capsule incluse, 1600 W, 15 bar, Rezervor apa 0.8 L",
-"pret": 249.0,
-"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4315%2F4315597%2Fespressor-cu-capsule-krups-nes-6aa908fba1e8b.jpg&type=auto&width=500&sign=6BSAUrLyzw6dPjqnIpwoZLd-5uSXePwNhN3AELRf7fI",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Felectrocasnice-aparate-de-cafea-aparate-si-espressoare-de-cafea-automate-si-manuale%2Fkrups-espressor-cu-capsule-krups-nescafe-dolce-gusto-piccolo-xs-kp1a35-48-capsule-incluse-1600-w-15-bar-rezervor-apa-0.8-l-negru-4315597.html",
-"magazin": "evomag.ro",
-"id": "iVDGi3GTwG2Q",
-"brand": "Krups",
-"url_magazin": "https://www.evomag.ro/electrocasnice-aparate-de-cafea-aparate-si-espressoare-de-cafea-automate-si-manuale/krups-espressor-cu-capsule-krups-nescafe-dolce-gusto-piccolo-xs-kp1a35-48-capsule-incluse-1600-w-15-bar-rezervor-apa-0.8-l-negru-4315597.html",
-"pret_vechi": null,
-"verificat": "2026-11-04"
-},
-{
 "titlu": "Espressor cu capsule Krups NESCAFÉ Dolce Gusto Piccolo XS KP1A3AF0, 1600W, 15 bari, rezervor apa 0.8L, bauturi reci cald",
 "pret": 279.0,
 "imagine": "https://gomagcdn.ro/domains3/brico.ro/files/product/original/espressor-cu-capsule-krups-nescafe-dolce-gusto-piccolo-xs-kp1a3af0-1600w-15-bari-rezervor-apa-0-8l-bauturi-reci-calde-gri-456709.jpg",
@@ -5202,16 +5172,15 @@
 "verificat": "2026-11-05"
 },
 {
-"titlu": "Espressor cu capsule Krups NESCAFÉ Dolce Gusto Mini Me 2 KP1438F0, 1600 W, 15 bari presiune, rezervor apa 0.8 L, oprire",
-"pret": 324.45,
-"imagine": "https://gomagcdn.ro/domains3/brico.ro/files/product/original/espressor-cu-capsule-krups-nescafe-dolce-gusto-mini-me-2-kp1438f0-1600-w-15-bari-presiune-rezervor-apa-0-8-l-oprire-automata-negru-384259.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.brico.ro%2Felectrocasnice-332%2Fespressor-cu-capsule-krups-nescaf%C3%A9-dolce-gusto-mini-me-2-kp1438f0-1600-w-15-bari-presiune-rezervor-apa-0-8-l-oprire-automata-negru.html",
-"magazin": "brico.ro",
-"id": "aJVWuSawH3WE",
+"titlu": "Espressor cu capsule Krups NESCAFÉ® Dolce Gusto® Piccolo XS KP1A3B10, 1600 W, 15 bari, Functie eco, 0.8 L (Negru)",
+"pret": 309.99,
+"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4099%2F4099050%2Fespressor-cu-capsule-krups-nes-648849dd223d9.JPG&type=auto&width=500&sign=6DieH5Dg52IZM8WkrltqtRCxhWOdqHOPbU70rVYpv5A",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Felectrocasnice-aparate-de-cafea-aparate-si-espressoare-de-cafea-automate-si-manuale%2Fkrups-espressor-cu-capsule-krups-nescaf-dolce-gusto-piccolo-xs-kp1a3b10-1600-w-15-bari-functie-eco-0.8-l-negru-4099050.html",
+"magazin": "evomag.ro",
+"id": "7f889b04f",
 "brand": "Krups",
-"url_magazin": "https://www.brico.ro/electrocasnice-332/espressor-cu-capsule-krups-nescafé-dolce-gusto-mini-me-2-kp1438f0-1600-w-15-bari-presiune-rezervor-apa-0-8-l-oprire-automata-negru.html",
-"pret_vechi": null,
-"verificat": "2026-11-13"
+"url_magazin": "https://www.evomag.ro/electrocasnice-aparate-de-cafea-aparate-si-espressoare-de-cafea-automate-si-manuale/krups-espressor-cu-capsule-krups-nescaf-dolce-gusto-piccolo-xs-kp1a3b10-1600-w-15-bari-functie-eco-0.8-l-negru-4099050.html",
+"pret_vechi": null
 },
 {
 "titlu": "Espressor cu capsule Krups NESCAFÉ Dolce Gusto Mini Me 2 KP143GF0, 1600 W, 15 bari presiune, rezervor apa 0.8 L, oprire",
@@ -5226,6 +5195,18 @@
 "verificat": "2026-11-13"
 },
 {
+"titlu": "Espressor cu capsule Krups NESCAFÉ Dolce Gusto Mini Me 2 KP1438F0, 1600 W, 15 bari presiune, rezervor apa 0.8 L, oprire",
+"pret": 324.45,
+"imagine": "https://gomagcdn.ro/domains3/brico.ro/files/product/original/espressor-cu-capsule-krups-nescafe-dolce-gusto-mini-me-2-kp1438f0-1600-w-15-bari-presiune-rezervor-apa-0-8-l-oprire-automata-negru-384259.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.brico.ro%2Felectrocasnice-332%2Fespressor-cu-capsule-krups-nescaf%C3%A9-dolce-gusto-mini-me-2-kp1438f0-1600-w-15-bari-presiune-rezervor-apa-0-8-l-oprire-automata-negru.html",
+"magazin": "brico.ro",
+"id": "aJVWuSawH3WE",
+"brand": "Krups",
+"url_magazin": "https://www.brico.ro/electrocasnice-332/espressor-cu-capsule-krups-nescafé-dolce-gusto-mini-me-2-kp1438f0-1600-w-15-bari-presiune-rezervor-apa-0-8-l-oprire-automata-negru.html",
+"pret_vechi": null,
+"verificat": "2026-11-13"
+},
+{
 "titlu": "KRUPS Espressor cu capsule Krups NESCAFÉ® Dolce Gusto Piccolo XS KP1A3B31, 1600W, 15 bari, functie eco, capacitate rezer",
 "pret": 329.99,
 "imagine": "https://www.dwyn.ro/images/products/img_202503142150/287915/full/krups-espressor-cu-capsule-krups-nescaf-dolce-gusto-piccolo-xs-kp1a3b31-1600w-15-bari-functie-eco-capacitate-rezervor-0-8l-negru-gri-696959.jpg",
@@ -5235,18 +5216,6 @@
 "brand": "KRUPS",
 "url_magazin": "https://www.dwyn.ro/cafetiera-espressor/krups/287915-espressor-cu-capsule-krups-nescaf-dolce-gusto-piccolo-xs-kp1a3b31-1600w-15-bari-functie-eco-capacitate-rezervor-0-8l-negru-gri/",
 "pret_vechi": null
-},
-{
-"titlu": "Espressor cu capsule Nespresso Essenza Mini by Krups XN110110, 1310W, presiune 19 bari, rezervor 0.6 L, oprire automata,",
-"pret": 334.95,
-"imagine": "https://gomagcdn.ro/domains3/brico.ro/files/product/original/espressor-cu-capsule-nespresso-essenza-mini-by-krups-xn110110-1310w-presiune-19-bari-rezervor-0-6-l-oprire-automata-alb-982456.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.brico.ro%2Felectrocasnice-332%2Fespressor-cu-capsule-nespresso-essenza-mini-by-krups-xn110110-1310w-presiune-19-bari-rezervor-0-6-l-oprire-automata-alb.html",
-"magazin": "brico.ro",
-"id": "kTS-vynq1EU-",
-"brand": "Krups",
-"url_magazin": "https://www.brico.ro/electrocasnice-332/espressor-cu-capsule-nespresso-essenza-mini-by-krups-xn110110-1310w-presiune-19-bari-rezervor-0-6-l-oprire-automata-alb.html",
-"pret_vechi": 471.45,
-"verificat": "2026-11-13"
 },
 {
 "titlu": "KRUPS Espressor cu capsule KRUPS NESCAFÉ® Dolce Gusto® Piccolo XS KP1A3110, 15 bari presiune, 1600 W, capacitate rezervo",
@@ -5284,16 +5253,39 @@
 "verificat": "2026-11-04"
 },
 {
-"titlu": "Espressor cu capsule KRUPS NESCAFÉ Dolce Gusto Genio S KP243110, 1500W, 15 bari presiune, rezervor 0.8 L, functie XL, pe",
-"pret": 373.0,
-"imagine": "https://gomagcdn.ro/domains3/brico.ro/files/product/original/espressor-cu-capsule-krups-nescafe-dolce-gusto-genio-s-kp243110-1500w-15-bari-presiune-rezervor-0-8-l-functie-xl-peste-30-retete-bauturi-765401.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.brico.ro%2Felectrocasnice-332%2Fespressor-cu-capsule-krups-nescaf%C3%A9-dolce-gusto-genio-s-kp243110-1500w-15-bari-presiune-rezervor-0-8-l-functie-xl-peste-30-retete-bauturi.html",
+"titlu": "Espressor cu capsule Krups NESCAFÉ Dolce Gusto Genio S Plus KP340810, 1500W, 15 bari, functie Hot Cold, functie XL, reze",
+"pret": 345.45,
+"imagine": "https://gomagcdn.ro/domains3/brico.ro/files/product/original/espressor-cu-capsule-krups-nescafe-dolce-gusto-genio-s-plus-kp340810-1500w-15-bari-functie-hot-cold-functie-xl-rezervor-0-8l-temperatur-941853.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.brico.ro%2Felectrocasnice-332%2Fespressor-cu-capsule-krups-nescaf%C3%A9-dolce-gusto-genio-s-plus-kp340810-1500w-15-bari-functie-hot-cold-functie-xl-rezervor-0-8l-temperatur.html",
 "magazin": "brico.ro",
-"id": "2XgAwCZ1-DW5",
+"id": "s1b4BSp7bqM1",
 "brand": "Krups",
-"url_magazin": "https://www.brico.ro/electrocasnice-332/espressor-cu-capsule-krups-nescafé-dolce-gusto-genio-s-kp243110-1500w-15-bari-presiune-rezervor-0-8-l-functie-xl-peste-30-retete-bauturi.html",
-"pret_vechi": 391.65,
-"verificat": "2026-11-04"
+"url_magazin": "https://www.brico.ro/electrocasnice-332/espressor-cu-capsule-krups-nescafé-dolce-gusto-genio-s-plus-kp340810-1500w-15-bari-functie-hot-cold-functie-xl-rezervor-0-8l-temperatur.html",
+"pret_vechi": null,
+"verificat": "2026-11-17"
+},
+{
+"titlu": "Delonghi Espressor cu capsule De'Longhi EDG226.W Genio S Nescafé Dolce Gusto, 1600 W, 15 bar, Rezervor 0.8 l, Oprire aut",
+"pret": 361.99,
+"imagine": "https://www.dwyn.ro/images/products/img_202512311121/381368/full/delonghi-delonghi-dolce-gusto-genio-edg226-w-coffee-maker-fully-automatic-white-1142339.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fcafetiera-espressor%2Fdelonghi%2F381368-espressor-cu-capsule-de-longhi-edg226-w-genio-s-nescaf-dolce-gusto-1600-w-15-bar-rezervor-0-8-l-oprire-automata-alb%2F",
+"magazin": "dwyn.ro",
+"id": "DpCj__-XDF6L",
+"brand": "Delonghi",
+"url_magazin": "https://www.dwyn.ro/cafetiera-espressor/delonghi/381368-espressor-cu-capsule-de-longhi-edg226-w-genio-s-nescaf-dolce-gusto-1600-w-15-bar-rezervor-0-8-l-oprire-automata-alb/",
+"pret_vechi": null
+},
+{
+"titlu": "Espressor de cafea HAEGER SUPER ESPRESSO, Presiune 20 bar (pompa ULKA Italia), Cafea macinata si capsule, 1.6L, Extracti",
+"pret": 369.0,
+"imagine": "https://gomagcdn.ro/domains3/brico.ro/files/product/original/espressor-de-cafea-haeger-super-espresso-presiune-20-bar-pompa-ulka-cafea-macinata-si-capsule-1-6l-extractie-intensa-cu-aroma-bogata-incalzire-cesti-a-042449.png",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.brico.ro%2Felectrocasnice-332%2Fespressor-de-cafea-haeger-super-espresso-presiune-20-bar-pompa-ulka-rezervor-apa-1-6l-extractie-intensa-cu-aroma-bogata-suport-inox-pentru-incalzire-cesti.html",
+"magazin": "brico.ro",
+"id": "j7aO4OzpZCoA",
+"brand": "HAEGER",
+"url_magazin": "https://www.brico.ro/electrocasnice-332/espressor-de-cafea-haeger-super-espresso-presiune-20-bar-pompa-ulka-rezervor-apa-1-6l-extractie-intensa-cu-aroma-bogata-suport-inox-pentru-incalzire-cesti.html",
+"pret_vechi": 529.0,
+"verificat": "2026-11-17"
 },
 {
 "titlu": "Honor Espressor portabil Honor Choice 5504ADGS, 20 bar, Compatibil cu capsule espresso, Extractie rapida in 40 de secund",
@@ -5307,35 +5299,22 @@
 "pret_vechi": null
 },
 {
-"titlu": "Espressor cu capsule Krups NESCAFÉ Dolce Gusto Mini Me 2 KP143BF0, 1600 W, 15 bari presiune, rezervor apa 0.8 L, oprire",
-"pret": 389.0,
-"imagine": "https://gomagcdn.ro/domains3/brico.ro/files/product/original/espressor-cu-capsule-krups-nescafe-dolce-gusto-mini-me-2-kp143bf0-1600-w-15-bari-presiune-rezervor-apa-0-8-l-oprire-automata-gri-albastru-869886.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.brico.ro%2Felectrocasnice-332%2Fespressor-cu-capsule-krups-nescaf%C3%A9-dolce-gusto-mini-me-2-kp143bf0-1600-w-15-bari-presiune-rezervor-apa-0-8-l-oprire-automata-gri-albastru.html",
+"titlu": "Espressor cu capsule Krups NESCAFÉ Dolce Gusto Mini Me 2 KP1435F0, 1600 W, 15 bari presiune, rezervor apa 0.8 L, oprire",
+"pret": 382.2,
+"imagine": "https://gomagcdn.ro/domains3/brico.ro/files/product/original/espressor-cu-capsule-krups-nescafe-dolce-gusto-mini-me-2-kp1435f0-1600-w-15-bari-presiune-rezervor-apa-0-8-l-oprire-automata-rosu-840872.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.brico.ro%2Felectrocasnice-332%2Fespressor-cu-capsule-krups-nescaf%C3%A9-dolce-gusto-mini-me-2-kp1435f0-1600-w-15-bari-presiune-rezervor-apa-0-8-l-oprire-automata-rosu.html",
 "magazin": "brico.ro",
-"id": "kmx5jUQ4r0Un",
+"id": "PxBCYzETSgyD",
 "brand": "Krups",
-"url_magazin": "https://www.brico.ro/electrocasnice-332/espressor-cu-capsule-krups-nescafé-dolce-gusto-mini-me-2-kp143bf0-1600-w-15-bari-presiune-rezervor-apa-0-8-l-oprire-automata-gri-albastru.html",
-"pret_vechi": null,
-"verificat": "2026-11-04"
-},
-{
-"titlu": "Espressor KRUPS cu capsule NESCAFÉ® Dolce Gusto® Piccolo XS KP1A3110, 1600 W, functie Eco, alb & rosu",
-"pret": 389.34,
-"imagine": "https://infinityro.vteximg.com.br/arquivos/ids/276027604/Image-4.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Finfinity.ro%2Fespressor-krups-cu-capsule-nescafe-dolce-gusto-piccolo-xs-kp1a3110-1600-w-functie-eco-alb-rosu-9204418%2Fp%3Futm_source%3D2performant",
-"magazin": "infinity.ro",
-"id": "Udx5w69nr1X4",
-"brand": "Krups",
-"url_magazin": "https://infinity.ro/espressor-krups-cu-capsule-nescafe-dolce-gusto-piccolo-xs-kp1a3110-1600-w-functie-eco-alb-rosu-9204418/p?utm_source=2performant",
-"pret_vechi": null,
-"verificat": "2026-11-13"
+"url_magazin": "https://www.brico.ro/electrocasnice-332/espressor-cu-capsule-krups-nescafé-dolce-gusto-mini-me-2-kp1435f0-1600-w-15-bari-presiune-rezervor-apa-0-8-l-oprire-automata-rosu.html",
+"pret_vechi": 408.45,
+"verificat": "2026-11-17"
 }
 ],
 "magazine": [
 "brico.ro",
 "dwyn.ro",
-"evomag.ro",
-"infinity.ro"
+"evomag.ro"
 ]
 },
 {
@@ -5345,7 +5324,7 @@
 "titlu": "Laptopuri cu 16 GB RAM",
 "nota": null,
 "in_text": "\\b16 GB\\b",
-"actualizat": "2026-11-13",
+"actualizat": "2026-11-17",
 "feeduri": [
 {
 "id": 1539,
@@ -5357,18 +5336,6 @@
 }
 ],
 "produse": [
-{
-"titlu": "Laptop Acer - Aspire Go AG15-44P, 15.6\", FHD, Ryzen 3 5400U, 16GB/512GB",
-"pret": 2435.99,
-"imagine": "https://www.ozone.ro/media/catalog/product/l/a/laptop_acer_aspire_go_ag15_44p_15_6_fhd_ryzen_3_5400u_8gb_512gb_1790669771_0_1.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ozone.ro%2Fproduct%2Flaptop-acer-aspire-go-ag15-44p-15-6-fhd-ryzen-3-5400u-16gb-512gb%2F",
-"magazin": "ozone.ro",
-"id": "2CDJq7rQlvgM",
-"brand": "Acer",
-"url_magazin": "https://www.ozone.ro/product/laptop-acer-aspire-go-ag15-44p-15-6-fhd-ryzen-3-5400u-16gb-512gb/",
-"pret_vechi": null,
-"verificat": "2026-11-04"
-},
 {
 "titlu": "Laptop Lenovo - IdeaPad Slim 3, 15.3'', WUXGA, 16GB/512GB, Cosmic Blue",
 "pret": 3019.99,
@@ -5393,17 +5360,6 @@
 "verificat": "2026-11-04"
 },
 {
-"titlu": "Laptop Lenovo - V15 G5, 15.6\", FHD, Core 5 210H, 16GB/512GB",
-"pret": 4081.99,
-"imagine": "https://www.ozone.ro/media/catalog/product/l/a/laptop_lenovo_v15_g5_15_6_fhd_core_5_210h_16gb_512gb_1793261671_0.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ozone.ro%2Fproduct%2Flaptop-lenovo-v15-g5-15-6-fhd-core-5-210h-16gb-512gb%2F",
-"magazin": "ozone.ro",
-"id": "OPPwEqIcq-fT",
-"brand": "Lenovo",
-"url_magazin": "https://www.ozone.ro/product/laptop-lenovo-v15-g5-15-6-fhd-core-5-210h-16gb-512gb/",
-"pret_vechi": null
-},
-{
 "titlu": "Laptop de gaming ASUS - TUF F16 FX607VJR-TU307, 16\", WUXGA, Core 7, 144Hz, RTX 3050, 16GB/512GB",
 "pret": 4240.99,
 "imagine": "https://www.ozone.ro/media/catalog/product/g/e/geyming_laptop_asus_tuf_f16_fx607vjr_tu307_16_wuxga_core_7_144hz_rtx_3050_16gb_512gb_1794558807_9.jpg",
@@ -5414,6 +5370,17 @@
 "url_magazin": "https://www.ozone.ro/product/laptop-de-gaming-asus-tuf-f16-fx607vjr-tu307-16-wuxga-core-7-144hz-rtx-3050/",
 "pret_vechi": 4771.99,
 "verificat": "2026-11-04"
+},
+{
+"titlu": "Laptop Lenovo - V15 G5, 15.6\", FHD, Core 5 210H, 16GB/512GB",
+"pret": 4240.99,
+"imagine": "https://www.ozone.ro/media/catalog/product/l/a/laptop_lenovo_v15_g5_15_6_fhd_core_5_210h_16gb_512gb_1793261671_0.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ozone.ro%2Fproduct%2Flaptop-lenovo-v15-g5-15-6-fhd-core-5-210h-16gb-512gb%2F",
+"magazin": "ozone.ro",
+"id": "OPPwEqIcq-fT",
+"brand": "Lenovo",
+"url_magazin": "https://www.ozone.ro/product/laptop-lenovo-v15-g5-15-6-fhd-core-5-210h-16gb-512gb/",
+"pret_vechi": null
 },
 {
 "titlu": "Asus Laptop Asus X1504MA-BQ117, Intel Core 5 320, 15.6 inch FHD, 16GB RAM, 1TB SSD, Free DOS, Argintiu",
@@ -5487,17 +5454,6 @@
 "pret_vechi": null
 },
 {
-"titlu": "Asus Laptop Asus TUF Gaming F17 FX707VJB-HX082, Intel Core 5 210H, 17.3 inch FHD, 16GB RAM, 512GB SSD, nVidia RTX 3050 6",
-"pret": 5058.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202606122129/454219/full/asus-laptop-asus-tuf-gaming-f17-fx707vjb-hx082-intel-core-5-210h-17-3-inch-fhd-16gb-ram-512gb-ssd-nvidia-rtx-3050-6gb-free-dos-gri-1521076.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Flaptop-notebook%2Fasus%2F454219-laptop-asus-tuf-gaming-f17-fx707vjb-hx082-intel-core-5-210h-17-3-inch-fhd-16gb-ram-512gb-ssd-nvidia-rtx-3050-6gb-free-dos-gri%2F",
-"magazin": "dwyn.ro",
-"id": "_oM3RiPTTaX7",
-"brand": "Asus",
-"url_magazin": "https://www.dwyn.ro/laptop-notebook/asus/454219-laptop-asus-tuf-gaming-f17-fx707vjb-hx082-intel-core-5-210h-17-3-inch-fhd-16gb-ram-512gb-ssd-nvidia-rtx-3050-6gb-free-dos-gri/",
-"pret_vechi": null
-},
-{
 "titlu": "Lenovo Laptop 2 in 1 Lenovo IdeaPad 5 15AGP11, AMD Ryzen AI 5 430, 15.3 inch WUXGA Touch, 16GB RAM, 512GB SSD, Free DOS,",
 "pret": 5174.99,
 "imagine": "https://www.dwyn.ro/images/products/img_202606122129/454876/full/lenovo-laptop-2-in-1-lenovo-ideapad-5-15agp11-amd-ryzen-ai-5-430-15-3-inch-wuxga-16gb-ram-512gb-ssd-free-dos-gri-1518379.jpg",
@@ -5506,6 +5462,17 @@
 "id": "1-5vKUdEU9Gm",
 "brand": "Lenovo",
 "url_magazin": "https://www.dwyn.ro/laptop-notebook/lenovo/454876-laptop-2-in-1-lenovo-ideapad-5-15agp11-amd-ryzen-ai-5-430-15-3-inch-wuxga-touch-16gb-ram-512gb-ssd-free-dos-gri/",
+"pret_vechi": null
+},
+{
+"titlu": "Asus Laptop Asus TUF Gaming F17 FX707VJB-HX082, Intel Core 5 210H, 17.3 inch FHD, 16GB RAM, 512GB SSD, nVidia RTX 3050 6",
+"pret": 5215.99,
+"imagine": "https://www.dwyn.ro/images/products/img_202606122129/454219/full/asus-laptop-asus-tuf-gaming-f17-fx707vjb-hx082-intel-core-5-210h-17-3-inch-fhd-16gb-ram-512gb-ssd-nvidia-rtx-3050-6gb-free-dos-gri-1521076.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Flaptop-notebook%2Fasus%2F454219-laptop-asus-tuf-gaming-f17-fx707vjb-hx082-intel-core-5-210h-17-3-inch-fhd-16gb-ram-512gb-ssd-nvidia-rtx-3050-6gb-free-dos-gri%2F",
+"magazin": "dwyn.ro",
+"id": "_oM3RiPTTaX7",
+"brand": "Asus",
+"url_magazin": "https://www.dwyn.ro/laptop-notebook/asus/454219-laptop-asus-tuf-gaming-f17-fx707vjb-hx082-intel-core-5-210h-17-3-inch-fhd-16gb-ram-512gb-ssd-nvidia-rtx-3050-6gb-free-dos-gri/",
 "pret_vechi": null
 },
 {
@@ -5532,7 +5499,7 @@
 "titlu": "Laptopuri cu 32 GB RAM",
 "nota": null,
 "in_text": "\\b32 GB\\b",
-"actualizat": "2026-11-13",
+"actualizat": "2026-11-17",
 "feeduri": [
 {
 "id": 1539,
@@ -5603,6 +5570,17 @@
 "verificat": "2026-11-04"
 },
 {
+"titlu": "Laptop de gaming MSI - Cyborg 15 A13VEK, 15.6'', FHD, 144Hz, i7, RTX 4050, 32GB/512GB",
+"pret": 6049.99,
+"imagine": "https://www.ozone.ro/media/catalog/product/g/e/geyming_laptop_msi_cyborg_15_a13vek_15_6_fhd_144hz_i7_rtx_4050_1786964940_0_2.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ozone.ro%2Fproduct%2Flaptop-de-gaming-msi-cyborg-15-a13vek-15-6-fhd-144hz-i7-rtx-4050-32gb-512gb%2F",
+"magazin": "ozone.ro",
+"id": "OnCVhfLBFC9q",
+"brand": "MSI",
+"url_magazin": "https://www.ozone.ro/product/laptop-de-gaming-msi-cyborg-15-a13vek-15-6-fhd-144hz-i7-rtx-4050-32gb-512gb/",
+"pret_vechi": null
+},
+{
 "titlu": "Laptop Lenovo - IdeaPad Slim 5, 14\", WUXGA, Ryzen 7, 32GB/512GB, albastru",
 "pret": 6849.99,
 "imagine": "https://www.ozone.ro/media/catalog/product/l/a/laptop_lenovo_ideapad_slim_5_14_wuxga_ryzen_7_32gb_512gb_sin_1781761003_0.jpg",
@@ -5627,19 +5605,8 @@
 "verificat": "2026-11-04"
 },
 {
-"titlu": "Laptop de gaming ASUS - TUF Gaming A16 FA608UHI, 16'', WUXGA, 144Hz, Ryzen 7, RTX 5050, 32GB/512GB",
-"pret": 7429.99,
-"imagine": "https://www.ozone.ro/media/catalog/product/g/e/geyming_laptop_asus_tuf_gaming_a16_fa608uhi_16_wuxga_144hz_ryzen_7_rtx_5050_1792652903_0_2.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ozone.ro%2Fproduct%2Flaptop-de-gaming-asus-tuf-gaming-a16-fa608uhi-16-wuxga-144hz-ryzen-7-rtx-5050-32gb-512gb%2F",
-"magazin": "ozone.ro",
-"id": "zVxc2lTftH1p",
-"brand": "ASUS",
-"url_magazin": "https://www.ozone.ro/product/laptop-de-gaming-asus-tuf-gaming-a16-fa608uhi-16-wuxga-144hz-ryzen-7-rtx-5050-32gb-512gb/",
-"pret_vechi": null
-},
-{
 "titlu": "Dell Laptop Dell 16 DC16251, Intel Core 7 150U, 16 inch, RAM 32GB, SSD 1TB, Intel Graphics, Linux, Albastru",
-"pret": 8090.99,
+"pret": 8159.99,
 "imagine": "https://www.dwyn.ro/images/products/img_202508191322/348473/full/dell-laptop-dell-16-dc16251-intel-core-7-150u-16-inch-ram-32gb-ssd-1tb-intel-graphics-windows-11-pro-albastru-981293.png",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Flaptop-notebook%2Fdell%2F348473-laptop-dell-16-dc16251-intel-core-7-150u-16-inch-ram-32gb-ssd-1tb-intel-graphics-linux-albastru%2F",
 "magazin": "dwyn.ro",
@@ -5647,18 +5614,6 @@
 "brand": "Dell",
 "url_magazin": "https://www.dwyn.ro/laptop-notebook/dell/348473-laptop-dell-16-dc16251-intel-core-7-150u-16-inch-ram-32gb-ssd-1tb-intel-graphics-linux-albastru/",
 "pret_vechi": null
-},
-{
-"titlu": "Gigabyte Laptop gaming Gigabyte A16, AMD Ryzen 7 260, 16, 165Hz, 32GB RAM, 1TB, Windows 11 Home, RTX 5060, Negru",
-"pret": 10377.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202512311121/367424/full/gigabyte-gigabyte-a16-amd-ryzen-7-260-16-165hz-32gb-1tb-w11h-rtx-5060-1072688.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Flaptop-notebook%2Fgigabyte%2F367424-laptop-gaming-gigabyte-a16-amd-ryzen-7-260-16-165hz-32gb-ram-1tb-windows-11-home-rtx-5060-negru%2F",
-"magazin": "dwyn.ro",
-"id": "QPd_z7pVIfKh",
-"brand": "Gigabyte",
-"url_magazin": "https://www.dwyn.ro/laptop-notebook/gigabyte/367424-laptop-gaming-gigabyte-a16-amd-ryzen-7-260-16-165hz-32gb-ram-1tb-windows-11-home-rtx-5060-negru/",
-"pret_vechi": null,
-"verificat": "2026-11-04"
 },
 {
 "titlu": "HP Laptop HP EliteBook X G1i AI, Intel Core Ultra 7 258V, 14 inch, RAM 32 GB, SSD 1 TB, Intel Arc Graphics, Windows 11,",
@@ -5674,7 +5629,7 @@
 },
 {
 "titlu": "Dell Laptop Dell Pro 14 Plus PB14255, 14 inch, WUXGA, procesor AMD Ryzen AI 7 PRO 350 (16M Cache, pana la 5.0 GHz), 32GB",
-"pret": 10696.99,
+"pret": 10741.99,
 "imagine": "https://www.dwyn.ro/images/products/img_202606122129/426616/full/dell-laptop-dell-pro-14-plus-pb14255-14-inch-wuxga-procesor-amd-ryzen-ai-7-pro-350-16m-cache-pana-la-5-0-ghz-32gb-ram-1tb-ssd-amd-radeon-860m-graphics-windows-11-pro-argintiu-1393855.png",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Flaptop-notebook%2Fdell%2F426616-laptop-dell-pro-14-plus-pb14255-14-inch-wuxga-procesor-amd-ryzen-ai-7-pro-350-16m-cache-pana-la-5-0-ghz-32gb-ram-1tb-ssd-amd-radeon-860m-graphics-windows-11-pro-argintiu%2F",
 "magazin": "dwyn.ro",
@@ -5697,7 +5652,7 @@
 },
 {
 "titlu": "Dell Laptop Dell Pro 13 Plus PB13250, Intel Core Ultra 7 268V, 13.3 inch WUXGA, 32GB RAM, 512GB SSD, Windows 11 Pro, Arg",
-"pret": 11945.99,
+"pret": 11953.99,
 "imagine": "https://www.dwyn.ro/images/products/img_202508191322/309298/full/dell-laptop-dell-pro-13-plus-pb13250-intel-core-ultra-7-268v-13-3-inch-wuxga-32gb-ram-512gb-ssd-windows-11-pro-argintiu-834251.jpg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Flaptop-notebook%2Fdell%2F309298-laptop-dell-pro-13-plus-pb13250-intel-core-ultra-7-268v-13-3-inch-wuxga-32gb-ram-512gb-ssd-windows-11-pro-argintiu-int-keyboard%2F",
 "magazin": "dwyn.ro",
@@ -5708,7 +5663,7 @@
 },
 {
 "titlu": "Dell Laptop Dell Pro 14 Plus PB14250, 14 inch 1920 x 1200 Full HD+, Intel Core Ultra 7 268V, 32 GB RAM, 1 TB SSD, Intel",
-"pret": 12284.99,
+"pret": 12293.99,
 "imagine": "https://www.dwyn.ro/images/products/img_202508191322/342164/full/dell-laptop-dell-pro-14-plus-pb14250-14-inch-1920-x-1200-full-hd-plus-intel-core-ultra-7-268v-32-gb-ram-1-tb-ssd-intel-arc-graphics-windows-11-pro-927506.jpg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Flaptop-notebook%2Fdell%2F342164-laptop-dell-pro-14-plus-pb14250-14-inch-1920-x-1200-full-hd-plus-intel-core-ultra-7-268v-32-gb-ram-1-tb-ssd-intel-arc-graphics-windows-11-pro%2F",
 "magazin": "dwyn.ro",
@@ -5730,7 +5685,7 @@
 "titlu": "Laptopuri de gaming",
 "nota": null,
 "in_text": "\\bgaming\\b",
-"actualizat": "2026-11-13",
+"actualizat": "2026-11-17",
 "feeduri": [
 {
 "id": 5717,
@@ -5826,16 +5781,15 @@
 "verificat": "2026-11-04"
 },
 {
-"titlu": "Laptop gaming ASUS - TUF F16 FA607NUG-RL117, 16'', WUXGA, Ryzen 7, 144 Hz, RTX 4050, 32GB/512GB",
-"pret": 5839.99,
-"imagine": "https://www.ozone.ro/media/catalog/product/g/e/geyming_laptop_asus_tuf_f16_fa607nug_rl117_16_wuxga_ryzen_7_144_hz_rtx_4050_1780339827_0_2.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ozone.ro%2Fproduct%2Flaptop-gaming-asus-tuf-f16-fa607nug-rl117-16-wuxga-ryzen-7-144-hz-rtx-4050-32gb-512gb%2F",
+"titlu": "Laptop de gaming Acer - Nitro V 16 ANV16-42-R6RY, 16\", Ryzen 7, 180Hz, RTX 5050, 24GB/512GB",
+"pret": 6259.99,
+"imagine": "https://www.ozone.ro/media/catalog/product/g/e/geyming_laptop_acer_nitro_v_16_anv16_42_r6ry_16_ryzen_7_180hz_rtx_5050_1787234205_0_1.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ozone.ro%2Fproduct%2Flaptop-de-gaming-acer-nitro-v-16-anv16-42-r6ry-16-ryzen-7-180hz-rtx-5050-24gb-512gb%2F",
 "magazin": "ozone.ro",
-"id": "8KgEk-YLMhtj",
-"brand": "ASUS",
-"url_magazin": "https://www.ozone.ro/product/laptop-gaming-asus-tuf-f16-fa607nug-rl117-16-wuxga-ryzen-7-144-hz-rtx-4050-32gb-512gb/",
-"pret_vechi": null,
-"verificat": "2026-11-04"
+"id": "z64IbR3U2HUn",
+"brand": "Acer",
+"url_magazin": "https://www.ozone.ro/product/laptop-de-gaming-acer-nitro-v-16-anv16-42-r6ry-16-ryzen-7-180hz-rtx-5050-24gb-512gb/",
+"pret_vechi": null
 }
 ],
 "magazine": [
@@ -5849,7 +5803,7 @@
 "titlu": "Laptopuri cu Intel Core i7",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-13",
+"actualizat": "2026-11-17",
 "feeduri": [
 {
 "id": 1096,
@@ -5867,7 +5821,7 @@
 "produse": [
 {
 "titlu": "Laptop Dell Pro 15 Essential PV15250 (Procesor Intel® Core™ i7-1355U (12M Cache, up to 5.00 GHz) 15.6inch FHD, 16GB, 1TB",
-"pret": 4699.99,
+"pret": 4749.99,
 "imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4293%2F4293833%2Flaptop-dell-pro-15-essential-p-69170fb9bc25d.png&type=auto&width=500&sign=pMw_DcJqdTwmo9MEu7eVcmpxLt5s3SUPxf34g7171og",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Fportabile-laptopuri-notebook%2Fdell-laptop-dell-pro-15-essential-pv15250-procesor-intel-core-i7-1355u-12m-cache-up-to-5.00-ghz-15.6-fhd-16gb-1tb-ssd-intel-iris-xe-graphics-ubuntu-negru-4293833.html",
 "magazin": "evomag.ro",
@@ -5958,7 +5912,7 @@
 "titlu": "Laptopuri cu Intel Core i5",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-13",
+"actualizat": "2026-11-17",
 "feeduri": [
 {
 "id": 1096,
@@ -5994,17 +5948,6 @@
 "pret_vechi": null
 },
 {
-"titlu": "Laptop Lenovo V15 G5 IRL (Procesor Intel® Core™ i5-13420H (12M Cache, up to 4.60 GHz), 15.6inch FHD, 16GB DDR5, 512GB SS",
-"pret": 6499.99,
-"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4323%2F4323114%2Flaptop-v15-g5-irl-i5-13420h-15-6a85a52772694.jpg&type=auto&width=500&sign=GqEWH_fkHx_LbNgOgFiN_ZuTNjFugDtK2zuT6UKEVAU",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Fportabile-laptopuri-notebook%2Flenovo-laptop-lenovo-v15-g5-irl-procesor-intel-core-i5-13420h-12m-cache-up-to-4.60-ghz-15.6-fhd-16gb-ddr5-512gb-ssd-intel-uhd-graphics-windows-11-pro-negru-4323114.html",
-"magazin": "evomag.ro",
-"id": "cV7lidOrDVs0",
-"brand": "Lenovo",
-"url_magazin": "https://www.evomag.ro/portabile-laptopuri-notebook/lenovo-laptop-lenovo-v15-g5-irl-procesor-intel-core-i5-13420h-12m-cache-up-to-4.60-ghz-15.6-fhd-16gb-ddr5-512gb-ssd-intel-uhd-graphics-windows-11-pro-negru-4323114.html",
-"pret_vechi": null
-},
-{
 "titlu": "Laptop Dell Pro 15 Essential PV15250 (Procesor Intel® Core™ i5-1334U (12M Cache, up to 4.60 GHz) 15.6inch FHD, 16GB DDR5",
 "pret": 6499.99,
 "imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4322%2F4322214%2Flaptop-dell-pro-15-essential-p-69170fb9bc25d.png&type=auto&width=500&sign=sCFgJSKPbf44LTS0bCA3fn_-NysGHCUufOK_24UZqpE",
@@ -6015,6 +5958,17 @@
 "url_magazin": "https://www.evomag.ro/portabile-laptopuri-notebook/dell-laptop-dell-pro-15-essential-pv15250-procesor-intel-core-i5-1334u-12m-cache-up-to-4.60-ghz-15.6-fhd-16gb-ddr5-512gb-ssd-fgp-intel-iris-xe-graphics-windows-11-pro-negru-4322214.html",
 "pret_vechi": null,
 "verificat": "2026-11-05"
+},
+{
+"titlu": "Laptop Lenovo V15 G5 IRL (Procesor Intel® Core™ i5-13420H (12M Cache, up to 4.60 GHz), 15.6inch FHD, 16GB DDR5, 512GB SS",
+"pret": 6541.99,
+"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4323%2F4323114%2Flaptop-v15-g5-irl-i5-13420h-15-6a85a52772694.jpg&type=auto&width=500&sign=GqEWH_fkHx_LbNgOgFiN_ZuTNjFugDtK2zuT6UKEVAU",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Fportabile-laptopuri-notebook%2Flenovo-laptop-lenovo-v15-g5-irl-procesor-intel-core-i5-13420h-12m-cache-up-to-4.60-ghz-15.6-fhd-16gb-ddr5-512gb-ssd-intel-uhd-graphics-windows-11-pro-negru-4323114.html",
+"magazin": "evomag.ro",
+"id": "cV7lidOrDVs0",
+"brand": "Lenovo",
+"url_magazin": "https://www.evomag.ro/portabile-laptopuri-notebook/lenovo-laptop-lenovo-v15-g5-irl-procesor-intel-core-i5-13420h-12m-cache-up-to-4.60-ghz-15.6-fhd-16gb-ddr5-512gb-ssd-intel-uhd-graphics-windows-11-pro-negru-4323114.html",
+"pret_vechi": null
 },
 {
 "titlu": "Laptop Gaming ASUS TUF F16 FX610JH (Procesor Intel® Core™ i5-14450HX (20M Cache, up to 4.80 GHz), 16inch FHD+ 144Hz, 16G",
