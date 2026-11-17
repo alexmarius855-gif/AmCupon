@@ -276,6 +276,11 @@
 "google_ads": "no",
 "cashback": "yes"
 },
+"baterii-lux.ro": {
+"cupoane": "yes",
+"google_ads": "yes",
+"cashback": "yes"
+},
 "bazaiot.ro": {
 "cupoane": "no",
 "google_ads": "yes",
@@ -391,11 +396,6 @@
 "google_ads": "yes",
 "cashback": "maybe"
 },
-"buencia.com": {
-"cupoane": "yes",
-"google_ads": "yes",
-"cashback": "yes"
-},
 "cadoultrendy.ro": {
 "cupoane": "yes",
 "google_ads": "yes",
@@ -451,11 +451,6 @@
 "google_ads": "yes",
 "cashback": "yes"
 },
-"casanewconcept.ro": {
-"cupoane": "yes",
-"google_ads": "yes",
-"cashback": "yes"
-},
 "case-smart.ro": {
 "cupoane": "yes",
 "google_ads": "yes",
@@ -497,6 +492,11 @@
 "cashback": "yes"
 },
 "chocolatemakers.ro": {
+"cupoane": "yes",
+"google_ads": "yes",
+"cashback": "yes"
+},
+"citgrup.ro": {
 "cupoane": "yes",
 "google_ads": "yes",
 "cashback": "yes"
@@ -862,6 +862,11 @@
 "cashback": "yes"
 },
 "fermier.ro": {
+"cupoane": "yes",
+"google_ads": "yes",
+"cashback": "yes"
+},
+"feydom.ro": {
 "cupoane": "yes",
 "google_ads": "yes",
 "cashback": "yes"

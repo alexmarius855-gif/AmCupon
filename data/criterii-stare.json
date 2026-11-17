@@ -1076,7 +1076,7 @@
 "titlu": "Mașini de spălat slim",
 "nota": null,
 "in_text": "\\bslim\\b",
-"actualizat": "2026-11-13",
+"actualizat": "2026-11-17",
 "feeduri": [
 {
 "id": 1539,
@@ -1125,7 +1125,7 @@
 "id": "8UwVBE562wfh",
 "brand": "Heinner",
 "url_magazin": "https://www.evomag.ro/electrocasnice-electrocasnice-mari-masini-de-spalat-rufe-si-accesorii-masini-de-spalat-rufe/heinner-masina-de-spalat-rufe-slim-heinner-hwm-m6010smd-6-kg-1000-rpm-clasa-d-dislay-digital-blocare-acces-copii-alb-4131402.html",
-"pret_vechi": null,
+"pret_vechi": 1199.99,
 "verificat": "2026-11-04"
 },
 {
@@ -1249,7 +1249,7 @@
 "titlu": "Mașini de spălat sub 1.500 lei",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-13",
+"actualizat": "2026-11-17",
 "feeduri": [
 {
 "id": 1539,
@@ -1293,7 +1293,7 @@
 "titlu": "Mașini de spălat vase de 45 cm",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-13",
+"actualizat": "2026-11-17",
 "feeduri": [
 {
 "id": 1096,
@@ -1310,15 +1310,26 @@
 ],
 "produse": [
 {
+"titlu": "Masina de spalat vase independenta CANDY CDPH 2L1049S, 10 seturi, 5 programe, 45 cm, Clasa E (Argintiu)",
+"pret": 1123.99,
+"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4182%2F4182585%2Fcdph-2l1049s-66f11b5db1dcb.jpg&type=auto&width=500&sign=ZHeUt6gF48N7uXa75gaNjfmO_6m23d_zEAy-xvbhDHE",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Felectrocasnice-electrocasnice-mari-masini-de-spalat-vase%2Fcandy-masina-de-spalat-vase-independenta-candy-cdph-2l1049s-10-seturi-5-programe-45-cm-clasa-e-argintiu-4182585.html",
+"magazin": "evomag.ro",
+"id": "0b40b9da2",
+"brand": "Candy",
+"url_magazin": "https://www.evomag.ro/electrocasnice-electrocasnice-mari-masini-de-spalat-vase/candy-masina-de-spalat-vase-independenta-candy-cdph-2l1049s-10-seturi-5-programe-45-cm-clasa-e-argintiu-4182585.html",
+"pret_vechi": null
+},
+{
 "titlu": "Masina de spalat vase incorporabila Heinner HDW-BIM45510E++, Slim, 10 seturi, 5 programe, Clasa E, AquaStop, 45 cm",
-"pret": 1260.99,
+"pret": 1196.99,
 "imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4196%2F4196131%2Foverlay_961f3d0600906f6f9a3009e5fad3db12.png&type=auto&width=500&sign=aHkGzxH-9CaUP7dUX591c9-oIhtD1ieFlbPd_3cVI30",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Felectrocasnice-electrocasnice-mari-masini-de-spalat-vase%2Fheinner-masina-de-spalat-vase-incorporabila-heinner-hdw-bim45510e-slim-10-seturi-5-programe-clasa-e-aquastop-45-cm-4196131.html",
 "magazin": "evomag.ro",
 "id": "S5NYU166WG4p",
 "brand": "Heinner",
 "url_magazin": "https://www.evomag.ro/electrocasnice-electrocasnice-mari-masini-de-spalat-vase/heinner-masina-de-spalat-vase-incorporabila-heinner-hdw-bim45510e-slim-10-seturi-5-programe-clasa-e-aquastop-45-cm-4196131.html",
-"pret_vechi": null
+"pret_vechi": 1260.99
 },
 {
 "titlu": "Masina de spalat vase Samus SDW410.8, 10 seturi, Latime 45 cm, 8 Programe, Clasa energetica E, Afisaj electronic (Alb)",
@@ -1427,7 +1438,7 @@
 },
 {
 "titlu": "Gorenje Masina de spalat vase Gorenje GS520E15S, 9 seturi, 5 programe, Clasa E, 45 cm, Gri",
-"pret": 2596.99,
+"pret": 2601.99,
 "imagine": "https://www.dwyn.ro/images/products/img_202512311121/385058/full/gorenje-gorenje-gs520e15s-dishwasher-e-free-standing-width-45-cm-number-of-place-settings-9-grey-1179521.jpg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fmasina-de-spalat-vase%2Fgorenje%2F385058-masina-de-spalat-vase-gorenje-gs520e15s-9-seturi-5-programe-clasa-e-45-cm-gri%2F",
 "magazin": "dwyn.ro",
@@ -1449,7 +1460,7 @@
 "titlu": "Mașini de spălat vase de 60 cm",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-13",
+"actualizat": "2026-11-17",
 "feeduri": [
 {
 "id": 1096,
@@ -1525,6 +1536,28 @@
 "verificat": "2026-11-04"
 },
 {
+"titlu": "Masina de spalat vase incorporabila ELECTROLUX E52LE210S, AirDry, 14 seturi, 6 programe, 60 cm, Clasa E (Negru)",
+"pret": 2499.99,
+"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4311%2F4311578%2Fe52le210s-6a883d4760f5e.jpg&type=auto&width=500&sign=VYfAgXxxXEnxSuPXGvFCCDuIqjuyX1EB96DjQDhrgzg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Felectrocasnice-electrocasnice-mari-masini-de-spalat-vase%2Felectrolux-masina-de-spalat-vase-incorporabila-electrolux-e52le210s-airdry-14-seturi-6-programe-60-cm-clasa-e-negru-4311578.html",
+"magazin": "evomag.ro",
+"id": "8R9DP86ybfGS",
+"brand": "Electrolux",
+"url_magazin": "https://www.evomag.ro/electrocasnice-electrocasnice-mari-masini-de-spalat-vase/electrolux-masina-de-spalat-vase-incorporabila-electrolux-e52le210s-airdry-14-seturi-6-programe-60-cm-clasa-e-negru-4311578.html",
+"pret_vechi": null
+},
+{
+"titlu": "INDESIT Masina de spalat vase Indesit D2F HD624 AS, independenta, clasa E, latime 60 cm, 14 seturi, 9 programe, Argintiu",
+"pret": 2522.99,
+"imagine": "https://www.dwyn.ro/images/products/img_202512311121/385076/full/indesit-indesit-d2f-hd624-as-dishwasher-free-standing-e-width-60-cm-14-place-settings-silver-1179695.png",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fmasina-de-spalat-vase%2Findesit%2F385076-masina-de-spalat-vase-indesit-d2f-hd624-as-independenta-clasa-e-latime-60-cm-14-seturi-9-programe-argintiu%2F",
+"magazin": "dwyn.ro",
+"id": "1p1_HCa1qarw",
+"brand": "INDESIT",
+"url_magazin": "https://www.dwyn.ro/masina-de-spalat-vase/indesit/385076-masina-de-spalat-vase-indesit-d2f-hd624-as-independenta-clasa-e-latime-60-cm-14-seturi-9-programe-argintiu/",
+"pret_vechi": null
+},
+{
 "titlu": "BOSCH Masina de spalat vase independenta Bosch Serie 2 SMS2ITW66E, 12 seturi, 6 programe, 60 cm, Clasa D, Wi-Fi, Alb",
 "pret": 2529.99,
 "imagine": "https://www.dwyn.ro/images/products/img_202606122129/482803/full/bosch-ma-in-de-sp-lat-vase-independent-bosch-serie-2-sms2itw66e-60cm-2400w-clasa-d-alb-1522108.jpg",
@@ -1547,17 +1580,6 @@
 "url_magazin": "https://www.dwyn.ro/masina-de-spalat-vase/bosch/164838-masina-de-spalat-vase-bosch-sms25aw05e-12-seturi-5-programe-60-cm-clasa-e-alb/",
 "pret_vechi": null,
 "verificat": "2026-11-04"
-},
-{
-"titlu": "BOSCH Masina de spalat vase complet incorporabila Bosch Serie 2, SMV2HTX06E, 60cm, 13 seturi, 5 programe, Alb",
-"pret": 2529.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202508191322/341003/full/bosch-ma-in-de-sp-lat-vase-complet-ncorporabil-bosch-serie-2-smv2htx06e-60cm-alb-941474.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fmasina-de-spalat-vase%2Fbosch%2F341003-masina-de-spalat-vase-complet-incorporabila-bosch-serie-2-smv2htx06e-60cm-13-seturi-5-programe-alb%2F",
-"magazin": "dwyn.ro",
-"id": "myF6l9Emrtp9",
-"brand": "BOSCH",
-"url_magazin": "https://www.dwyn.ro/masina-de-spalat-vase/bosch/341003-masina-de-spalat-vase-complet-incorporabila-bosch-serie-2-smv2htx06e-60cm-13-seturi-5-programe-alb/",
-"pret_vechi": null
 }
 ],
 "magazine": [
@@ -1572,7 +1594,7 @@
 "titlu": "Mașini de spălat vase încorporabile",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-13",
+"actualizat": "2026-11-17",
 "feeduri": [
 {
 "id": 1096,
@@ -1589,6 +1611,17 @@
 ],
 "produse": [
 {
+"titlu": "Masina de spalat vase incorporabila Heinner HDW-BIM45510E++, Slim, 10 seturi, 5 programe, Clasa E, AquaStop, 45 cm",
+"pret": 1196.99,
+"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4196%2F4196131%2Foverlay_961f3d0600906f6f9a3009e5fad3db12.png&type=auto&width=500&sign=aHkGzxH-9CaUP7dUX591c9-oIhtD1ieFlbPd_3cVI30",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Felectrocasnice-electrocasnice-mari-masini-de-spalat-vase%2Fheinner-masina-de-spalat-vase-incorporabila-heinner-hdw-bim45510e-slim-10-seturi-5-programe-clasa-e-aquastop-45-cm-4196131.html",
+"magazin": "evomag.ro",
+"id": "S5NYU166WG4p",
+"brand": "Heinner",
+"url_magazin": "https://www.evomag.ro/electrocasnice-electrocasnice-mari-masini-de-spalat-vase/heinner-masina-de-spalat-vase-incorporabila-heinner-hdw-bim45510e-slim-10-seturi-5-programe-clasa-e-aquastop-45-cm-4196131.html",
+"pret_vechi": 1260.99
+},
+{
 "titlu": "Masina de spalat vase incorporabila Samus SBDW46.5, 9 Seturi, 5 Programe, Clasa E (Alb)",
 "pret": 1199.99,
 "imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4109%2F4109520%2Fsbdw465-64ca380ad496e.JPG&type=auto&width=500&sign=C_ebonrDYKLzlUNj2HQz_TtJNMNPixFYURE4GB8v8-k",
@@ -1601,26 +1634,15 @@
 "verificat": "2026-11-05"
 },
 {
-"titlu": "Masina de spalat vase incorporabila Heinner HDW-BIM45510E++, Slim, 10 seturi, 5 programe, Clasa E, AquaStop, 45 cm",
-"pret": 1260.99,
-"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4196%2F4196131%2Foverlay_961f3d0600906f6f9a3009e5fad3db12.png&type=auto&width=500&sign=aHkGzxH-9CaUP7dUX591c9-oIhtD1ieFlbPd_3cVI30",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Felectrocasnice-electrocasnice-mari-masini-de-spalat-vase%2Fheinner-masina-de-spalat-vase-incorporabila-heinner-hdw-bim45510e-slim-10-seturi-5-programe-clasa-e-aquastop-45-cm-4196131.html",
-"magazin": "evomag.ro",
-"id": "S5NYU166WG4p",
-"brand": "Heinner",
-"url_magazin": "https://www.evomag.ro/electrocasnice-electrocasnice-mari-masini-de-spalat-vase/heinner-masina-de-spalat-vase-incorporabila-heinner-hdw-bim45510e-slim-10-seturi-5-programe-clasa-e-aquastop-45-cm-4196131.html",
-"pret_vechi": null
-},
-{
 "titlu": "Masina de spalat vase incorporabila Heinner HDW-BIM60514E++, 14 seturi, Clasa E, 5 programe (Argintiu)",
-"pret": 1332.99,
+"pret": 1264.99,
 "imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4194%2F4194650%2Fmasina-sp-vase-heinner-hdw-bim-6761366d30edc.png&type=auto&width=500&sign=kK6RR7ZXrX2u0IXwnKaofppwD9HhigiWXU6j37i9Mrk",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Felectrocasnice-electrocasnice-mari-masini-de-spalat-vase%2Fheinner-masina-de-spalat-vase-incorporabila-heinner-hdw-bim60514e-14-seturi-clasa-e-5-programe-argintiu-4194650.html",
 "magazin": "evomag.ro",
 "id": "_lUTG0abg8fu",
 "brand": "Heinner",
 "url_magazin": "https://www.evomag.ro/electrocasnice-electrocasnice-mari-masini-de-spalat-vase/heinner-masina-de-spalat-vase-incorporabila-heinner-hdw-bim60514e-14-seturi-clasa-e-5-programe-argintiu-4194650.html",
-"pret_vechi": null
+"pret_vechi": 1332.99
 },
 {
 "titlu": "hansa Masina de spalat vase incorporabila Hansa ZIM435H, 9 seturi, 5 programe, Clasa E, HalfLoad, Pornire programabila,",
@@ -1670,6 +1692,17 @@
 "verificat": "2026-11-04"
 },
 {
+"titlu": "Masina de spalat vase incorporabila Bosch SMV2ITX09E, 13 seturi, 5 programe, ExtraDry, Functie silence, InfoLight, Tab-c",
+"pret": 2199.99,
+"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4316%2F4316394%2Fsmv2itx09e-6aad156314a97.jpg&type=auto&width=500&sign=kDF0SPBucy9CZ-GGIeGceZ3njZKAq6hq5SZEgCxRcMo",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Felectrocasnice-electrocasnice-mari-masini-de-spalat-vase%2Fbosch-masina-de-spalat-vase-incorporabila-bosch-smv2itx09e-13-seturi-5-programe-extradry-functie-silence-infolight-tab-count-home-connect-60-cm-clasa-e-negru-4316394.html",
+"magazin": "evomag.ro",
+"id": "Elx6aBGQf4uI",
+"brand": "BOSCH",
+"url_magazin": "https://www.evomag.ro/electrocasnice-electrocasnice-mari-masini-de-spalat-vase/bosch-masina-de-spalat-vase-incorporabila-bosch-smv2itx09e-13-seturi-5-programe-extradry-functie-silence-infolight-tab-count-home-connect-60-cm-clasa-e-negru-4316394.html",
+"pret_vechi": null
+},
+{
 "titlu": "INDESIT Masina de spalat vase incorporabila DSIO3T224CEID, 10 seturi, 9 programe, A++, 45cm, Alb",
 "pret": 2272.99,
 "imagine": "https://www.dwyn.ro/images/products/img_202606122129/438628/full/indesit-dishwasher-dsio3t224ceid-1430347.jpg",
@@ -1678,18 +1711,6 @@
 "id": "hpu5B8qY5tOA",
 "brand": "INDESIT",
 "url_magazin": "https://www.dwyn.ro/masina-de-spalat-vase/indesit/438628-masina-de-spalat-vase-incorporabila-dsio3t224ceid-10-seturi-9-programe-a-plus-plus-45cm-alb/",
-"pret_vechi": null,
-"verificat": "2026-11-04"
-},
-{
-"titlu": "Masina de spalat vase incorporabila Bosch SPV2IKX10E, 9 seturi, 5 programe, Clasa F, Home Connect, 45 cm",
-"pret": 2299.99,
-"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F3813%2F3813914%2Fmasina-de-spalat-vase-incorpor-607e716d76389.JPG&type=auto&width=500&sign=OADkQOVJ5JANEqoEnzgUOtZlDzqV4iAaCDTFSjzHMpo",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Felectrocasnice-electrocasnice-mari-masini-de-spalat-vase%2Fbosch-masina-de-spalat-vase-incorporabila-bosch-spv2ikx10e-9-seturi-5-programe-clasa-f-home-connect-45-cm-3813914.html",
-"magazin": "evomag.ro",
-"id": "gYx_-Ek-Ri0O",
-"brand": "BOSCH",
-"url_magazin": "https://www.evomag.ro/electrocasnice-electrocasnice-mari-masini-de-spalat-vase/bosch-masina-de-spalat-vase-incorporabila-bosch-spv2ikx10e-9-seturi-5-programe-clasa-f-home-connect-45-cm-3813914.html",
 "pret_vechi": null,
 "verificat": "2026-11-04"
 },
@@ -1740,16 +1761,15 @@
 "pret_vechi": null
 },
 {
-"titlu": "SIEMENS Masina de spalat vase incorporabila Siemens SN61HX01TE iQ100, 13 seturi, 6 programe spalare, 60 cm, Home Connect",
-"pret": 3486.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202606122129/438637/full/siemens-dishwasher-sn61hx01te-1414729.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fmasina-de-spalat-vase%2Fsiemens%2F438637-masina-de-spalat-vase-incorporabila-siemens-sn61hx01te-iq100-13-seturi-6-programe-spalare-60-cm-home-connect-negru%2F",
+"titlu": "BOSCH Masina de spalat vase complet incorporabila Bosch Serie 4, SMV4HCX07E, 60cm, 14 seturi, 6 programe, Alb",
+"pret": 3334.99,
+"imagine": "https://www.dwyn.ro/images/products/img_202508191322/340997/full/bosch-ma-in-de-sp-lat-vase-complet-ncorporabil-bosch-serie-4-smv4hcx07e-60cm-alb-941351.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fmasina-de-spalat-vase%2Fbosch%2F340997-masina-de-spalat-vase-complet-incorporabila-bosch-serie-4-smv4hcx07e-60cm-14-seturi-6-programe-alb%2F",
 "magazin": "dwyn.ro",
-"id": "0htOJAm39ZDX",
-"brand": "SIEMENS",
-"url_magazin": "https://www.dwyn.ro/masina-de-spalat-vase/siemens/438637-masina-de-spalat-vase-incorporabila-siemens-sn61hx01te-iq100-13-seturi-6-programe-spalare-60-cm-home-connect-negru/",
-"pret_vechi": null,
-"verificat": "2026-11-04"
+"id": "cS_HGSOVMMnN",
+"brand": "BOSCH",
+"url_magazin": "https://www.dwyn.ro/masina-de-spalat-vase/bosch/340997-masina-de-spalat-vase-complet-incorporabila-bosch-serie-4-smv4hcx07e-60cm-14-seturi-6-programe-alb/",
+"pret_vechi": null
 }
 ],
 "magazine": [
@@ -1764,7 +1784,7 @@
 "titlu": "Friteuze cu aer cald de 3-4 litri",
 "nota": "Pentru 1-2 persoane sunt de obicei suficienți 3-4 litri.",
 "in_text": "\\b3-4 litri\\b",
-"actualizat": "2026-11-13",
+"actualizat": "2026-11-17",
 "feeduri": [
 {
 "id": 1096,
@@ -1858,7 +1878,7 @@
 "titlu": "Friteuze cu aer cald de 5-6 litri",
 "nota": "Pentru 3-4 persoane, alege în jur de 4-6 litri.",
 "in_text": "\\b4-6 litri\\b",
-"actualizat": "2026-11-13",
+"actualizat": "2026-11-17",
 "feeduri": [
 {
 "id": 1096,
@@ -2000,7 +2020,7 @@
 "titlu": "Friteuze cu aer cald de 8 litri sau mai mari",
 "nota": "Pentru 5 persoane sau două feluri deodată, caută 8-10 litri, de obicei în două coșuri.",
 "in_text": "\\b8-10 litri\\b",
-"actualizat": "2026-11-13",
+"actualizat": "2026-11-17",
 "feeduri": [
 {
 "id": 1096,
@@ -2236,7 +2256,7 @@
 "titlu": "Friteuze cu două coșuri",
 "nota": "Cu două coșuri gătești două feluri la temperaturi diferite.",
 "in_text": "\\b(un coș sau două|două coșuri)\\b",
-"actualizat": "2026-11-13",
+"actualizat": "2026-11-17",
 "feeduri": [
 {
 "id": 1539,
@@ -2390,7 +2410,7 @@
 "titlu": "Friteuze cu aer cald sub 300 lei",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-13",
+"actualizat": "2026-11-17",
 "feeduri": [
 {
 "id": 1539,
@@ -2519,28 +2539,6 @@
 "verificat": "2026-11-04"
 },
 {
-"titlu": "Emerio Friteuza cu aer cald Smart Fryer Emerio, 1500 W, 5L, Negru",
-"pret": 249.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202512311121/414415/full/emerio-friteuza-cu-aer-cald-smart-fryer-1500-w-5l-negru-1317169.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Ffriteuze%2Femerio%2F414415-friteuza-cu-aer-cald-smart-fryer-emerio-1500-w-5l-negru%2F",
-"magazin": "dwyn.ro",
-"id": "YcwkuQf44r7p",
-"brand": "Emerio",
-"url_magazin": "https://www.dwyn.ro/friteuze/emerio/414415-friteuza-cu-aer-cald-smart-fryer-emerio-1500-w-5l-negru/",
-"pret_vechi": null
-},
-{
-"titlu": "CAMRY Friteuza cu Aer Cald Adler CR 6311b, Capacitate 5L, 9 Programe Presetate Timer, 1700W, Negru",
-"pret": 249.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202512311121/414424/full/camry-friteuza-air-fryer-oven-9-programs-5-liters-1317055.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Ffriteuze%2Fcamry%2F414424-friteuza-cu-aer-cald-adler-cr-6311b-capacitate-5l-9-programe-presetate-timer-1700w-negru%2F",
-"magazin": "dwyn.ro",
-"id": "1UEleYRUvYVm",
-"brand": "CAMRY",
-"url_magazin": "https://www.dwyn.ro/friteuze/camry/414424-friteuza-cu-aer-cald-adler-cr-6311b-capacitate-5l-9-programe-presetate-timer-1700w-negru/",
-"pret_vechi": null
-},
-{
 "titlu": "Friteuza cu aer cald Moulinex EZ245A20, capacitate 5 L, 1500 W, tehnologie de gatire fara ulei, circulatie rapida a aeru",
 "pret": 258.99,
 "imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4307%2F4307713%2F3045387292041-6a6897c3eb6c9.jpg&type=auto&width=500&sign=1WusX26ni0OiBCPBPpfWLLctiHcKcfnnNHEuasDVHo0",
@@ -2565,17 +2563,6 @@
 "verificat": "2026-11-04"
 },
 {
-"titlu": "ECG Friteuza cu aer cald ECG AF 3500, 3.5 L, 1500 W, control temperatura 80-200°C, Negru",
-"pret": 274.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202512311121/414412/full/ecg-friteuza-cu-aer-cald-af-3500-3-5-l-1500-w-control-temperatura-80-200-c-negru-1317127.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Ffriteuze%2Fecg%2F414412-friteuza-cu-aer-cald-ecg-af-3500-3-5-l-1500-w-control-temperatura-80-200-c-negru%2F",
-"magazin": "dwyn.ro",
-"id": "cZrXL9H0tH6M",
-"brand": "ECG",
-"url_magazin": "https://www.dwyn.ro/friteuze/ecg/414412-friteuza-cu-aer-cald-ecg-af-3500-3-5-l-1500-w-control-temperatura-80-200-c-negru/",
-"pret_vechi": null
-},
-{
 "titlu": "HEINNER FRITEUZA AER CALD HEINNER HAF-C7DH20BK",
 "pret": 289.99,
 "imagine": "https://www.dwyn.ro/images/products/img_202508191322/344315/full/heinner-friteuza-aer-cald-heinner-haf-c7dh20bk-921713.jpg",
@@ -2584,18 +2571,6 @@
 "id": "aqemQf2X67Bf",
 "brand": "HEINNER",
 "url_magazin": "https://www.dwyn.ro/friteuze/heinner/344315-friteuza-aer-cald-heinner-haf-c7dh20bk/",
-"pret_vechi": null,
-"verificat": "2026-11-04"
-},
-{
-"titlu": "ZELMER Friteuza cu aer cald Zelmer ZAF5501W, 1500 w, invelis antiaderent, 5 l, touch control, timer pana la 60 minute, o",
-"pret": 292.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202512311121/398866/full/zelmer-friteuza-cu-aer-cald-zelmer-zaf5501-1500-w-invelis-antiaderent-5-l-touch-control-timer-pana-la-60-minute-oprire-automata-8-programe-presetate-temperatura-pana-la-200-grade-alb-1227874.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Ffriteuze%2Fzelmer%2F398866-friteuza-cu-aer-cald-zelmer-zaf5501w-1500-w-invelis-antiaderent-5-l-touch-control-timer-pana-la-60-minute-oprire-automata-8-programe-presetate-temperatura-pana-la-200-grade-alb%2F",
-"magazin": "dwyn.ro",
-"id": "pnWQqOeWbfGt",
-"brand": "ZELMER",
-"url_magazin": "https://www.dwyn.ro/friteuze/zelmer/398866-friteuza-cu-aer-cald-zelmer-zaf5501w-1500-w-invelis-antiaderent-5-l-touch-control-timer-pana-la-60-minute-oprire-automata-8-programe-presetate-temperatura-pana-la-200-grade-alb/",
 "pret_vechi": null,
 "verificat": "2026-11-04"
 },
@@ -2625,7 +2600,7 @@
 "titlu": "Televizoare de 32 inch",
 "nota": null,
 "in_text": "\\b32\\s*(inch|\\\")",
-"actualizat": "2026-11-13",
+"actualizat": "2026-11-17",
 "feeduri": [
 {
 "id": 235,
@@ -2656,6 +2631,17 @@
 "url_magazin": "https://www.ozone.ro/product/televizor-metz-32mth2000z-32-dled-hd-ready-negru/",
 "pret_vechi": null,
 "verificat": "2026-11-04"
+},
+{
+"titlu": "Televizor LED Vortex 80 cm (32inch) V32H101, HD Ready, CI+",
+"pret": 610.99,
+"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4323%2F4323273%2F5943805111920-6afaef0a8f12d.JPG&type=auto&width=500&sign=iI90zC8i1l2Fu3aW5zWHBRgjWmok-gJ2SVh9H_5iJLs",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Ftv-multimedia-televizoare%2Fvortex-televizor-led-vortex-80-cm-32-v32h101-hd-ready-ci-4323273.html",
+"magazin": "evomag.ro",
+"id": "bp3MmgVkyGHX",
+"brand": "Vortex",
+"url_magazin": "https://www.evomag.ro/tv-multimedia-televizoare/vortex-televizor-led-vortex-80-cm-32-v32h101-hd-ready-ci-4323273.html",
+"pret_vechi": null
 },
 {
 "titlu": "Televizor smart Tesla – 32H665BHV, 32'', HD, D-LED, negru",
@@ -2726,8 +2712,19 @@
 "id": "NmqLaxY2mjml",
 "brand": "Metz",
 "url_magazin": "https://www.evomag.ro/tv-multimedia-televizoare/metz-televizor-qled-metz-80-cm-32-32mqh7030z-hd-ready-smart-tv-wifi-ci-4303170.html",
-"pret_vechi": null,
+"pret_vechi": 749.99,
 "verificat": "2026-11-04"
+},
+{
+"titlu": "Televizor smart Hisense – 32A4S, 32'', HD, DLED, HDR10, Slim design, Dolby Atmos 2x7W, negru",
+"pret": 737.69,
+"imagine": "https://www.ozone.ro/media/catalog/product/s/m/smart_televizor_hisense_32a4s_32_hd_dled_hdr10_slim_design_dolby_atmos_2x7w_cheren_1791973014_6.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ozone.ro%2Fproduct%2Ftelevizor-smart-hisense-32a4s-32-hd-dled-negru%2F",
+"magazin": "ozone.ro",
+"id": "nKP24HAPzykW",
+"brand": "Hisense",
+"url_magazin": "https://www.ozone.ro/product/televizor-smart-hisense-32a4s-32-hd-dled-negru/",
+"pret_vechi": null
 },
 {
 "titlu": "Televizor smart Xiaomi – A Pro 2026, 32'', QLED, HD Ready, 20W Xiaomi Sound, Dolby Audio, Google TV, Dark Gray, negru",
@@ -2740,18 +2737,6 @@
 "url_magazin": "https://www.ozone.ro/product/televizor-smart-xiaomi-a-pro-2026-32-qled-hd-ready-20w-xiaomi-sound-dolby-audio-google-tv-dark-gray-negru/",
 "pret_vechi": null,
 "verificat": "2026-11-04"
-},
-{
-"titlu": "Televizor QLED TCL 80 cm (32inch) 32S5L, Full HD, Smart TV, WiFi, Clasa F (Model 2026)",
-"pret": 799.99,
-"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4305%2F4305574%2F6a5624d06bd9c.jpg&type=auto&width=500&sign=SLt0DJknQQdF35dZAGIon_l5WvbFg8YqFHjV37ddfI4",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Ftv-multimedia-televizoare%2Ftcl-televizor-qled-tcl-80-cm-32-32s5l-full-hd-smart-tv-wifi-clasa-f-model-2026-4305574.html",
-"magazin": "evomag.ro",
-"id": "inNx_UTzbd9Z",
-"brand": "TCL",
-"url_magazin": "https://www.evomag.ro/tv-multimedia-televizoare/tcl-televizor-qled-tcl-80-cm-32-32s5l-full-hd-smart-tv-wifi-clasa-f-model-2026-4305574.html",
-"pret_vechi": null,
-"verificat": "2026-11-05"
 },
 {
 "titlu": "Televizor QLED TCL 80 cm (32inch) 32V4C, HD Ready, Smart TV, WiFi, CI+",
@@ -2776,7 +2761,7 @@
 "pret_vechi": null
 },
 {
-"titlu": "Televizor smart TCL - 32S4K, 32'', QLED, HD Ready, HDR10, Dolby 2x8W, negru",
+"titlu": "Televizor Smart TCL – 32S4K, 32”, QLED, rezoluție HD Ready, HDR10, Dolby Audio, sistem audio 2 × 8 W, Google TV, culoare",
 "pret": 822.59,
 "imagine": "https://www.ozone.ro/media/catalog/product/s/m/smart_televizor_tcl_32s4k_32_qled_hd_ready_hdr10_dolby_2x8w_cheren_1773910998_0.jpg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ozone.ro%2Fproduct%2Ftelevizor-smart-tcl-32s4k-32-qled-hdr-negru%2F",
@@ -2812,6 +2797,18 @@
 "verificat": "2026-11-04"
 },
 {
+"titlu": "Televizor smart LG - 32LB651C6LA, 32\", LED, HD, 10 W, AI Sound Pro, webOS 26, negru",
+"pret": 896.89,
+"imagine": "https://www.ozone.ro/media/catalog/product/s/m/smart_televizor_lg_32lb651c6la_32_led_hd_cheren_1791893756_0.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ozone.ro%2Fproduct%2Ftelevizor-smart-lg-32lb651c6la-32-led-hd-negru%2F",
+"magazin": "ozone.ro",
+"id": "ZOh6VHaMdQPr",
+"brand": "LG",
+"url_magazin": "https://www.ozone.ro/product/televizor-smart-lg-32lb651c6la-32-led-hd-negru/",
+"pret_vechi": null,
+"verificat": "2026-11-04"
+},
+{
 "titlu": "Televizor smart Metz – 32MQH7000Z, 32\", QLED+, HD, Google TV, negru",
 "pret": 896.89,
 "imagine": "https://www.ozone.ro/media/catalog/product/s/m/smart_televizor_metz_32mqh7000z_32_qled_hd_google_tv_cheren_1787810956_0.jpg",
@@ -2822,28 +2819,6 @@
 "url_magazin": "https://www.ozone.ro/product/televizor-smart-metz-32mqh7000z-32-qled-hd-google-tv-negru/",
 "pret_vechi": null,
 "verificat": "2026-11-04"
-},
-{
-"titlu": "Televizor smart Philips – 32PFS6050/12, 32\", FHD, DLED, negru",
-"pret": 896.89,
-"imagine": "https://www.ozone.ro/media/catalog/product/s/m/smart_televizor_philips_32pfs6050_12_32_fhd_dled_cheren_1787752574_0.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ozone.ro%2Fproduct%2Ftelevizor-smart-philips-32pfs6050-12-32-fhd-dled-negru%2F",
-"magazin": "ozone.ro",
-"id": "EGMAK4ffKxat",
-"brand": "Philips",
-"url_magazin": "https://www.ozone.ro/product/televizor-smart-philips-32pfs6050-12-32-fhd-dled-negru/",
-"pret_vechi": null
-},
-{
-"titlu": "Televizor smart Hisense – 32A4S, 32'', HD, DLED, HDR10, Slim design, Dolby Atmos 2x7W, negru",
-"pret": 896.89,
-"imagine": "https://www.ozone.ro/media/catalog/product/s/m/smart_televizor_hisense_32a4s_32_hd_dled_hdr10_slim_design_dolby_atmos_2x7w_cheren_1791973014_6.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ozone.ro%2Fproduct%2Ftelevizor-smart-hisense-32a4s-32-hd-dled-negru%2F",
-"magazin": "ozone.ro",
-"id": "nKP24HAPzykW",
-"brand": "Hisense",
-"url_magazin": "https://www.ozone.ro/product/televizor-smart-hisense-32a4s-32-hd-dled-negru/",
-"pret_vechi": null
 }
 ],
 "magazine": [
@@ -2859,7 +2834,7 @@
 "titlu": "Televizoare de 43 inch",
 "nota": null,
 "in_text": "\\b43\\s*(inch|\\\")",
-"actualizat": "2026-11-13",
+"actualizat": "2026-11-17",
 "feeduri": [
 {
 "id": 235,
@@ -2900,7 +2875,7 @@
 "id": "CrFZgF0nFs3T",
 "brand": "TCL",
 "url_magazin": "https://www.evomag.ro/tv-multimedia-televizoare/tcl-televizor-qled-tcl-109-cm-43-43s5l-full-hd-smart-tv-wifi-clasa-f-model-2026-4305575.html",
-"pret_vechi": null,
+"pret_vechi": 1499.99,
 "verificat": "2026-11-04"
 },
 {
@@ -2948,7 +2923,7 @@
 "id": "Wq7OoKSXXvAU",
 "brand": "LG",
 "url_magazin": "https://www.evomag.ro/tv-multimedia-televizoare/lg-televizor-led-lg-109-cm-43-43nu85cb6la-ultra-hd-4k-smart-tv-wifi-ci-4318415.html",
-"pret_vechi": null,
+"pret_vechi": 1499.99,
 "verificat": "2026-11-05"
 },
 {
@@ -2960,7 +2935,7 @@
 "id": "jQ-0qQgh3cCd",
 "brand": "LG",
 "url_magazin": "https://www.evomag.ro/tv-multimedia-televizoare/lg-televizor-led-lg-109-cm-43-43nu850b3la-ultra-hd-4k-smart-tv-wifi-ci-4318748.html",
-"pret_vechi": null,
+"pret_vechi": 1299.99,
 "verificat": "2026-11-05"
 },
 {
@@ -2974,6 +2949,17 @@
 "url_magazin": "https://www.evomag.ro/tv-multimedia-televizoare/tcl-televizor-qled-tcl-109-cm-43-43p71k-ultra-hd-4k-smart-tv-wifi-ci-4299994.html",
 "pret_vechi": null,
 "verificat": "2026-11-05"
+},
+{
+"titlu": "Televizor LED Sharp 109 cm (43inch) 43HE2445E, Full HD, Smart TV, WiFi, CI+",
+"pret": 1299.99,
+"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4292%2F4292277%2Ftelewizor-led-43-cale-43he2445-69e07fa245b85.JPG&type=auto&width=500&sign=ILptLwUIcSUNh289VhL6M9U_zpoEINaXU7yMcFfwDPs",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Ftv-multimedia-televizoare%2Fsharp-televizor-led-sharp-109-cm-43-43he2445e-full-hd-smart-tv-wifi-ci-4292277.html",
+"magazin": "evomag.ro",
+"id": "LUcKfdgZig7u",
+"brand": "Sharp",
+"url_magazin": "https://www.evomag.ro/tv-multimedia-televizoare/sharp-televizor-led-sharp-109-cm-43-43he2445e-full-hd-smart-tv-wifi-ci-4292277.html",
+"pret_vechi": 1485.99
 },
 {
 "titlu": "Televizor smart Sharp - Aquos 43HL4265E, 43'', 4K Ultra HD, Dolby Vision-Atmos 2x10W, Google TV, negru",
@@ -2997,29 +2983,6 @@
 "brand": "Samsung",
 "url_magazin": "https://www.evomag.ro/tv-multimedia-televizoare/samsung-televizor-miniled-samsung-109-cm-43-ue43m1ehauxxh-ultra-hd-4k-smart-tv-wifi-ci-4322524.html",
 "pret_vechi": null
-},
-{
-"titlu": "Televizor MiniLED Samsung 109 cm (43inch) UE43M72HAUXXH, Ultra HD 4K, Smart TV, WiFi, CI+",
-"pret": 1399.99,
-"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4314%2F4314459%2Fsamsung-ue43m72hauxxh-6a9fd8959fc24.JPG&type=auto&width=500&sign=IFSWlAmf7UUxAVExg7YXRgX-yeEkirbZfat05E5L8dc",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Ftv-multimedia-televizoare%2Fsamsung-televizor-miniled-samsung-109-cm-43-ue43m72hauxxh-ultra-hd-4k-smart-tv-wifi-ci-4314459.html",
-"magazin": "evomag.ro",
-"id": "V-guS0gf30Yo",
-"brand": "Samsung",
-"url_magazin": "https://www.evomag.ro/tv-multimedia-televizoare/samsung-televizor-miniled-samsung-109-cm-43-ue43m72hauxxh-ultra-hd-4k-smart-tv-wifi-ci-4314459.html",
-"pret_vechi": 2285.99
-},
-{
-"titlu": "Televizor inteligent LG - 43LB65003LA, 43'', FHD, LED, negru",
-"pret": 1426.99,
-"imagine": "https://www.ozone.ro/media/catalog/product/s/m/smart_televizor_lg_43lb65003la_43_fhd_led_cheren_1790846193_0.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ozone.ro%2Fproduct%2Ftelevizor-inteligent-lg-43lb65003la-43-fhd-led-negru%2F",
-"magazin": "ozone.ro",
-"id": "7S0nTY_JH3Xa",
-"brand": "LG",
-"url_magazin": "https://www.ozone.ro/product/televizor-inteligent-lg-43lb65003la-43-fhd-led-negru/",
-"pret_vechi": null,
-"verificat": "2026-11-04"
 },
 {
 "titlu": "Televizor smart LG - 43NU850B3LA, 43\", 4K UHD, negru",
@@ -3077,7 +3040,7 @@
 "id": "Ne6NvkV33arj",
 "brand": "Philips",
 "url_magazin": "https://www.ozone.ro/product/televizor-smart-philips-43pus8001-12-43-4k-led-ambilight-negru/",
-"pret_vechi": null,
+"pret_vechi": 1958.99,
 "verificat": "2026-11-04"
 },
 {
@@ -3115,6 +3078,17 @@
 "url_magazin": "https://www.ozone.ro/product/televizor-smart-lg-43qned81b3c-43-qned-miniled-4k-negru/",
 "pret_vechi": 2648.99,
 "verificat": "2026-11-04"
+},
+{
+"titlu": "Televizor smart TCL - 43P7L, 43'', 4K Ultra HD, Premium QLED, ONKYO 2.0 Hi-Fi System, Google TV, negru",
+"pret": 2117.99,
+"imagine": "https://www.ozone.ro/media/catalog/product/s/m/smart_televizor_tcl_p7l_43p7l_43_qled_4k_cheren_1780296724_0.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ozone.ro%2Fproduct%2Fsmart-televizor-tcl-p7l-43p7l-43-qled-4k-negru%2F",
+"magazin": "ozone.ro",
+"id": "6YtHEfUft5lb",
+"brand": "TCL",
+"url_magazin": "https://www.ozone.ro/product/smart-televizor-tcl-p7l-43p7l-43-qled-4k-negru/",
+"pret_vechi": null
 }
 ],
 "magazine": [
@@ -6887,6 +6861,23 @@
 "magazine": [
 "dwyn.ro"
 ]
+},
+{
+"slug": "telefon-sub-1000-lei",
+"tema": "telefoane",
+"tema_nume": "Telefoane",
+"titlu": "Telefoane sub 1.000 lei",
+"nota": null,
+"in_text": null,
+"actualizat": "2026-11-17",
+"feeduri": [
+{
+"id": 8637,
+"magazin": "ceasuri-shop.ro"
+}
+],
+"produse": [],
+"magazine": []
 },
 {
 "slug": "monitor-24-inch",

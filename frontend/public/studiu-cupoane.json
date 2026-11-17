@@ -1,36 +1,45 @@
 {
   "generat": "2026-11-17",
-  "total_magazine": 417,
-  "cu_promotie": 68,
+  "total_magazine": 419,
+  "cu_promotie": 71,
   "cu_cod_real": 17,
-  "doar_oferta": 51,
-  "procent_cu_promotie": 16.3,
+  "doar_oferta": 54,
+  "procent_cu_promotie": 16.9,
   "procent_cu_cod": 4.1,
-  "reducere_mediana_generala": 35.0,
-  "magazine_cu_procent_declarat": 44,
+  "reducere_mediana_generala": 40,
+  "magazine_cu_procent_declarat": 47,
   "categorii": [
+    {
+      "slug": "carti-educatie",
+      "nume": "Cărți & educație",
+      "magazine": 22,
+      "cu_promotie": 6,
+      "reducere_mediana": 83,
+      "reducere_max": 90,
+      "esantion": 5
+    },
+    {
+      "slug": "beauty",
+      "nume": "Beauty & îngrijire",
+      "magazine": 49,
+      "cu_promotie": 8,
+      "reducere_mediana": 57.5,
+      "reducere_max": 80,
+      "esantion": 8
+    },
     {
       "slug": "electronice",
       "nume": "Electronice & IT",
-      "magazine": 29,
+      "magazine": 30,
       "cu_promotie": 6,
       "reducere_mediana": 55,
       "reducere_max": 80,
       "esantion": 3
     },
     {
-      "slug": "carti-educatie",
-      "nume": "Cărți & educație",
-      "magazine": 22,
-      "cu_promotie": 5,
-      "reducere_mediana": 55.0,
-      "reducere_max": 90,
-      "esantion": 4
-    },
-    {
       "slug": "casa-gradina",
       "nume": "Casă & grădină",
-      "magazine": 93,
+      "magazine": 94,
       "cu_promotie": 17,
       "reducere_mediana": 40,
       "reducere_max": 80,
@@ -44,15 +53,6 @@
       "reducere_mediana": 40,
       "reducere_max": 70,
       "esantion": 7
-    },
-    {
-      "slug": "beauty",
-      "nume": "Beauty & îngrijire",
-      "magazine": 49,
-      "cu_promotie": 6,
-      "reducere_mediana": 32.5,
-      "reducere_max": 80,
-      "esantion": 6
     },
     {
       "slug": "sanatate",
@@ -156,8 +156,8 @@
   ],
   "criteriu": "domeniu .ro",
   "international": {
-    "total": 500,
-    "cu_promotie": 74,
+    "total": 499,
+    "cu_promotie": 75,
     "cu_cod": 49
   },
   "retele": [
@@ -219,7 +219,7 @@
         {
           "slug": "casa-gradina",
           "nume": "Casă & grădină",
-          "promotii": 34
+          "promotii": 35
         },
         {
           "slug": "carti-educatie",

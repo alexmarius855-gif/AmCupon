@@ -612,8 +612,8 @@
    "magazine": 139
   },
   "2026-11-17": {
-   "promotii": 245,
-   "magazine": 139
+   "promotii": 252,
+   "magazine": 143
   }
  },
  "magazine": {
@@ -734,9 +734,9 @@
     "titlu": "Plătești 2, Primești 3! Redefinește Servirea pe Bambus Premium",
     "cod": false,
     "prima": "2026-10-16",
-    "ultima": "2026-11-15",
-    "expira": "2026-11-15",
-    "activa": false
+    "ultima": "2026-11-17",
+    "expira": "2026-12-31",
+    "activa": true
    }
   ],
   "afisport.ro": [
@@ -6042,9 +6042,9 @@
     "titlu": "Black Friday Kamu 2026: reduceri de pana la 65%",
     "cod": false,
     "prima": "2026-11-01",
-    "ultima": "2026-11-15",
-    "expira": "2026-11-15",
-    "activa": false
+    "ultima": "2026-11-17",
+    "expira": "2026-11-30",
+    "activa": true
    },
    {
     "k": "parfumuriarabesticureduceridepanala37pekamuro|",
@@ -6684,6 +6684,15 @@
   ],
   "libris.ro": [
    {
+    "k": "mosnicolaeagasitreducerilepanala83lacartijocurisiaccesorii|",
+    "titlu": "Moș Nicolae a găsit reducerile! Până la -83% la cărți, jocuri și accesorii »",
+    "cod": false,
+    "prima": "2026-11-17",
+    "ultima": "2026-11-17",
+    "expira": "2026-11-20",
+    "activa": true
+   },
+   {
     "k": "serimailungienglishbooks2050siiitransportgratuithailarasfoit|",
     "titlu": "Seri mai lungi?English Books -20% -50% șiii Transport GRATUIT*Hai la răsfoit!",
     "cod": false,
@@ -7009,36 +7018,36 @@
     "titlu": "Fond de ten Nilia 30 ml – pret de lansare 148 lei",
     "cod": false,
     "prima": "2026-09-28",
-    "ultima": "2026-10-31",
-    "expira": "2026-10-31",
-    "activa": false
+    "ultima": "2026-11-17",
+    "expira": "2026-12-31",
+    "activa": true
    },
    {
     "k": "reducerelinailsboutiquede30laproduselecuambalajdeteriorat|",
     "titlu": "Reducere LiNailsBoutique de 30% la produsele cu ambalaj deteriorat",
     "cod": false,
     "prima": "2026-09-24",
-    "ultima": "2026-10-31",
-    "expira": "2026-10-31",
-    "activa": false
+    "ultima": "2026-11-17",
+    "expira": "2027-10-31",
+    "activa": true
    },
    {
     "k": "ojesemipermanentelnbcureduceridepanala60|",
     "titlu": "Oje semipermanente LNB cu reduceri de pana la 60%",
     "cod": false,
     "prima": "2026-09-24",
-    "ultima": "2026-10-31",
-    "expira": "2026-10-31",
-    "activa": false
+    "ultima": "2026-11-17",
+    "expira": "2027-10-31",
+    "activa": true
    },
    {
     "k": "lichidaredestoclnbreduceridepanala70|",
     "titlu": "Lichidare de stoc LNB – reduceri de pana la 70%",
     "cod": false,
     "prima": "2026-08-20",
-    "ultima": "2026-10-31",
-    "expira": "2026-10-31",
-    "activa": false
+    "ultima": "2026-11-17",
+    "expira": "2027-10-31",
+    "activa": true
    },
    {
     "k": "geluriuvlnbcureduceridepanala50|",
