@@ -1,0 +1,66 @@
+name: Cercetare cerere (sugestii de cautare)
+
+# Ce cauta oamenii: completarile Google, Bing, DuckDuckGo si YouTube pentru „cod reducere a...", numele
+# magazinelor noastre si produsele partenerilor, comparate cu ce avem pe site. Rezultatul e un studiu
+# (Markdown + JSON) in artefactul rularii. Nu foloseste niciun secret si nu scrie in repo.
+# Din containerul sesiunilor Claude motoarele sunt blocate, de aceea colectarea ruleaza aici.
+#
+# Pe ramura de lucru porneste la fiecare push in scripts/v2/research/; programarea saptamanala
+# (luni dimineata) merge doar dupa ce fisierul ajunge pe main.
+
+on:
+  push:
+    branches: [claude/arhitectura-v2]
+    paths:
+      - 'scripts/v2/research/**'
+      - '.github/workflows/research.yml'
+  workflow_dispatch:
+  schedule:
+    - cron: '23 4 * * 1'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: cercetare-cerere
+  cancel-in-progress: true
+
+jobs:
+  cerere:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Teste (fara retea)
+        run: |
+          python scripts/v2/research/comun.py --test
+          python scripts/v2/research/seminte.py --test
+          python scripts/v2/research/colectare.py --test
+          python scripts/v2/research/studiu.py --test
+
+      - name: Seminte
+        run: python scripts/v2/research/seminte.py --iesire research-out/seminte.json
+
+      - name: Colectare sugestii
+        run: python scripts/v2/research/colectare.py --seminte research-out/seminte.json --iesire research-out/sugestii.json
+
+      - name: Studiu
+        run: python scripts/v2/research/studiu.py --sugestii research-out/sugestii.json --dir research-out
+
+      - name: Rezumat in pagina rularii
+        if: always()
+        run: |
+          f=$(ls research-out/STUDIU-CERERE-*.md 2>/dev/null | head -1)
+          if [ -n "$f" ]; then sed -n '1,40p' "$f" >> "$GITHUB_STEP_SUMMARY"; fi
+
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: cercetare-cerere
+          path: research-out/
+          retention-days: 30

@@ -1,0 +1,36 @@
+name: Sonda retele (2Performant + Impact)
+
+# O singura data, pe ramura de lucru: ce mai trebuie exportat de mana din retele si ce poate veni din API
+# (ofertele programate 2P, cataloagele de produse Impact). Logul e public: sonda scrie doar numere,
+# nume de campuri si nume de filtre. Nu scrie nimic in repo.
+
+on:
+  push:
+    branches: [claude/arhitectura-v2]
+    paths:
+      - 'scripts/v2/sonde/**'
+      - '.github/workflows/sonda-retele.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  sonda:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Dependinte
+        run: pip install -q requests
+      - name: Sonda
+        env:
+          TWOPEFORMANT_USER: ${{ secrets.TWOPEFORMANT_USER }}
+          TWOPEFORMANT_EMAIL: ${{ secrets.TWOPEFORMANT_EMAIL }}
+          TWOPEFORMANT_PASS: ${{ secrets.TWOPEFORMANT_PASS }}
+          IMPACT_ACCOUNT_SID: ${{ secrets.IMPACT_ACCOUNT_SID }}
+          IMPACT_AUTH_TOKEN: ${{ secrets.IMPACT_AUTH_TOKEN }}
+        run: python scripts/v2/sonde/sonda_retele.py --2p --impact
