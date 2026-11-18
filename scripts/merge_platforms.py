@@ -100,8 +100,39 @@ IRRELEVANT_FOREIGN = {
 _TEST_PATTERN = re.compile(r"test\d*\.|/test|-test\.|^test\.|sandbox|\bdemo\.|example\.com", re.I)
 
 
+def _cheie_promotie(p: dict) -> tuple:
+    return (re.sub(r"\W+", " ", str(p.get("nume") or "").lower()).strip(), str(p.get("cod_cupon") or "").strip().upper())
+
+
+def uneste_promotii(castigator: dict, pierzator: dict) -> int:
+    """Cand acelasi magazin vine din doua surse, castiga o singura intrare, dar ofertele raman din amandoua.
+
+    18.11.2026: intrarea veche din extra_merchants.json (scor 45-60, scris candva de mana) batea intrarea
+    proaspata din API-ul 2Performant (scor 30), iar ofertele din API se pierdeau. fera.ro, nobilacasa.ro,
+    herbagetica.ro, jollymag.ro si sevensins.ro aveau pe site doar ce aducea exportul manual de promotii;
+    API-ul avea 9 oferte valabile pentru ele. Regulile de publicare (expirate, programate, texte pentru
+    afiliati, alta piata) se aplica dupa, prin promotii.curata_promotii, pe toate ofertele la fel.
+
+    Doar din sursele pe care castigatorul NU le are: cand amandoua au oferte din aceeasi sursa (de ex.
+    impact_deals_api, scrise de fetch_impact_deals.py in ambele fisiere), lista castigatorului ramane
+    autoritatea, ca o oferta retrasa azi dintr-un fisier sa nu revina din celalalt."""
+    proprii = castigator.get("promotii") if isinstance(castigator.get("promotii"), list) else []
+    vazute = {_cheie_promotie(p) for p in proprii if isinstance(p, dict)}
+    surse_castigator = {p.get("sursa") for p in proprii if isinstance(p, dict)}
+    adaugate = 0
+    for p in pierzator.get("promotii") or []:
+        if not isinstance(p, dict) or p.get("sursa") in surse_castigator or _cheie_promotie(p) in vazute:
+            continue
+        proprii.append(p)
+        vazute.add(_cheie_promotie(p))
+        adaugate += 1
+    castigator["promotii"] = proprii
+    return adaugate
+
+
 def main():
     by_slug: dict[str, dict] = {}  # slug curat -> magazin (pastram cel mai bun)
+    oferte_pastrate = 0
 
     for fpath in FILES:
         if not os.path.exists(fpath):
@@ -192,11 +223,13 @@ def main():
                         magazin.get("scor_final", 0) > prev.get("scor_final", 0)
                         or (len(magazin.get("promotii") or []) > len(prev.get("promotii") or []))
                     )
-                if better:
-                    by_slug[slug] = magazin
+                castigator, pierzator = (magazin, prev) if better else (prev, magazin)
+                oferte_pastrate += uneste_promotii(castigator, pierzator)
+                by_slug[slug] = castigator
 
         print(f"  {os.path.basename(fpath)}: +{adaugate} magazine "
               f"({duplicate} duplicate, {invalide} invalide, {excluse} retea exclusa)")
+    print(f"  oferte pastrate de la duplicatele care au pierdut: {oferte_pastrate}")
 
     merged: list[dict] = list(by_slug.values())
 

@@ -491,6 +491,93 @@ def load_fallback() -> list:
 
 # ─── Main ─────────────────────────────────────────────────────────────────────
 
+# ─── Exportul de promotii, scris din API (18.11.2026) ─────────────────────────────────
+# Pana acum data/promotii_2p.csv era exportat de mana din panoul 2Performant. Sonda din 18.11 (rularea
+# 44396... a sonda-retele.yml) a aratat ca API-ul da aceleasi promotii, inclusiv pe cele programate (start
+# in viitor: 6 in API, 1 in exportul manual): toate cele 71 de oferte valabile din export erau si in API.
+# Scriem fisierul aici, cu aceleasi coloane, la fiecare rulare: import_csv_promotii.py si
+# calendar_black_friday.py il citesc ca pana acum, iar exportul manual nu mai e necesar.
+COLOANE_CSV_PROMOTII = ["Affiliate program", "Promotion name", "Start Date", "End Date",
+                        "Description (for customer)", "Coupon code", "Landing Page"]
+
+
+def _utc_csv(raw) -> str:
+    """Data din API in formatul exportului („2026-11-20 06:00:00 UTC"), ca sa se citeasca la fel."""
+    from promotii import data_csv
+    d = data_csv(str(raw or ""))
+    return d.astimezone(timezone.utc).strftime("%Y-%m-%d %H:%M:%S UTC") if d else ""
+
+
+def randuri_csv_promotii(promotii_raw: list, acum: datetime | None = None) -> list[dict]:
+    """Promotiile programelor la care suntem acceptati, care nu s-au terminat, in coloanele exportului."""
+    acum = acum or datetime.now(timezone.utc)
+    randuri = []
+    for p in promotii_raw:
+        if not isinstance(p, dict):
+            continue
+        if (p.get("affrequest_status") or "accepted") != "accepted":
+            continue
+        if str(p.get("status") or "published") != "published":
+            continue
+        sfarsit = sfarsit_real(str(p.get("promotion_end") or ""))
+        if sfarsit is not None and sfarsit < acum:
+            continue
+        prog = p.get("program") or {}
+        nume = (p.get("name") or "").strip()
+        if not nume:
+            continue
+        randuri.append({
+            "Affiliate program": (prog.get("name") or p.get("campaign_name") or "").strip(),
+            "Promotion name": nume,
+            "Start Date": _utc_csv(p.get("promotion_start")),
+            "End Date": _utc_csv(p.get("promotion_end")),
+            "Description (for customer)": (p.get("customer_description") or "").strip(),
+            "Coupon code": (p.get("coupon") or "").strip() if isinstance(p.get("coupon"), str) else "",
+            "Landing Page": (p.get("landing_page_link") or "").strip(),
+        })
+    randuri.sort(key=lambda r: (r["Affiliate program"].lower(), r["Start Date"], r["Promotion name"]))
+    return randuri
+
+
+def scrie_csv_promotii(promotii_raw: list, cale: str) -> int:
+    """Rescrie exportul din API. Fara promotii (API cazut) pastreaza fisierul vechi."""
+    import csv
+    randuri = randuri_csv_promotii(promotii_raw)
+    if not randuri:
+        print("  exportul de promotii NU s-a rescris: API-ul n-a dat nicio promotie valabila (raman datele vechi)")
+        return 0
+    with open(cale, "w", encoding="utf-8", newline="") as f:
+        w = csv.DictWriter(f, fieldnames=COLOANE_CSV_PROMOTII, lineterminator="\n")
+        w.writeheader()
+        w.writerows(randuri)
+    viitoare = sum(1 for r in randuri if r["Start Date"] and r["Start Date"] > _utc_csv(datetime.now(timezone.utc).isoformat()))
+    print(f"  exportul de promotii scris din API: {len(randuri)} promotii valabile, {viitoare} programate")
+    return len(randuri)
+
+
+def scrie_programe_neaplicate(promotii_raw: list, cale: str) -> int:
+    """Programe cu promotii active la care NU am aplicat (API-ul le arata cu affrequest_status=not_applied).
+    Lista de aplicat cu oferte reale in spate; doar nume de program si date, nimic privat."""
+    pe_program: dict[str, dict] = {}
+    for p in promotii_raw:
+        if not isinstance(p, dict) or p.get("affrequest_status") != "not_applied":
+            continue
+        prog = p.get("program") or {}
+        slug = (prog.get("slug") or p.get("campaign_slug") or "").strip()
+        if not slug:
+            continue
+        x = pe_program.setdefault(slug, {"program": (prog.get("name") or p.get("campaign_name") or slug).strip(),
+                                         "slug": slug, "promotii": 0, "pana_la": ""})
+        x["promotii"] += 1
+        x["pana_la"] = max(x["pana_la"], _utc_csv(p.get("promotion_end"))[:10])
+    lista = sorted(pe_program.values(), key=lambda x: (-x["promotii"], x["slug"]))
+    with open(cale, "w", encoding="utf-8") as f:
+        json.dump({"actualizat": datetime.now(timezone.utc).strftime("%Y-%m-%d"), "programe": lista},
+                  f, ensure_ascii=False, indent=1)
+    print(f"  programe cu oferte active la care n-am aplicat: {len(lista)}")
+    return len(lista)
+
+
 def main():
     print("=" * 60)
     print("fetch_2p_api.py — 2Performant API (DeviseTokenAuth)")
@@ -538,6 +625,8 @@ def main():
     print("\n[3/3] Descarc promotiile active...")
     promotii_raw = fetch_all_pages("affiliate/advertiser_promotions", per_page=100)
     print(f"  ✅ {len(promotii_raw)} promotii descarcate")
+    scrie_csv_promotii(promotii_raw, os.path.join(repo_root, "data", "promotii_2p.csv"))
+    scrie_programe_neaplicate(promotii_raw, os.path.join(repo_root, "data", "2p-programe-neaplicate-cu-oferte.json"))
 
     # ── Construieste harta promotii ───────────────────────────────────────────
     promo_map = parse_promotii(promotii_raw)
