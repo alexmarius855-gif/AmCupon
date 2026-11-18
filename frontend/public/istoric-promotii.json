@@ -616,8 +616,8 @@
    "magazine": 143
   },
   "2026-11-18": {
-   "promotii": 252,
-   "magazine": 143
+   "promotii": 253,
+   "magazine": 144
   }
  },
  "magazine": {
@@ -1124,6 +1124,15 @@
    }
   ],
   "asus.com": [
+   {
+    "k": "asusnovembersales|november10",
+    "titlu": "ASUS November Sales",
+    "cod": true,
+    "prima": "2026-11-18",
+    "ultima": "2026-11-18",
+    "expira": "2026-12-02",
+    "activa": true
+   },
    {
     "k": "asusblackfriday2026reduceridepanala2500roninasuseshop|",
     "titlu": "ASUS Black Friday 2026 Reduceri de până la 2.500 RON în ASUS eShop!",
@@ -7846,13 +7855,22 @@
   ],
   "nadula.com": [
    {
+    "k": "nadulabranddayxblackfridaysaleupto120offwigsfrom49|gold",
+    "titlu": "Nadula Brand Day x Black Friday Sale: Up to $120 OFF + Wigs from $49!",
+    "cod": true,
+    "prima": "2026-11-18",
+    "ultima": "2026-11-18",
+    "expira": "2026-11-23",
+    "activa": true
+   },
+   {
     "k": "upto100offwithcodethx|thx",
     "titlu": "Up To $100 OFF With Code: THX",
     "cod": true,
     "prima": "2026-11-11",
     "ultima": "2026-11-18",
     "expira": "2026-11-18",
-    "activa": true
+    "activa": false
    },
    {
     "k": "thanksgivingearlydealsupto90off|thx",

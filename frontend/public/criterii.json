@@ -1,6 +1,6 @@
 {
 "_nota": "Generat de scripts/criterii_produse.py. Doar pagini aprobate, doar produse cu pretul confirmat pe site-ul magazinului.",
-"actualizat": "2026-11-17",
+"actualizat": "2026-11-18",
 "criterii": [
 {
 "slug": "espressor-cu-capsule",
@@ -1189,7 +1189,7 @@
 "titlu": "Puzzle de 500 de piese",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-14",
+"actualizat": "2026-11-18",
 "feeduri": [
 {
 "id": 1528,
@@ -1246,18 +1246,6 @@
 "verificat": "2026-11-14"
 },
 {
-"titlu": "Puzzle Ravensburger animale colorate fluture 500 piese",
-"pret": 35.98,
-"imagine": "https://www.ookee.ro/365910-large_default/puzzle-ravensburger-animale-colorate-fluture-500-piese.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ookee.ro%2Fpuzzle-ravensburger%2F123242-puzzle-ravensburger-animale-colorate-fluture-500-piese.html",
-"magazin": "ookee.ro",
-"id": "c82245920",
-"brand": "Ravensburger",
-"url_magazin": "https://www.ookee.ro/puzzle-ravensburger/123242-puzzle-ravensburger-animale-colorate-fluture-500-piese.html",
-"pret_vechi": 65.9,
-"verificat": "2026-11-14"
-},
-{
 "titlu": "Puzzle Ravensburger animale colorate cameleon 500 piese",
 "pret": 35.98,
 "imagine": "https://www.ookee.ro/365898-large_default/puzzle-ravensburger-animale-colorate-cameleon-500-piese.jpg",
@@ -1278,6 +1266,18 @@
 "id": "2f2699a98",
 "brand": "Ravensburger",
 "url_magazin": "https://www.ookee.ro/puzzle-ravensburger/123241-puzzle-ravensburger-animale-colorate-peste-leu-rosu-500-piese.html",
+"pret_vechi": 65.9,
+"verificat": "2026-11-14"
+},
+{
+"titlu": "Puzzle Ravensburger animale colorate fluture 500 piese",
+"pret": 35.98,
+"imagine": "https://www.ookee.ro/365910-large_default/puzzle-ravensburger-animale-colorate-fluture-500-piese.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ookee.ro%2Fpuzzle-ravensburger%2F123242-puzzle-ravensburger-animale-colorate-fluture-500-piese.html",
+"magazin": "ookee.ro",
+"id": "c82245920",
+"brand": "Ravensburger",
+"url_magazin": "https://www.ookee.ro/puzzle-ravensburger/123242-puzzle-ravensburger-animale-colorate-fluture-500-piese.html",
 "pret_vechi": 65.9,
 "verificat": "2026-11-14"
 },

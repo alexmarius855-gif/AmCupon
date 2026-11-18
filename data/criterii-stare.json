@@ -1,5 +1,5 @@
 {
-"actualizat": "2026-11-17",
+"actualizat": "2026-11-18",
 "criterii": [
 {
 "slug": "masina-de-spalat-6-kg",
@@ -8407,7 +8407,7 @@
 "titlu": "Tablete iPad",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-14",
+"actualizat": "2026-11-18",
 "feeduri": [
 {
 "id": 1096,
@@ -8440,6 +8440,17 @@
 "verificat": "2026-11-06"
 },
 {
+"titlu": "Tableta Apple iPad mini 8 (2026), Procesor A20 Pro, Super Retina XDR OLED 8.5inch, 128GB, 12MP, Wi‑Fi, Bluetooth, Standa",
+"pret": 3999.99,
+"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4322%2F4322963%2F6af4a5457c4ea.jpg&type=auto&width=500&sign=-BUNFSw1gBOP68ETgo_IXhqJZ1qyJE4fLz3jFJvc2Y0",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Ftelefoane-tablete-accesorii-tablete-si-accesorii-tablete%2Fapple-tableta-apple-ipad-mini-8-2026-procesor-a20-pro-super-retina-xdr-oled-8.5-128gb-12mp-wi-fi-bluetooth-standard-glass-ipados-negru-4322963.html",
+"magazin": "evomag.ro",
+"id": "dkR96R05L6SF",
+"brand": "Apple",
+"url_magazin": "https://www.evomag.ro/telefoane-tablete-accesorii-tablete-si-accesorii-tablete/apple-tableta-apple-ipad-mini-8-2026-procesor-a20-pro-super-retina-xdr-oled-8.5-128gb-12mp-wi-fi-bluetooth-standard-glass-ipados-negru-4322963.html",
+"pret_vechi": 4436.99
+},
+{
 "titlu": "Tableta Apple iPad 11 Cellular (A16), Procesor A16 Penta-Core, Liquid Retina IPS 11inch, 256GB Flash, Camera 12MP, Wi-Fi",
 "pret": 4099.99,
 "imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4212%2F4212716%2Ftablet-apple-ipad-11-11gen-25-67d40024e8442.png&type=auto&width=500&sign=cDYZqJovhHMrRzG9NZY5UMJWN3EYrimMB0YKGRlzmfU",
@@ -8451,49 +8462,48 @@
 "pret_vechi": null
 },
 {
-"titlu": "Tableta Apple iPad mini 8 (2026), Procesor A20 Pro, Super Retina XDR OLED 8.5inch, 128GB, 12MP, Wi‑Fi, Bluetooth, Standa",
-"pret": 4436.99,
-"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4322%2F4322963%2F6af4a5457c4ea.jpg&type=auto&width=500&sign=-BUNFSw1gBOP68ETgo_IXhqJZ1qyJE4fLz3jFJvc2Y0",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Ftelefoane-tablete-accesorii-tablete-si-accesorii-tablete%2Fapple-tableta-apple-ipad-mini-8-2026-procesor-a20-pro-super-retina-xdr-oled-8.5-128gb-12mp-wi-fi-bluetooth-standard-glass-ipados-negru-4322963.html",
+"titlu": "Tableta Apple iPad Air 13 M3 Cellular, Procesor Apple M3 Octa-Core, Liquid Retina IPS 13inch, 8GB RAM, 128GB Flash, Came",
+"pret": 4599.99,
+"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4213%2F4213375%2Fipad-air-13-wi-fi-cellular-67ed3e5c4a8da.png&type=auto&width=500&sign=DQZdOX2q9r83NX9mzIZNFFuYLGNmyKiGl1MyJfA-428",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Ftelefoane-tablete-accesorii-tablete-si-accesorii-tablete%2Fapple-tableta-apple-ipad-air-13-m3-cellular-procesor-apple-m3-octa-core-liquid-retina-ips-13-8gb-ram-128gb-flash-camera-12mp-wi-fi-bluetooth-5g-ipados-auriu-4213375.html",
 "magazin": "evomag.ro",
-"id": "dkR96R05L6SF",
+"id": "E0qMLSrEmMPz",
 "brand": "Apple",
-"url_magazin": "https://www.evomag.ro/telefoane-tablete-accesorii-tablete-si-accesorii-tablete/apple-tableta-apple-ipad-mini-8-2026-procesor-a20-pro-super-retina-xdr-oled-8.5-128gb-12mp-wi-fi-bluetooth-standard-glass-ipados-negru-4322963.html",
-"pret_vechi": null
-},
-{
-"titlu": "Apple Tableta Apple iPad Air 11 (2026), Apple M4 Octa Core, 11 inch, RAM 12GB, 128GB, Wi-Fi, BT, iPadOS 26.3, Mov",
-"pret": 4936.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202512311121/395692/full/apple-apple-11-inch-ipad-air-m4-wi-fi-128gb-purple-1220194.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Ftablete-pc%2Fapple%2F395692-tableta-apple-ipad-air-11-2026-apple-m4-octa-core-11-inch-ram-12gb-128gb-wi-fi-bt-ipados-26-3-mov%2F",
-"magazin": "dwyn.ro",
-"id": "x988xQwFaHbJ",
-"brand": "Apple",
-"url_magazin": "https://www.dwyn.ro/tablete-pc/apple/395692-tableta-apple-ipad-air-11-2026-apple-m4-octa-core-11-inch-ram-12gb-128gb-wi-fi-bt-ipados-26-3-mov/",
-"pret_vechi": null
-},
-{
-"titlu": "Tableta Apple iPad Air 11 M4, Procesor Apple M4 Octa-Core, Ecran Liquid Retina IPS 11inch, 12GB RAM, 256GB Flash, Camera",
-"pret": 4999.99,
-"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4288%2F4288587%2F69b50a8eddb3a.jpg&type=auto&width=500&sign=AI9KwUpqJtO01V6YoYq2tGj-MOVmk9umJErWiS5dXiE",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Ftelefoane-tablete-accesorii-tablete-si-accesorii-tablete%2Fapple-tableta-apple-ipad-air-11-m4-procesor-apple-m4-octa-core-ecran-liquid-retina-ips-11-12gb-ram-256gb-flash-camera-12mp-wi-fi-bluetooth-ipados-gri-4288587.html",
-"magazin": "evomag.ro",
-"id": "r2KjrOQCajSJ",
-"brand": "Apple",
-"url_magazin": "https://www.evomag.ro/telefoane-tablete-accesorii-tablete-si-accesorii-tablete/apple-tableta-apple-ipad-air-11-m4-procesor-apple-m4-octa-core-ecran-liquid-retina-ips-11-12gb-ram-256gb-flash-camera-12mp-wi-fi-bluetooth-ipados-gri-4288587.html",
-"pret_vechi": null,
-"verificat": "2026-11-06"
+"url_magazin": "https://www.evomag.ro/telefoane-tablete-accesorii-tablete-si-accesorii-tablete/apple-tableta-apple-ipad-air-13-m3-cellular-procesor-apple-m3-octa-core-liquid-retina-ips-13-8gb-ram-128gb-flash-camera-12mp-wi-fi-bluetooth-5g-ipados-auriu-4213375.html",
+"pret_vechi": 5136.99
 },
 {
 "titlu": "Tableta Apple iPad mini 8 (2026) Cellular, Procesor A20 Pro, Super Retina XDR OLED 8.5inch, 128GB, 12MP, Wi‑Fi, Bluetoot",
-"pret": 5399.99,
-"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4322%2F4322967%2F6af4a5453115b.jpg&type=auto&width=500&sign=3ekc4c6H8sjJmAPiCRQuE34Vxaw2jCGuf2o-IQVgNTY",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Ftelefoane-tablete-accesorii-tablete-si-accesorii-tablete%2Fapple-tableta-apple-ipad-mini-8-2026-cellular-procesor-a20-pro-super-retina-xdr-oled-8.5-128gb-12mp-wi-fi-bluetooth-5g-standard-glass-ipados-auriu-4322967.html",
+"pret": 4870.99,
+"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4322%2F4322969%2F6af4a545eb878.jpg&type=auto&width=500&sign=aqpntByl4dU0tO2KOzk5jKXrPnt60iAUMfrZ2RW_WQs",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Ftelefoane-tablete-accesorii-tablete-si-accesorii-tablete%2Fapple-tableta-apple-ipad-mini-8-2026-cellular-procesor-a20-pro-super-retina-xdr-oled-8.5-128gb-12mp-wi-fi-bluetooth-5g-standard-glass-ipados-negru-4322969.html",
 "magazin": "evomag.ro",
-"id": "7rvtoKCP43wB",
+"id": "eyyPUeLADZ7Y",
 "brand": "Apple",
-"url_magazin": "https://www.evomag.ro/telefoane-tablete-accesorii-tablete-si-accesorii-tablete/apple-tableta-apple-ipad-mini-8-2026-cellular-procesor-a20-pro-super-retina-xdr-oled-8.5-128gb-12mp-wi-fi-bluetooth-5g-standard-glass-ipados-auriu-4322967.html",
-"pret_vechi": null
+"url_magazin": "https://www.evomag.ro/telefoane-tablete-accesorii-tablete-si-accesorii-tablete/apple-tableta-apple-ipad-mini-8-2026-cellular-procesor-a20-pro-super-retina-xdr-oled-8.5-128gb-12mp-wi-fi-bluetooth-5g-standard-glass-ipados-negru-4322969.html",
+"pret_vechi": 5399.99
+},
+{
+"titlu": "Tableta Apple iPad Air 11 (2024) + Cellular, Procesor Apple M2 Octa-Core, Ecran Liquid Retina Multi-Touch IPS 11inch, 8G",
+"pret": 5099.99,
+"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4173%2F4173810%2Fapple-ipad-air-13-m2-wi-fi-12-6644ae641b015.jpg&type=auto&width=500&sign=wgCyPlaIWWNxcPu7GExuYG6HqQp9D3rnYMlflazl-Ok",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Ftelefoane-tablete-accesorii-tablete-si-accesorii-tablete%2Fapple-tableta-apple-ipad-air-11-2024-cellular-procesor-apple-m2-octa-core-ecran-liquid-retina-multi-touch-ips-11-8gb-ram-512gb-flash-12mp-wi-fi-bluetooth-5g-ipados-argintiu-4173810.html",
+"magazin": "evomag.ro",
+"id": "NGVlcbTuIB8o",
+"brand": "Apple",
+"url_magazin": "https://www.evomag.ro/telefoane-tablete-accesorii-tablete-si-accesorii-tablete/apple-tableta-apple-ipad-air-11-2024-cellular-procesor-apple-m2-octa-core-ecran-liquid-retina-multi-touch-ips-11-8gb-ram-512gb-flash-12mp-wi-fi-bluetooth-5g-ipados-argintiu-4173810.html",
+"pret_vechi": 6351.99
+},
+{
+"titlu": "Tableta Apple iPad Air 11 M4 Cellular, Procesor Apple M4 Octa-Core, Ecran Liquid Retina IPS 11inch, 12GB RAM, 128GB Flas",
+"pret": 5237.99,
+"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4288%2F4288806%2Fapple-ipad-air-11-m4-wifi-l-69b84f5a54ed5.jpg&type=auto&width=500&sign=D2pm988A7nt2dx11ElmEsVJPCiCddFfPFe4_g_E8xVA",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Ftelefoane-tablete-accesorii-tablete-si-accesorii-tablete%2Fapple-tableta-apple-ipad-air-11-m4-cellular-procesor-apple-m4-octa-core-ecran-liquid-retina-ips-11-12gb-ram-128gb-flash-camera-12mp-wi-fi-bluetooth-gps-5g-ipados-albastru-4288806.html",
+"magazin": "evomag.ro",
+"id": "fwxkX6jC7Q0a",
+"brand": "Apple",
+"url_magazin": "https://www.evomag.ro/telefoane-tablete-accesorii-tablete-si-accesorii-tablete/apple-tableta-apple-ipad-air-11-m4-cellular-procesor-apple-m4-octa-core-ecran-liquid-retina-ips-11-12gb-ram-128gb-flash-camera-12mp-wi-fi-bluetooth-gps-5g-ipados-albastru-4288806.html",
+"pret_vechi": 5554.99
 },
 {
 "titlu": "Apple Tableta Apple iPad Air 11 M4 Cellular, Procesor Apple M4 Octa-Core, Ecran Liquid Retina IPS 11, 12GB RAM, 128GB Fl",
@@ -8508,71 +8518,69 @@
 "verificat": "2026-11-04"
 },
 {
-"titlu": "Apple Tableta Apple iPad Air 13 (2026), Apple M4 Octa Core, 13 inch, RAM 12GB, 128GB, Wi-Fi, BT, 5G, iPadOS 26.3, Albast",
-"pret": 5425.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202512311121/395650/full/apple-apple-13-inch-ipad-air-m4-cellular-128gb-blue-1220086.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Ftablete-pc%2Fapple%2F395650-tableta-apple-ipad-air-13-2026-apple-m4-octa-core-13-inch-ram-12gb-128gb-wi-fi-bt-5g-ipados-26-3-albastru%2F",
+"titlu": "Apple Tableta Apple iPad Air 11 M4, Procesor Apple M4 Octa-Core, Ecran Liquid Retina IPS 11, 12GB RAM, 128GB Flash, Came",
+"pret": 5860.99,
+"imagine": "https://www.dwyn.ro/images/products/img_202512311121/398041/full/apple-tableta-apple-ipad-air-11-m4-procesor-apple-m4-octa-core-ecran-liquid-retina-ips-11-12gb-ram-128gb-flash-camera-12mp-wi-fi-bluetooth-ipados-gri-1229803.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Ftablete-pc%2Fapple%2F398041-tableta-apple-ipad-air-11-m4-procesor-apple-m4-octa-core-ecran-liquid-retina-ips-11-12gb-ram-128gb-flash-camera-12mp-wi-fi-bluetooth-ipados-gri%2F",
 "magazin": "dwyn.ro",
-"id": "qRiKW7ZGLG37",
+"id": "nSyyKNbXwxdg",
 "brand": "Apple",
-"url_magazin": "https://www.dwyn.ro/tablete-pc/apple/395650-tableta-apple-ipad-air-13-2026-apple-m4-octa-core-13-inch-ram-12gb-128gb-wi-fi-bt-5g-ipados-26-3-albastru/",
-"pret_vechi": null,
-"verificat": "2026-11-04"
-},
-{
-"titlu": "Tableta Apple iPad Air 11 M4 Cellular, Procesor Apple M4 Octa-Core, Ecran Liquid Retina IPS 11inch, 12GB RAM, 256GB Flas",
-"pret": 5899.99,
-"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4290%2F4290267%2Ftableta-apple-ipad-air-11-m4-c-69c661cd82231.jpg&type=auto&width=500&sign=3y0WLL9ugpeu9kiT7grouD-srplNabh3MkdQa5wzqNQ",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Ftelefoane-tablete-accesorii-tablete-si-accesorii-tablete%2Fapple-tableta-apple-ipad-air-11-m4-cellular-procesor-apple-m4-octa-core-ecran-liquid-retina-ips-11-12gb-ram-256gb-flash-camera-12mp-wi-fi-bluetooth-gps-5g-ipados-albastru-4290267.html",
-"magazin": "evomag.ro",
-"id": "LXd66G7xkEuy",
-"brand": "Apple",
-"url_magazin": "https://www.evomag.ro/telefoane-tablete-accesorii-tablete-si-accesorii-tablete/apple-tableta-apple-ipad-air-11-m4-cellular-procesor-apple-m4-octa-core-ecran-liquid-retina-ips-11-12gb-ram-256gb-flash-camera-12mp-wi-fi-bluetooth-gps-5g-ipados-albastru-4290267.html",
+"url_magazin": "https://www.dwyn.ro/tablete-pc/apple/398041-tableta-apple-ipad-air-11-m4-procesor-apple-m4-octa-core-ecran-liquid-retina-ips-11-12gb-ram-128gb-flash-camera-12mp-wi-fi-bluetooth-ipados-gri/",
 "pret_vechi": null
 },
 {
-"titlu": "Apple Tableta Apple iPad Air 11 M4, Procesor Apple M4 Octa-Core, Ecran Liquid Retina IPS 11, 12GB RAM, 512GB Flash, Came",
-"pret": 6455.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202512311121/398053/full/apple-tableta-apple-ipad-air-11-m4-procesor-apple-m4-octa-core-ecran-liquid-retina-ips-11-12gb-ram-512gb-flash-camera-12mp-wi-fi-bluetooth-ipados-gri-1229857.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Ftablete-pc%2Fapple%2F398053-tableta-apple-ipad-air-11-m4-procesor-apple-m4-octa-core-ecran-liquid-retina-ips-11-12gb-ram-512gb-flash-camera-12mp-wi-fi-bluetooth-ipados-gri%2F",
+"titlu": "Apple Tableta Apple iPad Air 11 (2026), Apple M4 Octa Core, 11 inch, RAM 12GB, 256GB, Wi-Fi, BT, 5G, iPadOS 26.3, Auriu",
+"pret": 6148.99,
+"imagine": "https://www.dwyn.ro/images/products/img_202512311121/395686/full/apple-apple-11-inch-ipad-air-m4-cellular-256gb-starlight-1220182.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Ftablete-pc%2Fapple%2F395686-tableta-apple-ipad-air-11-2026-apple-m4-octa-core-11-inch-ram-12gb-256gb-wi-fi-bt-5g-ipados-26-3-auriu%2F",
 "magazin": "dwyn.ro",
-"id": "6zXIwgnQ1CjH",
+"id": "8zVb15ZwFzMz",
 "brand": "Apple",
-"url_magazin": "https://www.dwyn.ro/tablete-pc/apple/398053-tableta-apple-ipad-air-11-m4-procesor-apple-m4-octa-core-ecran-liquid-retina-ips-11-12gb-ram-512gb-flash-camera-12mp-wi-fi-bluetooth-ipados-gri/",
+"url_magazin": "https://www.dwyn.ro/tablete-pc/apple/395686-tableta-apple-ipad-air-11-2026-apple-m4-octa-core-11-inch-ram-12gb-256gb-wi-fi-bt-5g-ipados-26-3-auriu/",
 "pret_vechi": null
 },
 {
-"titlu": "Tableta Apple iPad Air 13 M4 Cellular, Procesor Apple M4 Octa-Core, Ecran Liquid Retina IPS 13inch, 12GB RAM, 256GB Flas",
-"pret": 6899.99,
-"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4290%2F4290280%2Fapple-13-inch-ipad-air-m4-ce-69c6719e01c79.jpg&type=auto&width=500&sign=JsygfAYjkARRT5pKxe39_Vxt7QqwcxwKhGfG-AbZ5Hc",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Ftelefoane-tablete-accesorii-tablete-si-accesorii-tablete%2Fapple-tableta-apple-ipad-air-13-m4-cellular-procesor-apple-m4-octa-core-ecran-liquid-retina-ips-13-12gb-ram-256gb-flash-camera-12mp-wi-fi-bluetooth-5g-ipados-violet-4290280.html",
+"titlu": "Tableta Apple iPad Air 11 M4, Procesor Apple M4 Octa-Core, Ecran Liquid Retina IPS 11inch, 12GB RAM, 512GB Flash, Camera",
+"pret": 6299.99,
+"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4289%2F4289030%2Ftableta-apple-ipad-air-11-m4-69ba68dd2bbb3.jpg&type=auto&width=500&sign=WN0leDPzpVpjnCVOn60-wXBn4sC_RdL0jNflHx2HFTI",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Ftelefoane-tablete-accesorii-tablete-si-accesorii-tablete%2Fapple-tableta-apple-ipad-air-11-m4-procesor-apple-m4-octa-core-ecran-liquid-retina-ips-11-12gb-ram-512gb-flash-camera-12mp-wi-fi-bluetooth-ipados-albastru-4289030.html",
 "magazin": "evomag.ro",
-"id": "JNH-4uwTi_VS",
+"id": "xgHBT95oOXUe",
 "brand": "Apple",
-"url_magazin": "https://www.evomag.ro/telefoane-tablete-accesorii-tablete-si-accesorii-tablete/apple-tableta-apple-ipad-air-13-m4-cellular-procesor-apple-m4-octa-core-ecran-liquid-retina-ips-13-12gb-ram-256gb-flash-camera-12mp-wi-fi-bluetooth-5g-ipados-violet-4290280.html",
-"pret_vechi": null,
-"verificat": "2026-11-06"
+"url_magazin": "https://www.evomag.ro/telefoane-tablete-accesorii-tablete-si-accesorii-tablete/apple-tableta-apple-ipad-air-11-m4-procesor-apple-m4-octa-core-ecran-liquid-retina-ips-11-12gb-ram-512gb-flash-camera-12mp-wi-fi-bluetooth-ipados-albastru-4289030.html",
+"pret_vechi": null
 },
 {
-"titlu": "Tableta Apple iPad Air 13 M4, Procesor Apple M4 Octa-Core, Ecran Liquid Retina IPS 13inch, 12GB RAM, 512GB Flash, Camera",
-"pret": 7749.99,
-"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4290%2F4290299%2Fapple-13-inch-ipad-air-m4-wi-69c682f893cdd.jpg&type=auto&width=500&sign=sLWFlT5MVPrxaZpiDRn25Mbixv1ptRpPIQIQt1yLSMg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Ftelefoane-tablete-accesorii-tablete-si-accesorii-tablete%2Fapple-tableta-apple-ipad-air-13-m4-procesor-apple-m4-octa-core-ecran-liquid-retina-ips-13-12gb-ram-512gb-flash-camera-12mp-wi-fi-bluetooth-ipados-auriu-4290299.html",
-"magazin": "evomag.ro",
-"id": "J8RX8hfOu8_K",
+"titlu": "Apple Tableta Apple iPad Air 13 M4, Procesor Apple M4 Octa-Core, Ecran Liquid Retina IPS 13, 12GB RAM, 128GB Flash, Came",
+"pret": 6656.99,
+"imagine": "https://www.dwyn.ro/images/products/img_202512311121/398035/full/apple-tableta-apple-ipad-air-13-m4-procesor-apple-m4-octa-core-ecran-liquid-retina-ips-13-12gb-ram-128gb-flash-camera-12mp-wi-fi-bluetooth-ipados-albastru-1229794.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Ftablete-pc%2Fapple%2F398035-tableta-apple-ipad-air-13-m4-procesor-apple-m4-octa-core-ecran-liquid-retina-ips-13-12gb-ram-128gb-flash-camera-12mp-wi-fi-bluetooth-ipados-albastru%2F",
+"magazin": "dwyn.ro",
+"id": "S0evJFMFu_1b",
 "brand": "Apple",
-"url_magazin": "https://www.evomag.ro/telefoane-tablete-accesorii-tablete-si-accesorii-tablete/apple-tableta-apple-ipad-air-13-m4-procesor-apple-m4-octa-core-ecran-liquid-retina-ips-13-12gb-ram-512gb-flash-camera-12mp-wi-fi-bluetooth-ipados-auriu-4290299.html",
+"url_magazin": "https://www.dwyn.ro/tablete-pc/apple/398035-tableta-apple-ipad-air-13-m4-procesor-apple-m4-octa-core-ecran-liquid-retina-ips-13-12gb-ram-128gb-flash-camera-12mp-wi-fi-bluetooth-ipados-albastru/",
 "pret_vechi": null
 },
 {
 "titlu": "Apple Tableta Apple iPad Air 13 M4 Cellular, Procesor Apple M4 Octa-Core, Ecran Liquid Retina IPS 13, 12GB RAM, 256GB Fl",
-"pret": 8146.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202512311121/398026/full/apple-tableta-apple-ipad-air-13-m4-cellular-procesor-apple-m4-octa-core-ecran-liquid-retina-ips-13-12gb-ram-256gb-flash-camera-12mp-wi-fi-bluetooth-5g-ipados-auriu-1229938.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Ftablete-pc%2Fapple%2F398026-tableta-apple-ipad-air-13-m4-cellular-procesor-apple-m4-octa-core-ecran-liquid-retina-ips-13-12gb-ram-256gb-flash-camera-12mp-wi-fi-bluetooth-5g-ipados-auriu%2F",
+"pret": 7230.99,
+"imagine": "https://www.dwyn.ro/images/products/img_202512311121/398029/full/apple-tableta-apple-ipad-air-13-m4-cellular-procesor-apple-m4-octa-core-ecran-liquid-retina-ips-13-12gb-ram-256gb-flash-camera-12mp-wi-fi-bluetooth-5g-ipados-albastru-1229812.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Ftablete-pc%2Fapple%2F398029-tableta-apple-ipad-air-13-m4-cellular-procesor-apple-m4-octa-core-ecran-liquid-retina-ips-13-12gb-ram-256gb-flash-camera-12mp-wi-fi-bluetooth-5g-ipados-albastru%2F",
 "magazin": "dwyn.ro",
-"id": "khaV-PH9c13M",
+"id": "nlYv3xbWL1I3",
 "brand": "Apple",
-"url_magazin": "https://www.dwyn.ro/tablete-pc/apple/398026-tableta-apple-ipad-air-13-m4-cellular-procesor-apple-m4-octa-core-ecran-liquid-retina-ips-13-12gb-ram-256gb-flash-camera-12mp-wi-fi-bluetooth-5g-ipados-auriu/",
+"url_magazin": "https://www.dwyn.ro/tablete-pc/apple/398029-tableta-apple-ipad-air-13-m4-cellular-procesor-apple-m4-octa-core-ecran-liquid-retina-ips-13-12gb-ram-256gb-flash-camera-12mp-wi-fi-bluetooth-5g-ipados-albastru/",
+"pret_vechi": null
+},
+{
+"titlu": "Apple Tableta Apple iPad Air 13, Procesor Apple M4, Ecran Liquid Retina 13, 12GB RAM, 512GB Flash, Camera 12 MP, Wi-Fi 7",
+"pret": 8247.99,
+"imagine": "https://www.dwyn.ro/images/products/img_202512311121/410419/full/apple-apple-13-inch-ipad-air-m4-wi-fi-512gb-blue-1310578.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Ftablete-pc%2Fapple%2F410419-tableta-apple-ipad-air-13-procesor-apple-m4-ecran-liquid-retina-13-12gb-ram-512gb-flash-camera-12-mp-wi-fi-7-ipados-albastru%2F",
+"magazin": "dwyn.ro",
+"id": "LPv-Dj2Qkur8",
+"brand": "Apple",
+"url_magazin": "https://www.dwyn.ro/tablete-pc/apple/410419-tableta-apple-ipad-air-13-procesor-apple-m4-ecran-liquid-retina-13-12gb-ram-512gb-flash-camera-12-mp-wi-fi-7-ipados-albastru/",
 "pret_vechi": null
 },
 {
@@ -8588,25 +8596,14 @@
 "verificat": "2026-11-04"
 },
 {
-"titlu": "Apple Tableta Apple iPad Air 13 M4, Procesor Apple M4 Octa-Core, Ecran Liquid Retina IPS 13, 12GB RAM, 1TB Flash, Camera",
-"pret": 9759.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202606122129/428146/full/apple-ipad-air-13-m4-wifi-1tb-starlight-mh654hc-a-timbru-verde-0-9-lei-1381855.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Ftablete-pc%2Fapple%2F428146-tableta-apple-ipad-air-13-m4-procesor-apple-m4-octa-core-ecran-liquid-retina-ips-13-12gb-ram-1tb-flash-camera-12mp-wi-fi-bluetooth-ipados-auriu%2F",
+"titlu": "Apple Tableta Apple iPad Pro 13 M5, 13 inch Ultra Retina XDR OLED 120Hz, 12GB RAM, 256GB, Wi-Fi 7, Space Black",
+"pret": 10435.99,
+"imagine": "https://www.dwyn.ro/images/products/img_202606122129/458383/full/apple-tableta-apple-ipad-pro-13-m5-mdyj4ty-a-13-inch-ultra-retina-xdr-oled-120hz-12gb-ram-256gb-wi-fi-7-space-black-1505983.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Ftablete-pc%2Fapple%2F458383-tableta-apple-ipad-pro-13-m5-13-inch-ultra-retina-xdr-oled-120hz-12gb-ram-256gb-wi-fi-7-space-black%2F",
 "magazin": "dwyn.ro",
-"id": "mxIS7FFQFSMR",
+"id": "6Pvd9JIGcE_G",
 "brand": "Apple",
-"url_magazin": "https://www.dwyn.ro/tablete-pc/apple/428146-tableta-apple-ipad-air-13-m4-procesor-apple-m4-octa-core-ecran-liquid-retina-ips-13-12gb-ram-1tb-flash-camera-12mp-wi-fi-bluetooth-ipados-auriu/",
-"pret_vechi": null
-},
-{
-"titlu": "Apple Tableta Apple iPad Pro 13 2025, Procesor Apple M5, Ecran Ultra Retina OLED 13, 12GB RAM, 512GB Flash, Camera 12 MP",
-"pret": 10213.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202508191322/344723/full/apple-tableta-apple-ipad-pro-13-2025-procesor-apple-m5-ecran-ultra-retina-oled-13-12gb-ram-512gb-flash-camera-12-mp-wi-fi-bluetooth-gps-ipados-argintiu-933257.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Ftablete-pc%2Fapple%2F344723-tableta-apple-ipad-pro-13-2025-procesor-apple-m5-ecran-ultra-retina-oled-13-12gb-ram-512gb-flash-camera-12-mp-wi-fi-bluetooth-gps-ipados-argintiu%2F",
-"magazin": "dwyn.ro",
-"id": "p4y2FEG23PBJ",
-"brand": "Apple",
-"url_magazin": "https://www.dwyn.ro/tablete-pc/apple/344723-tableta-apple-ipad-pro-13-2025-procesor-apple-m5-ecran-ultra-retina-oled-13-12gb-ram-512gb-flash-camera-12-mp-wi-fi-bluetooth-gps-ipados-argintiu/",
+"url_magazin": "https://www.dwyn.ro/tablete-pc/apple/458383-tableta-apple-ipad-pro-13-m5-13-inch-ultra-retina-xdr-oled-120hz-12gb-ram-256gb-wi-fi-7-space-black/",
 "pret_vechi": null
 }
 ],
@@ -8634,7 +8631,7 @@
 "titlu": "Aspiratoare robot cu mop",
 "nota": null,
 "in_text": "\\bmop\\w*\\b",
-"actualizat": "2026-11-14",
+"actualizat": "2026-11-18",
 "feeduri": [
 {
 "id": 8964,
@@ -8715,18 +8712,6 @@
 "verificat": "2026-11-06"
 },
 {
-"titlu": "Aspirator robot cu functie de mop Aspirator robot cu spalare cu laveta RVC 3, Karcher, alb/negru",
-"pret": 1154.0,
-"imagine": "https://www.mezoni.ro/media/product-images/45dd67d2-fa92-4d86-beb4-fa87661e9c93/l-aspirator-robot-cu-functie-de-mop-aspirator-robot-cu-splare-cu-lavet-rvc-3.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.mezoni.ro%2Faspirator-robot-cu-functie-de-mop-aspirator-robot-cu-spalare-cu--273648",
-"magazin": "mezoni.ro",
-"id": "PpKjAoq5qHXf",
-"brand": "Kärcher",
-"url_magazin": "https://www.mezoni.ro/aspirator-robot-cu-functie-de-mop-aspirator-robot-cu-spalare-cu--273648",
-"pret_vechi": 1226.0,
-"verificat": "2026-11-04"
-},
-{
 "titlu": "Aspirator robot cu mop Viomi Robot Vacuum V2 Pro EU, 33 W, 2100Pa",
 "pret": 1749.0,
 "imagine": "https://cdn.shopify.com/s/files/1/0954/2244/7951/files/7241.jpg?v=1759583382",
@@ -8749,17 +8734,6 @@
 "url_magazin": "https://blacktech.ro/products/aspirator-robot-cu-mop-mova-e50-pro-ultra-robot-vacuum-30-000-pa-5-200mah-200-min-maxireach%E2%84%A2-statie-inteligenta-white?variant=58107757101391",
 "pret_vechi": 2599.0,
 "verificat": "2026-11-14"
-},
-{
-"titlu": "Aspirator robot cu mop MOVA E50 Ultra Robot Vacuum, 30.000 Pa, 5.200mAh, 200 min, MaxiReach™, statie inteligenta (Negru)",
-"pret": 2063.99,
-"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4312%2F4312876%2Frle15seu-bk-6a954fb0a353b.jpg&type=auto&width=500&sign=kUo1FYyZbKMLozGxZBhmxEcB9LeQ_Yc2p0hrqkrvrwk",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Felectrocasnice-aspiratoare-aspiratoare-robot%2Fmova-aspirator-robot-cu-mop-mova-e50-ultra-robot-vacuum-30.000-pa-5.200mah-200-min-maxireach-statie-inteligenta-negru-4312876.html",
-"magazin": "evomag.ro",
-"id": "Vv2JYyLqBL5P",
-"brand": "Mova",
-"url_magazin": "https://www.evomag.ro/electrocasnice-aspiratoare-aspiratoare-robot/mova-aspirator-robot-cu-mop-mova-e50-ultra-robot-vacuum-30.000-pa-5.200mah-200-min-maxireach-statie-inteligenta-negru-4312876.html",
-"pret_vechi": null
 },
 {
 "titlu": "Aspirator robot cu mop MOVA S70 Roller Robot Vacuum, 28000Pa, 5200mAh, HydroForce Mopping, statie inteligenta, White",
@@ -8787,7 +8761,7 @@
 },
 {
 "titlu": "Aspirator Robot EZVIZ Vacuum & Mop Combo RS2, 65 W, 0.4 L (Alb)",
-"pret": 2315.99,
+"pret": 2316.99,
 "imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4109%2F4109571%2F64c268b27d897.jpg&type=auto&width=500&sign=B5BGAyyolz39rl7d9pfAXH4zVfcQHSEIqaIAjv1J4oo",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Felectrocasnice-aspiratoare-aspiratoare-robot%2Fezviz-aspirator-robot-ezviz-vacuum-mop-combo-rs2-65-w-0.4-l-alb-4109571.html",
 "magazin": "evomag.ro",
@@ -8852,7 +8826,18 @@
 "id": "6fsoBKm0Z8U5",
 "brand": "Eufy",
 "url_magazin": "https://www.evomag.ro/electrocasnice-aspiratoare-aspiratoare-robot/eufy-aspirator-robot-eufy-clean-x9-pro-vacuum-mop-2-in-1-statie-inteligenta-de-curatare-automata-ipath-laser-navigation-wi-fi-5500pa-negru-4202087.html",
-"pret_vechi": 2899.99
+"pret_vechi": null
+},
+{
+"titlu": "Aspirator robot cu mop Mova S10 Plus, 7000Pa, 5200mAh, Autonomie pana la 260 minute, Statie colectare automata (Alb)",
+"pret": 2779.99,
+"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4183%2F4183700%2Frls42sd-66ffa37a0b739.jpg&type=auto&width=500&sign=pCx-Vz9MRCjKt-YcOSBzRjRDC4Hjpj_LNVxLJh3i1sw",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Felectrocasnice-aspiratoare-aspiratoare-robot%2Fmova-aspirator-robot-cu-mop-mova-s10-plus-7000pa-5200mah-autonomie-pana-la-260-minute-statie-colectare-automata-alb-4183700.html",
+"magazin": "evomag.ro",
+"id": "_pCZBqyThCUV",
+"brand": "Mova",
+"url_magazin": "https://www.evomag.ro/electrocasnice-aspiratoare-aspiratoare-robot/mova-aspirator-robot-cu-mop-mova-s10-plus-7000pa-5200mah-autonomie-pana-la-260-minute-statie-colectare-automata-alb-4183700.html",
+"pret_vechi": null
 },
 {
 "titlu": "Aspirator robot Karcher - RVM 4 Comfort, cu mop, alb",
@@ -8870,7 +8855,6 @@
 "magazine": [
 "blacktech.ro",
 "evomag.ro",
-"mezoni.ro",
 "ozone.ro"
 ]
 },
@@ -8881,7 +8865,7 @@
 "titlu": "Aspiratoare robot sub 1.000 lei",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-14",
+"actualizat": "2026-11-18",
 "feeduri": [
 {
 "id": 8964,
@@ -8987,7 +8971,7 @@
 "titlu": "Aspiratoare verticale fără fir",
 "nota": null,
 "in_text": "\\bfără fir\\b",
-"actualizat": "2026-11-14",
+"actualizat": "2026-11-18",
 "feeduri": [
 {
 "id": 8964,
@@ -9056,18 +9040,6 @@
 "verificat": "2026-11-04"
 },
 {
-"titlu": "Samus Aspirator vertical fara fir 2 in 1 Samus Hurricane 2, 600 W, Negru-Rosu",
-"pret": 677.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202512311121/408472/full/samus-aspirator-vertical-fara-fir-2-in-1-samus-hurricane-2-600-w-negru-rosu-1305406.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Faspiratoare%2Fsamus%2F408472-aspirator-vertical-fara-fir-2-in-1-samus-hurricane-2-600-w-negru-rosu%2F",
-"magazin": "dwyn.ro",
-"id": "zIUbpq_BVlJ2",
-"brand": "Samus",
-"url_magazin": "https://www.dwyn.ro/aspiratoare/samus/408472-aspirator-vertical-fara-fir-2-in-1-samus-hurricane-2-600-w-negru-rosu/",
-"pret_vechi": null,
-"verificat": "2026-11-04"
-},
-{
 "titlu": "Samus Aspirator vertical fara fir 2 in 1 Samus Hurricane Max Pro, Gri -Rosu",
 "pret": 677.99,
 "imagine": "https://www.dwyn.ro/images/products/img_202404261115/254431/full/samus-aspirator-vertical-fara-fir-2-in-1-samus-hurricane-max-pro-gri-rosu-538939.jpg",
@@ -9080,15 +9052,16 @@
 "verificat": "2026-11-04"
 },
 {
-"titlu": "Samus Aspirator vertical fara fir 2 in 1 Samus Cyclone Ultra Pro",
-"pret": 727.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202512311121/382811/full/samus-aspirator-vertical-fara-fir-samus-cyclone-ultra-pro-2-in-1-600-w-putere-de-aspirare-185w-recipient-0-65-litri-autonomie-acumulator-83-minute-1167380.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Faspiratoare%2Fsamus%2F382811-aspirator-vertical-fara-fir-2-in-1-samus-cyclone-ultra-pro%2F",
+"titlu": "Samus Aspirator vertical fara fir 2 in 1 Samus Hurricane 2, 600 W, Negru-Rosu",
+"pret": 677.99,
+"imagine": "https://www.dwyn.ro/images/products/img_202512311121/408472/full/samus-aspirator-vertical-fara-fir-2-in-1-samus-hurricane-2-600-w-negru-rosu-1305406.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Faspiratoare%2Fsamus%2F408472-aspirator-vertical-fara-fir-2-in-1-samus-hurricane-2-600-w-negru-rosu%2F",
 "magazin": "dwyn.ro",
-"id": "HLE3i55NuaLL",
+"id": "zIUbpq_BVlJ2",
 "brand": "Samus",
-"url_magazin": "https://www.dwyn.ro/aspiratoare/samus/382811-aspirator-vertical-fara-fir-2-in-1-samus-cyclone-ultra-pro/",
-"pret_vechi": null
+"url_magazin": "https://www.dwyn.ro/aspiratoare/samus/408472-aspirator-vertical-fara-fir-2-in-1-samus-hurricane-2-600-w-negru-rosu/",
+"pret_vechi": null,
+"verificat": "2026-11-04"
 },
 {
 "titlu": "Aspirator vertical fara fir JIMMY H8 FLEX Cordless Vacuum Cleaner, putere 550W, 185 AW, autonomie 65 min",
@@ -9115,18 +9088,6 @@
 "verificat": "2026-11-04"
 },
 {
-"titlu": "Aspirator vertical fara fir Jimmy JV51, 400W, 0,5L, Autonomie 45 de minute (Gri/Rosu)",
-"pret": 767.99,
-"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F3687%2F3687306%2F1558696324Aspirator+vertical+fara+fir+Xiaomi+Jimmy+JV51%2C+400W%2C+0%2C5L%2C+Autonomie+45+de+minute+%28Gri%29.JPG&type=auto&width=500&sign=ZzJHa7I-h4z2nW8DGvRL8q_xMKtndk8j3YVwvJ88WC8",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Felectrocasnice-aspiratoare-aspiratoare-verticale%2Fjimmy-aspirator-vertical-fara-fir-jimmy-jv51-400w-0-5l-autonomie-45-de-minute-gri-rosu-3687306.html",
-"magazin": "evomag.ro",
-"id": "Bwv2dfn0bH2k",
-"brand": "Jimmy",
-"url_magazin": "https://www.evomag.ro/electrocasnice-aspiratoare-aspiratoare-verticale/jimmy-aspirator-vertical-fara-fir-jimmy-jv51-400w-0-5l-autonomie-45-de-minute-gri-rosu-3687306.html",
-"pret_vechi": null,
-"verificat": "2026-11-06"
-},
-{
 "titlu": "Aspirator vertical fara fir cu spalare Xiaomi Truclean W20, 15000Pa, 2500mAh, autonomie 30 min",
 "pret": 799.0,
 "imagine": "https://cdn.shopify.com/s/files/1/0954/2244/7951/files/14213.jpg?v=1760948038",
@@ -9150,18 +9111,6 @@
 "pret_vechi": null
 },
 {
-"titlu": "Aspirator vertical fara fir cu mop Roidmi X30 Pro, putere aspirare 150W, autonomie 70 min",
-"pret": 999.0,
-"imagine": "https://cdn.shopify.com/s/files/1/0954/2244/7951/files/5354.jpg?v=1759583850",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fblacktech.ro%2Fproducts%2Faspirator-vertical-fara-fir-cu-mop-roidmi-x30-pro-putere-aspirare-150w-autonomie-70-min%3Fvariant%3D56071224885583",
-"magazin": "blacktech.ro",
-"id": "JXzgbErSk3Ro",
-"brand": "Roidmi",
-"url_magazin": "https://blacktech.ro/products/aspirator-vertical-fara-fir-cu-mop-roidmi-x30-pro-putere-aspirare-150w-autonomie-70-min?variant=56071224885583",
-"pret_vechi": 1899.0,
-"verificat": "2026-11-14"
-},
-{
 "titlu": "Aspirator vertical fara fir JIMMY JV85 Pro",
 "pret": 1099.0,
 "imagine": "https://cdn.shopify.com/s/files/1/0954/2244/7951/files/3304.jpg?v=1759583453",
@@ -9174,6 +9123,18 @@
 "verificat": "2026-11-04"
 },
 {
+"titlu": "Aspirator vertical fara fir JIMMY H8 Upgraded, putere aspirare 160AW, autonomie 60 min",
+"pret": 1149.0,
+"imagine": "https://cdn.shopify.com/s/files/1/0954/2244/7951/files/7893.jpg?v=1759584566",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fblacktech.ro%2Fproducts%2Faspirator-vertical-fara-fir-jimmy-h8-upgraded-putere-aspirare-160aw-autonomie-60-min%3Fvariant%3D56071244120399",
+"magazin": "blacktech.ro",
+"id": "WNleo_kN6r6a",
+"brand": "Jimmy",
+"url_magazin": "https://blacktech.ro/products/aspirator-vertical-fara-fir-jimmy-h8-upgraded-putere-aspirare-160aw-autonomie-60-min?variant=56071244120399",
+"pret_vechi": null,
+"verificat": "2026-11-18"
+},
+{
 "titlu": "Makita Aspirator Makita DVC750LZX3, fara fir, uscat/umed, 18V, 7.5L praf, 4.5L lichide, 50W",
 "pret": 1189.99,
 "imagine": "https://www.dwyn.ro/images/products/img_202503142150/294679/full/makita-makita-cordless-vacuum-cleaner-dvc750lzx3-18-v-727141.jpg",
@@ -9184,17 +9145,6 @@
 "url_magazin": "https://www.dwyn.ro/aspiratoare/makita/294679-aspirator-makita-dvc750lzx3-fara-fir-uscat-umed-18v-7-5l-praf-4-5l-lichide-50w/",
 "pret_vechi": null,
 "verificat": "2026-11-04"
-},
-{
-"titlu": "Rowenta Aspirator vertical fara fir cu spalare Rowenta X-Clean 2 GZ2271E0, 120W, 440 RPM, pana la 35 min autonomie, aspi",
-"pret": 1469.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202512311121/371087/full/rowenta-aspirator-vertical-fara-fir-cu-spalare-rowenta-x-clean-2-gz2271e0-120w-440-rpm-pana-la-35-min-autonomie-aspirare-umeda-si-uscata-capacitate-rezervor-apa-murdara-0-44l-functie-autocuratare-pano-1057160.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Faspiratoare%2Frowenta%2F371087-aspirator-vertical-fara-fir-cu-spalare-rowenta-x-clean-2-gz2271e0-120w-440-rpm-pana-la-35-min-autonomie-aspirare-umeda-si-uscata-capacitate-rezervor-apa-murdara-0-44l-functie-autocuratare-panou-de-con%2F",
-"magazin": "dwyn.ro",
-"id": "V3drOmB943Tk",
-"brand": "Rowenta",
-"url_magazin": "https://www.dwyn.ro/aspiratoare/rowenta/371087-aspirator-vertical-fara-fir-cu-spalare-rowenta-x-clean-2-gz2271e0-120w-440-rpm-pana-la-35-min-autonomie-aspirare-umeda-si-uscata-capacitate-rezervor-apa-murdara-0-44l-functie-autocuratare-panou-de-con/",
-"pret_vechi": null
 },
 {
 "titlu": "Aspirator vertical EZVIZ RH2, fara fir, Umed si uscat, 200W, 4000 mAh, 0.75L (Negru/Argintiu)",
@@ -9221,6 +9171,17 @@
 "verificat": "2026-11-06"
 },
 {
+"titlu": "SHARK Aspirator fara fir Detect Pro Shark, 21.6v, 240 w, autonomie pana la 60 de min, negru/alb",
+"pret": 1773.99,
+"imagine": "https://www.dwyn.ro/images/products/img_202404261115/229889/full/shark-vacuum-cleaner-detect-pro-iw1611eu-shark-459537.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Faspiratoare%2Fshark%2F229889-aspirator-fara-fir-detect-pro-shark-21-6v-240-w-autonomie-pana-la-60-de-min-negru-alb%2F",
+"magazin": "dwyn.ro",
+"id": "Rm09H_8yQ5Qt",
+"brand": "SHARK",
+"url_magazin": "https://www.dwyn.ro/aspiratoare/shark/229889-aspirator-fara-fir-detect-pro-shark-21-6v-240-w-autonomie-pana-la-60-de-min-negru-alb/",
+"pret_vechi": null
+},
+{
 "titlu": "Aspirator vertical Dyson V8 Origin, Fara fir, 425 W, Autonomie 40 min (Argintiu/Mov)",
 "pret": 1776.99,
 "imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4086%2F4086406%2Faspirator-vertical-dyson-v8-or-68039b66af91d.JPG&type=auto&width=500&sign=0vigbob7TKkNaDTUS7dMaHqwHTHFrY5nLfdJeKTacq0",
@@ -9240,7 +9201,7 @@
 "id": "5EqBwqhlLMb3",
 "brand": "SHARK",
 "url_magazin": "https://www.evomag.ro/electrocasnice-aspiratoare-aspiratoare-verticale/shark-aspirator-vertical-fara-fir-2in1-shark-ip1251eut-detectclean-pet-flexology-380w-21.6v-0.7l-autonomie-70-min-duoclean-slim-led-perie-pet-pro-anti-hair-wrap-plus-tehnologii-dirt-floor-edge-detect-gri-mov-4318953.html",
-"pret_vechi": 2743.99,
+"pret_vechi": null,
 "verificat": "2026-11-06"
 },
 {
@@ -9279,13 +9240,35 @@
 },
 {
 "titlu": "Midea Aspirator vertical Midea X10 Wet and Dry, fara fir cu spalare, 220 W, 0.7 l, Autonomie 35 minute, Negru",
-"pret": 2598.99,
+"pret": 2599.99,
 "imagine": "https://www.dwyn.ro/images/products/img_202512311121/400096/full/midea-midea-x10-wet-and-dry-cordless-vacuum-cleaner-black-1241413.png",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Faspiratoare%2Fmidea%2F400096-aspirator-vertical-midea-x10-wet-and-dry-fara-fir-cu-spalare-220-w-0-7-l-autonomie-35-minute-negru%2F",
 "magazin": "dwyn.ro",
 "id": "iEF-aadDyPgr",
 "brand": "Midea",
 "url_magazin": "https://www.dwyn.ro/aspiratoare/midea/400096-aspirator-vertical-midea-x10-wet-and-dry-fara-fir-cu-spalare-220-w-0-7-l-autonomie-35-minute-negru/",
+"pret_vechi": null
+},
+{
+"titlu": "SHARK Aspirator vertical fara fir 2in1 Shark IP1251EUT, DetectClean Pet Flexology, 380W, 21.6V, 0.7L, autonomie 70 min,",
+"pret": 2745.99,
+"imagine": "https://www.dwyn.ro/images/products/img_202503142150/294777/full/shark-aspirator-vertical-fara-fir-2in1-shark-ip1251eut-detectclean-pet-flexology-380w-21-6v-0-7l-autonomie-70-min-duoclean-slim-led-perie-pet-pro-anti-hair-wrap-plus-tehnologii-dirt-floor-edge-detect--738799.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Faspiratoare%2Fshark%2F294777-aspirator-vertical-fara-fir-2in1-shark-ip1251eut-detectclean-pet-flexology-380w-21-6v-0-7l-autonomie-70-min-duoclean-slim-led-perie-pet-pro-anti-hair-wrap-plus-tehnologii-dirt-floor-edge-detect-gri-mo%2F",
+"magazin": "dwyn.ro",
+"id": "sRuHLpbdrvmk",
+"brand": "SHARK",
+"url_magazin": "https://www.dwyn.ro/aspiratoare/shark/294777-aspirator-vertical-fara-fir-2in1-shark-ip1251eut-detectclean-pet-flexology-380w-21-6v-0-7l-autonomie-70-min-duoclean-slim-led-perie-pet-pro-anti-hair-wrap-plus-tehnologii-dirt-floor-edge-detect-gri-mo/",
+"pret_vechi": null
+},
+{
+"titlu": "Aspirator vertical fara fir cu spalare Dyson V15s Detect Submarine 448798-01, 600W, 60 min (Nichel/Albastru)",
+"pret": 3689.99,
+"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4124%2F4124392%2Fdyson-v15s-detect-dry-and-wet-65366a0d07d46.jpg&type=auto&width=500&sign=IpS8QZqlqPg5ee_eW0W2yDcr3y44CdH4_QHZ2WIX8_Y",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Felectrocasnice-aspiratoare-aspiratoare-verticale%2Fdyson-aspirator-vertical-fara-fir-cu-spalare-dyson-v15s-detect-submarine-448798-01-600w-60-min-nichel-albastru-4124392.html",
+"magazin": "evomag.ro",
+"id": "665c13f47",
+"brand": "Dyson",
+"url_magazin": "https://www.evomag.ro/electrocasnice-aspiratoare-aspiratoare-verticale/dyson-aspirator-vertical-fara-fir-cu-spalare-dyson-v15s-detect-submarine-448798-01-600w-60-min-nichel-albastru-4124392.html",
 "pret_vechi": null
 }
 ],
@@ -9302,7 +9285,7 @@
 "titlu": "Aspiratoare de mână",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-14",
+"actualizat": "2026-11-18",
 "feeduri": [
 {
 "id": 1096,
@@ -9438,18 +9421,6 @@
 "verificat": "2026-11-04"
 },
 {
-"titlu": "TRISTAR Aspirator de mana Tristar KR-3140, fara fir, uscat si umed, autonomie 24 minute",
-"pret": 266.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202512311121/400666/full/tristar-tristar-kr-3140-handheld-cordless-vacuum-cleaner-wet-and-dry-cleaning-operating-time-24-min-1247080.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Faspiratoare%2Ftristar%2F400666-aspirator-de-mana-tristar-kr-3140-fara-fir-uscat-si-umed-autonomie-24-minute%2F",
-"magazin": "dwyn.ro",
-"id": "mpYboFvISFpt",
-"brand": "TRISTAR",
-"url_magazin": "https://www.dwyn.ro/aspiratoare/tristar/400666-aspirator-de-mana-tristar-kr-3140-fara-fir-uscat-si-umed-autonomie-24-minute/",
-"pret_vechi": null,
-"verificat": "2026-11-04"
-},
-{
 "titlu": "Aspirator de mana Black+Decker DVD320J-QW Bagless, Autonomie 17 minute (Negru)",
 "pret": 272.99,
 "imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4305%2F4305840%2F6a575f517cfbd.jpg&type=auto&width=500&sign=Q5jLeEByxMSp1vXBfBD9UY6k9KeLfg_GtDTnkTLyM2U",
@@ -9486,18 +9457,6 @@
 "verificat": "2026-11-06"
 },
 {
-"titlu": "Aspirator de mana ETA ETA142590000, 14.4 V, 0.4 L, Autonomie 25 min (Alb/Negru)",
-"pret": 359.99,
-"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F3820%2F3820847%2Feta-vacuum-cleaner-rotary-eta1-60ffe19c1bfd7.JPG&type=auto&width=500&sign=nKC8kMSVdWMWNdKpeRkGNXxEDAaGgt3V-0emdK2FYP8",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Felectrocasnice-aspiratoare-aspiratoare-de-mana-portabile%2Feta-aspirator-de-mana-eta-eta142590000-14.4-v-0.4-l-autonomie-25-min-alb-negru-3820847.html",
-"magazin": "evomag.ro",
-"id": "-15hTB2Umhp0",
-"brand": "ETA",
-"url_magazin": "https://www.evomag.ro/electrocasnice-aspiratoare-aspiratoare-de-mana-portabile/eta-aspirator-de-mana-eta-eta142590000-14.4-v-0.4-l-autonomie-25-min-alb-negru-3820847.html",
-"pret_vechi": null,
-"verificat": "2026-11-06"
-},
-{
 "titlu": "Aspirator de mana Bosch Move BHN16L, 0.3 L, 16 V (Negru)",
 "pret": 359.99,
 "imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F3799%2F3799365%2F1601030338BHN16L+1.JPG&type=auto&width=500&sign=QoGfOVnk87fqX307xLjY2IYHhjwbx5b-XkvxuuJVHJU",
@@ -9506,6 +9465,18 @@
 "id": "G7pxAOHwrPmb",
 "brand": "BOSCH",
 "url_magazin": "https://www.evomag.ro/electrocasnice-aspiratoare-aspiratoare-de-mana-portabile/bosch-aspirator-de-mana-bosch-move-bhn16l-0.3-l-16-v-negru-3799365.html",
+"pret_vechi": null,
+"verificat": "2026-11-06"
+},
+{
+"titlu": "Aspirator de mana ETA ETA142590000, 14.4 V, 0.4 L, Autonomie 25 min (Alb/Negru)",
+"pret": 359.99,
+"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F3820%2F3820847%2Feta-vacuum-cleaner-rotary-eta1-60ffe19c1bfd7.JPG&type=auto&width=500&sign=nKC8kMSVdWMWNdKpeRkGNXxEDAaGgt3V-0emdK2FYP8",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Felectrocasnice-aspiratoare-aspiratoare-de-mana-portabile%2Feta-aspirator-de-mana-eta-eta142590000-14.4-v-0.4-l-autonomie-25-min-alb-negru-3820847.html",
+"magazin": "evomag.ro",
+"id": "-15hTB2Umhp0",
+"brand": "ETA",
+"url_magazin": "https://www.evomag.ro/electrocasnice-aspiratoare-aspiratoare-de-mana-portabile/eta-aspirator-de-mana-eta-eta142590000-14.4-v-0.4-l-autonomie-25-min-alb-negru-3820847.html",
 "pret_vechi": null,
 "verificat": "2026-11-06"
 },
@@ -9546,7 +9517,7 @@
 "titlu": "Aparate de aer condiționat de 9000 BTU",
 "nota": null,
 "in_text": "\\b9000\\s*BTU\\b",
-"actualizat": "2026-11-14",
+"actualizat": "2026-11-18",
 "feeduri": [
 {
 "id": 4152,
@@ -9603,6 +9574,17 @@
 "verificat": "2026-11-04"
 },
 {
+"titlu": "Electrolux Aparat de aer conditionat Electrolux EACS/I-09HEJ, 9000 BTU Class A++/A+++, R32, Wi-fi, HC, Alb",
+"pret": 1264.99,
+"imagine": "https://www.dwyn.ro/images/products/img_202503142150/297761/full/electrolux-aparat-de-aer-conditionat-electrolux-eacs-i-09hej9000-btu-class-a-plus-plus-a-plus-plus-plus-r32-wi-fi-hc-741243.png",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Faparate-de-aer-conditionat%2Felectrolux%2F297761-aparat-de-aer-conditionat-electrolux-eacs-i-09hej-9000-btu-class-a-plus-plus-a-plus-plus-plus-r32-wi-fi-hc-alb%2F",
+"magazin": "dwyn.ro",
+"id": "x9RrYaC-1CZY",
+"brand": "Electrolux",
+"url_magazin": "https://www.dwyn.ro/aparate-de-aer-conditionat/electrolux/297761-aparat-de-aer-conditionat-electrolux-eacs-i-09hej-9000-btu-class-a-plus-plus-a-plus-plus-plus-r32-wi-fi-hc-alb/",
+"pret_vechi": null
+},
+{
 "titlu": "Aparat de aer conditionat portabil BÖHM BA-010F 4 in 1, 9000 BTU, Racire, Incalzire, Ventilatie, Dezumidificare (Alb)",
 "pret": 1299.99,
 "imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4207%2F4207881%2Faer-conditionat-4-in-1-racire-67c953d5950a9.jpg&type=auto&width=500&sign=iuBXvljgX6K93YxXq1FsBKbh3G8Iv3W4B4y_4N4Os78",
@@ -9624,17 +9606,6 @@
 "url_magazin": "https://www.dwyn.ro/aparate-de-aer-conditionat/daewoo/252673-aparat-aer-conditionat-daewoo-dac-09chsdb-nk-9000-btu-negru/",
 "pret_vechi": null,
 "verificat": "2026-11-04"
-},
-{
-"titlu": "Daewoo Aparat aer conditionat, Daewoo DAC-09CHSDB-NW, 9000 BTU WI-Fi, Alb",
-"pret": 1406.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202512311121/252675/full/daewoo-aparat-aer-conditionat-daewoo-dac-09chsdb-nw-9000-btu-wi-fi-alb-1331728.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Faparate-de-aer-conditionat%2Fdaewoo%2F252675-aparat-aer-conditionat-daewoo-dac-09chsdb-nw-9000-btu-wi-fi-alb%2F",
-"magazin": "dwyn.ro",
-"id": "3a1d2c759",
-"brand": "Daewoo",
-"url_magazin": "https://www.dwyn.ro/aparate-de-aer-conditionat/daewoo/252675-aparat-aer-conditionat-daewoo-dac-09chsdb-nw-9000-btu-wi-fi-alb/",
-"pret_vechi": null
 },
 {
 "titlu": "Aparat aer conditionat Nobus CS25-V3G 9000 BTU, Clasa A++/A+, Inverter, Wi-Fi inclus, model 2025",
@@ -9669,7 +9640,7 @@
 "id": "grgeAQZVU0GO",
 "brand": "Daewoo",
 "url_magazin": "https://www.brico.ro/instalatii-sanitare-termice-climatizare/aer-conditionat-daewoo-dac-09chsdb-nk-9000-btu-2600-w-2610-w-6-5-kg-22-kg-1-unitati-interioare-negru.html",
-"pret_vechi": 1985.0,
+"pret_vechi": 1942.0,
 "verificat": "2026-11-04"
 },
 {
@@ -9705,8 +9676,30 @@
 "id": "FBJjQbi34tJQ",
 "brand": "Daewoo",
 "url_magazin": "https://www.brico.ro/instalatii-sanitare-termice-climatizare/aer-conditionat-daewoo-dac-09prow-9000-btu-2600-w-2630-w-8-kg-22-kg-1-unitati-interioare-7-trepte-ventilatie-alb.html",
-"pret_vechi": 2125.0,
+"pret_vechi": 1998.0,
 "verificat": "2026-11-04"
+},
+{
+"titlu": "Ariston Aparat de aer conditionat Ariston Kios BS 9000 BTU Wi-Fi, Clasa A++/A+, functie incalzire, 3D Air Flow, i-Feel,",
+"pret": 1868.99,
+"imagine": "https://www.dwyn.ro/images/products/img_202508191322/320686/full/ariston-aparat-de-aer-conditionat-ariston-kios-bs-9000-btu-wi-fi-clasa-a-plus-plus-a-plus-functie-incalzire-3d-air-flow-i-feel-alb-877283.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Faparate-de-aer-conditionat%2Fariston%2F320686-aparat-de-aer-conditionat-ariston-kios-bs-9000-btu-wi-fi-clasa-a-plus-plus-a-plus-functie-incalzire-3d-air-flow-i-feel-alb%2F",
+"magazin": "dwyn.ro",
+"id": "3CX1vZ-pLXRC",
+"brand": "Ariston",
+"url_magazin": "https://www.dwyn.ro/aparate-de-aer-conditionat/ariston/320686-aparat-de-aer-conditionat-ariston-kios-bs-9000-btu-wi-fi-clasa-a-plus-plus-a-plus-functie-incalzire-3d-air-flow-i-feel-alb/",
+"pret_vechi": null
+},
+{
+"titlu": "Ariston Aparat de aer conditionat Ariston PRIOS 25 Wi-Fi, 9000 BTU, Clasa A++, Functie incalzire, 2D Inverter, Follow me",
+"pret": 1906.99,
+"imagine": "https://www.dwyn.ro/images/products/img_202508191322/320668/full/ariston-aparat-de-aer-conditionat-ariston-prios-25-wi-fi-9000-btu-clasa-a-plus-plus-functie-incalzire-2d-inverter-follow-me-r32-alb-877541.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Faparate-de-aer-conditionat%2Fariston%2F320668-aparat-de-aer-conditionat-ariston-prios-25-wi-fi-9000-btu-clasa-a-plus-plus-functie-incalzire-2d-inverter-follow-me-r32-alb%2F",
+"magazin": "dwyn.ro",
+"id": "Ut9iPH8yyxDD",
+"brand": "Ariston",
+"url_magazin": "https://www.dwyn.ro/aparate-de-aer-conditionat/ariston/320668-aparat-de-aer-conditionat-ariston-prios-25-wi-fi-9000-btu-clasa-a-plus-plus-functie-incalzire-2d-inverter-follow-me-r32-alb/",
+"pret_vechi": null
 },
 {
 "titlu": "Aparat de aer conditionat portabil Sharp CVH9XR, 9000 BTU, Control Digital, 3 trepte putere, 2600 W, 32 m², Alb",
@@ -9777,28 +9770,6 @@
 "url_magazin": "https://www.evomag.ro/electrocasnice-racire-aparate-de-aer-conditionat/bosch-aparat-de-aer-conditionat-bosch-climate-4000i-26-e-9000-btu-clasa-a-a-inverter-r32-wi-fi-mod-eco-ionizare-i-clean-alb-4203948.html",
 "pret_vechi": null,
 "verificat": "2026-11-06"
-},
-{
-"titlu": "BOSCH Aparat de aer conditionat Bosch Climate 6000i Inverter 9000 BTU, A+++, Turbo, Timer, Repornire automata, Eco, Slee",
-"pret": 2948.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202404261115/233399/full/bosch-aparat-de-aer-conditionat-bosch-climate-6000i-inverter-9000-btu-a-plus-plus-plus-turbo-timer-repornire-automata-eco-sleep-i-clean-dezumidificare-follow-me-alb-562815.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Faparate-de-aer-conditionat%2Fbosch%2F233399-aparat-de-aer-conditionat-bosch-climate-6000i-inverter-9000-btu-a-plus-plus-plus-turbo-timer-repornire-automata-eco-sleep-i-clean-dezumidificare-follow-me-alb%2F",
-"magazin": "dwyn.ro",
-"id": "96eb9e758",
-"brand": "BOSCH",
-"url_magazin": "https://www.dwyn.ro/aparate-de-aer-conditionat/bosch/233399-aparat-de-aer-conditionat-bosch-climate-6000i-inverter-9000-btu-a-plus-plus-plus-turbo-timer-repornire-automata-eco-sleep-i-clean-dezumidificare-follow-me-alb/",
-"pret_vechi": null
-},
-{
-"titlu": "BOSCH Aparat de aer conditionat Bosch Climate 4000i 7733703208 Inverter 9000 BTU Clasa A ++ / A ++",
-"pret": 2989.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202503142150/278959/full/bosch-aparat-de-aer-conditionat-bosch-climate-4000i-7733703208-inverter-9000-btu-clasa-a-plus-plus-a-plus-plus-686477.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Faparate-de-aer-conditionat%2Fbosch%2F278959-aparat-de-aer-conditionat-bosch-climate-4000i-7733703208-inverter-9000-btu-clasa-a-plus-plus-a-plus-plus%2F",
-"magazin": "dwyn.ro",
-"id": "vIe7edutpDOP",
-"brand": "BOSCH",
-"url_magazin": "https://www.dwyn.ro/aparate-de-aer-conditionat/bosch/278959-aparat-de-aer-conditionat-bosch-climate-4000i-7733703208-inverter-9000-btu-clasa-a-plus-plus-a-plus-plus/",
-"pret_vechi": null
 }
 ],
 "magazine": [
@@ -9815,7 +9786,7 @@
 "titlu": "Aparate de aer condiționat de 12000 BTU",
 "nota": null,
 "in_text": "\\b12000\\s*BTU\\b",
-"actualizat": "2026-11-14",
+"actualizat": "2026-11-18",
 "feeduri": [
 {
 "id": 1539,
@@ -9844,30 +9815,8 @@
 "id": "6K5XmhaFBMwD",
 "brand": "Electrolux",
 "url_magazin": "https://www.evomag.ro/electrocasnice-racire-aparate-de-aer-conditionat/electrolux-aparat-de-aer-conditionat-electrolux-eacs-i-12hef-12000-btu-clasa-a-a-r32-wi-fi-alb-4238299.html",
-"pret_vechi": null,
+"pret_vechi": 1831.99,
 "verificat": "2026-11-06"
-},
-{
-"titlu": "HEINNER Aer conditionat Mirror Heinner HAC-MRB12WHWIFI, capacitate: 12000BTU",
-"pret": 1339.0,
-"imagine": "https://www.dwyn.ro/images/products/img_201907242342/128372/full/heinner-aer-conditionat-heinner-hac-mrb12whwifi-180745.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Faparate-de-aer-conditionat%2Fheinner%2F128372-aer-conditionat-mirror-heinner-hac-mrb12whwifi-capacitate-12000btu%2F",
-"magazin": "dwyn.ro",
-"id": "mssfUHoVixPI",
-"brand": "HEINNER",
-"url_magazin": "https://www.dwyn.ro/aparate-de-aer-conditionat/heinner/128372-aer-conditionat-mirror-heinner-hac-mrb12whwifi-capacitate-12000btu/",
-"pret_vechi": null
-},
-{
-"titlu": "TESLA Aparat de aer conditionat Tesla TT34EXKC-1232IAW, 12000 BTU, Clasa A++, R32, Wi-Fi, Alb",
-"pret": 1436.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202503142150/289053/full/tesla-aparat-de-aer-conditionat-tesla-tt34exkc-1232iaw12000-btu-a-plus-plus-r32-wifi-699011.png",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Faparate-de-aer-conditionat%2Ftesla%2F289053-aparat-de-aer-conditionat-tesla-tt34exkc-1232iaw-12000-btu-clasa-a-plus-plus-r32-wi-fi-alb%2F",
-"magazin": "dwyn.ro",
-"id": "I03Oo07bWGiX",
-"brand": "TESLA",
-"url_magazin": "https://www.dwyn.ro/aparate-de-aer-conditionat/tesla/289053-aparat-de-aer-conditionat-tesla-tt34exkc-1232iaw-12000-btu-clasa-a-plus-plus-r32-wi-fi-alb/",
-"pret_vechi": null
 },
 {
 "titlu": "Aparat aer conditionat Nobus CS35-V3G 12000 BTU, Clasa A++/A+, Inverter, Wi-Fi inclus, model 2025",
@@ -9882,25 +9831,14 @@
 "verificat": "2026-11-04"
 },
 {
-"titlu": "HEINNER Aparat de aer conditionat Heinner HAC-HS12WH++, 12000 BTU, Inverter, Clasa A++",
-"pret": 1494.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202004201336/151348/full/heinner-aparat-de-aer-conditionat-heinner-hac-hs12wh-plus-plus-12000-btu-inverter-clasa-a-plus-plus-234637.webp",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Faparate-de-aer-conditionat%2Fheinner%2F151348-aparat-de-aer-conditionat-heinner-hac-hs12wh-plus-plus-12000-btu-inverter-clasa-a-plus-plus%2F",
+"titlu": "HEINNER Aparat de aer conditionat Heinner Crystal PLus HAC-CRP12WH++, 12000 BTU, Clasa A++, Control inteligent al umidit",
+"pret": 1500.99,
+"imagine": "https://www.dwyn.ro/images/products/img_202606122129/455908/full/heinner-aparat-de-aer-conditionat-heinner-crystal-plus-hac-crp12wh-plus-plus-12000-btu-clasa-a-plus-plus-control-inteligent-al-umiditatii-breeze-away-eco-plus-follow-me-autocuratare-alb-1448080.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Faparate-de-aer-conditionat%2Fheinner%2F455908-aparat-de-aer-conditionat-heinner-crystal-plus-hac-crp12wh-plus-plus-12000-btu-clasa-a-plus-plus-control-inteligent-al-umiditatii-breeze-away-eco-plus-follow-me-autocuratare-alb%2F",
 "magazin": "dwyn.ro",
-"id": "h9HdSWK14Cp4",
+"id": "-FT2-Aq9VH_m",
 "brand": "HEINNER",
-"url_magazin": "https://www.dwyn.ro/aparate-de-aer-conditionat/heinner/151348-aparat-de-aer-conditionat-heinner-hac-hs12wh-plus-plus-12000-btu-inverter-clasa-a-plus-plus/",
-"pret_vechi": null
-},
-{
-"titlu": "Daewoo Aer conditionat, Daewoo DAC-12CHSDB-NK, 12000BTU Wi-Fi, negru",
-"pret": 1566.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202404261115/252677/full/daewoo-aer-conditionat-daewoo-dac-12chsdb-nk-12000btu-wi-fi-negru-525635.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Faparate-de-aer-conditionat%2Fdaewoo%2F252677-aer-conditionat-daewoo-dac-12chsdb-nk-12000btu-wi-fi-negru%2F",
-"magazin": "dwyn.ro",
-"id": "u5TY1XnJHw32",
-"brand": "Daewoo",
-"url_magazin": "https://www.dwyn.ro/aparate-de-aer-conditionat/daewoo/252677-aer-conditionat-daewoo-dac-12chsdb-nk-12000btu-wi-fi-negru/",
+"url_magazin": "https://www.dwyn.ro/aparate-de-aer-conditionat/heinner/455908-aparat-de-aer-conditionat-heinner-crystal-plus-hac-crp12wh-plus-plus-12000-btu-clasa-a-plus-plus-control-inteligent-al-umiditatii-breeze-away-eco-plus-follow-me-autocuratare-alb/",
 "pret_vechi": null
 },
 {
@@ -9940,6 +9878,17 @@
 "verificat": "2026-11-04"
 },
 {
+"titlu": "HEINNER Aparat de aer conditionat Heinner Crystal PLus HAC-CRP12WIFI++, Control WiFi, 12000 BTU, Clasa A++, Control inte",
+"pret": 1666.99,
+"imagine": "https://www.dwyn.ro/images/products/img_202606122129/455911/full/heinner-aparat-de-aer-conditionat-heinner-crystal-plus-hac-crp12wifi-plus-plus-control-wifi-12000-btu-clasa-a-plus-plus-control-inteligent-al-umiditatii-breeze-away-eco-plus-follow-me-autocuratare-alb-1448098.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Faparate-de-aer-conditionat%2Fheinner%2F455911-aparat-de-aer-conditionat-heinner-crystal-plus-hac-crp12wifi-plus-plus-control-wifi-12000-btu-clasa-a-plus-plus-control-inteligent-al-umiditatii-breeze-away-eco-plus-follow-me-autocuratare-alb%2F",
+"magazin": "dwyn.ro",
+"id": "ZY5Gw7kCSLPT",
+"brand": "HEINNER",
+"url_magazin": "https://www.dwyn.ro/aparate-de-aer-conditionat/heinner/455911-aparat-de-aer-conditionat-heinner-crystal-plus-hac-crp12wifi-plus-plus-control-wifi-12000-btu-clasa-a-plus-plus-control-inteligent-al-umiditatii-breeze-away-eco-plus-follow-me-autocuratare-alb/",
+"pret_vechi": null
+},
+{
 "titlu": "Aer conditionat Ariston Alys R32 35 C35 MUD0 12000 Btu, follow me, agent frigorific R32, clasa energetica A++",
 "pret": 1699.0,
 "imagine": "https://cdn.contentspeed.ro/fornello.websales.ro/cs-content/cs-photos/products/original/aer-conditionat-ariston-alys-r32-35-c35-mud0-12000_5495_5_17141385749357.JPG",
@@ -9950,17 +9899,6 @@
 "url_magazin": "https://www.fornello.ro/incalzire/aparate-de-aer-conditionat/aer-conditionat-ariston-alys-r32-35-c35-mud0-12000-btu-follow-me-agent-frigorific-r32-clasa-energetica-a-3381412.html",
 "pret_vechi": null,
 "verificat": "2026-11-04"
-},
-{
-"titlu": "HEINNER Aer conditionat Mirror Heinner HAC-MRB12SLWIFI, capacitate: 12000BTU",
-"pret": 1755.99,
-"imagine": "https://www.dwyn.ro/images/products/img_201907242342/128375/full/heinner-aer-conditionat-heinner-hac-mrb12slwifi-180751.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Faparate-de-aer-conditionat%2Fheinner%2F128375-aer-conditionat-mirror-heinner-hac-mrb12slwifi-capacitate-12000btu%2F",
-"magazin": "dwyn.ro",
-"id": "C1hhhWAskKZ5",
-"brand": "HEINNER",
-"url_magazin": "https://www.dwyn.ro/aparate-de-aer-conditionat/heinner/128375-aer-conditionat-mirror-heinner-hac-mrb12slwifi-capacitate-12000btu/",
-"pret_vechi": null
 },
 {
 "titlu": "Aparat de aer conditionat TCL BreezeIN TAC-12CHSD/TPH11IF 12000 BTU, Clasa A++, Inverter, Wi-Fi, Incalzire, Fast Cooling",
@@ -9986,6 +9924,39 @@
 "verificat": "2026-11-04"
 },
 {
+"titlu": "Ariston Aparat de aer conditionat Ariston PRIOS 35 Wi-Fi, 12000 BTU, Clasa A++, Functie incalzire, 2D Inverter, Follow m",
+"pret": 2065.99,
+"imagine": "https://www.dwyn.ro/images/products/img_202512311121/320671/full/ariston-aparat-de-aer-conditionat-ariston-prios-35-wi-fi-12000-btu-clasa-a-plus-plus-functie-incalzire-2d-inverter-follow-me-r32-alb-1044776.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Faparate-de-aer-conditionat%2Fariston%2F320671-aparat-de-aer-conditionat-ariston-prios-35-wi-fi-12000-btu-clasa-a-plus-plus-functie-incalzire-2d-inverter-follow-me-r32-alb%2F",
+"magazin": "dwyn.ro",
+"id": "SLwqgh6xuktY",
+"brand": "Ariston",
+"url_magazin": "https://www.dwyn.ro/aparate-de-aer-conditionat/ariston/320671-aparat-de-aer-conditionat-ariston-prios-35-wi-fi-12000-btu-clasa-a-plus-plus-functie-incalzire-2d-inverter-follow-me-r32-alb/",
+"pret_vechi": null
+},
+{
+"titlu": "Aparat de aer conditionat Heinner HAC-HS12EYEWIFI+++, 12000 BTU, Clasa A+++, 21 mp, Control Wireless, AI Smart, Sleep, I",
+"pret": 2140.99,
+"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4170%2F4170356%2Faer-conditionat-heinner-hac-hs-669519f6cc350.png&type=auto&width=500&sign=VUUFKVRY4bNRHHmMjDI4xfobqSf9ff_DN6dZvEv4A4E",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Felectrocasnice-racire-aparate-de-aer-conditionat%2Fheinner-aparat-de-aer-conditionat-heinner-hac-hs12eyewifi-12000-btu-clasa-a-21-mp-control-wireless-ai-smart-sleep-ionizare-self-clean-alb-4170356.html",
+"magazin": "evomag.ro",
+"id": "vl5cAhEjb1jc",
+"brand": "Heinner",
+"url_magazin": "https://www.evomag.ro/electrocasnice-racire-aparate-de-aer-conditionat/heinner-aparat-de-aer-conditionat-heinner-hac-hs12eyewifi-12000-btu-clasa-a-21-mp-control-wireless-ai-smart-sleep-ionizare-self-clean-alb-4170356.html",
+"pret_vechi": null
+},
+{
+"titlu": "Aparat de aer conditionat Fram MOONSTONE ACF-MS12WIFI-GY, 12000 BTU, Super Ionizare, Functie Breeze away, Follow me (Alb",
+"pret": 2206.99,
+"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4075%2F4075376%2F63c90000a387b.JPG&type=auto&width=500&sign=wHy1f6gXe1AYFCzERTSwHUgd11KkPYvjQTmJpX8Y9bc",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Felectrocasnice-racire-aparate-de-aer-conditionat%2Ffram-aparat-de-aer-conditionat-fram-moonstone-acf-ms12wifi-gy-12000-btu-super-ionizare-functie-breeze-away-follow-me-alb-argintiu-4075376.html",
+"magazin": "evomag.ro",
+"id": "K3wQ9NiU8kHA",
+"brand": "Fram",
+"url_magazin": "https://www.evomag.ro/electrocasnice-racire-aparate-de-aer-conditionat/fram-aparat-de-aer-conditionat-fram-moonstone-acf-ms12wifi-gy-12000-btu-super-ionizare-functie-breeze-away-follow-me-alb-argintiu-4075376.html",
+"pret_vechi": 2299.99
+},
+{
 "titlu": "Midea Aer conditionat Midea Xtreme Save, 12000 BTU, Inverter",
 "pret": 2285.99,
 "imagine": "https://www.dwyn.ro/images/products/img_202106242018/169897/full/midea-aparat-de-aer-conditionat-midea-ag-extreme-save-2021-ag-12nxd0-i-x1-12n8d0-o-inverter-12000-btu-291065.png",
@@ -9998,14 +9969,14 @@
 "verificat": "2026-11-04"
 },
 {
-"titlu": "Midea Aer conditionat Midea Breezeless E 12000BTU, A++, Cool Flash Plus, Тwіnflар, Air Magic+ Alb, curatare cu steriliza",
-"pret": 2413.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202503142150/292753/full/midea-aer-conditionat-midea-breezeless-e-12000btu-a-plus-plus-cool-flash-plus-w-nfl-air-magic-plus-alb-curatare-cu-sterilizare-wifi-710963.png",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Faparate-de-aer-conditionat%2Fmidea%2F292753-aer-conditionat-midea-breezeless-e-12000btu-a-plus-plus-cool-flash-plus-w-nfl-air-magic-plus-alb-curatare-cu-sterilizare-wifi%2F",
+"titlu": "Samsung Aparat de aer conditionat Samsung AR35 12000 BTU, Clasa A++, Fast cooling, Good Sleep, AR12TXHQASINEU/AR12TXHQAS",
+"pret": 2408.99,
+"imagine": "https://www.dwyn.ro/images/products/img_202512311121/320713/full/samsung-aparat-de-aer-conditionat-samsung-ar35-12000-btu-clasa-a-plus-plus-fast-cooling-good-sleep-ar12txhqasineu-ar12txhqasixeu-alb-1044809.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Faparate-de-aer-conditionat%2Fsamsung%2F320713-aparat-de-aer-conditionat-samsung-ar35-12000-btu-clasa-a-plus-plus-fast-cooling-good-sleep-ar12txhqasineu-ar12txhqasixeu-alb%2F",
 "magazin": "dwyn.ro",
-"id": "5DRw9tP_zN5C",
-"brand": "Midea",
-"url_magazin": "https://www.dwyn.ro/aparate-de-aer-conditionat/midea/292753-aer-conditionat-midea-breezeless-e-12000btu-a-plus-plus-cool-flash-plus-w-nfl-air-magic-plus-alb-curatare-cu-sterilizare-wifi/",
+"id": "_o0yTlO2sIyA",
+"brand": "Samsung",
+"url_magazin": "https://www.dwyn.ro/aparate-de-aer-conditionat/samsung/320713-aparat-de-aer-conditionat-samsung-ar35-12000-btu-clasa-a-plus-plus-fast-cooling-good-sleep-ar12txhqasineu-ar12txhqasixeu-alb/",
 "pret_vechi": null
 },
 {
@@ -10031,6 +10002,17 @@
 "url_magazin": "https://www.evomag.ro/electrocasnice-racire-aparate-de-aer-conditionat/bosch-aparat-de-aer-conditionat-bosch-climate-4000i-35-e-12000-btu-clasa-a-a-inverter-r32-wi-fi-mod-eco-ionizare-i-clean-alb-4165575.html",
 "pret_vechi": null,
 "verificat": "2026-11-06"
+},
+{
+"titlu": "BOSCH Aparat de aer conditionat Bosch Climate 3200i, 12000 BTU, A++/A+, functie Wind avoid me, functie Follow-me, Wi-Fi",
+"pret": 2838.99,
+"imagine": "https://www.dwyn.ro/images/products/img_202512311121/391522/full/bosch-aparat-de-aer-conditionat-bosch-climate-3200i-12000-btu-a-plus-plus-a-plus-functie-wind-avoid-me-functie-follow-me-wi-fi-ready-alb-1209799.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Faparate-de-aer-conditionat%2Fbosch%2F391522-aparat-de-aer-conditionat-bosch-climate-3200i-12000-btu-a-plus-plus-a-plus-functie-wind-avoid-me-functie-follow-me-wi-fi-ready-alb%2F",
+"magazin": "dwyn.ro",
+"id": "4SiaBUMWug-V",
+"brand": "BOSCH",
+"url_magazin": "https://www.dwyn.ro/aparate-de-aer-conditionat/bosch/391522-aparat-de-aer-conditionat-bosch-climate-3200i-12000-btu-a-plus-plus-a-plus-functie-wind-avoid-me-functie-follow-me-wi-fi-ready-alb/",
+"pret_vechi": null
 },
 {
 "titlu": "Aer conditionat Mitsubishi Wi-Fi Gratuit 12000 BTU, Heavy Nyoko Plus SRK35ZSP-W1 / SRC35ZSP-W1, Inverter, A++/A+ 12 000",
@@ -10067,6 +10049,17 @@
 "url_magazin": "https://www.agroclima.ro/aparat-aer-conditionat-si-montaj/aer-conditionat-mitsubishi-electric-r32-inverter-12000-btu-h.html",
 "pret_vechi": null,
 "verificat": "2026-11-04"
+},
+{
+"titlu": "HEINNER Aer conditionat Crystal Heinner HAC-CR12WIFI, capacitate: 12000BTU",
+"pret": 3804.99,
+"imagine": "https://www.dwyn.ro/images/products/img_201907242342/128374/full/heinner-aer-conditionat-heinner-hac-cr12wifi-180749.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Faparate-de-aer-conditionat%2Fheinner%2F128374-aer-conditionat-crystal-heinner-hac-cr12wifi-capacitate-12000btu%2F",
+"magazin": "dwyn.ro",
+"id": "oOUKWj8RAILU",
+"brand": "HEINNER",
+"url_magazin": "https://www.dwyn.ro/aparate-de-aer-conditionat/heinner/128374-aer-conditionat-crystal-heinner-hac-cr12wifi-capacitate-12000btu/",
+"pret_vechi": null
 },
 {
 "titlu": "Aer condiționat tip casetă TCL 12000 BTU, Inverter, A++, R32, răcire și încălzire",
@@ -10107,7 +10100,7 @@
 "titlu": "Aparate de aer condiționat de 18000 BTU",
 "nota": null,
 "in_text": "\\b18000\\s*BTU\\b",
-"actualizat": "2026-11-14",
+"actualizat": "2026-11-18",
 "feeduri": [
 {
 "id": 4152,
@@ -10236,6 +10229,17 @@
 "verificat": "2026-11-04"
 },
 {
+"titlu": "HEINNER Aer conditionat Crystal Heinner HAC-CR18WIFI, capacitate: 18000BTU, control WIFI",
+"pret": 2765.99,
+"imagine": "https://www.dwyn.ro/images/products/img_201804261137/120315/full/heinner-aer-conditionat-heinner-hac-cr18wifi-160916.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Faparate-de-aer-conditionat%2Fheinner%2F120315-aer-conditionat-crystal-heinner-hac-cr18wifi-capacitate-18000btu-control-wifi%2F",
+"magazin": "dwyn.ro",
+"id": "pIdBAvYjX5m2",
+"brand": "HEINNER",
+"url_magazin": "https://www.dwyn.ro/aparate-de-aer-conditionat/heinner/120315-aer-conditionat-crystal-heinner-hac-cr18wifi-capacitate-18000btu-control-wifi/",
+"pret_vechi": null
+},
+{
 "titlu": "HEINNER AER CONDITIONAT HEINNER HAC-HS18KITWIFI++, 18000 BTU WI-FI, Clasa A++, Smart, Sleep, Functie iFeel, Alb",
 "pret": 2836.99,
 "imagine": "https://www.dwyn.ro/images/products/img_202503142150/297503/full/heinner-aer-conditionat-heinner-hac-hs18kitwifi-plus-plus-18000-btu-wi-fi-clasa-a-plus-plus-smart-sleep-functie-ifeel-alb-735335.jpg",
@@ -10246,17 +10250,6 @@
 "url_magazin": "https://www.dwyn.ro/aparate-de-aer-conditionat/heinner/297503-aer-conditionat-heinner-hac-hs18kitwifi-plus-plus-18000-btu-wi-fi-clasa-a-plus-plus-smart-sleep-functie-ifeel-alb/",
 "pret_vechi": null,
 "verificat": "2026-11-04"
-},
-{
-"titlu": "Electrolux Aparat de aer conditionat Electrolux EACS/I-18HEF, 18000 BTU, Clasa A++/A+++, R32, Wi-fi, Alb",
-"pret": 3030.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202503142150/297757/full/electrolux-aparat-de-aer-conditionat-electrolux-eacs-i-18hef18000-btu-class-a-plus-plus-a-plus-plus-plus-r32-wi-fi-741219.png",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Faparate-de-aer-conditionat%2Felectrolux%2F297757-aparat-de-aer-conditionat-electrolux-eacs-i-18hef-18000-btu-clasa-a-plus-plus-a-plus-plus-plus-r32-wi-fi-alb%2F",
-"magazin": "dwyn.ro",
-"id": "C_pu9HOOEfG8",
-"brand": "Electrolux",
-"url_magazin": "https://www.dwyn.ro/aparate-de-aer-conditionat/electrolux/297757-aparat-de-aer-conditionat-electrolux-eacs-i-18hef-18000-btu-clasa-a-plus-plus-a-plus-plus-plus-r32-wi-fi-alb/",
-"pret_vechi": null
 },
 {
 "titlu": "Aer condiționat tip casetă TCL 18000 BTU, Inverter, A++, R32, răcire și încălzire",
@@ -10308,7 +10301,7 @@
 "titlu": "Aparate de aer condiționat de 24000 BTU",
 "nota": null,
 "in_text": "\\b24000\\s*BTU\\b",
-"actualizat": "2026-11-14",
+"actualizat": "2026-11-18",
 "feeduri": [
 {
 "id": 4152,
@@ -21755,7 +21748,7 @@
 "titlu": "Puzzle de 500 de piese",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-14",
+"actualizat": "2026-11-18",
 "feeduri": [
 {
 "id": 1528,
@@ -21836,18 +21829,6 @@
 "verificat": "2026-11-14"
 },
 {
-"titlu": "Puzzle Ravensburger animale colorate fluture 500 piese",
-"pret": 35.98,
-"imagine": "https://www.ookee.ro/365910-large_default/puzzle-ravensburger-animale-colorate-fluture-500-piese.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ookee.ro%2Fpuzzle-ravensburger%2F123242-puzzle-ravensburger-animale-colorate-fluture-500-piese.html",
-"magazin": "ookee.ro",
-"id": "c82245920",
-"brand": "Ravensburger",
-"url_magazin": "https://www.ookee.ro/puzzle-ravensburger/123242-puzzle-ravensburger-animale-colorate-fluture-500-piese.html",
-"pret_vechi": 65.9,
-"verificat": "2026-11-14"
-},
-{
 "titlu": "Puzzle Ravensburger animale colorate cameleon 500 piese",
 "pret": 35.98,
 "imagine": "https://www.ookee.ro/365898-large_default/puzzle-ravensburger-animale-colorate-cameleon-500-piese.jpg",
@@ -21868,6 +21849,18 @@
 "id": "2f2699a98",
 "brand": "Ravensburger",
 "url_magazin": "https://www.ookee.ro/puzzle-ravensburger/123241-puzzle-ravensburger-animale-colorate-peste-leu-rosu-500-piese.html",
+"pret_vechi": 65.9,
+"verificat": "2026-11-14"
+},
+{
+"titlu": "Puzzle Ravensburger animale colorate fluture 500 piese",
+"pret": 35.98,
+"imagine": "https://www.ookee.ro/365910-large_default/puzzle-ravensburger-animale-colorate-fluture-500-piese.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ookee.ro%2Fpuzzle-ravensburger%2F123242-puzzle-ravensburger-animale-colorate-fluture-500-piese.html",
+"magazin": "ookee.ro",
+"id": "c82245920",
+"brand": "Ravensburger",
+"url_magazin": "https://www.ookee.ro/puzzle-ravensburger/123242-puzzle-ravensburger-animale-colorate-fluture-500-piese.html",
 "pret_vechi": 65.9,
 "verificat": "2026-11-14"
 },
@@ -21915,6 +21908,17 @@
 "id": "5XfXm-WuyM7e",
 "brand": "OEM",
 "url_magazin": "https://infinity.ro/puzzle-cu-flori-500-de-piese-multicolor-pentru-adulți-9360575/p?utm_source=2performant",
+"pret_vechi": 60.41
+},
+{
+"titlu": "Puzzle 500 de piese, Big Ben si cabina telefonica rosie",
+"pret": 45.31,
+"imagine": "https://infinityro.vteximg.com.br/arquivos/ids/274907516/3.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Finfinity.ro%2Fpuzzle-500-de-piese-big-ben-%C8%99i-cabin%C4%83-telefonic%C4%83-ro%C8%99ie-9360535%2Fp%3Futm_source%3D2performant",
+"magazin": "infinity.ro",
+"id": "rI_LP83rSpDS",
+"brand": "OEM",
+"url_magazin": "https://infinity.ro/puzzle-500-de-piese-big-ben-și-cabină-telefonică-roșie-9360535/p?utm_source=2performant",
 "pret_vechi": 60.41
 },
 {
@@ -22007,17 +22011,6 @@
 "verificat": "2026-11-14"
 },
 {
-"titlu": "Puzzle cu Pisica si Caine, 500 de Piese, Multicolor",
-"pret": 58.64,
-"imagine": "https://infinityro.vteximg.com.br/arquivos/ids/274907652/0.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Finfinity.ro%2Fpuzzle-cu-pisic%C4%83-%C8%99i-caine-500-de-piese-multicolor-9360582%2Fp%3Futm_source%3D2performant",
-"magazin": "infinity.ro",
-"id": "7dl3UCsXaGjl",
-"brand": "OEM",
-"url_magazin": "https://infinity.ro/puzzle-cu-pisică-și-caine-500-de-piese-multicolor-9360582/p?utm_source=2performant",
-"pret_vechi": 78.19
-},
-{
 "titlu": "Puzzle 500 piese, Manarola Cinque Terre, Multicolor, 50x70 cm",
 "pret": 60.41,
 "imagine": "https://infinityro.vteximg.com.br/arquivos/ids/274907535/2.jpg",
@@ -22068,7 +22061,7 @@
 "titlu": "Puzzle 3D",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-14",
+"actualizat": "2026-11-18",
 "feeduri": [
 {
 "id": 1528,
@@ -22144,30 +22137,6 @@
 "pret_vechi": null
 },
 {
-"titlu": "Puzzle 3D: Vrabie",
-"pret": 37.0,
-"imagine": "https://www.libris.ro/img/pozeprod/48753/48752739-1-small-1.jpg?ver=1792669688",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.libris.ro%2Fjoc%2Fpuzzle-3d-vrabie%2F48752739",
-"magazin": "libris.ro",
-"id": "0gzolLe58Wx7",
-"brand": "-",
-"url_magazin": "https://www.libris.ro/joc/puzzle-3d-vrabie/48752739",
-"pret_vechi": null,
-"verificat": "2026-11-05"
-},
-{
-"titlu": "Puzzle 3D. Sticlete european",
-"pret": 37.0,
-"imagine": "https://www.libris.ro/img/pozeprod/48753/48752746-1-small-1.jpg?ver=1792668313",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.libris.ro%2Fjoc%2Fpuzzle-3d-sticlete-european%2F48752746",
-"magazin": "libris.ro",
-"id": "YjP-ZSbuJkXa",
-"brand": "-",
-"url_magazin": "https://www.libris.ro/joc/puzzle-3d-sticlete-european/48752746",
-"pret_vechi": null,
-"verificat": "2026-11-05"
-},
-{
 "titlu": "Puzzle 3D: Pitigoi albastru",
 "pret": 37.0,
 "imagine": "https://www.libris.ro/img/pozeprod/48753/48752753-1-small-1.jpg?ver=1792669992",
@@ -22180,6 +22149,18 @@
 "verificat": "2026-11-05"
 },
 {
+"titlu": "Puzzle 3D: Vrabie",
+"pret": 37.0,
+"imagine": "https://www.libris.ro/img/pozeprod/48753/48752739-1-small-1.jpg?ver=1792669688",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.libris.ro%2Fjoc%2Fpuzzle-3d-vrabie%2F48752739",
+"magazin": "libris.ro",
+"id": "0gzolLe58Wx7",
+"brand": "-",
+"url_magazin": "https://www.libris.ro/joc/puzzle-3d-vrabie/48752739",
+"pret_vechi": null,
+"verificat": "2026-11-05"
+},
+{
 "titlu": "Puzzle 3D: Ciocanitoare",
 "pret": 37.0,
 "imagine": "https://www.libris.ro/img/pozeprod/48753/48752732-1-small-1.jpg?ver=1792669455",
@@ -22188,6 +22169,18 @@
 "id": "tuWWNE4LOorH",
 "brand": "-",
 "url_magazin": "https://www.libris.ro/joc/puzzle-3d-ciocanitoare/48752732",
+"pret_vechi": null,
+"verificat": "2026-11-05"
+},
+{
+"titlu": "Puzzle 3D. Sticlete european",
+"pret": 37.0,
+"imagine": "https://www.libris.ro/img/pozeprod/48753/48752746-1-small-1.jpg?ver=1792668313",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.libris.ro%2Fjoc%2Fpuzzle-3d-sticlete-european%2F48752746",
+"magazin": "libris.ro",
+"id": "YjP-ZSbuJkXa",
+"brand": "-",
+"url_magazin": "https://www.libris.ro/joc/puzzle-3d-sticlete-european/48752746",
 "pret_vechi": null,
 "verificat": "2026-11-05"
 },
@@ -22235,7 +22228,7 @@
 "id": "UqT9ZqaWe3QL",
 "brand": "-",
 "url_magazin": "https://www.libris.ro/joc/puzzle-3d-din-lemn-cu-litere-si-cifre-cocos-colorat/42139027",
-"pret_vechi": null,
+"pret_vechi": 54.99,
 "verificat": "2026-11-05"
 },
 {
@@ -22271,20 +22264,19 @@
 "id": "UrUHRawrUNLQ",
 "brand": "-",
 "url_magazin": "https://www.libris.ro/joc/puzzle-3d-mini-bila-disney-stitch-angel-si-stitch/47022661",
-"pret_vechi": null,
+"pret_vechi": 55.9,
 "verificat": "2026-11-05"
 },
 {
-"titlu": "Puzzle 3D: Mini Turnul din Pisa",
-"pret": 63.9,
-"imagine": "https://www.libris.ro/img/pozeprod/47023/47022633-1-small-1.jpg?ver=1786452104",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.libris.ro%2Fjoc%2Fpuzzle-3d-mini-turnul-din-pisa%2F47022633",
+"titlu": "Puzzle din lemn 3D cu litere si cifre. Broscuta testoasa",
+"pret": 52.0,
+"imagine": "https://www.libris.ro/img/pozeprod/47007/47006792-1-small-1.jpg?ver=1781689650",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.libris.ro%2Fjoc%2Fpuzzle-din-lemn-3d-cu-litere-si-cifre-broscuta-testoasa%2F47006792",
 "magazin": "libris.ro",
-"id": "pxAt-6Ud8Epb",
+"id": "Nn1HPxXQvqCE",
 "brand": "-",
-"url_magazin": "https://www.libris.ro/joc/puzzle-3d-mini-turnul-din-pisa/47022633",
-"pret_vechi": null,
-"verificat": "2026-11-14"
+"url_magazin": "https://www.libris.ro/joc/puzzle-din-lemn-3d-cu-litere-si-cifre-broscuta-testoasa/47006792",
+"pret_vechi": 65.0
 },
 {
 "titlu": "Puzzle 3D 50 piese - Build ’n’ Sound - Elefant African | MierEdu",

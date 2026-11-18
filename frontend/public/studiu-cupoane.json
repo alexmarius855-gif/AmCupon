@@ -1,11 +1,11 @@
 {
   "generat": "2026-11-18",
-  "total_magazine": 418,
+  "total_magazine": 421,
   "cu_promotie": 71,
   "cu_cod_real": 17,
   "doar_oferta": 54,
-  "procent_cu_promotie": 17.0,
-  "procent_cu_cod": 4.1,
+  "procent_cu_promotie": 16.9,
+  "procent_cu_cod": 4.0,
   "reducere_mediana_generala": 40,
   "magazine_cu_procent_declarat": 47,
   "categorii": [
@@ -21,7 +21,7 @@
     {
       "slug": "beauty",
       "nume": "Beauty & îngrijire",
-      "magazine": 49,
+      "magazine": 50,
       "cu_promotie": 8,
       "reducere_mediana": 57.5,
       "reducere_max": 80,
@@ -39,7 +39,7 @@
     {
       "slug": "casa-gradina",
       "nume": "Casă & grădină",
-      "magazine": 93,
+      "magazine": 94,
       "cu_promotie": 17,
       "reducere_mediana": 40,
       "reducere_max": 80,
@@ -102,7 +102,7 @@
     {
       "slug": "animale",
       "nume": "Pet shop",
-      "magazine": 12,
+      "magazine": 13,
       "cu_promotie": 2,
       "reducere_mediana": null,
       "reducere_max": null,
@@ -156,9 +156,9 @@
   ],
   "criteriu": "domeniu .ro",
   "international": {
-    "total": 500,
-    "cu_promotie": 75,
-    "cu_cod": 49
+    "total": 502,
+    "cu_promotie": 76,
+    "cu_cod": 50
   },
   "retele": [
     "2Performant",

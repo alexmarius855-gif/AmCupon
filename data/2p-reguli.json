@@ -1,5 +1,5 @@
 {
-"actualizat": "2026-11-17",
+"actualizat": "2026-11-18",
 "magazine": {
 "10qaroma.ro": {
 "cupoane": "yes",
@@ -451,6 +451,11 @@
 "google_ads": "yes",
 "cashback": "yes"
 },
+"casanewconcept.ro": {
+"cupoane": "yes",
+"google_ads": "yes",
+"cashback": "yes"
+},
 "case-smart.ro": {
 "cupoane": "yes",
 "google_ads": "yes",
@@ -577,6 +582,11 @@
 "cashback": "yes"
 },
 "davopro.ro": {
+"cupoane": "yes",
+"google_ads": "yes",
+"cashback": "yes"
+},
+"decasamobilaitalia.ro": {
 "cupoane": "yes",
 "google_ads": "yes",
 "cashback": "yes"
@@ -2116,6 +2126,11 @@
 "google_ads": "yes",
 "cashback": "yes"
 },
+"shop.dafne.ro": {
+"cupoane": "yes",
+"google_ads": "yes",
+"cashback": "yes"
+},
 "shop4pet.ro": {
 "cupoane": "yes",
 "google_ads": "yes",
@@ -2127,11 +2142,6 @@
 "cashback": "yes"
 },
 "sipica.ro": {
-"cupoane": "yes",
-"google_ads": "yes",
-"cashback": "yes"
-},
-"smartheater.ro": {
 "cupoane": "yes",
 "google_ads": "yes",
 "cashback": "yes"
@@ -2362,6 +2372,11 @@
 "cashback": "yes"
 },
 "ventilatie-recuperare.ro": {
+"cupoane": "yes",
+"google_ads": "maybe",
+"cashback": "yes"
+},
+"veroanima.ro": {
 "cupoane": "yes",
 "google_ads": "maybe",
 "cashback": "yes"
