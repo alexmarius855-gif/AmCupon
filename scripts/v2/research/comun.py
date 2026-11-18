@@ -23,7 +23,21 @@ PUBLIC = os.path.join(RADACINA, "frontend", "public")
 DATA = os.path.join(RADACINA, "data")
 sys.path.insert(0, os.path.join(RADACINA, "scripts"))
 
-from nume_magazin import nume_afisat  # noqa: E402  (sursa unica pentru numele magazinului)
+from nume_magazin import NUME_OVERRIDE, nume_afisat  # noqa: E402  (sursa unica pentru numele magazinului)
+
+# Domeniile altor tari: „flip" cautat in Romania e flip.ro, nu flip.bg, chiar daca pe site avem doar flip.bg.
+TLD_STRAINE = {"bg", "hu", "pl", "cz", "sk", "de", "at", "it", "es", "fr", "nl", "be", "gr", "hr", "si", "rs", "md",
+               "ua", "tr", "uk", "ie", "pt", "se", "dk", "fi", "no", "lt", "lv", "ee", "ch", "ru", "in", "id", "mx",
+               "br", "au", "ca", "jp", "kr", "sg", "my", "ph", "th", "vn", "za"}
+# Programele Impact ale altor tari („JD Sports Indonesia", „Eufy NL") nu sunt magazinul cautat in Romania.
+RE_PROGRAM_ALTA_TARA = re.compile(
+    r"\b(indonesia|india|malaysia|singapore|philippines|thailand|vietnam|japan|korea|australia|canada|mexico|"
+    r"brazil|usa|us|uk|united kingdom|nl|netherlands|de|germany|fr|france|it|italy|es|spain|pl|poland|tr|turkey|"
+    r"uae|saudi|ksa|gcc|mena|latam|apac|emea|ie|ireland|se|sweden|ch|switzerland|nz|za|global)\b", re.I)
+
+
+def tld(domeniu: str) -> str:
+    return (domeniu or "").lower().rstrip(".").rsplit(".", 1)[-1]
 
 # Domenii cu TLD din doua parti: radacina e ultimele 3 etichete, nu 2.
 TLD_DUBLU = {"co.uk", "com.au", "com.sg", "co.nz", "com.br", "co.za", "com.tr", "co.il", "com.mx",
@@ -87,7 +101,7 @@ class Magazine:
 
     def __init__(self, radacina_public: str = PUBLIC, radacina_data: str = DATA):
         self.site = {}            # domeniu -> magazin din output.json
-        self.index = {}           # forma compacta -> domeniu de pe site
+        self.index = {}           # forma compacta -> domeniile de pe site cu numele asta
         self.fara_cupoane = {}    # domeniu -> destinatie (programul interzice cupoanele)
         self.fara_livrare = {}    # domeniu -> regiunile programului
         self.program_2p = {}      # forma compacta -> domeniu cu program 2P aprobat
@@ -102,7 +116,7 @@ class Magazine:
                 continue
             self.site[dom] = m
             for cheie in self._chei(dom):
-                self.index.setdefault(cheie, dom)
+                self.index.setdefault(cheie, []).append(dom)
         for r in citeste_json(os.path.join(radacina_public, "magazine-fara-cupoane.json"), []) or []:
             self.fara_cupoane[(r.get("magazin") or "").lower()] = r.get("destinatie") or ""
         for r in citeste_json(os.path.join(radacina_public, "magazine-fara-livrare-ro.json"), []) or []:
@@ -120,6 +134,8 @@ class Magazine:
                     if (rand.get("Contract Status") or "").strip() != "Active":
                         continue
                     nume = (rand.get("Program Name") or "").strip()
+                    if RE_PROGRAM_ALTA_TARA.search(nume):
+                        continue
                     for cheie in {compact(nume), compact(eticheta_brand(rand.get("Advertiser URL") or ""))}:
                         if len(cheie) >= 3:
                             self.impact.setdefault(cheie, nume)
@@ -133,21 +149,34 @@ class Magazine:
                 self.produse[dom] = self.produse.get(dom, 0) + 1
 
     def _chei(self, dom: str) -> set:
-        chei = {compact(eticheta_brand(dom)), compact(nume_afisat(dom)), compact(dom)}
+        # Numele afisat intra in index doar cand e scris de mana (NUME_OVERRIDE) sau e chiar numele din domeniu:
+        # altfel „booking.regalhotel.com" (afisat „Booking") ar raspunde la cautarea „booking".
+        chei = {compact(eticheta_brand(dom)), compact(dom)}
+        if dom in NUME_OVERRIDE or compact(nume_afisat(dom)) == compact(eticheta_brand(dom)):
+            chei.add(compact(nume_afisat(dom)))
         return {c for c in chei if len(c) >= 3}
 
-    def gaseste(self, text: str) -> str | None:
-        """Domeniul de pe site pentru un nume scris de om, sau None. Potrivire exacta pe forma compacta."""
+    def _candidati(self, text: str) -> list[str]:
         c = compact(text)
         for cand in (c, re.sub(r"(ro|com)$", "", c)):
             if len(cand) >= 3 and cand in self.index:
                 return self.index[cand]
-        return None
+        return []
+
+    def gaseste(self, text: str) -> str | None:
+        """Domeniul de pe site pentru un nume scris de om, sau None. Potrivire exacta pe forma compacta;
+        varianta din alta tara (flip.bg, zapatos.hu) nu e magazinul cautat in Romania."""
+        romanesti = [d for d in self._candidati(text) if tld(d) not in TLD_STRAINE]
+        romanesti.sort(key=lambda d: (tld(d) != "ro", len(d)))
+        return romanesti[0] if romanesti else None
 
     def stare(self, text: str) -> dict:
         """Unde sta un magazin cautat de oameni fata de noi. `cod` = ce facem cu el."""
         c = compact(text)
         dom = self.gaseste(text)
+        if not dom and self._candidati(text):
+            straine = self._candidati(text)
+            return {"cod": "doar_alta_tara", "magazin": straine[0], "nume": nume_afisat(straine[0])}
         if dom:
             m = self.site[dom]
             return {"cod": "site_cu_oferta" if m.get("are_promotie") else "site_fara_oferta",
@@ -177,7 +206,9 @@ STARI = {
     "program_fara_livrare_ro": "program aprobat, dar nu livrează în România",
     "program_2p_lipsa_de_pe_site": "program 2Performant aprobat, dar lipsește de pe site",
     "impact_activ_lipsa_de_pe_site": "contract Impact activ, dar lipsește de pe site",
+    "doar_alta_tara": "avem doar varianta din altă țară",
     "fara_program": "nu avem program: de căutat în rețele",
+    "restrictionat": "categorie restricționată (nicotină, adulți): nu o promovăm",
     "generic": "nu e un magazin (termen general)",
 }
 
@@ -206,6 +237,20 @@ def test() -> int:
         verifica(mg.gaseste(un) == un, f"gaseste({un!r})")
         verifica(mg.gaseste("zzzz magazin inexistent qq") is None, "inexistent")
         verifica(mg.stare("zzzz magazin inexistent qq")["cod"] == "fara_program", "stare inexistent")
+    # Potriviri gresite gasite in primul studiu (18.11): subdomeniul altui site, varianta altei tari.
+    mg2 = Magazine.__new__(Magazine)
+    mg2.site = {d: {"magazin": d} for d in ("booking.regalhotel.com", "flip.bg", "zapatos.hu", "zapatos.ro", "otter.ro")}
+    mg2.index, mg2.produse, mg2.bf, mg2.program_2p, mg2.impact = {}, {}, {}, {}, {}
+    mg2.fara_cupoane, mg2.fara_livrare, mg2.regula_2p = {}, {}, {}
+    for d in mg2.site:
+        for k in mg2._chei(d):
+            mg2.index.setdefault(k, []).append(d)
+    verifica(mg2.gaseste("booking") is None, f"booking -> {mg2.gaseste('booking')}")
+    verifica(mg2.stare("flip")["cod"] == "doar_alta_tara", f"flip -> {mg2.stare('flip')}")
+    verifica(mg2.gaseste("zapatos") == "zapatos.ro", f"zapatos -> {mg2.gaseste('zapatos')}")
+    verifica(mg2.gaseste("otter") == "otter.ro", "otter")
+    verifica(RE_PROGRAM_ALTA_TARA.search("JD Sports Indonesia") and not RE_PROGRAM_ALTA_TARA.search("Surfshark"),
+             "programele altor tari")
     for e in erori:
         print("PICA:", e)
     print("comun.py:", "OK" if not erori else f"{len(erori)} erori")

@@ -25,6 +25,7 @@ from collections import Counter, defaultdict
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from comun import STARI, Magazine, compact, nume_afisat, norm  # noqa: E402
+from text_curat import cu_numar  # noqa: E402  (acordul numeralului, ca pe site)
 
 LUNI = {"ianuarie", "februarie", "martie", "aprilie", "mai", "iunie", "iulie", "august", "septembrie",
         "octombrie", "noiembrie", "decembrie"}
@@ -104,6 +105,23 @@ def este_generic(nume: str) -> bool:
     return nume in GENERICE or (nume.split() or [""])[0] in GENERICE
 
 
+# Nicotina si adultii: nu le facem pagini si nu le cerem program (Legea 349/2002; continut_restrictionat.py).
+RESTRICTIONATE = {"iqos", "glo", "vuse", "juul", "ploom", "elfbar", "vape", "vapes", "tigari", "tutun", "sexshop",
+                  "erotic", "lelo", "therelax"}
+
+
+def este_restrictionat(nume: str) -> bool:
+    return compact(nume) in RESTRICTIONATE or any(compact(t) in RESTRICTIONATE for t in nume.split())
+
+
+def stare_nume(nume: str, mg: Magazine) -> dict:
+    if este_generic(nume):
+        return {"cod": "generic"}
+    if este_restrictionat(nume):
+        return {"cod": "restrictionat"}
+    return mg.stare(nume)
+
+
 def magazine_din_alfabet(rezultate: list[dict], mg: Magazine) -> tuple[list[dict], Counter, list[str]]:
     """Magazinele propuse de motoare pentru „cod reducere a...", „voucher b...", „black friday c..."."""
     branduri: dict[str, dict] = {}
@@ -136,7 +154,7 @@ def magazine_din_alfabet(rezultate: list[dict], mg: Magazine) -> tuple[list[dict
     rez = []
     for cheie, b in branduri.items():
         nume = b["forme"].most_common(1)[0][0]
-        stare = {"cod": "generic"} if este_generic(nume) else mg.stare(nume)
+        stare = stare_nume(nume, mg)
         rez.append({"nume": nume, "motoare": sorted(b["motoare"]), "prefixe": sorted(b["prefixe"]),
                     "aparitii": b["aparitii"], "rang_min": b["rang_min"], "stare": stare,
                     "scor": len(b["motoare"]) * 10 + len(b["prefixe"] - {"black friday"}) * 5 + b["aparitii"]})
@@ -144,11 +162,20 @@ def magazine_din_alfabet(rezultate: list[dict], mg: Magazine) -> tuple[list[dict
     return rez, calificative, [t for t, _ in doar_calif.most_common(15)]
 
 
-def contine_brand(sugestie: str, nume: str) -> bool:
+def dupa_brand(sugestie: str, nume: str) -> list[str] | None:
+    """Cuvintele de dupa numele magazinului in sugestie, sau None daca numele nu apare ca atare.
+    „dr max", „drmax" si „dr. max" sunt acelasi nume; „literatura" NU contine magazinul „Litera"."""
+    tok = norm(sugestie).split()
     cb = compact(nume)
-    if len(cb) >= 4:
-        return cb in compact(sugestie)
-    return re.search(rf"\b{re.escape(norm(nume))}\b", norm(sugestie)) is not None
+    for i in range(len(tok)):
+        for j in range(i + 1, min(len(tok), i + 4) + 1):
+            if compact(" ".join(tok[i:j])) == cb:
+                return tok[j:]
+    return None
+
+
+def contine_brand(sugestie: str, nume: str) -> bool:
+    return dupa_brand(sugestie, nume) is not None
 
 
 def cerere_magazine(rezultate: list[dict], mg: Magazine) -> tuple[list[dict], Counter]:
@@ -169,12 +196,11 @@ def cerere_magazine(rezultate: list[dict], mg: Magazine) -> tuple[list[dict], Co
         if potrivite:
             x["motoare_cu_semnal"].add(r["motor"])
         for s in potrivite:
-            t = norm(s)
-            i = t.find(norm(nume))
-            rest = t[i + len(norm(nume)):].strip() if i >= 0 else ""
+            rest = [w for w in (dupa_brand(s, nume) or []) if w not in ("ro", ".ro", "romania")]
             if rest:
-                x["completari"][rest] += 1
-                calificative.update(w for w in rest.split() if w in CALIFICATIVE and w not in {"cod", "reducere"})
+                x["completari"][" ".join(rest)] += 1
+                calificative.update(w for w in rest if w in CALIFICATIVE and w not in PREPOZITII
+                                    and w not in {"cod", "reducere"})
     rez = []
     for dom, x in pe_magazin.items():
         m = mg.site.get(dom, {})
@@ -270,6 +296,17 @@ def analiza_produse(rezultate: list[dict], titluri: list[tuple[str, str]], mg: M
     return rez
 
 
+# Pe YouTube „adidasi de porc la cuptor" e o reteta: pastram doar sugestiile cu intentie de cumparare.
+RE_VIDEO_UTIL = re.compile(r"\b(review|recenzie|pareri|unboxing|test|vs|cel mai bun|cea mai buna|cele mai bune|cei mai buni|top|pret|"
+                           r"ieftin|ieftine|reduceri|reducere|black friday|merita|cum aleg|cum sa alegi|ghid|comparatie|"
+                           r"idei|cadou|cadouri|oferte|haul|cumparaturi|lei|buget|sub \d+)\b")
+TEME_INTREBARI = [
+    ("magazine", "Despre magazine (încredere, livrare, retur)", re.compile(r"\b(pareri|recenzii|review|reclamatii|retur|livrare|contact|teapa|sigur)\b")),
+    ("produse", "Despre produse (ce să aleg)", re.compile(r"\b(cel mai bun|cea mai buna|cele mai bune|vs|sau|merita|cum aleg)\b")),
+    ("cumparaturi", "Despre cumpărături și coduri", re.compile(r"\b(cod|coduri|voucher|cashback|black friday|cyber monday|reducere|reduceri|reddit)\b")),
+]
+
+
 def intrebari(rezultate: list[dict]) -> tuple[list[dict], list[dict]]:
     gasite: dict[str, dict] = {}
     video: dict[str, set] = defaultdict(set)
@@ -279,14 +316,19 @@ def intrebari(rezultate: list[dict]) -> tuple[list[dict], list[dict]]:
         for s in r.get("sugestii") or []:
             t = norm(s)
             if r["motor"] == "youtube":
-                video[t].add(r["seed"])
+                if RE_VIDEO_UTIL.search(t):
+                    video[t].add(r["seed"])
                 continue
             if not INTREBARE.search(t):
                 continue
             x = gasite.setdefault(t, {"text": s.strip(), "motoare": set(), "grup": r["grup"]})
             x["motoare"].add(r["motor"])
-    lista = sorted(({"text": x["text"], "motoare": sorted(x["motoare"]), "grup": x["grup"]} for x in gasite.values()),
-                   key=lambda x: (-len(x["motoare"]), x["text"]))
+    lista = []
+    for x in gasite.values():
+        tema = next((cod for cod, _, rx in TEME_INTREBARI if rx.search(norm(x["text"]))), "altele")
+        lista.append({"text": x["text"], "motoare": sorted(x["motoare"]), "grup": x["grup"], "tema": tema})
+    # Intai cele din grupurile noastre (produse, magazine), apoi pe numarul de motoare.
+    lista.sort(key=lambda x: (-len(x["motoare"]), x["grup"] not in ("produs", "magazin", "magazin_sp", "intrebare"), x["text"]))
     vid = sorted(({"text": t, "seminte": sorted(s)} for t, s in video.items() if t not in {norm(x) for x in s}),
                  key=lambda x: (-len(x["seminte"]), x["text"]))
     return lista, vid
@@ -335,13 +377,17 @@ def raport(a: dict) -> str:
         w(f"| {g} | {s.get('ok', 0)} | {s.get('goale', 0)} | {s.get('erori', 0)} | {s.get('nefacute', 0)} | "
           f"{s.get('oprit') or '—'} |")
     w("")
+    goale = [g for g, s in st.items() if s.get("ok", 0) >= 50 and s.get("goale", 0) >= 0.95 * s.get("ok", 0)]
+    if goale:
+        w(f"**Atenție:** {', '.join(goale)} a răspuns gol la (aproape) toate cererile în rularea asta: motorul a "
+          "blocat probabil adresele GitHub. Semnalul „pe două motoare” vine din celelalte.\n")
 
     cautate = [b for b in a["magazine_cautate"] if b["stare"]["cod"] != "generic"]
     w("## 1. Magazinele pe care oamenii le caută cu „cod reducere”, „voucher” sau „cod promoțional”\n")
     w("Din completările pentru „cod reducere a…z”, „voucher a…z”, „cod promoțional a…z” și „black friday a…z”.\n")
     pe_stare = Counter(b["stare"]["cod"] for b in cautate)
     for cod, n in pe_stare.most_common():
-        w(f"- {STARI.get(cod, cod)}: **{n}**")
+        w(f"- {STARI.get(cod, cod)}: **{cu_numar(n, 'magazin', 'magazine')}**")
     w("")
     w("| Magazin (cum îl scriu oamenii) | Motoare | Căutat cu | Unde stăm |")
     w("|---|---|---|---|")
@@ -362,10 +408,13 @@ def raport(a: dict) -> str:
 
     cerere = a["cerere_magazine"]
     w("## 2. Cererea pentru magazinele noastre\n")
-    w(f"Am întrebat „cod reducere <magazin>” pentru {len(cerere)} magazine cu link plătit (întâi cele .ro și cele cu ofertă).\n")
+    w(f"Am întrebat „cod reducere <magazin>” pentru {cu_numar(len(cerere), 'magazin', 'magazine')} cu link plătit "
+      "(întâi cele .ro și cele cu ofertă).\n")
+    pe_motoare = {3: "propus de toate trei motoarele", 2: "propus de două motoare", 1: "propus de un singur motor",
+                  0: "propus de niciun motor"}
     for n_mot in (3, 2, 1, 0):
         n = sum(1 for c in cerere if c["semnal"] == n_mot)
-        w(f"- propus de {n_mot} motoare: **{n}** magazine")
+        w(f"- {pe_motoare[n_mot]}: **{cu_numar(n, 'magazin', 'magazine')}**")
     w("")
     cu = [c for c in cerere if c["semnal"] >= 2 and c["are_oferta"]]
     fara = [c for c in cerere if c["semnal"] >= 2 and not c["are_oferta"]]
@@ -384,7 +433,7 @@ def raport(a: dict) -> str:
           ", ".join(f"{c} ({n})" for c, n in a["calificative_magazine"][:12]) + ".\n")
 
     w("## 3. Ce caută oamenii lângă numele magazinului\n")
-    w(f"Din „<magazin> ” (cu spațiu) pentru {a['magazine_cu_nume_intrebate']} magazine: în câte procente "
+    w(f"Din „<magazin> ” (cu spațiu) pentru {cu_numar(a['magazine_cu_nume_intrebate'], 'magazin', 'magazine')}: în câte procente "
       "dintre ele apare fiecare tip de completare.\n")
     w("| Ce caută | Magazine | Exemple |")
     w("|---|---|---|")
@@ -401,7 +450,7 @@ def raport(a: dict) -> str:
         compl = p["completari_toate_motoarele"] or p["completari"]
         ret = ", ".join(p["retaileri"][:4] + [f"BF: {r}" for r in p["retaileri_bf"][:2]]) or "—"
         w(f"| {p['produs']} | {'; '.join(compl[:5]) or '—'} | {ret} | {p['produse_la_parteneri']} "
-          f"({p['parteneri_cu_produs']} magazine) | {p['pagina'] or '—'} |")
+          f"({cu_numar(p['parteneri_cu_produs'], 'magazin', 'magazine')}) | {p['pagina'] or '—'} |")
     w("")
     fara_pagina = [p for p in a["produse"] if not p["pagina"] and p["produse_la_parteneri"] >= 20 and p["completari"]]
     if fara_pagina:
@@ -414,7 +463,7 @@ def raport(a: dict) -> str:
 
     w("## 5. Black Friday: magazinele la care se gândesc oamenii\n")
     bf = a["black_friday"]
-    w(f"Din „black friday a…z”: {len(bf)} magazine.\n")
+    w(f"Din „black friday a…z”: {cu_numar(len(bf), 'magazin', 'magazine')}.\n")
     w(", ".join(f"{b['nume']} ({STARI.get(b['stare']['cod'], '')})" for b in bf[:30]) or "—")
     w("")
 
@@ -422,9 +471,13 @@ def raport(a: dict) -> str:
     w("Formulări luate exact cum le scriu oamenii. Un titlu sau primul rând dintr-un clip care repetă întrebarea "
       "omului e „hook-ul” cel mai sigur. Răspunsul trebuie să fie adevărat și verificabil: fără „testat”, fără cifre "
       "inventate.\n")
-    for q in a["intrebari"][:40]:
-        w(f"- {q['text']} [{_motoare(q['motoare'])}]")
-    w("")
+    for cod, titlu, _ in TEME_INTREBARI:
+        din_tema = [q for q in a["intrebari"] if q.get("tema") == cod][:15]
+        if din_tema:
+            w(f"**{titlu}**\n")
+            for q in din_tema:
+                w(f"- {q['text']} [{_motoare(q['motoare'])}]")
+            w("")
     if a.get("video"):
         w("**YouTube** (ce caută oamenii în clipuri, pentru TikTok, Reels și Shorts):\n")
         for v in a["video"][:25]:
@@ -489,7 +542,9 @@ def test() -> int:
         {"seed": "laptop", "grup": "produs", "motor": "ddg", "stare": "ok", "produs": "laptop", "pagina": "/top/laptopuri",
          "sugestii": ["laptop gaming"]},
         {"seed": "laptop", "grup": "produs", "motor": "youtube", "stare": "ok", "produs": "laptop", "pagina": "/top/laptopuri",
-         "sugestii": ["laptop gaming sub 3000 lei", "laptop"]},
+         "sugestii": ["laptop gaming sub 3000 lei", "laptop", "laptop vlog la munte"]},
+        {"seed": "adidasi", "grup": "produs", "motor": "youtube", "stare": "ok", "produs": "adidasi", "pagina": None,
+         "sugestii": ["adidasi de porc la cuptor", "cei mai buni adidasi de alergare"]},
     ]}
     titluri = [("laptop asus vivobook 15", "x.ro"), ("husa laptop", "y.ro"), ("telefon samsung", "x.ro")]
     a = analizeaza(date, mg, titluri)
@@ -521,6 +576,10 @@ def test() -> int:
     verifica(any(q["text"] == "cum aleg un laptop" for q in a["intrebari"]), "intrebarea reala")
     verifica(any(v["text"] == "laptop gaming sub 3000 lei" for v in a["video"]), "sugestia YouTube")
     verifica(not any(v["text"] == "laptop" for v in a["video"]), "saminta repetata nu e sugestie video")
+    verifica(not any("porc" in v["text"] or "vlog" in v["text"] for v in a["video"]), "YouTube fara intentie de cumparare")
+    verifica(any(v["text"] == "cei mai buni adidasi de alergare" for v in a["video"]), "YouTube: intentia de cumparare ramane")
+    verifica(dupa_brand("cod reducere literatura", "litera") is None, "litera nu e in literatura")
+    verifica(dupa_brand("cod reducere dr. max transport", "dr max") == ["transport"], "dr. max = dr max")
     text = raport(a)
     verifica("## 7. Ce facem cu asta" in text and "edenred" not in text.split("## 2.")[0].split("| Magazin")[1],
              "raportul nu trebuie sa listeze tichetele ca magazine")
@@ -538,8 +597,13 @@ def main() -> int:
     a = ap.parse_args()
     if a.test:
         return test()
-    with open(a.sugestii, encoding="utf-8") as f:
-        date = json.load(f)
+    if a.sugestii.endswith(".gz"):  # sugestiile brute salvate in data/research/: studiul se reface fara colectare
+        import gzip
+        with gzip.open(a.sugestii, "rt", encoding="utf-8") as f:
+            date = json.load(f)
+    else:
+        with open(a.sugestii, encoding="utf-8") as f:
+            date = json.load(f)
     rez = analizeaza(date)
     zi = (rez.get("colectat_la") or "")[:10] or "necunoscut"
     os.makedirs(a.dir, exist_ok=True)
