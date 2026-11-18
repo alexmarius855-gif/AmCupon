@@ -5,7 +5,7 @@
   {
    "slug": "casa-gradina",
    "nume": "casă și grădină",
-   "campanii": 23
+   "campanii": 24
   },
   {
    "slug": "fashion",
@@ -373,6 +373,16 @@
    "descriere": "GRYXX Black Friday Mode a început! În perioada 3-8 noiembrie, clienții se pot bucura de reduceri speciale și oferte exclusive Best Deal, disponibile în valuri pe parcursul campaniei.",
    "are_cod": false,
    "categorie": "fashion"
+  },
+  {
+   "magazin": "nobilacasa.ro",
+   "nume": "Nobilacasa",
+   "start": "2026-11-03",
+   "final": "2026-11-29",
+   "nota": "Black Friday cu reduceri de pana la 50%, chiar si la branduri internationale!",
+   "descriere": "BLACK FRIDAY la Nobila Casa! Reduceri de până la 50%! Descoperă produse practice și elegante pentru casa ta, dar și idei de cadouri care vor impresiona! Branduri internaționale, calitate și prețuri speciale, toate într-un singur loc! Profită de oferte în perioada 3–29 noiembrie, în limita stocului disponibil!",
+   "are_cod": false,
+   "categorie": "casa-gradina"
   },
   {
    "magazin": "otter.ro",
@@ -1035,16 +1045,6 @@
    "categorie": "casa-gradina"
   },
   {
-   "magazin": "bestseller.ro",
-   "nume": "Bestseller",
-   "start": "2026-11-09",
-   "final": "2026-11-15",
-   "nota": "Black Friday 50-70% Mega Reduceri",
-   "descriere": "Toate produsele din această categorie au reduceri între 50% și 70%. Prețurile sunt deja reduse în site.",
-   "are_cod": false,
-   "categorie": "carti-educatie"
-  },
-  {
    "magazin": "drmax.ro",
    "nume": "Dr. Max",
    "start": "2026-11-09",
@@ -1153,6 +1153,16 @@
    "descriere": "BLACK FRIDAY la ApiLand! Între 17 și 21 noiembrie, produsele tale apicole preferate vin cu reduceri de până la 35%! Miere, lăptișor de matcă, tonice apicole și multe alte produse pentru rutina ta de zi cu zi, acum la prețuri speciale. Profită de ofertă și pregătește-ți rezervele pentru sezonul rece! Descoperă reducerile pe",
    "are_cod": false,
    "categorie": "sanatate"
+  },
+  {
+   "magazin": "bestseller.ro",
+   "nume": "Bestseller",
+   "start": "2026-11-18",
+   "final": "2026-11-22",
+   "nota": "Black Friday Bestseller: reduceri de pana la 70%",
+   "descriere": "Reduceri de pana la 70% la o selectie de cărți.",
+   "are_cod": false,
+   "categorie": "carti-educatie"
   },
   {
    "magazin": "doctorshield.ro",

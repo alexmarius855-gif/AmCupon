@@ -1,22 +1,22 @@
 {
   "generat": "2026-11-18",
-  "total_magazine": 421,
-  "cu_promotie": 71,
-  "cu_cod_real": 17,
+  "total_magazine": 422,
+  "cu_promotie": 72,
+  "cu_cod_real": 18,
   "doar_oferta": 54,
-  "procent_cu_promotie": 16.9,
-  "procent_cu_cod": 4.0,
+  "procent_cu_promotie": 17.1,
+  "procent_cu_cod": 4.3,
   "reducere_mediana_generala": 40,
-  "magazine_cu_procent_declarat": 47,
+  "magazine_cu_procent_declarat": 49,
   "categorii": [
     {
       "slug": "carti-educatie",
       "nume": "Cărți & educație",
       "magazine": 22,
-      "cu_promotie": 6,
-      "reducere_mediana": 83,
+      "cu_promotie": 7,
+      "reducere_mediana": 76.5,
       "reducere_max": 90,
-      "esantion": 5
+      "esantion": 6
     },
     {
       "slug": "beauty",
@@ -39,11 +39,11 @@
     {
       "slug": "casa-gradina",
       "nume": "Casă & grădină",
-      "magazine": 94,
+      "magazine": 95,
       "cu_promotie": 17,
-      "reducere_mediana": 40,
+      "reducere_mediana": 45.0,
       "reducere_max": 80,
-      "esantion": 9
+      "esantion": 10
     },
     {
       "slug": "fashion",
@@ -157,8 +157,8 @@
   "criteriu": "domeniu .ro",
   "international": {
     "total": 502,
-    "cu_promotie": 76,
-    "cu_cod": 50
+    "cu_promotie": 75,
+    "cu_cod": 49
   },
   "retele": [
     "2Performant",

@@ -616,7 +616,7 @@
    "magazine": 143
   },
   "2026-11-18": {
-   "promotii": 253,
+   "promotii": 254,
    "magazine": 144
   }
  },
@@ -1689,6 +1689,15 @@
    }
   ],
   "bestseller.ro": [
+   {
+    "k": "blackfridaybestsellerreduceridepanala70|",
+    "titlu": "Black Friday Bestseller: reduceri de pana la 70%",
+    "cod": false,
+    "prima": "2026-11-18",
+    "ultima": "2026-11-18",
+    "expira": "2026-11-22",
+    "activa": true
+   },
    {
     "k": "blackfriday5070megareduceri|",
     "titlu": "Black Friday 50-70% Mega Reduceri",
@@ -6119,7 +6128,7 @@
     "prima": "2026-10-31",
     "ultima": "2026-11-18",
     "expira": "2026-11-18",
-    "activa": true
+    "activa": false
    },
    {
     "k": "endsofsummer|",
@@ -8192,6 +8201,24 @@
   ],
   "nobilacasa.ro": [
    {
+    "k": "cofblack2020reducerelatot|black20",
+    "titlu": "Cof BLACK20= 20% reducere la TOT",
+    "cod": true,
+    "prima": "2026-11-18",
+    "ultima": "2026-11-18",
+    "expira": "2026-11-22",
+    "activa": true
+   },
+   {
+    "k": "blackfridaycureduceridepanala50chiarsilabranduriinternationale|",
+    "titlu": "Black Friday cu reduceri de pana la 50%, chiar si la branduri internationale!",
+    "cod": false,
+    "prima": "2026-11-18",
+    "ultima": "2026-11-18",
+    "expira": "2026-11-29",
+    "activa": true
+   },
+   {
     "k": "reducericombo|",
     "titlu": "REDUCERI COMBO",
     "cod": false,
@@ -9290,7 +9317,7 @@
     "prima": "2026-11-05",
     "ultima": "2026-11-18",
     "expira": "2026-11-19",
-    "activa": true
+    "activa": false
    },
    {
     "k": "redodohalloween2026|",
