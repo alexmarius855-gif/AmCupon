@@ -96,6 +96,170 @@
 "publicat": true
 },
 {
+"slug": "monitor-gaming",
+"tema": "monitoare",
+"tema_nume": "Monitoare",
+"titlu": "Monitoare de gaming",
+"nota": null,
+"in_text": null,
+"actualizat": "2026-11-17",
+"feeduri": [
+{
+"id": 8969,
+"magazin": "ozone.ro"
+},
+{
+"id": 8937,
+"magazin": "dacris.net"
+},
+{
+"id": 8527,
+"magazin": "1cctv.ro"
+},
+{
+"id": 9391,
+"magazin": "interlink.ro"
+}
+],
+"produse": [
+{
+"titlu": "GIGABYTE GS27FC Gaming Monitor 27 VA",
+"pret": 658.54,
+"imagine": "https://dacris.vteximg.com.br/arquivos/ids/583376/GIGABYTE-GS27FC-Gaming-Monitor-27-VA-0.jpg?v=638962391428970000",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dacris.net%2Fgs27fc-gigabyte-gs27fc-gaming-monitor-27--va%2Fp%3FskuId%3D222197",
+"magazin": "dacris.net",
+"id": "IlA150PGI2sH",
+"brand": "Gigabyte",
+"url_magazin": "https://www.dacris.net/gs27fc-gigabyte-gs27fc-gaming-monitor-27--va/p?skuId=222197",
+"pret_vechi": null,
+"verificat": "2026-11-17"
+},
+{
+"titlu": "Monitor Gaming AOC G4 25G4ZR, 24.5\", 1920 x 1080 pixeli, Black, Red, 3 ani Garantie",
+"pret": 713.05,
+"imagine": "http://1cctv.ro/168330/monitor-gaming-aoc-g4-25g4zr-245-1920-x-1080-pixeli-black-red-3-ani-garantie.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2F1cctv.ro%2Fro%2Fmonitoare%2F43476-monitor-gaming-aoc-g4-25g4zr-245-1920-x-1080-pixeli-black-red-3-ani-garantie.html%3Futm_source%3D2performant",
+"magazin": "1cctv.ro",
+"id": "tdtaq59SBlh2",
+"brand": "AOC",
+"url_magazin": "https://1cctv.ro/ro/monitoare/43476-monitor-gaming-aoc-g4-25g4zr-245-1920-x-1080-pixeli-black-red-3-ani-garantie.html?utm_source=2performant",
+"pret_vechi": null,
+"verificat": "2026-11-14"
+},
+{
+"titlu": "Monitor Gaming MSI MAG 276CF E20, 27\", 1920 x 1080 pixeli, Black, 2 ani Garantie",
+"pret": 739.05,
+"imagine": "http://1cctv.ro/168105/monitor-gaming-msi-mag-276cf-e20-27-1920-x-1080-pixeli-black-2-ani-garantie.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2F1cctv.ro%2Fro%2Fmonitoare%2F43362-monitor-gaming-msi-mag-276cf-e20-27-1920-x-1080-pixeli-black-2-ani-garantie.html%3Futm_source%3D2performant",
+"magazin": "1cctv.ro",
+"id": "jfiYLXNXTGzt",
+"brand": "MSI",
+"url_magazin": "https://1cctv.ro/ro/monitoare/43362-monitor-gaming-msi-mag-276cf-e20-27-1920-x-1080-pixeli-black-2-ani-garantie.html?utm_source=2performant",
+"pret_vechi": null,
+"verificat": "2026-11-17"
+},
+{
+"titlu": "GIGABYTE GS27Q X Gaming Monitor 27 IPS",
+"pret": 1255.77,
+"imagine": "https://dacris.vteximg.com.br/arquivos/ids/637678/GIGABYTE-GS27Q-X-Gaming-Monitor-27-IPS-0.jpg?v=638962908079370000",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dacris.net%2Fgs27q-x-gigabyte-gs27q-x-gaming-monitor-27--ips%2Fp%3FskuId%3D228786",
+"magazin": "dacris.net",
+"id": "8N3NKmwL8Qmi",
+"brand": "Gigabyte",
+"url_magazin": "https://www.dacris.net/gs27q-x-gigabyte-gs27q-x-gaming-monitor-27--ips/p?skuId=228786",
+"pret_vechi": null,
+"verificat": "2026-11-17"
+}
+],
+"magazine": [
+"1cctv.ro",
+"dacris.net"
+],
+"publicat": true
+},
+{
+"slug": "monitor-4k",
+"tema": "monitoare",
+"tema_nume": "Monitoare",
+"titlu": "Monitoare 4K",
+"nota": null,
+"in_text": null,
+"actualizat": "2026-11-17",
+"feeduri": [
+{
+"id": 1256,
+"magazin": "itarena.ro"
+},
+{
+"id": 8969,
+"magazin": "ozone.ro"
+},
+{
+"id": 8937,
+"magazin": "dacris.net"
+},
+{
+"id": 1539,
+"magazin": "dwyn.ro"
+}
+],
+"produse": [
+{
+"titlu": "Monitor SAMSUNG Smart LS32FM700UUXDU 32\" 4K Ultra HD 60Hz 4ms Negru",
+"pret": 1608.01,
+"imagine": "http://www.itarena.ro/images/products/2026-05-12/original/517437_jpg.webp",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.itarena.ro%2Fmonitoare%2Fmonitor_samsung_smart_ls32fm700uuxdu_32_4k_ultra_hd_60hz_4ms_negru.html",
+"magazin": "itarena.ro",
+"id": "5sKru7dUm3Zv",
+"brand": "Samsung",
+"url_magazin": "https://www.itarena.ro/monitoare/monitor_samsung_smart_ls32fm700uuxdu_32_4k_ultra_hd_60hz_4ms_negru.html",
+"pret_vechi": null,
+"verificat": "2026-11-14"
+},
+{
+"titlu": "DL MONITOR 27 S2725QC 4K 3840 x 2160 DL MONITOR 27` S2725QC 4K 3840 x 2160",
+"pret": 1770.57,
+"imagine": "https://dacris.vteximg.com.br/arquivos/ids/1115726/4b1c47404653e739af362c739d37d40e.png.png?v=639303922527800000",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dacris.net%2Fs2725qc-s-dl-monitor-27--s2725qc-4k-3840-x-2160%2Fp%3FskuId%3D258879",
+"magazin": "dacris.net",
+"id": "cAjleQzP2kuE",
+"brand": "Dell",
+"url_magazin": "https://www.dacris.net/s2725qc-s-dl-monitor-27--s2725qc-4k-3840-x-2160/p?skuId=258879",
+"pret_vechi": null,
+"verificat": "2026-11-17"
+},
+{
+"titlu": "DL MONITOR 31.5 S3225QS 4K UHD 3840x216 DL MONITOR 31.5` S3225QS 4K UHD 3840x216",
+"pret": 1863.47,
+"imagine": "https://dacris.vteximg.com.br/arquivos/ids/1008532/DL-MONITOR-31-5-S3225QS-4K-UHD-3840x216-0.jpg?v=638963014605900000",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dacris.net%2Fs3225qs-dl-monitor-31-5--s3225qs-4k-uhd-3840x216%2Fp%3FskuId%3D233742",
+"magazin": "dacris.net",
+"id": "bYGcvszPvR89",
+"brand": "Dell",
+"url_magazin": "https://www.dacris.net/s3225qs-dl-monitor-31-5--s3225qs-4k-uhd-3840x216/p?skuId=233742",
+"pret_vechi": null,
+"verificat": "2026-11-14"
+},
+{
+"titlu": "DL MONITOR 31.5 S3225QC 4K UHD 3840x2160",
+"pret": 3051.58,
+"imagine": "https://dacris.vteximg.com.br/arquivos/ids/1071224/overlay_dd1fd0667576d5444d1982399269e166.jpeg.jpg?v=639150088699330000",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dacris.net%2Fs3225qc-dl-monitor-31-5-s3225qc-4k-uhd-3840x2160%2Fp%3FskuId%3D248710",
+"magazin": "dacris.net",
+"id": "N_ZQ2EA7H8CG",
+"brand": "Dell",
+"url_magazin": "https://www.dacris.net/s3225qc-dl-monitor-31-5-s3225qc-4k-uhd-3840x2160/p?skuId=248710",
+"pret_vechi": null,
+"verificat": "2026-11-17"
+}
+],
+"magazine": [
+"dacris.net",
+"itarena.ro"
+],
+"publicat": true
+},
+{
 "slug": "parfum-dior-sauvage",
 "tema": "parfumuri-barbati",
 "tema_nume": "Parfumuri bărbați",
@@ -786,7 +950,7 @@
 "titlu": "Puzzle de 1000 de piese",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-13",
+"actualizat": "2026-11-17",
 "feeduri": [
 {
 "id": 8767,
@@ -807,16 +971,16 @@
 ],
 "produse": [
 {
-"titlu": "Puzzle 1000 Piese, Deico, Lumea Acvatica",
-"pret": 51.99,
-"imagine": "https://www.trada.ro/img/puzzle-1000-piese-deico-lumea-acvatica-146196html_tr-295714-large.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.trada.ro%2Fpuzzle-1000-piese-deico-lumea-acvatica-146196.html",
-"magazin": "trada.ro",
-"id": "WXPH-bGJM3-s",
-"brand": "Deico",
-"url_magazin": "https://www.trada.ro/puzzle-1000-piese-deico-lumea-acvatica-146196.html",
-"pret_vechi": 60.45,
-"verificat": "2026-11-13"
+"titlu": "Puzzle Culorile Padurii, 1000 piese",
+"pret": 38.9,
+"imagine": "https://www.ookee.ro/417774-large_default/puzzle-culorile-padurii-1000-piese.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ookee.ro%2Fpuzzle%2F134500-puzzle-culorile-padurii-1000-piese-4823115901163.html",
+"magazin": "ookee.ro",
+"id": "VbvOnhO9IElu",
+"brand": "Dodo Toys",
+"url_magazin": "https://www.ookee.ro/puzzle/134500-puzzle-culorile-padurii-1000-piese-4823115901163.html",
+"pret_vechi": null,
+"verificat": "2026-11-17"
 },
 {
 "titlu": "Puzzle 1000 Piese, Deico, Zana Zapezii de Groos Zselyke",
@@ -879,6 +1043,30 @@
 "verificat": "2026-11-13"
 },
 {
+"titlu": "Puzzle 1000 Piese pentru Adulti, Deico, Castelul Bran Iarna",
+"pret": 51.99,
+"imagine": "https://www.trada.ro/img/puzzle-1000-piese-pentru-adulti-deico-castelul-bran-iarna-146761html_tr-296476-large.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.trada.ro%2Fpuzzle-1000-piese-pentru-adulti-deico-castelul-bran-iarna-146761.html",
+"magazin": "trada.ro",
+"id": "3EIBv-vyDC_Z",
+"brand": "Deico",
+"url_magazin": "https://www.trada.ro/puzzle-1000-piese-pentru-adulti-deico-castelul-bran-iarna-146761.html",
+"pret_vechi": 60.45,
+"verificat": "2026-11-17"
+},
+{
+"titlu": "Puzzle 1000 Piese D-Toys, Bruegel cel Batran, Caderea lui Icarus",
+"pret": 56.99,
+"imagine": "https://www.trada.ro/img/puzzle-1000-piese-d-toys-bruegel-cel-batran-caderea-lui-icarus-146047html_tr-295205-large.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.trada.ro%2Fpuzzle-1000-piese-d-toys-bruegel-cel-batran-caderea-lui-icarus-146047.html",
+"magazin": "trada.ro",
+"id": "9-CocVlWL4o7",
+"brand": "D-Toys",
+"url_magazin": "https://www.trada.ro/puzzle-1000-piese-d-toys-bruegel-cel-batran-caderea-lui-icarus-146047.html",
+"pret_vechi": 66.27,
+"verificat": "2026-11-17"
+},
+{
 "titlu": "Puzzle orașe, Londra, 1000 piese",
 "pret": 57.9,
 "imagine": "https://www.ookee.ro/423891-large_default/puzzle-orae-londra-1000-piese.jpg",
@@ -903,18 +1091,6 @@
 "verificat": "2026-11-13"
 },
 {
-"titlu": "Puzzle Stranger Things 1000 De Piese Clementoni",
-"pret": 57.9,
-"imagine": "https://www.ookee.ro/199396-large_default/puzzle-stranger-things-1000-de-piese-clementoni.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ookee.ro%2Fpuzzle%2F87436-puzzle-stranger-things-1000-de-piese-clementoni-8005125395422.html",
-"magazin": "ookee.ro",
-"id": "X7edGjHqfwDy",
-"brand": "AS",
-"url_magazin": "https://www.ookee.ro/puzzle/87436-puzzle-stranger-things-1000-de-piese-clementoni-8005125395422.html",
-"pret_vechi": null,
-"verificat": "2026-11-13"
-},
-{
 "titlu": "Puzzle Impossible La Casa De Papel 1000 De Piese Clementoni",
 "pret": 57.9,
 "imagine": "https://www.ookee.ro/199391-large_default/puzzle-impossible-la-casa-de-papel-1000-de-piese-clementoni.jpg",
@@ -923,6 +1099,18 @@
 "id": "nYyOXd7hsOyn",
 "brand": "AS",
 "url_magazin": "https://www.ookee.ro/puzzle/87434-puzzle-impossible-la-casa-de-papel-1000-de-piese-clementoni-800512539529.html",
+"pret_vechi": null,
+"verificat": "2026-11-13"
+},
+{
+"titlu": "Puzzle Stranger Things 1000 De Piese Clementoni",
+"pret": 57.9,
+"imagine": "https://www.ookee.ro/199396-large_default/puzzle-stranger-things-1000-de-piese-clementoni.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ookee.ro%2Fpuzzle%2F87436-puzzle-stranger-things-1000-de-piese-clementoni-8005125395422.html",
+"magazin": "ookee.ro",
+"id": "X7edGjHqfwDy",
+"brand": "AS",
+"url_magazin": "https://www.ookee.ro/puzzle/87436-puzzle-stranger-things-1000-de-piese-clementoni-8005125395422.html",
 "pret_vechi": null,
 "verificat": "2026-11-13"
 },
@@ -961,6 +1149,18 @@
 "url_magazin": "https://infinity.ro/puzzle-vintage-cu-mos-craciun-si-brad-de-craciun-1000-piese-multicolor-9360650/p?utm_source=2performant",
 "pret_vechi": 95.96,
 "verificat": "2026-11-13"
+},
+{
+"titlu": "Puzzle Rotund 1000 Piese Zodiac Astrologie si Simboluri Astrale, Carton Premium, Diametru 68 cm, Antistres, 14 ani+",
+"pret": 76.11,
+"imagine": "https://infinityro.vteximg.com.br/arquivos/ids/275225518/image-a14c273ceea449d39683c8615294d090.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Finfinity.ro%2Fpuzzle-rotund-1000-piese-zodiac-astrologie-si-simboluri-astrale-carton-premium-diametru-68-cm-antistres-14-ani--9381417%2Fp%3Futm_source%3D2performant",
+"magazin": "infinity.ro",
+"id": "n21nNsUSmu3V",
+"brand": "Daemi",
+"url_magazin": "https://infinity.ro/puzzle-rotund-1000-piese-zodiac-astrologie-si-simboluri-astrale-carton-premium-diametru-68-cm-antistres-14-ani--9381417/p?utm_source=2performant",
+"pret_vechi": 89.54,
+"verificat": "2026-11-17"
 },
 {
 "titlu": "Puzzle 1000 de piese, Wicked, Multicolor",

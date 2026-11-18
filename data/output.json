@@ -3645,6 +3645,41 @@
     "unique_code": "a5d726fe9"
   },
   {
+    "magazin": "apiland.ro",
+    "url": "https://www.apiland.ro/",
+    "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.apiland.ro%2F",
+    "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/2683/medium/2683.png",
+    "categorie": "Sănătate & Farmacie",
+    "categorie_slug": "sanatate",
+    "rank": 999,
+    "scor_afiliere": 0,
+    "prioritate": "neclasat",
+    "canal_recomandat": "",
+    "sales_number": 0,
+    "trend": 0,
+    "are_promotie": true,
+    "cod_cupon": false,
+    "zile_ramase": 4,
+    "promotii": [
+      {
+        "nume": "BLACK FRIDAY la ApiLand!",
+        "descriere": "BLACK FRIDAY la ApiLand! Între 17 și 21 noiembrie, produsele tale apicole preferate vin cu reduceri de până la 35%! Miere, lăptișor de matcă, tonice apicole și multe alte produse pentru rutina ta de zi cu zi, acum la prețuri speciale. Profită de ofertă și pregătește-ți rezervele pentru sezonul rece! Descoperă reducerile pe",
+        "cod_cupon": "",
+        "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.apiland.ro%2F",
+        "zile_ramase": 4,
+        "expira": "2026-11-21",
+        "incepe": "2026-11-16T22:00:00Z",
+        "sursa": "2performant_api"
+      }
+    ],
+    "exclusiv": false,
+    "platforma": "2performant",
+    "ultima_verificare": "2026-11-17",
+    "scor_final": 40.0,
+    "program_id": 1270,
+    "unique_code": "94d225abf"
+  },
+  {
     "magazin": "libris.ro",
     "url": "https://www.libris.ro",
     "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.libris.ro",
@@ -3678,6 +3713,41 @@
     "scor_final": 40.0,
     "program_id": 628,
     "unique_code": "9a6f02fef"
+  },
+  {
+    "magazin": "geekmall.ro",
+    "url": "https://www.geekmall.ro/",
+    "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.geekmall.ro%2F",
+    "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/11913/medium/11913.png",
+    "categorie": "Electronice & IT",
+    "categorie_slug": "electronice",
+    "rank": 999,
+    "scor_afiliere": 0,
+    "prioritate": "neclasat",
+    "canal_recomandat": "",
+    "sales_number": 0,
+    "trend": 0,
+    "are_promotie": true,
+    "cod_cupon": false,
+    "zile_ramase": 4,
+    "promotii": [
+      {
+        "nume": "Black Friday 2026 – Oferte electrizante | Reduceri de până la 55%!",
+        "descriere": "Tehnologia în lumina reflectoarelor. Prețurile... în umbră! Black Friday la Geekmall.ro aduce oferte electrizante și reduceri de până la 55%! Activează modul SMART și descoperă gadgeturi inteligente, trotinete electrice, aspiratoare robot, produse smart home și multe alte surprize la prețuri speciale. Livrare rapidă, garanție inclusă și siguranța Geekmall – Magazin de Încredere pe Compari.ro. Vezi ofertele",
+        "cod_cupon": "",
+        "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.geekmall.ro%2Fblack-friday",
+        "zile_ramase": 4,
+        "expira": "2026-11-21",
+        "incepe": "2026-10-29T22:00:00Z",
+        "sursa": "2performant_api"
+      }
+    ],
+    "exclusiv": false,
+    "platforma": "2performant",
+    "ultima_verificare": "2026-11-17",
+    "scor_final": 40.0,
+    "program_id": 8280,
+    "unique_code": "bdabf16d9"
   },
   {
     "magazin": "longevity-boost.com",
@@ -3928,41 +3998,6 @@
     "scor_final": 30.0,
     "program_id": 8139,
     "unique_code": "6390e3cfb"
-  },
-  {
-    "magazin": "apiland.ro",
-    "url": "https://www.apiland.ro/",
-    "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.apiland.ro%2F",
-    "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/2683/medium/2683.png",
-    "categorie": "Sănătate & Farmacie",
-    "categorie_slug": "sanatate",
-    "rank": 999,
-    "scor_afiliere": 0,
-    "prioritate": "neclasat",
-    "canal_recomandat": "",
-    "sales_number": 0,
-    "trend": 0,
-    "are_promotie": true,
-    "cod_cupon": false,
-    "zile_ramase": 4,
-    "promotii": [
-      {
-        "nume": "BLACK FRIDAY la ApiLand!",
-        "descriere": "BLACK FRIDAY la ApiLand! Între 17 și 21 noiembrie, produsele tale apicole preferate vin cu reduceri de până la 35%! Miere, lăptișor de matcă, tonice apicole și multe alte produse pentru rutina ta de zi cu zi, acum la prețuri speciale. Profită de ofertă și pregătește-ți rezervele pentru sezonul rece! Descoperă reducerile pe",
-        "cod_cupon": "",
-        "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.apiland.ro%2F",
-        "zile_ramase": 4,
-        "expira": "2026-11-21",
-        "incepe": "2026-11-16T22:00:00Z",
-        "sursa": "2performant_api"
-      }
-    ],
-    "exclusiv": false,
-    "platforma": "2performant",
-    "ultima_verificare": "2026-11-17",
-    "scor_final": 30.0,
-    "program_id": 1270,
-    "unique_code": "94d225abf"
   },
   {
     "magazin": "spy-shop.ro",
@@ -5428,41 +5463,6 @@
     "scor_final": 30.0,
     "program_id": 12887,
     "unique_code": "ebb7fb28d"
-  },
-  {
-    "magazin": "geekmall.ro",
-    "url": "https://www.geekmall.ro/",
-    "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.geekmall.ro%2F",
-    "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/11913/medium/11913.png",
-    "categorie": "Electronice & IT",
-    "categorie_slug": "electronice",
-    "rank": 999,
-    "scor_afiliere": 0,
-    "prioritate": "neclasat",
-    "canal_recomandat": "",
-    "sales_number": 0,
-    "trend": 0,
-    "are_promotie": true,
-    "cod_cupon": false,
-    "zile_ramase": 4,
-    "promotii": [
-      {
-        "nume": "Black Friday 2026 – Oferte electrizante | Reduceri de până la 55%!",
-        "descriere": "Tehnologia în lumina reflectoarelor. Prețurile... în umbră! Black Friday la Geekmall.ro aduce oferte electrizante și reduceri de până la 55%! Activează modul SMART și descoperă gadgeturi inteligente, trotinete electrice, aspiratoare robot, produse smart home și multe alte surprize la prețuri speciale. Livrare rapidă, garanție inclusă și siguranța Geekmall – Magazin de Încredere pe Compari.ro. Vezi ofertele",
-        "cod_cupon": "",
-        "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.geekmall.ro%2Fblack-friday",
-        "zile_ramase": 4,
-        "expira": "2026-11-21",
-        "incepe": "2026-10-29T22:00:00Z",
-        "sursa": "2performant_api"
-      }
-    ],
-    "exclusiv": false,
-    "platforma": "2performant",
-    "ultima_verificare": "2026-11-17",
-    "scor_final": 30.0,
-    "program_id": 8280,
-    "unique_code": "bdabf16d9"
   },
   {
     "magazin": "estel.ro",
@@ -22784,30 +22784,6 @@
     "scor_final": 0.0,
     "program_id": 12718,
     "unique_code": "6deb5ae34"
-  },
-  {
-    "magazin": "decasamobilaitalia.ro",
-    "url": "https://decasamobilaitalia.ro",
-    "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fdecasamobilaitalia.ro",
-    "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/14559/medium/14559.png",
-    "categorie": "Casă & Grădină",
-    "categorie_slug": "casa-gradina",
-    "rank": 999,
-    "scor_afiliere": 0,
-    "prioritate": "neclasat",
-    "canal_recomandat": "",
-    "sales_number": 0,
-    "trend": 0,
-    "are_promotie": false,
-    "cod_cupon": false,
-    "zile_ramase": 99,
-    "promotii": [],
-    "exclusiv": false,
-    "platforma": "2performant",
-    "ultima_verificare": "2026-11-17",
-    "scor_final": 0.0,
-    "program_id": 13239,
-    "unique_code": "6440cbfd2"
   },
   {
     "magazin": "patuldeacasa.ro",

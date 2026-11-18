@@ -581,11 +581,6 @@
 "google_ads": "yes",
 "cashback": "yes"
 },
-"decasamobilaitalia.ro": {
-"cupoane": "yes",
-"google_ads": "yes",
-"cashback": "yes"
-},
 "decryso.ro": {
 "cupoane": "yes",
 "google_ads": "yes",
@@ -1468,7 +1463,7 @@
 },
 "materialeelectrice.ro": {
 "cupoane": "yes",
-"google_ads": "yes",
+"google_ads": "no",
 "cashback": "yes"
 },
 "medimfarm.ro": {

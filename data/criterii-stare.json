@@ -5993,7 +5993,7 @@
 "titlu": "Laptopuri cu AMD Ryzen 7",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-13",
+"actualizat": "2026-11-17",
 "feeduri": [
 {
 "id": 8969,
@@ -6018,18 +6018,6 @@
 "verificat": "2026-11-04"
 },
 {
-"titlu": "Laptop Asus - ExpertBook BM1503CDA, 15.6\", FHD, Ryzen 7, 16GB/512GB",
-"pret": 4240.99,
-"imagine": "https://www.ozone.ro/media/catalog/product/l/a/laptop_asus_expertbook_bm1503cda_15_6_fhd_ryzen_7_16gb_512gb_1785135544_0.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ozone.ro%2Fproduct%2Flaptop-asus-expertbook-bm1503cda-15-6-fhd-ryzen-7-16gb-512gb%2F",
-"magazin": "ozone.ro",
-"id": "_bZf2vK-r3yl",
-"brand": "ASUS",
-"url_magazin": "https://www.ozone.ro/product/laptop-asus-expertbook-bm1503cda-15-6-fhd-ryzen-7-16gb-512gb/",
-"pret_vechi": 4505.99,
-"verificat": "2026-11-04"
-},
-{
 "titlu": "Laptop ASUS - Vivobook M1502NAQ, 15.6'', FHD, Ryzen 7, 32GB/512GB",
 "pret": 4771.99,
 "imagine": "https://www.ozone.ro/media/catalog/product/l/a/laptop_asus_vivobook_m1502naq_15_6_fhd_ryzen_7_16gb_512gb_1774881794_0_2.jpg",
@@ -6038,18 +6026,6 @@
 "id": "gCZyyAIH5bfD",
 "brand": "ASUS",
 "url_magazin": "https://www.ozone.ro/product/laptop-asus-vivobook-m1502naq-15-6-fhd-ryzen-7-32gb-512gb/",
-"pret_vechi": null,
-"verificat": "2026-11-04"
-},
-{
-"titlu": "Laptop gaming ASUS - TUF F16 FA607NUG-RL117, 16'', WUXGA, Ryzen 7, 144 Hz, RTX 4050",
-"pret": 5309.99,
-"imagine": "https://www.ozone.ro/media/catalog/product/g/e/geyming_laptop_asus_tuf_f16_fa607nug_rl117_16_wuxga_ryzen_7_144_hz_rtx_4050_1787836766_0.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ozone.ro%2Fproduct%2Flaptop-gaming-asus-tuf-f16-fa607nug-rl117-16-wuxga-ryzen-7-144-hz-rtx-4050%2F",
-"magazin": "ozone.ro",
-"id": "NJl9QJaPYdp8",
-"brand": "ASUS",
-"url_magazin": "https://www.ozone.ro/product/laptop-gaming-asus-tuf-f16-fa607nug-rl117-16-wuxga-ryzen-7-144-hz-rtx-4050/",
 "pret_vechi": null,
 "verificat": "2026-11-04"
 },
@@ -6125,6 +6101,17 @@
 "pret_vechi": null
 },
 {
+"titlu": "Laptop 2-в-1 Lenovo - IdeaPad 5, 14'', WUXGA, Ryzen 7, 16GB/512GB, Touch",
+"pret": 6099.99,
+"imagine": "https://www.ozone.ro/media/catalog/product/l/a/laptop_2_v_1_lenovo_ideapad_5_14_wuxga_ryzen_7_16gb_512gb_touch_1781706706_0.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ozone.ro%2Fproduct%2Flaptop-2-v-1-lenovo-ideapad-5-14-wuxga-ryzen-7-16gb-512gb-touch%2F",
+"magazin": "ozone.ro",
+"id": "7siLEZPYNJrB",
+"brand": "Lenovo",
+"url_magazin": "https://www.ozone.ro/product/laptop-2-v-1-lenovo-ideapad-5-14-wuxga-ryzen-7-16gb-512gb-touch/",
+"pret_vechi": null
+},
+{
 "titlu": "Lenovo Laptop Lenovo ThinkBook 16 G9 AHP, 16, WUXGA IPS, Procesor AMD Ryzen 7 250 (16M Cache, up to 5.10 GHz), 16GB DDR5",
 "pret": 6142.99,
 "imagine": "https://www.dwyn.ro/images/products/img_202606122129/483496/full/lenovo-lenovo-thinkbook-16-g9-amd-ryzen-7-250-16inch-wuxga-16gb-512gb-ssd-noos-1524367.jpg",
@@ -6137,14 +6124,14 @@
 "verificat": "2026-11-04"
 },
 {
-"titlu": "Asus Laptop ASUS TUF Gaming A17 FA707NUG-HX163, AMD Ryzen 7 7445HS, 17.3 inch, RAM 16GB, SSD 2TB, NVIDIA GeForce RTX 405",
-"pret": 6323.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202512311121/391012/full/asus-nb-fa707nug-r7-7445hs-17-16gb-2tb-fa707nug-hx163-asus-1202842.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Flaptop-notebook%2Fasus%2F391012-laptop-asus-tuf-gaming-a17-fa707nug-hx163-amd-ryzen-7-7445hs-17-3-inch-ram-16gb-ssd-2tb-nvidia-geforce-rtx-4050-6gb-no-os-gri%2F",
-"magazin": "dwyn.ro",
-"id": "58FDOhOfqbHq",
-"brand": "Asus",
-"url_magazin": "https://www.dwyn.ro/laptop-notebook/asus/391012-laptop-asus-tuf-gaming-a17-fa707nug-hx163-amd-ryzen-7-7445hs-17-3-inch-ram-16gb-ssd-2tb-nvidia-geforce-rtx-4050-6gb-no-os-gri/",
+"titlu": "Laptop gaming ASUS - TUF F16 FA607NUG-RL117, 16'', WUXGA, Ryzen 7, 144 Hz, RTX 4050",
+"pret": 6369.99,
+"imagine": "https://www.ozone.ro/media/catalog/product/g/e/geyming_laptop_asus_tuf_f16_fa607nug_rl117_16_wuxga_ryzen_7_144_hz_rtx_4050_1787837312_0_2.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ozone.ro%2Fproduct%2Flaptop-gaming-asus-tuf-f16-fa607nug-rl117-16-wuxga-ryzen-7-144-hz-rtx-4050-1037057%2F",
+"magazin": "ozone.ro",
+"id": "KlRc7_TujnM9",
+"brand": "ASUS",
+"url_magazin": "https://www.ozone.ro/product/laptop-gaming-asus-tuf-f16-fa607nug-rl117-16-wuxga-ryzen-7-144-hz-rtx-4050-1037057/",
 "pret_vechi": null
 },
 {
@@ -6183,8 +6170,19 @@
 "verificat": "2026-11-04"
 },
 {
+"titlu": "Asus Laptop Asus TUF Gaming FA401UH-RG004W, AMD Ryzen 7 260, 14, 2,5K, 165Hz, 16GB RAM, 512GB, Windows 11 Home, RTX 5050",
+"pret": 8206.99,
+"imagine": "https://www.dwyn.ro/images/products/img_202512311121/367229/full/asus-asus-tuf-gaming-fa401uh-rg004w-r7-260-14-2-5k-165hz-16gb-512gb-w11h-rtx-5050-1074479.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Flaptop-notebook%2Fasus%2F367229-laptop-asus-tuf-gaming-fa401uh-rg004w-amd-ryzen-7-260-14-2-5k-165hz-16gb-ram-512gb-windows-11-home-rtx-5050-negru%2F",
+"magazin": "dwyn.ro",
+"id": "mdiZBwKlTEqv",
+"brand": "Asus",
+"url_magazin": "https://www.dwyn.ro/laptop-notebook/asus/367229-laptop-asus-tuf-gaming-fa401uh-rg004w-amd-ryzen-7-260-14-2-5k-165hz-16gb-ram-512gb-windows-11-home-rtx-5050-negru/",
+"pret_vechi": null
+},
+{
 "titlu": "Dell Laptop Dell Mobile Workstation, 14 Inch FHD+, Ryzen 7 PRO 350, 16GB RAM, 512GB SSD, Windows 11 Pro, Negru",
-"pret": 8231.99,
+"pret": 8237.99,
 "imagine": "https://www.dwyn.ro/images/products/img_202606122129/422137/full/dell-dl-mc14255-fhd-plus-r7pro-350-16-512-w11p-1379659.png",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Flaptop-notebook%2Fdell%2F422137-laptop-dell-mobile-workstation-14-inch-fhd-plus-ryzen-7-pro-350-16gb-ram-512gb-ssd-windows-11-pro-negru%2F",
 "magazin": "dwyn.ro",
@@ -6218,7 +6216,7 @@
 "titlu": "Telefoane cu 256 GB",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-13",
+"actualizat": "2026-11-17",
 "feeduri": [
 {
 "id": 1539,
@@ -6350,7 +6348,7 @@
 "titlu": "Telefoane 5G",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-14",
+"actualizat": "2026-11-17",
 "feeduri": [
 {
 "id": 1539,
@@ -6391,13 +6389,24 @@
 },
 {
 "titlu": "Honor Telefon mobil Honor 600 Lite 5G Dual SIM, 8GB RAM, 128GB, AMOLED 6.6 inch 120 Hz, camera 108 MP, 6520 mAh, Negru V",
-"pret": 1437.99,
+"pret": 1438.99,
 "imagine": "https://www.dwyn.ro/images/products/img_202606122129/480325/full/honor-telefon-mobil-honor-600-lite-5g-dual-sim-8gb-ram-128gb-amoled-6-6-inch-120-hz-camera-108-mp-6520-mah-negru-velvet-black-1518670.png",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Ftelefoane-gsm%2Fhonor%2F480325-telefon-mobil-honor-600-lite-5g-dual-sim-8gb-ram-128gb-amoled-6-6-inch-120-hz-camera-108-mp-6520-mah-negru-velvet-black%2F",
 "magazin": "dwyn.ro",
 "id": "CrAvfGsIEeSG",
 "brand": "Honor",
 "url_magazin": "https://www.dwyn.ro/telefoane-gsm/honor/480325-telefon-mobil-honor-600-lite-5g-dual-sim-8gb-ram-128gb-amoled-6-6-inch-120-hz-camera-108-mp-6520-mah-negru-velvet-black/",
+"pret_vechi": null
+},
+{
+"titlu": "Honor Telefon mobil Honor 600 Lite, Dual SIM, 8GB RAM, 128GB, 5G, Verde",
+"pret": 1438.99,
+"imagine": "https://www.dwyn.ro/images/products/img_202606122129/480379/full/honor-telefon-mobil-honor-600-lite-dual-sim-8gb-ram-128gb-5g-verde-1515676.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Ftelefoane-gsm%2Fhonor%2F480379-telefon-mobil-honor-600-lite-dual-sim-8gb-ram-128gb-5g-verde%2F",
+"magazin": "dwyn.ro",
+"id": "-IAyHKrzJXc_",
+"brand": "Honor",
+"url_magazin": "https://www.dwyn.ro/telefoane-gsm/honor/480379-telefon-mobil-honor-600-lite-dual-sim-8gb-ram-128gb-5g-verde/",
 "pret_vechi": null
 },
 {
@@ -6447,18 +6456,6 @@
 "url_magazin": "https://www.dwyn.ro/telefoane-gsm/motorola/480310-telefon-mobil-motorola-edge-70-fusion-5g-dual-sim-8gb-ram-512gb-amoled-6-78-inch-144-hz-camera-sony-50-mp-negru-pantone-silhouette/",
 "pret_vechi": null,
 "verificat": "2026-11-04"
-},
-{
-"titlu": "Xiaomi Telefon mobil Xiaomi Redmi Note 17 Pro Max 5G Dual SIM, 8GB RAM, 256GB, AMOLED 6.83 inch 120 Hz, camera 50 MP OIS",
-"pret": 2345.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202606122129/480337/full/xiaomi-telefon-mobil-xiaomi-redmi-note-17-pro-max-5g-dual-sim-8gb-ram-256gb-amoled-6-83-inch-120-hz-camera-50-mp-ois-9210-mah-negru-1519225.png",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Ftelefoane-gsm%2Fxiaomi%2F480337-telefon-mobil-xiaomi-redmi-note-17-pro-max-5g-dual-sim-8gb-ram-256gb-amoled-6-83-inch-120-hz-camera-50-mp-ois-9210-mah-negru%2F",
-"magazin": "dwyn.ro",
-"id": "SrpZ9DTne2g3",
-"brand": "Xiaomi",
-"url_magazin": "https://www.dwyn.ro/telefoane-gsm/xiaomi/480337-telefon-mobil-xiaomi-redmi-note-17-pro-max-5g-dual-sim-8gb-ram-256gb-amoled-6-83-inch-120-hz-camera-50-mp-ois-9210-mah-negru/",
-"pret_vechi": null,
-"verificat": "2026-11-04"
 }
 ],
 "magazine": [
@@ -6472,7 +6469,7 @@
 "titlu": "Telefoane Samsung",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-14",
+"actualizat": "2026-11-17",
 "feeduri": [
 {
 "id": 1539,
@@ -6558,7 +6555,7 @@
 },
 {
 "titlu": "Samsung Telefon mobil Samsung Galaxy S26 FE, Dual SIM, 8GB RAM, 512GB, 5G, Exynos 2500, Verde deschis",
-"pret": 4740.99,
+"pret": 4738.99,
 "imagine": "https://www.dwyn.ro/images/products/img_202606122129/455560/full/samsung-telefon-mobil-samsung-galaxy-s26-fe-dual-sim-8gb-ram-512gb-5g-pistachio-1474393.jpg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Ftelefoane-gsm%2Fsamsung%2F455560-telefon-mobil-samsung-galaxy-s26-fe-dual-sim-8gb-ram-512gb-5g-exynos-2500-verde-deschis%2F",
 "magazin": "dwyn.ro",
@@ -6591,7 +6588,7 @@
 "titlu": "Telefoane Xiaomi",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-14",
+"actualizat": "2026-11-17",
 "feeduri": [
 {
 "id": 8326,
@@ -6617,7 +6614,7 @@
 },
 {
 "titlu": "Xiaomi Telefon mobil Xiaomi Redmi 15C, 4GB RAM, 128GB,4G LTE, Dual SIM, Negru",
-"pret": 910.99,
+"pret": 958.99,
 "imagine": "https://www.dwyn.ro/images/products/img_202508191322/358193/full/xiaomi-xiaomi-redmi-15c-4-128gb-czarny-1004312.jpg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Ftelefoane-gsm%2Fxiaomi%2F358193-telefon-mobil-xiaomi-redmi-15c-4gb-ram-128gb-4g-lte-dual-sim-negru%2F",
 "magazin": "dwyn.ro",
@@ -6675,18 +6672,6 @@
 "verificat": "2026-11-04"
 },
 {
-"titlu": "Xiaomi Telefon mobil Xiaomi Redmi 15C, 6.9 inch, Dual SIM, 5G, 4GB RAM, 128GB, Negru",
-"pret": 1132.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202512311121/384374/full/xiaomi-xiaomi-redmi-15c-midnight-black-dual-sim-6-9-ips-lcd-720x1600-2-0ghz-1-8ghz-128gb-4gb-ram-android15-microsdxc-5g-mzb0lineu-1172165.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Ftelefoane-gsm%2Fxiaomi%2F384374-telefon-mobil-xiaomi-redmi-15c-6-9-inch-dual-sim-5g-4gb-ram-128gb-negru%2F",
-"magazin": "dwyn.ro",
-"id": "WHqqM0Sj8cCa",
-"brand": "Xiaomi",
-"url_magazin": "https://www.dwyn.ro/telefoane-gsm/xiaomi/384374-telefon-mobil-xiaomi-redmi-15c-6-9-inch-dual-sim-5g-4gb-ram-128gb-negru/",
-"pret_vechi": null,
-"verificat": "2026-11-04"
-},
-{
 "titlu": "Xiaomi Telefon Mobil Xiaomi Redmi 17, Procesor Mediatek Helio G91 Ultra Octa-Core, IPS LCD 6.9, 4GB RAM, 128GB Flash, Ca",
 "pret": 1152.99,
 "imagine": "https://www.dwyn.ro/images/products/img_202606122129/459895/full/xiaomi-telefon-mobil-xiaomi-redmi-17-128gb-4gb-ram-dual-sim-green-1474336.jpg",
@@ -6697,6 +6682,17 @@
 "url_magazin": "https://www.dwyn.ro/telefoane-gsm/xiaomi/459895-telefon-mobil-xiaomi-redmi-17-procesor-mediatek-helio-g91-ultra-octa-core-ips-lcd-6-9-4gb-ram-128gb-flash-camera-duala-50-mp-wi-fi-4g-dual-sim-android-verde/",
 "pret_vechi": null,
 "verificat": "2026-11-04"
+},
+{
+"titlu": "Xiaomi Telefon mobil Xiaomi Redmi 17, Dua SIM, 4GB RAM, 256GB, Albastru",
+"pret": 1254.99,
+"imagine": "https://www.dwyn.ro/images/products/img_202606122129/480382/full/xiaomi-telefon-mobil-xiaomi-redmi-17-4gb-ram-256gb-albastru-1515679.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Ftelefoane-gsm%2Fxiaomi%2F480382-telefon-mobil-xiaomi-redmi-17-dua-sim-4gb-ram-256gb-albastru%2F",
+"magazin": "dwyn.ro",
+"id": "4cENY9gJUTFv",
+"brand": "Xiaomi",
+"url_magazin": "https://www.dwyn.ro/telefoane-gsm/xiaomi/480382-telefon-mobil-xiaomi-redmi-17-dua-sim-4gb-ram-256gb-albastru/",
+"pret_vechi": null
 }
 ],
 "magazine": [
@@ -6710,7 +6706,7 @@
 "titlu": "Telefoane iPhone",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-14",
+"actualizat": "2026-11-17",
 "feeduri": [
 {
 "id": 1539,
@@ -6768,7 +6764,7 @@
 },
 {
 "titlu": "Apple Telefon mobil Apple iPhone 18 Pro, 12GB RAM, 1TB, 5G, Black",
-"pret": 12548.99,
+"pret": 12556.99,
 "imagine": "https://www.dwyn.ro/images/products/img_202606122129/478288/full/apple-telefon-mobil-apple-iphone-18-pro-12gb-ram-1tb-5g-black-1505515.jpg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Ftelefoane-gsm%2Fapple%2F478288-telefon-mobil-apple-iphone-18-pro-12gb-ram-1tb-5g-black%2F",
 "magazin": "dwyn.ro",
@@ -6791,7 +6787,7 @@
 },
 {
 "titlu": "Apple Telefon mobil Apple iPhone 18 Pro, 12GB RAM, 1TB, 5G, Silver",
-"pret": 12620.99,
+"pret": 12628.99,
 "imagine": "https://www.dwyn.ro/images/products/img_202606122129/479659/full/apple-telefon-mobil-apple-iphone-18-pro-12gb-ram-1tb-5g-silver-1505374.jpg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Ftelefoane-gsm%2Fapple%2F479659-telefon-mobil-apple-iphone-18-pro-12gb-ram-1tb-5g-silver%2F",
 "magazin": "dwyn.ro",
@@ -6802,7 +6798,7 @@
 },
 {
 "titlu": "Apple Telefon mobil Apple iPhone 18 Pro, 12GB RAM, 1TB, 5G, Burgundy",
-"pret": 12620.99,
+"pret": 12628.99,
 "imagine": "https://www.dwyn.ro/images/products/img_202606122129/479662/full/apple-telefon-mobil-apple-iphone-18-pro-12gb-ram-1tb-5g-burgundy-1505362.jpg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Ftelefoane-gsm%2Fapple%2F479662-telefon-mobil-apple-iphone-18-pro-12gb-ram-1tb-5g-burgundy%2F",
 "magazin": "dwyn.ro",
@@ -6840,7 +6836,7 @@
 "titlu": "Monitoare de 24 inch",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-14",
+"actualizat": "2026-11-17",
 "feeduri": [
 {
 "id": 8527,
@@ -7005,7 +7001,7 @@
 "titlu": "Monitoare de 27 inch",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-14",
+"actualizat": "2026-11-17",
 "feeduri": [
 {
 "id": 8527,
@@ -7030,18 +7026,6 @@
 "id": "MAYAxyG7rVzm",
 "brand": "VIEWSONIC",
 "url_magazin": "https://1cctv.ro/ro/monitoare/43275-monitor-consumer-viewsonic-va270-h-27-1920x1080-pixeli-black-2-ani-garantie.html?utm_source=2performant",
-"pret_vechi": null,
-"verificat": "2026-11-04"
-},
-{
-"titlu": "Monitor Commercial Dell SE2726HG, 27\", 1920 x 1080 pixeli, Black, 3 ani Garantie",
-"pret": 598.94,
-"imagine": "http://1cctv.ro/165983/monitor-commercial-dell-se2726hg-27-1920-x-1080-pixeli-black-3-ani-garantie.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2F1cctv.ro%2Fro%2Fmonitoare%2F42357-monitor-commercial-dell-se2726hg-27-1920-x-1080-pixeli-black-3-ani-garantie.html%3Futm_source%3D2performant",
-"magazin": "1cctv.ro",
-"id": "HxEw6bYNhKXU",
-"brand": "Dell",
-"url_magazin": "https://1cctv.ro/ro/monitoare/42357-monitor-commercial-dell-se2726hg-27-1920-x-1080-pixeli-black-3-ani-garantie.html?utm_source=2performant",
 "pret_vechi": null,
 "verificat": "2026-11-04"
 },
@@ -7082,18 +7066,6 @@
 "verificat": "2026-11-04"
 },
 {
-"titlu": "Monitor Commercial Dell E2726HS, 27\", 1920 x 1080 pixeli, Black, 3 ani Garantie",
-"pret": 685.4,
-"imagine": "http://1cctv.ro/165838/monitor-commercial-dell-e2726hs-27-1920-x-1080-pixeli-black-3-ani-garantie.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2F1cctv.ro%2Fro%2Fmonitoare%2F42220-monitor-commercial-dell-e2726hs-27-1920-x-1080-pixeli-black-3-ani-garantie.html%3Futm_source%3D2performant",
-"magazin": "1cctv.ro",
-"id": "8HszWTZ94A91",
-"brand": "Dell",
-"url_magazin": "https://1cctv.ro/ro/monitoare/42220-monitor-commercial-dell-e2726hs-27-1920-x-1080-pixeli-black-3-ani-garantie.html?utm_source=2performant",
-"pret_vechi": null,
-"verificat": "2026-11-04"
-},
-{
 "titlu": "Monitor Consumer ViewSonic VA2708-HDJ, 27\", 1920 x 1080 pixeli, Black, 2 ani Garantie",
 "pret": 719.08,
 "imagine": "http://1cctv.ro/167922/monitor-consumer-viewsonic-va2708-hdj-27-1920-x-1080-pixeli-black-2-ani-garantie.jpg",
@@ -7118,16 +7090,40 @@
 "verificat": "2026-11-04"
 },
 {
-"titlu": "Monitor Consumer Philips 273S1/00, 27\", 1920 x 1080 pixeli, Black, 2 ani Garantie",
-"pret": 967.73,
-"imagine": "http://1cctv.ro/166813/monitor-consumer-philips-273s1-00-27-1920-x-1080-pixeli-black-2-ani-garantie.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2F1cctv.ro%2Fro%2Fmonitoare%2F42693-monitor-consumer-philips-273s1-00-27-1920-x-1080-pixeli-black-2-ani-garantie.html%3Futm_source%3D2performant",
+"titlu": "Monitor Consumer Philips 273S1/00, 27\", 1920 x 1080 pixeli, Black, 3 ani Garantie",
+"pret": 969.13,
+"imagine": "http://1cctv.ro/166813/monitor-consumer-philips-273s1-00-27-1920-x-1080-pixeli-black-3-ani-garantie.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2F1cctv.ro%2Fro%2Fmonitoare%2F42693-monitor-consumer-philips-273s1-00-27-1920-x-1080-pixeli-black-3-ani-garantie.html%3Futm_source%3D2performant",
 "magazin": "1cctv.ro",
 "id": "yAGvy2u3j_mZ",
 "brand": "PHILIPS",
-"url_magazin": "https://1cctv.ro/ro/monitoare/42693-monitor-consumer-philips-273s1-00-27-1920-x-1080-pixeli-black-2-ani-garantie.html?utm_source=2performant",
+"url_magazin": "https://1cctv.ro/ro/monitoare/42693-monitor-consumer-philips-273s1-00-27-1920-x-1080-pixeli-black-3-ani-garantie.html?utm_source=2performant",
 "pret_vechi": null,
-"verificat": "2026-11-04"
+"verificat": "2026-11-17"
+},
+{
+"titlu": "Monitor Samsung 27\" LS27HG402EUXEN, Diagonal (inch): 27, Diagonal (cm): 68, Aspect ratio: 16:9, Panel: IPS, Resolution:",
+"pret": 997.5,
+"imagine": "http://1cctv.ro/167753/monitor-samsung-27-ls27hg402euxen-diagonal-inch-27-diagonal-cm-68-aspect-ratio-169-panel-ips-resolution-1920x108.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2F1cctv.ro%2Fro%2Fmonitoare%2F42691-monitor-samsung-27-ls27hg402euxen-diagonal-inch-27-diagonal-cm-68-aspect-ratio-169-panel-ips-resolution-1920x108.html%3Futm_source%3D2performant",
+"magazin": "1cctv.ro",
+"id": "D4YytdDgWlNu",
+"brand": "SAMSUNG",
+"url_magazin": "https://1cctv.ro/ro/monitoare/42691-monitor-samsung-27-ls27hg402euxen-diagonal-inch-27-diagonal-cm-68-aspect-ratio-169-panel-ips-resolution-1920x108.html?utm_source=2performant",
+"pret_vechi": null,
+"verificat": "2026-11-17"
+},
+{
+"titlu": "Monitor Commercial Dell E2726DS, 27\", 2560 x 1440 pixeli, Black, 3 ani Garantie",
+"pret": 1004.71,
+"imagine": "http://1cctv.ro/165889/monitor-commercial-dell-e2726ds-27-2560-x-1440-pixeli-black-3-ani-garantie.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2F1cctv.ro%2Fro%2Fmonitoare%2F42258-monitor-commercial-dell-e2726ds-27-2560-x-1440-pixeli-black-3-ani-garantie.html%3Futm_source%3D2performant",
+"magazin": "1cctv.ro",
+"id": "-MZhvGJ1gRcB",
+"brand": "Dell",
+"url_magazin": "https://1cctv.ro/ro/monitoare/42258-monitor-commercial-dell-e2726ds-27-2560-x-1440-pixeli-black-3-ani-garantie.html?utm_source=2performant",
+"pret_vechi": null,
+"verificat": "2026-11-17"
 }
 ],
 "magazine": [
@@ -7142,7 +7138,7 @@
 "titlu": "Monitoare de 32 inch",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-14",
+"actualizat": "2026-11-17",
 "feeduri": [
 {
 "id": 8527,
@@ -7332,7 +7328,7 @@
 "titlu": "Monitoare de 144 Hz sau mai rapide",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-14",
+"actualizat": "2026-11-17",
 "feeduri": [
 {
 "id": 8969,
@@ -7349,6 +7345,17 @@
 ],
 "produse": [
 {
+"titlu": "Monitor gaming Acer - Nitro QG241YP6bmipx, 23.8'', 144Hz, 1ms, FreeSync",
+"pret": 424.55,
+"imagine": "https://www.ozone.ro/media/catalog/product/g/e/geyming_monitor_acer_nitro_qg241yp6bmipx_23_8_144hz_1ms_freesync_1773410498_0.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ozone.ro%2Fproduct%2Fmonitor-gaming-acer-nitro-qg241yp6bmipx-23-8-144hz-1ms-freesync%2F",
+"magazin": "ozone.ro",
+"id": "NCb-eHTE0XBd",
+"brand": "Acer",
+"url_magazin": "https://www.ozone.ro/product/monitor-gaming-acer-nitro-qg241yp6bmipx-23-8-144hz-1ms-freesync/",
+"pret_vechi": null
+},
+{
 "titlu": "Monitor gaming AOC - B3 24B36X, 23.8'', 144Hz, 4ms, IPS, negru",
 "pret": 451.1,
 "imagine": "https://www.ozone.ro/media/catalog/product/g/e/geyming_monitor_aoc_b3_24b36x_23_8_144hz_4ms_ips_cheren_1776328673_0.jpg",
@@ -7357,7 +7364,7 @@
 "id": "e--RcEEBhg6n",
 "brand": "AOC",
 "url_magazin": "https://www.ozone.ro/product/monitor-gaming-aoc-b3-24b36x-23-8-144hz-4ms-ips-negru/",
-"pret_vechi": 464.35,
+"pret_vechi": null,
 "verificat": "2026-11-04"
 },
 {
@@ -7420,6 +7427,17 @@
 "verificat": "2026-11-04"
 },
 {
+"titlu": "Monitor de gaming Philips - Evnia, 27'', 144Hz, 0.5ms, IPS, Adaptive-Sync",
+"pret": 514.79,
+"imagine": "https://www.ozone.ro/media/catalog/product/g/e/geyming_monitor_philips_evnia_27_144hz_0_5ms_ips_adaptive_sync_1753178905_0.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ozone.ro%2Fproduct%2Fmonitor-de-gaming-philips-evnia-27-144hz-0-5ms-ips-adaptive-sync%2F",
+"magazin": "ozone.ro",
+"id": "noSTGN-ds7KP",
+"brand": "Philips",
+"url_magazin": "https://www.ozone.ro/product/monitor-de-gaming-philips-evnia-27-144hz-0-5ms-ips-adaptive-sync/",
+"pret_vechi": null
+},
+{
 "titlu": "Acer Monitor Acer EK251Q P6, 24.5, (62,2 cm), IPS, Full HD, 144 HZ, 1 ms, Negru",
 "pret": 517.99,
 "imagine": "https://www.dwyn.ro/images/products/img_202512311121/367499/full/acer-acer-ek251q-p6-144hz-full-hd-ips-24-5-1047656.jpg",
@@ -7428,29 +7446,6 @@
 "id": "582aG3m5S5pp",
 "brand": "Acer",
 "url_magazin": "https://www.dwyn.ro/monitoare-lcd-led/acer/367499-monitor-acer-ek251q-p6-24-5-62-2-cm-ips-full-hd-144-hz-1-ms-negru/",
-"pret_vechi": null,
-"verificat": "2026-11-04"
-},
-{
-"titlu": "Monitor de gaming LG - UltraGear 27G411A-B, 27'', 144Hz, 1ms, negru",
-"pret": 530.19,
-"imagine": "https://www.ozone.ro/media/catalog/product/g/e/geyming_monitor_lg_ultragear_27g411a_b_27_144hz_1ms_cheren_1771435887_0.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ozone.ro%2Fproduct%2Fmonitor-de-gaming-lg-ultragear-27g411a-b-27-144hz-1ms-negru%2F",
-"magazin": "ozone.ro",
-"id": "a0hnBjSc-WCg",
-"brand": "LG",
-"url_magazin": "https://www.ozone.ro/product/monitor-de-gaming-lg-ultragear-27g411a-b-27-144hz-1ms-negru/",
-"pret_vechi": null
-},
-{
-"titlu": "Monitor gaming LG – UltraGear 24G411B-B, 23.8'', FHD, 144Hz, 5ms, IPS",
-"pret": 531.79,
-"imagine": "https://www.ozone.ro/media/catalog/product/g/e/geyming_monitor_lg_ultragear_24g411b_b_23_8_fhd_144hz_5ms_ips_1791867921_0.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ozone.ro%2Fproduct%2Fmonitor-gaming-lg-ultragear-24g411b-b-23-8-fhd-144hz-5ms-ips%2F",
-"magazin": "ozone.ro",
-"id": "sr-R-Ufk6YrI",
-"brand": "LG",
-"url_magazin": "https://www.ozone.ro/product/monitor-gaming-lg-ultragear-24g411b-b-23-8-fhd-144hz-5ms-ips/",
 "pret_vechi": null,
 "verificat": "2026-11-04"
 },
@@ -7503,18 +7498,6 @@
 "verificat": "2026-11-04"
 },
 {
-"titlu": "MSI Monitor LED gaming PRO MP245PHG E14, 23.8inch, IPS,1920 × 1080 pixeli (Full HD), Plat, 1ms, 144Hz, 1 × DisplayPort,",
-"pret": 730.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202606122129/438685/full/msi-monitor-pro-mp245phg-e14-23-8-cala-led-fhd-flat-144hz-black-1414660.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fmonitoare-lcd-led%2Fmsi%2F438685-monitor-led-gaming-pro-mp245phg-e14-23-8inch-ips-1920-1080-pixeli-full-hd-plat-1ms-144hz-1-displayport-1-hdmi-2-0-1-usb-c-negru%2F",
-"magazin": "dwyn.ro",
-"id": "bzGLz7kSiNhK",
-"brand": "MSI",
-"url_magazin": "https://www.dwyn.ro/monitoare-lcd-led/msi/438685-monitor-led-gaming-pro-mp245phg-e14-23-8inch-ips-1920-1080-pixeli-full-hd-plat-1ms-144hz-1-displayport-1-hdmi-2-0-1-usb-c-negru/",
-"pret_vechi": null,
-"verificat": "2026-11-04"
-},
-{
 "titlu": "MSI Monitor gaming MSI PRO MP275PGN E14, 27inch, LED, Full HD, 1920 × 1080 pixeli, Curbat, 4ms, 144Hz, 1 × D-Sub (VGA),",
 "pret": 736.99,
 "imagine": "https://www.dwyn.ro/images/products/img_202606122129/438742/full/msi-monitor-gaming-msi-pro-mp275pgn-e14-27inch-led-full-hd-1920-1080-pixeli-curbat-4ms-144hz-1-d-sub-vga-1-displayport-1-hdmi-negru-1411789.jpg",
@@ -7525,6 +7508,17 @@
 "url_magazin": "https://www.dwyn.ro/monitoare-lcd-led/msi/438742-monitor-gaming-msi-pro-mp275pgn-e14-27inch-led-full-hd-1920-1080-pixeli-curbat-4ms-144hz-1-d-sub-vga-1-displayport-1-hdmi-negru/",
 "pret_vechi": null,
 "verificat": "2026-11-04"
+},
+{
+"titlu": "AOC Monitor Gaming IPS LED, AOC Q27B36X, 27 inch, QHD (2560 x 1440), HDMI, DisplayPort, 144 Hz, 0.5 ms, Negru",
+"pret": 773.99,
+"imagine": "https://www.dwyn.ro/images/products/img_202512311121/376415/full/aoc-monitor-aoc-27-q27b36x-1114013.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fmonitoare-lcd-led%2Faoc%2F376415-monitor-gaming-ips-led-aoc-q27b36x-27-inch-qhd-2560-x-1440-hdmi-displayport-144-hz-0-5-ms-negru%2F",
+"magazin": "dwyn.ro",
+"id": "D4SspXekTI5n",
+"brand": "AOC",
+"url_magazin": "https://www.dwyn.ro/monitoare-lcd-led/aoc/376415-monitor-gaming-ips-led-aoc-q27b36x-27-inch-qhd-2560-x-1440-hdmi-displayport-144-hz-0-5-ms-negru/",
+"pret_vechi": null
 },
 {
 "titlu": "IIYAMA Gaming Monitor 32 VA Gaming G-Master Red Eagle FreeSync Premium 3840x2160 144Hz 400cd/m2 2xHDMI 2.1 DisplayPort U",
@@ -7552,7 +7546,7 @@
 "titlu": "Monitoare de gaming",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-14",
+"actualizat": "2026-11-17",
 "feeduri": [
 {
 "id": 8969,
@@ -7669,6 +7663,18 @@
 "verificat": "2026-11-04"
 },
 {
+"titlu": "GIGABYTE GS27FC Gaming Monitor 27 VA",
+"pret": 658.54,
+"imagine": "https://dacris.vteximg.com.br/arquivos/ids/583376/GIGABYTE-GS27FC-Gaming-Monitor-27-VA-0.jpg?v=638962391428970000",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dacris.net%2Fgs27fc-gigabyte-gs27fc-gaming-monitor-27--va%2Fp%3FskuId%3D222197",
+"magazin": "dacris.net",
+"id": "IlA150PGI2sH",
+"brand": "Gigabyte",
+"url_magazin": "https://www.dacris.net/gs27fc-gigabyte-gs27fc-gaming-monitor-27--va/p?skuId=222197",
+"pret_vechi": null,
+"verificat": "2026-11-17"
+},
+{
 "titlu": "Monitor LED Gaming Curbat 32 inch OptimX MT32J, Full HD 1920x1020 VGA, HDMI, Slim, RGB Light",
 "pret": 679.0,
 "imagine": "https://www.interlink.ro/image/catalog/Alex/Produse/MONITOARE/imagini-editare-full-hd-monitoare/mt32j-32.jpg",
@@ -7717,6 +7723,18 @@
 "verificat": "2026-11-04"
 },
 {
+"titlu": "Monitor Gaming MSI MAG 276CF E20, 27\", 1920 x 1080 pixeli, Black, 2 ani Garantie",
+"pret": 739.05,
+"imagine": "http://1cctv.ro/168105/monitor-gaming-msi-mag-276cf-e20-27-1920-x-1080-pixeli-black-2-ani-garantie.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2F1cctv.ro%2Fro%2Fmonitoare%2F43362-monitor-gaming-msi-mag-276cf-e20-27-1920-x-1080-pixeli-black-2-ani-garantie.html%3Futm_source%3D2performant",
+"magazin": "1cctv.ro",
+"id": "jfiYLXNXTGzt",
+"brand": "MSI",
+"url_magazin": "https://1cctv.ro/ro/monitoare/43362-monitor-gaming-msi-mag-276cf-e20-27-1920-x-1080-pixeli-black-2-ani-garantie.html?utm_source=2performant",
+"pret_vechi": null,
+"verificat": "2026-11-17"
+},
+{
 "titlu": "Monitor Gaming LG 27G523B-B, 27\", 1920 x 1080 pixeli, Black, 2 ani Garantie",
 "pret": 740.15,
 "imagine": "http://1cctv.ro/168242/monitor-gaming-lg-27g523b-b-27-1920-x-1080-pixeli-black-2-ani-garantie.jpg",
@@ -7741,27 +7759,15 @@
 "verificat": "2026-11-04"
 },
 {
-"titlu": "Monitor de gaming Lenovo - LOQ 27Q-10, 27'', QHD, 180Hz, 0,5ms, IPS, HDR10",
-"pret": 790.75,
-"imagine": "https://www.ozone.ro/media/catalog/product/g/e/geyming_monitor_lenovo_loq_27q_10_27_qhd_180hz_0_5ms_ips_hdr10_1790687920_0.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ozone.ro%2Fproduct%2Fmonitor-de-gaming-lenovo-loq-27q-10-27-qhd-180hz-0-5ms-ips-hdr10%2F",
+"titlu": "Monitor gaming Gigabyte – G27Q20, 27'', QHD, 210Hz, 0.5ms, IPS, FreeSync",
+"pret": 811.99,
+"imagine": "https://www.ozone.ro/media/catalog/product/g/e/geyming_monitor_gigabyte_g27q20_27_qhd_210hz_0_5ms_ips_freesync_1794556167_0.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ozone.ro%2Fproduct%2Fmonitor-gaming-gigabyte-g27q20-27-qhd-210hz-0-5ms-ips-freesync%2F",
 "magazin": "ozone.ro",
-"id": "HkSQj1DAvDft",
-"brand": "Lenovo",
-"url_magazin": "https://www.ozone.ro/product/monitor-de-gaming-lenovo-loq-27q-10-27-qhd-180hz-0-5ms-ips-hdr10/",
-"pret_vechi": null,
-"verificat": "2026-11-04"
-},
-{
-"titlu": "Monitor de gaming Lenovo - Legion 27-15, 27'', FHD, 240Hz, 0.5ms",
-"pret": 790.75,
-"imagine": "https://www.ozone.ro/media/catalog/product/g/e/geyming_monitor_lenovo_legion_27_15_27_fhd_240hz_0_5ms_1790688795_0.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ozone.ro%2Fproduct%2Fmonitor-de-gaming-lenovo-legion-27-15-27-fhd-240hz-0-5ms%2F",
-"magazin": "ozone.ro",
-"id": "VJAmvW3sV97-",
-"brand": "Lenovo",
-"url_magazin": "https://www.ozone.ro/product/monitor-de-gaming-lenovo-legion-27-15-27-fhd-240hz-0-5ms/",
-"pret_vechi": 949.99
+"id": "E_HRWs8lAs8p",
+"brand": "Gigabyte",
+"url_magazin": "https://www.ozone.ro/product/monitor-gaming-gigabyte-g27q20-27-qhd-210hz-0-5ms-ips-freesync/",
+"pret_vechi": null
 },
 {
 "titlu": "Monitor Gaming Philips Evnia 5000 27M2N5201P/00, 27\", 1920 x 1080 pixeli, White, 3 ani Garantie",
@@ -7776,16 +7782,15 @@
 "verificat": "2026-11-04"
 },
 {
-"titlu": "Monitor Gaming ViewSonic VX2757-2K-PRO, 27\", 2560x1440 pixeli, Black, 2 ani garantie",
-"pret": 946.41,
-"imagine": "http://1cctv.ro/167964/monitor-gaming-viewsonic-vx2757-2k-pro-27-2560x1440-pixeli-black-2-ani-garantie.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2F1cctv.ro%2Fro%2Fmonitoare%2F43295-monitor-gaming-viewsonic-vx2757-2k-pro-27-2560x1440-pixeli-black-2-ani-garantie.html%3Futm_source%3D2performant",
-"magazin": "1cctv.ro",
-"id": "Rv8nPSHxSB-3",
-"brand": "VIEWSONIC",
-"url_magazin": "https://1cctv.ro/ro/monitoare/43295-monitor-gaming-viewsonic-vx2757-2k-pro-27-2560x1440-pixeli-black-2-ani-garantie.html?utm_source=2performant",
-"pret_vechi": null,
-"verificat": "2026-11-04"
+"titlu": "Monitor de gaming AOC - Q27G42XNE, 27'', 180Hz, 1ms, Adaptive-Sync",
+"pret": 987.15,
+"imagine": "https://www.ozone.ro/media/catalog/product/g/e/geyming_monitor_aoc_q27g42xne_27_180hz_1ms_adaptive_sync_1751290176_0.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ozone.ro%2Fproduct%2Fmonitor-de-gaming-aoc-q27g42xne-27-180hz-1ms-adaptive-sync%2F",
+"magazin": "ozone.ro",
+"id": "GwWiCdq3fZPD",
+"brand": "AOC",
+"url_magazin": "https://www.ozone.ro/product/monitor-de-gaming-aoc-q27g42xne-27-180hz-1ms-adaptive-sync/",
+"pret_vechi": 1055.99
 },
 {
 "titlu": "ASROCK PG27QFT1B 27GAMING MONITOR ASROCK PG27QFT1B 27`GAMING MONITOR",
@@ -7812,6 +7817,18 @@
 "verificat": "2026-11-04"
 },
 {
+"titlu": "GIGABYTE GS27Q X Gaming Monitor 27 IPS",
+"pret": 1255.77,
+"imagine": "https://dacris.vteximg.com.br/arquivos/ids/637678/GIGABYTE-GS27Q-X-Gaming-Monitor-27-IPS-0.jpg?v=638962908079370000",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dacris.net%2Fgs27q-x-gigabyte-gs27q-x-gaming-monitor-27--ips%2Fp%3FskuId%3D228786",
+"magazin": "dacris.net",
+"id": "8N3NKmwL8Qmi",
+"brand": "Gigabyte",
+"url_magazin": "https://www.dacris.net/gs27q-x-gigabyte-gs27q-x-gaming-monitor-27--ips/p?skuId=228786",
+"pret_vechi": null,
+"verificat": "2026-11-17"
+},
+{
 "titlu": "GIGABYTE M27Q2 Gaming Monitor 27 2K",
 "pret": 1274.7,
 "imagine": "https://dacris.vteximg.com.br/arquivos/ids/1043624/e969564945894b41b4156b160c885a49.png?v=638986819649000000",
@@ -7834,30 +7851,6 @@
 "url_magazin": "https://www.dacris.net/g27u-monitor-gaming-gigabyte-27--g27u/p?skuId=246438",
 "pret_vechi": null,
 "verificat": "2026-11-04"
-},
-{
-"titlu": "32 GAMING MONITOR AW3226DM 2560x1440 32` GAMING MONITOR AW3226DM 2560x1440",
-"pret": 1726.33,
-"imagine": "https://dacris.vteximg.com.br/arquivos/ids/1089471/45c250f35c660dc9e16c9e4cbc859600.png.png?v=639223517803000000",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dacris.net%2Faw3226dm-32--gaming-monitor-aw3226dm-2560x1440%2Fp%3FskuId%3D252307",
-"magazin": "dacris.net",
-"id": "8J6DdesUIBC5",
-"brand": "Dell",
-"url_magazin": "https://www.dacris.net/aw3226dm-32--gaming-monitor-aw3226dm-2560x1440/p?skuId=252307",
-"pret_vechi": null,
-"verificat": "2026-11-04"
-},
-{
-"titlu": "34'' Gaming Monitor AW3426DWM 3440x1440",
-"pret": 2041.11,
-"imagine": "https://dacris.vteximg.com.br/arquivos/ids/1089236/20e9b5eb989b25b3cf5f099751185764.png.png?v=639222202367600000",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dacris.net%2Faw3426dwm-34---gaming-monitor-aw3426dwm-3440x1440%2Fp%3FskuId%3D252276",
-"magazin": "dacris.net",
-"id": "xOKB7NmeyNOQ",
-"brand": "Dell",
-"url_magazin": "https://www.dacris.net/aw3426dwm-34---gaming-monitor-aw3426dwm-3440x1440/p?skuId=252276",
-"pret_vechi": null,
-"verificat": "2026-11-14"
 }
 ],
 "magazine": [
@@ -7874,7 +7867,7 @@
 "titlu": "Monitoare 4K",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-14",
+"actualizat": "2026-11-17",
 "feeduri": [
 {
 "id": 1256,
@@ -7941,6 +7934,17 @@
 "url_magazin": "https://www.itarena.ro/monitoare/monitor_led_samsung_viewfinity_s7_s70h_ls32h700eauxen_32_4k_ultra_hd_60hz_5ms_black.html",
 "pret_vechi": null,
 "verificat": "2026-11-04"
+},
+{
+"titlu": "Monitor Samsung - ViewFinity S7 S70H, 32'', 4K, IPS, FreeSync",
+"pret": 1247.99,
+"imagine": "https://www.ozone.ro/media/catalog/product/m/o/monitor_samsung_viewfinity_s7_s70h_32_4k_ips_freesync_1786713744_0.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ozone.ro%2Fproduct%2Fmonitor-samsung-viewfinity-s7-s70h-32-4k-ips-freesync%2F",
+"magazin": "ozone.ro",
+"id": "wUdcECmx83Y-",
+"brand": "Samsung",
+"url_magazin": "https://www.ozone.ro/product/monitor-samsung-viewfinity-s7-s70h-32-4k-ips-freesync/",
+"pret_vechi": null
 },
 {
 "titlu": "Monitor LED AOC U27B3A 27\" 4K Ultra HD 60Hz HDMI DP Black",
@@ -8027,38 +8031,16 @@
 "verificat": "2026-11-04"
 },
 {
-"titlu": "Monitor Samsung - ViewFinity S7 S70D, 37'', 4K, VA, Anti-Glare",
-"pret": 1746.99,
-"imagine": "https://www.ozone.ro/media/catalog/product/m/o/monitor_samsung_viewfinity_s7_s70d_37_4k_va_anti_glare_1777367582_0.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ozone.ro%2Fproduct%2Fmonitor-samsung-viewfinity-s7-s70d-37-4k-va-anti-glare%2F",
-"magazin": "ozone.ro",
-"id": "v3ZGbpLaxqxX",
-"brand": "Samsung",
-"url_magazin": "https://www.ozone.ro/product/monitor-samsung-viewfinity-s7-s70d-37-4k-va-anti-glare/",
+"titlu": "DL MONITOR 27 S2725QC 4K 3840 x 2160 DL MONITOR 27` S2725QC 4K 3840 x 2160",
+"pret": 1770.57,
+"imagine": "https://dacris.vteximg.com.br/arquivos/ids/1115726/4b1c47404653e739af362c739d37d40e.png.png?v=639303922527800000",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dacris.net%2Fs2725qc-s-dl-monitor-27--s2725qc-4k-3840-x-2160%2Fp%3FskuId%3D258879",
+"magazin": "dacris.net",
+"id": "cAjleQzP2kuE",
+"brand": "Dell",
+"url_magazin": "https://www.dacris.net/s2725qc-s-dl-monitor-27--s2725qc-4k-3840-x-2160/p?skuId=258879",
 "pret_vechi": null,
-"verificat": "2026-11-04"
-},
-{
-"titlu": "Monitor LG -27U730A-B, 27'', 4K UHD, IPS, Anti-Glare, negru",
-"pret": 1746.99,
-"imagine": "https://www.ozone.ro/media/catalog/product/m/o/monitor_lg_27u730a_b_27_4k_uhd_ips_anti_glare_cheren_1763987270_0.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ozone.ro%2Fproduct%2Fmonitor-lg-27u730a-b-27-4k-uhd-ips-anti-glare-negru%2F",
-"magazin": "ozone.ro",
-"id": "sZ8CMbGOCwAn",
-"brand": "LG",
-"url_magazin": "https://www.ozone.ro/product/monitor-lg-27u730a-b-27-4k-uhd-ips-anti-glare-negru/",
-"pret_vechi": null
-},
-{
-"titlu": "Acer Monitor LED Acer Predator XB3 XB273KV4bmiiprx, 27 inch, 4K UHD, IPS, 1 ms, 160 Hz",
-"pret": 1754.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202512311121/399982/full/acer-acer-predator-xb3-xb273kv4bmiiprx-27-ips-3840x2160-16-9-1ms-hdmi-displayport-black-1240468.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fmonitoare-lcd-led%2Facer%2F399982-monitor-led-acer-predator-xb3-xb273kv4bmiiprx-27-inch-4k-uhd-ips-1-ms-160-hz%2F",
-"magazin": "dwyn.ro",
-"id": "RQ3REgVZ1evr",
-"brand": "Acer",
-"url_magazin": "https://www.dwyn.ro/monitoare-lcd-led/acer/399982-monitor-led-acer-predator-xb3-xb273kv4bmiiprx-27-inch-4k-uhd-ips-1-ms-160-hz/",
-"pret_vechi": null
+"verificat": "2026-11-17"
 },
 {
 "titlu": "Monitor LED Iiyama G-Master GB3261UHSCP-B1 31.5\" 4K Ultra HD 144Hz 0.6ms Black",
@@ -8085,16 +8067,15 @@
 "verificat": "2026-11-14"
 },
 {
-"titlu": "DL MONITOR 27 S2725QC 4K 3840 x 2160 DL MONITOR 27` S2725QC 4K 3840 x 2160",
-"pret": 1988.79,
-"imagine": "https://dacris.vteximg.com.br/arquivos/ids/1008528/DL-MONITOR-27-S2725QC-4K-3840-x-2160-0.jpg?v=638963014523600000",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dacris.net%2Fs2725qc-dl-monitor-27--s2725qc-4k-3840-x-2160%2Fp%3FskuId%3D233740",
-"magazin": "dacris.net",
-"id": "b2Hk3iOwmKtB",
-"brand": "Dell",
-"url_magazin": "https://www.dacris.net/s2725qc-dl-monitor-27--s2725qc-4k-3840-x-2160/p?skuId=233740",
-"pret_vechi": null,
-"verificat": "2026-11-14"
+"titlu": "Monitor Samsung - ViewFinity S8 S80UH, 27'', 4K, IPS, negru",
+"pret": 1968.99,
+"imagine": "https://www.ozone.ro/media/catalog/product/m/o/monitor_samsung_viewfinity_s8_s80uh_27_4k_ips_cheren_1793007943_0.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ozone.ro%2Fproduct%2Fmonitor-samsung-viewfinity-s8-s80uh-27-4k-ips-negru%2F",
+"magazin": "ozone.ro",
+"id": "GGUgVHVqVEcF",
+"brand": "Samsung",
+"url_magazin": "https://www.ozone.ro/product/monitor-samsung-viewfinity-s8-s80uh-27-4k-ips-negru/",
+"pret_vechi": null
 },
 {
 "titlu": "Samsung Monitor Samsung LS37D800EAUXEN, 37inch, VA, 3840 × 2160 pixeli (4K Ultra HD), 5ms, 60Hz, 1 × HDMI 2.0, 1 × Displ",
@@ -8133,6 +8114,17 @@
 "verificat": "2026-11-04"
 },
 {
+"titlu": "Monitor Smart Samsung - 32CM500, 32\", 4K, VA, Anti-Glare, alb",
+"pret": 2579.99,
+"imagine": "https://www.ozone.ro/media/catalog/product/s/m/smart_monitor_samsung_32cm500_32_4k_va_anti_glare_byal_1753253000_0.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ozone.ro%2Fproduct%2Fmonitor-smart-samsung-32cm500-32-4k-va-anti-glare-alb%2F",
+"magazin": "ozone.ro",
+"id": "1_2cpcvGn5dg",
+"brand": "Samsung",
+"url_magazin": "https://www.ozone.ro/product/monitor-smart-samsung-32cm500-32-4k-va-anti-glare-alb/",
+"pret_vechi": null
+},
+{
 "titlu": "DL MONITOR 27 P2725QE LED 4K 3840x2160 DL MONITOR 27` P2725QE LED 4K 3840x2160",
 "pret": 2632.86,
 "imagine": "https://dacris.vteximg.com.br/arquivos/ids/1026786/overlay_bb2c5db225f6b9cac9787eff8782ef45.jpg?v=638871027119430000",
@@ -8157,18 +8149,6 @@
 "verificat": "2026-11-04"
 },
 {
-"titlu": "Monitor Lenovo - ThinkVision T27ud-40, 27'', 4K, IPS, Anti-Glare",
-"pret": 2722.99,
-"imagine": "https://www.ozone.ro/media/catalog/product/m/o/monitor_lenovo_thinkvision_t27ud_40_27_4k_ips_anti_glare_1776330342_0.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ozone.ro%2Fproduct%2Fmonitor-lenovo-thinkvision-t27ud-40-27-4k-ips-anti-glare%2F",
-"magazin": "ozone.ro",
-"id": "IJf6OQGRJBZU",
-"brand": "Lenovo",
-"url_magazin": "https://www.ozone.ro/product/monitor-lenovo-thinkvision-t27ud-40-27-4k-ips-anti-glare/",
-"pret_vechi": null,
-"verificat": "2026-11-04"
-},
-{
 "titlu": "Monitor HP - 727pk 7 Pro, 27'', 4K, IPS, Anti-Glare",
 "pret": 3019.99,
 "imagine": "https://www.ozone.ro/media/catalog/product/m/o/monitor_hp_727pk_7_pro_27_4k_ips_anti_glare_1777556970_0.jpg",
@@ -8178,6 +8158,18 @@
 "brand": "HP",
 "url_magazin": "https://www.ozone.ro/product/monitor-hp-727pk-7-pro-27-4k-ips-anti-glare/",
 "pret_vechi": null
+},
+{
+"titlu": "DL MONITOR 31.5 S3225QC 4K UHD 3840x2160",
+"pret": 3051.58,
+"imagine": "https://dacris.vteximg.com.br/arquivos/ids/1071224/overlay_dd1fd0667576d5444d1982399269e166.jpeg.jpg?v=639150088699330000",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dacris.net%2Fs3225qc-dl-monitor-31-5-s3225qc-4k-uhd-3840x2160%2Fp%3FskuId%3D248710",
+"magazin": "dacris.net",
+"id": "N_ZQ2EA7H8CG",
+"brand": "Dell",
+"url_magazin": "https://www.dacris.net/s3225qc-dl-monitor-31-5-s3225qc-4k-uhd-3840x2160/p?skuId=248710",
+"pret_vechi": null,
+"verificat": "2026-11-17"
 }
 ],
 "magazine": [
@@ -8194,7 +8186,7 @@
 "titlu": "Tablete Samsung",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-14",
+"actualizat": "2026-11-17",
 "feeduri": [
 {
 "id": 1539,
@@ -8239,17 +8231,6 @@
 "verificat": "2026-11-06"
 },
 {
-"titlu": "Samsung Tableta Samsung Galaxy Tab A11+, Octa-Core, 11, 6GB RAM, 128GB, WIFI, Gri",
-"pret": 1270.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202508191322/352955/full/samsung-tableta-samsung-galaxy-tab-a11-plus-octa-core-11-6gb-ram-128gb-wifi-gri-987464.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Ftablete-pc%2Fsamsung%2F352955-tableta-samsung-galaxy-tab-a11-plus-octa-core-11-6gb-ram-128gb-wifi-gri%2F",
-"magazin": "dwyn.ro",
-"id": "jZScaDKwvKUH",
-"brand": "Samsung",
-"url_magazin": "https://www.dwyn.ro/tablete-pc/samsung/352955-tableta-samsung-galaxy-tab-a11-plus-octa-core-11-6gb-ram-128gb-wifi-gri/",
-"pret_vechi": null
-},
-{
 "titlu": "Tableta Samsung Galaxy Tab S6 Lite P620 (2024), Procesor Exynos 1280 Octa-Core, Ecran TFT 2K 10.4inch, 4GB RAM, 64GB Fla",
 "pret": 1306.99,
 "imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4152%2F4152481%2Ftablet-samsung-galaxy-tab-s6-l-6303897787a1e.JPG&type=auto&width=500&sign=lqa3gljZgmm0H7F93cLgP6qfetk95ffzen8xnYpR-eU",
@@ -8270,7 +8251,7 @@
 "id": "pnzRWQvU8ebU",
 "brand": "Samsung",
 "url_magazin": "https://www.evomag.ro/telefoane-tablete-accesorii-tablete-si-accesorii-tablete/samsung-tableta-samsung-galaxy-tab-a11-x236-procesor-mediatek-dimensity-7300-octa-core-ecran-tft-11-6gb-ram-128gb-flash-8mp-wi-fi-bluetooth-gps-5g-android-gri-4259933.html",
-"pret_vechi": null,
+"pret_vechi": 1499.99,
 "verificat": "2026-11-06"
 },
 {
@@ -8286,14 +8267,14 @@
 "verificat": "2026-11-06"
 },
 {
-"titlu": "Samsung Tableta Samsung Galaxy Tab A11+, Octa-Core, 11, 8GB RAM, 256GB, WIFI, Argintiu",
-"pret": 1479.0,
-"imagine": "https://www.dwyn.ro/images/products/img_202508191322/352943/full/samsung-tableta-samsung-galaxy-tab-a11-plus-octa-core-11-8gb-ram-256gb-wifi-argintiu-987377.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Ftablete-pc%2Fsamsung%2F352943-tableta-samsung-galaxy-tab-a11-plus-octa-core-11-8gb-ram-256gb-wifi-argintiu%2F",
+"titlu": "Samsung Tableta Samsung Galaxy Tab A11+, Octa-Core, 11, 6GB RAM, 128GB, WIFI, Argintiu",
+"pret": 1439.99,
+"imagine": "https://www.dwyn.ro/images/products/img_202508191322/352946/full/samsung-tableta-samsung-galaxy-tab-a11-plus-octa-core-11-6gb-ram-128gb-wifi-argintiu-987398.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Ftablete-pc%2Fsamsung%2F352946-tableta-samsung-galaxy-tab-a11-plus-octa-core-11-6gb-ram-128gb-wifi-argintiu%2F",
 "magazin": "dwyn.ro",
-"id": "wvj-Tw_ywrrk",
+"id": "paOXP-NZsT4C",
 "brand": "Samsung",
-"url_magazin": "https://www.dwyn.ro/tablete-pc/samsung/352943-tableta-samsung-galaxy-tab-a11-plus-octa-core-11-8gb-ram-256gb-wifi-argintiu/",
+"url_magazin": "https://www.dwyn.ro/tablete-pc/samsung/352946-tableta-samsung-galaxy-tab-a11-plus-octa-core-11-6gb-ram-128gb-wifi-argintiu/",
 "pret_vechi": null
 },
 {
@@ -8307,6 +8288,17 @@
 "url_magazin": "https://www.evomag.ro/telefoane-tablete-accesorii-tablete-si-accesorii-tablete/samsung-tableta-samsung-galaxy-tab-a11-x230-procesor-mediatek-dimensity-7300-octa-core-ecran-tft-11-8gb-ram-256gb-flash-8mp-wi-fi-bluetooth-gps-android-gri-4259929.html",
 "pret_vechi": null,
 "verificat": "2026-11-06"
+},
+{
+"titlu": "Samsung Tableta Samsung Galaxy Tab A11+, Octa-Core, 11, 8GB RAM, 256GB, 5G, Argintiu",
+"pret": 1665.99,
+"imagine": "https://www.dwyn.ro/images/products/img_202508191322/352952/full/samsung-tableta-samsung-galaxy-tab-a11-plus-octa-core-11-8gb-ram-256gb-5g-argintiu-987446.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Ftablete-pc%2Fsamsung%2F352952-tableta-samsung-galaxy-tab-a11-plus-octa-core-11-8gb-ram-256gb-5g-argintiu%2F",
+"magazin": "dwyn.ro",
+"id": "DWmcSe4IlNHr",
+"brand": "Samsung",
+"url_magazin": "https://www.dwyn.ro/tablete-pc/samsung/352952-tableta-samsung-galaxy-tab-a11-plus-octa-core-11-8gb-ram-256gb-5g-argintiu/",
+"pret_vechi": null
 },
 {
 "titlu": "Tableta Samsung Galaxy Tab S10 Lite X400, Procesor Octa-Core Exynos 1380, Ecran TFT 10.9inch, 6GB RAM, 128GB Flash, 8MP,",
@@ -21442,7 +21434,7 @@
 "titlu": "Puzzle de 1000 de piese",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-13",
+"actualizat": "2026-11-17",
 "feeduri": [
 {
 "id": 8767,
@@ -21462,6 +21454,18 @@
 }
 ],
 "produse": [
+{
+"titlu": "Puzzle Culorile Padurii, 1000 piese",
+"pret": 38.9,
+"imagine": "https://www.ookee.ro/417774-large_default/puzzle-culorile-padurii-1000-piese.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ookee.ro%2Fpuzzle%2F134500-puzzle-culorile-padurii-1000-piese-4823115901163.html",
+"magazin": "ookee.ro",
+"id": "VbvOnhO9IElu",
+"brand": "Dodo Toys",
+"url_magazin": "https://www.ookee.ro/puzzle/134500-puzzle-culorile-padurii-1000-piese-4823115901163.html",
+"pret_vechi": null,
+"verificat": "2026-11-17"
+},
 {
 "titlu": "Puzzle Mini 1000 Piese Tablou Fata cu Cercel de Perla Johannes Vermeer, Format Compact 30 x 42 cm, Carton Rezistent",
 "pret": 43.56,
@@ -21521,30 +21525,6 @@
 "url_magazin": "https://www.trada.ro/puzzle-1000-piese-deico-franta-louvre-148452.html",
 "pret_vechi": 60.45,
 "verificat": "2026-11-05"
-},
-{
-"titlu": "Puzzle 1000 Piese, Roovi, Padurea Magica, Toamna",
-"pret": 51.99,
-"imagine": "https://www.trada.ro/img/puzzle-1000-piese-roovi-padurea-magica-toamna-146191html_tr-295691-large.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.trada.ro%2Fpuzzle-1000-piese-roovi-padurea-magica-toamna-146191.html",
-"magazin": "trada.ro",
-"id": "EJwOnyaH0BVj",
-"brand": "Roovi",
-"url_magazin": "https://www.trada.ro/puzzle-1000-piese-roovi-padurea-magica-toamna-146191.html",
-"pret_vechi": 60.45,
-"verificat": "2026-11-05"
-},
-{
-"titlu": "Puzzle 1000 Piese, Deico, Lumea Acvatica",
-"pret": 51.99,
-"imagine": "https://www.trada.ro/img/puzzle-1000-piese-deico-lumea-acvatica-146196html_tr-295714-large.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.trada.ro%2Fpuzzle-1000-piese-deico-lumea-acvatica-146196.html",
-"magazin": "trada.ro",
-"id": "WXPH-bGJM3-s",
-"brand": "Deico",
-"url_magazin": "https://www.trada.ro/puzzle-1000-piese-deico-lumea-acvatica-146196.html",
-"pret_vechi": 60.45,
-"verificat": "2026-11-13"
 },
 {
 "titlu": "Puzzle 1000 Piese, Deico, Zana Zapezii de Groos Zselyke",
@@ -21607,16 +21587,28 @@
 "verificat": "2026-11-13"
 },
 {
-"titlu": "Puzzle Rotund Pamantul - 1000 Piese",
-"pret": 56.0,
-"imagine": "https://cdnmpro.com/780585630/p/raw/3/puzzle-rotund-pamantul-1000-piese~2683.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.hobiktoys.ro%2Fcumpara%2Fpuzzle-rotund-pamantul-1000-piese-1059",
-"magazin": "hobiktoys.ro",
-"id": "DKMieDgfOG0Y",
-"brand": "Guangxing Feng Toys",
-"url_magazin": "https://www.hobiktoys.ro/cumpara/puzzle-rotund-pamantul-1000-piese-1059",
-"pret_vechi": null,
-"verificat": "2026-11-05"
+"titlu": "Puzzle 1000 Piese pentru Adulti, Deico, Castelul Bran Iarna",
+"pret": 51.99,
+"imagine": "https://www.trada.ro/img/puzzle-1000-piese-pentru-adulti-deico-castelul-bran-iarna-146761html_tr-296476-large.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.trada.ro%2Fpuzzle-1000-piese-pentru-adulti-deico-castelul-bran-iarna-146761.html",
+"magazin": "trada.ro",
+"id": "3EIBv-vyDC_Z",
+"brand": "Deico",
+"url_magazin": "https://www.trada.ro/puzzle-1000-piese-pentru-adulti-deico-castelul-bran-iarna-146761.html",
+"pret_vechi": 60.45,
+"verificat": "2026-11-17"
+},
+{
+"titlu": "Puzzle 1000 Piese D-Toys, Bruegel cel Batran, Caderea lui Icarus",
+"pret": 56.99,
+"imagine": "https://www.trada.ro/img/puzzle-1000-piese-d-toys-bruegel-cel-batran-caderea-lui-icarus-146047html_tr-295205-large.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.trada.ro%2Fpuzzle-1000-piese-d-toys-bruegel-cel-batran-caderea-lui-icarus-146047.html",
+"magazin": "trada.ro",
+"id": "9-CocVlWL4o7",
+"brand": "D-Toys",
+"url_magazin": "https://www.trada.ro/puzzle-1000-piese-d-toys-bruegel-cel-batran-caderea-lui-icarus-146047.html",
+"pret_vechi": 66.27,
+"verificat": "2026-11-17"
 },
 {
 "titlu": "Puzzle orașe, Londra, 1000 piese",
@@ -21643,18 +21635,6 @@
 "verificat": "2026-11-13"
 },
 {
-"titlu": "Puzzle Stranger Things 1000 De Piese Clementoni",
-"pret": 57.9,
-"imagine": "https://www.ookee.ro/199396-large_default/puzzle-stranger-things-1000-de-piese-clementoni.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ookee.ro%2Fpuzzle%2F87436-puzzle-stranger-things-1000-de-piese-clementoni-8005125395422.html",
-"magazin": "ookee.ro",
-"id": "X7edGjHqfwDy",
-"brand": "AS",
-"url_magazin": "https://www.ookee.ro/puzzle/87436-puzzle-stranger-things-1000-de-piese-clementoni-8005125395422.html",
-"pret_vechi": null,
-"verificat": "2026-11-13"
-},
-{
 "titlu": "Puzzle Impossible La Casa De Papel 1000 De Piese Clementoni",
 "pret": 57.9,
 "imagine": "https://www.ookee.ro/199391-large_default/puzzle-impossible-la-casa-de-papel-1000-de-piese-clementoni.jpg",
@@ -21663,6 +21643,18 @@
 "id": "nYyOXd7hsOyn",
 "brand": "AS",
 "url_magazin": "https://www.ookee.ro/puzzle/87434-puzzle-impossible-la-casa-de-papel-1000-de-piese-clementoni-800512539529.html",
+"pret_vechi": null,
+"verificat": "2026-11-13"
+},
+{
+"titlu": "Puzzle Stranger Things 1000 De Piese Clementoni",
+"pret": 57.9,
+"imagine": "https://www.ookee.ro/199396-large_default/puzzle-stranger-things-1000-de-piese-clementoni.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ookee.ro%2Fpuzzle%2F87436-puzzle-stranger-things-1000-de-piese-clementoni-8005125395422.html",
+"magazin": "ookee.ro",
+"id": "X7edGjHqfwDy",
+"brand": "AS",
+"url_magazin": "https://www.ookee.ro/puzzle/87436-puzzle-stranger-things-1000-de-piese-clementoni-8005125395422.html",
 "pret_vechi": null,
 "verificat": "2026-11-13"
 },
@@ -21690,18 +21682,6 @@
 "pret_vechi": 78.19
 },
 {
-"titlu": "Puzzle Rotund Luna 1000 Piese",
-"pret": 64.8,
-"imagine": "https://cdnmpro.com/780585630/p/raw/1/puzzle-rotund-luna-1000-piese~2871.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.hobiktoys.ro%2Fcumpara%2Fpuzzle-rotund-luna-1000-piese-1085",
-"magazin": "hobiktoys.ro",
-"id": "M2lLPmeL_td5",
-"brand": "Guangxing Feng Toys",
-"url_magazin": "https://www.hobiktoys.ro/cumpara/puzzle-rotund-luna-1000-piese-1085",
-"pret_vechi": null,
-"verificat": "2026-11-05"
-},
-{
 "titlu": "Puzzle carton, in cutie, Zodiac, 1000 piese",
 "pret": 70.18,
 "imagine": "https://infinityro.vteximg.com.br/arquivos/ids/234134368/image-2c5777d79202427bbce260e586551c55.jpg",
@@ -21724,6 +21704,18 @@
 "url_magazin": "https://infinity.ro/puzzle-vintage-cu-mos-craciun-si-brad-de-craciun-1000-piese-multicolor-9360650/p?utm_source=2performant",
 "pret_vechi": 95.96,
 "verificat": "2026-11-13"
+},
+{
+"titlu": "Puzzle Rotund 1000 Piese Zodiac Astrologie si Simboluri Astrale, Carton Premium, Diametru 68 cm, Antistres, 14 ani+",
+"pret": 76.11,
+"imagine": "https://infinityro.vteximg.com.br/arquivos/ids/275225518/image-a14c273ceea449d39683c8615294d090.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Finfinity.ro%2Fpuzzle-rotund-1000-piese-zodiac-astrologie-si-simboluri-astrale-carton-premium-diametru-68-cm-antistres-14-ani--9381417%2Fp%3Futm_source%3D2performant",
+"magazin": "infinity.ro",
+"id": "n21nNsUSmu3V",
+"brand": "Daemi",
+"url_magazin": "https://infinity.ro/puzzle-rotund-1000-piese-zodiac-astrologie-si-simboluri-astrale-carton-premium-diametru-68-cm-antistres-14-ani--9381417/p?utm_source=2performant",
+"pret_vechi": 89.54,
+"verificat": "2026-11-17"
 },
 {
 "titlu": "Puzzle Vintage cu Mos Craciun, Sac Cadouri si Vasc, 1000 de piese, Multicolor",
@@ -21751,7 +21743,6 @@
 }
 ],
 "magazine": [
-"hobiktoys.ro",
 "infinity.ro",
 "ookee.ro",
 "trada.ro"
