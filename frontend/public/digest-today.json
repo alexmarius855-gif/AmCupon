@@ -1,7 +1,7 @@
 {
-  "data": "2026-11-17",
-  "data_afisata": "17 noiembrie 2026",
-  "titlu": "Radarul AmCupon — 17 noiembrie 2026",
+  "data": "2026-11-18",
+  "data_afisata": "18 noiembrie 2026",
+  "titlu": "Radarul AmCupon — 18 noiembrie 2026",
   "intro": "Selecția de azi e făcută automat din ofertele active, după reducere, cod și termen. Primele sunt Iaohi și Nadula, dar mai jos ai toată selecția. Ofertele vin de la magazine prin rețeaua de afiliere; nu le încercăm în coș, așa că citește condițiile înainte să comanzi. Cele care expiră curând sunt marcate.",
   "picks": [
     {
@@ -15,8 +15,8 @@
       "descriere": "AOHi's Black Friday Sale is now LIVE!",
       "cod": "15BF",
       "url": "https://amcupon.ro/cod-reducere/iaohi.com",
-      "zile_ramase": 2,
-      "take": "Grăbește-te: expiră în 2 zile. Ofertă activă — bună dacă te încadrezi în categorie."
+      "zile_ramase": 1,
+      "take": "Grăbește-te: expiră în 1 zi. Ofertă activă — bună dacă te încadrezi în categorie."
     },
     {
       "scor": 100,
@@ -25,12 +25,12 @@
       "categorie": "Marketplace",
       "categorie_slug": "marketplace",
       "logo_url": "https://www.google.com/s2/favicons?domain=nadula.com&sz=128",
-      "titlu": "Up To $100 OFF With Code: THX",
-      "descriere": "Up To $100 OFF With Code: THX",
-      "cod": "THX",
+      "titlu": "Nadula Brand Day x Black Friday Sale: Up to $120 OFF + Wigs from $49!",
+      "descriere": "Celebrate Nadula Brand Day with our exclusive Black Friday promotions! Enjoy incredible savings on premium human hair wigs and extensions. Promotion Period: November 18 – November 22, 2026 (US Time) Brand Day x Black Friday Exclusive Offers – Up to $120",
+      "cod": "Gold",
       "url": "https://amcupon.ro/cod-reducere/nadula.com",
-      "zile_ramase": 1,
-      "take": "Grăbește-te: expiră în 1 zi. Ofertă activă — bună dacă te încadrezi în categorie."
+      "zile_ramase": 5,
+      "take": "Grăbește-te: expiră în 5 zile. Ofertă activă — bună dacă te încadrezi în categorie."
     },
     {
       "scor": 100,
@@ -43,8 +43,8 @@
       "descriere": "Ai pierdut Black Friday? Îți mai dăm o șansă. Ai -80lei la comenzi de peste 699lei și -160lei la cumpărături de peste 999lei.",
       "cod": "BFBONUS",
       "url": "https://amcupon.ro/cod-reducere/aosom.ro",
-      "zile_ramase": 6,
-      "take": "Ofertă activă — bună dacă te încadrezi în categorie."
+      "zile_ramase": 5,
+      "take": "Grăbește-te: expiră în 5 zile. Ofertă activă — bună dacă te încadrezi în categorie."
     },
     {
       "scor": 100,
@@ -57,8 +57,8 @@
       "descriere": "La Videt a început campania „Black Friday:-40% la TOȚI ochelarii de vedere și de soare”, disponibilă atât online, cât și în showroom-uri. Oferta: -40% la TOȚI ochelarii de vedere și de soare, folosind codul de reducere *Reducerea se aplică la rame, ochelari de vedere compleți (ramă + lentile), lentile de vedere și ochelari de soare. Mulțumim!",
       "cod": "BLACK40",
       "url": "https://amcupon.ro/cod-reducere/videt.ro",
-      "zile_ramase": 5,
-      "take": "Grăbește-te: expiră în 5 zile. Bun de prins dacă oricum voiai să-ți reîmprospătezi garderoba."
+      "zile_ramase": 4,
+      "take": "Grăbește-te: expiră în 4 zile. Bun de prins dacă oricum voiai să-ți reîmprospătezi garderoba."
     },
     {
       "scor": 100,
@@ -71,8 +71,8 @@
       "descriere": "BLACK FRIDAY: -50% LA ACHIZIȚIA A 2 SAU MAI MULTE PRODUSE Reducerea de 50% se aplică la achiziția a minimum 2 produse din selecție. Oferta nu se aplică seturilor, produselor în format mini, produselor din outlet, calendarelor Advent sau produselor din colecția de Crăciun în ediție limitată. Reducerea se calculează pe baza prețurilor standard (prețurile anterioare reducerii).",
       "cod": "BF26",
       "url": "https://amcupon.ro/cod-reducere/yves-rocher.ro",
-      "zile_ramase": 5,
-      "take": "Grăbește-te: expiră în 5 zile. Ofertă activă — bună dacă te încadrezi în categorie."
+      "zile_ramase": 4,
+      "take": "Grăbește-te: expiră în 4 zile. Ofertă activă — bună dacă te încadrezi în categorie."
     },
     {
       "scor": 75,
@@ -85,8 +85,8 @@
       "descriere": "In pagina dedicata veti gasi aranjarea lor pe colectii si pe reduceri. Valabilitate campanie: 17-19 noiembrie 2026.",
       "cod": "",
       "url": "https://amcupon.ro/cod-reducere/libris.ro",
-      "zile_ramase": 3,
-      "take": "Grăbește-te: expiră în 3 zile. Ofertă activă — bună dacă te încadrezi în categorie."
+      "zile_ramase": 2,
+      "take": "Grăbește-te: expiră în 2 zile. Ofertă activă — bună dacă te încadrezi în categorie."
     }
   ],
   "outro": "Revino mâine la Radar: selecția se reface în fiecare dimineață, din ofertele active atunci.",

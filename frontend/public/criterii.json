@@ -1331,7 +1331,7 @@
 "titlu": "Mașini cu telecomandă",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-14",
+"actualizat": "2026-11-18",
 "feeduri": [
 {
 "id": 8740,
@@ -1376,6 +1376,18 @@
 "verificat": "2026-11-14"
 },
 {
+"titlu": "Masina Cu Telecomanda Mercedes-benz G63 Alb Scara 1 La 24",
+"pret": 116.9,
+"imagine": "https://www.ookee.ro/422692-large_default/masina-cu-telecomanda-mercedes-benz-g63-alb-scara-1-la-24.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ookee.ro%2Fradiocomandate%2F135534-masina-cu-telecomanda-mercedes-benz-g63-alb-scara-1-la-24-6427037025266.html",
+"magazin": "ookee.ro",
+"id": "wZxg_n-KJZAW",
+"brand": "Rastar",
+"url_magazin": "https://www.ookee.ro/radiocomandate/135534-masina-cu-telecomanda-mercedes-benz-g63-alb-scara-1-la-24-6427037025266.html",
+"pret_vechi": null,
+"verificat": "2026-11-14"
+},
+{
 "titlu": "Masina Cu Telecomanda Bmw I5 Rosu Scara 1 La 24",
 "pret": 116.9,
 "imagine": "https://www.ookee.ro/422327-large_default/masina-cu-telecomanda-bmw-i5-rosu-scara-1-la-24.jpg",
@@ -1396,18 +1408,6 @@
 "id": "1t26t4D-e0aW",
 "brand": "Rastar",
 "url_magazin": "https://www.ookee.ro/radiocomandate/135513-masina-cu-telecomanda-porsche-macan-turbo-galben-cu-scara-1-la-24-6427037020322.html",
-"pret_vechi": null,
-"verificat": "2026-11-14"
-},
-{
-"titlu": "Masina Cu Telecomanda Mercedes-benz G63 Alb Scara 1 La 24",
-"pret": 116.9,
-"imagine": "https://www.ookee.ro/422692-large_default/masina-cu-telecomanda-mercedes-benz-g63-alb-scara-1-la-24.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ookee.ro%2Fradiocomandate%2F135534-masina-cu-telecomanda-mercedes-benz-g63-alb-scara-1-la-24-6427037025266.html",
-"magazin": "ookee.ro",
-"id": "wZxg_n-KJZAW",
-"brand": "Rastar",
-"url_magazin": "https://www.ookee.ro/radiocomandate/135534-masina-cu-telecomanda-mercedes-benz-g63-alb-scara-1-la-24-6427037025266.html",
 "pret_vechi": null,
 "verificat": "2026-11-14"
 },
@@ -1438,7 +1438,7 @@
 "titlu": "Păpuși Barbie",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-14",
+"actualizat": "2026-11-18",
 "feeduri": [
 {
 "id": 8314,
@@ -1557,101 +1557,6 @@
 ],
 "magazine": [
 "infinity.ro"
-],
-"publicat": true
-},
-{
-"slug": "tricicleta-copii",
-"tema": "jucarii-copii",
-"tema_nume": "Jucării",
-"titlu": "Triciclete pentru copii",
-"nota": null,
-"in_text": null,
-"actualizat": "2026-11-14",
-"feeduri": [
-{
-"id": 9441,
-"magazin": "infinity.ro"
-},
-{
-"id": 6851,
-"magazin": "grupdzc.ro"
-},
-{
-"id": 1528,
-"magazin": "ookee.ro"
-},
-{
-"id": 3197,
-"magazin": "kivi.ro"
-}
-],
-"produse": [
-{
-"titlu": "Tricicleta transformabila in bicicleta de echilibru pentru copii 2-6 ani, Galben",
-"pret": 163.35,
-"imagine": "https://infinityro.vteximg.com.br/arquivos/ids/272619288/image-82c5025ab3564b2ca0711aa80e5a3c3c.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Finfinity.ro%2Ftricicleta-transformabila-in-bicicleta-de-echilibru-pentru-copii-2-6-ani-galben-9204558%2Fp%3Futm_source%3D2performant",
-"magazin": "infinity.ro",
-"id": "9ZSD_-VXJQ5t",
-"brand": "OEM",
-"url_magazin": "https://infinity.ro/tricicleta-transformabila-in-bicicleta-de-echilibru-pentru-copii-2-6-ani-galben-9204558/p?utm_source=2performant",
-"pret_vechi": 242.0,
-"verificat": "2026-11-14"
-},
-{
-"titlu": "Tricicleta pentru copii - my 1st trike pastel",
-"pret": 170.05,
-"imagine": "https://www.ookee.ro/319620-large_default/tricicleta-pentru-copii-my-1st-trike-pastel.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ookee.ro%2Ftriciclete%2F117705-tricicleta-pentru-copii-my-1st-trike-pastel.html",
-"magazin": "ookee.ro",
-"id": "TV_mrF62J2cO",
-"brand": "Dolu",
-"url_magazin": "https://www.ookee.ro/triciclete/117705-tricicleta-pentru-copii-my-1st-trike-pastel.html",
-"pret_vechi": 180.9,
-"verificat": "2026-11-14"
-},
-{
-"titlu": "Tricicleta copii la cosa chopper",
-"pret": 386.89,
-"imagine": "https://kivi.ro/105374-large_default/tricicleta-copii-la-cosa-chopper.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fkivi.ro%2Fjucarii-de-exterior%2F36131-tricicleta-copii-la-cosa-chopper.html",
-"magazin": "kivi.ro",
-"id": "8314a9b86",
-"brand": "Italtrike",
-"url_magazin": "https://kivi.ro/jucarii-de-exterior/36131-tricicleta-copii-la-cosa-chopper.html",
-"pret_vechi": null,
-"verificat": "2026-11-14"
-},
-{
-"titlu": "Tricicleta copii la cosa red",
-"pret": 386.89,
-"imagine": "https://kivi.ro/105392-large_default/tricicleta-copii-la-cosa-red.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fkivi.ro%2Fjucarii-de-exterior%2F36132-tricicleta-copii-la-cosa-red.html",
-"magazin": "kivi.ro",
-"id": "9d1bba04d",
-"brand": "Italtrike",
-"url_magazin": "https://kivi.ro/jucarii-de-exterior/36132-tricicleta-copii-la-cosa-red.html",
-"pret_vechi": null,
-"verificat": "2026-11-14"
-},
-{
-"titlu": "Tricicleta copii la cosa dragster",
-"pret": 386.89,
-"imagine": "https://kivi.ro/105412-large_default/tricicleta-copii-la-cosa-dragster.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fkivi.ro%2Fjucarii-de-exterior%2F36133-tricicleta-copii-la-cosa-dragster.html",
-"magazin": "kivi.ro",
-"id": "9d41cbdde",
-"brand": "Italtrike",
-"url_magazin": "https://kivi.ro/jucarii-de-exterior/36133-tricicleta-copii-la-cosa-dragster.html",
-"pret_vechi": null,
-"verificat": "2026-11-14"
-}
-],
-"magazine": [
-"infinity.ro",
-"kivi.ro",
-"ookee.ro"
 ],
 "publicat": true
 }
