@@ -25,6 +25,9 @@ venv/
 **/.claude/*
 !.claude/agents/
 !.claude/agents/**
+!.claude/settings.json
+!.claude/hooks/
+!.claude/hooks/**
 amcupon-extension.zip
 
 # Logs & debug
