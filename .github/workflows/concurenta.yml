@@ -1,0 +1,55 @@
+name: Concurenta (sitemap-uri)
+
+# O data pe luna: sitemap-urile site-urilor de cupoane urmarite, comparate cu luna trecuta (magazine noi,
+# magazine scoase, tipuri de pagini noi) si cu magazinele noastre. Rezultatul ramane in repo:
+# data/research/concurenta/. Preluam idei, nu texte. Fara secrete.
+
+on:
+  push:
+    branches: [claude/arhitectura-v2]
+    paths:
+      - 'scripts/v2/concurenta/**'
+      - '.github/workflows/concurenta.yml'
+  workflow_dispatch:
+  schedule:
+    - cron: '41 5 2 * *'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: concurenta
+  cancel-in-progress: true
+
+jobs:
+  sitemap:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Test (fara retea)
+        run: python scripts/v2/concurenta/concurenta.py --test
+      - name: Sitemap-urile concurentei
+        run: python scripts/v2/concurenta/concurenta.py
+      - name: Raportul in pagina rularii
+        if: always()
+        run: |
+          f=data/research/concurenta/RAPORT.md
+          if [ -f "$f" ]; then cat "$f" >> "$GITHUB_STEP_SUMMARY"; cat "$f"; fi
+      - name: Salveaza in repo
+        if: success()
+        run: |
+          set -e
+          git config user.name "github-actions[bot]"
+          git config user.email "41898283+github-actions[bot]@users.noreply.github.com"
+          git add data/research/concurenta
+          git diff --cached --quiet && { echo "nimic nou"; exit 0; }
+          git commit -q -m "concurenta: sitemap-urile din $(date -u +%Y-%m-%d)"
+          for i in 1 2 3 4; do
+            git pull -q --rebase --autostash origin "$GITHUB_REF_NAME" && git push -q origin "HEAD:$GITHUB_REF_NAME" && exit 0
+            sleep $((i * 5))
+          done
+          echo "push esuat"; exit 1
