@@ -491,8 +491,12 @@ separată, ca să nu se ciocnească de pipeline-ul zilnic și de cealaltă sesiu
   `402 Payment required / DEPLOYMENT_DISABLED`; fiecare commit pe `main` de la 14.11, 21:21 UTC are
   pe GitHub statusul Vercel „Account is blocked." pe toate cele trei proiecte (`am-cupon-a8dz`,
   `am-cupon`, `afiliere-site`); ultimul deploy reușit: 14.11, 13:08 UTC; numărătoarea de clicuri:
-  ultimul clic pe 14.11, 17:41 UTC, apoi 0 pe 15, 16 și 17.11. Motivul exact e în panoul Vercel al
-  echipei. Două lucruri sigure, de făcut oricum: (1) planul Hobby e pentru uz personal, necomercial,
+  ultimul clic pe 14.11, 17:41 UTC, apoi 0 pe 15, 16 și 17.11. **Cauza, din panoul Vercel (18.11):**
+  „Deployments paused since Nov 14 for Fast Origin Transfer. Your team exceeded the Hobby fair use
+  limits. This pause ends on Dec 14" — ISR Reads 1,2M din 1M, Fast Origin Transfer 9,41 din 10 GB,
+  Deployment Storage 7,32 din 10 GB. Motorul e chiar defectul structural din 2.2: datele stau în git,
+  deci fiecare actualizare de date = deploy complet = cache-ul CDN golit, iar fiecare pagină se citește
+  din nou din ISR. În v2 datele vin din bază și se reîmprospătează pe etichete, fără deploy. Două lucruri sigure, de făcut oricum: (1) planul Hobby e pentru uz personal, necomercial,
   iar un site de afiliere e uz comercial — Pro costă 20 $/lună (contul are perioada de probă Pro
   disponibilă); (2) trei proiecte construiesc același repo la fiecare commit: ~7 commit-uri pe zi ×
   3 proiecte = ~20 de build-uri pe zi, de 5–10 minute fiecare, din care două treimi pentru cele două
