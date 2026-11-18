@@ -1,4 +1,11 @@
 {
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "ignoreCommand": "if [ -n \"$VERCEL_GIT_PREVIOUS_SHA\" ] && git diff --quiet \"$VERCEL_GIT_PREVIOUS_SHA\" HEAD -- . 2>/dev/null; then echo 'Nimic schimbat in frontend/ fata de ultimul deploy: build sarit.'; exit 0; else exit 1; fi",
+  "git": {
+    "deploymentEnabled": {
+      "claude/**": false
+    }
+  },
   "redirects": [
     {
       "source": "/:path*",
