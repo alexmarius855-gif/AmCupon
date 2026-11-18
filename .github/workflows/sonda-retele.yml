@@ -33,4 +33,4 @@ jobs:
           TWOPEFORMANT_PASS: ${{ secrets.TWOPEFORMANT_PASS }}
           IMPACT_ACCOUNT_SID: ${{ secrets.IMPACT_ACCOUNT_SID }}
           IMPACT_AUTH_TOKEN: ${{ secrets.IMPACT_AUTH_TOKEN }}
-        run: python scripts/v2/sonde/sonda_retele.py --2p --impact
+        run: python scripts/v2/sonde/sonda_retele.py --2p-detalii

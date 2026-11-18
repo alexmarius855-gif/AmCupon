@@ -123,6 +123,47 @@ def sonda_2p() -> int:
     return 0
 
 
+# Magazinele ale caror oferte ajung pe site DOAR prin CSV (output.json din 18.11, sursa csv_import), desi
+# sonda din 18.11 a gasit toate ofertele CSV-ului si in API. De aflat unde se pierd pe drumul API -> site.
+DOAR_CSV = ["jollymag", "fera", "nobilacasa", "herbagetica", "sevensins"]
+
+
+def sonda_2p_detalii() -> int:
+    import fetch_2p_api as p2
+    if not (p2.AFFILIATE_EMAIL and p2.AFFILIATE_PASS) or not p2.sign_in():
+        print("2P: autentificare imposibila")
+        return 1
+    prima = p2.api_get("affiliate/advertiser_promotions", {"page": 1, "perpage": 40}) or {}
+    fac = (prima.get("facets") or {}).get("available") if isinstance(prima, dict) else None
+    print("2P facets.available:", str(fac)[:400])
+    promotii = p2.fetch_all_pages("affiliate/advertiser_promotions", per_page=40)
+    from collections import Counter
+    print("2P status:", dict(Counter(str(x.get("status")) for x in promotii)))
+    print("2P affrequest_status:", dict(Counter(str(x.get("affrequest_status")) for x in promotii)))
+    for v in ("accepted", "pending", "rejected", "not_applied", "all", "available", "none"):
+        time.sleep(1)
+        r = p2.api_get("affiliate/advertiser_promotions", {"page": 1, "perpage": 40, "filter[affrequest_status]": v}) or {}
+        print(f"2P filter[affrequest_status]={v}: {r.get('pagination') if isinstance(r, dict) else '-'}")
+    programe = p2.fetch_all_pages("affiliate/programs", per_page=40, extra_params={"filter[affrequest_status]": "accepted"})
+    print(f"2P programe acceptate: {len(programe)}")
+    for cheie in DOAR_CSV:
+        progs = [p for p in programe if cheie in _norm(f"{p.get('slug')} {p.get('name')} {p.get('main_url')}").replace(" ", "")]
+        for p in progs[:2]:
+            print(f"2P [{cheie}] program: slug={p.get('slug')!r} name={p.get('name')!r} id={p.get('id')}")
+        proms = [x for x in promotii if cheie in _norm(f"{(x.get('program') or {}).get('slug')} {x.get('campaign_slug')} {x.get('campaign_name')}").replace(" ", "")]
+        if not proms:
+            print(f"2P [{cheie}] nicio promotie in API")
+        for x in proms[:3]:
+            prog = x.get("program") or {}
+            cheie_promo = (prog.get("slug", "") or prog.get("name", "") or "").strip().lower()
+            print(f"2P [{cheie}] promotie: program.slug={prog.get('slug')!r} program.name={prog.get('name')!r} "
+                  f"campaign_slug={x.get('campaign_slug')!r} status={x.get('status')} aff={x.get('affrequest_status')} "
+                  f"start={str(x.get('promotion_start'))[:10]} end={str(x.get('promotion_end'))[:10]} "
+                  f"descriere_client={len(x.get('customer_description') or '')} car., cheie_promo={cheie_promo!r}, "
+                  f"potrivire_cu_programul={any(cheie_promo in {str(p.get('slug') or '').lower(), str(p.get('name') or '').strip().lower()} for p in progs)}")
+    return 0
+
+
 def sonda_impact() -> int:
     import requests
     from requests.auth import HTTPBasicAuth
@@ -187,8 +228,15 @@ def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--2p", dest="p2", action="store_true")
     ap.add_argument("--impact", action="store_true")
+    ap.add_argument("--2p-detalii", dest="p2d", action="store_true")
     a = ap.parse_args()
     rc = 0
+    if a.p2d:
+        try:
+            rc |= sonda_2p_detalii()
+        except Exception as e:
+            print(f"2P detalii: sonda a picat: {type(e).__name__}: {str(e)[:120]}")
+            rc = 1
     if a.p2:
         try:
             rc |= sonda_2p()
