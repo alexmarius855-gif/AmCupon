@@ -2,7 +2,7 @@ name: Cercetare cerere (sugestii de cautare)
 
 # Ce cauta oamenii: completarile Google, Bing, DuckDuckGo si YouTube pentru „cod reducere a...", numele
 # magazinelor noastre si produsele partenerilor, comparate cu ce avem pe site. Rezultatul e un studiu
-# (Markdown + JSON) in artefactul rularii. Nu foloseste niciun secret si nu scrie in repo.
+# (Markdown + JSON) in artefactul rularii si in repo (docs/research, data/research). Nu foloseste secrete.
 # Din containerul sesiunilor Claude motoarele sunt blocate, de aceea colectarea ruleaza aici.
 #
 # Pe ramura de lucru porneste la fiecare push in scripts/v2/research/; programarea saptamanala
@@ -19,7 +19,7 @@ on:
     - cron: '23 4 * * 1'
 
 permissions:
-  contents: read
+  contents: write
 
 concurrency:
   group: cercetare-cerere
@@ -64,3 +64,26 @@ jobs:
           name: cercetare-cerere
           path: research-out/
           retention-days: 30
+
+      # Studiul ramane in repo (artefactul expira, iar din sesiunile Claude nu se poate descarca: proxy-ul
+      # blocheaza stocarea artefactelor). Sugestiile brute, comprimate, ca studiul sa poata fi refacut
+      # local cu reguli noi, fara o noua colectare. Totul e public: sugestii de cautare si datele site-ului.
+      - name: Salveaza studiul in repo
+        if: success() && github.event_name != 'pull_request'
+        run: |
+          set -e
+          zi=$(ls research-out/STUDIU-CERERE-*.md | head -1 | sed -E 's/.*STUDIU-CERERE-(.*)\.md/\1/')
+          mkdir -p docs/research data/research
+          cp "research-out/STUDIU-CERERE-$zi.md" docs/research/
+          python -c "import json,sys; d=json.load(open(sys.argv[1],encoding='utf-8')); json.dump(d,open(sys.argv[2],'w',encoding='utf-8'),ensure_ascii=False,separators=(',',':'))" "research-out/cerere-$zi.json" "data/research/cerere-$zi.json"
+          gzip -9 -c research-out/sugestii.json > "data/research/sugestii-$zi.json.gz"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898283+github-actions[bot]@users.noreply.github.com"
+          git add docs/research data/research
+          git diff --cached --quiet && { echo "nimic nou"; exit 0; }
+          git commit -q -m "cercetare: studiul de cerere din $zi"
+          for i in 1 2 3 4; do
+            git pull -q --rebase --autostash origin "$GITHUB_REF_NAME" && git push -q origin "HEAD:$GITHUB_REF_NAME" && exit 0
+            sleep $((i * 5))
+          done
+          echo "push esuat"; exit 1

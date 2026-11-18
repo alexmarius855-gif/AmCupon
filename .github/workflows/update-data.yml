@@ -558,6 +558,8 @@ jobs:
           git add data/sitemap_fingerprints.json       || true
           git add data/extra_merchants.json            || true
           git add data/promotii_2p.csv data/impact_campaigns.csv || true
+          # Scris de fetch_2p_api.py din API (18.11.2026): programe cu oferte active la care n-am aplicat.
+          git add data/2p-programe-neaplicate-cu-oferte.json || true
           git add frontend/public/digest-today.json    || true
           git add data/digest-today.txt                || true
           git add frontend/public/nav-index.json       || true

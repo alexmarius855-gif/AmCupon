@@ -541,3 +541,9 @@ După confirmare: Faza A, apoi Etapa 3 pornind de la 2Performant, rețeaua în c
    Frankfurt).
 4. **2Performant:** cele 27 de magazine cu produse în „My Feeds" fără program aprobat (5.6) — aprobate
    sau scoase din feed-uri.
+5. **(18.11) Exporturile manuale nu mai trebuie**, după ce reparația din `merge_platforms.py` +
+   `fetch_2p_api.py` ajunge pe `main` (acordul lui Alex): promoțiile 2P vin toate din API, inclusiv cele
+   programate, iar campaniile Impact tot din API. Rămân de mână: aplicarea la programe (din lista
+   `data/2p-programe-neaplicate-cu-oferte.json` + studiul de cerere) și feed-urile noi din „My Feeds".
+6. **(18.11) Impact:** cererea de acces la cataloage (`/Catalogs` = 403), din contul Impact, la suport.
+7. **(18.11) Awin, opțional:** token API (Awin → Account → API credentials), ca să nu mai fie export CSV.
