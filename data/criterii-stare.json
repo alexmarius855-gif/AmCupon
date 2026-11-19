@@ -1,5 +1,5 @@
 {
-"actualizat": "2026-11-18",
+"actualizat": "2026-11-19",
 "criterii": [
 {
 "slug": "masina-de-spalat-6-kg",
@@ -8619,8 +8619,13 @@
 "titlu": "Tablete sub 1.000 lei",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-15",
-"feeduri": [],
+"actualizat": "2026-11-19",
+"feeduri": [
+{
+"id": 8326,
+"magazin": "bsgmag.ro"
+}
+],
 "produse": [],
 "magazine": []
 },
@@ -10588,7 +10593,7 @@
 "titlu": "Saltele 90x200",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-15",
+"actualizat": "2026-11-19",
 "feeduri": [
 {
 "id": 6761,
@@ -10764,16 +10769,15 @@
 "verificat": "2026-11-04"
 },
 {
-"titlu": "Saltea de Pat Ortopedica, Bio Cocos, Bio Bambus, 15+2+6 cm, 90x200",
-"pret": 1179.0,
-"imagine": "http://ortopedicus.com/wp-content/uploads/2026/03/Ortopedicus_2-075-Edit-Edit-4.png",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fortopedicus.com%2Fprodus%2Fsaltea-de-pat-ortopedica-bio-cocos-bio-bambus-1526-cm-90x200%2F%3Futm_source%3DCustom%2BTemplate%2B1%26utm_medium%3Dcpc%26utm_campaign%3D2performant_feed",
+"titlu": "Saltea de Pat Ortopedica, Memory Fresh 15+5+1, Aloe Vera, 90x200",
+"pret": 1079.0,
+"imagine": "http://ortopedicus.com/wp-content/uploads/2026/03/Saltea-de-Pat-Ortopedica-Memory-Fresh-1551-Aloe-Vera-Ortopedicus-7.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fortopedicus.com%2Fprodus%2Fsaltea-de-pat-ortopedica-memory-fresh-1551-aloe-vera-90x200%2F%3Futm_source%3DCustom%2BTemplate%2B1%26utm_medium%3Dcpc%26utm_campaign%3D2performant_feed",
 "magazin": "ortopedicus.com",
-"id": "Yya3uGMMAqs3",
+"id": "Wx071A8HUcGt",
 "brand": "",
-"url_magazin": "https://ortopedicus.com/produs/saltea-de-pat-ortopedica-bio-cocos-bio-bambus-1526-cm-90x200/?utm_source=Custom+Template+1&utm_medium=cpc&utm_campaign=2performant_feed",
-"pret_vechi": null,
-"verificat": "2026-11-04"
+"url_magazin": "https://ortopedicus.com/produs/saltea-de-pat-ortopedica-memory-fresh-1551-aloe-vera-90x200/?utm_source=Custom+Template+1&utm_medium=cpc&utm_campaign=2performant_feed",
+"pret_vechi": null
 },
 {
 "titlu": "Saltea de pat Ortopedica, Memory HD 17+5+1, Lavanda Strong, 90x200",
@@ -10824,7 +10828,7 @@
 "titlu": "Saltele 140x200",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-15",
+"actualizat": "2026-11-19",
 "feeduri": [
 {
 "id": 6761,
@@ -11048,7 +11052,7 @@
 "titlu": "Saltele 160x200",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-15",
+"actualizat": "2026-11-19",
 "feeduri": [
 {
 "id": 6761,
@@ -11165,14 +11169,36 @@
 "verificat": "2026-11-06"
 },
 {
-"titlu": "Saltea de pat Ortopedica Reversibila, Bio Bambus Medical Strong, 160x200",
-"pret": 1529.0,
-"imagine": "http://ortopedicus.com/wp-content/uploads/2026/03/Saltea-de-pat-Ortopedica-Reversibila-Bio-Bambus-Medical-Strong-1.png",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fortopedicus.com%2Fprodus%2Fsaltea-de-pat-ortopedica-reversibila-bio-bambus-medical-strong-160x200%2F%3Futm_source%3DCustom%2BTemplate%2B1%26utm_medium%3Dcpc%26utm_campaign%3D2performant_feed",
+"titlu": "Saltea de Pat Ortopedica, Memory Fresh 15+5+1, Aloe Vera, 160x200",
+"pret": 1439.0,
+"imagine": "http://ortopedicus.com/wp-content/uploads/2026/03/Saltea-de-Pat-Ortopedica-Memory-Fresh-1551-Aloe-Vera-Ortopedicus-1.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fortopedicus.com%2Fprodus%2Fsaltea-de-pat-ortopedica-memory-fresh-1552-aloe-vera-160x200%2F%3Futm_source%3DCustom%2BTemplate%2B1%26utm_medium%3Dcpc%26utm_campaign%3D2performant_feed",
 "magazin": "ortopedicus.com",
-"id": "U3arikCCNbw7",
+"id": "R0PWlmv0bwDI",
 "brand": "",
-"url_magazin": "https://ortopedicus.com/produs/saltea-de-pat-ortopedica-reversibila-bio-bambus-medical-strong-160x200/?utm_source=Custom+Template+1&utm_medium=cpc&utm_campaign=2performant_feed",
+"url_magazin": "https://ortopedicus.com/produs/saltea-de-pat-ortopedica-memory-fresh-1552-aloe-vera-160x200/?utm_source=Custom+Template+1&utm_medium=cpc&utm_campaign=2performant_feed",
+"pret_vechi": null
+},
+{
+"titlu": "Saltea de Pat Ortopedica, Tencel Air Hybrid 3+12+3, Doua Fete, 160x200",
+"pret": 1689.0,
+"imagine": "http://ortopedicus.com/wp-content/uploads/2026/03/m6-si-m8-colt-desfacut-mic-cu-arcuri2.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fortopedicus.com%2Fprodus%2Fsaltea-de-pat-ortopedica-tencel-air-hybrid-3123-doua-fete-160x200%2F%3Futm_source%3DCustom%2BTemplate%2B1%26utm_medium%3Dcpc%26utm_campaign%3D2performant_feed",
+"magazin": "ortopedicus.com",
+"id": "QP5dE84M1uaH",
+"brand": "",
+"url_magazin": "https://ortopedicus.com/produs/saltea-de-pat-ortopedica-tencel-air-hybrid-3123-doua-fete-160x200/?utm_source=Custom+Template+1&utm_medium=cpc&utm_campaign=2performant_feed",
+"pret_vechi": null
+},
+{
+"titlu": "Saltea de Pat Ortopedica, Family Hybrid, Bio Bambus, Memory HD, 12+8+2, 160x200, Fara Arcuri",
+"pret": 1689.0,
+"imagine": "http://ortopedicus.com/wp-content/uploads/2026/03/Family-din-colt-dezbracat.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fortopedicus.com%2Fprodus%2Fsaltea-de-pat-ortopedica-family-hybrid-bio-bambus-memory-hd-1282-160x200-fara-arcuri%2F%3Futm_source%3DCustom%2BTemplate%2B1%26utm_medium%3Dcpc%26utm_campaign%3D2performant_feed",
+"magazin": "ortopedicus.com",
+"id": "a7Xw2tMmiPxa",
+"brand": "",
+"url_magazin": "https://ortopedicus.com/produs/saltea-de-pat-ortopedica-family-hybrid-bio-bambus-memory-hd-1282-160x200-fara-arcuri/?utm_source=Custom+Template+1&utm_medium=cpc&utm_campaign=2performant_feed",
 "pret_vechi": null
 },
 {
@@ -11246,7 +11272,7 @@
 "titlu": "Saltele 180x200",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-15",
+"actualizat": "2026-11-19",
 "feeduri": [
 {
 "id": 6761,
@@ -11301,17 +11327,6 @@
 "pret_vechi": null
 },
 {
-"titlu": "SALTEA 180x200 ergonomică și respirabilă 20 cm; Confort natural și design scandinav cu fermitate ridicată; Made in Italy",
-"pret": 1049.69,
-"imagine": "https://media.xxxlutz.com/i/xxxlutz/NC5N8xELomR9TxHuH1fmlxLA.jpg?$feedGoogleProduct$",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.xxxlutz.ro%2Fp%2Fsaltea-180x200-ergonomica-si-respirabila-20-cm-confort-natural-si-design-scandinav-cu-fermitate-ridicata-made-in-italy-800001389217",
-"magazin": "xxxlutz.ro",
-"id": "HgNykY0IWBlp",
-"brand": "The White Stone",
-"url_magazin": "https://www.xxxlutz.ro/p/saltea-180x200-ergonomica-si-respirabila-20-cm-confort-natural-si-design-scandinav-cu-fermitate-ridicata-made-in-italy-800001389217",
-"pret_vechi": null
-},
-{
 "titlu": "Saltea cu arcuri bonnell, fermitate medie, 180x200 cm",
 "pret": 1098.89,
 "imagine": "https://infinityro.vteximg.com.br/arquivos/ids/254924404/8721012204232_a_en_hd_1.jpg",
@@ -11322,17 +11337,6 @@
 "url_magazin": "https://infinity.ro/saltea-cu-arcuri-bonnell-fermitate-medie-180x200-cm-715301/p?utm_source=2performant",
 "pret_vechi": null,
 "verificat": "2026-11-04"
-},
-{
-"titlu": "SALTEA Ortopedică 180x200 cm Rigiditate Medie; Înălțime 16 cm; Țesătură Hipoalergenică și Respirabilă; Proprietăți Ergon",
-"pret": 1115.65,
-"imagine": "https://media.xxxlutz.com/i/xxxlutz/NCOMCCQDV7FKF66PUUMDws9Q.jpg?$feedGoogleProduct$",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.xxxlutz.ro%2Fp%2Fsaltea-ortopedica-180x200-cm-rigiditate-medie-inaltime-16-cm-tesatura-hipoalergenica-si-respirabila-proprietati-ergonomice-si-autoconformante-800000677948",
-"magazin": "xxxlutz.ro",
-"id": "w8LeIPxQlWlB",
-"brand": "The White Stone",
-"url_magazin": "https://www.xxxlutz.ro/p/saltea-ortopedica-180x200-cm-rigiditate-medie-inaltime-16-cm-tesatura-hipoalergenica-si-respirabila-proprietati-ergonomice-si-autoconformante-800000677948",
-"pret_vechi": null
 },
 {
 "titlu": "Saltea Super Ortopedica Ergomed, Microfibra, 18+2 cm, 180x200",
@@ -11357,28 +11361,6 @@
 "url_magazin": "https://infinity.ro/saltea-wolke-180-x-200-x-20-cm-arcuri-pocket-spring-relax-803629/p?utm_source=2performant",
 "pret_vechi": null,
 "verificat": "2026-11-04"
-},
-{
-"titlu": "SALTEA Ortopedică 180x200 cm Rigiditate Medie; Înălțime 25 cm; Țesătură Hipoalergenică și Respirabilă; Proprietăți Ergon",
-"pret": 1259.9,
-"imagine": "https://media.xxxlutz.com/i/xxxlutz/NC7sDdC1VP-r_YU21KzXYfww.jpg?$feedGoogleProduct$",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.xxxlutz.ro%2Fp%2Fsaltea-ortopedica-180x200-cm-rigiditate-medie-inaltime-25-cm-tesatura-hipoalergenica-si-respirabila-proprietati-ergonomice-si-autoconformante-800000677867",
-"magazin": "xxxlutz.ro",
-"id": "82bE6RO0-mXA",
-"brand": "The White Stone",
-"url_magazin": "https://www.xxxlutz.ro/p/saltea-ortopedica-180x200-cm-rigiditate-medie-inaltime-25-cm-tesatura-hipoalergenica-si-respirabila-proprietati-ergonomice-si-autoconformante-800000677867",
-"pret_vechi": null
-},
-{
-"titlu": "SALTEA 180x200 cm din Waterfoam Hipoalergenică Înălțime 20 cm; Mediu Ferm, Antibacterian și Respirabil",
-"pret": 1265.19,
-"imagine": "https://media.xxxlutz.com/i/xxxlutz/NCq2F9MsRZLpGHkXDbiDoeLw.jpg?$feedGoogleProduct$",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.xxxlutz.ro%2Fp%2Fsaltea-180x200-cm-din-waterfoam-hipoalergenica-inaltime-20-cm-mediu-ferm-antibacterian-si-respirabil-800001110896",
-"magazin": "xxxlutz.ro",
-"id": "AJXlHBEk7EWY",
-"brand": "The White Stone",
-"url_magazin": "https://www.xxxlutz.ro/p/saltea-180x200-cm-din-waterfoam-hipoalergenica-inaltime-20-cm-mediu-ferm-antibacterian-si-respirabil-800001110896",
-"pret_vechi": null
 },
 {
 "titlu": "Saltea din spuma, alb, 180x200 cm, duritate H2 H3",
@@ -11417,17 +11399,6 @@
 "verificat": "2026-11-04"
 },
 {
-"titlu": "SALTEA 180x200 cm din Spumă Memory Foam; Înălțime 20 cm; Saltea Ortopedică cu 9 Zone, Hipoalergenică",
-"pret": 1328.53,
-"imagine": "https://media.xxxlutz.com/i/xxxlutz/NC-9GylzwiBzMBFaUByu2Skg.jpg?$feedGoogleProduct$",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.xxxlutz.ro%2Fp%2Fsaltea-180x200-cm-din-spuma-memory-foam-inaltime-20-cm-saltea-ortopedica-cu-9-zone-hipoalergenic-800001403729",
-"magazin": "xxxlutz.ro",
-"id": "lrJTGicc6ZZR",
-"brand": "The White Stone",
-"url_magazin": "https://www.xxxlutz.ro/p/saltea-180x200-cm-din-spuma-memory-foam-inaltime-20-cm-saltea-ortopedica-cu-9-zone-hipoalergenic-800001403729",
-"pret_vechi": null
-},
-{
 "titlu": "Saltea, cu arcuri, 180x200, FUTON ARONA",
 "pret": 1333.75,
 "imagine": "https://infinityro.vteximg.com.br/arquivos/ids/274932229/8c48742889c0393c239d65b07d016ef6.png",
@@ -11438,17 +11409,6 @@
 "url_magazin": "https://infinity.ro/saltea-cu-arcuri-180x200-futon-arona-42581/p?utm_source=2performant",
 "pret_vechi": 1375.0,
 "verificat": "2026-11-04"
-},
-{
-"titlu": "SALTEA Ortopedică 180x200 cm Înălțime 21 cm; Ergonomică și Respirabilă",
-"pret": 1459.53,
-"imagine": "https://media.xxxlutz.com/i/xxxlutz/NCc7vOw_5kA3nKJvcWGMVUfg.jpg?$feedGoogleProduct$",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.xxxlutz.ro%2Fp%2Fsaltea-ortopedica-180x200-cm-inaltime-21-cm-ergonomica-si-respirabil-800001860765",
-"magazin": "xxxlutz.ro",
-"id": "IPCNz6BRnFYk",
-"brand": "The White Stone",
-"url_magazin": "https://www.xxxlutz.ro/p/saltea-ortopedica-180x200-cm-inaltime-21-cm-ergonomica-si-respirabil-800001860765",
-"pret_vechi": null
 },
 {
 "titlu": "Saltea Super Ortopedica Ergomed, Aloe Vera, Reversibila, 20+1 cm, 180x200",
@@ -11475,17 +11435,6 @@
 "verificat": "2026-11-04"
 },
 {
-"titlu": "SALTEA 180x200 cm din Spumă Hipoalergenică și Memory Foam Înălțime 22 cm; Antibacterian și Anti-acarieni",
-"pret": 1805.23,
-"imagine": "https://media.xxxlutz.com/i/xxxlutz/NCc7vOw_5kA3nKJvcWGMVUfg.jpg?$feedGoogleProduct$",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.xxxlutz.ro%2Fp%2Fsaltea-180x200-cm-din-spuma-hipoalergenica-si-memory-foam-inaltime-22-cm-antibacterian-si-anti-acarieni-800001403775",
-"magazin": "xxxlutz.ro",
-"id": "Bv_aVxCGdAFs",
-"brand": "The White Stone",
-"url_magazin": "https://www.xxxlutz.ro/p/saltea-180x200-cm-din-spuma-hipoalergenica-si-memory-foam-inaltime-22-cm-antibacterian-si-anti-acarieni-800001403775",
-"pret_vechi": null
-},
-{
 "titlu": "Saltea de Pat Ortopedica, Family Hybrid, Bio Bambus, Memory HD, 12+8+2, 180x200, Fara Arcuri",
 "pret": 1839.0,
 "imagine": "http://ortopedicus.com/wp-content/uploads/2026/03/Family-din-colt-dezbracat-5.jpg",
@@ -11508,17 +11457,6 @@
 "url_magazin": "https://ortopedicus.com/produs/saltea-de-pat-ortopedica-memory-fresh-1552-aloe-vera-180x200/?utm_source=Custom+Template+1&utm_medium=cpc&utm_campaign=2performant_feed",
 "pret_vechi": null,
 "verificat": "2026-11-04"
-},
-{
-"titlu": "SALTEA 180x200 Arcuri Împachetate și Spumă Viscoelastică; Înălțime 30 cm; Ergonomic, Hipoalergenic și Antibacterian",
-"pret": 1919.79,
-"imagine": "https://media.xxxlutz.com/i/xxxlutz/NC3iXX9GzUP-ewy27d_J5Ljw.jpg?$feedGoogleProduct$",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.xxxlutz.ro%2Fp%2Fsaltea-180x200-arcuri-impachetate-si-spuma-viscoelastica-inaltime-30-cm-ergonomic-hipoalergenic-si-antibacterian-800001284572",
-"magazin": "xxxlutz.ro",
-"id": "5zgRkSqeiRp9",
-"brand": "The White Stone",
-"url_magazin": "https://www.xxxlutz.ro/p/saltea-180x200-arcuri-impachetate-si-spuma-viscoelastica-inaltime-30-cm-ergonomic-hipoalergenic-si-antibacterian-800001284572",
-"pret_vechi": null
 },
 {
 "titlu": "Saltea de Pat Ortopedica, Tencel Air Hybrid 3+12+3, Doua Fete, 180x200",
@@ -11547,8 +11485,7 @@
 ],
 "magazine": [
 "infinity.ro",
-"ortopedicus.com",
-"xxxlutz.ro"
+"ortopedicus.com"
 ]
 },
 {
@@ -11558,7 +11495,7 @@
 "titlu": "Saltele ortopedice",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-15",
+"actualizat": "2026-11-19",
 "feeduri": [
 {
 "id": 6761,
@@ -11566,6 +11503,17 @@
 }
 ],
 "produse": [
+{
+"titlu": "Saltea de pat Super Ortopedica, doua fete, Aloe Vera, 90 x 200",
+"pret": 869.0,
+"imagine": "http://ortopedicus.com/wp-content/uploads/2026/03/3-1-3.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fortopedicus.com%2Fprodus%2Fsaltea-medicala-super-ortopedica-aloe-vera-18-cm-90x200%2F%3Futm_source%3DCustom%2BTemplate%2B1%26utm_medium%3Dcpc%26utm_campaign%3D2performant_feed",
+"magazin": "ortopedicus.com",
+"id": "JwB9zF8PkRNP",
+"brand": "",
+"url_magazin": "https://ortopedicus.com/produs/saltea-medicala-super-ortopedica-aloe-vera-18-cm-90x200/?utm_source=Custom+Template+1&utm_medium=cpc&utm_campaign=2performant_feed",
+"pret_vechi": null
+},
 {
 "titlu": "Saltea de pat Ortopedica, Memory 15+3, Aloe Vera, 90 x 190",
 "pret": 919.0,
@@ -11577,6 +11525,17 @@
 "url_magazin": "https://ortopedicus.com/produs/saltea-medicala-super-ortopedica-153-memory-hd-aloe-vera-grun-tech-90x190-ortopedicus/?utm_source=Custom+Template+1&utm_medium=cpc&utm_campaign=2performant_feed",
 "pret_vechi": null,
 "verificat": "2026-11-04"
+},
+{
+"titlu": "Saltea de pat Ortopedica, Memory 15+3, Aloe Vera, 90 x 200",
+"pret": 969.0,
+"imagine": "http://ortopedicus.com/wp-content/uploads/2026/03/3-2.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fortopedicus.com%2Fprodus%2Fsaltea-medicala-super-ortopedica-memory-153-aloe-vera-90x200%2F%3Futm_source%3DCustom%2BTemplate%2B1%26utm_medium%3Dcpc%26utm_campaign%3D2performant_feed",
+"magazin": "ortopedicus.com",
+"id": "szfS79bFcUMg",
+"brand": "",
+"url_magazin": "https://ortopedicus.com/produs/saltea-medicala-super-ortopedica-memory-153-aloe-vera-90x200/?utm_source=Custom+Template+1&utm_medium=cpc&utm_campaign=2performant_feed",
+"pret_vechi": null
 },
 {
 "titlu": "Saltea de pat Ortopedica, Hybrid, 17+3, Ioni de Argint, 90 x 190",
@@ -11591,16 +11550,15 @@
 "verificat": "2026-11-04"
 },
 {
-"titlu": "Saltea de pat Ortopedica, Memory 15+3, Aloe Vera, 100 x 200",
-"pret": 1179.0,
-"imagine": "http://ortopedicus.com/wp-content/uploads/2026/03/3-23.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fortopedicus.com%2Fprodus%2Fsaltea-de-pat-ortopedica-memory-153-aloe-vera-100-x-200%2F%3Futm_source%3DCustom%2BTemplate%2B1%26utm_medium%3Dcpc%26utm_campaign%3D2performant_feed",
+"titlu": "Saltea de pat Ortopedica, Hybrid, 17+3, Ioni de Argint, 90 x 200",
+"pret": 1129.0,
+"imagine": "http://ortopedicus.com/wp-content/uploads/2026/03/173-5.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fortopedicus.com%2Fprodus%2Fsaltea-ortopedica-cu-ioni-de-argint-luft-hd-90x200%2F%3Futm_source%3DCustom%2BTemplate%2B1%26utm_medium%3Dcpc%26utm_campaign%3D2performant_feed",
 "magazin": "ortopedicus.com",
-"id": "rYp_q2wJ2A3g",
+"id": "jYN5-s8KUEPM",
 "brand": "",
-"url_magazin": "https://ortopedicus.com/produs/saltea-de-pat-ortopedica-memory-153-aloe-vera-100-x-200/?utm_source=Custom+Template+1&utm_medium=cpc&utm_campaign=2performant_feed",
-"pret_vechi": null,
-"verificat": "2026-11-04"
+"url_magazin": "https://ortopedicus.com/produs/saltea-ortopedica-cu-ioni-de-argint-luft-hd-90x200/?utm_source=Custom+Template+1&utm_medium=cpc&utm_campaign=2performant_feed",
+"pret_vechi": null
 },
 {
 "titlu": "Saltea de pat Ortopedica, Bio Bumbac Reversibila, 26 cm, 90 x 200",
@@ -11637,30 +11595,6 @@
 "url_magazin": "https://ortopedicus.com/produs/saltea-medicala-super-ortopedica-reversibila-aloe-vera-18-cm-grun-tech-140x200-ortopedicus/?utm_source=Custom+Template+1&utm_medium=cpc&utm_campaign=2performant_feed",
 "pret_vechi": null,
 "verificat": "2026-11-04"
-},
-{
-"titlu": "Saltea de pat Ortopedica, Bio Bumbac Reversibila, 26 cm, 90 x 190",
-"pret": 1299.0,
-"imagine": "http://ortopedicus.com/wp-content/uploads/2026/03/index-8.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fortopedicus.com%2Fprodus%2Fsaltea-bio-ortopedica-plus-26-cm-hotel-line-grun-tech-luft-hd-90x200-ortopedicus%2F%3Futm_source%3DCustom%2BTemplate%2B1%26utm_medium%3Dcpc%26utm_campaign%3D2performant_feed",
-"magazin": "ortopedicus.com",
-"id": "CkfDMFQkHHRZ",
-"brand": "",
-"url_magazin": "https://ortopedicus.com/produs/saltea-bio-ortopedica-plus-26-cm-hotel-line-grun-tech-luft-hd-90x200-ortopedicus/?utm_source=Custom+Template+1&utm_medium=cpc&utm_campaign=2performant_feed",
-"pret_vechi": null,
-"verificat": "2026-11-04"
-},
-{
-"titlu": "Saltea de pat Super Ortopedica, doua fete, Aloe Vera, 160 x 190",
-"pret": 1349.0,
-"imagine": "http://ortopedicus.com/wp-content/uploads/2026/03/3-1-5.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fortopedicus.com%2Fprodus%2Fsaltea-medicala-super-ortopedica-reversibila-aloe-vera-18-cm-grun-tech-160x200-ortopedicus%2F%3Futm_source%3DCustom%2BTemplate%2B1%26utm_medium%3Dcpc%26utm_campaign%3D2performant_feed",
-"magazin": "ortopedicus.com",
-"id": "JjEKF_ZqnB4a",
-"brand": "",
-"url_magazin": "https://ortopedicus.com/produs/saltea-medicala-super-ortopedica-reversibila-aloe-vera-18-cm-grun-tech-160x200-ortopedicus/?utm_source=Custom+Template+1&utm_medium=cpc&utm_campaign=2performant_feed",
-"pret_vechi": null,
-"verificat": "2026-11-04"
 }
 ],
 "magazine": [
@@ -11674,7 +11608,7 @@
 "titlu": "Frigidere No Frost",
 "nota": null,
 "in_text": "\\bNo Frost\\b",
-"actualizat": "2026-11-15",
+"actualizat": "2026-11-19",
 "feeduri": [
 {
 "id": 1539,
@@ -11683,74 +11617,8 @@
 ],
 "produse": [
 {
-"titlu": "HEINNER Combina frigorifica Heinner HCNF-HM253INVDGE++, 253 l, Clasa E, No frost, Compresor inverter, Control electronic",
-"pret": 1299.0,
-"imagine": "https://www.dwyn.ro/images/products/img_202512311121/411907/full/heinner-combina-frigorifica-heinner-hcnf-hm253invdge-plus-plus-253-l-clasa-e-no-frost-compresor-inverter-control-electronic-cu-termostat-ajustabil-lumina-led-3-rafturi-din-sticla-frigider-3-sertare-co-1337668.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Ffrigider%2Fheinner%2F411907-combina-frigorifica-heinner-hcnf-hm253invdge-plus-plus-253-l-clasa-e-no-frost-compresor-inverter-control-electronic-cu-termostat-ajustabil-lumina-led-3-rafturi-din-sticla-frigider-3-sertare-congelator%2F",
-"magazin": "dwyn.ro",
-"id": "bIC0y1XUIlrn",
-"brand": "HEINNER",
-"url_magazin": "https://www.dwyn.ro/frigider/heinner/411907-combina-frigorifica-heinner-hcnf-hm253invdge-plus-plus-253-l-clasa-e-no-frost-compresor-inverter-control-electronic-cu-termostat-ajustabil-lumina-led-3-rafturi-din-sticla-frigider-3-sertare-congelator/",
-"pret_vechi": null
-},
-{
-"titlu": "HEINNER Combina frigorifica Heinner HCNF-HM293INVD, 293 l, Clasa D, No frost, Compresor inverter, Control electronic cu",
-"pret": 1439.0,
-"imagine": "https://www.dwyn.ro/images/products/img_202606122129/478642/full/heinner-combina-frigorifica-heinner-hcnf-hm293invd-293-l-clasa-d-no-frost-compresor-inverter-control-electronic-cu-termostat-ajustabil-lumina-led-h-185-cm-alb-1515934.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Ffrigider%2Fheinner%2F478642-combina-frigorifica-heinner-hcnf-hm293invd-293-l-clasa-d-no-frost-compresor-inverter-control-electronic-cu-termostat-ajustabil-lumina-led-h-185-cm-alb%2F",
-"magazin": "dwyn.ro",
-"id": "bbFj6Y90xLFz",
-"brand": "HEINNER",
-"url_magazin": "https://www.dwyn.ro/frigider/heinner/478642-combina-frigorifica-heinner-hcnf-hm293invd-293-l-clasa-d-no-frost-compresor-inverter-control-electronic-cu-termostat-ajustabil-lumina-led-h-185-cm-alb/",
-"pret_vechi": null
-},
-{
-"titlu": "HEINNER Combina frigorifica Heinner HCNF-HM253INVBKE++, 253 l, Clasa E, No frost, Compresor Inverter, Control electronic",
-"pret": 1459.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202512311121/411871/full/heinner-combina-frigorifica-heinner-hcnf-hm253invbke-plus-plus-253-l-clasa-e-no-frost-compresor-inverter-control-electronic-cu-termostat-ajustabil-lumina-led-3-rafturi-de-sticla-frigider-3-sertare-con-1344073.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Ffrigider%2Fheinner%2F411871-combina-frigorifica-heinner-hcnf-hm253invbke-plus-plus-253-l-clasa-e-no-frost-compresor-inverter-control-electronic-cu-termostat-ajustabil-lumina-led-3-rafturi-de-sticla-frigider-3-sertare-congelator-%2F",
-"magazin": "dwyn.ro",
-"id": "FUWckJppyUf6",
-"brand": "HEINNER",
-"url_magazin": "https://www.dwyn.ro/frigider/heinner/411871-combina-frigorifica-heinner-hcnf-hm253invbke-plus-plus-253-l-clasa-e-no-frost-compresor-inverter-control-electronic-cu-termostat-ajustabil-lumina-led-3-rafturi-de-sticla-frigider-3-sertare-congelator-/",
-"pret_vechi": null
-},
-{
-"titlu": "HEINNER Combina frigorifica Heinner HCNF-HM253INVXE++, 253 l, Clasa E, No frost, Compresor Inverter, Control electronic",
-"pret": 1459.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202512311121/411874/full/heinner-combina-frigorifica-heinner-hcnf-hm253invxe-plus-plus-253-l-clasa-e-no-frost-compresor-inverter-control-electronic-cu-termostat-ajustabil-lumina-led-3-rafturi-de-sticla-frigider-3-sertare-cong-1344316.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Ffrigider%2Fheinner%2F411874-combina-frigorifica-heinner-hcnf-hm253invxe-plus-plus-253-l-clasa-e-no-frost-compresor-inverter-control-electronic-cu-termostat-ajustabil-lumina-led-3-rafturi-de-sticla-frigider-3-sertare-congelator-h%2F",
-"magazin": "dwyn.ro",
-"id": "cLVK4F2CY7Cm",
-"brand": "HEINNER",
-"url_magazin": "https://www.dwyn.ro/frigider/heinner/411874-combina-frigorifica-heinner-hcnf-hm253invxe-plus-plus-253-l-clasa-e-no-frost-compresor-inverter-control-electronic-cu-termostat-ajustabil-lumina-led-3-rafturi-de-sticla-frigider-3-sertare-congelator-h/",
-"pret_vechi": null
-},
-{
-"titlu": "HEINNER Combina frigorifica Heinner HCNF-HM291INVWDD, 291 l, Clasa D, No frost, Compresor inverter, Control electronic c",
-"pret": 1479.0,
-"imagine": "https://www.dwyn.ro/images/products/img_202606122129/478645/full/heinner-combina-frigorifica-heinner-hcnf-hm291invwdd-291-l-clasa-d-no-frost-compresor-inverter-control-electronic-cu-termostat-ajustabil-lumina-led-h-185-cm-alb-1515943.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Ffrigider%2Fheinner%2F478645-combina-frigorifica-heinner-hcnf-hm291invwdd-291-l-clasa-d-no-frost-compresor-inverter-control-electronic-cu-termostat-ajustabil-lumina-led-h-185-cm-alb%2F",
-"magazin": "dwyn.ro",
-"id": "FYA41LFKCom7",
-"brand": "HEINNER",
-"url_magazin": "https://www.dwyn.ro/frigider/heinner/478645-combina-frigorifica-heinner-hcnf-hm291invwdd-291-l-clasa-d-no-frost-compresor-inverter-control-electronic-cu-termostat-ajustabil-lumina-led-h-185-cm-alb/",
-"pret_vechi": null
-},
-{
-"titlu": "HEINNER Combina frigorifica Heinner HCNF-HM293INVDGD, 293 l, Clasa D, No frost, Compresor Inverter, Control electronic c",
-"pret": 1499.0,
-"imagine": "https://www.dwyn.ro/images/products/img_202606122129/478630/full/heinner-combina-frigorifica-heinner-hcnf-hm293invdgd-293-l-clasa-d-no-frost-compresor-inverter-control-electronic-cu-termostat-ajustabil-lumina-led-h-185-cm-gri-antracit-texturat-1515898.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Ffrigider%2Fheinner%2F478630-combina-frigorifica-heinner-hcnf-hm293invdgd-293-l-clasa-d-no-frost-compresor-inverter-control-electronic-cu-termostat-ajustabil-lumina-led-h-185-cm-gri-antracit-texturat%2F",
-"magazin": "dwyn.ro",
-"id": "mC7yHuQtcpOf",
-"brand": "HEINNER",
-"url_magazin": "https://www.dwyn.ro/frigider/heinner/478630-combina-frigorifica-heinner-hcnf-hm293invdgd-293-l-clasa-d-no-frost-compresor-inverter-control-electronic-cu-termostat-ajustabil-lumina-led-h-185-cm-gri-antracit-texturat/",
-"pret_vechi": null
-},
-{
 "titlu": "CANDY Combina frigorifica Candy CCH1S518EX, 262 l, No Frost, Clasa E, H 180 cm, 180x55 cm, static, LED, Inox",
-"pret": 1647.99,
+"pret": 1496.99,
 "imagine": "https://www.dwyn.ro/images/products/img_202606122129/425170/full/candy-combina-frigorifica-candy-cch1s518ex-262-l-clasa-e-h-180-cm-180x55-cm-static-led-inox-1371427.jpg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Ffrigider%2Fcandy%2F425170-combina-frigorifica-candy-cch1s518ex-262-l-no-frost-clasa-e-h-180-cm-180x55-cm-static-led-inox%2F",
 "magazin": "dwyn.ro",
@@ -11769,6 +11637,72 @@
 "brand": "HEINNER",
 "url_magazin": "https://www.dwyn.ro/frigider/heinner/411883-combina-frigorifica-heinner-hcnf-hm291invwde-plus-plus-291-l-clasa-e-no-frost-compresor-inverter-dozator-de-apa-control-electronic-cu-termostat-ajustabil-lumina-led-3-rafturi-din-sticla-frigider-3-ser/",
 "pret_vechi": null
+},
+{
+"titlu": "HEINNER Combina frigorifica Heinner HCNF-HM326INVE++,326 l, Clasa E, No frost, Compresor Inverter, Panou control cu indi",
+"pret": 1717.99,
+"imagine": "https://www.dwyn.ro/images/products/img_202606122129/411880/full/heinner-combina-frigorifica-heinner-hcnf-hm326inve-plus-plus-326-l-clasa-e-no-frost-compresor-inverter-panou-control-cu-indicatoare-led-in-interior-control-electronic-functie-super-congelare-2-sertare-1357438.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Ffrigider%2Fheinner%2F411880-combina-frigorifica-heinner-hcnf-hm326inve-plus-plus-326-l-clasa-e-no-frost-compresor-inverter-panou-control-cu-indicatoare-led-in-interior-control-electronic-functie-super-congelare-2-sertare-plus-ta%2F",
+"magazin": "dwyn.ro",
+"id": "EZg5gXPl11TT",
+"brand": "HEINNER",
+"url_magazin": "https://www.dwyn.ro/frigider/heinner/411880-combina-frigorifica-heinner-hcnf-hm326inve-plus-plus-326-l-clasa-e-no-frost-compresor-inverter-panou-control-cu-indicatoare-led-in-interior-control-electronic-functie-super-congelare-2-sertare-plus-ta/",
+"pret_vechi": null
+},
+{
+"titlu": "TESLA Combina frigorifica Tesla RC3300FHXE, 326L, clasa E, No Frost, Inverter, control electronic, LED, Inox",
+"pret": 1849.0,
+"imagine": "https://www.dwyn.ro/images/products/img_202606122129/425440/full/tesla-combina-frigorifica-tesla-rc3300fhxe-326l-clasa-e-no-frost-inverter-control-electronic-led-inox-1373227.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Ffrigider%2Ftesla%2F425440-combina-frigorifica-tesla-rc3300fhxe-326l-clasa-e-no-frost-inverter-control-electronic-led-inox%2F",
+"magazin": "dwyn.ro",
+"id": "0sQBArQE1edn",
+"brand": "TESLA",
+"url_magazin": "https://www.dwyn.ro/frigider/tesla/425440-combina-frigorifica-tesla-rc3300fhxe-326l-clasa-e-no-frost-inverter-control-electronic-led-inox/",
+"pret_vechi": null
+},
+{
+"titlu": "CANDY Combina Frigorifica Candy CNCQ2T518EX, No Frost, 279 l, H 182.5 cm, Clasa E, Inox",
+"pret": 1876.99,
+"imagine": "https://www.dwyn.ro/images/products/img_202606122129/425167/full/candy-combina-frigorifica-candy-cncq2t518ex-no-frost-279-l-h-182-5-cm-clasa-e-inox-1371394.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Ffrigider%2Fcandy%2F425167-combina-frigorifica-candy-cncq2t518ex-no-frost-279-l-h-182-5-cm-clasa-e-inox%2F",
+"magazin": "dwyn.ro",
+"id": "NcaOdzI3wQWQ",
+"brand": "CANDY",
+"url_magazin": "https://www.dwyn.ro/frigider/candy/425167-combina-frigorifica-candy-cncq2t518ex-no-frost-279-l-h-182-5-cm-clasa-e-inox/",
+"pret_vechi": null
+},
+{
+"titlu": "HEINNER Combina frigorifica Heinner HCNF-HM293INVD, 293 l, Clasa D, No frost, Compresor inverter, Control electronic cu",
+"pret": 1991.99,
+"imagine": "https://www.dwyn.ro/images/products/img_202606122129/478642/full/heinner-combina-frigorifica-heinner-hcnf-hm293invd-293-l-clasa-d-no-frost-compresor-inverter-control-electronic-cu-termostat-ajustabil-lumina-led-h-185-cm-alb-1515934.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Ffrigider%2Fheinner%2F478642-combina-frigorifica-heinner-hcnf-hm293invd-293-l-clasa-d-no-frost-compresor-inverter-control-electronic-cu-termostat-ajustabil-lumina-led-h-185-cm-alb%2F",
+"magazin": "dwyn.ro",
+"id": "bbFj6Y90xLFz",
+"brand": "HEINNER",
+"url_magazin": "https://www.dwyn.ro/frigider/heinner/478642-combina-frigorifica-heinner-hcnf-hm293invd-293-l-clasa-d-no-frost-compresor-inverter-control-electronic-cu-termostat-ajustabil-lumina-led-h-185-cm-alb/",
+"pret_vechi": null
+},
+{
+"titlu": "HEINNER Combina frigorifica Heinner HCNF-HM291INVWDD, 291 l, Clasa D, No frost, Compresor inverter, Control electronic c",
+"pret": 2001.99,
+"imagine": "https://www.dwyn.ro/images/products/img_202606122129/478645/full/heinner-combina-frigorifica-heinner-hcnf-hm291invwdd-291-l-clasa-d-no-frost-compresor-inverter-control-electronic-cu-termostat-ajustabil-lumina-led-h-185-cm-alb-1515943.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Ffrigider%2Fheinner%2F478645-combina-frigorifica-heinner-hcnf-hm291invwdd-291-l-clasa-d-no-frost-compresor-inverter-control-electronic-cu-termostat-ajustabil-lumina-led-h-185-cm-alb%2F",
+"magazin": "dwyn.ro",
+"id": "FYA41LFKCom7",
+"brand": "HEINNER",
+"url_magazin": "https://www.dwyn.ro/frigider/heinner/478645-combina-frigorifica-heinner-hcnf-hm291invwdd-291-l-clasa-d-no-frost-compresor-inverter-control-electronic-cu-termostat-ajustabil-lumina-led-h-185-cm-alb/",
+"pret_vechi": null
+},
+{
+"titlu": "HEINNER Combina frigorifica Heinner HCNF-HM293INVDGD, 293 l, Clasa D, No frost, Compresor Inverter, Control electronic c",
+"pret": 2034.99,
+"imagine": "https://www.dwyn.ro/images/products/img_202606122129/478630/full/heinner-combina-frigorifica-heinner-hcnf-hm293invdgd-293-l-clasa-d-no-frost-compresor-inverter-control-electronic-cu-termostat-ajustabil-lumina-led-h-185-cm-gri-antracit-texturat-1515898.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Ffrigider%2Fheinner%2F478630-combina-frigorifica-heinner-hcnf-hm293invdgd-293-l-clasa-d-no-frost-compresor-inverter-control-electronic-cu-termostat-ajustabil-lumina-led-h-185-cm-gri-antracit-texturat%2F",
+"magazin": "dwyn.ro",
+"id": "mC7yHuQtcpOf",
+"brand": "HEINNER",
+"url_magazin": "https://www.dwyn.ro/frigider/heinner/478630-combina-frigorifica-heinner-hcnf-hm293invdgd-293-l-clasa-d-no-frost-compresor-inverter-control-electronic-cu-termostat-ajustabil-lumina-led-h-185-cm-gri-antracit-texturat/",
+"pret_vechi": null
 }
 ],
 "magazine": [
@@ -11782,7 +11716,7 @@
 "titlu": "Frigidere Side by Side",
 "nota": null,
 "in_text": "\\bSide by Side\\b",
-"actualizat": "2026-11-15",
+"actualizat": "2026-11-19",
 "feeduri": [
 {
 "id": 1539,
@@ -11803,6 +11737,28 @@
 "verificat": "2026-11-04"
 },
 {
+"titlu": "HEINNER Frigider Side By Side Heinner HSBS-HM442NFINVDGE++, 442 L, Clasa E, Full No Frost, Inverter, Control electronic,",
+"pret": 2736.99,
+"imagine": "https://www.dwyn.ro/images/products/img_202606122129/456424/full/heinner-side-by-side-heinner-hsbs-hm442nfinvdge-plus-1452220.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Ffrigider%2Fheinner%2F456424-frigider-side-by-side-heinner-hsbs-hm442nfinvdge-plus-plus-442-l-clasa-e-full-no-frost-inverter-control-electronic-177-cm-antracit%2F",
+"magazin": "dwyn.ro",
+"id": "qyrgfB1OMIoq",
+"brand": "HEINNER",
+"url_magazin": "https://www.dwyn.ro/frigider/heinner/456424-frigider-side-by-side-heinner-hsbs-hm442nfinvdge-plus-plus-442-l-clasa-e-full-no-frost-inverter-control-electronic-177-cm-antracit/",
+"pret_vechi": null
+},
+{
+"titlu": "HEINNER Frigider Side By Side Heinner HSBS-M548NFINVXE++, 548 L, Clasa E, Full No Frost, Inverter, Control electronic, 1",
+"pret": 3044.99,
+"imagine": "https://www.dwyn.ro/images/products/img_202606122129/456436/full/heinner-side-by-side-heinner-hsbs-m548nfinvxe-plus-plus-1452256.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Ffrigider%2Fheinner%2F456436-frigider-side-by-side-heinner-hsbs-m548nfinvxe-plus-plus-548-l-clasa-e-full-no-frost-inverter-control-electronic-176-cm-inox%2F",
+"magazin": "dwyn.ro",
+"id": "siPfVU_J38zS",
+"brand": "HEINNER",
+"url_magazin": "https://www.dwyn.ro/frigider/heinner/456436-frigider-side-by-side-heinner-hsbs-m548nfinvxe-plus-plus-548-l-clasa-e-full-no-frost-inverter-control-electronic-176-cm-inox/",
+"pret_vechi": null
+},
+{
 "titlu": "TESLA Frigider side by side Tesla RM3400FHXE, 362 l, Full No Frost, LED touch screen, Clasa E, H 180 cm, Inox",
 "pret": 3391.99,
 "imagine": "https://www.dwyn.ro/images/products/img_202404261115/247925/full/tesla-wg-frigider-side-by-side-tesla-rm3400fhxe-362-l-eh180-full-no-frost-led-touch-screen-inox-502497.png",
@@ -11815,14 +11771,47 @@
 "verificat": "2026-11-04"
 },
 {
+"titlu": "HEINNER Frigider Side By Side Heinner HSBS-M548NFINVBKE++, 548 L, Clasa E, Full No Frost, Inverter, Control electronic,",
+"pret": 3461.99,
+"imagine": "https://www.dwyn.ro/images/products/img_202606122129/456433/full/heinner-side-by-side-heinner-hsbs-m548nfinvbke-plus-plus-1452247.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Ffrigider%2Fheinner%2F456433-frigider-side-by-side-heinner-hsbs-m548nfinvbke-plus-plus-548-l-clasa-e-full-no-frost-inverter-control-electronic-176-cm-negru%2F",
+"magazin": "dwyn.ro",
+"id": "XNUAQVzN1j0P",
+"brand": "HEINNER",
+"url_magazin": "https://www.dwyn.ro/frigider/heinner/456433-frigider-side-by-side-heinner-hsbs-m548nfinvbke-plus-plus-548-l-clasa-e-full-no-frost-inverter-control-electronic-176-cm-negru/",
+"pret_vechi": null
+},
+{
 "titlu": "MPM Frigider Side By Side MPM-427-SBS-05/NL, Volum Net Frigider 288 l, Congelator 151 l, Clasa E, No Frost, Alb",
-"pret": 4526.99,
+"pret": 4521.99,
 "imagine": "https://www.dwyn.ro/images/products/img_202503142150/274563/full/mpm-frigider-side-by-side-mpm-427-sbs-05-nl-volum-net-frigider-288-l-congelator-151-l-clasa-e-no-frost-alb-720465.jpg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Ffrigider%2Fmpm%2F274563-frigider-side-by-side-mpm-427-sbs-05-nl-volum-net-frigider-288-l-congelator-151-l-clasa-e-no-frost-alb%2F",
 "magazin": "dwyn.ro",
 "id": "o_4dH2e3jarF",
 "brand": "MPM",
 "url_magazin": "https://www.dwyn.ro/frigider/mpm/274563-frigider-side-by-side-mpm-427-sbs-05-nl-volum-net-frigider-288-l-congelator-151-l-clasa-e-no-frost-alb/",
+"pret_vechi": null
+},
+{
+"titlu": "LG Frigider Side by side LG GSBC40PYPE, Capacitate 664 l, No Frost, Compresor Smart Inverter, LINEAR Cooling, Clasa E, H",
+"pret": 5938.99,
+"imagine": "https://www.dwyn.ro/images/products/img_202508191322/318682/full/lg-frigider-side-by-side-lg-gsbc40pype-capacitate-664-l-no-frost-compresor-smart-inverter-linear-cooling-clasa-e-h-179-cm-argintiu-865349.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Ffrigider%2Flg%2F318682-frigider-side-by-side-lg-gsbc40pype-capacitate-664-l-no-frost-compresor-smart-inverter-linear-cooling-clasa-e-h-179-cm-argintiu%2F",
+"magazin": "dwyn.ro",
+"id": "Z8oKmCx5KNaw",
+"brand": "LG",
+"url_magazin": "https://www.dwyn.ro/frigider/lg/318682-frigider-side-by-side-lg-gsbc40pype-capacitate-664-l-no-frost-compresor-smart-inverter-linear-cooling-clasa-e-h-179-cm-argintiu/",
+"pret_vechi": null
+},
+{
+"titlu": "LG Frigider Side by side LG GSLV70PZTE, 635 l, Total No Frost, Dozator apa, Door Cooling, Clasa E, H 179 cm, Argintiu",
+"pret": 6787.99,
+"imagine": "https://www.dwyn.ro/images/products/img_202206212004/187288/full/lg-frigider-side-by-side-lg-gslv70pzte-635-l-total-no-frost-dozator-apa-door-cooling-clasa-e-h-179-cm-argintiu-353918.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Ffrigider%2Flg%2F187288-frigider-side-by-side-lg-gslv70pzte-635-l-total-no-frost-dozator-apa-door-cooling-clasa-e-h-179-cm-argintiu%2F",
+"magazin": "dwyn.ro",
+"id": "9jjgtpQYCmWc",
+"brand": "LG",
+"url_magazin": "https://www.dwyn.ro/frigider/lg/187288-frigider-side-by-side-lg-gslv70pzte-635-l-total-no-frost-dozator-apa-door-cooling-clasa-e-h-179-cm-argintiu/",
 "pret_vechi": null
 }
 ],
@@ -11837,7 +11826,7 @@
 "titlu": "Combine frigorifice",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-15",
+"actualizat": "2026-11-19",
 "feeduri": [
 {
 "id": 1539,
@@ -11866,28 +11855,6 @@
 "verificat": "2026-11-04"
 },
 {
-"titlu": "HEINNER Combina frigorifica Heinner HC-HM313WDE++, 313 l, Clasa E, Dozator de apa, Control electronic cu termostat ajust",
-"pret": 1299.0,
-"imagine": "https://www.dwyn.ro/images/products/img_202606122129/478636/full/heinner-combina-frigorifica-heinner-hc-hm313wde-plus-plus-313-l-clasa-e-dozator-de-apa-control-electronic-cu-termostat-ajustabil-lumina-led-decoratiuni-cromate-h-185-8-cm-alb-1515916.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Ffrigider%2Fheinner%2F478636-combina-frigorifica-heinner-hc-hm313wde-plus-plus-313-l-clasa-e-dozator-de-apa-control-electronic-cu-termostat-ajustabil-lumina-led-decoratiuni-cromate-h-185-8-cm-alb%2F",
-"magazin": "dwyn.ro",
-"id": "6JHBUKhC7noi",
-"brand": "HEINNER",
-"url_magazin": "https://www.dwyn.ro/frigider/heinner/478636-combina-frigorifica-heinner-hc-hm313wde-plus-plus-313-l-clasa-e-dozator-de-apa-control-electronic-cu-termostat-ajustabil-lumina-led-decoratiuni-cromate-h-185-8-cm-alb/",
-"pret_vechi": null
-},
-{
-"titlu": "HEINNER Combina frigorifica Heinner HCNF-HM253INVDGE++, 253 l, Clasa E, No frost, Compresor inverter, Control electronic",
-"pret": 1299.0,
-"imagine": "https://www.dwyn.ro/images/products/img_202512311121/411907/full/heinner-combina-frigorifica-heinner-hcnf-hm253invdge-plus-plus-253-l-clasa-e-no-frost-compresor-inverter-control-electronic-cu-termostat-ajustabil-lumina-led-3-rafturi-din-sticla-frigider-3-sertare-co-1337668.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Ffrigider%2Fheinner%2F411907-combina-frigorifica-heinner-hcnf-hm253invdge-plus-plus-253-l-clasa-e-no-frost-compresor-inverter-control-electronic-cu-termostat-ajustabil-lumina-led-3-rafturi-din-sticla-frigider-3-sertare-congelator%2F",
-"magazin": "dwyn.ro",
-"id": "bIC0y1XUIlrn",
-"brand": "HEINNER",
-"url_magazin": "https://www.dwyn.ro/frigider/heinner/411907-combina-frigorifica-heinner-hcnf-hm253invdge-plus-plus-253-l-clasa-e-no-frost-compresor-inverter-control-electronic-cu-termostat-ajustabil-lumina-led-3-rafturi-din-sticla-frigider-3-sertare-congelator/",
-"pret_vechi": null
-},
-{
 "titlu": "Combina frigorifica HEINNER HCNF-HM293INVDGE++, 293 L, Total No Frost, Clasa E, Lumina LED, H 186 cm (Gri antracit)",
 "pret": 1399.99,
 "imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4316%2F4316478%2Fcombina-frigorifica-heinner-hc-6ab0d08004e41.jpg&type=auto&width=500&sign=UwqXAfU_vRS1xAyY_tT1LOWnd7ckoX5crKMpEsh_itA",
@@ -11898,17 +11865,6 @@
 "url_magazin": "https://www.evomag.ro/electrocasnice-electrocasnice-mari-aparate-frigorifice-combine-frigorifice/heinner-combina-frigorifica-heinner-hcnf-hm293invdge-293-l-total-no-frost-clasa-e-lumina-led-h-186-cm-gri-antracit-4316478.html",
 "pret_vechi": null,
 "verificat": "2026-11-04"
-},
-{
-"titlu": "HEINNER Combina frigorifica Heinner HCNF-HM293INVD, 293 l, Clasa D, No frost, Compresor inverter, Control electronic cu",
-"pret": 1439.0,
-"imagine": "https://www.dwyn.ro/images/products/img_202606122129/478642/full/heinner-combina-frigorifica-heinner-hcnf-hm293invd-293-l-clasa-d-no-frost-compresor-inverter-control-electronic-cu-termostat-ajustabil-lumina-led-h-185-cm-alb-1515934.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Ffrigider%2Fheinner%2F478642-combina-frigorifica-heinner-hcnf-hm293invd-293-l-clasa-d-no-frost-compresor-inverter-control-electronic-cu-termostat-ajustabil-lumina-led-h-185-cm-alb%2F",
-"magazin": "dwyn.ro",
-"id": "bbFj6Y90xLFz",
-"brand": "HEINNER",
-"url_magazin": "https://www.dwyn.ro/frigider/heinner/478642-combina-frigorifica-heinner-hcnf-hm293invd-293-l-clasa-d-no-frost-compresor-inverter-control-electronic-cu-termostat-ajustabil-lumina-led-h-185-cm-alb/",
-"pret_vechi": null
 },
 {
 "titlu": "Combina frigorifica Albatros CF335IME, 248 L, Clasa E, Iluminare LED, Usi reversibile, H 172 cm (Alb)",
@@ -11923,58 +11879,91 @@
 "verificat": "2026-11-04"
 },
 {
-"titlu": "HEINNER Combina frigorifica Heinner HCNF-HM253INVBKE++, 253 l, Clasa E, No frost, Compresor Inverter, Control electronic",
-"pret": 1459.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202512311121/411871/full/heinner-combina-frigorifica-heinner-hcnf-hm253invbke-plus-plus-253-l-clasa-e-no-frost-compresor-inverter-control-electronic-cu-termostat-ajustabil-lumina-led-3-rafturi-de-sticla-frigider-3-sertare-con-1344073.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Ffrigider%2Fheinner%2F411871-combina-frigorifica-heinner-hcnf-hm253invbke-plus-plus-253-l-clasa-e-no-frost-compresor-inverter-control-electronic-cu-termostat-ajustabil-lumina-led-3-rafturi-de-sticla-frigider-3-sertare-congelator-%2F",
+"titlu": "CANDY Combina frigorifica CCH1S518EW, clasa E, H 1,80m, 262 litri, clasa E, 180x55 cm, static, Alb",
+"pret": 1485.99,
+"imagine": "https://www.dwyn.ro/images/products/img_202606122129/478576/full/candy-combina-frigorifica-cch1s518ew-clasa-e-h-1-80m-262-litri-clasa-e-180x55-cm-static-alb-1516006.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Ffrigider%2Fcandy%2F478576-combina-frigorifica-cch1s518ew-clasa-e-h-1-80m-262-litri-clasa-e-180x55-cm-static-alb%2F",
 "magazin": "dwyn.ro",
-"id": "FUWckJppyUf6",
-"brand": "HEINNER",
-"url_magazin": "https://www.dwyn.ro/frigider/heinner/411871-combina-frigorifica-heinner-hcnf-hm253invbke-plus-plus-253-l-clasa-e-no-frost-compresor-inverter-control-electronic-cu-termostat-ajustabil-lumina-led-3-rafturi-de-sticla-frigider-3-sertare-congelator-/",
+"id": "9uXCV4WQK33Q",
+"brand": "CANDY",
+"url_magazin": "https://www.dwyn.ro/frigider/candy/478576-combina-frigorifica-cch1s518ew-clasa-e-h-1-80m-262-litri-clasa-e-180x55-cm-static-alb/",
 "pret_vechi": null
 },
 {
-"titlu": "HEINNER Combina frigorifica Heinner HCNF-HM253INVXE++, 253 l, Clasa E, No frost, Compresor Inverter, Control electronic",
-"pret": 1459.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202512311121/411874/full/heinner-combina-frigorifica-heinner-hcnf-hm253invxe-plus-plus-253-l-clasa-e-no-frost-compresor-inverter-control-electronic-cu-termostat-ajustabil-lumina-led-3-rafturi-de-sticla-frigider-3-sertare-cong-1344316.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Ffrigider%2Fheinner%2F411874-combina-frigorifica-heinner-hcnf-hm253invxe-plus-plus-253-l-clasa-e-no-frost-compresor-inverter-control-electronic-cu-termostat-ajustabil-lumina-led-3-rafturi-de-sticla-frigider-3-sertare-congelator-h%2F",
+"titlu": "HEINNER Combina frigorifica Heinner HC-HM313WDE++, 313 l, Clasa E, Dozator de apa, Control electronic cu termostat ajust",
+"pret": 1494.99,
+"imagine": "https://www.dwyn.ro/images/products/img_202606122129/478636/full/heinner-combina-frigorifica-heinner-hc-hm313wde-plus-plus-313-l-clasa-e-dozator-de-apa-control-electronic-cu-termostat-ajustabil-lumina-led-decoratiuni-cromate-h-185-8-cm-alb-1515916.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Ffrigider%2Fheinner%2F478636-combina-frigorifica-heinner-hc-hm313wde-plus-plus-313-l-clasa-e-dozator-de-apa-control-electronic-cu-termostat-ajustabil-lumina-led-decoratiuni-cromate-h-185-8-cm-alb%2F",
 "magazin": "dwyn.ro",
-"id": "cLVK4F2CY7Cm",
+"id": "6JHBUKhC7noi",
 "brand": "HEINNER",
-"url_magazin": "https://www.dwyn.ro/frigider/heinner/411874-combina-frigorifica-heinner-hcnf-hm253invxe-plus-plus-253-l-clasa-e-no-frost-compresor-inverter-control-electronic-cu-termostat-ajustabil-lumina-led-3-rafturi-de-sticla-frigider-3-sertare-congelator-h/",
+"url_magazin": "https://www.dwyn.ro/frigider/heinner/478636-combina-frigorifica-heinner-hc-hm313wde-plus-plus-313-l-clasa-e-dozator-de-apa-control-electronic-cu-termostat-ajustabil-lumina-led-decoratiuni-cromate-h-185-8-cm-alb/",
 "pret_vechi": null
 },
 {
-"titlu": "HEINNER Combina frigorifica Heinner HCNF-HM291INVWDD, 291 l, Clasa D, No frost, Compresor inverter, Control electronic c",
-"pret": 1479.0,
-"imagine": "https://www.dwyn.ro/images/products/img_202606122129/478645/full/heinner-combina-frigorifica-heinner-hcnf-hm291invwdd-291-l-clasa-d-no-frost-compresor-inverter-control-electronic-cu-termostat-ajustabil-lumina-led-h-185-cm-alb-1515943.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Ffrigider%2Fheinner%2F478645-combina-frigorifica-heinner-hcnf-hm291invwdd-291-l-clasa-d-no-frost-compresor-inverter-control-electronic-cu-termostat-ajustabil-lumina-led-h-185-cm-alb%2F",
+"titlu": "HEINNER Combina frigorifica Heinner HC-HM315E++, 315 l, Clasa E, Control electronic cu termostat ajustabil, Lumina LED,",
+"pret": 1617.99,
+"imagine": "https://www.dwyn.ro/images/products/img_202606122129/478639/full/heinner-combina-frigorifica-heinner-hc-hm315e-plus-plus-315-l-clasa-e-control-electronic-cu-termostat-ajustabil-lumina-led-h-185-8-cm-alb-1515925.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Ffrigider%2Fheinner%2F478639-combina-frigorifica-heinner-hc-hm315e-plus-plus-315-l-clasa-e-control-electronic-cu-termostat-ajustabil-lumina-led-h-185-8-cm-alb%2F",
 "magazin": "dwyn.ro",
-"id": "FYA41LFKCom7",
+"id": "wruwx-6dqTES",
 "brand": "HEINNER",
-"url_magazin": "https://www.dwyn.ro/frigider/heinner/478645-combina-frigorifica-heinner-hcnf-hm291invwdd-291-l-clasa-d-no-frost-compresor-inverter-control-electronic-cu-termostat-ajustabil-lumina-led-h-185-cm-alb/",
+"url_magazin": "https://www.dwyn.ro/frigider/heinner/478639-combina-frigorifica-heinner-hc-hm315e-plus-plus-315-l-clasa-e-control-electronic-cu-termostat-ajustabil-lumina-led-h-185-8-cm-alb/",
 "pret_vechi": null
 },
 {
-"titlu": "HEINNER Combina frigorifica Heinner HCNF-HM293INVDGD, 293 l, Clasa D, No frost, Compresor Inverter, Control electronic c",
-"pret": 1499.0,
-"imagine": "https://www.dwyn.ro/images/products/img_202606122129/478630/full/heinner-combina-frigorifica-heinner-hcnf-hm293invdgd-293-l-clasa-d-no-frost-compresor-inverter-control-electronic-cu-termostat-ajustabil-lumina-led-h-185-cm-gri-antracit-texturat-1515898.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Ffrigider%2Fheinner%2F478630-combina-frigorifica-heinner-hcnf-hm293invdgd-293-l-clasa-d-no-frost-compresor-inverter-control-electronic-cu-termostat-ajustabil-lumina-led-h-185-cm-gri-antracit-texturat%2F",
+"titlu": "HEINNER Combina frigorifica Heinner HC-HM268WDE++, 268L, Clasa E, H 180 cm, Alb",
+"pret": 1674.99,
+"imagine": "https://www.dwyn.ro/images/products/img_202305231058/221328/full/heinner-combina-frigorifica-heinner-hc-hm268wde-plus-plus-268-l-clasa-e-control-electronic-dozator-apa-iluminare-led-h-180-cm-alb-419567.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Ffrigider%2Fheinner%2F221328-combina-frigorifica-heinner-hc-hm268wde-plus-plus-268l-clasa-e-h-180-cm-alb%2F",
 "magazin": "dwyn.ro",
-"id": "mC7yHuQtcpOf",
+"id": "dMxSb1GSyHY-",
 "brand": "HEINNER",
-"url_magazin": "https://www.dwyn.ro/frigider/heinner/478630-combina-frigorifica-heinner-hcnf-hm293invdgd-293-l-clasa-d-no-frost-compresor-inverter-control-electronic-cu-termostat-ajustabil-lumina-led-h-185-cm-gri-antracit-texturat/",
+"url_magazin": "https://www.dwyn.ro/frigider/heinner/221328-combina-frigorifica-heinner-hc-hm268wde-plus-plus-268l-clasa-e-h-180-cm-alb/",
+"pret_vechi": null
+},
+{
+"titlu": "HEINNER Combina frigorifica Heinner HC-HM313XWDE++, 313 l, Clasa E, Dozator de apa, Control electronic cu termostat ajus",
+"pret": 1701.99,
+"imagine": "https://www.dwyn.ro/images/products/img_202606122129/478633/full/heinner-combina-frigorifica-heinner-hc-hm313xwde-plus-plus-313-l-clasa-e-dozator-de-apa-control-electronic-cu-termostat-ajustabil-lumina-led-decoratiuni-cromate-h-185-8-cm-aspect-inox-1515907.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Ffrigider%2Fheinner%2F478633-combina-frigorifica-heinner-hc-hm313xwde-plus-plus-313-l-clasa-e-dozator-de-apa-control-electronic-cu-termostat-ajustabil-lumina-led-decoratiuni-cromate-h-185-8-cm-aspect-inox%2F",
+"magazin": "dwyn.ro",
+"id": "Jrm_XOvfReqj",
+"brand": "HEINNER",
+"url_magazin": "https://www.dwyn.ro/frigider/heinner/478633-combina-frigorifica-heinner-hc-hm313xwde-plus-plus-313-l-clasa-e-dozator-de-apa-control-electronic-cu-termostat-ajustabil-lumina-led-decoratiuni-cromate-h-185-8-cm-aspect-inox/",
+"pret_vechi": null
+},
+{
+"titlu": "MPM Combina frigorifica MPM 182-KB-38W, 173L, Clasa E, Alb",
+"pret": 1757.99,
+"imagine": "https://www.dwyn.ro/images/products/img_202512311121/363866/full/mpm-combined-refrigerator-freezer-mpm-182-kb-38w-white-1028198.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Ffrigider%2Fmpm%2F363866-combina-frigorifica-mpm-182-kb-38w-173l-clasa-e-alb%2F",
+"magazin": "dwyn.ro",
+"id": "UMs6-tau24ad",
+"brand": "MPM",
+"url_magazin": "https://www.dwyn.ro/frigider/mpm/363866-combina-frigorifica-mpm-182-kb-38w-173l-clasa-e-alb/",
 "pret_vechi": null
 },
 {
 "titlu": "Combina frigorifica HEINNER HCNF-HS304XWDE++, 304 l, Clasa E, Full No Frost, Control LED Touch, Dozator de apa, Super Co",
-"pret": 1841.99,
+"pret": 1766.99,
 "imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4212%2F4212879%2Fcombina-frig-heinner-hcnf-hs3-67ea5957d2695.jpg&type=auto&width=500&sign=2SfNPtXO3sI28m-BCO4gc478cyc8PH0YVoTEsfxgr3g",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Felectrocasnice-electrocasnice-mari-aparate-frigorifice-combine-frigorifice%2Fheinner-combina-frigorifica-heinner-hcnf-hs304xwde-304-l-clasa-e-full-no-frost-control-led-touch-dozator-de-apa-super-congelare-h-186-cm-inox-4212879.html",
 "magazin": "evomag.ro",
 "id": "UU8AJSu3PLEQ",
 "brand": "Heinner",
 "url_magazin": "https://www.evomag.ro/electrocasnice-electrocasnice-mari-aparate-frigorifice-combine-frigorifice/heinner-combina-frigorifica-heinner-hcnf-hs304xwde-304-l-clasa-e-full-no-frost-control-led-touch-dozator-de-apa-super-congelare-h-186-cm-inox-4212879.html",
+"pret_vechi": 1841.99
+},
+{
+"titlu": "HEINNER Combina frigorifica Heinner HCNF-HM293INVD, 293 l, Clasa D, No frost, Compresor inverter, Control electronic cu",
+"pret": 1991.99,
+"imagine": "https://www.dwyn.ro/images/products/img_202606122129/478642/full/heinner-combina-frigorifica-heinner-hcnf-hm293invd-293-l-clasa-d-no-frost-compresor-inverter-control-electronic-cu-termostat-ajustabil-lumina-led-h-185-cm-alb-1515934.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Ffrigider%2Fheinner%2F478642-combina-frigorifica-heinner-hcnf-hm293invd-293-l-clasa-d-no-frost-compresor-inverter-control-electronic-cu-termostat-ajustabil-lumina-led-h-185-cm-alb%2F",
+"magazin": "dwyn.ro",
+"id": "bbFj6Y90xLFz",
+"brand": "HEINNER",
+"url_magazin": "https://www.dwyn.ro/frigider/heinner/478642-combina-frigorifica-heinner-hcnf-hm293invd-293-l-clasa-d-no-frost-compresor-inverter-control-electronic-cu-termostat-ajustabil-lumina-led-h-185-cm-alb/",
 "pret_vechi": null
 },
 {
@@ -12001,25 +11990,25 @@
 },
 {
 "titlu": "Combina frigorifica Haier EHD3PWDNPK186, 352 L, Total No Frost, Clasa D, WiFi/ hOn app, Air Surround, MyZone, H 185 cm,",
-"pret": 2799.99,
+"pret": 2615.99,
 "imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4321%2F4321781%2F6ae88e09ef571.jpg&type=auto&width=500&sign=oz-7s0b0KRFvOHWMHQQynaXRENJwG6I7cFAy4Wvur64",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Felectrocasnice-electrocasnice-mari-aparate-frigorifice-combine-frigorifice%2Fhaier-combina-frigorifica-haier-ehd3pwdnpk186-352-l-total-no-frost-clasa-d-wifi-hon-app-air-surround-myzone-h-185-cm-supercooling-superfreezing-inox-4321781.html",
 "magazin": "evomag.ro",
 "id": "GSFOnKUkedMa",
 "brand": "Haier",
 "url_magazin": "https://www.evomag.ro/electrocasnice-electrocasnice-mari-aparate-frigorifice-combine-frigorifice/haier-combina-frigorifica-haier-ehd3pwdnpk186-352-l-total-no-frost-clasa-d-wifi-hon-app-air-surround-myzone-h-185-cm-supercooling-superfreezing-inox-4321781.html",
-"pret_vechi": null
+"pret_vechi": 2799.99
 },
 {
-"titlu": "Combina frigorifica Beko B3RCNA404HXB, 355 l, No Frost, HarvestFresh, AeroFlow, Clasa E, Kitchen Fit, Everfresh+, H 203",
-"pret": 2818.99,
-"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4074%2F4074655%2F63c0fd37cfb4d.jpg&type=auto&width=500&sign=dJkmPLXfROBdUwHtmJG2n4TdL01tF66IqAHIVTcz1bY",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Felectrocasnice-electrocasnice-mari-aparate-frigorifice-combine-frigorifice%2Fbeko-combina-frigorifica-beko-b3rcna404hxb-355-l-no-frost-harvestfresh-aeroflow-clasa-e-kitchen-fit-everfresh-h-203-cm-metal-look-4074655.html",
+"titlu": "Combina frigorifica incorporabila Amica BK3045.4 NF(E), 244L, Clasa E (Alb)",
+"pret": 2622.99,
+"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4321%2F4321779%2F6ae8917d2e44d.png&type=auto&width=500&sign=DC2r3iDxWGJAOYXG6vnImvED0uMt-Duai4INI2cl4PE",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Felectrocasnice-electrocasnice-mari-aparate-frigorifice-combine-frigorifice%2Fhansa-combina-frigorifica-incorporabila-amica-bk3045.4-nf-e-244l-clasa-e-alb-4321779.html",
 "magazin": "evomag.ro",
-"id": "nXZl1KJ43ttb",
-"brand": "Beko",
-"url_magazin": "https://www.evomag.ro/electrocasnice-electrocasnice-mari-aparate-frigorifice-combine-frigorifice/beko-combina-frigorifica-beko-b3rcna404hxb-355-l-no-frost-harvestfresh-aeroflow-clasa-e-kitchen-fit-everfresh-h-203-cm-metal-look-4074655.html",
-"pret_vechi": null
+"id": "_cJKSBFRKKWa",
+"brand": "Hansa",
+"url_magazin": "https://www.evomag.ro/electrocasnice-electrocasnice-mari-aparate-frigorifice-combine-frigorifice/hansa-combina-frigorifica-incorporabila-amica-bk3045.4-nf-e-244l-clasa-e-alb-4321779.html",
+"pret_vechi": 2862.99
 },
 {
 "titlu": "Combina Frigorifica Incorporabila FCB 320 S NE E",
@@ -12101,7 +12090,7 @@
 "titlu": "Roboți de bucătărie",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-15",
+"actualizat": "2026-11-19",
 "feeduri": [
 {
 "id": 9441,
@@ -12146,6 +12135,17 @@
 "verificat": "2026-11-04"
 },
 {
+"titlu": "Robot de bucatarie MPM MRK-17, 800 W, Functie Turbo (Negru/Argintiu)",
+"pret": 352.99,
+"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F3822%2F3822599%2Fmrk-17-611f8548080c8.JPG&type=auto&width=500&sign=J2GcyFXtlNp3SomQLxiUIFhW6EoO8WYxFDmXkl7a5Ug",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Felectrocasnice-roboti-mixere-blendere-roboti-bucatarie%2Fmpm-robot-de-bucatarie-mpm-mrk-17-800-w-functie-turbo-negru-argintiu-3822599.html",
+"magazin": "evomag.ro",
+"id": "2NHhUQW6Z5Ya",
+"brand": "Mpm",
+"url_magazin": "https://www.evomag.ro/electrocasnice-roboti-mixere-blendere-roboti-bucatarie/mpm-robot-de-bucatarie-mpm-mrk-17-800-w-functie-turbo-negru-argintiu-3822599.html",
+"pret_vechi": null
+},
+{
 "titlu": "Robot de bucatarie MORPHY RICHARDS MMI1001, vas 6l, 1300W, 10 trepte viteza, Rosu/Argintiu",
 "pret": 423.99,
 "imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4291%2F4291271%2F69d335554ba1a.jpg&type=auto&width=500&sign=4qb3RynUm13TTKl4QtCcZPFAwNzqpla400IdR0LgVWI",
@@ -12154,20 +12154,8 @@
 "id": "B3pBZUw6ecfX",
 "brand": "Morphy Richards",
 "url_magazin": "https://www.evomag.ro/electrocasnice-roboti-mixere-blendere-roboti-bucatarie/morphy-richards-robot-de-bucatarie-morphy-richards-mmi1001-vas-6l-1300w-10-trepte-viteza-rosu-argintiu-4291271.html",
-"pret_vechi": null,
+"pret_vechi": 429.99,
 "verificat": "2026-11-04"
-},
-{
-"titlu": "Robot de bucatarie Berlinger Haus BH/9511 capacitate - 6l / putere - 1300w. Gri",
-"pret": 483.69,
-"imagine": "https://infinityro.vteximg.com.br/arquivos/ids/271387547/image-3dab4c50477a43a5bfd4370e82f01cfb.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Finfinity.ro%2Frobot-de-bucatarie-berlinger-haus-bh-9511-capacitate-6l-putere-1300w-gri-9098402%2Fp%3Futm_source%3D2performant",
-"magazin": "infinity.ro",
-"id": "uZayYPtYKs0I",
-"brand": "Berlinger Haus",
-"url_magazin": "https://infinity.ro/robot-de-bucatarie-berlinger-haus-bh-9511-capacitate-6l-putere-1300w-gri-9098402/p?utm_source=2performant",
-"pret_vechi": 599.0,
-"verificat": "2026-11-06"
 },
 {
 "titlu": "Robot de bucatarie Philips Viva Collection HR7510/10,800 W, Tehnologie PowerChop, 29 de functii, Vas rezistent de 1.5 L,",
@@ -12241,20 +12229,9 @@
 "verificat": "2026-11-06"
 },
 {
-"titlu": "Robot de bucatarie Ravanson RP-1500BS, 1500 W, 6 trepte viteze, 4.5 L, Blender si Masina de tocat (Negru/Inox)",
-"pret": 571.99,
-"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4311%2F4311045%2Fplanetary-robot-with-ravanson-6a82e5c8be982.jpg&type=auto&width=500&sign=lkrJ53cAL71Wq-i_8OWpjIpaJKSPCWNfSj-hCRtmAhw",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Felectrocasnice-roboti-mixere-blendere-roboti-bucatarie%2Fravanson-robot-de-bucatarie-ravanson-rp-1500bs-1500-w-6-trepte-viteze-4.5-l-blender-si-masina-de-tocat-negru-inox-4311045.html",
-"magazin": "evomag.ro",
-"id": "jvXogGqvO8BD",
-"brand": "Ravanson",
-"url_magazin": "https://www.evomag.ro/electrocasnice-roboti-mixere-blendere-roboti-bucatarie/ravanson-robot-de-bucatarie-ravanson-rp-1500bs-1500-w-6-trepte-viteze-4.5-l-blender-si-masina-de-tocat-negru-inox-4311045.html",
-"pret_vechi": null
-},
-{
 "titlu": "Robot de bucatarie Adler AD 4224, 12 functii",
 "pret": 587.99,
-"imagine": "https://infinityro.vteximg.com.br/arquivos/ids/267474281/5903887803014-R01.jpg",
+"imagine": "https://infinityro.vteximg.com.br/arquivos/ids/276071598/Image-5.jpg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Finfinity.ro%2Frobot-de-bucatarie-adler-ad-4224-12-functii-1372831%2Fp%3Futm_source%3D2performant",
 "magazin": "infinity.ro",
 "id": "Q6OEZEu4C9Fj",
@@ -12300,6 +12277,17 @@
 "verificat": "2026-11-04"
 },
 {
+"titlu": "Robot de bucatarie ETA Gratussino III 3023 90020, 1200W, 4.5 litri, control continuu al vitezei + PULS, negru/gri",
+"pret": 849.65,
+"imagine": "https://infinityro.vteximg.com.br/arquivos/ids/266979676/image-a1302b52da4b40aeb921fc1f5cc8d87d.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Finfinity.ro%2Frobot-de-bucatarie-eta-gratussino-iii-3023-90020-1200w-4-5-litri-control-continuu-al-vitezei---puls-negru-gri-1264928%2Fp%3Futm_source%3D2performant",
+"magazin": "infinity.ro",
+"id": "GXeCiUcX4obd",
+"brand": "ETA",
+"url_magazin": "https://infinity.ro/robot-de-bucatarie-eta-gratussino-iii-3023-90020-1200w-4-5-litri-control-continuu-al-vitezei---puls-negru-gri-1264928/p?utm_source=2performant",
+"pret_vechi": 1525.06
+},
+{
 "titlu": "Robot de bucatarie ETA Gratussino Smart 002390090, 800 W, 4.5 litri, 6 viteze, sistem de amestecare planetar",
 "pret": 996.27,
 "imagine": "https://infinityro.vteximg.com.br/arquivos/ids/270444914/SKU-4221653-Image-1.webp",
@@ -12324,7 +12312,7 @@
 "titlu": "Mixere planetare",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-15",
+"actualizat": "2026-11-19",
 "feeduri": [
 {
 "id": 8969,
@@ -12369,6 +12357,18 @@
 "verificat": "2026-11-04"
 },
 {
+"titlu": "MIXER PLANETAR HEINNER HPM-D750BK",
+"pret": 307.63,
+"imagine": "https://dacris.vteximg.com.br/arquivos/ids/1037408/overlay_40404cdd230c2537ea689b1f4d15e37d.jpg?v=638926307860700000",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dacris.net%2Fhpm-d750bk-mixer-planetar-heinner-hpm-d750bk%2Fp%3FskuId%3D240624",
+"magazin": "dacris.net",
+"id": "EWI5uOd0zPHd",
+"brand": "Heinner",
+"url_magazin": "https://www.dacris.net/hpm-d750bk-mixer-planetar-heinner-hpm-d750bk/p?skuId=240624",
+"pret_vechi": null,
+"verificat": "2026-11-19"
+},
+{
 "titlu": "Mixer planetar Heinner, 1000W, 5L, alb/argintiu",
 "pret": 354.0,
 "imagine": "https://www.mezoni.ro/media/product-images/452d8652-e3a8-5dc5-8d59-6b8cc15400b8/l-mixer-planetar-heinner-1000w-5l-albargintiu.jpg",
@@ -12393,6 +12393,17 @@
 "verificat": "2026-11-06"
 },
 {
+"titlu": "Mixer planetar Fram, 1000W, 5L, verde",
+"pret": 386.0,
+"imagine": "https://www.mezoni.ro/media/product-images/aa0b5314-fa23-5bcb-8593-7da32e79db2b/l-mixer-planetar-fram-1000w-5l-verde.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.mezoni.ro%2Fmixer-planetar-fram-1000w-5l-verde-225605",
+"magazin": "mezoni.ro",
+"id": "ihJPSTX7SwfE",
+"brand": "Fram",
+"url_magazin": "https://www.mezoni.ro/mixer-planetar-fram-1000w-5l-verde-225605",
+"pret_vechi": null
+},
+{
 "titlu": "Mixer planetar Rohnson - R-5551, 750W, 12 viteze, alb",
 "pret": 387.99,
 "imagine": "https://www.ozone.ro/media/catalog/product/p/l/planetaren_mikser_rohnson_r_5551_750w_12_stepeni_byal_1733750298_0.jpg",
@@ -12403,6 +12414,17 @@
 "url_magazin": "https://www.ozone.ro/product/mixer-planetar-rohnson-r-5551-750w-12-viteze-alb-830917/",
 "pret_vechi": null,
 "verificat": "2026-11-04"
+},
+{
+"titlu": "Mixer planetar Heinner, 600W, 3.5L, negru",
+"pret": 392.0,
+"imagine": "https://www.mezoni.ro/media/product-images/d68b6f3b-05d9-5b44-8319-6ee169dfb5a5/l-mixer-planetar-heinner-600w-35l-negru.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.mezoni.ro%2Fmixer-planetar-heinner-600w-35l-negru-225606",
+"magazin": "mezoni.ro",
+"id": "kEek0ha6hZ3v",
+"brand": "Heinner",
+"url_magazin": "https://www.mezoni.ro/mixer-planetar-heinner-600w-35l-negru-225606",
+"pret_vechi": null
 },
 {
 "titlu": "Mixer planetar Techwood TRO-1050, 1000W, 5L, inox, 6 viteze + pulse",
@@ -12561,7 +12583,7 @@
 "titlu": "Cuptoare cu microunde",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-15",
+"actualizat": "2026-11-19",
 "feeduri": [
 {
 "id": 7871,
@@ -12604,6 +12626,17 @@
 "url_magazin": "https://www.evomag.ro/electrocasnice-cuptoare-cu-microunde/beko-cuptor-cu-microunde-beko-moc20100wfb-700-w-20-l-6-trepte-putere-functie-dezghetare-alb-4028037.html",
 "pret_vechi": null,
 "verificat": "2026-11-04"
+},
+{
+"titlu": "Cuptor cu microunde Beko MOC20100BFB, 700 W, 20 L, Functie dezghetare (Negru)",
+"pret": 336.99,
+"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4088%2F4088408%2Fcuptor-cu-microunde-beko-moc20-64368922cb983.JPG&type=auto&width=500&sign=ca_nJOfmZSqCuhz8yifm1vhEpVpRssm77X_8qj7KufA",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Felectrocasnice-cuptoare-cu-microunde%2Fbeko-cuptor-cu-microunde-beko-moc20100bfb-700-w-20-l-functie-dezghetare-negru-4088408.html",
+"magazin": "evomag.ro",
+"id": "jFS6zOXUekCS",
+"brand": "Beko",
+"url_magazin": "https://www.evomag.ro/electrocasnice-cuptoare-cu-microunde/beko-cuptor-cu-microunde-beko-moc20100bfb-700-w-20-l-functie-dezghetare-negru-4088408.html",
+"pret_vechi": 524.99
 },
 {
 "titlu": "Cuptor cu microunde Toshiba MWP-MG20P(BK), 700W, 20 litri, panou mecanic, 5 trepte, grill (Negru)",
@@ -12665,6 +12698,17 @@
 "verificat": "2026-11-04"
 },
 {
+"titlu": "Cuptor cu microunde Amica AMGF20M1GS, 20 L, 700 W, Grill, 5 trepte putere (Negru/Argintiu)",
+"pret": 453.99,
+"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4316%2F4316151%2Famica-amgf20m1gs-microwave-cou-6aabd7859b5ae.jpg&type=auto&width=500&sign=3CryoCwP_Xh5UfnIauCtue6r6KwQ8Kty0ew57sDE_Vw",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Felectrocasnice-cuptoare-cu-microunde%2Famica-cuptor-cu-microunde-amica-amgf20m1gs-20-l-700-w-grill-5-trepte-putere-negru-argintiu-4316151.html",
+"magazin": "evomag.ro",
+"id": "voemuvd0Nak7",
+"brand": "Amica",
+"url_magazin": "https://www.evomag.ro/electrocasnice-cuptoare-cu-microunde/amica-cuptor-cu-microunde-amica-amgf20m1gs-20-l-700-w-grill-5-trepte-putere-negru-argintiu-4316151.html",
+"pret_vechi": null
+},
+{
 "titlu": "Sharp Cuptor cu microunde Sharp R242BKW, 20 l, 800 W, Digital, Negru",
 "pret": 476.99,
 "imagine": "https://www.dwyn.ro/images/products/img_202404261115/245691/full/sharp-cuptor-cu-microunde-sharp-r242bkw-20-l-800-w-digital-negru-535253.jpg",
@@ -12673,40 +12717,6 @@
 "id": "prAhBqiUzBwv",
 "brand": "Sharp",
 "url_magazin": "https://www.dwyn.ro/cuptor-cu-microunde/sharp/245691-cuptor-cu-microunde-sharp-r242bkw-20-l-800-w-digital-negru/",
-"pret_vechi": null,
-"verificat": "2026-11-04"
-},
-{
-"titlu": "Samsung Cuptor cu microunde Samsung MS20A3010AL/EC, 700W, 20L, Temporizator, Negru",
-"pret": 503.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202606122129/425182/full/samsung-ms20a3010al-ec-1371382.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fcuptor-cu-microunde%2Fsamsung%2F425182-cuptor-cu-microunde-samsung-ms20a3010al-ec-700w-20l-temporizator-negru%2F",
-"magazin": "dwyn.ro",
-"id": "QXx9D88lLpa7",
-"brand": "Samsung",
-"url_magazin": "https://www.dwyn.ro/cuptor-cu-microunde/samsung/425182-cuptor-cu-microunde-samsung-ms20a3010al-ec-700w-20l-temporizator-negru/",
-"pret_vechi": null
-},
-{
-"titlu": "Cuptor cu microunde Beko MOC20100BFB, 700 W, 20 L, Functie dezghetare (Negru)",
-"pret": 524.99,
-"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4088%2F4088408%2Fcuptor-cu-microunde-beko-moc20-64368922cb983.JPG&type=auto&width=500&sign=ca_nJOfmZSqCuhz8yifm1vhEpVpRssm77X_8qj7KufA",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Felectrocasnice-cuptoare-cu-microunde%2Fbeko-cuptor-cu-microunde-beko-moc20100bfb-700-w-20-l-functie-dezghetare-negru-4088408.html",
-"magazin": "evomag.ro",
-"id": "jFS6zOXUekCS",
-"brand": "Beko",
-"url_magazin": "https://www.evomag.ro/electrocasnice-cuptoare-cu-microunde/beko-cuptor-cu-microunde-beko-moc20100bfb-700-w-20-l-functie-dezghetare-negru-4088408.html",
-"pret_vechi": null
-},
-{
-"titlu": "Sencor Cuptor cu microunde Sencor SMW 1920RD, 20 l, 700 W, 5 trepte, mecanic, Rosu",
-"pret": 604.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202404261115/245539/full/sencor-cuptor-cu-microunde-sencor-smw-1920rd-20-l-700-w-5-trepte-mecanic-rosu-519957.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fcuptor-cu-microunde%2Fsencor%2F245539-cuptor-cu-microunde-sencor-smw-1920rd-20-l-700-w-5-trepte-mecanic-rosu%2F",
-"magazin": "dwyn.ro",
-"id": "aY0wBDguiAU6",
-"brand": "Sencor",
-"url_magazin": "https://www.dwyn.ro/cuptor-cu-microunde/sencor/245539-cuptor-cu-microunde-sencor-smw-1920rd-20-l-700-w-5-trepte-mecanic-rosu/",
 "pret_vechi": null,
 "verificat": "2026-11-04"
 },
@@ -12755,11 +12765,33 @@
 "id": "2Nj50em4KFeq",
 "brand": "Electrolux",
 "url_magazin": "https://www.evomag.ro/electrocasnice-cuptoare-cu-microunde/electrolux-cuptor-cu-microunde-electrolux-emz421mmti-20-l-800-w-grill-argintiu-4075138.html",
-"pret_vechi": 762.99
+"pret_vechi": null
+},
+{
+"titlu": "Sencor Cuptor cu microunde Sencor SMW 5217SL, 17 L, 800 W (Argintiu)",
+"pret": 660.99,
+"imagine": "https://www.dwyn.ro/images/products/img_202004201336/157326/full/sencor-cuptor-cu-microunde-sencor-smw-5217sl-17-l-800-w-argintiu-250906.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fcuptor-cu-microunde%2Fsencor%2F157326-cuptor-cu-microunde-sencor-smw-5217sl-17-l-800-w-argintiu%2F",
+"magazin": "dwyn.ro",
+"id": "GvbP3fw1gXhp",
+"brand": "Sencor",
+"url_magazin": "https://www.dwyn.ro/cuptor-cu-microunde/sencor/157326-cuptor-cu-microunde-sencor-smw-5217sl-17-l-800-w-argintiu/",
+"pret_vechi": null
+},
+{
+"titlu": "Panasonic Cuptor cu microunde Panasonic, NN-GM22QBEPG, grill, 20 Litri, 800 W, Negru",
+"pret": 667.99,
+"imagine": "https://www.dwyn.ro/images/products/img_202606122129/433804/full/panasonic-cuptor-cu-microunde-panasonic-nn-gm22qbepg-grill-20-litri-800-w-negru-1395010.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fcuptor-cu-microunde%2Fpanasonic%2F433804-cuptor-cu-microunde-panasonic-nn-gm22qbepg-grill-20-litri-800-w-negru%2F",
+"magazin": "dwyn.ro",
+"id": "pv0ssjIVNwG2",
+"brand": "Panasonic",
+"url_magazin": "https://www.dwyn.ro/cuptor-cu-microunde/panasonic/433804-cuptor-cu-microunde-panasonic-nn-gm22qbepg-grill-20-litri-800-w-negru/",
+"pret_vechi": null
 },
 {
 "titlu": "Cuptor cu microunde LG MH6032GAS, 20 L, 700 W, Grill (Negru)",
-"pret": 681.99,
+"pret": 680.99,
 "imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4316%2F4316519%2Flg-mh6032gas-6ab0f51783b6a.jpg&type=auto&width=500&sign=W_dGMipGv8wwOFoLO4sK8R_IAXVLXgKmcSI63Ao3u60",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Felectrocasnice-cuptoare-cu-microunde%2Flg-cuptor-cu-microunde-lg-mh6032gas-20-l-700-w-grill-negru-4316519.html",
 "magazin": "evomag.ro",
@@ -12767,29 +12799,6 @@
 "brand": "LG",
 "url_magazin": "https://www.evomag.ro/electrocasnice-cuptoare-cu-microunde/lg-cuptor-cu-microunde-lg-mh6032gas-20-l-700-w-grill-negru-4316519.html",
 "pret_vechi": null
-},
-{
-"titlu": "Cuptor cu microunde Samsung Bespoke MG23T5018CK/BA, 23 L, 800 W, Grill, 6 trepte putere (Negru)",
-"pret": 699.99,
-"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4316%2F4316507%2Fcuptor-cu-microunde-samsung-be-6ab0eae795bf9.png&type=auto&width=500&sign=Jh__m9HjK9Y4G4KsCt55aKW1H1jAy9AHThhmFxjiqKM",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Felectrocasnice-cuptoare-cu-microunde%2Fsamsung-cuptor-cu-microunde-samsung-bespoke-mg23t5018ck-ba-23-l-800-w-grill-6-trepte-putere-negru-4316507.html",
-"magazin": "evomag.ro",
-"id": "CDXRnF3FWNHr",
-"brand": "Samsung",
-"url_magazin": "https://www.evomag.ro/electrocasnice-cuptoare-cu-microunde/samsung-cuptor-cu-microunde-samsung-bespoke-mg23t5018ck-ba-23-l-800-w-grill-6-trepte-putere-negru-4316507.html",
-"pret_vechi": null
-},
-{
-"titlu": "Cuptor cu microunde BMGB25332BG, Putere 900 W, 25 L, Functie AutoCook, Negru / Gri",
-"pret": 817.94,
-"imagine": "https://infinityro.vteximg.com.br/arquivos/ids/276028021/Image-1.png",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Finfinity.ro%2Fcuptor-cu-microunde-bmgb25332bg-putere-900-w-25-l-functie-autocook-negru-gri-1830714%2Fp%3Futm_source%3D2performant",
-"magazin": "infinity.ro",
-"id": "s4V0TLBEcnlS",
-"brand": "BEKO",
-"url_magazin": "https://infinity.ro/cuptor-cu-microunde-bmgb25332bg-putere-900-w-25-l-functie-autocook-negru-gri-1830714/p?utm_source=2performant",
-"pret_vechi": 1323.2,
-"verificat": "2026-11-04"
 }
 ],
 "magazine": [
@@ -12805,7 +12814,7 @@
 "titlu": "Cuptoare încorporabile",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-15",
+"actualizat": "2026-11-19",
 "feeduri": [
 {
 "id": 1539,
@@ -12822,6 +12831,39 @@
 ],
 "produse": [
 {
+"titlu": "HEINNER Cuptor Incorporabil Heinner HBO-S624LTG-IX, volum: 62L, 4 functii, static, grill, timer, Inox",
+"pret": 833.99,
+"imagine": "https://www.dwyn.ro/images/products/img_201804261137/96590/full/heinner-cuptor-built-in-heinner-hbo-s624ltg-ix-130585.jpeg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fcuptor-incorporabil%2Fheinner%2F96590-cuptor-incorporabil-heinner-hbo-s624ltg-ix-volum-62l-4-functii-static-grill-timer-inox%2F",
+"magazin": "dwyn.ro",
+"id": "tY7WXDfBEVTy",
+"brand": "HEINNER",
+"url_magazin": "https://www.dwyn.ro/cuptor-incorporabil/heinner/96590-cuptor-incorporabil-heinner-hbo-s624ltg-ix-volum-62l-4-functii-static-grill-timer-inox/",
+"pret_vechi": null
+},
+{
+"titlu": "Cuptor incorporabil Nobeltek NBIO-614IX-1, Electric, 5 functii, 3 butoane, timer mecanic, 56L, sticla dubla, ventilator",
+"pret": 884.99,
+"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4263%2F4263246%2Fnbio-614ix-1-69281ffb994bd.jpg&type=auto&width=500&sign=qmfxMBMVZ7QkqwxywPFsH9rhtgrC-bOCzy0vpv4aatg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Felectrocasnice-electrocasnice-mari-cuptoare-incorporabile%2Fnobeltek-cuptor-incorporabil-nobeltek-nbio-614ix-1-electric-5-functii-3-butoane-timer-mecanic-56l-sticla-dubla-ventilator-de-racire-inox-4263246.html",
+"magazin": "evomag.ro",
+"id": "0rIrAeX02K_s",
+"brand": "Nobeltek",
+"url_magazin": "https://www.evomag.ro/electrocasnice-electrocasnice-mari-cuptoare-incorporabile/nobeltek-cuptor-incorporabil-nobeltek-nbio-614ix-1-electric-5-functii-3-butoane-timer-mecanic-56l-sticla-dubla-ventilator-de-racire-inox-4263246.html",
+"pret_vechi": 927.99
+},
+{
+"titlu": "Samus Cuptor incorporabil Samus SC617EXV, 56L",
+"pret": 899.99,
+"imagine": "https://www.dwyn.ro/images/products/img_202305231058/213635/full/samus-cuptor-incorporabil-samus-sc617exv-electric-58-l-7-functii-negru-inox-399619.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fcuptor-incorporabil%2Fsamus%2F213635-cuptor-incorporabil-samus-sc617exv-56l%2F",
+"magazin": "dwyn.ro",
+"id": "P4hD7Hoyvvsh",
+"brand": "Samus",
+"url_magazin": "https://www.dwyn.ro/cuptor-incorporabil/samus/213635-cuptor-incorporabil-samus-sc617exv-56l/",
+"pret_vechi": null
+},
+{
 "titlu": "Cuptor incorporabil Indesit IFW 6530 IX, Electric, Multifunctional, 66 l, Clasa A (Inox)",
 "pret": 899.99,
 "imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4176%2F4176126%2Fcuptor-incorporabil-indesit-if-66b9e597aa6ee.jpg&type=auto&width=500&sign=5vFSBXqhmI5CAtLvRV5b_xqGt4Xtq_bl46M8rxncedo",
@@ -12831,18 +12873,6 @@
 "brand": "Indesit",
 "url_magazin": "https://www.evomag.ro/electrocasnice-electrocasnice-mari-cuptoare-incorporabile/indesit-cuptor-incorporabil-indesit-ifw-6530-ix-electric-multifunctional-66-l-clasa-a-inox-4176126.html",
 "pret_vechi": 1699.99
-},
-{
-"titlu": "CANDY Cuptor electric incorporabil Candy FIDC N100/1, 70L, Negru",
-"pret": 925.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202606122129/439948/full/candy-oven-fidc-n100-1-1417807.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fcuptor-incorporabil%2Fcandy%2F439948-cuptor-electric-incorporabil-candy-fidc-n100-1-70l-negru%2F",
-"magazin": "dwyn.ro",
-"id": "v_D-GVkAyoBM",
-"brand": "CANDY",
-"url_magazin": "https://www.dwyn.ro/cuptor-incorporabil/candy/439948-cuptor-electric-incorporabil-candy-fidc-n100-1-70l-negru/",
-"pret_vechi": null,
-"verificat": "2026-11-04"
 },
 {
 "titlu": "NobeLTek Cuptor incorporabil Nobeltek NBIO-614BK-1, electric, 56L, 5 functii, timer mecanic, ventilator de racire, Negru",
@@ -12867,6 +12897,28 @@
 "url_magazin": "https://www.dwyn.ro/cuptor-incorporabil/nobeltek/186954-cuptor-incorporabil-electric-6-functii-3-butoane-timer-mecanic-76l-sticla-dubla-ventilator-de-racire-inox/",
 "pret_vechi": null,
 "verificat": "2026-11-04"
+},
+{
+"titlu": "Samus Cuptor incorporabil Samus SC456GTXV, 43L",
+"pret": 1004.99,
+"imagine": "https://www.dwyn.ro/images/products/img_202512311121/230967/full/samus-cuptor-incorporabil-samus-sc456gtxv-43l-1296250.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fcuptor-incorporabil%2Fsamus%2F230967-cuptor-incorporabil-samus-sc456gtxv-43l%2F",
+"magazin": "dwyn.ro",
+"id": "nUIqRPT0WrG9",
+"brand": "Samus",
+"url_magazin": "https://www.dwyn.ro/cuptor-incorporabil/samus/230967-cuptor-incorporabil-samus-sc456gtxv-43l/",
+"pret_vechi": null
+},
+{
+"titlu": "Samus Cuptor incorporabil Samus SCE459GTBV, Capacitate 43 litri, 6 functii, Putere totala 1900 W",
+"pret": 1061.99,
+"imagine": "https://www.dwyn.ro/images/products/img_202404261115/230961/full/samus-sce459gtbv-466079.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fcuptor-incorporabil%2Fsamus%2F230961-cuptor-incorporabil-samus-sce459gtbv-capacitate-43-litri-6-functii-putere-totala-1900-w%2F",
+"magazin": "dwyn.ro",
+"id": "gVm6huWMd9m3",
+"brand": "Samus",
+"url_magazin": "https://www.dwyn.ro/cuptor-incorporabil/samus/230961-cuptor-incorporabil-samus-sce459gtbv-capacitate-43-litri-6-functii-putere-totala-1900-w/",
+"pret_vechi": null
 },
 {
 "titlu": "Cuptor incorporabil LDK 1073DC, Clasa A, Capacitate 73 l, 10 functii, Grill, Turbo, Dezghetare, Timer, Iluminare cuptor",
@@ -12915,16 +12967,15 @@
 "pret_vechi": 2299.99
 },
 {
-"titlu": "Cuptor incorporabil Electrolux EOF3H50BK, Electric, 65 l, 9 programe, Convectie, SourroundCook, Grill, Clasa A, Negru",
-"pret": 1414.99,
-"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4028%2F4028054%2F633e896a422c1.jpg&type=auto&width=500&sign=0t9fed_R2o3mbcmlAfF8W4eFuYT3Qp_jKvjcwa78n70",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Felectrocasnice-electrocasnice-mari-cuptoare-incorporabile%2Felectrolux-cuptor-incorporabil-electrolux-eof3h50bk-electric-65-l-9-programe-convectie-sourroundcook-grill-clasa-a-negru-4028054.html",
+"titlu": "Cuptor incorporabil ELECTROLUX EOH3F00BX, Electric, Autocuratare catalitica, 65 l, Clasa A (Inox)",
+"pret": 1499.99,
+"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4206%2F4206404%2Fcuptor-electric-incorporabil-e-67bc5996de592.png&type=auto&width=500&sign=EC3976rZE60QQ6d4YETYKvVDR-j9DxDfZC34_-j_Tk4",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Felectrocasnice-electrocasnice-mari-cuptoare-incorporabile%2Felectrolux-cuptor-incorporabil-electrolux-eoh3f00bx-electric-autocuratare-catalitica-65-l-clasa-a-inox-4206404.html",
 "magazin": "evomag.ro",
-"id": "Zydj97mfIFET",
+"id": "naoaZz1hSnWg",
 "brand": "Electrolux",
-"url_magazin": "https://www.evomag.ro/electrocasnice-electrocasnice-mari-cuptoare-incorporabile/electrolux-cuptor-incorporabil-electrolux-eof3h50bk-electric-65-l-9-programe-convectie-sourroundcook-grill-clasa-a-negru-4028054.html",
-"pret_vechi": null,
-"verificat": "2026-11-04"
+"url_magazin": "https://www.evomag.ro/electrocasnice-electrocasnice-mari-cuptoare-incorporabile/electrolux-cuptor-incorporabil-electrolux-eoh3f00bx-electric-autocuratare-catalitica-65-l-clasa-a-inox-4206404.html",
+"pret_vechi": null
 },
 {
 "titlu": "Cuptor incorporabil ELECTROLUX SurroundCook EOF3H40BK, 65 L, Clasa A, Control Thermotimer (Negru)",
@@ -12938,64 +12989,19 @@
 "pret_vechi": null
 },
 {
-"titlu": "MPM Cuptor electric multifunctional incorporabil MPM-63-BO-30, 76L, clasa A, STEAMCLEAN, Negru",
-"pret": 1604.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202606122129/439936/full/mpm-mpm-63-bo-30-oven-1430542.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fcuptor-incorporabil%2Fmpm%2F439936-cuptor-electric-multifunctional-incorporabil-mpm-63-bo-30-76l-clasa-a-steamclean-negru%2F",
-"magazin": "dwyn.ro",
-"id": "gxLTDKW00Cj_",
-"brand": "MPM",
-"url_magazin": "https://www.dwyn.ro/cuptor-incorporabil/mpm/439936-cuptor-electric-multifunctional-incorporabil-mpm-63-bo-30-76l-clasa-a-steamclean-negru/",
-"pret_vechi": null,
-"verificat": "2026-11-04"
-},
-{
-"titlu": "Cuptor incorporabil Electrolux EOF5H40BX, Electric, 65 L, Grill, Clasa A (Negru/Argintiu)",
-"pret": 1699.99,
-"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4074%2F4074092%2Feof5h40bx-63bd18785c6cd.JPG&type=auto&width=500&sign=mJQzwNHPOJi9Nr4mAjol06Vofjz4FL2uByjBSBW8tRk",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Felectrocasnice-electrocasnice-mari-cuptoare-incorporabile%2Felectrolux-cuptor-incorporabil-electrolux-eof5h40bx-electric-65-l-grill-clasa-a-negru-argintiu-4074092.html",
+"titlu": "Cuptor incorporabil Electrolux EOF5C50BZ, Electric, 65 L, Grill, Clasa A (Negru)",
+"pret": 1636.99,
+"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4074%2F4074093%2Feof5c50bz-63bd1b1ca2004.JPG&type=auto&width=500&sign=BlfR3sT7C6c2_gGGUBCUciiq1hyg6YC7YQZd3pS2dwM",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Felectrocasnice-electrocasnice-mari-cuptoare-incorporabile%2Felectrolux-cuptor-incorporabil-electrolux-eof5c50bz-electric-65-l-grill-clasa-a-negru-4074093.html",
 "magazin": "evomag.ro",
-"id": "TsEOdHE9YSSe",
+"id": "BTtbLkzN4ifz",
 "brand": "Electrolux",
-"url_magazin": "https://www.evomag.ro/electrocasnice-electrocasnice-mari-cuptoare-incorporabile/electrolux-cuptor-incorporabil-electrolux-eof5h40bx-electric-65-l-grill-clasa-a-negru-argintiu-4074092.html",
-"pret_vechi": null
-},
-{
-"titlu": "Electrolux Cuptor electric incorporabil Electrolux SurroundCook EOF5F50BX, 3 niveluri curatare, 65L, Negru-Inox",
-"pret": 1762.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202606122129/439906/full/electrolux-cuptor-electric-electrolux-surroundcook-eof5f50bx-3-niveluri-curatare-eficienta-culoare-inox-1410478.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fcuptor-incorporabil%2Felectrolux%2F439906-cuptor-electric-incorporabil-electrolux-surroundcook-eof5f50bx-3-niveluri-curatare-65l-negru-inox%2F",
-"magazin": "dwyn.ro",
-"id": "_uXScwJUIrzr",
-"brand": "Electrolux",
-"url_magazin": "https://www.dwyn.ro/cuptor-incorporabil/electrolux/439906-cuptor-electric-incorporabil-electrolux-surroundcook-eof5f50bx-3-niveluri-curatare-65l-negru-inox/",
-"pret_vechi": null
-},
-{
-"titlu": "Cuptor incorporabil BOSCH HBF153BB0, Clasa A, Capacitate 66 l, Electric, 5 functii, Grill, Timer, EcoClean (Negru)",
-"pret": 1921.99,
-"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4305%2F4305536%2F6a55ba423bee1.jpg&type=auto&width=500&sign=3ksBNzhOWImROirs7A6vzN6ARY9iD5OWa7SUtiaC_gI",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Felectrocasnice-electrocasnice-mari-cuptoare-incorporabile%2Fbosch-cuptor-incorporabil-bosch-hbf153bb0-clasa-a-capacitate-66-l-electric-5-functii-grill-timer-ecoclean-negru-4305536.html",
-"magazin": "evomag.ro",
-"id": "PcaIobmu47Im",
-"brand": "BOSCH",
-"url_magazin": "https://www.evomag.ro/electrocasnice-electrocasnice-mari-cuptoare-incorporabile/bosch-cuptor-incorporabil-bosch-hbf153bb0-clasa-a-capacitate-66-l-electric-5-functii-grill-timer-ecoclean-negru-4305536.html",
-"pret_vechi": null
-},
-{
-"titlu": "Whirlpool Cuptor electric incorporabil Whirlpool WOI5S8HM1SXA, 73L, Clasa A+, Negru - Otel inoxidabil",
-"pret": 2037.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202606122129/439918/full/whirlpool-oven-woi5s8hm1sxa-1410532.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fcuptor-incorporabil%2Fwhirlpool%2F439918-cuptor-electric-incorporabil-whirlpool-woi5s8hm1sxa-73l-clasa-a-plus-negru-otel-inoxidabil%2F",
-"magazin": "dwyn.ro",
-"id": "DQVu6sjOiXqv",
-"brand": "Whirlpool",
-"url_magazin": "https://www.dwyn.ro/cuptor-incorporabil/whirlpool/439918-cuptor-electric-incorporabil-whirlpool-woi5s8hm1sxa-73l-clasa-a-plus-negru-otel-inoxidabil/",
+"url_magazin": "https://www.evomag.ro/electrocasnice-electrocasnice-mari-cuptoare-incorporabile/electrolux-cuptor-incorporabil-electrolux-eof5c50bz-electric-65-l-grill-clasa-a-negru-4074093.html",
 "pret_vechi": null
 },
 {
 "titlu": "AMICA Cuptor electric incorporabil Amica EB7541B FINE SOFT, 65L, 3,1kW, Negru",
-"pret": 2063.99,
+"pret": 2060.99,
 "imagine": "https://www.dwyn.ro/images/products/img_202606122129/439900/full/amica-oven-eb7541b-fine-soft-1417828.jpg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fcuptor-incorporabil%2Famica%2F439900-cuptor-electric-incorporabil-amica-eb7541b-fine-soft-65l-3-1kw-negru%2F",
 "magazin": "dwyn.ro",

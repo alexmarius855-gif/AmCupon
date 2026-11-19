@@ -1,13 +1,13 @@
 {
-  "generat": "2026-11-18",
-  "total_magazine": 422,
-  "cu_promotie": 72,
+  "generat": "2026-11-19",
+  "total_magazine": 426,
+  "cu_promotie": 73,
   "cu_cod_real": 18,
-  "doar_oferta": 54,
+  "doar_oferta": 55,
   "procent_cu_promotie": 17.1,
-  "procent_cu_cod": 4.3,
-  "reducere_mediana_generala": 40,
-  "magazine_cu_procent_declarat": 49,
+  "procent_cu_cod": 4.2,
+  "reducere_mediana_generala": 45.0,
+  "magazine_cu_procent_declarat": 50,
   "categorii": [
     {
       "slug": "carti-educatie",
@@ -21,7 +21,7 @@
     {
       "slug": "beauty",
       "nume": "Beauty & îngrijire",
-      "magazine": 50,
+      "magazine": 53,
       "cu_promotie": 8,
       "reducere_mediana": 57.5,
       "reducere_max": 80,
@@ -30,7 +30,7 @@
     {
       "slug": "electronice",
       "nume": "Electronice & IT",
-      "magazine": 30,
+      "magazine": 31,
       "cu_promotie": 6,
       "reducere_mediana": 55,
       "reducere_max": 80,
@@ -39,7 +39,7 @@
     {
       "slug": "casa-gradina",
       "nume": "Casă & grădină",
-      "magazine": 95,
+      "magazine": 94,
       "cu_promotie": 17,
       "reducere_mediana": 45.0,
       "reducere_max": 80,
@@ -49,10 +49,10 @@
       "slug": "fashion",
       "nume": "Fashion",
       "magazine": 43,
-      "cu_promotie": 9,
-      "reducere_mediana": 40,
+      "cu_promotie": 10,
+      "reducere_mediana": 45.0,
       "reducere_max": 70,
-      "esantion": 7
+      "esantion": 8
     },
     {
       "slug": "sanatate",
@@ -102,7 +102,7 @@
     {
       "slug": "animale",
       "nume": "Pet shop",
-      "magazine": 13,
+      "magazine": 14,
       "cu_promotie": 2,
       "reducere_mediana": null,
       "reducere_max": null,
@@ -156,8 +156,8 @@
   ],
   "criteriu": "domeniu .ro",
   "international": {
-    "total": 502,
-    "cu_promotie": 75,
+    "total": 500,
+    "cu_promotie": 76,
     "cu_cod": 49
   },
   "retele": [

@@ -1,5 +1,5 @@
 {
-"actualizat": "2026-11-18",
+"actualizat": "2026-11-19",
 "magazine": {
 "10qaroma.ro": {
 "cupoane": "yes",
@@ -436,11 +436,6 @@
 "google_ads": "yes",
 "cashback": "yes"
 },
-"casadecologistics.ro": {
-"cupoane": "yes",
-"google_ads": "yes",
-"cashback": "yes"
-},
 "casaidea.ro": {
 "cupoane": "yes",
 "google_ads": "yes",
@@ -631,6 +626,11 @@
 "google_ads": "yes",
 "cashback": "yes"
 },
+"dogpro.ro": {
+"cupoane": "yes",
+"google_ads": "yes",
+"cashback": "yes"
+},
 "drawdetailing.ro": {
 "cupoane": "yes",
 "google_ads": "yes",
@@ -684,6 +684,11 @@
 "e-roti.ro": {
 "cupoane": "yes",
 "google_ads": "yes",
+"cashback": "yes"
+},
+"ecovent.ro": {
+"cupoane": "yes",
+"google_ads": "no",
 "cashback": "yes"
 },
 "edez.ro": {
@@ -882,11 +887,6 @@
 "cashback": "yes"
 },
 "figurinart.ro": {
-"cupoane": "yes",
-"google_ads": "yes",
-"cashback": "yes"
-},
-"flip.bg": {
 "cupoane": "yes",
 "google_ads": "yes",
 "cashback": "yes"
@@ -1236,6 +1236,11 @@
 "google_ads": "yes",
 "cashback": "yes"
 },
+"kiehls.ro": {
+"cupoane": "yes",
+"google_ads": "no",
+"cashback": "yes"
+},
 "kinderauto.ro": {
 "cupoane": "yes",
 "google_ads": "yes",
@@ -1279,6 +1284,11 @@
 "laicashop.ro": {
 "cupoane": "yes",
 "google_ads": "yes",
+"cashback": "yes"
+},
+"lancome.ro": {
+"cupoane": "yes",
+"google_ads": "no",
 "cashback": "yes"
 },
 "lasebiacasa.ro": {
@@ -1385,6 +1395,11 @@
 "cupoane": "yes",
 "google_ads": "yes",
 "cashback": "maybe"
+},
+"longlash.ro": {
+"cupoane": "yes",
+"google_ads": "yes",
+"cashback": "no"
 },
 "lovepadel.ie": {
 "cupoane": "yes",
@@ -1658,7 +1673,7 @@
 },
 "nobelo.ro": {
 "cupoane": "yes",
-"google_ads": "yes",
+"google_ads": "no",
 "cashback": "yes"
 },
 "nobilacasa.ro": {
@@ -1817,11 +1832,6 @@
 "cashback": "yes"
 },
 "patuldeacasa.ro": {
-"cupoane": "yes",
-"google_ads": "yes",
-"cashback": "yes"
-},
-"pcmadd.com": {
 "cupoane": "yes",
 "google_ads": "yes",
 "cashback": "yes"
