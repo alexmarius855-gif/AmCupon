@@ -260,6 +260,87 @@
 "publicat": true
 },
 {
+"slug": "boxa-portabila",
+"tema": "boxe-bluetooth",
+"tema_nume": "Boxe",
+"titlu": "Boxe portabile",
+"nota": null,
+"in_text": null,
+"actualizat": "2026-11-19",
+"feeduri": [
+{
+"id": 1539,
+"magazin": "dwyn.ro"
+},
+{
+"id": 3250,
+"magazin": "carturesti.ro"
+},
+{
+"id": 3249,
+"magazin": "carturesti.ro"
+},
+{
+"id": 8937,
+"magazin": "dacris.net"
+}
+],
+"produse": [
+{
+"titlu": "Boxa portabila Akai ABTS-V5BL 3W, albstr",
+"pret": 84.78,
+"imagine": "https://dacris.vteximg.com.br/arquivos/ids/829744/Boxa-portabila-Akai-ABTS-V5BL-3W-albstr-0.jpg?v=638962931548330000",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dacris.net%2Fabts-v5bl-boxa-portabila-akai-abts-v5bl-3w--albstr%2Fp%3FskuId%3D229742",
+"magazin": "dacris.net",
+"id": "J0jElFNEZ8bZ",
+"brand": "Akai",
+"url_magazin": "https://www.dacris.net/abts-v5bl-boxa-portabila-akai-abts-v5bl-3w--albstr/p?skuId=229742",
+"pret_vechi": null,
+"verificat": "2026-11-19"
+},
+{
+"titlu": "Boxa portabila Akai ABTS-12C 5W, negru",
+"pret": 113.15,
+"imagine": "https://dacris.vteximg.com.br/arquivos/ids/837530/Boxa-portabila-Akai-ABTS-12C-5W-negru-0.jpg?v=638962152044800000",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dacris.net%2Fabts-12c-boxa-portabila-akai-abts-12c-5w--negru%2Fp%3FskuId%3D12772",
+"magazin": "dacris.net",
+"id": "SjqzPmHZ-vzU",
+"brand": "Akai",
+"url_magazin": "https://www.dacris.net/abts-12c-boxa-portabila-akai-abts-12c-5w--negru/p?skuId=12772",
+"pret_vechi": null,
+"verificat": "2026-11-19"
+},
+{
+"titlu": "Boxa portabila Akai BT 5.0, putere 50W",
+"pret": 244.25,
+"imagine": "https://dacris.vteximg.com.br/arquivos/ids/738363/Boxa-portabila-Akai-BT-5-0-putere-50W-0.jpg?v=638962881900770000",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dacris.net%2Fabts-v20-boxa-portabila-akai-bt-5-0--putere-50w%2Fp%3FskuId%3D227782",
+"magazin": "dacris.net",
+"id": "T5dPvz6mLZJN",
+"brand": "Akai",
+"url_magazin": "https://www.dacris.net/abts-v20-boxa-portabila-akai-bt-5-0--putere-50w/p?skuId=227782",
+"pret_vechi": null,
+"verificat": "2026-11-19"
+},
+{
+"titlu": "Boxa portabila JBL Go 4 IP67 auracast rosu",
+"pret": 255.08,
+"imagine": "https://dacris.vteximg.com.br/arquivos/ids/456472/Boxa-portabila-JBL-Go-4-IP67-auracast-rosu-0.png?v=638962396964230000",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dacris.net%2Fboxa-portabila-jbl-go-4-ip67-auracast-rosu%2Fp%3FskuId%3D222481",
+"magazin": "dacris.net",
+"id": "21KXrYd_aXzy",
+"brand": "Alte brand-uri",
+"url_magazin": "https://www.dacris.net/boxa-portabila-jbl-go-4-ip67-auracast-rosu/p?skuId=222481",
+"pret_vechi": null,
+"verificat": "2026-11-10"
+}
+],
+"magazine": [
+"dacris.net"
+],
+"publicat": true
+},
+{
 "slug": "parfum-dior-sauvage",
 "tema": "parfumuri-barbati",
 "tema_nume": "Parfumuri bărbați",

@@ -104,6 +104,71 @@
     "b_type": "image"
   },
   {
+    "id": 274628,
+    "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/274587/original/274587.png",
+    "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=4705d8dc8&aff_code=541547473&campaign_unique=d9672e7c9",
+    "landing_raw": "https://mobilstore.ro/collections/koff-accesorii-smartwatch-3415",
+    "width": 1080,
+    "height": 1080,
+    "merchant": "mobilstore.ro",
+    "merchant_slug": "mobilstore-ro",
+    "name": "Accesorii smartwatch",
+    "category": "Accesorii smartwatch",
+    "b_type": "image"
+  },
+  {
+    "id": 274622,
+    "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/274581/original/274581.png",
+    "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=aab165daf&aff_code=541547473&campaign_unique=d9672e7c9",
+    "landing_raw": "https://mobilstore.ro/collections/vendors?q=TechSuit",
+    "width": 1080,
+    "height": 1080,
+    "merchant": "mobilstore.ro",
+    "merchant_slug": "mobilstore-ro",
+    "name": "Brand Techsuit",
+    "category": "Brand Techsuit",
+    "b_type": "image"
+  },
+  {
+    "id": 274616,
+    "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/274575/original/274575.png",
+    "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=dc982c880&aff_code=541547473&campaign_unique=d9672e7c9",
+    "landing_raw": "https://mobilstore.ro/collections/koff-folii-telefoane-511",
+    "width": 1080,
+    "height": 1080,
+    "merchant": "mobilstore.ro",
+    "merchant_slug": "mobilstore-ro",
+    "name": "Folii protectie",
+    "category": "Folii protectie",
+    "b_type": "image"
+  },
+  {
+    "id": 274610,
+    "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/274569/original/274569.png",
+    "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=9ae6f302a&aff_code=541547473&campaign_unique=d9672e7c9",
+    "landing_raw": "https://mobilstore.ro/collections/koff-huse-telefoane-103",
+    "width": 1080,
+    "height": 1080,
+    "merchant": "mobilstore.ro",
+    "merchant_slug": "mobilstore-ro",
+    "name": "Huse telefon",
+    "category": "Huse telefon",
+    "b_type": "image"
+  },
+  {
+    "id": 274604,
+    "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/274563/original/274563.png",
+    "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=08c391b61&aff_code=541547473&campaign_unique=d9672e7c9",
+    "landing_raw": "https://mobilstore.ro/collections/black-friday",
+    "width": 1080,
+    "height": 1080,
+    "merchant": "mobilstore.ro",
+    "merchant_slug": "mobilstore-ro",
+    "name": "Black Friday",
+    "category": "Black Friday",
+    "b_type": "image"
+  },
+  {
     "id": 274540,
     "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/274499/original/274499.JPG",
     "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=f256de08d&aff_code=541547473&campaign_unique=9a6f02fef",
@@ -114,19 +179,6 @@
     "merchant_slug": "libris-ro",
     "name": "Outlet de Carte cu până la -83% Titluri mari la prețuri mici!",
     "category": "Outlet de Carte cu până la -83% Titluri mari la prețuri mici!",
-    "b_type": "image"
-  },
-  {
-    "id": 274525,
-    "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/274484/original/274484.jpg",
-    "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=c5b6b6411&aff_code=541547473&campaign_unique=573b44539",
-    "landing_raw": "https://www.aosom.ro/activity/black-friday",
-    "width": 1200,
-    "height": 1200,
-    "merchant": "aosom.ro ",
-    "merchant_slug": "aosom-ro",
-    "name": "BLACK FRIDAY",
-    "category": "BLACK FRIDAY",
     "b_type": "image"
   }
 ]
