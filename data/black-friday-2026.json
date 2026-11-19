@@ -154,17 +154,17 @@
   },
   "2026-11-19": {
    "zi": "2026-11-19",
-   "produse_urmarite": 3994,
+   "produse_urmarite": 4001,
    "excluse": 7,
-   "ieftinite": 276,
-   "reale": 247,
-   "nu_sub_minim": 29,
+   "ieftinite": 294,
+   "reale": 263,
+   "nu_sub_minim": 31,
    "pct_reale_din_ieftinite": 89.5,
-   "mediana_reducere_reala_pct": 14.3,
+   "mediana_reducere_reala_pct": 14.9,
    "mediana_reducere_aparenta_pct": 10.0,
-   "scumpite": 271,
-   "neschimbate": 3447,
-   "scumpite_in_luna_dinainte": 211,
+   "scumpite": 262,
+   "neschimbate": 3445,
+   "scumpite_in_luna_dinainte": 212,
    "pct_scumpite_in_luna_dinainte": 5.3
   }
  }
