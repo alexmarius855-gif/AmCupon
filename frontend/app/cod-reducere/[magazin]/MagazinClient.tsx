@@ -498,7 +498,7 @@ export default function MagazinClient({ magazin: m, produse = [], similare = [],
               </div>
               <div className="grid sm:grid-cols-2 gap-2.5">
                 {comparatii.map(c => (
-                  <Link key={c.slug} href={`/comparații/${c.slug}`}
+                  <Link key={c.slug} href={`/comparatii/${c.slug}`}
                     className="flex items-center justify-between gap-3 px-4 py-3 bg-[var(--surface)] rounded-xl border border-[var(--border)] hover:border-[var(--border-strong)] transition-colors">
                     <span className="text-sm font-bold text-[var(--text-soft)]">{c.label}</span>
                     <span className="text-xs font-semibold text-[var(--text-muted)] whitespace-nowrap">Compară →</span>
