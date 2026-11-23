@@ -608,15 +608,26 @@ def curata_promotii(magazine: list, azi: str = None) -> dict:
         if vechi and not pastrate:
             st["magazine_golite"].append(m.get("magazin", "?"))
         m["promotii"] = pastrate
-        flaguri = (
-            bool(pastrate),
-            any((p.get("cod_cupon") or "").strip() for p in pastrate),
-            min((p["zile_ramase"] for p in pastrate), default=FARA_DATA),
-        )
-        if (m.get("are_promotie"), m.get("cod_cupon"), m.get("zile_ramase")) != flaguri:
+        if recalculeaza_flaguri(m):
             st["flaguri"] += 1
-        m["are_promotie"], m["cod_cupon"], m["zile_ramase"] = flaguri
     return st
+
+
+def recalculeaza_flaguri(m: dict) -> bool:
+    """are_promotie / cod_cupon / zile_ramase ale magazinului, din promotiile lui. Intoarce True daca s-au schimbat.
+
+    Sursa unica: o folosesc curata_promotii si carantina_date.py. 23.11.2026: carantina scotea oferta stricata a lui
+    iaohi.com fara sa recalculeze etichetele, iar garda (verifica_promotii.py, „flaguri") a oprit publicarea 19-23.11.
+    """
+    promotii = [p for p in (m.get("promotii") or []) if isinstance(p, dict)]
+    flaguri = (
+        bool(promotii),
+        any((p.get("cod_cupon") or "").strip() for p in promotii),
+        min((p["zile_ramase"] for p in promotii if isinstance(p.get("zile_ramase"), int)), default=FARA_DATA),
+    )
+    schimbat = (m.get("are_promotie"), m.get("cod_cupon"), m.get("zile_ramase")) != flaguri
+    m["are_promotie"], m["cod_cupon"], m["zile_ramase"] = flaguri
+    return schimbat
 
 
 def raport(st: dict) -> str:

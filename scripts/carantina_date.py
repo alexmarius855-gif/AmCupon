@@ -25,6 +25,7 @@ import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from verifica_text import REGULI  # noqa: E402
+from promotii import recalculeaza_flaguri  # noqa: E402
 
 PUBLIC = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "frontend", "public")
 FISIERE = ["products.json", "output.json", "criterii.json", "nav-index.json", "products-home.json", "scaderi-pret.json",
@@ -108,6 +109,11 @@ def carantina(director: str = PUBLIC) -> int:
                   "fisierul ramane neatins si publicarea se opreste.")
             oprit = True
             continue
+        # O oferta scoasa schimba si etichetele magazinului („are cod"), altfel garda opreste publicarea.
+        if f in MAGAZINE_PE_PRIMUL_NIVEL and isinstance(curate, list):
+            for m in curate:
+                if isinstance(m, dict) and isinstance(m.get("promotii"), list):
+                    recalculeaza_flaguri(m)
         io.open(cale, "w", encoding="utf-8", newline="").write(json.dumps(curate, ensure_ascii=False, separators=(",", ":")))
         total += len(jurnal)
     if oprit:
@@ -130,7 +136,10 @@ def test() -> int:
         prod = [{"title": f"Carte {i}", "price": 10} for i in range(60)] + [{"title": "Training Day - Ra�l The Third", "price": 50}]
         json.dump({"updated": "x", "products": prod}, io.open(os.path.join(d, "products.json"), "w", encoding="utf-8"))
         mag = [{"magazin": "a.ro", "descriere": "Jusqu'Ã  45 % de rÃ©duction", "promotii": [{"nume": "Bun"}, {"nume": "undefined"}]},
-               {"magazin": "b.ro", "descriere": "Corect"}]
+               {"magazin": "b.ro", "descriere": "Corect"},
+               # 23.11.2026: singura oferta (cu cod) iese -> magazinul nu mai poate spune „are cod".
+               {"magazin": "iaohi.com", "are_promotie": True, "cod_cupon": True, "zile_ramase": 5,
+                "promotii": [{"nume": "AOHI Black Friday is officially LIVE �", "cod_cupon": "BF", "zile_ramase": 5}]}]
         json.dump(mag, io.open(os.path.join(d, "output.json"), "w", encoding="utf-8"))
         json.dump({"criterii": [{"slug": "x", "produse": [{"titlu": "Inel argint"}, {"titlu": "Inel cu piatrÃ© naturala"}]}]},
                   io.open(os.path.join(d, "criterii.json"), "w", encoding="utf-8"))
@@ -140,7 +149,8 @@ def test() -> int:
         c = json.load(io.open(os.path.join(d, "criterii.json"), encoding="utf-8"))["criterii"][0]["produse"]
         v("produsul cu caracter pierdut iese", any("�" in x["title"] for x in p), False)
         v("produsele bune raman", len(p), 60)
-        v("magazinul ramane", [m["magazin"] for m in o], ["a.ro", "b.ro"])
+        v("magazinul ramane", [m["magazin"] for m in o], ["a.ro", "b.ro", "iaohi.com"])
+        v("fara oferta, magazinul nu mai are etichetele de oferta si cod", (o[2]["are_promotie"], o[2]["cod_cupon"]), (False, False))
         v("descrierea stricata a magazinului e golita", o[0]["descriere"], "")
         v("oferta undefined iese, cea buna ramane", [x["nume"] for x in o[0]["promotii"]], ["Bun"])
         v("produsul de pe /alege cu mojibake iese", [x["titlu"] for x in c], ["Inel argint"])
