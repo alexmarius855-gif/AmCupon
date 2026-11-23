@@ -1,5 +1,5 @@
 {
-"actualizat": "2026-11-19",
+"actualizat": "2026-11-23",
 "magazine": {
 "10qaroma.ro": {
 "cupoane": "yes",
@@ -156,11 +156,6 @@
 "google_ads": "yes",
 "cashback": "yes"
 },
-"arabescu.ro": {
-"cupoane": "yes",
-"google_ads": "no",
-"cashback": "yes"
-},
 "arashop.ro": {
 "cupoane": "yes",
 "google_ads": "no",
@@ -274,11 +269,6 @@
 "baseone.ro": {
 "cupoane": "yes",
 "google_ads": "no",
-"cashback": "yes"
-},
-"baterii-lux.ro": {
-"cupoane": "yes",
-"google_ads": "yes",
 "cashback": "yes"
 },
 "bazaiot.ro": {
@@ -436,6 +426,11 @@
 "google_ads": "yes",
 "cashback": "yes"
 },
+"casadecologistics.ro": {
+"cupoane": "yes",
+"google_ads": "yes",
+"cashback": "yes"
+},
 "casaidea.ro": {
 "cupoane": "yes",
 "google_ads": "yes",
@@ -510,6 +505,11 @@
 "cupoane": "yes",
 "google_ads": "yes",
 "cashback": "yes"
+},
+"completpetshop.ro": {
+"cupoane": "maybe",
+"google_ads": "yes",
+"cashback": "maybe"
 },
 "conectica.ro": {
 "cupoane": "maybe",
@@ -636,6 +636,11 @@
 "google_ads": "yes",
 "cashback": "yes"
 },
+"drcalm.ro": {
+"cupoane": "yes",
+"google_ads": "no",
+"cashback": "yes"
+},
 "dreamramp.ro": {
 "cupoane": "yes",
 "google_ads": "yes",
@@ -644,11 +649,6 @@
 "drmax.ro": {
 "cupoane": "yes",
 "google_ads": "no",
-"cashback": "yes"
-},
-"druzy.ro": {
-"cupoane": "yes",
-"google_ads": "yes",
 "cashback": "yes"
 },
 "dualhome.ro": {
@@ -684,11 +684,6 @@
 "e-roti.ro": {
 "cupoane": "yes",
 "google_ads": "yes",
-"cashback": "yes"
-},
-"ecovent.ro": {
-"cupoane": "yes",
-"google_ads": "no",
 "cashback": "yes"
 },
 "edez.ro": {
@@ -986,11 +981,6 @@
 "google_ads": "yes",
 "cashback": "yes"
 },
-"gorillasports.ro": {
-"cupoane": "yes",
-"google_ads": "yes",
-"cashback": "yes"
-},
 "gossi.ro": {
 "cupoane": "yes",
 "google_ads": "yes",
@@ -1097,6 +1087,11 @@
 "cashback": "yes"
 },
 "hygiero.ro": {
+"cupoane": "yes",
+"google_ads": "yes",
+"cashback": "yes"
+},
+"hyllanpharma.ro": {
 "cupoane": "yes",
 "google_ads": "yes",
 "cashback": "yes"
@@ -1316,11 +1311,6 @@
 "google_ads": "no",
 "cashback": "yes"
 },
-"lesami.ro": {
-"cupoane": "yes",
-"google_ads": "yes",
-"cashback": "yes"
-},
 "libhumanitas.ro": {
 "cupoane": "yes",
 "google_ads": "yes",
@@ -1466,11 +1456,6 @@
 "google_ads": "yes",
 "cashback": "yes"
 },
-"maranc.ro": {
-"cupoane": "yes",
-"google_ads": "yes",
-"cashback": "yes"
-},
 "marketgarage.ro": {
 "cupoane": "yes",
 "google_ads": "yes",
@@ -1553,7 +1538,7 @@
 },
 "mobilalaguna.ro": {
 "cupoane": "yes",
-"google_ads": "yes",
+"google_ads": "no",
 "cashback": "yes"
 },
 "mobilasimalex.ro": {
@@ -1681,6 +1666,11 @@
 "google_ads": "yes",
 "cashback": "yes"
 },
+"nomadparts.ro": {
+"cupoane": "yes",
+"google_ads": "yes",
+"cashback": "yes"
+},
 "noriel.ro": {
 "cupoane": "yes",
 "google_ads": "no",
@@ -1689,6 +1679,11 @@
 "notino.ro": {
 "cupoane": "yes",
 "google_ads": "no",
+"cashback": "yes"
+},
+"nova-calma.ro": {
+"cupoane": "yes",
+"google_ads": "yes",
 "cashback": "yes"
 },
 "novambient.ro": {
@@ -1936,11 +1931,6 @@
 "google_ads": "no",
 "cashback": "yes"
 },
-"primefarma.ro": {
-"cupoane": "yes",
-"google_ads": "yes",
-"cashback": "yes"
-},
 "printingmall.ro": {
 "cupoane": "yes",
 "google_ads": "yes",
@@ -2111,17 +2101,17 @@
 "google_ads": "maybe",
 "cashback": "yes"
 },
+"sellect.ro": {
+"cupoane": "yes",
+"google_ads": "yes",
+"cashback": "yes"
+},
 "sellex.ro": {
 "cupoane": "yes",
 "google_ads": "maybe",
 "cashback": "yes"
 },
 "sevensins.ro": {
-"cupoane": "yes",
-"google_ads": "yes",
-"cashback": "yes"
-},
-"sevich.ro": {
 "cupoane": "yes",
 "google_ads": "yes",
 "cashback": "yes"
@@ -2296,27 +2286,12 @@
 "google_ads": "yes",
 "cashback": "yes"
 },
-"timebox.ro": {
-"cupoane": "yes",
-"google_ads": "yes",
-"cashback": "yes"
-},
-"topline.ro": {
-"cupoane": "yes",
-"google_ads": "yes",
-"cashback": "yes"
-},
 "toronero.ro": {
 "cupoane": "yes",
 "google_ads": "yes",
 "cashback": "yes"
 },
 "trada.ro": {
-"cupoane": "yes",
-"google_ads": "yes",
-"cashback": "yes"
-},
-"trendifystore.ro": {
 "cupoane": "yes",
 "google_ads": "yes",
 "cashback": "yes"
@@ -2332,11 +2307,6 @@
 "cashback": "yes"
 },
 "twindeco.ro": {
-"cupoane": "yes",
-"google_ads": "yes",
-"cashback": "yes"
-},
-"udobni.bg": {
 "cupoane": "yes",
 "google_ads": "yes",
 "cashback": "yes"
@@ -2426,6 +2396,11 @@
 "google_ads": "no",
 "cashback": "yes"
 },
+"vioricacosmetic.ro": {
+"cupoane": "yes",
+"google_ads": "yes",
+"cashback": "yes"
+},
 "vivadeco.ro": {
 "cupoane": "yes",
 "google_ads": "yes",
@@ -2464,11 +2439,6 @@
 "xkids.ro": {
 "cupoane": "yes",
 "google_ads": "yes",
-"cashback": "yes"
-},
-"xxxlutz.ro": {
-"cupoane": "yes",
-"google_ads": "maybe",
 "cashback": "yes"
 },
 "yny.ro": {

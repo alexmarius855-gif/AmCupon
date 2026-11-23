@@ -1,11 +1,11 @@
 {
  "_nota": "Generat de scripts/calendar_black_friday.py din promotiile anuntate de magazine in 2Performant (data/promotii_2p.csv si ofertele 2P active din output.json). Doar parteneri cu link platit. Nu edita de mana.",
- "generat": "2026-11-19",
+ "generat": "2026-11-23",
  "categorii": [
   {
    "slug": "casa-gradina",
    "nume": "casă și grădină",
-   "campanii": 24
+   "campanii": 23
   },
   {
    "slug": "fashion",
@@ -35,7 +35,7 @@
   {
    "slug": "sanatate",
    "nume": "sănătate",
-   "campanii": 12
+   "campanii": 14
   },
   {
    "slug": "auto-moto",
@@ -232,7 +232,7 @@
    "nota": "BLACK FRIDAY MARANC: Performanța ta merită răsplătită!",
    "descriere": "Un cuțit bun nu este doar un instrument de bucătărie. Este o investiție în pasiunea pentru gătit, precizie și calitate. De Black Friday, MARANC îți aduce cuțite profesionale la prețuri speciale, create pentru cei care iubesc să gătească și apreciază lucrurile bine făcute. De ce să alegi MARANC? Garanție de 45 de ani – calitate în care poți avea încredere, ani la rând.",
    "are_cod": false,
-   "categorie": "casa-gradina"
+   "categorie": "online-mall"
   },
   {
    "magazin": "sevensins.ro",
@@ -263,16 +263,6 @@
    "descriere": "Descoperă ofertele Black Friday și alege echipamentele potrivite pentru proiectele tale, cât timp produsele sunt în stoc.",
    "are_cod": false,
    "categorie": "casa-gradina"
-  },
-  {
-   "magazin": "gorillasports.ro",
-   "nume": "Gorillasports",
-   "start": "2026-11-02",
-   "final": "2026-11-08",
-   "nota": "BLACK FRIDAY",
-   "descriere": "Reduceri pana la -80% la echipamente fitness, in perioada 02.11 - 08.11, in limita stocului disponibil.",
-   "are_cod": false,
-   "categorie": "sport"
   },
   {
    "magazin": "store.irinareisler.ro",
@@ -729,7 +719,7 @@
    "nume": "Kinderauto",
    "start": "2026-11-06",
    "final": "2026-11-15",
-   "nota": "Black Friday Kinderauto.ro 2026 | Kit Media disponibil!",
+   "nota": "",
    "descriere": "Transport GRATUIT la orice produs, indiferent de valoarea comenzii. 24 de luni garanție pentru produsele comercializate. Puncte de fidelitate – 1 punct = 1 leu. Suport personalizat 1:1 pentru montaj, prin telefon sau apel video. Plată în rate fără dobândă, prin cardurile de cumpărături eligibile. Credit 100% online sau Buy Now, Pay Later, direct din pagina de finalizare a comenzii, prin partenerii Leanpay, TBI Bank, Mokka și Oney.",
    "are_cod": false,
    "categorie": "copii"
@@ -1163,6 +1153,26 @@
    "descriere": "Reduceri de pana la 70% la o selectie de cărți.",
    "are_cod": false,
    "categorie": "carti-educatie"
+  },
+  {
+   "magazin": "boost4life.ro",
+   "nume": "Boost4life",
+   "start": "2026-11-20",
+   "final": "2026-11-30",
+   "nota": "BLACK FRIDAY BOOST4LIFE 2026",
+   "descriere": "Reduceri de până la 30% la gama Boost4Life, în perioada 20–30 noiembrie. -30% la D3 2000 UI și D3 5000 UI Forte. -20% la restul gamei. Boost4Life: formule clare, loturi testate independent.",
+   "are_cod": false,
+   "categorie": "sanatate"
+  },
+  {
+   "magazin": "brainmarket.ro",
+   "nume": "Brainmarket",
+   "start": "2026-11-20",
+   "final": "2026-11-27",
+   "nota": "Black Friday revine pe BrainMarket",
+   "descriere": "Black Friday continuă cu o nouă rundă pe BrainMarket! În perioada 20–27 noiembrie 2026, ai −15% la toate produsele brainmax. Descoperă formule pentru rutina zilnică, energie, focus, somn, imunitate, sport, nutriție și multe altele, acum la un preț special. Profită de Black Friday Round 2 și alege produsele Brainmax potrivite pentru tine. Oferta este valabilă în perioada 10–27 noiembrie 2026.",
+   "are_cod": false,
+   "categorie": "sanatate"
   },
   {
    "magazin": "doctorshield.ro",

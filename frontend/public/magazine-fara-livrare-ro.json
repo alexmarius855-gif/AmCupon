@@ -1194,6 +1194,16 @@
   ]
  },
  {
+  "magazin": "valerion.com",
+  "url": "https://www.valerion.com/de",
+  "categorie": "Electronice IT&C",
+  "categorie_slug": "electronics-itc",
+  "program": "valerion.de",
+  "regiuni": [
+   "GERMANY"
+  ]
+ },
+ {
   "magazin": "vikingbeardgear.com",
   "url": "https://vikingbeardgear.com/",
   "categorie": "Diverse",

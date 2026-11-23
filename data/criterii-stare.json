@@ -1,5 +1,5 @@
 {
-"actualizat": "2026-11-19",
+"actualizat": "2026-11-23",
 "criterii": [
 {
 "slug": "masina-de-spalat-6-kg",
@@ -8,7 +8,7 @@
 "titlu": "Mașini de spălat de 6 kg",
 "nota": "Capacitatea se referă la greutatea rufelor uscate pe care le poți pune o dată în cuvă.",
 "in_text": "\\b6\\s*kg\\b",
-"actualizat": "2026-11-16",
+"actualizat": "2026-11-23",
 "feeduri": [
 {
 "id": 1539,
@@ -27,17 +27,6 @@
 "url_magazin": "https://www.dwyn.ro/masina-de-spalat-rufe/heinner/282105-masina-de-spalat-rufe-slim-heinner-hwm-m6010smd-plus-plus-6-kg-1000-rpm-clasa-d-dislay-digital-blocare-acces-copii-alb/",
 "pret_vechi": null,
 "verificat": "2026-11-04"
-},
-{
-"titlu": "Samsung Masina de spalat rufe slim Samsung WW60A3120WE/LE, 6 kg, 1200 RPM, Clasa C, Hygiene Steam, Quick Wash 15 min, Al",
-"pret": 1837.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202508191322/320407/full/samsung-masina-de-spalat-rufe-slim-samsung-ww60a3120we-le-6-kg-1200-rpm-clasa-c-hygiene-steam-quick-wash-15-min-alb-938615.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fmasina-de-spalat-rufe%2Fsamsung%2F320407-masina-de-spalat-rufe-slim-samsung-ww60a3120we-le-6-kg-1200-rpm-clasa-c-hygiene-steam-quick-wash-15-min-alb%2F",
-"magazin": "dwyn.ro",
-"id": "rvDrwtu60f9K",
-"brand": "Samsung",
-"url_magazin": "https://www.dwyn.ro/masina-de-spalat-rufe/samsung/320407-masina-de-spalat-rufe-slim-samsung-ww60a3120we-le-6-kg-1200-rpm-clasa-c-hygiene-steam-quick-wash-15-min-alb/",
-"pret_vechi": null
 },
 {
 "titlu": "Samsung Masina de spalat rufe Slim Samsung WW60A3120BE/LE, 6 kg, Clasa C, 1200 RPM, Hygiene Steam, Alb",
@@ -74,6 +63,17 @@
 "url_magazin": "https://www.dwyn.ro/masina-de-spalat-rufe/candy/380072-masina-de-spalat-rufe-candy-gd-06ss6-s-6-kg-1000-rpm-clasa-a-slim/",
 "pret_vechi": null,
 "verificat": "2026-11-04"
+},
+{
+"titlu": "Electrolux EW6TN3262H Masina de spalat cu incarcare superioara PerfectCare, 6 kg, 1200 rpm, TimeManager, Alb",
+"pret": 4013.99,
+"imagine": "https://www.dwyn.ro/images/products/img_202206212004/189299/full/electrolux-electrolux-ew6tn3262h-masina-de-spalat-cu-incarcare-superioara-perfectcare-6-kg-1200-rpm-timemanager-alb-355052.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fmasina-de-spalat-rufe%2Felectrolux%2F189299-electrolux-ew6tn3262h-masina-de-spalat-cu-incarcare-superioara-perfectcare-6-kg-1200-rpm-timemanager-alb%2F",
+"magazin": "dwyn.ro",
+"id": "7-ZS9ZlY3NdE",
+"brand": "Electrolux",
+"url_magazin": "https://www.dwyn.ro/masina-de-spalat-rufe/electrolux/189299-electrolux-ew6tn3262h-masina-de-spalat-cu-incarcare-superioara-perfectcare-6-kg-1200-rpm-timemanager-alb/",
+"pret_vechi": null
 }
 ],
 "magazine": [
@@ -87,7 +87,7 @@
 "titlu": "Mașini de spălat de 7 kg",
 "nota": "Capacitatea se referă la greutatea rufelor uscate pe care le poți pune o dată în cuvă.",
 "in_text": "\\b7\\s*kg\\b",
-"actualizat": "2026-11-16",
+"actualizat": "2026-11-23",
 "feeduri": [
 {
 "id": 1539,
@@ -108,16 +108,26 @@
 ],
 "produse": [
 {
+"titlu": "Ravanson Masina de spalat rufe Ravanson XPB-70, 7kg, 2 programe, alb",
+"pret": 733.99,
+"imagine": "https://www.dwyn.ro/images/products/img_202512311121/364322/full/ravanson-masina-de-spalat-rufe-ravanson-xpb-70-7kg-2-programe-alb-1078667.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fmasina-de-spalat-rufe%2Fravanson%2F364322-masina-de-spalat-rufe-ravanson-xpb-70-7kg-2-programe-alb%2F",
+"magazin": "dwyn.ro",
+"id": "bH2sdqr63uy0",
+"brand": "Ravanson",
+"url_magazin": "https://www.dwyn.ro/masina-de-spalat-rufe/ravanson/364322-masina-de-spalat-rufe-ravanson-xpb-70-7kg-2-programe-alb/",
+"pret_vechi": null
+},
+{
 "titlu": "Masina de spalat rufe semi-automata Nobeltek NSWM 7.3B, 7 kg spalare, 3 kg stoarecere, 300W spalare, 148W stoarcere, eva",
-"pret": 884.99,
-"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4263%2F4263243%2Fmasina-de-spalat-rufe-semi-aut-692813b254836.jpg&type=auto&width=500&sign=yP5HXA6TqAR524nG_x-y5aHAEo-P6vq-0q3fExZsW4w",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Felectrocasnice-electrocasnice-mari-masini-de-spalat-rufe-si-accesorii-masini-de-spalat-rufe%2Fnobeltek-masina-de-spalat-rufe-semi-automata-nobeltek-nswm-7.3b-7-kg-spalare-3-kg-stoarecere-300w-spalare-148w-stoarcere-evacuare-apa-uzata-prin-cadere-libera-alb-albastru-4263243.html",
+"pret": 758.99,
+"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4263%2F4263244%2Fnswm-73r-692813d33eff4.jpg&type=auto&width=500&sign=K5ZdSQYZniv04RBGndeO8HBn-dLjQ728W6tDOVxL5bI",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Felectrocasnice-electrocasnice-mari-masini-de-spalat-rufe-si-accesorii-masini-de-spalat-rufe%2Fnobeltek-masina-de-spalat-rufe-semi-automata-nobeltek-nswm-7.3b-7-kg-spalare-3-kg-stoarecere-300w-spalare-148w-stoarcere-evacuare-apa-uzata-prin-cadere-libera-alb-rosu-4263244.html",
 "magazin": "evomag.ro",
-"id": "sCIB7l2_Bxjz",
+"id": "dFb9_tnkGi2K",
 "brand": "Nobeltek",
-"url_magazin": "https://www.evomag.ro/electrocasnice-electrocasnice-mari-masini-de-spalat-rufe-si-accesorii-masini-de-spalat-rufe/nobeltek-masina-de-spalat-rufe-semi-automata-nobeltek-nswm-7.3b-7-kg-spalare-3-kg-stoarecere-300w-spalare-148w-stoarcere-evacuare-apa-uzata-prin-cadere-libera-alb-albastru-4263243.html",
-"pret_vechi": null,
-"verificat": "2026-11-04"
+"url_magazin": "https://www.evomag.ro/electrocasnice-electrocasnice-mari-masini-de-spalat-rufe-si-accesorii-masini-de-spalat-rufe/nobeltek-masina-de-spalat-rufe-semi-automata-nobeltek-nswm-7.3b-7-kg-spalare-3-kg-stoarecere-300w-spalare-148w-stoarcere-evacuare-apa-uzata-prin-cadere-libera-alb-rosu-4263244.html",
+"pret_vechi": 884.99
 },
 {
 "titlu": "Masina de spalat rufe Slim Heinner HWM-M7012SMD++, 7 kg, 1200 rpm, Clasa D, Dislay digital, Blocare acces copii, Alb",
@@ -149,7 +159,7 @@
 "imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4129%2F4129485%2F655ca22920dc8.jpg&type=auto&width=500&sign=Vsg32elZc5HLDTdvtqSEf4F6-4293SojLHw7DnuOEBg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Felectrocasnice-electrocasnice-mari-masini-de-spalat-rufe-si-accesorii-masini-de-spalat-rufe%2Fcandy-masina-de-spalat-rufe-candy-smart-pro-cs-1272drre-1-s-incarcare-frontala-7-kg-1200-rpm-clasa-d-gri-4129485.html",
 "magazin": "evomag.ro",
-"id": "I5D8-fDicBZi",
+"id": "FkCoGSKJgW3X",
 "brand": "Candy",
 "url_magazin": "https://www.evomag.ro/electrocasnice-electrocasnice-mari-masini-de-spalat-rufe-si-accesorii-masini-de-spalat-rufe/candy-masina-de-spalat-rufe-candy-smart-pro-cs-1272drre-1-s-incarcare-frontala-7-kg-1200-rpm-clasa-d-gri-4129485.html",
 "pret_vechi": 1588.99,
@@ -168,6 +178,17 @@
 "verificat": "2026-11-14"
 },
 {
+"titlu": "Masina de spalat rufe Heinner HWM-H7014IVSMTC+++, 7 kg, 1400 RPM, 15 Programe, Clasa C (Gri)",
+"pret": 1372.99,
+"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4114%2F4114408%2F64c2ec1498b41.jpg&type=auto&width=500&sign=szRVFWF39R2nYMz_MxIp9suHvPxMdbUOyjhVyQuQAkc",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Felectrocasnice-electrocasnice-mari-masini-de-spalat-rufe-si-accesorii-masini-de-spalat-rufe%2Fheinner-masina-de-spalat-rufe-heinner-hwm-h7014ivsmtc-7-kg-1400-rpm-15-programe-clasa-c-gri-4114408.html",
+"magazin": "evomag.ro",
+"id": "5qZIQn7WJQCD",
+"brand": "Heinner",
+"url_magazin": "https://www.evomag.ro/electrocasnice-electrocasnice-mari-masini-de-spalat-rufe-si-accesorii-masini-de-spalat-rufe/heinner-masina-de-spalat-rufe-heinner-hwm-h7014ivsmtc-7-kg-1400-rpm-15-programe-clasa-c-gri-4114408.html",
+"pret_vechi": 1430.99
+},
+{
 "titlu": "Masina de spalat rufe Candy Pro Wash 300 GD 27SB7-S, 7 kg, 1200 rpm, 16 programe, ProActive Wash, AI Silent Motion (Alb)",
 "pret": 1409.99,
 "imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4290%2F4290506%2Fgd-27sb7-s-69cadbbd0690b.jpg&type=auto&width=500&sign=dSOMEH63klCJLWUtzvQHkqBG1YFW-leUYA9DQmqrdwE",
@@ -178,18 +199,6 @@
 "url_magazin": "https://www.evomag.ro/electrocasnice-electrocasnice-mari-masini-de-spalat-rufe-si-accesorii-masini-de-spalat-rufe/candy-masina-de-spalat-rufe-candy-pro-wash-300-gd-27sb7-s-7-kg-1200-rpm-16-programe-proactive-wash-ai-silent-motion-alb-4290506.html",
 "pret_vechi": null,
 "verificat": "2026-11-05"
-},
-{
-"titlu": "Masina de spalat rufe cu incarcare verticala HEINNER HWM-TL7012C++, 7 kg, 1200 rpm, 15 programe, A 61 cm (Alb)",
-"pret": 1444.99,
-"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4223%2F4223355%2Fmasina-de-spalat-rufe-cu-incar-682dca43c7bf6.jpg&type=auto&width=500&sign=2y9M4XYqbV8x6zMjOAVzLZ9prhClU2VPbxX-FX-wb3Y",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Felectrocasnice-electrocasnice-mari-masini-de-spalat-rufe-si-accesorii-masini-de-spalat-rufe%2Fheinner-masina-de-spalat-rufe-cu-incarcare-verticala-heinner-hwm-tl7012c-7-kg-1200-rpm-15-programe-a-61-cm-alb-4223355.html",
-"magazin": "evomag.ro",
-"id": "sQ3a69iE0glQ",
-"brand": "Heinner",
-"url_magazin": "https://www.evomag.ro/electrocasnice-electrocasnice-mari-masini-de-spalat-rufe-si-accesorii-masini-de-spalat-rufe/heinner-masina-de-spalat-rufe-cu-incarcare-verticala-heinner-hwm-tl7012c-7-kg-1200-rpm-15-programe-a-61-cm-alb-4223355.html",
-"pret_vechi": null,
-"verificat": "2026-11-15"
 },
 {
 "titlu": "CANDY Masina de spalat rufe cu incarcare verticala Candy, Control digita, l 7kg, Start intarziat, 1200rpm, Clasa C, Alba",
@@ -238,17 +247,6 @@
 "url_magazin": "https://www.dwyn.ro/masina-de-spalat-rufe/candy/380054-masina-de-spalat-rufe-candy-br-47sbl8-s-7-kg-1400-rpm-clasa-a-slim/",
 "pret_vechi": null,
 "verificat": "2026-11-04"
-},
-{
-"titlu": "CANDY Masina de spalat rufe CANDY CO4 374TWM6/1-S, 7 kg, 1300 rpm, Clasa A, Wi-Fi",
-"pret": 2051.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202512311121/380042/full/candy-candy-co4-374twm6-1-s-washing-machine-a-front-loading-depth-45-cm-7-kg-white-1116893.png",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fmasina-de-spalat-rufe%2Fcandy%2F380042-masina-de-spalat-rufe-candy-co4-374twm6-1-s-7-kg-1300-rpm-clasa-a-wi-fi%2F",
-"magazin": "dwyn.ro",
-"id": "g3EexfDP4NFn",
-"brand": "CANDY",
-"url_magazin": "https://www.dwyn.ro/masina-de-spalat-rufe/candy/380042-masina-de-spalat-rufe-candy-co4-374twm6-1-s-7-kg-1300-rpm-clasa-a-wi-fi/",
-"pret_vechi": null
 },
 {
 "titlu": "Masina de spalat rufe cu incarcare verticala Candy CSTG 272DVET/1-S, 7 kg, 1200 rpm, Gentle Touch Opening, Easy Iron, Cl",
@@ -13517,30 +13515,6 @@
 "verificat": "2026-11-04"
 },
 {
-"titlu": "Scaun Gaming Clasic din Piele, Cilindru Clasa 4, Negru",
-"pret": 659.99,
-"imagine": "https://cdn.shopify.com/s/files/1/0914/5810/9824/files/scaun-birou-gaming-jocuri-copii-inclinare-premium-piele.jpg?v=1775205982",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Ftimebox.ro%2Fproducts%2Fscaun-gaming-clasic-din-piele-spatar-reglabil-cilindru-clasa-4-cadru-metalic-spuma-cu-densitate-mare-optional-cu-suport-pentru-picioare-ergonomic-si-confortabil-pentru-birou-sau-gaming-negru%3Fvariant%3D56288944554368",
-"magazin": "timebox.ro",
-"id": "cIIacEfXqsh7",
-"brand": "Timebox",
-"url_magazin": "https://timebox.ro/products/scaun-gaming-clasic-din-piele-spatar-reglabil-cilindru-clasa-4-cadru-metalic-spuma-cu-densitate-mare-optional-cu-suport-pentru-picioare-ergonomic-si-confortabil-pentru-birou-sau-gaming-negru?variant=56288944554368",
-"pret_vechi": null,
-"verificat": "2026-11-06"
-},
-{
-"titlu": "Scaun Gaming Ergonomic, 360°, Galben",
-"pret": 689.99,
-"imagine": "https://cdn.shopify.com/s/files/1/0914/5810/9824/files/scaun-gaming-birou-piele2-premium-ieftin.jpg?v=1775208403",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Ftimebox.ro%2Fproducts%2Fscaun-gaming-ergonomic-spatar-inalt-design-sport-rotativ-360-tapiterie-pet-friendly-cadru-metalic-rezistent-suport-de-picioare-galben%3Fvariant%3D56361163030912",
-"magazin": "timebox.ro",
-"id": "PnhMhkXv-NgW",
-"brand": "Timebox",
-"url_magazin": "https://timebox.ro/products/scaun-gaming-ergonomic-spatar-inalt-design-sport-rotativ-360-tapiterie-pet-friendly-cadru-metalic-rezistent-suport-de-picioare-galben?variant=56361163030912",
-"pret_vechi": 1699.99,
-"verificat": "2026-11-06"
-},
-{
 "titlu": "Scaun gaming Fury – Shinai S4, negru",
 "pret": 716.39,
 "imagine": "https://www.ozone.ro/media/catalog/product/g/e/geyming_stol_fury_shinai_s4_cheren_1792089372_0.jpg",
@@ -13623,8 +13597,7 @@
 "magazine": [
 "cumparamisim.ro",
 "ozone.ro",
-"scauneonline.ro",
-"timebox.ro"
+"scauneonline.ro"
 ]
 },
 {
@@ -13654,41 +13627,6 @@
 }
 ],
 "produse": [
-{
-"titlu": "SCAUN DE BIROU ergonomic cu spătar din plasă permeabilă la aer, negru",
-"pret": 439.0,
-"imagine": "https://media.xxxlutz.com/i/xxxlutz/NCvc9A2XF_dVBexd49trR4Ag.jpg?$feedGoogleProduct$",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.xxxlutz.ro%2Fp%2Fcostway-scaun-de-birou-ergonomic-cu-spatar-din-plasa-permeabila-la-aer-negru-800002092539",
-"magazin": "xxxlutz.ro",
-"id": "-uYZG0E9VkGw",
-"brand": "COSTWAY",
-"url_magazin": "https://www.xxxlutz.ro/p/costway-scaun-de-birou-ergonomic-cu-spatar-din-plasa-permeabila-la-aer-negru-800002092539",
-"pret_vechi": null
-},
-{
-"titlu": "Scaun de birou ergonomic pentru sala de sedinte, pivotant, capitonat, inaltime reglabila si rabatabil, negru",
-"pret": 484.99,
-"imagine": "https://cdn.shopify.com/s/files/1/0914/5810/9824/files/scaun-de-birou-ergonomic-pentru-sala-EZ-OBN034B01-1_3529af17-f251-43bd-a9a9-03bdad8ee27e.png?v=1792157127",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Ftimebox.ro%2Fproducts%2Fsongmics-scaun-de-birou-ergonomic-pentru-sala-de-sedinte-pivotant-capitonat-inaltime-reglabila-si-rabatabil-negru%3Fvariant%3D59946881679744",
-"magazin": "timebox.ro",
-"id": "BlCMTdxN-QMI",
-"brand": "Timebox",
-"url_magazin": "https://timebox.ro/products/songmics-scaun-de-birou-ergonomic-pentru-sala-de-sedinte-pivotant-capitonat-inaltime-reglabila-si-rabatabil-negru?variant=59946881679744",
-"pret_vechi": 599.99,
-"verificat": "2026-11-04"
-},
-{
-"titlu": "Scaun de birou ergonomic, reglabil pe inaltime, functie balans, 64x64x110-120 cm, bej",
-"pret": 509.99,
-"imagine": "https://cdn.shopify.com/s/files/1/0914/5810/9824/files/scaun-de-birou-ergonomic-reglabil-pe-EZ-OBN034K01-1.png?v=1794478510",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Ftimebox.ro%2Fproducts%2Fscaun-de-birou-ergonomic-reglabil-pe-inaltime-functie-balans-maxim-120-kg-64x64x120-cm-bej%3Fvariant%3D60373538832768",
-"magazin": "timebox.ro",
-"id": "maLh5mfqixxk",
-"brand": "Timebox",
-"url_magazin": "https://timebox.ro/products/scaun-de-birou-ergonomic-reglabil-pe-inaltime-functie-balans-maxim-120-kg-64x64x120-cm-bej?variant=60373538832768",
-"pret_vechi": 619.99,
-"verificat": "2026-11-15"
-},
 {
 "titlu": "Scaun de birou ergonomic din mesh cu tetieră și brațe 3D OFF 404 negru",
 "pret": 598.95,
@@ -13736,41 +13674,6 @@
 "url_magazin": "https://www.scauneonline.ro/scaun-birou-ergonomic-negru-mesh-brate-reglabile-syyt-9518",
 "pret_vechi": null,
 "verificat": "2026-11-04"
-},
-{
-"titlu": "Scaun de birou ergonomic, inaltime reglabila, 60x60x(80-90) cm, roz pastel",
-"pret": 807.99,
-"imagine": "https://cdn.shopify.com/s/files/1/0914/5810/9824/files/scaun-de-birou-ergonomic-inaltime-reglabila-EZ-OBG020R02-1_4103934f-e6d4-4bd5-be19-7c2f86bcd557.png?v=1794997050",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Ftimebox.ro%2Fproducts%2Fsongmics-scaun-de-birou-ergonomic-inaltime-reglabila-60x60x80-90-cm-roz-pastel%3Fvariant%3D59946859954560",
-"magazin": "timebox.ro",
-"id": "NqVlErx_VE9t",
-"brand": "Timebox",
-"url_magazin": "https://timebox.ro/products/songmics-scaun-de-birou-ergonomic-inaltime-reglabila-60x60x80-90-cm-roz-pastel?variant=59946859954560",
-"pret_vechi": 909.99,
-"verificat": "2026-11-04"
-},
-{
-"titlu": "Scaun de birou ergonomic, reglabil pe inaltime, functie balans, piele sintetica, 54x50x112-122 cm, negru",
-"pret": 809.99,
-"imagine": "https://cdn.shopify.com/s/files/1/0914/5810/9824/files/songmics-scaun-de-birou-ergonomic-rotativ-EZ-OBG22B-1.png?v=1792740502",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Ftimebox.ro%2Fproducts%2Fsongmics-scaun-de-birou-ergonomic-rotativ-360-reglabil-pe-inaltime-112-122-cm-tapiterie-din-piele-ecologica-negru%3Fvariant%3D60189732110720",
-"magazin": "timebox.ro",
-"id": "uQOYZeKVaWGC",
-"brand": "Timebox",
-"url_magazin": "https://timebox.ro/products/songmics-scaun-de-birou-ergonomic-rotativ-360-reglabil-pe-inaltime-112-122-cm-tapiterie-din-piele-ecologica-negru?variant=60189732110720",
-"pret_vechi": 919.99,
-"verificat": "2026-11-04"
-},
-{
-"titlu": "SCAUN DE BIROU ERGONOMIC piele ecologică gri deschis Serene",
-"pret": 860.0,
-"imagine": "https://media.xxxlutz.com/i/xxxlutz/NCSkAB7EoSk2K1PsJh9qRTyQ.jpg?$feedGoogleProduct$",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.xxxlutz.ro%2Fp%2Fbeliani-scaun-de-birou-ergonomic-piele-ecologica-gri-deschis-serene-800001831089",
-"magazin": "xxxlutz.ro",
-"id": "FRBGn9ozF3bi",
-"brand": "Beliani",
-"url_magazin": "https://www.xxxlutz.ro/p/beliani-scaun-de-birou-ergonomic-piele-ecologica-gri-deschis-serene-800001831089",
-"pret_vechi": null
 },
 {
 "titlu": "Scaun de birou ergonomic cu plasa negru AXIS",
@@ -13845,18 +13748,6 @@
 "verificat": "2026-11-04"
 },
 {
-"titlu": "Scaun ergonomic de birou cu tetieră 4D, spătar reglabil în 5 poziții și reclinare până la 135°",
-"pret": 1049.99,
-"imagine": "https://cdn.shopify.com/s/files/1/0914/5810/9824/files/930-1-negru-main-v20302-1792093368539.jpg?v=1792093370",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Ftimebox.ro%2Fproducts%2Fvertex-pro-scaun-ergonomic-tetiera-4d-spatar-reglabil-pe-inal%C8%9Bime-5-trepte-suport-lombar-multipunct-cotiere-3d-%C8%99ezut-mesh-translatabil-5-cm-recliner-135-suport-picioare-negru%3Fvariant%3D60041257910656",
-"magazin": "timebox.ro",
-"id": "OgexK-Tm7xOn",
-"brand": "Impasan",
-"url_magazin": "https://timebox.ro/products/vertex-pro-scaun-ergonomic-tetiera-4d-spatar-reglabil-pe-inal%C8%9Bime-5-trepte-suport-lombar-multipunct-cotiere-3d-%C8%99ezut-mesh-translatabil-5-cm-recliner-135-suport-picioare-negru?variant=60041257910656",
-"pret_vechi": 1219.99,
-"verificat": "2026-11-06"
-},
-{
 "titlu": "Scaun de birou ergonomic rotativ cu spatar din plasa negru: VECTOR",
 "pret": 1100.0,
 "imagine": "https://dacris.vteximg.com.br/arquivos/ids/1104180/2521_vector_mesh-black_feature_cz_01.jpg.jpg?v=639275354189730000",
@@ -13879,25 +13770,11 @@
 "url_magazin": "https://www.dacris.net/2526-jnf-scaun-de-birou-ergonomic-rotativ-maro--vector/p?skuId=258049",
 "pret_vechi": null,
 "verificat": "2026-11-04"
-},
-{
-"titlu": "Scaun Birou Ergonomic Timebox, Reclinabil, Negru",
-"pret": 1399.99,
-"imagine": "https://cdn.shopify.com/s/files/1/0914/5810/9824/files/scaun-birou-ergonomic-timebox-reclinabil-negru-GS-859-NE-1.jpg?v=1793371924",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Ftimebox.ro%2Fproducts%2Fscaun-birou-ergonomic-timebox-reclinabil-suport-picioare-negru%3Fvariant%3D57144313938304",
-"magazin": "timebox.ro",
-"id": "QBaYvrTyRGy0",
-"brand": "Timebox",
-"url_magazin": "https://timebox.ro/products/scaun-birou-ergonomic-timebox-reclinabil-suport-picioare-negru?variant=57144313938304",
-"pret_vechi": null,
-"verificat": "2026-11-19"
 }
 ],
 "magazine": [
 "dacris.net",
-"scauneonline.ro",
-"timebox.ro",
-"xxxlutz.ro"
+"scauneonline.ro"
 ]
 },
 {
@@ -15828,7 +15705,7 @@
 "titlu": "Trotinete electrice pentru adulți",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-15",
+"actualizat": "2026-11-23",
 "feeduri": [
 {
 "id": 2800,
@@ -15881,7 +15758,7 @@
 "titlu": "Biciclete electrice",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-15",
+"actualizat": "2026-11-23",
 "feeduri": [
 {
 "id": 5747,
@@ -16033,7 +15910,7 @@
 "titlu": "Parfum Dior Sauvage",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-15",
+"actualizat": "2026-11-23",
 "feeduri": [
 {
 "id": 8969,
@@ -16066,18 +15943,6 @@
 "verificat": "2026-11-11"
 },
 {
-"titlu": "DIOR Sauvage The Toner tonic pentru fata cu extract de cactus pentru bărbați 100 ml",
-"pret": 319.0,
-"imagine": "https://cdn.notinoimg.com/export_mergado/dior/3348901683562_01.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.notino.ro%2Fdior%2Fsauvage-the-toner-tonic-pentru-fata%2Fp-16230973%2F",
-"magazin": "notino.ro",
-"id": "c6fcffa4b",
-"brand": "DIOR",
-"url_magazin": "https://www.notino.ro/dior/sauvage-the-toner-tonic-pentru-fata/p-16230973/",
-"pret_vechi": null,
-"verificat": "2026-11-11"
-},
-{
 "titlu": "Christian Dior Sauvage Apă de toaletă, 30 ml",
 "pret": 325.59,
 "imagine": "https://www.ozone.ro/media/catalog/product/c/h/christian_dior_sauvage_toaletna_voda_30_ml_1727795868_0.jpg",
@@ -16100,6 +15965,17 @@
 "url_magazin": "https://www.notino.ro/dior/sauvage-hydrating-shampoo-sampon-hidratant-pentru-barbati/p-16363503/",
 "pret_vechi": null,
 "verificat": "2026-11-11"
+},
+{
+"titlu": "DIOR Sauvage Eau de Toilette reincarcabil pentru bărbați 30 ml",
+"pret": 405.0,
+"imagine": "https://cdn.notinoimg.com/export_mergado/dior/3348901520195_01.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.notino.ro%2Fdior%2Fsauvage2015-eau-de-toilette-pentru-barbati%2Fp-16070726%2F",
+"magazin": "notino.ro",
+"id": "901a857e9",
+"brand": "DIOR",
+"url_magazin": "https://www.notino.ro/dior/sauvage2015-eau-de-toilette-pentru-barbati/p-16070726/",
+"pret_vechi": null
 },
 {
 "titlu": "Christian Dior Sauvage Apă de toaletă, 60 ml",
@@ -16209,6 +16085,17 @@
 "verificat": "2026-11-04"
 },
 {
+"titlu": "DIOR Sauvage Eau de Toilette reincarcabil pentru bărbați 100 ml",
+"pret": 559.0,
+"imagine": "https://cdn.notinoimg.com/export_mergado/dior/3348901250146_01__20.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.notino.ro%2Fdior%2Fsauvage2015-eau-de-toilette-pentru-barbati%2Fp-510294%2F",
+"magazin": "notino.ro",
+"id": "63f4eab82",
+"brand": "DIOR",
+"url_magazin": "https://www.notino.ro/dior/sauvage2015-eau-de-toilette-pentru-barbati/p-510294/",
+"pret_vechi": null
+},
+{
 "titlu": "Christian Dior Sauvage Parfum, 100 ml",
 "pret": 692.99,
 "imagine": "https://www.ozone.ro/media/catalog/product/c/h/christian_dior_sauvage_parfyum_100_ml_1727182985_0.jpg",
@@ -16231,16 +16118,15 @@
 "pret_vechi": null
 },
 {
-"titlu": "Parfum bărbătesc Dior Sauvage Eau de Parfum, 100 ml",
-"pret": 903.99,
-"imagine": "https://primefarma.ro/wp-content/uploads/2026/09/UtbeLZR94bvWvieqXt9fZF.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fprimefarma.ro%2Fprodus%2Fparfum-barbatesc-dior-sauvage-eau-de-parfum-100-ml%2F",
-"magazin": "primefarma.ro",
-"id": "k77sE2sNWdaG",
+"titlu": "Christian Dior Sauvage Apă de toaletă, 200 ml",
+"pret": 803.48,
+"imagine": "https://www.ozone.ro/media/catalog/product/c/h/christian_dior_sauvage_toaletna_voda_200_ml_1739181746_0.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ozone.ro%2Fproduct%2Fchristian-dior-sauvage-ap-de-toalet-200-ml%2F",
+"magazin": "ozone.ro",
+"id": "3Q7zw7071mi4",
 "brand": "Christian Dior",
-"url_magazin": "https://primefarma.ro/produs/parfum-barbatesc-dior-sauvage-eau-de-parfum-100-ml/",
-"pret_vechi": 1172.99,
-"verificat": "2026-11-11"
+"url_magazin": "https://www.ozone.ro/product/christian-dior-sauvage-ap-de-toalet-200-ml/",
+"pret_vechi": null
 },
 {
 "titlu": "Dior (Christian Dior) Sauvage Eau de Parfum bărbați 60 ml",
@@ -16253,29 +16139,6 @@
 "url_magazin": "https://www.brasty.ro/dior-christian-dior-sauvage-eau-de-parfum-barba-i-60-ml",
 "pret_vechi": null,
 "verificat": "2026-11-11"
-},
-{
-"titlu": "Parfum Spray, Dior Sauvage, 60ml",
-"pret": 1018.99,
-"imagine": "https://primefarma.ro/wp-content/uploads/2026/09/K9Zaj7TQ9Bxy3K8iNJ4Wdi.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fprimefarma.ro%2Fprodus%2Fparfum-spray-dior-sauvage-60ml%2F",
-"magazin": "primefarma.ro",
-"id": "O_7v83V6wNw5",
-"brand": "Christian Dior",
-"url_magazin": "https://primefarma.ro/produs/parfum-spray-dior-sauvage-60ml/",
-"pret_vechi": 1270.99,
-"verificat": "2026-11-11"
-},
-{
-"titlu": "Christian Dior Sauvage Elixir Parfum, 100 ml",
-"pret": 1026.96,
-"imagine": "https://www.ozone.ro/media/catalog/product/c/h/christian_dior_sauvage_parfyumen_ekstrakt_100_ml_1732270558_0.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ozone.ro%2Fproduct%2Fchristian-dior-sauvage-extract-de-parfum-100-ml%2F",
-"magazin": "ozone.ro",
-"id": "dVidBx-vN7m8",
-"brand": "Christian Dior",
-"url_magazin": "https://www.ozone.ro/product/christian-dior-sauvage-extract-de-parfum-100-ml/",
-"pret_vechi": null
 },
 {
 "titlu": "DIOR Sauvage Eau de Parfum pentru bărbați 60 ml",
@@ -16305,8 +16168,7 @@
 "magazine": [
 "brasty.ro",
 "notino.ro",
-"ozone.ro",
-"primefarma.ro"
+"ozone.ro"
 ]
 },
 {
@@ -16316,7 +16178,7 @@
 "titlu": "Parfum Paco Rabanne Invictus",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-15",
+"actualizat": "2026-11-23",
 "feeduri": [
 {
 "id": 9125,
@@ -16333,6 +16195,28 @@
 ],
 "produse": [
 {
+"titlu": "Paco Rabanne Invictus Apă de toaletă, 100 ml, tester",
+"pret": 267.69,
+"imagine": "https://www.ozone.ro/media/catalog/product/p/a/paco_rabanne_invictus_toaletna_voda_100_ml_tester_1737460157_0.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ozone.ro%2Fproduct%2Fpaco-rabanne-invictus-ap-de-toalet-100-ml-tester%2F",
+"magazin": "ozone.ro",
+"id": "c0kAv8EguOAs",
+"brand": "Paco Rabanne",
+"url_magazin": "https://www.ozone.ro/product/paco-rabanne-invictus-ap-de-toalet-100-ml-tester/",
+"pret_vechi": null
+},
+{
+"titlu": "Paco Rabanne Invictus Apă de parfum Victory, 50 ml",
+"pret": 348.17,
+"imagine": "https://www.ozone.ro/media/catalog/product/p/a/paco_rabanne_invictus_parfyumna_voda_victory_50_ml_1689758062_0.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ozone.ro%2Fproduct%2Fpaco-rabanne-invictus-ap-de-parfum-victory-50-ml%2F",
+"magazin": "ozone.ro",
+"id": "FE-AHIKpGOyp",
+"brand": "Paco Rabanne",
+"url_magazin": "https://www.ozone.ro/product/paco-rabanne-invictus-ap-de-parfum-victory-50-ml/",
+"pret_vechi": 435.25
+},
+{
 "titlu": "Paco Rabanne Parfum Invictus, 50 ml",
 "pret": 396.83,
 "imagine": "https://www.ozone.ro/media/catalog/product/p/a/paco_rabanne_parfyum_invictus_50_ml_1793014150_0.jpg",
@@ -16342,18 +16226,6 @@
 "brand": "Paco Rabanne",
 "url_magazin": "https://www.ozone.ro/product/paco-rabanne-parfum-invictus-50-ml/",
 "pret_vechi": null,
-"verificat": "2026-11-04"
-},
-{
-"titlu": "Eau de Toilette Paco Rabanne Invictus, 50ml",
-"pret": 413.0,
-"imagine": "https://primefarma.ro/wp-content/uploads/2026/09/27CCTCEND2pe8DDtauRePv.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fprimefarma.ro%2Fprodus%2Feau-de-toilette-paco-rabanne-invictus-50ml%2F",
-"magazin": "primefarma.ro",
-"id": "lj0QuDrZdOnN",
-"brand": "Paco Rabanne",
-"url_magazin": "https://primefarma.ro/produs/eau-de-toilette-paco-rabanne-invictus-50ml/",
-"pret_vechi": 493.0,
 "verificat": "2026-11-04"
 },
 {
@@ -16402,95 +16274,10 @@
 "brand": "Paco Rabanne",
 "url_magazin": "https://www.ozone.ro/product/paco-rabanne-invictus-ap-de-parfum-victory-100-ml/",
 "pret_vechi": null
-},
-{
-"titlu": "Parfum Eau de Toilette Paco Rabanne Invictus, 100ml",
-"pret": 532.0,
-"imagine": "https://primefarma.ro/wp-content/uploads/2026/09/5JXWpzMi2V6FG9zMD43Es4.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fprimefarma.ro%2Fprodus%2Fparfum-eau-de-toilette-paco-rabanne-invictus-100ml%2F",
-"magazin": "primefarma.ro",
-"id": "HQPNvNatW4D4",
-"brand": "Paco Rabanne",
-"url_magazin": "https://primefarma.ro/produs/parfum-eau-de-toilette-paco-rabanne-invictus-100ml/",
-"pret_vechi": 632.0,
-"verificat": "2026-11-04"
-},
-{
-"titlu": "Set Cadou Parfum Paco Rabanne Invictus Eau De Toilette 50ml",
-"pret": 549.99,
-"imagine": "https://primefarma.ro/wp-content/uploads/2026/09/75Nz46DYiNAspFxWCr9R4z.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fprimefarma.ro%2Fprodus%2Fset-cadou-parfum-paco-rabanne-invictus-eau-de-toilette-50ml%2F",
-"magazin": "primefarma.ro",
-"id": "bRtJuWCglSRY",
-"brand": "Paco Rabanne",
-"url_magazin": "https://primefarma.ro/produs/set-cadou-parfum-paco-rabanne-invictus-eau-de-toilette-50ml/",
-"pret_vechi": 649.99,
-"verificat": "2026-11-04"
-},
-{
-"titlu": "Parfum Paco Rabanne Invictus Victory Extreme, 50ml",
-"pret": 605.99,
-"imagine": "https://primefarma.ro/wp-content/uploads/2026/09/848nrXqzzGXPsKc9kDDJai.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fprimefarma.ro%2Fprodus%2Fparfum-paco-rabanne-invictus-victory-extreme-50ml%2F",
-"magazin": "primefarma.ro",
-"id": "VItevzH5V8up",
-"brand": "Paco Rabanne",
-"url_magazin": "https://primefarma.ro/produs/parfum-paco-rabanne-invictus-victory-extreme-50ml/",
-"pret_vechi": 725.99,
-"verificat": "2026-11-04"
-},
-{
-"titlu": "Parfum Paco Rabanne Invictus, 50ml",
-"pret": 649.99,
-"imagine": "https://primefarma.ro/wp-content/uploads/2026/09/2k6Ys2pFjq4BuL8ZfFgkZn.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fprimefarma.ro%2Fprodus%2Fparfum-paco-rabanne-invictus-50ml%2F",
-"magazin": "primefarma.ro",
-"id": "-33XLyE4sEAj",
-"brand": "Paco Rabanne",
-"url_magazin": "https://primefarma.ro/produs/parfum-paco-rabanne-invictus-50ml/",
-"pret_vechi": 769.99,
-"verificat": "2026-11-04"
-},
-{
-"titlu": "Parfum, Paco Rabanne, Invictus Victory, 100ml",
-"pret": 694.0,
-"imagine": "https://primefarma.ro/wp-content/uploads/2026/09/6EPp88uoyYfSzBpEPFDab2.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fprimefarma.ro%2Fprodus%2Fparfum-paco-rabanne-invictus-victory-100ml%2F",
-"magazin": "primefarma.ro",
-"id": "fj_BiiOigIty",
-"brand": "Paco Rabanne",
-"url_magazin": "https://primefarma.ro/produs/parfum-paco-rabanne-invictus-victory-100ml/",
-"pret_vechi": 814.0,
-"verificat": "2026-11-04"
-},
-{
-"titlu": "Set Parfum Paco Rabanne Invictus, 100ml + 20ml, Apă de toaletă, Set cadou",
-"pret": 701.99,
-"imagine": "https://primefarma.ro/wp-content/uploads/2026/09/8A65KpE2QG22D74mTZPrTi.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fprimefarma.ro%2Fprodus%2Fset-parfum-paco-rabanne-invictus-100ml-20ml-apa-de-toaleta-set-cadou%2F",
-"magazin": "primefarma.ro",
-"id": "29haM90atyck",
-"brand": "Paco Rabanne",
-"url_magazin": "https://primefarma.ro/produs/set-parfum-paco-rabanne-invictus-100ml-20ml-apa-de-toaleta-set-cadou/",
-"pret_vechi": 851.99,
-"verificat": "2026-11-04"
-},
-{
-"titlu": "Set cadou Paco Rabanne Invictus pentru barbati, Eau De Toilette Spray 100ml + Mini Spray 20ml",
-"pret": 747.99,
-"imagine": "https://primefarma.ro/wp-content/uploads/2026/09/nHUS3UkCA2UYpHMpH6Uc8x.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fprimefarma.ro%2Fprodus%2Fset-cadou-paco-rabanne-invictus-pentru-barbati-eau-de-toilette-spray-100ml-mini-spray-20ml%2F",
-"magazin": "primefarma.ro",
-"id": "QhEWofjhXMb4",
-"brand": "Paco Rabanne",
-"url_magazin": "https://primefarma.ro/produs/set-cadou-paco-rabanne-invictus-pentru-barbati-eau-de-toilette-spray-100ml-mini-spray-20ml/",
-"pret_vechi": 899.99,
-"verificat": "2026-11-04"
 }
 ],
 "magazine": [
 "ozone.ro",
-"primefarma.ro",
 "qudo.ro"
 ]
 },
@@ -16501,7 +16288,7 @@
 "titlu": "Parfum Lancôme La Vie Est Belle",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-15",
+"actualizat": "2026-11-23",
 "feeduri": [
 {
 "id": 9125,
@@ -16558,6 +16345,17 @@
 "verificat": "2026-11-04"
 },
 {
+"titlu": "Lancome La Vie Est Belle EDP Volum 30 ml",
+"pret": 264.99,
+"imagine": "https://fragranza.ro/26534-large_default/lancome-la-vie-est-belle-edp.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Ffragranza.ro%2Flancome-la-vie-est-belle-edp%23%2F51-volum-30_ml",
+"magazin": "fragranza.ro",
+"id": "YhxiO-dSswny",
+"brand": "Lancome",
+"url_magazin": "https://fragranza.ro/lancome-la-vie-est-belle-edp#/51-volum-30_ml",
+"pret_vechi": null
+},
+{
 "titlu": "Lancome La Vie Est Belle Intensement Apă de parfum pentru Femei Tester EDP Volum 50 ml",
 "pret": 274.99,
 "imagine": "https://fragranza.ro/11801-large_default/lancome-la-vie-est-belle-intensement-apă-de-parfum-pentru-femei-tester-edp.jpg",
@@ -16568,17 +16366,6 @@
 "url_magazin": "https://fragranza.ro/lancome-la-vie-est-belle-intensement-apă-de-parfum-pentru-femei-tester-edp",
 "pret_vechi": null,
 "verificat": "2026-11-04"
-},
-{
-"titlu": "Lancome La Vie Est Belle EDP Volum 30 ml",
-"pret": 279.99,
-"imagine": "https://fragranza.ro/26534-large_default/lancome-la-vie-est-belle-edp.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Ffragranza.ro%2Flancome-la-vie-est-belle-edp%23%2F51-volum-30_ml",
-"magazin": "fragranza.ro",
-"id": "YhxiO-dSswny",
-"brand": "Lancome",
-"url_magazin": "https://fragranza.ro/lancome-la-vie-est-belle-edp#/51-volum-30_ml",
-"pret_vechi": null
 },
 {
 "titlu": "Lancome La Vie Est Belle L'Elixir Apa de parfum pentru femei Tester EDP Volum 50 ml",
@@ -16605,7 +16392,7 @@
 },
 {
 "titlu": "Lancome La Vie Est Belle EDP Volum 100 ml umplutură",
-"pret": 388.99,
+"pret": 389.99,
 "imagine": "https://fragranza.ro/26534-large_default/lancome-la-vie-est-belle-edp.jpg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Ffragranza.ro%2Flancome-la-vie-est-belle-edp%23%2F2683-volum-100_ml_umplutur%C4%83",
 "magazin": "fragranza.ro",
@@ -16613,30 +16400,6 @@
 "brand": "Lancome",
 "url_magazin": "https://fragranza.ro/lancome-la-vie-est-belle-edp#/2683-volum-100_ml_umplutură",
 "pret_vechi": null
-},
-{
-"titlu": "Parfum, Lancôme, La Vie est Belle, 30ml",
-"pret": 464.0,
-"imagine": "https://primefarma.ro/wp-content/uploads/2026/09/kNi7VDMdDwuYfWbq4Wkn9j.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fprimefarma.ro%2Fprodus%2Fparfum-lancome-la-vie-est-belle-30ml%2F",
-"magazin": "primefarma.ro",
-"id": "nz0h4HidKlTG",
-"brand": "Lancome",
-"url_magazin": "https://primefarma.ro/produs/parfum-lancome-la-vie-est-belle-30ml/",
-"pret_vechi": 544.0,
-"verificat": "2026-11-04"
-},
-{
-"titlu": "Parfum, Lancôme, La Vie Est Belle, 50ml",
-"pret": 603.99,
-"imagine": "https://primefarma.ro/wp-content/uploads/2026/09/VksLWGSBxf79qMxNgaT6qS.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fprimefarma.ro%2Fprodus%2Fparfum-lancome-la-vie-est-belle-50ml%2F",
-"magazin": "primefarma.ro",
-"id": "PClH1TMI8YwE",
-"brand": "Lancome",
-"url_magazin": "https://primefarma.ro/produs/parfum-lancome-la-vie-est-belle-50ml/",
-"pret_vechi": 749.99,
-"verificat": "2026-11-04"
 },
 {
 "titlu": "Lancome – La Vie Est Belle Eau De Parfum 75ml",
@@ -16651,30 +16414,6 @@
 "verificat": "2026-11-04"
 },
 {
-"titlu": "Lancome La Vie Est Belle Eau De Parfum, Set Cadou, 50 ml",
-"pret": 674.99,
-"imagine": "https://primefarma.ro/wp-content/uploads/2026/09/fwK482UaUiuCkecceaznmq.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fprimefarma.ro%2Fprodus%2Flancome-la-vie-est-belle-eau-de-parfum-set-cadou-50-ml%2F",
-"magazin": "primefarma.ro",
-"id": "BapIgYRzy6t0",
-"brand": "Lancome",
-"url_magazin": "https://primefarma.ro/produs/lancome-la-vie-est-belle-eau-de-parfum-set-cadou-50-ml/",
-"pret_vechi": 794.99,
-"verificat": "2026-11-04"
-},
-{
-"titlu": "Parfum Lancôme La Vie Est Belle Iris Absolu L'Eau de Parfum Spray 50ml",
-"pret": 686.99,
-"imagine": "https://primefarma.ro/wp-content/uploads/2026/09/6bhpMvRdJxUjgidsbRyVKd.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fprimefarma.ro%2Fprodus%2Fparfum-lancome-la-vie-est-belle-iris-absolu-leau-de-parfum-spray-50ml%2F",
-"magazin": "primefarma.ro",
-"id": "O9hDLMPA0BW6",
-"brand": "Lancome",
-"url_magazin": "https://primefarma.ro/produs/parfum-lancome-la-vie-est-belle-iris-absolu-leau-de-parfum-spray-50ml/",
-"pret_vechi": 808.99,
-"verificat": "2026-11-04"
-},
-{
 "titlu": "Lancome LA VIE EST BELLE 50 ML - Parfum pentru femei",
 "pret": 799.0,
 "imagine": "https://floriaro.vtexassets.com/arquivos/ids/163682/Lancome-LA-VIE-EST-BELLE-50-ML---Parfum-pentru-femei.jpg?v=638180037185670000",
@@ -16685,36 +16424,11 @@
 "url_magazin": "https://www.floria.ro/lancome-la-vie-est-belle-50-ml-parfum-pentru-femei/p",
 "pret_vechi": null,
 "verificat": "2026-11-04"
-},
-{
-"titlu": "Parfum, Lancôme, La Vie Est Belle, 75ml",
-"pret": 964.99,
-"imagine": "https://primefarma.ro/wp-content/uploads/2026/09/ddxi37YsexWJCkEzi2VKqw.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fprimefarma.ro%2Fprodus%2Fparfum-lancome-la-vie-est-belle-75ml%2F",
-"magazin": "primefarma.ro",
-"id": "Pann6VEA6wtm",
-"brand": "Lancome",
-"url_magazin": "https://primefarma.ro/produs/parfum-lancome-la-vie-est-belle-75ml/",
-"pret_vechi": 1176.99,
-"verificat": "2026-11-04"
-},
-{
-"titlu": "Parfum dama, Lancôme, La Vie Est Belle, 100ml",
-"pret": 1070.99,
-"imagine": "https://primefarma.ro/wp-content/uploads/2026/09/44hWfAB3TiNciGt6ffHs95.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fprimefarma.ro%2Fprodus%2Fparfum-dama-lancome-la-vie-est-belle-100ml%2F",
-"magazin": "primefarma.ro",
-"id": "uWdRrGWV8a4G",
-"brand": "Lancome",
-"url_magazin": "https://primefarma.ro/produs/parfum-dama-lancome-la-vie-est-belle-100ml/",
-"pret_vechi": 1320.99,
-"verificat": "2026-11-04"
 }
 ],
 "magazine": [
 "floria.ro",
 "fragranza.ro",
-"primefarma.ro",
 "qudo.ro"
 ]
 },
@@ -16725,7 +16439,7 @@
 "titlu": "Parfum Yves Saint Laurent Libre",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-15",
+"actualizat": "2026-11-23",
 "feeduri": [
 {
 "id": 8532,
@@ -16745,29 +16459,6 @@
 }
 ],
 "produse": [
-{
-"titlu": "Yves Saint Laurent Parfum Libre Le Parfum, 30 ml",
-"pret": 309.39,
-"imagine": "https://www.ozone.ro/media/catalog/product/y/v/yves_saint_laurent_parfyum_libre_le_parfum_30_ml_1761030869_0.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ozone.ro%2Fproduct%2Fyves-saint-laurent-parfum-libre-le-parfum-30-ml%2F",
-"magazin": "ozone.ro",
-"id": "cBd27Q0886GB",
-"brand": "Yves Saint Laurent",
-"url_magazin": "https://www.ozone.ro/product/yves-saint-laurent-parfum-libre-le-parfum-30-ml/",
-"pret_vechi": null,
-"verificat": "2026-11-04"
-},
-{
-"titlu": "Yves Saint Laurent Apă de parfum Libre Flowers & Flames, 30 ml",
-"pret": 386.65,
-"imagine": "https://www.ozone.ro/media/catalog/product/y/v/yves_saint_laurent_parfyumna_voda_libre_flowers_flames_30_ml_1761030986_0.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ozone.ro%2Fproduct%2Fyves-saint-laurent-ap-de-parfum-libre-flowers-flames-30-ml%2F",
-"magazin": "ozone.ro",
-"id": "IzTAUk09MnjY",
-"brand": "Yves Saint Laurent",
-"url_magazin": "https://www.ozone.ro/product/yves-saint-laurent-ap-de-parfum-libre-flowers-flames-30-ml/",
-"pret_vechi": null
-},
 {
 "titlu": "Yves Saint Laurent Apă de parfum Libre Intense, 30 ml",
 "pret": 395.04,
@@ -16864,70 +16555,31 @@
 "verificat": "2026-11-11"
 },
 {
-"titlu": "Parfum, Yves Saint Laurent Libre, Eau De Parfum Intense, 30ml",
-"pret": 671.99,
-"imagine": "https://primefarma.ro/wp-content/uploads/2026/09/btGyJPq5jEgN98AXdTpeg5.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fprimefarma.ro%2Fprodus%2Fparfum-yves-saint-laurent-libre-eau-de-parfum-intense-30ml%2F",
-"magazin": "primefarma.ro",
-"id": "E8jdMdxA3WN_",
+"titlu": "Yves Saint Laurent Apă de parfum Libre Collector Edition 2024, 50 ml",
+"pret": 557.24,
+"imagine": "https://www.ozone.ro/media/catalog/product/y/v/yves_saint_laurent_parfyumna_voda_libre_collector_edition_2024_50_ml_1786619726_0.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ozone.ro%2Fproduct%2Fyves-saint-laurent-ap-de-parfum-libre-collector-edition-2024-50-ml%2F",
+"magazin": "ozone.ro",
+"id": "YGhByetikwa3",
 "brand": "Yves Saint Laurent",
-"url_magazin": "https://primefarma.ro/produs/parfum-yves-saint-laurent-libre-eau-de-parfum-intense-30ml/",
-"pret_vechi": 791.99,
-"verificat": "2026-11-11"
+"url_magazin": "https://www.ozone.ro/product/yves-saint-laurent-ap-de-parfum-libre-collector-edition-2024-50-ml/",
+"pret_vechi": null
 },
 {
-"titlu": "Parfum Yves Saint Laurent Libre Le Parfum, 50ml",
-"pret": 786.99,
-"imagine": "https://primefarma.ro/wp-content/uploads/2026/09/Tx6NYDWcafYgurvqyK8ayq.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fprimefarma.ro%2Fprodus%2Fparfum-yves-saint-laurent-libre-le-parfum-50ml%2F",
-"magazin": "primefarma.ro",
-"id": "DeCXqTT1by4v",
+"titlu": "Yves Saint Laurent Apă de parfum Libre L’Eau Nue, 90 ml",
+"pret": 629.94,
+"imagine": "https://www.ozone.ro/media/catalog/product/y/v/yves_saint_laurent_parfyumna_voda_libre_l_eau_nue_90_ml_1761031009_0.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ozone.ro%2Fproduct%2Fyves-saint-laurent-ap-de-parfum-libre-l-eau-nue-90-ml%2F",
+"magazin": "ozone.ro",
+"id": "zrw9_rNFJpWp",
 "brand": "Yves Saint Laurent",
-"url_magazin": "https://primefarma.ro/produs/parfum-yves-saint-laurent-libre-le-parfum-50ml/",
-"pret_vechi": 936.99,
-"verificat": "2026-11-11"
-},
-{
-"titlu": "Parfum Yves Saint Laurent Libre L'Absolu Platine 50ml",
-"pret": 938.99,
-"imagine": "https://primefarma.ro/wp-content/uploads/2026/09/9iDEPpXgCypVt6dcipje6z.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fprimefarma.ro%2Fprodus%2Fparfum-yves-saint-laurent-libre-labsolu-platine-50ml%2F",
-"magazin": "primefarma.ro",
-"id": "vlVogJpvrLSL",
-"brand": "Yves Saint Laurent",
-"url_magazin": "https://primefarma.ro/produs/parfum-yves-saint-laurent-libre-labsolu-platine-50ml/",
-"pret_vechi": 1150.99,
-"verificat": "2026-11-11"
-},
-{
-"titlu": "Apa de Parfum, Yves Saint Laurent, Libre Intense, 50ml",
-"pret": 945.99,
-"imagine": "https://primefarma.ro/wp-content/uploads/2026/09/87RjLA3V7pXznsQ8tjvSPs.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fprimefarma.ro%2Fprodus%2Fapa-de-parfum-yves-saint-laurent-libre-intense-50ml%2F",
-"magazin": "primefarma.ro",
-"id": "v3FzzmZ79CbE",
-"brand": "Yves Saint Laurent",
-"url_magazin": "https://primefarma.ro/produs/apa-de-parfum-yves-saint-laurent-libre-intense-50ml/",
-"pret_vechi": 1157.99,
-"verificat": "2026-11-11"
-},
-{
-"titlu": "Parfum, Yves Saint Laurent, Libre, 90ml",
-"pret": 1172.99,
-"imagine": "https://primefarma.ro/wp-content/uploads/2026/09/88bmqMVyEMjTciTEQgQDyp.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fprimefarma.ro%2Fprodus%2Fparfum-yves-saint-laurent-libre-90ml%2F",
-"magazin": "primefarma.ro",
-"id": "fBolyiKfJmWW",
-"brand": "Yves Saint Laurent",
-"url_magazin": "https://primefarma.ro/produs/parfum-yves-saint-laurent-libre-90ml/",
-"pret_vechi": 1422.99,
-"verificat": "2026-11-11"
+"url_magazin": "https://www.ozone.ro/product/yves-saint-laurent-ap-de-parfum-libre-l-eau-nue-90-ml/",
+"pret_vechi": null
 }
 ],
 "magazine": [
 "brasty.ro",
-"ozone.ro",
-"primefarma.ro"
+"ozone.ro"
 ]
 },
 {
@@ -16937,7 +16589,7 @@
 "titlu": "Vitamina D3 2000 UI",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-16",
+"actualizat": "2026-11-23",
 "feeduri": [
 {
 "id": 6414,
@@ -17017,7 +16669,7 @@
 },
 {
 "titlu": "OstroVit Vitamina D3 2000 UI, 2x60 capsule",
-"pret": 23.72,
+"pret": 26.05,
 "imagine": "https://liki24.ro/image/catalog/product/newupload/910227-134382707547716829.png",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fliki24.ro%2Fp%2Fostrovit-vitamina-d3-2000-ui-2x60-capsule%2F%3Fnlr%3D1",
 "magazin": "liki24.ro",
@@ -17025,18 +16677,6 @@
 "brand": "Ostrovit",
 "url_magazin": "https://liki24.ro/p/ostrovit-vitamina-d3-2000-ui-2x60-capsule/?nlr=1",
 "pret_vechi": null
-},
-{
-"titlu": "Laboratoarele Remedia Complex Imunitate cu vitamina C 1000 mg, zinc 25 mg si vitamina D3 2000 UI, 30 comprimate",
-"pret": 26.02,
-"imagine": "https://cdnmpro.com/848326168/p/raw/1/laboratoarele-remedia-complex-imunitate-cu-vitamina-c-1000-mg-zinc-25~150031.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.farmaciilenapofarm.ro%2Fimunitate-2%2Flaboratoarele-remedia-complex-imunitate-cu-vitamina-c-1000-mg-zinc-25-mg-si-vitamina-d3-2000-ui-30-comprimate",
-"magazin": "farmaciilenapofarm.ro",
-"id": "O5YykCeRwpJ0",
-"brand": "Laboratoarele Remedia",
-"url_magazin": "https://www.farmaciilenapofarm.ro/imunitate-2/laboratoarele-remedia-complex-imunitate-cu-vitamina-c-1000-mg-zinc-25-mg-si-vitamina-d3-2000-ui-30-comprimate",
-"pret_vechi": null,
-"verificat": "2026-11-04"
 },
 {
 "titlu": "Vigantolvit Vitamina D3 2000 UI, 60 capsule, Catalent",
@@ -17051,16 +16691,15 @@
 "verificat": "2026-11-04"
 },
 {
-"titlu": "Vitamina D3 2000ui 60cpr",
-"pret": 32.5,
-"imagine": "https://cdn.vegis.ro/images/products/img_202203141045/44457/full/biosunline-vitamina-d3-2000ui-60cpr-141991.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fvegis.ro%2Fvitamine-si-minerale%2Fbiosunline%2F44457-vitamina-d3-2000ui-60cpr%2F",
+"titlu": "Vitamina D3 2000UI 60cpr",
+"pret": 30.9,
+"imagine": "https://cdn.vegis.ro/images/products/img_202406171514/173386/full/doppelherz-vitamina-d-2000-ui-60-cpr-394969.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fvegis.ro%2Ftemporar%2Fdoppelherz%2F173386-vitamina-d3-2000ui-60cpr%2F",
 "magazin": "vegis.ro",
-"id": "sB5rqCr5YjG2",
-"brand": "BIOSUNLINE",
-"url_magazin": "https://vegis.ro/vitamine-si-minerale/biosunline/44457-vitamina-d3-2000ui-60cpr/",
-"pret_vechi": null,
-"verificat": "2026-11-04"
+"id": "qTx2OE8tfSbI",
+"brand": "DOPPELHERZ",
+"url_magazin": "https://vegis.ro/temporar/doppelherz/173386-vitamina-d3-2000ui-60cpr/",
+"pret_vechi": null
 },
 {
 "titlu": "Vitamina D3 2000UI, 60 capsule, PharmA-Z",
@@ -17169,7 +16808,7 @@
 },
 {
 "titlu": "SFD D3 + K2, vitamina D 2000 UI + vitamina K 100 µg, 200 comprimate",
-"pret": 42.2,
+"pret": 42.57,
 "imagine": "https://liki24.ro/image/catalog/product/newupload/311096-133631868576835329.jpg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fliki24.ro%2Fp%2Fsfd-d3-k2-vitamina-d-2000-ui-vitamina-k-100-ug-200-comprimate%2F%3Fnlr%3D1",
 "magazin": "liki24.ro",
@@ -17201,6 +16840,18 @@
 "url_magazin": "https://vegis.ro/suplimente-capsule-comprimate/balkan-pharmaceuticals/167167-vitamina-d3-2000ui-plus-k2-50mcg-30cps-moi/",
 "pret_vechi": null,
 "verificat": "2026-11-04"
+},
+{
+"titlu": "Vitamina D3 2000 UI spray oral, 30 ml Casianhealth",
+"pret": 48.99,
+"imagine": "https://cdnmpro.com/848326168/p/raw/6/vitamina-d3-2000-ui-spray-oral-30-ml-casianhealth~188326.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.farmaciilenapofarm.ro%2Fvitamina-d3-adulti%2Fvitamina-d3-2000-ui-spray-oral-30-ml-casianhealth",
+"magazin": "farmaciilenapofarm.ro",
+"id": "7QFOXDxMjyLk",
+"brand": "Casianhealth",
+"url_magazin": "https://www.farmaciilenapofarm.ro/vitamina-d3-adulti/vitamina-d3-2000-ui-spray-oral-30-ml-casianhealth",
+"pret_vechi": null,
+"verificat": "2026-11-23"
 },
 {
 "titlu": "Vitamina D3 2000UI 120cps",
@@ -17252,7 +16903,7 @@
 "titlu": "Vitamina C 1000 mg",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-16",
+"actualizat": "2026-11-23",
 "feeduri": [
 {
 "id": 6414,
@@ -17308,18 +16959,6 @@
 "verificat": "2026-11-04"
 },
 {
-"titlu": "Laboratoarele Remedia Complex Imunitate cu vitamina C 1000 mg, zinc 25 mg si vitamina D3 2000 UI, 30 comprimate",
-"pret": 26.02,
-"imagine": "https://cdnmpro.com/848326168/p/raw/1/laboratoarele-remedia-complex-imunitate-cu-vitamina-c-1000-mg-zinc-25~150031.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.farmaciilenapofarm.ro%2Fimunitate-2%2Flaboratoarele-remedia-complex-imunitate-cu-vitamina-c-1000-mg-zinc-25-mg-si-vitamina-d3-2000-ui-30-comprimate",
-"magazin": "farmaciilenapofarm.ro",
-"id": "O5YykCeRwpJ0",
-"brand": "Laboratoarele Remedia",
-"url_magazin": "https://www.farmaciilenapofarm.ro/imunitate-2/laboratoarele-remedia-complex-imunitate-cu-vitamina-c-1000-mg-zinc-25-mg-si-vitamina-d3-2000-ui-30-comprimate",
-"pret_vechi": null,
-"verificat": "2026-11-04"
-},
-{
 "titlu": "Vitamina C 1000mg 20cpr efervescente",
 "pret": 26.9,
 "imagine": "https://cdn.vegis.ro/images/products/img_202406171514/164320/full/biosunline-vitamina-c-1000mg-20cpr-efervescente-361129.jpg",
@@ -17332,16 +16971,16 @@
 "verificat": "2026-11-04"
 },
 {
-"titlu": "Vitamina C 1000 mg + Zinc 10 mg + D3 2000 UI, 30 comprimate filmate – Remedia",
-"pret": 30.25,
-"imagine": "https://cdnmpro.com/848326168/p/raw/7/vitamina-c-1000-mg-zinc-10-mg-d3-2000-ui-30-comprimate-filmate-%E2%80%93~150067.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.farmaciilenapofarm.ro%2Fvitamina-c-adulti%2Fvitamina-c-1000-mg-zinc-10-mg-d3-2000-ui-30-comprimate-filmate-remedia",
+"titlu": "Vitamina C Retard 1000 mg, 30 comprimate, ESI",
+"pret": 30.63,
+"imagine": "https://cdnmpro.com/848326168/p/raw/6/vitamina-c-retard-1000-mg-30-comprimate-esi~16046.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.farmaciilenapofarm.ro%2Fvitamine-si-energie%2Fvitamina-c-retard-1000-mg-30-comprimate-esi",
 "magazin": "farmaciilenapofarm.ro",
-"id": "hV_WAGHBJTfz",
-"brand": "Laboratoarele Remedia",
-"url_magazin": "https://www.farmaciilenapofarm.ro/vitamina-c-adulti/vitamina-c-1000-mg-zinc-10-mg-d3-2000-ui-30-comprimate-filmate-remedia",
+"id": "gk4SZeGhSoD3",
+"brand": "ESI SPA",
+"url_magazin": "https://www.farmaciilenapofarm.ro/vitamine-si-energie/vitamina-c-retard-1000-mg-30-comprimate-esi",
 "pret_vechi": null,
-"verificat": "2026-11-11"
+"verificat": "2026-11-23"
 },
 {
 "titlu": "Vitamina C Upsavit 1000 mg, 15 comprimate masticabile, UPSA",
@@ -17423,7 +17062,7 @@
 "id": "00vN8_CPZiUg",
 "brand": "Bayer",
 "url_magazin": "https://www.farmaciilenapofarm.ro/imunitate-2/bayer-redoxon-vitamina-c-1000-mg-cu-aroma-de-lamaie-30-comprimate-efervescente",
-"pret_vechi": null,
+"pret_vechi": 57.05,
 "verificat": "2026-11-04"
 },
 {
@@ -17483,6 +17122,18 @@
 "url_magazin": "https://pansiprod.ro/products/vitamina-c-1000-mg-90-cps?variant=44882621235431",
 "pret_vechi": null,
 "verificat": "2026-11-04"
+},
+{
+"titlu": "Vitamina C Lipozomala 1000 mg, 15 plicuri – Laboratoarele Remedia",
+"pret": 79.64,
+"imagine": "https://cdnmpro.com/848326168/p/raw/9/vitamina-c-lipozomala-1000-mg-15-plicuri-%E2%80%93-laboratoarele-remedia~150049.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.farmaciilenapofarm.ro%2Fvitamina-c-adulti%2Fvitamina-c-lipozomala-1000-mg-15-plicuri-laboratoarele-remedia",
+"magazin": "farmaciilenapofarm.ro",
+"id": "eJZjJK5zlf6h",
+"brand": "Laboratoarele Remedia",
+"url_magazin": "https://www.farmaciilenapofarm.ro/vitamina-c-adulti/vitamina-c-lipozomala-1000-mg-15-plicuri-laboratoarele-remedia",
+"pret_vechi": null,
+"verificat": "2026-11-23"
 },
 {
 "titlu": "Pachet Vitamina C Strong, 1000 mg, 60 tablete + 60 tablete, Naturmil",
@@ -17567,7 +17218,7 @@
 "titlu": "Magneziu în capsule",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-16",
+"actualizat": "2026-11-23",
 "feeduri": [
 {
 "id": 6414,
@@ -17636,17 +17287,6 @@
 "verificat": "2026-11-04"
 },
 {
-"titlu": "WK DZIK Magneziu B6 ( citrat de magneziu ) 120 capsule",
-"pret": 44.08,
-"imagine": "https://liki24.ro/image/catalog/product/newupload/745520-134228220783207436.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fliki24.ro%2Fp%2Fwk-dzik-magneziu-b6-citrat-de-magneziu-120-capsule%2F%3Fnlr%3D1",
-"magazin": "liki24.ro",
-"id": "FcT5fTMDJbu2",
-"brand": "",
-"url_magazin": "https://liki24.ro/p/wk-dzik-magneziu-b6-citrat-de-magneziu-120-capsule/?nlr=1",
-"pret_vechi": null
-},
-{
 "titlu": "Beres Magneziu Bisglicinat + Vitamina B6, 60 capsule",
 "pret": 44.29,
 "imagine": "https://cdnmpro.com/848326168/p/raw/6/beres-magneziu-bisglicinat-vitamina-b6-60-capsule~197326.jpg",
@@ -17681,6 +17321,29 @@
 "url_magazin": "https://www.farmaciilenapofarm.ro/sanatatea-osoasa/lipozomal-d3-k2-magneziu-30-capsule-laboratoarele-remedia",
 "pret_vechi": null,
 "verificat": "2026-11-04"
+},
+{
+"titlu": "Pachet Calciu + Magneziu + Zinc + Seleniu activ 30 comprimate + Omega 3-6-9 30 capsule, Doppelherz",
+"pret": 49.47,
+"imagine": "https://liki24.ro/image/catalog/product/newupload/525505-134057030062414713.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fliki24.ro%2Fp%2Fpachet-calciu-magneziu-zinc-seleniu-activ-30-comprimate-omega-3-6-9-30-capsule-doppelherz%2F%3Fnlr%3D1",
+"magazin": "liki24.ro",
+"id": "T9I7z-9_mEsw",
+"brand": "",
+"url_magazin": "https://liki24.ro/p/pachet-calciu-magneziu-zinc-seleniu-activ-30-comprimate-omega-3-6-9-30-capsule-doppelherz/?nlr=1",
+"pret_vechi": null
+},
+{
+"titlu": "Swanson Aspartat de magneziu, 685 mg, 90 capsule",
+"pret": 54.85,
+"imagine": "https://cdn.myshoptet.com/usr/www.brainmarket.ro/user/shop/orig/36448_swanson-aspartat-de-magneziu--685-mg--90-capsule.jpg?6ab69b34",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.brainmarket.ro%2Fswanson-aspartat-de-magneziu--685-mg--90-capsule%2F",
+"magazin": "brainmarket.ro",
+"id": "bT9PCAT5bOLE",
+"brand": "Swanson",
+"url_magazin": "https://www.brainmarket.ro/swanson-aspartat-de-magneziu--685-mg--90-capsule/",
+"pret_vechi": null,
+"verificat": "2026-11-23"
 },
 {
 "titlu": "Magneziu + Vitamina B6 Lipozomal, 30 capsule, Laboratoarele Remedia",
@@ -17719,6 +17382,18 @@
 "verificat": "2026-11-04"
 },
 {
+"titlu": "Swanson Lactat de magneziu Swanson, 84 mg, 120 capsule",
+"pret": 76.87,
+"imagine": "https://cdn.myshoptet.com/usr/www.brainmarket.ro/user/shop/orig/36451_lactat-de-magneziu-swanson--84-mg--120-capsule.jpg?6ab6a85e",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.brainmarket.ro%2Flactat-de-magneziu-swanson--84-mg--120-capsule%2F",
+"magazin": "brainmarket.ro",
+"id": "msRM0cJTQ3M4",
+"brand": "Swanson",
+"url_magazin": "https://www.brainmarket.ro/lactat-de-magneziu-swanson--84-mg--120-capsule/",
+"pret_vechi": null,
+"verificat": "2026-11-23"
+},
+{
 "titlu": "Magneziu Taurat, 30 capsule, Viridian",
 "pret": 95.0,
 "imagine": "https://c.cdnmp.net/992552723/p/l/7/magneziu-taurat-30-capsule-viridian~33087.jpg",
@@ -17744,6 +17419,7 @@
 }
 ],
 "magazine": [
+"brainmarket.ro",
 "farmaciilenapofarm.ro",
 "liki24.ro",
 "remediumfarm.ro"
@@ -18567,18 +18243,6 @@
 "pret_vechi": null
 },
 {
-"titlu": "Crema protectie solara fata, RoC Soleil-Protect, SPF 50, 50ml",
-"pret": 71.99,
-"imagine": "https://primefarma.ro/wp-content/uploads/2026/09/crema-protectie-solara-pentru-fata-spf50-soleil-protect-high-fluid-roc21094.gif",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fprimefarma.ro%2Fprodus%2Fcrema-protectie-solara-fata-roc-soleil-protect-spf-50-50ml%2F",
-"magazin": "primefarma.ro",
-"id": "v0k4Ix1SFZ1W",
-"brand": "ROC",
-"url_magazin": "https://primefarma.ro/produs/crema-protectie-solara-fata-roc-soleil-protect-spf-50-50ml/",
-"pret_vechi": 83.99,
-"verificat": "2026-11-04"
-},
-{
 "titlu": "Crema de fata cu protectie solara SPF 50+PA++++ Daily Soothing Sunscreen Inout, 50 ml, Mizon",
 "pret": 77.01,
 "imagine": "https://liki24.ro/image/catalog/product/newupload/726815-134215538733748910.jpg",
@@ -18593,8 +18257,7 @@
 "magazine": [
 "drmax.ro",
 "farmaciilenapofarm.ro",
-"liki24.ro",
-"primefarma.ro"
+"liki24.ro"
 ]
 },
 {
@@ -18810,18 +18473,6 @@
 "verificat": "2026-11-04"
 },
 {
-"titlu": "Ser Ultra Retinol Complex, Acid Hialuronic, 30ml, transparent",
-"pret": 60.99,
-"imagine": "https://primefarma.ro/wp-content/uploads/2026/09/24366602.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fprimefarma.ro%2Fprodus%2Fser-ultra-retinol-complex-acid-hialuronic-30ml-transparent%2F",
-"magazin": "primefarma.ro",
-"id": "zDsPkHJnEJ2a",
-"brand": "Retinol Complex",
-"url_magazin": "https://primefarma.ro/produs/ser-ultra-retinol-complex-acid-hialuronic-30ml-transparent/",
-"pret_vechi": 70.99,
-"verificat": "2026-11-04"
-},
-{
 "titlu": "Ser pentru ochi cu Retinol Heimish Marine Care Retinol Eye Serum",
 "pret": 61.5,
 "imagine": "https://cdn.makeupshop.ro/imagini-makeup/produse/original/1-oxwia97j.jpg",
@@ -18834,18 +18485,6 @@
 "verificat": "2026-11-11"
 },
 {
-"titlu": "Ser Anti-Rid, Retinol, Teen Again, alb, 41g",
-"pret": 63.99,
-"imagine": "https://primefarma.ro/wp-content/uploads/2026/09/7NYyLX3ofs26gjJxE7KkVu.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fprimefarma.ro%2Fprodus%2Fser-anti-rid-retinol-teen-again-alb-41g%2F",
-"magazin": "primefarma.ro",
-"id": "zqWEnvXuUWfa",
-"brand": "Look At Me",
-"url_magazin": "https://primefarma.ro/produs/ser-anti-rid-retinol-teen-again-alb-41g/",
-"pret_vechi": 72.99,
-"verificat": "2026-11-04"
-},
-{
 "titlu": "Ser de fata Retinol'e Retinol pur 0,3 + Vitamina E 2% Super Serum, 30ml, Bio Balance",
 "pret": 65.49,
 "imagine": "https://backend.drmax.ro/media/catalog/product/8/6/8697711600852_1.png",
@@ -18855,49 +18494,12 @@
 "brand": "Bio Balance",
 "url_magazin": "https://www.drmax.ro/ser-de-fata-retinol-e-retinol-pur-0-3-vitamina-e-2-super-serum-30ml-bio-balance",
 "pret_vechi": null
-},
-{
-"titlu": "Ser antirid cu retinol, The Conscious, rodie organică 30ml",
-"pret": 72.0,
-"imagine": "https://primefarma.ro/wp-content/uploads/2026/09/DSWgWsuoL3cpQhBtdFPuGS.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fprimefarma.ro%2Fprodus%2Fser-antirid-cu-retinol-the-conscious-rodie-organica-30ml%2F",
-"magazin": "primefarma.ro",
-"id": "OWM6PSF9youU",
-"brand": "The Conscious",
-"url_magazin": "https://primefarma.ro/produs/ser-antirid-cu-retinol-the-conscious-rodie-organica-30ml/",
-"pret_vechi": 84.0,
-"verificat": "2026-11-04"
-},
-{
-"titlu": "Ser Facial, Ultra Retinol Complex, 30ml, Antioxidant",
-"pret": 74.0,
-"imagine": "https://primefarma.ro/wp-content/uploads/2026/09/24367057.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fprimefarma.ro%2Fprodus%2Fser-facial-ultra-retinol-complex-30ml-antioxidant%2F",
-"magazin": "primefarma.ro",
-"id": "bxT8MJQi9-SR",
-"brand": "Retinol Complex",
-"url_magazin": "https://primefarma.ro/produs/ser-facial-ultra-retinol-complex-30ml-antioxidant/",
-"pret_vechi": null,
-"verificat": "2026-11-04"
-},
-{
-"titlu": "Ser facial Skinchemists Retinol Bakuchiol 30ml",
-"pret": 75.99,
-"imagine": "https://primefarma.ro/wp-content/uploads/2026/09/DqaFBSbWVLXPF9Q9KkWs25.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fprimefarma.ro%2Fprodus%2Fser-facial-skinchemists-retinol-bakuchiol-30ml%2F",
-"magazin": "primefarma.ro",
-"id": "xQIE1OqjCzkH",
-"brand": "Skin Chemists",
-"url_magazin": "https://primefarma.ro/produs/ser-facial-skinchemists-retinol-bakuchiol-30ml/",
-"pret_vechi": 87.99,
-"verificat": "2026-11-04"
 }
 ],
 "magazine": [
 "drmax.ro",
 "makeupshop.ro",
-"notino.ro",
-"primefarma.ro"
+"notino.ro"
 ]
 },
 {
@@ -20516,10 +20118,55 @@
 "titlu": "Geci de iarnă pentru damă",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-15",
-"feeduri": [],
-"produse": [],
-"magazine": []
+"actualizat": "2026-11-23",
+"feeduri": [
+{
+"id": 5171,
+"magazin": "bazarulonline.ro"
+},
+{
+"id": 8520,
+"magazin": "masif.ro"
+}
+],
+"produse": [
+{
+"titlu": "Geaca dama pentru iarna Marimea L Engros",
+"pret": 103.5,
+"imagine": "https://bazarulonline.ro/images/detailed/3698/geaca-dama-pentru-iarna-marimea-l-engros_1216281_2.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fbazarulonline.ro%2Fgeaca-dama-pentru-iarna-marimea-m-engros-clone",
+"magazin": "bazarulonline.ro",
+"id": "3MapEDTRYpAU",
+"brand": "",
+"url_magazin": "https://bazarulonline.ro/geaca-dama-pentru-iarna-marimea-m-engros-clone",
+"pret_vechi": null
+},
+{
+"titlu": "Geaca dama pentru iarna Marimea M Engros",
+"pret": 103.5,
+"imagine": "https://bazarulonline.ro/images/detailed/3698/geaca-dama-pentru-iarna-marimea-m-engros_1216278_2.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fbazarulonline.ro%2Fgeaca-dama-pentru-iarna-marimea-s-engros-clone",
+"magazin": "bazarulonline.ro",
+"id": "1On7dpSLthev",
+"brand": "",
+"url_magazin": "https://bazarulonline.ro/geaca-dama-pentru-iarna-marimea-s-engros-clone",
+"pret_vechi": null
+},
+{
+"titlu": "Geaca dama pentru iarna Marimea S Engros",
+"pret": 103.5,
+"imagine": "https://bazarulonline.ro/images/detailed/3698/geaca-dama-pentru-iarna-marimea-s-engros_1216269.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fbazarulonline.ro%2Fgeaca-de-iarna-pentru-fete-7-9-ani-engros-clone",
+"magazin": "bazarulonline.ro",
+"id": "G7haECgz2ecd",
+"brand": "",
+"url_magazin": "https://bazarulonline.ro/geaca-de-iarna-pentru-fete-7-9-ani-engros-clone",
+"pret_vechi": null
+}
+],
+"magazine": [
+"bazarulonline.ro"
+]
 },
 {
 "slug": "carucior-3-in-1",
@@ -22423,18 +22070,6 @@
 "pret_vechi": null
 },
 {
-"titlu": "Masina cu telecomanda tip Camion Teleghidat Timebox Off-Road 4x4, Scara 1:35",
-"pret": 79.99,
-"imagine": "https://cdn.shopify.com/s/files/1/0914/5810/9824/files/26653-1792760043906-tu3hy7.png?v=1793111628",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Ftimebox.ro%2Fproducts%2Fcamion-teleghidat-timebox-off-road-4x4-scara-1-35%3Fvariant%3D60232544485760",
-"magazin": "timebox.ro",
-"id": "INfH7I7nL7Hx",
-"brand": "Timebox",
-"url_magazin": "https://timebox.ro/products/camion-teleghidat-timebox-off-road-4x4-scara-1-35?variant=60232544485760",
-"pret_vechi": 87.99,
-"verificat": "2026-11-14"
-},
-{
 "titlu": "Masinuta cu Telecomanda iUni YHC021, Scara 1:18, Off-Road Climbing Car, 27MHz, Verde",
 "pret": 79.99,
 "imagine": "https://infinityro.vteximg.com.br/arquivos/ids/270210941/image-6d0b415e2d90409882d1030b35d42978.jpg",
@@ -22638,8 +22273,7 @@
 "magazine": [
 "bazarulonline.ro",
 "infinity.ro",
-"ookee.ro",
-"timebox.ro"
+"ookee.ro"
 ]
 },
 {
@@ -25040,67 +24674,9 @@
 "brand": "vidaXL",
 "url_magazin": "https://www.vidaxl.ro/e/vidaXLBraddeCrăciunartificialcuglob150cm150LED-uriAlbcald/8721567799863.html?utm_source=2performant&utm_medium=affiliate",
 "pret_vechi": null
-},
-{
-"titlu": "Brad artificial de Crăciun Iarna Scandinavă, 2D, 150 cm",
-"pret": 329.99,
-"imagine": "https://cdn.shopify.com/s/files/1/0914/5810/9824/files/brad-artificial-danemark-2d-150cm-SRS1582-1.png?v=1794852725",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Ftimebox.ro%2Fproducts%2Fbrad-artificial-danemark-2d-150cm%3Fvariant%3D60386338832768",
-"magazin": "timebox.ro",
-"id": "3GACQmVXNvg_",
-"brand": "Timebox",
-"url_magazin": "https://timebox.ro/products/brad-artificial-danemark-2d-150cm?variant=60386338832768",
-"pret_vechi": 389.99
-},
-{
-"titlu": "Brad artificial de Crăciun Frasin de Munte, 2D, 150 cm",
-"pret": 329.99,
-"imagine": "https://cdn.shopify.com/s/files/1/0914/5810/9824/files/brad-artificial-frasin-de-munte-2d-SRS0967-1.png?v=1794858803",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Ftimebox.ro%2Fproducts%2Fbrad-artificial-frasin-de-munte-2d-150cm%3Fvariant%3D60386342961536",
-"magazin": "timebox.ro",
-"id": "1N4AWqDdTlw4",
-"brand": "Timebox",
-"url_magazin": "https://timebox.ro/products/brad-artificial-frasin-de-munte-2d-150cm?variant=60386342961536",
-"pret_vechi": 379.99
-},
-{
-"titlu": "Brad artificial de Crăciun Polar, nins cu merișoare, 2D+3D, 150 cm",
-"pret": 339.99,
-"imagine": "https://cdn.shopify.com/s/files/1/0914/5810/9824/files/brad-artificial-de-craciun-polar-nins-U-Diamond-150-1.png?v=1792150978",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Ftimebox.ro%2Fproducts%2Fbrad-artificial-de-craciun-polar-nins-cu-merisoare-2d-3d-150-cm%3Fvariant%3D60129620492672",
-"magazin": "timebox.ro",
-"id": "9e0WWGrKAMvi",
-"brand": "Timebox",
-"url_magazin": "https://timebox.ro/products/brad-artificial-de-craciun-polar-nins-cu-merisoare-2d-3d-150-cm?variant=60129620492672",
-"pret_vechi": 399.99,
-"verificat": "2026-11-05"
-},
-{
-"titlu": "Brad artificial de Crăciun Alpin, nins, 3D, 150 cm",
-"pret": 589.99,
-"imagine": "https://cdn.shopify.com/s/files/1/0914/5810/9824/files/brad-artificial-viena-nins-3d-150cm-U-Viena-Snow-150-1.png?v=1794850449",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Ftimebox.ro%2Fproducts%2Fbrad-artificial-viena-nins-3d-150cm%3Fvariant%3D60386326806912",
-"magazin": "timebox.ro",
-"id": "8o5g2QRc-jXm",
-"brand": "Timebox",
-"url_magazin": "https://timebox.ro/products/brad-artificial-viena-nins-3d-150cm?variant=60386326806912",
-"pret_vechi": 719.99
-},
-{
-"titlu": "Brad artificial de Crăciun Nordic, nins, 3D, 150 cm",
-"pret": 629.99,
-"imagine": "https://cdn.shopify.com/s/files/1/0914/5810/9824/files/brad-artificial-de-craciun-nordic-nins-U-Kovaliska-Snow-150-1.png?v=1792150172",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Ftimebox.ro%2Fproducts%2Fbrad-artificial-de-craciun-nordic-nins-3d-150-cm%3Fvariant%3D60129625014656",
-"magazin": "timebox.ro",
-"id": "COje8ZBaKOph",
-"brand": "Timebox",
-"url_magazin": "https://timebox.ro/products/brad-artificial-de-craciun-nordic-nins-3d-150-cm?variant=60129625014656",
-"pret_vechi": 729.99,
-"verificat": "2026-11-05"
 }
 ],
 "magazine": [
-"timebox.ro",
 "vidaxl.ro"
 ]
 },
@@ -25131,17 +24707,6 @@
 }
 ],
 "produse": [
-{
-"titlu": "Brad artificial de Crăciun Pădure de Iarnă, nins, 2D, 180 cm",
-"pret": 259.99,
-"imagine": "https://cdn.shopify.com/s/files/1/0914/5810/9824/files/brad-artificial-lidia-nins-2d-180cm-U-Lidia-White-180-1.png?v=1794847438",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Ftimebox.ro%2Fproducts%2Fbrad-artificial-lidia-nins-2d-180cm%3Fvariant%3D60386097758592",
-"magazin": "timebox.ro",
-"id": "trv_0mIzjq13",
-"brand": "Timebox",
-"url_magazin": "https://timebox.ro/products/brad-artificial-lidia-nins-2d-180cm?variant=60386097758592",
-"pret_vechi": 309.99
-},
 {
 "titlu": "vidaXL Brad de Crăciun artificial 180 cm 300 LED-uri Alb cald",
 "pret": 279.59,
@@ -25176,18 +24741,6 @@
 "pret_vechi": null
 },
 {
-"titlu": "Brad artificial de Crăciun Pădure de Iarnă, nins cu conuri naturale, 2D, 180 cm",
-"pret": 319.99,
-"imagine": "https://cdn.shopify.com/s/files/1/0914/5810/9824/files/brad-artificial-de-craciun-padure-de-U-Lidia-WTCones-180-1.png?v=1792150361",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Ftimebox.ro%2Fproducts%2Fbrad-artificial-de-craciun-padure-de-iarna-nins-cu-conuri-naturale-2d-180-cm%3Fvariant%3D60129616953728",
-"magazin": "timebox.ro",
-"id": "CKfT3MkPRVuc",
-"brand": "Timebox",
-"url_magazin": "https://timebox.ro/products/brad-artificial-de-craciun-padure-de-iarna-nins-cu-conuri-naturale-2d-180-cm?variant=60129616953728",
-"pret_vechi": 389.99,
-"verificat": "2026-11-05"
-},
-{
 "titlu": "Brad Artificial Verdis 180 cm",
 "pret": 348.96,
 "imagine": "https://bazarulonline.ro/images/detailed/11172/5942928000098_0.jpg",
@@ -25197,18 +24750,6 @@
 "brand": "OEM",
 "url_magazin": "https://robazar.ro/brad-artificial-verdis-180-cm",
 "pret_vechi": null
-},
-{
-"titlu": "Brad artificial de Crăciun Fulg de Nea, nins cu merișoare albe, 2D, 180 cm",
-"pret": 359.99,
-"imagine": "https://cdn.shopify.com/s/files/1/0914/5810/9824/files/brad-artificial-de-craciun-fulg-de-U-Crystal-Bry-180-1_e89eb63c-1005-4d6e-8e79-5e6aae939bf6.png?v=1792150789",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Ftimebox.ro%2Fproducts%2Fbrad-artificial-de-craciun-fulg-de-nea-nins-cu-merisoare-albe-2d-180-cm%3Fvariant%3D60129630749056",
-"magazin": "timebox.ro",
-"id": "i3lst6IaZ_ng",
-"brand": "Timebox",
-"url_magazin": "https://timebox.ro/products/brad-artificial-de-craciun-fulg-de-nea-nins-cu-merisoare-albe-2d-180-cm?variant=60129630749056",
-"pret_vechi": 419.99,
-"verificat": "2026-11-05"
 },
 {
 "titlu": "vidaXL Brad de Crăciun artificial cu glob 180 cm 300 LED-uri Alb cald",
@@ -25222,28 +24763,6 @@
 "pret_vechi": null
 },
 {
-"titlu": "Brad artificial de Crăciun Frasin de Munte, 2D, 180 cm",
-"pret": 409.99,
-"imagine": "https://cdn.shopify.com/s/files/1/0914/5810/9824/files/brad-artificial-frasin-de-munte-2d-SRS0998-1.png?v=1794863419",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Ftimebox.ro%2Fproducts%2Fbrad-artificial-frasin-de-munte-2d-180cm%3Fvariant%3D60386334867840",
-"magazin": "timebox.ro",
-"id": "BMFWqUhFMgjH",
-"brand": "Timebox",
-"url_magazin": "https://timebox.ro/products/brad-artificial-frasin-de-munte-2d-180cm?variant=60386334867840",
-"pret_vechi": 479.99
-},
-{
-"titlu": "Brad artificial de Crăciun Perle Albe, 2D, 180 cm",
-"pret": 419.99,
-"imagine": "https://cdn.shopify.com/s/files/1/0914/5810/9824/files/brad-artificial-whiteberry-2d-180cm-SRS1544-1.png?v=1794839568",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Ftimebox.ro%2Fproducts%2Fbrad-artificial-whiteberry-2d-180cm%3Fvariant%3D60386006106496",
-"magazin": "timebox.ro",
-"id": "BRyaH__9W3iH",
-"brand": "Timebox",
-"url_magazin": "https://timebox.ro/products/brad-artificial-whiteberry-2d-180cm?variant=60386006106496",
-"pret_vechi": 519.99
-},
-{
 "titlu": "vidaXL Brad de Crăciun artificial inversat 180 cm 300 LED-uri Alb cald",
 "pret": 447.99,
 "imagine": "https://vdxl.im/8721567798422_ai-mo-im_en_px16_11.jpg?t=1794307011625&ai=true",
@@ -25253,29 +24772,6 @@
 "brand": "vidaXL",
 "url_magazin": "https://www.vidaxl.ro/e/vidaXLBraddeCrăciunartificialinversat180cm300LED-uriAlbcald/8721567798422.html?utm_source=2performant&utm_medium=affiliate",
 "pret_vechi": null
-},
-{
-"titlu": "Brad artificial de Crăciun Polar, nins cu merișoare, 2D+3D, 180 cm",
-"pret": 459.99,
-"imagine": "https://cdn.shopify.com/s/files/1/0914/5810/9824/files/brad-artificial-de-craciun-polar-nins-U-Diamond-180-1.png?v=1792151357",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Ftimebox.ro%2Fproducts%2Fbrad-artificial-de-craciun-polar-nins-cu-merisoare-2d-3d-180-cm%3Fvariant%3D60129620066688",
-"magazin": "timebox.ro",
-"id": "cTi6BlOh9Wq5",
-"brand": "Timebox",
-"url_magazin": "https://timebox.ro/products/brad-artificial-de-craciun-polar-nins-cu-merisoare-2d-3d-180-cm?variant=60129620066688",
-"pret_vechi": 569.99,
-"verificat": "2026-11-05"
-},
-{
-"titlu": "Brad artificial de Crăciun Iarna Albă, nins, 2D, 180 cm",
-"pret": 469.99,
-"imagine": "https://cdn.shopify.com/s/files/1/0914/5810/9824/files/brad-artificial-victoria-nins-2d-180cm-U-Victoria-Snow-180-1.png?v=1794858661",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Ftimebox.ro%2Fproducts%2Fbrad-artificial-victoria-nins-2d-180cm%3Fvariant%3D60386060337536",
-"magazin": "timebox.ro",
-"id": "7U27ndCsimD1",
-"brand": "Timebox",
-"url_magazin": "https://timebox.ro/products/brad-artificial-victoria-nins-2d-180cm?variant=60386060337536",
-"pret_vechi": 549.99
 },
 {
 "titlu": "Brad artificial cu zapada si conuri, Alska, 180 cm",
@@ -25311,18 +24807,6 @@
 "brand": "OEM",
 "url_magazin": "https://robazar.ro/brad-artificial-alfred-180-cm",
 "pret_vechi": null
-},
-{
-"titlu": "Brad artificial de Crăciun Alpin, verde, 3D, 180 cm",
-"pret": 629.99,
-"imagine": "https://cdn.shopify.com/s/files/1/0914/5810/9824/files/brad-artificial-de-craciun-alpin-verde-U-Viena-Green-180-1.png?v=1792151103",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Ftimebox.ro%2Fproducts%2Fbrad-artificial-de-craciun-alpin-verde-3d-180-cm%3Fvariant%3D60129623081344",
-"magazin": "timebox.ro",
-"id": "MwEb8D3Fl0Nq",
-"brand": "Timebox",
-"url_magazin": "https://timebox.ro/products/brad-artificial-de-craciun-alpin-verde-3d-180-cm?variant=60129623081344",
-"pret_vechi": 779.99,
-"verificat": "2026-11-05"
 },
 {
 "titlu": "Brad Artificial Italian 3D+2D - 180 cm",
@@ -25383,7 +24867,6 @@
 "magazine": [
 "noriel.ro",
 "robazar.ro",
-"timebox.ro",
 "vidaxl.ro"
 ]
 },
@@ -25482,95 +24965,6 @@
 "pret_vechi": null
 },
 {
-"titlu": "Brad artificial de Crăciun Carpați, 2D+3D, 210 cm",
-"pret": 759.99,
-"imagine": "https://cdn.shopify.com/s/files/1/0914/5810/9824/files/brad-artificial-carpati-2d-3d-210cm-U-Carpati-Green-210-1.png?v=1794863486",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Ftimebox.ro%2Fproducts%2Fbrad-artificial-carpati-2d-3d-210cm%3Fvariant%3D60386091958656",
-"magazin": "timebox.ro",
-"id": "YUuh7kyu1Z5M",
-"brand": "Timebox",
-"url_magazin": "https://timebox.ro/products/brad-artificial-carpati-2d-3d-210cm?variant=60386091958656",
-"pret_vechi": 889.99
-},
-{
-"titlu": "Brad artificial de Crăciun Arctic, nins, mix 2D+3D, 210 cm",
-"pret": 799.99,
-"imagine": "https://cdn.shopify.com/s/files/1/0914/5810/9824/files/brad-artificial-global-nins-mix-2d-U-Global-Snow-210-1.png?v=1794839659",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Ftimebox.ro%2Fproducts%2Fbrad-artificial-global-nins-mix-2d-3d-210cm%3Fvariant%3D60385977598336",
-"magazin": "timebox.ro",
-"id": "0l8Idn6zcnqG",
-"brand": "Timebox",
-"url_magazin": "https://timebox.ro/products/brad-artificial-global-nins-mix-2d-3d-210cm?variant=60385977598336",
-"pret_vechi": 969.99
-},
-{
-"titlu": "Brad artificial de Crăciun Alpin, argintiu, integral 3D, 210 cm",
-"pret": 839.99,
-"imagine": "https://cdn.shopify.com/s/files/1/0914/5810/9824/files/brad-artificial-viena-select-argintiu-integral-SYG-Vienna-Blue-210-1.png?v=1794850552",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Ftimebox.ro%2Fproducts%2Fbrad-artificial-viena-select-argintiu-integral-3d-210cm%3Fvariant%3D60386311307648",
-"magazin": "timebox.ro",
-"id": "qYbtoKigsvc4",
-"brand": "Timebox",
-"url_magazin": "https://timebox.ro/products/brad-artificial-viena-select-argintiu-integral-3d-210cm?variant=60386311307648",
-"pret_vechi": 969.99
-},
-{
-"titlu": "Brad artificial de Crăciun Alpin, verde, 3D, 210 cm",
-"pret": 899.99,
-"imagine": "https://cdn.shopify.com/s/files/1/0914/5810/9824/files/brad-artificial-de-craciun-alpin-verde-U-Viena-Green-210-1.png?v=1792150572",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Ftimebox.ro%2Fproducts%2Fbrad-artificial-de-craciun-alpin-verde-3d-210-cm%3Fvariant%3D60129622917504",
-"magazin": "timebox.ro",
-"id": "CPSOv3AR759Q",
-"brand": "Timebox",
-"url_magazin": "https://timebox.ro/products/brad-artificial-de-craciun-alpin-verde-3d-210-cm?variant=60129622917504",
-"pret_vechi": 1119.99,
-"verificat": "2026-11-05"
-},
-{
-"titlu": "Brad artificial de Crăciun Nordic, integral 3D, 210 cm",
-"pret": 919.99,
-"imagine": "https://cdn.shopify.com/s/files/1/0914/5810/9824/files/brad-artificial-kovalivka-select-integral-3d-SYG-Kovalivka-Green-210-1.png?v=1794850413",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Ftimebox.ro%2Fproducts%2Fbrad-artificial-kovalivka-select-integral-3d-210cm%3Fvariant%3D60386306228608",
-"magazin": "timebox.ro",
-"id": "84EkKaEu5i0a",
-"brand": "Timebox",
-"url_magazin": "https://timebox.ro/products/brad-artificial-kovalivka-select-integral-3d-210cm?variant=60386306228608",
-"pret_vechi": 1139.99
-},
-{
-"titlu": "Brad artificial de Crăciun Nordic, verde, 3D, 210 cm",
-"pret": 949.99,
-"imagine": "https://cdn.shopify.com/s/files/1/0914/5810/9824/files/brad-artificial-kovalivska-verde-3d-210cm-U-Kovaliska-Gr-210-1.png?v=1794839714",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Ftimebox.ro%2Fproducts%2Fbrad-artificial-kovalivska-verde-3d-210cm%3Fvariant%3D60386081079680",
-"magazin": "timebox.ro",
-"id": "v8jWGlQ4nab5",
-"brand": "Timebox",
-"url_magazin": "https://timebox.ro/products/brad-artificial-kovalivska-verde-3d-210cm?variant=60386081079680",
-"pret_vechi": 1169.99
-},
-{
-"titlu": "Brad artificial de Crăciun Postăvaru, argintiu, integral 3D, 210 cm",
-"pret": 969.99,
-"imagine": "https://cdn.shopify.com/s/files/1/0914/5810/9824/files/brad-artificial-laponia-select-argintiu-integral-SYG-Lapland-Blue-210-1.png?v=1794851371",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Ftimebox.ro%2Fproducts%2Fbrad-artificial-laponia-select-argintiu-integral-3d-210cm%3Fvariant%3D60386286043520",
-"magazin": "timebox.ro",
-"id": "ymMLSejP6-N6",
-"brand": "Timebox",
-"url_magazin": "https://timebox.ro/products/brad-artificial-laponia-select-argintiu-integral-3d-210cm?variant=60386286043520",
-"pret_vechi": 1139.99
-},
-{
-"titlu": "Brad artificial de Crăciun Piatra Craiului, integral 3D, 210 cm",
-"pret": 1069.99,
-"imagine": "https://cdn.shopify.com/s/files/1/0914/5810/9824/files/brad-artificial-alpin-select-integral-3d-SYG-Alpine-Green-210-1.png?v=1794847484",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Ftimebox.ro%2Fproducts%2Fbrad-artificial-alpin-select-integral-3d-210cm%3Fvariant%3D60386075443584",
-"magazin": "timebox.ro",
-"id": "CvRMOLIKZwvM",
-"brand": "Timebox",
-"url_magazin": "https://timebox.ro/products/brad-artificial-alpin-select-integral-3d-210cm?variant=60386075443584",
-"pret_vechi": 1279.99
-},
-{
 "titlu": "Brad Artificial Ontario Elite, Ace 2D + 3D, 210 cm",
 "pret": 1184.11,
 "imagine": "https://bazarulonline.ro/images/detailed/11172/5942928000470_0.jpg",
@@ -25651,7 +25045,6 @@
 "magazine": [
 "noriel.ro",
 "robazar.ro",
-"timebox.ro",
 "vidaxl.ro"
 ]
 },
@@ -26528,61 +25921,6 @@
 ],
 "produse": [
 {
-"titlu": "Inel argint 925 granat | Clasic #2",
-"pret": 88.0,
-"imagine": "https://cdn.shopify.com/s/files/1/0666/5165/2389/files/R1001057-133.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fdruzy.ro%2Fproducts%2Finel-argint-925-granat-clasic-2%3Fvariant%3D57555359105348",
-"magazin": "druzy.ro",
-"id": "7Wp0rjW3QXY2",
-"brand": "druzy.ro - Cristale, Home Deco",
-"url_magazin": "https://druzy.ro/products/inel-argint-925-granat-clasic-2?variant=57555359105348",
-"pret_vechi": null
-},
-{
-"titlu": "Inel argint peridot | Clasic",
-"pret": 110.0,
-"imagine": "https://cdn.shopify.com/s/files/1/0666/5165/2389/files/R1001057-141.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fdruzy.ro%2Fproducts%2Finel-argint-peridot-clasic%3Fvariant%3D57555805438276",
-"magazin": "druzy.ro",
-"id": "9fxy_ANiWE5i",
-"brand": "druzy.ro - Cristale, Home Deco",
-"url_magazin": "https://druzy.ro/products/inel-argint-peridot-clasic?variant=57555805438276",
-"pret_vechi": null
-},
-{
-"titlu": "Inel argint topaz fumuriu | CELESTE #2",
-"pret": 116.0,
-"imagine": "https://cdn.shopify.com/s/files/1/0666/5165/2389/files/R1002522-7.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fdruzy.ro%2Fproducts%2Finel-argint-topaz-fumuriu-celeste-2%3Fvariant%3D57555949191492",
-"magazin": "druzy.ro",
-"id": "5c-0fofv7guO",
-"brand": "druzy.ro - Cristale, Home Deco",
-"url_magazin": "https://druzy.ro/products/inel-argint-topaz-fumuriu-celeste-2?variant=57555949191492",
-"pret_vechi": null
-},
-{
-"titlu": "Inel argint 925 piatra lunii | Moon",
-"pret": 155.0,
-"imagine": "https://cdn.shopify.com/s/files/1/0666/5165/2389/files/131282.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fdruzy.ro%2Fproducts%2Finel-argint-925-piatra-lunii-moon%3Fvariant%3D57556129972548",
-"magazin": "druzy.ro",
-"id": "OSUPaecLnwS_",
-"brand": "druzy.ro - Cristale, Home Deco",
-"url_magazin": "https://druzy.ro/products/inel-argint-925-piatra-lunii-moon?variant=57556129972548",
-"pret_vechi": null
-},
-{
-"titlu": "Inel argint 925 granat | Flower #3",
-"pret": 165.0,
-"imagine": "https://cdn.shopify.com/s/files/1/0666/5165/2389/files/R1001163-56.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fdruzy.ro%2Fproducts%2Finel-argint-925-granat-flower-3%3Fvariant%3D57555359990084",
-"magazin": "druzy.ro",
-"id": "NzWL8CQl9vsM",
-"brand": "druzy.ro - Cristale, Home Deco",
-"url_magazin": "https://druzy.ro/products/inel-argint-925-granat-flower-3?variant=57555359990084",
-"pret_vechi": null
-},
-{
 "titlu": "Inel Cruce - Bijuterie cu Har - Argint 925 - Marime fixa",
 "pret": 168.0,
 "imagine": "https://cdn20.avanticart.ro/chicbijoux.ro/pictures/products/1500/inel-cruce-bijuterie-cu-har-argint-925-marime-fixa-123100.jpeg",
@@ -26593,17 +25931,6 @@
 "url_magazin": "https://chicbijoux.ro/inel-cruce-bijuterie-cu-har-argint-925-marime-fixa.html",
 "pret_vechi": null,
 "verificat": "2026-11-05"
-},
-{
-"titlu": "Inel argint 925 lapis lazuli | Blue #6",
-"pret": 174.0,
-"imagine": "https://cdn.shopify.com/s/files/1/0666/5165/2389/files/131232.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fdruzy.ro%2Fproducts%2Finel-argint-925-lapis-lazuli-blue-6%3Fvariant%3D57555745079620",
-"magazin": "druzy.ro",
-"id": "yrPDwBmUydw4",
-"brand": "druzy.ro - Cristale, Home Deco",
-"url_magazin": "https://druzy.ro/products/inel-argint-925-lapis-lazuli-blue-6?variant=57555745079620",
-"pret_vechi": null
 },
 {
 "titlu": "Inel Un Amore - 1 nume si Cristale Zirconia - Argint 925",
@@ -26640,28 +25967,6 @@
 "url_magazin": "https://chicbijoux.ro/inel-promisiune-cristal-zirconia-inima-si-nume-gravat-argint-925.html",
 "pret_vechi": null,
 "verificat": "2026-11-05"
-},
-{
-"titlu": "Inel argint 925 granat | DUO",
-"pret": 215.0,
-"imagine": "https://cdn.shopify.com/s/files/1/0666/5165/2389/files/R1002506-2.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fdruzy.ro%2Fproducts%2Finel-argint-925-granat-duo%3Fvariant%3D57555399672132",
-"magazin": "druzy.ro",
-"id": "nKSlSQ0qlpGt",
-"brand": "druzy.ro - Cristale, Home Deco",
-"url_magazin": "https://druzy.ro/products/inel-argint-925-granat-duo?variant=57555399672132",
-"pret_vechi": null
-},
-{
-"titlu": "Inel argint peridot | DUO",
-"pret": 215.0,
-"imagine": "https://cdn.shopify.com/s/files/1/0666/5165/2389/files/R1002506-3.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fdruzy.ro%2Fproducts%2Finel-argint-peridot-duo%3Fvariant%3D57555811565892",
-"magazin": "druzy.ro",
-"id": "lbgn554rKOMc",
-"brand": "druzy.ro - Cristale, Home Deco",
-"url_magazin": "https://druzy.ro/products/inel-argint-peridot-duo?variant=57555811565892",
-"pret_vechi": null
 },
 {
 "titlu": "Inel cu Lăbuță Decupată si Os – Argint 925",
@@ -26712,8 +26017,7 @@
 }
 ],
 "magazine": [
-"chicbijoux.ro",
-"druzy.ro"
+"chicbijoux.ro"
 ]
 },
 {
@@ -26735,17 +26039,6 @@
 }
 ],
 "produse": [
-{
-"titlu": "Cercei argint lapis lazuli | Marquise 7",
-"pret": 106.0,
-"imagine": "https://cdn.shopify.com/s/files/1/0666/5165/2389/files/rn-image_picker_lib_temp_a98fbc5d-4969-4236-abc6-9143d556689c.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fdruzy.ro%2Fproducts%2Fcercei-argint-lapis-lazuli-marquise-7%3Fvariant%3D56618595713348",
-"magazin": "druzy.ro",
-"id": "A27pe-fSqV4F",
-"brand": "druzy.ro - Cristale, Home Deco",
-"url_magazin": "https://druzy.ro/products/cercei-argint-lapis-lazuli-marquise-7?variant=56618595713348",
-"pret_vechi": null
-},
 {
 "titlu": "Cercei Perlati – Picaturi Albe de Eleganta - Argint 925",
 "pret": 109.0,
@@ -26818,17 +26111,6 @@
 "pret_vechi": 149.0
 },
 {
-"titlu": "Cercei stud peridot din argint | Oval 5 X 7 mm",
-"pret": 135.0,
-"imagine": "https://cdn.shopify.com/s/files/1/0666/5165/2389/files/rn-image_picker_lib_temp_07d36a94-b6f3-4568-aeba-e079fa72961c.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fdruzy.ro%2Fproducts%2Fcercei-stud-peridot-din-argint-oval-5-x-7-mm%3Fvariant%3D57282491810116",
-"magazin": "druzy.ro",
-"id": "c0MDoX0iXbh8",
-"brand": "druzy.ro - Cristale, Home Deco",
-"url_magazin": "https://druzy.ro/products/cercei-stud-peridot-din-argint-oval-5-x-7-mm?variant=57282491810116",
-"pret_vechi": null
-},
-{
 "titlu": "Cercei Curgatori cu Pietre Bambus – Argint 925",
 "pret": 139.0,
 "imagine": "https://cdn13.avanticart.ro/chicbijoux.ro/pictures/products/1500/cercei-curgatori-cu-perle-bambus-argint-925-placat-cu-aur-18k-104658.jpeg",
@@ -26837,50 +26119,6 @@
 "id": "_T-AoLX5wE1A",
 "brand": "Chic Bijoux",
 "url_magazin": "https://chicbijoux.ro/cercei-curgatori-cu-perle-bambus-argint-925-placat-cu-aur-18k.html",
-"pret_vechi": null
-},
-{
-"titlu": "Cercei argint 925 ametist | Lily",
-"pret": 139.0,
-"imagine": "https://cdn.shopify.com/s/files/1/0666/5165/2389/files/R6100029-1.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fdruzy.ro%2Fproducts%2Fcercei-argint-925-ametist-lily%3Fvariant%3D57548630032708",
-"magazin": "druzy.ro",
-"id": "EOtTdMuFzJRB",
-"brand": "druzy.ro - Cristale, Home Deco",
-"url_magazin": "https://druzy.ro/products/cercei-argint-925-ametist-lily?variant=57548630032708",
-"pret_vechi": null
-},
-{
-"titlu": "Cercei argint 925 ametist | Lily 2",
-"pret": 139.0,
-"imagine": "https://cdn.shopify.com/s/files/1/0666/5165/2389/files/R6100410-51.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fdruzy.ro%2Fproducts%2Fcercei-argint-925-ametist-lily-2%3Fvariant%3D57548668961092",
-"magazin": "druzy.ro",
-"id": "ldszd5B6NSOc",
-"brand": "druzy.ro - Cristale, Home Deco",
-"url_magazin": "https://druzy.ro/products/cercei-argint-925-ametist-lily-2?variant=57548668961092",
-"pret_vechi": null
-},
-{
-"titlu": "Cercei argint 925 piatra lunii | Clasic 3",
-"pret": 139.0,
-"imagine": "https://cdn.shopify.com/s/files/1/0666/5165/2389/files/130753.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fdruzy.ro%2Fproducts%2Fcercei-argint-925-piatra-lunii-clasic-3%3Fvariant%3D57548779290948",
-"magazin": "druzy.ro",
-"id": "iua1zWolz8U7",
-"brand": "druzy.ro - Cristale, Home Deco",
-"url_magazin": "https://druzy.ro/products/cercei-argint-925-piatra-lunii-clasic-3?variant=57548779290948",
-"pret_vechi": null
-},
-{
-"titlu": "Cercei argint 925 piatra lunii | Clasic 2",
-"pret": 146.0,
-"imagine": "https://cdn.shopify.com/s/files/1/0666/5165/2389/files/130752.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fdruzy.ro%2Fproducts%2Fcercei-argint-925-piatra-lunii-clasic-1%3Fvariant%3D57548774768964",
-"magazin": "druzy.ro",
-"id": "dZrYmxF-UCEm",
-"brand": "druzy.ro - Cristale, Home Deco",
-"url_magazin": "https://druzy.ro/products/cercei-argint-925-piatra-lunii-clasic-1?variant=57548774768964",
 "pret_vechi": null
 },
 {
@@ -26893,33 +26131,10 @@
 "brand": "Chic Bijoux",
 "url_magazin": "https://chicbijoux.ro/cercei-pinguini-cu-decupaje-argint-925.html",
 "pret_vechi": 175.0
-},
-{
-"titlu": "Cercei argint pink oyster | AURA",
-"pret": 147.0,
-"imagine": "https://cdn.shopify.com/s/files/1/0666/5165/2389/files/130756.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fdruzy.ro%2Fproducts%2Fcercei-argint-pink-oyster-aura%3Fvariant%3D55891787252036",
-"magazin": "druzy.ro",
-"id": "Y5IvwZaGrZAO",
-"brand": "DRUZY",
-"url_magazin": "https://druzy.ro/products/cercei-argint-pink-oyster-aura?variant=55891787252036",
-"pret_vechi": null
-},
-{
-"titlu": "Cercei argint 925 granat | Clasic",
-"pret": 152.0,
-"imagine": "https://cdn.shopify.com/s/files/1/0666/5165/2389/files/130732.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fdruzy.ro%2Fproducts%2Fcercei-argint-925-granat-clasic%3Fvariant%3D57548677382468",
-"magazin": "druzy.ro",
-"id": "eYI6gft9-i3-",
-"brand": "druzy.ro - Cristale, Home Deco",
-"url_magazin": "https://druzy.ro/products/cercei-argint-925-granat-clasic?variant=57548677382468",
-"pret_vechi": null
 }
 ],
 "magazine": [
-"chicbijoux.ro",
-"druzy.ro"
+"chicbijoux.ro"
 ]
 },
 {
@@ -27252,29 +26467,6 @@
 ],
 "produse": [
 {
-"titlu": "Banda de alergare electrica, pliabilă PHYSIONICS",
-"pret": 1579.9,
-"imagine": "https://cdn.shopify.com/s/files/1/0576/5031/5369/files/LFBD01_galeri_01.jpg?v=1709996721",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.gorillasports.ro%2Fproducts%2Fbanda-de-alergare-electrica-pliabila-physionics%3Fvariant%3D41143898013801",
-"magazin": "gorillasports.ro",
-"id": "84oeo2vVuH6V",
-"brand": "PHYSIONICS",
-"url_magazin": "https://www.gorillasports.ro/products/banda-de-alergare-electrica-pliabila-physionics?variant=41143898013801",
-"pret_vechi": 2163.9
-},
-{
-"titlu": "Banda de alergare TM 2400 S, cu control gestual, Christopeit",
-"pret": 1839.9,
-"imagine": "https://cdn.shopify.com/s/files/1/0576/5031/5369/files/download_27_42cd5454-6cc8-435c-bab4-ec53d10e17ef.png?v=1749535420",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.gorillasports.ro%2Fproducts%2Fbanda-de-alergare-tm-2400-s-cu-control-gestual-christopeit-1%3Fvariant%3D55608129945983",
-"magazin": "gorillasports.ro",
-"id": "_J_h06xNPafg",
-"brand": "Christopeit",
-"url_magazin": "https://www.gorillasports.ro/products/banda-de-alergare-tm-2400-s-cu-control-gestual-christopeit-1?variant=55608129945983",
-"pret_vechi": 3253.9,
-"verificat": "2026-11-05"
-},
-{
 "titlu": "Banda de alergare pliabila YESOUL T3 Foldable Treadmill, Black, viteza maxima 14 km/h",
 "pret": 1899.0,
 "imagine": "https://cdn.shopify.com/s/files/1/0954/2244/7951/files/YESOUL-T3-_21.jpg?v=1778067125",
@@ -27357,23 +26549,10 @@
 "url_magazin": "https://blacktech.ro/products/banda-de-alergare-yesoul-t3-plus-treadmill-black-inclinare-10-pliere-hidraulica-viteza-max-14km-ora?variant=56322976448847",
 "pret_vechi": null,
 "verificat": "2026-11-05"
-},
-{
-"titlu": "Banda de alergare MAXXUS M8 Argintie",
-"pret": 4799.9,
-"imagine": "https://cdn.shopify.com/s/files/1/0576/5031/5369/products/5dd15556-457e-421b-93ac-1385455982f6_1.jpg?v=1750417876",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.gorillasports.ro%2Fproducts%2Fbanda-de-alergare-maxxus-m8-argintie%3Fvariant%3D55607962567039",
-"magazin": "gorillasports.ro",
-"id": "Rv_ODgitdDqp",
-"brand": "MAXXUS",
-"url_magazin": "https://www.gorillasports.ro/products/banda-de-alergare-maxxus-m8-argintie?variant=55607962567039",
-"pret_vechi": 6100.9,
-"verificat": "2026-11-05"
 }
 ],
 "magazine": [
-"blacktech.ro",
-"gorillasports.ro"
+"blacktech.ro"
 ]
 },
 {
@@ -27514,106 +26693,8 @@
 "magazin": "gorillasports.ro"
 }
 ],
-"produse": [
-{
-"titlu": "Set gantere reglabile din ciment cu grip de 60 lb - US EDITION",
-"pret": 139.9,
-"imagine": "https://cdn.shopify.com/s/files/1/0576/5031/5369/files/Gemini_Generated_Image_y2pqoty2pqoty2pq.jpg?v=1787514155",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.gorillasports.ro%2Fproducts%2Fset-gantere-reglabile-50-lbs%3Fvariant%3D58243728703871",
-"magazin": "gorillasports.ro",
-"id": "Xqi75VqYKoqe",
-"brand": "Gorilla Sports",
-"url_magazin": "https://www.gorillasports.ro/products/set-gantere-reglabile-50-lbs?variant=58243728703871",
-"pret_vechi": null
-},
-{
-"titlu": "Set gantere reglabile 10 - 25 KG cu discuri din ciment Gorilla Sports",
-"pret": 177.9,
-"imagine": "https://cdn.shopify.com/s/files/1/0576/5031/5369/products/1-2.jpg?v=1749808032",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.gorillasports.ro%2Fproducts%2Fset-gantere-reglabile-10-25-kg-cu-discuri-din-ciment%3Fvariant%3D55424652509567",
-"magazin": "gorillasports.ro",
-"id": "POVJlUjXs6ul",
-"brand": "Gorilla Sports",
-"url_magazin": "https://www.gorillasports.ro/products/set-gantere-reglabile-10-25-kg-cu-discuri-din-ciment?variant=55424652509567",
-"pret_vechi": null,
-"verificat": "2026-11-05"
-},
-{
-"titlu": "Set gantere reglabile 10 - 25 KG cu discuri din ciment Gorilla Sports - 10 KG",
-"pret": 177.9,
-"imagine": "https://cdn.shopify.com/s/files/1/0576/5031/5369/products/1-2.jpg?v=1749808032",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.gorillasports.ro%2Fproducts%2Fset-gantere-reglabile-10-25-kg-cu-discuri-din-ciment%3Fvariant%3D55424652509567",
-"magazin": "gorillasports.ro",
-"id": "alqFTG_BeLMK",
-"brand": "Gorilla Sports",
-"url_magazin": "https://www.gorillasports.ro/products/set-gantere-reglabile-10-25-kg-cu-discuri-din-ciment?variant=55424652509567",
-"pret_vechi": null,
-"verificat": "2026-11-05"
-},
-{
-"titlu": "Set gantere reglabile din ciment cu grip de 10 - 45 KG Gorilla Sports - 10 KG",
-"pret": 182.9,
-"imagine": "https://cdn.shopify.com/s/files/1/0576/5031/5369/products/7-2.jpg?v=1749808432",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.gorillasports.ro%2Fproducts%2Fset-gantere-reglabile-din-ciment-cu-grip-de-10-45-kg%3Fvariant%3D55424104071551",
-"magazin": "gorillasports.ro",
-"id": "6CqLmadCrvg7",
-"brand": "Gorilla Sports",
-"url_magazin": "https://www.gorillasports.ro/products/set-gantere-reglabile-din-ciment-cu-grip-de-10-45-kg?variant=55424104071551",
-"pret_vechi": null,
-"verificat": "2026-11-05"
-},
-{
-"titlu": "Set gantere reglabile din ciment cu grip de 10 - 45 KG Gorilla Sports",
-"pret": 182.9,
-"imagine": "https://cdn.shopify.com/s/files/1/0576/5031/5369/products/7-2.jpg?v=1749808432",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.gorillasports.ro%2Fproducts%2Fset-gantere-reglabile-din-ciment-cu-grip-de-10-45-kg%3Fvariant%3D55424104071551",
-"magazin": "gorillasports.ro",
-"id": "IRdG5199Rcgr",
-"brand": "Gorilla Sports",
-"url_magazin": "https://www.gorillasports.ro/products/set-gantere-reglabile-din-ciment-cu-grip-de-10-45-kg?variant=55424104071551",
-"pret_vechi": null,
-"verificat": "2026-11-05"
-},
-{
-"titlu": "Set gantere reglabile 20 kg cu discuri din ciment Gorilla Sports",
-"pret": 224.9,
-"imagine": "https://cdn.shopify.com/s/files/1/0576/5031/5369/files/100075-00006-0025___P1_bf86ba9e-5ce9-458e-a348-be5e9e23f63c.jpg?v=1744358742",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.gorillasports.ro%2Fproducts%2Fset-gantere-reglabile-20-kg-cu-discuri-din-ciment%3Fvariant%3D41143721164905",
-"magazin": "gorillasports.ro",
-"id": "8_fbyff8UBTW",
-"brand": "Gorilla Sports",
-"url_magazin": "https://www.gorillasports.ro/products/set-gantere-reglabile-20-kg-cu-discuri-din-ciment?variant=41143721164905",
-"pret_vechi": null,
-"verificat": "2026-11-05"
-},
-{
-"titlu": "Set gantere reglabile, 15 - 45 KG, Gorilla Sports",
-"pret": 228.9,
-"imagine": "https://cdn.shopify.com/s/files/1/0576/5031/5369/products/2-1_1.jpg?v=1749808134",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.gorillasports.ro%2Fproducts%2Fset-gantere-de-15-45-kg%3Fvariant%3D55424639926655",
-"magazin": "gorillasports.ro",
-"id": "j9Hw-BprP_ce",
-"brand": "Gorilla Sports",
-"url_magazin": "https://www.gorillasports.ro/products/set-gantere-de-15-45-kg?variant=55424639926655",
-"pret_vechi": null,
-"verificat": "2026-11-05"
-},
-{
-"titlu": "Set gantere reglabile, 15 - 45 KG, Gorilla Sports - 15 KG",
-"pret": 228.9,
-"imagine": "https://cdn.shopify.com/s/files/1/0576/5031/5369/products/2-1_1.jpg?v=1749808134",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.gorillasports.ro%2Fproducts%2Fset-gantere-de-15-45-kg%3Fvariant%3D55424639926655",
-"magazin": "gorillasports.ro",
-"id": "4TzCdHjdl44I",
-"brand": "Gorilla Sports",
-"url_magazin": "https://www.gorillasports.ro/products/set-gantere-de-15-45-kg?variant=55424639926655",
-"pret_vechi": null,
-"verificat": "2026-11-05"
-}
-],
-"magazine": [
-"gorillasports.ro"
-]
+"produse": [],
+"magazine": []
 },
 {
 "slug": "carti-de-colorat",
