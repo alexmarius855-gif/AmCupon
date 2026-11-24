@@ -1,5 +1,5 @@
 {
-"actualizat": "2026-11-23",
+"actualizat": "2026-11-24",
 "magazine": {
 "10qaroma.ro": {
 "cupoane": "yes",
@@ -1322,11 +1322,6 @@
 "cashback": "no"
 },
 "librarie.net": {
-"cupoane": "yes",
-"google_ads": "yes",
-"cashback": "yes"
-},
-"librex.ro": {
 "cupoane": "yes",
 "google_ads": "yes",
 "cashback": "yes"

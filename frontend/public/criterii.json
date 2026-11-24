@@ -1,100 +1,7 @@
 {
 "_nota": "Generat de scripts/criterii_produse.py. Doar pagini aprobate, doar produse cu pretul confirmat pe site-ul magazinului.",
-"actualizat": "2026-11-23",
+"actualizat": "2026-11-24",
 "criterii": [
-{
-"slug": "espressor-cu-capsule",
-"tema": "cafetiere",
-"tema_nume": "Espressoare",
-"titlu": "Espressoare cu capsule",
-"nota": null,
-"in_text": "\\bcapsule\\b",
-"actualizat": "2026-11-17",
-"feeduri": [
-{
-"id": 9053,
-"magazin": "brico.ro"
-},
-{
-"id": 1539,
-"magazin": "dwyn.ro"
-},
-{
-"id": 1096,
-"magazin": "evomag.ro"
-},
-{
-"id": 6119,
-"magazin": "infinity.ro"
-}
-],
-"produse": [
-{
-"titlu": "Espressor cu capsule Krups NESCAFÉ Dolce Gusto Mini Me 2 KP143GF0, 1600 W, 15 bari presiune, rezervor apa 0.8 L, oprire",
-"pret": 324.45,
-"imagine": "https://gomagcdn.ro/domains3/brico.ro/files/product/original/espressor-cu-capsule-krups-nescafe-dolce-gusto-mini-me-2-kp143gf0-1600-w-15-bari-presiune-rezervor-apa-0-8-l-oprire-automata-gri-707942.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.brico.ro%2Felectrocasnice-332%2Fespressor-cu-capsule-krups-nescaf%C3%A9-dolce-gusto-mini-me-2-kp143gf0-1600-w-15-bari-presiune-rezervor-apa-0-8-l-oprire-automata-gri.html",
-"magazin": "brico.ro",
-"id": "sJBpzdMA-x6f",
-"brand": "Krups",
-"url_magazin": "https://www.brico.ro/electrocasnice-332/espressor-cu-capsule-krups-nescafé-dolce-gusto-mini-me-2-kp143gf0-1600-w-15-bari-presiune-rezervor-apa-0-8-l-oprire-automata-gri.html",
-"pret_vechi": null,
-"verificat": "2026-11-13"
-},
-{
-"titlu": "Espressor cu capsule Krups NESCAFÉ Dolce Gusto Mini Me 2 KP1438F0, 1600 W, 15 bari presiune, rezervor apa 0.8 L, oprire",
-"pret": 324.45,
-"imagine": "https://gomagcdn.ro/domains3/brico.ro/files/product/original/espressor-cu-capsule-krups-nescafe-dolce-gusto-mini-me-2-kp1438f0-1600-w-15-bari-presiune-rezervor-apa-0-8-l-oprire-automata-negru-384259.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.brico.ro%2Felectrocasnice-332%2Fespressor-cu-capsule-krups-nescaf%C3%A9-dolce-gusto-mini-me-2-kp1438f0-1600-w-15-bari-presiune-rezervor-apa-0-8-l-oprire-automata-negru.html",
-"magazin": "brico.ro",
-"id": "aJVWuSawH3WE",
-"brand": "Krups",
-"url_magazin": "https://www.brico.ro/electrocasnice-332/espressor-cu-capsule-krups-nescafé-dolce-gusto-mini-me-2-kp1438f0-1600-w-15-bari-presiune-rezervor-apa-0-8-l-oprire-automata-negru.html",
-"pret_vechi": null,
-"verificat": "2026-11-13"
-},
-{
-"titlu": "Espressor cu capsule Krups NESCAFÉ Dolce Gusto Genio S Plus KP340810, 1500W, 15 bari, functie Hot Cold, functie XL, reze",
-"pret": 345.45,
-"imagine": "https://gomagcdn.ro/domains3/brico.ro/files/product/original/espressor-cu-capsule-krups-nescafe-dolce-gusto-genio-s-plus-kp340810-1500w-15-bari-functie-hot-cold-functie-xl-rezervor-0-8l-temperatur-941853.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.brico.ro%2Felectrocasnice-332%2Fespressor-cu-capsule-krups-nescaf%C3%A9-dolce-gusto-genio-s-plus-kp340810-1500w-15-bari-functie-hot-cold-functie-xl-rezervor-0-8l-temperatur.html",
-"magazin": "brico.ro",
-"id": "s1b4BSp7bqM1",
-"brand": "Krups",
-"url_magazin": "https://www.brico.ro/electrocasnice-332/espressor-cu-capsule-krups-nescafé-dolce-gusto-genio-s-plus-kp340810-1500w-15-bari-functie-hot-cold-functie-xl-rezervor-0-8l-temperatur.html",
-"pret_vechi": null,
-"verificat": "2026-11-17"
-},
-{
-"titlu": "Espressor de cafea HAEGER SUPER ESPRESSO, Presiune 20 bar (pompa ULKA Italia), Cafea macinata si capsule, 1.6L, Extracti",
-"pret": 369.0,
-"imagine": "https://gomagcdn.ro/domains3/brico.ro/files/product/original/espressor-de-cafea-haeger-super-espresso-presiune-20-bar-pompa-ulka-cafea-macinata-si-capsule-1-6l-extractie-intensa-cu-aroma-bogata-incalzire-cesti-a-042449.png",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.brico.ro%2Felectrocasnice-332%2Fespressor-de-cafea-haeger-super-espresso-presiune-20-bar-pompa-ulka-rezervor-apa-1-6l-extractie-intensa-cu-aroma-bogata-suport-inox-pentru-incalzire-cesti.html",
-"magazin": "brico.ro",
-"id": "j7aO4OzpZCoA",
-"brand": "HAEGER",
-"url_magazin": "https://www.brico.ro/electrocasnice-332/espressor-de-cafea-haeger-super-espresso-presiune-20-bar-pompa-ulka-rezervor-apa-1-6l-extractie-intensa-cu-aroma-bogata-suport-inox-pentru-incalzire-cesti.html",
-"pret_vechi": 529.0,
-"verificat": "2026-11-17"
-},
-{
-"titlu": "Espressor cu capsule Krups NESCAFÉ Dolce Gusto Mini Me 2 KP1435F0, 1600 W, 15 bari presiune, rezervor apa 0.8 L, oprire",
-"pret": 382.2,
-"imagine": "https://gomagcdn.ro/domains3/brico.ro/files/product/original/espressor-cu-capsule-krups-nescafe-dolce-gusto-mini-me-2-kp1435f0-1600-w-15-bari-presiune-rezervor-apa-0-8-l-oprire-automata-rosu-840872.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.brico.ro%2Felectrocasnice-332%2Fespressor-cu-capsule-krups-nescaf%C3%A9-dolce-gusto-mini-me-2-kp1435f0-1600-w-15-bari-presiune-rezervor-apa-0-8-l-oprire-automata-rosu.html",
-"magazin": "brico.ro",
-"id": "PxBCYzETSgyD",
-"brand": "Krups",
-"url_magazin": "https://www.brico.ro/electrocasnice-332/espressor-cu-capsule-krups-nescafé-dolce-gusto-mini-me-2-kp1435f0-1600-w-15-bari-presiune-rezervor-apa-0-8-l-oprire-automata-rosu.html",
-"pret_vechi": 408.45,
-"verificat": "2026-11-17"
-}
-],
-"magazine": [
-"brico.ro"
-],
-"publicat": true
-},
 {
 "slug": "monitor-gaming",
 "tema": "monitoare",
@@ -266,7 +173,7 @@
 "titlu": "Generatoare de curent",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-16",
+"actualizat": "2026-11-24",
 "feeduri": [
 {
 "id": 4679,
@@ -287,6 +194,18 @@
 ],
 "produse": [
 {
+"titlu": "Generator de curent, Kraft&Dele, 3500W, 230V, cu ecran LCD, KD149",
+"pret": 1024.34,
+"imagine": "https://infinityro.vteximg.com.br/arquivos/ids/270577474/image-ab2011d0e9e948ba960d5acf3f465bd4.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Finfinity.ro%2Fgenerator-de-curent-kraft-dele-3500w-230v-cu-ecran-lcd-kd149-9036139%2Fp%3Futm_source%3D2performant",
+"magazin": "infinity.ro",
+"id": "j4scHb-N2EzK",
+"brand": "Kraft&Dele",
+"url_magazin": "https://infinity.ro/generator-de-curent-kraft-dele-3500w-230v-cu-ecran-lcd-kd149-9036139/p?utm_source=2performant",
+"pret_vechi": 1575.9,
+"verificat": "2026-11-24"
+},
+{
 "titlu": "Generator de curent, Kraft&Dele, pe benzina, tip invertor, 2000W, 230V, 4CP",
 "pret": 1939.13,
 "imagine": "https://infinityro.vteximg.com.br/arquivos/ids/270577703/image-658ef45bd4b946d1b179afaf624acb57.jpg",
@@ -297,6 +216,18 @@
 "url_magazin": "https://infinity.ro/generator-de-curent-kraft-dele-pe-benzina-tip-invertor-2000w-230v-4cp-9036165/p?utm_source=2performant",
 "pret_vechi": 2281.33,
 "verificat": "2026-11-16"
+},
+{
+"titlu": "Generator de curent 5.5 kW, benzina BASIC LINE - Konner & Sohnen - KSB-6500C",
+"pret": 2370.0,
+"imagine": "https://c.cdnmp.net/917469284/p/l/0/generator-de-curent-5-5-kw-benzina-basic-line-konner-sohnen-ksb-6500c~8691500.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.albertool.com%2Fcumpara%2Fgenerator-de-curent-5-5-kw-benzina-basic-line-konner-sohnen-ksb-6500c-2328%3Futm_source%3Dportal%26utm_medium%3Dweb%26utm_campaign%3D2parale",
+"magazin": "albertool.com",
+"id": "DSNtkkqPeNO0",
+"brand": "Konner & Sohnen",
+"url_magazin": "https://www.albertool.com/cumpara/generator-de-curent-5-5-kw-benzina-basic-line-konner-sohnen-ksb-6500c-2328?utm_source=portal&utm_medium=web&utm_campaign=2parale",
+"pret_vechi": null,
+"verificat": "2026-11-24"
 },
 {
 "titlu": "Generator de curent GENMAC Click RG4000HO putere maxima 3,1 kW 230V motor Honda GP200",
@@ -320,18 +251,6 @@
 "brand": "Genmac",
 "url_magazin": "https://www.albertool.com/cumpara/generator-de-curent-genmac-click-rg5000ho-putere-maxima-4-6-kw-230v-24378?utm_source=portal&utm_medium=web&utm_campaign=2parale",
 "pret_vechi": null,
-"verificat": "2026-11-16"
-},
-{
-"titlu": "Generator de curent 9 kW inverter SuperHIBRID (GPL + Gaz Natural + Benzina) voltaj selectabil 230V/400V - CRIANO - CNO-N",
-"pret": 5734.19,
-"imagine": "https://c.cdnmp.net/917469284/p/l/1/generator-de-curent-9-kw-inverter-superhibrid-gpl-gaz-natural-benzina~8889671.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.albertool.com%2Fcumpara%2Fgenerator-de-curent-9-kw-inverter-superhibrid-gpl-gaz-natural-benzina-25985%3Futm_source%3Dportal%26utm_medium%3Dweb%26utm_campaign%3D2parale",
-"magazin": "albertool.com",
-"id": "bO4LyHefNfBy",
-"brand": "CRIANO",
-"url_magazin": "https://www.albertool.com/cumpara/generator-de-curent-9-kw-inverter-superhibrid-gpl-gaz-natural-benzina-25985?utm_source=portal&utm_medium=web&utm_campaign=2parale",
-"pret_vechi": 7447.0,
 "verificat": "2026-11-16"
 }
 ],
@@ -381,66 +300,6 @@
 "verificat": "2026-11-17"
 },
 {
-"titlu": "Puzzle 1000 Piese, Deico, Zana Zapezii de Groos Zselyke",
-"pret": 51.99,
-"imagine": "https://www.trada.ro/img/puzzle-1000-piese-deico-zana-zapezii-de-groos-zselyke-146215html_tr-295797-large.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.trada.ro%2Fpuzzle-1000-piese-deico-zana-zapezii-de-groos-zselyke-146215.html",
-"magazin": "trada.ro",
-"id": "gNZJA3Zbn0br",
-"brand": "Deico",
-"url_magazin": "https://www.trada.ro/puzzle-1000-piese-deico-zana-zapezii-de-groos-zselyke-146215.html",
-"pret_vechi": 60.45,
-"verificat": "2026-11-13"
-},
-{
-"titlu": "Puzzle 1000 Piese pentru Adulti, Deico, Marie Spartali Stillman, Fiammetta Singing",
-"pret": 51.99,
-"imagine": "https://www.trada.ro/img/puzzle-1000-piese-pentru-adulti-deico-marie-spartali-stillman-fiammetta-singing-146216html_tr-295805-large.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.trada.ro%2Fpuzzle-1000-piese-pentru-adulti-deico-marie-spartali-stillman-fiammetta-singing-146216.html",
-"magazin": "trada.ro",
-"id": "ZGzQF3xXeXP8",
-"brand": "Deico",
-"url_magazin": "https://www.trada.ro/puzzle-1000-piese-pentru-adulti-deico-marie-spartali-stillman-fiammetta-singing-146216.html",
-"pret_vechi": 60.45,
-"verificat": "2026-11-13"
-},
-{
-"titlu": "Puzzle 1000 Piese pentru Adulti, Deico, Robert Delaunay, Rythme",
-"pret": 51.99,
-"imagine": "https://www.trada.ro/img/puzzle-1000-piese-pentru-adulti-deico-robert-delaunay-rythme-146219html_tr-295825-large.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.trada.ro%2Fpuzzle-1000-piese-pentru-adulti-deico-robert-delaunay-rythme-146219.html",
-"magazin": "trada.ro",
-"id": "Z9sd83S_MfHq",
-"brand": "Deico",
-"url_magazin": "https://www.trada.ro/puzzle-1000-piese-pentru-adulti-deico-robert-delaunay-rythme-146219.html",
-"pret_vechi": 60.45,
-"verificat": "2026-11-13"
-},
-{
-"titlu": "Puzzle 1000 Piese pentru Adulti, Deico, Robert Delaunay Tour Eiffel",
-"pret": 51.99,
-"imagine": "https://www.trada.ro/img/puzzle-1000-piese-pentru-adulti-deico-robert-delaunay-tour-eiffel-146220html_tr-295832-large.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.trada.ro%2Fpuzzle-1000-piese-pentru-adulti-deico-robert-delaunay-tour-eiffel-146220.html",
-"magazin": "trada.ro",
-"id": "g7td9rB3Tytx",
-"brand": "Deico",
-"url_magazin": "https://www.trada.ro/puzzle-1000-piese-pentru-adulti-deico-robert-delaunay-tour-eiffel-146220.html",
-"pret_vechi": 60.45,
-"verificat": "2026-11-13"
-},
-{
-"titlu": "Puzzle 1000 Piese pentru Adulti, Deico, Emile Vernon, The Flower Garden",
-"pret": 51.99,
-"imagine": "https://www.trada.ro/img/puzzle-1000-piese-pentru-adulti-deico-emile-vernon-the-flower-garden-146223html_tr-295849-large.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.trada.ro%2Fpuzzle-1000-piese-pentru-adulti-deico-emile-vernon-the-flower-garden-146223.html",
-"magazin": "trada.ro",
-"id": "sLrKa2WVz9kD",
-"brand": "Deico",
-"url_magazin": "https://www.trada.ro/puzzle-1000-piese-pentru-adulti-deico-emile-vernon-the-flower-garden-146223.html",
-"pret_vechi": 60.45,
-"verificat": "2026-11-13"
-},
-{
 "titlu": "Puzzle 1000 Piese pentru Adulti, Deico, Castelul Bran Iarna",
 "pret": 51.99,
 "imagine": "https://www.trada.ro/img/puzzle-1000-piese-pentru-adulti-deico-castelul-bran-iarna-146761html_tr-296476-large.jpg",
@@ -465,90 +324,6 @@
 "verificat": "2026-11-17"
 },
 {
-"titlu": "Puzzle orașe, Londra, 1000 piese",
-"pret": 57.9,
-"imagine": "https://www.ookee.ro/423891-large_default/puzzle-orae-londra-1000-piese.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ookee.ro%2Fpuzzle%2F135730-puzzle-orae-londra-1000-piese-4823115911216.html",
-"magazin": "ookee.ro",
-"id": "c-DVkQFNLisF",
-"brand": "Dodo Toys",
-"url_magazin": "https://www.ookee.ro/puzzle/135730-puzzle-orae-londra-1000-piese-4823115911216.html",
-"pret_vechi": null,
-"verificat": "2026-11-13"
-},
-{
-"titlu": "Puzzle orașe, Paris, 1000 piese",
-"pret": 57.9,
-"imagine": "https://www.ookee.ro/423894-large_default/puzzle-orae-paris-1000-piese.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ookee.ro%2Fpuzzle%2F135731-puzzle-orae-paris-1000-piese-4823115911223.html",
-"magazin": "ookee.ro",
-"id": "ASo9WkagyTrF",
-"brand": "Dodo Toys",
-"url_magazin": "https://www.ookee.ro/puzzle/135731-puzzle-orae-paris-1000-piese-4823115911223.html",
-"pret_vechi": null,
-"verificat": "2026-11-13"
-},
-{
-"titlu": "Puzzle Impossible La Casa De Papel 1000 De Piese Clementoni",
-"pret": 57.9,
-"imagine": "https://www.ookee.ro/199391-large_default/puzzle-impossible-la-casa-de-papel-1000-de-piese-clementoni.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ookee.ro%2Fpuzzle%2F87434-puzzle-impossible-la-casa-de-papel-1000-de-piese-clementoni-800512539529.html",
-"magazin": "ookee.ro",
-"id": "nYyOXd7hsOyn",
-"brand": "AS",
-"url_magazin": "https://www.ookee.ro/puzzle/87434-puzzle-impossible-la-casa-de-papel-1000-de-piese-clementoni-800512539529.html",
-"pret_vechi": null,
-"verificat": "2026-11-13"
-},
-{
-"titlu": "Puzzle Stranger Things 1000 De Piese Clementoni",
-"pret": 57.9,
-"imagine": "https://www.ookee.ro/199396-large_default/puzzle-stranger-things-1000-de-piese-clementoni.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ookee.ro%2Fpuzzle%2F87436-puzzle-stranger-things-1000-de-piese-clementoni-8005125395422.html",
-"magazin": "ookee.ro",
-"id": "X7edGjHqfwDy",
-"brand": "AS",
-"url_magazin": "https://www.ookee.ro/puzzle/87436-puzzle-stranger-things-1000-de-piese-clementoni-8005125395422.html",
-"pret_vechi": null,
-"verificat": "2026-11-13"
-},
-{
-"titlu": "Puzzle La Casa De Papel 1000 De Piese Clementoni",
-"pret": 57.9,
-"imagine": "https://www.ookee.ro/199399-large_default/puzzle-la-casa-de-papel-1000-de-piese-clementoni.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ookee.ro%2Fpuzzle%2F87437-puzzle-la-casa-de-papel-1000-de-piese-clementoni-8005125395323.html",
-"magazin": "ookee.ro",
-"id": "4wnwtnrdKiCV",
-"brand": "AS",
-"url_magazin": "https://www.ookee.ro/puzzle/87437-puzzle-la-casa-de-papel-1000-de-piese-clementoni-8005125395323.html",
-"pret_vechi": null,
-"verificat": "2026-11-13"
-},
-{
-"titlu": "Puzzle carton, in cutie, Zodiac, 1000 piese",
-"pret": 70.18,
-"imagine": "https://infinityro.vteximg.com.br/arquivos/ids/234134368/image-2c5777d79202427bbce260e586551c55.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Finfinity.ro%2Fpuzzle-carton-in-cutie-zodiac-1000-piese-672470%2Fp%3Futm_source%3D2performant",
-"magazin": "infinity.ro",
-"id": "m3C1qW3fmtkd",
-"brand": "ROBEN",
-"url_magazin": "https://infinity.ro/puzzle-carton-in-cutie-zodiac-1000-piese-672470/p?utm_source=2performant",
-"pret_vechi": null,
-"verificat": "2026-11-13"
-},
-{
-"titlu": "Puzzle Vintage cu Mos Craciun si Brad de Craciun, 1000 piese, Multicolor",
-"pret": 71.97,
-"imagine": "https://infinityro.vteximg.com.br/arquivos/ids/274907853/2.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Finfinity.ro%2Fpuzzle-vintage-cu-mos-craciun-si-brad-de-craciun-1000-piese-multicolor-9360650%2Fp%3Futm_source%3D2performant",
-"magazin": "infinity.ro",
-"id": "Vc-3GpEUkR_U",
-"brand": "OEM",
-"url_magazin": "https://infinity.ro/puzzle-vintage-cu-mos-craciun-si-brad-de-craciun-1000-piese-multicolor-9360650/p?utm_source=2performant",
-"pret_vechi": 95.96,
-"verificat": "2026-11-13"
-},
-{
 "titlu": "Puzzle Rotund 1000 Piese Zodiac Astrologie si Simboluri Astrale, Carton Premium, Diametru 68 cm, Antistres, 14 ani+",
 "pret": 76.11,
 "imagine": "https://infinityro.vteximg.com.br/arquivos/ids/275225518/image-a14c273ceea449d39683c8615294d090.jpg",
@@ -559,18 +334,6 @@
 "url_magazin": "https://infinity.ro/puzzle-rotund-1000-piese-zodiac-astrologie-si-simboluri-astrale-carton-premium-diametru-68-cm-antistres-14-ani--9381417/p?utm_source=2performant",
 "pret_vechi": 89.54,
 "verificat": "2026-11-17"
-},
-{
-"titlu": "Puzzle 1000 de piese, Wicked, Multicolor",
-"pret": 95.96,
-"imagine": "https://infinityro.vteximg.com.br/arquivos/ids/274907460/0.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Finfinity.ro%2Fpuzzle-1000-de-piese-wicked-multicolor-9360518%2Fp%3Futm_source%3D2performant",
-"magazin": "infinity.ro",
-"id": "cIXL5NqVA3w-",
-"brand": "OEM",
-"url_magazin": "https://infinity.ro/puzzle-1000-de-piese-wicked-multicolor-9360518/p?utm_source=2performant",
-"pret_vechi": null,
-"verificat": "2026-11-13"
 }
 ],
 "magazine": [

@@ -1,6 +1,6 @@
 {
  "_nota": "Generat de scripts/calendar_black_friday.py din promotiile anuntate de magazine in 2Performant (data/promotii_2p.csv si ofertele 2P active din output.json). Doar parteneri cu link platit. Nu edita de mana.",
- "generat": "2026-11-23",
+ "generat": "2026-11-24",
  "categorii": [
   {
    "slug": "casa-gradina",
@@ -36,6 +36,11 @@
    "slug": "sanatate",
    "nume": "sănătate",
    "campanii": 14
+  },
+  {
+   "slug": "sport",
+   "nume": "sport",
+   "campanii": 3
   },
   {
    "slug": "auto-moto",
@@ -719,7 +724,7 @@
    "nume": "Kinderauto",
    "start": "2026-11-06",
    "final": "2026-11-15",
-   "nota": "",
+   "nota": "Black Friday Kinderauto.ro 2026",
    "descriere": "Transport GRATUIT la orice produs, indiferent de valoarea comenzii. 24 de luni garanție pentru produsele comercializate. Puncte de fidelitate – 1 punct = 1 leu. Suport personalizat 1:1 pentru montaj, prin telefon sau apel video. Plată în rate fără dobândă, prin cardurile de cumpărături eligibile. Credit 100% online sau Buy Now, Pay Later, direct din pagina de finalizare a comenzii, prin partenerii Leanpay, TBI Bank, Mokka și Oney.",
    "are_cod": false,
    "categorie": "copii"
@@ -1183,6 +1188,26 @@
    "descriere": "Profita de Black Friday la DoctorShield.ro si descopera reduceri de pana la 50%, cu oferte la aproape toate produsele de pe site, din toate categoriile. Alege incalzitoare de terasa, gratare, paturi si multe alte produse la preturi reduse! Beneficiezi de transport gratuit la toate comenzile. Perioada campaniei: 20 noiembrie 2026, aproximativ ora 08:00 – 30 noiembrie 2026, aproximativ ora 10:00. Nu este necesar un cod de reducere.",
    "are_cod": false,
    "categorie": "casa-gradina"
+  },
+  {
+   "magazin": "lovepadel.ie",
+   "nume": "Lovepadel IE",
+   "start": "2026-11-24",
+   "final": "2026-12-01",
+   "nota": "Free 4on padel balls with every racket",
+   "descriere": "For Black Week, every racket in our All Padel Rackets collection comes with a free tube of 4on Pro T1 padel balls. That includes rackets already reduced in the Black November sale, so you get the sale price and the free balls together.",
+   "are_cod": false,
+   "categorie": "sport"
+  },
+  {
+   "magazin": "padelboost.co.uk",
+   "nume": "Padelboost UK",
+   "start": "2026-11-24",
+   "final": "2026-12-01",
+   "nota": "Free PINQ padel balls with every racket",
+   "descriere": "For Black Week, every racket in our Padel Rackets collection comes with a free tube of PINQ pink padel balls. That includes rackets already reduced in the Black November sale, so you get the sale price and the free balls together.",
+   "are_cod": false,
+   "categorie": "sport"
   }
  ]
 }
