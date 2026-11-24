@@ -1,9 +1,10 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import { Clock, Flame, Truck, Heart, Copy } from "lucide-react";
 import { useCopyCod } from "../hooks/useCopyCod";
+import { confetti } from "@/lib/confetti";
 import RedirectModal from "./RedirectModal";
 import { calculateDealScore, DEAL_SCORE_VISIBLE_THRESHOLD } from "../../lib/dealScore";
 import { linkAfiliat, linkPromotie } from "@/lib/linkMagazin";
@@ -92,6 +93,9 @@ export default function MagazinCard({ m, numeOverride, astazi, isFavorit, onTogg
   const [modalOpen, setModalOpen] = useState(false);
   const { copiedKey, redirectFailed, copyAndOpen, retryRedirect } = useCopyCod();
   const copiat = copiedKey === m.magazin;
+  const codRef = useRef<HTMLDivElement>(null);
+  // Confetti peste codul copiat (24.11.2026): acum, sau cand omul se intoarce din tabul magazinului.
+  useEffect(() => (copiat ? confetti(codRef.current) : undefined), [copiat]);
 
   const domeniu = (m.magazin || "").match(/[a-z0-9-]+\.[a-z]{2,}(?:\.[a-z]{2,})?/i)?.[0] || null;
   const logoSurse = [
@@ -128,7 +132,7 @@ export default function MagazinCard({ m, numeOverride, astazi, isFavorit, onTogg
   }
 
   return (
-    <div className="group glass elevate elevate-hover rounded-xl hover:-translate-y-1 transition-all duration-200 flex flex-col overflow-hidden">
+    <div className="am-card group glass elevate elevate-hover rounded-xl flex flex-col overflow-hidden">
       {/* Banda de accent — semnal vizual instant ca are ceva activ, nu doar decor */}
       {promo && (
         <div className="h-0.5 w-full bg-gradient-to-r from-[#c3dd2c] via-[#ddf93c] to-[#ecff7a]" />
@@ -219,7 +223,7 @@ export default function MagazinCard({ m, numeOverride, astazi, isFavorit, onTogg
         {promo?.cod_cupon ? (
           revealed ? (
             <div className="space-y-2">
-              <div className="relative border border-dashed border-[var(--accent-text)]/60 rounded-xl py-2.5 text-center bg-[#ddf93c]/10">
+              <div ref={codRef} className="am-cod relative border border-dashed border-[var(--accent-text)]/60 rounded-xl py-2.5 text-center bg-[#ddf93c]/10">
                 <span className="font-mono font-black text-[var(--accent-text)] tracking-[0.2em] text-sm">{promo.cod_cupon}</span>
                 {copiat && (
                   <p className="am-sus text-[11px] font-bold text-emerald-400 mt-0.5">✓ Copiat!</p>

@@ -14,6 +14,7 @@
  */
 
 import { useEffect, useRef, useState, type ReactNode } from "react";
+import { confetti } from "@/lib/confetti";
 import { etichetaExpirare } from "@/lib/expirarePromo";
 import { faraCod, faraEmoji, pareCod, valoareOferta, RE_LIVRARE, type PromotieCupon } from "@/lib/oferta";
 
@@ -42,13 +43,18 @@ export default function CuponCard({ promo, numeMagazin, logoSrc, link, dezvaluit
   const [logoOk, setLogoOk] = useState(true);
   const [recopiat, setRecopiat] = useState(false);
   const copiazaRef = useRef<HTMLButtonElement>(null);
+  const codRef = useRef<HTMLDivElement>(null);
   const eraDezvaluit = useRef(dezvaluit);
 
   // Butonul „Vezi codul" dispare la apasare; fara asta, focusul de tastatura se pierdea
   // pe <body>. Il mutam pe „Copiaza", iar caseta codului e aria-live, deci se si anunta.
+  // Confetti peste cod (24.11.2026): acum, sau cand omul se intoarce din tabul magazinului.
   useEffect(() => {
-    if (dezvaluit && !eraDezvaluit.current) copiazaRef.current?.focus();
+    const abiaDezvaluit = dezvaluit && !eraDezvaluit.current;
     eraDezvaluit.current = dezvaluit;
+    if (!abiaDezvaluit) return;
+    copiazaRef.current?.focus();
+    return confetti(codRef.current);
   }, [dezvaluit]);
 
   const cod = (promo.cod_cupon || "").trim();
@@ -69,7 +75,7 @@ export default function CuponCard({ promo, numeMagazin, logoSrc, link, dezvaluit
   const coada = cod.length > 3 ? cod.slice(-2) : "";
 
   function copiazaDinNou() {
-    navigator.clipboard?.writeText(cod).then(() => setRecopiat(true)).catch(() => {});
+    navigator.clipboard?.writeText(cod).then(() => { setRecopiat(true); confetti(codRef.current); }).catch(() => {});
   }
 
   return (
@@ -108,9 +114,9 @@ export default function CuponCard({ promo, numeMagazin, logoSrc, link, dezvaluit
         {cod ? (
           dezvaluit ? (
             <div className="cc-revealed">
-              <div className="cc-codebox" aria-live="polite">
+              <div ref={codRef} className="cc-codebox" aria-live="polite">
                 <code>{cod}</code>
-                <button ref={copiazaRef} type="button" className="cc-copy" onClick={copiazaDinNou}>
+                <button ref={copiazaRef} type="button" className={copiat || recopiat ? "cc-copy cc-copy-ok" : "cc-copy"} onClick={copiazaDinNou}>
                   {copiat || recopiat ? "Copiat ✓" : "Copiază"}
                 </button>
               </div>

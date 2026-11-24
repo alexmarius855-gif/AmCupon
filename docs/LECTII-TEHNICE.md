@@ -571,3 +571,25 @@ funcțiilor (le servește CDN-ul); (2) după un push, verifică starea deploy-ul
 `errorMessage`), nu doar build-ul local — `next build` local NU aplică limita Vercel; (3) orice
 folder care crește zilnic în `public/` e o limită care se va atinge: măsoară-l
 (`.next/server/**/*.nft.json`) înainte să devină o pană.
+
+## 16. CSS: o regulă fără strat bate orice regulă dintr-un strat; testele de stare finală nu văd mișcarea
+
+**24.11.2026, animațiile.** Am scris ridicarea la hover, luciul și aparițiile în `@layer components`, iar
+testele (opacitatea finală, nimic ascuns, fără scroll orizontal) au trecut toate. În pagină însă totul
+sărea instant: `globals.css` are, de la începuturi, `*, *::before, *::after { transition-property:
+background-color, border-color, color; transition-duration: 150ms }` **în afara oricărui strat**. Iar o
+declarație fără strat bate orice declarație dintr-un `@layer`, oricât de specifică — inclusiv
+utilitarele Tailwind de tranziție (`transition-all`, `duration-300`), care pe acest site n-au funcționat
+niciodată așa cum sunt scrise. Starea finală era corectă; drumul până la ea nu exista.
+**Regula:** (1) o regulă nouă care trebuie să învingă una veche fără strat se scrie tot fără strat și
+câștigă prin specificitate (o clasă bate `*` și `a`) și prin ordine; formele rămân în strat, ca
+utilitarele Tailwind să le poată suprascrie; (2) o animație se testează **la jumătatea ei** (opacitatea
+la 150 ms, transformarea la 70 ms), nu doar la final; (3) proba se dovedește pe mutație: cu regula
+reparatoare ștearsă din pagină (`deleteRule`), testul trebuie să pice. Vezi `scripts/proba_animatii.cjs`.
+
+**Și, la măsurare:** un `next start` vechi rămas pe port după un rebuild servește HTML nou cu CSS 500.
+Pagina fără stil „câștigă" la LCP (nu mai are CSS de așteptat), deci rezultatul arată ca o îmbunătățire.
+Înainte de orice A/B: portul liber (`fuser <port>/tcp`; `ss` nu există în container), CSS-ul cerut cu
+curl (200), iar în fiecare rulare o verificare că stilul s-a aplicat (bannerul de cookie-uri `fixed`).
+Și o singură serie nu ajunge: aceeași pagină a ieșit +44 ms într-o serie și −28 ms în alta; pe 34 + 34 de
+rulări diferența a fost 4 ms (p = 0,89).

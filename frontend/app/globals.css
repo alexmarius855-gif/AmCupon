@@ -268,3 +268,183 @@ html.cc-ok .cookie-banner { display: none; }
   .am-fade { animation: am-fade .15s ease-out both; }
   .am-modal { animation: am-modal .18s ease-out both; }
 }
+
+/* ══════════════════════════════════════════════════════════════════════════
+   Animatii si interactivitate (24.11.2026). Cererea lui Alex: „site interactiv, cu animatii cum au majoritatea".
+   Regulile, ca sa nu pierdem ce s-a castigat pe 27.09 (viteza):
+   - doar CSS, zero biblioteci; singurul JavaScript e explozia de confetti la copierea codului (CuponCard);
+   - aparitiile la derulare: Aparitii.tsx (IntersectionObserver), pornit DUPA incarcare si doar pentru ce e sub
+     ecran; ce se vede la incarcare nu se ascunde niciodata, deci LCP si textul pentru Google nu se schimba;
+   - aparitiile misca `translate`/`scale`/`opacity`, iar ridicarea la hover misca `transform`: proprietati diferite,
+     deci nu se calca una pe alta;
+   - nimic la „miscare redusa" (setarea telefonului) si nimic la tiparit.
+   Formele si starile stau in @layer components: utilitarele Tailwind (fixed, overflow-visible...) trebuie sa poata
+   suprascrie. Tranzitiile stau in afara stratului, la final (explicatia e acolo).
+   ══════════════════════════════════════════════════════════════════════════ */
+:root {
+  --am-ease: cubic-bezier(.2, .8, .2, 1);
+  --am-arc: cubic-bezier(.34, 1.56, .64, 1); /* cu un mic rebound, pentru „pop" */
+  interpolate-size: allow-keywords;          /* intrebarile frecvente se deschid lin (Chrome 129+; in rest, instant) */
+}
+
+@keyframes am-progres { from { scale: 0 1; } to { scale: 1 1; } }
+@keyframes am-aurora { from { transform: translate3d(0, 0, 0) scale(1); } to { transform: translate3d(5%, -4%, 0) scale(1.1); } }
+@keyframes am-luciu { 0% { translate: -110% 0; } 45%, 100% { translate: 110% 0; } }
+@keyframes am-inel {
+  from { box-shadow: 0 0 0 0 color-mix(in srgb, var(--accent) 55%, transparent); }
+  to { box-shadow: 0 0 0 14px color-mix(in srgb, var(--accent) 0%, transparent); }
+}
+@keyframes am-confetti {
+  0% { opacity: 1; transform: translate(-50%, -50%) rotate(0deg) scale(.5); }
+  45% { opacity: 1; transform: translate(calc(-50% + var(--dx) * .75), calc(-50% + var(--dy))) rotate(calc(var(--r) * .5)) scale(1); }
+  100% { opacity: 0; transform: translate(calc(-50% + var(--dx)), calc(-50% + var(--dy) + 70px)) rotate(var(--r)) scale(.9); }
+}
+
+@layer components {
+  /* Cardurile si titlurile apar cand intra in ecran. Clasele le pune Aparitii.tsx (IntersectionObserver), DOAR dupa
+     incarcare si DOAR pe ce e sub marginea ecranului atunci: ce se vede la incarcare nu se ascunde niciodata. Varianta
+     pur CSS (animation-timeline: view()) a fost masurata si scoasa: +90 ms la LCP pe prima pagina, telefon incetinit. */
+  @media (prefers-reduced-motion: no-preference) {
+    .am-ascuns { opacity: 0; translate: 0 26px; scale: .97; }
+    .am-ascuns.am-vazut { opacity: 1; translate: none; scale: none; }
+    .am-h2.am-ascuns::after { scale: 0 1; }
+    .am-h2.am-ascuns.am-vazut::after { scale: 1 1; }
+  }
+  /* Linia lime a titlurilor de sectiune: DEASUPRA titlului (dedesubt sunt doar 4 px pana la subtitlu, deasupra cel
+     putin 28 px, masurat la 390 si la 1280 px). Absoluta, deci nu muta nimic din pagina. */
+  .am-h2 { position: relative; }
+  .am-h2::after {
+    content: ""; position: absolute; left: 0; top: -7px; width: 38px; height: 3px; border-radius: 3px;
+    background: linear-gradient(90deg, var(--accent), #10b981); transform-origin: left center; pointer-events: none;
+  }
+
+  /* Ridicare la hover, doar pe dispozitive cu mouse (pe telefon hover-ul ar ramane „agatat" dupa atingere).
+     Tranzitiile tuturor acestor reguli sunt mai jos, in afara stratului (vezi acolo de ce). */
+  @media (hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference) {
+    .cc:hover {
+      transform: translateY(-3px);
+      border-color: color-mix(in srgb, var(--accent) 45%, var(--border-strong));
+      box-shadow: 0 18px 40px -20px rgba(0, 0, 0, .9), 0 0 0 1px color-mix(in srgb, var(--accent) 16%, transparent);
+    }
+    .cc:hover .cc-logo { transform: scale(1.07) rotate(-3deg); }
+    .pop:hover img { transform: scale(1.08); }
+    .am-card:hover { transform: translateY(-4px); }
+    .am-tile:hover, .am-produs:hover {
+      transform: translateY(-3px);
+      border-color: color-mix(in srgb, var(--accent) 45%, var(--border-strong));
+      box-shadow: 0 16px 34px -18px rgba(0, 0, 0, .85);
+    }
+    .am-tile:hover svg { transform: scale(1.15) rotate(-8deg); }
+    .am-produs:hover img { transform: scale(1.06); }
+  }
+  /* Apasare: butoanele si cardurile-link raspund la atingere si pe telefon. */
+  :is(.cc-reveal, .cc-go, .cc-go-solid, .cc-copy, .cz-f, .pop, .am-tile, .am-produs):active,
+  :where(a, button)[class*="bg-[#ddf93c]"]:active { transform: scale(.97); }
+
+  /* Luciu care trece peste butoanele lime la hover. :where = specificitate 0, deci o clasa ca `fixed` castiga. */
+  :where(.cc-rv-l, .cc-go-solid, a[class*="bg-[#ddf93c]"], button[class*="bg-[#ddf93c]"]) { position: relative; overflow: hidden; isolation: isolate; }
+  :where(.cc-rv-l, .cc-go-solid, a[class*="bg-[#ddf93c]"], button[class*="bg-[#ddf93c]"])::after {
+    content: ""; position: absolute; inset: 0; z-index: -1; pointer-events: none; translate: -110% 0;
+    background: linear-gradient(105deg, transparent 30%, rgba(255, 255, 255, .55) 50%, transparent 70%);
+  }
+  @media (hover: hover) and (prefers-reduced-motion: no-preference) {
+    :is(.cc-reveal:hover .cc-rv-l, .cc-go-solid:hover, a[class*="bg-[#ddf93c]"]:hover, button[class*="bg-[#ddf93c]"]:hover)::after { translate: 110% 0; }
+  }
+
+  /* „Vezi codul": eticheta lime se dezlipeste ca un bon, cu coltul indoit, iar coada codului se aprinde. */
+  .cc-rv-l { transform-origin: left center; }
+  .cc-rv-l::before {
+    content: ""; position: absolute; top: 0; right: 0; width: 15px; height: 15px; z-index: 1; pointer-events: none;
+    background: linear-gradient(225deg, var(--surface) 50%, var(--accent-deep) 50%);
+    border-bottom-left-radius: 4px; box-shadow: -2px 2px 4px rgba(0, 0, 0, .35);
+    transform: scale(0); transform-origin: top right;
+  }
+  @media (hover: hover) and (prefers-reduced-motion: no-preference) {
+    .cc-reveal:hover .cc-rv-l { transform: rotate(-1.5deg) translateX(-2px); }
+    .cc-reveal:hover .cc-rv-l::before { transform: scale(1); }
+    .cc-reveal:hover .cc-rv-t { color: var(--foreground); border-color: var(--accent); }
+  }
+
+  /* Codul dezvaluit: caseta apare cu un mic salt si un inel care pulseaza de doua ori; „Copiat" se aprinde. */
+  @media (prefers-reduced-motion: no-preference) {
+    .cc-codebox, .am-cod { animation: am-pop .35s var(--am-arc) both, am-inel .9s ease-out .2s 2; }
+    .cc-copy-ok { animation: am-pop .3s var(--am-arc) both; }
+  }
+  .cc-copy-ok { background: var(--accent); color: var(--on-accent); }
+
+  /* Banda „Cea mai mare reducere azi": un luciu care trece din cand in cand (doar transform: pe placa video). */
+  .cc-banda { overflow: hidden; isolation: isolate; }
+  @media (prefers-reduced-motion: no-preference) {
+    .cc-banda::after {
+      content: ""; position: absolute; inset: 0; z-index: -1; pointer-events: none;
+      background: linear-gradient(105deg, transparent 30%, rgba(195, 221, 44, .75) 50%, transparent 70%);
+      translate: -110% 0; animation: am-luciu 3.6s ease-in-out 1.2s infinite;
+    }
+  }
+
+  /* Bara de progres a citirii, sub antet, pe toate paginile (legata de derulare, fara JavaScript). */
+  @media (prefers-reduced-motion: no-preference) {
+    @supports (animation-timeline: scroll()) {
+      .am-antet::after {
+        content: ""; position: absolute; left: 0; right: 0; bottom: -1px; height: 2px; pointer-events: none;
+        background: linear-gradient(90deg, var(--accent), #10b981); transform-origin: left center;
+        animation: am-progres linear both; animation-timeline: scroll(root block);
+      }
+    }
+  }
+
+  /* Fundalul de sus al primei pagini: doua pete de lumina care se misca incet. Doar transform, in spatele textului,
+     fara sa iasa in afara paginii (inset-ul lateral ramane in marginea de 16 px a containerului). */
+  .am-aurora { position: relative; isolation: isolate; }
+  .am-aurora::before {
+    content: ""; position: absolute; z-index: -1; inset: -48px -16px -24px -16px; pointer-events: none;
+    background:
+      radial-gradient(42% 60% at 18% 32%, rgba(221, 249, 60, .14), transparent 70%),
+      radial-gradient(36% 54% at 78% 44%, rgba(16, 185, 129, .12), transparent 70%);
+  }
+  @media (prefers-reduced-motion: no-preference) {
+    /* Porneste dupa 1,5 s: la prima pictura e o imagine statica, deci nu intarzie LCP. */
+    .am-aurora::before { animation: am-aurora 14s ease-in-out 1.5s infinite alternate; }
+  }
+
+  /* Intrebarile frecvente se deschid si se inchid lin (unde browserul stie ::details-content). */
+  @media (prefers-reduced-motion: no-preference) {
+    details::details-content { transition: height .3s var(--am-ease), content-visibility .3s allow-discrete; height: 0; overflow: clip; }
+    details[open]::details-content { height: auto; }
+  }
+
+  /* Confetti la copierea codului: stratul il pune CuponCard.tsx, pe ecran, deasupra casetei cu codul. */
+  .am-confetti { position: fixed; left: 0; top: 0; width: 0; height: 0; z-index: 70; pointer-events: none; }
+  .am-confetti i { position: absolute; left: 0; top: 0; width: 7px; height: 11px; border-radius: 2px; opacity: 0; animation: am-confetti .95s cubic-bezier(.15, .75, .35, 1) forwards; }
+  .am-confetti i:nth-child(3n) { width: 8px; height: 8px; border-radius: 50%; }
+}
+
+/* Tranzitiile animatiilor de mai sus stau IN AFARA stratului, cu buna stiinta. Regula globala de mai sus
+   `*, *::before, *::after { transition-property: background-color, border-color, color }` nu e intr-un @layer, iar
+   o regula fara strat bate orice declaratie dintr-un strat, oricat de specifica. In @layer components, ridicarea la
+   hover, luciul, coltul indoit si aparitiile ar fi sarit instant, fara miscare (gasit pe 24.11 masurand, nu privind).
+   Aici concureaza pe specificitate (o clasa bate `*` si `a`) si pe ordine (stau dupa ele). Regula globala ramane
+   neatinsa, deci restul site-ului nu se schimba; tranzitiile utilitarelor Tailwind erau oricum anulate de ea. */
+.cc { transition: border-color .25s var(--am-ease), box-shadow .25s var(--am-ease), transform .25s var(--am-ease); }
+.pop { transition: transform .25s var(--am-ease), box-shadow .25s var(--am-ease); }
+.am-card, .am-tile, .am-produs { transition: transform .25s var(--am-ease), box-shadow .25s var(--am-ease), border-color .2s ease; }
+.cc-logo, .pop img, .am-tile svg, .am-produs img { transition: transform .35s var(--am-arc); }
+.cc-rv-l { transition: transform .3s var(--am-arc), background-color .15s ease; }
+.cc-rv-l::before { transition: transform .3s var(--am-arc); }
+.cc-rv-t { transition: color .2s ease, border-color .2s ease; }
+@media (hover: hover) and (prefers-reduced-motion: no-preference) {
+  :where(.cc-rv-l, .cc-go-solid, a[class*="bg-[#ddf93c]"], button[class*="bg-[#ddf93c]"])::after { transition: translate .6s var(--am-ease); }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .am-ascuns.am-vazut {
+    transition: opacity .6s var(--am-ease) var(--am-intarziere, 0ms), translate .6s var(--am-ease) var(--am-intarziere, 0ms),
+      scale .6s var(--am-ease) var(--am-intarziere, 0ms), transform .25s var(--am-ease), box-shadow .25s var(--am-ease), border-color .25s var(--am-ease);
+  }
+  .am-h2.am-ascuns.am-vazut::after { transition: scale .7s var(--am-ease) calc(var(--am-intarziere, 0ms) + 200ms); }
+}
+
+/* La tiparit si la captura pentru PDF: totul vizibil, nimic in miscare. */
+@media print {
+  .am-ascuns, .am-ascuns::after { opacity: 1 !important; translate: none !important; scale: none !important; }
+  .am-antet::after, .am-aurora::before, .am-confetti { display: none !important; }
+}

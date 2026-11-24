@@ -25,6 +25,7 @@ import SearchModal from "./components/SearchModal";
 import AffiliateClickTracker from "./components/AffiliateClickTracker";
 import "./globals.css";
 import AnuntSite from "./components/AnuntSite";
+import Aparitii from "./components/Aparitii";
 import { pesteMagazine, PesteMagazine } from "@/lib/cifreSite";
 import { campaniiBF } from "@/lib/campaniiBlackFriday";
 import { aziRomania, calendarScurt, fazaBF, type DateBF } from "@/lib/momentBF";
@@ -188,6 +189,7 @@ export default function RootLayout({
         {/* 15.10.2026: inapoi pe tema inchisa (alegerea lui Alex). Tema luminoasa ramane in globals.css
             (.tema-luminoasa) — se reactiveaza punand clasa pe acest div. */}
         <div className="flex-1">{children}</div>
+        <Aparitii />
         {/* Cautare globala (Cmd+K). Montata o data, aici — nu duplicata pe pagini. */}
         <SearchModal />
         <Footer magazineInDate={magazineInDate()} />

@@ -39,7 +39,7 @@ export default function ProductDealCard({ titlu, pret, pretVechi, imagine, url, 
       target="_blank"
       rel="nofollow sponsored noopener noreferrer"
       data-loc="produs"
-      className="group relative flex flex-col rounded-xl border border-[var(--border)] bg-[var(--surface)] p-3 hover:border-[var(--accent-text)] transition-colors"
+      className="am-produs group relative flex flex-col rounded-xl border border-[var(--border)] bg-[var(--surface)] p-3 hover:border-[var(--accent-text)]"
     >
       {procent >= 1 && (
         <span className="absolute left-2 top-2 z-10 rounded-lg bg-[#ddf93c] px-2 py-1 text-sm font-black text-[#0c1000]">-{procent}%</span>

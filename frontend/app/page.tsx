@@ -125,7 +125,7 @@ function carlig(azi: string, d: DateBF, inCurs: number, nrOferte: number, nrMaga
   };
 }
 
-const H2 = "text-2xl md:text-3xl font-black tracking-tight text-[var(--foreground)]";
+const H2 = "am-h2 text-2xl md:text-3xl font-black tracking-tight text-[var(--foreground)]";
 const LINK = "text-sm font-bold text-[var(--accent-text)] hover:underline whitespace-nowrap";
 
 export default function Page() {
@@ -191,7 +191,7 @@ export default function Page() {
       {/* Carlig + oferte + calendar. O singura lista in DOM: pe telefon ofertele vin imediat dupa carlig, iar
           calendarul dupa ele; pe desktop calendarul sta langa carlig, in primul ecran. */}
       <div className="max-w-7xl mx-auto px-4 pt-6 md:pt-10 grid gap-x-10 gap-y-7 lg:grid-cols-[minmax(0,1fr)_380px]">
-        <section className="order-1 lg:col-start-1 lg:row-start-1">
+        <section className="am-aurora order-1 lg:col-start-1 lg:row-start-1">
           {c.faza !== "inchis" && (
             <p className="text-xs font-black uppercase tracking-widest text-[var(--accent-text)] mb-2">Black Friday {bf.an}</p>
           )}
@@ -320,7 +320,7 @@ export default function Page() {
             {categorii.map((c) => {
               const nr = promoPeCategorie.get(c.slug) || 0;
               return (
-                <Link key={c.slug} href={`/categorii/${c.slug}`} className="flex items-center gap-2.5 bg-[var(--surface)] border border-[var(--border)] hover:border-[var(--border-strong)] rounded-xl px-3 py-2.5 transition-colors">
+                <Link key={c.slug} href={`/categorii/${c.slug}`} className="am-tile flex items-center gap-2.5 bg-[var(--surface)] border border-[var(--border)] hover:border-[var(--border-strong)] rounded-xl px-3 py-2.5">
                   <CategoryIcon slug={c.slug} size="sm" />
                   <span className="min-w-0">
                     <span className="block text-sm font-bold leading-tight truncate">{c.label}</span>

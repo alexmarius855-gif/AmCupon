@@ -32,7 +32,7 @@ export function CardProdus({ p }: { p: ProdusFeed }) {
       href={p.url}
       target="_blank"
       rel="nofollow sponsored noopener noreferrer"
-      className="group flex flex-col bg-[var(--surface)] border border-[var(--border)] hover:border-[var(--border-strong)] rounded-xl overflow-hidden transition-colors"
+      className="am-produs group flex flex-col bg-[var(--surface)] border border-[var(--border)] hover:border-[var(--border-strong)] rounded-xl overflow-hidden"
     >
       {/* overflow-hidden + h-full: fara ele, o poza inalta crestea cutia (aspect-ratio cedeaza in fata
           continutului) si cardurile de pe acelasi rand aveau inaltimi diferite — vazut pe mobil, 06.10. */}

@@ -33,7 +33,7 @@ export default function Navbar() {
   const mobileLinks = MENIU_MOBIL;
 
   return (
-    <header className="bg-[var(--surface)]/95 backdrop-blur-md border-b border-[var(--border)] sticky top-0 z-50 shadow-lg">
+    <header className="am-antet bg-[var(--surface)]/95 backdrop-blur-md border-b border-[var(--border)] sticky top-0 z-50 shadow-lg">
       <div className="max-w-7xl mx-auto px-4 h-[64px] flex items-center gap-4">
 
         {/* Logo */}
