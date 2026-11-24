@@ -628,8 +628,8 @@
    "magazine": 143
   },
   "2026-11-24": {
-   "promotii": 257,
-   "magazine": 144
+   "promotii": 261,
+   "magazine": 146
   }
  },
  "magazine": {
@@ -865,6 +865,15 @@
    }
   ],
   "aosom.ro": [
+   {
+    "k": "cybermondaycosavantajos|cyber10",
+    "titlu": "CYBER MONDAY, COȘ AVANTAJOS",
+    "cod": true,
+    "prima": "2026-11-24",
+    "ultima": "2026-11-24",
+    "expira": "2026-11-30",
+    "activa": true
+   },
    {
     "k": "aipierdutblackfridayamprelungitreducerile|bfbonus",
     "titlu": "AI PIERDUT BLACK FRIDAY? AM PRELUNGIT REDUCERILE!",
@@ -7041,13 +7050,13 @@
     "activa": false
    },
    {
-    "k": "cuponactiv20laoriceaflacodul|",
+    "k": "cuponactiv20laoriceaflacodul|lib20citesc",
     "titlu": "Cupon ACTIV! -20% la orice* Află codul »",
-    "cod": false,
+    "cod": true,
     "prima": "2026-06-23",
-    "ultima": "2026-08-13",
-    "expira": "",
-    "activa": false
+    "ultima": "2026-11-24",
+    "expira": "2026-11-26",
+    "activa": true
    },
    {
     "k": "cadoulaalegerereducerianiversarevezicesurprizetiampregatitde35deanilibris|",
@@ -9041,6 +9050,24 @@
    }
   ],
   "paa-home.ro": [
+   {
+    "k": "panala50reducerelaaccesoriicompatibileroborockpaahome|",
+    "titlu": "Pana la 50% reducere la accesorii compatibile Roborock – PAA-Home",
+    "cod": false,
+    "prima": "2026-11-24",
+    "ultima": "2026-11-24",
+    "expira": "2026-12-31",
+    "activa": true
+   },
+   {
+    "k": "panala40reducerelaaccesoriicompatibilexiaomipaahome|",
+    "titlu": "Pana la 40% reducere la accesorii compatibile Xiaomi – PAA-Home",
+    "cod": false,
+    "prima": "2026-11-24",
+    "ultima": "2026-11-24",
+    "expira": "2026-12-31",
+    "activa": true
+   },
    {
     "k": "blackfridaypaahomereduceride2550lapeste1000deproduse|",
     "titlu": "Black Friday PAA-home: reduceri de 25–50% la peste 1.000 de produse!",

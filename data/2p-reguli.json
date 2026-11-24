@@ -441,11 +441,6 @@
 "google_ads": "yes",
 "cashback": "yes"
 },
-"casanewconcept.ro": {
-"cupoane": "yes",
-"google_ads": "yes",
-"cashback": "yes"
-},
 "case-smart.ro": {
 "cupoane": "yes",
 "google_ads": "yes",
@@ -684,6 +679,11 @@
 "e-roti.ro": {
 "cupoane": "yes",
 "google_ads": "yes",
+"cashback": "yes"
+},
+"ecovent.ro": {
+"cupoane": "yes",
+"google_ads": "no",
 "cashback": "yes"
 },
 "edez.ro": {
@@ -977,6 +977,11 @@
 "cashback": "yes"
 },
 "gorgeaux.ro": {
+"cupoane": "yes",
+"google_ads": "yes",
+"cashback": "yes"
+},
+"gorillasports.ro": {
 "cupoane": "yes",
 "google_ads": "yes",
 "cashback": "yes"
@@ -1322,6 +1327,11 @@
 "cashback": "no"
 },
 "librarie.net": {
+"cupoane": "yes",
+"google_ads": "yes",
+"cashback": "yes"
+},
+"librex.ro": {
 "cupoane": "yes",
 "google_ads": "yes",
 "cashback": "yes"
@@ -2301,11 +2311,6 @@
 "google_ads": "yes",
 "cashback": "yes"
 },
-"twindeco.ro": {
-"cupoane": "yes",
-"google_ads": "yes",
-"cashback": "yes"
-},
 "ufit.ro": {
 "cupoane": "maybe",
 "google_ads": "maybe",
@@ -2434,6 +2439,11 @@
 "xkids.ro": {
 "cupoane": "yes",
 "google_ads": "yes",
+"cashback": "yes"
+},
+"xxxlutz.ro": {
+"cupoane": "yes",
+"google_ads": "maybe",
 "cashback": "yes"
 },
 "yny.ro": {

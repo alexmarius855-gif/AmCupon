@@ -1,31 +1,22 @@
 {
   "generat": "2026-11-24",
-  "total_magazine": 421,
-  "cu_promotie": 67,
-  "cu_cod_real": 15,
+  "total_magazine": 423,
+  "cu_promotie": 69,
+  "cu_cod_real": 17,
   "doar_oferta": 52,
-  "procent_cu_promotie": 15.9,
-  "procent_cu_cod": 3.6,
+  "procent_cu_promotie": 16.3,
+  "procent_cu_cod": 4.0,
   "reducere_mediana_generala": 30,
-  "magazine_cu_procent_declarat": 47,
+  "magazine_cu_procent_declarat": 49,
   "categorii": [
     {
       "slug": "carti-educatie",
       "nume": "Cărți & educație",
-      "magazine": 20,
-      "cu_promotie": 4,
-      "reducere_mediana": 90,
+      "magazine": 21,
+      "cu_promotie": 5,
+      "reducere_mediana": 55.0,
       "reducere_max": 90,
-      "esantion": 3
-    },
-    {
-      "slug": "casa-gradina",
-      "nume": "Casă & grădină",
-      "magazine": 93,
-      "cu_promotie": 15,
-      "reducere_mediana": 45.0,
-      "reducere_max": 80,
-      "esantion": 10
+      "esantion": 4
     },
     {
       "slug": "fashion",
@@ -35,6 +26,15 @@
       "reducere_mediana": 45.0,
       "reducere_max": 70,
       "esantion": 8
+    },
+    {
+      "slug": "casa-gradina",
+      "nume": "Casă & grădină",
+      "magazine": 93,
+      "cu_promotie": 16,
+      "reducere_mediana": 40,
+      "reducere_max": 80,
+      "esantion": 11
     },
     {
       "slug": "beauty",
@@ -75,7 +75,7 @@
     {
       "slug": "electronice",
       "nume": "Electronice & IT",
-      "magazine": 29,
+      "magazine": 30,
       "cu_promotie": 4,
       "reducere_mediana": null,
       "reducere_max": null,
@@ -84,7 +84,7 @@
     {
       "slug": "copii",
       "nume": "Copii & familie",
-      "magazine": 22,
+      "magazine": 21,
       "cu_promotie": 2,
       "reducere_mediana": null,
       "reducere_max": null,
@@ -138,7 +138,7 @@
     {
       "slug": "sport",
       "nume": "Sport & fitness",
-      "magazine": 7,
+      "magazine": 8,
       "cu_promotie": 0,
       "reducere_mediana": null,
       "reducere_max": null,
@@ -156,7 +156,7 @@
   ],
   "criteriu": "domeniu .ro",
   "international": {
-    "total": 498,
+    "total": 499,
     "cu_promotie": 79,
     "cu_cod": 49
   },
@@ -224,7 +224,7 @@
         {
           "slug": "carti-educatie",
           "nume": "Cărți & educație",
-          "promotii": 27
+          "promotii": 29
         },
         {
           "slug": "beauty",
