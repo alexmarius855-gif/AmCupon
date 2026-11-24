@@ -80,19 +80,19 @@
   "oferta": "Cupon cadou la prima comanda"
  },
  {
-  "magazin": "longevity-boost.com",
-  "nume": "Longevity Boost",
-  "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/14512/medium/14512.jpg",
-  "categorie": "Sănătate & Farmacie",
-  "are_cod": false,
-  "oferta": "Black Friday: -35% + 2 produse full size cadou la Longevity BOOST"
- },
- {
   "magazin": "labelshop.ro",
   "nume": "Labelshop",
   "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/9364/medium/9364.png",
   "categorie": "Fashion",
   "are_cod": false,
   "oferta": "Profita acum de reduceri intre 5% si 15% la echipamente si consumabile"
+ },
+ {
+  "magazin": "curteaveche.ro",
+  "nume": "Curteaveche",
+  "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/11045/medium/11045.png",
+  "categorie": "Cărți & Educație",
+  "are_cod": false,
+  "oferta": "Pana la 90% reducere"
  }
 ]

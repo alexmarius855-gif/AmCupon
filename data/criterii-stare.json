@@ -707,7 +707,7 @@
 "titlu": "Mașini de spălat de 10 kg",
 "nota": "Capacitatea se referă la greutatea rufelor uscate pe care le poți pune o dată în cuvă.",
 "in_text": "\\b10\\s*kg\\b",
-"actualizat": "2026-11-17",
+"actualizat": "2026-11-24",
 "feeduri": [
 {
 "id": 1539,
@@ -727,6 +727,28 @@
 }
 ],
 "produse": [
+{
+"titlu": "Albatros Masina de spalat rufe semiautomata Albatros WMS10.4, spalare 10 kg, stoarcere 6.5 kg, 500W/200W, Alb/Verde",
+"pret": 912.99,
+"imagine": "https://www.dwyn.ro/images/products/img_202606122129/463669/full/albatros-masina-de-spalat-rufe-semiautomata-albatros-wms10-4-spalare-10-kg-stoarcere-6-5-kg-500w-200w-alb-verde-1504894.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fmasina-de-spalat-rufe%2Falbatros%2F463669-masina-de-spalat-rufe-semiautomata-albatros-wms10-4-spalare-10-kg-stoarcere-6-5-kg-500w-200w-alb-verde%2F",
+"magazin": "dwyn.ro",
+"id": "Tx5g_tTfbd1E",
+"brand": "Albatros",
+"url_magazin": "https://www.dwyn.ro/masina-de-spalat-rufe/albatros/463669-masina-de-spalat-rufe-semiautomata-albatros-wms10-4-spalare-10-kg-stoarcere-6-5-kg-500w-200w-alb-verde/",
+"pret_vechi": null
+},
+{
+"titlu": "Masina de spalat rufe semi-automata Nobeltek NSWM 10.5S, 10 kg spalare, 5 kg stoarecere, 420W spalare, 190W stoarcere, t",
+"pret": 1027.99,
+"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4323%2F4323499%2Fnswm-105s-6afc39a0a11db.jpg&type=auto&width=500&sign=o2YiAx2MOtkKg1qUqTXilB3r3r8BJ4s3vkJb-_OIalI",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Felectrocasnice-electrocasnice-mari-masini-de-spalat-rufe-si-accesorii-masini-de-spalat-rufe%2Fnobeltek-masina-de-spalat-rufe-semi-automata-nobeltek-nswm-10.5s-10-kg-spalare-5-kg-stoarecere-420w-spalare-190w-stoarcere-timp-spalare-0-15-min-timp-stoarcere-0-5-min-alb-argntiu-4323499.html",
+"magazin": "evomag.ro",
+"id": "bNOIFAzYR3-B",
+"brand": "Nobeltek",
+"url_magazin": "https://www.evomag.ro/electrocasnice-electrocasnice-mari-masini-de-spalat-rufe-si-accesorii-masini-de-spalat-rufe/nobeltek-masina-de-spalat-rufe-semi-automata-nobeltek-nswm-10.5s-10-kg-spalare-5-kg-stoarecere-420w-spalare-190w-stoarcere-timp-spalare-0-15-min-timp-stoarcere-0-5-min-alb-argntiu-4323499.html",
+"pret_vechi": 1199.99
+},
 {
 "titlu": "Masina de spalat rufe Albalux AXWGI141021, 10 kg, 16 programe, 1400 rpm, Clasa A (Alb)",
 "pret": 1369.99,
@@ -759,18 +781,6 @@
 "id": "zydU76fwGynh",
 "brand": "Albatros",
 "url_magazin": "https://www.dwyn.ro/masina-de-spalat-rufe/albatros/382877-masina-de-spalat-albatros-awmi14107-10-kg-1400rpm-clasa-a/",
-"pret_vechi": null,
-"verificat": "2026-11-04"
-},
-{
-"titlu": "Samus Masina de spalat rufe Samus WSNDI-10146, 10 kg, 15 programe, 1400 rot/min, clas energetic A, Alb",
-"pret": 1643.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202512311121/408457/full/samus-masina-de-spalat-rufe-samus-wsndi-10146-10-kg-15-programe-1400-rot-min-clas-energetic-a-alb-1305415.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fmasina-de-spalat-rufe%2Fsamus%2F408457-masina-de-spalat-rufe-samus-wsndi-10146-10-kg-15-programe-1400-rot-min-clas-energetic-a-alb%2F",
-"magazin": "dwyn.ro",
-"id": "bcA_-eBM68Xn",
-"brand": "Samus",
-"url_magazin": "https://www.dwyn.ro/masina-de-spalat-rufe/samus/408457-masina-de-spalat-rufe-samus-wsndi-10146-10-kg-15-programe-1400-rot-min-clas-energetic-a-alb/",
 "pret_vechi": null,
 "verificat": "2026-11-04"
 },
@@ -811,18 +821,6 @@
 "verificat": "2026-11-04"
 },
 {
-"titlu": "Masina de spalat rufe Candy Pro Wash 700 BS 410B10-S, 10 kg, 1400 RPM, Clasa energetica A, 16 programe, Control prin Wi-",
-"pret": 2432.99,
-"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4210%2F4210982%2Fbs-410b10-s-67dd31bc68fff.jpg&type=auto&width=500&sign=hQ8Ajvmxx4YznPDt6Fvxevqn0RfMM-DpPdAOt2EIeuI",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Felectrocasnice-electrocasnice-mari-masini-de-spalat-rufe-si-accesorii-masini-de-spalat-rufe%2Fcandy-masina-de-spalat-rufe-candy-pro-wash-700-bs-410b10-s-10-kg-1400-rpm-clasa-energetica-a-16-programe-control-prin-wi-fi-si-bluetooth-alb-4210982.html",
-"magazin": "evomag.ro",
-"id": "UO57r87X_Kyk",
-"brand": "Candy",
-"url_magazin": "https://www.evomag.ro/electrocasnice-electrocasnice-mari-masini-de-spalat-rufe-si-accesorii-masini-de-spalat-rufe/candy-masina-de-spalat-rufe-candy-pro-wash-700-bs-410b10-s-10-kg-1400-rpm-clasa-energetica-a-16-programe-control-prin-wi-fi-si-bluetooth-alb-4210982.html",
-"pret_vechi": null,
-"verificat": "2026-11-04"
-},
-{
 "titlu": "Masina de spalat rufe cu incarcare frontala BOSCH WGJ25401BY Seria 6, 10 kg, 1400 rpm, Clasa A, Iron Assist, Home Connec",
 "pret": 3182.99,
 "imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4322%2F4322276%2Fwgj25401by-6aeb45d7e0644.jpg&type=auto&width=500&sign=XNKplNgbVA8OUEk__HwvMlUmVcGXUK_HLxAz68NC2oc",
@@ -859,7 +857,7 @@
 "titlu": "Mașini de spălat cu uscător",
 "nota": null,
 "in_text": "\\buscător\\b",
-"actualizat": "2026-11-17",
+"actualizat": "2026-11-24",
 "feeduri": [
 {
 "id": 1539,
@@ -879,18 +877,6 @@
 }
 ],
 "produse": [
-{
-"titlu": "Masina de spalat cu uscator Candy CSWS 4962DWE/1-S, Spalare 9 Kg/Uscare 6 kg, 1400 rpm, Clasa E (Alb)",
-"pret": 1499.99,
-"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4204%2F4204190%2Fcsws-4962dwe1-s-67a9f54c57c8c.jpg&type=auto&width=500&sign=XPbKw4XTMJNp1OTi5klq5-rzIX4Y9e8lilpq3aR6AC8",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Felectrocasnice-electrocasnice-mari-masini-de-spalat-rufe-si-accesorii-masini-de-spalat-rufe%2Fcandy-masina-de-spalat-cu-uscator-candy-csws-4962dwe-1-s-spalare-9-kg-uscare-6-kg-1400-rpm-clasa-e-alb-4204190.html",
-"magazin": "evomag.ro",
-"id": "woVdU03k2IeX",
-"brand": "Candy",
-"url_magazin": "https://www.evomag.ro/electrocasnice-electrocasnice-mari-masini-de-spalat-rufe-si-accesorii-masini-de-spalat-rufe/candy-masina-de-spalat-cu-uscator-candy-csws-4962dwe-1-s-spalare-9-kg-uscare-6-kg-1400-rpm-clasa-e-alb-4204190.html",
-"pret_vechi": null,
-"verificat": "2026-11-04"
-},
 {
 "titlu": "Masina de spalat rufe cu uscator Candy ProWash&Dry 300 GWD 485SB6-S, 8/5 kg, 1400 rpm, Clasa A/D, 16 programe (Alb)",
 "pret": 1899.99,
@@ -933,7 +919,7 @@
 "imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4235%2F4235706%2Foverlay_76c68ea4e72c77c5fb371087d601db70.jpg&type=auto&width=500&sign=ikRf8_TFxBy8OaEHssY2Lo8aKrhgaXYKQMZkdf3uoRg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Felectrocasnice-electrocasnice-mari-masini-de-spalat-rufe-si-accesorii-masini-de-spalat-rufe%2Fheinner-masina-de-spalat-rufe-cu-uscator-heinner-hwdm-m1014ivkb-10-kg-spalare-7-kg-uscare-1400-rpm-clasa-b-15-programe-alb-4235706.html",
 "magazin": "evomag.ro",
-"id": "wlsu_WibLUnE",
+"id": "tmpxuybhrt9Y",
 "brand": "Heinner",
 "url_magazin": "https://www.evomag.ro/electrocasnice-electrocasnice-mari-masini-de-spalat-rufe-si-accesorii-masini-de-spalat-rufe/heinner-masina-de-spalat-rufe-cu-uscator-heinner-hwdm-m1014ivkb-10-kg-spalare-7-kg-uscare-1400-rpm-clasa-b-15-programe-alb-4235706.html",
 "pret_vechi": null,
@@ -964,6 +950,17 @@
 "verificat": "2026-11-04"
 },
 {
+"titlu": "CANDY Masina de spalat rufe cu uscator incorporabila Candy, Clasa D, 1400 rpm, Spalare 8 kg, Uscare 5 kg, Easy Iron, Alb",
+"pret": 2411.99,
+"imagine": "https://www.dwyn.ro/images/products/img_202404261115/231583/full/candy-masina-de-spalat-rufe-cu-uscator-incorporabila-candy-clasa-d-1400-rpm-spalare-8-kg-uscare-5-kg-easy-iron-alb-472397.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fmasina-de-spalat-rufe%2Fcandy%2F231583-masina-de-spalat-rufe-cu-uscator-incorporabila-candy-clasa-d-1400-rpm-spalare-8-kg-uscare-5-kg-easy-iron-alb%2F",
+"magazin": "dwyn.ro",
+"id": "eKQOOY0aKe0-",
+"brand": "CANDY",
+"url_magazin": "https://www.dwyn.ro/masina-de-spalat-rufe/candy/231583-masina-de-spalat-rufe-cu-uscator-incorporabila-candy-clasa-d-1400-rpm-spalare-8-kg-uscare-5-kg-easy-iron-alb/",
+"pret_vechi": null
+},
+{
 "titlu": "Masina de spalat rufe cu uscator incorporabila Candy BC4S485M4D8-S, Wi-Fi, 8/5 kg, 1400 rpm, Clasa A/D, 16 programe (Alb",
 "pret": 2451.99,
 "imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4290%2F4290364%2F69c7c2bd09269.jpg&type=auto&width=500&sign=m1SpNxpICkXAkpbLXd1T73EPmDDcxYTI32Td-BbEtj8",
@@ -987,6 +984,17 @@
 "pret_vechi": null
 },
 {
+"titlu": "Masina de spalat rufe cu uscator LG F2DR509S1W, 9 kg/5 kg, 1200 rpm, Clasa E (Alb)",
+"pret": 2699.99,
+"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4237%2F4237207%2Fmasina-de-spalat-rufe-cu-uscat-6881df853e28e.png&type=auto&width=500&sign=yTR4MN4fdG6p_BRkofbuEQMiupYCbZtAqywgu15NauM",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Felectrocasnice-electrocasnice-mari-masini-de-spalat-rufe-si-accesorii-masini-de-spalat-rufe%2Flg-masina-de-spalat-rufe-cu-uscator-lg-f2dr509s1w-9-kg-5-kg-1200-rpm-clasa-e-alb-4237207.html",
+"magazin": "evomag.ro",
+"id": "b-ADU2STPDeQ",
+"brand": "LG",
+"url_magazin": "https://www.evomag.ro/electrocasnice-electrocasnice-mari-masini-de-spalat-rufe-si-accesorii-masini-de-spalat-rufe/lg-masina-de-spalat-rufe-cu-uscator-lg-f2dr509s1w-9-kg-5-kg-1200-rpm-clasa-e-alb-4237207.html",
+"pret_vechi": null
+},
+{
 "titlu": "LG Masina de spalat rufe cu uscator LG F2DR509S1W, 9 kg/5 kg, 1200 rpm, Clasa E, Alb",
 "pret": 2989.99,
 "imagine": "https://www.dwyn.ro/images/products/img_202512311121/410773/full/lg-masina-de-spalat-rufe-cu-uscator-lg-f2dr509s1w-9-kg-5-kg-1200-rpm-clasa-e-alb-1334470.png",
@@ -999,60 +1007,47 @@
 "verificat": "2026-11-04"
 },
 {
-"titlu": "Electrolux Masina de spalat rufe cu uscator Electrolux EW8W4402QE, Spalare 11 kg, Uscare 7 kg, 1400 rpm, WIFI, LCD, Clas",
-"pret": 4261.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202508191322/320188/full/electrolux-masina-de-spalat-rufe-cu-uscator-electrolux-ew8w4402qe-spalare-11-kg-uscare-7-kg-1400-rpm-wifi-lcd-clase-energie-a-spalare-d-spalare-plususcare-dozator-universal-ultracare-plussteamcare-tim-889946.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fmasina-de-spalat-rufe%2Felectrolux%2F320188-masina-de-spalat-rufe-cu-uscator-electrolux-ew8w4402qe-spalare-11-kg-uscare-7-kg-1400-rpm-wifi-lcd-clase-energie-a-spalare-d-spalare-plususcare-dozator-universal-ultracare-plussteamcare-timemanager-ad%2F",
+"titlu": "Beko Masina de spalat rufe cu uscator BEKO BM5DFST68442W, Clasa D, SteamCure, 8/5 kg, 1400 rpm, Alb",
+"pret": 3284.99,
+"imagine": "https://www.dwyn.ro/images/products/img_202512311121/371072/full/beko-masina-de-spalat-rufe-cu-uscator-beko-bm5dfst68442w-clasa-d-steamcure-8-5-kg-1400-rpm-alb-1057535.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fmasina-de-spalat-rufe%2Fbeko%2F371072-masina-de-spalat-rufe-cu-uscator-beko-bm5dfst68442w-clasa-d-steamcure-8-5-kg-1400-rpm-alb%2F",
 "magazin": "dwyn.ro",
-"id": "97qi36-1z6n2",
-"brand": "Electrolux",
-"url_magazin": "https://www.dwyn.ro/masina-de-spalat-rufe/electrolux/320188-masina-de-spalat-rufe-cu-uscator-electrolux-ew8w4402qe-spalare-11-kg-uscare-7-kg-1400-rpm-wifi-lcd-clase-energie-a-spalare-d-spalare-plususcare-dozator-universal-ultracare-plussteamcare-timemanager-ad/",
+"id": "x3waEPFeUwZc",
+"brand": "Beko",
+"url_magazin": "https://www.dwyn.ro/masina-de-spalat-rufe/beko/371072-masina-de-spalat-rufe-cu-uscator-beko-bm5dfst68442w-clasa-d-steamcure-8-5-kg-1400-rpm-alb/",
 "pret_vechi": null
 },
 {
-"titlu": "BOSCH Masina de spalat rufe cu uscator BOSCH Serie 4 WNA13401BY, 8kg spalare, 5kg uscare, 1400rpm, Clasa D, Alb",
-"pret": 4344.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202606122129/482830/full/bosch-ma-in-de-sp-lat-rufe-cu-usc-tor-bosch-serie-4-wna13401by-8kg-sp-lare-5kg-uscare-1400rpm-clasa-d-1522135.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fmasina-de-spalat-rufe%2Fbosch%2F482830-masina-de-spalat-rufe-cu-uscator-bosch-serie-4-wna13401by-8kg-spalare-5kg-uscare-1400rpm-clasa-d-alb%2F",
+"titlu": "Beko Masina de spalat rufe cu uscator Beko BM5DFT49442WB, SteamCure, 9/6 kg, 1400rpm, alb",
+"pret": 3323.99,
+"imagine": "https://www.dwyn.ro/images/products/img_202512311121/383417/full/beko-masina-de-spalat-rufe-cu-uscator-beko-bm5dft49442wb-steamcure-9-6-kg-1400rpm-alb-1167350.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fmasina-de-spalat-rufe%2Fbeko%2F383417-masina-de-spalat-rufe-cu-uscator-beko-bm5dft49442wb-steamcure-9-6-kg-1400rpm-alb%2F",
 "magazin": "dwyn.ro",
-"id": "3vOmltubSVxr",
-"brand": "BOSCH",
-"url_magazin": "https://www.dwyn.ro/masina-de-spalat-rufe/bosch/482830-masina-de-spalat-rufe-cu-uscator-bosch-serie-4-wna13401by-8kg-spalare-5kg-uscare-1400rpm-clasa-d-alb/",
-"pret_vechi": null,
-"verificat": "2026-11-04"
-},
-{
-"titlu": "BOSCH Masina de spalat rufe cu uscator Bosch Seria 4 WNA14401BY, 9kg spalare, 5kg uscare, 1400rpm, Clasa D, Alb",
-"pret": 4619.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202606122129/482827/full/bosch-ma-in-de-sp-lat-rufe-cu-usc-tor-bosch-serie-4-wna14401by-9kg-sp-lare-5kg-uscare-1400rpm-clasa-d-1522132.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fmasina-de-spalat-rufe%2Fbosch%2F482827-masina-de-spalat-rufe-cu-uscator-bosch-seria-4-wna14401by-9kg-spalare-5kg-uscare-1400rpm-clasa-d-alb%2F",
-"magazin": "dwyn.ro",
-"id": "ynJHmP-etexM",
-"brand": "BOSCH",
-"url_magazin": "https://www.dwyn.ro/masina-de-spalat-rufe/bosch/482827-masina-de-spalat-rufe-cu-uscator-bosch-seria-4-wna14401by-9kg-spalare-5kg-uscare-1400rpm-clasa-d-alb/",
-"pret_vechi": null,
-"verificat": "2026-11-04"
-},
-{
-"titlu": "BOSCH Masina de spalat rufe cu uscator Bosch Serie 6 WNG25401BY, 10.5kg spalare, 6kg uscare, 1400rpm, Clasa D, Alb",
-"pret": 5004.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202606122129/482824/full/bosch-ma-in-de-sp-lat-rufe-cu-usc-tor-bosch-serie-6-wng25401by-10-5kg-sp-lare-6kg-uscare-1400rpm-clasa-d-1522129.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fmasina-de-spalat-rufe%2Fbosch%2F482824-masina-de-spalat-rufe-cu-uscator-bosch-serie-6-wng25401by-10-5kg-spalare-6kg-uscare-1400rpm-clasa-d-alb%2F",
-"magazin": "dwyn.ro",
-"id": "u7iamwCnXyE_",
-"brand": "BOSCH",
-"url_magazin": "https://www.dwyn.ro/masina-de-spalat-rufe/bosch/482824-masina-de-spalat-rufe-cu-uscator-bosch-serie-6-wng25401by-10-5kg-spalare-6kg-uscare-1400rpm-clasa-d-alb/",
+"id": "ecIUfHHYFylN",
+"brand": "Beko",
+"url_magazin": "https://www.dwyn.ro/masina-de-spalat-rufe/beko/383417-masina-de-spalat-rufe-cu-uscator-beko-bm5dft49442wb-steamcure-9-6-kg-1400rpm-alb/",
 "pret_vechi": null
 },
 {
-"titlu": "BOSCH Masina de spalat rufe cu uscator Bosch Serie 6, 8 kg spalare, 5 kg uscare, 1400 rpm, Clasa A/E",
-"pret": 6599.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202512311121/409381/full/bosch-ma-in-de-sp-lat-rufe-cu-usc-tor-complet-ncorporabil-bosch-serie-6-wkd28490eu-8kg-sp-lare-5kg-uscare-1307887.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fmasina-de-spalat-rufe%2Fbosch%2F409381-masina-de-spalat-rufe-cu-uscator-bosch-serie-6-8-kg-spalare-5-kg-uscare-1400-rpm-clasa-a-e%2F",
+"titlu": "Samsung Masina de spalat rufe cu uscator Samsung WD10HG6U94BEU4, spalare 10 kg, Uscare 6 kg, Clasa A Spalare, Clasa D Sp",
+"pret": 3384.99,
+"imagine": "https://www.dwyn.ro/images/products/img_202512311121/411805/full/samsung-masina-de-spalat-rufe-cu-uscator-samsung-wd10hg6u94beu4-spalare-10-kg-uscare-6-kg-clasa-a-spalare-clasa-d-spalare-plus-uscare-ai-wash-auto-dispense-ai-ecobubble-ai-control-super-speed-39-alb-1314595.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fmasina-de-spalat-rufe%2Fsamsung%2F411805-masina-de-spalat-rufe-cu-uscator-samsung-wd10hg6u94beu4-spalare-10-kg-uscare-6-kg-clasa-a-spalare-clasa-d-spalare-plus-uscare-ai-wash-auto-dispense-ai-ecobubble-ai-control-super-speed-39-alb%2F",
 "magazin": "dwyn.ro",
-"id": "Pxmnh5j3TCJa",
-"brand": "BOSCH",
-"url_magazin": "https://www.dwyn.ro/masina-de-spalat-rufe/bosch/409381-masina-de-spalat-rufe-cu-uscator-bosch-serie-6-8-kg-spalare-5-kg-uscare-1400-rpm-clasa-a-e/",
+"id": "JEijIt4DTrOT",
+"brand": "Samsung",
+"url_magazin": "https://www.dwyn.ro/masina-de-spalat-rufe/samsung/411805-masina-de-spalat-rufe-cu-uscator-samsung-wd10hg6u94beu4-spalare-10-kg-uscare-6-kg-clasa-a-spalare-clasa-d-spalare-plus-uscare-ai-wash-auto-dispense-ai-ecobubble-ai-control-super-speed-39-alb/",
+"pret_vechi": null
+},
+{
+"titlu": "Beko Masina de spalat rufe cu uscator Beko B7DFT6105447WBPBES, Clasa D, SteamCure, 10.5/7 kg, 1400rpm, HomeWhiz, Alb",
+"pret": 3709.99,
+"imagine": "https://www.dwyn.ro/images/products/img_202512311121/371057/full/beko-masina-de-spalat-rufe-cu-uscator-beko-b7dft6105447wbpbes-clasa-d-steamcure-10-5-7-kg-1400rpm-homewhiz-alb-1057418.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fmasina-de-spalat-rufe%2Fbeko%2F371057-masina-de-spalat-rufe-cu-uscator-beko-b7dft6105447wbpbes-clasa-d-steamcure-10-5-7-kg-1400rpm-homewhiz-alb%2F",
+"magazin": "dwyn.ro",
+"id": "h-cBjeIGDB6T",
+"brand": "Beko",
+"url_magazin": "https://www.dwyn.ro/masina-de-spalat-rufe/beko/371057-masina-de-spalat-rufe-cu-uscator-beko-b7dft6105447wbpbes-clasa-d-steamcure-10-5-7-kg-1400rpm-homewhiz-alb/",
 "pret_vechi": null
 }
 ],
@@ -1068,7 +1063,7 @@
 "titlu": "Mașini de spălat slim",
 "nota": null,
 "in_text": "\\bslim\\b",
-"actualizat": "2026-11-17",
+"actualizat": "2026-11-24",
 "feeduri": [
 {
 "id": 1539,
@@ -1213,7 +1208,7 @@
 "id": "eb437a966",
 "brand": "LG",
 "url_magazin": "https://www.evomag.ro/electrocasnice-electrocasnice-mari-masini-de-spalat-rufe-si-accesorii-masini-de-spalat-rufe/lg-masina-de-spalat-rufe-frontala-slim-lg-f2wr508sbw-steam-8-kg-1200rpm-clasa-a-alb-4144381.html",
-"pret_vechi": null,
+"pret_vechi": 2189.99,
 "verificat": "2026-11-04"
 },
 {
@@ -1241,7 +1236,7 @@
 "titlu": "Mașini de spălat sub 1.500 lei",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-17",
+"actualizat": "2026-11-24",
 "feeduri": [
 {
 "id": 1539,
@@ -1249,6 +1244,17 @@
 }
 ],
 "produse": [
+{
+"titlu": "Albatros Masina de spalat rufe semiautomata Albatros WMS10.4, spalare 10 kg, stoarcere 6.5 kg, 500W/200W, Alb/Verde",
+"pret": 912.99,
+"imagine": "https://www.dwyn.ro/images/products/img_202606122129/463669/full/albatros-masina-de-spalat-rufe-semiautomata-albatros-wms10-4-spalare-10-kg-stoarcere-6-5-kg-500w-200w-alb-verde-1504894.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fmasina-de-spalat-rufe%2Falbatros%2F463669-masina-de-spalat-rufe-semiautomata-albatros-wms10-4-spalare-10-kg-stoarcere-6-5-kg-500w-200w-alb-verde%2F",
+"magazin": "dwyn.ro",
+"id": "Tx5g_tTfbd1E",
+"brand": "Albatros",
+"url_magazin": "https://www.dwyn.ro/masina-de-spalat-rufe/albatros/463669-masina-de-spalat-rufe-semiautomata-albatros-wms10-4-spalare-10-kg-stoarcere-6-5-kg-500w-200w-alb-verde/",
+"pret_vechi": null
+},
 {
 "titlu": "Allview Masina de spalat rufe Allview Sensy W710E, Slim, 7 kg, 1200 rpm, Inverter, abur, clasa A, Alb",
 "pret": 1219.0,
@@ -1272,6 +1278,17 @@
 "url_magazin": "https://www.dwyn.ro/masina-de-spalat-rufe/candy/483823-masina-de-spalat-rufe-candy-gd-48se6-s-8-kg-1400-rpm-clasa-a-alb/",
 "pret_vechi": null,
 "verificat": "2026-11-04"
+},
+{
+"titlu": "Samus Masina de spalat rufe cu incarcare verticala Samus WTS-70122, 7kg, 1200rpm, alb",
+"pret": 1487.99,
+"imagine": "https://www.dwyn.ro/images/products/img_202404261115/241871/full/samus-masina-de-spalat-rufe-verticala-samus-wts-70122-7kg-1200-rpm-latime-40-cm-clasa-c-15-programe-panou-control-cu-leduri-pornire-intarziata-auto-echilibrare-tambur-blocare-acces-copii-527505.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fmasina-de-spalat-rufe%2Fsamus%2F241871-masina-de-spalat-rufe-cu-incarcare-verticala-samus-wts-70122-7kg-1200rpm-alb%2F",
+"magazin": "dwyn.ro",
+"id": "h-jyV9qavnES",
+"brand": "Samus",
+"url_magazin": "https://www.dwyn.ro/masina-de-spalat-rufe/samus/241871-masina-de-spalat-rufe-cu-incarcare-verticala-samus-wts-70122-7kg-1200rpm-alb/",
+"pret_vechi": null
 }
 ],
 "magazine": [
@@ -1285,7 +1302,7 @@
 "titlu": "Mașini de spălat vase de 45 cm",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-17",
+"actualizat": "2026-11-24",
 "feeduri": [
 {
 "id": 1096,
@@ -1303,14 +1320,14 @@
 "produse": [
 {
 "titlu": "Masina de spalat vase independenta CANDY CDPH 2L1049S, 10 seturi, 5 programe, 45 cm, Clasa E (Argintiu)",
-"pret": 1123.99,
+"pret": 1073.99,
 "imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4182%2F4182585%2Fcdph-2l1049s-66f11b5db1dcb.jpg&type=auto&width=500&sign=ZHeUt6gF48N7uXa75gaNjfmO_6m23d_zEAy-xvbhDHE",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Felectrocasnice-electrocasnice-mari-masini-de-spalat-vase%2Fcandy-masina-de-spalat-vase-independenta-candy-cdph-2l1049s-10-seturi-5-programe-45-cm-clasa-e-argintiu-4182585.html",
 "magazin": "evomag.ro",
 "id": "0b40b9da2",
 "brand": "Candy",
 "url_magazin": "https://www.evomag.ro/electrocasnice-electrocasnice-mari-masini-de-spalat-vase/candy-masina-de-spalat-vase-independenta-candy-cdph-2l1049s-10-seturi-5-programe-45-cm-clasa-e-argintiu-4182585.html",
-"pret_vechi": null
+"pret_vechi": 1123.99
 },
 {
 "titlu": "Masina de spalat vase incorporabila Heinner HDW-BIM45510E++, Slim, 10 seturi, 5 programe, Clasa E, AquaStop, 45 cm",
@@ -1343,6 +1360,17 @@
 "id": "c5cf6ac05",
 "brand": "Samus",
 "url_magazin": "https://www.evomag.ro/electrocasnice-electrocasnice-mari-masini-de-spalat-vase/samus-masina-de-spalat-vase-samus-sdx410.8-10-seturi-latime-45-cm-8-programe-clasa-energetica-e-afisaj-electronic-pornire-intarziata-inox-argintiu-4184945.html",
+"pret_vechi": null
+},
+{
+"titlu": "CANDY Masina de spalat vase Candy CDPH 2L1049W, 10 seturi, 5 programe, Clasa E, 45 cm, Alb",
+"pret": 1686.99,
+"imagine": "https://www.dwyn.ro/images/products/img_202512311121/392083/full/candy-masina-de-spalat-vase-candy-cdph-2l1049w-10-seturi-5-programe-clasa-e-45-cm-alb-1206340.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fmasina-de-spalat-vase%2Fcandy%2F392083-masina-de-spalat-vase-candy-cdph-2l1049w-10-seturi-5-programe-clasa-e-45-cm-alb%2F",
+"magazin": "dwyn.ro",
+"id": "kBc3ooIljMtv",
+"brand": "CANDY",
+"url_magazin": "https://www.dwyn.ro/masina-de-spalat-vase/candy/392083-masina-de-spalat-vase-candy-cdph-2l1049w-10-seturi-5-programe-clasa-e-45-cm-alb/",
 "pret_vechi": null
 },
 {
@@ -1418,6 +1446,17 @@
 "verificat": "2026-11-04"
 },
 {
+"titlu": "Gorenje Masina de spalat vase Gorenje GS520E15S, 9 seturi, 5 programe, Clasa E, 45 cm, Gri",
+"pret": 2345.99,
+"imagine": "https://www.dwyn.ro/images/products/img_202512311121/385058/full/gorenje-gorenje-gs520e15s-dishwasher-e-free-standing-width-45-cm-number-of-place-settings-9-grey-1179521.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fmasina-de-spalat-vase%2Fgorenje%2F385058-masina-de-spalat-vase-gorenje-gs520e15s-9-seturi-5-programe-clasa-e-45-cm-gri%2F",
+"magazin": "dwyn.ro",
+"id": "lpJUw4WmkGgX",
+"brand": "Gorenje",
+"url_magazin": "https://www.dwyn.ro/masina-de-spalat-vase/gorenje/385058-masina-de-spalat-vase-gorenje-gs520e15s-9-seturi-5-programe-clasa-e-45-cm-gri/",
+"pret_vechi": null
+},
+{
 "titlu": "BOSCH Masina de spalat vase Bosch Serie 2, 10 seturi, 45 cm, Clasa D, Complet incorporabila",
 "pret": 2529.99,
 "imagine": "https://www.dwyn.ro/images/products/img_202512311121/409333/full/bosch-ma-in-de-sp-lat-vase-complet-ncorporabil-bosch-serie-2-spv2hkx02e-45cm-2400w-clasa-d-alb-1307839.jpg",
@@ -1426,17 +1465,6 @@
 "id": "8XCCrklY-SiY",
 "brand": "BOSCH",
 "url_magazin": "https://www.dwyn.ro/masina-de-spalat-vase/bosch/409333-masina-de-spalat-vase-bosch-serie-2-10-seturi-45-cm-clasa-d-complet-incorporabila/",
-"pret_vechi": null
-},
-{
-"titlu": "Gorenje Masina de spalat vase Gorenje GS520E15S, 9 seturi, 5 programe, Clasa E, 45 cm, Gri",
-"pret": 2601.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202512311121/385058/full/gorenje-gorenje-gs520e15s-dishwasher-e-free-standing-width-45-cm-number-of-place-settings-9-grey-1179521.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fmasina-de-spalat-vase%2Fgorenje%2F385058-masina-de-spalat-vase-gorenje-gs520e15s-9-seturi-5-programe-clasa-e-45-cm-gri%2F",
-"magazin": "dwyn.ro",
-"id": "lpJUw4WmkGgX",
-"brand": "Gorenje",
-"url_magazin": "https://www.dwyn.ro/masina-de-spalat-vase/gorenje/385058-masina-de-spalat-vase-gorenje-gs520e15s-9-seturi-5-programe-clasa-e-45-cm-gri/",
 "pret_vechi": null
 }
 ],
@@ -1452,7 +1480,7 @@
 "titlu": "Mașini de spălat vase de 60 cm",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-17",
+"actualizat": "2026-11-24",
 "feeduri": [
 {
 "id": 1096,
@@ -1493,6 +1521,17 @@
 "verificat": "2026-11-04"
 },
 {
+"titlu": "Masina de spalat vase incorporabila CANDY Rapido CI 3E7L0W, 13 seturi, 5 programe, 60 cm, Clasa E, panou comanda alb (Al",
+"pret": 1813.99,
+"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4212%2F4212994%2Fci-3e7l0w-67ebaad2aa214.jpg&type=auto&width=500&sign=hQ03gKgXej8gXXVawDf1IfcaJO5LFzJQdUD4fCSMhMc",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Felectrocasnice-electrocasnice-mari-masini-de-spalat-vase%2Fcandy-masina-de-spalat-vase-incorporabila-candy-rapido-ci-3e7l0w-13-seturi-5-programe-60-cm-clasa-e-panou-comanda-alb-alb-4212994.html",
+"magazin": "evomag.ro",
+"id": "nAcwQNECqYbR",
+"brand": "Candy",
+"url_magazin": "https://www.evomag.ro/electrocasnice-electrocasnice-mari-masini-de-spalat-vase/candy-masina-de-spalat-vase-incorporabila-candy-rapido-ci-3e7l0w-13-seturi-5-programe-60-cm-clasa-e-panou-comanda-alb-alb-4212994.html",
+"pret_vechi": null
+},
+{
 "titlu": "Masina de spalat vase incorporabila Amica DIM64C7EMONqH, 60 cm, 14 seturi, 7 programe, 3 sertare, Clasa C, ECO, AquaStop",
 "pret": 1999.99,
 "imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4321%2F4321483%2F6ae8917d335b4.jpg&type=auto&width=500&sign=YJEjrIOihbXeymkxEIGWkv-bufLXXyzUpJ-tvz5B-ZY",
@@ -1503,17 +1542,6 @@
 "url_magazin": "https://www.evomag.ro/electrocasnice-electrocasnice-mari-masini-de-spalat-vase/amica-masina-de-spalat-vase-incorporabila-amica-dim64c7emonqh-60-cm-14-seturi-7-programe-3-sertare-clasa-c-eco-aquastop-dedurizare-halfload-sistem-deschidere-automata-a-usii-indicator-luminos-multi-color-negru-4321483.html",
 "pret_vechi": null,
 "verificat": "2026-11-04"
-},
-{
-"titlu": "hansa Masina de spalat vase incorporabila Amica DIM64C7EMONqH, 60 cm, 14 seturi, 7 programe, 3 sertare, Clasa C, ECO, Aq",
-"pret": 2029.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202512311121/375932/full/hansa-masina-de-spalat-vase-incorporabila-amica-60-cm-14-seturi-7-programe-3-sertare-clasa-c-eco-aquastop-dedurizare-halfload-sistem-deschidere-automata-a-usii-indicator-luminos-multi-color-1085873.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fmasina-de-spalat-vase%2Fhansa%2F375932-masina-de-spalat-vase-incorporabila-amica-dim64c7emonqh-60-cm-14-seturi-7-programe-3-sertare-clasa-c-eco-aquastop-dedurizare-halfload-sistem-deschidere-automata-a-usii-indicator-luminos-multi-color-al%2F",
-"magazin": "dwyn.ro",
-"id": "vMTWNJL3KYqx",
-"brand": "hansa",
-"url_magazin": "https://www.dwyn.ro/masina-de-spalat-vase/hansa/375932-masina-de-spalat-vase-incorporabila-amica-dim64c7emonqh-60-cm-14-seturi-7-programe-3-sertare-clasa-c-eco-aquastop-dedurizare-halfload-sistem-deschidere-automata-a-usii-indicator-luminos-multi-color-al/",
-"pret_vechi": null
 },
 {
 "titlu": "Midea Masina de spalat vase Midea MDWEF1433DSS-W, 14 seturi, 9 programe, 60 cm, Clasa C, Argintiu",
@@ -1528,25 +1556,14 @@
 "verificat": "2026-11-04"
 },
 {
-"titlu": "Masina de spalat vase incorporabila ELECTROLUX E52LE210S, AirDry, 14 seturi, 6 programe, 60 cm, Clasa E (Negru)",
-"pret": 2499.99,
-"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4311%2F4311578%2Fe52le210s-6a883d4760f5e.jpg&type=auto&width=500&sign=VYfAgXxxXEnxSuPXGvFCCDuIqjuyX1EB96DjQDhrgzg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Felectrocasnice-electrocasnice-mari-masini-de-spalat-vase%2Felectrolux-masina-de-spalat-vase-incorporabila-electrolux-e52le210s-airdry-14-seturi-6-programe-60-cm-clasa-e-negru-4311578.html",
+"titlu": "Masina de spalat vase independenta Whirlpool WFC3C26PFX, 14 seturi, 8 programe, Clasa E, 60 cm (Inox)",
+"pret": 2138.99,
+"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4288%2F4288050%2Fwfc3c26pfx-69b17a597fe6c.jpg&type=auto&width=500&sign=hQl-dJHs3YaK-ameybRYbsWAEDLVLxw2Tzx9d_lzpNo",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Felectrocasnice-electrocasnice-mari-masini-de-spalat-vase%2Fwhirlpool-masina-de-spalat-vase-independenta-whirlpool-wfc3c26pfx-14-seturi-8-programe-clasa-e-60-cm-inox-4288050.html",
 "magazin": "evomag.ro",
-"id": "8R9DP86ybfGS",
-"brand": "Electrolux",
-"url_magazin": "https://www.evomag.ro/electrocasnice-electrocasnice-mari-masini-de-spalat-vase/electrolux-masina-de-spalat-vase-incorporabila-electrolux-e52le210s-airdry-14-seturi-6-programe-60-cm-clasa-e-negru-4311578.html",
-"pret_vechi": null
-},
-{
-"titlu": "INDESIT Masina de spalat vase Indesit D2F HD624 AS, independenta, clasa E, latime 60 cm, 14 seturi, 9 programe, Argintiu",
-"pret": 2522.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202512311121/385076/full/indesit-indesit-d2f-hd624-as-dishwasher-free-standing-e-width-60-cm-14-place-settings-silver-1179695.png",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fmasina-de-spalat-vase%2Findesit%2F385076-masina-de-spalat-vase-indesit-d2f-hd624-as-independenta-clasa-e-latime-60-cm-14-seturi-9-programe-argintiu%2F",
-"magazin": "dwyn.ro",
-"id": "1p1_HCa1qarw",
-"brand": "INDESIT",
-"url_magazin": "https://www.dwyn.ro/masina-de-spalat-vase/indesit/385076-masina-de-spalat-vase-indesit-d2f-hd624-as-independenta-clasa-e-latime-60-cm-14-seturi-9-programe-argintiu/",
+"id": "nziPwg-W0WFL",
+"brand": "Whirlpool",
+"url_magazin": "https://www.evomag.ro/electrocasnice-electrocasnice-mari-masini-de-spalat-vase/whirlpool-masina-de-spalat-vase-independenta-whirlpool-wfc3c26pfx-14-seturi-8-programe-clasa-e-60-cm-inox-4288050.html",
 "pret_vechi": null
 },
 {
@@ -1572,6 +1589,29 @@
 "url_magazin": "https://www.dwyn.ro/masina-de-spalat-vase/bosch/164838-masina-de-spalat-vase-bosch-sms25aw05e-12-seturi-5-programe-60-cm-clasa-e-alb/",
 "pret_vechi": null,
 "verificat": "2026-11-04"
+},
+{
+"titlu": "Beko Masina de spalat vase incorporabila BEKO BDIN25323, 15 seturi, 5 programe, 60 cm, Clasa D, alb",
+"pret": 2612.99,
+"imagine": "https://www.dwyn.ro/images/products/img_202512311121/383429/full/beko-masina-de-spalat-vase-incorporabila-beko-bdin25323-15-seturi-5-programe-60-cm-clasa-d-alb-1166873.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fmasina-de-spalat-vase%2Fbeko%2F383429-masina-de-spalat-vase-incorporabila-beko-bdin25323-15-seturi-5-programe-60-cm-clasa-d-alb%2F",
+"magazin": "dwyn.ro",
+"id": "utmSdDTi00F8",
+"brand": "Beko",
+"url_magazin": "https://www.dwyn.ro/masina-de-spalat-vase/beko/383429-masina-de-spalat-vase-incorporabila-beko-bdin25323-15-seturi-5-programe-60-cm-clasa-d-alb/",
+"pret_vechi": null
+},
+{
+"titlu": "Whirlpool Masina de spalat vase incorporabila Whirlpool WIO3O26PL, 14 seturi, 8 programe, 60 cm",
+"pret": 2815.99,
+"imagine": "https://www.dwyn.ro/images/products/img_202305231058/201899/full/whirlpool-masina-de-spalat-vase-incorporabila-whirlpool-wio3o26pl-14-seturi-8-programe-60-cm-431847.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fmasina-de-spalat-vase%2Fwhirlpool%2F201899-masina-de-spalat-vase-incorporabila-whirlpool-wio3o26pl-14-seturi-8-programe-60-cm%2F",
+"magazin": "dwyn.ro",
+"id": "JiezaKyjd_u1",
+"brand": "Whirlpool",
+"url_magazin": "https://www.dwyn.ro/masina-de-spalat-vase/whirlpool/201899-masina-de-spalat-vase-incorporabila-whirlpool-wio3o26pl-14-seturi-8-programe-60-cm/",
+"pret_vechi": null,
+"verificat": "2026-11-04"
 }
 ],
 "magazine": [
@@ -1586,7 +1626,7 @@
 "titlu": "Mașini de spălat vase încorporabile",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-17",
+"actualizat": "2026-11-24",
 "feeduri": [
 {
 "id": 1096,
@@ -1612,18 +1652,6 @@
 "brand": "Heinner",
 "url_magazin": "https://www.evomag.ro/electrocasnice-electrocasnice-mari-masini-de-spalat-vase/heinner-masina-de-spalat-vase-incorporabila-heinner-hdw-bim45510e-slim-10-seturi-5-programe-clasa-e-aquastop-45-cm-4196131.html",
 "pret_vechi": 1260.99
-},
-{
-"titlu": "Masina de spalat vase incorporabila Samus SBDW46.5, 9 Seturi, 5 Programe, Clasa E (Alb)",
-"pret": 1199.99,
-"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4109%2F4109520%2Fsbdw465-64ca380ad496e.JPG&type=auto&width=500&sign=C_ebonrDYKLzlUNj2HQz_TtJNMNPixFYURE4GB8v8-k",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Felectrocasnice-electrocasnice-mari-masini-de-spalat-vase%2Fsamus-masina-de-spalat-vase-incorporabila-samus-sbdw46.5-9-seturi-5-programe-clasa-e-alb-4109520.html",
-"magazin": "evomag.ro",
-"id": "rmjogq8TfelS",
-"brand": "Samus",
-"url_magazin": "https://www.evomag.ro/electrocasnice-electrocasnice-mari-masini-de-spalat-vase/samus-masina-de-spalat-vase-incorporabila-samus-sbdw46.5-9-seturi-5-programe-clasa-e-alb-4109520.html",
-"pret_vechi": null,
-"verificat": "2026-11-05"
 },
 {
 "titlu": "Masina de spalat vase incorporabila Heinner HDW-BIM60514E++, 14 seturi, Clasa E, 5 programe (Argintiu)",
@@ -1661,37 +1689,36 @@
 "verificat": "2026-11-04"
 },
 {
-"titlu": "MPM Masina de spalat vase incorporabila MPM 45-ZMI-02, 10 seturi, 5 programe, clasa E, Otel inoxidabil",
-"pret": 1888.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202508191322/364100/full/mpm-masina-de-spalat-vase-incorporabila-mpm-45-zmi-02-10-seturi-49-db-44-8x81-5x55-cm-otel-inoxidabil-1022453.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fmasina-de-spalat-vase%2Fmpm%2F364100-masina-de-spalat-vase-incorporabila-mpm-45-zmi-02-10-seturi-5-programe-clasa-e-otel-inoxidabil%2F",
-"magazin": "dwyn.ro",
-"id": "SNVJl1XZSwee",
-"brand": "MPM",
-"url_magazin": "https://www.dwyn.ro/masina-de-spalat-vase/mpm/364100-masina-de-spalat-vase-incorporabila-mpm-45-zmi-02-10-seturi-5-programe-clasa-e-otel-inoxidabil/",
+"titlu": "Masina de spalat vase incorporabila Candy CDIH 2T1145, 11 seturi, 8 programe, Clasa energetica E (Argintiu)",
+"pret": 1699.99,
+"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4289%2F4289782%2Fmasina-de-spalat-vase-incorpor-69c246f57bfcc.jpg&type=auto&width=500&sign=GjfuVBsuB5v_wfR7D37VJF74TR-BzVr3YRddlSPkfu0",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Felectrocasnice-electrocasnice-mari-masini-de-spalat-vase%2Fcandy-masina-de-spalat-vase-incorporabila-candy-cdih-2t1145-11-seturi-8-programe-clasa-energetica-e-argintiu-4289782.html",
+"magazin": "evomag.ro",
+"id": "8OD5l1aBmKpk",
+"brand": "Candy",
+"url_magazin": "https://www.evomag.ro/electrocasnice-electrocasnice-mari-masini-de-spalat-vase/candy-masina-de-spalat-vase-incorporabila-candy-cdih-2t1145-11-seturi-8-programe-clasa-energetica-e-argintiu-4289782.html",
 "pret_vechi": null
 },
 {
-"titlu": "Masina de spalat vase incorporabila Amica DIM64C7EMONqH, 60 cm, 14 seturi, 7 programe, 3 sertare, Clasa C, ECO, AquaStop",
-"pret": 1999.99,
-"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4321%2F4321483%2F6ae8917d335b4.jpg&type=auto&width=500&sign=YJEjrIOihbXeymkxEIGWkv-bufLXXyzUpJ-tvz5B-ZY",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Felectrocasnice-electrocasnice-mari-masini-de-spalat-vase%2Famica-masina-de-spalat-vase-incorporabila-amica-dim64c7emonqh-60-cm-14-seturi-7-programe-3-sertare-clasa-c-eco-aquastop-dedurizare-halfload-sistem-deschidere-automata-a-usii-indicator-luminos-multi-color-negru-4321483.html",
+"titlu": "Masina de spalat vase incorporabila Beko DIS35026, 11.9 l, 10 seturi, 5 programe, Extra Drying, Quick&Shine, Flexible Ha",
+"pret": 1699.99,
+"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4288%2F4288535%2F69b3fdccf0150.png&type=auto&width=500&sign=sVUq4w3OyF850j86voM6WjtU5KBZuUhJTwXKodZD2XQ",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Felectrocasnice-electrocasnice-mari-masini-de-spalat-vase%2Fbeko-masina-de-spalat-vase-incorporabila-beko-dis35026-11.9-l-10-seturi-5-programe-extra-drying-quick-shine-flexible-halfload-clasa-e-45-cm-4288535.html",
 "magazin": "evomag.ro",
-"id": "vjxdI5lSutbA",
-"brand": "Amica",
-"url_magazin": "https://www.evomag.ro/electrocasnice-electrocasnice-mari-masini-de-spalat-vase/amica-masina-de-spalat-vase-incorporabila-amica-dim64c7emonqh-60-cm-14-seturi-7-programe-3-sertare-clasa-c-eco-aquastop-dedurizare-halfload-sistem-deschidere-automata-a-usii-indicator-luminos-multi-color-negru-4321483.html",
-"pret_vechi": null,
-"verificat": "2026-11-04"
+"id": "pvWnTRQlYPb3",
+"brand": "Beko",
+"url_magazin": "https://www.evomag.ro/electrocasnice-electrocasnice-mari-masini-de-spalat-vase/beko-masina-de-spalat-vase-incorporabila-beko-dis35026-11.9-l-10-seturi-5-programe-extra-drying-quick-shine-flexible-halfload-clasa-e-45-cm-4288535.html",
+"pret_vechi": null
 },
 {
-"titlu": "Masina de spalat vase incorporabila Bosch SMV2ITX09E, 13 seturi, 5 programe, ExtraDry, Functie silence, InfoLight, Tab-c",
-"pret": 2199.99,
-"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4316%2F4316394%2Fsmv2itx09e-6aad156314a97.jpg&type=auto&width=500&sign=kDF0SPBucy9CZ-GGIeGceZ3njZKAq6hq5SZEgCxRcMo",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Felectrocasnice-electrocasnice-mari-masini-de-spalat-vase%2Fbosch-masina-de-spalat-vase-incorporabila-bosch-smv2itx09e-13-seturi-5-programe-extradry-functie-silence-infolight-tab-count-home-connect-60-cm-clasa-e-negru-4316394.html",
+"titlu": "Masina de spalat vase incorporabila Beko BDIN16435, Clasa D, Capacitate 14 seturi, 6 programe, AutoDoor Opening, Clean&S",
+"pret": 1726.99,
+"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4282%2F4282582%2Fart14515-6992e1e2cb08b.jpg&type=auto&width=500&sign=U3MDKrnG1FpKuQQBM0glrgSzwGXiXDWlv1e2w_5na_Q",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Felectrocasnice-electrocasnice-mari-masini-de-spalat-vase%2Fbeko-masina-de-spalat-vase-incorporabila-beko-bdin16435-clasa-d-capacitate-14-seturi-6-programe-autodoor-opening-clean-shine-60-cm-alb-4282582.html",
 "magazin": "evomag.ro",
-"id": "Elx6aBGQf4uI",
-"brand": "BOSCH",
-"url_magazin": "https://www.evomag.ro/electrocasnice-electrocasnice-mari-masini-de-spalat-vase/bosch-masina-de-spalat-vase-incorporabila-bosch-smv2itx09e-13-seturi-5-programe-extradry-functie-silence-infolight-tab-count-home-connect-60-cm-clasa-e-negru-4316394.html",
+"id": "dO0FPRIMbpl1",
+"brand": "Beko",
+"url_magazin": "https://www.evomag.ro/electrocasnice-electrocasnice-mari-masini-de-spalat-vase/beko-masina-de-spalat-vase-incorporabila-beko-bdin16435-clasa-d-capacitate-14-seturi-6-programe-autodoor-opening-clean-shine-60-cm-alb-4282582.html",
 "pret_vechi": null
 },
 {
@@ -1719,14 +1746,14 @@
 "verificat": "2026-11-04"
 },
 {
-"titlu": "BOSCH Masina de spalat vase Bosch Serie 2, 10 seturi, 45 cm, Clasa D, Complet incorporabila",
-"pret": 2529.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202512311121/409333/full/bosch-ma-in-de-sp-lat-vase-complet-ncorporabil-bosch-serie-2-spv2hkx02e-45cm-2400w-clasa-d-alb-1307839.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fmasina-de-spalat-vase%2Fbosch%2F409333-masina-de-spalat-vase-bosch-serie-2-10-seturi-45-cm-clasa-d-complet-incorporabila%2F",
+"titlu": "Beko Masina de spalat vase incorporabila BEKO BDIN25323, 15 seturi, 5 programe, 60 cm, Clasa D, alb",
+"pret": 2612.99,
+"imagine": "https://www.dwyn.ro/images/products/img_202512311121/383429/full/beko-masina-de-spalat-vase-incorporabila-beko-bdin25323-15-seturi-5-programe-60-cm-clasa-d-alb-1166873.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fmasina-de-spalat-vase%2Fbeko%2F383429-masina-de-spalat-vase-incorporabila-beko-bdin25323-15-seturi-5-programe-60-cm-clasa-d-alb%2F",
 "magazin": "dwyn.ro",
-"id": "8XCCrklY-SiY",
-"brand": "BOSCH",
-"url_magazin": "https://www.dwyn.ro/masina-de-spalat-vase/bosch/409333-masina-de-spalat-vase-bosch-serie-2-10-seturi-45-cm-clasa-d-complet-incorporabila/",
+"id": "utmSdDTi00F8",
+"brand": "Beko",
+"url_magazin": "https://www.dwyn.ro/masina-de-spalat-vase/beko/383429-masina-de-spalat-vase-incorporabila-beko-bdin25323-15-seturi-5-programe-60-cm-clasa-d-alb/",
 "pret_vechi": null
 },
 {
@@ -1742,8 +1769,19 @@
 "verificat": "2026-11-04"
 },
 {
+"titlu": "Beko Masina de spalat vase incorporabila Beko BDIS38050Q, 10 seturi, 6 programe, 45 cm, Clasa B, AquaIntense, Fast+, Alb",
+"pret": 2853.99,
+"imagine": "https://www.dwyn.ro/images/products/img_202508191322/353327/full/beko-masina-de-spalat-vase-incorporabila-beko-bdis38050q-10-seturi-6-programe-45-cm-clasa-b-aquaintense-fast-plus-995459.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fmasina-de-spalat-vase%2Fbeko%2F353327-masina-de-spalat-vase-incorporabila-beko-bdis38050q-10-seturi-6-programe-45-cm-clasa-b-aquaintense-fast-plus-alb%2F",
+"magazin": "dwyn.ro",
+"id": "IkCTd7x3Ek--",
+"brand": "Beko",
+"url_magazin": "https://www.dwyn.ro/masina-de-spalat-vase/beko/353327-masina-de-spalat-vase-incorporabila-beko-bdis38050q-10-seturi-6-programe-45-cm-clasa-b-aquaintense-fast-plus-alb/",
+"pret_vechi": null
+},
+{
 "titlu": "BOSCH Masina de spalat vase Bosch Serie 4, complet incorporabila, 45cm, Clasa D, 10 seturi",
-"pret": 2969.99,
+"pret": 2989.99,
 "imagine": "https://www.dwyn.ro/images/products/img_202512311121/409330/full/bosch-ma-in-de-sp-lat-vase-complet-ncorporabil-bosch-serie-4-spv4hmx12e-45cm-2400w-clasa-d-alb-1307836.jpg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fmasina-de-spalat-vase%2Fbosch%2F409330-masina-de-spalat-vase-bosch-serie-4-complet-incorporabila-45cm-clasa-d-10-seturi%2F",
 "magazin": "dwyn.ro",
@@ -1753,14 +1791,14 @@
 "pret_vechi": null
 },
 {
-"titlu": "BOSCH Masina de spalat vase complet incorporabila Bosch Serie 4, SMV4HCX07E, 60cm, 14 seturi, 6 programe, Alb",
-"pret": 3334.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202508191322/340997/full/bosch-ma-in-de-sp-lat-vase-complet-ncorporabil-bosch-serie-4-smv4hcx07e-60cm-alb-941351.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fmasina-de-spalat-vase%2Fbosch%2F340997-masina-de-spalat-vase-complet-incorporabila-bosch-serie-4-smv4hcx07e-60cm-14-seturi-6-programe-alb%2F",
+"titlu": "Beko Masina de spalat vase incorporabila BEKO BDFN26440WP 14 seturi, 6 programe, clasa energetica C, Functii Hyegiene in",
+"pret": 3219.99,
+"imagine": "https://www.dwyn.ro/images/products/img_202606122129/479149/full/beko-masina-de-spalat-vase-incorporabila-beko-bdfn26440wp-14-seturi-clasa-energetica-c-functii-hyegiene-intense-eco-50-led-auto-intense-silent-1509622.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fmasina-de-spalat-vase%2Fbeko%2F479149-masina-de-spalat-vase-incorporabila-beko-bdfn26440wp-14-seturi-6-programe-clasa-energetica-c-functii-hyegiene-intense-eco-50-led-auto-intense-silent-alb%2F",
 "magazin": "dwyn.ro",
-"id": "cS_HGSOVMMnN",
-"brand": "BOSCH",
-"url_magazin": "https://www.dwyn.ro/masina-de-spalat-vase/bosch/340997-masina-de-spalat-vase-complet-incorporabila-bosch-serie-4-smv4hcx07e-60cm-14-seturi-6-programe-alb/",
+"id": "We_i4HdnKoh1",
+"brand": "Beko",
+"url_magazin": "https://www.dwyn.ro/masina-de-spalat-vase/beko/479149-masina-de-spalat-vase-incorporabila-beko-bdfn26440wp-14-seturi-6-programe-clasa-energetica-c-functii-hyegiene-intense-eco-50-led-auto-intense-silent-alb/",
 "pret_vechi": null
 }
 ],
@@ -1776,7 +1814,7 @@
 "titlu": "Friteuze cu aer cald de 3-4 litri",
 "nota": "Pentru 1-2 persoane sunt de obicei suficienți 3-4 litri.",
 "in_text": "\\b3-4 litri\\b",
-"actualizat": "2026-11-17",
+"actualizat": "2026-11-24",
 "feeduri": [
 {
 "id": 1096,
@@ -1796,6 +1834,17 @@
 }
 ],
 "produse": [
+{
+"titlu": "Friteuza cu aer cald Extralink Smart Life SJ-400, 4 l, 1300 W, Temperatura ajustabila 80-200 C (Negru)",
+"pret": 190.99,
+"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4206%2F4206170%2Fextralink-smart-life-air-fryer-67b868d00e153.png&type=auto&width=500&sign=rXr4z5z0wW4MXBCx0XhXCUu5nvZa4xAreUQmgl0hd5o",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Felectrocasnice-electrocasnice-pentru-bucatarie-friteuze%2Fextralink-friteuza-cu-aer-cald-extralink-smart-life-sj-400-4-l-1300-w-temperatura-ajustabila-80-200-c-negru-4206170.html",
+"magazin": "evomag.ro",
+"id": "-7cErs_DOKml",
+"brand": "ExtraLink",
+"url_magazin": "https://www.evomag.ro/electrocasnice-electrocasnice-pentru-bucatarie-friteuze/extralink-friteuza-cu-aer-cald-extralink-smart-life-sj-400-4-l-1300-w-temperatura-ajustabila-80-200-c-negru-4206170.html",
+"pret_vechi": null
+},
 {
 "titlu": "SALENTE Friteuza cu aer cald, Salente AirFit, 1500 W, 3,5 l, Pregatire & Gratar & Uscare & Dezghetare 4in1, 12 programe",
 "pret": 310.2,
@@ -1833,18 +1882,6 @@
 "verificat": "2026-11-04"
 },
 {
-"titlu": "Friteuza cu aer cald Clatronic FR 3195, 4 l, 2000 W (Negru/Inox)",
-"pret": 405.99,
-"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4207%2F4207271%2Fclatronic-fr-3195-fryer-4-l-20-67c175f6635dc.jpg&type=auto&width=500&sign=7huULB6NxtY5CYqKVimK7VuBxI-HqN-giDKoT6LyI8g",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Felectrocasnice-electrocasnice-pentru-bucatarie-friteuze%2Fclatronic-friteuza-cu-aer-cald-clatronic-fr-3195-4-l-2000-w-negru-inox-4207271.html",
-"magazin": "evomag.ro",
-"id": "829806091",
-"brand": "Clatronic",
-"url_magazin": "https://www.evomag.ro/electrocasnice-electrocasnice-pentru-bucatarie-friteuze/clatronic-friteuza-cu-aer-cald-clatronic-fr-3195-4-l-2000-w-negru-inox-4207271.html",
-"pret_vechi": null,
-"verificat": "2026-11-04"
-},
-{
 "titlu": "Friteuza cu aer cald Zass ZAF 12, 1500W, vas de sticla 4L, functie grill, set inclus",
 "pret": 699.9,
 "imagine": "https://infinityro.vteximg.com.br/arquivos/ids/271792486/image-d87adfd783e447168ef9a872ae1b4468.jpg",
@@ -1870,7 +1907,7 @@
 "titlu": "Friteuze cu aer cald de 5-6 litri",
 "nota": "Pentru 3-4 persoane, alege în jur de 4-6 litri.",
 "in_text": "\\b4-6 litri\\b",
-"actualizat": "2026-11-17",
+"actualizat": "2026-11-24",
 "feeduri": [
 {
 "id": 1096,
@@ -1987,6 +2024,17 @@
 "verificat": "2026-11-04"
 },
 {
+"titlu": "Friteuza cu aer cald Russell Hobbs SatisFry Large 26510-56, 1650 W, 5 L, 7 programe, Timer, Touchscreen (Negru)",
+"pret": 442.99,
+"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4078%2F4078672%2F63e383a50f760.jpg&type=auto&width=500&sign=hlzZ5B5Wrm2Fa0uNKzNUoCpWsx7_fDCfm3kvebFRiRU",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Felectrocasnice-electrocasnice-pentru-bucatarie-friteuze%2Frussell-hobbs-friteuza-cu-aer-cald-russell-hobbs-satisfry-large-26510-56-1650-w-5-l-7-programe-timer-touchscreen-negru-4078672.html",
+"magazin": "evomag.ro",
+"id": "ADeD17W7K9Ae",
+"brand": "Russell Hobbs",
+"url_magazin": "https://www.evomag.ro/electrocasnice-electrocasnice-pentru-bucatarie-friteuze/russell-hobbs-friteuza-cu-aer-cald-russell-hobbs-satisfry-large-26510-56-1650-w-5-l-7-programe-timer-touchscreen-negru-4078672.html",
+"pret_vechi": null
+},
+{
 "titlu": "Friteuza cu aer cald Zass ZAF 18, 5,7 L, 2200 W, cos din sticla, control digital, 9 programe, Negru",
 "pret": 599.9,
 "imagine": "https://infinityro.vteximg.com.br/arquivos/ids/271792608/image-f02aa0f167c94843b4b86d8ab1227d7e.jpg",
@@ -2012,7 +2060,7 @@
 "titlu": "Friteuze cu aer cald de 8 litri sau mai mari",
 "nota": "Pentru 5 persoane sau două feluri deodată, caută 8-10 litri, de obicei în două coșuri.",
 "in_text": "\\b8-10 litri\\b",
-"actualizat": "2026-11-17",
+"actualizat": "2026-11-24",
 "feeduri": [
 {
 "id": 1096,
@@ -2032,17 +2080,6 @@
 }
 ],
 "produse": [
-{
-"titlu": "Friteuza cu aer cald Esperanza EKA004, 8 l, 1700 W (Negru/Inox)",
-"pret": 202.99,
-"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4240%2F4240519%2Ffriteuza-cu-aer-cald-esperanza-689318681c338.jpg&type=auto&width=500&sign=79hYJf3sLKOpay5jG7ZLHg-cSJHOBQb3GZ9gIR0jFDQ",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Felectrocasnice-electrocasnice-pentru-bucatarie-friteuze%2Fesperanza-friteuza-cu-aer-cald-esperanza-eka004-8-l-1700-w-negru-inox-4240519.html",
-"magazin": "evomag.ro",
-"id": "ydqPGSpksTp7",
-"brand": "ESPERANZA",
-"url_magazin": "https://www.evomag.ro/electrocasnice-electrocasnice-pentru-bucatarie-friteuze/esperanza-friteuza-cu-aer-cald-esperanza-eka004-8-l-1700-w-negru-inox-4240519.html",
-"pret_vechi": 216.99
-},
 {
 "titlu": "Friteuza cu aer cald Samus AF8-S1700DW, 8 l, 1700 W, Timer 0-60 minute, 12 programe, Temperatura ajustabila 80-200 C (Ne",
 "pret": 279.99,
@@ -2064,7 +2101,7 @@
 "id": "_NQaYwiE0Xja",
 "brand": "Teesa",
 "url_magazin": "https://www.evomag.ro/electrocasnice-electrocasnice-pentru-bucatarie-friteuze/teesa-friteuza-cu-aer-cald-teesa-tsa8079-8-l-1700-w-afisaj-lcd-temporizator-tempratura-reglabila-80-200-c-negru-inox-4261075.html",
-"pret_vechi": null,
+"pret_vechi": 289.99,
 "verificat": "2026-11-04"
 },
 {
@@ -2170,7 +2207,7 @@
 "id": "MMOkEmvymowv",
 "brand": "Xiaomi",
 "url_magazin": "https://www.evomag.ro/electrocasnice-electrocasnice-pentru-bucatarie-friteuze/xiaomi-friteuza-dubla-cu-aer-cald-xiaomi-smart-double-stack-air-fryer-12-l-2800-w-14-prgorame-temperatura-ajustabila-40-230-c-negru-4278194.html",
-"pret_vechi": 742.99,
+"pret_vechi": null,
 "verificat": "2026-11-04"
 },
 {
@@ -2248,7 +2285,7 @@
 "titlu": "Friteuze cu două coșuri",
 "nota": "Cu două coșuri gătești două feluri la temperaturi diferite.",
 "in_text": "\\b(un coș sau două|două coșuri)\\b",
-"actualizat": "2026-11-17",
+"actualizat": "2026-11-24",
 "feeduri": [
 {
 "id": 1539,
@@ -2268,6 +2305,17 @@
 }
 ],
 "produse": [
+{
+"titlu": "Friteuza cu aer cald fara ulei Instant Vortex Plus 8 Dual SS, Clear Cook Ecran digital, Doua Cosuri detasabile, 6 functi",
+"pret": 383.99,
+"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F3989%2F3989224%2Ffriteuza-cu-aer-cald-fara-ulei-62e11b39aa8e4.JPG&type=auto&width=500&sign=fk2n6OmttBS_uiJwSqfHPPQBxri0pg4NP1Qz5HgXlIc",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Felectrocasnice-electrocasnice-pentru-bucatarie-friteuze%2Finstant-pot-friteuza-cu-aer-cald-fara-ulei-instant-vortex-plus-8-dual-ss-clear-cook-ecran-digital-doua-cosuri-detasabile-6-functii-de-gatire-capacitate-7.6-litri-1700-w-negru-gri-3989224.html",
+"magazin": "evomag.ro",
+"id": "042edbf59",
+"brand": "Instant Pot",
+"url_magazin": "https://www.evomag.ro/electrocasnice-electrocasnice-pentru-bucatarie-friteuze/instant-pot-friteuza-cu-aer-cald-fara-ulei-instant-vortex-plus-8-dual-ss-clear-cook-ecran-digital-doua-cosuri-detasabile-6-functii-de-gatire-capacitate-7.6-litri-1700-w-negru-gri-3989224.html",
+"pret_vechi": 399.99
+},
 {
 "titlu": "Philips Friteuza cu aer cald Philips NA150/00, 6 programe, 2 cosuri, 7.1 l, 2450 W, Negru",
 "pret": 516.99,
@@ -2313,7 +2361,7 @@
 "id": "MMOkEmvymowv",
 "brand": "Xiaomi",
 "url_magazin": "https://www.evomag.ro/electrocasnice-electrocasnice-pentru-bucatarie-friteuze/xiaomi-friteuza-dubla-cu-aer-cald-xiaomi-smart-double-stack-air-fryer-12-l-2800-w-14-prgorame-temperatura-ajustabila-40-230-c-negru-4278194.html",
-"pret_vechi": 742.99,
+"pret_vechi": null,
 "verificat": "2026-11-04"
 },
 {
@@ -2353,16 +2401,15 @@
 "verificat": "2026-11-04"
 },
 {
-"titlu": "Electrolux Friteuza dubla cu aer cald Electrolux Airfryer Seria 800 EAFD11B, 2700 W, 4 moduri de gatire, 2 cosuri de gat",
-"pret": 1182.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202512311121/398869/full/electrolux-friteuza-dubla-cu-aer-cald-electrolux-airfryer-seria-800-eafd11b-4-moduri-de-gatire-2-cosuri-de-gatit-ilumninate-cu-fereastra-transparenta-dubla-si-lumina-capacitate11l-afisaj-digital-ecran-1227895.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Ffriteuze%2Felectrolux%2F398869-friteuza-dubla-cu-aer-cald-electrolux-airfryer-seria-800-eafd11b-2700-w-4-moduri-de-gatire-2-cosuri-de-gatit-ilumninate-cu-fereastra-transparenta-dubla-si-lumina-capacitate-11l-afisaj-digital-ecran-ta%2F",
+"titlu": "NINJA Friteuza dubla cu aer cald Ninja Airfryer DualZone DZ801EU, 2400W, 7.5L, 6 functii de gatit, 2 cosuri de 3.8L, fun",
+"pret": 1233.99,
+"imagine": "https://www.dwyn.ro/images/products/img_202606122129/463768/full/ninja-friteuza-dubla-cu-aer-cald-ninja-7-6l2-x-3-8l-gri-metalizat-1471369.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Ffriteuze%2Fninja%2F463768-friteuza-dubla-cu-aer-cald-ninja-airfryer-dualzone-dz801eu-2400w-7-5l-6-functii-de-gatit-2-cosuri-de-3-8l-functie-max-crisp-functie-deshidratare-panou-digital-temperatura-maxima-240-grade-cosuri-si-pl%2F",
 "magazin": "dwyn.ro",
-"id": "JdH-IbjcxfJk",
-"brand": "Electrolux",
-"url_magazin": "https://www.dwyn.ro/friteuze/electrolux/398869-friteuza-dubla-cu-aer-cald-electrolux-airfryer-seria-800-eafd11b-2700-w-4-moduri-de-gatire-2-cosuri-de-gatit-ilumninate-cu-fereastra-transparenta-dubla-si-lumina-capacitate-11l-afisaj-digital-ecran-ta/",
-"pret_vechi": null,
-"verificat": "2026-11-04"
+"id": "Yzy-5gj6I7Od",
+"brand": "NINJA",
+"url_magazin": "https://www.dwyn.ro/friteuze/ninja/463768-friteuza-dubla-cu-aer-cald-ninja-airfryer-dualzone-dz801eu-2400w-7-5l-6-functii-de-gatit-2-cosuri-de-3-8l-functie-max-crisp-functie-deshidratare-panou-digital-temperatura-maxima-240-grade-cosuri-si-pl/",
+"pret_vechi": null
 },
 {
 "titlu": "NINJA Friteuza cu aer cald Ninja Airfryer Foodi Pro DualZone DZ400EU, 2470W, 9.5L, 6 functii de gatit, 2 cosuri de 4.75L",
@@ -2387,6 +2434,17 @@
 "url_magazin": "https://www.dwyn.ro/friteuze/ninja/463783-friteuza-dubla-cu-aer-cald-ninja-ninja-airfryer-dualzone-dz901euwh-2470w-9-5l-6-functii-de-gatit-2-cosuri-de-4-75l-functie-max-crisp-functie-deshidratare-panou-digital-temperatura-maxima-240-grade-cos/",
 "pret_vechi": null,
 "verificat": "2026-11-04"
+},
+{
+"titlu": "Friteuza cu aer cald Ninja Airfryer DualZone DZ901EUWH, 2470W, 9.5L, 6 functii de gatit, 2 cosuri de 4.75L, functie Max",
+"pret": 1421.99,
+"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4315%2F4315463%2Ffriteuza-dubla-cu-aer-cald-nin-6aa7e75e9646a.jpg&type=auto&width=500&sign=WvCrd0EuLtgorO7PVEaUgsURjub6AP7yriH-bFeNRGI",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Felectrocasnice-electrocasnice-pentru-bucatarie-friteuze%2Fninja-friteuza-cu-aer-cald-ninja-airfryer-dualzone-dz901euwh-2470w-9.5l-6-functii-de-gatit-2-cosuri-de-4.75l-functie-max-crisp-functie-deshidratare-panou-digital-temperatura-maxima-240-grade-cosuri-si-placi-cu-invelis-ceramic-alb-4315463.html",
+"magazin": "evomag.ro",
+"id": "OJ9CMBzdofwn",
+"brand": "NINJA",
+"url_magazin": "https://www.evomag.ro/electrocasnice-electrocasnice-pentru-bucatarie-friteuze/ninja-friteuza-cu-aer-cald-ninja-airfryer-dualzone-dz901euwh-2470w-9.5l-6-functii-de-gatit-2-cosuri-de-4.75l-functie-max-crisp-functie-deshidratare-panou-digital-temperatura-maxima-240-grade-cosuri-si-placi-cu-invelis-ceramic-alb-4315463.html",
+"pret_vechi": null
 }
 ],
 "magazine": [

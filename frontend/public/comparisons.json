@@ -86,7 +86,7 @@
     "verdict_m2": "Alege Carturesti dacă vrei să vezi cărțile și în librăriile lor fizice.",
     "stats1": {
       "promotii_active": 1,
-      "coduri": "—",
+      "coduri": "1 cod",
       "logo": "https://img.2performant.com/system/paperclip/campaign_logos/pics/9868/medium/9868.gif",
       "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.libris.ro",
       "partener": true
@@ -100,8 +100,8 @@
     },
     "promo1": [
       {
-        "nume": "Moș Nicolae a găsit reducerile! Până la -83% la cărți, jocuri și accesorii »",
-        "cod_cupon": ""
+        "nume": "Cupon ACTIV! -20% la orice* Află codul »",
+        "cod_cupon": "LIB20CITESC"
       }
     ],
     "promo2": [],
@@ -288,7 +288,7 @@
     "verdict_m1": "Alege Noriel pentru jucării, jocuri de societate și cadouri pentru copii.",
     "verdict_m2": "Alege Decathlon pentru echipament sportiv pentru copii și adulți.",
     "stats1": {
-      "promotii_active": 2,
+      "promotii_active": 3,
       "coduri": "—",
       "logo": "https://img.2performant.com/system/paperclip/campaign_logos/pics/7926/medium/7926.png",
       "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fnoriel.ro%2F",
@@ -309,6 +309,10 @@
       {
         "nume": "Catalog CRACIUN 2026 | 16.11 – 27.12.2026",
         "cod_cupon": ""
+      },
+      {
+        "nume": "50% Reducere la al doilea produs cumparat - Jucarii&Jocuri | 23-30.11.2026",
+        "cod_cupon": ""
       }
     ],
     "promo2": [],
@@ -319,7 +323,7 @@
       },
       {
         "q": "Are Noriel coduri de reducere active?",
-        "a": "Da, Noriel are 2 oferte active pe AmCupon.ro în noiembrie 2026. Ofertele se actualizează automat de trei ori pe zi."
+        "a": "Da, Noriel are 3 oferte active pe AmCupon.ro în noiembrie 2026. Ofertele se actualizează automat de trei ori pe zi."
       },
       {
         "q": "Are Decathlon coduri de reducere active?",
@@ -354,7 +358,7 @@
     "verdict_m2": "Alege Elefant dacă vrei să comanzi și alte produse împreună cu cărțile.",
     "stats1": {
       "promotii_active": 1,
-      "coduri": "—",
+      "coduri": "1 cod",
       "logo": "https://img.2performant.com/system/paperclip/campaign_logos/pics/9868/medium/9868.gif",
       "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.libris.ro",
       "partener": true
@@ -368,8 +372,8 @@
     },
     "promo1": [
       {
-        "nume": "Moș Nicolae a găsit reducerile! Până la -83% la cărți, jocuri și accesorii »",
-        "cod_cupon": ""
+        "nume": "Cupon ACTIV! -20% la orice* Află codul »",
+        "cod_cupon": "LIB20CITESC"
       }
     ],
     "promo2": [],
