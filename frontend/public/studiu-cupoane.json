@@ -1,10 +1,10 @@
 {
-  "generat": "2026-11-24",
-  "total_magazine": 423,
+  "generat": "2026-11-25",
+  "total_magazine": 422,
   "cu_promotie": 69,
   "cu_cod_real": 17,
   "doar_oferta": 52,
-  "procent_cu_promotie": 16.3,
+  "procent_cu_promotie": 16.4,
   "procent_cu_cod": 4.0,
   "reducere_mediana_generala": 30,
   "magazine_cu_procent_declarat": 49,
@@ -30,8 +30,8 @@
     {
       "slug": "casa-gradina",
       "nume": "Casă & grădină",
-      "magazine": 93,
-      "cu_promotie": 16,
+      "magazine": 94,
+      "cu_promotie": 17,
       "reducere_mediana": 40,
       "reducere_max": 80,
       "esantion": 11
@@ -57,8 +57,8 @@
     {
       "slug": "marketplace",
       "nume": "Marketplace",
-      "magazine": 41,
-      "cu_promotie": 7,
+      "magazine": 40,
+      "cu_promotie": 6,
       "reducere_mediana": 20.0,
       "reducere_max": 70,
       "esantion": 4
@@ -102,7 +102,7 @@
     {
       "slug": "animale",
       "nume": "Pet shop",
-      "magazine": 15,
+      "magazine": 14,
       "cu_promotie": 2,
       "reducere_mediana": null,
       "reducere_max": null,
@@ -219,7 +219,7 @@
         {
           "slug": "casa-gradina",
           "nume": "Casă & grădină",
-          "promotii": 34
+          "promotii": 35
         },
         {
           "slug": "carti-educatie",

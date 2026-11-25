@@ -782,15 +782,6 @@
   ],
   "sursa": "data-template"
  },
- "answear.ro": {
-  "titlu": "Despre codurile de reducere Answear",
-  "paragrafe": [
-   "Answear este un magazin online din categoria modă, haine și accesorii, unde găsești o gamă variată de produse la prețuri competitive.",
-   "Momentan găsești 1 ofertă activă pentru Answear, inclusiv „Magic Black Friday”. Pe AmCupon.ro actualizăm aceste reduceri de mai multe ori pe zi.",
-   "Ca să economisești, copiază codul Answear de aici, adaugă produsele în coș și introdu-l la finalizarea comenzii. Nu plătești nimic în plus — AmCupon.ro este gratuit."
-  ],
-  "sursa": "data-template"
- },
  "ookee.ro": {
   "titlu": "Despre codurile de reducere Ookee",
   "paragrafe": [
@@ -833,6 +824,15 @@
    "Pe Otter descoperi modă, haine și accesorii, cu o ofertă care se înnoiește frecvent de-a lungul anului.",
    "Momentan găsești 1 ofertă activă pentru Otter, inclusiv „Flash Sale”. Pe AmCupon.ro actualizăm aceste reduceri de mai multe ori pe zi.",
    "Ca să economisești, copiază codul Otter de aici, adaugă produsele în coș și introdu-l la finalizarea comenzii. Nu plătești nimic în plus — AmCupon.ro este gratuit."
+  ],
+  "sursa": "data-template"
+ },
+ "answear.ro": {
+  "titlu": "Despre codurile de reducere Answear",
+  "paragrafe": [
+   "Answear este un magazin online din categoria modă, haine și accesorii, unde găsești o gamă variată de produse la prețuri competitive.",
+   "Momentan găsești 1 ofertă activă pentru Answear, inclusiv „Magic Black Friday”. Pe AmCupon.ro actualizăm aceste reduceri de mai multe ori pe zi.",
+   "Ca să economisești, copiază codul Answear de aici, adaugă produsele în coș și introdu-l la finalizarea comenzii. Nu plătești nimic în plus — AmCupon.ro este gratuit."
   ],
   "sursa": "data-template"
  },
@@ -1157,6 +1157,15 @@
    "Dacă te interesează farmacie, suplimente și sănătate, Zephyrlabs este o opțiune solidă pentru cumpărăturile tale online.",
    "Momentan găsești 1 ofertă activă pentru Zephyrlabs, inclusiv „Promotie produse Melegatti Pharma - Septembrie-Decembrie”. Pe AmCupon.ro actualizăm aceste reduceri de mai multe ori pe zi.",
    "Ca să economisești, copiază codul Zephyrlabs de aici, adaugă produsele în coș și introdu-l la finalizarea comenzii. Nu plătești nimic în plus — AmCupon.ro este gratuit."
+  ],
+  "sursa": "data-template"
+ },
+ "maranc.ro": {
+  "titlu": "Despre codurile de reducere Maranc",
+  "paragrafe": [
+   "Pe Maranc descoperi casă, mobilier și grădină, cu o ofertă care se înnoiește frecvent de-a lungul anului.",
+   "Chiar acum, Maranc are 1 ofertă activă pe AmCupon.ro, printre care „BLACK FRIDAY MARANC: Performanța ta merită răsplătită!”. Lista se actualizează automat de mai multe ori pe zi, direct din rețelele de afiliere.",
+   "Folosirea unui cod Maranc este simplă: îl copiezi de pe AmCupon.ro, îl aplici în coș la câmpul „Cod promoțional”, iar reducerea se scade automat. Serviciul este 100% gratuit pentru tine."
   ],
   "sursa": "data-template"
  },
@@ -6254,15 +6263,6 @@
   ],
   "sursa": "data-template"
  },
- "dogpro.ro": {
-  "titlu": "Despre codurile de reducere Dogpro",
-  "paragrafe": [
-   "Dogpro se numără printre magazinele de produse pentru animale de companie apreciate în România pentru raportul bun dintre calitate și preț.",
-   "În acest moment nu există un cod activ pentru Dogpro. Pagina se actualizează automat de trei ori pe zi: adaug-o la favorite ca să prinzi următoarea reducere de produse pentru animale de companie.",
-   "Ca să economisești, copiază codul Dogpro de aici, adaugă produsele în coș și introdu-l la finalizarea comenzii. Nu plătești nimic în plus — AmCupon.ro este gratuit."
-  ],
-  "sursa": "data-template"
- },
  "petit-bebe.ro": {
   "titlu": "Despre codurile de reducere Petit Bebe",
   "paragrafe": [
@@ -8285,15 +8285,6 @@
    "Nomadparts este un magazin online din categoria piese auto, accesorii și produse pentru mașini, unde găsești o gamă variată de produse la prețuri competitive.",
    "Codurile Nomadparts apar și dispar după campaniile magazinului. Pe AmCupon.ro preluăm automat ofertele de piese auto, accesorii și produse pentru mașini și le publicăm aici de îndată ce apar.",
    "Codurile de pe AmCupon.ro sunt gratuite. Copiezi codul Nomadparts, îl introduci la „Voucher” în coș și prețul scade înainte de plată."
-  ],
-  "sursa": "data-template"
- },
- "maranc.ro": {
-  "titlu": "Despre codurile de reducere Maranc",
-  "paragrafe": [
-   "Pe Maranc descoperi produse variate, cu o ofertă care se înnoiește frecvent de-a lungul anului.",
-   "Chiar acum, Maranc are 1 ofertă activă pe AmCupon.ro, printre care „BLACK FRIDAY MARANC: Performanța ta merită răsplătită!”. Lista se actualizează automat de mai multe ori pe zi, direct din rețelele de afiliere.",
-   "Folosirea unui cod Maranc este simplă: îl copiezi de pe AmCupon.ro, îl aplici în coș la câmpul „Cod promoțional”, iar reducerea se scade automat. Serviciul este 100% gratuit pentru tine."
   ],
   "sursa": "data-template"
  }

@@ -1,11 +1,11 @@
 {
  "_nota": "Generat de scripts/calendar_black_friday.py din promotiile anuntate de magazine in 2Performant (data/promotii_2p.csv si ofertele 2P active din output.json). Doar parteneri cu link platit. Nu edita de mana.",
- "generat": "2026-11-24",
+ "generat": "2026-11-25",
  "categorii": [
   {
    "slug": "casa-gradina",
    "nume": "casă și grădină",
-   "campanii": 23
+   "campanii": 24
   },
   {
    "slug": "fashion",
@@ -237,7 +237,7 @@
    "nota": "BLACK FRIDAY MARANC: Performanța ta merită răsplătită!",
    "descriere": "Un cuțit bun nu este doar un instrument de bucătărie. Este o investiție în pasiunea pentru gătit, precizie și calitate. De Black Friday, MARANC îți aduce cuțite profesionale la prețuri speciale, create pentru cei care iubesc să gătească și apreciază lucrurile bine făcute. De ce să alegi MARANC? Garanție de 45 de ani – calitate în care poți avea încredere, ani la rând.",
    "are_cod": false,
-   "categorie": "online-mall"
+   "categorie": "casa-gradina"
   },
   {
    "magazin": "sevensins.ro",

@@ -1,5 +1,5 @@
 {
-"actualizat": "2026-11-24",
+"actualizat": "2026-11-25",
 "magazine": {
 "10qaroma.ro": {
 "cupoane": "yes",
@@ -617,11 +617,6 @@
 "cashback": "yes"
 },
 "doctorshield.ro": {
-"cupoane": "yes",
-"google_ads": "yes",
-"cashback": "yes"
-},
-"dogpro.ro": {
 "cupoane": "yes",
 "google_ads": "yes",
 "cashback": "yes"
@@ -1457,6 +1452,11 @@
 "cashback": "yes"
 },
 "maprofi.ro": {
+"cupoane": "yes",
+"google_ads": "yes",
+"cashback": "yes"
+},
+"maranc.ro": {
 "cupoane": "yes",
 "google_ads": "yes",
 "cashback": "yes"
