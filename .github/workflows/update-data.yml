@@ -35,6 +35,10 @@ jobs:
       # Acelasi tipar ca fluxul video scos pe 09.09. Newsletterul si alertele Brevo raman pornite.
       # Repornire: "false" (dupa ce exista un canal real in spate).
       SOCIAL_PAUZA: "true"
+      # Doar rularile de pe main publica si trimit (commit, emailuri, IndexNow, retele). O rulare pornita pe o ramura de test
+      # (gh workflow run update-data.yml --ref <ramura> -f mod=date) face tot drumul, cu poarta si build-ul, si se opreste acolo:
+      # fara commit, fara alerte trimise abonatilor si fara instantaneul alertelor salvat pe ramura (25.11.2026).
+      PE_MAIN: ${{ github.ref == 'refs/heads/main' }}
 
     steps:
       # ── 1. Checkout ────────────────────────────────────────────────────────
@@ -239,7 +243,8 @@ jobs:
           TWOPEFORMANT_USER:  ${{ secrets.TWOPEFORMANT_USER }}
           TWOPEFORMANT_EMAIL: ${{ secrets.TWOPEFORMANT_EMAIL }}
           TWOPEFORMANT_PASS:  ${{ secrets.TWOPEFORMANT_PASS }}
-        run: python criterii_produse.py
+        # Copia din RUNNER_TEMP se reafiseaza la sfarsitul logului (pasul „Rezumat /alege").
+        run: python criterii_produse.py | tee "$RUNNER_TEMP/criterii.log"
 
       # ── Magazine, produse si coduri in Supabase; istoricul de pret se scrie singur ──
       # Fara secretul SUPABASE_SERVICE_ROLE_KEY scriptul iese curat si site-ul merge mai departe.
@@ -537,6 +542,7 @@ jobs:
           kill %1 || true
 
       - name: Commit si push date actualizate
+        if: env.PE_MAIN == 'true'
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
@@ -607,6 +613,7 @@ jobs:
 
       # ── 5b. Alerte de pret per magazin (Brevo, ALERT_STORES) ────────────────
       - name: Verifica si trimite alerte cod nou pe magazin
+        if: env.PE_MAIN == 'true'
         continue-on-error: true
         working-directory: scripts
         env:
@@ -626,6 +633,7 @@ jobs:
 
       # ── 5c. Seria de bun-venit, ziua 3 + ziua 7 (Brevo, WELCOME_STEP) ───────
       - name: Continua seria de bun-venit (ziua 3 / ziua 7)
+        if: env.PE_MAIN == 'true'
         continue-on-error: true
         working-directory: scripts
         env:
@@ -643,7 +651,7 @@ jobs:
 
       # ── 9. Newsletter zilnic (Brevo SMTP) — DOAR la 08:00 Romania ──────────
       - name: Trimite newsletter zilnic
-        if: env.IS_FULL_DAILY == 'true'
+        if: env.IS_FULL_DAILY == 'true' && env.PE_MAIN == 'true'
         continue-on-error: true
         working-directory: scripts
         env:
@@ -663,7 +671,7 @@ jobs:
 
       # ── 10. Telegram canal oferte ──────────────────────────────────────────
       - name: Postare Telegram canal oferte
-        if: env.IS_FULL_DAILY == 'true' && env.TELEGRAM_PAUZA != 'true'
+        if: env.IS_FULL_DAILY == 'true' && env.TELEGRAM_PAUZA != 'true' && env.PE_MAIN == 'true'
         continue-on-error: true
         working-directory: scripts
         env:
@@ -680,7 +688,7 @@ jobs:
 
       # ── 14b. IndexNow — anunta Bing/Yandex de pagini noi (fara cont) ──────
       - name: Trimite URL-uri noi catre IndexNow (Bing/Yandex)
-        if: env.IS_FULL_DAILY == 'true'
+        if: env.IS_FULL_DAILY == 'true' && env.PE_MAIN == 'true'
         continue-on-error: true
         working-directory: scripts
         run: python submit_indexnow.py
@@ -690,7 +698,7 @@ jobs:
       # ── 15a. Postare via Make.com webhook (NU necesita token Meta) ─────────
       # O singura postare/zi (dimineata). Post manual pranz/seara din Meta Suite daca vrei.
       - name: Postare automata via Make.com webhook (FB + IG)
-        if: env.IS_FULL_DAILY == 'true' && env.SOCIAL_PAUZA != 'true'
+        if: env.IS_FULL_DAILY == 'true' && env.SOCIAL_PAUZA != 'true' && env.PE_MAIN == 'true'
         continue-on-error: true
         working-directory: scripts
         env:
@@ -704,7 +712,7 @@ jobs:
       # Alternativa la Make.com — necesita FACEBOOK_PAGE_TOKEN in Secrets
       # Cum obtii token: vezi scripts/SETUP-MAKE-COM.md sectiunea "Alternativa"
       - name: Postare automata Facebook Page (API direct)
-        if: env.IS_FULL_DAILY == 'true' && env.SOCIAL_PAUZA != 'true'
+        if: env.IS_FULL_DAILY == 'true' && env.SOCIAL_PAUZA != 'true' && env.PE_MAIN == 'true'
         continue-on-error: true
         working-directory: scripts
         env:
@@ -715,7 +723,7 @@ jobs:
       # ── 15c. Postare directa Instagram API (daca ai token Meta) ──────────
       # Alternativa la Make.com — necesita INSTAGRAM_ACCESS_TOKEN in Secrets
       - name: Postare automata Instagram Business (API direct)
-        if: env.IS_FULL_DAILY == 'true' && env.SOCIAL_PAUZA != 'true'
+        if: env.IS_FULL_DAILY == 'true' && env.SOCIAL_PAUZA != 'true' && env.PE_MAIN == 'true'
         continue-on-error: true
         working-directory: scripts
         env:
@@ -731,7 +739,7 @@ jobs:
       # de stare s-ar scrie si s-ar pierde la fiecare rulare, deci deltele („-2 promotii fata de
       # ultima verificare") ar fi mereu fata de aceeasi rulare veche. Un singur fisier mic.
       - name: Salveaza starea pentru comparatia de la rularea urmatoare
-        if: always()
+        if: always() && env.PE_MAIN == 'true'
         continue-on-error: true
         run: |
           git config user.name  "github-actions[bot]"
@@ -742,6 +750,9 @@ jobs:
           # Masuratori, nu continut publicat: istoricul de preturi si instantaneul zilnic al studiului Black Friday.
           # Intre 07 si 10.11 poarta a oprit publicarea, iar zilele 7-9 s-au pierdut din studiu. frontend/public ramane neatins.
           git add data/istoric-preturi.json data/black-friday-2026.json || true
+          # Tot masuratori: preturile citite pe site-urile magazinelor (/alege). Intre 19 si 23.11 poarta a stat rosie si
+          # fiecare rulare a pierdut ce citise; publicarea paginilor ramane tot dupa poarta (criterii.json nu e aici).
+          git add data/criterii-verificari.json || true
           if git diff --staged --quiet; then
             echo "Stare neschimbata — skip"
           else
@@ -773,3 +784,13 @@ jobs:
             echo "::error::Supabase nu raspunde (HTTP $cod) — probabil pus pe pauza. Recenziile si voturile nu merg. Repornire: dashboard Supabase -> Restore project."
             exit 1
           fi
+
+      # ── 19. Rezumat /alege, la sfarsitul logului (25.11.2026) ───────────────
+      # Paginile /alege au scazut de la 124 la 3 intre 14 si 25.11 fara ca vreo rulare sa iasa rosie: verificarea preturilor
+      # citea 400 de pagini blocate la fiecare rulare. Rezumatul pe magazin (cerute, preturi, oprit dupa CAPTCHA/403) si
+      # numarul de pagini publicate stau aici, la coada logului, unde se vad fara sa cauti pasul in mijloc.
+      - name: Rezumat /alege (verificarea preturilor)
+        if: always()
+        run: |
+          f="$RUNNER_TEMP/criterii.log"
+          if [ -f "$f" ]; then grep -v "^  in asteptare:" "$f" | tail -n 120; else echo "Pasul /alege n-a rulat"; fi

@@ -55,8 +55,14 @@ PAGINI_FEED = 2
 BUGET_CERERI = int(os.environ.get("CRITERII_BUGET", "90"))
 VARSTA_MAXIMA_ZILE = 10
 # Masurat 04.11.2026: feed-urile raman in urma. AFI Sport 3.990 lei in feed fata de 4.790 pe site, ASUS si pcmadd cu pagini 404.
+# Cereri facute efectiv, nu adrese alese: cererile neconsumate de un magazin care blocheaza merg la celelalte (25.11.2026).
 BUGET_VERIFICARI = int(os.environ.get("CRITERII_VERIFICARI", "400"))
 ZILE_VERIFICARE = 2
+# Atatea raspunsuri fara rezultat la rand (403, eroare de server, timeout) = magazinul ne blocheaza azi; il lasam in pace
+# pana la rularea urmatoare. Inainte, dwyn.ro si ozone.ro primeau cate 60-140 de cereri pe rulare, toate cu raspuns gol.
+INCERCARI_FARA_RASPUNS = 3
+# Verificarea nu tine pipeline-ul pe loc: ce nu se citeste in atatea minute ramane pentru rularea urmatoare.
+MINUTE_VERIFICARE = 15
 # Un pret confirmat pe site-ul magazinului ramane valabil atat; daca magazinul incepe sa blocheze, produsul iese singur.
 ZILE_VALABIL = 10
 UA_MAGAZIN = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126 Safari/537.36", "Accept-Language": "ro"}
@@ -529,10 +535,29 @@ def imparte(lista: list, azi: str, aprobat: dict) -> tuple:
     return public, asteapta
 
 
-def verifica_la_magazine(lista: list, azi: str) -> None:
-    """Citeste cate BUGET_VERIFICARI pagini de produs, cele mai vechi intai, cu pauza pe fiecare magazin. Modifica `lista`."""
+def ordine_verificari(adrese, cache: dict, pe_aprobate: set, limita: str) -> list:
+    """Paginile de produs de recitit, in ordinea in care conteaza.
+
+    Intai produsele paginilor aprobate (doar ele se publica), apoi candidatii. In fiecare grupa, adresa atinsa cel mai demult
+    (citita SAU doar incercata) e prima. O adresa care nu se poate citi (magazinul blocheaza, CAPTCHA, eroare) primeste
+    `incercat` si trece la coada. Inainte de 25.11.2026 nu primea nimic, deci ramanea „cea mai veche" la nesfarsit: pe 14.11,
+    545 de adrese niciodata citite (dwyn, evoMAG, Ozone, liki24, Dr. Max) luau toate cele 400 de locuri la fiecare rulare,
+    iar cele 1.147 de preturi confirmate pe 04-06.11 au expirat fara sa mai fie recitite (124 de pagini publicate pe 14.11, 3 pe 25.11)."""
+    def atinsa(u):
+        e = cache.get(u) or {}
+        return max(e.get("data", ""), e.get("incercat", ""))
+    de_citit = [u for u in adrese if (cache.get(u) or {}).get("data", "") < limita]
+    return sorted(de_citit, key=lambda u: (u not in pe_aprobate, atinsa(u)))
+
+
+def verifica_la_magazine(lista: list, azi: str, aprobat: dict | None = None) -> None:
+    """Citeste pana la BUGET_VERIFICARI pagini de produs, in ordinea din `ordine_verificari`, cu pauza pe fiecare magazin.
+
+    Bugetul numara cererile facute, nu adresele alese. Un magazin care cere pauza (429), trimite la CAPTCHA (alt domeniu) sau
+    nu da niciun rezultat de INCERCARI_FARA_RASPUNS ori la rand e lasat pentru rularea urmatoare; cererile lui ramase merg la
+    celelalte magazine, in runda urmatoare. Nu ocolim nicio protectie: ce nu se poate citi ramane neconfirmat. Modifica `lista`."""
     import requests
-    from collections import defaultdict
+    from collections import Counter, defaultdict
     from concurrent.futures import ThreadPoolExecutor
 
     cache = {}
@@ -541,31 +566,66 @@ def verifica_la_magazine(lista: list, azi: str) -> None:
             cache = json.load(io.open(VERIFICARI, encoding="utf-8"))
         except ValueError:
             cache = {}
-    limita = (datetime.now(timezone.utc) - timedelta(days=ZILE_VERIFICARE)).strftime("%Y-%m-%d")
+    aprobat = aprobate() if aprobat is None else aprobat
+    limita = (datetime.strptime(azi, "%Y-%m-%d") - timedelta(days=ZILE_VERIFICARE)).strftime("%Y-%m-%d")
     toate = {p["url_magazin"]: p for x in lista for p in x["produse"] if p.get("url_magazin")}
-    de_citit = [u for u in toate if (cache.get(u) or {}).get("data", "") < limita]
-    de_citit.sort(key=lambda u: (cache.get(u) or {}).get("data", ""))
-    de_citit = de_citit[:BUGET_VERIFICARI]
-    pe_gazda = defaultdict(list)
-    for u in de_citit:
-        pe_gazda[re.sub(r"^https?://", "", u).split("/")[0]].append(u)
+    pe_aprobate = {p["url_magazin"] for x in lista if x["slug"] in aprobat for p in x["produse"] if p.get("url_magazin")}
+    coada = ordine_verificari(toate, cache, pe_aprobate, limita)
+    de_recitit = len(coada)
+    termen = time.monotonic() + MINUTE_VERIFICARE * 60
+    oprite: dict = {}
+    jurnal: dict = defaultdict(Counter)
+    fara_rezultat: dict = defaultdict(int)  # la rand, pe magazin, de la o runda la alta (un singur fir pe magazin intr-o runda)
 
-    def gazda(adrese):
+    def citeste(adrese: list) -> tuple:
+        h, n = _gazda(adrese[0]), Counter()
         for u in adrese:
+            if time.monotonic() > termen:
+                break
             r = None
             try:
                 r = requests.get(u, headers=UA_MAGAZIN, timeout=15, allow_redirects=True)
-                v = stare_magazin(r.status_code, r.url, r.text[:3_000_000], u, toate[u].get("titlu") or "")
-            except requests.RequestException:
-                v = {}
-            if r is not None and (r.status_code == 429 or _gazda(r.url) != _gazda(u)):
-                break  # magazinul cere pauza sau CAPTCHA: restul la rularea urmatoare
+                v, cod = stare_magazin(r.status_code, r.url, r.text[:3_000_000], u, toate[u].get("titlu") or ""), str(r.status_code)
+            except Exception as e:  # noqa: BLE001 — retea sau pagina ciudata: nu stim, iar ce nu stim nu se atinge
+                v, cod = {}, type(e).__name__
+            n["cerute"] += 1
             if v:
                 cache[u] = dict(v, data=azi)
+                n["pret" if v.get("pret") else "sters" if v.get("sters") else "fara pret"] += 1
+                fara_rezultat[h] = 0
+            else:
+                # Nu am aflat nimic: un pret confirmat inainte ramane (expira singur dupa ZILE_VALABIL), dar adresa trece la coada.
+                cache[u] = dict(cache.get(u) or {}, incercat=azi)
+                n[f"nu stim ({cod})"] += 1
+                fara_rezultat[h] += 1
+            if r is not None and r.status_code == 429:
+                oprite[h] = "429, cere pauza"
+                break
+            if r is not None and _gazda(r.url) != _gazda(u):
+                oprite[h] = f"trimis pe {_gazda(r.url)} (CAPTCHA)"
+                break
+            if fara_rezultat[h] >= INCERCARI_FARA_RASPUNS:
+                oprite[h] = f"{fara_rezultat[h]} raspunsuri fara rezultat la rand"
+                break
             time.sleep(1.0)
+        return h, n
 
-    with ThreadPoolExecutor(8) as ex:
-        list(ex.map(gazda, pe_gazda.values()))
+    cerute = 0
+    while coada and cerute < BUGET_VERIFICARI and time.monotonic() < termen:
+        runda, rest = [], []
+        for u in coada:
+            if _gazda(u) not in oprite:
+                (runda if len(runda) < BUGET_VERIFICARI - cerute else rest).append(u)
+        if not runda:
+            break
+        pe_gazda = defaultdict(list)
+        for u in runda:
+            pe_gazda[_gazda(u)].append(u)
+        with ThreadPoolExecutor(8) as ex:
+            for h, n in ex.map(citeste, pe_gazda.values()):
+                jurnal[h].update(n)
+                cerute += n["cerute"]
+        coada = rest
 
     # Mai multe produse pe aceeasi pagina = variante (fragranza: 30 ml, 50 ml, 100 ml). Pretul din pagina e al uneia, nu stim care.
     baze: dict = {}
@@ -576,6 +636,8 @@ def verifica_la_magazine(lista: list, azi: str) -> None:
         noi = []
         for p in x["produse"]:
             v = cache.get(p.get("url_magazin") or "")
+            if v and not any(k in v for k in ("pret", "sters", "citit")):
+                v = None  # doar incercata: nicio dovada
             if v and v.get("pret") and len(baze.get((p.get("url_magazin") or "").split("#")[0], ())) > 1:
                 v = {"citit": True}
             q = aplica_verificare(p, v, azi) if v else {k: w for k, w in p.items() if k != "verificat"}  # fara dovada in memorie, nu e confirmat
@@ -585,8 +647,22 @@ def verifica_la_magazine(lista: list, azi: str) -> None:
             corectate += int(abs(q["pret"] - p["pret"]) >= 0.01)
             noi.append(q)
         x["produse"] = sorted(noi, key=lambda q: q["pret"])
-    io.open(VERIFICARI, "w", encoding="utf-8", newline="").write(json.dumps({u: v for u, v in cache.items() if u in toate}, ensure_ascii=False, indent=0))
-    print(f"Pagini de magazin citite: {len(de_citit)}; preturi corectate: {corectate}; produse scoase: {scoase}.")
+    # Scris o data, prin fisier temporar: un fisier taiat la jumatate ar pierde la rularea urmatoare toate confirmarile.
+    tmp = VERIFICARI + ".tmp"
+    io.open(tmp, "w", encoding="utf-8", newline="").write(json.dumps({u: v for u, v in cache.items() if u in toate}, ensure_ascii=False, indent=0))
+    os.replace(tmp, VERIFICARI)
+
+    print(f"Pagini de magazin citite: {cerute} (buget {BUGET_VERIFICARI}, de recitit {de_recitit}); preturi corectate: {corectate}; produse scoase: {scoase}.")
+    for h in sorted(jurnal, key=lambda g: -jurnal[g]["cerute"]):
+        rez = ", ".join(f"{k} {v}" for k, v in sorted(jurnal[h].items()) if k != "cerute")
+        print(f"  {h[:30]:30} {jurnal[h]['cerute']:4} cerute: {rez}" + (f" — oprit: {oprite[h]}" if h in oprite else ""))
+    if time.monotonic() > termen:
+        print(f"  Oprit dupa {MINUTE_VERIFICARE} minute; restul la rularea urmatoare.")
+    peste2 = (datetime.strptime(azi, "%Y-%m-%d") + timedelta(days=2)).strftime("%Y-%m-%d")
+    pe_pagini = [p for x in lista if x["slug"] in aprobat for p in x["produse"]]
+    acum = [p for p in pe_pagini if confirmat(p, azi)]
+    print(f"Pe paginile aprobate: {len(acum)} din {len(pe_pagini)} produse cu pretul confirmat; "
+          f"{sum(1 for p in acum if not confirmat(p, peste2))} expira in 2 zile daca nu sunt recitite.")
 
 
 class BugetEpuizat(Exception):
@@ -711,7 +787,8 @@ def ruleaza() -> int:
         x["produse"] = [p for p in x["produse"] if se_potriveste(p["titlu"], c, p["pret"]) and not fpf.adresa_moarta(p.get("url_magazin") or "")
                         and p["magazin"] not in MAGAZINE_RECONDITIONATE and p["magazin"] in plati  # magazin iesit din program = fara comision
                         and not stare_produs(p.get("url_magazin") or "", p["titlu"])]  # 14.11: resigilatele evoMAG pareau noi
-    verifica_la_magazine(lista, azi)
+    aprobat = aprobate()
+    verifica_la_magazine(lista, azi, aprobat)
     # Pretul citit acum pe site-ul magazinului poate iesi din intervalul paginii (06.11.2026: serul cu retinol de la
     # Dr. Max, 21 lei, sub pragul de 25): regula se reaplica pe pretul confirmat, altfel `--verifica` opreste publicarea.
     for x in lista:
@@ -720,7 +797,7 @@ def ruleaza() -> int:
     for x in lista:
         x["magazine"] = sorted({p["magazin"] for p in x["produse"]})
     io.open(STARE, "w", encoding="utf-8", newline="").write(json.dumps({"actualizat": azi, "criterii": lista}, ensure_ascii=False, indent=0))
-    public, asteapta = imparte(lista, azi, aprobate())
+    public, asteapta = imparte(lista, azi, aprobat)
     io.open(IESIRE, "w", encoding="utf-8", newline="").write(json.dumps(
         {"_nota": "Generat de scripts/criterii_produse.py. Doar pagini aprobate, doar produse cu pretul confirmat pe site-ul magazinului.",
          "actualizat": azi, "criterii": public}, ensure_ascii=False, indent=0))
@@ -762,6 +839,103 @@ def aproba(sluguri: list, nota: str) -> int:
          "aprobate": dict(sorted(lista.items()))}, ensure_ascii=False, indent=0))
     print(f"Aprobate: {len(lista)}")
     return 0
+
+
+def _verificare_simulata(lista: list, cache: dict, aprobat: dict, raspunsuri: dict, buget: int) -> tuple:
+    """Doar pentru --test: verifica_la_magazine fara retea, cu memoria intr-un dosar temporar. `raspunsuri` = gazda ->
+    functie(url) -> (status, adresa finala, html). Intoarce (memoria dupa rulare, cereri pe gazda, ce s-a scris in jurnal)."""
+    import contextlib
+    import tempfile
+    import threading
+    import types
+    from collections import Counter
+
+    global VERIFICARI, APROBATE, BUGET_VERIFICARI
+    inainte = (VERIFICARI, APROBATE, BUGET_VERIFICARI, sys.modules.get("requests"), time.sleep)
+    cereri, lacat, jurnal = Counter(), threading.Lock(), io.StringIO()
+
+    def get(u, **_):
+        with lacat:
+            cereri[_gazda(u)] += 1
+        status, final, html = raspunsuri[_gazda(u)](u)
+        return types.SimpleNamespace(status_code=status, url=final, text=html)
+
+    with tempfile.TemporaryDirectory() as d:
+        VERIFICARI, APROBATE, BUGET_VERIFICARI = os.path.join(d, "v.json"), os.path.join(d, "a.json"), buget
+        io.open(VERIFICARI, "w", encoding="utf-8").write(json.dumps(cache))
+        io.open(APROBATE, "w", encoding="utf-8").write(json.dumps({"aprobate": aprobat}))
+        sys.modules["requests"] = types.SimpleNamespace(get=get, RequestException=OSError)
+        time.sleep = lambda s: None
+        try:
+            with contextlib.redirect_stdout(jurnal):
+                verifica_la_magazine(lista, datetime.now(timezone.utc).strftime("%Y-%m-%d"))
+            dupa = json.load(io.open(VERIFICARI, encoding="utf-8"))
+        finally:
+            VERIFICARI, APROBATE, BUGET_VERIFICARI, req, time.sleep = inainte
+            if req is None:
+                sys.modules.pop("requests", None)
+            else:
+                sys.modules["requests"] = req
+    return dupa, cereri, jurnal.getvalue()
+
+
+def _teste_verificare() -> list:
+    """Selectia paginilor de recitit (25.11.2026). Scenariul 1 e chiar rularea din 24.11: 400 de adrese care nu se pot citi
+    stateau primele, iar preturile confirmate expirau necitite."""
+    acum = datetime.now(timezone.utc)
+    azi, z = acum.strftime("%Y-%m-%d"), (lambda k: (acum - timedelta(days=k)).strftime("%Y-%m-%d"))
+    pagina = lambda pret: f'<script type="application/ld+json">{{"@type":"Product","offers":{{"price":"{pret}","priceCurrency":"RON"}}}}</script>'  # noqa: E731
+    merge = lambda u: (200, u, pagina(100))  # noqa: E731
+    blocheaza = lambda u: (403, u, "")  # noqa: E731
+    captcha = lambda u: (200, "https://verificare.captcha-x.ro/?original_url=" + u, "<title>Verificare</title>")  # noqa: E731
+    magazine = {"blocat.ro": blocheaza, "captcha.ro": captcha, "bun.ro": merge}
+
+    # 1. 300 de adrese la un magazin care raspunde 403 si 100 la unul cu CAPTCHA, niciodata citite; 10 preturi confirmate acum
+    # 8 zile (expira in 2) la un magazin care raspunde. Buget 200.
+    bune = [{"titlu": f"Puzzle {i}", "pret": 100, "url_magazin": f"https://bun.ro/p{i}", "verificat": z(8)} for i in range(10)]
+    lista = [{"slug": "aprobata", "produse": [{"titlu": f"Masina {i}", "pret": 1000, "url_magazin": f"https://www.blocat.ro/p{i}"} for i in range(300)]
+              + [{"titlu": f"Televizor {i}", "pret": 2000, "url_magazin": f"https://www.captcha.ro/p{i}"} for i in range(100)] + bune}]
+    dupa, cereri, jurnal = _verificare_simulata(lista, {p["url_magazin"]: {"pret": 100, "data": z(8)} for p in bune}, {"aprobata": {}}, magazine, 200)
+    recitite = sum(1 for p in lista[0]["produse"] if p.get("verificat") == azi)
+    raportat = re.search(r"Pagini de magazin citite: (\d+)", jurnal)
+
+    # 2. Bugetul mic merge intai la paginile aprobate, nu la candidati.
+    aprobate_p = [{"titlu": f"Aprobat {i}", "pret": 50, "url_magazin": f"https://bun.ro/a{i}", "verificat": z(8)} for i in range(10)]
+    lista2 = [{"slug": "candidat", "produse": [{"titlu": f"Candidat {i}", "pret": 50, "url_magazin": f"https://bun.ro/c{i}"} for i in range(30)]},
+              {"slug": "aprobata", "produse": aprobate_p}]
+    _verificare_simulata(lista2, {p["url_magazin"]: {"pret": 50, "data": z(8)} for p in aprobate_p}, {"aprobata": {}}, magazine, 10)
+
+    # 3. Un 403 azi nu sterge confirmarea de acum 3 zile; acelasi pret recitit muta data confirmarii pe azi.
+    lista3 = [{"slug": "aprobata", "produse": [{"titlu": "Produs confirmat", "pret": 100, "url_magazin": "https://www.blocat.ro/v", "verificat": z(3)},
+                                              {"titlu": "Acelasi pret", "pret": 100, "url_magazin": "https://bun.ro/x", "verificat": z(5)}]}]
+    dupa3, _, _ = _verificare_simulata(lista3, {"https://www.blocat.ro/v": {"pret": 100, "data": z(3)}, "https://bun.ro/x": {"pret": 100, "data": z(5)}},
+                                       {"aprobata": {}}, magazine, 50)
+    dupa_url = {p["url_magazin"]: p for p in lista3[0]["produse"]}
+    p_blocat, p_bun = dupa_url["https://www.blocat.ro/v"], dupa_url["https://bun.ro/x"]
+
+    # 4. Magazinul blocat apare in doua runde (CAPTCHA-ul altuia elibereaza bugetul): numaratoarea „la rand" continua.
+    lista4 = [{"slug": "aprobata", "produse": [{"titlu": f"B{i}", "pret": 10, "url_magazin": f"https://www.blocat.ro/r{i}"} for i in range(5)]
+               + [{"titlu": f"C{i}", "pret": 10, "url_magazin": f"https://www.captcha.ro/r{i}"} for i in range(4)]}]
+    mem4 = {f"https://www.blocat.ro/r{i}": {"incercat": z(5)} for i in (2, 3, 4)}  # incercate demult: dupa cele neatinse
+    lista4[0]["produse"].sort(key=lambda p: (p["url_magazin"] in mem4, p["url_magazin"]))
+    _, cereri4, _ = _verificare_simulata(lista4, mem4, {"aprobata": {}}, magazine, 6)
+    return [
+        ("infometare: preturile confirmate la un magazin care raspunde se recitesc", recitite, 10),
+        ("magazinul care raspunde 403 primeste cel mult 3 cereri", cereri["blocat.ro"], INCERCARI_FARA_RASPUNS),
+        ("magazinul cu CAPTCHA primeste o singura cerere", cereri["captcha.ro"], 1),
+        ("bugetul numara cererile facute", (raportat and int(raportat.group(1))) == sum(cereri.values()) <= 200, True),
+        ("adresa incercata fara rezultat trece la coada (`incercat`)", (dupa.get("https://www.blocat.ro/p0") or {}).get("incercat"), azi),
+        ("adresa neincercata (magazin oprit) ramane nemarcata", "https://www.blocat.ro/p5" in dupa, False),
+        ("bugetul mic merge intai la paginile aprobate", sum(1 for p in lista2[1]["produse"] if p.get("verificat") == azi), 10),
+        ("un 403 azi nu sterge confirmarea veche", p_blocat.get("verificat"), z(3)),
+        ("un 403 azi pastreaza pretul citit inainte", (dupa3.get("https://www.blocat.ro/v") or {}).get("pret"), 100),
+        ("acelasi pret recitit muta confirmarea pe azi", p_bun.get("verificat"), azi),
+        ("intre runde, magazinul blocat tot la 3 cereri se opreste", cereri4["blocat.ro"], INCERCARI_FARA_RASPUNS),
+        ("ordine: neatinsa, apoi cea mai veche; incercata azi la coada",
+         ordine_verificari(["a", "b", "c"], {"a": {"incercat": azi}, "b": {"pret": 1, "data": z(5)}}, set(), z(2)), ["c", "b", "a"]),
+        ("ordine: paginile aprobate intai", ordine_verificari(["x", "y"], {}, {"y"}, z(2)), ["y", "x"]),
+        ("ordine: citita de curand nu se reciteste", ordine_verificari(["r"], {"r": {"pret": 1, "data": z(1)}}, set(), z(2)), []),
+    ]
 
 
 def test() -> int:
@@ -893,7 +1067,7 @@ def test() -> int:
         ("pagina sub prag: un magazin nu ia tot", len(aduna([{"titlu": f"Produs {i}", "pret": i, "magazin": "a"} for i in range(1, 30)], 24, 8)), 8),
         ("dublurile ies", len(aduna([{"titlu": "Produs X", "pret": 2, "magazin": "a"}, {"titlu": "Produs X", "pret": 1, "magazin": "a"}])), 1),
         ("cel mai ieftin primul", aduna([{"titlu": "A", "pret": 9, "magazin": "a"}, {"titlu": "B", "pret": 3, "magazin": "b"}])[0]["titlu"], "B"),
-    ]
+    ] + _teste_verificare()
     rau = [(n, a, e) for n, a, e in asteptari if a != e]
     for n, a, e in rau:
         print(f"  PICA  {n}: {a!r} (asteptat {e!r})")
