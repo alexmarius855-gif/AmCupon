@@ -41,6 +41,11 @@
 "google_ads": "no",
 "cashback": "yes"
 },
+"ada-shoes.ro": {
+"cupoane": "yes",
+"google_ads": "yes",
+"cashback": "yes"
+},
 "adhoreca.eu": {
 "cupoane": "yes",
 "google_ads": "yes",
@@ -58,7 +63,7 @@
 },
 "agroclima.ro": {
 "cupoane": "yes",
-"google_ads": "yes",
+"google_ads": "no",
 "cashback": "yes"
 },
 "agroscan.ro": {
@@ -441,6 +446,11 @@
 "google_ads": "yes",
 "cashback": "yes"
 },
+"casanewconcept.ro": {
+"cupoane": "yes",
+"google_ads": "yes",
+"cashback": "yes"
+},
 "case-smart.ro": {
 "cupoane": "yes",
 "google_ads": "yes",
@@ -606,6 +616,11 @@
 "google_ads": "yes",
 "cashback": "yes"
 },
+"dezmembraru.ro": {
+"cupoane": "yes",
+"google_ads": "no",
+"cashback": "yes"
+},
 "diblongromania.ro": {
 "cupoane": "yes",
 "google_ads": "yes",
@@ -617,6 +632,11 @@
 "cashback": "yes"
 },
 "doctorshield.ro": {
+"cupoane": "yes",
+"google_ads": "yes",
+"cashback": "yes"
+},
+"dogpro.ro": {
 "cupoane": "yes",
 "google_ads": "yes",
 "cashback": "yes"
@@ -829,11 +849,6 @@
 "fabricadetuica.ro": {
 "cupoane": "yes",
 "google_ads": "no",
-"cashback": "yes"
-},
-"fara-daunatori.ro": {
-"cupoane": "yes",
-"google_ads": "yes",
 "cashback": "yes"
 },
 "farmaciilenapofarm.ro": {
@@ -1049,11 +1064,6 @@
 "herbagetica.ro": {
 "cupoane": "yes",
 "google_ads": "yes",
-"cashback": "yes"
-},
-"hobiktoys.ro": {
-"cupoane": "yes",
-"google_ads": "maybe",
 "cashback": "yes"
 },
 "homemart.ro": {

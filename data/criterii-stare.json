@@ -4876,7 +4876,7 @@
 "titlu": "Espressoare automate",
 "nota": null,
 "in_text": "\\bautomat\\w*\\b",
-"actualizat": "2026-11-17",
+"actualizat": "2026-11-25",
 "feeduri": [
 {
 "id": 9051,
@@ -4929,7 +4929,7 @@
 "id": "lHPpH8WfRkvI",
 "brand": "Krups",
 "url_magazin": "https://www.brico.ro/electrocasnice-332/espressor-automat-krups-my-coffee-ea201be0-1690-w-19-bari-3-bauturi-rasnita-metalica-5-trepte-macinare-rezervor-apa-1-5-l-duza-abur-panou-tac.html",
-"pret_vechi": 1710.45,
+"pret_vechi": null,
 "verificat": "2026-11-06"
 },
 {
@@ -4977,7 +4977,7 @@
 "id": "c1GgFw14FmDY",
 "brand": "Krups",
 "url_magazin": "https://www.brico.ro/electrocasnice-332/espressor-automat-krups-picto-arabica-ea811010-1450w-15-bari-1-7l-rasnita-3-nivele-negru.html",
-"pret_vechi": 2114.7,
+"pret_vechi": null,
 "verificat": "2026-11-04"
 },
 {
@@ -4989,7 +4989,7 @@
 "id": "GNrKXJmRCWeB",
 "brand": "Krups",
 "url_magazin": "https://www.brico.ro/electrocasnice-332/espressor-automat-krups-evidence-eco-design-ea8968e0-1450w-15-bari-5-retete-5-trepte-rasnita-rezervor-cafea-260g-rezervor-apa-detasabil-2-3l-3.html",
-"pret_vechi": 2676.45,
+"pret_vechi": 2549.0,
 "verificat": "2026-11-13"
 },
 {
@@ -5005,6 +5005,17 @@
 "verificat": "2026-11-04"
 },
 {
+"titlu": "Espressor automat BEKO CaffeExperto CEG7348X, 2l, 1350W, 19 bar, 18 bauturi, 13 setari de macinare GrindPro, control din",
+"pret": 2199.99,
+"imagine": "https://gomagcdn.ro/domains3/brico.ro/files/product/original/espressor-automat-beko-caffeexperto-ceg7348x-2l-1350w-19-bar-18-bauturi-13-setari-de-macinare-grindpro-control-din-aplicatie-aroma-perfecta-cu-brewsen-878257.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.brico.ro%2Felectrocasnice-332%2Fespressor-automat-beko-caffeexperto-ceg7348x-2l-1350w-19-bar-18-bauturi-13-setari-de-macinare-grindpro-control-din-aplicatie-aroma-perfecta-cu-brewsense-negru-argintiu.html",
+"magazin": "brico.ro",
+"id": "4NgEPK80ASfQ",
+"brand": "BEKO",
+"url_magazin": "https://www.brico.ro/electrocasnice-332/espressor-automat-beko-caffeexperto-ceg7348x-2l-1350w-19-bar-18-bauturi-13-setari-de-macinare-grindpro-control-din-aplicatie-aroma-perfecta-cu-brewsense-negru-argintiu.html",
+"pret_vechi": 3200.0
+},
+{
 "titlu": "Espressor automat Philips Series 2000 EP2334/10 automat boabe Negru",
 "pret": 2255.44,
 "imagine": "http://www.itarena.ro/images/products/2025-05-21/original/490448_ep233410.webp",
@@ -5015,18 +5026,6 @@
 "url_magazin": "https://www.itarena.ro/expressor_cafea/espressor_automat_philips_series_2000_ep233410_automat_boabe_negru.html",
 "pret_vechi": null,
 "verificat": "2026-11-04"
-},
-{
-"titlu": "Espressor automat Krups Evidence One EA895831, 1450 W, tehnologia Quattro Force, 12 retete, rasnita metalica, negru",
-"pret": 2623.95,
-"imagine": "https://gomagcdn.ro/domains3/brico.ro/files/product/original/espressor-automat-krups-evidence-one-ea895831-1450-w-tehnologia-quattro-force-12-retete-rasnita-metalica-negru-071025.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.brico.ro%2Felectrocasnice-332%2Fespressor-automat-krups-evidence-one-ea895831-1450-w-tehnologia-quattro-force-12-retete-rasnita-metalica-negru.html",
-"magazin": "brico.ro",
-"id": "yPRBBQiKHMBg",
-"brand": "Krups",
-"url_magazin": "https://www.brico.ro/electrocasnice-332/espressor-automat-krups-evidence-one-ea895831-1450-w-tehnologia-quattro-force-12-retete-rasnita-metalica-negru.html",
-"pret_vechi": 3416.7,
-"verificat": "2026-11-13"
 },
 {
 "titlu": "Espressor automat Saeco GranAroma SM6580/10 automat boabe Gri",
@@ -5053,7 +5052,7 @@
 "titlu": "Espressoare cu capsule",
 "nota": null,
 "in_text": "\\bcapsule\\b",
-"actualizat": "2026-11-17",
+"actualizat": "2026-11-25",
 "feeduri": [
 {
 "id": 9053,
@@ -5158,6 +5157,28 @@
 "verificat": "2026-11-04"
 },
 {
+"titlu": "Espressor cu capsule DeLonghi Small XS EDG210.A, 1400 W, 15 Bari, 0.8 L (Negru)",
+"pret": 286.99,
+"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4319%2F4319299%2Fdelonghi-dolce-gusto-piccolo-6acf670be70fe.jpg&type=auto&width=500&sign=Z3ALmf6Nxa_QsQ-ZyeuT3CpD1JcMjfrvH4hF6BipuQI",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Felectrocasnice-aparate-de-cafea-aparate-si-espressoare-de-cafea-automate-si-manuale%2Fdelonghi-espressor-cu-capsule-delonghi-small-xs-edg210.a-1400-w-15-bari-0.8-l-negru-4319299.html",
+"magazin": "evomag.ro",
+"id": "Q52ztO4-9i3D",
+"brand": "Delonghi",
+"url_magazin": "https://www.evomag.ro/electrocasnice-aparate-de-cafea-aparate-si-espressoare-de-cafea-automate-si-manuale/delonghi-espressor-cu-capsule-delonghi-small-xs-edg210.a-1400-w-15-bari-0.8-l-negru-4319299.html",
+"pret_vechi": null
+},
+{
+"titlu": "Tchibo Espressor Tchibo Cafissimo Pure Plus 540675, 800 ml, 15 bari, 1250W, capsule, Alb + Classic collection",
+"pret": 290.99,
+"imagine": "https://www.dwyn.ro/images/products/img_202512311121/411589/full/tchibo-espressor-tchibo-cafissimo-pure-plus-540675-800-ml-15-bari-1250w-capsule-alb-plus-classic-collection-1314166.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fcafetiera-espressor%2Ftchibo%2F411589-espressor-tchibo-cafissimo-pure-plus-540675-800-ml-15-bari-1250w-capsule-alb-plus-classic-collection%2F",
+"magazin": "dwyn.ro",
+"id": "LSz5LLj5pQ2S",
+"brand": "Tchibo",
+"url_magazin": "https://www.dwyn.ro/cafetiera-espressor/tchibo/411589-espressor-tchibo-cafissimo-pure-plus-540675-800-ml-15-bari-1250w-capsule-alb-plus-classic-collection/",
+"pret_vechi": null
+},
+{
 "titlu": "Espressor cafea Krups Piccolo XS KP1A3110, cu capsule, 15 bar, 1600 W, capacitate 0.8 litri, functie pentru bauturi cald",
 "pret": 294.99,
 "imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4199%2F4199734%2Fespressor-cafea-krups-piccolo-6790b5c8e55fe.png&type=auto&width=500&sign=sGjLhjxocLK_vlAvMfTxUrlZUeMZ-IGIko23UXOL3sE",
@@ -5169,27 +5190,15 @@
 "pret_vechi": null
 },
 {
-"titlu": "Espressor cu capsule DeLonghi Small XS EDG210.A, 1400 W, 15 Bari, 0.8 L (Negru)",
+"titlu": "Espressor cu capsule Krups NESCAFE Dolce Gusto Piccolo XS KP1A35, 48 capsule incluse, 1600 W, 15 bar, Rezervor apa 0.8 L",
 "pret": 299.99,
-"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4319%2F4319299%2Fdelonghi-dolce-gusto-piccolo-6acf670be70fe.jpg&type=auto&width=500&sign=Z3ALmf6Nxa_QsQ-ZyeuT3CpD1JcMjfrvH4hF6BipuQI",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Felectrocasnice-aparate-de-cafea-aparate-si-espressoare-de-cafea-automate-si-manuale%2Fdelonghi-espressor-cu-capsule-delonghi-small-xs-edg210.a-1400-w-15-bari-0.8-l-negru-4319299.html",
+"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4315%2F4315597%2Fespressor-cu-capsule-krups-nes-6aa908fba1e8b.jpg&type=auto&width=500&sign=6BSAUrLyzw6dPjqnIpwoZLd-5uSXePwNhN3AELRf7fI",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Felectrocasnice-aparate-de-cafea-aparate-si-espressoare-de-cafea-automate-si-manuale%2Fkrups-espressor-cu-capsule-krups-nescafe-dolce-gusto-piccolo-xs-kp1a35-48-capsule-incluse-1600-w-15-bar-rezervor-apa-0.8-l-negru-4315597.html",
 "magazin": "evomag.ro",
-"id": "Q52ztO4-9i3D",
-"brand": "Delonghi",
-"url_magazin": "https://www.evomag.ro/electrocasnice-aparate-de-cafea-aparate-si-espressoare-de-cafea-automate-si-manuale/delonghi-espressor-cu-capsule-delonghi-small-xs-edg210.a-1400-w-15-bari-0.8-l-negru-4319299.html",
-"pret_vechi": null
-},
-{
-"titlu": "Espressor cu capsule Krups NESCAFÉ Dolce Gusto Piccolo XS KP1A3B10, 1600W, 15 bari, functie eco, 0.8L, negru-gri",
-"pret": 309.0,
-"imagine": "https://gomagcdn.ro/domains3/brico.ro/files/product/original/espressor-cu-capsule-krups-nescafe-dolce-gusto-piccolo-xs-kp1a3b10-1600w-15-bari-functie-eco-0-8l-negru-gri-309666.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.brico.ro%2Felectrocasnice-332%2Fespressor-cu-capsule-krups-nescaf%C3%A9-dolce-gusto-piccolo-xs-kp1a3b10-1600w-15-bari-functie-eco-0-8l-negru-gri.html",
-"magazin": "brico.ro",
-"id": "8JV6aWRzsQmG",
+"id": "iVDGi3GTwG2Q",
 "brand": "Krups",
-"url_magazin": "https://www.brico.ro/electrocasnice-332/espressor-cu-capsule-krups-nescafé-dolce-gusto-piccolo-xs-kp1a3b10-1600w-15-bari-functie-eco-0-8l-negru-gri.html",
-"pret_vechi": null,
-"verificat": "2026-11-04"
+"url_magazin": "https://www.evomag.ro/electrocasnice-aparate-de-cafea-aparate-si-espressoare-de-cafea-automate-si-manuale/krups-espressor-cu-capsule-krups-nescafe-dolce-gusto-piccolo-xs-kp1a35-48-capsule-incluse-1600-w-15-bar-rezervor-apa-0.8-l-negru-4315597.html",
+"pret_vechi": 329.99
 },
 {
 "titlu": "Espressor cu capsule Krups NESCAFÉ Dolce Gusto Piccolo XS KP1A3110, 1600W, 15 bari, capacitate rezervor 0.8 L, functie E",
@@ -5204,6 +5213,18 @@
 "verificat": "2026-11-05"
 },
 {
+"titlu": "Espressor cu capsule Krups NESCAFÉ Dolce Gusto Piccolo XS KP1A3B10, 1600W, 15 bari, functie eco, 0.8L, negru-gri",
+"pret": 309.0,
+"imagine": "https://gomagcdn.ro/domains3/brico.ro/files/product/original/espressor-cu-capsule-krups-nescafe-dolce-gusto-piccolo-xs-kp1a3b10-1600w-15-bari-functie-eco-0-8l-negru-gri-309666.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.brico.ro%2Felectrocasnice-332%2Fespressor-cu-capsule-krups-nescaf%C3%A9-dolce-gusto-piccolo-xs-kp1a3b10-1600w-15-bari-functie-eco-0-8l-negru-gri.html",
+"magazin": "brico.ro",
+"id": "8JV6aWRzsQmG",
+"brand": "Krups",
+"url_magazin": "https://www.brico.ro/electrocasnice-332/espressor-cu-capsule-krups-nescafé-dolce-gusto-piccolo-xs-kp1a3b10-1600w-15-bari-functie-eco-0-8l-negru-gri.html",
+"pret_vechi": null,
+"verificat": "2026-11-04"
+},
+{
 "titlu": "Espressor cu capsule HEINNER HEMC-DD20WHBK, 1140 W, 20 bari, Rezervor apa 0.6 L, NTC, Oprire automata (Alb/Negru)",
 "pret": 309.99,
 "imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4311%2F4311834%2Foverlay_ae4df7efdfc1afc3ef70aed1e6d53c00.jpg&type=auto&width=500&sign=Gd_SUSRkfT2tltJRH-HhjiNcED-3Mso1bAM9imVsY4Y",
@@ -5216,27 +5237,15 @@
 "verificat": "2026-11-05"
 },
 {
-"titlu": "Espressor cu capsule Krups NESCAFÉ® Dolce Gusto® Piccolo XS KP1A3B10, 1600 W, 15 bari, Functie eco, 0.8 L (Negru)",
-"pret": 309.99,
-"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4099%2F4099050%2Fespressor-cu-capsule-krups-nes-648849dd223d9.JPG&type=auto&width=500&sign=6DieH5Dg52IZM8WkrltqtRCxhWOdqHOPbU70rVYpv5A",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Felectrocasnice-aparate-de-cafea-aparate-si-espressoare-de-cafea-automate-si-manuale%2Fkrups-espressor-cu-capsule-krups-nescaf-dolce-gusto-piccolo-xs-kp1a3b10-1600-w-15-bari-functie-eco-0.8-l-negru-4099050.html",
-"magazin": "evomag.ro",
-"id": "7f889b04f",
-"brand": "Krups",
-"url_magazin": "https://www.evomag.ro/electrocasnice-aparate-de-cafea-aparate-si-espressoare-de-cafea-automate-si-manuale/krups-espressor-cu-capsule-krups-nescaf-dolce-gusto-piccolo-xs-kp1a3b10-1600-w-15-bari-functie-eco-0.8-l-negru-4099050.html",
+"titlu": "KRUPS Espressor cu capsule Krups NESCAFÉ® Dolce Gusto Piccolo XS KP1A3B31, 1600W, 15 bari, functie eco, capacitate rezer",
+"pret": 320.99,
+"imagine": "https://www.dwyn.ro/images/products/img_202503142150/287915/full/krups-espressor-cu-capsule-krups-nescaf-dolce-gusto-piccolo-xs-kp1a3b31-1600w-15-bari-functie-eco-capacitate-rezervor-0-8l-negru-gri-696959.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fcafetiera-espressor%2Fkrups%2F287915-espressor-cu-capsule-krups-nescaf-dolce-gusto-piccolo-xs-kp1a3b31-1600w-15-bari-functie-eco-capacitate-rezervor-0-8l-negru-gri%2F",
+"magazin": "dwyn.ro",
+"id": "H6g8XrpcZc3j",
+"brand": "KRUPS",
+"url_magazin": "https://www.dwyn.ro/cafetiera-espressor/krups/287915-espressor-cu-capsule-krups-nescaf-dolce-gusto-piccolo-xs-kp1a3b31-1600w-15-bari-functie-eco-capacitate-rezervor-0-8l-negru-gri/",
 "pret_vechi": null
-},
-{
-"titlu": "Espressor cu capsule Krups NESCAFÉ Dolce Gusto Mini Me 2 KP143GF0, 1600 W, 15 bari presiune, rezervor apa 0.8 L, oprire",
-"pret": 324.45,
-"imagine": "https://gomagcdn.ro/domains3/brico.ro/files/product/original/espressor-cu-capsule-krups-nescafe-dolce-gusto-mini-me-2-kp143gf0-1600-w-15-bari-presiune-rezervor-apa-0-8-l-oprire-automata-gri-707942.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.brico.ro%2Felectrocasnice-332%2Fespressor-cu-capsule-krups-nescaf%C3%A9-dolce-gusto-mini-me-2-kp143gf0-1600-w-15-bari-presiune-rezervor-apa-0-8-l-oprire-automata-gri.html",
-"magazin": "brico.ro",
-"id": "sJBpzdMA-x6f",
-"brand": "Krups",
-"url_magazin": "https://www.brico.ro/electrocasnice-332/espressor-cu-capsule-krups-nescafé-dolce-gusto-mini-me-2-kp143gf0-1600-w-15-bari-presiune-rezervor-apa-0-8-l-oprire-automata-gri.html",
-"pret_vechi": null,
-"verificat": "2026-11-13"
 },
 {
 "titlu": "Espressor cu capsule Krups NESCAFÉ Dolce Gusto Mini Me 2 KP1438F0, 1600 W, 15 bari presiune, rezervor apa 0.8 L, oprire",
@@ -5251,19 +5260,8 @@
 "verificat": "2026-11-13"
 },
 {
-"titlu": "KRUPS Espressor cu capsule Krups NESCAFÉ® Dolce Gusto Piccolo XS KP1A3B31, 1600W, 15 bari, functie eco, capacitate rezer",
-"pret": 329.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202503142150/287915/full/krups-espressor-cu-capsule-krups-nescaf-dolce-gusto-piccolo-xs-kp1a3b31-1600w-15-bari-functie-eco-capacitate-rezervor-0-8l-negru-gri-696959.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fcafetiera-espressor%2Fkrups%2F287915-espressor-cu-capsule-krups-nescaf-dolce-gusto-piccolo-xs-kp1a3b31-1600w-15-bari-functie-eco-capacitate-rezervor-0-8l-negru-gri%2F",
-"magazin": "dwyn.ro",
-"id": "H6g8XrpcZc3j",
-"brand": "KRUPS",
-"url_magazin": "https://www.dwyn.ro/cafetiera-espressor/krups/287915-espressor-cu-capsule-krups-nescaf-dolce-gusto-piccolo-xs-kp1a3b31-1600w-15-bari-functie-eco-capacitate-rezervor-0-8l-negru-gri/",
-"pret_vechi": null
-},
-{
 "titlu": "KRUPS Espressor cu capsule KRUPS NESCAFÉ® Dolce Gusto® Piccolo XS KP1A3110, 15 bari presiune, 1600 W, capacitate rezervo",
-"pret": 337.99,
+"pret": 327.99,
 "imagine": "https://www.dwyn.ro/images/products/img_202503142150/297177/full/krups-espressor-cu-capsule-krups-nescaf-dolce-gusto-piccolo-xs-kp1a3110-15-bari-presiune-1600-w-capacitate-rezervor-0-8-l-functie-eco-alb-735101.jpg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fcafetiera-espressor%2Fkrups%2F297177-espressor-cu-capsule-krups-nescaf-dolce-gusto-piccolo-xs-kp1a3110-15-bari-presiune-1600-w-capacitate-rezervor-0-8-l-functie-eco-alb%2F",
 "magazin": "dwyn.ro",
@@ -5297,26 +5295,14 @@
 "verificat": "2026-11-04"
 },
 {
-"titlu": "Espressor cu capsule Krups NESCAFÉ Dolce Gusto Genio S Plus KP340810, 1500W, 15 bari, functie Hot Cold, functie XL, reze",
-"pret": 345.45,
-"imagine": "https://gomagcdn.ro/domains3/brico.ro/files/product/original/espressor-cu-capsule-krups-nescafe-dolce-gusto-genio-s-plus-kp340810-1500w-15-bari-functie-hot-cold-functie-xl-rezervor-0-8l-temperatur-941853.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.brico.ro%2Felectrocasnice-332%2Fespressor-cu-capsule-krups-nescaf%C3%A9-dolce-gusto-genio-s-plus-kp340810-1500w-15-bari-functie-hot-cold-functie-xl-rezervor-0-8l-temperatur.html",
-"magazin": "brico.ro",
-"id": "s1b4BSp7bqM1",
-"brand": "Krups",
-"url_magazin": "https://www.brico.ro/electrocasnice-332/espressor-cu-capsule-krups-nescafé-dolce-gusto-genio-s-plus-kp340810-1500w-15-bari-functie-hot-cold-functie-xl-rezervor-0-8l-temperatur.html",
-"pret_vechi": null,
-"verificat": "2026-11-17"
-},
-{
-"titlu": "Delonghi Espressor cu capsule De'Longhi EDG226.W Genio S Nescafé Dolce Gusto, 1600 W, 15 bar, Rezervor 0.8 l, Oprire aut",
-"pret": 361.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202512311121/381368/full/delonghi-delonghi-dolce-gusto-genio-edg226-w-coffee-maker-fully-automatic-white-1142339.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fcafetiera-espressor%2Fdelonghi%2F381368-espressor-cu-capsule-de-longhi-edg226-w-genio-s-nescaf-dolce-gusto-1600-w-15-bar-rezervor-0-8-l-oprire-automata-alb%2F",
+"titlu": "Tchibo Espressor Tchibo Cafissimo Pure Plus 531295, 800 ml, 15 bari, 1250W, capsule, Rosu + Premium Collection",
+"pret": 349.99,
+"imagine": "https://www.dwyn.ro/images/products/img_202508191322/345212/full/tchibo-espressor-tchibo-cafissimo-pure-plus-531295-800-ml-15-bari-1250w-capsule-rosu-plus-premium-collection-913871.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fcafetiera-espressor%2Ftchibo%2F345212-espressor-tchibo-cafissimo-pure-plus-531295-800-ml-15-bari-1250w-capsule-rosu-plus-premium-collection%2F",
 "magazin": "dwyn.ro",
-"id": "DpCj__-XDF6L",
-"brand": "Delonghi",
-"url_magazin": "https://www.dwyn.ro/cafetiera-espressor/delonghi/381368-espressor-cu-capsule-de-longhi-edg226-w-genio-s-nescaf-dolce-gusto-1600-w-15-bar-rezervor-0-8-l-oprire-automata-alb/",
+"id": "riwhPrug1bPw",
+"brand": "Tchibo",
+"url_magazin": "https://www.dwyn.ro/cafetiera-espressor/tchibo/345212-espressor-tchibo-cafissimo-pure-plus-531295-800-ml-15-bari-1250w-capsule-rosu-plus-premium-collection/",
 "pret_vechi": null
 },
 {
@@ -5328,19 +5314,20 @@
 "id": "j7aO4OzpZCoA",
 "brand": "HAEGER",
 "url_magazin": "https://www.brico.ro/electrocasnice-332/espressor-de-cafea-haeger-super-espresso-presiune-20-bar-pompa-ulka-rezervor-apa-1-6l-extractie-intensa-cu-aroma-bogata-suport-inox-pentru-incalzire-cesti.html",
-"pret_vechi": 529.0,
+"pret_vechi": 462.0,
 "verificat": "2026-11-17"
 },
 {
-"titlu": "Honor Espressor portabil Honor Choice 5504ADGS, 20 bar, Compatibil cu capsule espresso, Extractie rapida in 40 de secund",
-"pret": 380.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202512311121/376715/full/honor-honor-choice-portable-coffee-machine-1280560.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fcafetiera-espressor%2Fhonor%2F376715-espressor-portabil-honor-choice-5504adgs-20-bar-compatibil-cu-capsule-espresso-extractie-rapida-in-40-de-secunde-95-w-alb%2F",
-"magazin": "dwyn.ro",
-"id": "7md3h6gA-4lp",
-"brand": "Honor",
-"url_magazin": "https://www.dwyn.ro/cafetiera-espressor/honor/376715-espressor-portabil-honor-choice-5504adgs-20-bar-compatibil-cu-capsule-espresso-extractie-rapida-in-40-de-secunde-95-w-alb/",
-"pret_vechi": null
+"titlu": "Espressor KRUPS cu capsule NESCAFÉ® Dolce Gusto® Piccolo XS KP1A3110, 1600 W, functie Eco, alb & rosu",
+"pret": 370.79,
+"imagine": "https://infinityro.vteximg.com.br/arquivos/ids/276027604/Image-4.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Finfinity.ro%2Fespressor-krups-cu-capsule-nescafe-dolce-gusto-piccolo-xs-kp1a3110-1600-w-functie-eco-alb-rosu-9204418%2Fp%3Futm_source%3D2performant",
+"magazin": "infinity.ro",
+"id": "Udx5w69nr1X4",
+"brand": "Krups",
+"url_magazin": "https://infinity.ro/espressor-krups-cu-capsule-nescafe-dolce-gusto-piccolo-xs-kp1a3110-1600-w-functie-eco-alb-rosu-9204418/p?utm_source=2performant",
+"pret_vechi": null,
+"verificat": "2026-11-25"
 },
 {
 "titlu": "Espressor cu capsule Krups NESCAFÉ Dolce Gusto Mini Me 2 KP1435F0, 1600 W, 15 bari presiune, rezervor apa 0.8 L, oprire",
@@ -5351,14 +5338,26 @@
 "id": "PxBCYzETSgyD",
 "brand": "Krups",
 "url_magazin": "https://www.brico.ro/electrocasnice-332/espressor-cu-capsule-krups-nescafé-dolce-gusto-mini-me-2-kp1435f0-1600-w-15-bari-presiune-rezervor-apa-0-8-l-oprire-automata-rosu.html",
-"pret_vechi": 408.45,
+"pret_vechi": 399.0,
 "verificat": "2026-11-17"
+},
+{
+"titlu": "Espressor cu capsule Krups NESCAFÉ Dolce Gusto Mini Me KP123H10, 1500 W, 15 bari, capacitate rezervor 0.8L, Tehnologia P",
+"pret": 399.0,
+"imagine": "https://gomagcdn.ro/domains3/brico.ro/files/product/original/espressor-cu-capsule-krups-nescafe-dolce-gusto-mini-me-kp123h10-1500-w-15-bari-capacitate-rezervor-0-8l-tehnologia-play-select-functie-eco-141288.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.brico.ro%2Felectrocasnice-332%2Fespressor-cu-capsule-krups-nescaf%C3%A9-dolce-gusto-mini-me-kp123h10-1500-w-15-bari-capacitate-rezervor-0-8l-tehnologia-play-select-functie-eco.html",
+"magazin": "brico.ro",
+"id": "1u9pFS95f26G",
+"brand": "Krups",
+"url_magazin": "https://www.brico.ro/electrocasnice-332/espressor-cu-capsule-krups-nescafé-dolce-gusto-mini-me-kp123h10-1500-w-15-bari-capacitate-rezervor-0-8l-tehnologia-play-select-functie-eco.html",
+"pret_vechi": null
 }
 ],
 "magazine": [
 "brico.ro",
 "dwyn.ro",
-"evomag.ro"
+"evomag.ro",
+"infinity.ro"
 ]
 },
 {
@@ -5368,7 +5367,7 @@
 "titlu": "Laptopuri cu 16 GB RAM",
 "nota": null,
 "in_text": "\\b16 GB\\b",
-"actualizat": "2026-11-17",
+"actualizat": "2026-11-25",
 "feeduri": [
 {
 "id": 1539,
@@ -5392,16 +5391,48 @@
 "pret_vechi": null
 },
 {
-"titlu": "Acer Laptop Acer Extensa EXO16-71-577R, Intel Core Ultra 5 125H, 16 inch WUXGA, 16GB RAM, 512GB SSD, Free DOS, Gri",
-"pret": 3371.25,
-"imagine": "https://www.dwyn.ro/images/products/img_202606122129/456055/full/acer-laptop-acer-extensa-exo16-71-577r-intel-core-ultra-5-125h-16-inch-wuxga-16gb-ram-512gb-ssd-free-dos-gri-1521454.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Flaptop-notebook%2Facer%2F456055-laptop-acer-extensa-exo16-71-577r-intel-core-ultra-5-125h-16-inch-wuxga-16gb-ram-512gb-ssd-free-dos-gri%2F",
+"titlu": "HP Laptop HP 250R G10, Intel Core 3 100U, 15.6 inch FHD, 16GB RAM, 512GB SSD, Free DOS, Argintiu",
+"pret": 3343.99,
+"imagine": "https://www.dwyn.ro/images/products/img_202611101603/454624/full/hp-laptop-hp-250r-g10-intel-core-3-100u-15-6-inch-fhd-16gb-ram-512gb-ssd-free-dos-argintiu-1559296.png",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Flaptop-notebook%2Fhp%2F454624-laptop-hp-250r-g10-intel-core-3-100u-15-6-inch-fhd-16gb-ram-512gb-ssd-free-dos-argintiu%2F",
 "magazin": "dwyn.ro",
-"id": "Ow6URvA7mgIB",
-"brand": "Acer",
-"url_magazin": "https://www.dwyn.ro/laptop-notebook/acer/456055-laptop-acer-extensa-exo16-71-577r-intel-core-ultra-5-125h-16-inch-wuxga-16gb-ram-512gb-ssd-free-dos-gri/",
-"pret_vechi": null,
-"verificat": "2026-11-04"
+"id": "_Iy-CVpPKcLp",
+"brand": "HP",
+"url_magazin": "https://www.dwyn.ro/laptop-notebook/hp/454624-laptop-hp-250r-g10-intel-core-3-100u-15-6-inch-fhd-16gb-ram-512gb-ssd-free-dos-argintiu/",
+"pret_vechi": null
+},
+{
+"titlu": "Asus Laptop Asus X1504MA-BQ058, Intel Core 5 320, 15.6 inch FHD, 16GB RAM, 512GB SSD, No OS, Argintiu",
+"pret": 3506.99,
+"imagine": "https://www.dwyn.ro/images/products/img_202611101603/456931/full/asus-laptop-asus-x1504ma-bq058-intel-core-5-320-15-6-inch-fhd-16gb-ram-512gb-ssd-no-os-argintiu-1542586.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Flaptop-notebook%2Fasus%2F456931-laptop-asus-x1504ma-bq058-intel-core-5-320-15-6-inch-fhd-16gb-ram-512gb-ssd-no-os-argintiu%2F",
+"magazin": "dwyn.ro",
+"id": "R9jYX2AyLtN4",
+"brand": "Asus",
+"url_magazin": "https://www.dwyn.ro/laptop-notebook/asus/456931-laptop-asus-x1504ma-bq058-intel-core-5-320-15-6-inch-fhd-16gb-ram-512gb-ssd-no-os-argintiu/",
+"pret_vechi": null
+},
+{
+"titlu": "Lenovo Laptop Lenovo V15 G5 IRL, Intel Core i5-13420H, 15.6 inch FHD, 16GB RAM, 512GB SSD, Free DOS, Negru",
+"pret": 4024.99,
+"imagine": "https://www.dwyn.ro/images/products/img_202611101603/456145/full/lenovo-laptop-lenovo-v15-g5-irl-intel-core-i5-13420h-15-6-inch-fhd-16gb-ram-512gb-ssd-free-dos-negru-1558498.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Flaptop-notebook%2Flenovo%2F456145-laptop-lenovo-v15-g5-irl-intel-core-i5-13420h-15-6-inch-fhd-16gb-ram-512gb-ssd-free-dos-negru%2F",
+"magazin": "dwyn.ro",
+"id": "OH2ZBsH-KbYD",
+"brand": "Lenovo",
+"url_magazin": "https://www.dwyn.ro/laptop-notebook/lenovo/456145-laptop-lenovo-v15-g5-irl-intel-core-i5-13420h-15-6-inch-fhd-16gb-ram-512gb-ssd-free-dos-negru/",
+"pret_vechi": null
+},
+{
+"titlu": "Asus Laptop Asus X1504MA-BQ221, Intel Core 7 350, 15.6 inch FHD, 16GB RAM, 512GB SSD, No OS, Argintiu",
+"pret": 4059.99,
+"imagine": "https://www.dwyn.ro/images/products/img_202611101603/456961/full/asus-laptop-asus-x1504ma-bq221-intel-core-7-350-15-6-inch-fhd-16gb-ram-512gb-ssd-no-os-argintiu-1542616.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Flaptop-notebook%2Fasus%2F456961-laptop-asus-x1504ma-bq221-intel-core-7-350-15-6-inch-fhd-16gb-ram-512gb-ssd-no-os-argintiu%2F",
+"magazin": "dwyn.ro",
+"id": "AKmFUtbMygRP",
+"brand": "Asus",
+"url_magazin": "https://www.dwyn.ro/laptop-notebook/asus/456961-laptop-asus-x1504ma-bq221-intel-core-7-350-15-6-inch-fhd-16gb-ram-512gb-ssd-no-os-argintiu/",
+"pret_vechi": null
 },
 {
 "titlu": "Laptop de gaming ASUS - TUF F16 FX607VJR-TU307, 16\", WUXGA, Core 7, 144Hz, RTX 3050, 16GB/512GB",
@@ -5427,107 +5458,69 @@
 "pret_vechi": null
 },
 {
-"titlu": "Asus Laptop Asus X1504MA-BQ117, Intel Core 5 320, 15.6 inch FHD, 16GB RAM, 1TB SSD, Free DOS, Argintiu",
-"pret": 4290.66,
-"imagine": "https://www.dwyn.ro/images/products/img_202606122129/456958/full/asus-laptop-asus-x1504ma-bq117-intel-core-5-320-15-6-inch-fhd-16gb-ram-1tb-ssd-free-dos-argintiu-1521442.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Flaptop-notebook%2Fasus%2F456958-laptop-asus-x1504ma-bq117-intel-core-5-320-15-6-inch-fhd-16gb-ram-1tb-ssd-free-dos-argintiu%2F",
+"titlu": "Lenovo Laptop Lenovo IdeaPad Slim 3 14IWC11, Intel Core 7 350, 14 inch WUXGA, 16GB RAM, 512GB SSD, No OS, Gri",
+"pret": 4254.99,
+"imagine": "https://www.dwyn.ro/images/products/img_202611101603/454783/full/lenovo-laptop-lenovo-ideapad-slim-3-14iwc11-intel-core-7-350-14-inch-wuxga-16gb-ram-512gb-ssd-no-os-gri-1559311.png",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Flaptop-notebook%2Flenovo%2F454783-laptop-lenovo-ideapad-slim-3-14iwc11-intel-core-7-350-14-inch-wuxga-16gb-ram-512gb-ssd-no-os-gri%2F",
 "magazin": "dwyn.ro",
-"id": "CQB0cRDgZzDB",
+"id": "gSROjXMv_X0Y",
+"brand": "Lenovo",
+"url_magazin": "https://www.dwyn.ro/laptop-notebook/lenovo/454783-laptop-lenovo-ideapad-slim-3-14iwc11-intel-core-7-350-14-inch-wuxga-16gb-ram-512gb-ssd-no-os-gri/",
+"pret_vechi": null
+},
+{
+"titlu": "Lenovo Laptop Lenovo IdeaPad Slim 3 15IWC11, Intel Core 7 350, 15.3 inch WUXGA, 16GB RAM, 512GB SSD, No OS, Gri",
+"pret": 4333.99,
+"imagine": "https://www.dwyn.ro/images/products/img_202611101603/486115/full/lenovo-laptop-lenovo-ideapad-slim-3-15iwc11-intel-core-7-350-15-3-inch-wuxga-16gb-ram-512gb-ssd-no-os-gri-1558552.png",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Flaptop-notebook%2Flenovo%2F486115-laptop-lenovo-ideapad-slim-3-15iwc11-intel-core-7-350-15-3-inch-wuxga-16gb-ram-512gb-ssd-no-os-gri%2F",
+"magazin": "dwyn.ro",
+"id": "-FTrUw9ZzZ6n",
+"brand": "Lenovo",
+"url_magazin": "https://www.dwyn.ro/laptop-notebook/lenovo/486115-laptop-lenovo-ideapad-slim-3-15iwc11-intel-core-7-350-15-3-inch-wuxga-16gb-ram-512gb-ssd-no-os-gri/",
+"pret_vechi": null
+},
+{
+"titlu": "Acer Laptop Acer Aspire Go 16 AG16-71P-53FE, procesor Intel® Core™ 5 120U pana la 5.0GHz, 16 inch, WUXGA, IPS, 16GB DDR4",
+"pret": 5037.99,
+"imagine": "https://www.dwyn.ro/images/products/img_202606122129/481717/full/acer-laptop-acer-aspire-go-16-ag16-71p-53fe-procesor-intel-core-5-120u-pana-la-5-0ghz-16-inch-wuxga-ips-16gb-ddr4-ram-512gb-ssd-intel-graphics-fara-os-argintiu-1536115.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Flaptop-notebook%2Facer%2F481717-laptop-acer-aspire-go-16-ag16-71p-53fe-procesor-intel-core-5-120u-pana-la-5-0ghz-16-inch-wuxga-ips-16gb-ddr4-ram-512gb-ssd-intel-graphics-fara-os-argintiu%2F",
+"magazin": "dwyn.ro",
+"id": "jnLmcrxIBGLD",
+"brand": "Acer",
+"url_magazin": "https://www.dwyn.ro/laptop-notebook/acer/481717-laptop-acer-aspire-go-16-ag16-71p-53fe-procesor-intel-core-5-120u-pana-la-5-0ghz-16-inch-wuxga-ips-16gb-ddr4-ram-512gb-ssd-intel-graphics-fara-os-argintiu/",
+"pret_vechi": null
+},
+{
+"titlu": "Asus Laptop Asus X1704MA-AU035, Intel Core 7 350, 17.3 inch FHD, 16GB RAM, 512GB SSD, Free DOS, Albastru",
+"pret": 5325.99,
+"imagine": "https://www.dwyn.ro/images/products/img_202606122129/482959/full/asus-laptop-asus-x1704ma-au035-intel-core-7-350-17-3-inch-fhd-16gb-ram-512gb-ssd-free-dos-albastru-1537786.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Flaptop-notebook%2Fasus%2F482959-laptop-asus-x1704ma-au035-intel-core-7-350-17-3-inch-fhd-16gb-ram-512gb-ssd-free-dos-albastru%2F",
+"magazin": "dwyn.ro",
+"id": "R6uFnYa6smRT",
 "brand": "Asus",
-"url_magazin": "https://www.dwyn.ro/laptop-notebook/asus/456958-laptop-asus-x1504ma-bq117-intel-core-5-320-15-6-inch-fhd-16gb-ram-1tb-ssd-free-dos-argintiu/",
-"pret_vechi": null,
-"verificat": "2026-11-04"
+"url_magazin": "https://www.dwyn.ro/laptop-notebook/asus/482959-laptop-asus-x1704ma-au035-intel-core-7-350-17-3-inch-fhd-16gb-ram-512gb-ssd-free-dos-albastru/",
+"pret_vechi": null
 },
 {
-"titlu": "Lenovo Laptop Lenovo IdeaPad Slim 3 15IWC11, Intel Core 7 350, 15.3 inch WUXGA, 16GB RAM, 512GB SSD, Free DOS, Gri",
-"pret": 4484.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202606122129/455053/full/lenovo-laptop-lenovo-ideapad-slim-3-15iwc11-intel-core-7-350-15-3-inch-wuxga-16gb-ram-512gb-ssd-free-dos-gri-1521151.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Flaptop-notebook%2Flenovo%2F455053-laptop-lenovo-ideapad-slim-3-15iwc11-intel-core-7-350-15-3-inch-wuxga-16gb-ram-512gb-ssd-free-dos-gri%2F",
-"magazin": "dwyn.ro",
-"id": "-hNU4X7KTNDC",
-"brand": "Lenovo",
-"url_magazin": "https://www.dwyn.ro/laptop-notebook/lenovo/455053-laptop-lenovo-ideapad-slim-3-15iwc11-intel-core-7-350-15-3-inch-wuxga-16gb-ram-512gb-ssd-free-dos-gri/",
-"pret_vechi": null,
-"verificat": "2026-11-04"
-},
-{
-"titlu": "Lenovo Laptop Lenovo IdeaPad Slim 3 16IWC11, Intel Core 7 350, 16 inch WUXGA, 16GB RAM, 512GB SSD, Free DOS, Albastru",
-"pret": 4714.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202606122129/478120/full/lenovo-laptop-lenovo-ideapad-slim-3-16iwc11-intel-core-7-350-16-inch-wuxga-16gb-ram-512gb-ssd-free-dos-albastru-1523296.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Flaptop-notebook%2Flenovo%2F478120-laptop-lenovo-ideapad-slim-3-16iwc11-intel-core-7-350-16-inch-wuxga-16gb-ram-512gb-ssd-free-dos-albastru%2F",
-"magazin": "dwyn.ro",
-"id": "Uai7pxcXWL24",
-"brand": "Lenovo",
-"url_magazin": "https://www.dwyn.ro/laptop-notebook/lenovo/478120-laptop-lenovo-ideapad-slim-3-16iwc11-intel-core-7-350-16-inch-wuxga-16gb-ram-512gb-ssd-free-dos-albastru/",
-"pret_vechi": null,
-"verificat": "2026-11-04"
-},
-{
-"titlu": "Lenovo Laptop Lenovo IdeaPad Slim 5 14IPH11, Intel Core Ultra 5 322, 14 inch WUXGA, 16GB RAM, 512GB SSD, Free DOS, Albas",
-"pret": 4714.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202606122129/454762/full/lenovo-laptop-lenovo-ideapad-slim-5-14iph11-intel-core-ultra-5-322-14-inch-wuxga-16gb-ram-512gb-ssd-free-dos-albastru-1524895.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Flaptop-notebook%2Flenovo%2F454762-laptop-lenovo-ideapad-slim-5-14iph11-intel-core-ultra-5-322-14-inch-wuxga-16gb-ram-512gb-ssd-free-dos-albastru%2F",
-"magazin": "dwyn.ro",
-"id": "H8Eb75T1tfJZ",
-"brand": "Lenovo",
-"url_magazin": "https://www.dwyn.ro/laptop-notebook/lenovo/454762-laptop-lenovo-ideapad-slim-5-14iph11-intel-core-ultra-5-322-14-inch-wuxga-16gb-ram-512gb-ssd-free-dos-albastru/",
-"pret_vechi": null,
-"verificat": "2026-11-04"
-},
-{
-"titlu": "Lenovo Laptop Lenovo IdeaPad Slim 5 14AGP11, AMD Ryzen AI 5 430, 14 inch WUXGA, 16GB RAM, 512GB SSD, Free DOS, Gri",
-"pret": 4751.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202606122129/454798/full/lenovo-laptop-lenovo-ideapad-slim-5-14agp11-amd-ryzen-ai-5-430-14-inch-wuxga-16gb-ram-512gb-ssd-free-dos-gri-1524925.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Flaptop-notebook%2Flenovo%2F454798-laptop-lenovo-ideapad-slim-5-14agp11-amd-ryzen-ai-5-430-14-inch-wuxga-16gb-ram-512gb-ssd-free-dos-gri%2F",
-"magazin": "dwyn.ro",
-"id": "l4aFGKEikZPQ",
-"brand": "Lenovo",
-"url_magazin": "https://www.dwyn.ro/laptop-notebook/lenovo/454798-laptop-lenovo-ideapad-slim-5-14agp11-amd-ryzen-ai-5-430-14-inch-wuxga-16gb-ram-512gb-ssd-free-dos-gri/",
-"pret_vechi": null,
-"verificat": "2026-11-04"
-},
-{
-"titlu": "Laptop Lenovo - V15 G5 IRL, 15.6'', FHD, Core 7 240H, 16GB/512GB",
-"pret": 4771.99,
-"imagine": "https://www.ozone.ro/media/catalog/product/l/a/laptop_lenovo_v15_g5_irl_15_6_fhd_core_7_240h_16gb_512gb_1793262179_0.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ozone.ro%2Fproduct%2Flaptop-lenovo-v15-g5-irl-15-6-fhd-core-7-240h-16gb-512gb%2F",
+"titlu": "Laptop Apple - MacBook Pro 14, 14.2'', M6, 16GB/1TB, Argintiu",
+"pret": 12149.99,
+"imagine": "https://www.ozone.ro/media/catalog/product/l/a/laptop_apple_macbook_pro_14_14_2_m6_16gb_1tb_silver_1795096340_0.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ozone.ro%2Fproduct%2Flaptop-apple-macbook-pro-14-14-2-m6-16gb-1tb-argintiu%2F",
 "magazin": "ozone.ro",
-"id": "J1X1gebI3Coh",
-"brand": "Lenovo",
-"url_magazin": "https://www.ozone.ro/product/laptop-lenovo-v15-g5-irl-15-6-fhd-core-7-240h-16gb-512gb/",
+"id": "nmm-9Igd8lLc",
+"brand": "Apple",
+"url_magazin": "https://www.ozone.ro/product/laptop-apple-macbook-pro-14-14-2-m6-16gb-1tb-argintiu/",
 "pret_vechi": null
 },
 {
-"titlu": "Lenovo Laptop 2 in 1 Lenovo IdeaPad 5 15AGP11, AMD Ryzen AI 5 430, 15.3 inch WUXGA Touch, 16GB RAM, 512GB SSD, Free DOS,",
-"pret": 5174.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202606122129/454876/full/lenovo-laptop-2-in-1-lenovo-ideapad-5-15agp11-amd-ryzen-ai-5-430-15-3-inch-wuxga-16gb-ram-512gb-ssd-free-dos-gri-1518379.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Flaptop-notebook%2Flenovo%2F454876-laptop-2-in-1-lenovo-ideapad-5-15agp11-amd-ryzen-ai-5-430-15-3-inch-wuxga-touch-16gb-ram-512gb-ssd-free-dos-gri%2F",
-"magazin": "dwyn.ro",
-"id": "1-5vKUdEU9Gm",
-"brand": "Lenovo",
-"url_magazin": "https://www.dwyn.ro/laptop-notebook/lenovo/454876-laptop-2-in-1-lenovo-ideapad-5-15agp11-amd-ryzen-ai-5-430-15-3-inch-wuxga-touch-16gb-ram-512gb-ssd-free-dos-gri/",
-"pret_vechi": null
-},
-{
-"titlu": "Asus Laptop Asus TUF Gaming F17 FX707VJB-HX082, Intel Core 5 210H, 17.3 inch FHD, 16GB RAM, 512GB SSD, nVidia RTX 3050 6",
-"pret": 5215.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202606122129/454219/full/asus-laptop-asus-tuf-gaming-f17-fx707vjb-hx082-intel-core-5-210h-17-3-inch-fhd-16gb-ram-512gb-ssd-nvidia-rtx-3050-6gb-free-dos-gri-1521076.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Flaptop-notebook%2Fasus%2F454219-laptop-asus-tuf-gaming-f17-fx707vjb-hx082-intel-core-5-210h-17-3-inch-fhd-16gb-ram-512gb-ssd-nvidia-rtx-3050-6gb-free-dos-gri%2F",
-"magazin": "dwyn.ro",
-"id": "_oM3RiPTTaX7",
-"brand": "Asus",
-"url_magazin": "https://www.dwyn.ro/laptop-notebook/asus/454219-laptop-asus-tuf-gaming-f17-fx707vjb-hx082-intel-core-5-210h-17-3-inch-fhd-16gb-ram-512gb-ssd-nvidia-rtx-3050-6gb-free-dos-gri/",
-"pret_vechi": null
-},
-{
-"titlu": "Laptop Lenovo - Yoga Slim 7, 14'', WUXGA, OLED, Ryzen AI 7, 16GB/1TB, Tidal Teal",
-"pret": 6369.99,
-"imagine": "https://www.ozone.ro/media/catalog/product/l/a/laptop_lenovo_yoga_slim_7_14_wuxga_oled_ryzen_ai_7_16gb_1tb_tidal_teal_1793693583_0.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ozone.ro%2Fproduct%2Flaptop-lenovo-yoga-slim-7-14-wuxga-oled-ryzen-ai-7-16gb-1tb-tidal-teal%2F",
+"titlu": "Laptop Apple - MacBook Pro 14, 14.2'', M6, 16GB/1TB, Negru Spațial",
+"pret": 12149.99,
+"imagine": "https://www.ozone.ro/media/catalog/product/l/a/laptop_apple_macbook_pro_14_14_2_m6_16gb_1tb_space_black_1794922943_0.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ozone.ro%2Fproduct%2Flaptop-apple-macbook-pro-14-14-2-m6-16gb-1tb-negru-spatial%2F",
 "magazin": "ozone.ro",
-"id": "OOlZpOCvANG-",
-"brand": "Lenovo",
-"url_magazin": "https://www.ozone.ro/product/laptop-lenovo-yoga-slim-7-14-wuxga-oled-ryzen-ai-7-16gb-1tb-tidal-teal/",
+"id": "MZQGCM96n7Q6",
+"brand": "Apple",
+"url_magazin": "https://www.ozone.ro/product/laptop-apple-macbook-pro-14-14-2-m6-16gb-1tb-negru-spatial/",
 "pret_vechi": null
 }
 ],
@@ -5543,7 +5536,7 @@
 "titlu": "Laptopuri cu 32 GB RAM",
 "nota": null,
 "in_text": "\\b32 GB\\b",
-"actualizat": "2026-11-17",
+"actualizat": "2026-11-25",
 "feeduri": [
 {
 "id": 1539,
@@ -5602,18 +5595,6 @@
 "verificat": "2026-11-04"
 },
 {
-"titlu": "Laptop gaming ASUS - TUF F16 FA607NUG-RL117, 16'', WUXGA, Ryzen 7, 144 Hz, RTX 4050, 32GB/512GB",
-"pret": 5839.99,
-"imagine": "https://www.ozone.ro/media/catalog/product/g/e/geyming_laptop_asus_tuf_f16_fa607nug_rl117_16_wuxga_ryzen_7_144_hz_rtx_4050_1780339827_0_2.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ozone.ro%2Fproduct%2Flaptop-gaming-asus-tuf-f16-fa607nug-rl117-16-wuxga-ryzen-7-144-hz-rtx-4050-32gb-512gb%2F",
-"magazin": "ozone.ro",
-"id": "8KgEk-YLMhtj",
-"brand": "ASUS",
-"url_magazin": "https://www.ozone.ro/product/laptop-gaming-asus-tuf-f16-fa607nug-rl117-16-wuxga-ryzen-7-144-hz-rtx-4050-32gb-512gb/",
-"pret_vechi": null,
-"verificat": "2026-11-04"
-},
-{
 "titlu": "Laptop de gaming MSI - Cyborg 15 A13VEK, 15.6'', FHD, 144Hz, i7, RTX 4050, 32GB/512GB",
 "pret": 6049.99,
 "imagine": "https://www.ozone.ro/media/catalog/product/g/e/geyming_laptop_msi_cyborg_15_a13vek_15_6_fhd_144hz_i7_rtx_4050_1786964940_0_2.jpg",
@@ -5649,14 +5630,58 @@
 "verificat": "2026-11-04"
 },
 {
-"titlu": "Dell Laptop Dell 16 DC16251, Intel Core 7 150U, 16 inch, RAM 32GB, SSD 1TB, Intel Graphics, Linux, Albastru",
-"pret": 8159.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202508191322/348473/full/dell-laptop-dell-16-dc16251-intel-core-7-150u-16-inch-ram-32gb-ssd-1tb-intel-graphics-windows-11-pro-albastru-981293.png",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Flaptop-notebook%2Fdell%2F348473-laptop-dell-16-dc16251-intel-core-7-150u-16-inch-ram-32gb-ssd-1tb-intel-graphics-linux-albastru%2F",
+"titlu": "Asus Laptop Asus ExpertBook P5 P5405CAA-NZ0080, Intel Core Ultra 5 325, 14 inch WQXGA, 32GB RAM, 1TB SSD, No OS, Gri",
+"pret": 7276.99,
+"imagine": "https://www.dwyn.ro/images/products/img_202611101603/454336/full/asus-laptop-asus-expertbook-p5-p5405caa-nz0080-intel-core-ultra-5-325-14-inch-wqxga-32gb-ram-1tb-ssd-no-os-gri-1542529.png",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Flaptop-notebook%2Fasus%2F454336-laptop-asus-expertbook-p5-p5405caa-nz0080-intel-core-ultra-5-325-14-inch-wqxga-32gb-ram-1tb-ssd-no-os-gri%2F",
 "magazin": "dwyn.ro",
-"id": "acafawUXiqrC",
-"brand": "Dell",
-"url_magazin": "https://www.dwyn.ro/laptop-notebook/dell/348473-laptop-dell-16-dc16251-intel-core-7-150u-16-inch-ram-32gb-ssd-1tb-intel-graphics-linux-albastru/",
+"id": "ILMvwytnJHww",
+"brand": "Asus",
+"url_magazin": "https://www.dwyn.ro/laptop-notebook/asus/454336-laptop-asus-expertbook-p5-p5405caa-nz0080-intel-core-ultra-5-325-14-inch-wqxga-32gb-ram-1tb-ssd-no-os-gri/",
+"pret_vechi": null
+},
+{
+"titlu": "Laptop de gaming ASUS - TUF Gaming A16 FA608UHI, 16'', WUXGA, 144Hz, Ryzen 7, RTX 5050, 32GB/512GB",
+"pret": 7429.99,
+"imagine": "https://www.ozone.ro/media/catalog/product/g/e/geyming_laptop_asus_tuf_gaming_a16_fa608uhi_16_wuxga_144hz_ryzen_7_rtx_5050_1792652903_0_2.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ozone.ro%2Fproduct%2Flaptop-de-gaming-asus-tuf-gaming-a16-fa608uhi-16-wuxga-144hz-ryzen-7-rtx-5050-32gb-512gb%2F",
+"magazin": "ozone.ro",
+"id": "zVxc2lTftH1p",
+"brand": "ASUS",
+"url_magazin": "https://www.ozone.ro/product/laptop-de-gaming-asus-tuf-gaming-a16-fa608uhi-16-wuxga-144hz-ryzen-7-rtx-5050-32gb-512gb/",
+"pret_vechi": null
+},
+{
+"titlu": "Lenovo Laptop Lenovo IdeaPad Slim 5 16IPH11, Intel Core Ultra 7 356H, 16 inch 2.8K, 32GB RAM, 1TB SSD, Free DOS, Albastr",
+"pret": 9199.99,
+"imagine": "https://www.dwyn.ro/images/products/img_202606122129/455170/full/lenovo-laptop-lenovo-ideapad-slim-5-16iph11-intel-core-ultra-7-356h-16-inch-2-8k-32gb-ram-1tb-ssd-free-dos-albastru-1521166.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Flaptop-notebook%2Flenovo%2F455170-laptop-lenovo-ideapad-slim-5-16iph11-intel-core-ultra-7-356h-16-inch-2-8k-32gb-ram-1tb-ssd-free-dos-albastru%2F",
+"magazin": "dwyn.ro",
+"id": "_EQw56bE4XW2",
+"brand": "Lenovo",
+"url_magazin": "https://www.dwyn.ro/laptop-notebook/lenovo/455170-laptop-lenovo-ideapad-slim-5-16iph11-intel-core-ultra-7-356h-16-inch-2-8k-32gb-ram-1tb-ssd-free-dos-albastru/",
+"pret_vechi": null
+},
+{
+"titlu": "Apple Laptop Apple MacBook Air 13, Apple M5, 13.6 inch WQXGA, 32GB RAM, 512GB SSD, Mac OS, Negru",
+"pret": 9449.99,
+"imagine": "https://www.dwyn.ro/images/products/img_202611101603/478948/full/apple-laptop-apple-macbook-air-13-apple-m5-13-6-inch-wqxga-32gb-ram-512gb-ssd-mac-os-negru-1558513.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Flaptop-notebook%2Fapple%2F478948-laptop-apple-macbook-air-13-apple-m5-13-6-inch-wqxga-32gb-ram-512gb-ssd-mac-os-negru%2F",
+"magazin": "dwyn.ro",
+"id": "U9vf7Chhv4xr",
+"brand": "Apple",
+"url_magazin": "https://www.dwyn.ro/laptop-notebook/apple/478948-laptop-apple-macbook-air-13-apple-m5-13-6-inch-wqxga-32gb-ram-512gb-ssd-mac-os-negru/",
+"pret_vechi": null
+},
+{
+"titlu": "Apple Laptop Apple MacBook Air 13.6 inch Liquid Retina, Procesor Apple M5 10-core, 32GB RAM, 512GB SSD, Mac OS",
+"pret": 9521.99,
+"imagine": "https://www.dwyn.ro/images/products/img_202606122129/426076/full/apple-ma13-m5-cpu-10-gpu-10-32gb-512-int-bk-z1l6000g1-timbru-verde-3-5-lei-1376416.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Flaptop-notebook%2Fapple%2F426076-laptop-apple-macbook-air-13-6-inch-liquid-retina-procesor-apple-m5-10-core-32gb-ram-512gb-ssd-mac-os%2F",
+"magazin": "dwyn.ro",
+"id": "IrCSRIly1POe",
+"brand": "Apple",
+"url_magazin": "https://www.dwyn.ro/laptop-notebook/apple/426076-laptop-apple-macbook-air-13-6-inch-liquid-retina-procesor-apple-m5-10-core-32gb-ram-512gb-ssd-mac-os/",
 "pret_vechi": null
 },
 {
@@ -5672,48 +5697,36 @@
 "verificat": "2026-11-04"
 },
 {
-"titlu": "Dell Laptop Dell Pro 14 Plus PB14255, 14 inch, WUXGA, procesor AMD Ryzen AI 7 PRO 350 (16M Cache, pana la 5.0 GHz), 32GB",
-"pret": 10741.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202606122129/426616/full/dell-laptop-dell-pro-14-plus-pb14255-14-inch-wuxga-procesor-amd-ryzen-ai-7-pro-350-16m-cache-pana-la-5-0-ghz-32gb-ram-1tb-ssd-amd-radeon-860m-graphics-windows-11-pro-argintiu-1393855.png",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Flaptop-notebook%2Fdell%2F426616-laptop-dell-pro-14-plus-pb14255-14-inch-wuxga-procesor-amd-ryzen-ai-7-pro-350-16m-cache-pana-la-5-0-ghz-32gb-ram-1tb-ssd-amd-radeon-860m-graphics-windows-11-pro-argintiu%2F",
+"titlu": "Lenovo Laptop Lenovo Yoga 7 2-in-1 cu procesor AMD Ryzen AI 9 465, 16 inch, WUXGA, OLED, Touchscreen, 32GB RAM, 1TB SSD,",
+"pret": 10432.99,
+"imagine": "https://www.dwyn.ro/images/products/img_202606122129/426682/full/lenovo-yg7-2-in-1-16t-r7-ai-445-32-1tb-uma-dos-83tf003hrm-timbru-verde-3-5-lei-1379782.png",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Flaptop-notebook%2Flenovo%2F426682-laptop-lenovo-yoga-7-2-in-1-cu-procesor-amd-ryzen-ai-9-465-16-inch-wuxga-oled-touchscreen-32gb-ram-1tb-ssd-placa-video-integrata-auriu%2F",
 "magazin": "dwyn.ro",
-"id": "ZSYf-VOJkYby",
-"brand": "Dell",
-"url_magazin": "https://www.dwyn.ro/laptop-notebook/dell/426616-laptop-dell-pro-14-plus-pb14255-14-inch-wuxga-procesor-amd-ryzen-ai-7-pro-350-16m-cache-pana-la-5-0-ghz-32gb-ram-1tb-ssd-amd-radeon-860m-graphics-windows-11-pro-argintiu/",
+"id": "DC3VPzddCiY_",
+"brand": "Lenovo",
+"url_magazin": "https://www.dwyn.ro/laptop-notebook/lenovo/426682-laptop-lenovo-yoga-7-2-in-1-cu-procesor-amd-ryzen-ai-9-465-16-inch-wuxga-oled-touchscreen-32gb-ram-1tb-ssd-placa-video-integrata-auriu/",
 "pret_vechi": null
 },
 {
-"titlu": "MSI Laptop MSI Prestige 16 AI+ C3MG-264XRO, procesor Intel Core Ultra X7 358H, 16 inch, 2.8K, RAM 32GB, SSD 2TB, Intel A",
-"pret": 11509.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202606122129/478960/full/msi-laptop-msi-prestige-16-ai-plus-c3mg-264xro-procesor-intel-core-ultra-x7-358h-16-inch-2-8k-ram-32gb-ssd-2tb-intel-arc-b390-no-os-gri-inchis-1514683.png",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Flaptop-notebook%2Fmsi%2F478960-laptop-msi-prestige-16-ai-plus-c3mg-264xro-procesor-intel-core-ultra-x7-358h-16-inch-2-8k-ram-32gb-ssd-2tb-intel-arc-b390-no-os-gri-inchis%2F",
+"titlu": "Acer Laptop Acer Swift Go 16 AI SFG16-I71-97S0, Intel Core Ultra 9 386H, 16 inch WUXGA, 32GB RAM, 1TB SSD, Windows 11 Ho",
+"pret": 10653.99,
+"imagine": "https://www.dwyn.ro/images/products/img_202611101603/456052/full/acer-laptop-acer-swift-go-16-ai-sfg16-i71-97s0-intel-core-ultra-9-386h-16-inch-wuxga-32gb-ram-1tb-ssd-windows-11-home-gri-1559323.png",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Flaptop-notebook%2Facer%2F456052-laptop-acer-swift-go-16-ai-sfg16-i71-97s0-intel-core-ultra-9-386h-16-inch-wuxga-32gb-ram-1tb-ssd-windows-11-home-gri%2F",
 "magazin": "dwyn.ro",
-"id": "EVcOYYXrqlwR",
-"brand": "MSI",
-"url_magazin": "https://www.dwyn.ro/laptop-notebook/msi/478960-laptop-msi-prestige-16-ai-plus-c3mg-264xro-procesor-intel-core-ultra-x7-358h-16-inch-2-8k-ram-32gb-ssd-2tb-intel-arc-b390-no-os-gri-inchis/",
-"pret_vechi": null,
-"verificat": "2026-11-04"
-},
-{
-"titlu": "Dell Laptop Dell Pro 13 Plus PB13250, Intel Core Ultra 7 268V, 13.3 inch WUXGA, 32GB RAM, 512GB SSD, Windows 11 Pro, Arg",
-"pret": 11953.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202508191322/309298/full/dell-laptop-dell-pro-13-plus-pb13250-intel-core-ultra-7-268v-13-3-inch-wuxga-32gb-ram-512gb-ssd-windows-11-pro-argintiu-834251.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Flaptop-notebook%2Fdell%2F309298-laptop-dell-pro-13-plus-pb13250-intel-core-ultra-7-268v-13-3-inch-wuxga-32gb-ram-512gb-ssd-windows-11-pro-argintiu-int-keyboard%2F",
-"magazin": "dwyn.ro",
-"id": "frvYbmPdci3l",
-"brand": "Dell",
-"url_magazin": "https://www.dwyn.ro/laptop-notebook/dell/309298-laptop-dell-pro-13-plus-pb13250-intel-core-ultra-7-268v-13-3-inch-wuxga-32gb-ram-512gb-ssd-windows-11-pro-argintiu-int-keyboard/",
+"id": "8UHM5wJUn9C8",
+"brand": "Acer",
+"url_magazin": "https://www.dwyn.ro/laptop-notebook/acer/456052-laptop-acer-swift-go-16-ai-sfg16-i71-97s0-intel-core-ultra-9-386h-16-inch-wuxga-32gb-ram-1tb-ssd-windows-11-home-gri/",
 "pret_vechi": null
 },
 {
-"titlu": "Dell Laptop Dell Pro 14 Plus PB14250, 14 inch 1920 x 1200 Full HD+, Intel Core Ultra 7 268V, 32 GB RAM, 1 TB SSD, Intel",
-"pret": 12293.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202508191322/342164/full/dell-laptop-dell-pro-14-plus-pb14250-14-inch-1920-x-1200-full-hd-plus-intel-core-ultra-7-268v-32-gb-ram-1-tb-ssd-intel-arc-graphics-windows-11-pro-927506.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Flaptop-notebook%2Fdell%2F342164-laptop-dell-pro-14-plus-pb14250-14-inch-1920-x-1200-full-hd-plus-intel-core-ultra-7-268v-32-gb-ram-1-tb-ssd-intel-arc-graphics-windows-11-pro%2F",
+"titlu": "Apple Laptop Apple MacBook Air 13.6 inch, M5 10-core CPU, 32GB RAM, 1TB SSD, WQXGA, Mac OS",
+"pret": 11096.99,
+"imagine": "https://www.dwyn.ro/images/products/img_202512311121/410335/full/apple-apple-mba-13-6-midnight-m5-10c-cpu-10c-gpu-32gb-1tb-int-english-kybrd-ro-manual-1310335.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Flaptop-notebook%2Fapple%2F410335-laptop-apple-macbook-air-13-6-inch-m5-10-core-cpu-32gb-ram-1tb-ssd-wqxga-mac-os%2F",
 "magazin": "dwyn.ro",
-"id": "26OIuRMA4BFV",
-"brand": "Dell",
-"url_magazin": "https://www.dwyn.ro/laptop-notebook/dell/342164-laptop-dell-pro-14-plus-pb14250-14-inch-1920-x-1200-full-hd-plus-intel-core-ultra-7-268v-32-gb-ram-1-tb-ssd-intel-arc-graphics-windows-11-pro/",
+"id": "3FBBiDfiTeTt",
+"brand": "Apple",
+"url_magazin": "https://www.dwyn.ro/laptop-notebook/apple/410335-laptop-apple-macbook-air-13-6-inch-m5-10-core-cpu-32gb-ram-1tb-ssd-wqxga-mac-os/",
 "pret_vechi": null
 }
 ],
@@ -5729,7 +5742,7 @@
 "titlu": "Laptopuri de gaming",
 "nota": null,
 "in_text": "\\bgaming\\b",
-"actualizat": "2026-11-17",
+"actualizat": "2026-11-25",
 "feeduri": [
 {
 "id": 5717,
@@ -5847,7 +5860,7 @@
 "titlu": "Laptopuri cu Intel Core i7",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-17",
+"actualizat": "2026-11-25",
 "feeduri": [
 {
 "id": 1096,
@@ -5865,7 +5878,7 @@
 "produse": [
 {
 "titlu": "Laptop Dell Pro 15 Essential PV15250 (Procesor Intel® Core™ i7-1355U (12M Cache, up to 5.00 GHz) 15.6inch FHD, 16GB, 1TB",
-"pret": 4749.99,
+"pret": 4399.99,
 "imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4293%2F4293833%2Flaptop-dell-pro-15-essential-p-69170fb9bc25d.png&type=auto&width=500&sign=pMw_DcJqdTwmo9MEu7eVcmpxLt5s3SUPxf34g7171og",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Fportabile-laptopuri-notebook%2Fdell-laptop-dell-pro-15-essential-pv15250-procesor-intel-core-i7-1355u-12m-cache-up-to-5.00-ghz-15.6-fhd-16gb-1tb-ssd-intel-iris-xe-graphics-ubuntu-negru-4293833.html",
 "magazin": "evomag.ro",
@@ -5876,15 +5889,14 @@
 },
 {
 "titlu": "Laptop Gaming Lenovo LOQ 15IRX10 (Procesor Intel® Core™ i7-14700HX (33M Cache, up to 5.50 GHz), 15.6inch FHD IPS 144Hz,",
-"pret": 8399.99,
-"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4321%2F4321455%2Flaptop-gaming-lenovo-loq-15irx-6874f95f0b599.jpg&type=auto&width=500&sign=fLrYDoz9QphiABYZy4R84cRJ6M-5xApSFd5XLhnWg4A",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Fportabile-laptopuri-notebook%2Flenovo-laptop-gaming-lenovo-loq-15irx10-procesor-intel-core-i7-14700hx-33m-cache-up-to-5.50-ghz-15.6-fhd-ips-144hz-16gb-ddr5-1tb-ssd-nvidia-geforce-rtx-5050-8gb-gri-4321455.html",
+"pret": 7799.99,
+"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4323%2F4323665%2Flaptop-gaming-lenovo-loq-15irx-6874f95f0b599.jpg&type=auto&width=500&sign=qfJl6pbdPUx9-YOJQh8XvCGfNdjjuiP6cpuUWiijZ2U",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Fportabile-laptopuri-notebook%2Flenovo-laptop-gaming-lenovo-loq-15irx10-procesor-intel-core-i7-14700hx-33m-cache-up-to-5.50-ghz-15.6-fhd-ips-144hz-16gb-ddr5-512gb-ssd-nvidia-geforce-rtx-5050-8gb-gri-4323665.html",
 "magazin": "evomag.ro",
-"id": "w5RgDE2QMM3v",
+"id": "C2D1MNg4IpIX",
 "brand": "Lenovo",
-"url_magazin": "https://www.evomag.ro/portabile-laptopuri-notebook/lenovo-laptop-gaming-lenovo-loq-15irx10-procesor-intel-core-i7-14700hx-33m-cache-up-to-5.50-ghz-15.6-fhd-ips-144hz-16gb-ddr5-1tb-ssd-nvidia-geforce-rtx-5050-8gb-gri-4321455.html",
-"pret_vechi": null,
-"verificat": "2026-11-05"
+"url_magazin": "https://www.evomag.ro/portabile-laptopuri-notebook/lenovo-laptop-gaming-lenovo-loq-15irx10-procesor-intel-core-i7-14700hx-33m-cache-up-to-5.50-ghz-15.6-fhd-ips-144hz-16gb-ddr5-512gb-ssd-nvidia-geforce-rtx-5050-8gb-gri-4323665.html",
+"pret_vechi": null
 },
 {
 "titlu": "Laptop Gaming Lenovo Legion 5 15IRX10 (Procesor Intel® Core™ i7-14700HX (33M Cache, up to 5.50 GH), 15.1inch WQXGA OLED",
@@ -5956,7 +5968,7 @@
 "titlu": "Laptopuri cu Intel Core i5",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-17",
+"actualizat": "2026-11-25",
 "feeduri": [
 {
 "id": 1096,
@@ -5992,6 +6004,17 @@
 "pret_vechi": null
 },
 {
+"titlu": "Laptop Lenovo V15 G5 IRL (Procesor Intel® Core™ i5-13420H (12M Cache, up to 4.60 GHz), 15.6inch FHD, 16GB DDR5, 512GB SS",
+"pret": 6499.99,
+"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4323%2F4323114%2Flaptop-v15-g5-irl-i5-13420h-15-6a85a52772694.jpg&type=auto&width=500&sign=GqEWH_fkHx_LbNgOgFiN_ZuTNjFugDtK2zuT6UKEVAU",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Fportabile-laptopuri-notebook%2Flenovo-laptop-lenovo-v15-g5-irl-procesor-intel-core-i5-13420h-12m-cache-up-to-4.60-ghz-15.6-fhd-16gb-ddr5-512gb-ssd-intel-uhd-graphics-windows-11-pro-negru-4323114.html",
+"magazin": "evomag.ro",
+"id": "cV7lidOrDVs0",
+"brand": "Lenovo",
+"url_magazin": "https://www.evomag.ro/portabile-laptopuri-notebook/lenovo-laptop-lenovo-v15-g5-irl-procesor-intel-core-i5-13420h-12m-cache-up-to-4.60-ghz-15.6-fhd-16gb-ddr5-512gb-ssd-intel-uhd-graphics-windows-11-pro-negru-4323114.html",
+"pret_vechi": null
+},
+{
 "titlu": "Laptop Dell Pro 15 Essential PV15250 (Procesor Intel® Core™ i5-1334U (12M Cache, up to 4.60 GHz) 15.6inch FHD, 16GB DDR5",
 "pret": 6499.99,
 "imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4322%2F4322214%2Flaptop-dell-pro-15-essential-p-69170fb9bc25d.png&type=auto&width=500&sign=sCFgJSKPbf44LTS0bCA3fn_-NysGHCUufOK_24UZqpE",
@@ -6002,17 +6025,6 @@
 "url_magazin": "https://www.evomag.ro/portabile-laptopuri-notebook/dell-laptop-dell-pro-15-essential-pv15250-procesor-intel-core-i5-1334u-12m-cache-up-to-4.60-ghz-15.6-fhd-16gb-ddr5-512gb-ssd-fgp-intel-iris-xe-graphics-windows-11-pro-negru-4322214.html",
 "pret_vechi": null,
 "verificat": "2026-11-05"
-},
-{
-"titlu": "Laptop Lenovo V15 G5 IRL (Procesor Intel® Core™ i5-13420H (12M Cache, up to 4.60 GHz), 15.6inch FHD, 16GB DDR5, 512GB SS",
-"pret": 6541.99,
-"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4323%2F4323114%2Flaptop-v15-g5-irl-i5-13420h-15-6a85a52772694.jpg&type=auto&width=500&sign=GqEWH_fkHx_LbNgOgFiN_ZuTNjFugDtK2zuT6UKEVAU",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Fportabile-laptopuri-notebook%2Flenovo-laptop-lenovo-v15-g5-irl-procesor-intel-core-i5-13420h-12m-cache-up-to-4.60-ghz-15.6-fhd-16gb-ddr5-512gb-ssd-intel-uhd-graphics-windows-11-pro-negru-4323114.html",
-"magazin": "evomag.ro",
-"id": "cV7lidOrDVs0",
-"brand": "Lenovo",
-"url_magazin": "https://www.evomag.ro/portabile-laptopuri-notebook/lenovo-laptop-lenovo-v15-g5-irl-procesor-intel-core-i5-13420h-12m-cache-up-to-4.60-ghz-15.6-fhd-16gb-ddr5-512gb-ssd-intel-uhd-graphics-windows-11-pro-negru-4323114.html",
-"pret_vechi": null
 },
 {
 "titlu": "Laptop Gaming ASUS TUF F16 FX610JH (Procesor Intel® Core™ i5-14450HX (20M Cache, up to 4.80 GHz), 16inch FHD+ 144Hz, 16G",
@@ -6037,7 +6049,7 @@
 "titlu": "Laptopuri cu AMD Ryzen 7",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-17",
+"actualizat": "2026-11-25",
 "feeduri": [
 {
 "id": 8969,
@@ -6050,6 +6062,17 @@
 ],
 "produse": [
 {
+"titlu": "Laptop Lenovo - IdeaPad Slim 3, 15.6'', FHD, Ryzen 7, 16GB/512GB",
+"pret": 3338.99,
+"imagine": "https://www.ozone.ro/media/catalog/product/l/a/laptop_lenovo_ideapad_slim_3_15_6_fhd_ryzen_7_16gb_512gb_1781708108_0_2.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ozone.ro%2Fproduct%2Flaptop-lenovo-ideapad-slim-3-15-6-fhd-ryzen-7-16gb-512gb-1011807%2F",
+"magazin": "ozone.ro",
+"id": "bgT1WRPzlq28",
+"brand": "Lenovo",
+"url_magazin": "https://www.ozone.ro/product/laptop-lenovo-ideapad-slim-3-15-6-fhd-ryzen-7-16gb-512gb-1011807/",
+"pret_vechi": null
+},
+{
 "titlu": "Laptop ASUS - Vivobook M1502NAQ, 15.6'', FHD, Ryzen 7, 24GB/512GB",
 "pret": 4240.99,
 "imagine": "https://www.ozone.ro/media/catalog/product/l/a/laptop_asus_vivobook_m1502naq_15_6_fhd_ryzen_7_16gb_512gb_1774881794_0_1.jpg",
@@ -6058,18 +6081,6 @@
 "id": "TVECX0FcU-iB",
 "brand": "ASUS",
 "url_magazin": "https://www.ozone.ro/product/laptop-asus-vivobook-m1502naq-15-6-fhd-ryzen-7-24gb-512gb/",
-"pret_vechi": null,
-"verificat": "2026-11-04"
-},
-{
-"titlu": "Laptop ASUS - Vivobook M1502NAQ, 15.6'', FHD, Ryzen 7, 32GB/512GB",
-"pret": 4771.99,
-"imagine": "https://www.ozone.ro/media/catalog/product/l/a/laptop_asus_vivobook_m1502naq_15_6_fhd_ryzen_7_16gb_512gb_1774881794_0_2.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ozone.ro%2Fproduct%2Flaptop-asus-vivobook-m1502naq-15-6-fhd-ryzen-7-32gb-512gb%2F",
-"magazin": "ozone.ro",
-"id": "gCZyyAIH5bfD",
-"brand": "ASUS",
-"url_magazin": "https://www.ozone.ro/product/laptop-asus-vivobook-m1502naq-15-6-fhd-ryzen-7-32gb-512gb/",
 "pret_vechi": null,
 "verificat": "2026-11-04"
 },
@@ -6086,18 +6097,6 @@
 "verificat": "2026-11-04"
 },
 {
-"titlu": "Lenovo Laptop 2 in 1 Lenovo IdeaPad 5 14AHP11, AMD Ryzen 7 250, 14 inch WUXGA Touch, 16GB RAM, 1TB SSD, Free DOS, Albast",
-"pret": 5431.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202606122129/454879/full/lenovo-laptop-2-in-1-lenovo-ideapad-5-14ahp11-amd-ryzen-7-250-14-inch-wuxga-touch-16gb-ram-1tb-ssd-free-dos-albastru-1518397.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Flaptop-notebook%2Flenovo%2F454879-laptop-2-in-1-lenovo-ideapad-5-14ahp11-amd-ryzen-7-250-14-inch-wuxga-touch-16gb-ram-1tb-ssd-free-dos-albastru%2F",
-"magazin": "dwyn.ro",
-"id": "nyCeL0RK-6G7",
-"brand": "Lenovo",
-"url_magazin": "https://www.dwyn.ro/laptop-notebook/lenovo/454879-laptop-2-in-1-lenovo-ideapad-5-14ahp11-amd-ryzen-7-250-14-inch-wuxga-touch-16gb-ram-1tb-ssd-free-dos-albastru/",
-"pret_vechi": null,
-"verificat": "2026-11-04"
-},
-{
 "titlu": "Laptop de gaming Acer – Nitro V 15 AI, 15.6'', FHD, Ryzen 7, 165Hz, negru, 24GB/512GB",
 "pret": 5469.99,
 "imagine": "https://www.ozone.ro/media/catalog/product/g/e/geyming_laptop_acer_nitro_v_15_ai_15_6_fhd_ryzen_7_165hz_cheren_1782826884_0_1.jpg",
@@ -6106,18 +6105,6 @@
 "id": "lTcrFJAsrJN1",
 "brand": "Acer",
 "url_magazin": "https://www.ozone.ro/product/laptop-de-gaming-acer-nitro-v-15-ai-15-6-fhd-ryzen-7-165hz-cheren-24gb-512gb/",
-"pret_vechi": null,
-"verificat": "2026-11-04"
-},
-{
-"titlu": "Dell Laptop Dell Pro 14 Essential PV14255, Procesor AMD Ryzen 7 250 (16M Cache, pana la 5.10 GHz), 14 inch, Full HD+, 16",
-"pret": 5974.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202606122129/456127/full/dell-laptop-dell-pro-14-essential-pv14255-procesor-amd-ryzen-7-250-16m-cache-pana-la-5-10-ghz-14-inch-full-hd-plus-16gb-ddr5-512gb-ssd-amd-radeon-780m-graphics-windows-11-pro-negru-1511470.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Flaptop-notebook%2Fdell%2F456127-laptop-dell-pro-14-essential-pv14255-procesor-amd-ryzen-7-250-16m-cache-pana-la-5-10-ghz-14-inch-full-hd-plus-16gb-ddr5-512gb-ssd-amd-radeon-780m-graphics-windows-11-pro-negru%2F",
-"magazin": "dwyn.ro",
-"id": "Qbeo8Wac1F61",
-"brand": "Dell",
-"url_magazin": "https://www.dwyn.ro/laptop-notebook/dell/456127-laptop-dell-pro-14-essential-pv14255-procesor-amd-ryzen-7-250-16m-cache-pana-la-5-10-ghz-14-inch-full-hd-plus-16gb-ddr5-512gb-ssd-amd-radeon-780m-graphics-windows-11-pro-negru/",
 "pret_vechi": null,
 "verificat": "2026-11-04"
 },
@@ -6145,17 +6132,6 @@
 "pret_vechi": null
 },
 {
-"titlu": "Laptop 2-в-1 Lenovo - IdeaPad 5, 14'', WUXGA, Ryzen 7, 16GB/512GB, Touch",
-"pret": 6099.99,
-"imagine": "https://www.ozone.ro/media/catalog/product/l/a/laptop_2_v_1_lenovo_ideapad_5_14_wuxga_ryzen_7_16gb_512gb_touch_1781706706_0.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ozone.ro%2Fproduct%2Flaptop-2-v-1-lenovo-ideapad-5-14-wuxga-ryzen-7-16gb-512gb-touch%2F",
-"magazin": "ozone.ro",
-"id": "7siLEZPYNJrB",
-"brand": "Lenovo",
-"url_magazin": "https://www.ozone.ro/product/laptop-2-v-1-lenovo-ideapad-5-14-wuxga-ryzen-7-16gb-512gb-touch/",
-"pret_vechi": null
-},
-{
 "titlu": "Lenovo Laptop Lenovo ThinkBook 16 G9 AHP, 16, WUXGA IPS, Procesor AMD Ryzen 7 250 (16M Cache, up to 5.10 GHz), 16GB DDR5",
 "pret": 6142.99,
 "imagine": "https://www.dwyn.ro/images/products/img_202606122129/483496/full/lenovo-lenovo-thinkbook-16-g9-amd-ryzen-7-250-16inch-wuxga-16gb-512gb-ssd-noos-1524367.jpg",
@@ -6168,71 +6144,58 @@
 "verificat": "2026-11-04"
 },
 {
-"titlu": "Laptop gaming ASUS - TUF F16 FA607NUG-RL117, 16'', WUXGA, Ryzen 7, 144 Hz, RTX 4050",
-"pret": 6369.99,
-"imagine": "https://www.ozone.ro/media/catalog/product/g/e/geyming_laptop_asus_tuf_f16_fa607nug_rl117_16_wuxga_ryzen_7_144_hz_rtx_4050_1787837312_0_2.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ozone.ro%2Fproduct%2Flaptop-gaming-asus-tuf-f16-fa607nug-rl117-16-wuxga-ryzen-7-144-hz-rtx-4050-1037057%2F",
+"titlu": "Gaming laptop MSI - Cyborg A15 AI B2HWFKG, 15,6'', FHD, Ryzen 7, 144Hz, 24GB/512GB",
+"pret": 6419.99,
+"imagine": "https://www.ozone.ro/media/catalog/product/g/e/geyming_laptop_msi_cyborg_a15_ai_b2hwfkg_15_6_fhd_ryzen_7_144hz_1764174671_0_1.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ozone.ro%2Fproduct%2Fgaming-laptop-msi-cyborg-a15-ai-b2hwfkg-15-6-fhd-ryzen-7-144hz-24gb-512gb%2F",
 "magazin": "ozone.ro",
-"id": "KlRc7_TujnM9",
+"id": "axtuD2j2ocre",
+"brand": "MSI",
+"url_magazin": "https://www.ozone.ro/product/gaming-laptop-msi-cyborg-a15-ai-b2hwfkg-15-6-fhd-ryzen-7-144hz-24gb-512gb/",
+"pret_vechi": null
+},
+{
+"titlu": "Laptop de gaming ASUS - TUF Gaming A16 FA608UHI, 16\", WUXGA, 144Hz, Ryzen 7, RTX 5050, 16GB/512GB",
+"pret": 6469.99,
+"imagine": "https://www.ozone.ro/media/catalog/product/g/e/geyming_laptop_asus_tuf_gaming_a16_fa608uhi_16_wuxga_144hz_ryzen_7_rtx_5050_1792652903_0.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ozone.ro%2Fproduct%2Flaptop-de-gaming-asus-tuf-gaming-a16-fa608uhi-16-wuxga-144hz-ryzen-7-rtx-5050%2F",
+"magazin": "ozone.ro",
+"id": "JbkrDkjoOqJO",
 "brand": "ASUS",
-"url_magazin": "https://www.ozone.ro/product/laptop-gaming-asus-tuf-f16-fa607nug-rl117-16-wuxga-ryzen-7-144-hz-rtx-4050-1037057/",
+"url_magazin": "https://www.ozone.ro/product/laptop-de-gaming-asus-tuf-gaming-a16-fa608uhi-16-wuxga-144hz-ryzen-7-rtx-5050/",
+"pret_vechi": 6849.99
+},
+{
+"titlu": "HP Laptop HP 200 G2a, AMD Ryzen 7 250, 16 inch WUXGA, 24GB RAM, 512GB SSD, Free DOS, Argintiu",
+"pret": 7341.99,
+"imagine": "https://www.dwyn.ro/images/products/img_202611101603/457015/full/hp-laptop-hp-200-g2a-amd-ryzen-7-250-16-inch-wuxga-24gb-ram-512gb-ssd-free-dos-argintiu-1559395.png",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Flaptop-notebook%2Fhp%2F457015-laptop-hp-200-g2a-amd-ryzen-7-250-16-inch-wuxga-24gb-ram-512gb-ssd-free-dos-argintiu%2F",
+"magazin": "dwyn.ro",
+"id": "js33uuHwktU4",
+"brand": "HP",
+"url_magazin": "https://www.dwyn.ro/laptop-notebook/hp/457015-laptop-hp-200-g2a-amd-ryzen-7-250-16-inch-wuxga-24gb-ram-512gb-ssd-free-dos-argintiu/",
 "pret_vechi": null
 },
 {
-"titlu": "Lenovo Laptop Lenovo ThinkBook 16 G9 AHP, AMD Ryzen 7 250, 16 inch WUXGA, 16GB RAM, 512GB SSD, AMD Radeon 780M, Windows",
-"pret": 7134.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202606122129/483499/full/lenovo-lenovo-thinkbook-16-g9-amd-ryzen-7-250-16inch-wuxga-16gb-512gb-ssd-w11p-1524331.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Flaptop-notebook%2Flenovo%2F483499-laptop-lenovo-thinkbook-16-g9-ahp-amd-ryzen-7-250-16-inch-wuxga-16gb-ram-512gb-ssd-amd-radeon-780m-windows-11-pro-gri-artic%2F",
+"titlu": "Acer Laptop Gaming Acer Nitro V 15 ANV15-A31-R2AW cu procesor AMD Ryzen 7 170 pana la 4.75GHz, 15.6, Full HD, IPS 165Hz,",
+"pret": 10375.99,
+"imagine": "https://www.dwyn.ro/images/products/img_202606122129/481741/full/acer-laptop-gaming-acer-nitro-v-15-anv15-a31-r2aw-cu-procesor-amd-ryzen-7-170-pana-la-4-75ghz-15-6-full-hd-ips-165hz-16gb-ddr5-ram-512gb-ssd-nvidia-geforce-rtx-5050-8gb-gddr7-no-os-negru-1531894.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Flaptop-notebook%2Facer%2F481741-laptop-gaming-acer-nitro-v-15-anv15-a31-r2aw-cu-procesor-amd-ryzen-7-170-pana-la-4-75ghz-15-6-full-hd-ips-165hz-16gb-ddr5-ram-512gb-ssd-nvidia-geforce-rtx-5050-8gb-gddr7-no-os-negru%2F",
 "magazin": "dwyn.ro",
-"id": "w0jcEDveFInn",
-"brand": "Lenovo",
-"url_magazin": "https://www.dwyn.ro/laptop-notebook/lenovo/483499-laptop-lenovo-thinkbook-16-g9-ahp-amd-ryzen-7-250-16-inch-wuxga-16gb-ram-512gb-ssd-amd-radeon-780m-windows-11-pro-gri-artic/",
-"pret_vechi": null,
-"verificat": "2026-11-04"
-},
-{
-"titlu": "Gigabyte Laptop Gaming Gigabyte A16 3VH, 16 inch, WUXGA 165Hz, Procesor AMD Ryzen 7 260 (16M Cache, pana la 5.10 GHz), 1",
-"pret": 7186.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202606122129/426862/full/gigabyte-laptop-gaming-gigabyte-a16-3vh-16-inch-wuxga-165hz-procesor-amd-ryzen-7-260-16m-cache-pana-la-5-10-ghz-16gb-ddr5-512gb-ssd-nvidia-geforce-rtx-5060-8gb-no-os-negru-1396906.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Flaptop-notebook%2Fgigabyte%2F426862-laptop-gaming-gigabyte-a16-3vh-16-inch-wuxga-165hz-procesor-amd-ryzen-7-260-16m-cache-pana-la-5-10-ghz-16gb-ddr5-512gb-ssd-nvidia-geforce-rtx-5060-8gb-no-os-negru%2F",
-"magazin": "dwyn.ro",
-"id": "kFCRLYfnslRH",
-"brand": "Gigabyte",
-"url_magazin": "https://www.dwyn.ro/laptop-notebook/gigabyte/426862-laptop-gaming-gigabyte-a16-3vh-16-inch-wuxga-165hz-procesor-amd-ryzen-7-260-16m-cache-pana-la-5-10-ghz-16gb-ddr5-512gb-ssd-nvidia-geforce-rtx-5060-8gb-no-os-negru/",
+"id": "dBc5etZgUh2o",
+"brand": "Acer",
+"url_magazin": "https://www.dwyn.ro/laptop-notebook/acer/481741-laptop-gaming-acer-nitro-v-15-anv15-a31-r2aw-cu-procesor-amd-ryzen-7-170-pana-la-4-75ghz-15-6-full-hd-ips-165hz-16gb-ddr5-ram-512gb-ssd-nvidia-geforce-rtx-5050-8gb-gddr7-no-os-negru/",
 "pret_vechi": null
 },
 {
-"titlu": "Asus Laptop Asus Gaming 16'' TUF A16 FA608UMI, FHD+ 144Hz, Procesor AMD Ryzen 7 260 (16M Cache, up to 5.1 GHz), 16GB RAM",
-"pret": 7937.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202606122129/456976/full/asus-nb-fa608umi-r7-260-16-16gb-512gb-fa608umi-tu166-asus-1453651.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Flaptop-notebook%2Fasus%2F456976-laptop-asus-gaming-16-tuf-a16-fa608umi-fhd-plus-144hz-procesor-amd-ryzen-7-260-16m-cache-up-to-5-1-ghz-16gb-ram-512gb-ssd-geforce-rtx-5060-8gb-no-os-gri%2F",
+"titlu": "Acer Laptop Gaming Acer Nitro V 16 AI ANV16-42-R910 cu procesor AMD Ryzen 7 260 pana la 5.1GHz, 16, WUXGA IPS 180Hz, 16G",
+"pret": 12355.99,
+"imagine": "https://www.dwyn.ro/images/products/img_202606122129/478165/full/acer-laptop-gaming-acer-nitro-v-16-ai-anv16-42-r910-cu-procesor-amd-ryzen-7-260-pana-la-5-1ghz-16-wuxga-ips-180hz-16gb-ddr5-ram-1tb-ssd-nvidia-geforce-rtx-5070-8gb-gddr7-no-os-negru-1532530.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Flaptop-notebook%2Facer%2F478165-laptop-gaming-acer-nitro-v-16-ai-anv16-42-r910-cu-procesor-amd-ryzen-7-260-pana-la-5-1ghz-16-wuxga-ips-180hz-16gb-ddr5-ram-1tb-ssd-nvidia-geforce-rtx-5070-8gb-gddr7-no-os-negru%2F",
 "magazin": "dwyn.ro",
-"id": "AsazZqZbbUEr",
-"brand": "Asus",
-"url_magazin": "https://www.dwyn.ro/laptop-notebook/asus/456976-laptop-asus-gaming-16-tuf-a16-fa608umi-fhd-plus-144hz-procesor-amd-ryzen-7-260-16m-cache-up-to-5-1-ghz-16gb-ram-512gb-ssd-geforce-rtx-5060-8gb-no-os-gri/",
-"pret_vechi": null,
-"verificat": "2026-11-04"
-},
-{
-"titlu": "Asus Laptop Asus TUF Gaming FA401UH-RG004W, AMD Ryzen 7 260, 14, 2,5K, 165Hz, 16GB RAM, 512GB, Windows 11 Home, RTX 5050",
-"pret": 8206.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202512311121/367229/full/asus-asus-tuf-gaming-fa401uh-rg004w-r7-260-14-2-5k-165hz-16gb-512gb-w11h-rtx-5050-1074479.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Flaptop-notebook%2Fasus%2F367229-laptop-asus-tuf-gaming-fa401uh-rg004w-amd-ryzen-7-260-14-2-5k-165hz-16gb-ram-512gb-windows-11-home-rtx-5050-negru%2F",
-"magazin": "dwyn.ro",
-"id": "mdiZBwKlTEqv",
-"brand": "Asus",
-"url_magazin": "https://www.dwyn.ro/laptop-notebook/asus/367229-laptop-asus-tuf-gaming-fa401uh-rg004w-amd-ryzen-7-260-14-2-5k-165hz-16gb-ram-512gb-windows-11-home-rtx-5050-negru/",
-"pret_vechi": null
-},
-{
-"titlu": "Dell Laptop Dell Mobile Workstation, 14 Inch FHD+, Ryzen 7 PRO 350, 16GB RAM, 512GB SSD, Windows 11 Pro, Negru",
-"pret": 8237.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202606122129/422137/full/dell-dl-mc14255-fhd-plus-r7pro-350-16-512-w11p-1379659.png",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Flaptop-notebook%2Fdell%2F422137-laptop-dell-mobile-workstation-14-inch-fhd-plus-ryzen-7-pro-350-16gb-ram-512gb-ssd-windows-11-pro-negru%2F",
-"magazin": "dwyn.ro",
-"id": "tHB3QakSIhbJ",
-"brand": "Dell",
-"url_magazin": "https://www.dwyn.ro/laptop-notebook/dell/422137-laptop-dell-mobile-workstation-14-inch-fhd-plus-ryzen-7-pro-350-16gb-ram-512gb-ssd-windows-11-pro-negru/",
+"id": "VufKgFbIBLy6",
+"brand": "Acer",
+"url_magazin": "https://www.dwyn.ro/laptop-notebook/acer/478165-laptop-gaming-acer-nitro-v-16-ai-anv16-42-r910-cu-procesor-amd-ryzen-7-260-pana-la-5-1ghz-16-wuxga-ips-180hz-16gb-ddr5-ram-1tb-ssd-nvidia-geforce-rtx-5070-8gb-gddr7-no-os-negru/",
 "pret_vechi": null
 }
 ],
@@ -6260,7 +6223,7 @@
 "titlu": "Telefoane cu 256 GB",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-17",
+"actualizat": "2026-11-25",
 "feeduri": [
 {
 "id": 1539,
@@ -6333,6 +6296,17 @@
 "verificat": "2026-11-04"
 },
 {
+"titlu": "Motorola Telefon mobil Motorola G86, 6.67 inch, Dual SIM, 256GB, 8GB RAM, 5G, Pantone Spellbound",
+"pret": 1582.99,
+"imagine": "https://www.dwyn.ro/images/products/img_202508191322/325864/full/motorola-telefon-mobil-motorola-g86-dual-sim-256gb-8gb-ram-5g-pantone-spellbound-814603.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Ftelefoane-gsm%2Fmotorola%2F325864-telefon-mobil-motorola-g86-6-67-inch-dual-sim-256gb-8gb-ram-5g-pantone-spellbound%2F",
+"magazin": "dwyn.ro",
+"id": "5_r04-6oCHSq",
+"brand": "Motorola",
+"url_magazin": "https://www.dwyn.ro/telefoane-gsm/motorola/325864-telefon-mobil-motorola-g86-6-67-inch-dual-sim-256gb-8gb-ram-5g-pantone-spellbound/",
+"pret_vechi": null
+},
+{
 "titlu": "Motorola Telefon mobil Motorola edge 70 fusion, Dual SIM, 256GB, 8GB RAM, 5G, Pantone Orient, Albastru-Violet",
 "pret": 1669.0,
 "imagine": "https://www.dwyn.ro/images/products/img_202606122129/446971/full/motorola-telefon-mobil-motorola-edge-70-fusion-dual-sim-256gb-12gb-ram-5g-7000-mah-pantone-orient-albastru-violet-1441192.jpg",
@@ -6353,18 +6327,6 @@
 "id": "A4QjPwQbxUB2",
 "brand": "REALME",
 "url_magazin": "https://www.dwyn.ro/telefoane-gsm/realme/480313-telefon-mobil-realme-16-5g-dual-sim-8gb-ram-256gb-amoled-6-57-inch-120-hz-camere-50-mp-6550-mah-negru-air-black/",
-"pret_vechi": null,
-"verificat": "2026-11-04"
-},
-{
-"titlu": "VIVO Telefon mobil vivo V70 Lite 5G Dual SIM, 6GB RAM, 256GB, AMOLED 6.77 inch 120 Hz, camera Sony 50 MP, incarcare 90 W",
-"pret": 1842.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202606122129/480286/full/vivo-telefon-mobil-vivo-v70-lite-5g-dual-sim-6gb-ram-256gb-amoled-6-77-inch-120-hz-camera-sony-50-mp-incarcare-90-w-negru-elegant-black-1518700.png",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Ftelefoane-gsm%2Fvivo%2F480286-telefon-mobil-vivo-v70-lite-5g-dual-sim-6gb-ram-256gb-amoled-6-77-inch-120-hz-camera-sony-50-mp-incarcare-90-w-negru-elegant-black%2F",
-"magazin": "dwyn.ro",
-"id": "VbOXKdZNbnfk",
-"brand": "VIVO",
-"url_magazin": "https://www.dwyn.ro/telefoane-gsm/vivo/480286-telefon-mobil-vivo-v70-lite-5g-dual-sim-6gb-ram-256gb-amoled-6-77-inch-120-hz-camera-sony-50-mp-incarcare-90-w-negru-elegant-black/",
 "pret_vechi": null,
 "verificat": "2026-11-04"
 }
@@ -6392,7 +6354,7 @@
 "titlu": "Telefoane 5G",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-17",
+"actualizat": "2026-11-25",
 "feeduri": [
 {
 "id": 1539,
@@ -6420,86 +6382,82 @@
 "pret_vechi": null
 },
 {
-"titlu": "Honor Telefon mobil Honor 600 Smart 5G, 4GB RAM, 256GB, 6.87 inch, Snapdragon 4 Gen 4, 7700 mAh, Negru Velvet Black",
-"pret": 1240.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202606122129/480289/full/honor-telefon-mobil-honor-600-smart-5g-4gb-ram-256gb-6-87-inch-snapdragon-4-gen-4-7700-mah-negru-velvet-black-1518439.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Ftelefoane-gsm%2Fhonor%2F480289-telefon-mobil-honor-600-smart-5g-4gb-ram-256gb-6-87-inch-snapdragon-4-gen-4-7700-mah-negru-velvet-black%2F",
+"titlu": "Motorola Telefon mobil Motorola G86, 6.67 inch, Dual SIM, 256GB, 8GB RAM, 5G, Pantone Spellbound",
+"pret": 1582.99,
+"imagine": "https://www.dwyn.ro/images/products/img_202508191322/325864/full/motorola-telefon-mobil-motorola-g86-dual-sim-256gb-8gb-ram-5g-pantone-spellbound-814603.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Ftelefoane-gsm%2Fmotorola%2F325864-telefon-mobil-motorola-g86-6-67-inch-dual-sim-256gb-8gb-ram-5g-pantone-spellbound%2F",
 "magazin": "dwyn.ro",
-"id": "ZVKfYfugZ0m_",
-"brand": "Honor",
-"url_magazin": "https://www.dwyn.ro/telefoane-gsm/honor/480289-telefon-mobil-honor-600-smart-5g-4gb-ram-256gb-6-87-inch-snapdragon-4-gen-4-7700-mah-negru-velvet-black/",
-"pret_vechi": null,
-"verificat": "2026-11-04"
-},
-{
-"titlu": "Honor Telefon mobil Honor 600 Lite 5G Dual SIM, 8GB RAM, 128GB, AMOLED 6.6 inch 120 Hz, camera 108 MP, 6520 mAh, Negru V",
-"pret": 1438.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202606122129/480325/full/honor-telefon-mobil-honor-600-lite-5g-dual-sim-8gb-ram-128gb-amoled-6-6-inch-120-hz-camera-108-mp-6520-mah-negru-velvet-black-1518670.png",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Ftelefoane-gsm%2Fhonor%2F480325-telefon-mobil-honor-600-lite-5g-dual-sim-8gb-ram-128gb-amoled-6-6-inch-120-hz-camera-108-mp-6520-mah-negru-velvet-black%2F",
-"magazin": "dwyn.ro",
-"id": "CrAvfGsIEeSG",
-"brand": "Honor",
-"url_magazin": "https://www.dwyn.ro/telefoane-gsm/honor/480325-telefon-mobil-honor-600-lite-5g-dual-sim-8gb-ram-128gb-amoled-6-6-inch-120-hz-camera-108-mp-6520-mah-negru-velvet-black/",
-"pret_vechi": null
-},
-{
-"titlu": "Honor Telefon mobil Honor 600 Lite, Dual SIM, 8GB RAM, 128GB, 5G, Verde",
-"pret": 1438.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202606122129/480379/full/honor-telefon-mobil-honor-600-lite-dual-sim-8gb-ram-128gb-5g-verde-1515676.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Ftelefoane-gsm%2Fhonor%2F480379-telefon-mobil-honor-600-lite-dual-sim-8gb-ram-128gb-5g-verde%2F",
-"magazin": "dwyn.ro",
-"id": "-IAyHKrzJXc_",
-"brand": "Honor",
-"url_magazin": "https://www.dwyn.ro/telefoane-gsm/honor/480379-telefon-mobil-honor-600-lite-dual-sim-8gb-ram-128gb-5g-verde/",
-"pret_vechi": null
-},
-{
-"titlu": "VIVO Telefon mobil vivo Y31e 5G Dual SIM, 6GB RAM, 256GB, LCD 6.72 inch 120 Hz, camera 50 MP, 5200 mAh, IP68/IP69, Negru",
-"pret": 1581.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202606122129/480280/full/vivo-telefon-mobil-vivo-y31e-5g-dual-sim-6gb-ram-256gb-lcd-6-72-inch-120-hz-camera-50-mp-5200-mah-ip68-ip69-negru-1518703.png",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Ftelefoane-gsm%2Fvivo%2F480280-telefon-mobil-vivo-y31e-5g-dual-sim-6gb-ram-256gb-lcd-6-72-inch-120-hz-camera-50-mp-5200-mah-ip68-ip69-negru%2F",
-"magazin": "dwyn.ro",
-"id": "ut6mhxxSH039",
-"brand": "VIVO",
-"url_magazin": "https://www.dwyn.ro/telefoane-gsm/vivo/480280-telefon-mobil-vivo-y31e-5g-dual-sim-6gb-ram-256gb-lcd-6-72-inch-120-hz-camera-50-mp-5200-mah-ip68-ip69-negru/",
-"pret_vechi": null,
-"verificat": "2026-11-04"
-},
-{
-"titlu": "REALME Telefon mobil realme 16 5G Dual SIM, 8GB RAM, 256GB, AMOLED 6.57 inch 120 Hz, camere 50 MP, 6550 mAh, Negru Air B",
-"pret": 1820.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202606122129/480313/full/realme-telefon-mobil-realme-16-5g-dual-sim-8gb-ram-256gb-amoled-6-57-inch-120-hz-camere-50-mp-6550-mah-negru-air-black-1518676.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Ftelefoane-gsm%2Frealme%2F480313-telefon-mobil-realme-16-5g-dual-sim-8gb-ram-256gb-amoled-6-57-inch-120-hz-camere-50-mp-6550-mah-negru-air-black%2F",
-"magazin": "dwyn.ro",
-"id": "A4QjPwQbxUB2",
-"brand": "REALME",
-"url_magazin": "https://www.dwyn.ro/telefoane-gsm/realme/480313-telefon-mobil-realme-16-5g-dual-sim-8gb-ram-256gb-amoled-6-57-inch-120-hz-camere-50-mp-6550-mah-negru-air-black/",
-"pret_vechi": null,
-"verificat": "2026-11-04"
-},
-{
-"titlu": "VIVO Telefon mobil vivo V70 Lite 5G Dual SIM, 6GB RAM, 256GB, AMOLED 6.77 inch 120 Hz, camera Sony 50 MP, incarcare 90 W",
-"pret": 1842.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202606122129/480286/full/vivo-telefon-mobil-vivo-v70-lite-5g-dual-sim-6gb-ram-256gb-amoled-6-77-inch-120-hz-camera-sony-50-mp-incarcare-90-w-negru-elegant-black-1518700.png",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Ftelefoane-gsm%2Fvivo%2F480286-telefon-mobil-vivo-v70-lite-5g-dual-sim-6gb-ram-256gb-amoled-6-77-inch-120-hz-camera-sony-50-mp-incarcare-90-w-negru-elegant-black%2F",
-"magazin": "dwyn.ro",
-"id": "VbOXKdZNbnfk",
-"brand": "VIVO",
-"url_magazin": "https://www.dwyn.ro/telefoane-gsm/vivo/480286-telefon-mobil-vivo-v70-lite-5g-dual-sim-6gb-ram-256gb-amoled-6-77-inch-120-hz-camera-sony-50-mp-incarcare-90-w-negru-elegant-black/",
-"pret_vechi": null,
-"verificat": "2026-11-04"
-},
-{
-"titlu": "Motorola Telefon mobil Motorola Edge 70 Fusion 5G Dual SIM, 8GB RAM, 512GB, AMOLED 6.78 inch 144 Hz, camera Sony 50 MP,",
-"pret": 1949.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202606122129/480310/full/motorola-telefon-mobil-motorola-edge-70-fusion-5g-dual-sim-8gb-ram-512gb-amoled-6-78-inch-144-hz-camera-sony-50-mp-negru-pantone-silhouette-1518631.png",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Ftelefoane-gsm%2Fmotorola%2F480310-telefon-mobil-motorola-edge-70-fusion-5g-dual-sim-8gb-ram-512gb-amoled-6-78-inch-144-hz-camera-sony-50-mp-negru-pantone-silhouette%2F",
-"magazin": "dwyn.ro",
-"id": "Xl_BDz3KPGXH",
+"id": "5_r04-6oCHSq",
 "brand": "Motorola",
-"url_magazin": "https://www.dwyn.ro/telefoane-gsm/motorola/480310-telefon-mobil-motorola-edge-70-fusion-5g-dual-sim-8gb-ram-512gb-amoled-6-78-inch-144-hz-camera-sony-50-mp-negru-pantone-silhouette/",
+"url_magazin": "https://www.dwyn.ro/telefoane-gsm/motorola/325864-telefon-mobil-motorola-g86-6-67-inch-dual-sim-256gb-8gb-ram-5g-pantone-spellbound/",
+"pret_vechi": null
+},
+{
+"titlu": "Samsung Telefon mobil Samsung Galaxy A26, Dual SIM, 6GB RAM, 256GB, 5G, Alb",
+"pret": 1872.99,
+"imagine": "https://www.dwyn.ro/images/products/img_202503142150/268875/full/samsung-telefon-mobil-samsung-galaxy-a26-dual-sim-6gb-ram-256gb-5g-alb-592139.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Ftelefoane-gsm%2Fsamsung%2F268875-telefon-mobil-samsung-galaxy-a26-dual-sim-6gb-ram-256gb-5g-alb%2F",
+"magazin": "dwyn.ro",
+"id": "ln5KLPIXhLWi",
+"brand": "Samsung",
+"url_magazin": "https://www.dwyn.ro/telefoane-gsm/samsung/268875-telefon-mobil-samsung-galaxy-a26-dual-sim-6gb-ram-256gb-5g-alb/",
+"pret_vechi": null
+},
+{
+"titlu": "Motorola Telefon mobil Motorola Edge 60 Fusion, 6.67 inch, Dual SIM, 8GB RAM, 256GB, 5G, Pantone Slipstream",
+"pret": 1988.99,
+"imagine": "https://www.dwyn.ro/images/products/img_202512311121/381698/full/motorola-telefon-mobil-motorola-edge-60-fusion-6-67-inch-dual-sim-12gb-ram-256gb-5g-pantone-slipstream-1146416.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Ftelefoane-gsm%2Fmotorola%2F381698-telefon-mobil-motorola-edge-60-fusion-6-67-inch-dual-sim-8gb-ram-256gb-5g-pantone-slipstream%2F",
+"magazin": "dwyn.ro",
+"id": "0_0Lv1XPfqGB",
+"brand": "Motorola",
+"url_magazin": "https://www.dwyn.ro/telefoane-gsm/motorola/381698-telefon-mobil-motorola-edge-60-fusion-6-67-inch-dual-sim-8gb-ram-256gb-5g-pantone-slipstream/",
+"pret_vechi": null
+},
+{
+"titlu": "Xiaomi Telefon mobil Xiaomi Redmi Note 17 Pro 5G Dual SIM, 8GB RAM, 512GB, AMOLED 6.83 inch 120 Hz, camera 50 MP OIS, 83",
+"pret": 2350.99,
+"imagine": "https://www.dwyn.ro/images/products/img_202606122129/480334/full/xiaomi-telefon-mobil-xiaomi-redmi-note-17-pro-5g-dual-sim-8gb-ram-512gb-amoled-6-83-inch-120-hz-camera-50-mp-ois-8340-mah-violet-1519207.png",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Ftelefoane-gsm%2Fxiaomi%2F480334-telefon-mobil-xiaomi-redmi-note-17-pro-5g-dual-sim-8gb-ram-512gb-amoled-6-83-inch-120-hz-camera-50-mp-ois-8340-mah-violet%2F",
+"magazin": "dwyn.ro",
+"id": "K1GEUQBmGka2",
+"brand": "Xiaomi",
+"url_magazin": "https://www.dwyn.ro/telefoane-gsm/xiaomi/480334-telefon-mobil-xiaomi-redmi-note-17-pro-5g-dual-sim-8gb-ram-512gb-amoled-6-83-inch-120-hz-camera-50-mp-ois-8340-mah-violet/",
+"pret_vechi": null
+},
+{
+"titlu": "Xiaomi Telefon mobil Xiaomi Redmi Note 17 Pro Max 5G Dual SIM, 8GB RAM, 256GB, AMOLED 6.83 inch 120 Hz, camera 50 MP OIS",
+"pret": 2421.99,
+"imagine": "https://www.dwyn.ro/images/products/img_202606122129/480337/full/xiaomi-telefon-mobil-xiaomi-redmi-note-17-pro-max-5g-dual-sim-8gb-ram-256gb-amoled-6-83-inch-120-hz-camera-50-mp-ois-9210-mah-negru-1519225.png",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Ftelefoane-gsm%2Fxiaomi%2F480337-telefon-mobil-xiaomi-redmi-note-17-pro-max-5g-dual-sim-8gb-ram-256gb-amoled-6-83-inch-120-hz-camera-50-mp-ois-9210-mah-negru%2F",
+"magazin": "dwyn.ro",
+"id": "SrpZ9DTne2g3",
+"brand": "Xiaomi",
+"url_magazin": "https://www.dwyn.ro/telefoane-gsm/xiaomi/480337-telefon-mobil-xiaomi-redmi-note-17-pro-max-5g-dual-sim-8gb-ram-256gb-amoled-6-83-inch-120-hz-camera-50-mp-ois-9210-mah-negru/",
+"pret_vechi": null
+},
+{
+"titlu": "Samsung Telefon mobil Samsung Galaxy S26 FE 5G Dual SIM, 8GB RAM, 256GB, Dynamic AMOLED 2X 6.7 inch 120 Hz, Exynos 2500,",
+"pret": 4153.99,
+"imagine": "https://www.dwyn.ro/images/products/img_202606122129/480214/full/samsung-telefon-mobil-samsung-galaxy-s26-fe-5g-dual-sim-8gb-ram-256gb-dynamic-amoled-2x-6-7-inch-120-hz-exynos-2500-ip68-albastru-blueberry-1518595.png",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Ftelefoane-gsm%2Fsamsung%2F480214-telefon-mobil-samsung-galaxy-s26-fe-5g-dual-sim-8gb-ram-256gb-dynamic-amoled-2x-6-7-inch-120-hz-exynos-2500-ip68-albastru-blueberry%2F",
+"magazin": "dwyn.ro",
+"id": "sewKpy7bPQrf",
+"brand": "Samsung",
+"url_magazin": "https://www.dwyn.ro/telefoane-gsm/samsung/480214-telefon-mobil-samsung-galaxy-s26-fe-5g-dual-sim-8gb-ram-256gb-dynamic-amoled-2x-6-7-inch-120-hz-exynos-2500-ip68-albastru-blueberry/",
 "pret_vechi": null,
 "verificat": "2026-11-04"
+},
+{
+"titlu": "NUBIA Telefon gaming Nubia REDMAGIC 12 Pro, racire cu lichid AquaCore 3.0, 12GB RAM, 256GB, 5G, AMOLED 185Hz, 8400mAh, N",
+"pret": 5999.0,
+"imagine": "https://www.dwyn.ro/images/products/img_202611101603/492427/full/nubia-redmagic-12-pro-gaming-phone-12gb-ram-256gb-rom-nightfreeze-black-1560301.png",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Ftelefoane-gsm%2Fnubia%2F492427-telefon-gaming-nubia-redmagic-12-pro-racire-cu-lichid-aquacore-3-0-12gb-ram-256gb-5g-amoled-185hz-8400mah-negru-nightfreeze%2F",
+"magazin": "dwyn.ro",
+"id": "w16S9m2RsNua",
+"brand": "NUBIA",
+"url_magazin": "https://www.dwyn.ro/telefoane-gsm/nubia/492427-telefon-gaming-nubia-redmagic-12-pro-racire-cu-lichid-aquacore-3-0-12gb-ram-256gb-5g-amoled-185hz-8400mah-negru-nightfreeze/",
+"pret_vechi": null
 }
 ],
 "magazine": [
@@ -6513,7 +6471,7 @@
 "titlu": "Telefoane Samsung",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-17",
+"actualizat": "2026-11-25",
 "feeduri": [
 {
 "id": 1539,
@@ -6526,6 +6484,28 @@
 ],
 "produse": [
 {
+"titlu": "Samsung Telefon mobil Samsung Galaxy A07s, 64GB, 4GB RAM, Dual SIM, 4G, 6.7 inch 90Hz, 5000mAh, Verde",
+"pret": 719.0,
+"imagine": "https://www.dwyn.ro/images/products/img_202611101603/492304/full/samsung-samsung-galaxy-a07s-64gb-4gb-ram-4g-green-1558312.webp",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Ftelefoane-gsm%2Fsamsung%2F492304-telefon-mobil-samsung-galaxy-a07s-64gb-4gb-ram-dual-sim-4g-6-7-inch-90hz-5000mah-verde%2F",
+"magazin": "dwyn.ro",
+"id": "o_dnTaHi7ELu",
+"brand": "Samsung",
+"url_magazin": "https://www.dwyn.ro/telefoane-gsm/samsung/492304-telefon-mobil-samsung-galaxy-a07s-64gb-4gb-ram-dual-sim-4g-6-7-inch-90hz-5000mah-verde/",
+"pret_vechi": null
+},
+{
+"titlu": "Samsung Telefon mobil Samsung Galaxy A07s, 128GB, 4GB RAM, Dual SIM, 4G, 6.7 inch 90Hz, 5000mAh, Verde",
+"pret": 899.0,
+"imagine": "https://www.dwyn.ro/images/products/img_202611101603/492295/full/samsung-samsung-galaxy-a07s-128gb-4gb-ram-4g-green-1558297.webp",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Ftelefoane-gsm%2Fsamsung%2F492295-telefon-mobil-samsung-galaxy-a07s-128gb-4gb-ram-dual-sim-4g-6-7-inch-90hz-5000mah-verde%2F",
+"magazin": "dwyn.ro",
+"id": "X1HiHeXSEDXi",
+"brand": "Samsung",
+"url_magazin": "https://www.dwyn.ro/telefoane-gsm/samsung/492295-telefon-mobil-samsung-galaxy-a07s-128gb-4gb-ram-dual-sim-4g-6-7-inch-90hz-5000mah-verde/",
+"pret_vechi": null
+},
+{
 "titlu": "Samsung Telefon mobil Samsung Galaxy A18 4G Dual SIM, 4GB RAM, 128GB, Super AMOLED 6.7 inch, camera 50 MP, 5000 mAh, Neg",
 "pret": 1321.99,
 "imagine": "https://www.dwyn.ro/images/products/img_202606122129/478021/full/samsung-telefon-mobil-samsung-galaxy-a18-4g-dual-sim-4gb-ram-128gb-super-amoled-6-7-inch-camera-50-mp-5000-mah-negru-1518529.png",
@@ -6536,6 +6516,17 @@
 "url_magazin": "https://www.dwyn.ro/telefoane-gsm/samsung/478021-telefon-mobil-samsung-galaxy-a18-4g-dual-sim-4gb-ram-128gb-super-amoled-6-7-inch-camera-50-mp-5000-mah-negru/",
 "pret_vechi": null,
 "verificat": "2026-11-04"
+},
+{
+"titlu": "Samsung Telefon mobil Samsung Galaxy A26, Dual SIM, 6GB RAM, 256GB, 5G, Alb",
+"pret": 1872.99,
+"imagine": "https://www.dwyn.ro/images/products/img_202503142150/268875/full/samsung-telefon-mobil-samsung-galaxy-a26-dual-sim-6gb-ram-256gb-5g-alb-592139.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Ftelefoane-gsm%2Fsamsung%2F268875-telefon-mobil-samsung-galaxy-a26-dual-sim-6gb-ram-256gb-5g-alb%2F",
+"magazin": "dwyn.ro",
+"id": "ln5KLPIXhLWi",
+"brand": "Samsung",
+"url_magazin": "https://www.dwyn.ro/telefoane-gsm/samsung/268875-telefon-mobil-samsung-galaxy-a26-dual-sim-6gb-ram-256gb-5g-alb/",
+"pret_vechi": null
 },
 {
 "titlu": "Samsung Telefon mobil Samsung Galaxy A37, 256GB, 12GB RAM, 5G, Dual SIM, Gri inchis",
@@ -6551,15 +6542,14 @@
 },
 {
 "titlu": "Samsung Telefon Mobil Samsung Galaxy S26 FE, Procesor Exynos 2500 Deca-core, Dynamic LTPO AMOLED 2X 6.7, 8GB RAM, 128GB",
-"pret": 3104.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202606122129/455554/full/samsung-telefon-mobil-samsung-galaxy-s26-fe-procesor-exynos-2500-deca-core-dynamic-ltpo-amoled-2x-6-7-8gb-ram-128gb-flash-camera-tripla-50-plus-8-plus-12-mp-wi-fi-5g-dual-sim-android-verde-deschis-1474537.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Ftelefoane-gsm%2Fsamsung%2F455554-telefon-mobil-samsung-galaxy-s26-fe-procesor-exynos-2500-deca-core-dynamic-ltpo-amoled-2x-6-7-8gb-ram-128gb-flash-camera-tripla-50-plus-8-plus-12-mp-wi-fi-5g-dual-sim-android-verde-deschis%2F",
+"pret": 2994.99,
+"imagine": "https://www.dwyn.ro/images/products/img_202606122129/455563/full/samsung-telefon-mobil-samsung-galaxy-s26-fe-procesor-exynos-2500-deca-core-dynamic-ltpo-amoled-2x-6-7-8gb-ram-128gb-flash-camera-tripla-50-plus-8-plus-12-mp-wi-fi-5g-dual-sim-android-negru-1474615.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Ftelefoane-gsm%2Fsamsung%2F455563-telefon-mobil-samsung-galaxy-s26-fe-procesor-exynos-2500-deca-core-dynamic-ltpo-amoled-2x-6-7-8gb-ram-128gb-flash-camera-tripla-50-plus-8-plus-12-mp-wi-fi-5g-dual-sim-android-negru%2F",
 "magazin": "dwyn.ro",
-"id": "jgirEUIF9-x8",
+"id": "V7guQ_vsocPn",
 "brand": "Samsung",
-"url_magazin": "https://www.dwyn.ro/telefoane-gsm/samsung/455554-telefon-mobil-samsung-galaxy-s26-fe-procesor-exynos-2500-deca-core-dynamic-ltpo-amoled-2x-6-7-8gb-ram-128gb-flash-camera-tripla-50-plus-8-plus-12-mp-wi-fi-5g-dual-sim-android-verde-deschis/",
-"pret_vechi": null,
-"verificat": "2026-11-04"
+"url_magazin": "https://www.dwyn.ro/telefoane-gsm/samsung/455563-telefon-mobil-samsung-galaxy-s26-fe-procesor-exynos-2500-deca-core-dynamic-ltpo-amoled-2x-6-7-8gb-ram-128gb-flash-camera-tripla-50-plus-8-plus-12-mp-wi-fi-5g-dual-sim-android-negru/",
+"pret_vechi": null
 },
 {
 "titlu": "Samsung Telefon mobil Samsung Galaxy S26 S942, 12GB RAM, 128GB, 5G, 6.3, Editie Enterprise, Negru",
@@ -6574,18 +6564,6 @@
 "verificat": "2026-11-04"
 },
 {
-"titlu": "Samsung Telefon mobil Samsung Galaxy S26 FE, Dual SIM, 8GB RAM, 256GB, 5G, Verde deschis",
-"pret": 4127.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202606122129/455557/full/samsung-telefon-mobil-samsung-galaxy-s26-fe-dual-sim-8gb-ram-256gb-5g-pistachio-1474423.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Ftelefoane-gsm%2Fsamsung%2F455557-telefon-mobil-samsung-galaxy-s26-fe-dual-sim-8gb-ram-256gb-5g-verde-deschis%2F",
-"magazin": "dwyn.ro",
-"id": "9p4YjZh3gNj7",
-"brand": "Samsung",
-"url_magazin": "https://www.dwyn.ro/telefoane-gsm/samsung/455557-telefon-mobil-samsung-galaxy-s26-fe-dual-sim-8gb-ram-256gb-5g-verde-deschis/",
-"pret_vechi": null,
-"verificat": "2026-11-04"
-},
-{
 "titlu": "Samsung Telefon mobil Samsung Galaxy S26 FE 5G Dual SIM, 8GB RAM, 256GB, Dynamic AMOLED 2X 6.7 inch 120 Hz, Exynos 2500,",
 "pret": 4153.99,
 "imagine": "https://www.dwyn.ro/images/products/img_202606122129/480214/full/samsung-telefon-mobil-samsung-galaxy-s26-fe-5g-dual-sim-8gb-ram-256gb-dynamic-amoled-2x-6-7-inch-120-hz-exynos-2500-ip68-albastru-blueberry-1518595.png",
@@ -6594,29 +6572,6 @@
 "id": "sewKpy7bPQrf",
 "brand": "Samsung",
 "url_magazin": "https://www.dwyn.ro/telefoane-gsm/samsung/480214-telefon-mobil-samsung-galaxy-s26-fe-5g-dual-sim-8gb-ram-256gb-dynamic-amoled-2x-6-7-inch-120-hz-exynos-2500-ip68-albastru-blueberry/",
-"pret_vechi": null,
-"verificat": "2026-11-04"
-},
-{
-"titlu": "Samsung Telefon mobil Samsung Galaxy S26 FE, Dual SIM, 8GB RAM, 512GB, 5G, Exynos 2500, Verde deschis",
-"pret": 4738.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202606122129/455560/full/samsung-telefon-mobil-samsung-galaxy-s26-fe-dual-sim-8gb-ram-512gb-5g-pistachio-1474393.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Ftelefoane-gsm%2Fsamsung%2F455560-telefon-mobil-samsung-galaxy-s26-fe-dual-sim-8gb-ram-512gb-5g-exynos-2500-verde-deschis%2F",
-"magazin": "dwyn.ro",
-"id": "W5NWl7LU8h7P",
-"brand": "Samsung",
-"url_magazin": "https://www.dwyn.ro/telefoane-gsm/samsung/455560-telefon-mobil-samsung-galaxy-s26-fe-dual-sim-8gb-ram-512gb-5g-exynos-2500-verde-deschis/",
-"pret_vechi": null
-},
-{
-"titlu": "Samsung Telefon mobil Samsung Galaxy Z Fold5, 12GB RAM, 512GB, 5G, Negru",
-"pret": 4802.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202305231058/217236/full/samsung-telefon-mobil-samsung-galaxy-z-fold5-12gb-ram-512gb-5g-negru-401459.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Ftelefoane-gsm%2Fsamsung%2F217236-telefon-mobil-samsung-galaxy-z-fold5-12gb-ram-512gb-5g-negru%2F",
-"magazin": "dwyn.ro",
-"id": "ybkc8CktWwjC",
-"brand": "Samsung",
-"url_magazin": "https://www.dwyn.ro/telefoane-gsm/samsung/217236-telefon-mobil-samsung-galaxy-z-fold5-12gb-ram-512gb-5g-negru/",
 "pret_vechi": null,
 "verificat": "2026-11-04"
 }
@@ -6632,7 +6587,7 @@
 "titlu": "Telefoane Xiaomi",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-17",
+"actualizat": "2026-11-25",
 "feeduri": [
 {
 "id": 8326,
@@ -6655,17 +6610,6 @@
 "url_magazin": "https://www.dwyn.ro/telefoane-gsm/xiaomi/286365-telefon-mobil-xiaomi-redmi-a5-4g-dual-sim-4gb-ram-128gb-ocean-blue/",
 "pret_vechi": null,
 "verificat": "2026-11-04"
-},
-{
-"titlu": "Xiaomi Telefon mobil Xiaomi Redmi 15C, 4GB RAM, 128GB,4G LTE, Dual SIM, Negru",
-"pret": 958.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202508191322/358193/full/xiaomi-xiaomi-redmi-15c-4-128gb-czarny-1004312.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Ftelefoane-gsm%2Fxiaomi%2F358193-telefon-mobil-xiaomi-redmi-15c-4gb-ram-128gb-4g-lte-dual-sim-negru%2F",
-"magazin": "dwyn.ro",
-"id": "qI1QFsuQsWbY",
-"brand": "Xiaomi",
-"url_magazin": "https://www.dwyn.ro/telefoane-gsm/xiaomi/358193-telefon-mobil-xiaomi-redmi-15c-4gb-ram-128gb-4g-lte-dual-sim-negru/",
-"pret_vechi": null
 },
 {
 "titlu": "Xiaomi Telefon mobil Xiaomi 12 Lite, Dual SIM, 8GB RAM, 128GB, 5G, Negru",
@@ -6716,6 +6660,18 @@
 "verificat": "2026-11-04"
 },
 {
+"titlu": "Xiaomi Telefon mobil Xiaomi Redmi 17 4G Dual SIM, 4GB RAM, 256GB, ecran 6.9 inch 120 Hz, camera 50 MP, 7500 mAh, Verde O",
+"pret": 1146.99,
+"imagine": "https://www.dwyn.ro/images/products/img_202606122129/480328/full/xiaomi-telefon-mobil-xiaomi-redmi-17-4g-dual-sim-4gb-ram-256gb-ecran-6-9-inch-120-hz-camera-50-mp-7500-mah-verde-oak-green-1519153.png",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Ftelefoane-gsm%2Fxiaomi%2F480328-telefon-mobil-xiaomi-redmi-17-4g-dual-sim-4gb-ram-256gb-ecran-6-9-inch-120-hz-camera-50-mp-7500-mah-verde-oak-green%2F",
+"magazin": "dwyn.ro",
+"id": "m4Nw2LB-WluO",
+"brand": "Xiaomi",
+"url_magazin": "https://www.dwyn.ro/telefoane-gsm/xiaomi/480328-telefon-mobil-xiaomi-redmi-17-4g-dual-sim-4gb-ram-256gb-ecran-6-9-inch-120-hz-camera-50-mp-7500-mah-verde-oak-green/",
+"pret_vechi": null,
+"verificat": "2026-11-04"
+},
+{
 "titlu": "Xiaomi Telefon Mobil Xiaomi Redmi 17, Procesor Mediatek Helio G91 Ultra Octa-Core, IPS LCD 6.9, 4GB RAM, 128GB Flash, Ca",
 "pret": 1152.99,
 "imagine": "https://www.dwyn.ro/images/products/img_202606122129/459895/full/xiaomi-telefon-mobil-xiaomi-redmi-17-128gb-4gb-ram-dual-sim-green-1474336.jpg",
@@ -6729,7 +6685,7 @@
 },
 {
 "titlu": "Xiaomi Telefon mobil Xiaomi Redmi 17, Dua SIM, 4GB RAM, 256GB, Albastru",
-"pret": 1254.99,
+"pret": 1240.99,
 "imagine": "https://www.dwyn.ro/images/products/img_202606122129/480382/full/xiaomi-telefon-mobil-xiaomi-redmi-17-4gb-ram-256gb-albastru-1515679.jpg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Ftelefoane-gsm%2Fxiaomi%2F480382-telefon-mobil-xiaomi-redmi-17-dua-sim-4gb-ram-256gb-albastru%2F",
 "magazin": "dwyn.ro",
@@ -6750,7 +6706,7 @@
 "titlu": "Telefoane iPhone",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-17",
+"actualizat": "2026-11-25",
 "feeduri": [
 {
 "id": 1539,
@@ -6759,28 +6715,48 @@
 ],
 "produse": [
 {
-"titlu": "Apple Telefon mobil Apple iPhone 18 Pro, 12GB RAM, 256GB, 5G, Glacier",
-"pret": 8476.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202606122129/478312/full/apple-telefon-mobil-apple-iphone-18-pro-12gb-ram-256gb-5g-glacier-1505458.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Ftelefoane-gsm%2Fapple%2F478312-telefon-mobil-apple-iphone-18-pro-12gb-ram-256gb-5g-glacier%2F",
+"titlu": "Apple Telefon mobil Apple iPhone 16, 256GB, 5G, Verde",
+"pret": 6006.99,
+"imagine": "https://www.dwyn.ro/images/products/img_202404261115/238137/full/apple-telefon-mobil-apple-iphone-16-256gb-5g-verde-487049.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Ftelefoane-gsm%2Fapple%2F238137-telefon-mobil-apple-iphone-16-256gb-5g-verde%2F",
 "magazin": "dwyn.ro",
-"id": "cx6z6x-9fFGG",
+"id": "qVaQnCFMa6yo",
 "brand": "Apple",
-"url_magazin": "https://www.dwyn.ro/telefoane-gsm/apple/478312-telefon-mobil-apple-iphone-18-pro-12gb-ram-256gb-5g-glacier/",
-"pret_vechi": null,
-"verificat": "2026-11-04"
+"url_magazin": "https://www.dwyn.ro/telefoane-gsm/apple/238137-telefon-mobil-apple-iphone-16-256gb-5g-verde/",
+"pret_vechi": null
 },
 {
-"titlu": "Apple Telefon mobil Apple iPhone 18 Pro, 12GB RAM, 256GB, 5G, Black",
-"pret": 8924.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202606122129/478309/full/apple-telefon-mobil-apple-iphone-18-pro-12gb-ram-256gb-5g-black-1505470.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Ftelefoane-gsm%2Fapple%2F478309-telefon-mobil-apple-iphone-18-pro-12gb-ram-256gb-5g-black%2F",
+"titlu": "Apple Telefon mobil Apple iPhone 16, 256GB, 8GB RAM, 5G, Albastru",
+"pret": 6006.99,
+"imagine": "https://www.dwyn.ro/images/products/img_202404261115/238141/full/apple-telefon-mobil-apple-iphone-16-256gb-5g-albastru-487069.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Ftelefoane-gsm%2Fapple%2F238141-telefon-mobil-apple-iphone-16-256gb-8gb-ram-5g-albastru%2F",
 "magazin": "dwyn.ro",
-"id": "m_SUywHhZ-rR",
+"id": "-RC1W7GQspt_",
 "brand": "Apple",
-"url_magazin": "https://www.dwyn.ro/telefoane-gsm/apple/478309-telefon-mobil-apple-iphone-18-pro-12gb-ram-256gb-5g-black/",
-"pret_vechi": null,
-"verificat": "2026-11-04"
+"url_magazin": "https://www.dwyn.ro/telefoane-gsm/apple/238141-telefon-mobil-apple-iphone-16-256gb-8gb-ram-5g-albastru/",
+"pret_vechi": null
+},
+{
+"titlu": "Apple Telefon mobil Apple iPhone 18 Pro, 12GB RAM, 256GB, 5G, Burgundy",
+"pret": 8851.99,
+"imagine": "https://www.dwyn.ro/images/products/img_202606122129/479647/full/apple-telefon-mobil-apple-iphone-18-pro-12gb-ram-256gb-5g-burgundy-1505422.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Ftelefoane-gsm%2Fapple%2F479647-telefon-mobil-apple-iphone-18-pro-12gb-ram-256gb-5g-burgundy%2F",
+"magazin": "dwyn.ro",
+"id": "UTrX3tRI2X7n",
+"brand": "Apple",
+"url_magazin": "https://www.dwyn.ro/telefoane-gsm/apple/479647-telefon-mobil-apple-iphone-18-pro-12gb-ram-256gb-5g-burgundy/",
+"pret_vechi": null
+},
+{
+"titlu": "Apple Telefon mobil Apple iPhone 18 Pro Max, 12GB RAM, 256GB, 5G, Burgundy",
+"pret": 9639.99,
+"imagine": "https://www.dwyn.ro/images/products/img_202606122129/479674/full/apple-telefon-mobil-apple-iphone-18-pro-max-12gb-ram-256gb-5g-burgundy-1505317.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Ftelefoane-gsm%2Fapple%2F479674-telefon-mobil-apple-iphone-18-pro-max-12gb-ram-256gb-5g-burgundy%2F",
+"magazin": "dwyn.ro",
+"id": "Aby3mN_f6cCV",
+"brand": "Apple",
+"url_magazin": "https://www.dwyn.ro/telefoane-gsm/apple/479674-telefon-mobil-apple-iphone-18-pro-max-12gb-ram-256gb-5g-burgundy/",
+"pret_vechi": null
 },
 {
 "titlu": "Apple Telefon mobil Apple iPhone 18 Pro Max, 12GB RAM, 256GB, 5G, Black",
@@ -6795,6 +6771,17 @@
 "verificat": "2026-11-04"
 },
 {
+"titlu": "Apple Telefon mobil Apple iPhone 18 Pro, 12GB RAM, 512GB, 5G, Burgundy",
+"pret": 10325.99,
+"imagine": "https://www.dwyn.ro/images/products/img_202606122129/479653/full/apple-telefon-mobil-apple-iphone-18-pro-12gb-ram-512gb-5g-burgundy-1505398.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Ftelefoane-gsm%2Fapple%2F479653-telefon-mobil-apple-iphone-18-pro-12gb-ram-512gb-5g-burgundy%2F",
+"magazin": "dwyn.ro",
+"id": "TMOriNWsXwJ7",
+"brand": "Apple",
+"url_magazin": "https://www.dwyn.ro/telefoane-gsm/apple/479653-telefon-mobil-apple-iphone-18-pro-12gb-ram-512gb-5g-burgundy/",
+"pret_vechi": null
+},
+{
 "titlu": "Apple Telefon mobil Apple iPhone 18 Pro, 12GB RAM, 512GB, 5G, Glacier",
 "pret": 10376.99,
 "imagine": "https://www.dwyn.ro/images/products/img_202606122129/479656/full/apple-telefon-mobil-apple-iphone-18-pro-12gb-ram-512gb-5g-glacier-1505386.jpg",
@@ -6807,48 +6794,14 @@
 "verificat": "2026-11-04"
 },
 {
-"titlu": "Apple Telefon mobil Apple iPhone 18 Pro, 12GB RAM, 1TB, 5G, Black",
-"pret": 12556.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202606122129/478288/full/apple-telefon-mobil-apple-iphone-18-pro-12gb-ram-1tb-5g-black-1505515.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Ftelefoane-gsm%2Fapple%2F478288-telefon-mobil-apple-iphone-18-pro-12gb-ram-1tb-5g-black%2F",
+"titlu": "Apple Telefon mobil Apple iPhone 18 Pro Max, 12GB RAM, 512GB, 5G, Burgundy",
+"pret": 11162.99,
+"imagine": "https://www.dwyn.ro/images/products/img_202606122129/479686/full/apple-telefon-mobil-apple-iphone-18-pro-max-12gb-ram-512gb-5g-burgundy-1505275.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Ftelefoane-gsm%2Fapple%2F479686-telefon-mobil-apple-iphone-18-pro-max-12gb-ram-512gb-5g-burgundy%2F",
 "magazin": "dwyn.ro",
-"id": "Q95YZjnXg4zX",
+"id": "J27Qksw5IRk7",
 "brand": "Apple",
-"url_magazin": "https://www.dwyn.ro/telefoane-gsm/apple/478288-telefon-mobil-apple-iphone-18-pro-12gb-ram-1tb-5g-black/",
-"pret_vechi": null
-},
-{
-"titlu": "Apple Telefon mobil Apple iPhone 18 Pro, 12GB RAM, 1TB, 5G, Glacier",
-"pret": 12581.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202606122129/478294/full/apple-telefon-mobil-apple-iphone-18-pro-12gb-ram-1tb-5g-glacier-1505491.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Ftelefoane-gsm%2Fapple%2F478294-telefon-mobil-apple-iphone-18-pro-12gb-ram-1tb-5g-glacier%2F",
-"magazin": "dwyn.ro",
-"id": "hyYaC9HQ0PRZ",
-"brand": "Apple",
-"url_magazin": "https://www.dwyn.ro/telefoane-gsm/apple/478294-telefon-mobil-apple-iphone-18-pro-12gb-ram-1tb-5g-glacier/",
-"pret_vechi": null,
-"verificat": "2026-11-04"
-},
-{
-"titlu": "Apple Telefon mobil Apple iPhone 18 Pro, 12GB RAM, 1TB, 5G, Silver",
-"pret": 12628.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202606122129/479659/full/apple-telefon-mobil-apple-iphone-18-pro-12gb-ram-1tb-5g-silver-1505374.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Ftelefoane-gsm%2Fapple%2F479659-telefon-mobil-apple-iphone-18-pro-12gb-ram-1tb-5g-silver%2F",
-"magazin": "dwyn.ro",
-"id": "dsUIJGrWlm7N",
-"brand": "Apple",
-"url_magazin": "https://www.dwyn.ro/telefoane-gsm/apple/479659-telefon-mobil-apple-iphone-18-pro-12gb-ram-1tb-5g-silver/",
-"pret_vechi": null
-},
-{
-"titlu": "Apple Telefon mobil Apple iPhone 18 Pro, 12GB RAM, 1TB, 5G, Burgundy",
-"pret": 12628.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202606122129/479662/full/apple-telefon-mobil-apple-iphone-18-pro-12gb-ram-1tb-5g-burgundy-1505362.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Ftelefoane-gsm%2Fapple%2F479662-telefon-mobil-apple-iphone-18-pro-12gb-ram-1tb-5g-burgundy%2F",
-"magazin": "dwyn.ro",
-"id": "rqc5aeOD1BiK",
-"brand": "Apple",
-"url_magazin": "https://www.dwyn.ro/telefoane-gsm/apple/479662-telefon-mobil-apple-iphone-18-pro-12gb-ram-1tb-5g-burgundy/",
+"url_magazin": "https://www.dwyn.ro/telefoane-gsm/apple/479686-telefon-mobil-apple-iphone-18-pro-max-12gb-ram-512gb-5g-burgundy/",
 "pret_vechi": null
 }
 ],
@@ -6864,12 +6817,7 @@
 "nota": null,
 "in_text": null,
 "actualizat": "2026-11-17",
-"feeduri": [
-{
-"id": 8637,
-"magazin": "ceasuri-shop.ro"
-}
-],
+"feeduri": [],
 "produse": [],
 "magazine": []
 },
@@ -6880,7 +6828,7 @@
 "titlu": "Monitoare de 24 inch",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-17",
+"actualizat": "2026-11-25",
 "feeduri": [
 {
 "id": 8527,
@@ -6986,7 +6934,7 @@
 },
 {
 "titlu": "VIEWSONIC Monitor LED ViewSonic VG2409U-2, 24 inch, 1920 x 1080 pixeli, 4 ms GTG, Negru",
-"pret": 867.99,
+"pret": 849.0,
 "imagine": "https://www.dwyn.ro/images/products/img_202512311121/392308/full/viewsonic-monitor-led-viewsonic-vg2409u-2-24-inch-1920-x-1080-pixeli-4-ms-gtg-negru-1205467.png",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fmonitoare-lcd-led%2Fviewsonic%2F392308-monitor-led-viewsonic-vg2409u-2-24-inch-1920-x-1080-pixeli-4-ms-gtg-negru%2F",
 "magazin": "dwyn.ro",
@@ -6994,18 +6942,6 @@
 "brand": "VIEWSONIC",
 "url_magazin": "https://www.dwyn.ro/monitoare-lcd-led/viewsonic/392308-monitor-led-viewsonic-vg2409u-2-24-inch-1920-x-1080-pixeli-4-ms-gtg-negru/",
 "pret_vechi": null
-},
-{
-"titlu": "Monitor Consumer AOC X24E4U, 24\", 1920 x 1200 pixeli, Black, 5 ani Garantie",
-"pret": 1109.82,
-"imagine": "http://1cctv.ro/166327/monitor-consumer-aoc-x24e4u-24-1920-x-1200-pixeli-black-5-ani-garantie.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2F1cctv.ro%2Fro%2Fmonitoare%2F42534-monitor-consumer-aoc-x24e4u-24-1920-x-1200-pixeli-black-5-ani-garantie.html%3Futm_source%3D2performant",
-"magazin": "1cctv.ro",
-"id": "LZHK_d5JT6bu",
-"brand": "AOC",
-"url_magazin": "https://1cctv.ro/ro/monitoare/42534-monitor-consumer-aoc-x24e4u-24-1920-x-1200-pixeli-black-5-ani-garantie.html?utm_source=2performant",
-"pret_vechi": null,
-"verificat": "2026-11-04"
 },
 {
 "titlu": "Asus Monitor gaming Asus Eye Care VU249CFE-M, 24inch (61cm), IPS, Full HD (1920 × 1080 pixeli), 1ms, 100Hz, 1 × HDMI 1.4",
@@ -21797,18 +21733,6 @@
 "pret_vechi": 79.0
 },
 {
-"titlu": "Puzzle 3D din Lemn 46 Piese - Cactusi in Ghiveci",
-"pret": 43.0,
-"imagine": "https://cdnmpro.com/780585630/p/raw/8/puzzle-3d-din-lemn-46-piese-cactusi-in-ghiveci~6678.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.hobiktoys.ro%2Fcumpara%2Fpuzzle-3d-din-lemn-46-piese-cactusi-in-ghiveci-2389",
-"magazin": "hobiktoys.ro",
-"id": "BoMDzr80-pHs",
-"brand": "Orui Toys",
-"url_magazin": "https://www.hobiktoys.ro/cumpara/puzzle-3d-din-lemn-46-piese-cactusi-in-ghiveci-2389",
-"pret_vechi": null,
-"verificat": "2026-11-05"
-},
-{
 "titlu": "Puzzle 3D din lemn cu litere si cifre. Cocos colorat",
 "pret": 43.99,
 "imagine": "https://www.libris.ro/img/pozeprod/42140/42139027-1-small-1.jpg",
@@ -21818,30 +21742,6 @@
 "brand": "-",
 "url_magazin": "https://www.libris.ro/joc/puzzle-3d-din-lemn-cu-litere-si-cifre-cocos-colorat/42139027",
 "pret_vechi": 54.99,
-"verificat": "2026-11-05"
-},
-{
-"titlu": "Puzzle 3D din Lemn 97 Piese - Trandafir in Ghiveci",
-"pret": 46.0,
-"imagine": "https://cdnmpro.com/780585630/p/raw/4/puzzle-3d-din-lemn-97-piese-trandafir-in-ghiveci~6674.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.hobiktoys.ro%2Fcumpara%2Fpuzzle-3d-din-lemn-97-piese-trandafir-in-ghiveci-2387",
-"magazin": "hobiktoys.ro",
-"id": "75z2lyLcaS86",
-"brand": "Orui Toys",
-"url_magazin": "https://www.hobiktoys.ro/cumpara/puzzle-3d-din-lemn-97-piese-trandafir-in-ghiveci-2387",
-"pret_vechi": null,
-"verificat": "2026-11-05"
-},
-{
-"titlu": "Puzzle Masini 3D",
-"pret": 47.2,
-"imagine": "https://cdnmpro.com/780585630/p/raw/0/puzzle-masini-3d~2690.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.hobiktoys.ro%2Fcumpara%2Fpuzzle-masini-3d-866",
-"magazin": "hobiktoys.ro",
-"id": "PBFfj2Lc2bF9",
-"brand": "Legler Small Foot",
-"url_magazin": "https://www.hobiktoys.ro/cumpara/puzzle-masini-3d-866",
-"pret_vechi": null,
 "verificat": "2026-11-05"
 },
 {
@@ -21890,54 +21790,6 @@
 "pret_vechi": null
 },
 {
-"titlu": "Puzzle 3D Animale",
-"pret": 72.8,
-"imagine": "https://cdnmpro.com/780585630/p/raw/0/puzzle-3d-animale~1730.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.hobiktoys.ro%2Fcumpara%2Fpuzzle-3d-animale-667",
-"magazin": "hobiktoys.ro",
-"id": "qEmv3yk0xT2i",
-"brand": "Imagimake",
-"url_magazin": "https://www.hobiktoys.ro/cumpara/puzzle-3d-animale-667",
-"pret_vechi": null,
-"verificat": "2026-11-05"
-},
-{
-"titlu": "Puzzle 3D Case",
-"pret": 82.6,
-"imagine": "https://cdnmpro.com/780585630/p/raw/6/puzzle-3d-case~1726.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.hobiktoys.ro%2Fcumpara%2Fpuzzle-3d-case-666",
-"magazin": "hobiktoys.ro",
-"id": "xV9MHQwYw7wS",
-"brand": "Imagimake",
-"url_magazin": "https://www.hobiktoys.ro/cumpara/puzzle-3d-case-666",
-"pret_vechi": null,
-"verificat": "2026-11-05"
-},
-{
-"titlu": "Puzzle 3D Monumente",
-"pret": 83.3,
-"imagine": "https://cdnmpro.com/780585630/p/raw/8/puzzle-3d-monumente~3558.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.hobiktoys.ro%2Fcumpara%2Fpuzzle-3d-monumente-1460",
-"magazin": "hobiktoys.ro",
-"id": "Fttb31O4IqeO",
-"brand": "Imagimake",
-"url_magazin": "https://www.hobiktoys.ro/cumpara/puzzle-3d-monumente-1460",
-"pret_vechi": null,
-"verificat": "2026-11-05"
-},
-{
-"titlu": "Puzzle 3D Pasari",
-"pret": 84.7,
-"imagine": "https://cdnmpro.com/780585630/p/raw/1/puzzle-3d-pasari~3561.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.hobiktoys.ro%2Fcumpara%2Fpuzzle-3d-pasari-1461",
-"magazin": "hobiktoys.ro",
-"id": "hXlVRzQizMCw",
-"brand": "Imagimake",
-"url_magazin": "https://www.hobiktoys.ro/cumpara/puzzle-3d-pasari-1461",
-"pret_vechi": null,
-"verificat": "2026-11-14"
-},
-{
 "titlu": "Puzzle 3D cu animale, Orange Tree Toys",
 "pret": 104.9,
 "imagine": "https://www.ookee.ro/425557-large_default/puzzle-3d-cu-animale-orange-tree-toys.jpg",
@@ -21952,7 +21804,6 @@
 ],
 "magazine": [
 "carturesti.ro",
-"hobiktoys.ro",
 "libris.ro",
 "ookee.ro"
 ]

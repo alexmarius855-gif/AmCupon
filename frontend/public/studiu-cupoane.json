@@ -1,10 +1,10 @@
 {
   "generat": "2026-11-25",
-  "total_magazine": 422,
+  "total_magazine": 425,
   "cu_promotie": 69,
   "cu_cod_real": 17,
   "doar_oferta": 52,
-  "procent_cu_promotie": 16.4,
+  "procent_cu_promotie": 16.2,
   "procent_cu_cod": 4.0,
   "reducere_mediana_generala": 30,
   "magazine_cu_procent_declarat": 49,
@@ -21,7 +21,7 @@
     {
       "slug": "fashion",
       "nume": "Fashion",
-      "magazine": 44,
+      "magazine": 45,
       "cu_promotie": 10,
       "reducere_mediana": 45.0,
       "reducere_max": 70,
@@ -31,7 +31,7 @@
       "slug": "casa-gradina",
       "nume": "Casă & grădină",
       "magazine": 94,
-      "cu_promotie": 17,
+      "cu_promotie": 16,
       "reducere_mediana": 40,
       "reducere_max": 80,
       "esantion": 11
@@ -57,8 +57,8 @@
     {
       "slug": "marketplace",
       "nume": "Marketplace",
-      "magazine": 40,
-      "cu_promotie": 6,
+      "magazine": 41,
+      "cu_promotie": 7,
       "reducere_mediana": 20.0,
       "reducere_max": 70,
       "esantion": 4
@@ -66,7 +66,7 @@
     {
       "slug": "auto-moto",
       "nume": "Auto & moto",
-      "magazine": 24,
+      "magazine": 25,
       "cu_promotie": 2,
       "reducere_mediana": null,
       "reducere_max": null,
@@ -84,7 +84,7 @@
     {
       "slug": "copii",
       "nume": "Copii & familie",
-      "magazine": 21,
+      "magazine": 20,
       "cu_promotie": 2,
       "reducere_mediana": null,
       "reducere_max": null,
@@ -102,7 +102,7 @@
     {
       "slug": "animale",
       "nume": "Pet shop",
-      "magazine": 14,
+      "magazine": 15,
       "cu_promotie": 2,
       "reducere_mediana": null,
       "reducere_max": null,
@@ -157,7 +157,7 @@
   "criteriu": "domeniu .ro",
   "international": {
     "total": 499,
-    "cu_promotie": 79,
+    "cu_promotie": 78,
     "cu_cod": 49
   },
   "retele": [
@@ -214,7 +214,7 @@
         {
           "slug": "fashion",
           "nume": "Fashion",
-          "promotii": 37
+          "promotii": 39
         },
         {
           "slug": "casa-gradina",
