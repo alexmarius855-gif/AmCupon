@@ -5013,7 +5013,8 @@
 "id": "4NgEPK80ASfQ",
 "brand": "BEKO",
 "url_magazin": "https://www.brico.ro/electrocasnice-332/espressor-automat-beko-caffeexperto-ceg7348x-2l-1350w-19-bar-18-bauturi-13-setari-de-macinare-grindpro-control-din-aplicatie-aroma-perfecta-cu-brewsense-negru-argintiu.html",
-"pret_vechi": 3200.0
+"pret_vechi": 3200.0,
+"verificat": "2026-11-25"
 },
 {
 "titlu": "Espressor automat Philips Series 2000 EP2334/10 automat boabe Negru",
@@ -5350,7 +5351,8 @@
 "id": "1u9pFS95f26G",
 "brand": "Krups",
 "url_magazin": "https://www.brico.ro/electrocasnice-332/espressor-cu-capsule-krups-nescafé-dolce-gusto-mini-me-kp123h10-1500-w-15-bari-capacitate-rezervor-0-8l-tehnologia-play-select-functie-eco.html",
-"pret_vechi": null
+"pret_vechi": null,
+"verificat": "2026-11-25"
 }
 ],
 "magazine": [
@@ -6816,10 +6818,93 @@
 "titlu": "Telefoane sub 1.000 lei",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-17",
-"feeduri": [],
-"produse": [],
-"magazine": []
+"actualizat": "2026-11-25",
+"feeduri": [
+{
+"id": 1539,
+"magazin": "dwyn.ro"
+},
+{
+"id": 8637,
+"magazin": "ceasuri-shop.ro"
+},
+{
+"id": 1096,
+"magazin": "evomag.ro"
+}
+],
+"produse": [
+{
+"titlu": "Telefon mobil Dual SIM Nokia 215 4G 2nd Edition, Negru",
+"pret": 371.99,
+"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4319%2F4319239%2F6438409110664-6acf181068d1b.JPG&type=auto&width=500&sign=f6ZUE-hXZBBGXBXpNjThQl0b0Jnl61Uto1DpMUcLYV0",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Ftelefoane-tablete-accesorii-telefoane%2Fnokia-telefon-mobil-dual-sim-nokia-215-4g-2nd-edition-negru-4319239.html",
+"magazin": "evomag.ro",
+"id": "gCgFxj6M6_KC",
+"brand": "NOKIA",
+"url_magazin": "https://www.evomag.ro/telefoane-tablete-accesorii-telefoane/nokia-telefon-mobil-dual-sim-nokia-215-4g-2nd-edition-negru-4319239.html",
+"pret_vechi": null
+},
+{
+"titlu": "Telefon Mobil Nokia 235 4G (2026), Ecran IPS 2.8inch, Dual SIM, 4G (Negru)",
+"pret": 374.99,
+"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4309%2F4309027%2F6438409110534-6a71cd7ea4dc3.JPG&type=auto&width=500&sign=KAmWzisYMbCFg-Mf6bVSRE7lO5c4uqowQ2NectOTcBI",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Ftelefoane-tablete-accesorii-telefoane%2Fnokia-telefon-mobil-nokia-235-4g-2026-ecran-ips-2.8-dual-sim-4g-negru-4309027.html",
+"magazin": "evomag.ro",
+"id": "RrsACLE92WO2",
+"brand": "NOKIA",
+"url_magazin": "https://www.evomag.ro/telefoane-tablete-accesorii-telefoane/nokia-telefon-mobil-nokia-235-4g-2026-ecran-ips-2.8-dual-sim-4g-negru-4309027.html",
+"pret_vechi": null
+},
+{
+"titlu": "Telefon Mobil Blackview Wave 10C, Procesor UNISOC T310, Ecran IPS LCD 6.88, 4GB RAM, 32GB Flash, Camera Duala 32+0.3 MP,",
+"pret": 566.99,
+"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4319%2F4319241%2Ftelefon-blackview-wave-7c-4g-dual-sim-6-56-hd-ips-quad-core-t310-4gb-ram-128gb-5000mah-android-16-orange-copie-845912.png&type=auto&width=500&sign=s5CZWGewo30HOFySHJTn4YRA2bcEPMROjL_BVEDrc8o",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Ftelefoane-tablete-accesorii-telefoane%2Fblackview-telefon-mobil-blackview-wave-10c-procesor-unisoc-t310-ecran-ips-lcd-6.88-4gb-ram-32gb-flash-camera-duala-32-0.3-mp-wi-fi-4g-dual-sim-android-portocaliu-4319241.html",
+"magazin": "evomag.ro",
+"id": "ZuZ2KscIN1jp",
+"brand": "Blackview",
+"url_magazin": "https://www.evomag.ro/telefoane-tablete-accesorii-telefoane/blackview-telefon-mobil-blackview-wave-10c-procesor-unisoc-t310-ecran-ips-lcd-6.88-4gb-ram-32gb-flash-camera-duala-32-0.3-mp-wi-fi-4g-dual-sim-android-portocaliu-4319241.html",
+"pret_vechi": null
+},
+{
+"titlu": "ZTE Telefon mobil ZTE Blade A56, 4GB RAM, 64GB, 4G LTE, Dual SIM, Unisoc T7200, Negru",
+"pret": 653.99,
+"imagine": "https://www.dwyn.ro/images/products/img_202512311121/404755/full/zte-telefon-mobil-zte-blade-a56-4gb-ram-128gb-4g-lte-dual-sim-unisoc-t7200-negru-1279549.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Ftelefoane-gsm%2Fzte%2F404755-telefon-mobil-zte-blade-a56-4gb-ram-64gb-4g-lte-dual-sim-unisoc-t7200-negru%2F",
+"magazin": "dwyn.ro",
+"id": "uFAO7oxg8Zyl",
+"brand": "ZTE",
+"url_magazin": "https://www.dwyn.ro/telefoane-gsm/zte/404755-telefon-mobil-zte-blade-a56-4gb-ram-64gb-4g-lte-dual-sim-unisoc-t7200-negru/",
+"pret_vechi": null
+},
+{
+"titlu": "Telefon Mobil Motorola Moto G06, Procesor Mediatek Helio G81 Ultra Octa-Core, IPS LCD Touchscreen 6.88inch, 4GB RAM, 128",
+"pret": 749.99,
+"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4274%2F4274052%2Fmotorola-g06-4256gb-ds-blue-o-68e6378f490d5.jpg&type=auto&width=500&sign=Ck4Zcw3-29rEWqggoHrHSRQdkpmwdUKm4nQGtTS80GY",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Ftelefoane-tablete-accesorii-telefoane%2Fmotorola-telefon-mobil-motorola-moto-g06-procesor-mediatek-helio-g81-ultra-octa-core-ips-lcd-touchscreen-6.88-4gb-ram-128gb-flash-camera-50-mp-wi-fi-4g-dual-sim-android-albastru-4274052.html",
+"magazin": "evomag.ro",
+"id": "NktIQzH8Pq8O",
+"brand": "Motorola",
+"url_magazin": "https://www.evomag.ro/telefoane-tablete-accesorii-telefoane/motorola-telefon-mobil-motorola-moto-g06-procesor-mediatek-helio-g81-ultra-octa-core-ips-lcd-touchscreen-6.88-4gb-ram-128gb-flash-camera-50-mp-wi-fi-4g-dual-sim-android-albastru-4274052.html",
+"pret_vechi": null
+},
+{
+"titlu": "Telefon Mobil Oukitel P1, Procesor Mediatek Helio G99, Ecran AMOLED 6.7inch, 8GB RAM, 256GB Flash, Camera Tripla 50 + 2",
+"pret": 949.99,
+"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4288%2F4288710%2Ftelefon-oukitel-p1-4g-6-7-inch-amoled-fhd-120hz-8gb-ram-256gb-5150mah-nfc-android-15-white-copie-315840.png&type=auto&width=500&sign=rZDnSYRQFVHVf2n6jNeGgAgYY_FLom05qNaUrlLWEeE",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Ftelefoane-tablete-accesorii-telefoane%2Foukitel-telefon-mobil-oukitel-p1-procesor-mediatek-helio-g99-ecran-amoled-6.7-8gb-ram-256gb-flash-camera-tripla-50-2-0.3-mp-wi-fi-4g-dual-sim-android-auriu-4288710.html",
+"magazin": "evomag.ro",
+"id": "oOjXQtYnm2cl",
+"brand": "Oukitel",
+"url_magazin": "https://www.evomag.ro/telefoane-tablete-accesorii-telefoane/oukitel-telefon-mobil-oukitel-p1-procesor-mediatek-helio-g99-ecran-amoled-6.7-8gb-ram-256gb-flash-camera-tripla-50-2-0.3-mp-wi-fi-4g-dual-sim-android-auriu-4288710.html",
+"pret_vechi": null
+}
+],
+"magazine": [
+"dwyn.ro",
+"evomag.ro"
+]
 },
 {
 "slug": "monitor-24-inch",
@@ -6981,7 +7066,7 @@
 "titlu": "Monitoare de 27 inch",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-17",
+"actualizat": "2026-11-25",
 "feeduri": [
 {
 "id": 8527,
@@ -7094,16 +7179,16 @@
 "verificat": "2026-11-17"
 },
 {
-"titlu": "Monitor Commercial Dell E2726DS, 27\", 2560 x 1440 pixeli, Black, 3 ani Garantie",
-"pret": 1004.71,
-"imagine": "http://1cctv.ro/165889/monitor-commercial-dell-e2726ds-27-2560-x-1440-pixeli-black-3-ani-garantie.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2F1cctv.ro%2Fro%2Fmonitoare%2F42258-monitor-commercial-dell-e2726ds-27-2560-x-1440-pixeli-black-3-ani-garantie.html%3Futm_source%3D2performant",
+"titlu": "Monitor Gaming Philips 27M2N3500PF/00, 27\", 2560 x 1440 pixeli, Black, 3 ani garantie",
+"pret": 1024.78,
+"imagine": "http://1cctv.ro/167825/monitor-gaming-philips-27m2n3500pf-00-27-2560-x-1440-pixeli-black-3-ani-garantie.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2F1cctv.ro%2Fro%2Fmonitoare%2F43255-monitor-gaming-philips-27m2n3500pf-00-27-2560-x-1440-pixeli-black-3-ani-garantie.html%3Futm_source%3D2performant",
 "magazin": "1cctv.ro",
-"id": "-MZhvGJ1gRcB",
-"brand": "Dell",
-"url_magazin": "https://1cctv.ro/ro/monitoare/42258-monitor-commercial-dell-e2726ds-27-2560-x-1440-pixeli-black-3-ani-garantie.html?utm_source=2performant",
+"id": "6VbEGiHZT1KO",
+"brand": "PHILIPS",
+"url_magazin": "https://1cctv.ro/ro/monitoare/43255-monitor-gaming-philips-27m2n3500pf-00-27-2560-x-1440-pixeli-black-3-ani-garantie.html?utm_source=2performant",
 "pret_vechi": null,
-"verificat": "2026-11-17"
+"verificat": "2026-11-25"
 }
 ],
 "magazine": [
@@ -7118,7 +7203,7 @@
 "titlu": "Monitoare de 32 inch",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-17",
+"actualizat": "2026-11-25",
 "feeduri": [
 {
 "id": 8527,
@@ -7223,18 +7308,6 @@
 "verificat": "2026-11-04"
 },
 {
-"titlu": "LCD MONITOR HIKVISION 32” 32 inch FHD Monitor High reliable components for 7×24 working 178° ultra-wide view screen. 3D",
-"pret": 3022.94,
-"imagine": "http://1cctv.ro/164915/lcd-monitor-hikvision-32-32-inch-fhd-monitor-high-reliable-components-for-7x24-working-178-ultra-wide-view-screen-3d-noise-re.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2F1cctv.ro%2Fro%2Fmonitoare%2F41487-lcd-monitor-hikvision-32-32-inch-fhd-monitor-high-reliable-components-for-7x24-working-178-ultra-wide-view-screen-3d-noise-re.html%3Futm_source%3D2performant",
-"magazin": "1cctv.ro",
-"id": "5lzGzgMqq98y",
-"brand": "HIKVISION",
-"url_magazin": "https://1cctv.ro/ro/monitoare/41487-lcd-monitor-hikvision-32-32-inch-fhd-monitor-high-reliable-components-for-7x24-working-178-ultra-wide-view-screen-3d-noise-re.html?utm_source=2performant",
-"pret_vechi": null,
-"verificat": "2026-11-04"
-},
-{
 "titlu": "DL MONITOR 32'' P3225QE LED 3840x2160",
 "pret": 3318.52,
 "imagine": "https://dacris.vteximg.com.br/arquivos/ids/1008934/DL-MONITOR-32-P3225QE-LED-3840x2160-0.jpg?v=638963017192930000",
@@ -7243,18 +7316,6 @@
 "id": "uMgZl-TbhE8s",
 "brand": "Dell",
 "url_magazin": "https://www.dacris.net/p3225qe-dl-monitor-32---p3225qe-led-3840x2160/p?skuId=233833",
-"pret_vechi": null,
-"verificat": "2026-11-04"
-},
-{
-"titlu": "LCD MONITOR HIKVISION 32” LCD MONITOR HIKVISION 32”",
-"pret": 3463.25,
-"imagine": "https://dacris.vteximg.com.br/arquivos/ids/1042316/overlay_4a0373f78b0f5aff522a198d6d3df230.png?v=638973862115200000",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dacris.net%2Fds-d5232f2-1v1s-lcd-monitor-hikvision-32%E2%80%9D%2Fp%3FskuId%3D241955",
-"magazin": "dacris.net",
-"id": "B10MV1FJ4Rvq",
-"brand": "Hikvision",
-"url_magazin": "https://www.dacris.net/ds-d5232f2-1v1s-lcd-monitor-hikvision-32”/p?skuId=241955",
 "pret_vechi": null,
 "verificat": "2026-11-04"
 },
@@ -7271,28 +7332,40 @@
 "verificat": "2026-11-04"
 },
 {
-"titlu": "Monitor Commercial Dell Alienware AW3225QF, 32\", 3840 x 2160 pixeli, Black, White, 3 ani Garantie",
-"pret": 4282.25,
-"imagine": "http://1cctv.ro/116207/monitor-commercial-dell-alienware-aw3225qf-32-3840-x-2160-pixeli-black-white-3-ani-garantie.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2F1cctv.ro%2Fro%2Fmonitoare%2F37729-monitor-commercial-dell-alienware-aw3225qf-32-3840-x-2160-pixeli-black-white-3-ani-garantie.html%3Futm_source%3D2performant",
-"magazin": "1cctv.ro",
-"id": "nIVYwMBONP4f",
+"titlu": "DL MONITOR 4K 32'' U3225QE LED 3840x2160",
+"pret": 4727.43,
+"imagine": "https://dacris.vteximg.com.br/arquivos/ids/985479/DL-MONITOR-4K-32-U3225QE-LED-3840x2160-0.jpg?v=638962970706870000",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dacris.net%2Fu3225qe-dl-monitor-4k-32---u3225qe-led-3840x2160%2Fp%3FskuId%3D231245",
+"magazin": "dacris.net",
+"id": "UsZythwocuTa",
 "brand": "Dell",
-"url_magazin": "https://1cctv.ro/ro/monitoare/37729-monitor-commercial-dell-alienware-aw3225qf-32-3840-x-2160-pixeli-black-white-3-ani-garantie.html?utm_source=2performant",
+"url_magazin": "https://www.dacris.net/u3225qe-dl-monitor-4k-32---u3225qe-led-3840x2160/p?skuId=231245",
 "pret_vechi": null,
-"verificat": "2026-11-04"
+"verificat": "2026-11-25"
 },
 {
-"titlu": "32'' Gaming Monitor AW3225QF 3840x2160",
-"pret": 4362.34,
-"imagine": "https://dacris.vteximg.com.br/arquivos/ids/508027/32-Gaming-Monitor-AW3225QF-3840x2160-0.jpg?v=638962347560500000",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dacris.net%2Faw3225qf-32---gaming-monitor-aw3225qf-3840x2160%2Fp%3FskuId%3D220133",
-"magazin": "dacris.net",
-"id": "yzacj6YqMzu7",
-"brand": "Dell",
-"url_magazin": "https://www.dacris.net/aw3225qf-32---gaming-monitor-aw3225qf-3840x2160/p?skuId=220133",
+"titlu": "Monitor Samsung 32\" LS32HG800SUXEN, Diagonal (inch): 32, Diagonal (cm): 80, Aspect ratio: 16:9, Panel: OLED, Resolution:",
+"pret": 4921.0,
+"imagine": "http://1cctv.ro/167853/monitor-samsung-32-ls32hg800suxen-diagonal-inch-32-diagonal-cm-80-aspect-ratio-169-panel-oled-resolution-3840x21.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2F1cctv.ro%2Fro%2Fmonitoare%2F42850-monitor-samsung-32-ls32hg800suxen-diagonal-inch-32-diagonal-cm-80-aspect-ratio-169-panel-oled-resolution-3840x21.html%3Futm_source%3D2performant",
+"magazin": "1cctv.ro",
+"id": "ZchVX9xY_IBZ",
+"brand": "SAMSUNG",
+"url_magazin": "https://1cctv.ro/ro/monitoare/42850-monitor-samsung-32-ls32hg800suxen-diagonal-inch-32-diagonal-cm-80-aspect-ratio-169-panel-oled-resolution-3840x21.html?utm_source=2performant",
 "pret_vechi": null,
-"verificat": "2026-11-04"
+"verificat": "2026-11-25"
+},
+{
+"titlu": "Monitor Samsung 32\" LS32HG802ESXEN, Diagonal (inch): 32, Diagonal (cm): 81, Aspect ratio: 16:9, Panel: IPS, Resolution:",
+"pret": 6517.0,
+"imagine": "http://1cctv.ro/167865/monitor-samsung-32-ls32hg802esxen-diagonal-inch-32-diagonal-cm-81-aspect-ratio-169-panel-ips-resolution-6144x345.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2F1cctv.ro%2Fro%2Fmonitoare%2F43251-monitor-samsung-32-ls32hg802esxen-diagonal-inch-32-diagonal-cm-81-aspect-ratio-169-panel-ips-resolution-6144x345.html%3Futm_source%3D2performant",
+"magazin": "1cctv.ro",
+"id": "1iEmMrChzWdK",
+"brand": "SAMSUNG",
+"url_magazin": "https://1cctv.ro/ro/monitoare/43251-monitor-samsung-32-ls32hg802esxen-diagonal-inch-32-diagonal-cm-81-aspect-ratio-169-panel-ips-resolution-6144x345.html?utm_source=2performant",
+"pret_vechi": null,
+"verificat": "2026-11-25"
 }
 ],
 "magazine": [
@@ -7308,7 +7381,7 @@
 "titlu": "Monitoare de 144 Hz sau mai rapide",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-17",
+"actualizat": "2026-11-25",
 "feeduri": [
 {
 "id": 8969,
@@ -7356,7 +7429,7 @@
 "id": "QPpy2MIAJGgO",
 "brand": "Asrock",
 "url_magazin": "https://www.ozone.ro/product/monitor-gaming-asrock-challenger-cl27ffb-27-144hz-1ms-freesync/",
-"pret_vechi": 578.49,
+"pret_vechi": null,
 "verificat": "2026-11-04"
 },
 {
@@ -7383,18 +7456,6 @@
 "pret_vechi": null
 },
 {
-"titlu": "Monitor de gaming LG - UltraGear 24G411A-B, 23.8'', 144Hz, 1ms, negru",
-"pret": 504.15,
-"imagine": "https://www.ozone.ro/media/catalog/product/g/e/geyming_monitor_lg_ultragear_24g411a_b_23_8_144hz_1ms_cheren_1771434201_0.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ozone.ro%2Fproduct%2Fmonitor-de-gaming-lg-ultragear-24g411a-b-23-8-144hz-1ms-negru%2F",
-"magazin": "ozone.ro",
-"id": "g_540WOvp8ce",
-"brand": "LG",
-"url_magazin": "https://www.ozone.ro/product/monitor-de-gaming-lg-ultragear-24g411a-b-23-8-144hz-1ms-negru/",
-"pret_vechi": null,
-"verificat": "2026-11-04"
-},
-{
 "titlu": "Monitor KOORUI – E2712K, 27'', FHD, VA, 144Hz, FreeSync, negru",
 "pret": 504.15,
 "imagine": "https://www.ozone.ro/media/catalog/product/m/o/monitor_koorui_e2712k_27_fhd_va_144hz_freesync_cheren_1782113159_0.jpg",
@@ -7418,14 +7479,14 @@
 "pret_vechi": null
 },
 {
-"titlu": "Acer Monitor Acer EK251Q P6, 24.5, (62,2 cm), IPS, Full HD, 144 HZ, 1 ms, Negru",
-"pret": 517.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202512311121/367499/full/acer-acer-ek251q-p6-144hz-full-hd-ips-24-5-1047656.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fmonitoare-lcd-led%2Facer%2F367499-monitor-acer-ek251q-p6-24-5-62-2-cm-ips-full-hd-144-hz-1-ms-negru%2F",
-"magazin": "dwyn.ro",
-"id": "582aG3m5S5pp",
-"brand": "Acer",
-"url_magazin": "https://www.dwyn.ro/monitoare-lcd-led/acer/367499-monitor-acer-ek251q-p6-24-5-62-2-cm-ips-full-hd-144-hz-1-ms-negru/",
+"titlu": "Monitor gaming LG – UltraGear 24G411B-B, 23.8'', FHD, 144Hz, 5ms, IPS",
+"pret": 531.79,
+"imagine": "https://www.ozone.ro/media/catalog/product/g/e/geyming_monitor_lg_ultragear_24g411b_b_23_8_fhd_144hz_5ms_ips_1791867921_0.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ozone.ro%2Fproduct%2Fmonitor-gaming-lg-ultragear-24g411b-b-23-8-fhd-144hz-5ms-ips%2F",
+"magazin": "ozone.ro",
+"id": "sr-R-Ufk6YrI",
+"brand": "LG",
+"url_magazin": "https://www.ozone.ro/product/monitor-gaming-lg-ultragear-24g411b-b-23-8-fhd-144hz-5ms-ips/",
 "pret_vechi": null,
 "verificat": "2026-11-04"
 },
@@ -7478,6 +7539,28 @@
 "verificat": "2026-11-04"
 },
 {
+"titlu": "Acer Monitor gaming Acer Nitro VG240YP6BMIPX, 24'', IPS, Full HD, 144Hz, 1 ms, Negru",
+"pret": 716.99,
+"imagine": "https://www.dwyn.ro/images/products/img_202508191322/357164/full/acer-acer-nitro-vg240yp6bmipx-144hz-full-hd-ips-24-1024979.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fmonitoare-lcd-led%2Facer%2F357164-monitor-gaming-acer-nitro-vg240yp6bmipx-24-ips-full-hd-144hz-1-ms-negru%2F",
+"magazin": "dwyn.ro",
+"id": "CQsIBHX3xIGy",
+"brand": "Acer",
+"url_magazin": "https://www.dwyn.ro/monitoare-lcd-led/acer/357164-monitor-gaming-acer-nitro-vg240yp6bmipx-24-ips-full-hd-144hz-1-ms-negru/",
+"pret_vechi": null
+},
+{
+"titlu": "MSI Monitor LED gaming PRO MP245PHG E14, 23.8inch, IPS,1920 × 1080 pixeli (Full HD), Plat, 1ms, 144Hz, 1 × DisplayPort,",
+"pret": 723.99,
+"imagine": "https://www.dwyn.ro/images/products/img_202606122129/438685/full/msi-monitor-pro-mp245phg-e14-23-8-cala-led-fhd-flat-144hz-black-1414660.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fmonitoare-lcd-led%2Fmsi%2F438685-monitor-led-gaming-pro-mp245phg-e14-23-8inch-ips-1920-1080-pixeli-full-hd-plat-1ms-144hz-1-displayport-1-hdmi-2-0-1-usb-c-negru%2F",
+"magazin": "dwyn.ro",
+"id": "bzGLz7kSiNhK",
+"brand": "MSI",
+"url_magazin": "https://www.dwyn.ro/monitoare-lcd-led/msi/438685-monitor-led-gaming-pro-mp245phg-e14-23-8inch-ips-1920-1080-pixeli-full-hd-plat-1ms-144hz-1-displayport-1-hdmi-2-0-1-usb-c-negru/",
+"pret_vechi": null
+},
+{
 "titlu": "MSI Monitor gaming MSI PRO MP275PGN E14, 27inch, LED, Full HD, 1920 × 1080 pixeli, Curbat, 4ms, 144Hz, 1 × D-Sub (VGA),",
 "pret": 736.99,
 "imagine": "https://www.dwyn.ro/images/products/img_202606122129/438742/full/msi-monitor-gaming-msi-pro-mp275pgn-e14-27inch-led-full-hd-1920-1080-pixeli-curbat-4ms-144hz-1-d-sub-vga-1-displayport-1-hdmi-negru-1411789.jpg",
@@ -7488,33 +7571,9 @@
 "url_magazin": "https://www.dwyn.ro/monitoare-lcd-led/msi/438742-monitor-gaming-msi-pro-mp275pgn-e14-27inch-led-full-hd-1920-1080-pixeli-curbat-4ms-144hz-1-d-sub-vga-1-displayport-1-hdmi-negru/",
 "pret_vechi": null,
 "verificat": "2026-11-04"
-},
-{
-"titlu": "AOC Monitor Gaming IPS LED, AOC Q27B36X, 27 inch, QHD (2560 x 1440), HDMI, DisplayPort, 144 Hz, 0.5 ms, Negru",
-"pret": 773.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202512311121/376415/full/aoc-monitor-aoc-27-q27b36x-1114013.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fmonitoare-lcd-led%2Faoc%2F376415-monitor-gaming-ips-led-aoc-q27b36x-27-inch-qhd-2560-x-1440-hdmi-displayport-144-hz-0-5-ms-negru%2F",
-"magazin": "dwyn.ro",
-"id": "D4SspXekTI5n",
-"brand": "AOC",
-"url_magazin": "https://www.dwyn.ro/monitoare-lcd-led/aoc/376415-monitor-gaming-ips-led-aoc-q27b36x-27-inch-qhd-2560-x-1440-hdmi-displayport-144-hz-0-5-ms-negru/",
-"pret_vechi": null
-},
-{
-"titlu": "IIYAMA Gaming Monitor 32 VA Gaming G-Master Red Eagle FreeSync Premium 3840x2160 144Hz 400cd/m2 2xHDMI 2.1 DisplayPort U",
-"pret": 1951.47,
-"imagine": "http://1cctv.ro/167330/iiyama-gaming-monitor-32-va-gaming-g-master-red-eagle-freesync-premium-3840x2160-144hz-400cd-m2-2xhdmi-21-displayport-usb-c-95w.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2F1cctv.ro%2Fro%2Fmonitoare%2F42908-iiyama-gaming-monitor-32-va-gaming-g-master-red-eagle-freesync-premium-3840x2160-144hz-400cd-m2-2xhdmi-21-displayport-usb-c-95w.html%3Futm_source%3D2performant",
-"magazin": "1cctv.ro",
-"id": "QVQrqop7wy-A",
-"brand": "IIYAMA",
-"url_magazin": "https://1cctv.ro/ro/monitoare/42908-iiyama-gaming-monitor-32-va-gaming-g-master-red-eagle-freesync-premium-3840x2160-144hz-400cd-m2-2xhdmi-21-displayport-usb-c-95w.html?utm_source=2performant",
-"pret_vechi": null,
-"verificat": "2026-11-04"
 }
 ],
 "magazine": [
-"1cctv.ro",
 "dwyn.ro",
 "ozone.ro"
 ]
@@ -7526,7 +7585,7 @@
 "titlu": "Monitoare de gaming",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-17",
+"actualizat": "2026-11-25",
 "feeduri": [
 {
 "id": 8969,
@@ -7547,9 +7606,20 @@
 ],
 "produse": [
 {
+"titlu": "Monitor Gaming Asrock CL25FFB, 24,5 FHD (1920x1080) IPS, Anti-reflexie, 144 Hz, 99 sRGB, 16:9, 1500:1, 3",
+"pret": 419.25,
+"imagine": "https://www.ozone.ro/media/catalog/product/a/s/asrock_cl25ffb_gaming_monitor_24_5_fhd_1920x1080_ips_anti_glare_144_hz_99_srgb_16_9_1500_1_3_1795160524_0.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ozone.ro%2Fproduct%2Fmonitor-gaming-asrock-cl25ffb-24-5-fhd-1920x1080-ips-anti-reflexie-144-hz-99-srgb-16-9-1500-1-3%2F",
+"magazin": "ozone.ro",
+"id": "rqeXQDa3vn83",
+"brand": "Asrock",
+"url_magazin": "https://www.ozone.ro/product/monitor-gaming-asrock-cl25ffb-24-5-fhd-1920x1080-ips-anti-reflexie-144-hz-99-srgb-16-9-1500-1-3/",
+"pret_vechi": 601.79
+},
+{
 "titlu": "Monitor gaming Aopen - Fire Legend KG3 24KG3YS1bipx, 23.8'', 180Hz, 1ms, IPS",
 "pret": 450.99,
-"imagine": "https://www.ozone.ro/media/catalog/product/g/e/geyming_monitor_aopen_fire_legend_kg3_24kg3ys1bipx_23_8_180hz_1ms_ips_1790760279_0.jpg",
+"imagine": "https://www.ozone.ro/media/catalog/product/g/e/geyming_monitor_aopen_fire_legend_kg3_24kg3ys1bipx_23_8_180hz_1ms_ips_1795161132_8.jpg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ozone.ro%2Fproduct%2Fmonitor-gaming-aopen-fire-legend-kg3-24kg3ys1bipx-23-8-180hz-1ms-ips%2F",
 "magazin": "ozone.ro",
 "id": "w8tVDEEkqQJe",
@@ -7583,18 +7653,6 @@
 "verificat": "2026-11-04"
 },
 {
-"titlu": "Monitor Gaming AOC 24G50F, 23.8\", 1920 x 1080 pixeli, Black, 3 ani garantie",
-"pret": 498.84,
-"imagine": "http://1cctv.ro/167788/monitor-gaming-aoc-24g50f-238-1920-x-1080-pixeli-black-3-ani-garantie.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2F1cctv.ro%2Fro%2Fmonitoare%2F43229-monitor-gaming-aoc-24g50f-238-1920-x-1080-pixeli-black-3-ani-garantie.html%3Futm_source%3D2performant",
-"magazin": "1cctv.ro",
-"id": "RrM0keA_buDx",
-"brand": "AOC",
-"url_magazin": "https://1cctv.ro/ro/monitoare/43229-monitor-gaming-aoc-24g50f-238-1920-x-1080-pixeli-black-3-ani-garantie.html?utm_source=2performant",
-"pret_vechi": null,
-"verificat": "2026-11-04"
-},
-{
 "titlu": "Monitor de gaming Acer - Nitro KG243YS1bipx, 23.8'', FHD, 180Hz, 1ms, IPS",
 "pret": 504.09,
 "imagine": "https://www.ozone.ro/media/catalog/product/g/e/geyming_monitor_acer_nitro_kg243ys1bipx_23_8_fhd_180hz_1ms_ips_1791451140_0.jpg",
@@ -7605,6 +7663,18 @@
 "url_magazin": "https://www.ozone.ro/product/monitor-de-gaming-acer-nitro-kg243ys1bipx-23-8-fhd-180hz-1ms-ips/",
 "pret_vechi": null,
 "verificat": "2026-11-04"
+},
+{
+"titlu": "GIGABYTE Gaming Monitor 24,5 GS25F14 GIGABYTE Gaming Monitor 24,5` GS25F14",
+"pret": 515.57,
+"imagine": "https://dacris.vteximg.com.br/arquivos/ids/1062976/3dbb0cdf5e400b8456b7ee65443a47c1.png.png?v=639138846695100000",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dacris.net%2Fgs25f14-gigabyte-gaming-monitor-24-5--gs25f14%2Fp%3FskuId%3D246478",
+"magazin": "dacris.net",
+"id": "lnPaLBeVyAG4",
+"brand": "Gigabyte",
+"url_magazin": "https://www.dacris.net/gs25f14-gigabyte-gaming-monitor-24-5--gs25f14/p?skuId=246478",
+"pret_vechi": null,
+"verificat": "2026-11-25"
 },
 {
 "titlu": "Monitor gaming LG – UltraGear 24G411B-B, 23.8'', FHD, 144Hz, 5ms, IPS",
@@ -7619,18 +7689,6 @@
 "verificat": "2026-11-04"
 },
 {
-"titlu": "Monitor gaming Aopen - 27KG3S1bipx, 27'', 180Hz, 1ms, IPS, FHD",
-"pret": 557.19,
-"imagine": "https://www.ozone.ro/media/catalog/product/g/e/geyming_monitor_aopen_27kg3s1bipx_27_180hz_1ms_ips_fhd_1790844576_0.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ozone.ro%2Fproduct%2Fmonitor-gaming-aopen-27kg3s1bipx-27-180hz-1ms-ips-fhd%2F",
-"magazin": "ozone.ro",
-"id": "CRU-tBC0mcwd",
-"brand": "AOPEN",
-"url_magazin": "https://www.ozone.ro/product/monitor-gaming-aopen-27kg3s1bipx-27-180hz-1ms-ips-fhd/",
-"pret_vechi": null,
-"verificat": "2026-11-04"
-},
-{
 "titlu": "Monitor Gaming MSI MAG 256F E20, 24.5\", 1920 x 1080 pixeli, Black, 2 ani Garantie",
 "pret": 593.05,
 "imagine": "http://1cctv.ro/168119/monitor-gaming-msi-mag-256f-e20-245-1920-x-1080-pixeli-black-2-ani-garantie.jpg",
@@ -7641,18 +7699,6 @@
 "url_magazin": "https://1cctv.ro/ro/monitoare/43366-monitor-gaming-msi-mag-256f-e20-245-1920-x-1080-pixeli-black-2-ani-garantie.html?utm_source=2performant",
 "pret_vechi": null,
 "verificat": "2026-11-04"
-},
-{
-"titlu": "GIGABYTE GS27FC Gaming Monitor 27 VA",
-"pret": 658.54,
-"imagine": "https://dacris.vteximg.com.br/arquivos/ids/583376/GIGABYTE-GS27FC-Gaming-Monitor-27-VA-0.jpg?v=638962391428970000",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dacris.net%2Fgs27fc-gigabyte-gs27fc-gaming-monitor-27--va%2Fp%3FskuId%3D222197",
-"magazin": "dacris.net",
-"id": "IlA150PGI2sH",
-"brand": "Gigabyte",
-"url_magazin": "https://www.dacris.net/gs27fc-gigabyte-gs27fc-gaming-monitor-27--va/p?skuId=222197",
-"pret_vechi": null,
-"verificat": "2026-11-17"
 },
 {
 "titlu": "Monitor LED Gaming Curbat 32 inch OptimX MT32J, Full HD 1920x1020 VGA, HDMI, Slim, RGB Light",
@@ -7735,8 +7781,19 @@
 "id": "Q6LUVYJSEKgm",
 "brand": "Lenovo",
 "url_magazin": "https://www.ozone.ro/product/monitor-de-gaming-lenovo-l27-4r-27-fhd-ips-165hz-1-ms-freesync/",
-"pret_vechi": 896.89,
+"pret_vechi": null,
 "verificat": "2026-11-04"
+},
+{
+"titlu": "Monitor de gaming Lenovo - LOQ 27Q-10, 27'', QHD, 180Hz, 0,5ms, IPS, HDR10",
+"pret": 790.75,
+"imagine": "https://www.ozone.ro/media/catalog/product/g/e/geyming_monitor_lenovo_loq_27q_10_27_qhd_180hz_0_5ms_ips_hdr10_1790687920_0.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ozone.ro%2Fproduct%2Fmonitor-de-gaming-lenovo-loq-27q-10-27-qhd-180hz-0-5ms-ips-hdr10%2F",
+"magazin": "ozone.ro",
+"id": "HkSQj1DAvDft",
+"brand": "Lenovo",
+"url_magazin": "https://www.ozone.ro/product/monitor-de-gaming-lenovo-loq-27q-10-27-qhd-180hz-0-5ms-ips-hdr10/",
+"pret_vechi": null
 },
 {
 "titlu": "Monitor gaming Gigabyte – G27Q20, 27'', QHD, 210Hz, 0.5ms, IPS, FreeSync",
@@ -7762,15 +7819,16 @@
 "verificat": "2026-11-04"
 },
 {
-"titlu": "Monitor de gaming AOC - Q27G42XNE, 27'', 180Hz, 1ms, Adaptive-Sync",
-"pret": 987.15,
-"imagine": "https://www.ozone.ro/media/catalog/product/g/e/geyming_monitor_aoc_q27g42xne_27_180hz_1ms_adaptive_sync_1751290176_0.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ozone.ro%2Fproduct%2Fmonitor-de-gaming-aoc-q27g42xne-27-180hz-1ms-adaptive-sync%2F",
-"magazin": "ozone.ro",
-"id": "GwWiCdq3fZPD",
-"brand": "AOC",
-"url_magazin": "https://www.ozone.ro/product/monitor-de-gaming-aoc-q27g42xne-27-180hz-1ms-adaptive-sync/",
-"pret_vechi": 1055.99
+"titlu": "Monitor Gaming ViewSonic VX2757-2K-PRO, 27\", 2560x1440 pixeli, Black, 2 ani garantie",
+"pret": 946.41,
+"imagine": "http://1cctv.ro/167964/monitor-gaming-viewsonic-vx2757-2k-pro-27-2560x1440-pixeli-black-2-ani-garantie.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2F1cctv.ro%2Fro%2Fmonitoare%2F43295-monitor-gaming-viewsonic-vx2757-2k-pro-27-2560x1440-pixeli-black-2-ani-garantie.html%3Futm_source%3D2performant",
+"magazin": "1cctv.ro",
+"id": "Rv8nPSHxSB-3",
+"brand": "VIEWSONIC",
+"url_magazin": "https://1cctv.ro/ro/monitoare/43295-monitor-gaming-viewsonic-vx2757-2k-pro-27-2560x1440-pixeli-black-2-ani-garantie.html?utm_source=2performant",
+"pret_vechi": null,
+"verificat": "2026-11-04"
 },
 {
 "titlu": "ASROCK PG27QFT1B 27GAMING MONITOR ASROCK PG27QFT1B 27`GAMING MONITOR",
@@ -7797,18 +7855,6 @@
 "verificat": "2026-11-04"
 },
 {
-"titlu": "GIGABYTE GS27Q X Gaming Monitor 27 IPS",
-"pret": 1255.77,
-"imagine": "https://dacris.vteximg.com.br/arquivos/ids/637678/GIGABYTE-GS27Q-X-Gaming-Monitor-27-IPS-0.jpg?v=638962908079370000",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dacris.net%2Fgs27q-x-gigabyte-gs27q-x-gaming-monitor-27--ips%2Fp%3FskuId%3D228786",
-"magazin": "dacris.net",
-"id": "8N3NKmwL8Qmi",
-"brand": "Gigabyte",
-"url_magazin": "https://www.dacris.net/gs27q-x-gigabyte-gs27q-x-gaming-monitor-27--ips/p?skuId=228786",
-"pret_vechi": null,
-"verificat": "2026-11-17"
-},
-{
 "titlu": "GIGABYTE M27Q2 Gaming Monitor 27 2K",
 "pret": 1274.7,
 "imagine": "https://dacris.vteximg.com.br/arquivos/ids/1043624/e969564945894b41b4156b160c885a49.png?v=638986819649000000",
@@ -7831,6 +7877,18 @@
 "url_magazin": "https://www.dacris.net/g27u-monitor-gaming-gigabyte-27--g27u/p?skuId=246438",
 "pret_vechi": null,
 "verificat": "2026-11-04"
+},
+{
+"titlu": "32 GAMING MONITOR AW3226DM 2560x1440 32` GAMING MONITOR AW3226DM 2560x1440",
+"pret": 1728.98,
+"imagine": "https://dacris.vteximg.com.br/arquivos/ids/1089471/45c250f35c660dc9e16c9e4cbc859600.png.png?v=639223517803000000",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dacris.net%2Faw3226dm-32--gaming-monitor-aw3226dm-2560x1440%2Fp%3FskuId%3D252307",
+"magazin": "dacris.net",
+"id": "8J6DdesUIBC5",
+"brand": "Dell",
+"url_magazin": "https://www.dacris.net/aw3226dm-32--gaming-monitor-aw3226dm-2560x1440/p?skuId=252307",
+"pret_vechi": null,
+"verificat": "2026-11-25"
 }
 ],
 "magazine": [
@@ -7847,7 +7905,7 @@
 "titlu": "Monitoare 4K",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-17",
+"actualizat": "2026-11-25",
 "feeduri": [
 {
 "id": 1256,
@@ -7916,17 +7974,6 @@
 "verificat": "2026-11-04"
 },
 {
-"titlu": "Monitor Samsung - ViewFinity S7 S70H, 32'', 4K, IPS, FreeSync",
-"pret": 1247.99,
-"imagine": "https://www.ozone.ro/media/catalog/product/m/o/monitor_samsung_viewfinity_s7_s70h_32_4k_ips_freesync_1786713744_0.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ozone.ro%2Fproduct%2Fmonitor-samsung-viewfinity-s7-s70h-32-4k-ips-freesync%2F",
-"magazin": "ozone.ro",
-"id": "wUdcECmx83Y-",
-"brand": "Samsung",
-"url_magazin": "https://www.ozone.ro/product/monitor-samsung-viewfinity-s7-s70h-32-4k-ips-freesync/",
-"pret_vechi": null
-},
-{
 "titlu": "Monitor LED AOC U27B3A 27\" 4K Ultra HD 60Hz HDMI DP Black",
 "pret": 1338.59,
 "imagine": "http://www.itarena.ro/images/products/2024-11-05/original/474614_jpg.webp",
@@ -7975,6 +8022,18 @@
 "verificat": "2026-11-14"
 },
 {
+"titlu": "DL MONITOR 27 S2725QS 4K UHD 3840x2160 DL MONITOR 27` S2725QS 4K UHD 3840x2160",
+"pret": 1625.19,
+"imagine": "https://dacris.vteximg.com.br/arquivos/ids/1115746/42c405cef2c2a83b6941be2d41f5a6c0.jpg.jpg?v=639304789433170000",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dacris.net%2Fs2725qs-s-dl-monitor-27--s2725qs-4k-uhd-3840x2160%2Fp%3FskuId%3D258896",
+"magazin": "dacris.net",
+"id": "KX52rbScelzr",
+"brand": "Dell",
+"url_magazin": "https://www.dacris.net/s2725qs-s-dl-monitor-27--s2725qs-4k-uhd-3840x2160/p?skuId=258896",
+"pret_vechi": null,
+"verificat": "2026-11-25"
+},
+{
 "titlu": "Philips Monitor Gaming Philips Evnia 27M2N3800A/00, 27, Dual Mode 4K UHD (3840x2160) 160Hz/Full HD (1920x1080) 320Hz, Fa",
 "pret": 1627.99,
 "imagine": "https://www.dwyn.ro/images/products/img_202606122129/454147/full/philips-monitor-gaming-philips-evnia-27m2n3800a-00-27-dual-mode-4k-uhd-3840x2160-160hz-full-hd-1920x1080-320hz-fast-ips-wled-1ms-gtg-g-sync-compatible-adaptive-sync-stark-shadow-boost-smart-crosshair--1527481.jpg",
@@ -8011,6 +8070,17 @@
 "verificat": "2026-11-04"
 },
 {
+"titlu": "MSI Monitor LED Modern MD272UPSW, 27inch, UHD (4K), 3840 × 2160 pixeli, Plat, 4ms, 60Hz, DisplayPort, HDMI, USB Type-C,",
+"pret": 1747.99,
+"imagine": "https://www.dwyn.ro/images/products/img_202606122129/438727/full/msi-monitor-27-inches-modern-md272upsw-led-uhd-flat-60hz-white-1411279.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fmonitoare-lcd-led%2Fmsi%2F438727-monitor-led-modern-md272upsw-27inch-uhd-4k-3840-2160-pixeli-plat-4ms-60hz-displayport-hdmi-usb-type-c-alb%2F",
+"magazin": "dwyn.ro",
+"id": "i9SQ-98un-Mm",
+"brand": "MSI",
+"url_magazin": "https://www.dwyn.ro/monitoare-lcd-led/msi/438727-monitor-led-modern-md272upsw-27inch-uhd-4k-3840-2160-pixeli-plat-4ms-60hz-displayport-hdmi-usb-type-c-alb/",
+"pret_vechi": null
+},
+{
 "titlu": "DL MONITOR 27 S2725QC 4K 3840 x 2160 DL MONITOR 27` S2725QC 4K 3840 x 2160",
 "pret": 1770.57,
 "imagine": "https://dacris.vteximg.com.br/arquivos/ids/1115726/4b1c47404653e739af362c739d37d40e.png.png?v=639303922527800000",
@@ -8023,18 +8093,6 @@
 "verificat": "2026-11-17"
 },
 {
-"titlu": "Monitor LED Iiyama G-Master GB3261UHSCP-B1 31.5\" 4K Ultra HD 144Hz 0.6ms Black",
-"pret": 1831.42,
-"imagine": "http://www.itarena.ro/images/products/2026-10-12/original/532690_jpg.webp",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.itarena.ro%2Fmonitoare%2Fmonitor_led_iiyama_gmaster_gb3261uhscpb1_315_4k_ultra_hd_144hz_06ms_black.html",
-"magazin": "itarena.ro",
-"id": "NlzrkjhBdqub",
-"brand": "iiyama",
-"url_magazin": "https://www.itarena.ro/monitoare/monitor_led_iiyama_gmaster_gb3261uhscpb1_315_4k_ultra_hd_144hz_06ms_black.html",
-"pret_vechi": null,
-"verificat": "2026-11-06"
-},
-{
 "titlu": "DL MONITOR 31.5 S3225QS 4K UHD 3840x216 DL MONITOR 31.5` S3225QS 4K UHD 3840x216",
 "pret": 1863.47,
 "imagine": "https://dacris.vteximg.com.br/arquivos/ids/1008532/DL-MONITOR-31-5-S3225QS-4K-UHD-3840x216-0.jpg?v=638963014605900000",
@@ -8045,6 +8103,18 @@
 "url_magazin": "https://www.dacris.net/s3225qs-dl-monitor-31-5--s3225qs-4k-uhd-3840x216/p?skuId=233742",
 "pret_vechi": null,
 "verificat": "2026-11-14"
+},
+{
+"titlu": "Monitor LED Philips Evnia 27M2N5901A/00 27\" 4K Ultra HD 1ms White",
+"pret": 1866.32,
+"imagine": "http://www.itarena.ro/images/products/2025-12-17/original/508371_jpg.webp",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.itarena.ro%2Fmonitoare%2Fmonitor_led_philips_evnia_27m2n5901a00_27_4k_ultra_hd_1ms_white.html",
+"magazin": "itarena.ro",
+"id": "MEfjv1H33U7I",
+"brand": "Philips",
+"url_magazin": "https://www.itarena.ro/monitoare/monitor_led_philips_evnia_27m2n5901a00_27_4k_ultra_hd_1ms_white.html",
+"pret_vechi": null,
+"verificat": "2026-11-25"
 },
 {
 "titlu": "Monitor Samsung - ViewFinity S8 S80UH, 27'', 4K, IPS, negru",
@@ -8138,18 +8208,6 @@
 "brand": "HP",
 "url_magazin": "https://www.ozone.ro/product/monitor-hp-727pk-7-pro-27-4k-ips-anti-glare/",
 "pret_vechi": null
-},
-{
-"titlu": "DL MONITOR 31.5 S3225QC 4K UHD 3840x2160",
-"pret": 3051.58,
-"imagine": "https://dacris.vteximg.com.br/arquivos/ids/1071224/overlay_dd1fd0667576d5444d1982399269e166.jpeg.jpg?v=639150088699330000",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dacris.net%2Fs3225qc-dl-monitor-31-5-s3225qc-4k-uhd-3840x2160%2Fp%3FskuId%3D248710",
-"magazin": "dacris.net",
-"id": "N_ZQ2EA7H8CG",
-"brand": "Dell",
-"url_magazin": "https://www.dacris.net/s3225qc-dl-monitor-31-5-s3225qc-4k-uhd-3840x2160/p?skuId=248710",
-"pret_vechi": null,
-"verificat": "2026-11-17"
 }
 ],
 "magazine": [
@@ -8166,7 +8224,7 @@
 "titlu": "Tablete Samsung",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-17",
+"actualizat": "2026-11-25",
 "feeduri": [
 {
 "id": 1539,
@@ -8204,11 +8262,22 @@
 "imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4252%2F4252915%2Fsamsung-galaxy-tab-a11-87-64g-68e50a4d15d30.jpg&type=auto&width=500&sign=4nue9wM-LO6K7FcFgZTIqWz4r4a8BNNQQEwOvxDvnuw",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Ftelefoane-tablete-accesorii-tablete-si-accesorii-tablete%2Fsamsung-tableta-samsung-galaxy-tab-a11-x135-procesor-mediatek-helio-g99-octa-core-ecran-tft-8.7-4gb-ram-64gb-flash-8mp-wi-fi-bluetooth-gps-4g-android-argintiu-4252915.html",
 "magazin": "evomag.ro",
-"id": "P00lFFbApcaU",
+"id": "bqjPly4RbvI_",
 "brand": "Samsung",
 "url_magazin": "https://www.evomag.ro/telefoane-tablete-accesorii-tablete-si-accesorii-tablete/samsung-tableta-samsung-galaxy-tab-a11-x135-procesor-mediatek-helio-g99-octa-core-ecran-tft-8.7-4gb-ram-64gb-flash-8mp-wi-fi-bluetooth-gps-4g-android-argintiu-4252915.html",
-"pret_vechi": 988.99,
+"pret_vechi": null,
 "verificat": "2026-11-06"
+},
+{
+"titlu": "Tableta Samsung Galaxy Tab A11+ X230, Procesor MediaTek Dimensity 7300 Octa-Core, Ecran TFT 11inch, 6GB RAM, 128GB Flash",
+"pret": 1199.99,
+"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4259%2F4259930%2Ftableta-samsung-galaxy-tab-a11-691209373b996.png&type=auto&width=500&sign=-pQKSRZ3e7oJQcYyBOuPWIqhfJiXUNQ7PnpYGaeiuu0",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Ftelefoane-tablete-accesorii-tablete-si-accesorii-tablete%2Fsamsung-tableta-samsung-galaxy-tab-a11-x230-procesor-mediatek-dimensity-7300-octa-core-ecran-tft-11-6gb-ram-128gb-flash-8mp-wi-fi-bluetooth-gps-android-gri-4259930.html",
+"magazin": "evomag.ro",
+"id": "Z5JN91zpmt1V",
+"brand": "Samsung",
+"url_magazin": "https://www.evomag.ro/telefoane-tablete-accesorii-tablete-si-accesorii-tablete/samsung-tableta-samsung-galaxy-tab-a11-x230-procesor-mediatek-dimensity-7300-octa-core-ecran-tft-11-6gb-ram-128gb-flash-8mp-wi-fi-bluetooth-gps-android-gri-4259930.html",
+"pret_vechi": 1255.99
 },
 {
 "titlu": "Tableta Samsung Galaxy Tab S6 Lite P620 (2024), Procesor Exynos 1280 Octa-Core, Ecran TFT 2K 10.4inch, 4GB RAM, 64GB Fla",
@@ -8220,18 +8289,6 @@
 "brand": "Samsung",
 "url_magazin": "https://www.evomag.ro/telefoane-tablete-accesorii-tablete-si-accesorii-tablete/samsung-tableta-samsung-galaxy-tab-s6-lite-p620-2024-procesor-exynos-1280-octa-core-ecran-tft-2k-10.4-4gb-ram-64gb-flash-8mp-wi-fi-android-s-pen-inclus-gri-4152481.html",
 "pret_vechi": null,
-"verificat": "2026-11-06"
-},
-{
-"titlu": "Tableta Samsung Galaxy Tab A11+ X236, Procesor MediaTek Dimensity 7300 Octa-Core, Ecran TFT 11inch, 6GB RAM, 128GB Flash",
-"pret": 1379.99,
-"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4259%2F4259933%2Fsamsung-galaxy-tab-a11-109-1-69120961e35ef.png&type=auto&width=500&sign=qf0TzmKPAUPLBeXPL2iiWa2zu3cVPMkgeB4ofn7Q81w",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Ftelefoane-tablete-accesorii-tablete-si-accesorii-tablete%2Fsamsung-tableta-samsung-galaxy-tab-a11-x236-procesor-mediatek-dimensity-7300-octa-core-ecran-tft-11-6gb-ram-128gb-flash-8mp-wi-fi-bluetooth-gps-5g-android-gri-4259933.html",
-"magazin": "evomag.ro",
-"id": "pnzRWQvU8ebU",
-"brand": "Samsung",
-"url_magazin": "https://www.evomag.ro/telefoane-tablete-accesorii-tablete-si-accesorii-tablete/samsung-tableta-samsung-galaxy-tab-a11-x236-procesor-mediatek-dimensity-7300-octa-core-ecran-tft-11-6gb-ram-128gb-flash-8mp-wi-fi-bluetooth-gps-5g-android-gri-4259933.html",
-"pret_vechi": 1499.99,
 "verificat": "2026-11-06"
 },
 {
@@ -8247,40 +8304,6 @@
 "verificat": "2026-11-06"
 },
 {
-"titlu": "Samsung Tableta Samsung Galaxy Tab A11+, Octa-Core, 11, 6GB RAM, 128GB, WIFI, Argintiu",
-"pret": 1439.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202508191322/352946/full/samsung-tableta-samsung-galaxy-tab-a11-plus-octa-core-11-6gb-ram-128gb-wifi-argintiu-987398.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Ftablete-pc%2Fsamsung%2F352946-tableta-samsung-galaxy-tab-a11-plus-octa-core-11-6gb-ram-128gb-wifi-argintiu%2F",
-"magazin": "dwyn.ro",
-"id": "paOXP-NZsT4C",
-"brand": "Samsung",
-"url_magazin": "https://www.dwyn.ro/tablete-pc/samsung/352946-tableta-samsung-galaxy-tab-a11-plus-octa-core-11-6gb-ram-128gb-wifi-argintiu/",
-"pret_vechi": null
-},
-{
-"titlu": "Tableta Samsung Galaxy Tab A11+ X230, Procesor MediaTek Dimensity 7300 Octa-Core, Ecran TFT 11inch, 8GB RAM, 256GB Flash",
-"pret": 1599.99,
-"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4259%2F4259929%2Ftableta-samsung-galaxy-tab-a11-69120941ad50c.png&type=auto&width=500&sign=IMbkdTLb10jYEWzy5UopQk4OKSUehDY2Lq2pGSfzbQo",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Ftelefoane-tablete-accesorii-tablete-si-accesorii-tablete%2Fsamsung-tableta-samsung-galaxy-tab-a11-x230-procesor-mediatek-dimensity-7300-octa-core-ecran-tft-11-8gb-ram-256gb-flash-8mp-wi-fi-bluetooth-gps-android-gri-4259929.html",
-"magazin": "evomag.ro",
-"id": "hRzw1vUkpT-x",
-"brand": "Samsung",
-"url_magazin": "https://www.evomag.ro/telefoane-tablete-accesorii-tablete-si-accesorii-tablete/samsung-tableta-samsung-galaxy-tab-a11-x230-procesor-mediatek-dimensity-7300-octa-core-ecran-tft-11-8gb-ram-256gb-flash-8mp-wi-fi-bluetooth-gps-android-gri-4259929.html",
-"pret_vechi": null,
-"verificat": "2026-11-06"
-},
-{
-"titlu": "Samsung Tableta Samsung Galaxy Tab A11+, Octa-Core, 11, 8GB RAM, 256GB, 5G, Argintiu",
-"pret": 1665.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202508191322/352952/full/samsung-tableta-samsung-galaxy-tab-a11-plus-octa-core-11-8gb-ram-256gb-5g-argintiu-987446.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Ftablete-pc%2Fsamsung%2F352952-tableta-samsung-galaxy-tab-a11-plus-octa-core-11-8gb-ram-256gb-5g-argintiu%2F",
-"magazin": "dwyn.ro",
-"id": "DWmcSe4IlNHr",
-"brand": "Samsung",
-"url_magazin": "https://www.dwyn.ro/tablete-pc/samsung/352952-tableta-samsung-galaxy-tab-a11-plus-octa-core-11-8gb-ram-256gb-5g-argintiu/",
-"pret_vechi": null
-},
-{
 "titlu": "Tableta Samsung Galaxy Tab S10 Lite X400, Procesor Octa-Core Exynos 1380, Ecran TFT 10.9inch, 6GB RAM, 128GB Flash, 8MP,",
 "pret": 1749.99,
 "imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4243%2F4243828%2Fsamsung-galaxy-tab-s10-lite-10-68ada3bf8ce24.jpg&type=auto&width=500&sign=frEnryKLxzF_t3mWmOXLvlqVUokibDnMx8iy4mR66Lk",
@@ -8293,6 +8316,17 @@
 "verificat": "2026-11-04"
 },
 {
+"titlu": "Tableta Samsung Galaxy Tab A11+ X236, Procesor MediaTek Dimensity 7300 Octa-Core, Ecran TFT 11inch, 8GB RAM, 256GB Flash",
+"pret": 1779.99,
+"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4259%2F4259932%2Fsamsung-galaxy-tab-a11-109-2-69120955ea296.png&type=auto&width=500&sign=n7bRGhzcE5VSmoBofE-8uQM78clNDmR5bgR1Mxf6Pao",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Ftelefoane-tablete-accesorii-tablete-si-accesorii-tablete%2Fsamsung-tableta-samsung-galaxy-tab-a11-x236-procesor-mediatek-dimensity-7300-octa-core-ecran-tft-11-8gb-ram-256gb-flash-8mp-wi-fi-bluetooth-gps-5g-android-gri-4259932.html",
+"magazin": "evomag.ro",
+"id": "ur-OS2MeuYUg",
+"brand": "Samsung",
+"url_magazin": "https://www.evomag.ro/telefoane-tablete-accesorii-tablete-si-accesorii-tablete/samsung-tableta-samsung-galaxy-tab-a11-x236-procesor-mediatek-dimensity-7300-octa-core-ecran-tft-11-8gb-ram-256gb-flash-8mp-wi-fi-bluetooth-gps-5g-android-gri-4259932.html",
+"pret_vechi": null
+},
+{
 "titlu": "Tableta Samsung Galaxy Tab S10 Lite X406, 5G, Procesor Octa-Core Exynos 1380, Ecran TFT 10.9inch, 6GB RAM, 128GB Flash,",
 "pret": 2073.99,
 "imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4247%2F4247719%2Ftableta-samsung-galaxy-tab-s10-68aea7736e1cf.jpg&type=auto&width=500&sign=VlBRGIh_ILGtRGCOT4HbfEL834VY8mmjjqbuRyYzWNg",
@@ -8301,18 +8335,6 @@
 "id": "DbgoqqdtmA1R",
 "brand": "Samsung",
 "url_magazin": "https://www.evomag.ro/telefoane-tablete-accesorii-tablete-si-accesorii-tablete/samsung-tableta-samsung-galaxy-tab-s10-lite-x406-5g-procesor-octa-core-exynos-1380-ecran-tft-10.9-6gb-ram-128gb-flash-8mp-wi-fi-bluetooth-gps-android-s-pen-argintiu-4247719.html",
-"pret_vechi": null,
-"verificat": "2026-11-04"
-},
-{
-"titlu": "Samsung Tableta Samsung Galaxy Tab S10 FE, Procesor Exynos 1580 Octa-Core, Ecran TFT 90Hz 10.9, 8GB RAM, 128GB Flash, GP",
-"pret": 2299.0,
-"imagine": "https://www.dwyn.ro/images/products/img_202508191322/363929/full/samsung-tableta-samsung-galaxy-tab-s10-fe-procesor-exynos-1580-octa-core-ecran-tft-90hz-10-9-8gb-ram-128gb-flash-gps-wi-fi-bluetooth-android-s-pen-albastru-1021184.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Ftablete-pc%2Fsamsung%2F363929-tableta-samsung-galaxy-tab-s10-fe-procesor-exynos-1580-octa-core-ecran-tft-90hz-10-9-8gb-ram-128gb-flash-gps-wi-fi-bluetooth-android-s-pen-albastru%2F",
-"magazin": "dwyn.ro",
-"id": "02OHRljxXqS8",
-"brand": "Samsung",
-"url_magazin": "https://www.dwyn.ro/tablete-pc/samsung/363929-tableta-samsung-galaxy-tab-s10-fe-procesor-exynos-1580-octa-core-ecran-tft-90hz-10-9-8gb-ram-128gb-flash-gps-wi-fi-bluetooth-android-s-pen-albastru/",
 "pret_vechi": null,
 "verificat": "2026-11-04"
 },
@@ -8329,17 +8351,6 @@
 "verificat": "2026-11-04"
 },
 {
-"titlu": "Samsung Tableta Samsung Galaxy Tab S10 FE+ 13.1 inch, 12GB RAM, 256GB, Wi-Fi, S Pen, Gri",
-"pret": 4499.0,
-"imagine": "https://www.dwyn.ro/images/products/img_202606122129/480217/full/samsung-tableta-samsung-galaxy-tab-s10-fe-plus-13-1-inch-12gb-ram-256gb-wi-fi-s-pen-gri-1537585.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Ftablete-pc%2Fsamsung%2F480217-tableta-samsung-galaxy-tab-s10-fe-plus-13-1-inch-12gb-ram-256gb-wi-fi-s-pen-gri%2F",
-"magazin": "dwyn.ro",
-"id": "av1pfLTMxYqG",
-"brand": "Samsung",
-"url_magazin": "https://www.dwyn.ro/tablete-pc/samsung/480217-tableta-samsung-galaxy-tab-s10-fe-plus-13-1-inch-12gb-ram-256gb-wi-fi-s-pen-gri/",
-"pret_vechi": null
-},
-{
 "titlu": "Samsung Tableta Samsung Galaxy Tab S10 FE+, Octa-Core, 13.1'', 12GB RAM, 256GB, WiFi, 13MP, 10090mAh, S Pen, Albastru",
 "pret": 4499.0,
 "imagine": "https://www.dwyn.ro/images/products/img_202508191322/346724/full/samsung-tableta-samsung-galaxy-tab-s10-fe-plus-octa-core-13-1-12gb-ram-256gb-wifi-13mp-10090mah-s-pen-albastru-954206.jpg",
@@ -8348,6 +8359,17 @@
 "id": "hA6ZgzIe_XyO",
 "brand": "Samsung",
 "url_magazin": "https://www.dwyn.ro/tablete-pc/samsung/346724-tableta-samsung-galaxy-tab-s10-fe-plus-octa-core-13-1-12gb-ram-256gb-wifi-13mp-10090mah-s-pen-albastru/",
+"pret_vechi": null
+},
+{
+"titlu": "Samsung Tableta Samsung Galaxy Tab S10 FE+ 13.1 inch, 12GB RAM, 256GB, Wi-Fi, S Pen, Gri",
+"pret": 4828.99,
+"imagine": "https://www.dwyn.ro/images/products/img_202606122129/480217/full/samsung-tableta-samsung-galaxy-tab-s10-fe-plus-13-1-inch-12gb-ram-256gb-wi-fi-s-pen-gri-1537585.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Ftablete-pc%2Fsamsung%2F480217-tableta-samsung-galaxy-tab-s10-fe-plus-13-1-inch-12gb-ram-256gb-wi-fi-s-pen-gri%2F",
+"magazin": "dwyn.ro",
+"id": "av1pfLTMxYqG",
+"brand": "Samsung",
+"url_magazin": "https://www.dwyn.ro/tablete-pc/samsung/480217-tableta-samsung-galaxy-tab-s10-fe-plus-13-1-inch-12gb-ram-256gb-wi-fi-s-pen-gri/",
 "pret_vechi": null
 },
 {
@@ -8373,6 +8395,39 @@
 "url_magazin": "https://www.dwyn.ro/tablete-pc/samsung/376670-tableta-samsung-galaxy-tab-s11-diagonala-ecran-11-12gb-ram-512gb-wifi-8400-mah-ip68-s-pen-silver/",
 "pret_vechi": null,
 "verificat": "2026-11-04"
+},
+{
+"titlu": "Samsung Tableta Samsung Galaxy Tab S11, Ecran 11, 12GB RAM, 512GB, 5G, 8400mAh, GRAY",
+"pret": 5937.99,
+"imagine": "https://www.dwyn.ro/images/products/img_202512311121/376673/full/samsung-tableta-samsung-galaxy-tab-s11-ecran-11-12gb-ram-512gb-5g-8400mah-gray-1147319.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Ftablete-pc%2Fsamsung%2F376673-tableta-samsung-galaxy-tab-s11-ecran-11-12gb-ram-512gb-5g-8400mah-gray%2F",
+"magazin": "dwyn.ro",
+"id": "EKJaggiqtwOJ",
+"brand": "Samsung",
+"url_magazin": "https://www.dwyn.ro/tablete-pc/samsung/376673-tableta-samsung-galaxy-tab-s11-ecran-11-12gb-ram-512gb-5g-8400mah-gray/",
+"pret_vechi": null
+},
+{
+"titlu": "Samsung Tableta Samsung Galaxy Tab S12+, 12GB RAM, 256GB, WIFI, Gri",
+"pret": 6323.99,
+"imagine": "https://www.dwyn.ro/images/products/img_202606122129/479026/full/samsung-tableta-samsung-galaxy-tab-s12-plus-12gb-ram-256gb-wifi-gray-1510147.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Ftablete-pc%2Fsamsung%2F479026-tableta-samsung-galaxy-tab-s12-plus-12gb-ram-256gb-wifi-gri%2F",
+"magazin": "dwyn.ro",
+"id": "VSDKu9SusimG",
+"brand": "Samsung",
+"url_magazin": "https://www.dwyn.ro/tablete-pc/samsung/479026-tableta-samsung-galaxy-tab-s12-plus-12gb-ram-256gb-wifi-gri/",
+"pret_vechi": null
+},
+{
+"titlu": "Samsung Tableta Samsung Galaxy Tab S12+, Dual Sim, 12GB RAM, 256GB, 5G, Argintiu",
+"pret": 6345.99,
+"imagine": "https://www.dwyn.ro/images/products/img_202606122129/479023/full/samsung-tableta-samsung-galaxy-tab-s12-plus-dual-sim-12gb-ram-256gb-5g-argintiu-1510120.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Ftablete-pc%2Fsamsung%2F479023-tableta-samsung-galaxy-tab-s12-plus-dual-sim-12gb-ram-256gb-5g-argintiu%2F",
+"magazin": "dwyn.ro",
+"id": "egmIjfiH9Hlo",
+"brand": "Samsung",
+"url_magazin": "https://www.dwyn.ro/tablete-pc/samsung/479023-tableta-samsung-galaxy-tab-s12-plus-dual-sim-12gb-ram-256gb-5g-argintiu/",
+"pret_vechi": null
 }
 ],
 "magazine": [
@@ -20952,7 +21007,7 @@
 "titlu": "Puzzle de 1000 de piese",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-17",
+"actualizat": "2026-11-25",
 "feeduri": [
 {
 "id": 8767,
@@ -21033,78 +21088,6 @@
 "verificat": "2026-11-05"
 },
 {
-"titlu": "Puzzle 1000 Piese, Deico, Franta, Louvre",
-"pret": 51.99,
-"imagine": "https://www.trada.ro/img/puzzle-1000-piese-deico-franta-louvre-148452html_tr-297791-large.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.trada.ro%2Fpuzzle-1000-piese-deico-franta-louvre-148452.html",
-"magazin": "trada.ro",
-"id": "SEbK_FYzZevb",
-"brand": "Deico",
-"url_magazin": "https://www.trada.ro/puzzle-1000-piese-deico-franta-louvre-148452.html",
-"pret_vechi": 60.45,
-"verificat": "2026-11-05"
-},
-{
-"titlu": "Puzzle 1000 Piese, Deico, Zana Zapezii de Groos Zselyke",
-"pret": 51.99,
-"imagine": "https://www.trada.ro/img/puzzle-1000-piese-deico-zana-zapezii-de-groos-zselyke-146215html_tr-295797-large.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.trada.ro%2Fpuzzle-1000-piese-deico-zana-zapezii-de-groos-zselyke-146215.html",
-"magazin": "trada.ro",
-"id": "gNZJA3Zbn0br",
-"brand": "Deico",
-"url_magazin": "https://www.trada.ro/puzzle-1000-piese-deico-zana-zapezii-de-groos-zselyke-146215.html",
-"pret_vechi": 60.45,
-"verificat": "2026-11-13"
-},
-{
-"titlu": "Puzzle 1000 Piese pentru Adulti, Deico, Marie Spartali Stillman, Fiammetta Singing",
-"pret": 51.99,
-"imagine": "https://www.trada.ro/img/puzzle-1000-piese-pentru-adulti-deico-marie-spartali-stillman-fiammetta-singing-146216html_tr-295805-large.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.trada.ro%2Fpuzzle-1000-piese-pentru-adulti-deico-marie-spartali-stillman-fiammetta-singing-146216.html",
-"magazin": "trada.ro",
-"id": "ZGzQF3xXeXP8",
-"brand": "Deico",
-"url_magazin": "https://www.trada.ro/puzzle-1000-piese-pentru-adulti-deico-marie-spartali-stillman-fiammetta-singing-146216.html",
-"pret_vechi": 60.45,
-"verificat": "2026-11-13"
-},
-{
-"titlu": "Puzzle 1000 Piese pentru Adulti, Deico, Robert Delaunay, Rythme",
-"pret": 51.99,
-"imagine": "https://www.trada.ro/img/puzzle-1000-piese-pentru-adulti-deico-robert-delaunay-rythme-146219html_tr-295825-large.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.trada.ro%2Fpuzzle-1000-piese-pentru-adulti-deico-robert-delaunay-rythme-146219.html",
-"magazin": "trada.ro",
-"id": "Z9sd83S_MfHq",
-"brand": "Deico",
-"url_magazin": "https://www.trada.ro/puzzle-1000-piese-pentru-adulti-deico-robert-delaunay-rythme-146219.html",
-"pret_vechi": 60.45,
-"verificat": "2026-11-13"
-},
-{
-"titlu": "Puzzle 1000 Piese pentru Adulti, Deico, Robert Delaunay Tour Eiffel",
-"pret": 51.99,
-"imagine": "https://www.trada.ro/img/puzzle-1000-piese-pentru-adulti-deico-robert-delaunay-tour-eiffel-146220html_tr-295832-large.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.trada.ro%2Fpuzzle-1000-piese-pentru-adulti-deico-robert-delaunay-tour-eiffel-146220.html",
-"magazin": "trada.ro",
-"id": "g7td9rB3Tytx",
-"brand": "Deico",
-"url_magazin": "https://www.trada.ro/puzzle-1000-piese-pentru-adulti-deico-robert-delaunay-tour-eiffel-146220.html",
-"pret_vechi": 60.45,
-"verificat": "2026-11-13"
-},
-{
-"titlu": "Puzzle 1000 Piese pentru Adulti, Deico, Emile Vernon, The Flower Garden",
-"pret": 51.99,
-"imagine": "https://www.trada.ro/img/puzzle-1000-piese-pentru-adulti-deico-emile-vernon-the-flower-garden-146223html_tr-295849-large.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.trada.ro%2Fpuzzle-1000-piese-pentru-adulti-deico-emile-vernon-the-flower-garden-146223.html",
-"magazin": "trada.ro",
-"id": "sLrKa2WVz9kD",
-"brand": "Deico",
-"url_magazin": "https://www.trada.ro/puzzle-1000-piese-pentru-adulti-deico-emile-vernon-the-flower-garden-146223.html",
-"pret_vechi": 60.45,
-"verificat": "2026-11-13"
-},
-{
 "titlu": "Puzzle 1000 Piese pentru Adulti, Deico, Castelul Bran Iarna",
 "pret": 51.99,
 "imagine": "https://www.trada.ro/img/puzzle-1000-piese-pentru-adulti-deico-castelul-bran-iarna-146761html_tr-296476-large.jpg",
@@ -21117,6 +21100,17 @@
 "verificat": "2026-11-17"
 },
 {
+"titlu": "Puzzle 1000 Piese D-Toys, Edouard Manet, The Banks of the Seine at Argenteuil",
+"pret": 56.99,
+"imagine": "https://www.trada.ro/img/puzzle-1000-piese-d-toys-edouard-manet-the-banks-of-the-seine-at-argenteuil-146026html_tr-295099-large.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.trada.ro%2Fpuzzle-1000-piese-d-toys-edouard-manet-the-banks-of-the-seine-at-argenteuil-146026.html",
+"magazin": "trada.ro",
+"id": "ybZ25sUPIMwZ",
+"brand": "D-Toys",
+"url_magazin": "https://www.trada.ro/puzzle-1000-piese-d-toys-edouard-manet-the-banks-of-the-seine-at-argenteuil-146026.html",
+"pret_vechi": 66.27
+},
+{
 "titlu": "Puzzle 1000 Piese D-Toys, Bruegel cel Batran, Caderea lui Icarus",
 "pret": 56.99,
 "imagine": "https://www.trada.ro/img/puzzle-1000-piese-d-toys-bruegel-cel-batran-caderea-lui-icarus-146047html_tr-295205-large.jpg",
@@ -21127,6 +21121,61 @@
 "url_magazin": "https://www.trada.ro/puzzle-1000-piese-d-toys-bruegel-cel-batran-caderea-lui-icarus-146047.html",
 "pret_vechi": 66.27,
 "verificat": "2026-11-17"
+},
+{
+"titlu": "Puzzle 1000 Piese, Alphonse Mucha – Zodiac, D-toys",
+"pret": 56.99,
+"imagine": "https://www.trada.ro/img/puzzle-1000-piese-alphonse-mucha-zodiac-d-toys-192162html_tr-350015-large.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.trada.ro%2Fpuzzle-1000-piese-alphonse-mucha-zodiac-d-toys-192162.html",
+"magazin": "trada.ro",
+"id": "JpWx0T2t7GFi",
+"brand": "D-Toys",
+"url_magazin": "https://www.trada.ro/puzzle-1000-piese-alphonse-mucha-zodiac-d-toys-192162.html",
+"pret_vechi": 66.27
+},
+{
+"titlu": "Puzzle 1000 Piese D-Toys, Edvard Munch, The Scream",
+"pret": 56.99,
+"imagine": "https://www.trada.ro/img/puzzle-1000-piese-d-toys-edvard-munch-the-scream-145992html_tr-294890-large.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.trada.ro%2Fpuzzle-1000-piese-d-toys-edvard-munch-the-scream-145992.html",
+"magazin": "trada.ro",
+"id": "1xzEvOWJ4hia",
+"brand": "D-Toys",
+"url_magazin": "https://www.trada.ro/puzzle-1000-piese-d-toys-edvard-munch-the-scream-145992.html",
+"pret_vechi": 66.27
+},
+{
+"titlu": "Puzzle 1000 Piese D-Toys, Albert Bredow, Romantic Winter Landscape with Ice Skaters by a Castle",
+"pret": 56.99,
+"imagine": "https://www.trada.ro/img/puzzle-1000-piese-d-toys-albert-bredow-romantic-winter-landscape-with-ice-skaters-by-a-castle-146121html_tr-295459-large.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.trada.ro%2Fpuzzle-1000-piese-d-toys-albert-bredow-romantic-winter-landscape-with-ice-skaters-by-a-castle-146121.html",
+"magazin": "trada.ro",
+"id": "MNbHRIY21ux4",
+"brand": "D-Toys",
+"url_magazin": "https://www.trada.ro/puzzle-1000-piese-d-toys-albert-bredow-romantic-winter-landscape-with-ice-skaters-by-a-castle-146121.html",
+"pret_vechi": 66.27
+},
+{
+"titlu": "Puzzle 1000 Piese, Cartoon – Petrecerea lui Mos Craciun, D-toys",
+"pret": 56.99,
+"imagine": "https://www.trada.ro/img/puzzle-1000-piese-cartoon-petrecerea-lui-mos-craciun-d-toys-192093html_tr-349839-large.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.trada.ro%2Fpuzzle-1000-piese-cartoon-petrecerea-lui-mos-craciun-d-toys-192093.html",
+"magazin": "trada.ro",
+"id": "iKIAv9ekG3rs",
+"brand": "D-Toys",
+"url_magazin": "https://www.trada.ro/puzzle-1000-piese-cartoon-petrecerea-lui-mos-craciun-d-toys-192093.html",
+"pret_vechi": 66.27
+},
+{
+"titlu": "Puzzle 1000 Piese, Roovi, Academia de Animale Robotice Amuzante",
+"pret": 56.99,
+"imagine": "https://www.trada.ro/img/puzzle-1000-piese-roovi-academia-de-animale-robotice-amuzante-146238html_tr-295908-large.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.trada.ro%2Fpuzzle-1000-piese-roovi-academia-de-animale-robotice-amuzante-146238.html",
+"magazin": "trada.ro",
+"id": "zRRVHMfaV5YQ",
+"brand": "Roovi",
+"url_magazin": "https://www.trada.ro/puzzle-1000-piese-roovi-academia-de-animale-robotice-amuzante-146238.html",
+"pret_vechi": 66.27
 },
 {
 "titlu": "Puzzle orașe, Londra, 1000 piese",
@@ -21165,18 +21214,6 @@
 "verificat": "2026-11-13"
 },
 {
-"titlu": "Puzzle Stranger Things 1000 De Piese Clementoni",
-"pret": 57.9,
-"imagine": "https://www.ookee.ro/199396-large_default/puzzle-stranger-things-1000-de-piese-clementoni.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ookee.ro%2Fpuzzle%2F87436-puzzle-stranger-things-1000-de-piese-clementoni-8005125395422.html",
-"magazin": "ookee.ro",
-"id": "X7edGjHqfwDy",
-"brand": "AS",
-"url_magazin": "https://www.ookee.ro/puzzle/87436-puzzle-stranger-things-1000-de-piese-clementoni-8005125395422.html",
-"pret_vechi": null,
-"verificat": "2026-11-13"
-},
-{
 "titlu": "Puzzle La Casa De Papel 1000 De Piese Clementoni",
 "pret": 57.9,
 "imagine": "https://www.ookee.ro/199399-large_default/puzzle-la-casa-de-papel-1000-de-piese-clementoni.jpg",
@@ -21185,6 +21222,18 @@
 "id": "4wnwtnrdKiCV",
 "brand": "AS",
 "url_magazin": "https://www.ookee.ro/puzzle/87437-puzzle-la-casa-de-papel-1000-de-piese-clementoni-8005125395323.html",
+"pret_vechi": null,
+"verificat": "2026-11-13"
+},
+{
+"titlu": "Puzzle Stranger Things 1000 De Piese Clementoni",
+"pret": 57.9,
+"imagine": "https://www.ookee.ro/199396-large_default/puzzle-stranger-things-1000-de-piese-clementoni.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ookee.ro%2Fpuzzle%2F87436-puzzle-stranger-things-1000-de-piese-clementoni-8005125395422.html",
+"magazin": "ookee.ro",
+"id": "X7edGjHqfwDy",
+"brand": "AS",
+"url_magazin": "https://www.ookee.ro/puzzle/87436-puzzle-stranger-things-1000-de-piese-clementoni-8005125395422.html",
 "pret_vechi": null,
 "verificat": "2026-11-13"
 },
@@ -25738,7 +25787,7 @@
 "titlu": "Inele din argint",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-17",
+"actualizat": "2026-11-25",
 "feeduri": [
 {
 "id": 7045,
@@ -26754,7 +26803,7 @@
 "titlu": "Baterii externe de 10.000 mAh",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-17",
+"actualizat": "2026-11-25",
 "feeduri": [
 {
 "id": 1539,
@@ -26774,6 +26823,17 @@
 }
 ],
 "produse": [
+{
+"titlu": "Baterie externa HY-CDB02 10000 mAh cu cabluri integrate 4-în-1 și display LED digital, negru Engros",
+"pret": 40.82,
+"imagine": "https://bazarulonline.ro/images/detailed/12382/baterie-externa-hy-cdb02-10000-mah-cu-cabluri-integrate-4-in-1-si~101270463.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fbazarulonline.ro%2Fbaterie-externa-hy-cdb02-10000-mah-cu-cabluri-integrate-4-in-1-i-display-led-digital-negru-engros-ro",
+"magazin": "bazarulonline.ro",
+"id": "0wx2FuFClEIb",
+"brand": "",
+"url_magazin": "https://bazarulonline.ro/baterie-externa-hy-cdb02-10000-mah-cu-cabluri-integrate-4-in-1-i-display-led-digital-negru-engros-ro",
+"pret_vechi": null
+},
 {
 "titlu": "Baterie externa Hoco J158 Pro, QC PD, 2A, 22,5W, 10000 mAh, Negru Engros",
 "pret": 41.23,
@@ -26864,17 +26924,6 @@
 "pret_vechi": null
 },
 {
-"titlu": "Baterie externa Veger L10S (W1105PD), PD QC3.0, 2A, 20W, 10000 mAh, Negru Engros",
-"pret": 56.38,
-"imagine": "https://bazarulonline.ro/images/detailed/7860/f22caedd7a59ae06d6d629471d9b9d44-scaled-1.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fbazarulonline.ro%2Fbaterie-externa-veger-l10s-w1105pd-pd-qc3-0-2a-20w-10000-mah-negru-engros",
-"magazin": "bazarulonline.ro",
-"id": "YzpGqOJkD8qI",
-"brand": "",
-"url_magazin": "https://bazarulonline.ro/baterie-externa-veger-l10s-w1105pd-pd-qc3-0-2a-20w-10000-mah-negru-engros",
-"pret_vechi": null
-},
-{
 "titlu": "Baterie externa Borofone BJ80, 10000 mAh, 2x USB, 1x USB-C, 22.5 W (Negru)",
 "pret": 61.99,
 "imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4286%2F4286884%2Fpower-bank-borofone-bj80-10-69abe41a29a92.jpg&type=auto&width=500&sign=sKhnmnVsMBfPJNfXaPswjB_a49iEwrgxMxrUDurK5pg",
@@ -26935,16 +26984,15 @@
 "verificat": "2026-11-04"
 },
 {
-"titlu": "Baterie Externa XO Design PB308, 10000mAh, 22.5W, QC + PD, 1 x USB-A - 1 x USB-C (Negru)",
-"pret": 68.99,
-"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4308%2F4308012%2Fbaterie-externa-xo-design-1-1783421480.png&type=auto&width=500&sign=uqVSayHbyxDd6BdK2nUDqPh5fBC9Bsm_TXNdb2wTQwc",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Ftelefoane-tablete-accesorii-accesorii-telefoane-acumulatori-externi%2Fxo-baterie-externa-xo-design-pb308-10000mah-22.5w-qc-pd-1-x-usb-a-1-x-usb-c-negru-4308012.html",
+"titlu": "Baterie externa Veger C10 W1116, 10000 mAh, Lightning, USB Type-C, Micro USB, USB-A (Negru)",
+"pret": 66.99,
+"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4235%2F4235391%2Fpower-bank-usb-10000mahc10-w1-687628ef56f14.jpeg&type=auto&width=500&sign=SclO7cN61K2qkQSltbyCEoUHElyfRdH7FaH-uVNdKIo",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Ftelefoane-tablete-accesorii-accesorii-telefoane-acumulatori-externi%2Fveger-baterie-externa-veger-c10-w1116-10000-mah-lightning-usb-type-c-micro-usb-usb-a-negru-4235391.html",
 "magazin": "evomag.ro",
-"id": "a-r_3GbJV6M6",
-"brand": "XO",
-"url_magazin": "https://www.evomag.ro/telefoane-tablete-accesorii-accesorii-telefoane-acumulatori-externi/xo-baterie-externa-xo-design-pb308-10000mah-22.5w-qc-pd-1-x-usb-a-1-x-usb-c-negru-4308012.html",
-"pret_vechi": null,
-"verificat": "2026-11-04"
+"id": "Zjk4PTH2_KC6",
+"brand": "Veger",
+"url_magazin": "https://www.evomag.ro/telefoane-tablete-accesorii-accesorii-telefoane-acumulatori-externi/veger-baterie-externa-veger-c10-w1116-10000-mah-lightning-usb-type-c-micro-usb-usb-a-negru-4235391.html",
+"pret_vechi": null
 },
 {
 "titlu": "XO Design Baterie Externa XO Design PB312, 10000mAh, 10W, 2 x USB-A, Neagra",
@@ -26957,6 +27005,17 @@
 "url_magazin": "https://www.dwyn.ro/baterii-powerbank/xo-design/477673-baterie-externa-xo-design-pb312-10000mah-10w-2-x-usb-a-neagra/",
 "pret_vechi": null,
 "verificat": "2026-11-04"
+},
+{
+"titlu": "Borofone Baterie Externa Borofone BJ78 Clever, 10000mAh, 10W, 2 x USB-A, Neagra",
+"pret": 70.99,
+"imagine": "https://www.dwyn.ro/images/products/img_202512311121/374420/full/borofone-baterie-externa-borofone-bj78-clever-10000mah-10w-2-x-usb-a-neagra-1072922.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fbaterii-powerbank%2Fborofone%2F374420-baterie-externa-borofone-bj78-clever-10000mah-10w-2-x-usb-a-neagra%2F",
+"magazin": "dwyn.ro",
+"id": "kuCVfGZBe9Yy",
+"brand": "Borofone",
+"url_magazin": "https://www.dwyn.ro/baterii-powerbank/borofone/374420-baterie-externa-borofone-bj78-clever-10000mah-10w-2-x-usb-a-neagra/",
+"pret_vechi": null
 },
 {
 "titlu": "Baterie externa Borofone BJ80, 10000 mAh, 2x USB, 1x USB-C, 22.5 W (Alb)",
@@ -26979,18 +27038,6 @@
 "id": "wlViQ0znzlr9",
 "brand": "Joyroom",
 "url_magazin": "https://www.evomag.ro/telefoane-tablete-accesorii-accesorii-telefoane-acumulatori-externi/joyroom-baterie-externa-portabila-joyroom-jr-qp191-mini-10000-mah-led-22.5w-2x-usb-c-1x-usb-a-alb-4300483.html",
-"pret_vechi": null,
-"verificat": "2026-11-04"
-},
-{
-"titlu": "XO Design Baterie Externa XO Design PB308, 10000mAh, 22.5W, QC + PD, 1 x USB-A - 1 x USB-C, Neagra",
-"pret": 80.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202606122129/477766/full/xo-design-baterie-externa-xo-design-pb308-10000mah-22-5w-qc-plus-pd-1-x-usb-a-1-x-usb-c-neagra-1496032.png",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fbaterii-powerbank%2Fxo-design%2F477766-baterie-externa-xo-design-pb308-10000mah-22-5w-qc-plus-pd-1-x-usb-a-1-x-usb-c-neagra%2F",
-"magazin": "dwyn.ro",
-"id": "yZvInf6awygl",
-"brand": "XO&nbsp;Design",
-"url_magazin": "https://www.dwyn.ro/baterii-powerbank/xo-design/477766-baterie-externa-xo-design-pb308-10000mah-22-5w-qc-plus-pd-1-x-usb-a-1-x-usb-c-neagra/",
 "pret_vechi": null,
 "verificat": "2026-11-04"
 },
@@ -27018,6 +27065,17 @@
 "verificat": "2026-11-04"
 },
 {
+"titlu": "JOYROOM Baterie Externa Joyroom JR-QP191 Mini, 10000mAh, 22.5W, QC + PD, 1 x USB-A - 2 x USB-C, Alba",
+"pret": 93.99,
+"imagine": "https://www.dwyn.ro/images/products/img_202606122129/477652/full/joyroom-baterie-externa-joyroom-jr-qp191-mini-10000mah-22-5w-qc-plus-pd-1-x-usb-a-2-x-usb-c-alba-1495918.png",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fbaterii-powerbank%2Fjoyroom%2F477652-baterie-externa-joyroom-jr-qp191-mini-10000mah-22-5w-qc-plus-pd-1-x-usb-a-2-x-usb-c-alba%2F",
+"magazin": "dwyn.ro",
+"id": "jQiaKyYdkEaN",
+"brand": "JOYROOM",
+"url_magazin": "https://www.dwyn.ro/baterii-powerbank/joyroom/477652-baterie-externa-joyroom-jr-qp191-mini-10000mah-22-5w-qc-plus-pd-1-x-usb-a-2-x-usb-c-alba/",
+"pret_vechi": null
+},
+{
 "titlu": "JOYROOM Baterie Externa Joyroom JR-PBF12 Pro, 10000mAh, 22.5W, QC + PD, 1 x USB-C - 2 x USB-A, Neagra",
 "pret": 97.99,
 "imagine": "https://www.dwyn.ro/images/products/img_202606122129/477733/full/joyroom-baterie-externa-joyroom-jr-pbf12-pro-10000mah-22-5w-qc-plus-pd-1-x-usb-c-2-x-usb-a-neagra-1495999.png",
@@ -27031,24 +27089,13 @@
 },
 {
 "titlu": "Powerbank 10000 mAh Powerbank 10000 mAh",
-"pret": 100.9,
+"pret": 100.88,
 "imagine": "https://dacris.vteximg.com.br/arquivos/ids/1096726/mo6770-10.jpg.jpg?v=639271909204570000",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dacris.net%2Fmo6770-85-powerbank-10000-mah%2Fp%3FskuId%3D253992",
 "magazin": "dacris.net",
 "id": "N_dvSTa3uiH0",
 "brand": "Midocean",
 "url_magazin": "https://www.dacris.net/mo6770-85-powerbank-10000-mah/p?skuId=253992",
-"pret_vechi": null
-},
-{
-"titlu": "VEGER Baterie externa Veger W1185, 1 x USB-C, 10000 mAh, Gri",
-"pret": 101.57,
-"imagine": "https://www.dwyn.ro/images/products/img_202512311121/393211/full/veger-baterie-externa-veger-w1185-1-x-usb-c-10000-mah-gri-1295695.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fbaterii-powerbank%2Fveger%2F393211-baterie-externa-veger-w1185-1-x-usb-c-10000-mah-gri%2F",
-"magazin": "dwyn.ro",
-"id": "3O-MRLPPHryI",
-"brand": "VEGER",
-"url_magazin": "https://www.dwyn.ro/baterii-powerbank/veger/393211-baterie-externa-veger-w1185-1-x-usb-c-10000-mah-gri/",
 "pret_vechi": null
 }
 ],

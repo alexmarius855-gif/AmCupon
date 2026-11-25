@@ -1,5 +1,18 @@
 [
   {
+    "id": 274963,
+    "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/274922/original/274922.jpg",
+    "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=be6c50d03&aff_code=541547473&campaign_unique=bb3071a7d",
+    "landing_raw": "https://noriel.ro/",
+    "width": 1200,
+    "height": 1200,
+    "merchant": "noriel.ro ",
+    "merchant_slug": "noriel-ro",
+    "name": "Lego",
+    "category": "Lego",
+    "b_type": "image"
+  },
+  {
     "id": 274956,
     "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/274915/original/274915.jpg",
     "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=17f47d256&aff_code=541547473&campaign_unique=573b44539",
@@ -114,19 +127,6 @@
     "merchant_slug": "libris-ro",
     "name": "Moș Nicolae a găsit reducerile! Până la -83% la cărți, jocuri și accesorii »",
     "category": "Moș Nicolae a găsit reducerile! Până la -83% la cărți, jocuri și accesorii »",
-    "b_type": "image"
-  },
-  {
-    "id": 274740,
-    "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/274699/original/274699.jpeg",
-    "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=3ba93d335&aff_code=541547473&campaign_unique=6390e3cfb",
-    "landing_raw": "https://www.drmax.ro/cadouri",
-    "width": 1080,
-    "height": 1080,
-    "merchant": "drmax.ro/",
-    "merchant_slug": "drmax-ro",
-    "name": "Campanie Christmas ",
-    "category": "Campanie Christmas ",
     "b_type": "image"
   }
 ]

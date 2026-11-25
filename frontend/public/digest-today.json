@@ -1,7 +1,7 @@
 {
-  "data": "2026-11-24",
-  "data_afisata": "24 noiembrie 2026",
-  "titlu": "Radarul AmCupon — 24 noiembrie 2026",
+  "data": "2026-11-25",
+  "data_afisata": "25 noiembrie 2026",
+  "titlu": "Radarul AmCupon — 25 noiembrie 2026",
   "intro": "Selecția de azi e făcută automat din ofertele active, după reducere, cod și termen. Primele sunt Libris și Dhgate, dar mai jos ai toată selecția. Ofertele vin de la magazine prin rețeaua de afiliere; nu le încercăm în coș, așa că citește condițiile înainte să comanzi. Cele care expiră curând sunt marcate.",
   "picks": [
     {
@@ -15,8 +15,8 @@
       "descriere": "In perioada 24-25 noiembrie 2026 avem cuponul, o reducere de minimum -20% la sute de mii de Carti, Jocuri, English Books si Accesorii.",
       "cod": "LIB20CITESC",
       "url": "https://amcupon.ro/cod-reducere/libris.ro",
-      "zile_ramase": 2,
-      "take": "Grăbește-te: expiră în 2 zile. Ofertă activă — bună dacă te încadrezi în categorie."
+      "zile_ramase": 1,
+      "take": "Grăbește-te: expiră în 1 zi. Ofertă activă — bună dacă te încadrezi în categorie."
     },
     {
       "scor": 100,
@@ -29,8 +29,8 @@
       "descriere": "Save $6 on orders over $50 using coupon DH2026NOVSAVE6 at DHgate.",
       "cod": "DH2026NOVSAVE6",
       "url": "https://amcupon.ro/cod-reducere/dhgate.com",
-      "zile_ramase": 6,
-      "take": "Bun de prins dacă oricum voiai să-ți reîmprospătezi garderoba."
+      "zile_ramase": 5,
+      "take": "Grăbește-te: expiră în 5 zile. Bun de prins dacă oricum voiai să-ți reîmprospătezi garderoba."
     },
     {
       "scor": 100,
@@ -43,8 +43,22 @@
       "descriere": "Black Friday 16% off",
       "cod": "BF16",
       "url": "https://amcupon.ro/cod-reducere/laavooextensions.com",
-      "zile_ramase": 6,
-      "take": "Ofertă activă — bună dacă te încadrezi în categorie."
+      "zile_ramase": 5,
+      "take": "Grăbește-te: expiră în 5 zile. Ofertă activă — bună dacă te încadrezi în categorie."
+    },
+    {
+      "scor": 100,
+      "magazin": "aosom.ro",
+      "nume_afisat": "Aosom",
+      "categorie": "Casă & Grădină",
+      "categorie_slug": "casa-gradina",
+      "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/9145/medium/9145.png",
+      "titlu": "CYBER MONDAY, COȘ AVANTAJOS",
+      "descriere": "Până la -30% la o selecție de produse -10% la comenzi de peste 699 lei * *Promoție valabilă până la 30.11.2026 Promoții separate. Nu se cumulează între ele sau cu alte reduceri.",
+      "cod": "CYBER10",
+      "url": "https://amcupon.ro/cod-reducere/aosom.ro",
+      "zile_ramase": 4,
+      "take": "Grăbește-te: expiră în 4 zile. Ofertă activă — bună dacă te încadrezi în categorie."
     },
     {
       "scor": 100,
@@ -57,35 +71,21 @@
       "descriere": "Pregătește-te pentru orice condiții meteo cu anvelopele Uniroyal! Profită acum de 10% REDUCERE la anvelopele de iarnă și all-season Uniroyal, disponibile pe cauciucuridirect.ro! Folosește codul promoțional: Introdu codul în al treilea pas al comenzii, sub opțiunile de plată, și bucură-te de reducere! Nu lăsa vremea să te ia prin surprindere! Alege siguranța și confortul la fiecare drum. Descoperă oferta și profită de reducere!",
       "cod": "2026UNIROW10",
       "url": "https://amcupon.ro/cod-reducere/cauciucuridirect.ro",
-      "zile_ramase": 2,
-      "take": "Grăbește-te: expiră în 2 zile. Ofertă activă — bună dacă te încadrezi în categorie."
+      "zile_ramase": 1,
+      "take": "Grăbește-te: expiră în 1 zi. Ofertă activă — bună dacă te încadrezi în categorie."
     },
     {
       "scor": 100,
-      "magazin": "monrealehotels.com",
-      "nume_afisat": "Monrealehotels",
+      "magazin": "atzavarahotel.com",
+      "nume_afisat": "Atzavarahotel",
       "categorie": "Călătorii",
       "categorie_slug": "calatorii",
-      "logo_url": "https://www.google.com/s2/favicons?domain=monrealehotels.com&sz=128",
-      "titlu": "BLACK FRIDAY | Up to 40% OFF at DelPlaza Hotels | Monreale Hotels",
-      "descriere": "Enjoy exclusive Black Friday savings at participating DelPlaza properties and plan your next getaway for less. Participating Hotels: - DelPlaza Maraba - DelPlaza Timbiras - DelPlaza Excelsior Book now and secure your stay with exclusive Blac",
-      "cod": "DELPLAZABLACK",
-      "url": "https://amcupon.ro/cod-reducere/monrealehotels.com",
-      "zile_ramase": 4,
-      "take": "Grăbește-te: expiră în 4 zile. Ofertă activă — bună dacă te încadrezi în categorie."
-    },
-    {
-      "scor": 100,
-      "magazin": "geekbuying.com",
-      "nume_afisat": "Geekbuying",
-      "categorie": "Electronice & IT",
-      "categorie_slug": "electronice",
-      "logo_url": "https://www.google.com/s2/favicons?domain=geekbuying.com&sz=128",
-      "titlu": "CONGKBH27",
-      "descriere": "USD $17 Off Coupon Code: CONGKBH27, For KTC H27E6 27 inch Gaming Monitor, 2560*1440 QHD Fast IPS Screen, 300Hz 240Hz Refresh Rate, HDR 400, 1ms Response Time, FreeSync & G-Sync, 144% sRGB, VESA Mountable, 2*HDMI 2.1, 2*DP 1.4, 1*USB 2.0, 1*Earphone. Available Countries: ALL",
-      "cod": "CONGKBH27",
-      "url": "https://amcupon.ro/cod-reducere/geekbuying.com",
-      "zile_ramase": 6,
+      "logo_url": "",
+      "titlu": "Black Friday Offer - Up to 23% off | Atzavara Hotel & Spa",
+      "descriere": "Book your next getaway now with Atzavara Hotel and enjoy up to 23% off this festive season with the Black Friday, Cyber Monday and Travel Tuesday offer. Terms and Conditions:\n-Offer valid for booking until 01/12/2026. -Subject to availability.",
+      "cod": "BLACK",
+      "url": "https://amcupon.ro/cod-reducere/atzavarahotel.com",
+      "zile_ramase": 7,
       "take": "Ofertă activă — bună dacă te încadrezi în categorie."
     }
   ],

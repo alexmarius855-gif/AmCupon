@@ -1055,14 +1055,14 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 5,
+    "zile_ramase": 4,
     "promotii": [
       {
         "nume": "eufy Robotstofzuiger Omni E25",
         "descriere": "EUR350 off (39%): EUR549, was EUR899",
         "cod_cupon": "",
         "landing_page": "https://www.eufy.com/nl/products/t2353g11",
-        "zile_ramase": 5,
+        "zile_ramase": 4,
         "expira": "2026-11-30",
         "sursa": "impact_deals_api"
       },
@@ -1071,7 +1071,7 @@
         "descriere": "EUR227.98 off (22%): EUR815, was EUR1042.98",
         "cod_cupon": "",
         "landing_page": "https://www.eufy.com/nl/products/bundle-t210mg11-1-t290sa10-2?variant=57632207831415",
-        "zile_ramase": 5,
+        "zile_ramase": 4,
         "expira": "2026-11-30",
         "sursa": "impact_deals_api"
       },
@@ -1080,7 +1080,7 @@
         "descriere": "EUR454.99 off (43%): EUR614, was EUR1068.99",
         "cod_cupon": "",
         "landing_page": "https://www.eufy.com/nl/products/bundle-t2352g11-1-t290qar0-1",
-        "zile_ramase": 5,
+        "zile_ramase": 4,
         "expira": "2026-11-30",
         "sursa": "impact_deals_api"
       },
@@ -1089,7 +1089,7 @@
         "descriere": "EUR399.99 off (41%): EUR569, was EUR968.99",
         "cod_cupon": "",
         "landing_page": "https://nl.eufy.com/products/bundle-t2353g21-1-t290qar0-1",
-        "zile_ramase": 5,
+        "zile_ramase": 4,
         "expira": "2026-11-30",
         "sursa": "impact_deals_api"
       },
@@ -1098,7 +1098,7 @@
         "descriere": "EUR390 off (38%): EUR638, was EUR1028",
         "cod_cupon": "",
         "landing_page": "https://www.eufy.com/nl/products/bundle-t2353g11-1-t8416321-1",
-        "zile_ramase": 5,
+        "zile_ramase": 4,
         "expira": "2026-11-30",
         "sursa": "impact_deals_api"
       },
@@ -1107,7 +1107,7 @@
         "descriere": "EUR191.994 off (25%): EUR577, was EUR768.99",
         "cod_cupon": "",
         "landing_page": "https://www.eufy.com/nl/products/bundle-t210qg11-1-t210w011-1?variant=57763721118071",
-        "zile_ramase": 5,
+        "zile_ramase": 4,
         "expira": "2026-11-30",
         "sursa": "impact_deals_api"
       },
@@ -1116,7 +1116,7 @@
         "descriere": "EUR120.99 off (27%): EUR329, was EUR449.99",
         "cod_cupon": "",
         "landing_page": "https://www.eufy.com/nl/products/t60a13b0",
-        "zile_ramase": 5,
+        "zile_ramase": 4,
         "expira": "2026-11-30",
         "sursa": "impact_deals_api"
       },
@@ -1125,7 +1125,7 @@
         "descriere": "EUR200 off (20%): EUR799, was EUR999",
         "cod_cupon": "",
         "landing_page": "https://www.eufy.com/nl/products/bundle-t280b3a2-1-t292c011-1",
-        "zile_ramase": 5,
+        "zile_ramase": 4,
         "expira": "2026-11-30",
         "sursa": "impact_deals_api"
       },
@@ -1134,7 +1134,7 @@
         "descriere": "EUR141.994 off (21%): EUR527, was EUR668.99",
         "cod_cupon": "",
         "landing_page": "https://www.eufy.com/nl/products/bundle-t210sg11-1-t210w011-1?variant=57763663151479",
-        "zile_ramase": 5,
+        "zile_ramase": 4,
         "expira": "2026-11-30",
         "sursa": "impact_deals_api"
       },
@@ -1143,7 +1143,7 @@
         "descriere": "EUR50 off (20%): EUR199.99, was EUR249.99",
         "cod_cupon": "",
         "landing_page": "https://www.eufy.com/nl/products/e8354321",
-        "zile_ramase": 5,
+        "zile_ramase": 4,
         "expira": "2026-11-30",
         "sursa": "impact_deals_api"
       },
@@ -1152,7 +1152,7 @@
         "descriere": "EUR105.99 off (35%): EUR193.98, was EUR299.97",
         "cod_cupon": "",
         "landing_page": "https://www.eufy.com/nl/products/bundle-t8214311-1-t8026320-1-t8743111-1-t89000d4-1",
-        "zile_ramase": 5,
+        "zile_ramase": 4,
         "expira": "2026-11-30",
         "sursa": "impact_deals_api"
       },
@@ -1161,7 +1161,7 @@
         "descriere": "EUR99.99 off (42%): EUR139, was EUR238.99",
         "cod_cupon": "",
         "landing_page": "https://www.eufy.com/nl/products/bundle-t8214311-1-t8023321-1",
-        "zile_ramase": 5,
+        "zile_ramase": 4,
         "expira": "2026-11-30",
         "sursa": "impact_deals_api"
       },
@@ -1170,7 +1170,7 @@
         "descriere": "EUR143.98 off (39%): EUR225, was EUR368.98",
         "cod_cupon": "",
         "landing_page": "https://www.eufy.com/nl/products/bundle-t817l420-2-t80303d1-1",
-        "zile_ramase": 5,
+        "zile_ramase": 4,
         "expira": "2026-11-30",
         "sursa": "impact_deals_api"
       },
@@ -1179,7 +1179,7 @@
         "descriere": "EUR71.98 off (45%): EUR88, was EUR159.98",
         "cod_cupon": "",
         "landing_page": "https://www.eufy.com/nl/products/bundle-t8417321-2",
-        "zile_ramase": 5,
+        "zile_ramase": 4,
         "expira": "2026-11-30",
         "sursa": "impact_deals_api"
       },
@@ -1188,7 +1188,7 @@
         "descriere": "EUR118 off (40%): EUR179, was EUR297",
         "cod_cupon": "",
         "landing_page": "https://www.eufy.com/nl/products/t814x321-3",
-        "zile_ramase": 5,
+        "zile_ramase": 4,
         "expira": "2026-11-30",
         "sursa": "impact_deals_api"
       },
@@ -1197,7 +1197,7 @@
         "descriere": "EUR150 off (27%): EUR398.99, was EUR548.99",
         "cod_cupon": "",
         "landing_page": "https://www.eufy.com/nl/products/bundle-t81723w1-1-t8214311-1",
-        "zile_ramase": 5,
+        "zile_ramase": 4,
         "expira": "2026-11-30",
         "sursa": "impact_deals_api"
       },
@@ -1206,7 +1206,7 @@
         "descriere": "EUR210 off (38%): EUR348, was EUR558",
         "cod_cupon": "",
         "landing_page": "https://www.eufy.com/nl/products/bundle-t86p2321-2",
-        "zile_ramase": 5,
+        "zile_ramase": 4,
         "expira": "2026-11-30",
         "sursa": "impact_deals_api"
       },
@@ -1215,7 +1215,7 @@
         "descriere": "EUR119.98 off (17%): EUR580, was EUR699.98",
         "cod_cupon": "",
         "landing_page": "https://www.eufy.com/nl/products/bundle-t81723w1-2",
-        "zile_ramase": 5,
+        "zile_ramase": 4,
         "expira": "2026-11-30",
         "sursa": "impact_deals_api"
       },
@@ -1224,7 +1224,7 @@
         "descriere": "EUR101.98 off (39%): EUR158, was EUR259.98",
         "cod_cupon": "",
         "landing_page": "https://www.eufy.com/nl/products/bundle-t81a0311-2",
-        "zile_ramase": 5,
+        "zile_ramase": 4,
         "expira": "2026-11-30",
         "sursa": "impact_deals_api"
       },
@@ -1233,7 +1233,7 @@
         "descriere": "EUR161.98 off (40%): EUR238, was EUR399.98",
         "cod_cupon": "",
         "landing_page": "https://www.eufy.com/nl/products/bundle-t81703w1-2",
-        "zile_ramase": 5,
+        "zile_ramase": 4,
         "expira": "2026-11-30",
         "sursa": "impact_deals_api"
       },
@@ -1242,7 +1242,7 @@
         "descriere": "EUR146 off (39%): EUR232, was EUR378",
         "cod_cupon": "",
         "landing_page": "https://www.eufy.com/nl/products/bundle-t8416321-1-t80303d1-1",
-        "zile_ramase": 5,
+        "zile_ramase": 4,
         "expira": "2026-11-30",
         "sursa": "impact_deals_api"
       },
@@ -1251,7 +1251,7 @@
         "descriere": "EUR109 off (39%): EUR169, was EUR278",
         "cod_cupon": "",
         "landing_page": "https://www.eufy.com/nl/products/bundle-t814x32s-2",
-        "zile_ramase": 5,
+        "zile_ramase": 4,
         "expira": "2026-11-30",
         "sursa": "impact_deals_api"
       },
@@ -1260,7 +1260,7 @@
         "descriere": "EUR269 off (39%): EUR429, was EUR698",
         "cod_cupon": "",
         "landing_page": "https://www.eufy.com/nl/products/bundle-t8e00321-2",
-        "zile_ramase": 5,
+        "zile_ramase": 4,
         "expira": "2026-11-30",
         "sursa": "impact_deals_api"
       },
@@ -1269,7 +1269,7 @@
         "descriere": "EUR140 off (24%): EUR438, was EUR578",
         "cod_cupon": "",
         "landing_page": "https://www.eufy.com/nl/products/bundle-e82153f1-1-t87a03w1-1",
-        "zile_ramase": 5,
+        "zile_ramase": 4,
         "expira": "2026-11-30",
         "sursa": "impact_deals_api"
       },
@@ -1278,7 +1278,7 @@
         "descriere": "EUR80 off (32%): EUR169, was EUR249",
         "cod_cupon": "",
         "landing_page": "https://www.eufy.com/nl/products/t86c1320",
-        "zile_ramase": 5,
+        "zile_ramase": 4,
         "expira": "2026-11-30",
         "sursa": "impact_deals_api"
       }
@@ -2252,7 +2252,7 @@
         "descriere": "DFB",
         "cod_cupon": "",
         "landing_page": "https://www.bcengi.com/?code=dfb",
-        "zile_ramase": 518,
+        "zile_ramase": 517,
         "expira": "2028-04-26",
         "sursa": "impact_deals_api"
       },
@@ -4090,14 +4090,14 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 582,
+    "zile_ramase": 581,
     "promotii": [
       {
         "nume": "New Users",
         "descriere": "Get Extra 5% off , New users only!",
         "cod_cupon": "",
         "landing_page": "https://hototools.com",
-        "zile_ramase": 582,
+        "zile_ramase": 581,
         "expira": "2028-06-29",
         "sursa": "impact_deals_api"
       }
@@ -6339,14 +6339,14 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": true,
-    "zile_ramase": 36,
+    "zile_ramase": 35,
     "promotii": [
       {
         "nume": "$20 off over $300 - 26Q4",
         "descriere": "$20 off over $300 order value, undiscounted products, logged-in users only, can be used once.",
         "cod_cupon": "TVC26Q4A$20",
         "landing_page": "https://www.tvcmall.com",
-        "zile_ramase": 36,
+        "zile_ramase": 35,
         "expira": "2026-12-31",
         "sursa": "impact_deals_api"
       },
@@ -6355,7 +6355,7 @@
         "descriere": "Save $55 on your first wholesale purchase over $500. Exclusive for new customers. One-time use.",
         "cod_cupon": "TVC26Q4A55NEW",
         "landing_page": "https://www.tvcmall.com",
-        "zile_ramase": 36,
+        "zile_ramase": 35,
         "expira": "2026-12-31",
         "sursa": "impact_deals_api"
       },
@@ -6364,7 +6364,7 @@
         "descriere": "$30 off over $300 order value, only for newly registered users, can be used once.",
         "cod_cupon": "TVC26Q4A33NEW",
         "landing_page": "https://www.tvcmall.com",
-        "zile_ramase": 36,
+        "zile_ramase": 35,
         "expira": "2026-12-31",
         "sursa": "impact_deals_api"
       },
@@ -6373,7 +6373,7 @@
         "descriere": "Save $10 on your first purchase over $100. Exclusive for new customers. One-time use.",
         "cod_cupon": "TVC26Q4A10NEW",
         "landing_page": "https://www.tvcmall.com",
-        "zile_ramase": 36,
+        "zile_ramase": 35,
         "expira": "2026-12-31",
         "sursa": "impact_deals_api"
       },
@@ -6382,7 +6382,7 @@
         "descriere": "Enjoy 9.5% off on your first order over $300. Exclusive welcome offer. New customers only. One-time use.",
         "cod_cupon": "TVC26Q4A95NEW",
         "landing_page": "https://www.tvcmall.com",
-        "zile_ramase": 36,
+        "zile_ramase": 35,
         "expira": "2026-12-31",
         "sursa": "impact_deals_api"
       },
@@ -6391,7 +6391,7 @@
         "descriere": "Enjoy 6% off your first order up to $150. One-time offer for logged-in users.",
         "cod_cupon": "TVC26Q4A6%",
         "landing_page": "https://www.tvcmall.com",
-        "zile_ramase": 36,
+        "zile_ramase": 35,
         "expira": "2026-12-31",
         "sursa": "impact_deals_api"
       }
@@ -6817,14 +6817,14 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 1404,
+    "zile_ramase": 1403,
     "promotii": [
       {
         "nume": "SAVE10",
         "descriere": "SAVE10",
         "cod_cupon": "",
         "landing_page": "https://www.helloice.com/",
-        "zile_ramase": 1404,
+        "zile_ramase": 1403,
         "expira": "2030-09-29",
         "sursa": "impact_deals_api"
       },
@@ -6833,7 +6833,7 @@
         "descriere": "SAVE15",
         "cod_cupon": "",
         "landing_page": "https://www.helloice.com/",
-        "zile_ramase": 1404,
+        "zile_ramase": 1403,
         "expira": "2030-09-29",
         "sursa": "impact_deals_api"
       },
@@ -6842,7 +6842,7 @@
         "descriere": "SAVE20",
         "cod_cupon": "",
         "landing_page": "https://www.helloice.com/",
-        "zile_ramase": 1404,
+        "zile_ramase": 1403,
         "expira": "2030-09-29",
         "sursa": "impact_deals_api"
       }
@@ -7065,7 +7065,7 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 117,
+    "zile_ramase": 116,
     "promotii": [
       {
         "nume": "KGAFF10",
@@ -7081,7 +7081,7 @@
         "descriere": "No limit on quantity, time or product category. A $5 discount will be offered after use.",
         "cod_cupon": "",
         "landing_page": "https://kailasgear.com",
-        "zile_ramase": 117,
+        "zile_ramase": 116,
         "expira": "2027-03-22",
         "sursa": "impact_deals_api"
       }
@@ -7690,7 +7690,7 @@
         "descriere": "18% OFF sitewide, Code: NEW18",
         "cod_cupon": "",
         "landing_page": "https://ursime.com",
-        "zile_ramase": 797,
+        "zile_ramase": 796,
         "expira": "2029-01-30",
         "sursa": "impact_deals_api"
       },
@@ -7744,7 +7744,7 @@
         "descriere": "12% OFF on orders over $100, Code: AFF12",
         "cod_cupon": "",
         "landing_page": "https://www.ursime.com/collections/best-sellers",
-        "zile_ramase": 431,
+        "zile_ramase": 430,
         "expira": "2028-01-30",
         "sursa": "impact_deals_api"
       },
@@ -8889,14 +8889,14 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 155,
+    "zile_ramase": 154,
     "promotii": [
       {
         "nume": "ON30",
         "descriere": "Get 30% off all products from store.",
         "cod_cupon": "",
         "landing_page": "https://www.snailax.com/",
-        "zile_ramase": 155,
+        "zile_ramase": 154,
         "expira": "2027-04-29",
         "sursa": "impact_deals_api"
       }
@@ -9019,7 +9019,7 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": true,
-    "zile_ramase": 887,
+    "zile_ramase": 886,
     "promotii": [
       {
         "nume": "yilite hair 53% off all products",
@@ -9251,7 +9251,7 @@
         "descriere": "Sign up get 51% off",
         "cod_cupon": "YILITE51",
         "landing_page": "https://www.yilitehair.com",
-        "zile_ramase": 887,
+        "zile_ramase": 886,
         "expira": "2029-04-30",
         "sursa": "impact_deals_api"
       },
@@ -9567,14 +9567,14 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 35,
+    "zile_ramase": 34,
     "promotii": [
       {
         "nume": "OM15",
         "descriere": "Get your new order for all product 15% off",
         "cod_cupon": "",
         "landing_page": "https://theomfort.com",
-        "zile_ramase": 35,
+        "zile_ramase": 34,
         "expira": "2026-12-30",
         "sursa": "impact_deals_api"
       }
@@ -10010,7 +10010,7 @@
         "descriere": "Promote one of Geeta Hair's best-performing discount codes! This offer is designed to drive high average order values and has already generated significant sales volume.",
         "cod_cupon": "HOT25",
         "landing_page": "https://geetahair.com/collections/colored-wig/?utm_source=impact&utm_medium=affiliate&utm_campaign=deal.hot25.20260429",
-        "zile_ramase": 151,
+        "zile_ramase": 150,
         "expira": "2027-04-25",
         "sursa": "impact_deals_api"
       },
@@ -10019,7 +10019,7 @@
         "descriere": "Save big! Take 20% off with code: S20. Tiered discounts: $40 off $189+ (Code: S40), $65 off $269+ (Code: S65), $100 off $369+ (Code: S100). Plus, get a FREE wig on orders over $429! Limited time only.",
         "cod_cupon": "",
         "landing_page": "https://geetahair.com/pages/best-summer-human-hair-wigs-up-to-100-off-and-free-wig-on-429/?utm_source=impact&utm_medium=affiliate&utm_campaign=code.S20.20260711",
-        "zile_ramase": 186,
+        "zile_ramase": 185,
         "expira": "2027-05-30",
         "sursa": "impact_deals_api"
       },
@@ -10073,7 +10073,7 @@
         "descriere": "Geeta Hair Black Friday Early Access: Extra 20% OFF Sitewide",
         "cod_cupon": "",
         "landing_page": "https://geetahair.com/collections/top-selling-human-hair-wig/?utm_source=impact&utm_medium=affiliate&utm_campaign=code.bf.20261030",
-        "zile_ramase": 334,
+        "zile_ramase": 333,
         "expira": "2027-10-25",
         "sursa": "impact_deals_api"
       },
@@ -10082,7 +10082,7 @@
         "descriere": "Geeta Hair Black Friday Early Access: $45 OFF Orders $189+",
         "cod_cupon": "",
         "landing_page": "https://geetahair.com/collections/top-selling-human-hair-wig/?utm_source=impact&utm_medium=affiliate&utm_campaign=code.bf.20261030",
-        "zile_ramase": 334,
+        "zile_ramase": 333,
         "expira": "2027-10-25",
         "sursa": "impact_deals_api"
       },
@@ -10091,7 +10091,7 @@
         "descriere": "Geeta Hair Black Friday Early Access: $65 OFF Orders $269+",
         "cod_cupon": "",
         "landing_page": "https://geetahair.com/collections/top-selling-human-hair-wig/?utm_source=impact&utm_medium=affiliate&utm_campaign=code.bf.20261030",
-        "zile_ramase": 334,
+        "zile_ramase": 333,
         "expira": "2027-10-25",
         "sursa": "impact_deals_api"
       },
@@ -10100,7 +10100,7 @@
         "descriere": "Geeta Hair Black Friday Early Access: $110 OFF Orders $399+",
         "cod_cupon": "",
         "landing_page": "https://geetahair.com/collections/top-selling-human-hair-wig/?utm_source=impact&utm_medium=affiliate&utm_campaign=code.bf.20261030",
-        "zile_ramase": 334,
+        "zile_ramase": 333,
         "expira": "2027-10-25",
         "sursa": "impact_deals_api"
       },

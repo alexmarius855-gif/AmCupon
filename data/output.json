@@ -954,6 +954,51 @@
     "unique_code": "9a6f02fef"
   },
   {
+    "magazin": "aosom.ro",
+    "url": "https://www.aosom.ro",
+    "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.aosom.ro",
+    "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/9145/medium/9145.png",
+    "categorie": "Casă & Grădină",
+    "categorie_slug": "casa-gradina",
+    "rank": 999,
+    "scor_afiliere": 0,
+    "prioritate": "neclasat",
+    "canal_recomandat": "",
+    "sales_number": 0,
+    "trend": 0,
+    "are_promotie": true,
+    "cod_cupon": true,
+    "zile_ramase": 4,
+    "promotii": [
+      {
+        "nume": "CYBER MONDAY, COȘ AVANTAJOS",
+        "descriere": "Beneficiezi de -30% la o selecție de produse sau poți opta pentru -10% la comenzile mai mari de 699lei.",
+        "cod_cupon": "CYBER10",
+        "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.aosom.ro%2Factivity%2Fcyber-monday",
+        "zile_ramase": 5,
+        "expira": "2026-11-30",
+        "incepe": "2026-11-23T22:00:00Z",
+        "sursa": "2performant_api"
+      },
+      {
+        "nume": "CYBER MONDAY, COȘ AVANTAJOS",
+        "descriere": "Până la -30% la o selecție de produse -10% la comenzi de peste 699 lei * *Promoție valabilă până la 30.11.2026 Promoții separate. Nu se cumulează între ele sau cu alte reduceri.",
+        "cod_cupon": "CYBER10",
+        "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.aosom.ro%2Factivity%2Fcyber-monday",
+        "zile_ramase": 4,
+        "expira": "2026-11-29",
+        "incepe": "2026-11-23T16:00:00Z",
+        "sursa": "2performant_api"
+      }
+    ],
+    "exclusiv": true,
+    "platforma": "2performant",
+    "ultima_verificare": "2026-11-25",
+    "scor_final": 60.0,
+    "program_id": 8427,
+    "unique_code": "573b44539"
+  },
+  {
     "magazin": "cauciucuridirect.ro",
     "url": "https://www.cauciucuridirect.ro/",
     "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.cauciucuridirect.ro%2F",
@@ -2227,51 +2272,6 @@
     "scor_final": 50.0,
     "program_id": 10181,
     "unique_code": "7818b420c"
-  },
-  {
-    "magazin": "aosom.ro",
-    "url": "https://www.aosom.ro",
-    "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.aosom.ro",
-    "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/9145/medium/9145.png",
-    "categorie": "Casă & Grădină",
-    "categorie_slug": "casa-gradina",
-    "rank": 999,
-    "scor_afiliere": 0,
-    "prioritate": "neclasat",
-    "canal_recomandat": "",
-    "sales_number": 0,
-    "trend": 0,
-    "are_promotie": true,
-    "cod_cupon": true,
-    "zile_ramase": 4,
-    "promotii": [
-      {
-        "nume": "CYBER MONDAY, COȘ AVANTAJOS",
-        "descriere": "Beneficiezi de -30% la o selecție de produse sau poți opta pentru -10% la comenzile mai mari de 699lei.",
-        "cod_cupon": "CYBER10",
-        "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.aosom.ro%2Factivity%2Fcyber-monday",
-        "zile_ramase": 5,
-        "expira": "2026-11-30",
-        "incepe": "2026-11-23T22:00:00Z",
-        "sursa": "2performant_api"
-      },
-      {
-        "nume": "CYBER MONDAY, COȘ AVANTAJOS",
-        "descriere": "Până la -30% la o selecție de produse -10% la comenzi de peste 699 lei * *Promoție valabilă până la 30.11.2026 Promoții separate. Nu se cumulează între ele sau cu alte reduceri.",
-        "cod_cupon": "CYBER10",
-        "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.aosom.ro%2Factivity%2Fcyber-monday",
-        "zile_ramase": 4,
-        "expira": "2026-11-29",
-        "incepe": "2026-11-23T16:00:00Z",
-        "sursa": "2performant_api"
-      }
-    ],
-    "exclusiv": true,
-    "platforma": "2performant",
-    "ultima_verificare": "2026-11-25",
-    "scor_final": 50.0,
-    "program_id": 8427,
-    "unique_code": "573b44539"
   },
   {
     "magazin": "videt.ro",
@@ -24451,5 +24451,29 @@
     "scor_final": 0.0,
     "program_id": 13391,
     "unique_code": "05c71464d"
+  },
+  {
+    "magazin": "myterra.ro",
+    "url": "https://myterra.ro",
+    "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fmyterra.ro",
+    "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/14716/medium/14716.png",
+    "categorie": "Sănătate & Farmacie",
+    "categorie_slug": "sanatate",
+    "rank": 999,
+    "scor_afiliere": 0,
+    "prioritate": "neclasat",
+    "canal_recomandat": "",
+    "sales_number": 0,
+    "trend": 0,
+    "are_promotie": false,
+    "cod_cupon": false,
+    "zile_ramase": 99,
+    "promotii": [],
+    "exclusiv": false,
+    "platforma": "2performant",
+    "ultima_verificare": "2026-11-25",
+    "scor_final": 0.0,
+    "program_id": 13396,
+    "unique_code": "9d8d2d579"
   }
 ]
