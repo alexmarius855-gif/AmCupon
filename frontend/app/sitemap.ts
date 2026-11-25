@@ -1,14 +1,14 @@
 import { MetadataRoute } from "next";
 import fs from "fs";
 import path from "path";
-import { MACRO_ORDINE, getMacro } from "./blog/categories";
-import { buildMerchantTokens, esteIndexabil, type IndexableProdus } from "../lib/seoIndexable";
-import { CAI_REDIRECTIONATE } from "../lib/redirecturi";
-import { redirecturiFaraCupoane } from "../lib/redirecturiCupoane";
-import { articolFaraPromoActiva, ceruteInSitemap, construiesteIndexMagazine } from "../lib/blogCanonical";
-import { gasesteMagazinBrand } from "../lib/brandMagazin";
-import { categoriiBF, toateCampaniileBF } from "../lib/campaniiBlackFriday";
-import { criterii } from "../lib/criterii";
+import { MACRO_ORDINE, getMacro } from "@/app/(vechi)/blog/categories";
+import { buildMerchantTokens, esteIndexabil, type IndexableProdus } from "@/lib/seoIndexable";
+import { CAI_REDIRECTIONATE } from "@/lib/redirecturi";
+import { redirecturiFaraCupoane } from "@/lib/redirecturiCupoane";
+import { articolFaraPromoActiva, ceruteInSitemap, construiesteIndexMagazine } from "@/lib/blogCanonical";
+import { gasesteMagazinBrand } from "@/lib/brandMagazin";
+import { categoriiBF, toateCampaniileBF } from "@/lib/campaniiBlackFriday";
+import { criterii } from "@/lib/criterii";
 
 const BASE_URL = "https://amcupon.ro";
 

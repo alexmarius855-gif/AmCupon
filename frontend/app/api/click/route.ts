@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
-import { esteLinkAfiliat } from "../../../lib/subId";
-import { paginaCurata } from "../../../lib/clicuri";
-import { inregistreazaClick } from "../../../lib/clicuriServer";
+import { esteLinkAfiliat } from "@/lib/subId";
+import { paginaCurata } from "@/lib/clicuri";
+import { inregistreazaClick } from "@/lib/clicuriServer";
 
 /**
  * Primeste clicurile de pe linkurile afiliate (trimise de `AffiliateClickTracker` cu `sendBeacon`)

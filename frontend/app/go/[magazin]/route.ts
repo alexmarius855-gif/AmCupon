@@ -1,11 +1,11 @@
 import { NextRequest, NextResponse, after } from "next/server";
 import fs from "fs";
 import path from "path";
-import { cuSubId, curataEticheta } from "../../../lib/subId";
-import { inregistreazaClick } from "../../../lib/clicuriServer";
-import { linkAfiliat } from "../../../lib/linkMagazin";
-import { brandDomeniu } from "../../../lib/numeMagazin";
-import { aceeasiTara } from "../../../lib/taraDomeniu";
+import { cuSubId, curataEticheta } from "@/lib/subId";
+import { inregistreazaClick } from "@/lib/clicuriServer";
+import { linkAfiliat } from "@/lib/linkMagazin";
+import { brandDomeniu } from "@/lib/numeMagazin";
+import { aceeasiTara } from "@/lib/taraDomeniu";
 
 /**
  * `/go/[magazin]` — redirect de afiliere pe SERVER.

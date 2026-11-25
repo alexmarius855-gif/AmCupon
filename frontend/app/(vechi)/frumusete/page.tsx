@@ -1,0 +1,127 @@
+import Link from "next/link";
+import { Metadata } from "next";
+import OferteNisa, { AntetNisa } from "../components/OferteNisa";
+import fs from "fs";
+import path from "path";
+import NisaProduse from "../components/NisaProduse";
+import { esteInCategorie } from "@/lib/categoriiNisa";
+import { laParteneri } from "@/lib/cifreSite";
+import { NISA_CATEGORII } from "@/lib/categoriiNisa";
+
+interface Promotie { nume: string; cod_cupon: string; landing_page: string; zile_ramase: number; }
+interface Magazin {
+  magazin: string; url: string; url_afiliat: string; logo_url?: string;
+  categorie: string; categorie_slug?: string; scor_final: number;
+  are_promotie: boolean; cod_cupon: boolean; promotii: Promotie[]; trend: number;
+}
+
+export const metadata: Metadata = {
+  title: "Reduceri Beauty & Cosmetice 2026 — Coduri Notino",
+  description: `Coduri de reducere beauty și cosmetice 2026 ${laParteneri(NISA_CATEGORII.frumusete)}. Parfumuri, skincare, machiaj la prețuri reduse. Actualizate zilnic.`,
+  keywords: ["reduceri beauty", "cod reducere notino", "parfumuri ieftine", "cosmetice reducere românia", "skincare reducere", "machiaj ieftin"],
+  alternates: { canonical: "https://amcupon.ro/frumusete" },
+  openGraph: { title: "Reduceri Beauty & Cosmetice 2026 | AmCupon.ro", url: "https://amcupon.ro/frumusete", siteName: "AmCupon.ro", locale: "ro_RO", type: "website", images: [{ url: "https://amcupon.ro/og-image.png", width: 1200, height: 630 }] },
+};
+
+const TOP_BEAUTY = ["notino.ro","douglas.ro","sephora.ro","makeup.ro","beautik.ro","elenfashion.ro"];
+// Sluguri REALE din output.json — potrivire EXACTA, nu subsir (vezi lib/categoriiNisa.ts)
+const CAT_BEAUTY = ["beauty"];
+const SUBCATEGORII = [
+  { emoji: "🌸", label: "Skincare", desc: "Seruri, creme, măști" },
+  { emoji: "💄", label: "Machiaj", desc: "Fond de ten, ruj, farduri" },
+  { emoji: "🌹", label: "Parfumuri", desc: "Femei, bărbați, unisex" },
+  { emoji: "💆", label: "Îngrijire corp", desc: "Loțiuni, scrub, uleiuri" },
+  { emoji: "✂️", label: "Păr", desc: "Șampoane, măști, styling" },
+  { emoji: "💅", label: "Manichiură", desc: "Ojă, gel UV, set unghii" },
+];
+
+const jsonLd = { "@context":"https://schema.org","@type":"CollectionPage","name":"Reduceri Beauty & Cosmetice 2026","url":"https://amcupon.ro/frumusete" };
+
+export default function FrumusetePage() {
+  const filePath = path.join(process.cwd(), "public", "output.json");
+  const all: Magazin[] = JSON.parse(fs.readFileSync(filePath, "utf-8"));
+  const an = new Date().getFullYear();
+
+  const topBeauty = TOP_BEAUTY.map(s => all.find(m => m.magazin === s)).filter(Boolean) as Magazin[];
+  const restBeauty = all.filter(m =>
+    !TOP_BEAUTY.includes(m.magazin) &&
+    esteInCategorie(m, CAT_BEAUTY)
+  ).sort((a,b)=>(b.are_promotie?1:0)-(a.are_promotie?1:0)||(b.scor_final||0)-(a.scor_final||0)).slice(0, 16);
+  const magazine = [...topBeauty, ...restBeauty];
+
+  return (
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify(jsonLd)}} />
+      <div className="min-h-screen bg-[var(--background)]">
+        <nav className="bg-[var(--background)] border-b border-[var(--border)]">
+          <div className="max-w-6xl mx-auto px-4 py-2.5 flex items-center gap-1 text-xs text-[var(--text-muted)]">
+            <Link href="/" className="hover:text-[var(--accent-text)]">Acasă</Link>
+            <span className="mx-1">/</span>
+            <span className="text-[var(--text-soft)] font-medium">Frumusețe & Beauty</span>
+          </div>
+        </nav>
+
+        {/* HERO */}
+        <AntetNisa titlu={<>Beauty & Cosmetice cu Reducere {an}</>}>Parfumuri, skincare și machiaj — coduri de reducere actualizate zilnic {laParteneri(NISA_CATEGORII.frumusete)}</AntetNisa>
+        <OferteNisa magazine={magazine} titlu="Magazine beauty cu reduceri active" />
+        <NisaProduse
+          merchantSlugs={["notino.ro","douglas.ro","sephora.ro","makeup.ro","beautik.ro"]}
+          catSlug="beauty"
+          titlu="Produse beauty de la parteneri"
+          culoareAccent="indigo"
+          limit={12}
+        />
+
+        {/* SUBCATEGORII */}
+        <section className="max-w-6xl mx-auto px-4 py-10">
+          <h2 className="text-xl font-black text-[var(--foreground)] mb-6 text-center">Categorii beauty populare</h2>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            {SUBCATEGORII.map(s => (
+              <Link key={s.label} href="/categorii/beauty"
+                className="bg-[var(--surface)] border border-[var(--border)] rounded-xl p-5 hover:shadow-md transition-all group">
+                <div className="text-3xl mb-2">{s.emoji}</div>
+                <h3 className="font-bold text-[var(--foreground)] text-sm mb-1">{s.label}</h3>
+                <p className="text-xs text-[var(--text-soft)] mb-3">{s.desc}</p>
+                <p className="text-xs font-bold text-[var(--accent-text)] group-hover:text-[var(--accent-text)]">Vezi reduceri →</p>
+              </Link>
+            ))}
+          </div>
+        </section>
+
+        {/* MAGAZINE */}
+        
+
+        
+
+        {/* SEO */}
+        <section className="bg-[var(--surface)] border-t border-[var(--border)] py-10 px-4">
+          <div className="max-w-3xl mx-auto">
+            <h2 className="text-xl font-black text-[var(--foreground)] mb-5">Ghid cumpărături beauty inteligente</h2>
+            <div className="space-y-4 text-sm text-[var(--text-soft)] leading-relaxed">
+              <div>
+                <h3 className="font-bold text-[var(--foreground)] mb-1">Parfumuri originale mai ieftin</h3>
+                <p>Pe Notino găsești parfumuri de la branduri cunoscute; compară prețul cu cel din parfumeriile fizice înainte să comanzi. Caută coduri de reducere Notino pe AmCupon.ro înainte de orice comandă.</p>
+              </div>
+              <div>
+                <h3 className="font-bold text-[var(--foreground)] mb-1">Skincare la prețuri reduse</h3>
+                <ul className="list-disc list-inside space-y-1 ml-2">
+                  <li><strong>Vichy & La Roche-Posay</strong> — le găsești și în farmaciile online (de exemplu Dr. Max); compară prețul cu cel din parfumerii</li>
+                  <li><strong>The Ordinary</strong> — raport calitate-preț excepțional, activi puri la prețuri mici</li>
+                  <li><strong>Notino</strong> — promoțiile temporare apar pe pagina Notino de pe AmCupon.ro, actualizată de mai multe ori pe zi</li>
+                </ul>
+              </div>
+              <div>
+                <h3 className="font-bold text-[var(--foreground)] mb-1">Cele mai bune momente pentru cumpărături beauty</h3>
+                <p>Valentine&apos;s Day (parfumuri), 8 Martie (seturi cadou), Black Friday (electrice păr, skincare) și Crăciunul (seturi premium) sunt perioadele cu cele mai mari reduceri la beauty.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        
+
+        
+      </div>
+    </>
+  );
+}

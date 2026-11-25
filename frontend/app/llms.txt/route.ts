@@ -1,8 +1,8 @@
 import fs from "fs";
 import path from "path";
-import { PesteMagazine, reteleAfiliere } from "../../lib/cifreSite";
-import { linkAfiliat } from "../../lib/linkMagazin";
-import { numeAfisat } from "../../lib/numeMagazin";
+import { PesteMagazine, reteleAfiliere } from "@/lib/cifreSite";
+import { linkAfiliat } from "@/lib/linkMagazin";
+import { numeAfisat } from "@/lib/numeMagazin";
 
 /**
  * /llms.txt — fisa site-ului pentru motoarele AI (ChatGPT, Perplexity, Claude, Gemini):

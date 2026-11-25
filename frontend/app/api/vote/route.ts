@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { createHash } from "crypto";
-import { getSupabase } from "../../../lib/supabase";
+import { getSupabase } from "@/lib/supabase";
 
 /**
  * Vot comunitar pe cupoane — "a functionat codul?".

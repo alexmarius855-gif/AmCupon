@@ -1,0 +1,183 @@
+"use client";
+
+import { useState, useEffect } from "react";
+// Fara @supabase/supabase-js in browser (27.09.2026): vezi lib/supabaseRest.ts.
+import { citesteRecenzii, trimiteRecenzie, SUPABASE_KEY, type Review } from "@/lib/supabaseRest";
+import { cuNumar } from "@/lib/acordNumeral";
+
+function Stele({ value, onChange }: { value: number; onChange?: (v: number) => void }) {
+  const [hover, setHover] = useState(0);
+  return (
+    <div className="flex gap-1">
+      {[1, 2, 3, 4, 5].map(n => (
+        <button
+          key={n}
+          type="button"
+          onClick={() => onChange?.(n)}
+          onMouseEnter={() => onChange && setHover(n)}
+          onMouseLeave={() => onChange && setHover(0)}
+          className={`text-2xl transition-transform ${onChange ? "hover:scale-110 cursor-pointer" : "cursor-default"}`}
+          aria-label={`${n} stele`}
+        >
+          <span className={(hover || value) >= n ? "text-[var(--accent-text)]" : "text-[var(--text-soft)]"}>&#9733;</span>
+        </button>
+      ))}
+    </div>
+  );
+}
+
+function formatData(iso: string) {
+  return new Date(iso).toLocaleDateString("ro-RO", { day: "numeric", month: "long", year: "numeric" });
+}
+
+export default function ReviewSection({ magazin }: { magazin: string }) {
+  const [reviews, setReviews]   = useState<Review[]>([]);
+  const disponibil = Boolean(SUPABASE_KEY);
+  const [loading, setLoading]   = useState(disponibil);
+  const [stele, setStele]       = useState(0);
+  const [nume, setNume]         = useState("");
+  const [text, setText]         = useState("");
+  const [trimis, setTrimis]     = useState(false);
+  const [eroare, setEroare]     = useState("");
+  const [submitting, setSubmitting] = useState(false);
+
+  useEffect(() => {
+    if (!disponibil) return;
+    let anulat = false;
+    citesteRecenzii(magazin).then((data) => {
+      if (anulat) return;
+      setReviews(data);
+      setLoading(false);
+    });
+    return () => { anulat = true; };
+  }, [magazin, disponibil]);
+
+  async function handleSubmit(e: React.FormEvent) {
+    e.preventDefault();
+    setEroare("");
+    if (!disponibil) { setEroare("Recenziile nu sunt disponibile momentan."); return; }
+    if (stele === 0) { setEroare("Alege un rating (1-5 stele)."); return; }
+    if (text.trim().length < 10) { setEroare("Scrie cel puțin 10 caractere."); return; }
+    setSubmitting(true);
+    // aprobat: false il pune trimiteRecenzie — moderare manuala in Supabase dashboard
+    const ok = await trimiteRecenzie({ magazin, nume: nume.trim() || "Anonim", stele, text: text.trim() });
+    setSubmitting(false);
+    if (!ok) { setEroare("Eroare la trimitere. Încearcă din nou."); return; }
+    setTrimis(true);
+    setStele(0); setNume(""); setText("");
+  }
+
+  // Daca supabase nu e configurat, ascunde sectiunea complet
+  if (!disponibil) return null;
+
+  const medieStele = reviews.length
+    ? (reviews.reduce((s, r) => s + r.stele, 0) / reviews.length).toFixed(1)
+    : null;
+
+  return (
+    <section className="mt-10 pt-8 border-t border-[var(--border)]">
+      <div className="flex items-center justify-between mb-6">
+        <div>
+          <h2 className="text-lg font-black text-[var(--foreground)]">Recenzii cumpărători</h2>
+          {medieStele && (
+            <div className="flex items-center gap-2 mt-1">
+              <span className="text-2xl font-black text-[var(--accent-text)]">{medieStele}</span>
+              <Stele value={Math.round(Number(medieStele))} />
+              <span className="text-xs text-[var(--text-muted)]">({cuNumar(reviews.length, "recenzie", "recenzii")})</span>
+            </div>
+          )}
+        </div>
+      </div>
+
+      {/* Lista recenzii */}
+      {loading ? (
+        <div className="space-y-3 mb-8">
+          {[1, 2].map(i => (
+            <div key={i} className="bg-[var(--surface)] rounded-xl p-4 animate-pulse">
+              <div className="h-3 w-24 bg-[var(--surface-alt)] rounded mb-2" />
+              <div className="h-3 w-full bg-[var(--surface-alt)] rounded mb-1" />
+              <div className="h-3 w-3/4 bg-[var(--surface-alt)] rounded" />
+            </div>
+          ))}
+        </div>
+      ) : reviews.length > 0 ? (
+        <div className="space-y-3 mb-8">
+          {reviews.map(r => (
+            <div key={r.id} className="bg-[var(--surface)] border border-[var(--border)] rounded-xl p-4">
+              <div className="flex items-start justify-between gap-2 mb-2">
+                <div className="flex items-center gap-2">
+                  <div className="w-8 h-8 rounded-full bg-[#ddf93c]/20 flex items-center justify-center text-sm font-black text-[var(--accent-text)]">
+                    {r.nume.charAt(0).toUpperCase()}
+                  </div>
+                  <div>
+                    <p className="text-sm font-bold text-[var(--foreground)]">{r.nume}</p>
+                    <p className="text-[10px] text-[var(--text-muted)]">{formatData(r.created_at)}</p>
+                  </div>
+                </div>
+                <Stele value={r.stele} />
+              </div>
+              <p className="text-sm text-[var(--text-soft)] leading-relaxed">{r.text}</p>
+            </div>
+          ))}
+        </div>
+      ) : (
+        <p className="text-sm text-[var(--text-muted)] italic mb-8">Fii primul care lasă o recenzie pentru acest magazin.</p>
+      )}
+
+      {/* Formular */}
+      <div className="bg-[var(--surface)] border border-[var(--border)] rounded-xl p-5">
+        <h3 className="font-black text-[var(--foreground)] text-sm mb-4">Lasă o recenzie</h3>
+        {trimis ? (
+          <div className="text-center py-4">
+            <div className="text-3xl mb-2">&#9989;</div>
+            <p className="font-bold text-[var(--foreground)] text-sm">Mulțumim pentru recenzie!</p>
+            <p className="text-xs text-[var(--text-soft)] mt-1">Va apărea după aprobare.</p>
+            <button onClick={() => setTrimis(false)} className="mt-3 text-xs text-[var(--accent-text)] hover:underline">
+              Adaugă altă recenzie
+            </button>
+          </div>
+        ) : (
+          <form onSubmit={handleSubmit} className="space-y-3">
+            <div>
+              <p className="text-xs font-semibold text-[var(--text-soft)] mb-1.5">Rating *</p>
+              <Stele value={stele} onChange={setStele} />
+            </div>
+            <div>
+              <input
+                type="text"
+                placeholder="Numele tău (opțional)"
+                value={nume}
+                onChange={e => setNume(e.target.value)}
+                maxLength={50}
+                className="w-full bg-[var(--surface-alt)] border border-[var(--border-strong)] text-[var(--foreground)] placeholder:text-[var(--text-muted)] rounded-xl px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#ddf93c]"
+              />
+            </div>
+            <div>
+              <textarea
+                placeholder="Experiența ta cu acest magazin... (minim 10 caractere)"
+                value={text}
+                onChange={e => setText(e.target.value)}
+                rows={3}
+                maxLength={500}
+                required
+                className="w-full bg-[var(--surface-alt)] border border-[var(--border-strong)] text-[var(--foreground)] placeholder:text-[var(--text-muted)] rounded-xl px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#ddf93c] resize-none"
+              />
+              <p className="text-[10px] text-[var(--text-muted)] text-right mt-0.5">{text.length}/500</p>
+            </div>
+            {eroare && <p className="text-xs text-red-400 font-medium">{eroare}</p>}
+            <button
+              type="submit"
+              disabled={submitting}
+              className="w-full bg-[#ddf93c] hover:bg-[#ddf93c] disabled:bg-[#5a4718] text-[#0c1000] font-bold py-2.5 rounded-xl text-sm transition-colors"
+            >
+              {submitting ? "Se trimite..." : "Trimite recenzia"}
+            </button>
+            <p className="text-[10px] text-[var(--text-muted)] text-center">
+              Recenziile sunt moderate înainte de publicare.
+            </p>
+          </form>
+        )}
+      </div>
+    </section>
+  );
+}

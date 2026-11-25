@@ -1,0 +1,525 @@
+import Link from "next/link";
+import { notFound } from "next/navigation";
+import { Metadata } from "next";
+import fs from "fs";
+import path from "path";
+import TopProduseClient from "./TopProduseClient";
+import OferteParteneri from "../../components/OferteParteneri";
+import { numeInFraza, type SectiuneTema } from "@/lib/topFeed";
+import { linkuriPlatite, sectiunePentru, dataFeed } from "@/lib/oferteTema";
+import { numeAfisat } from "@/lib/numeMagazin";
+import { destinatieTop, legaturiTema } from "@/lib/destinatiiTop";
+import { ghiduriPentruTema } from "@/lib/legaturiInterne";
+import { descriereScurta } from "@/lib/oferta";
+import { criteriiTema, dataRo, produseTema } from "@/lib/criterii";
+import ProductDealCard from "../../components/ProductDealCard";
+import CriteriiTema from "../../components/CriteriiTema";
+
+interface Produs {
+  pozitie: number;
+  badge: string | null;
+  badge_color: string | null;
+  nume: string;
+  model: string;
+  imagine: string;
+  pret_de_la: number;
+  moneda: string;
+  scor_total: number;
+  scoruri: Record<string, number>;
+  verdict_scurt: string;
+  verdict_detaliat: string;
+  pro: string[];
+  contra: string[];
+  specificatii: Record<string, string>;
+  magazine: {
+    magazin_slug: string;
+    eticheta: string;
+    pret: number;
+    recomandat: boolean;
+    url_afiliat?: string;
+    modele?: boolean;
+  }[];
+}
+
+interface Categorie {
+  slug: string;
+  titlu: string;
+  titlu_scurt: string;
+  emoji: string;
+  descriere: string;
+  culoare: string;
+  tag: string | null;
+  produse: Produs[];
+}
+
+interface TopData {
+  updated: string;
+  categorii: Categorie[];
+}
+
+// Hero-ul era un gradient colorat pe toata latimea, cu text alb peste. Dupa trecerea
+// la tema lime (11.08.2026) toate cele 8 variante au ajuns identice, iar lime-ul e
+// prea deschis ca sa tina text alb — devenea ilizibil. In referinta pe care o urmam,
+// lime e ACCENT (numere, butoane, badge-uri), nu suprafata mare. Deci hero-ul devine
+// inchis, iar accentul ramane pe titlu/cifre. `cat.culoare` nu mai controleaza
+// culoarea de fundal, dar il pastram in date pentru eventuale accente viitoare.
+
+/**
+ * Cand au fost alese modelele si notate preturile din top-produse.json (git: 28.05,
+ * 06.06 si 15.06.2026). De atunci fisierul s-a schimbat doar la linkuri si la reparatia
+ * de onestitate din 10.08 — `updated` se muta zilnic, dar NU inseamna ca s-a schimbat
+ * selectia sau pretul. Pretul de atunci se afiseaza ca „de referinta", cu luna lui.
+ */
+const SELECTIE = "mai–iunie 2026";
+
+function loadData(): TopData {
+  const filePath = path.join(process.cwd(), "public", "top-produse.json");
+  return JSON.parse(fs.readFileSync(filePath, "utf-8"));
+}
+
+/** Pretul exact, cu zecimale doar cand exista. */
+function pret(n: number): string {
+  return `${n.toLocaleString("ro-RO", { minimumFractionDigits: 0, maximumFractionDigits: 2 })} lei`;
+}
+
+/** „1 produs", „7 produse", „20 de produse". */
+function cate(n: number, unul: string, multe: string): string {
+  if (n === 1) return `1 ${unul}`;
+  const r = n % 100;
+  return `${n.toLocaleString("ro-RO")}${n !== 0 && (r === 0 || r >= 20) ? " de" : ""} ${multe}`;
+}
+
+export async function generateStaticParams() {
+  const data = loadData();
+  return data.categorii.map(c => ({ slug: c.slug }));
+}
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}): Promise<Metadata> {
+  const { slug } = await params;
+  const data = loadData();
+  const cat = data.categorii.find(c => c.slug === slug);
+  if (!cat) return { title: "Pagina negăsită | AmCupon.ro" };
+
+  const pretMinim = Math.min(...cat.produse.map(p => p.pret_de_la));
+  const scorMax   = Math.max(...cat.produse.map(p => p.scor_total));
+  const pageUrl   = `https://amcupon.ro/top/${slug}`;
+
+  return {
+    // 23.09.2026: era „Top 5 Modele Testate" pe toate cele 30 de pagini. Nimeni nu testeaza
+    // produsele — pretentia a fost scoasa din PAGINA pe 10.08 (fix_top_onestitate.py), dar
+    // ramasese in <title>, adica exact in rezultatul Google. Si toate treceau de 60 de caractere.
+    title: (() => {
+      const baza = `${cat.titlu} — top ${cat.produse.length} comparate`;
+      if (`${baza} | AmCupon.ro`.length <= 60) return `${baza} | AmCupon.ro`;
+      if (baza.length <= 60) return baza;
+      return cat.titlu.length <= 60 ? cat.titlu : cat.titlu.slice(0, 60).replace(/\s+\S*$/, "");
+    })(),
+    // NEATINS pe 05.10.2026, desi „Preturi de la X lei" e pretul de referinta din mai–iunie si
+    // „actualizat" e data rularii: title/description raman decizia lui Alex (SEO). Vezi CLAUDE.md.
+    description: descriereScurta(`${cat.descriere} Preturi de referință de la ${pretMinim.toLocaleString("ro-RO")} lei. Scor maxim: ${scorMax}/10.`),
+    alternates: { canonical: pageUrl },
+    openGraph: {
+      title: `${cat.titlu} | AmCupon.ro`,
+      description: cat.descriere,
+      url: pageUrl,
+      siteName: "AmCupon.ro",
+      locale: "ro_RO",
+      type: "article",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `${cat.titlu} | AmCupon.ro`,
+      description: cat.descriere,
+    },
+  };
+}
+
+export default async function TopCategoriePage({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}) {
+  const { slug } = await params;
+  const data = loadData();
+  const cat = data.categorii.find(c => c.slug === slug);
+  if (!cat) notFound();
+
+  const an = new Date().getFullYear();
+  const numeTema = numeInFraza(slug, cat.titlu_scurt);
+
+  // ── Magazinele din topul editorial: DOAR partenerii, cu linkul platit de azi ──
+  // 05.10.2026: butonul principal era eMAG printr-un link Profitshare (cont respins si
+  // retea exclusa pe 19.08 — clicul nu plateste), iar altex/flanco/pcgarage/douglas si
+  // inca 9 duceau la /cod-reducere/<magazin>, care nu exista: 404 pe paginile cu trafic.
+  // Pretul de atunci al magazinului nu se mai afiseaza pe buton (e din mai–iunie).
+  const linkuri = linkuriPlatite();
+  const produse: Produs[] = cat.produse.map(p => ({
+    ...p,
+    // 04.11.2026: butonul duce la produs, nu pe prima pagina a magazinului, iar magazinul care
+    // nu vinde produsul nu mai primeste buton. Vezi lib/destinatiiTop.ts.
+    magazine: p.magazine
+      .filter(m => linkuri.has(m.magazin_slug))
+      .flatMap(m => {
+        const d = destinatieTop(linkuri.get(m.magazin_slug) as string, m.magazin_slug, p.nume);
+        return d ? [{ ...m, url_afiliat: d.url, modele: d.modele }] : [];
+      }),
+  }));
+
+  // ── Ofertele de azi din feed-ul partenerilor (lib/topFeed.ts) ──
+  const sectiune: SectiuneTema | null = sectiunePentru(slug);
+  // Fara oferte in feed: legaturi verificate spre partenerii care vand tema (lib/destinatiiTop.ts).
+  const legaturi = sectiune ? [] : legaturiTema(slug, linkuri);
+  // Produse cu pretul citit la magazin (/alege): au prioritate fata de lista din feed, unde pretul poate fi ramas in urma.
+  const modele = produseTema(slug, 8);
+  const cuModele = modele.length >= 4;
+  // Butonul de sus spune „de la X lei" doar cand pretul e citit azi: la magazin (/alege) sau in feed.
+  const pretAziMinim = cuModele ? Math.min(...modele.map((p) => p.pret)) : sectiune ? sectiune.min : null;
+  const numeLegaturi = legaturi.map(l => l.eticheta).join(", ");
+  const ghiduriTema = ghiduriPentruTema(slug);
+  const actualizat = dataFeed();
+  const ieftin = sectiune ? sectiune.game[0]?.produse[0] : undefined;
+  const ceaMaiIeftinaMag = sectiune
+    ? [...sectiune.magazine].sort((a, b) => a.min - b.min)[0]
+    : undefined;
+
+  const pretMinim = Math.min(...cat.produse.map(p => p.pret_de_la));
+  const pretMaxim = Math.max(...cat.produse.map(p => p.pret_de_la));
+  const bestPick = produse.find(p => p.badge === "Alegerea Redacției") || produse[0];
+
+  // JSON-LD: ItemList schema
+  const itemListSchema = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    name: cat.titlu,
+    description: cat.descriere,
+    url: `https://amcupon.ro/top/${slug}`,
+    numberOfItems: cat.produse.length,
+    itemListElement: cat.produse.map(p => ({
+      "@type": "ListItem",
+      position: p.pozitie,
+      name: p.nume,
+      description: p.verdict_scurt,
+      url: `https://amcupon.ro/top/${slug}#${p.pozitie}`,
+    })),
+  };
+
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "AmCupon.ro", item: "https://amcupon.ro" },
+      { "@type": "ListItem", position: 2, name: "Top Produse", item: "https://amcupon.ro/top" },
+      { "@type": "ListItem", position: 3, name: cat.titlu, item: `https://amcupon.ro/top/${slug}` },
+    ],
+  };
+
+  // Intrebarile frecvente — aceeasi lista pentru textul vizibil SI pentru FAQPage.
+  // 05.10.2026: doua raspunsuri afirmau „modele testate de noi" / „testate si verificate de
+  // echipa AmCupon.ro", iar al cincilea „preturile si disponibilitatea sunt verificate
+  // saptamanal". Nimic din toate astea nu se intampla. Raspunsurile sunt acum generate din
+  // date: se schimba singure cu feed-ul si nu pot ramane false.
+  // Intrebarile se potrivesc gramatical cu un plural nearticulat („Cat costa laptopuri"
+  // si „cel mai bun laptopuri" erau intrebarile vechi, generate din eticheta temei).
+  const intrebari: { i: string; r: string }[] = [
+    {
+      i: `Ce recomandă AmCupon.ro la ${numeTema} în ${an}?`,
+      r: bestPick
+        ? `Alegerea redacției este ${bestPick.nume}. ${bestPick.verdict_detaliat}`
+        : cat.descriere,
+    },
+    {
+      i: `Unde găsești ${numeTema} mai ieftin în România?`,
+      r: sectiune && ieftin && ceaMaiIeftinaMag
+        ? `La magazinele partenere AmCupon, cel mai mic preț de azi este ${pret(sectiune.min)}, la ${numeAfisat(ceaMaiIeftinaMag.slug)}. Am găsit ${cate(sectiune.total, "produs", "produse")} în ${cate(sectiune.magazine.length, "magazin", "magazine")}; cele mai multe sunt la ${numeAfisat(sectiune.magazine[0].slug)} (${sectiune.magazine[0].nr}). Lista, cu prețurile de azi, e mai sus pe pagină.`
+        : legaturi.length > 0
+        ? `La partenerii AmCupon găsești ${numeTema} la ${numeLegaturi}. Nu comparăm aici prețurile de azi: le vezi pe site-ul magazinului. Prețurile din top sunt de referință, notate în ${SELECTIE}.`
+        : `Nu avem încă un magazin partener cu ${numeTema} în feed. Prețurile din top sunt de referință, notate în ${SELECTIE}; verifică prețul actual direct în magazin.`,
+    },
+    {
+      i: `La ce prețuri găsești ${numeTema} în România?`,
+      r: sectiune
+        ? `La magazinele partenere, azi, prețurile merg de la ${pret(sectiune.min)} la ${pret(sectiune.max)}, iar prețul median este ${pret(sectiune.median)} (din ${cate(sectiune.total, "produs", "produse")}). Modelele din topul editorial aveau, la selecție, prețuri între ${pretMinim.toLocaleString("ro-RO")} și ${pretMaxim.toLocaleString("ro-RO")} lei.`
+        : `Modelele din topul editorial aveau, la selecție (${SELECTIE}), prețuri între ${pretMinim.toLocaleString("ro-RO")} și ${pretMaxim.toLocaleString("ro-RO")} lei. Prețul de azi poate fi diferit.`,
+    },
+    {
+      i: `Ce să verifici înainte să cumperi ${numeTema}?`,
+      r: `Specificațiile tehnice, recenziile cumpărătorilor, garanția și politica de retur. Scorurile din top sunt evaluarea noastră pe specificații și prețuri publice, nu rezultatul unui test fizic.`,
+    },
+    {
+      i: `Este actualizat topul de ${numeTema}?`,
+      r: sectiune
+        ? `Prețurile din secțiunea cu oferte de la magazinele partenere se actualizează automat de mai multe ori pe zi; ultima actualizare: ${actualizat}. Selecția editorială a modelelor este din ${SELECTIE}.`
+        : `Selecția editorială a modelelor și prețurile de referință sunt din ${SELECTIE}. Nu avem încă oferte de la magazinele partenere pentru ${numeTema}.`,
+    },
+  ];
+
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: intrebari.map(q => ({
+      "@type": "Question",
+      name: q.i,
+      acceptedAnswer: { "@type": "Answer", text: q.r },
+    })),
+  };
+
+  // Magazinele partenere din topul editorial, pentru linkurile catre paginile lor de coduri.
+  const parteneriEditoriali = [...new Set(produse.flatMap(p => p.magazine.map(m => m.magazin_slug)))];
+
+  return (
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+
+      <div className="min-h-screen bg-[var(--background)] dark:bg-[var(--surface)]">
+        {/* HERO */}
+        <section className="text-[var(--foreground)] pt-5 pb-3 px-4">
+          <div className="max-w-5xl mx-auto">
+            <div className="flex items-center gap-2 mb-3">
+              <Link href="/top" className="text-[var(--text-muted)] hover:text-[var(--foreground)] text-sm transition-colors">
+                &larr; Top Produse
+              </Link>
+              {cat.tag && (
+                <span className="bg-[var(--surface-alt)] text-[var(--foreground)] text-xs font-bold px-2.5 py-0.5 rounded-full ml-2">
+                  {cat.tag}
+                </span>
+              )}
+            </div>
+
+            <div>
+              <div>
+                <h1 className="text-[1.75rem] md:text-4xl font-black tracking-tight leading-tight mb-2">{cat.titlu}</h1>
+                <p className="text-[var(--text-soft)] max-w-2xl">{cat.descriere.replace(/^Top \d+/, `Top ${cat.produse.length}`)}</p>
+                {/* Metodologie explicita. Pana pe 10.08.2026 paginile scriau "Am analizat
+                    20+ modele" / "testate in bucatarie" — o testare care nu a avut loc
+                    niciodata. Scorurile sunt evaluare EDITORIALA pe date publice, si spunem
+                    asta direct, in loc sa lasam cititorul sa creada ca sunt masuratori. */}
+                <p className="text-xs text-[var(--text-muted)] max-w-2xl mt-2 leading-relaxed">
+                  Selecție editorială pe baza specificațiilor și prețurilor publice, din {SELECTIE}. Scorurile
+                  sunt evaluarea noastră, nu rezultate de laborator, iar prețurile din top sunt de referință,
+                  notate la selecție. Linkurile către magazine sunt afiliate — prețul tău rămâne același.
+                </p>
+                {(cuModele || sectiune || legaturi.length > 0) && (
+                  <Link
+                    href="#unde-cumperi"
+                    className="inline-flex items-center gap-2 mt-4 bg-[#ddf93c] hover:bg-[#c3dd2c] text-[#0c1000] text-sm font-bold px-4 py-2 rounded-xl transition-colors"
+                  >
+                    {pretAziMinim !== null ? <>Prețurile de azi, de la {pret(pretAziMinim)}</> : <>Unde găsești {numeTema} azi</>} &darr;
+                  </Link>
+                )}
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* BEST PICK QUICK INFO */}
+        {bestPick && (
+          <div className="bg-[var(--surface)] dark:bg-[var(--surface-alt)] border-b border-[var(--border)] dark:border-[var(--border-strong)]">
+            <div className="max-w-5xl mx-auto px-4 py-3 flex flex-wrap items-center gap-x-6 gap-y-1 text-sm text-[var(--text-soft)] dark:text-[var(--text-soft)]">
+              <span className="font-semibold text-[var(--foreground)] dark:text-[var(--foreground)]">
+                {cat.emoji} Recomandăm:
+              </span>
+              <span className="font-bold text-[var(--accent-text)]">{bestPick.nume}</span>
+              <span>{bestPick.verdict_scurt}</span>
+              <span className="ml-auto text-xs text-[var(--text-muted)]">
+                preț de referință ({SELECTIE}):{" "}
+                <span className="font-black text-[var(--accent-text)] text-sm">{bestPick.pret_de_la.toLocaleString("ro-RO")} lei</span>
+              </span>
+            </div>
+          </div>
+        )}
+
+        {/* MAIN CONTENT */}
+        <div className="max-w-5xl mx-auto px-4 py-8">
+          <CriteriiTema lista={criteriiTema(slug)} />
+
+          {cuModele && (
+            <section id="unde-cumperi" className="mt-10 scroll-mt-24">
+              <h2 className="text-lg font-black text-[var(--foreground)] mb-1">Unde găsești {numeTema} azi</h2>
+              <p className="text-sm text-[var(--text-muted)] mb-4">Produse reale, cu prețul citit de pe site-ul magazinului.</p>
+              <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">
+                {modele.map((p) => (
+                  <ProductDealCard
+                    key={p.url}
+                    titlu={p.titlu}
+                    pret={p.pret}
+                    pretVechi={p.pret_vechi}
+                    imagine={p.imagine}
+                    url={p.url}
+                    magazin={numeAfisat(p.magazin)}
+                    dataPret={p.verificat ? dataRo(p.verificat) : ""}
+                    dePeSite={Boolean(p.verificat)}
+                  />
+                ))}
+              </div>
+            </section>
+          )}
+
+          {!cuModele && sectiune && <OferteParteneri sectiune={sectiune} numeTema={numeTema} actualizat={actualizat} />}
+
+          {!cuModele && legaturi.length > 0 && (
+            <section id="unde-cumperi" className="mt-10 scroll-mt-24 bg-[var(--surface)] dark:bg-[var(--surface-alt)] border border-[var(--border)] dark:border-[var(--border-strong)] rounded-xl p-6">
+              <h2 className="text-lg font-black text-[var(--foreground)] dark:text-[var(--foreground)] mb-2">
+                Unde găsești {numeTema} azi
+              </h2>
+              <p className="text-sm text-[var(--text-soft)] leading-relaxed mb-4">
+                Prețul și stocul de azi le vezi pe site-ul magazinului partener. Prețurile din topul de mai jos sunt de referință, din {SELECTIE}.
+              </p>
+              <div className="flex flex-wrap gap-2">
+                {legaturi.map(l => (
+                  <a
+                    key={l.magazin}
+                    href={l.url}
+                    target="_blank"
+                    rel="nofollow sponsored noopener noreferrer"
+                    className="inline-flex items-center gap-2 text-sm font-bold px-4 py-2 rounded-xl bg-[#ddf93c] hover:bg-[#c3dd2c] text-[#0c1000] transition-colors"
+                  >
+                    Vezi modele la {l.eticheta} &rarr;
+                  </a>
+                ))}
+              </div>
+            </section>
+          )}
+
+          {/* 03.11.2026: ofertele de azi inaintea topului editorial — de aici vin clicurile pe telefon. */}
+          <h2 className="text-xl md:text-2xl font-black tracking-tight text-[var(--foreground)] mt-10 mb-4">Topul nostru de {numeTema}</h2>
+          <TopProduseClient produse={produse} culoare={cat.culoare} areSectiune={cuModele || !!sectiune || legaturi.length > 0} selectie={SELECTIE} />
+
+          {ghiduriTema.length > 0 && (
+            <nav aria-label="Ghiduri pe aceeași temă" className="mt-10">
+              <h2 className="text-lg font-black text-[var(--foreground)] mb-3">Ghiduri pe aceeași temă</h2>
+              <ul className="space-y-2">
+                {ghiduriTema.map(g => (
+                  <li key={g.slug}>
+                    <Link href={`/blog/${g.slug}`} className="text-sm text-[var(--text-soft)] hover:text-[var(--accent-text)] transition-colors">
+                      {g.title}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </nav>
+          )}
+
+          {/* CUM AM FACUT TOPUL — pana pe 05.10.2026 aici scria „Cum testam" si „Fiecare produs
+              este testat timp de minim 2 saptamani in conditii reale de utilizare". Niciun produs
+              n-a fost testat. Sectiunea spune acum exact ce s-a facut. */}
+          <section className="mt-10 bg-[var(--surface)] dark:bg-[var(--surface-alt)] border border-[var(--border)] dark:border-[var(--border-strong)] rounded-xl p-6">
+            <h2 className="text-lg font-black text-[var(--foreground)] dark:text-[var(--foreground)] mb-3">
+              Cum am făcut topul de {numeTema}
+            </h2>
+            <div className="grid sm:grid-cols-3 gap-4">
+              {[
+                { icon: "📋", titlu: "Selecție editorială", desc: `Modelele au fost alese în ${SELECTIE}, după specificațiile și prețurile publice. Nu le-am testat fizic.` },
+                { icon: "⚖️", titlu: "Scoruri explicate", desc: "Scorurile sunt evaluarea noastră pe criteriile din tabel. Nu sunt măsurători de laborator și nu sunt plătite de producători." },
+                {
+                  icon: "🔄",
+                  titlu: "Prețuri",
+                  desc: sectiune
+                    ? `Prețurile din top sunt de referință, din ${SELECTIE}. Ofertele de la magazinele partenere vin din feed-ul lor și se actualizează de mai multe ori pe zi.`
+                    : `Prețurile din top sunt de referință, din ${SELECTIE}. Verifică prețul actual direct în magazin.`,
+                },
+              ].map(item => (
+                <div key={item.titlu} className="text-center p-4">
+                  <div className="text-3xl mb-2">{item.icon}</div>
+                  <h3 className="font-bold text-[var(--foreground)] dark:text-[var(--foreground)] text-sm mb-1">{item.titlu}</h3>
+                  <p className="text-xs text-[var(--text-soft)] dark:text-[var(--text-soft)] leading-relaxed">{item.desc}</p>
+                </div>
+              ))}
+            </div>
+          </section>
+
+          {/* INTERVAL DE PRETURI — doar fara sectiunea de oferte (acolo intervalul e cel de azi).
+              Linkurile „Coduri X" duceau si la magazine care nu sunt pe site (404); acum doar partenerii. */}
+          {!sectiune && (
+            <section className="mt-6 bg-[var(--surface)] border border-[var(--border)] rounded-xl p-5">
+              <h3 className="font-bold text-[var(--foreground)] mb-2 text-sm">
+                Interval de prețuri pentru {numeTema}
+              </h3>
+              <p className="text-sm text-[var(--text-soft)]">
+                La selecție ({SELECTIE}), modelele din acest top costau între{" "}
+                <strong className="text-[var(--accent-text)]">{pretMinim.toLocaleString("ro-RO")} lei</strong> și{" "}
+                <strong className="text-[var(--accent-text)]">{pretMaxim.toLocaleString("ro-RO")} lei</strong>.
+                Prețul de azi poate fi diferit.
+              </p>
+              {parteneriEditoriali.length > 0 && (
+                <div className="flex flex-wrap gap-3 mt-4">
+                  {parteneriEditoriali.slice(0, 5).map(s => (
+                    <Link key={s} href={`/cod-reducere/${s}`}
+                      className="text-sm font-semibold text-[var(--accent-text)] dark:text-[var(--accent-text)] hover:underline">
+                      Coduri {numeAfisat(s)} &rarr;
+                    </Link>
+                  ))}
+                </div>
+              )}
+            </section>
+          )}
+
+          {/* FAQ */}
+          <section className="mt-6 bg-[var(--surface)] dark:bg-[var(--surface-alt)] border border-[var(--border)] dark:border-[var(--border-strong)] rounded-xl p-6">
+            <h2 className="text-lg font-black text-[var(--foreground)] dark:text-[var(--foreground)] mb-4">
+              Întrebări frecvente despre {numeTema}
+            </h2>
+            <div className="space-y-4">
+              {intrebari.map((item, i) => (
+                <details key={i} className="group border-b border-[var(--border)] dark:border-[var(--border-strong)] last:border-0 pb-4 last:pb-0">
+                  <summary className="flex justify-between items-center cursor-pointer text-sm font-semibold text-[var(--foreground)] dark:text-[var(--text-soft)] list-none select-none gap-2">
+                    <span>{item.i}</span>
+                    <span className="text-[var(--accent-text)] text-lg shrink-0 group-open:rotate-45 transition-transform">+</span>
+                  </summary>
+                  <p className="mt-2 text-sm text-[var(--text-soft)] dark:text-[var(--text-soft)] leading-relaxed">
+                    {item.r}
+                  </p>
+                </details>
+              ))}
+            </div>
+          </section>
+
+          {/* NEWSLETTER — „Primeste review-uri noi" si „1000+ magazine monitorizate" erau false:
+              newsletterul trimite ofertele active, o data pe zi, iar pe site sunt sub 1.000 de magazine. */}
+          <section className="mt-6 bg-[var(--surface)] dark:bg-[var(--background)] rounded-xl p-6 text-center">
+            <p className="text-[var(--accent-text)] text-xs font-black uppercase tracking-widest mb-2">Newsletter gratuit</p>
+            <h3 className="text-xl font-black text-[var(--foreground)] mb-1">
+              Ofertele active, pe email, o dată pe zi
+            </h3>
+            <p className="text-[var(--text-soft)] text-sm mb-5">
+              Te dezabonezi oricând, dintr-un clic.
+            </p>
+            <Link href="/newsletter"
+              className="inline-flex items-center gap-2 bg-[#ddf93c] hover:bg-[#c3dd2c] text-[#0c1000] font-bold px-6 py-3 rounded-xl text-sm transition-colors">
+              Abonează-te gratuit &rarr;
+            </Link>
+          </section>
+        </div>
+
+        {/* OTHER CATEGORIES */}
+        <div className="max-w-5xl mx-auto px-4 pb-12">
+          <h3 className="text-base font-black text-[var(--text-soft)] dark:text-[var(--text-soft)] mb-4">
+            Alte categorii recomandate
+          </h3>
+          <div className="flex flex-wrap gap-2">
+            <Link href="/top" className="bg-[var(--surface)] dark:bg-[var(--surface-alt)] hover:bg-[#ddf93c]/10 dark:hover:bg-[var(--surface-high)] text-[var(--text-soft)] dark:text-[var(--text-soft)] text-sm font-semibold px-4 py-2 rounded-xl border border-[var(--border)] dark:border-[var(--border-strong)] hover:border-[#c9ced5] transition-colors">
+              Toate topurile &rarr;
+            </Link>
+            {[
+              { href: "/gadgets",     label: "📡 Gadgets" },
+              { href: "/electronice", label: "💻 Electronice" },
+              { href: "/oferte-azi",  label: "🔥 Oferte de azi" },
+              { href: "/blog",        label: "📖 Blog" },
+            ].map(l => (
+              <a key={l.href} href={l.href}
+                className="bg-[var(--surface)] dark:bg-[var(--surface-alt)] hover:bg-[#ddf93c]/10 dark:hover:bg-[var(--surface-high)] hover:text-[var(--accent-text)] text-[var(--text-soft)] dark:text-[var(--text-soft)] text-sm font-semibold px-4 py-2 rounded-xl border border-[var(--border)] dark:border-[var(--border-strong)] hover:border-[#c9ced5] transition-colors">
+                {l.label}
+              </a>
+            ))}
+          </div>
+        </div>
+
+      </div>
+    </>
+  );
+}

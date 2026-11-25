@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse, after } from "next/server";
-import { cuSubId, curataEticheta } from "../../../../lib/subId";
-import { inregistreazaClick } from "../../../../lib/clicuriServer";
-import { criterii } from "../../../../lib/criterii";
+import { cuSubId, curataEticheta } from "@/lib/subId";
+import { inregistreazaClick } from "@/lib/clicuriServer";
+import { criterii } from "@/lib/criterii";
 
 /**
  * `/go/p/<id>` — linkul scurt al unui produs, pentru Telegram si social (04.11.2026). Face ce face `/go/<magazin>`:

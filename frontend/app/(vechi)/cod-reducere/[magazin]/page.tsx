@@ -1,0 +1,854 @@
+import VeciniMagazin from "./VeciniMagazin";
+import { PRET_MINIM_CREDIBIL } from "@/lib/statisticiMagazin";
+import { notFound, permanentRedirect } from "next/navigation";
+import { aceeasiTara } from "@/lib/taraDomeniu";
+import { Metadata } from "next";
+import fs from "fs";
+import path from "path";
+import MagazinClient from "./MagazinClient";
+import { buildMerchantTokens, esteIndexabil } from "@/lib/seoIndexable";
+import ContextMagazin, { type CategorieStudiu } from "./ContextMagazin";
+import IstoricMagazin, { type IntrareIstoric } from "./IstoricMagazin";
+import BlackFridayMagazin from "./BlackFridayMagazin";
+import { campanieMagazin } from "@/lib/campaniiBlackFriday";
+import { linkAfiliat, linkPromotie } from "@/lib/linkMagazin";
+import FaraLivrareRo, { tariLivrare, type Alternativa, type MagazinFaraLivrare } from "./FaraLivrareRo";
+import { numeAfisat, brandDomeniu } from "@/lib/numeMagazin";
+import { alMagazinului } from "@/lib/produseMagazin";
+import { imagineSigura, normTitlu, titluAfisat } from "@/lib/topFeed";
+import { titluPromotie, notaExpirare, descriereScurta } from "@/lib/oferta";
+import { cuNumar } from "@/lib/acordNumeral";
+
+interface Promotie {
+  nume: string;
+  descriere: string;
+  cod_cupon: string;
+  landing_page: string;
+  zile_ramase: number;
+  /** Data reala de expirare (AAAA-LL-ZZ). Lipseste cand sursa nu da una — atunci nu declaram nicio data. */
+  expira?: string;
+}
+
+interface Magazin {
+  magazin: string;
+  url: string;
+  url_afiliat: string;
+  logo_url?: string;
+  categorie: string;
+  categorie_slug?: string;
+  rank?: number;
+  scor_afiliere: number;
+  scor_final: number;
+  prioritate: string;
+  canal_recomandat: string;
+  sales_number: number;
+  trend: number;
+  are_promotie: boolean;
+  cod_cupon: boolean;
+  zile_ramase: number;
+  promotii: Promotie[];
+  exclusiv: boolean;
+  ultima_verificare?: string;
+}
+
+interface MagazinSimilar {
+  magazin: string;
+  logo_url?: string;
+  are_promotie: boolean;
+  cod_cupon: boolean;
+  promotii: { nume: string }[];
+  cod_real?: boolean;
+  ultima_verificare?: string;
+  /** Cel mai bun COD al magazinului, cu linkul lui platit calculat aici, pe server.
+   *  Pagina fara oferta (86% din site) il arata ca un card intreg — nu doar un logo cu
+   *  „COD" pe el — ca omul care n-a gasit cod aici sa aiba unul real la un click. */
+  oferta?: { nume: string; descriere: string; cod_cupon: string; zile_ramase: number; link: string | null };
+}
+
+// ─── Luna curentă în română ────────────────────────────────────────────────────
+const LUNI_RO = [
+  "ianuarie","februarie","martie","aprilie","mai","iunie",
+  "iulie","august","septembrie","octombrie","noiembrie","decembrie",
+];
+
+function lunaRo(): string {
+  return LUNI_RO[new Date().getMonth()];
+}
+
+// ─── Descrieri custom pentru magazinele cele mai căutate ──────────────────────
+// 19.09.2026: textele vechi promiteau „Voucher X activ, verificat" si, la Temu, „economii garantate" —
+// iar Notino, Answear, Dr. Max, Decathlon si Temu n-aveau nicio oferta activa. O descriere care apare
+// in Google nu poate promite un cod: ofertele vin si pleaca de mai multe ori pe zi. Spune ce e pagina.
+const DESCRIERI_CUSTOM: Record<string, string> = {
+  "notino.ro":
+    "Cod reducere Notino pentru parfumuri, cosmetice și produse de îngrijire: ofertele active acum și alternativele din beauty, actualizate de mai multe ori pe zi pe AmCupon.ro.",
+  "answear.ro":
+    "Cod reducere Answear pentru haine, pantofi și accesorii de brand: ofertele active acum și alternativele din fashion, actualizate de mai multe ori pe zi pe AmCupon.ro.",
+  "noriel.ro":
+    "Cod reducere Noriel pentru jucării, jocuri și produse pentru copii: ofertele active acum, actualizate de mai multe ori pe zi pe AmCupon.ro.",
+  "drmax.ro":
+    "Cod reducere Dr. Max pentru medicamente fără rețetă, suplimente și dermatocosmetice: ofertele active acum și alternativele, actualizate de mai multe ori pe zi pe AmCupon.ro.",
+  "elefant.ro":
+    "Cod reducere Elefant pentru cărți, electronice și jocuri: ofertele active acum, actualizate de mai multe ori pe zi pe AmCupon.ro.",
+  "sportisimo.ro":
+    "Cod reducere Sportisimo pentru echipamente, îmbrăcăminte și încălțăminte sport: ofertele active acum, actualizate de mai multe ori pe zi pe AmCupon.ro.",
+  "altex.ro":
+    "Cod reducere Altex pentru electronice, electrocasnice și IT: ofertele active acum, actualizate de mai multe ori pe zi pe AmCupon.ro.",
+  "dedeman.ro":
+    "Cod reducere Dedeman pentru bricolaj, materiale de construcții și grădină: ofertele active acum, actualizate de mai multe ori pe zi pe AmCupon.ro.",
+  "decathlon.ro":
+    "Cod reducere Decathlon pentru sport și outdoor: ofertele active acum și alternativele, actualizate de mai multe ori pe zi pe AmCupon.ro.",
+  "zara.com":
+    "Cod reducere Zara pentru haine și accesorii: ofertele active acum, actualizate de mai multe ori pe zi pe AmCupon.ro.",
+  "hm.com":
+    "Cod reducere H&M pentru haine, accesorii și cosmetice: ofertele active acum, actualizate de mai multe ori pe zi pe AmCupon.ro.",
+  "temu.com":
+    "Cod reducere Temu: ofertele active acum pentru produsele din toate categoriile, actualizate de mai multe ori pe zi pe AmCupon.ro.",
+  "aliexpress.com":
+    "Cod reducere AliExpress pentru produse din toate categoriile: ofertele active acum, actualizate de mai multe ori pe zi pe AmCupon.ro.",
+};
+
+export interface Produs {
+  title: string;
+  url: string;
+  image: string;
+  price: number;
+  old_price?: number;
+  discount_pct: number;
+  category: string;
+  brand: string;
+  merchant: string;
+  merchant_slug: string;
+}
+
+interface BlogPostMic {
+  slug: string;
+  title: string;
+  excerpt: string;
+  date: string;
+  cover: string;
+}
+
+interface Banner2P {
+  id: number;
+  image_url: string;
+  landing_url: string;
+  landing_raw: string;
+  width: number;
+  height: number;
+  merchant: string;
+  merchant_slug: string;
+  name: string;
+  category: string;
+  b_type: string;
+}
+
+function loadData(): Magazin[] {
+  const filePath = path.join(process.cwd(), "public", "output.json");
+  return JSON.parse(fs.readFileSync(filePath, "utf-8"));
+}
+
+// Magazinele scoase din liste pentru ca programul lor nu livreaza in Romania (merge_platforms.py,
+// 19.09.2026). Adresa lor ramane, cu o pagina care spune de ce — vezi FaraLivrareRo.tsx.
+function loadFaraLivrare(): MagazinFaraLivrare[] {
+  try {
+    const p = path.join(process.cwd(), "public", "magazine-fara-livrare-ro.json");
+    return fs.existsSync(p) ? JSON.parse(fs.readFileSync(p, "utf-8")) : [];
+  } catch {
+    return [];
+  }
+}
+
+function gasesteFaraLivrare(slug: string): MagazinFaraLivrare | undefined {
+  const s = slug.toLowerCase();
+  return loadFaraLivrare().find((x) => x.magazin.toLowerCase() === s);
+}
+
+function loadBanner(magazinSlug: string): Banner2P | null {
+  try {
+    const p = path.join(process.cwd(), "public", "banners.json");
+    if (!fs.existsSync(p)) return null;
+    const raw = JSON.parse(fs.readFileSync(p, "utf-8"));
+    const banners: Banner2P[] = raw.banners || raw;
+    if (!banners.length) return null;
+
+    const slugBase = magazinSlug.split(".")[0].toLowerCase();
+
+    // Prefer 300x250 sau 300x600 — formate universale
+    const preferred = [300, 336];
+
+    // 1. Cauta banner al aceluiasi magazin (300x250 sau 300x600)
+    const own = banners.find(
+      (b) =>
+        (b.merchant_slug?.replace(/-ro$/, "") === slugBase ||
+          b.merchant?.split(".")[0].toLowerCase() === slugBase) &&
+        preferred.includes(b.width)
+    );
+    if (own) return own;
+
+    // 23.09.2026: aici se cadea pe bannerul ALTUI magazin (pasii 2 si 3), apoi pe
+    // orice banner. Doar 3 magazine au bannere in date, deci 960 din 1.069 de pagini
+    // de magazin afisau sus, pe locul cel mai vizibil, campania Kit Unghii „14-16
+    // August" — expirata si a altui magazin. Fara banner propriu = fara banner.
+    return null;
+  } catch {
+    return null;
+  }
+}
+
+function loadBlogPost(magazinSlug: string): BlogPostMic | null {
+  try {
+    const p = path.join(process.cwd(), "public", "blog-posts.json");
+    if (!fs.existsSync(p)) return null;
+    const posts: { slug: string; title: string; excerpt: string; date: string; cover: string; magazin?: string }[] =
+      JSON.parse(fs.readFileSync(p, "utf-8"));
+    return posts.find((post) => post.magazin === magazinSlug) || null;
+  } catch { return null; }
+}
+
+interface StoreDesc { titlu: string; paragrafe: string[]; sursa?: string; }
+
+function loadDescriere(slug: string): StoreDesc | null {
+  try {
+    const p = path.join(process.cwd(), "public", "store-descriptions.json");
+    if (!fs.existsSync(p)) return null;
+    const all: Record<string, StoreDesc> = JSON.parse(fs.readFileSync(p, "utf-8"));
+    return all[slug] || null;
+  } catch { return null; }
+}
+
+interface ComparatieRaw {
+  slug: string;
+  m1_slug: string;
+  m2_slug: string;
+  n1: string;
+  n2: string;
+}
+
+// Comparatiile care includ acest magazin (pt link contextual intern → SEO)
+function loadComparatii(slug: string): { slug: string; label: string }[] {
+  try {
+    const p = path.join(process.cwd(), "public", "comparisons.json");
+    if (!fs.existsSync(p)) return [];
+    const all: Record<string, ComparatieRaw> = JSON.parse(fs.readFileSync(p, "utf-8"));
+    const s = slug.toLowerCase();
+    return Object.values(all)
+      .filter((c) => c.m1_slug.toLowerCase() === s || c.m2_slug.toLowerCase() === s)
+      .map((c) => ({ slug: c.slug, label: `${c.n1} vs ${c.n2}` }));
+  } catch { return []; }
+}
+
+interface ReviewSummary { count: number; medie: number }
+
+// Recenzii REALE (Supabase, moderate manual) — sursa onesta pt AggregateRating.
+// NU inlocui cu procent_succes/folosit_de (fabricate, vezi CLAUDE.md 03.07.2026).
+function loadReviewsSummary(slug: string): ReviewSummary | null {
+  try {
+    const p = path.join(process.cwd(), "public", "reviews-summary.json");
+    if (!fs.existsSync(p)) return null;
+    const data: { magazine?: Record<string, ReviewSummary> } = JSON.parse(fs.readFileSync(p, "utf-8"));
+    const r = data.magazine?.[slug.toLowerCase()];
+    return r && r.count > 0 ? r : null;
+  } catch { return null; }
+}
+
+// products.json are ~3.4 MB si se genereaza 1177 de pagini statice — citirea lui
+// la fiecare pagina (de doua ori: generateMetadata + componenta) ar face build-ul
+// inutil de lent. Cache la nivel de modul: o singura citire per proces de build.
+let _produseCache: Produs[] | null = null;
+function loadAllProducts(): Produs[] {
+  if (_produseCache) return _produseCache;
+  try {
+    const p = path.join(process.cwd(), "public", "products.json");
+    if (!fs.existsSync(p)) { _produseCache = []; return _produseCache; }
+    const raw = JSON.parse(fs.readFileSync(p, "utf-8"));
+    _produseCache = (raw.products || raw) as Produs[];
+  } catch {
+    _produseCache = [];
+  }
+  return _produseCache;
+}
+
+// Magazinele indexabile din fiecare categorie, in ordine alfabetica. Fiecare pagina leaga urmatoarele, in cerc, ca toate sa
+// primeasca linkuri: „Magazine similare" trimite mereu spre aceleasi cateva, iar 159 de pagini aveau doar 1-2 linkuri.
+let _peCategorie: Map<string, string[]> | null = null;
+function veciniMagazin(magazine: Magazin[], m: Magazin, maxim = 6): string[] {
+  if (!_peCategorie) {
+    _peCategorie = new Map();
+    for (const x of magazine) {
+      if (!x.categorie_slug || /\s/.test(x.magazin) || x.magazin.split("/").length > 2 || !esteIndexabil(x, merchantTokens())) continue;
+      _peCategorie.set(x.categorie_slug, [...(_peCategorie.get(x.categorie_slug) || []), x.magazin]);
+    }
+    for (const l of _peCategorie.values()) l.sort();
+  }
+  const l = _peCategorie.get(m.categorie_slug || "") || [];
+  const i = l.indexOf(m.magazin);
+  if (i < 0 || l.length < 2) return [];
+  return Array.from({ length: Math.min(maxim, l.length - 1) }, (_, k) => l[(i + k + 1) % l.length]);
+}
+
+let _tokensCache: Set<string> | null = null;
+function merchantTokens(): Set<string> {
+  if (!_tokensCache) _tokensCache = buildMerchantTokens(loadAllProducts());
+  return _tokensCache;
+}
+
+let _studiuCache: Record<string, CategorieStudiu> | null = null;
+/**
+ * Datele studiului propriu, indexate pe slug de categorie. Alimenteaza sectiunea
+ * "X fata de restul categoriei" — context real pe FIECARE pagina de magazin, nu
+ * doar pe cele cu produse in feed.
+ */
+function loadStudiu(): Record<string, CategorieStudiu> {
+  if (_studiuCache) return _studiuCache;
+  try {
+    const p = path.join(process.cwd(), "public", "studiu-cupoane.json");
+    const raw = JSON.parse(fs.readFileSync(p, "utf-8"));
+    _studiuCache = Object.fromEntries(
+      (raw.categorii || []).map((c: CategorieStudiu) => [c.slug, c])
+    );
+  } catch {
+    _studiuCache = {};
+  }
+  return _studiuCache;
+}
+
+let _istoricCache: { de_la: string; magazine: Record<string, IntrareIstoric[]> } | null = null;
+/**
+ * Promotiile vazute in trecut, pe magazin (scripts/istoric_promotii.py, la fiecare rulare de
+ * pipeline). Aceeasi cache de modul ca la produse: o singura citire per proces de build.
+ */
+function loadIstoric(): { de_la: string; magazine: Record<string, IntrareIstoric[]> } {
+  if (_istoricCache) return _istoricCache;
+  try {
+    const raw = JSON.parse(fs.readFileSync(path.join(process.cwd(), "public", "istoric-promotii.json"), "utf-8"));
+    _istoricCache = { de_la: typeof raw.de_la === "string" ? raw.de_la : "", magazine: raw.magazine || {} };
+  } catch {
+    _istoricCache = { de_la: "", magazine: {} };
+  }
+  return _istoricCache;
+}
+
+let _restrictionateCache: Produs[] | null = null;
+/**
+ * Produsele scoase din listarile generale (arme, magazine pentru adulti, produse explicite —
+ * scripts/continut_restrictionat.py, 06.10.2026). Le arata DOAR pagina magazinului lor.
+ */
+function loadRestrictionate(): Produs[] {
+  if (_restrictionateCache) return _restrictionateCache;
+  try {
+    const p = path.join(process.cwd(), "public", "products-restrictionate.json");
+    const raw = fs.existsSync(p) ? JSON.parse(fs.readFileSync(p, "utf-8")) : [];
+    _restrictionateCache = ((raw && raw.products) || raw || []) as Produs[];
+  } catch {
+    _restrictionateCache = [];
+  }
+  return _restrictionateCache;
+}
+
+function loadProducts(slug: string): Produs[] {
+  try {
+    // Potrivire EXACTA, si la produsele generale, si la cele restrictionate. Pana pe
+    // 07.10.2026 cele generale mergeau pe subsir si 39 de pagini (Roborock, Xiaomi,
+    // Libris...) aratau produsele altor magazine. Istoricul: lib/produseMagazin.ts.
+    const generale = loadAllProducts().filter((pr) => alMagazinului(pr, slug));
+    const proprii = loadRestrictionate().filter((pr) => alMagazinului(pr, slug));
+    const vazute = new Set<string>();
+    return [...generale, ...proprii]
+      // 22.09.2026: acelasi prag ca la statistici (PRET_MINIM_CREDIBIL). Reparatia din
+      // 20.09 a curatat INTERVALUL de pret, dar lista de produse a ramas neatinsa, si
+      // pagina bazarulonline.ro afisa „0 lei" de unsprezece ori — preturi unitare dintr-un
+      // bax (en-gros), rotunjite la zero de formatarea fara zecimale. Un pret pe care
+      // nimeni nu-l poate plati nu e o oferta, e o eroare de feed.
+      .filter((pr) => (pr.price ?? 0) >= PRET_MINIM_CREDIBIL)
+      // 07.10.2026: acelasi titlu si aceeasi imagine ca pe restul site-ului (lib/topFeed.ts).
+      // Pagina de magazin afisa campurile brute din feed: entitati HTML („M&amp;G"), 147 de
+      // imagini pe http (continut mixt pe o pagina https), 48 de adrese care nu sunt imagini
+      // („http://0" la gorgeaux.ro), si acelasi produs de doua ori pe 21 de pagini.
+      .map((pr) => ({ ...pr, title: titluAfisat(pr.title), image: imagineSigura(pr.image) || "" }))
+      .filter((pr) => {
+        const k = normTitlu(pr.title);
+        if (!k || vazute.has(k)) return false;
+        vazute.add(k);
+        return true;
+      });
+  } catch { return []; }
+}
+
+
+// Cauta magazinul tolerand URL-uri vechi (majuscule/forme anterioare ale slug-ului):
+// 1) potrivire exacta  2) case-insensitive  3) pe primul label de domeniu (surfshark ~ surfshark.com)
+function gasesteMagazin(magazine: Magazin[], slug: string): Magazin | undefined {
+  const s = slug.toLowerCase();
+  return (
+    magazine.find((x) => x.magazin === slug) ||
+    magazine.find((x) => x.magazin.toLowerCase() === s) ||
+    // Potrivire pe BRAND, nu pe primul label: `de.fossibot.com` si `de.eureka.com` au
+    // acelasi prim label („de") si se serveau unul pe altul. Vezi brandDomeniu().
+    magazine.find((x) => brandDomeniu(x.magazin) === brandDomeniu(s) && aceeasiTara(s, x.magazin))
+  );
+}
+
+export async function generateStaticParams() {
+  const magazine = loadData();
+  return [...magazine, ...loadFaraLivrare()].map((m) => ({ magazin: m.magazin }));
+}
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ magazin: string }>;
+}): Promise<Metadata> {
+  const { magazin: slug } = await params;
+  const magazine = loadData();
+  const m = gasesteMagazin(magazine, slug);
+
+  if (!m) {
+    const f = gasesteFaraLivrare(slug);
+    if (f) {
+      const numeF = numeAfisat(f.magazin);
+      return {
+        // 22.09.2026: cu sufixul de brand, 100 din aceste titluri treceau de 60 de
+        // caractere si Google taia exact partea care spune ce e pagina. Pagina e oricum
+        // `noindex`, dar titlul se vede in tab si la distribuire.
+        title: `Cod reducere ${numeF}: nu livrează în România`.slice(0, 60),
+        description: `Programul de afiliere ${numeF} la care avem acces funcționează doar pentru ${tariLivrare(f.regiuni)}, deci nu îl promovăm. Vezi alternativele din ${f.categorie}.`,
+        robots: { index: false, follow: true },
+        alternates: { canonical: `https://amcupon.ro/cod-reducere/${f.magazin}` },
+      };
+    }
+    return { title: "Magazin negăsit | AmCupon.ro" };
+  }
+
+  const nume = numeAfisat(m.magazin);
+  const an = new Date().getFullYear();
+  const luna = lunaRo();
+  const nrPromo = m.promotii.length;
+  const nrCod = m.promotii.filter((p) => p.cod_cupon).length;
+  // Canonical = mereu slug-ul curat al magazinului (nu forma din URL accesat)
+  const pageUrl = `https://amcupon.ro/cod-reducere/${m.magazin}`;
+
+  // Titlu optimizat — format care rankuieste (ex: cuponeria)
+  //
+  // 22.09.2026, doua reparatii:
+  //  1. „1 ofertă active" — „active" era hardcodat, deci singularul iesea in dezacord.
+  //     Aparea pe 37 de pagini, in <title>, adica si in rezultatul Google.
+  //  2. 879 de titluri treceau de 60 de caractere, limita scrisa in CLAUDE.md din 17.06;
+  //     476 doar din „și Voucher". Google le taia exact pe partea utila. `subLimita()`
+  //     scoate intai sufixul de brand, apoi luna — ce ramane e mereu partea care aduce
+  //     clicul („Cod Reducere <Magazin>"), nu decorul.
+  const MAX_TITLU = 60;
+  const subLimita = (baza: string): string => {
+    const cu = `${baza} | AmCupon.ro`;
+    if (cu.length <= MAX_TITLU) return cu;
+    if (baza.length <= MAX_TITLU) return baza;
+    return baza.replace(` ${luna} ${an}`, ` ${an}`).slice(0, MAX_TITLU).trim();
+  };
+
+  const title = nrCod > 0
+    ? subLimita(`Cod Reducere ${nume} ${luna} ${an} — ${nrCod} cod${nrCod > 1 ? "uri" : ""} activ${nrCod > 1 ? "e" : ""}`)
+    : nrPromo > 0
+    ? subLimita(`Cod Reducere ${nume} ${luna} ${an} — ${nrPromo} ofert${nrPromo > 1 ? "e active" : "ă activă"}`)
+    // 19.09.2026: era „— Voucher verificat" pe ~1.040 de pagini FARA niciun voucher. Titlul promitea
+    // exact ce pagina nu are, iar omul pleca de pe ea in cateva secunde.
+    : subLimita(`Cod Reducere ${nume} ${luna} ${an}`);
+
+  // Descriere: custom pentru top magazine, generic pentru restul. Fara „verificate": ofertele vin
+  // din retelele de afiliere si expira dupa data lor (scripts/promotii.py) — nu le testam in cos.
+  // „N coduri" numara doar promotiile CU cod (inainte numara toate promotiile ca „coduri").
+  const descCustom = DESCRIERI_CUSTOM[slug];
+  const descGeneric = nrCod > 0
+    ? `${nrCod} cod${nrCod > 1 ? "uri" : ""} de reducere ${nume} activ${nrCod > 1 ? "e" : ""} în ${luna} ${an}: ${titluPromotie(m.promotii.find((p) => p.cod_cupon) ?? m.promotii[0], nume)}. Actualizat de mai multe ori pe zi pe AmCupon.ro.`
+    : nrPromo > 0
+    ? `${nrPromo} ofert${nrPromo > 1 ? "e" : "ă"} ${nume} activ${nrPromo > 1 ? "e" : "ă"} în ${luna} ${an}: ${titluPromotie(m.promotii[0], nume)}. Actualizat de mai multe ori pe zi pe AmCupon.ro.`
+    : magazine.some((x) => x.magazin !== m.magazin && x.categorie_slug === m.categorie_slug && x.are_promotie)
+    ? `Acum nu e niciun cod activ la ${nume}. Vezi magazinele din ${m.categorie} care au oferte azi și primește alertă pe email când apare un cod ${nume}.`
+    : `Acum nu e niciun cod activ la ${nume}. Primește alertă pe email când apare unul — ofertele se actualizează de mai multe ori pe zi pe AmCupon.ro.`;
+  // 15.10.2026: oferta care se termina in cel mult 7 zile merge in FATA descrierii — Google taie la
+  // ~155 de caractere, iar termenul („pana pe 18 octombrie") e ce aduce clicul. Vezi lib/oferta.ts.
+  const nota = notaExpirare(m.promotii, nume);
+  const baza = descCustom || descGeneric;
+  const description = descriereScurta(nota && !baza.includes(nota) ? `${nota} ${baza}` : baza);
+
+  // ── Indexare selectiva (vezi lib/seoIndexable.ts pentru masuratori + motiv) ──
+  // Paginile fara continut propriu (fara promotie si fara produse) primesc
+  // `noindex, FOLLOW`: raman live pentru utilizatori, linkul afiliat merge la fel,
+  // link equity trece mai departe — doar nu mai cerem Google sa indexeze un
+  // template gol. Se auto-repara: cand apare o promotie sau produse, pagina
+  // redevine indexabila automat la urmatoarea generare.
+  const indexabil = esteIndexabil(m, merchantTokens());
+
+  return {
+    title,
+    description,
+    ...(indexabil ? {} : { robots: { index: false, follow: true } }),
+    keywords: [
+      `cod reducere ${nume.toLowerCase()}`,
+      `voucher ${nume.toLowerCase()}`,
+      `cupon ${nume.toLowerCase()}`,
+      `cod promoțional ${nume.toLowerCase()}`,
+      `reducere ${nume.toLowerCase()} ${an}`,
+      `${nume.toLowerCase()} discount`,
+      `${slug}`,
+      "coduri reducere românia",
+      "amcupon.ro",
+    ],
+    alternates: {
+      canonical: pageUrl,
+    },
+    openGraph: {
+      title,
+      description,
+      url: pageUrl,
+      siteName: "AmCupon.ro",
+      locale: "ro_RO",
+      type: "website",
+      images: [
+        {
+          url: m.logo_url || "/og-image.png",
+          width: m.logo_url ? 400 : 1200,
+          height: m.logo_url ? 400 : 630,
+          alt: `Cod reducere ${nume} — AmCupon.ro`,
+        },
+      ],
+    },
+    twitter: {
+      card: m.logo_url ? "summary" : "summary_large_image",
+      title,
+      description,
+      images: [m.logo_url || "/og-image.png"],
+    },
+  };
+}
+
+export default async function PaginaMagazin({
+  params,
+}: {
+  params: Promise<{ magazin: string }>;
+}) {
+  const { magazin: slug } = await params;
+  const magazine = loadData();
+  const m = gasesteMagazin(magazine, slug);
+
+  if (!m) {
+    // Varianta straina a unui magazin .ro e scoasa la merge (16.09.2026: liki24.pl, gsmnet.de,
+    // fragranza.hu...). Adresa veche duce permanent la varianta romaneasca, nu intr-un 404.
+    const baza = slug.toLowerCase().split(".")[0];
+    const ro = magazine.find((x) => x.magazin.toLowerCase() === `${baza}.ro`);
+    if (ro && ro.magazin.toLowerCase() !== slug.toLowerCase()) {
+      permanentRedirect(`/cod-reducere/${ro.magazin}`);
+    }
+    const f = gasesteFaraLivrare(slug);
+    if (f) {
+      // Alternative din aceeasi categorie: magazine .ro intai, apoi cu cod, apoi cu oferta.
+      const alternative: Alternativa[] = magazine
+        .filter((x) => x.categorie_slug && x.categorie_slug === f.categorie_slug && !/\s/.test(x.magazin))
+        .sort((a, b) =>
+          Number(b.magazin.endsWith(".ro")) - Number(a.magazin.endsWith(".ro")) ||
+          Number(b.promotii.some((p) => p.cod_cupon)) - Number(a.promotii.some((p) => p.cod_cupon)) ||
+          Number(b.are_promotie) - Number(a.are_promotie) ||
+          (a.rank || 999) - (b.rank || 999))
+        .slice(0, 6)
+        .map((x) => ({
+          magazin: x.magazin,
+          nume: numeAfisat(x.magazin),
+          eticheta: x.promotii.some((p) => p.cod_cupon) ? "Cod activ" : x.are_promotie ? "Ofertă" : "",
+        }));
+      return <FaraLivrareRo f={f} nume={numeAfisat(f.magazin)} alternative={alternative} />;
+    }
+    notFound();
+  }
+
+  // Folosim slug-ul curat al magazinului pentru toate loader-ele (consistenta)
+  const cleanSlug = m.magazin;
+  // Grila arata primele 24; statisticile de pret (ContextMagazin) se calculeaza din TOATE.
+  // Pana pe 07.10.2026 primeau tot lista taiata la 24 si scriau „Calculat din cele 24 de
+  // produse pe care le urmarim" pe 203 magazine pentru care urmarim pana la 102.
+  const toateProdusele = loadProducts(cleanSlug);
+  const produse = toateProdusele.slice(0, 24);
+  const blogPost = loadBlogPost(cleanSlug);
+  const banner = loadBanner(cleanSlug);
+  const descriere = loadDescriere(cleanSlug);
+  const comparatii = loadComparatii(cleanSlug);
+  const reviewSummary = loadReviewsSummary(cleanSlug);
+  const istoric = loadIstoric();
+  const intrariIstoric = istoric.magazine[cleanSlug.toLowerCase()] ?? [];
+
+  // Magazine similare din aceeasi categorie (max 8).
+  //
+  // 19.09.2026: pe sofiline.ro (fashion, RO) blocul arata DHgate, Avidlove, extensii de par — toate
+  // straine, primele doar pentru ca aveau o promotie — desi exista magazine romanesti de fashion cu
+  // oferte si cod. Pe 91% din pagini (1.044 din 1.143 fara oferta) blocul asta e tot ce retine omul.
+  // Ordinea acum: pentru un magazin .ro, intai magazinele .ro; apoi cele cu cod real, apoi cu oferta,
+  // apoi rangul. Domeniul e un semnal aproximativ al pietei, nu o regula (vezi CLAUDE.md, relevanta).
+  const RETELE_AFILIERE = ["2performant.com"];
+  const esteRo = (s: string) => s.toLowerCase().endsWith(".ro");
+  const cuCodReal = (x: Magazin) => (x.promotii || []).some((p) => (p.cod_cupon || "").trim().length > 0);
+  const pagRo = esteRo(m.magazin);
+  const similare: MagazinSimilar[] = magazine
+    .filter((x) =>
+      x.magazin !== slug &&
+      x.categorie_slug &&
+      x.categorie_slug === m.categorie_slug &&
+      !RETELE_AFILIERE.includes(x.magazin) &&
+      !/\s/.test(x.magazin)
+    )
+    .sort((a, b) =>
+      (pagRo ? Number(esteRo(b.magazin)) - Number(esteRo(a.magazin)) : 0) ||
+      Number(cuCodReal(b)) - Number(cuCodReal(a)) ||
+      (b.are_promotie ? 1 : 0) - (a.are_promotie ? 1 : 0) ||
+      (a.rank || 999) - (b.rank || 999)
+    )
+    .slice(0, 8)
+    .map((x) => ({
+      magazin: x.magazin,
+      logo_url: x.logo_url,
+      are_promotie: x.are_promotie,
+      cod_cupon: x.cod_cupon,
+      promotii: x.promotii.map((p) => ({ nume: p.nume })),
+      // `are_promotie` NU inseamna "are cod": din 66 de magazine cu promotie, doar
+      // 6 au cod real. Fara distinctia asta, sectiunea "zero dead ends" ar trimite
+      // omul de la o pagina fara coduri la ALTA pagina fara coduri.
+      cod_real: (x.promotii || []).some((p) => (p.cod_cupon || "").trim().length > 0),
+      ultima_verificare: x.ultima_verificare,
+      oferta: (() => {
+        // Codul care expira cel mai curand intai: e cel mai util acum. Fara cod = fara card.
+        const p = (x.promotii || [])
+          .filter((q) => (q.cod_cupon || "").trim().length > 0 && q.zile_ramase >= 0)
+          .sort((a, b) => a.zile_ramase - b.zile_ramase)[0];
+        return p
+          ? { nume: p.nume, descriere: p.descriere || "", cod_cupon: p.cod_cupon.trim(), zile_ramase: p.zile_ramase, link: linkPromotie(x, p) }
+          : undefined;
+      })(),
+    }));
+
+  const nume = numeAfisat(m.magazin);
+  const an = new Date().getFullYear();
+  const luna = lunaRo();
+  const pageUrl = `https://amcupon.ro/cod-reducere/${slug}`;
+  const nrPromo = m.promotii.length;
+  const nrCod = m.promotii.filter((p) => p.cod_cupon).length;
+  const descCustom = DESCRIERI_CUSTOM[slug];
+
+  // ── Schema.org ─────────────────────────────────────────────────────────────
+  const breadcrumb = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "AmCupon.ro", item: "https://amcupon.ro" },
+      { "@type": "ListItem", position: 2, name: "Magazine", item: "https://amcupon.ro/toate-magazinele" },
+      { "@type": "ListItem", position: 3, name: `Cod reducere ${nume}`, item: pageUrl },
+    ],
+  };
+
+  // Server Component: randat o singura data per request/ISR, nu re-randat pe client -
+  // Date.now() aici e sigur (nu declanseaza hidratare/reconciliere), dar noua regula
+  // react-hooks/purity il flags oricum. Calculat o singura data (nu in .map).
+  // eslint-disable-next-line react-hooks/purity -- Server Component, valoare stabila per generare
+  const acumMs = Date.now();
+  // Campania de Black Friday anuntata a magazinului (lib/campaniiBlackFriday.ts), cand exista.
+  const campanieBF = campanieMagazin(m.magazin, new Date(acumMs).toISOString().slice(0, 10));
+
+  const offerList = nrPromo > 0 ? {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    name: `Coduri reducere ${nume} ${luna} ${an}`,
+    description: `${cuNumar(nrPromo, "ofertă activă", "oferte active")} ${nume} pe AmCupon.ro, actualizate de mai multe ori pe zi`,
+    url: pageUrl,
+    numberOfItems: nrPromo,
+    itemListElement: m.promotii.map((promo, i) => ({
+      "@type": "ListItem",
+      position: i + 1,
+      item: {
+        "@type": "Offer",
+        // Acelasi titlu ca pe card (lib/oferta.ts): la Impact `nume` e des doar codul
+        // („DH2026OCTSAVE3"), iar datele structurate trebuie sa spuna ce vede vizitatorul.
+        name: titluPromotie(promo, nume),
+        description: promo.descriere || titluPromotie(promo, nume),
+        url: promo.landing_page || pageUrl,
+        availability: "https://schema.org/InStock",
+        // Din data reala, nu din `zile_ramase`: fara `expira` contorul e 99 prin conventie
+        // (scripts/promotii.py), iar „valabil inca 99 de zile" ar fi o data inventata declarata lui Google.
+        ...(promo.expira ? { validThrough: `${promo.expira.slice(0, 10)}T23:59:59Z` } : {}),
+        // schema.org nu are tip "Coupon"/"DiscountCode" valid (propunere respinsa oficial) —
+        // additionalProperty/PropertyValue e alternativa reala pt a expune codul in Offer.
+        // Gating pe promo.cod_cupon (per-promotie), NICIODATA pe m.cod_cupon (flag la nivel
+        // de magazin) — temu.com/shein.com/trendyol.com au flagul true cu 0 coduri reale.
+        ...(promo.cod_cupon ? {
+          disambiguatingDescription: `Cod: ${promo.cod_cupon}`,
+          additionalProperty: {
+            "@type": "PropertyValue",
+            name: "Cod reducere",
+            value: promo.cod_cupon,
+          },
+        } : {}),
+        seller: {
+          "@type": "Organization",
+          name: nume,
+          url: m.url,
+          ...(m.logo_url ? { logo: m.logo_url } : {}),
+        },
+      },
+    })),
+  } : null;
+
+  // AggregateRating: DOAR din recenzii reale (Supabase, moderate manual). Inainte se
+  // calcula din procent_succes/folosit_de — fabricate (random.Random(hash(...)) in
+  // fetch_2p_api.py), eliminate din UI pe 03.07.2026 dar ramasesera aici, emitand un
+  // rating fals catre Google pe aproape orice pagina. Fix 06.08.2026: omitem blocul
+  // complet cand nu exista nicio recenzie reala — nu ghicim, nu aproximam.
+  const organization = {
+    "@context": "https://schema.org",
+    "@type": "Store",
+    name: nume,
+    url: m.url,
+    ...(m.logo_url ? { logo: m.logo_url } : {}),
+    sameAs: [m.url],
+    ...(reviewSummary ? {
+      aggregateRating: {
+        "@type": "AggregateRating",
+        ratingValue: reviewSummary.medie.toFixed(1),
+        reviewCount: reviewSummary.count,
+        bestRating: "5",
+        worstRating: "1",
+      },
+    } : {}),
+  };
+
+  /**
+   * Intrebarile frecvente — o SINGURA sursa pentru textul VIZIBIL si pentru schema.
+   *
+   * Bug reparat 16.08.2026: emiteam `FAQPage` cu 5 intrebari pe toate cele 1.162 de
+   * pagini de magazin, dar NICIUNA nu aparea pe pagina. Google cere explicit ca
+   * un continut marcat FAQPage sa fie vizibil utilizatorului; marcaj ascuns e
+   * motiv de actiune manuala, nu doar de ignorare. Verificat pe HTML-ul generat
+   * inainte de fix: 5 intrebari in schema, 0 in textul paginii.
+   *
+   * Acum schema se DERIVA din acest array, deci cele doua nu mai pot diverge.
+   */
+  const intrebari: { i: string; r: string }[] = [
+    {
+      i: `Cum folosesc codul de reducere ${nume}?`,
+      r: `Copiază codul de reducere ${nume} de pe AmCupon.ro, adaugă produsele în coș pe ${m.url}, iar la finalizarea comenzii introdu codul în câmpul "Cod promoțional" sau "Voucher". Reducerea se aplică automat înainte de plată.`,
+    },
+    {
+      // 19.09.2026: raspunsul era „Da. AmCupon.ro verifica si actualizeaza zilnic toate codurile" —
+      // si pe cele ~1.040 de pagini fara niciun cod. Ce facem de fapt, spus exact.
+      i: `Codul de reducere ${nume} este verificat?`,
+      r: nrCod > 0
+        ? `Codurile ${nume} vin direct de la rețeaua de afiliere a magazinului și se actualizează de mai multe ori pe zi; o ofertă dispare de pe pagină când îi expiră data. Nu testăm fiecare cod în coș — dacă unul nu merge, spune-ne cu butonul "A funcționat?".`
+        : `Acum nu e niciun cod activ la ${nume}. Ofertele vin de la rețeaua de afiliere a magazinului și se actualizează de mai multe ori pe zi — când apare un cod, îl vezi aici.`,
+    },
+    {
+      i: `Câte oferte active are ${nume} acum?`,
+      r: nrPromo > 0
+        ? `${nume} are ${cuNumar(nrPromo, "ofertă activă", "oferte active")} în ${luna} ${an}${nrCod > 0 ? (nrPromo === 1 ? ", cu cod de reducere" : `, dintre care ${nrCod} cu cod de reducere`) : ""}. Lista se actualizează de mai multe ori pe zi pe AmCupon.ro.`
+        : similare.some((s) => s.are_promotie)
+        ? `Niciuna în acest moment. Mai jos găsești magazinele din aceeași categorie care au oferte azi.`
+        : `Niciuna în acest moment. Lista se actualizează de mai multe ori pe zi.`,
+    },
+    {
+      i: "Este AmCupon.ro gratuit?",
+      r: "Da, AmCupon.ro este 100% gratuit pentru utilizatori. Nu plătești nimic în plus față de prețul normal al produselor. Noi primim un mic comision de la magazine din bugetul lor de marketing, fără costuri suplimentare pentru tine.",
+    },
+    {
+      i: `Ce categorie de produse oferă ${nume}?`,
+      r: `${nume} este un magazin din categoria ${m.categorie}. ${descCustom ? descCustom.split(".")[0] + "." : `Găsești coduri de reducere ${nume} actualizate zilnic pe AmCupon.ro.`}`,
+    },
+  ];
+
+  /**
+   * Pasii de folosire a codului — o SINGURA sursa pentru textul VIZIBIL si pentru
+   * schema HowTo, exact ca la `intrebari`.
+   *
+   * NOTA ONESTA despre valoarea SEO: Google a retras rezultatele imbogatite de tip
+   * HowTo. Schema ramane valida si nu strica, dar castigul real e in textul vizibil
+   * (raspunde la o intrebare pe care omul chiar o are), nu in marcaj. Nu o adaugam
+   * pretinzand ca aduce stelute in SERP.
+   */
+  const pasiFolosire: { titlu: string; text: string }[] = [
+    {
+      titlu: `Copiază codul de pe pagina ${nume}`,
+      // Pe pagina fara cod, singurul cod „de mai sus" e acum al unui magazin SIMILAR.
+      text: nrCod > 0
+        ? `Apasă pe codul de reducere de mai sus: se copiază automat și te trimitem pe ${m.url} în același timp.`
+        : `Când apare un cod la ${nume}, îl găsești pe pagina asta: apeși pe el, se copiază automat și te trimitem pe ${m.url}.`,
+    },
+    {
+      titlu: "Adaugă produsele în coș",
+      text: `Alege ce vrei să cumperi de pe ${m.url} și mergi la finalizarea comenzii. Codul nu se aplică în coș, ci la ultimul pas.`,
+    },
+    {
+      titlu: "Lipește codul la finalizarea comenzii",
+      text: 'Caută câmpul "Cod promoțional", "Voucher" sau "Cod reducere" și lipește codul copiat. Apasă Aplică.',
+    },
+    {
+      titlu: "Verifică reducerea înainte de plată",
+      text: "Totalul trebuie să scadă pe loc. Dacă nu scade, codul poate fi expirat sau condiționat de o valoare minimă a comenzii — încearcă alt cod din listă.",
+    },
+  ];
+
+  const howToSchema = {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    name: `Cum aplici un cod de reducere pe ${nume}`,
+    description: `Pașii pentru a folosi un cod de reducere ${nume} la finalizarea comenzii.`,
+    totalTime: "PT2M",
+    step: pasiFolosire.map((p, i) => ({
+      "@type": "HowToStep",
+      position: i + 1,
+      name: p.titlu,
+      text: p.text,
+      url: `${pageUrl}#cum-folosesti`,
+    })),
+  };
+
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: intrebari.map((q) => ({
+      "@type": "Question",
+      name: q.i,
+      acceptedAnswer: { "@type": "Answer", text: q.r },
+    })),
+  };
+
+  return (
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(organization) }} />
+      {offerList && (
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(offerList) }} />
+      )}
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }} />
+      <MagazinClient magazin={m} produse={produse} similare={similare} comparatii={comparatii} blogPost={blogPost} banner={banner} descriere={descriere} astazi={new Date(acumMs).toISOString().slice(0, 10)}
+        blackFriday={campanieBF ? <BlackFridayMagazin nume={nume} campanie={campanieBF} azi={new Date(acumMs).toISOString().slice(0, 10)} /> : null}
+        istoric={
+          istoric.de_la && intrariIstoric.length > 0 ? (
+            <IstoricMagazin
+              nume={nume}
+              deLa={istoric.de_la}
+              azi={new Date(acumMs).toISOString().slice(0, 10)}
+              intrari={intrariIstoric}
+              nrActive={nrPromo}
+            />
+          ) : null
+        }
+        context={
+          <ContextMagazin
+            nume={m.magazin}
+            produse={toateProdusele}
+            categorieSlug={m.categorie_slug}
+            categorie={m.categorie}
+            urlSite={linkAfiliat(m) || m.url}
+            categorieStudiu={m.categorie_slug ? loadStudiu()[m.categorie_slug] ?? null : null}
+            intrebari={intrebari}
+            pasi={pasiFolosire}
+          />
+        }
+      />
+      <VeciniMagazin categorie={m.categorie || "aceeași categorie"} lista={veciniMagazin(magazine, m).filter((s) => !similare.some((x) => x.magazin === s))} />
+    </>
+  );
+}

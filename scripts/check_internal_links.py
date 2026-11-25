@@ -54,6 +54,8 @@ def rute_statice():
         if "page.tsx" not in fisiere:
             continue
         rel = os.path.relpath(radacina, APP).replace("\\", "/")
+        # Grupurile de rute „(vechi)”/„(nou)” (25.11.2026) nu apar in adresa: le scoatem din cale.
+        rel = "/".join(p for p in rel.split("/") if not (p.startswith("(") and p.endswith(")"))) or "."
         if "[" in rel or rel.startswith(("api", "admin")):
             continue
         gasite.add("/" if rel == "." else "/" + rel)
