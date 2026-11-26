@@ -1,5 +1,31 @@
 [
   {
+    "id": 274968,
+    "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/274927/original/274927.JPG",
+    "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=5df8b05c3&aff_code=541547473&campaign_unique=313128750",
+    "landing_raw": "https://www.edituradiana.ro/",
+    "width": 668,
+    "height": 672,
+    "merchant": "edituradiana.ro",
+    "merchant_slug": "edituradiana-ro",
+    "name": "Roata lui Moș Crăciun 2026",
+    "category": "Roata lui Moș Crăciun 2026",
+    "b_type": "image"
+  },
+  {
+    "id": 274966,
+    "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/274925/original/274925.JPG",
+    "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=30544ca8e&aff_code=541547473&campaign_unique=313128750",
+    "landing_raw": "https://www.edituradiana.ro/",
+    "width": 763,
+    "height": 709,
+    "merchant": "edituradiana.ro",
+    "merchant_slug": "edituradiana-ro",
+    "name": "Provocarea LOGICO!",
+    "category": "Provocarea LOGICO!",
+    "b_type": "image"
+  },
+  {
     "id": 274963,
     "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/274922/original/274922.jpg",
     "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=be6c50d03&aff_code=541547473&campaign_unique=bb3071a7d",
