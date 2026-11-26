@@ -1,13 +1,13 @@
 {
   "generat": "2026-11-26",
-  "total_magazine": 426,
-  "cu_promotie": 67,
-  "cu_cod_real": 16,
+  "total_magazine": 427,
+  "cu_promotie": 66,
+  "cu_cod_real": 15,
   "doar_oferta": 51,
-  "procent_cu_promotie": 15.7,
-  "procent_cu_cod": 3.8,
-  "reducere_mediana_generala": 30,
-  "magazine_cu_procent_declarat": 47,
+  "procent_cu_promotie": 15.5,
+  "procent_cu_cod": 3.5,
+  "reducere_mediana_generala": 30.0,
+  "magazine_cu_procent_declarat": 46,
   "categorii": [
     {
       "slug": "carti-educatie",
@@ -21,11 +21,11 @@
     {
       "slug": "casa-gradina",
       "nume": "Casă & grădină",
-      "magazine": 94,
-      "cu_promotie": 16,
-      "reducere_mediana": 40,
+      "magazine": 91,
+      "cu_promotie": 14,
+      "reducere_mediana": 45.0,
       "reducere_max": 80,
-      "esantion": 11
+      "esantion": 10
     },
     {
       "slug": "fashion",
@@ -39,7 +39,7 @@
     {
       "slug": "beauty",
       "nume": "Beauty & îngrijire",
-      "magazine": 50,
+      "magazine": 51,
       "cu_promotie": 6,
       "reducere_mediana": 40.0,
       "reducere_max": 80,
@@ -57,8 +57,8 @@
     {
       "slug": "marketplace",
       "nume": "Marketplace",
-      "magazine": 41,
-      "cu_promotie": 7,
+      "magazine": 42,
+      "cu_promotie": 8,
       "reducere_mediana": 20.0,
       "reducere_max": 70,
       "esantion": 4
@@ -66,7 +66,7 @@
     {
       "slug": "auto-moto",
       "nume": "Auto & moto",
-      "magazine": 25,
+      "magazine": 26,
       "cu_promotie": 2,
       "reducere_mediana": null,
       "reducere_max": null,
@@ -84,7 +84,7 @@
     {
       "slug": "copii",
       "nume": "Copii & familie",
-      "magazine": 20,
+      "magazine": 21,
       "cu_promotie": 2,
       "reducere_mediana": null,
       "reducere_max": null,
@@ -157,8 +157,8 @@
   "criteriu": "domeniu .ro",
   "international": {
     "total": 499,
-    "cu_promotie": 78,
-    "cu_cod": 49
+    "cu_promotie": 79,
+    "cu_cod": 50
   },
   "retele": [
     "2Performant",
@@ -219,7 +219,7 @@
         {
           "slug": "casa-gradina",
           "nume": "Casă & grădină",
-          "promotii": 35
+          "promotii": 33
         },
         {
           "slug": "carti-educatie",

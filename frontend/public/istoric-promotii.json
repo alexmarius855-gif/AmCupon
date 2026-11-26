@@ -636,7 +636,7 @@
    "magazine": 145
   },
   "2026-11-26": {
-   "promotii": 259,
+   "promotii": 261,
    "magazine": 143
   }
  },
@@ -2243,6 +2243,15 @@
   ],
   "cllix.com": [
    {
+    "k": "blackfridaysale30offcllixapartmentsandhotelsarise|blackfriday26",
+    "titlu": "Black Friday - Sale- 30% Off -CLLIX Apartments and Hotels: Arise",
+    "cod": true,
+    "prima": "2026-11-26",
+    "ultima": "2026-11-26",
+    "expira": "2026-12-01",
+    "activa": true
+   },
+   {
     "k": "summer2026sale20offcllixapartmentsandhotelsarise|summercllix26",
     "titlu": "Summer 2026 - Sale- 20% Off -CLLIX Apartments and Hotels: Arise",
     "cod": true,
@@ -2431,6 +2440,15 @@
    }
   ],
   "cvlife.com": [
+   {
+    "k": "blackfridaydealsatcvlifesaveupto40|salebf40",
+    "titlu": "Black Friday Deals at CVLIFE – Save Up to 40%",
+    "cod": true,
+    "prima": "2026-11-26",
+    "ultima": "2026-11-26",
+    "expira": "2026-11-30",
+    "activa": true
+   },
    {
     "k": "thanksgivinginthetimbersalety30|",
     "titlu": "Thanksgiving in the timber-SALETY30",
@@ -6271,6 +6289,15 @@
   ],
   "klaiyihair.com": [
    {
+    "k": "klaiyiblackfridaymegasale2026|bf25",
+    "titlu": "Klaiyi Black Friday Mega Sale 2026",
+    "cod": true,
+    "prima": "2026-11-26",
+    "ultima": "2026-11-26",
+    "expira": "2026-11-30",
+    "activa": true
+   },
+   {
     "k": "klaiyihairblackfridayiscoming2026|bf60",
     "titlu": "Klaiyi Hair Black Friday Is Coming! 2026",
     "cod": true,
@@ -8368,7 +8395,7 @@
     "prima": "2026-10-23",
     "ultima": "2026-11-26",
     "expira": "2026-11-30",
-    "activa": true
+    "activa": false
    }
   ],
   "nobilacasa.ro": [

@@ -6207,6 +6207,18 @@
 ]
 },
 {
+"slug": "laptop-sub-3000-lei",
+"tema": "laptopuri",
+"tema_nume": "Laptopuri",
+"titlu": "Laptopuri sub 3.000 lei",
+"nota": null,
+"in_text": null,
+"actualizat": "2026-11-26",
+"feeduri": [],
+"produse": [],
+"magazine": []
+},
+{
 "slug": "telefon-256-gb",
 "tema": "telefoane",
 "tema_nume": "Telefoane",
@@ -6324,6 +6336,18 @@
 "magazine": [
 "dwyn.ro"
 ]
+},
+{
+"slug": "telefon-128-gb",
+"tema": "telefoane",
+"tema_nume": "Telefoane",
+"titlu": "Telefoane cu 128 GB",
+"nota": null,
+"in_text": null,
+"actualizat": "2026-11-26",
+"feeduri": [],
+"produse": [],
+"magazine": []
 },
 {
 "slug": "telefon-5g",
@@ -9265,7 +9289,7 @@
 "titlu": "Aspiratoare de mână",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-18",
+"actualizat": "2026-11-26",
 "feeduri": [
 {
 "id": 1096,
@@ -9329,6 +9353,17 @@
 "url_magazin": "https://www.evomag.ro/electrocasnice-aspiratoare-aspiratoare-de-mana-portabile/adler-aspirator-de-mana-adler-ad-7059-usb-c-12-v-60-w-autonomie-15-minute-alb-negru-4214228.html",
 "pret_vechi": null,
 "verificat": "2026-11-06"
+},
+{
+"titlu": "HEINNER Aspirator de mana Heinner SpeedMate HHVC-C7.4WHBK, 50 W, umed-uscat, 400 ml, alb/negru",
+"pret": 109.0,
+"imagine": "https://www.dwyn.ro/images/products/img_202611101603/482473/full/heinner-aspirator-de-mana-heinner-speedmate-hhvc-c7-4whbk-50-w-umed-uscat-400-ml-alb-negru-1561192.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Faspiratoare%2Fheinner%2F482473-aspirator-de-mana-heinner-speedmate-hhvc-c7-4whbk-50-w-umed-uscat-400-ml-alb-negru%2F",
+"magazin": "dwyn.ro",
+"id": "wDTZktmBrIhj",
+"brand": "HEINNER",
+"url_magazin": "https://www.dwyn.ro/aspiratoare/heinner/482473-aspirator-de-mana-heinner-speedmate-hhvc-c7-4whbk-50-w-umed-uscat-400-ml-alb-negru/",
+"pret_vechi": null
 },
 {
 "titlu": "Aspirator ALB de mana JB-168 portabil silentios aspiratie puternica cu Usb 120W Alb",
@@ -9497,7 +9532,7 @@
 "titlu": "Aparate de aer condiționat de 9000 BTU",
 "nota": null,
 "in_text": "\\b9000\\s*BTU\\b",
-"actualizat": "2026-11-18",
+"actualizat": "2026-11-26",
 "feeduri": [
 {
 "id": 4152,
@@ -9586,6 +9621,17 @@
 "url_magazin": "https://www.dwyn.ro/aparate-de-aer-conditionat/daewoo/252673-aparat-aer-conditionat-daewoo-dac-09chsdb-nk-9000-btu-negru/",
 "pret_vechi": null,
 "verificat": "2026-11-04"
+},
+{
+"titlu": "Daewoo Aparat aer conditionat, Daewoo DAC-09CHSDB-NW, 9000 BTU WI-Fi, Alb",
+"pret": 1406.99,
+"imagine": "https://www.dwyn.ro/images/products/img_202512311121/252675/full/daewoo-aparat-aer-conditionat-daewoo-dac-09chsdb-nw-9000-btu-wi-fi-alb-1331728.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Faparate-de-aer-conditionat%2Fdaewoo%2F252675-aparat-aer-conditionat-daewoo-dac-09chsdb-nw-9000-btu-wi-fi-alb%2F",
+"magazin": "dwyn.ro",
+"id": "3a1d2c759",
+"brand": "Daewoo",
+"url_magazin": "https://www.dwyn.ro/aparate-de-aer-conditionat/daewoo/252675-aparat-aer-conditionat-daewoo-dac-09chsdb-nw-9000-btu-wi-fi-alb/",
+"pret_vechi": null
 },
 {
 "titlu": "Aparat aer conditionat Nobus CS25-V3G 9000 BTU, Clasa A++/A+, Inverter, Wi-Fi inclus, model 2025",
@@ -9728,18 +9774,6 @@
 "verificat": "2026-11-06"
 },
 {
-"titlu": "BOSCH Aparat de aer conditionat portabil Bosch Cool 2000, 9000 BTU, Clasa A, functie dezumidificare, alb",
-"pret": 2595.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202503142150/288917/full/bosch-aparat-de-aer-conditionat-portabil-bosch-cool-2000-9000-btu-clasa-a-functie-dezumidificare-alb-702225.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Faparate-de-aer-conditionat%2Fbosch%2F288917-aparat-de-aer-conditionat-portabil-bosch-cool-2000-9000-btu-clasa-a-functie-dezumidificare-alb%2F",
-"magazin": "dwyn.ro",
-"id": "1TQF2LbhiPE7",
-"brand": "BOSCH",
-"url_magazin": "https://www.dwyn.ro/aparate-de-aer-conditionat/bosch/288917-aparat-de-aer-conditionat-portabil-bosch-cool-2000-9000-btu-clasa-a-functie-dezumidificare-alb/",
-"pret_vechi": null,
-"verificat": "2026-11-04"
-},
-{
 "titlu": "Aparat de aer conditionat Bosch Climate 4000i 26 E, 9000 BTU, Clasa A++/A++, Inverter, R32, Wi-Fi, Mod ECO, Ionizare, I-",
 "pret": 2899.99,
 "imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4203%2F4203948%2F7733703208-7733703143-7733-67a608563d36f.jpg&type=auto&width=500&sign=O-sBSuSX56-goYXKZIjHjs8ZmrYOFL8NFHeqc1sdHCk",
@@ -9766,7 +9800,7 @@
 "titlu": "Aparate de aer condiționat de 12000 BTU",
 "nota": null,
 "in_text": "\\b12000\\s*BTU\\b",
-"actualizat": "2026-11-18",
+"actualizat": "2026-11-26",
 "feeduri": [
 {
 "id": 1539,
@@ -9787,16 +9821,15 @@
 ],
 "produse": [
 {
-"titlu": "Aparat de aer conditionat Electrolux EACS/I-12HEF, 12000 BTU, Clasa A++/A+++, R32, Wi-fi (Alb)",
-"pret": 1099.0,
-"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4238%2F4238299%2Faparat-de-aer-conditionat-elec-6889d82f04f76.jpg&type=auto&width=500&sign=7NDXyRaeCn9DOi-H8pBHs6cSMgwZ0wuQ8x2jIRBIfG8",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Felectrocasnice-racire-aparate-de-aer-conditionat%2Felectrolux-aparat-de-aer-conditionat-electrolux-eacs-i-12hef-12000-btu-clasa-a-a-r32-wi-fi-alb-4238299.html",
+"titlu": "Aparat de aer conditionat HEINNER HAC-CRP12WH++, 12000 BTU, Clasa A++/A+, ECO+, Follow Me, Autocuratare (Alb)",
+"pret": 1219.99,
+"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4298%2F4298624%2Foverlay_377c2e41055362e871b3b5391c912a26.png&type=auto&width=500&sign=FaqyqohDqJIdBJ7BUez9NbFZ-Yene5DZ8J3h8G3mk1A",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Felectrocasnice-racire-aparate-de-aer-conditionat%2Fheinner-aparat-de-aer-conditionat-heinner-hac-crp12wh-12000-btu-clasa-a-a-eco-follow-me-autocuratare-alb-4298624.html",
 "magazin": "evomag.ro",
-"id": "6K5XmhaFBMwD",
-"brand": "Electrolux",
-"url_magazin": "https://www.evomag.ro/electrocasnice-racire-aparate-de-aer-conditionat/electrolux-aparat-de-aer-conditionat-electrolux-eacs-i-12hef-12000-btu-clasa-a-a-r32-wi-fi-alb-4238299.html",
-"pret_vechi": 1831.99,
-"verificat": "2026-11-06"
+"id": "C586h8fVzek6",
+"brand": "Heinner",
+"url_magazin": "https://www.evomag.ro/electrocasnice-racire-aparate-de-aer-conditionat/heinner-aparat-de-aer-conditionat-heinner-hac-crp12wh-12000-btu-clasa-a-a-eco-follow-me-autocuratare-alb-4298624.html",
+"pret_vechi": 1299.99
 },
 {
 "titlu": "Aparat aer conditionat Nobus CS35-V3G 12000 BTU, Clasa A++/A+, Inverter, Wi-Fi inclus, model 2025",
@@ -9915,28 +9948,6 @@
 "pret_vechi": null
 },
 {
-"titlu": "Aparat de aer conditionat Heinner HAC-HS12EYEWIFI+++, 12000 BTU, Clasa A+++, 21 mp, Control Wireless, AI Smart, Sleep, I",
-"pret": 2140.99,
-"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4170%2F4170356%2Faer-conditionat-heinner-hac-hs-669519f6cc350.png&type=auto&width=500&sign=VUUFKVRY4bNRHHmMjDI4xfobqSf9ff_DN6dZvEv4A4E",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Felectrocasnice-racire-aparate-de-aer-conditionat%2Fheinner-aparat-de-aer-conditionat-heinner-hac-hs12eyewifi-12000-btu-clasa-a-21-mp-control-wireless-ai-smart-sleep-ionizare-self-clean-alb-4170356.html",
-"magazin": "evomag.ro",
-"id": "vl5cAhEjb1jc",
-"brand": "Heinner",
-"url_magazin": "https://www.evomag.ro/electrocasnice-racire-aparate-de-aer-conditionat/heinner-aparat-de-aer-conditionat-heinner-hac-hs12eyewifi-12000-btu-clasa-a-21-mp-control-wireless-ai-smart-sleep-ionizare-self-clean-alb-4170356.html",
-"pret_vechi": null
-},
-{
-"titlu": "Aparat de aer conditionat Fram MOONSTONE ACF-MS12WIFI-GY, 12000 BTU, Super Ionizare, Functie Breeze away, Follow me (Alb",
-"pret": 2206.99,
-"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4075%2F4075376%2F63c90000a387b.JPG&type=auto&width=500&sign=wHy1f6gXe1AYFCzERTSwHUgd11KkPYvjQTmJpX8Y9bc",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Felectrocasnice-racire-aparate-de-aer-conditionat%2Ffram-aparat-de-aer-conditionat-fram-moonstone-acf-ms12wifi-gy-12000-btu-super-ionizare-functie-breeze-away-follow-me-alb-argintiu-4075376.html",
-"magazin": "evomag.ro",
-"id": "K3wQ9NiU8kHA",
-"brand": "Fram",
-"url_magazin": "https://www.evomag.ro/electrocasnice-racire-aparate-de-aer-conditionat/fram-aparat-de-aer-conditionat-fram-moonstone-acf-ms12wifi-gy-12000-btu-super-ionizare-functie-breeze-away-follow-me-alb-argintiu-4075376.html",
-"pret_vechi": 2299.99
-},
-{
 "titlu": "Midea Aer conditionat Midea Xtreme Save, 12000 BTU, Inverter",
 "pret": 2285.99,
 "imagine": "https://www.dwyn.ro/images/products/img_202106242018/169897/full/midea-aparat-de-aer-conditionat-midea-ag-extreme-save-2021-ag-12nxd0-i-x1-12n8d0-o-inverter-12000-btu-291065.png",
@@ -9947,17 +9958,6 @@
 "url_magazin": "https://www.dwyn.ro/aparate-de-aer-conditionat/midea/169897-aer-conditionat-midea-xtreme-save-12000-btu-inverter/",
 "pret_vechi": null,
 "verificat": "2026-11-04"
-},
-{
-"titlu": "Samsung Aparat de aer conditionat Samsung AR35 12000 BTU, Clasa A++, Fast cooling, Good Sleep, AR12TXHQASINEU/AR12TXHQAS",
-"pret": 2408.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202512311121/320713/full/samsung-aparat-de-aer-conditionat-samsung-ar35-12000-btu-clasa-a-plus-plus-fast-cooling-good-sleep-ar12txhqasineu-ar12txhqasixeu-alb-1044809.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Faparate-de-aer-conditionat%2Fsamsung%2F320713-aparat-de-aer-conditionat-samsung-ar35-12000-btu-clasa-a-plus-plus-fast-cooling-good-sleep-ar12txhqasineu-ar12txhqasixeu-alb%2F",
-"magazin": "dwyn.ro",
-"id": "_o0yTlO2sIyA",
-"brand": "Samsung",
-"url_magazin": "https://www.dwyn.ro/aparate-de-aer-conditionat/samsung/320713-aparat-de-aer-conditionat-samsung-ar35-12000-btu-clasa-a-plus-plus-fast-cooling-good-sleep-ar12txhqasineu-ar12txhqasixeu-alb/",
-"pret_vechi": null
 },
 {
 "titlu": "Aparat de aer conditionat BOSCH Climate 3200i, 12000 BTU, Clasa A++/A+, Wind avoid me, Follow-me, Wi-Fi Ready (Alb)",
@@ -10064,6 +10064,17 @@
 "url_magazin": "https://www.agroclima.ro/aparat-aer-conditionat-si-montaj/aer-conditionat-mitsubishi-heavy-hikari-srk35ztl-w-src35ztl-w-12000-btu-a-a-inverter-profesional-functie-incalzire-racire-wi-fi-inclus-alb.html",
 "pret_vechi": null,
 "verificat": "2026-11-04"
+},
+{
+"titlu": "BOSCH Aparat de aer conditionat Bosch Climate 7000i, 12000 BTU Wi-Fi, Clasa A+++/A+++, functie Save Plus, functie Power",
+"pret": 4934.99,
+"imagine": "https://www.dwyn.ro/images/products/img_202508191322/345080/full/bosch-aparat-de-aer-conditionat-bosch-climate-7000i-12000-btu-wi-fi-clasa-a-plus-plus-plus-a-plus-plus-plus-functie-save-plus-functie-power-control-wind-avoid-me-3d-airflow-i-clean-follow-me-alb-914333.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Faparate-de-aer-conditionat%2Fbosch%2F345080-aparat-de-aer-conditionat-bosch-climate-7000i-12000-btu-wi-fi-clasa-a-plus-plus-plus-a-plus-plus-plus-functie-save-plus-functie-power-control-wind-avoid-me-3d-airflow-i-clean-follow-me-alb%2F",
+"magazin": "dwyn.ro",
+"id": "JbjXsO4iD2bI",
+"brand": "BOSCH",
+"url_magazin": "https://www.dwyn.ro/aparate-de-aer-conditionat/bosch/345080-aparat-de-aer-conditionat-bosch-climate-7000i-12000-btu-wi-fi-clasa-a-plus-plus-plus-a-plus-plus-plus-functie-save-plus-functie-power-control-wind-avoid-me-3d-airflow-i-clean-follow-me-alb/",
+"pret_vechi": null
 }
 ],
 "magazine": [
@@ -10080,7 +10091,7 @@
 "titlu": "Aparate de aer condiționat de 18000 BTU",
 "nota": null,
 "in_text": "\\b18000\\s*BTU\\b",
-"actualizat": "2026-11-18",
+"actualizat": "2026-11-26",
 "feeduri": [
 {
 "id": 4152,
@@ -10197,6 +10208,17 @@
 "verificat": "2026-11-04"
 },
 {
+"titlu": "HEINNER Aer conditionat Crystal Heinner HAC-CR18WIFI, capacitate: 18000BTU, control WIFI",
+"pret": 2753.99,
+"imagine": "https://www.dwyn.ro/images/products/img_201804261137/120315/full/heinner-aer-conditionat-heinner-hac-cr18wifi-160916.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Faparate-de-aer-conditionat%2Fheinner%2F120315-aer-conditionat-crystal-heinner-hac-cr18wifi-capacitate-18000btu-control-wifi%2F",
+"magazin": "dwyn.ro",
+"id": "pIdBAvYjX5m2",
+"brand": "HEINNER",
+"url_magazin": "https://www.dwyn.ro/aparate-de-aer-conditionat/heinner/120315-aer-conditionat-crystal-heinner-hac-cr18wifi-capacitate-18000btu-control-wifi/",
+"pret_vechi": null
+},
+{
 "titlu": "HEINNER Aparat de aer conditionat Heinner HAC-HS18WIFI++, 18000 BTU, Inverter, Wi-Fi, Clasa A++",
 "pret": 2753.99,
 "imagine": "https://www.dwyn.ro/images/products/img_202004201336/151346/full/heinner-aparat-de-aer-conditionat-heinner-hac-hs18wifi-plus-plus-18000-btu-inverter-wi-fi-clasa-a-plus-plus-234644.webp",
@@ -10207,17 +10229,6 @@
 "url_magazin": "https://www.dwyn.ro/aparate-de-aer-conditionat/heinner/151346-aparat-de-aer-conditionat-heinner-hac-hs18wifi-plus-plus-18000-btu-inverter-wi-fi-clasa-a-plus-plus/",
 "pret_vechi": null,
 "verificat": "2026-11-04"
-},
-{
-"titlu": "HEINNER Aer conditionat Crystal Heinner HAC-CR18WIFI, capacitate: 18000BTU, control WIFI",
-"pret": 2765.99,
-"imagine": "https://www.dwyn.ro/images/products/img_201804261137/120315/full/heinner-aer-conditionat-heinner-hac-cr18wifi-160916.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Faparate-de-aer-conditionat%2Fheinner%2F120315-aer-conditionat-crystal-heinner-hac-cr18wifi-capacitate-18000btu-control-wifi%2F",
-"magazin": "dwyn.ro",
-"id": "pIdBAvYjX5m2",
-"brand": "HEINNER",
-"url_magazin": "https://www.dwyn.ro/aparate-de-aer-conditionat/heinner/120315-aer-conditionat-crystal-heinner-hac-cr18wifi-capacitate-18000btu-control-wifi/",
-"pret_vechi": null
 },
 {
 "titlu": "HEINNER AER CONDITIONAT HEINNER HAC-HS18KITWIFI++, 18000 BTU WI-FI, Clasa A++, Smart, Sleep, Functie iFeel, Alb",
@@ -10281,7 +10292,7 @@
 "titlu": "Aparate de aer condiționat de 24000 BTU",
 "nota": null,
 "in_text": "\\b24000\\s*BTU\\b",
-"actualizat": "2026-11-18",
+"actualizat": "2026-11-26",
 "feeduri": [
 {
 "id": 4152,
@@ -10434,6 +10445,17 @@
 "verificat": "2026-11-06"
 },
 {
+"titlu": "TESLA Aparat de Aer Conditionat Tesla Ambient TT68EXC1-2432IAW, 24000 BTU, A++/A+, R32, Inverter, I Feel, Functie Antifu",
+"pret": 3867.99,
+"imagine": "https://www.dwyn.ro/images/products/img_202606122129/425425/full/tesla-aparat-de-aer-conditionat-tesla-tt68exc1-2432iaw24000-btu-a-plus-plus-r32-wifi-alb-1371724.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Faparate-de-aer-conditionat%2Ftesla%2F425425-aparat-de-aer-conditionat-tesla-ambient-tt68exc1-2432iaw-24000-btu-a-plus-plus-a-plus-r32-inverter-i-feel-functie-antifungica-autocuratare-dezumidificator-wi-fi-alb%2F",
+"magazin": "dwyn.ro",
+"id": "sUbSysmlsZ6F",
+"brand": "TESLA",
+"url_magazin": "https://www.dwyn.ro/aparate-de-aer-conditionat/tesla/425425-aparat-de-aer-conditionat-tesla-ambient-tt68exc1-2432iaw-24000-btu-a-plus-plus-a-plus-r32-inverter-i-feel-functie-antifungica-autocuratare-dezumidificator-wi-fi-alb/",
+"pret_vechi": null
+},
+{
 "titlu": "Electrolux Aparat de aer conditionat Electrolux EACS/I-24HEF, 24000 BTU, Clasa A++/A+++, R32, Wi-fi, Alb",
 "pret": 4073.99,
 "imagine": "https://www.dwyn.ro/images/products/img_202503142150/297759/full/electrolux-aparat-de-aer-conditionat-electrolux-eacs-i-24hef24000-btu-class-a-plus-plus-a-plus-plus-plus-r32-wi-fi-741231.png",
@@ -10506,6 +10528,17 @@
 "verificat": "2026-11-06"
 },
 {
+"titlu": "TESLA Aparat de aer conditionat Tesla TT68TP21-2432IAWUV, 24000 BTU, Lampa UVC, Functie incalzire, Functie Turbo, iFeel,",
+"pret": 4286.99,
+"imagine": "https://www.dwyn.ro/images/products/img_202404261115/230211/full/tesla-aparat-de-aer-conditionat-tesla-tt68tp21-2432iawuv24000-btu-a-plus-plus-r32-wifi-uv-461231.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Faparate-de-aer-conditionat%2Ftesla%2F230211-aparat-de-aer-conditionat-tesla-tt68tp21-2432iawuv-24000-btu-lampa-uvc-functie-incalzire-functie-turbo-ifeel-autocuratare-clasa-a-plus-plus-alb%2F",
+"magazin": "dwyn.ro",
+"id": "L0d3A0qYL_II",
+"brand": "TESLA",
+"url_magazin": "https://www.dwyn.ro/aparate-de-aer-conditionat/tesla/230211-aparat-de-aer-conditionat-tesla-tt68tp21-2432iawuv-24000-btu-lampa-uvc-functie-incalzire-functie-turbo-ifeel-autocuratare-clasa-a-plus-plus-alb/",
+"pret_vechi": null
+},
+{
 "titlu": "Aer conditionat TCL Breeze In TAC-24CHSD/UG11V3AH, Hyperinverter, Clasa A+++/A++, Wi-Fi, 24000 BTU, Autocuratare, Autodi",
 "pret": 4330.99,
 "imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4231%2F4231050%2Faparat-de-aer-conditionat-tcl-685d04b0b9560.jpg&type=auto&width=500&sign=Vi3ZgWo6u58xGPLfvSFwdz0QRW3-hNuJRkzEv6L579M",
@@ -10516,30 +10549,6 @@
 "url_magazin": "https://www.evomag.ro/electrocasnice-racire-aparate-de-aer-conditionat/tcl-aer-conditionat-tcl-breeze-in-tac-24chsd-ug11v3ah-hyperinverter-clasa-a-a-wi-fi-24000-btu-autocuratare-autodiagnosticare-alb-4231050.html",
 "pret_vechi": null,
 "verificat": "2026-11-06"
-},
-{
-"titlu": "Midea Aparat de aer conditionat Breezeless E CB1-24HRFN8-CB1-24HFNX Inverter, 24000 BTU, Wi-Fi, Alb",
-"pret": 4598.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202503142150/292767/full/midea-aparat-de-aer-conditionat-breezeless-e-cb1-24hrfn8-cb1-24hfnx-inverter-24000-btu-wi-fi-alb-710803.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Faparate-de-aer-conditionat%2Fmidea%2F292767-aparat-de-aer-conditionat-breezeless-e-cb1-24hrfn8-cb1-24hfnx-inverter-24000-btu-wi-fi-alb%2F",
-"magazin": "dwyn.ro",
-"id": "i-A3ep6Ds-DX",
-"brand": "Midea",
-"url_magazin": "https://www.dwyn.ro/aparate-de-aer-conditionat/midea/292767-aparat-de-aer-conditionat-breezeless-e-cb1-24hrfn8-cb1-24hfnx-inverter-24000-btu-wi-fi-alb/",
-"pret_vechi": null,
-"verificat": "2026-11-04"
-},
-{
-"titlu": "TCL Aparat de aer conditionat TCL BreezeIN Ultra 24000 BTU, A+++, AI Energy Saving, Purificare avansata cu Ioni Bipolari",
-"pret": 5334.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202606122129/443590/full/tcl-aparat-de-aer-conditionat-tcl-breezein-ultra-24000-btu-a-plus-plus-plus-ai-energy-saving-purificare-avansata-cu-ioni-bipolari-si-lumina-uvc-gentle-breeze-wifi-optimizat-incalzire-mod-hotel-1419226.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Faparate-de-aer-conditionat%2Ftcl%2F443590-aparat-de-aer-conditionat-tcl-breezein-ultra-24000-btu-a-plus-plus-plus-ai-energy-saving-purificare-avansata-cu-ioni-bipolari-si-lumina-uvc-gentle-breeze-wifi-optimizat-incalzire-mod-hotel-alb%2F",
-"magazin": "dwyn.ro",
-"id": "rKSZw0vfu1Ou",
-"brand": "TCL",
-"url_magazin": "https://www.dwyn.ro/aparate-de-aer-conditionat/tcl/443590-aparat-de-aer-conditionat-tcl-breezein-ultra-24000-btu-a-plus-plus-plus-ai-energy-saving-purificare-avansata-cu-ioni-bipolari-si-lumina-uvc-gentle-breeze-wifi-optimizat-incalzire-mod-hotel-alb/",
-"pret_vechi": null,
-"verificat": "2026-11-04"
 },
 {
 "titlu": "Aer condiționat tip casetă TCL 24000 BTU, Inverter, R32, răcire și încălzire",
@@ -15297,6 +15306,18 @@
 ]
 },
 {
+"slug": "smartwatch-gps",
+"tema": "smartwatch-uri",
+"tema_nume": "Smartwatch-uri",
+"titlu": "Smartwatch-uri cu GPS",
+"nota": null,
+"in_text": null,
+"actualizat": "2026-11-26",
+"feeduri": [],
+"produse": [],
+"magazine": []
+},
+{
 "slug": "imprimanta-laser",
 "tema": "imprimante",
 "tema_nume": "Imprimante",
@@ -15831,6 +15852,42 @@
 "magazine": [
 "afisport.ro"
 ]
+},
+{
+"slug": "anvelope-iarna-205-55-r16",
+"tema": "anvelope",
+"tema_nume": "Anvelope",
+"titlu": "Anvelope de iarnă 205/55 R16",
+"nota": null,
+"in_text": null,
+"actualizat": "2026-11-26",
+"feeduri": [],
+"produse": [],
+"magazine": []
+},
+{
+"slug": "anvelope-iarna-195-65-r15",
+"tema": "anvelope",
+"tema_nume": "Anvelope",
+"titlu": "Anvelope de iarnă 195/65 R15",
+"nota": null,
+"in_text": null,
+"actualizat": "2026-11-26",
+"feeduri": [],
+"produse": [],
+"magazine": []
+},
+{
+"slug": "anvelope-iarna-225-45-r17",
+"tema": "anvelope",
+"tema_nume": "Anvelope",
+"titlu": "Anvelope de iarnă 225/45 R17",
+"nota": null,
+"in_text": null,
+"actualizat": "2026-11-26",
+"feeduri": [],
+"produse": [],
+"magazine": []
 },
 {
 "slug": "parfum-dior-sauvage",
@@ -19788,6 +19845,18 @@
 ]
 },
 {
+"slug": "adidasi-barbati",
+"tema": "incaltaminte",
+"tema_nume": "Încălțăminte",
+"titlu": "Adidași pentru bărbați",
+"nota": null,
+"in_text": null,
+"actualizat": "2026-11-26",
+"feeduri": [],
+"produse": [],
+"magazine": []
+},
+{
 "slug": "adidasi-dama",
 "tema": "incaltaminte",
 "tema_nume": "Încălțăminte",
@@ -19906,6 +19975,18 @@
 "magazine": [
 "dehaine.ro"
 ]
+},
+{
+"slug": "ghete-dama",
+"tema": "incaltaminte",
+"tema_nume": "Încălțăminte",
+"titlu": "Ghete și botine de damă",
+"nota": null,
+"in_text": null,
+"actualizat": "2026-11-26",
+"feeduri": [],
+"produse": [],
+"magazine": []
 },
 {
 "slug": "geaca-iarna-barbati",
@@ -21190,7 +21271,7 @@
 "titlu": "Puzzle de 500 de piese",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-18",
+"actualizat": "2026-11-26",
 "feeduri": [
 {
 "id": 1528,
@@ -21283,18 +21364,6 @@
 "verificat": "2026-11-14"
 },
 {
-"titlu": "Puzzle Ravensburger animale colorate Peste leu rosu 500 piese",
-"pret": 35.98,
-"imagine": "https://www.ookee.ro/365904-large_default/puzzle-ravensburger-animale-colorate-peste-leu-rosu-500-piese.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ookee.ro%2Fpuzzle-ravensburger%2F123241-puzzle-ravensburger-animale-colorate-peste-leu-rosu-500-piese.html",
-"magazin": "ookee.ro",
-"id": "2f2699a98",
-"brand": "Ravensburger",
-"url_magazin": "https://www.ookee.ro/puzzle-ravensburger/123241-puzzle-ravensburger-animale-colorate-peste-leu-rosu-500-piese.html",
-"pret_vechi": 65.9,
-"verificat": "2026-11-14"
-},
-{
 "titlu": "Puzzle Ravensburger animale colorate fluture 500 piese",
 "pret": 35.98,
 "imagine": "https://www.ookee.ro/365910-large_default/puzzle-ravensburger-animale-colorate-fluture-500-piese.jpg",
@@ -21303,6 +21372,18 @@
 "id": "c82245920",
 "brand": "Ravensburger",
 "url_magazin": "https://www.ookee.ro/puzzle-ravensburger/123242-puzzle-ravensburger-animale-colorate-fluture-500-piese.html",
+"pret_vechi": 65.9,
+"verificat": "2026-11-14"
+},
+{
+"titlu": "Puzzle Ravensburger animale colorate Peste leu rosu 500 piese",
+"pret": 35.98,
+"imagine": "https://www.ookee.ro/365904-large_default/puzzle-ravensburger-animale-colorate-peste-leu-rosu-500-piese.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ookee.ro%2Fpuzzle-ravensburger%2F123241-puzzle-ravensburger-animale-colorate-peste-leu-rosu-500-piese.html",
+"magazin": "ookee.ro",
+"id": "2f2699a98",
+"brand": "Ravensburger",
+"url_magazin": "https://www.ookee.ro/puzzle-ravensburger/123241-puzzle-ravensburger-animale-colorate-peste-leu-rosu-500-piese.html",
 "pret_vechi": 65.9,
 "verificat": "2026-11-14"
 },
@@ -21331,17 +21412,6 @@
 "verificat": "2026-11-14"
 },
 {
-"titlu": "Puzzle 500 piese - Wild Leopard | Trefl",
-"pret": 43.99,
-"imagine": "https://carturesti.ro/img-prod/684200052-1.png",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fcarturesti.ro%2Fpuzzle%2Fpuzzle-500-piese-wild-leopard-684200052",
-"magazin": "carturesti.ro",
-"id": "a4deb4d8e",
-"brand": "Trefl",
-"url_magazin": "https://carturesti.ro/puzzle/puzzle-500-piese-wild-leopard-684200052",
-"pret_vechi": null
-},
-{
 "titlu": "Puzzle cu Flori, 500 de Piese, Multicolor, pentru Adulti",
 "pret": 45.31,
 "imagine": "https://infinityro.vteximg.com.br/arquivos/ids/274907634/0.jpg",
@@ -21366,7 +21436,7 @@
 {
 "titlu": "Puzzle 500 piese - Panorama - Orasul Kotor Muntenegru | Trefl",
 "pret": 47.0,
-"imagine": "https://carturesti.ro/img-prod/684200048-0.jpeg",
+"imagine": "https://product-images.dc5.ro/684200048-0.jpeg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fcarturesti.ro%2Fpuzzle%2Fpuzzle-500-piese-panorama-orasul-kotor-muntenegru-684200048",
 "magazin": "carturesti.ro",
 "id": "Qjg1JSfTIdxN",
@@ -21377,7 +21447,7 @@
 {
 "titlu": "Puzzle 500 piese - Panorama - Piata Navona din Roma | Trefl",
 "pret": 49.0,
-"imagine": "https://carturesti.ro/img-prod/466399770-0.jpeg",
+"imagine": "https://product-images.dc5.ro/466399770-0.jpeg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fcarturesti.ro%2Fpuzzle%2Fpuzzle-500-piese-panorama-piata-navona-din-roma-466399770",
 "magazin": "carturesti.ro",
 "id": "dmLM3l4Uevtk",
@@ -21388,7 +21458,7 @@
 {
 "titlu": "Puzzle 500 de piese - Labirint de culori | Trefl",
 "pret": 53.0,
-"imagine": "https://carturesti.ro/img-prod/2148325307-1.png",
+"imagine": "https://product-images.dc5.ro/2148325307-1.png",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fcarturesti.ro%2Fpuzzle%2Fpuzzle-500-de-piese-labirint-de-culori-2148325307",
 "magazin": "carturesti.ro",
 "id": "AnHtMK7KM9qo",
@@ -21399,7 +21469,7 @@
 {
 "titlu": "Puzzle 500 piese - Deasupra apelor | Trefl",
 "pret": 53.0,
-"imagine": "https://carturesti.ro/img-prod/2148325306-1.png",
+"imagine": "https://cdn.dc5.ro/img-prod/2148325306-1.png",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fcarturesti.ro%2Fpuzzle%2Fpuzzle-500-piese-deasupra-apelor-2148325306",
 "magazin": "carturesti.ro",
 "id": "KUKVcpCQOLrr",
@@ -21408,9 +21478,20 @@
 "pret_vechi": null
 },
 {
+"titlu": "Puzzle clasic - Premium Plus - Finders Keepers Ciuperci, 500 piese | Trefl",
+"pret": 54.0,
+"imagine": "https://product-images.dc5.ro/5425252831-9029311.webp",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fcarturesti.ro%2Fpuzzle%2Fpuzzle-clasic-premium-plus-finders-keepers-ciuperci-500-piese-5425252831",
+"magazin": "carturesti.ro",
+"id": "X1WYnL8CYYzD",
+"brand": "Trefl",
+"url_magazin": "https://carturesti.ro/puzzle/puzzle-clasic-premium-plus-finders-keepers-ciuperci-500-piese-5425252831",
+"pret_vechi": null
+},
+{
 "titlu": "Puzzle 500 piese - Discover Europe | Schmidt",
 "pret": 54.99,
-"imagine": "https://carturesti.ro/img-prod/2025072144-1.jpeg",
+"imagine": "https://product-images.dc5.ro/2025072144-1.jpeg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fcarturesti.ro%2Fpuzzle%2Fpuzzle-500-piese-discover-europe-2025072144",
 "magazin": "carturesti.ro",
 "id": "fICxq9rr3T-A",
@@ -21421,7 +21502,7 @@
 {
 "titlu": "Puzzle 500 piese - Calatorie de vis cu unicornul | Schmidt",
 "pret": 54.99,
-"imagine": "https://carturesti.ro/img-prod/4803940848-0.png",
+"imagine": "https://cdn.dc5.ro/img-prod/4803940848-0.png",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fcarturesti.ro%2Fpuzzle%2Fpuzzle-500-piese-calatorie-de-vis-cu-unicornul-4803940848",
 "magazin": "carturesti.ro",
 "id": "Z8HtPoOWiwZP",
@@ -21432,7 +21513,7 @@
 {
 "titlu": "Puzzle 500 piese - Bike near Notre Dame | Educa",
 "pret": 54.99,
-"imagine": "https://carturesti.ro/img-prod/1413624077-0.jpeg",
+"imagine": "https://product-images.dc5.ro/1413624077-0.jpeg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fcarturesti.ro%2Fpuzzle%2Fpuzzle-500-piese-bike-near-notre-dame-1413624077",
 "magazin": "carturesti.ro",
 "id": "8au9nRGUnAsi",
@@ -21503,7 +21584,7 @@
 "titlu": "Puzzle 3D",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-18",
+"actualizat": "2026-11-26",
 "feeduri": [
 {
 "id": 1528,
@@ -21524,42 +21605,9 @@
 ],
 "produse": [
 {
-"titlu": "Puzzle 3D - National Geographic - Dinozaur Triceratops, 61 piese | CubicFun",
-"pret": 30.0,
-"imagine": "https://carturesti.ro/img-prod/4789789238-1.jpeg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fcarturesti.ro%2Fpuzzle%2Fpuzzle-3d-national-geographic-dinozaur-triceratops-61-piese-4789789238",
-"magazin": "carturesti.ro",
-"id": "Hj_9TkiBC-4j",
-"brand": "CubicFun",
-"url_magazin": "https://carturesti.ro/puzzle/puzzle-3d-national-geographic-dinozaur-triceratops-61-piese-4789789238",
-"pret_vechi": null
-},
-{
-"titlu": "Puzzle 3D - National Geographic - Dinozaur Stegozaur, 51 piese | CubicFun",
-"pret": 30.0,
-"imagine": "https://carturesti.ro/img-prod/4789789232-1.jpeg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fcarturesti.ro%2Fpuzzle%2Fpuzzle-3d-national-geographic-dinozaur-stegozaur-51-piese-4789789232",
-"magazin": "carturesti.ro",
-"id": "H1IDDp07wNbR",
-"brand": "CubicFun",
-"url_magazin": "https://carturesti.ro/puzzle/puzzle-3d-national-geographic-dinozaur-stegozaur-51-piese-4789789232",
-"pret_vechi": null
-},
-{
-"titlu": "Puzzle 3D - National Geographic - Dinozaur Tiranozaur, 47 piese | CubicFun",
-"pret": 30.0,
-"imagine": "https://carturesti.ro/img-prod/4789788962-1.jpeg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fcarturesti.ro%2Fpuzzle%2Fpuzzle-3d-national-geographic-dinozaur-tiranozaur-47-piese-4789788962",
-"magazin": "carturesti.ro",
-"id": "aZC3IpW9rzXo",
-"brand": "CubicFun",
-"url_magazin": "https://carturesti.ro/puzzle/puzzle-3d-national-geographic-dinozaur-tiranozaur-47-piese-4789788962",
-"pret_vechi": null
-},
-{
 "titlu": "Puzzle 3D - National Geographic, Animale Salbatice - Capibara, 56 piese | CubicFun",
 "pret": 35.0,
-"imagine": "https://carturesti.ro/img-prod/4789789250-1.jpeg",
+"imagine": "https://product-images.dc5.ro/4789789250-1.jpeg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fcarturesti.ro%2Fpuzzle%2Fpuzzle-3d-national-geographic-animale-salbatice-capibara-56-piese-4789789250",
 "magazin": "carturesti.ro",
 "id": "gsGISFWDz46I",
@@ -21568,9 +21616,42 @@
 "pret_vechi": null
 },
 {
+"titlu": "Puzzle 3D - Blue Tit, 34 piese | Kikkerland",
+"pret": 37.0,
+"imagine": "https://product-images.dc5.ro/5398902062-9030586.png",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fcarturesti.ro%2Fpuzzle%2Fpuzzle-3d-blue-tit-34-piese-5398902062",
+"magazin": "carturesti.ro",
+"id": "cbiKu1ZmMYWx",
+"brand": "Kikkerland",
+"url_magazin": "https://carturesti.ro/puzzle/puzzle-3d-blue-tit-34-piese-5398902062",
+"pret_vechi": null
+},
+{
+"titlu": "Puzzle 3D - Sparrow, 54 piese | Kikkerland",
+"pret": 37.0,
+"imagine": "https://product-images.dc5.ro/5398902056-9020068.png",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fcarturesti.ro%2Fpuzzle%2Fpuzzle-3d-sparrow-54-piese-5398902056",
+"magazin": "carturesti.ro",
+"id": "opDBLgur9qKM",
+"brand": "Kikkerland",
+"url_magazin": "https://carturesti.ro/puzzle/puzzle-3d-sparrow-54-piese-5398902056",
+"pret_vechi": null
+},
+{
+"titlu": "Puzzle 3D - Woodpecker, 32 piese | Kikkerland",
+"pret": 37.0,
+"imagine": "https://product-images.dc5.ro/5398902053-9030553.png",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fcarturesti.ro%2Fpuzzle%2Fpuzzle-3d-woodpecker-32-piese-5398902053",
+"magazin": "carturesti.ro",
+"id": "PLDGoFRTvCUs",
+"brand": "Kikkerland",
+"url_magazin": "https://carturesti.ro/puzzle/puzzle-3d-woodpecker-32-piese-5398902053",
+"pret_vechi": null
+},
+{
 "titlu": "Puzzle 3D - European Goldfinch, 48 piese | Kikkerland",
 "pret": 37.0,
-"imagine": "https://carturesti.ro/img-prod/5398902059-9020065.png",
+"imagine": "https://cdn.dc5.ro/img-prod/5398902059-9020065.png",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fcarturesti.ro%2Fpuzzle%2Fpuzzle-3d-european-goldfinch-48-piese-5398902059",
 "magazin": "carturesti.ro",
 "id": "UHMSZVAlV7vY",
@@ -21641,7 +21722,7 @@
 {
 "titlu": "Puzzle 3D - Harry Potter - Hogwarts Students, 31 piese | Ugears",
 "pret": 39.5,
-"imagine": "https://carturesti.ro/img-prod/5129938740-1.jpeg",
+"imagine": "https://product-images.dc5.ro/5129938740-1.jpeg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fcarturesti.ro%2Fpuzzle%2Fpuzzle-3d-harry-potter-hogwarts-students-31-piese-5129938740",
 "magazin": "carturesti.ro",
 "id": "I_gxoajwBDky",
@@ -21658,7 +21739,7 @@
 "id": "UqT9ZqaWe3QL",
 "brand": "-",
 "url_magazin": "https://www.libris.ro/joc/puzzle-3d-din-lemn-cu-litere-si-cifre-cocos-colorat/42139027",
-"pret_vechi": 54.99,
+"pret_vechi": null,
 "verificat": "2026-11-05"
 },
 {
@@ -21670,24 +21751,24 @@
 "id": "UrUHRawrUNLQ",
 "brand": "-",
 "url_magazin": "https://www.libris.ro/joc/puzzle-3d-mini-bila-disney-stitch-angel-si-stitch/47022661",
-"pret_vechi": 55.9,
+"pret_vechi": null,
 "verificat": "2026-11-05"
 },
 {
-"titlu": "Puzzle din lemn 3D cu litere si cifre. Broscuta testoasa",
-"pret": 52.0,
-"imagine": "https://www.libris.ro/img/pozeprod/47007/47006792-1-small-1.jpg?ver=1781689650",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.libris.ro%2Fjoc%2Fpuzzle-din-lemn-3d-cu-litere-si-cifre-broscuta-testoasa%2F47006792",
+"titlu": "Puzzle 3D: Mini Turnul din Pisa",
+"pret": 63.9,
+"imagine": "https://www.libris.ro/img/pozeprod/47023/47022633-1-small-1.jpg?ver=1786452104",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.libris.ro%2Fjoc%2Fpuzzle-3d-mini-turnul-din-pisa%2F47022633",
 "magazin": "libris.ro",
-"id": "Nn1HPxXQvqCE",
+"id": "pxAt-6Ud8Epb",
 "brand": "-",
-"url_magazin": "https://www.libris.ro/joc/puzzle-din-lemn-3d-cu-litere-si-cifre-broscuta-testoasa/47006792",
-"pret_vechi": 65.0
+"url_magazin": "https://www.libris.ro/joc/puzzle-3d-mini-turnul-din-pisa/47022633",
+"pret_vechi": null
 },
 {
 "titlu": "Puzzle 3D 50 piese - Build ’n’ Sound - Elefant African | MierEdu",
 "pret": 65.08,
-"imagine": "https://carturesti.ro/img-prod/3894581747-1.jpeg",
+"imagine": "https://product-images.dc5.ro/3894581747-1.jpeg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fcarturesti.ro%2Fpuzzle%2Fpuzzle-3d-50-piese-build-n-sound-elefant-african-3894581747",
 "magazin": "carturesti.ro",
 "id": "SbqhPnLb3W0h",
@@ -21696,14 +21777,14 @@
 "pret_vechi": null
 },
 {
-"titlu": "Puzzle 3D 28 piese - Build 'n' Sound - Orca | MierEdu",
-"pret": 65.08,
-"imagine": "https://carturesti.ro/img-prod/3894581819-1.jpeg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fcarturesti.ro%2Fpuzzle%2Fpuzzle-3d-28-piese-build-n-sound-orca-3894581819",
+"titlu": "Puzzle 3D - Capybara - 60 piese | Hot Laser",
+"pret": 69.0,
+"imagine": "https://product-images.dc5.ro/5171022326-0.png",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fcarturesti.ro%2Fpuzzle%2Fpuzzle-3d-capybara-60-piese-5171022326",
 "magazin": "carturesti.ro",
-"id": "UifcPVewS0IG",
-"brand": "MierEdu",
-"url_magazin": "https://carturesti.ro/puzzle/puzzle-3d-28-piese-build-n-sound-orca-3894581819",
+"id": "pfzqy4KI3Fht",
+"brand": "Hot Laser",
+"url_magazin": "https://carturesti.ro/puzzle/puzzle-3d-capybara-60-piese-5171022326",
 "pret_vechi": null
 },
 {
@@ -21717,6 +21798,39 @@
 "url_magazin": "https://www.ookee.ro/puzzles-lemn/136358-puzzle-3d-cu-animale-orange-tree-toys.html",
 "pret_vechi": null,
 "verificat": "2026-11-14"
+},
+{
+"titlu": "Puzzle Pentomino, forme 3D si carduri cu activitati",
+"pret": 147.9,
+"imagine": "https://www.ookee.ro/417305-large_default/puzzle-pentomino-forme-3d-si-carduri-cu-activitati.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ookee.ro%2Fpuzzle%2F134364-puzzle-pentomino-forme-3d-si-carduri-cu-activitati-4713057208621.html",
+"magazin": "ookee.ro",
+"id": "oFrlIth3J0wI",
+"brand": "Edx Education",
+"url_magazin": "https://www.ookee.ro/puzzle/134364-puzzle-pentomino-forme-3d-si-carduri-cu-activitati-4713057208621.html",
+"pret_vechi": null
+},
+{
+"titlu": "Puzzle de stivuire 3D, Edx Education",
+"pret": 188.9,
+"imagine": "https://www.ookee.ro/417403-large_default/puzzle-de-stivuire-3d-edx-education.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ookee.ro%2Fpuzzle%2F134403-puzzle-de-stivuire-3d-edx-education-4713057201592.html",
+"magazin": "ookee.ro",
+"id": "e1veUcWenlyk",
+"brand": "Edx Education",
+"url_magazin": "https://www.ookee.ro/puzzle/134403-puzzle-de-stivuire-3d-edx-education-4713057201592.html",
+"pret_vechi": null
+},
+{
+"titlu": "Puzzle 3D Lamborghini verde 108 piese",
+"pret": 193.9,
+"imagine": "https://www.ookee.ro/314078-large_default/puzzle-3d-lamborghini-verde-108-piese.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ookee.ro%2Fpuzzle-ravensburger%2F116669-puzzle-3d-lamborghini-verde-108-piese.html",
+"magazin": "ookee.ro",
+"id": "OSW3jpIIPLMN",
+"brand": "Ravensburger",
+"url_magazin": "https://www.ookee.ro/puzzle-ravensburger/116669-puzzle-3d-lamborghini-verde-108-piese.html",
+"pret_vechi": null
 }
 ],
 "magazine": [
@@ -21732,7 +21846,7 @@
 "titlu": "Mașini cu telecomandă",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-18",
+"actualizat": "2026-11-26",
 "feeduri": [
 {
 "id": 8740,
@@ -21764,14 +21878,25 @@
 "pret_vechi": null
 },
 {
-"titlu": "Masina Transformabila Robot cu Telecomanda, 25cm, Acumulator Reincarcabil, Diferite Culori Engros",
-"pret": 45.0,
-"imagine": "https://bazarulonline.ro/images/detailed/10096/transparent-Photoroom__40__5xyn-9g_990h-o7.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fbazarulonline.ro%2Fmasina-transformabila-robot-cu-telecomanda-25cm-acumulator-reincarcabil-diferite-culori-engros-ro",
+"titlu": "Masina de Politie cu Telecomanda, 27 MHz, cu Lumini si Sunete, 17 cm, Albastru Engros",
+"pret": 48.21,
+"imagine": "https://bazarulonline.ro/images/detailed/12408/masina-de-politie-cu-telecomanda-27-mhz-cu-lumini-si-sunete-17-cm-albastru.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fbazarulonline.ro%2Fmasina-de-politie-cu-telecomanda-27-mhz-cu-lumini-si-sunete-17-cm-albastru-engros",
 "magazin": "bazarulonline.ro",
-"id": "oNjQKgFqa-pt",
+"id": "JwnkrnLZoVjW",
 "brand": "",
-"url_magazin": "https://bazarulonline.ro/masina-transformabila-robot-cu-telecomanda-25cm-acumulator-reincarcabil-diferite-culori-engros-ro",
+"url_magazin": "https://bazarulonline.ro/masina-de-politie-cu-telecomanda-27-mhz-cu-lumini-si-sunete-17-cm-albastru-engros",
+"pret_vechi": null
+},
+{
+"titlu": "Masina de Pompieri cu Telecomanda, 27 MHz, cu Lumini si Sunete, 17 cm Engros",
+"pret": 48.21,
+"imagine": "https://bazarulonline.ro/images/detailed/12408/masina-de-pompieri-cu-telecomanda-27-mhz-cu-lumini-si-sunete-17-cm.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fbazarulonline.ro%2Fmasina-de-pompieri-cu-telecomanda-27-mhz-cu-lumini-si-sunete-17-cm-engros",
+"magazin": "bazarulonline.ro",
+"id": "AMvnIAvnHuWa",
+"brand": "",
+"url_magazin": "https://bazarulonline.ro/masina-de-pompieri-cu-telecomanda-27-mhz-cu-lumini-si-sunete-17-cm-engros",
 "pret_vechi": null
 },
 {
@@ -21797,6 +21922,17 @@
 "pret_vechi": null
 },
 {
+"titlu": "Roadstar Masina de Formula 1 cu Telecomanda, 2.4 GHz, Incarcare USB, 13.5 cm, Rosu Engros",
+"pret": 55.67,
+"imagine": "https://bazarulonline.ro/images/detailed/12408/roadstar-masina-de-formula-1-cu-telecomanda-2-4-ghz-incarcare-usb-13-5-cm-rosu.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fbazarulonline.ro%2Froadstar-masina-de-formula-1-cu-telecomanda-2-4-ghz-incarcare-usb-13-5-cm-rosu-engros",
+"magazin": "bazarulonline.ro",
+"id": "ALZf9eF9q8ht",
+"brand": "",
+"url_magazin": "https://bazarulonline.ro/roadstar-masina-de-formula-1-cu-telecomanda-2-4-ghz-incarcare-usb-13-5-cm-rosu-engros",
+"pret_vechi": null
+},
+{
 "titlu": "Masina cu telecomanda 2.4G, 360 spin, off road, verde, Engros",
 "pret": 71.22,
 "imagine": "https://bazarulonline.ro/images/detailed/11798/jucarie-interactiva-masina-cu-telecomanda-24g-360-spin-verde.jpg",
@@ -21808,14 +21944,14 @@
 "pret_vechi": null
 },
 {
-"titlu": "masina dinozaur cu telecomanda engros",
-"pret": 75.0,
-"imagine": "https://bazarulonline.ro/images/detailed/11469/pagina_045_produs_01.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fbazarulonline.ro%2Fmasina-dinozaur-cu-telecomanda-engros",
+"titlu": "Masina Sport cu Telecomanda, Scara 1:20, 27 MHz, 20 cm, Rosu sau Galben Engros",
+"pret": 74.03,
+"imagine": "https://bazarulonline.ro/images/detailed/12408/masina-sport-cu-telecomanda-scara-1-20-27-mhz-20-cm-rosu-sau-galben.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fbazarulonline.ro%2Fmasina-sport-cu-telecomanda-scara-1-20-27-mhz-20-cm-rosu-sau-galben-engros",
 "magazin": "bazarulonline.ro",
-"id": "a2YIbmCaVtkO",
+"id": "-fU639ms59f_",
 "brand": "",
-"url_magazin": "https://bazarulonline.ro/masina-dinozaur-cu-telecomanda-engros",
+"url_magazin": "https://bazarulonline.ro/masina-sport-cu-telecomanda-scara-1-20-27-mhz-20-cm-rosu-sau-galben-engros",
 "pret_vechi": null
 },
 {
@@ -21831,28 +21967,6 @@
 "verificat": "2026-11-05"
 },
 {
-"titlu": "masina fete cu telecomanda engros",
-"pret": 80.0,
-"imagine": "https://bazarulonline.ro/images/detailed/11512/pagina_056_produs_01.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fbazarulonline.ro%2Fmasina-fete-cu-telecomanda-engros",
-"magazin": "bazarulonline.ro",
-"id": "lxAtv6xZ7Y34",
-"brand": "",
-"url_magazin": "https://bazarulonline.ro/masina-fete-cu-telecomanda-engros",
-"pret_vechi": null
-},
-{
-"titlu": "Masina Transformers Uriasa 36x14cm, Robot Interactiv, cu Telecomanda, Bump and Go, Lumini LED si Sunete, Diferite Culori",
-"pret": 81.8,
-"imagine": "https://bazarulonline.ro/images/detailed/9481/transparent-Photoroom__48__d99x-5u.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fbazarulonline.ro%2Fmasina-transformers-uriasa-36x14cm-robot-interactiv-cu-telecomanda-bump-and-go-lumini-led-si-sunete-diferite-culori-engros-ro",
-"magazin": "bazarulonline.ro",
-"id": "JO0-OrZARZ9J",
-"brand": "",
-"url_magazin": "https://bazarulonline.ro/masina-transformers-uriasa-36x14cm-robot-interactiv-cu-telecomanda-bump-and-go-lumini-led-si-sunete-diferite-culori-engros-ro",
-"pret_vechi": null
-},
-{
 "titlu": "Masina cu telecomanda exost rc star rush",
 "pret": 83.28,
 "imagine": "https://infinityro.vteximg.com.br/arquivos/ids/268322631/image-8b432c7f873c4d5f9cd0317847500062.jpg",
@@ -21863,30 +21977,6 @@
 "url_magazin": "https://infinity.ro/masina-cu-telecomanda-exost-rc-star-rush-1580685/p?utm_source=2performant",
 "pret_vechi": null,
 "verificat": "2026-11-05"
-},
-{
-"titlu": "Masina Cu Telecomanda Porsche Macan Turbo Rosu Cu Scara 1 La 24",
-"pret": 116.9,
-"imagine": "https://www.ookee.ro/422552-large_default/masina-cu-telecomanda-porsche-macan-turbo-rosu-cu-scara-1-la-24.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ookee.ro%2Fradiocomandate%2F135514-masina-cu-telecomanda-porsche-macan-turbo-rosu-cu-scara-1-la-24-6427037020339.html",
-"magazin": "ookee.ro",
-"id": "ZzF6JhTBxvu3",
-"brand": "Rastar",
-"url_magazin": "https://www.ookee.ro/radiocomandate/135514-masina-cu-telecomanda-porsche-macan-turbo-rosu-cu-scara-1-la-24-6427037020339.html",
-"pret_vechi": null,
-"verificat": "2026-11-14"
-},
-{
-"titlu": "Masina Cu Telecomanda Mercedes-benz G63 Alb Scara 1 La 24",
-"pret": 116.9,
-"imagine": "https://www.ookee.ro/422692-large_default/masina-cu-telecomanda-mercedes-benz-g63-alb-scara-1-la-24.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ookee.ro%2Fradiocomandate%2F135534-masina-cu-telecomanda-mercedes-benz-g63-alb-scara-1-la-24-6427037025266.html",
-"magazin": "ookee.ro",
-"id": "wZxg_n-KJZAW",
-"brand": "Rastar",
-"url_magazin": "https://www.ookee.ro/radiocomandate/135534-masina-cu-telecomanda-mercedes-benz-g63-alb-scara-1-la-24-6427037025266.html",
-"pret_vechi": null,
-"verificat": "2026-11-14"
 },
 {
 "titlu": "Masina Cu Telecomanda Bmw I5 Rosu Scara 1 La 24",
@@ -21924,6 +22014,30 @@
 "verificat": "2026-11-14"
 },
 {
+"titlu": "Masina Cu Telecomanda Porsche Macan Turbo Rosu Cu Scara 1 La 24",
+"pret": 116.9,
+"imagine": "https://www.ookee.ro/422552-large_default/masina-cu-telecomanda-porsche-macan-turbo-rosu-cu-scara-1-la-24.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ookee.ro%2Fradiocomandate%2F135514-masina-cu-telecomanda-porsche-macan-turbo-rosu-cu-scara-1-la-24-6427037020339.html",
+"magazin": "ookee.ro",
+"id": "ZzF6JhTBxvu3",
+"brand": "Rastar",
+"url_magazin": "https://www.ookee.ro/radiocomandate/135514-masina-cu-telecomanda-porsche-macan-turbo-rosu-cu-scara-1-la-24-6427037020339.html",
+"pret_vechi": null,
+"verificat": "2026-11-14"
+},
+{
+"titlu": "Masina Cu Telecomanda Mercedes-benz G63 Alb Scara 1 La 24",
+"pret": 116.9,
+"imagine": "https://www.ookee.ro/422692-large_default/masina-cu-telecomanda-mercedes-benz-g63-alb-scara-1-la-24.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ookee.ro%2Fradiocomandate%2F135534-masina-cu-telecomanda-mercedes-benz-g63-alb-scara-1-la-24-6427037025266.html",
+"magazin": "ookee.ro",
+"id": "wZxg_n-KJZAW",
+"brand": "Rastar",
+"url_magazin": "https://www.ookee.ro/radiocomandate/135534-masina-cu-telecomanda-mercedes-benz-g63-alb-scara-1-la-24-6427037025266.html",
+"pret_vechi": null,
+"verificat": "2026-11-14"
+},
+{
 "titlu": "Masina Cu Telecomanda Lamborghini Galben Cu Scara 1 La 24",
 "pret": 116.9,
 "imagine": "https://www.ookee.ro/422358-large_default/masina-cu-telecomanda-lamborghini-galben-cu-scara-1-la-24.jpg",
@@ -21934,6 +22048,17 @@
 "url_magazin": "https://www.ookee.ro/radiocomandate/135482-masina-cu-telecomanda-lamborghini-galben-cu-scara-1-la-24-6427037025556.html",
 "pret_vechi": null,
 "verificat": "2026-11-05"
+},
+{
+"titlu": "Masina Cu Telecomanda Lamborghini Superleggera Negru Cu Scara 1 La 24",
+"pret": 116.9,
+"imagine": "https://www.ookee.ro/422363-large_default/masina-cu-telecomanda-lamborghini-superleggera-negru-cu-scara-1-la-24.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ookee.ro%2Fradiocomandate%2F135483-masina-cu-telecomanda-lamborghini-superleggera-negru-cu-scara-1-la-24-6427037056628.html",
+"magazin": "ookee.ro",
+"id": "OZmrGyAEFXFO",
+"brand": "Rastar",
+"url_magazin": "https://www.ookee.ro/radiocomandate/135483-masina-cu-telecomanda-lamborghini-superleggera-negru-cu-scara-1-la-24-6427037056628.html",
+"pret_vechi": null
 },
 {
 "titlu": "Masina Cu Telecomanda Pagani Zonda R Alb Cu Scara 1 La 24",
@@ -21948,15 +22073,16 @@
 "verificat": "2026-11-05"
 },
 {
-"titlu": "Masina Cu Telecomanda Pagani Zonda R Negru Cu Scara 1 La 24",
-"pret": 116.9,
-"imagine": "https://www.ookee.ro/422379-large_default/masina-cu-telecomanda-pagani-zonda-r-negru-cu-scara-1-la-24.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ookee.ro%2Fradiocomandate%2F135486-masina-cu-telecomanda-pagani-zonda-r-negru-cu-scara-1-la-24-6427037020773.html",
-"magazin": "ookee.ro",
-"id": "8a9Drz7TkJSV",
-"brand": "Rastar",
-"url_magazin": "https://www.ookee.ro/radiocomandate/135486-masina-cu-telecomanda-pagani-zonda-r-negru-cu-scara-1-la-24-6427037020773.html",
-"pret_vechi": null
+"titlu": "Masina cu telecomanda lamborghini galben cu scara 1 la 24",
+"pret": 119.39,
+"imagine": "https://infinityro.vteximg.com.br/arquivos/ids/214281240/image-39748eb8a9594a2b925b006b1754b662.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Finfinity.ro%2Fmasina-cu-telecomanda-lamborghini-galben-cu-scara-1-la-24-611529%2Fp%3Futm_source%3D2performant",
+"magazin": "infinity.ro",
+"id": "p-dnRt4A_0sP",
+"brand": "Rastar 1:24",
+"url_magazin": "https://infinity.ro/masina-cu-telecomanda-lamborghini-galben-cu-scara-1-la-24-611529/p?utm_source=2performant",
+"pret_vechi": null,
+"verificat": "2026-11-05"
 },
 {
 "titlu": "Masina cu telecomanda bentley continental gt negru cu scara 1 la 24",
@@ -21969,18 +22095,6 @@
 "url_magazin": "https://infinity.ro/masina-cu-telecomanda-bentley-continental-gt-negru-cu-scara-1-la-24-1139674/p?utm_source=2performant",
 "pret_vechi": null,
 "verificat": "2026-11-14"
-},
-{
-"titlu": "Masina cu telecomanda lamborghini galben cu scara 1 la 24",
-"pret": 119.39,
-"imagine": "https://infinityro.vteximg.com.br/arquivos/ids/214281240/image-39748eb8a9594a2b925b006b1754b662.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Finfinity.ro%2Fmasina-cu-telecomanda-lamborghini-galben-cu-scara-1-la-24-611529%2Fp%3Futm_source%3D2performant",
-"magazin": "infinity.ro",
-"id": "p-dnRt4A_0sP",
-"brand": "Rastar 1:24",
-"url_magazin": "https://infinity.ro/masina-cu-telecomanda-lamborghini-galben-cu-scara-1-la-24-611529/p?utm_source=2performant",
-"pret_vechi": null,
-"verificat": "2026-11-05"
 },
 {
 "titlu": "Masina cu telecomanda bmw z4 alba scara 1 la 24",
@@ -22007,16 +22121,15 @@
 "verificat": "2026-11-05"
 },
 {
-"titlu": "Masina cu telecomanda bugatti divo cu scara 1 la 24",
+"titlu": "Masina cu telecomanda bmw i8 alba scara 1 la 24",
 "pret": 119.39,
-"imagine": "https://infinityro.vteximg.com.br/arquivos/ids/268322821/image-2a417555eed849d696562a00e18fd103.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Finfinity.ro%2Fmasina-cu-telecomanda-bugatti-divo-cu-scara-1-la-24-1580710%2Fp%3Futm_source%3D2performant",
+"imagine": "https://infinityro.vteximg.com.br/arquivos/ids/268322887/image-ebc3989cb25b42da8a718bdc86d54208.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Finfinity.ro%2Fmasina-cu-telecomanda-bmw-i8-alba-scara-1-la-24-1580718%2Fp%3Futm_source%3D2performant",
 "magazin": "infinity.ro",
-"id": "YylZhl_Q3Ie6",
+"id": "ysitQ89D9jZ2",
 "brand": "Rastar",
-"url_magazin": "https://infinity.ro/masina-cu-telecomanda-bugatti-divo-cu-scara-1-la-24-1580710/p?utm_source=2performant",
-"pret_vechi": null,
-"verificat": "2026-11-05"
+"url_magazin": "https://infinity.ro/masina-cu-telecomanda-bmw-i8-alba-scara-1-la-24-1580718/p?utm_source=2performant",
+"pret_vechi": null
 }
 ],
 "magazine": [
@@ -22032,7 +22145,7 @@
 "titlu": "Mașinuțe electrice pentru copii",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-18",
+"actualizat": "2026-11-26",
 "feeduri": [
 {
 "id": 8404,
@@ -22270,7 +22383,7 @@
 {
 "titlu": "Masinuta electrica pentru copii Mercedes Benz AMG SL63 4x4 12V 200W, roti EVA, scaun piele, telecomanda parentala, Rosu",
 "pret": 1390.0,
-"imagine": "https://autokids.ro/upload/images/seo_friendly_pictures/merc_SL63/masinuta-electrica-pentru-copii-mercedes-benz-amg-sl63-rosu-3.jpg",
+"imagine": "https://autokids.ro/upload/images/masinuta-electrica-pentru-copii-mercedes-benz-amg-sl63-rosu-3p.jpg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fautokids.ro%2Fmasinuta-electrica-pentru-copii-autokids-mercedes-benz-amg-sl63-12v-4x4-rosu.html",
 "magazin": "autokids.ro",
 "id": "mYbLV3k2hKlf",
@@ -22315,15 +22428,15 @@
 "verificat": "2026-11-05"
 },
 {
-"titlu": "Masinuta electrica pentru copii 3 ani+, Mercedes Benz GT, negru",
-"pret": 1403.09,
-"imagine": "https://infinityro.vteximg.com.br/arquivos/ids/266621866/image-df89fbcc74d6439bbbea983e088a0131.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Finfinity.ro%2Fmasinuta-electrica-pentru-copii-3-ani-mercedes-benz-gt-negru-1206595%2Fp%3Futm_source%3D2performant",
-"magazin": "infinity.ro",
-"id": "qF0e1qNZe_vo",
-"brand": "ramiz",
-"url_magazin": "https://infinity.ro/masinuta-electrica-pentru-copii-3-ani-mercedes-benz-gt-negru-1206595/p?utm_source=2performant",
-"pret_vechi": 1870.79
+"titlu": "Masinuta electrica pentru copii de POMPIERI (1818) Rosu - Autokids.ro",
+"pret": 1399.0,
+"imagine": "https://autokids.ro/assets/images/masinuta-electrica-pentru-copii-de-pompieri-sx1818-rosu-11-700x700-fb.png",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fautokids.ro%2Fmasinuta-electrica-pentru-copii-de-pompieri-sx1818-rosu.html",
+"magazin": "autokids.ro",
+"id": "8kWpdyfi-BlG",
+"brand": "Pompieri",
+"url_magazin": "https://autokids.ro/masinuta-electrica-pentru-copii-de-pompieri-sx1818-rosu.html",
+"pret_vechi": 1490.0
 },
 {
 "titlu": "Masinuta electrica pentru copii 3 ani+, Mercedes Benz AMG SL65S, alb",
