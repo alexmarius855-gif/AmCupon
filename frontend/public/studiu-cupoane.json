@@ -1,31 +1,22 @@
 {
-  "generat": "2026-11-25",
+  "generat": "2026-11-26",
   "total_magazine": 426,
-  "cu_promotie": 69,
-  "cu_cod_real": 17,
-  "doar_oferta": 52,
-  "procent_cu_promotie": 16.2,
-  "procent_cu_cod": 4.0,
+  "cu_promotie": 67,
+  "cu_cod_real": 16,
+  "doar_oferta": 51,
+  "procent_cu_promotie": 15.7,
+  "procent_cu_cod": 3.8,
   "reducere_mediana_generala": 30,
-  "magazine_cu_procent_declarat": 49,
+  "magazine_cu_procent_declarat": 47,
   "categorii": [
     {
       "slug": "carti-educatie",
       "nume": "Cărți & educație",
       "magazine": 21,
-      "cu_promotie": 5,
-      "reducere_mediana": 55.0,
+      "cu_promotie": 4,
+      "reducere_mediana": 90,
       "reducere_max": 90,
-      "esantion": 4
-    },
-    {
-      "slug": "fashion",
-      "nume": "Fashion",
-      "magazine": 45,
-      "cu_promotie": 10,
-      "reducere_mediana": 45.0,
-      "reducere_max": 70,
-      "esantion": 8
+      "esantion": 3
     },
     {
       "slug": "casa-gradina",
@@ -35,6 +26,15 @@
       "reducere_mediana": 40,
       "reducere_max": 80,
       "esantion": 11
+    },
+    {
+      "slug": "fashion",
+      "nume": "Fashion",
+      "magazine": 45,
+      "cu_promotie": 9,
+      "reducere_mediana": 40,
+      "reducere_max": 60,
+      "esantion": 7
     },
     {
       "slug": "beauty",

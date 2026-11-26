@@ -1,5 +1,5 @@
 {
-"actualizat": "2026-11-25",
+"actualizat": "2026-11-26",
 "criterii": [
 {
 "slug": "masina-de-spalat-6-kg",
@@ -6207,18 +6207,6 @@
 ]
 },
 {
-"slug": "laptop-sub-3000-lei",
-"tema": "laptopuri",
-"tema_nume": "Laptopuri",
-"titlu": "Laptopuri sub 3.000 lei",
-"nota": null,
-"in_text": null,
-"actualizat": "2026-11-15",
-"feeduri": [],
-"produse": [],
-"magazine": []
-},
-{
 "slug": "telefon-256-gb",
 "tema": "telefoane",
 "tema_nume": "Telefoane",
@@ -6336,18 +6324,6 @@
 "magazine": [
 "dwyn.ro"
 ]
-},
-{
-"slug": "telefon-128-gb",
-"tema": "telefoane",
-"tema_nume": "Telefoane",
-"titlu": "Telefoane cu 128 GB",
-"nota": null,
-"in_text": null,
-"actualizat": "2026-11-15",
-"feeduri": [],
-"produse": [],
-"magazine": []
 },
 {
 "slug": "telefon-5g",
@@ -8442,7 +8418,7 @@
 "titlu": "Tablete iPad",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-18",
+"actualizat": "2026-11-26",
 "feeduri": [
 {
 "id": 1096,
@@ -8475,17 +8451,6 @@
 "verificat": "2026-11-06"
 },
 {
-"titlu": "Tableta Apple iPad mini 8 (2026), Procesor A20 Pro, Super Retina XDR OLED 8.5inch, 128GB, 12MP, Wi‑Fi, Bluetooth, Standa",
-"pret": 3999.99,
-"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4322%2F4322963%2F6af4a5457c4ea.jpg&type=auto&width=500&sign=-BUNFSw1gBOP68ETgo_IXhqJZ1qyJE4fLz3jFJvc2Y0",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Ftelefoane-tablete-accesorii-tablete-si-accesorii-tablete%2Fapple-tableta-apple-ipad-mini-8-2026-procesor-a20-pro-super-retina-xdr-oled-8.5-128gb-12mp-wi-fi-bluetooth-standard-glass-ipados-negru-4322963.html",
-"magazin": "evomag.ro",
-"id": "dkR96R05L6SF",
-"brand": "Apple",
-"url_magazin": "https://www.evomag.ro/telefoane-tablete-accesorii-tablete-si-accesorii-tablete/apple-tableta-apple-ipad-mini-8-2026-procesor-a20-pro-super-retina-xdr-oled-8.5-128gb-12mp-wi-fi-bluetooth-standard-glass-ipados-negru-4322963.html",
-"pret_vechi": 4436.99
-},
-{
 "titlu": "Tableta Apple iPad 11 Cellular (A16), Procesor A16 Penta-Core, Liquid Retina IPS 11inch, 256GB Flash, Camera 12MP, Wi-Fi",
 "pret": 4099.99,
 "imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4212%2F4212716%2Ftablet-apple-ipad-11-11gen-25-67d40024e8442.png&type=auto&width=500&sign=cDYZqJovhHMrRzG9NZY5UMJWN3EYrimMB0YKGRlzmfU",
@@ -8497,64 +8462,19 @@
 "pret_vechi": null
 },
 {
-"titlu": "Tableta Apple iPad Air 13 M3 Cellular, Procesor Apple M3 Octa-Core, Liquid Retina IPS 13inch, 8GB RAM, 128GB Flash, Came",
-"pret": 4599.99,
-"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4213%2F4213375%2Fipad-air-13-wi-fi-cellular-67ed3e5c4a8da.png&type=auto&width=500&sign=DQZdOX2q9r83NX9mzIZNFFuYLGNmyKiGl1MyJfA-428",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Ftelefoane-tablete-accesorii-tablete-si-accesorii-tablete%2Fapple-tableta-apple-ipad-air-13-m3-cellular-procesor-apple-m3-octa-core-liquid-retina-ips-13-8gb-ram-128gb-flash-camera-12mp-wi-fi-bluetooth-5g-ipados-auriu-4213375.html",
+"titlu": "Tableta Apple iPad mini 8 (2026), Procesor A20 Pro, Super Retina XDR OLED 8.5inch, 128GB, 12MP, Wi‑Fi, Bluetooth, Standa",
+"pret": 4430.99,
+"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4322%2F4322961%2F6af4a544687e1.jpg&type=auto&width=500&sign=Kpu6Od5ur0UmkMDTje934lrTPbTCCqENRU6yeZdquJg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Ftelefoane-tablete-accesorii-tablete-si-accesorii-tablete%2Fapple-tableta-apple-ipad-mini-8-2026-procesor-a20-pro-super-retina-xdr-oled-8.5-128gb-12mp-wi-fi-bluetooth-standard-glass-ipados-auriu-4322961.html",
 "magazin": "evomag.ro",
-"id": "E0qMLSrEmMPz",
+"id": "06tpKFNdwI7p",
 "brand": "Apple",
-"url_magazin": "https://www.evomag.ro/telefoane-tablete-accesorii-tablete-si-accesorii-tablete/apple-tableta-apple-ipad-air-13-m3-cellular-procesor-apple-m3-octa-core-liquid-retina-ips-13-8gb-ram-128gb-flash-camera-12mp-wi-fi-bluetooth-5g-ipados-auriu-4213375.html",
-"pret_vechi": 5136.99
-},
-{
-"titlu": "Tableta Apple iPad mini 8 (2026) Cellular, Procesor A20 Pro, Super Retina XDR OLED 8.5inch, 128GB, 12MP, Wi‑Fi, Bluetoot",
-"pret": 4870.99,
-"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4322%2F4322969%2F6af4a545eb878.jpg&type=auto&width=500&sign=aqpntByl4dU0tO2KOzk5jKXrPnt60iAUMfrZ2RW_WQs",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Ftelefoane-tablete-accesorii-tablete-si-accesorii-tablete%2Fapple-tableta-apple-ipad-mini-8-2026-cellular-procesor-a20-pro-super-retina-xdr-oled-8.5-128gb-12mp-wi-fi-bluetooth-5g-standard-glass-ipados-negru-4322969.html",
-"magazin": "evomag.ro",
-"id": "eyyPUeLADZ7Y",
-"brand": "Apple",
-"url_magazin": "https://www.evomag.ro/telefoane-tablete-accesorii-tablete-si-accesorii-tablete/apple-tableta-apple-ipad-mini-8-2026-cellular-procesor-a20-pro-super-retina-xdr-oled-8.5-128gb-12mp-wi-fi-bluetooth-5g-standard-glass-ipados-negru-4322969.html",
-"pret_vechi": 5399.99
-},
-{
-"titlu": "Tableta Apple iPad Air 11 (2024) + Cellular, Procesor Apple M2 Octa-Core, Ecran Liquid Retina Multi-Touch IPS 11inch, 8G",
-"pret": 5099.99,
-"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4173%2F4173810%2Fapple-ipad-air-13-m2-wi-fi-12-6644ae641b015.jpg&type=auto&width=500&sign=wgCyPlaIWWNxcPu7GExuYG6HqQp9D3rnYMlflazl-Ok",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Ftelefoane-tablete-accesorii-tablete-si-accesorii-tablete%2Fapple-tableta-apple-ipad-air-11-2024-cellular-procesor-apple-m2-octa-core-ecran-liquid-retina-multi-touch-ips-11-8gb-ram-512gb-flash-12mp-wi-fi-bluetooth-5g-ipados-argintiu-4173810.html",
-"magazin": "evomag.ro",
-"id": "NGVlcbTuIB8o",
-"brand": "Apple",
-"url_magazin": "https://www.evomag.ro/telefoane-tablete-accesorii-tablete-si-accesorii-tablete/apple-tableta-apple-ipad-air-11-2024-cellular-procesor-apple-m2-octa-core-ecran-liquid-retina-multi-touch-ips-11-8gb-ram-512gb-flash-12mp-wi-fi-bluetooth-5g-ipados-argintiu-4173810.html",
-"pret_vechi": 6351.99
-},
-{
-"titlu": "Tableta Apple iPad Air 11 M4 Cellular, Procesor Apple M4 Octa-Core, Ecran Liquid Retina IPS 11inch, 12GB RAM, 128GB Flas",
-"pret": 5237.99,
-"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4288%2F4288806%2Fapple-ipad-air-11-m4-wifi-l-69b84f5a54ed5.jpg&type=auto&width=500&sign=D2pm988A7nt2dx11ElmEsVJPCiCddFfPFe4_g_E8xVA",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Ftelefoane-tablete-accesorii-tablete-si-accesorii-tablete%2Fapple-tableta-apple-ipad-air-11-m4-cellular-procesor-apple-m4-octa-core-ecran-liquid-retina-ips-11-12gb-ram-128gb-flash-camera-12mp-wi-fi-bluetooth-gps-5g-ipados-albastru-4288806.html",
-"magazin": "evomag.ro",
-"id": "fwxkX6jC7Q0a",
-"brand": "Apple",
-"url_magazin": "https://www.evomag.ro/telefoane-tablete-accesorii-tablete-si-accesorii-tablete/apple-tableta-apple-ipad-air-11-m4-cellular-procesor-apple-m4-octa-core-ecran-liquid-retina-ips-11-12gb-ram-128gb-flash-camera-12mp-wi-fi-bluetooth-gps-5g-ipados-albastru-4288806.html",
-"pret_vechi": 5554.99
-},
-{
-"titlu": "Apple Tableta Apple iPad Air 11 M4 Cellular, Procesor Apple M4 Octa-Core, Ecran Liquid Retina IPS 11, 12GB RAM, 128GB Fl",
-"pret": 5410.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202512311121/398044/full/apple-tableta-apple-ipad-air-11-m4-cellular-procesor-apple-m4-octa-core-ecran-liquid-retina-ips-11-12gb-ram-128gb-flash-camera-12mp-wi-fi-bluetooth-gps-5g-ipados-auriu-1229839.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Ftablete-pc%2Fapple%2F398044-tableta-apple-ipad-air-11-m4-cellular-procesor-apple-m4-octa-core-ecran-liquid-retina-ips-11-12gb-ram-128gb-flash-camera-12mp-wi-fi-bluetooth-gps-5g-ipados-auriu%2F",
-"magazin": "dwyn.ro",
-"id": "w8U_sS7Rp5cN",
-"brand": "Apple",
-"url_magazin": "https://www.dwyn.ro/tablete-pc/apple/398044-tableta-apple-ipad-air-11-m4-cellular-procesor-apple-m4-octa-core-ecran-liquid-retina-ips-11-12gb-ram-128gb-flash-camera-12mp-wi-fi-bluetooth-gps-5g-ipados-auriu/",
-"pret_vechi": null,
-"verificat": "2026-11-04"
+"url_magazin": "https://www.evomag.ro/telefoane-tablete-accesorii-tablete-si-accesorii-tablete/apple-tableta-apple-ipad-mini-8-2026-procesor-a20-pro-super-retina-xdr-oled-8.5-128gb-12mp-wi-fi-bluetooth-standard-glass-ipados-auriu-4322961.html",
+"pret_vechi": null
 },
 {
 "titlu": "Apple Tableta Apple iPad Air 11 M4, Procesor Apple M4 Octa-Core, Ecran Liquid Retina IPS 11, 12GB RAM, 128GB Flash, Came",
-"pret": 5860.99,
+"pret": 4442.99,
 "imagine": "https://www.dwyn.ro/images/products/img_202512311121/398041/full/apple-tableta-apple-ipad-air-11-m4-procesor-apple-m4-octa-core-ecran-liquid-retina-ips-11-12gb-ram-128gb-flash-camera-12mp-wi-fi-bluetooth-ipados-gri-1229803.jpg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Ftablete-pc%2Fapple%2F398041-tableta-apple-ipad-air-11-m4-procesor-apple-m4-octa-core-ecran-liquid-retina-ips-11-12gb-ram-128gb-flash-camera-12mp-wi-fi-bluetooth-ipados-gri%2F",
 "magazin": "dwyn.ro",
@@ -8564,8 +8484,85 @@
 "pret_vechi": null
 },
 {
+"titlu": "Tableta Apple iPad Air 11 M4, Procesor Apple M4 Octa-Core, Ecran Liquid Retina IPS 11inch, 12GB RAM, 256GB Flash, Camera",
+"pret": 4649.99,
+"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4288%2F4288584%2F69b50a8e8e400.jpg&type=auto&width=500&sign=2PsfWbJ5ivS8pT9gE5_jsGWiL_jOQAbbuIjgXvmYK5M",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Ftelefoane-tablete-accesorii-tablete-si-accesorii-tablete%2Fapple-tableta-apple-ipad-air-11-m4-procesor-apple-m4-octa-core-ecran-liquid-retina-ips-11-12gb-ram-256gb-flash-camera-12mp-wi-fi-bluetooth-ipados-auriu-4288584.html",
+"magazin": "evomag.ro",
+"id": "71afRuZYo-FX",
+"brand": "Apple",
+"url_magazin": "https://www.evomag.ro/telefoane-tablete-accesorii-tablete-si-accesorii-tablete/apple-tableta-apple-ipad-air-11-m4-procesor-apple-m4-octa-core-ecran-liquid-retina-ips-11-12gb-ram-256gb-flash-camera-12mp-wi-fi-bluetooth-ipados-auriu-4288584.html",
+"pret_vechi": 5199.99
+},
+{
+"titlu": "Tableta Apple iPad mini 8 (2026) Cellular, Procesor A20 Pro, Super Retina XDR OLED 8.5inch, 128GB, 12MP, Wi‑Fi, Bluetoot",
+"pret": 5399.99,
+"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4322%2F4322967%2F6af4a5453115b.jpg&type=auto&width=500&sign=3ekc4c6H8sjJmAPiCRQuE34Vxaw2jCGuf2o-IQVgNTY",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Ftelefoane-tablete-accesorii-tablete-si-accesorii-tablete%2Fapple-tableta-apple-ipad-mini-8-2026-cellular-procesor-a20-pro-super-retina-xdr-oled-8.5-128gb-12mp-wi-fi-bluetooth-5g-standard-glass-ipados-auriu-4322967.html",
+"magazin": "evomag.ro",
+"id": "7rvtoKCP43wB",
+"brand": "Apple",
+"url_magazin": "https://www.evomag.ro/telefoane-tablete-accesorii-tablete-si-accesorii-tablete/apple-tableta-apple-ipad-mini-8-2026-cellular-procesor-a20-pro-super-retina-xdr-oled-8.5-128gb-12mp-wi-fi-bluetooth-5g-standard-glass-ipados-auriu-4322967.html",
+"pret_vechi": null
+},
+{
+"titlu": "Tableta Apple iPad Air 13 M4, Procesor Apple M4 Octa-Core, Ecran Liquid Retina IPS 13inch, 12GB RAM, 128GB Flash, Camera",
+"pret": 5399.99,
+"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4289%2F4289028%2Ftableta-apple-ipad-air-13-m4-69ba66c61c288.jpg&type=auto&width=500&sign=Pkx-q7RAtbTJxAklg8FbwQkKo9LaY_T9DmqdOARGjnw",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Ftelefoane-tablete-accesorii-tablete-si-accesorii-tablete%2Fapple-tableta-apple-ipad-air-13-m4-procesor-apple-m4-octa-core-ecran-liquid-retina-ips-13-12gb-ram-128gb-flash-camera-12mp-wi-fi-bluetooth-ipados-violet-4289028.html",
+"magazin": "evomag.ro",
+"id": "a94GXszmkb1d",
+"brand": "Apple",
+"url_magazin": "https://www.evomag.ro/telefoane-tablete-accesorii-tablete-si-accesorii-tablete/apple-tableta-apple-ipad-air-13-m4-procesor-apple-m4-octa-core-ecran-liquid-retina-ips-13-12gb-ram-128gb-flash-camera-12mp-wi-fi-bluetooth-ipados-violet-4289028.html",
+"pret_vechi": null
+},
+{
+"titlu": "Apple Tableta Apple iPad Air 13 (2026), Apple M4 Octa Core, 13 inch, RAM 12GB, 128GB, Wi-Fi, BT, 5G, iPadOS 26.3, Albast",
+"pret": 5426.99,
+"imagine": "https://www.dwyn.ro/images/products/img_202512311121/395650/full/apple-apple-13-inch-ipad-air-m4-cellular-128gb-blue-1220086.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Ftablete-pc%2Fapple%2F395650-tableta-apple-ipad-air-13-2026-apple-m4-octa-core-13-inch-ram-12gb-128gb-wi-fi-bt-5g-ipados-26-3-albastru%2F",
+"magazin": "dwyn.ro",
+"id": "qRiKW7ZGLG37",
+"brand": "Apple",
+"url_magazin": "https://www.dwyn.ro/tablete-pc/apple/395650-tableta-apple-ipad-air-13-2026-apple-m4-octa-core-13-inch-ram-12gb-128gb-wi-fi-bt-5g-ipados-26-3-albastru/",
+"pret_vechi": null
+},
+{
+"titlu": "Apple Tableta Apple iPad Air 11 M4 Cellular, Procesor Apple M4 Octa-Core, Ecran Liquid Retina IPS 11, 12GB RAM, 128GB Fl",
+"pret": 5437.99,
+"imagine": "https://www.dwyn.ro/images/products/img_202512311121/398584/full/apple-tableta-apple-ipad-air-11-m4-cellular-procesor-apple-m4-octa-core-ecran-liquid-retina-ips-11-12gb-ram-128gb-flash-camera-12mp-wi-fi-bluetooth-gps-5g-ipados-violet-1229929.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Ftablete-pc%2Fapple%2F398584-tableta-apple-ipad-air-11-m4-cellular-procesor-apple-m4-octa-core-ecran-liquid-retina-ips-11-12gb-ram-128gb-flash-camera-12mp-wi-fi-bluetooth-gps-5g-ipados-violet%2F",
+"magazin": "dwyn.ro",
+"id": "eldf8BnssW3G",
+"brand": "Apple",
+"url_magazin": "https://www.dwyn.ro/tablete-pc/apple/398584-tableta-apple-ipad-air-11-m4-cellular-procesor-apple-m4-octa-core-ecran-liquid-retina-ips-11-12gb-ram-128gb-flash-camera-12mp-wi-fi-bluetooth-gps-5g-ipados-violet/",
+"pret_vechi": null
+},
+{
+"titlu": "Tableta Apple iPad Air 13 (2024) + Cellular, Procesor Apple M2 Octa-Core, Ecran Liquid Retina Multi-Touch IPS 13inch, 8G",
+"pret": 5499.99,
+"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4158%2F4158669%2Ftablet-apple-ipad-air-13-m2-12-66431234a682f.jpg&type=auto&width=500&sign=VUjSwdObMIeQ_XsuwKtb1ZvYFGmOxcvoq9kMZNxjLUc",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Ftelefoane-tablete-accesorii-tablete-si-accesorii-tablete%2Fapple-tableta-apple-ipad-air-13-2024-cellular-procesor-apple-m2-octa-core-ecran-liquid-retina-multi-touch-ips-13-8gb-ram-128gb-flash-12mp-wi-fi-bluetooth-5g-ipados-gri-4158669.html",
+"magazin": "evomag.ro",
+"id": "4H51fPTQjqIX",
+"brand": "Apple",
+"url_magazin": "https://www.evomag.ro/telefoane-tablete-accesorii-tablete-si-accesorii-tablete/apple-tableta-apple-ipad-air-13-2024-cellular-procesor-apple-m2-octa-core-ecran-liquid-retina-multi-touch-ips-13-8gb-ram-128gb-flash-12mp-wi-fi-bluetooth-5g-ipados-gri-4158669.html",
+"pret_vechi": null
+},
+{
+"titlu": "Tableta Apple iPad Air 11 M4 Cellular, Procesor Apple M4 Octa-Core, Ecran Liquid Retina IPS 11inch, 12GB RAM, 256GB Flas",
+"pret": 5899.99,
+"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4290%2F4290267%2Ftableta-apple-ipad-air-11-m4-c-69c661cd82231.jpg&type=auto&width=500&sign=3y0WLL9ugpeu9kiT7grouD-srplNabh3MkdQa5wzqNQ",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Ftelefoane-tablete-accesorii-tablete-si-accesorii-tablete%2Fapple-tableta-apple-ipad-air-11-m4-cellular-procesor-apple-m4-octa-core-ecran-liquid-retina-ips-11-12gb-ram-256gb-flash-camera-12mp-wi-fi-bluetooth-gps-5g-ipados-albastru-4290267.html",
+"magazin": "evomag.ro",
+"id": "LXd66G7xkEuy",
+"brand": "Apple",
+"url_magazin": "https://www.evomag.ro/telefoane-tablete-accesorii-tablete-si-accesorii-tablete/apple-tableta-apple-ipad-air-11-m4-cellular-procesor-apple-m4-octa-core-ecran-liquid-retina-ips-11-12gb-ram-256gb-flash-camera-12mp-wi-fi-bluetooth-gps-5g-ipados-albastru-4290267.html",
+"pret_vechi": null
+},
+{
 "titlu": "Apple Tableta Apple iPad Air 11 (2026), Apple M4 Octa Core, 11 inch, RAM 12GB, 256GB, Wi-Fi, BT, 5G, iPadOS 26.3, Auriu",
-"pret": 6148.99,
+"pret": 6140.99,
 "imagine": "https://www.dwyn.ro/images/products/img_202512311121/395686/full/apple-apple-11-inch-ipad-air-m4-cellular-256gb-starlight-1220182.jpg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Ftablete-pc%2Fapple%2F395686-tableta-apple-ipad-air-11-2026-apple-m4-octa-core-11-inch-ram-12gb-256gb-wi-fi-bt-5g-ipados-26-3-auriu%2F",
 "magazin": "dwyn.ro",
@@ -8575,30 +8572,19 @@
 "pret_vechi": null
 },
 {
-"titlu": "Tableta Apple iPad Air 11 M4, Procesor Apple M4 Octa-Core, Ecran Liquid Retina IPS 11inch, 12GB RAM, 512GB Flash, Camera",
-"pret": 6299.99,
-"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4289%2F4289030%2Ftableta-apple-ipad-air-11-m4-69ba68dd2bbb3.jpg&type=auto&width=500&sign=WN0leDPzpVpjnCVOn60-wXBn4sC_RdL0jNflHx2HFTI",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Ftelefoane-tablete-accesorii-tablete-si-accesorii-tablete%2Fapple-tableta-apple-ipad-air-11-m4-procesor-apple-m4-octa-core-ecran-liquid-retina-ips-11-12gb-ram-512gb-flash-camera-12mp-wi-fi-bluetooth-ipados-albastru-4289030.html",
-"magazin": "evomag.ro",
-"id": "xgHBT95oOXUe",
-"brand": "Apple",
-"url_magazin": "https://www.evomag.ro/telefoane-tablete-accesorii-tablete-si-accesorii-tablete/apple-tableta-apple-ipad-air-11-m4-procesor-apple-m4-octa-core-ecran-liquid-retina-ips-11-12gb-ram-512gb-flash-camera-12mp-wi-fi-bluetooth-ipados-albastru-4289030.html",
-"pret_vechi": null
-},
-{
-"titlu": "Apple Tableta Apple iPad Air 13 M4, Procesor Apple M4 Octa-Core, Ecran Liquid Retina IPS 13, 12GB RAM, 128GB Flash, Came",
-"pret": 6656.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202512311121/398035/full/apple-tableta-apple-ipad-air-13-m4-procesor-apple-m4-octa-core-ecran-liquid-retina-ips-13-12gb-ram-128gb-flash-camera-12mp-wi-fi-bluetooth-ipados-albastru-1229794.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Ftablete-pc%2Fapple%2F398035-tableta-apple-ipad-air-13-m4-procesor-apple-m4-octa-core-ecran-liquid-retina-ips-13-12gb-ram-128gb-flash-camera-12mp-wi-fi-bluetooth-ipados-albastru%2F",
+"titlu": "Apple Tableta Apple iPad Air 13 M4, Procesor Apple M4 Octa-Core, Ecran Liquid Retina IPS 13, 12GB RAM, 256GB Flash, Came",
+"pret": 6246.99,
+"imagine": "https://www.dwyn.ro/images/products/img_202512311121/398050/full/apple-tableta-apple-ipad-air-13-m4-procesor-apple-m4-octa-core-ecran-liquid-retina-ips-13-12gb-ram-256gb-flash-camera-12mp-wi-fi-bluetooth-ipados-violet-1229920.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Ftablete-pc%2Fapple%2F398050-tableta-apple-ipad-air-13-m4-procesor-apple-m4-octa-core-ecran-liquid-retina-ips-13-12gb-ram-256gb-flash-camera-12mp-wi-fi-bluetooth-ipados-violet%2F",
 "magazin": "dwyn.ro",
-"id": "S0evJFMFu_1b",
+"id": "sLyyS7OYH5IK",
 "brand": "Apple",
-"url_magazin": "https://www.dwyn.ro/tablete-pc/apple/398035-tableta-apple-ipad-air-13-m4-procesor-apple-m4-octa-core-ecran-liquid-retina-ips-13-12gb-ram-128gb-flash-camera-12mp-wi-fi-bluetooth-ipados-albastru/",
+"url_magazin": "https://www.dwyn.ro/tablete-pc/apple/398050-tableta-apple-ipad-air-13-m4-procesor-apple-m4-octa-core-ecran-liquid-retina-ips-13-12gb-ram-256gb-flash-camera-12mp-wi-fi-bluetooth-ipados-violet/",
 "pret_vechi": null
 },
 {
 "titlu": "Apple Tableta Apple iPad Air 13 M4 Cellular, Procesor Apple M4 Octa-Core, Ecran Liquid Retina IPS 13, 12GB RAM, 256GB Fl",
-"pret": 7230.99,
+"pret": 7221.99,
 "imagine": "https://www.dwyn.ro/images/products/img_202512311121/398029/full/apple-tableta-apple-ipad-air-13-m4-cellular-procesor-apple-m4-octa-core-ecran-liquid-retina-ips-13-12gb-ram-256gb-flash-camera-12mp-wi-fi-bluetooth-5g-ipados-albastru-1229812.jpg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Ftablete-pc%2Fapple%2F398029-tableta-apple-ipad-air-13-m4-cellular-procesor-apple-m4-octa-core-ecran-liquid-retina-ips-13-12gb-ram-256gb-flash-camera-12mp-wi-fi-bluetooth-5g-ipados-albastru%2F",
 "magazin": "dwyn.ro",
@@ -8609,7 +8595,7 @@
 },
 {
 "titlu": "Apple Tableta Apple iPad Air 13, Procesor Apple M4, Ecran Liquid Retina 13, 12GB RAM, 512GB Flash, Camera 12 MP, Wi-Fi 7",
-"pret": 8247.99,
+"pret": 8238.99,
 "imagine": "https://www.dwyn.ro/images/products/img_202512311121/410419/full/apple-apple-13-inch-ipad-air-m4-wi-fi-512gb-blue-1310578.jpg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Ftablete-pc%2Fapple%2F410419-tableta-apple-ipad-air-13-procesor-apple-m4-ecran-liquid-retina-13-12gb-ram-512gb-flash-camera-12-mp-wi-fi-7-ipados-albastru%2F",
 "magazin": "dwyn.ro",
@@ -8629,17 +8615,6 @@
 "url_magazin": "https://www.dwyn.ro/tablete-pc/apple/410416-tableta-apple-ipad-air-11-m4-wi-fi-1tb-procesor-apple-m4-ecran-liquid-retina-11-12gb-ram-1tb-flash-wi-fi-7-albastru/",
 "pret_vechi": null,
 "verificat": "2026-11-04"
-},
-{
-"titlu": "Apple Tableta Apple iPad Pro 13 M5, 13 inch Ultra Retina XDR OLED 120Hz, 12GB RAM, 256GB, Wi-Fi 7, Space Black",
-"pret": 10435.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202606122129/458383/full/apple-tableta-apple-ipad-pro-13-m5-mdyj4ty-a-13-inch-ultra-retina-xdr-oled-120hz-12gb-ram-256gb-wi-fi-7-space-black-1505983.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Ftablete-pc%2Fapple%2F458383-tableta-apple-ipad-pro-13-m5-13-inch-ultra-retina-xdr-oled-120hz-12gb-ram-256gb-wi-fi-7-space-black%2F",
-"magazin": "dwyn.ro",
-"id": "6Pvd9JIGcE_G",
-"brand": "Apple",
-"url_magazin": "https://www.dwyn.ro/tablete-pc/apple/458383-tableta-apple-ipad-pro-13-m5-13-inch-ultra-retina-xdr-oled-120hz-12gb-ram-256gb-wi-fi-7-space-black/",
-"pret_vechi": null
 }
 ],
 "magazine": [
@@ -8671,7 +8646,7 @@
 "titlu": "Aspiratoare robot cu mop",
 "nota": null,
 "in_text": "\\bmop\\w*\\b",
-"actualizat": "2026-11-18",
+"actualizat": "2026-11-26",
 "feeduri": [
 {
 "id": 8964,
@@ -8700,7 +8675,7 @@
 "id": "JMMD_Y_MQVtI",
 "brand": "Mova",
 "url_magazin": "https://blacktech.ro/products/aspirator-robot-cu-mop-mova-e20s-pro-robot-vacuum-cleaner-13000pa-3200mah-3dadapt%E2%84%A2-obstacle-avoidance-statie-de-incarcare?variant=56966408175951",
-"pret_vechi": 999.0,
+"pret_vechi": null,
 "verificat": "2026-11-04"
 },
 {
@@ -8712,7 +8687,7 @@
 "id": "Gyb1m7lPWI3E",
 "brand": "Mova",
 "url_magazin": "https://blacktech.ro/products/aspirator-robot-cu-mop-mova-e20s-pro-plus-robot-vacuum-cleaner-13000pa-3200mah-3dadapt%E2%84%A2-obstacle-avoidance-statie-colectare-1?variant=57003208278351",
-"pret_vechi": 1299.0,
+"pret_vechi": null,
 "verificat": "2026-11-04"
 },
 {
@@ -8736,7 +8711,7 @@
 "id": "F4x4O27ORbek",
 "brand": "Dreame",
 "url_magazin": "https://www.evomag.ro/electrocasnice-aspiratoare-aspiratoare-robot/dreame-aspirator-robot-cu-mop-dreame-rlf41gd-wh-f20-plus-20.000-pa-statie-cu-golire-automata-autonomie-150-min-alb-4316979.html",
-"pret_vechi": null,
+"pret_vechi": 1049.99,
 "verificat": "2026-11-06"
 },
 {
@@ -8776,16 +8751,15 @@
 "verificat": "2026-11-14"
 },
 {
-"titlu": "Aspirator robot cu mop MOVA S70 Roller Robot Vacuum, 28000Pa, 5200mAh, HydroForce Mopping, statie inteligenta, White",
-"pret": 2199.0,
-"imagine": "https://cdn.shopify.com/s/files/1/0954/2244/7951/files/RLZ12SE-WH-_12_-produs.jpg?v=1775570691",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fblacktech.ro%2Fproducts%2Faspirator-robot-cu-mop-mova-s70-roller-robot-vacuum-28000pa-5200mah-hydroforce-mopping-statie-inteligenta-white%3Fvariant%3D57298895176015",
-"magazin": "blacktech.ro",
-"id": "iJnXq1RCtz3M",
+"titlu": "Aspirator robot cu mop Mova S10 Plus, 7000Pa, 5200mAh, Autonomie pana la 260 minute, Statie colectare automata (Alb)",
+"pret": 1999.99,
+"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4183%2F4183700%2Frls42sd-66ffa37a0b739.jpg&type=auto&width=500&sign=pCx-Vz9MRCjKt-YcOSBzRjRDC4Hjpj_LNVxLJh3i1sw",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Felectrocasnice-aspiratoare-aspiratoare-robot%2Fmova-aspirator-robot-cu-mop-mova-s10-plus-7000pa-5200mah-autonomie-pana-la-260-minute-statie-colectare-automata-alb-4183700.html",
+"magazin": "evomag.ro",
+"id": "_pCZBqyThCUV",
 "brand": "Mova",
-"url_magazin": "https://blacktech.ro/products/aspirator-robot-cu-mop-mova-s70-roller-robot-vacuum-28000pa-5200mah-hydroforce-mopping-statie-inteligenta-white?variant=57298895176015",
-"pret_vechi": 3599.0,
-"verificat": "2026-11-04"
+"url_magazin": "https://www.evomag.ro/electrocasnice-aspiratoare-aspiratoare-robot/mova-aspirator-robot-cu-mop-mova-s10-plus-7000pa-5200mah-autonomie-pana-la-260-minute-statie-colectare-automata-alb-4183700.html",
+"pret_vechi": 2778.99
 },
 {
 "titlu": "Aspirator robot cu mop Dreame L10s Pro Gen 2, 7000Pa, 5200mAh, Autonomie de pana la 155 minute",
@@ -8801,7 +8775,7 @@
 },
 {
 "titlu": "Aspirator Robot EZVIZ Vacuum & Mop Combo RS2, 65 W, 0.4 L (Alb)",
-"pret": 2316.99,
+"pret": 2326.99,
 "imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4109%2F4109571%2F64c268b27d897.jpg&type=auto&width=500&sign=B5BGAyyolz39rl7d9pfAXH4zVfcQHSEIqaIAjv1J4oo",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Felectrocasnice-aspiratoare-aspiratoare-robot%2Fezviz-aspirator-robot-ezviz-vacuum-mop-combo-rs2-65-w-0.4-l-alb-4109571.html",
 "magazin": "evomag.ro",
@@ -8809,18 +8783,6 @@
 "brand": "Ezviz",
 "url_magazin": "https://www.evomag.ro/electrocasnice-aspiratoare-aspiratoare-robot/ezviz-aspirator-robot-ezviz-vacuum-mop-combo-rs2-65-w-0.4-l-alb-4109571.html",
 "pret_vechi": null
-},
-{
-"titlu": "Aspirator robot cu mop MOVA E50 Pro Ultra Robot Vacuum, 30.000 Pa, 5.200mAh, 200 min, MaxiReach™, statie inteligenta (Ne",
-"pret": 2437.99,
-"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4312%2F4312878%2Frle15se-bk-6a955023b9501.jpg&type=auto&width=500&sign=fkJEeK0eEP3X5Ox2LKcXn7aUw6F-oE3YNeX3hR-DqlQ",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Felectrocasnice-aspiratoare-aspiratoare-robot%2Fmova-aspirator-robot-cu-mop-mova-e50-pro-ultra-robot-vacuum-30.000-pa-5.200mah-200-min-maxireach-statie-inteligenta-negru-4312878.html",
-"magazin": "evomag.ro",
-"id": "YG6617Z8skhI",
-"brand": "Mova",
-"url_magazin": "https://www.evomag.ro/electrocasnice-aspiratoare-aspiratoare-robot/mova-aspirator-robot-cu-mop-mova-e50-pro-ultra-robot-vacuum-30.000-pa-5.200mah-200-min-maxireach-statie-inteligenta-negru-4312878.html",
-"pret_vechi": null,
-"verificat": "2026-11-06"
 },
 {
 "titlu": "Aspirator robot cu mop MOVA P70 Pro Ultra RLP54HE-WH, 30.000 Pa, Autonomie 160 minute, MaxiReach Edge, Statie inteligent",
@@ -8858,26 +8820,16 @@
 "verificat": "2026-11-04"
 },
 {
-"titlu": "Aspirator robot eufy Clean X9 Pro, Vacuum-Mop 2-in-1, Statie inteligenta de curatare automata, iPath Laser Navigation, W",
-"pret": 2650.99,
-"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4202%2F4202087%2Faspirator-robot-eufy-clean-x9-pro-vacuum-mop-2-in-1-statie-inteligenta-de-curatare-automata-ipath-laser-navigation-wi-fi-5500pa-negru-79496-4.jpeg&type=auto&width=500&sign=9oCn63GppcxpjS4fP3ui54vi2a_inLZzorlG2b-ov_U",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Felectrocasnice-aspiratoare-aspiratoare-robot%2Feufy-aspirator-robot-eufy-clean-x9-pro-vacuum-mop-2-in-1-statie-inteligenta-de-curatare-automata-ipath-laser-navigation-wi-fi-5500pa-negru-4202087.html",
-"magazin": "evomag.ro",
-"id": "6fsoBKm0Z8U5",
-"brand": "Eufy",
-"url_magazin": "https://www.evomag.ro/electrocasnice-aspiratoare-aspiratoare-robot/eufy-aspirator-robot-eufy-clean-x9-pro-vacuum-mop-2-in-1-statie-inteligenta-de-curatare-automata-ipath-laser-navigation-wi-fi-5500pa-negru-4202087.html",
-"pret_vechi": null
-},
-{
-"titlu": "Aspirator robot cu mop Mova S10 Plus, 7000Pa, 5200mAh, Autonomie pana la 260 minute, Statie colectare automata (Alb)",
-"pret": 2779.99,
-"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4183%2F4183700%2Frls42sd-66ffa37a0b739.jpg&type=auto&width=500&sign=pCx-Vz9MRCjKt-YcOSBzRjRDC4Hjpj_LNVxLJh3i1sw",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Felectrocasnice-aspiratoare-aspiratoare-robot%2Fmova-aspirator-robot-cu-mop-mova-s10-plus-7000pa-5200mah-autonomie-pana-la-260-minute-statie-colectare-automata-alb-4183700.html",
-"magazin": "evomag.ro",
-"id": "_pCZBqyThCUV",
+"titlu": "Aspirator robot cu mop Mova V50 Ultra Complete, 24.000Pa, 6400mAh, 220min, Advanced AI SmartSight, statie colectare inte",
+"pret": 2699.0,
+"imagine": "https://cdn.shopify.com/s/files/1/0954/2244/7951/files/aspirator-robot-cu-mop-mova-v50-ultra-complete-24000pa-6400mah-220min-advanced-ai-smartsight-statie-colectare-inteligenta_2_7be8810c-6884-4cae-86cc-6cd1f4c0c6d2.jpg?v=1769168767",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fblacktech.ro%2Fproducts%2Faspirator-robot-cu-mop-mova-v50-ultra-complete-24-000pa-6400mah-220min-advanced-ai-smartsight-statie-colectare-inteligenta%3Fvariant%3D56811215290703",
+"magazin": "blacktech.ro",
+"id": "JqQQswSrx5Qy",
 "brand": "Mova",
-"url_magazin": "https://www.evomag.ro/electrocasnice-aspiratoare-aspiratoare-robot/mova-aspirator-robot-cu-mop-mova-s10-plus-7000pa-5200mah-autonomie-pana-la-260-minute-statie-colectare-automata-alb-4183700.html",
-"pret_vechi": null
+"url_magazin": "https://blacktech.ro/products/aspirator-robot-cu-mop-mova-v50-ultra-complete-24-000pa-6400mah-220min-advanced-ai-smartsight-statie-colectare-inteligenta?variant=56811215290703",
+"pret_vechi": 5999.0,
+"verificat": "2026-11-26"
 },
 {
 "titlu": "Aspirator robot Karcher - RVM 4 Comfort, cu mop, alb",
@@ -8905,7 +8857,7 @@
 "titlu": "Aspiratoare robot sub 1.000 lei",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-18",
+"actualizat": "2026-11-26",
 "feeduri": [
 {
 "id": 8964,
@@ -8934,7 +8886,7 @@
 "id": "JMMD_Y_MQVtI",
 "brand": "Mova",
 "url_magazin": "https://blacktech.ro/products/aspirator-robot-cu-mop-mova-e20s-pro-robot-vacuum-cleaner-13000pa-3200mah-3dadapt%E2%84%A2-obstacle-avoidance-statie-de-incarcare?variant=56966408175951",
-"pret_vechi": 999.0,
+"pret_vechi": null,
 "verificat": "2026-11-04"
 },
 {
@@ -8947,18 +8899,6 @@
 "brand": "Heinner",
 "url_magazin": "https://www.dacris.net/hrvc-mai52bk-aspirator-robot-heinner-hrvc-mai52bk/p?skuId=228855",
 "pret_vechi": null,
-"verificat": "2026-11-04"
-},
-{
-"titlu": "Aspirator robot cu mop MOVA E20S Pro Plus Robot Vacuum Cleaner, 13000Pa, 3200mAh, 3DAdapt™ Obstacle Avoidance, statie co",
-"pret": 729.0,
-"imagine": "https://cdn.shopify.com/s/files/1/0954/2244/7951/files/15053_a3fcc4dc-9221-4cff-824a-56dceae368a5.jpg?v=1770736985",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fblacktech.ro%2Fproducts%2Faspirator-robot-cu-mop-mova-e20s-pro-plus-robot-vacuum-cleaner-13000pa-3200mah-3dadapt%E2%84%A2-obstacle-avoidance-statie-colectare-1%3Fvariant%3D57003208278351",
-"magazin": "blacktech.ro",
-"id": "Gyb1m7lPWI3E",
-"brand": "Mova",
-"url_magazin": "https://blacktech.ro/products/aspirator-robot-cu-mop-mova-e20s-pro-plus-robot-vacuum-cleaner-13000pa-3200mah-3dadapt%E2%84%A2-obstacle-avoidance-statie-colectare-1?variant=57003208278351",
-"pret_vechi": 1299.0,
 "verificat": "2026-11-04"
 },
 {
@@ -9011,7 +8951,7 @@
 "titlu": "Aspiratoare verticale fără fir",
 "nota": null,
 "in_text": "\\bfără fir\\b",
-"actualizat": "2026-11-18",
+"actualizat": "2026-11-26",
 "feeduri": [
 {
 "id": 8964,
@@ -9068,6 +9008,17 @@
 "verificat": "2026-11-06"
 },
 {
+"titlu": "Aspirator vertical fara fir Rowenta RH6545WH AFE Light, 30W, 14.4V, autonomie 30 min, led incorporat, Negru",
+"pret": 499.99,
+"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4255%2F4255962%2F68f8d273daee7.jpg&type=auto&width=500&sign=iluS53dT7Ow_tUg10lebtnHMKjYUqA8OZE34AhbW0v4",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Felectrocasnice-aspiratoare-aspiratoare-verticale%2Frowenta-aspirator-vertical-fara-fir-rowenta-rh6545wh-afe-light-30w-14.4v-autonomie-30-min-led-incorporat-negru-4255962.html",
+"magazin": "evomag.ro",
+"id": "rTNsuinvynR8",
+"brand": "Rowenta",
+"url_magazin": "https://www.evomag.ro/electrocasnice-aspiratoare-aspiratoare-verticale/rowenta-aspirator-vertical-fara-fir-rowenta-rh6545wh-afe-light-30w-14.4v-autonomie-30-min-led-incorporat-negru-4255962.html",
+"pret_vechi": null
+},
+{
 "titlu": "Set baterii pentru Aspirator vertical fara fir JIMMY H9 Pro",
 "pret": 529.0,
 "imagine": "https://cdn.shopify.com/s/files/1/0954/2244/7951/files/6275.jpg?v=1759584070",
@@ -9112,7 +9063,7 @@
 "id": "Urw8vQTcd4Bj",
 "brand": "Jimmy",
 "url_magazin": "https://blacktech.ro/products/aspirator-vertical-fara-fir-jimmy-h8-flex-cordless-vacuum-cleaner-putere-550w-185-aw-autonomie-65-min?variant=56071259455823",
-"pret_vechi": 849.0,
+"pret_vechi": null,
 "verificat": "2026-11-04"
 },
 {
@@ -9124,8 +9075,19 @@
 "id": "dkHq4474Q6TQ",
 "brand": "Jimmy",
 "url_magazin": "https://blacktech.ro/products/aspirator-vertical-fara-fir-jimmy-jv83-pro-500w-160aw-3-moduri-de-aspirare-autonomie-65-min-afisaj-smart-led?variant=56071345996111",
-"pret_vechi": 999.0,
+"pret_vechi": null,
 "verificat": "2026-11-04"
+},
+{
+"titlu": "Samus Aspirator vertical fara fir 2 in 1 Samus Cyclone Ultra Pro",
+"pret": 760.99,
+"imagine": "https://www.dwyn.ro/images/products/img_202512311121/382811/full/samus-aspirator-vertical-fara-fir-samus-cyclone-ultra-pro-2-in-1-600-w-putere-de-aspirare-185w-recipient-0-65-litri-autonomie-acumulator-83-minute-1167380.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Faspiratoare%2Fsamus%2F382811-aspirator-vertical-fara-fir-2-in-1-samus-cyclone-ultra-pro%2F",
+"magazin": "dwyn.ro",
+"id": "HLE3i55NuaLL",
+"brand": "Samus",
+"url_magazin": "https://www.dwyn.ro/aspiratoare/samus/382811-aspirator-vertical-fara-fir-2-in-1-samus-cyclone-ultra-pro/",
+"pret_vechi": null
 },
 {
 "titlu": "Aspirator vertical fara fir cu spalare Xiaomi Truclean W20, 15000Pa, 2500mAh, autonomie 30 min",
@@ -9151,18 +9113,6 @@
 "pret_vechi": null
 },
 {
-"titlu": "Aspirator vertical fara fir JIMMY JV85 Pro",
-"pret": 1099.0,
-"imagine": "https://cdn.shopify.com/s/files/1/0954/2244/7951/files/3304.jpg?v=1759583453",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fblacktech.ro%2Fproducts%2Faspirator-vertical-fara-fir-jimmy-jv85-pro%3Fvariant%3D56071191527759",
-"magazin": "blacktech.ro",
-"id": "MNWA9sG39lWC",
-"brand": "Jimmy",
-"url_magazin": "https://blacktech.ro/products/aspirator-vertical-fara-fir-jimmy-jv85-pro?variant=56071191527759",
-"pret_vechi": null,
-"verificat": "2026-11-04"
-},
-{
 "titlu": "Aspirator vertical fara fir JIMMY H8 Upgraded, putere aspirare 160AW, autonomie 60 min",
 "pret": 1149.0,
 "imagine": "https://cdn.shopify.com/s/files/1/0954/2244/7951/files/7893.jpg?v=1759584566",
@@ -9185,6 +9135,40 @@
 "url_magazin": "https://www.dwyn.ro/aspiratoare/makita/294679-aspirator-makita-dvc750lzx3-fara-fir-uscat-umed-18v-7-5l-praf-4-5l-lichide-50w/",
 "pret_vechi": null,
 "verificat": "2026-11-04"
+},
+{
+"titlu": "Aspirator vertical fara fir cu mop Roidmi X30 Plus, putere aspirare 150AW, autonomie 80 min",
+"pret": 1299.0,
+"imagine": "https://cdn.shopify.com/s/files/1/0954/2244/7951/files/5084.jpg?v=1759583757",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fblacktech.ro%2Fproducts%2Faspirator-vertical-fara-fir-cu-mop-roidmi-x30-plus-putere-aspirare-150aw-autonomie-80-min%3Fvariant%3D56071221608783",
+"magazin": "blacktech.ro",
+"id": "kEnR6egfi75l",
+"brand": "Roidmi",
+"url_magazin": "https://blacktech.ro/products/aspirator-vertical-fara-fir-cu-mop-roidmi-x30-plus-putere-aspirare-150aw-autonomie-80-min?variant=56071221608783",
+"pret_vechi": 2399.0,
+"verificat": "2026-11-26"
+},
+{
+"titlu": "Rowenta Aspirator vertical fara fir cu spalare Rowenta X-Clean 2 GZ2271E0, 120W, 440 RPM, pana la 35 min autonomie, aspi",
+"pret": 1375.99,
+"imagine": "https://www.dwyn.ro/images/products/img_202512311121/371087/full/rowenta-aspirator-vertical-fara-fir-cu-spalare-rowenta-x-clean-2-gz2271e0-120w-440-rpm-pana-la-35-min-autonomie-aspirare-umeda-si-uscata-capacitate-rezervor-apa-murdara-0-44l-functie-autocuratare-pano-1057160.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Faspiratoare%2Frowenta%2F371087-aspirator-vertical-fara-fir-cu-spalare-rowenta-x-clean-2-gz2271e0-120w-440-rpm-pana-la-35-min-autonomie-aspirare-umeda-si-uscata-capacitate-rezervor-apa-murdara-0-44l-functie-autocuratare-panou-de-con%2F",
+"magazin": "dwyn.ro",
+"id": "V3drOmB943Tk",
+"brand": "Rowenta",
+"url_magazin": "https://www.dwyn.ro/aspiratoare/rowenta/371087-aspirator-vertical-fara-fir-cu-spalare-rowenta-x-clean-2-gz2271e0-120w-440-rpm-pana-la-35-min-autonomie-aspirare-umeda-si-uscata-capacitate-rezervor-apa-murdara-0-44l-functie-autocuratare-panou-de-con/",
+"pret_vechi": null
+},
+{
+"titlu": "Aspirator vertical Polti RollySteam WD40C, fara fir, cu abur si aspirare umed-uscata, 450 W, aspirare 14 kPa, 0.6 l, 71",
+"pret": 1414.99,
+"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4250%2F4250842%2Faspirator-vertical-fara-fir-68dd11eb4ea1a.jpg&type=auto&width=500&sign=Yd_Q8kxsDGPDpote6QIOV0Jc0JcMV8xDxOxzXsUoLcQ",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Felectrocasnice-aspiratoare-aspiratoare-verticale%2Fpolti-aspirator-vertical-polti-rollysteam-wd40c-fara-fir-cu-abur-si-aspirare-umed-uscata-450-w-aspirare-14-kpa-0.6-l-71-db-gri-negru-4250842.html",
+"magazin": "evomag.ro",
+"id": "7qw6mBAipEz8",
+"brand": "Polti",
+"url_magazin": "https://www.evomag.ro/electrocasnice-aspiratoare-aspiratoare-verticale/polti-aspirator-vertical-polti-rollysteam-wd40c-fara-fir-cu-abur-si-aspirare-umed-uscata-450-w-aspirare-14-kpa-0.6-l-71-db-gri-negru-4250842.html",
+"pret_vechi": 2658.99
 },
 {
 "titlu": "Aspirator vertical EZVIZ RH2, fara fir, Umed si uscat, 200W, 4000 mAh, 0.75L (Negru/Argintiu)",
@@ -9245,17 +9229,6 @@
 "verificat": "2026-11-06"
 },
 {
-"titlu": "Aspirator vertical fara fir cu spalare Midea X10 Wet and Dry, 220 W, 0.7 l, Autonomie 35 minute (Negru)",
-"pret": 1999.99,
-"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4266%2F4266127%2Fmidea-x10-wet-and-dry-cordless-693729986817a.jpg&type=auto&width=500&sign=w8XRw4L4XniAX8SsMZkGR5Jr8BWSfJoXKhlPCP3fMMc",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Felectrocasnice-aspiratoare-aspiratoare-verticale%2Fmidea-aspirator-vertical-fara-fir-cu-spalare-midea-x10-wet-and-dry-220-w-0.7-l-autonomie-35-minute-negru-4266127.html",
-"magazin": "evomag.ro",
-"id": "SsMEFNuSjcMg",
-"brand": "Midea",
-"url_magazin": "https://www.evomag.ro/electrocasnice-aspiratoare-aspiratoare-verticale/midea-aspirator-vertical-fara-fir-cu-spalare-midea-x10-wet-and-dry-220-w-0.7-l-autonomie-35-minute-negru-4266127.html",
-"pret_vechi": null
-},
-{
 "titlu": "SHARK Aspirator fara fir Shark Clean & Empty BU3521EU cu sistem de golire automata, duza pentru animale de companie, aut",
 "pret": 2099.99,
 "imagine": "https://www.dwyn.ro/images/products/img_202503142150/271829/full/shark-shark-clean-self-empty-vacuum-cleaner-611375.png",
@@ -9268,47 +9241,14 @@
 "verificat": "2026-11-04"
 },
 {
-"titlu": "SHARK Aspirator fara fir cu tehnologie anti hair-wrap plus Shark IZ400EU, Flexology True Pet, 309 w, 25.2v autonimie pan",
-"pret": 2138.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202404261115/229887/full/shark-vacuum-cleaner-iz400eu-shark-459535.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Faspiratoare%2Fshark%2F229887-aspirator-fara-fir-cu-tehnologie-anti-hair-wrap-plus-shark-iz400eu-flexology-true-pet-309-w-25-2v-autonimie-pana-la-60-de-min-negru-rose%2F",
-"magazin": "dwyn.ro",
-"id": "vLSJLeByBIAR",
-"brand": "SHARK",
-"url_magazin": "https://www.dwyn.ro/aspiratoare/shark/229887-aspirator-fara-fir-cu-tehnologie-anti-hair-wrap-plus-shark-iz400eu-flexology-true-pet-309-w-25-2v-autonimie-pana-la-60-de-min-negru-rose/",
-"pret_vechi": null
-},
-{
-"titlu": "Midea Aspirator vertical Midea X10 Wet and Dry, fara fir cu spalare, 220 W, 0.7 l, Autonomie 35 minute, Negru",
-"pret": 2599.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202512311121/400096/full/midea-midea-x10-wet-and-dry-cordless-vacuum-cleaner-black-1241413.png",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Faspiratoare%2Fmidea%2F400096-aspirator-vertical-midea-x10-wet-and-dry-fara-fir-cu-spalare-220-w-0-7-l-autonomie-35-minute-negru%2F",
-"magazin": "dwyn.ro",
-"id": "iEF-aadDyPgr",
-"brand": "Midea",
-"url_magazin": "https://www.dwyn.ro/aspiratoare/midea/400096-aspirator-vertical-midea-x10-wet-and-dry-fara-fir-cu-spalare-220-w-0-7-l-autonomie-35-minute-negru/",
-"pret_vechi": null
-},
-{
 "titlu": "SHARK Aspirator vertical fara fir 2in1 Shark IP1251EUT, DetectClean Pet Flexology, 380W, 21.6V, 0.7L, autonomie 70 min,",
-"pret": 2745.99,
+"pret": 2101.99,
 "imagine": "https://www.dwyn.ro/images/products/img_202503142150/294777/full/shark-aspirator-vertical-fara-fir-2in1-shark-ip1251eut-detectclean-pet-flexology-380w-21-6v-0-7l-autonomie-70-min-duoclean-slim-led-perie-pet-pro-anti-hair-wrap-plus-tehnologii-dirt-floor-edge-detect--738799.jpg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Faspiratoare%2Fshark%2F294777-aspirator-vertical-fara-fir-2in1-shark-ip1251eut-detectclean-pet-flexology-380w-21-6v-0-7l-autonomie-70-min-duoclean-slim-led-perie-pet-pro-anti-hair-wrap-plus-tehnologii-dirt-floor-edge-detect-gri-mo%2F",
 "magazin": "dwyn.ro",
 "id": "sRuHLpbdrvmk",
 "brand": "SHARK",
 "url_magazin": "https://www.dwyn.ro/aspiratoare/shark/294777-aspirator-vertical-fara-fir-2in1-shark-ip1251eut-detectclean-pet-flexology-380w-21-6v-0-7l-autonomie-70-min-duoclean-slim-led-perie-pet-pro-anti-hair-wrap-plus-tehnologii-dirt-floor-edge-detect-gri-mo/",
-"pret_vechi": null
-},
-{
-"titlu": "Aspirator vertical fara fir cu spalare Dyson V15s Detect Submarine 448798-01, 600W, 60 min (Nichel/Albastru)",
-"pret": 3689.99,
-"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4124%2F4124392%2Fdyson-v15s-detect-dry-and-wet-65366a0d07d46.jpg&type=auto&width=500&sign=IpS8QZqlqPg5ee_eW0W2yDcr3y44CdH4_QHZ2WIX8_Y",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Felectrocasnice-aspiratoare-aspiratoare-verticale%2Fdyson-aspirator-vertical-fara-fir-cu-spalare-dyson-v15s-detect-submarine-448798-01-600w-60-min-nichel-albastru-4124392.html",
-"magazin": "evomag.ro",
-"id": "665c13f47",
-"brand": "Dyson",
-"url_magazin": "https://www.evomag.ro/electrocasnice-aspiratoare-aspiratoare-verticale/dyson-aspirator-vertical-fara-fir-cu-spalare-dyson-v15s-detect-submarine-448798-01-600w-60-min-nichel-albastru-4124392.html",
 "pret_vechi": null
 }
 ],
@@ -15357,18 +15297,6 @@
 ]
 },
 {
-"slug": "smartwatch-gps",
-"tema": "smartwatch-uri",
-"tema_nume": "Smartwatch-uri",
-"titlu": "Smartwatch-uri cu GPS",
-"nota": null,
-"in_text": null,
-"actualizat": "2026-11-15",
-"feeduri": [],
-"produse": [],
-"magazine": []
-},
-{
 "slug": "imprimanta-laser",
 "tema": "imprimante",
 "tema_nume": "Imprimante",
@@ -15903,42 +15831,6 @@
 "magazine": [
 "afisport.ro"
 ]
-},
-{
-"slug": "anvelope-iarna-205-55-r16",
-"tema": "anvelope",
-"tema_nume": "Anvelope",
-"titlu": "Anvelope de iarnă 205/55 R16",
-"nota": null,
-"in_text": null,
-"actualizat": "2026-11-15",
-"feeduri": [],
-"produse": [],
-"magazine": []
-},
-{
-"slug": "anvelope-iarna-195-65-r15",
-"tema": "anvelope",
-"tema_nume": "Anvelope",
-"titlu": "Anvelope de iarnă 195/65 R15",
-"nota": null,
-"in_text": null,
-"actualizat": "2026-11-15",
-"feeduri": [],
-"produse": [],
-"magazine": []
-},
-{
-"slug": "anvelope-iarna-225-45-r17",
-"tema": "anvelope",
-"tema_nume": "Anvelope",
-"titlu": "Anvelope de iarnă 225/45 R17",
-"nota": null,
-"in_text": null,
-"actualizat": "2026-11-15",
-"feeduri": [],
-"produse": [],
-"magazine": []
 },
 {
 "slug": "parfum-dior-sauvage",
@@ -19896,18 +19788,6 @@
 ]
 },
 {
-"slug": "adidasi-barbati",
-"tema": "incaltaminte",
-"tema_nume": "Încălțăminte",
-"titlu": "Adidași pentru bărbați",
-"nota": null,
-"in_text": null,
-"actualizat": "2026-11-15",
-"feeduri": [],
-"produse": [],
-"magazine": []
-},
-{
 "slug": "adidasi-dama",
 "tema": "incaltaminte",
 "tema_nume": "Încălțăminte",
@@ -20026,18 +19906,6 @@
 "magazine": [
 "dehaine.ro"
 ]
-},
-{
-"slug": "ghete-dama",
-"tema": "incaltaminte",
-"tema_nume": "Încălțăminte",
-"titlu": "Ghete și botine de damă",
-"nota": null,
-"in_text": null,
-"actualizat": "2026-11-15",
-"feeduri": [],
-"produse": [],
-"magazine": []
 },
 {
 "slug": "geaca-iarna-barbati",
@@ -27113,7 +26981,7 @@
 "titlu": "Baterii externe de 20.000 mAh",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-17",
+"actualizat": "2026-11-26",
 "feeduri": [
 {
 "id": 1539,
@@ -27293,17 +27161,6 @@
 "verificat": "2026-11-04"
 },
 {
-"titlu": "Baterie externa Borofone BJ30A, 20000 mAh, 2x USB, 1x USB-C, 22.5 W (Alb)",
-"pret": 103.99,
-"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4286%2F4286868%2Fbaterie-externa-borofone-bj30a-69abd7ace8009.jpg&type=auto&width=500&sign=jQa4rrI2oVnNBKV9L0LDoGuFRYXW0g1Kt5UT5vqSzUI",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Ftelefoane-tablete-accesorii-accesorii-telefoane-acumulatori-externi%2Fborofone-baterie-externa-borofone-bj30a-20000-mah-2x-usb-1x-usb-c-22.5-w-alb-4286868.html",
-"magazin": "evomag.ro",
-"id": "xt1QIjFwf3S-",
-"brand": "Borofone",
-"url_magazin": "https://www.evomag.ro/telefoane-tablete-accesorii-accesorii-telefoane-acumulatori-externi/borofone-baterie-externa-borofone-bj30a-20000-mah-2x-usb-1x-usb-c-22.5-w-alb-4286868.html",
-"pret_vechi": null
-},
-{
 "titlu": "Dudao Baterie Externa Dudao K6Pro+, 20000mAh, 10W, 1 x Lightning - 1 x microUSB - 1 x USB-A - 1 x USB-C, Alba",
 "pret": 106.99,
 "imagine": "https://www.dwyn.ro/images/products/img_202512311121/374762/full/dudao-baterie-externa-dudao-k6pro-plus-20000mah-10w-1-x-lightning-1-x-microusb-1-x-usb-a-1-x-usb-c-alba-1073285.png",
@@ -27347,7 +27204,7 @@
 "id": "_6qbHicwNgXz",
 "brand": "Veger",
 "url_magazin": "https://www.evomag.ro/telefoane-tablete-accesorii-accesorii-telefoane-acumulatori-externi/veger-baterie-externa-veger-l20s-20000-mah-2x-usb-1x-usb-c-alb-4235393.html",
-"pret_vechi": null,
+"pret_vechi": 122.99,
 "verificat": "2026-11-04"
 },
 {
@@ -27374,6 +27231,17 @@
 "verificat": "2026-11-04"
 },
 {
+"titlu": "Baterie Externa Joyroom JR-PBF14 Pro, 20000mAh, 22.5W, QC + PD, 1 x USB-C - 2 x USB-A (Negru)",
+"pret": 115.99,
+"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4308%2F4308484%2Fbaterie-externa-joyroom-jr-pbf14-1-1775117320.png&type=auto&width=500&sign=a0wzyzdYpzf4ZuAjog9Guo9PpuZHHb6dsWGVwvR3g6Q",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Ftelefoane-tablete-accesorii-accesorii-telefoane-acumulatori-externi%2Fjoyroom-baterie-externa-joyroom-jr-pbf14-pro-20000mah-22.5w-qc-pd-1-x-usb-c-2-x-usb-a-negru-4308484.html",
+"magazin": "evomag.ro",
+"id": "OVL2pIX2HQOr",
+"brand": "Joyroom",
+"url_magazin": "https://www.evomag.ro/telefoane-tablete-accesorii-accesorii-telefoane-acumulatori-externi/joyroom-baterie-externa-joyroom-jr-pbf14-pro-20000mah-22.5w-qc-pd-1-x-usb-c-2-x-usb-a-negru-4308484.html",
+"pret_vechi": null
+},
+{
 "titlu": "Dudao Baterie Externa Dudao K12Pro, 20000mAh, 22.5W, QC + PD, 1 x USB-C - 2 x USB-A, Neagra",
 "pret": 119.99,
 "imagine": "https://www.dwyn.ro/images/products/img_202508191322/336152/full/dudao-baterie-externa-dudao-k12pro-20000mah-22-5w-qc-plus-pd-1-x-usb-c-2-x-usb-a-neagra-847559.jpg",
@@ -27396,16 +27264,15 @@
 "pret_vechi": null
 },
 {
-"titlu": "Xiaomi Baterie externa universala Xiaomi BHR9740GL, 22.5 W, 20000 mAh, cablu integrat USB-C, Li-Ion, Gri inchis",
-"pret": 125.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202512311121/390517/full/xiaomi-baterie-externa-universala-xiaomi-bhr9740gl-22-5-w-20000-mah-cablu-integrat-usb-c-li-ion-gri-inchis-1198723.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fbaterii-powerbank%2Fxiaomi%2F390517-baterie-externa-universala-xiaomi-bhr9740gl-22-5-w-20000-mah-cablu-integrat-usb-c-li-ion-gri-inchis%2F",
+"titlu": "Ugreen Baterie externa Ugreen, 20000 mAh, 22.5W, Incarcare Rapida Power Delivery, USB-C si USB-A",
+"pret": 124.99,
+"imagine": "https://www.dwyn.ro/images/products/img_202508191322/316516/full/ugreen-baterie-externa-ugreen-20-000-mah-22-5w-usb-c-usb-a-pd-3-0-digital-display-cablu-usb-c-la-usb-a-inclus-negru-809560.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fbaterii-powerbank%2Fugreen%2F316516-baterie-externa-ugreen-20000-mah-22-5w-incarcare-rapida-power-delivery-usb-c-si-usb-a%2F",
 "magazin": "dwyn.ro",
-"id": "Pi4LoRD47iHt",
-"brand": "Xiaomi",
-"url_magazin": "https://www.dwyn.ro/baterii-powerbank/xiaomi/390517-baterie-externa-universala-xiaomi-bhr9740gl-22-5-w-20000-mah-cablu-integrat-usb-c-li-ion-gri-inchis/",
-"pret_vechi": null,
-"verificat": "2026-11-04"
+"id": "bvNPyAz8sTmS",
+"brand": "Ugreen",
+"url_magazin": "https://www.dwyn.ro/baterii-powerbank/ugreen/316516-baterie-externa-ugreen-20000-mah-22-5w-incarcare-rapida-power-delivery-usb-c-si-usb-a/",
+"pret_vechi": null
 }
 ],
 "magazine": [
@@ -27421,7 +27288,7 @@
 "titlu": "SSD de 1 TB",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-17",
+"actualizat": "2026-11-26",
 "feeduri": [
 {
 "id": 1096,
@@ -27442,6 +27309,28 @@
 ],
 "produse": [
 {
+"titlu": "SSD Patriot P300 1TB M.2 2280",
+"pret": 772.62,
+"imagine": "http://www.itarena.ro/images/products/2020-10-12/original/302418_jpg.webp",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.itarena.ro%2Fsolid_state_drive_ssd%2Fssd_patriot_p300_1tb_m2_2280.html",
+"magazin": "itarena.ro",
+"id": "x4bC1B5t5OAf",
+"brand": "Patriot",
+"url_magazin": "https://www.itarena.ro/solid_state_drive_ssd/ssd_patriot_p300_1tb_m2_2280.html",
+"pret_vechi": null
+},
+{
+"titlu": "SSD extern Verbatim Vx500 1TB, USB 3.2 Gen 2 Type-C, Gri",
+"pret": 819.99,
+"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4196%2F4196432%2Fssd-extern-verbatim-vx500-1tb-6777b8de5ea1c.JPG&type=auto&width=500&sign=rldxw26AsF3ZOQEtBhDtKgjjLI9J9tVpSzbNvgyFl84",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Fcomponente-pc-gaming-solid-state-drive-ssd%2Fverbatim-ssd-extern-verbatim-vx500-1tb-usb-3.2-gen-2-type-c-gri-4196432.html",
+"magazin": "evomag.ro",
+"id": "quHluV8uPRFr",
+"brand": "Verbatim",
+"url_magazin": "https://www.evomag.ro/componente-pc-gaming-solid-state-drive-ssd/verbatim-ssd-extern-verbatim-vx500-1tb-usb-3.2-gen-2-type-c-gri-4196432.html",
+"pret_vechi": null
+},
+{
 "titlu": "SSD intern Kingston NV3, 1 TB, PCI Express 4.0 NVMe M.2",
 "pret": 919.68,
 "imagine": "http://1cctv.ro/116198/ssd-intern-kingston-nv3-1-tb-pci-express-40-nvme-m2.jpg",
@@ -27452,6 +27341,28 @@
 "url_magazin": "https://1cctv.ro/ro/ssd/37722-ssd-intern-kingston-nv3-1-tb-pci-express-40-nvme-m2.html?utm_source=2performant",
 "pret_vechi": null,
 "verificat": "2026-11-04"
+},
+{
+"titlu": "SSD extern ADATA Durable SD620, 1TB, USB 3.2, Rosu",
+"pret": 972.99,
+"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4324%2F4324091%2Fadata-ssd-disk-sd620-2tb-red-674855a88ccc2.PNG&type=auto&width=500&sign=XlfHaMhf9bgmSOZ_z4SRg3qBFzX9FURIMUQaSSRb34Q",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Fcomponente-pc-gaming-solid-state-drive-ssd%2Fadata-ssd-extern-adata-durable-sd620-1tb-usb-3.2-rosu-4324091.html",
+"magazin": "evomag.ro",
+"id": "b2eeqmXu5F6I",
+"brand": "ADATA",
+"url_magazin": "https://www.evomag.ro/componente-pc-gaming-solid-state-drive-ssd/adata-ssd-extern-adata-durable-sd620-1tb-usb-3.2-rosu-4324091.html",
+"pret_vechi": null
+},
+{
+"titlu": "SSD extern Intenso UX100 3850460, 1TB, USB Type-A / USB Type-C 3.2 Gen 1, Negru",
+"pret": 1007.99,
+"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4324%2F4324046%2Fintenso-externe-usb-ssd-ux100-6b00388e6ad52.png&type=auto&width=500&sign=hUHSl_F1maBD9qwGIb1I2c6iBOM9ZI3wKQmxug6HVdE",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Fcomponente-pc-gaming-solid-state-drive-ssd%2Fintenso-ssd-extern-intenso-ux100-3850460-1tb-usb-type-a-usb-type-c-3.2-gen-1-negru-4324046.html",
+"magazin": "evomag.ro",
+"id": "rHhToZVxpnTG",
+"brand": "Intenso",
+"url_magazin": "https://www.evomag.ro/componente-pc-gaming-solid-state-drive-ssd/intenso-ssd-extern-intenso-ux100-3850460-1tb-usb-type-a-usb-type-c-3.2-gen-1-negru-4324046.html",
+"pret_vechi": null
 },
 {
 "titlu": "SSD Samsung 990 EVO 1TB PCI Express 4.0",
@@ -27476,23 +27387,12 @@
 "url_magazin": "https://1cctv.ro/ro/hdd-extern/37725-ssd-extern-kingston-xs1000r-1-tb-usb-32-gen-2-rosu.html?utm_source=2performant",
 "pret_vechi": null,
 "verificat": "2026-11-04"
-},
-{
-"titlu": "SSD WD Red SA500 1TB SATA-III M.2 2280",
-"pret": 1865.31,
-"imagine": "https://dacris.vteximg.com.br/arquivos/ids/978188/SSD-WD-Red-SA500-1TB-SATA-III-M-2-2280-0.jpg?v=638962864999500000",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dacris.net%2Fwds100t1r0b-ssd-wd-red-sa500-1tb-sata-iii-m-2-2280%2Fp%3FskuId%3D226976",
-"magazin": "dacris.net",
-"id": "SfR5NWiWmyBU",
-"brand": "WD",
-"url_magazin": "https://www.dacris.net/wds100t1r0b-ssd-wd-red-sa500-1tb-sata-iii-m-2-2280/p?skuId=226976",
-"pret_vechi": null,
-"verificat": "2026-11-12"
 }
 ],
 "magazine": [
 "1cctv.ro",
-"dacris.net"
+"evomag.ro",
+"itarena.ro"
 ]
 },
 {
@@ -27502,7 +27402,7 @@
 "titlu": "Plăci video NVIDIA RTX",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-17",
+"actualizat": "2026-11-26",
 "feeduri": [
 {
 "id": 1096,
@@ -27606,30 +27506,6 @@
 "verificat": "2026-11-04"
 },
 {
-"titlu": "MSI Placa video MSI GeForce RTX 5060 INSPIRE ITX OC 8GB GDDR7 128-bit DLSS 4.0",
-"pret": 2960.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202508191322/343019/full/msi-geforce-rtx-5060-8g-inspire-itx-oc-gddr7-128-bit-904181.png",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fplaci-video%2Fmsi%2F343019-placa-video-msi-geforce-rtx-5060-inspire-itx-oc-8gb-gddr7-128-bit-dlss-4-0%2F",
-"magazin": "dwyn.ro",
-"id": "aU1KFYqmoAih",
-"brand": "MSI",
-"url_magazin": "https://www.dwyn.ro/placi-video/msi/343019-placa-video-msi-geforce-rtx-5060-inspire-itx-oc-8gb-gddr7-128-bit-dlss-4-0/",
-"pret_vechi": null,
-"verificat": "2026-11-04"
-},
-{
-"titlu": "Gigabyte Placa video Gigabyte nVidia GeForce RTX 3060 WindForce OC 12GB, GDDR6, 192bit",
-"pret": 3106.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202206212004/201302/full/gigabyte-placa-video-gigabyte-nvidia-geforce-rtx-3060-windforce-oc-12gb-gddr6-192bit-385666.png",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fplaci-video%2Fgigabyte%2F201302-placa-video-gigabyte-nvidia-geforce-rtx-3060-windforce-oc-12gb-gddr6-192bit%2F",
-"magazin": "dwyn.ro",
-"id": "QymhuUIhyENm",
-"brand": "Gigabyte",
-"url_magazin": "https://www.dwyn.ro/placi-video/gigabyte/201302-placa-video-gigabyte-nvidia-geforce-rtx-3060-windforce-oc-12gb-gddr6-192bit/",
-"pret_vechi": null,
-"verificat": "2026-11-04"
-},
-{
 "titlu": "Placa video MSI GeForce RTX 5060 VENTUS 2X OC 8GB 128-Bit GDDR7 DLSS 4.0",
 "pret": 3327.99,
 "imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4224%2F4224190%2Fplaca-video-msi-geforce-rtx-50-68358d8624bfa.png&type=auto&width=500&sign=nVuMX0XMT94_wyLiON_R7_Twraxck6bHNHk176HojaM",
@@ -27642,37 +27518,58 @@
 "verificat": "2026-11-04"
 },
 {
-"titlu": "Gigabyte Placa Video GIGABYTE GeForce RTX 5060 TI AERO OC, 16GB, GDDR7, 128bit",
-"pret": 5887.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202503142150/284773/full/gigabyte-placa-video-gigabyte-geforce-rtx-5060-ti-aero-oc-16gb-gddr7-128bit-677761.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fplaci-video%2Fgigabyte%2F284773-placa-video-gigabyte-geforce-rtx-5060-ti-aero-oc-16gb-gddr7-128bit%2F",
+"titlu": "INNO3D Placa video INNO3D GeForce RTX 3060 TWIN X2 12GB GDDR6 192-bit",
+"pret": 3375.99,
+"imagine": "https://www.dwyn.ro/images/products/img_202305231058/216243/full/inno3d-placa-video-inno3d-geforce-rtx-3060-twin-x2-12gb-gddr6-192-bit-427332.png",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fplaci-video%2Finno3d%2F216243-placa-video-inno3d-geforce-rtx-3060-twin-x2-12gb-gddr6-192-bit%2F",
 "magazin": "dwyn.ro",
-"id": "QYUGSL6Wn30z",
-"brand": "Gigabyte",
-"url_magazin": "https://www.dwyn.ro/placi-video/gigabyte/284773-placa-video-gigabyte-geforce-rtx-5060-ti-aero-oc-16gb-gddr7-128bit/",
-"pret_vechi": null,
-"verificat": "2026-11-04"
-},
-{
-"titlu": "Asus Placa video Asus ROG Astral OC Edition, NVIDIA GeForce RTX 5090, 32GB GDDR7, 512 bit, DLSS 4",
-"pret": 56066.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202503142150/295985/full/asus-vga-pcie16-rtx5090-32gb-gddr7-astral-rtx5090-o32g-gam-asus-731623.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fplaci-video%2Fasus%2F295985-placa-video-asus-rog-astral-oc-edition-nvidia-geforce-rtx-5090-32gb-gddr7-512-bit-dlss-4%2F",
-"magazin": "dwyn.ro",
-"id": "E7PF6E7_vvUX",
-"brand": "Asus",
-"url_magazin": "https://www.dwyn.ro/placi-video/asus/295985-placa-video-asus-rog-astral-oc-edition-nvidia-geforce-rtx-5090-32gb-gddr7-512-bit-dlss-4/",
+"id": "UwkbaFDvTkUw",
+"brand": "INNO3D",
+"url_magazin": "https://www.dwyn.ro/placi-video/inno3d/216243-placa-video-inno3d-geforce-rtx-3060-twin-x2-12gb-gddr6-192-bit/",
 "pret_vechi": null
 },
 {
-"titlu": "PNY Placa video PNY NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition, 96 GB GDDR7",
-"pret": 104405.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202512311121/410536/full/pny-placa-video-pny-nvidia-rtx-pro-6000-blackwell-max-q-workstation-edition-96-gb-gddr7-1342036.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fplaci-video%2Fpny%2F410536-placa-video-pny-nvidia-rtx-pro-6000-blackwell-max-q-workstation-edition-96-gb-gddr7%2F",
+"titlu": "MSI Placa video MSI GeForce RTX 5080 Ventus 3X OC WHITE 16GB GDDR7 256-bit DLSS 4.0, Alb",
+"pret": 12994.99,
+"imagine": "https://www.dwyn.ro/images/products/img_202508191322/346073/full/msi-geforce-rtx-5080-16g-ventus-3x-oc-white-gddr7-256-bit-alb-936650.png",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fplaci-video%2Fmsi%2F346073-placa-video-msi-geforce-rtx-5080-ventus-3x-oc-white-16gb-gddr7-256-bit-dlss-4-0-alb%2F",
 "magazin": "dwyn.ro",
-"id": "n-5HMtQMVR6A",
-"brand": "PNY",
-"url_magazin": "https://www.dwyn.ro/placi-video/pny/410536-placa-video-pny-nvidia-rtx-pro-6000-blackwell-max-q-workstation-edition-96-gb-gddr7/",
+"id": "mH5CZ9GtJLiK",
+"brand": "MSI",
+"url_magazin": "https://www.dwyn.ro/placi-video/msi/346073-placa-video-msi-geforce-rtx-5080-ventus-3x-oc-white-16gb-gddr7-256-bit-dlss-4-0-alb/",
+"pret_vechi": null
+},
+{
+"titlu": "Gainward Placa Video Gainward GeForce RTX 5090 Phantom - 32GB GDDR7, HDMI, 3x DP, Negru",
+"pret": 53141.99,
+"imagine": "https://www.dwyn.ro/images/products/img_202503142150/287061/full/gainward-gwd-geforce-rtx-5090-phantom-32gb-693171.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fplaci-video%2Fgainward%2F287061-placa-video-gainward-geforce-rtx-5090-phantom-32gb-gddr7-hdmi-3x-dp-negru%2F",
+"magazin": "dwyn.ro",
+"id": "buuj17btjHP3",
+"brand": "Gainward",
+"url_magazin": "https://www.dwyn.ro/placi-video/gainward/287061-placa-video-gainward-geforce-rtx-5090-phantom-32gb-gddr7-hdmi-3x-dp-negru/",
+"pret_vechi": null
+},
+{
+"titlu": "palit Placa video Palit NVIDIA GeForce RTX 5090 GameRock, 32 GB GDDR7, 512-bit DLSS 4.0, Negru",
+"pret": 56436.99,
+"imagine": "https://www.dwyn.ro/images/products/img_202508191322/363701/full/palit-placa-video-palit-nvidia-geforce-rtx-5090-gamerock-32-gb-gddr7-512-bit-dlss-4-0-1021922.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fplaci-video%2Fpalit%2F363701-placa-video-palit-nvidia-geforce-rtx-5090-gamerock-32-gb-gddr7-512-bit-dlss-4-0-negru%2F",
+"magazin": "dwyn.ro",
+"id": "rNvpyxGS-xa_",
+"brand": "palit",
+"url_magazin": "https://www.dwyn.ro/placi-video/palit/363701-placa-video-palit-nvidia-geforce-rtx-5090-gamerock-32-gb-gddr7-512-bit-dlss-4-0-negru/",
+"pret_vechi": null
+},
+{
+"titlu": "Nvidia Placa video NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition, 96GB GDDR7 ECC, 300W, 4x DisplayPort",
+"pret": 100854.99,
+"imagine": "https://www.dwyn.ro/images/products/img_202606122129/485050/full/nvidia-placa-video-nvidia-rtx-pro-6000-blackwell-max-q-workstation-edition-96gb-gddr7-ecc-300w-4x-displayport-1537606.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fplaci-video%2Fnvidia%2F485050-placa-video-nvidia-rtx-pro-6000-blackwell-max-q-workstation-edition-96gb-gddr7-ecc-300w-4x-displayport%2F",
+"magazin": "dwyn.ro",
+"id": "h7kpec4m-kYe",
+"brand": "Nvidia",
+"url_magazin": "https://www.dwyn.ro/placi-video/nvidia/485050-placa-video-nvidia-rtx-pro-6000-blackwell-max-q-workstation-edition-96gb-gddr7-ecc-300w-4x-displayport/",
 "pret_vechi": null
 }
 ],
@@ -27688,7 +27585,7 @@
 "titlu": "Drone cu cameră",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-17",
+"actualizat": "2026-11-26",
 "feeduri": [
 {
 "id": 6119,
@@ -27710,7 +27607,7 @@
 "produse": [
 {
 "titlu": "Drona E88 PRO 4K brate pliabile 2 camere wifi buton de Return To Home camera 4k HD cu transmisie live pe telefon",
-"pret": 159.99,
+"pret": 139.99,
 "imagine": "https://gave.ro/image/catalog/CATEGORII_OK/drona_e88_pro_4k_brate_pliabile_2_camere_wifi_buton_de_return_to_home_camera_4k_hd_cu_transmisie_live_pe_telefon.png",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fgave.ro%2Fdrona-e88-pro-4k-brate-pliabile-2-camere-wifi-buton-de-return-to-home-camera-4k-hd-cu-transmisie-live-pe-telefon",
 "magazin": "gave.ro",
@@ -27859,7 +27756,7 @@
 "titlu": "Camere de supraveghere Wi-Fi",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-17",
+"actualizat": "2026-11-26",
 "feeduri": [
 {
 "id": 6119,
@@ -27923,6 +27820,28 @@
 "url_magazin": "https://infinity.ro/camera-supraveghere-wifi-8177hj-tip-bec-cu-soclu-e27-vedere-nocturna-9073149/p?utm_source=2performant",
 "pret_vechi": 181.5,
 "verificat": "2026-11-04"
+},
+{
+"titlu": "Cameră de Supraveghere Inteligentă WiFi pentru Interior Tip Robot, Rotire Panoramică, Audio Bidirecțional – Engross",
+"pret": 78.75,
+"imagine": "https://bazarulonline.ro/images/detailed/12259/ChatGPT_Image_20_Nov_2026",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fbazarulonline.ro%2Fcamer-de-supraveghere-inteligent-wifi-pentru-interior-tip-robot-rotire-panoramic-audio-bidirecional-engross",
+"magazin": "bazarulonline.ro",
+"id": "wQQwHURRpJCu",
+"brand": "",
+"url_magazin": "https://bazarulonline.ro/camer-de-supraveghere-inteligent-wifi-pentru-interior-tip-robot-rotire-panoramic-audio-bidirecional-engross",
+"pret_vechi": null
+},
+{
+"titlu": "Cameră de Supraveghere Inteligentă WiFi Tip Robot, Full HD, Rotire Panoramică, Audio Bidirecțional – Engross",
+"pret": 78.75,
+"imagine": "https://bazarulonline.ro/images/detailed/12260/d8502d56-2b0c-4f6b-89a6-b80f277becdc.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fbazarulonline.ro%2Fcamer-de-supraveghere-inteligent-wifi-tip-robot-full-hd-rotire-panoramic-audio-bidirecional-engross",
+"magazin": "bazarulonline.ro",
+"id": "aVYkEDeUpuAp",
+"brand": "",
+"url_magazin": "https://bazarulonline.ro/camer-de-supraveghere-inteligent-wifi-tip-robot-full-hd-rotire-panoramic-audio-bidirecional-engross",
+"pret_vechi": null
 },
 {
 "titlu": "Camera supraveghere panoramica WiFi 360 Tip Bec Night Vision Detectare Miscare",
@@ -28037,28 +27956,6 @@
 "url_magazin": "https://1cctv.ro/ro/camere-supraveghere-wireless-sricam-srihome/41168-camera-de-supraveghere-wifi-tip-bec-srihome-sh068-vizualizare-panoramica.html?utm_source=2performant",
 "pret_vechi": null,
 "verificat": "2026-11-04"
-},
-{
-"titlu": "Camera de supraveghere WiFi Jortan4, cu doua lentile, 6MP, Full HD, exterior",
-"pret": 135.0,
-"imagine": "https://bazarulonline.ro/images/detailed/4784/H1fa660f4f5a24f70aabc3ac923bfa8b2R.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fbazarulonline.ro%2Fcamera-de-supraveghere-wifi-jortan-doua-lentile-6mp-full-hd-exterior-clone",
-"magazin": "bazarulonline.ro",
-"id": "5LxX0iAJr0St",
-"brand": "",
-"url_magazin": "https://bazarulonline.ro/camera-de-supraveghere-wifi-jortan-doua-lentile-6mp-full-hd-exterior-clone",
-"pret_vechi": null
-},
-{
-"titlu": "Camera de supraveghere WiFi Jortan, doua lentile, 6MP, Full HD, exterior",
-"pret": 135.0,
-"imagine": "https://bazarulonline.ro/images/detailed/4784/20240906125429_jortan_352613_ip_kamera_parakolouthisis_wi_fi_4mp_full_hd_adiavrochi_me_amfidromi_epikoinonia.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fbazarulonline.ro%2Fcamera-de-supraveghere-wifi-jortan-dubla-6mp-full-hd-exterior-clone",
-"magazin": "bazarulonline.ro",
-"id": "DgDg5gOBblLS",
-"brand": "",
-"url_magazin": "https://bazarulonline.ro/camera-de-supraveghere-wifi-jortan-dubla-6mp-full-hd-exterior-clone",
-"pret_vechi": null
 },
 {
 "titlu": "Camera de supraveghere Clip Sonic X95PC, Wifi",
