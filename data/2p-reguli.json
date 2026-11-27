@@ -1,5 +1,5 @@
 {
-"actualizat": "2026-11-26",
+"actualizat": "2026-11-27",
 "magazine": {
 "10qaroma.ro": {
 "cupoane": "yes",
@@ -143,7 +143,7 @@
 },
 "apivest.ro": {
 "cupoane": "maybe",
-"google_ads": "maybe",
+"google_ads": "yes",
 "cashback": "maybe"
 },
 "apolino.ro": {
@@ -1112,6 +1112,11 @@
 "cashback": "yes"
 },
 "iconlash.ro": {
+"cupoane": "yes",
+"google_ads": "yes",
+"cashback": "yes"
+},
+"idealbeauty.ro": {
 "cupoane": "yes",
 "google_ads": "yes",
 "cashback": "yes"

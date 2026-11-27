@@ -1,6 +1,6 @@
 {
 "_nota": "Generat de scripts/criterii_produse.py. Doar pagini aprobate, doar produse cu pretul confirmat pe site-ul magazinului.",
-"actualizat": "2026-11-26",
+"actualizat": "2026-11-27",
 "criterii": [
 {
 "slug": "espressor-cu-capsule",
@@ -80,100 +80,6 @@
 ],
 "magazine": [
 "brico.ro",
-"infinity.ro"
-],
-"publicat": true
-},
-{
-"slug": "generator-curent",
-"tema": "scule",
-"tema_nume": "Scule și grădină",
-"titlu": "Generatoare de curent",
-"nota": null,
-"in_text": null,
-"actualizat": "2026-11-24",
-"feeduri": [
-{
-"id": 4679,
-"magazin": "albertool.com"
-},
-{
-"id": 6119,
-"magazin": "infinity.ro"
-},
-{
-"id": 1096,
-"magazin": "evomag.ro"
-},
-{
-"id": 8570,
-"magazin": "atomico.ro"
-}
-],
-"produse": [
-{
-"titlu": "Generator de curent, Kraft&Dele, 3500W, 230V, cu ecran LCD, KD149",
-"pret": 1024.34,
-"imagine": "https://infinityro.vteximg.com.br/arquivos/ids/270577474/image-ab2011d0e9e948ba960d5acf3f465bd4.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Finfinity.ro%2Fgenerator-de-curent-kraft-dele-3500w-230v-cu-ecran-lcd-kd149-9036139%2Fp%3Futm_source%3D2performant",
-"magazin": "infinity.ro",
-"id": "j4scHb-N2EzK",
-"brand": "Kraft&Dele",
-"url_magazin": "https://infinity.ro/generator-de-curent-kraft-dele-3500w-230v-cu-ecran-lcd-kd149-9036139/p?utm_source=2performant",
-"pret_vechi": 1575.9,
-"verificat": "2026-11-24"
-},
-{
-"titlu": "Generator de curent, Kraft&Dele, pe benzina, tip invertor, 2000W, 230V, 4CP",
-"pret": 1939.13,
-"imagine": "https://infinityro.vteximg.com.br/arquivos/ids/270577703/image-658ef45bd4b946d1b179afaf624acb57.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Finfinity.ro%2Fgenerator-de-curent-kraft-dele-pe-benzina-tip-invertor-2000w-230v-4cp-9036165%2Fp%3Futm_source%3D2performant",
-"magazin": "infinity.ro",
-"id": "s8GFrtaqi5LE",
-"brand": "Kraft&Dele",
-"url_magazin": "https://infinity.ro/generator-de-curent-kraft-dele-pe-benzina-tip-invertor-2000w-230v-4cp-9036165/p?utm_source=2performant",
-"pret_vechi": 2281.33,
-"verificat": "2026-11-16"
-},
-{
-"titlu": "Generator de curent 5.5 kW, benzina BASIC LINE - Konner & Sohnen - KSB-6500C",
-"pret": 2370.0,
-"imagine": "https://c.cdnmp.net/917469284/p/l/0/generator-de-curent-5-5-kw-benzina-basic-line-konner-sohnen-ksb-6500c~8691500.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.albertool.com%2Fcumpara%2Fgenerator-de-curent-5-5-kw-benzina-basic-line-konner-sohnen-ksb-6500c-2328%3Futm_source%3Dportal%26utm_medium%3Dweb%26utm_campaign%3D2parale",
-"magazin": "albertool.com",
-"id": "DSNtkkqPeNO0",
-"brand": "Konner & Sohnen",
-"url_magazin": "https://www.albertool.com/cumpara/generator-de-curent-5-5-kw-benzina-basic-line-konner-sohnen-ksb-6500c-2328?utm_source=portal&utm_medium=web&utm_campaign=2parale",
-"pret_vechi": null,
-"verificat": "2026-11-24"
-},
-{
-"titlu": "Generator de curent GENMAC Click RG4000HO putere maxima 3,1 kW 230V motor Honda GP200",
-"pret": 3767.4,
-"imagine": "https://c.cdnmp.net/917469284/p/l/0/generator-de-curent-genmac-click-rg4000ho-putere-maxima-3-1-kw-230v~8830040.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.albertool.com%2Fcumpara%2Fgenerator-de-curent-genmac-click-rg4000ho-putere-maxima-3-1-kw-230v-24375%3Futm_source%3Dportal%26utm_medium%3Dweb%26utm_campaign%3D2parale",
-"magazin": "albertool.com",
-"id": "qOl64zsgOUgC",
-"brand": "Genmac",
-"url_magazin": "https://www.albertool.com/cumpara/generator-de-curent-genmac-click-rg4000ho-putere-maxima-3-1-kw-230v-24375?utm_source=portal&utm_medium=web&utm_campaign=2parale",
-"pret_vechi": null,
-"verificat": "2026-11-16"
-},
-{
-"titlu": "Generator de curent GENMAC Click RG5000HO putere maxima 4,6 kW 230V motor Honda GX270",
-"pret": 5672.2,
-"imagine": "https://c.cdnmp.net/917469284/p/l/9/generator-de-curent-genmac-click-rg5000ho-putere-maxima-4-6-kw-230v~8830049.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.albertool.com%2Fcumpara%2Fgenerator-de-curent-genmac-click-rg5000ho-putere-maxima-4-6-kw-230v-24378%3Futm_source%3Dportal%26utm_medium%3Dweb%26utm_campaign%3D2parale",
-"magazin": "albertool.com",
-"id": "KbNVR-F52xH-",
-"brand": "Genmac",
-"url_magazin": "https://www.albertool.com/cumpara/generator-de-curent-genmac-click-rg5000ho-putere-maxima-4-6-kw-230v-24378?utm_source=portal&utm_medium=web&utm_campaign=2parale",
-"pret_vechi": null,
-"verificat": "2026-11-16"
-}
-],
-"magazine": [
-"albertool.com",
 "infinity.ro"
 ],
 "publicat": true

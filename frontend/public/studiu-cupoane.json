@@ -1,21 +1,30 @@
 {
-  "generat": "2026-11-26",
-  "total_magazine": 426,
-  "cu_promotie": 66,
-  "cu_cod_real": 15,
-  "doar_oferta": 51,
-  "procent_cu_promotie": 15.5,
-  "procent_cu_cod": 3.5,
-  "reducere_mediana_generala": 30.0,
-  "magazine_cu_procent_declarat": 46,
+  "generat": "2026-11-27",
+  "total_magazine": 427,
+  "cu_promotie": 69,
+  "cu_cod_real": 16,
+  "doar_oferta": 53,
+  "procent_cu_promotie": 16.2,
+  "procent_cu_cod": 3.7,
+  "reducere_mediana_generala": 30,
+  "magazine_cu_procent_declarat": 49,
   "categorii": [
     {
       "slug": "carti-educatie",
       "nume": "Cărți & educație",
-      "magazine": 21,
-      "cu_promotie": 4,
-      "reducere_mediana": 90,
+      "magazine": 22,
+      "cu_promotie": 5,
+      "reducere_mediana": 55.0,
       "reducere_max": 90,
+      "esantion": 4
+    },
+    {
+      "slug": "electronice",
+      "nume": "Electronice & IT",
+      "magazine": 30,
+      "cu_promotie": 5,
+      "reducere_mediana": 50,
+      "reducere_max": 80,
       "esantion": 3
     },
     {
@@ -39,11 +48,11 @@
     {
       "slug": "beauty",
       "nume": "Beauty & îngrijire",
-      "magazine": 50,
-      "cu_promotie": 6,
+      "magazine": 51,
+      "cu_promotie": 8,
       "reducere_mediana": 40.0,
       "reducere_max": 80,
-      "esantion": 6
+      "esantion": 8
     },
     {
       "slug": "sanatate",
@@ -57,11 +66,29 @@
     {
       "slug": "marketplace",
       "nume": "Marketplace",
-      "magazine": 42,
-      "cu_promotie": 8,
-      "reducere_mediana": 20.0,
+      "magazine": 41,
+      "cu_promotie": 7,
+      "reducere_mediana": 20,
       "reducere_max": 70,
-      "esantion": 4
+      "esantion": 3
+    },
+    {
+      "slug": "animale",
+      "nume": "Pet shop",
+      "magazine": 15,
+      "cu_promotie": 3,
+      "reducere_mediana": null,
+      "reducere_max": null,
+      "esantion": 2
+    },
+    {
+      "slug": "copii",
+      "nume": "Copii & familie",
+      "magazine": 21,
+      "cu_promotie": 1,
+      "reducere_mediana": null,
+      "reducere_max": null,
+      "esantion": 1
     },
     {
       "slug": "auto-moto",
@@ -73,37 +100,10 @@
       "esantion": 1
     },
     {
-      "slug": "electronice",
-      "nume": "Electronice & IT",
-      "magazine": 30,
-      "cu_promotie": 4,
-      "reducere_mediana": null,
-      "reducere_max": null,
-      "esantion": 2
-    },
-    {
-      "slug": "copii",
-      "nume": "Copii & familie",
-      "magazine": 21,
-      "cu_promotie": 2,
-      "reducere_mediana": null,
-      "reducere_max": null,
-      "esantion": 1
-    },
-    {
       "slug": "cadouri-flori",
       "nume": "Cadouri & flori",
       "magazine": 10,
       "cu_promotie": 3,
-      "reducere_mediana": null,
-      "reducere_max": null,
-      "esantion": 2
-    },
-    {
-      "slug": "animale",
-      "nume": "Pet shop",
-      "magazine": 15,
-      "cu_promotie": 2,
       "reducere_mediana": null,
       "reducere_max": null,
       "esantion": 2
@@ -157,7 +157,7 @@
   "criteriu": "domeniu .ro",
   "international": {
     "total": 499,
-    "cu_promotie": 79,
+    "cu_promotie": 78,
     "cu_cod": 50
   },
   "retele": [
