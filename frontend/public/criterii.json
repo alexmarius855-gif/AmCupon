@@ -85,6 +85,99 @@
 "publicat": true
 },
 {
+"slug": "scaun-birou-ergonomic",
+"tema": "scaune-birou",
+"tema_nume": "Scaune de birou",
+"titlu": "Scaune de birou ergonomice",
+"nota": null,
+"in_text": null,
+"actualizat": "2026-11-27",
+"feeduri": [
+{
+"id": 7871,
+"magazin": "xxxlutz.ro"
+},
+{
+"id": 8937,
+"magazin": "dacris.net"
+},
+{
+"id": 8740,
+"magazin": "timebox.ro"
+},
+{
+"id": 1328,
+"magazin": "scauneonline.ro"
+}
+],
+"produse": [
+{
+"titlu": "Scaun de birou ergonomic rotativ negru: VECTOR",
+"pret": 1120.0,
+"imagine": "https://dacris.vteximg.com.br/arquivos/ids/1104181/2527_vector_fabric-black_feature_pl_01.jpg.jpg?v=639275354191600000",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dacris.net%2F2527-jnf-scaun-de-birou-ergonomic-rotativ-negru--vector%2Fp%3FskuId%3D255799",
+"magazin": "dacris.net",
+"id": "3mAqershmR70",
+"brand": "Jan Nowak",
+"url_magazin": "https://www.dacris.net/2527-jnf-scaun-de-birou-ergonomic-rotativ-negru--vector/p?skuId=255799",
+"pret_vechi": null,
+"verificat": "2026-11-27"
+},
+{
+"titlu": "Scaun de birou ergonomic rotativ bej deschis: VECTOR",
+"pret": 1240.0,
+"imagine": "https://dacris.vteximg.com.br/arquivos/ids/1104192/vector_light_beige_2528_02_1.jpg.jpg?v=639275354194900000",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dacris.net%2F2528-jnf-scaun-de-birou-ergonomic-rotativ-bej-deschis--vector%2Fp%3FskuId%3D255800",
+"magazin": "dacris.net",
+"id": "fQIc953-Ncyy",
+"brand": "Jan Nowak",
+"url_magazin": "https://www.dacris.net/2528-jnf-scaun-de-birou-ergonomic-rotativ-bej-deschis--vector/p?skuId=255800",
+"pret_vechi": null,
+"verificat": "2026-11-27"
+},
+{
+"titlu": "Scaun de birou ergonomic rotativ albastru inchis: VECTOR",
+"pret": 1240.0,
+"imagine": "https://dacris.vteximg.com.br/arquivos/ids/1104185/2525_vector_fabric-dark-blue_feature_ro_08.jpg.jpg?v=639275354193630000",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dacris.net%2F2525-jnf-scaun-de-birou-ergonomic-rotativ-albastru-inchis--vector%2Fp%3FskuId%3D255797",
+"magazin": "dacris.net",
+"id": "Woi2VUokvQJB",
+"brand": "Jan Nowak",
+"url_magazin": "https://www.dacris.net/2525-jnf-scaun-de-birou-ergonomic-rotativ-albastru-inchis--vector/p?skuId=255797",
+"pret_vechi": null,
+"verificat": "2026-11-27"
+},
+{
+"titlu": "Scaun de birou ergonomic rotativ gri inchis: VECTOR",
+"pret": 1240.0,
+"imagine": "https://dacris.vteximg.com.br/arquivos/ids/1104190/2524_vector_fabric-dark-grey_feature_ro_04.jpg.jpg?v=639275354194730000",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dacris.net%2F2524-jnf-scaun-de-birou-ergonomic-rotativ-gri-inchis--vector%2Fp%3FskuId%3D255796",
+"magazin": "dacris.net",
+"id": "MZJr6P1HTXfD",
+"brand": "Jan Nowak",
+"url_magazin": "https://www.dacris.net/2524-jnf-scaun-de-birou-ergonomic-rotativ-gri-inchis--vector/p?skuId=255796",
+"pret_vechi": null,
+"verificat": "2026-11-27"
+},
+{
+"titlu": "Scaun de birou ergonomic rotativ gri: VECTOR",
+"pret": 1240.0,
+"imagine": "https://dacris.vteximg.com.br/arquivos/ids/1104186/vector_fabric_grey_2523_02.jpeg.jpg?v=639275354193800000",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dacris.net%2F2523-jnf-scaun-de-birou-ergonomic-rotativ-gri--vector%2Fp%3FskuId%3D255798",
+"magazin": "dacris.net",
+"id": "h6kJsp2avSZ8",
+"brand": "Jan Nowak",
+"url_magazin": "https://www.dacris.net/2523-jnf-scaun-de-birou-ergonomic-rotativ-gri--vector/p?skuId=255798",
+"pret_vechi": null,
+"verificat": "2026-11-27"
+}
+],
+"magazine": [
+"dacris.net"
+],
+"publicat": true
+},
+{
 "slug": "puzzle-1000-piese",
 "tema": "jucarii-copii",
 "tema_nume": "Jucării",

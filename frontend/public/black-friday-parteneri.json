@@ -25,7 +25,7 @@
   {
    "slug": "carti-educatie",
    "nume": "cărți",
-   "campanii": 13
+   "campanii": 12
   },
   {
    "slug": "copii",
@@ -35,7 +35,7 @@
   {
    "slug": "sanatate",
    "nume": "sănătate",
-   "campanii": 14
+   "campanii": 13
   },
   {
    "slug": "sport",
@@ -300,16 +300,6 @@
    "categorie": "casa-gradina"
   },
   {
-   "magazin": "ozone.ro",
-   "nume": "Ozone",
-   "start": "2026-11-02",
-   "final": "2026-11-22",
-   "nota": "BLACK FRIDAY",
-   "descriere": "Se apropie ceva mare! Peste 65.000 de oferte timp de o lună întreagă!",
-   "are_cod": false,
-   "categorie": "marketplace"
-  },
-  {
    "magazin": "prestigehome.ro",
    "nume": "Prestige Home",
    "start": "2026-11-02",
@@ -418,16 +408,6 @@
    "descriere": "Campania de Black Friday 2026 se va desfasura in intervalul 4.11 ora 0:00 - 12.11 ora 23:59. Vom avea reduceri de pana la 30% la produse, si produse cadou la oricare 3 articole cumparate din aceeasi categorie. De asemenea oferim cadou o lampa UV, in valoare de 599 lei, la comenzi de peste 1000 LEI ce NU INCLUD KITUL de Blackfriday.",
    "are_cod": false,
    "categorie": "beauty"
-  },
-  {
-   "magazin": "litera.ro",
-   "nume": "Litera",
-   "start": "2026-11-04",
-   "final": "2026-11-09",
-   "nota": "Black Friday 2026: reduceri de până la 90% + cadouri, din 04.11.",
-   "descriere": "A sosit Black Friday pe litera.ro și e plin de surprize! Mii de cărți te așteaptă cu reduceri de până la 90% și un cadou WOW de 300 de lei la comenzi de minim 299 lei! Răsfoiește catalogul și alege-ți următoarele lecturi. Acum e momentul să te bucuri de povești la prețuri mici!",
-   "are_cod": false,
-   "categorie": "carti-educatie"
   },
   {
    "magazin": "afisport.ro",
@@ -1058,16 +1038,6 @@
    "descriere": "Black Friday, beauty your way Gene false cu până la -90% și Danessa Myricks Beauty cu până la -55%. Wishlist-ul tău tocmai a devenit realitate. THE LASH SELECTION Privirea ta, în versiunea ei cea mai fabuloasă. Red Cherry, Ardell, ModelRock, Devi, Kara și Miss Adoro, de la natural și delicat până la full glam: gene bandă, smocuri, magnetice sau individuale.",
    "are_cod": false,
    "categorie": "beauty"
-  },
-  {
-   "magazin": "magazin-bbraun.ro",
-   "nume": "Magazin Bbraun",
-   "start": "2026-11-11",
-   "final": "2026-11-29",
-   "nota": "Black Friday",
-   "descriere": "",
-   "are_cod": false,
-   "categorie": "sanatate"
   },
   {
    "magazin": "yves-rocher.ro",

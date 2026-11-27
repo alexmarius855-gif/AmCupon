@@ -640,8 +640,8 @@
    "magazine": 143
   },
   "2026-11-27": {
-   "promotii": 269,
-   "magazine": 145
+   "promotii": 271,
+   "magazine": 148
   }
  },
  "magazine": {
@@ -2480,7 +2480,7 @@
     "prima": "2026-11-13",
     "ultima": "2026-11-27",
     "expira": "2026-11-27",
-    "activa": true
+    "activa": false
    },
    {
     "k": "30discount|30cvlife",
@@ -5687,6 +5687,15 @@
   ],
   "iaohi.com": [
    {
+    "k": "aohiblackfridaycybermondayexclusive20offcodenowactive|20bfcm",
+    "titlu": "AOHi Black Friday & Cyber Monday: Exclusive 20% OFF Code Now Active",
+    "cod": true,
+    "prima": "2026-11-27",
+    "ultima": "2026-11-27",
+    "expira": "2026-12-06",
+    "activa": true
+   },
+   {
     "k": "aohiblackfridaysaleislive15offmysteryboxdeals|15bf",
     "titlu": "AOHi Black Friday Sale Is Live — 15% OFF + Mystery Box Deals",
     "cod": true,
@@ -6902,6 +6911,15 @@
   ],
   "libris.ro": [
    {
+    "k": "transportulgratuitpeste90leipromotiileluniipefinal|",
+    "titlu": "Transportul? GRATUIT peste 90 lei. Promoțiile lunii? Pe final»",
+    "cod": false,
+    "prima": "2026-11-27",
+    "ultima": "2026-11-27",
+    "expira": "2026-12-02",
+    "activa": true
+   },
+   {
     "k": "mosnicolaeagasitreducerilepanala83lacartijocurisiaccesorii|",
     "titlu": "Moș Nicolae a găsit reducerile! Până la -83% la cărți, jocuri și accesorii »",
     "cod": false,
@@ -7466,7 +7484,7 @@
     "prima": "2026-11-12",
     "ultima": "2026-11-27",
     "expira": "2026-11-29",
-    "activa": true
+    "activa": false
    },
    {
     "k": "promotiibacktoclinic|",
@@ -8114,6 +8132,15 @@
   ],
   "nadula.com": [
    {
+    "k": "nadulablackfridaydealsupto60offfreewigwithcodebf|",
+    "titlu": "Nadula Black Friday Deals | Up to 60% OFF + Free Wig with Code BF",
+    "cod": false,
+    "prima": "2026-11-27",
+    "ultima": "2026-11-27",
+    "expira": "2026-11-30",
+    "activa": true
+   },
+   {
     "k": "nadulablackfridayearlydealsupto150offcodesale|sale",
     "titlu": "Nadula Black Friday Early Deals | Up to $150 OFF | Code: SALE",
     "cod": true,
@@ -8462,9 +8489,9 @@
     "titlu": "Cadou de Bun Venit: 3% EXTRA DISCOUNT",
     "cod": true,
     "prima": "2026-10-23",
-    "ultima": "2026-11-26",
+    "ultima": "2026-11-27",
     "expira": "2026-11-30",
-    "activa": false
+    "activa": true
    }
   ],
   "nobilacasa.ro": [
@@ -8783,6 +8810,17 @@
     "ultima": "2026-08-30",
     "expira": "2026-08-30",
     "activa": false
+   }
+  ],
+  "oceanhotels.com": [
+   {
+    "k": "blackdays|bdays26",
+    "titlu": "Black Days",
+    "cod": true,
+    "prima": "2026-11-27",
+    "ultima": "2026-11-27",
+    "expira": "2026-12-01",
+    "activa": true
    }
   ],
   "oleya.ro": [
@@ -9168,7 +9206,7 @@
     "prima": "2026-11-23",
     "ultima": "2026-11-27",
     "expira": "2027-01-10",
-    "activa": true
+    "activa": false
    },
    {
     "k": "blackfridaytbi|",
@@ -9177,7 +9215,7 @@
     "prima": "2026-11-13",
     "ultima": "2026-11-27",
     "expira": "2026-11-30",
-    "activa": true
+    "activa": false
    },
    {
     "k": "blackfriday|",
@@ -9367,6 +9405,15 @@
    }
   ],
   "petit-bebe.ro": [
+   {
+    "k": "theoriginalblackfridayestelivepanala35reducere|",
+    "titlu": "The Original Black Friday este LIVE! Pana la 35% reducere",
+    "cod": false,
+    "prima": "2026-11-27",
+    "ultima": "2026-11-27",
+    "expira": "2026-12-02",
+    "activa": true
+   },
    {
     "k": "blackfridaylapetitbebepanala36reducere|",
     "titlu": "Black Friday la Petit Bebe – pana la 36% reducere!",

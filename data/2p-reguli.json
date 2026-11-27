@@ -431,11 +431,6 @@
 "google_ads": "yes",
 "cashback": "yes"
 },
-"casadecologistics.ro": {
-"cupoane": "yes",
-"google_ads": "yes",
-"cashback": "yes"
-},
 "casaidea.ro": {
 "cupoane": "yes",
 "google_ads": "yes",
@@ -597,6 +592,11 @@
 "cashback": "yes"
 },
 "dehaine.ro": {
+"cupoane": "yes",
+"google_ads": "yes",
+"cashback": "yes"
+},
+"demax.ro": {
 "cupoane": "yes",
 "google_ads": "yes",
 "cashback": "yes"
@@ -1386,11 +1386,6 @@
 "google_ads": "yes",
 "cashback": "yes"
 },
-"litera.ro": {
-"cupoane": "yes",
-"google_ads": "no",
-"cashback": "yes"
-},
 "longevity-boost.com": {
 "cupoane": "yes",
 "google_ads": "yes",
@@ -1430,11 +1425,6 @@
 "cupoane": "yes",
 "google_ads": "yes",
 "cashback": "yes"
-},
-"magazin-bbraun.ro": {
-"cupoane": "maybe",
-"google_ads": "yes",
-"cashback": "maybe"
 },
 "magazintraditional.ro": {
 "cupoane": "yes",
@@ -1666,6 +1656,11 @@
 "google_ads": "yes",
 "cashback": "yes"
 },
+"nirmoto.ro": {
+"cupoane": "yes",
+"google_ads": "yes",
+"cashback": "yes"
+},
 "nobelo.ro": {
 "cupoane": "yes",
 "google_ads": "no",
@@ -1780,11 +1775,6 @@
 "cupoane": "yes",
 "google_ads": "yes",
 "cashback": "yes"
-},
-"ozone.ro": {
-"cupoane": "yes",
-"google_ads": "maybe",
-"cashback": "maybe"
 },
 "paa-home.ro": {
 "cupoane": "yes",
@@ -2284,11 +2274,6 @@
 "tenq.ro": {
 "cupoane": "yes",
 "google_ads": "no",
-"cashback": "yes"
-},
-"tessile.ro": {
-"cupoane": "yes",
-"google_ads": "yes",
 "cashback": "yes"
 },
 "tezyo.ro": {
