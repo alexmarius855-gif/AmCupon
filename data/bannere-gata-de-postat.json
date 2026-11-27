@@ -1,5 +1,57 @@
 [
   {
+    "id": 275002,
+    "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/274961/original/274961.png",
+    "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=a035af240&aff_code=541547473&campaign_unique=9a6f02fef",
+    "landing_raw": "https://www.libris.ro/promotiileLunii",
+    "width": 1080,
+    "height": 1080,
+    "merchant": "libris.ro ",
+    "merchant_slug": "libris-ro",
+    "name": "Transportul? GRATUIT peste 90 lei. Promoțiile lunii? Pe final»",
+    "category": "Transportul? GRATUIT peste 90 lei. Promoțiile lunii? Pe final»",
+    "b_type": "image"
+  },
+  {
+    "id": 275001,
+    "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/274960/original/274960.jpg",
+    "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=80c8f80bc&aff_code=541547473&campaign_unique=cc08e2536",
+    "landing_raw": "https://www.pensulemachiaj.ro",
+    "width": 1200,
+    "height": 1200,
+    "merchant": "pensulemachiaj.ro",
+    "merchant_slug": "pensulemachiaj-ro",
+    "name": "-80 BLACK FRIDAY CELEBRITY SECRET BAG GRATUIT ",
+    "category": "-80 BLACK FRIDAY CELEBRITY SECRET BAG GRATUIT ",
+    "b_type": "image"
+  },
+  {
+    "id": 274998,
+    "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/274957/original/274957.jpg",
+    "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=987aa82e5&aff_code=541547473&campaign_unique=4b9a6d5ea",
+    "landing_raw": "https://www.kitunghii.ro",
+    "width": 1200,
+    "height": 1200,
+    "merchant": "kitunghii.ro",
+    "merchant_slug": "kitunghii-ro",
+    "name": "-80% BLACK FRIDAY,SECRET BEAUTY BAG GRATUIT",
+    "category": "-80% BLACK FRIDAY,SECRET BEAUTY BAG GRATUIT",
+    "b_type": "image"
+  },
+  {
+    "id": 274977,
+    "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/274936/original/274936.jpg",
+    "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=953f54140&aff_code=541547473&campaign_unique=44ad2ee96",
+    "landing_raw": "https://www.petit-bebe.ro/the-original-black-friday-pana-la-35.html",
+    "width": 1200,
+    "height": 1200,
+    "merchant": "petit-bebe.ro",
+    "merchant_slug": "petit-bebe-ro",
+    "name": "Black Friday",
+    "category": "Black Friday",
+    "b_type": "image"
+  },
+  {
     "id": 274968,
     "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/274927/original/274927.JPG",
     "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=5df8b05c3&aff_code=541547473&campaign_unique=313128750",
@@ -101,32 +153,6 @@
     "merchant_slug": "cumperiangro-ro",
     "name": "Fox Days",
     "category": "Fox Days",
-    "b_type": "image"
-  },
-  {
-    "id": 274870,
-    "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/274829/original/274829.jpg",
-    "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=712e4a3ed&aff_code=541547473&campaign_unique=cc08e2536",
-    "landing_raw": "https://www.pensulemachiaj.ro",
-    "width": 1200,
-    "height": 1200,
-    "merchant": "pensulemachiaj.ro",
-    "merchant_slug": "pensulemachiaj-ro",
-    "name": "-80 BLACK FRIDAY CELEBRITY SECRET BAG GRATUIT ",
-    "category": "-80 BLACK FRIDAY CELEBRITY SECRET BAG GRATUIT ",
-    "b_type": "image"
-  },
-  {
-    "id": 274858,
-    "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/274817/original/274817.jpg",
-    "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=f12614bde&aff_code=541547473&campaign_unique=4b9a6d5ea",
-    "landing_raw": "https://www.kitunghii.ro",
-    "width": 1200,
-    "height": 1200,
-    "merchant": "kitunghii.ro",
-    "merchant_slug": "kitunghii-ro",
-    "name": "-80% BLACK FRIDAY,SECRET BEAUTY BAG GRATUIT",
-    "category": "-80% BLACK FRIDAY,SECRET BEAUTY BAG GRATUIT",
     "b_type": "image"
   },
   {

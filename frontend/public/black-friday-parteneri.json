@@ -5,7 +5,7 @@
   {
    "slug": "casa-gradina",
    "nume": "casă și grădină",
-   "campanii": 23
+   "campanii": 24
   },
   {
    "slug": "fashion",
@@ -25,7 +25,7 @@
   {
    "slug": "carti-educatie",
    "nume": "cărți",
-   "campanii": 12
+   "campanii": 13
   },
   {
    "slug": "copii",
@@ -237,7 +237,7 @@
    "nota": "BLACK FRIDAY MARANC: Performanța ta merită răsplătită!",
    "descriere": "Un cuțit bun nu este doar un instrument de bucătărie. Este o investiție în pasiunea pentru gătit, precizie și calitate. De Black Friday, MARANC îți aduce cuțite profesionale la prețuri speciale, create pentru cei care iubesc să gătească și apreciază lucrurile bine făcute. De ce să alegi MARANC? Garanție de 45 de ani – calitate în care poți avea încredere, ani la rând.",
    "are_cod": false,
-   "categorie": "online-mall"
+   "categorie": "casa-gradina"
   },
   {
    "magazin": "sevensins.ro",
@@ -408,6 +408,16 @@
    "descriere": "Campania de Black Friday 2026 se va desfasura in intervalul 4.11 ora 0:00 - 12.11 ora 23:59. Vom avea reduceri de pana la 30% la produse, si produse cadou la oricare 3 articole cumparate din aceeasi categorie. De asemenea oferim cadou o lampa UV, in valoare de 599 lei, la comenzi de peste 1000 LEI ce NU INCLUD KITUL de Blackfriday.",
    "are_cod": false,
    "categorie": "beauty"
+  },
+  {
+   "magazin": "litera.ro",
+   "nume": "Litera",
+   "start": "2026-11-04",
+   "final": "2026-11-09",
+   "nota": "Black Friday 2026: reduceri de până la 90% + cadouri, din 04.11.",
+   "descriere": "A sosit Black Friday pe litera.ro și e plin de surprize! Mii de cărți te așteaptă cu reduceri de până la 90% și un cadou WOW de 300 de lei la comenzi de minim 299 lei! Răsfoiește catalogul și alege-ți următoarele lecturi. Acum e momentul să te bucuri de povești la prețuri mici!",
+   "are_cod": false,
+   "categorie": "carti-educatie"
   },
   {
    "magazin": "afisport.ro",

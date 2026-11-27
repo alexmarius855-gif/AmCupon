@@ -491,11 +491,6 @@
 "google_ads": "yes",
 "cashback": "yes"
 },
-"citgrup.ro": {
-"cupoane": "yes",
-"google_ads": "yes",
-"cashback": "yes"
-},
 "cloud10beauty.com": {
 "cupoane": "yes",
 "google_ads": "yes",
@@ -609,6 +604,11 @@
 "depozitsolar.ro": {
 "cupoane": "yes",
 "google_ads": "no",
+"cashback": "yes"
+},
+"depozituldns.ro": {
+"cupoane": "yes",
+"google_ads": "yes",
 "cashback": "yes"
 },
 "detoxmed.ro": {
@@ -1236,6 +1236,11 @@
 "google_ads": "no",
 "cashback": "yes"
 },
+"kedoo.ro": {
+"cupoane": "yes",
+"google_ads": "yes",
+"cashback": "yes"
+},
 "kidsly.ro": {
 "cupoane": "yes",
 "google_ads": "yes",
@@ -1386,6 +1391,11 @@
 "google_ads": "yes",
 "cashback": "yes"
 },
+"litera.ro": {
+"cupoane": "yes",
+"google_ads": "no",
+"cashback": "yes"
+},
 "longevity-boost.com": {
 "cupoane": "yes",
 "google_ads": "yes",
@@ -1452,6 +1462,11 @@
 "cashback": "yes"
 },
 "maprofi.ro": {
+"cupoane": "yes",
+"google_ads": "yes",
+"cashback": "yes"
+},
+"maranc.ro": {
 "cupoane": "yes",
 "google_ads": "yes",
 "cashback": "yes"
@@ -2444,6 +2459,11 @@
 "xkids.ro": {
 "cupoane": "yes",
 "google_ads": "yes",
+"cashback": "yes"
+},
+"xxxlutz.ro": {
+"cupoane": "yes",
+"google_ads": "maybe",
 "cashback": "yes"
 },
 "yny.ro": {
