@@ -1,163 +1,174 @@
 {
 "_nota": "Generat de scripts/criterii_produse.py. Doar pagini aprobate, doar produse cu pretul confirmat pe site-ul magazinului.",
-"actualizat": "2026-11-24",
+"actualizat": "2026-11-28",
 "criterii": [
 {
-"slug": "monitor-gaming",
-"tema": "monitoare",
-"tema_nume": "Monitoare",
-"titlu": "Monitoare de gaming",
+"slug": "scaun-birou-ergonomic",
+"tema": "scaune-birou",
+"tema_nume": "Scaune de birou",
+"titlu": "Scaune de birou ergonomice",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-17",
+"actualizat": "2026-11-27",
 "feeduri": [
 {
-"id": 8969,
-"magazin": "ozone.ro"
+"id": 7871,
+"magazin": "xxxlutz.ro"
 },
 {
 "id": 8937,
 "magazin": "dacris.net"
 },
 {
-"id": 8527,
-"magazin": "1cctv.ro"
+"id": 8740,
+"magazin": "timebox.ro"
 },
 {
-"id": 9391,
-"magazin": "interlink.ro"
+"id": 1328,
+"magazin": "scauneonline.ro"
 }
 ],
 "produse": [
 {
-"titlu": "GIGABYTE GS27FC Gaming Monitor 27 VA",
-"pret": 658.54,
-"imagine": "https://dacris.vteximg.com.br/arquivos/ids/583376/GIGABYTE-GS27FC-Gaming-Monitor-27-VA-0.jpg?v=638962391428970000",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dacris.net%2Fgs27fc-gigabyte-gs27fc-gaming-monitor-27--va%2Fp%3FskuId%3D222197",
+"titlu": "Scaun de birou ergonomic rotativ negru: VECTOR",
+"pret": 1120.0,
+"imagine": "https://dacris.vteximg.com.br/arquivos/ids/1104181/2527_vector_fabric-black_feature_pl_01.jpg.jpg?v=639275354191600000",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dacris.net%2F2527-jnf-scaun-de-birou-ergonomic-rotativ-negru--vector%2Fp%3FskuId%3D255799",
 "magazin": "dacris.net",
-"id": "IlA150PGI2sH",
-"brand": "Gigabyte",
-"url_magazin": "https://www.dacris.net/gs27fc-gigabyte-gs27fc-gaming-monitor-27--va/p?skuId=222197",
+"id": "3mAqershmR70",
+"brand": "Jan Nowak",
+"url_magazin": "https://www.dacris.net/2527-jnf-scaun-de-birou-ergonomic-rotativ-negru--vector/p?skuId=255799",
 "pret_vechi": null,
-"verificat": "2026-11-17"
+"verificat": "2026-11-27"
 },
 {
-"titlu": "Monitor Gaming AOC G4 25G4ZR, 24.5\", 1920 x 1080 pixeli, Black, Red, 3 ani Garantie",
-"pret": 713.05,
-"imagine": "http://1cctv.ro/168330/monitor-gaming-aoc-g4-25g4zr-245-1920-x-1080-pixeli-black-red-3-ani-garantie.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2F1cctv.ro%2Fro%2Fmonitoare%2F43476-monitor-gaming-aoc-g4-25g4zr-245-1920-x-1080-pixeli-black-red-3-ani-garantie.html%3Futm_source%3D2performant",
-"magazin": "1cctv.ro",
-"id": "tdtaq59SBlh2",
-"brand": "AOC",
-"url_magazin": "https://1cctv.ro/ro/monitoare/43476-monitor-gaming-aoc-g4-25g4zr-245-1920-x-1080-pixeli-black-red-3-ani-garantie.html?utm_source=2performant",
-"pret_vechi": null,
-"verificat": "2026-11-14"
-},
-{
-"titlu": "Monitor Gaming MSI MAG 276CF E20, 27\", 1920 x 1080 pixeli, Black, 2 ani Garantie",
-"pret": 739.05,
-"imagine": "http://1cctv.ro/168105/monitor-gaming-msi-mag-276cf-e20-27-1920-x-1080-pixeli-black-2-ani-garantie.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2F1cctv.ro%2Fro%2Fmonitoare%2F43362-monitor-gaming-msi-mag-276cf-e20-27-1920-x-1080-pixeli-black-2-ani-garantie.html%3Futm_source%3D2performant",
-"magazin": "1cctv.ro",
-"id": "jfiYLXNXTGzt",
-"brand": "MSI",
-"url_magazin": "https://1cctv.ro/ro/monitoare/43362-monitor-gaming-msi-mag-276cf-e20-27-1920-x-1080-pixeli-black-2-ani-garantie.html?utm_source=2performant",
-"pret_vechi": null,
-"verificat": "2026-11-17"
-},
-{
-"titlu": "GIGABYTE GS27Q X Gaming Monitor 27 IPS",
-"pret": 1255.77,
-"imagine": "https://dacris.vteximg.com.br/arquivos/ids/637678/GIGABYTE-GS27Q-X-Gaming-Monitor-27-IPS-0.jpg?v=638962908079370000",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dacris.net%2Fgs27q-x-gigabyte-gs27q-x-gaming-monitor-27--ips%2Fp%3FskuId%3D228786",
+"titlu": "Scaun de birou ergonomic rotativ bej deschis: VECTOR",
+"pret": 1240.0,
+"imagine": "https://dacris.vteximg.com.br/arquivos/ids/1104192/vector_light_beige_2528_02_1.jpg.jpg?v=639275354194900000",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dacris.net%2F2528-jnf-scaun-de-birou-ergonomic-rotativ-bej-deschis--vector%2Fp%3FskuId%3D255800",
 "magazin": "dacris.net",
-"id": "8N3NKmwL8Qmi",
-"brand": "Gigabyte",
-"url_magazin": "https://www.dacris.net/gs27q-x-gigabyte-gs27q-x-gaming-monitor-27--ips/p?skuId=228786",
+"id": "fQIc953-Ncyy",
+"brand": "Jan Nowak",
+"url_magazin": "https://www.dacris.net/2528-jnf-scaun-de-birou-ergonomic-rotativ-bej-deschis--vector/p?skuId=255800",
 "pret_vechi": null,
-"verificat": "2026-11-17"
+"verificat": "2026-11-27"
+},
+{
+"titlu": "Scaun de birou ergonomic rotativ albastru inchis: VECTOR",
+"pret": 1240.0,
+"imagine": "https://dacris.vteximg.com.br/arquivos/ids/1104185/2525_vector_fabric-dark-blue_feature_ro_08.jpg.jpg?v=639275354193630000",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dacris.net%2F2525-jnf-scaun-de-birou-ergonomic-rotativ-albastru-inchis--vector%2Fp%3FskuId%3D255797",
+"magazin": "dacris.net",
+"id": "Woi2VUokvQJB",
+"brand": "Jan Nowak",
+"url_magazin": "https://www.dacris.net/2525-jnf-scaun-de-birou-ergonomic-rotativ-albastru-inchis--vector/p?skuId=255797",
+"pret_vechi": null,
+"verificat": "2026-11-27"
+},
+{
+"titlu": "Scaun de birou ergonomic rotativ gri inchis: VECTOR",
+"pret": 1240.0,
+"imagine": "https://dacris.vteximg.com.br/arquivos/ids/1104190/2524_vector_fabric-dark-grey_feature_ro_04.jpg.jpg?v=639275354194730000",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dacris.net%2F2524-jnf-scaun-de-birou-ergonomic-rotativ-gri-inchis--vector%2Fp%3FskuId%3D255796",
+"magazin": "dacris.net",
+"id": "MZJr6P1HTXfD",
+"brand": "Jan Nowak",
+"url_magazin": "https://www.dacris.net/2524-jnf-scaun-de-birou-ergonomic-rotativ-gri-inchis--vector/p?skuId=255796",
+"pret_vechi": null,
+"verificat": "2026-11-27"
+},
+{
+"titlu": "Scaun de birou ergonomic rotativ gri: VECTOR",
+"pret": 1240.0,
+"imagine": "https://dacris.vteximg.com.br/arquivos/ids/1104186/vector_fabric_grey_2523_02.jpeg.jpg?v=639275354193800000",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dacris.net%2F2523-jnf-scaun-de-birou-ergonomic-rotativ-gri--vector%2Fp%3FskuId%3D255798",
+"magazin": "dacris.net",
+"id": "h6kJsp2avSZ8",
+"brand": "Jan Nowak",
+"url_magazin": "https://www.dacris.net/2523-jnf-scaun-de-birou-ergonomic-rotativ-gri--vector/p?skuId=255798",
+"pret_vechi": null,
+"verificat": "2026-11-27"
 }
 ],
 "magazine": [
-"1cctv.ro",
 "dacris.net"
 ],
 "publicat": true
 },
 {
-"slug": "monitor-4k",
-"tema": "monitoare",
-"tema_nume": "Monitoare",
-"titlu": "Monitoare 4K",
+"slug": "casti-gaming",
+"tema": "casti-gaming",
+"tema_nume": "Căști de gaming",
+"titlu": "Căști de gaming",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-17",
+"actualizat": "2026-11-27",
 "feeduri": [
+{
+"id": 1096,
+"magazin": "evomag.ro"
+},
 {
 "id": 1256,
 "magazin": "itarena.ro"
 },
 {
-"id": 8969,
-"magazin": "ozone.ro"
+"id": 1539,
+"magazin": "dwyn.ro"
 },
 {
 "id": 8937,
 "magazin": "dacris.net"
-},
-{
-"id": 1539,
-"magazin": "dwyn.ro"
 }
 ],
 "produse": [
 {
-"titlu": "Monitor SAMSUNG Smart LS32FM700UUXDU 32\" 4K Ultra HD 60Hz 4ms Negru",
-"pret": 1608.01,
-"imagine": "http://www.itarena.ro/images/products/2026-05-12/original/517437_jpg.webp",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.itarena.ro%2Fmonitoare%2Fmonitor_samsung_smart_ls32fm700uuxdu_32_4k_ultra_hd_60hz_4ms_negru.html",
+"titlu": "Casti Gaming ASUS TUF Gaming H3 Gun Metal",
+"pret": 281.94,
+"imagine": "http://www.itarena.ro/images/products/2021-04-07/original/320465_jpg.webp",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.itarena.ro%2Fcasti_microfon%2Fcasti_gaming_asus_tuf_gaming_h3_gun_metal.html",
 "magazin": "itarena.ro",
-"id": "5sKru7dUm3Zv",
-"brand": "Samsung",
-"url_magazin": "https://www.itarena.ro/monitoare/monitor_samsung_smart_ls32fm700uuxdu_32_4k_ultra_hd_60hz_4ms_negru.html",
+"id": "w5WBDCBNCCev",
+"brand": "ASUS",
+"url_magazin": "https://www.itarena.ro/casti_microfon/casti_gaming_asus_tuf_gaming_h3_gun_metal.html",
 "pret_vechi": null,
-"verificat": "2026-11-14"
+"verificat": "2026-11-27"
 },
 {
-"titlu": "DL MONITOR 27 S2725QC 4K 3840 x 2160 DL MONITOR 27` S2725QC 4K 3840 x 2160",
-"pret": 1770.57,
-"imagine": "https://dacris.vteximg.com.br/arquivos/ids/1115726/4b1c47404653e739af362c739d37d40e.png.png?v=639303922527800000",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dacris.net%2Fs2725qc-s-dl-monitor-27--s2725qc-4k-3840-x-2160%2Fp%3FskuId%3D258879",
-"magazin": "dacris.net",
-"id": "cAjleQzP2kuE",
-"brand": "Dell",
-"url_magazin": "https://www.dacris.net/s2725qc-s-dl-monitor-27--s2725qc-4k-3840-x-2160/p?skuId=258879",
+"titlu": "Casti Gaming Logitech G335 Black",
+"pret": 316.61,
+"imagine": "http://www.itarena.ro/images/products/2021-12-21/original/345272_jpg.webp",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.itarena.ro%2Fcasti_microfon%2Fcasti_gaming_logitech_g335_black.html",
+"magazin": "itarena.ro",
+"id": "d3b985f0e",
+"brand": "Logitech",
+"url_magazin": "https://www.itarena.ro/casti_microfon/casti_gaming_logitech_g335_black.html",
 "pret_vechi": null,
-"verificat": "2026-11-17"
+"verificat": "2026-11-27"
 },
 {
-"titlu": "DL MONITOR 31.5 S3225QS 4K UHD 3840x216 DL MONITOR 31.5` S3225QS 4K UHD 3840x216",
-"pret": 1863.47,
-"imagine": "https://dacris.vteximg.com.br/arquivos/ids/1008532/DL-MONITOR-31-5-S3225QS-4K-UHD-3840x216-0.jpg?v=638963014605900000",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dacris.net%2Fs3225qs-dl-monitor-31-5--s3225qs-4k-uhd-3840x216%2Fp%3FskuId%3D233742",
-"magazin": "dacris.net",
-"id": "bYGcvszPvR89",
-"brand": "Dell",
-"url_magazin": "https://www.dacris.net/s3225qs-dl-monitor-31-5--s3225qs-4k-uhd-3840x216/p?skuId=233742",
+"titlu": "Casti Gaming Logitech Astro A10 Black",
+"pret": 322.68,
+"imagine": "http://www.itarena.ro/images/products/2023-11-28/original/425143_jpg.webp",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.itarena.ro%2Fcasti_microfon%2Fcasti_gaming_logitech_astro_a10_black.html",
+"magazin": "itarena.ro",
+"id": "2ca214a98",
+"brand": "Logitech",
+"url_magazin": "https://www.itarena.ro/casti_microfon/casti_gaming_logitech_astro_a10_black.html",
 "pret_vechi": null,
-"verificat": "2026-11-14"
+"verificat": "2026-11-27"
 },
 {
-"titlu": "DL MONITOR 31.5 S3225QC 4K UHD 3840x2160",
-"pret": 3051.58,
-"imagine": "https://dacris.vteximg.com.br/arquivos/ids/1071224/overlay_dd1fd0667576d5444d1982399269e166.jpeg.jpg?v=639150088699330000",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dacris.net%2Fs3225qc-dl-monitor-31-5-s3225qc-4k-uhd-3840x2160%2Fp%3FskuId%3D248710",
+"titlu": "Casti Gaming Corsair VOID RGB ELITE, Sur",
+"pret": 377.77,
+"imagine": "https://dacris.vteximg.com.br/arquivos/ids/635071/Casti-Gaming-Corsair-VOID-RGB-ELITE-Sur-0.jpg?v=638962248477770000",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dacris.net%2Fca-9011203-eu-casti-gaming-corsair-void-rgb-elite--sur%2Fp%3FskuId%3D205418",
 "magazin": "dacris.net",
-"id": "N_ZQ2EA7H8CG",
-"brand": "Dell",
-"url_magazin": "https://www.dacris.net/s3225qc-dl-monitor-31-5-s3225qc-4k-uhd-3840x2160/p?skuId=248710",
+"id": "FaOvbPEykfW8",
+"brand": "Corsair",
+"url_magazin": "https://www.dacris.net/ca-9011203-eu-casti-gaming-corsair-void-rgb-elite--sur/p?skuId=205418",
 "pret_vechi": null,
-"verificat": "2026-11-17"
+"verificat": "2026-11-27"
 }
 ],
 "magazine": [
@@ -167,544 +178,95 @@
 "publicat": true
 },
 {
-"slug": "generator-curent",
-"tema": "scule",
-"tema_nume": "Scule și grădină",
-"titlu": "Generatoare de curent",
+"slug": "boxa-portabila",
+"tema": "boxe-bluetooth",
+"tema_nume": "Boxe",
+"titlu": "Boxe portabile",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-24",
+"actualizat": "2026-11-27",
 "feeduri": [
 {
-"id": 4679,
-"magazin": "albertool.com"
+"id": 1539,
+"magazin": "dwyn.ro"
 },
 {
-"id": 6119,
-"magazin": "infinity.ro"
-},
-{
-"id": 1096,
-"magazin": "evomag.ro"
-},
-{
-"id": 8570,
-"magazin": "atomico.ro"
-}
-],
-"produse": [
-{
-"titlu": "Generator de curent, Kraft&Dele, 3500W, 230V, cu ecran LCD, KD149",
-"pret": 1024.34,
-"imagine": "https://infinityro.vteximg.com.br/arquivos/ids/270577474/image-ab2011d0e9e948ba960d5acf3f465bd4.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Finfinity.ro%2Fgenerator-de-curent-kraft-dele-3500w-230v-cu-ecran-lcd-kd149-9036139%2Fp%3Futm_source%3D2performant",
-"magazin": "infinity.ro",
-"id": "j4scHb-N2EzK",
-"brand": "Kraft&Dele",
-"url_magazin": "https://infinity.ro/generator-de-curent-kraft-dele-3500w-230v-cu-ecran-lcd-kd149-9036139/p?utm_source=2performant",
-"pret_vechi": 1575.9,
-"verificat": "2026-11-24"
-},
-{
-"titlu": "Generator de curent, Kraft&Dele, pe benzina, tip invertor, 2000W, 230V, 4CP",
-"pret": 1939.13,
-"imagine": "https://infinityro.vteximg.com.br/arquivos/ids/270577703/image-658ef45bd4b946d1b179afaf624acb57.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Finfinity.ro%2Fgenerator-de-curent-kraft-dele-pe-benzina-tip-invertor-2000w-230v-4cp-9036165%2Fp%3Futm_source%3D2performant",
-"magazin": "infinity.ro",
-"id": "s8GFrtaqi5LE",
-"brand": "Kraft&Dele",
-"url_magazin": "https://infinity.ro/generator-de-curent-kraft-dele-pe-benzina-tip-invertor-2000w-230v-4cp-9036165/p?utm_source=2performant",
-"pret_vechi": 2281.33,
-"verificat": "2026-11-16"
-},
-{
-"titlu": "Generator de curent 5.5 kW, benzina BASIC LINE - Konner & Sohnen - KSB-6500C",
-"pret": 2370.0,
-"imagine": "https://c.cdnmp.net/917469284/p/l/0/generator-de-curent-5-5-kw-benzina-basic-line-konner-sohnen-ksb-6500c~8691500.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.albertool.com%2Fcumpara%2Fgenerator-de-curent-5-5-kw-benzina-basic-line-konner-sohnen-ksb-6500c-2328%3Futm_source%3Dportal%26utm_medium%3Dweb%26utm_campaign%3D2parale",
-"magazin": "albertool.com",
-"id": "DSNtkkqPeNO0",
-"brand": "Konner & Sohnen",
-"url_magazin": "https://www.albertool.com/cumpara/generator-de-curent-5-5-kw-benzina-basic-line-konner-sohnen-ksb-6500c-2328?utm_source=portal&utm_medium=web&utm_campaign=2parale",
-"pret_vechi": null,
-"verificat": "2026-11-24"
-},
-{
-"titlu": "Generator de curent GENMAC Click RG4000HO putere maxima 3,1 kW 230V motor Honda GP200",
-"pret": 3767.4,
-"imagine": "https://c.cdnmp.net/917469284/p/l/0/generator-de-curent-genmac-click-rg4000ho-putere-maxima-3-1-kw-230v~8830040.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.albertool.com%2Fcumpara%2Fgenerator-de-curent-genmac-click-rg4000ho-putere-maxima-3-1-kw-230v-24375%3Futm_source%3Dportal%26utm_medium%3Dweb%26utm_campaign%3D2parale",
-"magazin": "albertool.com",
-"id": "qOl64zsgOUgC",
-"brand": "Genmac",
-"url_magazin": "https://www.albertool.com/cumpara/generator-de-curent-genmac-click-rg4000ho-putere-maxima-3-1-kw-230v-24375?utm_source=portal&utm_medium=web&utm_campaign=2parale",
-"pret_vechi": null,
-"verificat": "2026-11-16"
-},
-{
-"titlu": "Generator de curent GENMAC Click RG5000HO putere maxima 4,6 kW 230V motor Honda GX270",
-"pret": 5672.2,
-"imagine": "https://c.cdnmp.net/917469284/p/l/9/generator-de-curent-genmac-click-rg5000ho-putere-maxima-4-6-kw-230v~8830049.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.albertool.com%2Fcumpara%2Fgenerator-de-curent-genmac-click-rg5000ho-putere-maxima-4-6-kw-230v-24378%3Futm_source%3Dportal%26utm_medium%3Dweb%26utm_campaign%3D2parale",
-"magazin": "albertool.com",
-"id": "KbNVR-F52xH-",
-"brand": "Genmac",
-"url_magazin": "https://www.albertool.com/cumpara/generator-de-curent-genmac-click-rg5000ho-putere-maxima-4-6-kw-230v-24378?utm_source=portal&utm_medium=web&utm_campaign=2parale",
-"pret_vechi": null,
-"verificat": "2026-11-16"
-}
-],
-"magazine": [
-"albertool.com",
-"infinity.ro"
-],
-"publicat": true
-},
-{
-"slug": "puzzle-1000-piese",
-"tema": "jucarii-copii",
-"tema_nume": "Jucării",
-"titlu": "Puzzle de 1000 de piese",
-"nota": null,
-"in_text": null,
-"actualizat": "2026-11-17",
-"feeduri": [
-{
-"id": 8767,
-"magazin": "trada.ro"
-},
-{
-"id": 1528,
-"magazin": "ookee.ro"
-},
-{
-"id": 9076,
-"magazin": "hobiktoys.ro"
-},
-{
-"id": 9441,
-"magazin": "infinity.ro"
-}
-],
-"produse": [
-{
-"titlu": "Puzzle Culorile Padurii, 1000 piese",
-"pret": 38.9,
-"imagine": "https://www.ookee.ro/417774-large_default/puzzle-culorile-padurii-1000-piese.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ookee.ro%2Fpuzzle%2F134500-puzzle-culorile-padurii-1000-piese-4823115901163.html",
-"magazin": "ookee.ro",
-"id": "VbvOnhO9IElu",
-"brand": "Dodo Toys",
-"url_magazin": "https://www.ookee.ro/puzzle/134500-puzzle-culorile-padurii-1000-piese-4823115901163.html",
-"pret_vechi": null,
-"verificat": "2026-11-17"
-},
-{
-"titlu": "Puzzle 1000 Piese pentru Adulti, Deico, Castelul Bran Iarna",
-"pret": 51.99,
-"imagine": "https://www.trada.ro/img/puzzle-1000-piese-pentru-adulti-deico-castelul-bran-iarna-146761html_tr-296476-large.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.trada.ro%2Fpuzzle-1000-piese-pentru-adulti-deico-castelul-bran-iarna-146761.html",
-"magazin": "trada.ro",
-"id": "3EIBv-vyDC_Z",
-"brand": "Deico",
-"url_magazin": "https://www.trada.ro/puzzle-1000-piese-pentru-adulti-deico-castelul-bran-iarna-146761.html",
-"pret_vechi": 60.45,
-"verificat": "2026-11-17"
-},
-{
-"titlu": "Puzzle 1000 Piese D-Toys, Bruegel cel Batran, Caderea lui Icarus",
-"pret": 56.99,
-"imagine": "https://www.trada.ro/img/puzzle-1000-piese-d-toys-bruegel-cel-batran-caderea-lui-icarus-146047html_tr-295205-large.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.trada.ro%2Fpuzzle-1000-piese-d-toys-bruegel-cel-batran-caderea-lui-icarus-146047.html",
-"magazin": "trada.ro",
-"id": "9-CocVlWL4o7",
-"brand": "D-Toys",
-"url_magazin": "https://www.trada.ro/puzzle-1000-piese-d-toys-bruegel-cel-batran-caderea-lui-icarus-146047.html",
-"pret_vechi": 66.27,
-"verificat": "2026-11-17"
-},
-{
-"titlu": "Puzzle Rotund 1000 Piese Zodiac Astrologie si Simboluri Astrale, Carton Premium, Diametru 68 cm, Antistres, 14 ani+",
-"pret": 76.11,
-"imagine": "https://infinityro.vteximg.com.br/arquivos/ids/275225518/image-a14c273ceea449d39683c8615294d090.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Finfinity.ro%2Fpuzzle-rotund-1000-piese-zodiac-astrologie-si-simboluri-astrale-carton-premium-diametru-68-cm-antistres-14-ani--9381417%2Fp%3Futm_source%3D2performant",
-"magazin": "infinity.ro",
-"id": "n21nNsUSmu3V",
-"brand": "Daemi",
-"url_magazin": "https://infinity.ro/puzzle-rotund-1000-piese-zodiac-astrologie-si-simboluri-astrale-carton-premium-diametru-68-cm-antistres-14-ani--9381417/p?utm_source=2performant",
-"pret_vechi": 89.54,
-"verificat": "2026-11-17"
-}
-],
-"magazine": [
-"infinity.ro",
-"ookee.ro",
-"trada.ro"
-],
-"publicat": true
-},
-{
-"slug": "puzzle-500-piese",
-"tema": "jucarii-copii",
-"tema_nume": "Jucării",
-"titlu": "Puzzle de 500 de piese",
-"nota": null,
-"in_text": null,
-"actualizat": "2026-11-18",
-"feeduri": [
-{
-"id": 1528,
-"magazin": "ookee.ro"
-},
-{
-"id": 3248,
+"id": 3250,
 "magazin": "carturesti.ro"
 },
 {
-"id": 2039,
-"magazin": "cartepedia.ro"
+"id": 3249,
+"magazin": "carturesti.ro"
 },
 {
-"id": 9441,
-"magazin": "infinity.ro"
+"id": 8937,
+"magazin": "dacris.net"
 }
 ],
 "produse": [
 {
-"titlu": "Puzzle Ravensburger Sistemul Solar 500 piese design nou",
-"pret": 35.98,
-"imagine": "https://www.ookee.ro/378349-large_default/puzzle-ravensburger-sistemul-solar-500-piese-design-nou.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ookee.ro%2Fpuzzle-ravensburger%2F125751-puzzle-ravensburger-sistemul-solar-500-piese-design-nou.html",
-"magazin": "ookee.ro",
-"id": "jkOmHROVr3RQ",
-"brand": "Ravensburger",
-"url_magazin": "https://www.ookee.ro/puzzle-ravensburger/125751-puzzle-ravensburger-sistemul-solar-500-piese-design-nou.html",
-"pret_vechi": 65.9,
-"verificat": "2026-11-14"
+"titlu": "Boxa portabila Akai ABTS-V5BL 3W, albstr",
+"pret": 84.78,
+"imagine": "https://dacris.vteximg.com.br/arquivos/ids/829744/Boxa-portabila-Akai-ABTS-V5BL-3W-albstr-0.jpg?v=638962931548330000",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dacris.net%2Fabts-v5bl-boxa-portabila-akai-abts-v5bl-3w--albstr%2Fp%3FskuId%3D229742",
+"magazin": "dacris.net",
+"id": "J0jElFNEZ8bZ",
+"brand": "Akai",
+"url_magazin": "https://www.dacris.net/abts-v5bl-boxa-portabila-akai-abts-v5bl-3w--albstr/p?skuId=229742",
+"pret_vechi": null,
+"verificat": "2026-11-19"
 },
 {
-"titlu": "Ravensburger - Puzzle Poneii din Hadlow 500 piese",
-"pret": 35.98,
-"imagine": "https://www.ookee.ro/373071-large_default/ravensburger-puzzle-poneii-din-hadlow-500-piese.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ookee.ro%2Fpuzzle%2F124769-ravensburger-puzzle-poneii-din-hadlow-500-piese.html",
-"magazin": "ookee.ro",
-"id": "5G19yVuWG8Se",
-"brand": "Ravensburger",
-"url_magazin": "https://www.ookee.ro/puzzle/124769-ravensburger-puzzle-poneii-din-hadlow-500-piese.html",
-"pret_vechi": 65.9,
-"verificat": "2026-11-14"
+"titlu": "Boxa portabila Akai ABTS-12C 5W, negru",
+"pret": 113.15,
+"imagine": "https://dacris.vteximg.com.br/arquivos/ids/837530/Boxa-portabila-Akai-ABTS-12C-5W-negru-0.jpg?v=638962152044800000",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dacris.net%2Fabts-12c-boxa-portabila-akai-abts-12c-5w--negru%2Fp%3FskuId%3D12772",
+"magazin": "dacris.net",
+"id": "SjqzPmHZ-vzU",
+"brand": "Akai",
+"url_magazin": "https://www.dacris.net/abts-12c-boxa-portabila-akai-abts-12c-5w--negru/p?skuId=12772",
+"pret_vechi": null,
+"verificat": "2026-11-19"
 },
 {
-"titlu": "Puzzle Ravensburger Cabana 500 piese design nou",
-"pret": 35.98,
-"imagine": "https://www.ookee.ro/330599-large_default/puzzle-ravensburger-cabana-500-piese-design-nou.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ookee.ro%2Fpuzzle-ravensburger%2F119400-puzzle-ravensburger-cabana-500-piese-design-nou.html",
-"magazin": "ookee.ro",
-"id": "679f8c93f",
-"brand": "Ravensburger",
-"url_magazin": "https://www.ookee.ro/puzzle-ravensburger/119400-puzzle-ravensburger-cabana-500-piese-design-nou.html",
-"pret_vechi": 65.9,
-"verificat": "2026-11-14"
+"titlu": "Boxa portabila Akai BT 5.0, putere 50W",
+"pret": 244.25,
+"imagine": "https://dacris.vteximg.com.br/arquivos/ids/738363/Boxa-portabila-Akai-BT-5-0-putere-50W-0.jpg?v=638962881900770000",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dacris.net%2Fabts-v20-boxa-portabila-akai-bt-5-0--putere-50w%2Fp%3FskuId%3D227782",
+"magazin": "dacris.net",
+"id": "T5dPvz6mLZJN",
+"brand": "Akai",
+"url_magazin": "https://www.dacris.net/abts-v20-boxa-portabila-akai-bt-5-0--putere-50w/p?skuId=227782",
+"pret_vechi": null,
+"verificat": "2026-11-19"
 },
 {
-"titlu": "Puzzle Ravensburger animale colorate cameleon 500 piese",
-"pret": 35.98,
-"imagine": "https://www.ookee.ro/365898-large_default/puzzle-ravensburger-animale-colorate-cameleon-500-piese.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ookee.ro%2Fpuzzle-ravensburger%2F123240-puzzle-ravensburger-animale-colorate-cameleon-500-piese.html",
-"magazin": "ookee.ro",
-"id": "a63201ff6",
-"brand": "Ravensburger",
-"url_magazin": "https://www.ookee.ro/puzzle-ravensburger/123240-puzzle-ravensburger-animale-colorate-cameleon-500-piese.html",
-"pret_vechi": 65.9,
-"verificat": "2026-11-14"
+"titlu": "Boxa portabila Akai ABTS-808L 10W, negru",
+"pret": 267.88,
+"imagine": "https://dacris.vteximg.com.br/arquivos/ids/889856/Boxa-portabila-Akai-ABTS-808L-10W-negru-0.jpg?v=638962152059970000",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dacris.net%2Fabts-808l-boxa-portabila-akai-abts-808l-10w--negru%2Fp%3FskuId%3D12775",
+"magazin": "dacris.net",
+"id": "0g9xKU32TeNf",
+"brand": "Akai",
+"url_magazin": "https://www.dacris.net/abts-808l-boxa-portabila-akai-abts-808l-10w--negru/p?skuId=12775",
+"pret_vechi": null,
+"verificat": "2026-11-27"
 },
 {
-"titlu": "Puzzle Ravensburger animale colorate Peste leu rosu 500 piese",
-"pret": 35.98,
-"imagine": "https://www.ookee.ro/365904-large_default/puzzle-ravensburger-animale-colorate-peste-leu-rosu-500-piese.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ookee.ro%2Fpuzzle-ravensburger%2F123241-puzzle-ravensburger-animale-colorate-peste-leu-rosu-500-piese.html",
-"magazin": "ookee.ro",
-"id": "2f2699a98",
-"brand": "Ravensburger",
-"url_magazin": "https://www.ookee.ro/puzzle-ravensburger/123241-puzzle-ravensburger-animale-colorate-peste-leu-rosu-500-piese.html",
-"pret_vechi": 65.9,
-"verificat": "2026-11-14"
-},
-{
-"titlu": "Puzzle Ravensburger animale colorate fluture 500 piese",
-"pret": 35.98,
-"imagine": "https://www.ookee.ro/365910-large_default/puzzle-ravensburger-animale-colorate-fluture-500-piese.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ookee.ro%2Fpuzzle-ravensburger%2F123242-puzzle-ravensburger-animale-colorate-fluture-500-piese.html",
-"magazin": "ookee.ro",
-"id": "c82245920",
-"brand": "Ravensburger",
-"url_magazin": "https://www.ookee.ro/puzzle-ravensburger/123242-puzzle-ravensburger-animale-colorate-fluture-500-piese.html",
-"pret_vechi": 65.9,
-"verificat": "2026-11-14"
-},
-{
-"titlu": "Puzzle Ravensburger Puterea Naturii Calatorie Epica 500 piese",
-"pret": 35.98,
-"imagine": "https://www.ookee.ro/366060-large_default/puzzle-ravensburger-puterea-naturii-calatorie-epica-500-piese.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ookee.ro%2Fpuzzle-ravensburger%2F123268-puzzle-ravensburger-puterea-naturii-calatorie-epica-500-piese.html",
-"magazin": "ookee.ro",
-"id": "b8b1e099e",
-"brand": "Ravensburger",
-"url_magazin": "https://www.ookee.ro/puzzle-ravensburger/123268-puzzle-ravensburger-puterea-naturii-calatorie-epica-500-piese.html",
-"pret_vechi": 65.9,
-"verificat": "2026-11-14"
-},
-{
-"titlu": "Puzzle cerc Ravensburger Barbie 500 piese",
-"pret": 38.75,
-"imagine": "https://www.ookee.ro/366800-large_default/puzzle-cerc-ravensburger-barbie-500-piese.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ookee.ro%2Fpuzzle-ravensburger%2F123425-puzzle-cerc-ravensburger-barbie-500-piese.html",
-"magazin": "ookee.ro",
-"id": "8dc69c8de",
-"brand": "Ravensburger",
-"url_magazin": "https://www.ookee.ro/puzzle-ravensburger/123425-puzzle-cerc-ravensburger-barbie-500-piese.html",
-"pret_vechi": 71.9,
-"verificat": "2026-11-14"
-},
-{
-"titlu": "Puzzle cu Balerina Vintage, 500 de piese, Multicolor",
-"pret": 58.64,
-"imagine": "https://infinityro.vteximg.com.br/arquivos/ids/274907627/0.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Finfinity.ro%2Fpuzzle-cu-balerina-vintage-500-de-piese-multicolor-9360574%2Fp%3Futm_source%3D2performant",
-"magazin": "infinity.ro",
-"id": "XMw2fRudEqtw",
-"brand": "OEM",
-"url_magazin": "https://infinity.ro/puzzle-cu-balerina-vintage-500-de-piese-multicolor-9360574/p?utm_source=2performant",
-"pret_vechi": 78.19,
-"verificat": "2026-11-14"
+"titlu": "Boxa portabila Akai ABTS-50 30 W, negru",
+"pret": 283.65,
+"imagine": "https://dacris.vteximg.com.br/arquivos/ids/879811/Boxa-portabila-Akai-ABTS-50-30-W-negru-0.jpg?v=638962185737800000",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dacris.net%2Fabts-50-boxa-portabila-akai-abts-50-30-w--negru%2Fp%3FskuId%3D193919",
+"magazin": "dacris.net",
+"id": "hJNR7577a1YM",
+"brand": "Akai",
+"url_magazin": "https://www.dacris.net/abts-50-boxa-portabila-akai-abts-50-30-w--negru/p?skuId=193919",
+"pret_vechi": null,
+"verificat": "2026-11-27"
 }
 ],
 "magazine": [
-"infinity.ro",
-"ookee.ro"
-],
-"publicat": true
-},
-{
-"slug": "masina-cu-telecomanda",
-"tema": "jucarii-copii",
-"tema_nume": "Jucării",
-"titlu": "Mașini cu telecomandă",
-"nota": null,
-"in_text": null,
-"actualizat": "2026-11-18",
-"feeduri": [
-{
-"id": 8740,
-"magazin": "timebox.ro"
-},
-{
-"id": 5171,
-"magazin": "bazarulonline.ro"
-},
-{
-"id": 1528,
-"magazin": "ookee.ro"
-},
-{
-"id": 9367,
-"magazin": "infinity.ro"
-}
-],
-"produse": [
-{
-"titlu": "Masina Cu Telecomanda Porsche Macan Turbo Rosu Cu Scara 1 La 24",
-"pret": 116.9,
-"imagine": "https://www.ookee.ro/422552-large_default/masina-cu-telecomanda-porsche-macan-turbo-rosu-cu-scara-1-la-24.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ookee.ro%2Fradiocomandate%2F135514-masina-cu-telecomanda-porsche-macan-turbo-rosu-cu-scara-1-la-24-6427037020339.html",
-"magazin": "ookee.ro",
-"id": "ZzF6JhTBxvu3",
-"brand": "Rastar",
-"url_magazin": "https://www.ookee.ro/radiocomandate/135514-masina-cu-telecomanda-porsche-macan-turbo-rosu-cu-scara-1-la-24-6427037020339.html",
-"pret_vechi": null,
-"verificat": "2026-11-14"
-},
-{
-"titlu": "Masina Cu Telecomanda Mercedes-benz G63 Alb Scara 1 La 24",
-"pret": 116.9,
-"imagine": "https://www.ookee.ro/422692-large_default/masina-cu-telecomanda-mercedes-benz-g63-alb-scara-1-la-24.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ookee.ro%2Fradiocomandate%2F135534-masina-cu-telecomanda-mercedes-benz-g63-alb-scara-1-la-24-6427037025266.html",
-"magazin": "ookee.ro",
-"id": "wZxg_n-KJZAW",
-"brand": "Rastar",
-"url_magazin": "https://www.ookee.ro/radiocomandate/135534-masina-cu-telecomanda-mercedes-benz-g63-alb-scara-1-la-24-6427037025266.html",
-"pret_vechi": null,
-"verificat": "2026-11-14"
-},
-{
-"titlu": "Masina Cu Telecomanda Bmw I5 Rosu Scara 1 La 24",
-"pret": 116.9,
-"imagine": "https://www.ookee.ro/422327-large_default/masina-cu-telecomanda-bmw-i5-rosu-scara-1-la-24.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ookee.ro%2Fradiocomandate%2F135477-masina-cu-telecomanda-bmw-i5-rosu-scara-1-la-24-6427037051289.html",
-"magazin": "ookee.ro",
-"id": "4zSaJZlAVlkA",
-"brand": "Rastar",
-"url_magazin": "https://www.ookee.ro/radiocomandate/135477-masina-cu-telecomanda-bmw-i5-rosu-scara-1-la-24-6427037051289.html",
-"pret_vechi": null,
-"verificat": "2026-11-14"
-},
-{
-"titlu": "Masina Cu Telecomanda Porsche Macan Turbo Galben Cu Scara 1 La 24",
-"pret": 116.9,
-"imagine": "https://www.ookee.ro/422546-large_default/masina-cu-telecomanda-porsche-macan-turbo-galben-cu-scara-1-la-24.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ookee.ro%2Fradiocomandate%2F135513-masina-cu-telecomanda-porsche-macan-turbo-galben-cu-scara-1-la-24-6427037020322.html",
-"magazin": "ookee.ro",
-"id": "1t26t4D-e0aW",
-"brand": "Rastar",
-"url_magazin": "https://www.ookee.ro/radiocomandate/135513-masina-cu-telecomanda-porsche-macan-turbo-galben-cu-scara-1-la-24-6427037020322.html",
-"pret_vechi": null,
-"verificat": "2026-11-14"
-},
-{
-"titlu": "Masina cu telecomanda bentley continental gt negru cu scara 1 la 24",
-"pret": 119.39,
-"imagine": "https://infinityro.vteximg.com.br/arquivos/ids/266341024/image-ed90b245a03f443f88fe59e2430aa15d.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Finfinity.ro%2Fmasina-cu-telecomanda-bentley-continental-gt-negru-cu-scara-1-la-24-1139674%2Fp%3Futm_source%3D2performant",
-"magazin": "infinity.ro",
-"id": "-V-PLRXO8LE_",
-"brand": "Rastar 1:24",
-"url_magazin": "https://infinity.ro/masina-cu-telecomanda-bentley-continental-gt-negru-cu-scara-1-la-24-1139674/p?utm_source=2performant",
-"pret_vechi": null,
-"verificat": "2026-11-14"
-}
-],
-"magazine": [
-"infinity.ro",
-"ookee.ro"
-],
-"publicat": true
-},
-{
-"slug": "papusa-barbie",
-"tema": "jucarii-copii",
-"tema_nume": "Jucării",
-"titlu": "Păpuși Barbie",
-"nota": null,
-"in_text": null,
-"actualizat": "2026-11-18",
-"feeduri": [
-{
-"id": 8314,
-"magazin": "atelierulfamiliei.ro"
-},
-{
-"id": 9441,
-"magazin": "infinity.ro"
-},
-{
-"id": 5887,
-"magazin": "grupdzc.ro"
-},
-{
-"id": 6851,
-"magazin": "grupdzc.ro"
-}
-],
-"produse": [
-{
-"titlu": "Papusa barbie blonda cu costum de baie roz la piscina",
-"pret": 41.08,
-"imagine": "https://infinityro.vteximg.com.br/arquivos/ids/269763873/image-58ebe3ae0ef34bcda7123e302c3d733c.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Finfinity.ro%2Fpapusa-barbie-blonda-cu-costum-de-baie-roz-la-piscina-1815683%2Fp%3Futm_source%3D2performant",
-"magazin": "infinity.ro",
-"id": "NjXShSK7Vr_J",
-"brand": "BARBIE - I can be",
-"url_magazin": "https://infinity.ro/papusa-barbie-blonda-cu-costum-de-baie-roz-la-piscina-1815683/p?utm_source=2performant",
-"pret_vechi": null,
-"verificat": "2026-11-14"
-},
-{
-"titlu": "Papusa barbie bruneta cu costum de baie in doua culori",
-"pret": 47.27,
-"imagine": "https://infinityro.vteximg.com.br/arquivos/ids/269755636/image-23b541584e6f4db3b101858719a8033e.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Finfinity.ro%2Fpapusa-barbie-bruneta-cu-costum-de-baie-in-doua-culori-1811482%2Fp%3Futm_source%3D2performant",
-"magazin": "infinity.ro",
-"id": "msqErxz3fhEI",
-"brand": "BARBIE - I can be",
-"url_magazin": "https://infinity.ro/papusa-barbie-bruneta-cu-costum-de-baie-in-doua-culori-1811482/p?utm_source=2performant",
-"pret_vechi": null,
-"verificat": "2026-11-14"
-},
-{
-"titlu": "Barbie papusa cariere asistenta medicala",
-"pret": 81.54,
-"imagine": "https://infinityro.vteximg.com.br/arquivos/ids/1653245/image-6cffd7e631d743dd9ef0b9816faa49f6.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Finfinity.ro%2Fbarbie-papusa-cariere-asistenta-medicala-380606%2Fp%3Futm_source%3D2performant",
-"magazin": "infinity.ro",
-"id": "H2v2x0mieEax",
-"brand": "OEM",
-"url_magazin": "https://infinity.ro/barbie-papusa-cariere-asistenta-medicala-380606/p?utm_source=2performant",
-"pret_vechi": 95.93,
-"verificat": "2026-11-14"
-},
-{
-"titlu": "Papusa Barbie pop star cu microfon, varsta 3+ ani",
-"pret": 88.2,
-"imagine": "https://infinityro.vteximg.com.br/arquivos/ids/274037458/3.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Finfinity.ro%2Fpapusa-barbie-pop-star-cu-microfon-varsta-3-ani-9318049%2Fp%3Futm_source%3D2performant",
-"magazin": "infinity.ro",
-"id": "4d2ngb61_KiL",
-"brand": "Barbie",
-"url_magazin": "https://infinity.ro/papusa-barbie-pop-star-cu-microfon-varsta-3-ani-9318049/p?utm_source=2performant",
-"pret_vechi": 131.16,
-"verificat": "2026-11-14"
-},
-{
-"titlu": "Papusa barbie fashionista blonda",
-"pret": 96.33,
-"imagine": "https://infinityro.vteximg.com.br/arquivos/ids/266357587/image-559fb08866e54decb99281dc90151e2b.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Finfinity.ro%2Fpapusa-barbie-fashionista-blonda-1143739%2Fp%3Futm_source%3D2performant",
-"magazin": "infinity.ro",
-"id": "gFjlKjZDejNE",
-"brand": "BARBIE - Fashionistas",
-"url_magazin": "https://infinity.ro/papusa-barbie-fashionista-blonda-1143739/p?utm_source=2performant",
-"pret_vechi": 113.33,
-"verificat": "2026-11-14"
-},
-{
-"titlu": "Papusa barbie fashionista blonda cu parul prin in coada si fusta roz",
-"pret": 96.33,
-"imagine": "https://infinityro.vteximg.com.br/arquivos/ids/266357657/image-3ceac4c28b3541648ddb7f557f16b80e.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Finfinity.ro%2Fpapusa-barbie-fashionista-blonda-cu-parul-prin-in-coada-si-fusta-roz-1143755%2Fp%3Futm_source%3D2performant",
-"magazin": "infinity.ro",
-"id": "nk_rNRNOhpvz",
-"brand": "BARBIE - Fashionistas",
-"url_magazin": "https://infinity.ro/papusa-barbie-fashionista-blonda-cu-parul-prin-in-coada-si-fusta-roz-1143755/p?utm_source=2performant",
-"pret_vechi": 113.33,
-"verificat": "2026-11-14"
-},
-{
-"titlu": "Papusa barbie fashionista bruneta cu salopeta verde",
-"pret": 96.33,
-"imagine": "https://infinityro.vteximg.com.br/arquivos/ids/266358390/image-71703d92d0754b90a45751d46772bac4.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Finfinity.ro%2Fpapusa-barbie-fashionista-bruneta-cu-salopeta-verde-1143910%2Fp%3Futm_source%3D2performant",
-"magazin": "infinity.ro",
-"id": "Aw7x8t77wvo9",
-"brand": "BARBIE - Fashionistas",
-"url_magazin": "https://infinity.ro/papusa-barbie-fashionista-bruneta-cu-salopeta-verde-1143910/p?utm_source=2performant",
-"pret_vechi": 113.33,
-"verificat": "2026-11-14"
-},
-{
-"titlu": "Papusa barbie fashionista blonda cu aparat dentar",
-"pret": 102.42,
-"imagine": "https://infinityro.vteximg.com.br/arquivos/ids/269760452/image-6004c58e62874a76b02dc574aef1fd9f.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Finfinity.ro%2Fpapusa-barbie-fashionista-blonda-cu-aparat-dentar-1813889%2Fp%3Futm_source%3D2performant",
-"magazin": "infinity.ro",
-"id": "zRG4yxos1TZu",
-"brand": "BARBIE - Fashionistas",
-"url_magazin": "https://infinity.ro/papusa-barbie-fashionista-blonda-cu-aparat-dentar-1813889/p?utm_source=2performant",
-"pret_vechi": null,
-"verificat": "2026-11-14"
-}
-],
-"magazine": [
-"infinity.ro"
+"dacris.net"
 ],
 "publicat": true
 }

@@ -31,19 +31,14 @@
       "partener": false
     },
     "stats2": {
-      "promotii_active": 1,
+      "promotii_active": 0,
       "coduri": "—",
       "logo": "https://img.2performant.com/system/paperclip/campaign_logos/pics/2561/medium/2561.png",
       "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fanswear.ro",
       "partener": true
     },
     "promo1": [],
-    "promo2": [
-      {
-        "nume": "Magic Black Friday",
-        "cod_cupon": ""
-      }
-    ],
+    "promo2": [],
     "faq": [
       {
         "q": "Care este mai bun, Fashiondays sau Answear?",
@@ -55,7 +50,7 @@
       },
       {
         "q": "Are Answear coduri de reducere active?",
-        "a": "Da, Answear are 1 ofertă activă pe AmCupon.ro în noiembrie 2026. Ofertele se actualizează automat de trei ori pe zi."
+        "a": "Momentan nu, Answear are 0 oferte active pe AmCupon.ro în noiembrie 2026. Ofertele se actualizează automat de trei ori pe zi."
       },
       {
         "q": "Unde găsesc cupoane pentru Fashiondays și Answear?",
@@ -86,7 +81,7 @@
     "verdict_m2": "Alege Carturesti dacă vrei să vezi cărțile și în librăriile lor fizice.",
     "stats1": {
       "promotii_active": 1,
-      "coduri": "1 cod",
+      "coduri": "—",
       "logo": "https://img.2performant.com/system/paperclip/campaign_logos/pics/9868/medium/9868.gif",
       "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.libris.ro",
       "partener": true
@@ -100,8 +95,8 @@
     },
     "promo1": [
       {
-        "nume": "Cupon ACTIV! -20% la orice* Află codul »",
-        "cod_cupon": "LIB20CITESC"
+        "nume": "Transportul? GRATUIT peste 90 lei. Promoțiile lunii? Pe final»",
+        "cod_cupon": ""
       }
     ],
     "promo2": [],
@@ -288,7 +283,7 @@
     "verdict_m1": "Alege Noriel pentru jucării, jocuri de societate și cadouri pentru copii.",
     "verdict_m2": "Alege Decathlon pentru echipament sportiv pentru copii și adulți.",
     "stats1": {
-      "promotii_active": 3,
+      "promotii_active": 4,
       "coduri": "—",
       "logo": "https://img.2performant.com/system/paperclip/campaign_logos/pics/7926/medium/7926.png",
       "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fnoriel.ro%2F",
@@ -323,7 +318,7 @@
       },
       {
         "q": "Are Noriel coduri de reducere active?",
-        "a": "Da, Noriel are 3 oferte active pe AmCupon.ro în noiembrie 2026. Ofertele se actualizează automat de trei ori pe zi."
+        "a": "Da, Noriel are 4 oferte active pe AmCupon.ro în noiembrie 2026. Ofertele se actualizează automat de trei ori pe zi."
       },
       {
         "q": "Are Decathlon coduri de reducere active?",
@@ -358,7 +353,7 @@
     "verdict_m2": "Alege Elefant dacă vrei să comanzi și alte produse împreună cu cărțile.",
     "stats1": {
       "promotii_active": 1,
-      "coduri": "1 cod",
+      "coduri": "—",
       "logo": "https://img.2performant.com/system/paperclip/campaign_logos/pics/9868/medium/9868.gif",
       "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.libris.ro",
       "partener": true
@@ -372,8 +367,8 @@
     },
     "promo1": [
       {
-        "nume": "Cupon ACTIV! -20% la orice* Află codul »",
-        "cod_cupon": "LIB20CITESC"
+        "nume": "Transportul? GRATUIT peste 90 lei. Promoțiile lunii? Pe final»",
+        "cod_cupon": ""
       }
     ],
     "promo2": [],
