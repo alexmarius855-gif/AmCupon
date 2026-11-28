@@ -18,7 +18,7 @@ function cuReducereaMaximaPrima<T extends PromotieCupon>(lista: T[]): { lista: T
 }
 import BannerAd2P from "../../components/BannerAd2P";
 import RedirectModal from "../../components/RedirectModal";
-import { useCopyCod } from "../../hooks/useCopyCod";
+import { useCopyCod } from "@/app/_comun/useCopyCod";
 import VotCupon, { hashCupon } from "../../components/VotCupon";
 import { linkAfiliat, linkPromotie } from "@/lib/linkMagazin";
 import { numeAfisat } from "@/lib/numeMagazin";

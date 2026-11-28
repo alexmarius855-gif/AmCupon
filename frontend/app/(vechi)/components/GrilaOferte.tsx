@@ -3,7 +3,7 @@
 import { useCallback, useState } from "react";
 import CuponCard from "./CuponCard";
 import RedirectModal from "./RedirectModal";
-import { useCopyCod } from "../hooks/useCopyCod";
+import { useCopyCod } from "@/app/_comun/useCopyCod";
 import { trackAfiliat } from "@/lib/trackAfiliat";
 import type { FiltruAcasa } from "@/lib/oferteAcasa";
 import type { GrilaDate } from "@/lib/grilaOferte";

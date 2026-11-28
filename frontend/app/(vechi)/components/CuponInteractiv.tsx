@@ -13,7 +13,7 @@
 
 import { useCallback, useState } from "react";
 import CuponCard from "./CuponCard";
-import { useCopyCod } from "../hooks/useCopyCod";
+import { useCopyCod } from "@/app/_comun/useCopyCod";
 import type { PromotieCupon } from "@/lib/oferta";
 import { trackAfiliat } from "@/lib/trackAfiliat";
 

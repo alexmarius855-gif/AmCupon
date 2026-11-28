@@ -3,7 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import { Clock, Flame, Truck, Heart, Copy } from "lucide-react";
-import { useCopyCod } from "../hooks/useCopyCod";
+import { useCopyCod } from "@/app/_comun/useCopyCod";
 import { confetti } from "@/lib/confetti";
 import RedirectModal from "./RedirectModal";
 import { calculateDealScore, DEAL_SCORE_VISIBLE_THRESHOLD } from "@/lib/dealScore";

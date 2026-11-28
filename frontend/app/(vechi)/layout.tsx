@@ -5,8 +5,8 @@ import dynamic from "next/dynamic";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 // GoogleAnalytics mutat in ConsentAnalytics (conditional pe cookie consent)
-import AffiliateScript from "./components/AffiliateScript";
-import ConsentAnalytics from "./components/ConsentAnalytics";
+import AffiliateScript from "@/app/_comun/AffiliateScript";
+import ConsentAnalytics from "@/app/_comun/ConsentAnalytics";
 
 // NewsletterPopup randeaza null pana la timer/scroll/exit-intent — JS-ul lui nu trebuie sa faca
 // parte din bundle-ul initial pe cele 2600+ pagini. CookieBanner e tot incarcat separat, dar din
@@ -22,7 +22,7 @@ import fs from "fs";
 import path from "path";
 import { MAGAZINE_POPULARE } from "@/lib/magazinePopulare";
 import SearchModal from "./components/SearchModal";
-import AffiliateClickTracker from "./components/AffiliateClickTracker";
+import AffiliateClickTracker from "@/app/_comun/AffiliateClickTracker";
 import "./globals.css";
 import AnuntSite from "./components/AnuntSite";
 import Aparitii from "./components/Aparitii";
