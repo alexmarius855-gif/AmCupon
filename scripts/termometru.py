@@ -14,17 +14,27 @@ VARIANTA: cheia istoricului taie parametrii adresei, deci variantele aceluiasi p
 Semnul `varianta` = adresa are parametri de varianta, imaginea sau adresa spun mostra/tester, sau ultimul salt
 e exact jumatate/dublu ori peste de 3 ori. Cu el, site-ul arata bara, dar NU spune „reducere reala”.
 
-INTRARE:  data/istoric-preturi.json, frontend/public/criterii.json (produsele publicate pe /alege),
+ISTORICUL /alege (28.11.2026): produsele de pe /alege vin din cautarea in feed-urile 2Performant, nu din
+products.json, deci istoricul general le avea pe 2 din 39 (24.11). Aici se pastreaza separat, in
+data/istoric-alege.json, DOAR preturile confirmate pe pagina magazinului, cu ziua confirmarii (`verificat`), nu
+ziua rularii: un pret confirmat acum doua zile nu e „pretul de azi". Cheia e adresa INTREAGA (cu `?skuId=`), ca
+variantele sa nu se amestece. Fisier separat ca sa nu schimbe cifrele de ansamblu de pe /reduceri-reale si din
+studiul Black Friday, care numara istoricul general.
+
+INTRARE:  data/istoric-preturi.json, data/criterii-stare.json (toti candidatii /alege, pentru istoric),
+          frontend/public/criterii.json (produsele publicate pe /alege),
           frontend/public/scaderi-pret.json (/reduceri-reale), frontend/public/products.json (adresa originala).
 IESIRE:   frontend/public/termometru.json — {"produse": {<adresa exact ca in fisierul paginii>: {...}}}.
           Cheia e sirul din fisierul paginii (url_magazin la /alege, url la /reduceri-reale), ca site-ul sa nu
           refaca hash-ul (URL() din JavaScript codifica altfel caracterele ne-ASCII decat urlsplit din Python).
+          data/istoric-alege.json — istoricul preturilor confirmate pe /alege (intrare si iesire).
 
 Rulare:  python termometru.py          # scrie fisierul
          python termometru.py --test   # verificari care trebuie sa poata pica
 """
 from __future__ import annotations
 
+import hashlib
 import json
 import os
 import re
@@ -41,6 +51,9 @@ CRITERII = os.path.join(PUBLIC, "criterii.json")
 SCADERI = os.path.join(PUBLIC, "scaderi-pret.json")
 PRODUSE = os.path.join(PUBLIC, "products.json")
 IESIRE = os.path.join(PUBLIC, "termometru.json")
+STARE_ALEGE = os.path.join(ROOT, "data", "criterii-stare.json")
+ISTORIC_ALEGE = os.path.join(ROOT, "data", "istoric-alege.json")
+PASTRARE_ALEGE = 120  # zile fara nicio confirmare dupa care un produs iese din istoricul /alege
 
 SERIE_ZILE = 45  # cat istoric trimitem pentru linia mica de pe bon (doar schimbarile)
 RAPORT_ABSURD = 3.0
@@ -101,26 +114,83 @@ def fereastra(e: dict, azi: str) -> tuple[float | None, float | None, int, list]
     return min(candidati), max(candidati), acoperire, [[zi, round(float(pr), 2)] for zi, pr in serie]
 
 
-def intrare(url_pagina: str, url_original: str, istoric: dict, azi: str, extra_text: str = "") -> dict | None:
-    k = cheie({"url_original": url_original})
-    if not k or k not in istoric:
-        return None
-    mn, mx, acop, serie = fereastra(istoric[k], azi)
+def cheie_alege(url: str) -> str:
+    """Adresa intreaga, cu parametri (fara fragment): `?skuId=1` si `?skuId=2` raman produse diferite."""
+    s = urlsplit((url or "").strip())
+    if not s.netloc:
+        return ""
+    baza = f"{s.netloc.lower()}{s.path.rstrip('/')}" + (f"?{s.query}" if s.query else "")
+    return hashlib.sha1(baza.encode("utf-8")).hexdigest()[:16]
+
+
+def inregistreaza_alege(istoric: dict, stare: dict, azi: str) -> int:
+    """Adauga preturile confirmate pe pagina magazinului, la ZIUA CONFIRMARII. Intoarce cate puncte noi au intrat."""
+    noi = 0
+    for c in stare.get("criterii") or []:
+        for p in c.get("produse") or []:
+            zi = (p.get("verificat") or "")[:10]
+            k = cheie_alege(p.get("url_magazin") or "")
+            try:
+                v = round(float(p.get("pret")), 2)
+            except (TypeError, ValueError):
+                continue
+            if not k or len(zi) != 10 or zi > azi or v <= 0:
+                continue
+            e = istoric.setdefault(k, {"p": [], "v": zi})
+            e["v"] = max(e.get("v") or "", zi)
+            puncte = e["p"]
+            if puncte and zi < puncte[-1][0]:
+                continue  # confirmare mai veche decat ultima pastrata: nu rescriem trecutul
+            if puncte and puncte[-1][0] == zi:
+                puncte[-1][1] = min(puncte[-1][1], v)  # acelasi produs pe doua pagini /alege, in aceeasi zi
+                continue
+            if not puncte or puncte[-1][1] != v:
+                puncte.append([zi, v])
+                noi += 1
+    limita = (date.fromisoformat(azi) - timedelta(days=PASTRARE_ALEGE)).isoformat()
+    for k in [k for k, e in istoric.items() if (e.get("v") or "") < limita]:
+        del istoric[k]
+    return noi
+
+
+def din_inregistrare(rec: dict, url_original: str, azi: str, extra_text: str = "",
+                     cheie_cu_parametri: bool = False) -> dict | None:
+    """`cheie_cu_parametri`: istoricul /alege pastreaza adresa intreaga, deci acolo un `?skuId=` nu amesteca
+    variante si nu e motiv de tacere; in istoricul general (cheia fara parametri) este."""
+    mn, mx, acop, serie = fereastra(rec, azi)
     if mn is None:
         return None
-    varianta = (are_parametri_varianta(url_original) or bool(SEMN_MOSTRA.search(url_original))
-                or bool(SEMN_MOSTRA.search(extra_text or "")) or salt_suspect(istoric[k].get("p") or []))
+    varianta = ((not cheie_cu_parametri and are_parametri_varianta(url_original)) or bool(SEMN_MOSTRA.search(url_original))
+                or bool(SEMN_MOSTRA.search(extra_text or "")) or salt_suspect(rec.get("p") or []))
     return {"min": round(float(mn), 2), "max": round(float(mx), 2), "acop": acop, "serie": serie, "varianta": varianta}
 
 
-def construieste(istoric: dict, criterii: dict, scaderi: dict, produse: list, azi: str) -> dict:
+def intrare(url_pagina: str, url_original: str, istoric: dict, azi: str, extra_text: str = "",
+            istoric_alege: dict | None = None) -> dict | None:
+    """Termometrul unui produs. Pe /alege, intai preturile confirmate la magazin (istoricul /alege), daca acopera
+    destule zile: pretul de azi de pe pagina e tot unul confirmat, deci comparam aceeasi sursa. Altfel, istoricul
+    general (preturile din feed), cu acoperirea cea mai lunga."""
+    alege = None
+    if istoric_alege is not None:
+        rec = istoric_alege.get(cheie_alege(url_original))
+        alege = din_inregistrare(rec, url_original, azi, extra_text, cheie_cu_parametri=True) if rec else None
+        if alege and alege["acop"] >= ACOPERIRE_MIN:
+            return alege
+    k = cheie({"url_original": url_original})
+    general = din_inregistrare(istoric[k], url_original, azi, extra_text) if k and k in istoric else None
+    candidati = [x for x in (alege, general) if x]
+    return max(candidati, key=lambda x: x["acop"]) if candidati else None
+
+
+def construieste(istoric: dict, criterii: dict, scaderi: dict, produse: list, azi: str,
+                 istoric_alege: dict | None = None) -> dict:
     harta = {p.get("url"): p.get("url_original") for p in produse if p.get("url") and p.get("url_original")}
     out: dict[str, dict] = {}
     for c in criterii.get("criterii") or []:
         for p in c.get("produse") or []:
             u = p.get("url_magazin") or ""
             if u and u not in out:
-                e = intrare(u, u, istoric, azi, p.get("imagine") or "")
+                e = intrare(u, u, istoric, azi, p.get("imagine") or "", istoric_alege or {})
                 if e:
                     out[u] = e
     for s in scaderi.get("produse") or []:
@@ -147,7 +217,18 @@ def main() -> int:
     azi = brut.get("actualizat") or azi_ro()
     istoric = brut.get("produse") or {}
     produse = (citeste(PRODUSE, {}) or {}).get("products") or []
-    rez = construieste(istoric, citeste(CRITERII, {}), citeste(SCADERI, {}), produse, azi)
+
+    # Istoricul /alege: intrare si iesire. Fara fisierul de stare (rulare locala partiala) ramane neatins.
+    alege_brut = citeste(ISTORIC_ALEGE, {}) or {}
+    istoric_alege = alege_brut.get("produse") or {}
+    stare = citeste(STARE_ALEGE, None)
+    if stare:
+        noi = inregistreaza_alege(istoric_alege, stare, azi)
+        with open(ISTORIC_ALEGE, "w", encoding="utf-8") as f:
+            json.dump({"actualizat": azi, "produse": istoric_alege}, f, ensure_ascii=False, separators=(",", ":"))
+        print(f"Istoric /alege: {len(istoric_alege)} produse, {noi} preturi confirmate noi -> {os.path.relpath(ISTORIC_ALEGE, ROOT)}")
+
+    rez = construieste(istoric, citeste(CRITERII, {}), citeste(SCADERI, {}), produse, azi, istoric_alege)
     with open(IESIRE, "w", encoding="utf-8") as f:
         json.dump(rez, f, ensure_ascii=False, separators=(",", ":"))
     n = len(rez["produse"])
@@ -209,6 +290,32 @@ def test() -> int:
     rez = construieste(istoric, {"criterii": [{"produse": [{"url_magazin": monitor, "imagine": ""}]}]},
                        {"produse": [{"url": link_2p, "image": ""}]}, [], azi)
     verifica("fisierul are cheile exact ca in paginile site-ului", set(rez["produse"]) == {monitor, link_2p})
+
+    # Istoricul /alege (28.11.2026): preturi confirmate la magazin, la ziua confirmarii.
+    gs1 = "https://www.dacris.net/gs27fc-gigabyte/p?skuId=1"
+    gs2 = "https://www.dacris.net/gs27fc-gigabyte/p?skuId=2"
+    ia: dict = {}
+    stare = {"criterii": [
+        {"produse": [{"url_magazin": gs1, "pret": "700", "verificat": "2026-10-20"},
+                     {"url_magazin": gs2, "pret": "900", "verificat": "2026-10-20"}]},
+    ]}
+    inregistreaza_alege(ia, stare, "2026-10-22")
+    verifica("/alege: pretul intra cu ziua confirmarii, nu cu ziua rularii", ia.get(cheie_alege(gs1), {}).get("p") == [["2026-10-20", 700.0]])
+    verifica("/alege: ?skuId=1 si ?skuId=2 sunt chei diferite (variantele nu se amesteca)", cheie_alege(gs1) != cheie_alege(gs2) and len(ia) == 2)
+    inregistreaza_alege(ia, {"criterii": [{"produse": [{"url_magazin": gs1, "pret": "650", "verificat": "2026-10-15"}]}]}, "2026-10-22")
+    verifica("/alege: o confirmare mai veche decat ultima nu rescrie istoricul", ia[cheie_alege(gs1)]["p"] == [["2026-10-20", 700.0]])
+    inregistreaza_alege(ia, {"criterii": [{"produse": [{"url_magazin": gs1, "pret": "600", "verificat": "2026-11-30"}]}]}, "2026-11-24")
+    verifica("/alege: o confirmare datata dupa ziua datelor nu intra", ia[cheie_alege(gs1)]["p"] == [["2026-10-20", 700.0]])
+    inregistreaza_alege(ia, {"criterii": [{"produse": [{"url_magazin": gs1, "pret": "560", "verificat": "2026-11-24"}]}]}, "2026-11-24")
+    e = intrare(gs1, gs1, {}, azi, "", ia)
+    verifica("/alege: termometrul vine din preturile confirmate (min 700, acoperire 35 de zile)", e is not None and e["min"] == 700.0 and e["acop"] == 35)
+    verifica("/alege: ?skuId= nu e motiv de tacere cand cheia pastreaza parametrii", e is not None and e["varianta"] is False)
+    gen = {cheie({"url_original": gs1}): {"p": [["2026-09-01", 300.0]], "v": azi}}
+    e = intrare(gs1, gs1, gen, azi, "", ia)
+    verifica("/alege: cu acoperire destula, istoricul confirmat bate feed-ul (alta sursa de pret)", e is not None and e["min"] == 700.0)
+    vechi = {"x": {"p": [["2026-06-01", 10.0]], "v": "2026-06-01"}}
+    inregistreaza_alege(vechi, {"criterii": []}, "2026-11-24")
+    verifica("/alege: produsele neconfirmate de peste 120 de zile ies din istoric", "x" not in vechi)
     print(f"\n{gresite} verificari picate" if gresite else "\nToate verificarile au trecut")
     return 1 if gresite else 0
 
