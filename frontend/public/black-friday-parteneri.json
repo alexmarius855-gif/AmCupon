@@ -1,6 +1,6 @@
 {
  "_nota": "Generat de scripts/calendar_black_friday.py din promotiile anuntate de magazine in 2Performant (data/promotii_2p.csv si ofertele 2P active din output.json). Doar parteneri cu link platit. Nu edita de mana.",
- "generat": "2026-11-27",
+ "generat": "2026-11-28",
  "categorii": [
   {
    "slug": "casa-gradina",
@@ -298,6 +298,16 @@
    "descriere": "Campanie blackfriday cu 300 RON reducere la toate comenzile ce depasesc suma de 3500 RON. Cuponul se aplica automat in cos. Valabilitatea este pana la finalul lunii Noiembrie.",
    "are_cod": false,
    "categorie": "casa-gradina"
+  },
+  {
+   "magazin": "ozone.ro",
+   "nume": "Ozone",
+   "start": "2026-11-02",
+   "final": "2026-11-22",
+   "nota": "BLACK FRIDAY",
+   "descriere": "Se apropie ceva mare! Peste 65.000 de oferte timp de o lună întreagă!",
+   "are_cod": false,
+   "categorie": "marketplace"
   },
   {
    "magazin": "prestigehome.ro",
@@ -1130,16 +1140,6 @@
    "categorie": "sanatate"
   },
   {
-   "magazin": "brainmarket.ro",
-   "nume": "Brainmarket",
-   "start": "2026-11-20",
-   "final": "2026-11-27",
-   "nota": "Black Friday revine pe BrainMarket",
-   "descriere": "Black Friday continuă cu o nouă rundă pe BrainMarket! În perioada 20–27 noiembrie 2026, ai −15% la toate produsele brainmax. Descoperă formule pentru rutina zilnică, energie, focus, somn, imunitate, sport, nutriție și multe altele, acum la un preț special. Profită de Black Friday Round 2 și alege produsele Brainmax potrivite pentru tine. Oferta este valabilă în perioada 10–27 noiembrie 2026.",
-   "are_cod": false,
-   "categorie": "sanatate"
-  },
-  {
    "magazin": "doctorshield.ro",
    "nume": "DoctorShield",
    "start": "2026-11-20",
@@ -1198,6 +1198,16 @@
    "descriere": "Promovați -20% automat la accesorii pentru telefoane pe MobilStore.ro, Black Weekend 27–29 noiembrie. Nu este nevoie de cod. Recomandat: link-uri directe pe modelul de telefon (ex. huse iPhone 17, Samsung Galaxy S25), feedul de produse (actualizat de 3 ori pe zi) și bannerele din cont. Reguli: fără licitare pe „mobilstore”/„mobil store”/„mobilfox”, fără coduri nepublicate oficial, fără prețuri sau termene care nu apar pe site.",
    "are_cod": false,
    "categorie": "electronice"
+  },
+  {
+   "magazin": "brainmarket.ro",
+   "nume": "Brainmarket",
+   "start": "2026-11-28",
+   "final": "2026-11-30",
+   "nota": "Black Friday se prelungește pe BrainMarket!",
+   "descriere": "Black Friday continuă pe BrainMarket! Ai încă 3 zile în care poți profita de 15% reducere la toate produsele Brainmax. Descoperă suplimente alimentare, alimente și produse pentru rutina ta zilnică, acum la prețuri speciale. Comandă produsele preferate până pe 30 noiembrie și profită de prelungirea campaniei Black Friday! Oferta este valabilă în perioada 28–30 noiembrie 2026.",
+   "are_cod": false,
+   "categorie": "sanatate"
   }
  ]
 }

@@ -1,5 +1,5 @@
 {
-"actualizat": "2026-11-27",
+"actualizat": "2026-11-28",
 "criterii": [
 {
 "slug": "masina-de-spalat-6-kg",
@@ -258,7 +258,7 @@
 "titlu": "Mașini de spălat de 8 kg",
 "nota": "Capacitatea se referă la greutatea rufelor uscate pe care le poți pune o dată în cuvă.",
 "in_text": "\\b8\\s*kg\\b",
-"actualizat": "2026-11-24",
+"actualizat": "2026-11-28",
 "feeduri": [
 {
 "id": 1539,
@@ -303,14 +303,25 @@
 "verificat": "2026-11-04"
 },
 {
-"titlu": "CANDY Masina de spalat rufe Candy HCU1282DWB4/1-S, clasa B, 1200 RPM, 8 kg, Kg Detector, Calcare usoara, Alba",
-"pret": 1729.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202512311121/383360/full/candy-masina-de-spalat-rufe-candy-hcu1282dwb4-1-s-clasa-b-1200-rpm-8-kg-kg-detector-calcare-usoara-alba-1167509.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fmasina-de-spalat-rufe%2Fcandy%2F383360-masina-de-spalat-rufe-candy-hcu1282dwb4-1-s-clasa-b-1200-rpm-8-kg-kg-detector-calcare-usoara-alba%2F",
+"titlu": "Masina de spalat rufe frontala slim ARCTIC APLM2WFSU28411AS, ExtraSteam, 8 kg, 1400rpm, Clasa A (Antracit)",
+"pret": 1612.99,
+"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4318%2F4318830%2F8690842901997-6ac8bc88e345a.jpg&type=auto&width=500&sign=WZ1WhBPaLQsgHaQhyJq4zqLVndchDsalavfPd7dV-Xc",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Felectrocasnice-electrocasnice-mari-masini-de-spalat-rufe-si-accesorii-masini-de-spalat-rufe%2Farctic-masina-de-spalat-rufe-frontala-slim-arctic-aplm2wfsu28411as-extrasteam-8-kg-1400rpm-clasa-a-antracit-4318830.html",
+"magazin": "evomag.ro",
+"id": "FqQv2EbSWk1S",
+"brand": "Arctic",
+"url_magazin": "https://www.evomag.ro/electrocasnice-electrocasnice-mari-masini-de-spalat-rufe-si-accesorii-masini-de-spalat-rufe/arctic-masina-de-spalat-rufe-frontala-slim-arctic-aplm2wfsu28411as-extrasteam-8-kg-1400rpm-clasa-a-antracit-4318830.html",
+"pret_vechi": null
+},
+{
+"titlu": "Arctic Masina de spalat rufe frontala slim ARCTIC APLM2WFSU28411AS, ExtraSteam, 8 kg, 1400rpm, Clasa A, antracit",
+"pret": 1631.99,
+"imagine": "https://www.dwyn.ro/images/products/img_202606122129/483829/full/arctic-masina-de-spalat-rufe-frontala-slim-arctic-aplm2wfsu28411as-extrasteam-8-kg-1400rpm-clasa-a-antracit-1525216.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fmasina-de-spalat-rufe%2Farctic%2F483829-masina-de-spalat-rufe-frontala-slim-arctic-aplm2wfsu28411as-extrasteam-8-kg-1400rpm-clasa-a-antracit%2F",
 "magazin": "dwyn.ro",
-"id": "CVtVbTHm5vv5",
-"brand": "CANDY",
-"url_magazin": "https://www.dwyn.ro/masina-de-spalat-rufe/candy/383360-masina-de-spalat-rufe-candy-hcu1282dwb4-1-s-clasa-b-1200-rpm-8-kg-kg-detector-calcare-usoara-alba/",
+"id": "jvloC7Uk9tY8",
+"brand": "Arctic",
+"url_magazin": "https://www.dwyn.ro/masina-de-spalat-rufe/arctic/483829-masina-de-spalat-rufe-frontala-slim-arctic-aplm2wfsu28411as-extrasteam-8-kg-1400rpm-clasa-a-antracit/",
 "pret_vechi": null
 },
 {
@@ -441,17 +452,6 @@
 "brand": "BOSCH",
 "url_magazin": "https://www.dwyn.ro/masina-de-spalat-rufe/bosch/225477-masina-de-spalat-rufe-bosch-wan28164by-8-kg-1400-rpm-iron-assist-ecosilence-drive-60-cm-clasa-a-alb/",
 "pret_vechi": null
-},
-{
-"titlu": "Masina de spalat rufe Miele WWB 360 WCS, 8 kg, 1400 rpm, Clasa A, CapDosing, AddLoad, QuickPowerWash (Alb)",
-"pret": 6399.99,
-"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4303%2F4303392%2Fwwb-360-wcs-6a3e719b9c9c9.jpg&type=auto&width=500&sign=F7DNHewj8KuhuBvWGh-oQE_YDgQfMeP4N1PsJ18GtdU",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Felectrocasnice-electrocasnice-mari-masini-de-spalat-rufe-si-accesorii-masini-de-spalat-rufe%2Fmiele-masina-de-spalat-rufe-miele-wwb-360-wcs-8-kg-1400-rpm-clasa-a-capdosing-addload-quickpowerwash-alb-4303392.html",
-"magazin": "evomag.ro",
-"id": "QeTQyZicWWcj",
-"brand": "MIELE",
-"url_magazin": "https://www.evomag.ro/electrocasnice-electrocasnice-mari-masini-de-spalat-rufe-si-accesorii-masini-de-spalat-rufe/miele-masina-de-spalat-rufe-miele-wwb-360-wcs-8-kg-1400-rpm-clasa-a-capdosing-addload-quickpowerwash-alb-4303392.html",
-"pret_vechi": null
 }
 ],
 "magazine": [
@@ -466,7 +466,7 @@
 "titlu": "Mașini de spălat de 9 kg",
 "nota": "Capacitatea se referă la greutatea rufelor uscate pe care le poți pune o dată în cuvă.",
 "in_text": "\\b9\\s*kg\\b",
-"actualizat": "2026-11-24",
+"actualizat": "2026-11-28",
 "feeduri": [
 {
 "id": 1539,
@@ -487,28 +487,6 @@
 ],
 "produse": [
 {
-"titlu": "Masina de spalat rufe Albalux AXEWI1496, 9 kg, 1400 rpm, 16 programe, Clasa A (Alb)",
-"pret": 1378.99,
-"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4241%2F4241992%2Faxewi1496-689adca8d7cf8.jpg&type=auto&width=500&sign=N_q9Ve_lW2K1CrAc6TUselqNyo9-7VhJGNeUIJf2l3M",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Felectrocasnice-electrocasnice-mari-masini-de-spalat-rufe-si-accesorii-masini-de-spalat-rufe%2Falbalux-masina-de-spalat-rufe-albalux-axewi1496-9-kg-1400-rpm-16-programe-clasa-a-alb-4241992.html",
-"magazin": "evomag.ro",
-"id": "YFMNCWLX20Dj",
-"brand": "Albalux",
-"url_magazin": "https://www.evomag.ro/electrocasnice-electrocasnice-mari-masini-de-spalat-rufe-si-accesorii-masini-de-spalat-rufe/albalux-masina-de-spalat-rufe-albalux-axewi1496-9-kg-1400-rpm-16-programe-clasa-a-alb-4241992.html",
-"pret_vechi": null
-},
-{
-"titlu": "Masina de spalat rufe HEINNER HWM-HMK9014IVA+++, 9 kg, 1400 rpm, Clasa A, Control Touch (Alb)",
-"pret": 1494.99,
-"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4254%2F4254123%2Foverlay_80ad3d03a3219acf23dad8dda821e9de.png&type=auto&width=500&sign=wUQ3WSdFKFAQXIQQQs5t5pBo5IoEhz_zR5OzELCv4Ek",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Felectrocasnice-electrocasnice-mari-masini-de-spalat-rufe-si-accesorii-masini-de-spalat-rufe%2Fheinner-masina-de-spalat-rufe-heinner-hwm-hmk9014iva-9-kg-1400-rpm-clasa-a-control-touch-alb-4254123.html",
-"magazin": "evomag.ro",
-"id": "XvVdjbGtAiti",
-"brand": "Heinner",
-"url_magazin": "https://www.evomag.ro/electrocasnice-electrocasnice-mari-masini-de-spalat-rufe-si-accesorii-masini-de-spalat-rufe/heinner-masina-de-spalat-rufe-heinner-hwm-hmk9014iva-9-kg-1400-rpm-clasa-a-control-touch-alb-4254123.html",
-"pret_vechi": 1557.99
-},
-{
 "titlu": "Masina de spalat rufe Tesla WF91460T, 9 kg, Clasa A, 1400 RPM, Inverter, 16 programe, Delay Start (Alb)",
 "pret": 1499.99,
 "imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4185%2F4185053%2Fw1759317270_masina-de-spalat-rufe-tesla-wf-670cca8fa8584.jpg&type=auto&width=500&sign=sVZCedPHipKfjhv5GcSMO-irGM4Yf-RfgfN7lhVyxz4",
@@ -518,18 +496,6 @@
 "brand": "Tesla",
 "url_magazin": "https://www.evomag.ro/electrocasnice-electrocasnice-mari-masini-de-spalat-rufe-si-accesorii-masini-de-spalat-rufe/tesla-masina-de-spalat-rufe-tesla-wf91460t-9-kg-clasa-a-1400-rpm-inverter-16-programe-delay-start-alb-4185053.html",
 "pret_vechi": null
-},
-{
-"titlu": "Masina de spalat rufe Samus WSADI-9147, 9 kg, Clasa A(-10%), 15 programe, 1400 rpm (Alb)",
-"pret": 1599.99,
-"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4317%2F4317537%2Fwsadi-9147-6abd09559fce7.jpg&type=auto&width=500&sign=4TienN5VGssRZUFy62MIKtdUk3Jlol--1pF6z1YCk-M",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Felectrocasnice-electrocasnice-mari-masini-de-spalat-rufe-si-accesorii-masini-de-spalat-rufe%2Fsamus-masina-de-spalat-rufe-samus-wsadi-9147-9-kg-clasa-a-10-15-programe-1400-rpm-alb-4317537.html",
-"magazin": "evomag.ro",
-"id": "_dQMGGQmm3A8",
-"brand": "Samus",
-"url_magazin": "https://www.evomag.ro/electrocasnice-electrocasnice-mari-masini-de-spalat-rufe-si-accesorii-masini-de-spalat-rufe/samus-masina-de-spalat-rufe-samus-wsadi-9147-9-kg-clasa-a-10-15-programe-1400-rpm-alb-4317537.html",
-"pret_vechi": null,
-"verificat": "2026-11-04"
 },
 {
 "titlu": "Samus Masina de spalat rufe Samus WSADI-9142DS, 9 Kg, 1400rpm, Clasa A, Gri",
@@ -578,6 +544,17 @@
 "verificat": "2026-11-04"
 },
 {
+"titlu": "Masina de spalat rufe Candy ProWash 300 GD 49B8-S, 9 kg, Clasa A, 1351 rpm, tehnologie AI Silent Motion (Alb)",
+"pret": 1799.99,
+"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4290%2F4290374%2F69c7c2d828bc4.jpg&type=auto&width=500&sign=hXV5QDPEl5VJ1gPoUnwaDiEHjkVW0L42k3OLX4qBY3I",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Felectrocasnice-electrocasnice-mari-masini-de-spalat-rufe-si-accesorii-masini-de-spalat-rufe%2Fcandy-masina-de-spalat-rufe-candy-prowash-300-gd-49b8-s-9-kg-clasa-a-1351-rpm-tehnologie-ai-silent-motion-alb-4290374.html",
+"magazin": "evomag.ro",
+"id": "y-6yQXfCYQKR",
+"brand": "Candy",
+"url_magazin": "https://www.evomag.ro/electrocasnice-electrocasnice-mari-masini-de-spalat-rufe-si-accesorii-masini-de-spalat-rufe/candy-masina-de-spalat-rufe-candy-prowash-300-gd-49b8-s-9-kg-clasa-a-1351-rpm-tehnologie-ai-silent-motion-alb-4290374.html",
+"pret_vechi": null
+},
+{
 "titlu": "Masina de spalat rufe Samsung WW90FG3M05AWLF, 9 Kg, 1400 rpm, Clasa A, Hygiene Steam, Amanare pornire, Drum Clean, Clean",
 "pret": 2077.99,
 "imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4259%2F4259330%2Fart14323-690cfb2c8d1dd.jpg&type=auto&width=500&sign=GLv6hf1mnrHGJj3_acOsNR3zWquR1k8IXxpaAFSfV_A",
@@ -601,26 +578,14 @@
 "pret_vechi": 2453.99
 },
 {
-"titlu": "Samsung Masina de spalat rufe Samsung WW90CGC04DAHLE, 9kg, 1400rpm, Clasa A, Eco Bubble, Digital Inverter, WiFi SmartThi",
-"pret": 2440.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202606122129/446689/full/samsung-masina-de-spalat-rufe-samsung-ww90cgc04dahle-9-kg-1400-rpm-clasa-a-eco-bubble-digital-inverter-wifi-smartthings-ai-energy-alb-1434154.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fmasina-de-spalat-rufe%2Fsamsung%2F446689-masina-de-spalat-rufe-samsung-ww90cgc04dahle-9kg-1400rpm-clasa-a-eco-bubble-digital-inverter-wifi-smartthings-ai-energy-alb%2F",
-"magazin": "dwyn.ro",
-"id": "60ONguZDdQiW",
-"brand": "Samsung",
-"url_magazin": "https://www.dwyn.ro/masina-de-spalat-rufe/samsung/446689-masina-de-spalat-rufe-samsung-ww90cgc04dahle-9kg-1400rpm-clasa-a-eco-bubble-digital-inverter-wifi-smartthings-ai-energy-alb/",
-"pret_vechi": null,
-"verificat": "2026-11-04"
-},
-{
-"titlu": "LG Masina de spalat LG F4X1009NWB, A, Incarcare frontala, Capacitate de spalare 9 kg, Adancime 55 cm, 1400 rpm, Alb",
-"pret": 2540.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202512311121/380093/full/lg-lg-f4x1009nwb-washing-machine-a-front-loading-washing-capacity-9-kg-depth-55-cm-1400-rpm-white-1117355.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fmasina-de-spalat-rufe%2Flg%2F380093-masina-de-spalat-lg-f4x1009nwb-a-incarcare-frontala-capacitate-de-spalare-9-kg-adancime-55-cm-1400-rpm-alb%2F",
-"magazin": "dwyn.ro",
-"id": "OjSJAqyElO8n",
-"brand": "LG",
-"url_magazin": "https://www.dwyn.ro/masina-de-spalat-rufe/lg/380093-masina-de-spalat-lg-f4x1009nwb-a-incarcare-frontala-capacitate-de-spalare-9-kg-adancime-55-cm-1400-rpm-alb/",
+"titlu": "Masina de spalat rufe frontala CANDY ProWash 700 BS 49B9-S, Steam, 9 kg, 1400rpm, Clasa A, Wi-Fi (Alb)",
+"pret": 2199.99,
+"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4241%2F4241533%2Fbs-49b9-s-6895d9296cc1d.jpg&type=auto&width=500&sign=L7fPLkWjxwzyZORaL84v91CKUtUG7W1pdVkVgCCMLkQ",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Felectrocasnice-electrocasnice-mari-masini-de-spalat-rufe-si-accesorii-masini-de-spalat-rufe%2Fcandy-masina-de-spalat-rufe-frontala-candy-prowash-700-bs-49b9-s-steam-9-kg-1400rpm-clasa-a-wi-fi-alb-4241533.html",
+"magazin": "evomag.ro",
+"id": "v8ycPLGBuacz",
+"brand": "Candy",
+"url_magazin": "https://www.evomag.ro/electrocasnice-electrocasnice-mari-masini-de-spalat-rufe-si-accesorii-masini-de-spalat-rufe/candy-masina-de-spalat-rufe-frontala-candy-prowash-700-bs-49b9-s-steam-9-kg-1400rpm-clasa-a-wi-fi-alb-4241533.html",
 "pret_vechi": null
 },
 {
@@ -667,6 +632,39 @@
 "brand": "Electrolux",
 "url_magazin": "https://www.dwyn.ro/masina-de-spalat-rufe/electrolux/411865-masina-de-spalat-rufe-electrolux-ew6f8492e-9-kg-1400-rpm-clasa-a-inverter-sensicare-perfectcare600-full-wash45-antialergic-timemanager-alb/",
 "pret_vechi": null
+},
+{
+"titlu": "LG Masina de spalat rufe LG F4X1009NMB, clasa A, Incarcare frontala, Capacitate de spalare 9 kg, Adancime 55 cm, 1400 RP",
+"pret": 3107.99,
+"imagine": "https://www.dwyn.ro/images/products/img_202512311121/380102/full/lg-lg-f4x1009nmb-washing-machine-a-front-loading-washing-capacity-9-kg-depth-55-cm-1400-rpm-black-1117481.png",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fmasina-de-spalat-rufe%2Flg%2F380102-masina-de-spalat-rufe-lg-f4x1009nmb-clasa-a-incarcare-frontala-capacitate-de-spalare-9-kg-adancime-55-cm-1400-rpm-negru%2F",
+"magazin": "dwyn.ro",
+"id": "YoXpr4duItEL",
+"brand": "LG",
+"url_magazin": "https://www.dwyn.ro/masina-de-spalat-rufe/lg/380102-masina-de-spalat-rufe-lg-f4x1009nmb-clasa-a-incarcare-frontala-capacitate-de-spalare-9-kg-adancime-55-cm-1400-rpm-negru/",
+"pret_vechi": null
+},
+{
+"titlu": "BOSCH Masina de spalat rufe Bosch WAN2826NBY, 9 Kg, 1400 RPM, EcoSilence Drive, Iron Assist, Hygiene Plus, Control elect",
+"pret": 3134.99,
+"imagine": "https://www.dwyn.ro/images/products/img_202512311121/398686/full/bosch-masina-de-spalat-rufe-bosch-wan2826nby-9-kg-1400-rpm-ecosilence-drive-iron-assist-hygiene-plus-control-electronic-touch-program-dark-colors-speed-perfect-clasa-a-60-cm-alb-gri-1234504.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fmasina-de-spalat-rufe%2Fbosch%2F398686-masina-de-spalat-rufe-bosch-wan2826nby-9-kg-1400-rpm-ecosilence-drive-iron-assist-hygiene-plus-control-electronic-touch-program-dark-colors-speed-perfect-clasa-a-60-cm-alb-gri%2F",
+"magazin": "dwyn.ro",
+"id": "Pmx5-6C9YVKt",
+"brand": "BOSCH",
+"url_magazin": "https://www.dwyn.ro/masina-de-spalat-rufe/bosch/398686-masina-de-spalat-rufe-bosch-wan2826nby-9-kg-1400-rpm-ecosilence-drive-iron-assist-hygiene-plus-control-electronic-touch-program-dark-colors-speed-perfect-clasa-a-60-cm-alb-gri/",
+"pret_vechi": null
+},
+{
+"titlu": "Masina de spalat rufe frontala SAMSUNG WW90DB7U94GEU4, AI Wash, AI EcoBubble, 9 kg, 1400rpm, Clasa A (Alb)",
+"pret": 3399.99,
+"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4308%2F4308480%2Fmasina-de-spalat-rufe-frontala-6a6c9a8b7a085.jpg&type=auto&width=500&sign=u06dU611qpxsRKsTBPooWAKD1OmMDGmlrEN39S8OJZ4",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Felectrocasnice-electrocasnice-mari-masini-de-spalat-rufe-si-accesorii-masini-de-spalat-rufe%2Fsamsung-masina-de-spalat-rufe-frontala-samsung-ww90db7u94geu4-ai-wash-ai-ecobubble-9-kg-1400rpm-clasa-a-alb-4308480.html",
+"magazin": "evomag.ro",
+"id": "1yxzw07LuFsW",
+"brand": "Samsung",
+"url_magazin": "https://www.evomag.ro/electrocasnice-electrocasnice-mari-masini-de-spalat-rufe-si-accesorii-masini-de-spalat-rufe/samsung-masina-de-spalat-rufe-frontala-samsung-ww90db7u94geu4-ai-wash-ai-ecobubble-9-kg-1400rpm-clasa-a-alb-4308480.html",
+"pret_vechi": null
 }
 ],
 "magazine": [
@@ -681,7 +679,7 @@
 "titlu": "Mașini de spălat de 10 kg",
 "nota": "Capacitatea se referă la greutatea rufelor uscate pe care le poți pune o dată în cuvă.",
 "in_text": "\\b10\\s*kg\\b",
-"actualizat": "2026-11-24",
+"actualizat": "2026-11-28",
 "feeduri": [
 {
 "id": 1539,
@@ -713,40 +711,6 @@
 "pret_vechi": null
 },
 {
-"titlu": "Masina de spalat rufe semi-automata Nobeltek NSWM 10.5S, 10 kg spalare, 5 kg stoarecere, 420W spalare, 190W stoarcere, t",
-"pret": 1027.99,
-"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4323%2F4323499%2Fnswm-105s-6afc39a0a11db.jpg&type=auto&width=500&sign=o2YiAx2MOtkKg1qUqTXilB3r3r8BJ4s3vkJb-_OIalI",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Felectrocasnice-electrocasnice-mari-masini-de-spalat-rufe-si-accesorii-masini-de-spalat-rufe%2Fnobeltek-masina-de-spalat-rufe-semi-automata-nobeltek-nswm-10.5s-10-kg-spalare-5-kg-stoarecere-420w-spalare-190w-stoarcere-timp-spalare-0-15-min-timp-stoarcere-0-5-min-alb-argntiu-4323499.html",
-"magazin": "evomag.ro",
-"id": "bNOIFAzYR3-B",
-"brand": "Nobeltek",
-"url_magazin": "https://www.evomag.ro/electrocasnice-electrocasnice-mari-masini-de-spalat-rufe-si-accesorii-masini-de-spalat-rufe/nobeltek-masina-de-spalat-rufe-semi-automata-nobeltek-nswm-10.5s-10-kg-spalare-5-kg-stoarecere-420w-spalare-190w-stoarcere-timp-spalare-0-15-min-timp-stoarcere-0-5-min-alb-argntiu-4323499.html",
-"pret_vechi": 1199.99
-},
-{
-"titlu": "Masina de spalat rufe Albalux AXWGI141021, 10 kg, 16 programe, 1400 rpm, Clasa A (Alb)",
-"pret": 1369.99,
-"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4285%2F4285651%2Faxwgi141021-69a70dc3ab1c3.jpg&type=auto&width=500&sign=NiQnWaQx6jZIF9IT8RIEO9K9R2Mwu8ocBBL4axh_ffY",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Felectrocasnice-electrocasnice-mari-masini-de-spalat-rufe-si-accesorii-masini-de-spalat-rufe%2Falbalux-masina-de-spalat-rufe-albalux-axwgi141021-10-kg-16-programe-1400-rpm-clasa-a-alb-4285651.html",
-"magazin": "evomag.ro",
-"id": "6b_fWJ7KK3S1",
-"brand": "Albalux",
-"url_magazin": "https://www.evomag.ro/electrocasnice-electrocasnice-mari-masini-de-spalat-rufe-si-accesorii-masini-de-spalat-rufe/albalux-masina-de-spalat-rufe-albalux-axwgi141021-10-kg-16-programe-1400-rpm-clasa-a-alb-4285651.html",
-"pret_vechi": null,
-"verificat": "2026-11-04"
-},
-{
-"titlu": "Masina de spalat rufe Albatros AWMI14107, 10 kg, 16 programe, 1400 rpm, Clasa A-10% (Alb)",
-"pret": 1399.99,
-"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4285%2F4285652%2Fawmi14107-69a70fb309309.jpg&type=auto&width=500&sign=SQs2b6Ggiglcqv9Xj1Iqy4RnyTBLinumsAvC83VVw2U",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Felectrocasnice-electrocasnice-mari-masini-de-spalat-rufe-si-accesorii-masini-de-spalat-rufe%2Falbatros-masina-de-spalat-rufe-albatros-awmi14107-10-kg-16-programe-1400-rpm-clasa-a-10-alb-4285652.html",
-"magazin": "evomag.ro",
-"id": "ORog0ouChxmY",
-"brand": "Albatros",
-"url_magazin": "https://www.evomag.ro/electrocasnice-electrocasnice-mari-masini-de-spalat-rufe-si-accesorii-masini-de-spalat-rufe/albatros-masina-de-spalat-rufe-albatros-awmi14107-10-kg-16-programe-1400-rpm-clasa-a-10-alb-4285652.html",
-"pret_vechi": null
-},
-{
 "titlu": "Albatros Masina de spalat Albatros AWMI14107, 10 kg, 1400rpm, Clasa A",
 "pret": 1418.99,
 "imagine": "https://www.dwyn.ro/images/products/img_202512311121/382877/full/albatros-awmi14107-1166447.jpg",
@@ -755,18 +719,6 @@
 "id": "zydU76fwGynh",
 "brand": "Albatros",
 "url_magazin": "https://www.dwyn.ro/masina-de-spalat-rufe/albatros/382877-masina-de-spalat-albatros-awmi14107-10-kg-1400rpm-clasa-a/",
-"pret_vechi": null,
-"verificat": "2026-11-04"
-},
-{
-"titlu": "Masina de spalat rufe Samus WSADI-10147, 10 kg, Clasa A(-10%), 15 programe, 1400 rpm (Alb)",
-"pret": 1662.99,
-"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4317%2F4317536%2Fwsadi-10147-6abd08c942bc6.jpg&type=auto&width=500&sign=dOVXltBn-vAsozjqqeuBKxZvX3nqPPR1Ofp7O8WQtk8",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Felectrocasnice-electrocasnice-mari-masini-de-spalat-rufe-si-accesorii-masini-de-spalat-rufe%2Fsamus-masina-de-spalat-rufe-samus-wsadi-10147-10-kg-clasa-a-10-15-programe-1400-rpm-alb-4317536.html",
-"magazin": "evomag.ro",
-"id": "Jq5ZkFzv7uOR",
-"brand": "Samus",
-"url_magazin": "https://www.evomag.ro/electrocasnice-electrocasnice-mari-masini-de-spalat-rufe-si-accesorii-masini-de-spalat-rufe/samus-masina-de-spalat-rufe-samus-wsadi-10147-10-kg-clasa-a-10-15-programe-1400-rpm-alb-4317536.html",
 "pret_vechi": null,
 "verificat": "2026-11-04"
 },
@@ -793,6 +745,17 @@
 "url_magazin": "https://www.evomag.ro/electrocasnice-electrocasnice-mari-masini-de-spalat-rufe-si-accesorii-masini-de-spalat-rufe/arctic-masina-de-spalat-rufe-arctic-aplm2wfsu210411w-10-kg-1200-rpm-clasa-b-silent-inverter-extrasteam-saveinall-ironexpress-flow-control-alb-4245685.html",
 "pret_vechi": null,
 "verificat": "2026-11-04"
+},
+{
+"titlu": "Masina de spalat rufe Candy EY 12102DBBE/1-S, cu incarcare frontala Easy, 10 Kg, 1200 RPM, Clasa E (Negru)",
+"pret": 2175.99,
+"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4241%2F4241089%2Fey-12102dbbe1-s-6894a5d63d018.jpg&type=auto&width=500&sign=0rRrkJ39rOqTc41vzDOo0iyA6Gtq6OCkDZhNQbKzod0",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Felectrocasnice-electrocasnice-mari-masini-de-spalat-rufe-si-accesorii-masini-de-spalat-rufe%2Fcandy-masina-de-spalat-rufe-candy-ey-12102dbbe-1-s-cu-incarcare-frontala-easy-10-kg-1200-rpm-clasa-e-negru-4241089.html",
+"magazin": "evomag.ro",
+"id": "tBhApKojFRQJ",
+"brand": "Candy",
+"url_magazin": "https://www.evomag.ro/electrocasnice-electrocasnice-mari-masini-de-spalat-rufe-si-accesorii-masini-de-spalat-rufe/candy-masina-de-spalat-rufe-candy-ey-12102dbbe-1-s-cu-incarcare-frontala-easy-10-kg-1200-rpm-clasa-e-negru-4241089.html",
+"pret_vechi": null
 },
 {
 "titlu": "Masina de spalat rufe cu incarcare frontala BOSCH WGJ25401BY Seria 6, 10 kg, 1400 rpm, Clasa A, Iron Assist, Home Connec",
@@ -831,7 +794,7 @@
 "titlu": "Mașini de spălat cu uscător",
 "nota": null,
 "in_text": "\\buscător\\b",
-"actualizat": "2026-11-24",
+"actualizat": "2026-11-28",
 "feeduri": [
 {
 "id": 1539,
@@ -912,18 +875,6 @@
 "verificat": "2026-11-04"
 },
 {
-"titlu": "Masina de spalat rufe incorporabila cu uscator CANDY CBD 485D1E/1-S, 8/5 kg, 1400rpm, Clasa E (Alb)",
-"pret": 2356.99,
-"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4092%2F4092291%2Fmasina-de-spalat-rufe-incorpor-645cb411cc2e2.JPG&type=auto&width=500&sign=R7_7Hnf_32i49SyGGRYPZgVTanUXzg9sbXJEz-jlTBw",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Felectrocasnice-electrocasnice-mari-masini-de-spalat-rufe-si-accesorii-masini-de-spalat-rufe%2Fcandy-masina-de-spalat-rufe-incorporabila-cu-uscator-candy-cbd-485d1e-1-s-8-5-kg-1400rpm-clasa-e-alb-4092291.html",
-"magazin": "evomag.ro",
-"id": "aCNycW76kTGb",
-"brand": "Candy",
-"url_magazin": "https://www.evomag.ro/electrocasnice-electrocasnice-mari-masini-de-spalat-rufe-si-accesorii-masini-de-spalat-rufe/candy-masina-de-spalat-rufe-incorporabila-cu-uscator-candy-cbd-485d1e-1-s-8-5-kg-1400rpm-clasa-e-alb-4092291.html",
-"pret_vechi": null,
-"verificat": "2026-11-04"
-},
-{
 "titlu": "CANDY Masina de spalat rufe cu uscator incorporabila Candy, Clasa D, 1400 rpm, Spalare 8 kg, Uscare 5 kg, Easy Iron, Alb",
 "pret": 2411.99,
 "imagine": "https://www.dwyn.ro/images/products/img_202404261115/231583/full/candy-masina-de-spalat-rufe-cu-uscator-incorporabila-candy-clasa-d-1400-rpm-spalare-8-kg-uscare-5-kg-easy-iron-alb-472397.jpg",
@@ -933,18 +884,6 @@
 "brand": "CANDY",
 "url_magazin": "https://www.dwyn.ro/masina-de-spalat-rufe/candy/231583-masina-de-spalat-rufe-cu-uscator-incorporabila-candy-clasa-d-1400-rpm-spalare-8-kg-uscare-5-kg-easy-iron-alb/",
 "pret_vechi": null
-},
-{
-"titlu": "Masina de spalat rufe cu uscator incorporabila Candy BC4S485M4D8-S, Wi-Fi, 8/5 kg, 1400 rpm, Clasa A/D, 16 programe (Alb",
-"pret": 2451.99,
-"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4290%2F4290364%2F69c7c2bd09269.jpg&type=auto&width=500&sign=m1SpNxpICkXAkpbLXd1T73EPmDDcxYTI32Td-BbEtj8",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Felectrocasnice-electrocasnice-mari-masini-de-spalat-rufe-si-accesorii-masini-de-spalat-rufe%2Fcandy-masina-de-spalat-rufe-cu-uscator-incorporabila-candy-bc4s485m4d8-s-wi-fi-8-5-kg-1400-rpm-clasa-a-d-16-programe-alb-4290364.html",
-"magazin": "evomag.ro",
-"id": "5-mbdOBXY9gc",
-"brand": "Candy",
-"url_magazin": "https://www.evomag.ro/electrocasnice-electrocasnice-mari-masini-de-spalat-rufe-si-accesorii-masini-de-spalat-rufe/candy-masina-de-spalat-rufe-cu-uscator-incorporabila-candy-bc4s485m4d8-s-wi-fi-8-5-kg-1400-rpm-clasa-a-d-16-programe-alb-4290364.html",
-"pret_vechi": null,
-"verificat": "2026-11-04"
 },
 {
 "titlu": "Masina de spalat rufe cu uscator incorporabila Candy BC4S695M6D8-S, 9/5 kg, 1600 rpm, Clasa A/D, Wi-Fi, ProMix, Easy Iro",
@@ -958,37 +897,14 @@
 "pret_vechi": null
 },
 {
-"titlu": "Masina de spalat rufe cu uscator LG F2DR509S1W, 9 kg/5 kg, 1200 rpm, Clasa E (Alb)",
-"pret": 2699.99,
-"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4237%2F4237207%2Fmasina-de-spalat-rufe-cu-uscat-6881df853e28e.png&type=auto&width=500&sign=yTR4MN4fdG6p_BRkofbuEQMiupYCbZtAqywgu15NauM",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Felectrocasnice-electrocasnice-mari-masini-de-spalat-rufe-si-accesorii-masini-de-spalat-rufe%2Flg-masina-de-spalat-rufe-cu-uscator-lg-f2dr509s1w-9-kg-5-kg-1200-rpm-clasa-e-alb-4237207.html",
-"magazin": "evomag.ro",
-"id": "b-ADU2STPDeQ",
-"brand": "LG",
-"url_magazin": "https://www.evomag.ro/electrocasnice-electrocasnice-mari-masini-de-spalat-rufe-si-accesorii-masini-de-spalat-rufe/lg-masina-de-spalat-rufe-cu-uscator-lg-f2dr509s1w-9-kg-5-kg-1200-rpm-clasa-e-alb-4237207.html",
-"pret_vechi": null
-},
-{
-"titlu": "LG Masina de spalat rufe cu uscator LG F2DR509S1W, 9 kg/5 kg, 1200 rpm, Clasa E, Alb",
-"pret": 2989.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202512311121/410773/full/lg-masina-de-spalat-rufe-cu-uscator-lg-f2dr509s1w-9-kg-5-kg-1200-rpm-clasa-e-alb-1334470.png",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fmasina-de-spalat-rufe%2Flg%2F410773-masina-de-spalat-rufe-cu-uscator-lg-f2dr509s1w-9-kg-5-kg-1200-rpm-clasa-e-alb%2F",
+"titlu": "Samsung Masina de spalat rufe cu uscator Samsung WD10HG6U34BEU4, Spalare 10 kg, Uscare 6 kg, 1400 rpm, Clasa A Spalare,",
+"pret": 3105.99,
+"imagine": "https://www.dwyn.ro/images/products/img_202512311121/411814/full/samsung-masina-de-spalat-rufe-cu-uscator-samsung-wd10hg6u34beu4-spalare-10-kg-uscare-6-kg-1400-rpm-clasa-a-spalare-clasa-d-spalare-plus-uscare-ai-ecobubble-bubble-soak-ai-control-wifi-alb-1315174.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fmasina-de-spalat-rufe%2Fsamsung%2F411814-masina-de-spalat-rufe-cu-uscator-samsung-wd10hg6u34beu4-spalare-10-kg-uscare-6-kg-1400-rpm-clasa-a-spalare-clasa-d-spalare-plus-uscare-ai-ecobubble-bubble-soak-ai-control-wifi-alb%2F",
 "magazin": "dwyn.ro",
-"id": "iTss4J4E8Bkg",
-"brand": "LG",
-"url_magazin": "https://www.dwyn.ro/masina-de-spalat-rufe/lg/410773-masina-de-spalat-rufe-cu-uscator-lg-f2dr509s1w-9-kg-5-kg-1200-rpm-clasa-e-alb/",
-"pret_vechi": null,
-"verificat": "2026-11-04"
-},
-{
-"titlu": "Beko Masina de spalat rufe cu uscator BEKO BM5DFST68442W, Clasa D, SteamCure, 8/5 kg, 1400 rpm, Alb",
-"pret": 3284.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202512311121/371072/full/beko-masina-de-spalat-rufe-cu-uscator-beko-bm5dfst68442w-clasa-d-steamcure-8-5-kg-1400-rpm-alb-1057535.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fmasina-de-spalat-rufe%2Fbeko%2F371072-masina-de-spalat-rufe-cu-uscator-beko-bm5dfst68442w-clasa-d-steamcure-8-5-kg-1400-rpm-alb%2F",
-"magazin": "dwyn.ro",
-"id": "x3waEPFeUwZc",
-"brand": "Beko",
-"url_magazin": "https://www.dwyn.ro/masina-de-spalat-rufe/beko/371072-masina-de-spalat-rufe-cu-uscator-beko-bm5dfst68442w-clasa-d-steamcure-8-5-kg-1400-rpm-alb/",
+"id": "Y_VVAJH5_N15",
+"brand": "Samsung",
+"url_magazin": "https://www.dwyn.ro/masina-de-spalat-rufe/samsung/411814-masina-de-spalat-rufe-cu-uscator-samsung-wd10hg6u34beu4-spalare-10-kg-uscare-6-kg-1400-rpm-clasa-a-spalare-clasa-d-spalare-plus-uscare-ai-ecobubble-bubble-soak-ai-control-wifi-alb/",
 "pret_vechi": null
 },
 {
@@ -1023,6 +939,39 @@
 "brand": "Beko",
 "url_magazin": "https://www.dwyn.ro/masina-de-spalat-rufe/beko/371057-masina-de-spalat-rufe-cu-uscator-beko-b7dft6105447wbpbes-clasa-d-steamcure-10-5-7-kg-1400rpm-homewhiz-alb/",
 "pret_vechi": null
+},
+{
+"titlu": "Masina de spalat rufe cu uscator Electrolux EW8W4402QE, Spalare 11 kg, Uscare 7 kg, 1400 rpm, WIFI, LCD, Clase energie A",
+"pret": 4099.99,
+"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4254%2F4254328%2F68ea525927328.jpg&type=auto&width=500&sign=klEoiVGKdHZlqxUNZBUCK9ZjMyTMYw7qbbt7ng3zKbo",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Felectrocasnice-electrocasnice-mari-masini-de-spalat-rufe-si-accesorii-masini-de-spalat-rufe%2Felectrolux-masina-de-spalat-rufe-cu-uscator-electrolux-ew8w4402qe-spalare-11-kg-uscare-7-kg-1400-rpm-wifi-lcd-clase-energie-a-spalare-d-spalare-uscare-dozator-universal-ultracare-steamcare-timemanager-adancime-60-cm-alb-4254328.html",
+"magazin": "evomag.ro",
+"id": "LdKtFBOP1z9a",
+"brand": "Electrolux",
+"url_magazin": "https://www.evomag.ro/electrocasnice-electrocasnice-mari-masini-de-spalat-rufe-si-accesorii-masini-de-spalat-rufe/electrolux-masina-de-spalat-rufe-cu-uscator-electrolux-ew8w4402qe-spalare-11-kg-uscare-7-kg-1400-rpm-wifi-lcd-clase-energie-a-spalare-d-spalare-uscare-dozator-universal-ultracare-steamcare-timemanager-adancime-60-cm-alb-4254328.html",
+"pret_vechi": null
+},
+{
+"titlu": "Masina de spalat rufe cu uscator Bosch WNA13400BY, 8 kg spalare, 5 kg uscare, 1400 RPM, Clasa C, EcoSilence Drive, AutoD",
+"pret": 4199.99,
+"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F3904%2F3904754%2F6257c1f18e815.jpg&type=auto&width=500&sign=d6DtsZlgHTMvZDrZVvpGM-W4aRxzSzeCYrq0CSiQNtc",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Felectrocasnice-electrocasnice-mari-masini-de-spalat-rufe-si-accesorii-masini-de-spalat-rufe%2Fbosch-masina-de-spalat-rufe-cu-uscator-bosch-wna13400by-8-kg-spalare-5-kg-uscare-1400-rpm-clasa-c-ecosilence-drive-autodry-activewater-plus-alb-3904754.html",
+"magazin": "evomag.ro",
+"id": "CmqzmHG5_TaN",
+"brand": "BOSCH",
+"url_magazin": "https://www.evomag.ro/electrocasnice-electrocasnice-mari-masini-de-spalat-rufe-si-accesorii-masini-de-spalat-rufe/bosch-masina-de-spalat-rufe-cu-uscator-bosch-wna13400by-8-kg-spalare-5-kg-uscare-1400-rpm-clasa-c-ecosilence-drive-autodry-activewater-plus-alb-3904754.html",
+"pret_vechi": null
+},
+{
+"titlu": "BOSCH Masina de spalat rufe cu uscator BOSCH Serie 4 WNA13401BY, 8kg spalare, 5kg uscare, 1400rpm, Clasa D, Alb",
+"pret": 4344.99,
+"imagine": "https://www.dwyn.ro/images/products/img_202606122129/482830/full/bosch-ma-in-de-sp-lat-rufe-cu-usc-tor-bosch-serie-4-wna13401by-8kg-sp-lare-5kg-uscare-1400rpm-clasa-d-1522135.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fmasina-de-spalat-rufe%2Fbosch%2F482830-masina-de-spalat-rufe-cu-uscator-bosch-serie-4-wna13401by-8kg-spalare-5kg-uscare-1400rpm-clasa-d-alb%2F",
+"magazin": "dwyn.ro",
+"id": "3vOmltubSVxr",
+"brand": "BOSCH",
+"url_magazin": "https://www.dwyn.ro/masina-de-spalat-rufe/bosch/482830-masina-de-spalat-rufe-cu-uscator-bosch-serie-4-wna13401by-8kg-spalare-5kg-uscare-1400rpm-clasa-d-alb/",
+"pret_vechi": null
 }
 ],
 "magazine": [
@@ -1037,7 +986,7 @@
 "titlu": "Mașini de spălat slim",
 "nota": null,
 "in_text": "\\bslim\\b",
-"actualizat": "2026-11-24",
+"actualizat": "2026-11-28",
 "feeduri": [
 {
 "id": 1539,
@@ -1074,7 +1023,7 @@
 "id": "h_gov9kE3z-F",
 "brand": "Albatros",
 "url_magazin": "https://www.evomag.ro/electrocasnice-electrocasnice-mari-masini-de-spalat-rufe-si-accesorii-masini-de-spalat-rufe/albatros-masina-de-spalat-rufe-albatros-awm1265-6-kg-15-programe-1200-rotatii-clasa-energetica-e-model-slim-alb-4316684.html",
-"pret_vechi": null,
+"pret_vechi": 1442.99,
 "verificat": "2026-11-04"
 },
 {
@@ -1124,6 +1073,28 @@
 "url_magazin": "https://www.evomag.ro/electrocasnice-electrocasnice-mari-masini-de-spalat-rufe-si-accesorii-masini-de-spalat-rufe/candy-masina-de-spalat-rufe-slim-candy-ey-27sb7g-s-proactive-wash-fresh-vapor-tambur-delicat-antibacterian-clean-shield-ai-silent-start-intarziat-7-kg-1200-rpm-clasa-a-gri-inchis-4290366.html",
 "pret_vechi": null,
 "verificat": "2026-11-04"
+},
+{
+"titlu": "Masina de spalat rufe frontala slim ARCTIC APLM2WFSU28411AS, ExtraSteam, 8 kg, 1400rpm, Clasa A (Antracit)",
+"pret": 1612.99,
+"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4318%2F4318830%2F8690842901997-6ac8bc88e345a.jpg&type=auto&width=500&sign=WZ1WhBPaLQsgHaQhyJq4zqLVndchDsalavfPd7dV-Xc",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Felectrocasnice-electrocasnice-mari-masini-de-spalat-rufe-si-accesorii-masini-de-spalat-rufe%2Farctic-masina-de-spalat-rufe-frontala-slim-arctic-aplm2wfsu28411as-extrasteam-8-kg-1400rpm-clasa-a-antracit-4318830.html",
+"magazin": "evomag.ro",
+"id": "FqQv2EbSWk1S",
+"brand": "Arctic",
+"url_magazin": "https://www.evomag.ro/electrocasnice-electrocasnice-mari-masini-de-spalat-rufe-si-accesorii-masini-de-spalat-rufe/arctic-masina-de-spalat-rufe-frontala-slim-arctic-aplm2wfsu28411as-extrasteam-8-kg-1400rpm-clasa-a-antracit-4318830.html",
+"pret_vechi": null
+},
+{
+"titlu": "Arctic Masina de spalat rufe frontala slim ARCTIC APLM2WFSU28411AS, ExtraSteam, 8 kg, 1400rpm, Clasa A, antracit",
+"pret": 1631.99,
+"imagine": "https://www.dwyn.ro/images/products/img_202606122129/483829/full/arctic-masina-de-spalat-rufe-frontala-slim-arctic-aplm2wfsu28411as-extrasteam-8-kg-1400rpm-clasa-a-antracit-1525216.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fmasina-de-spalat-rufe%2Farctic%2F483829-masina-de-spalat-rufe-frontala-slim-arctic-aplm2wfsu28411as-extrasteam-8-kg-1400rpm-clasa-a-antracit%2F",
+"magazin": "dwyn.ro",
+"id": "jvloC7Uk9tY8",
+"brand": "Arctic",
+"url_magazin": "https://www.dwyn.ro/masina-de-spalat-rufe/arctic/483829-masina-de-spalat-rufe-frontala-slim-arctic-aplm2wfsu28411as-extrasteam-8-kg-1400rpm-clasa-a-antracit/",
+"pret_vechi": null
 },
 {
 "titlu": "CANDY Masina de spalat rufe Slim Candy, ProActive Wash, Fresh Vapor, Tambur delicat, Antibacterian, Clean Shield, AI Sil",
@@ -1184,18 +1155,6 @@
 "url_magazin": "https://www.evomag.ro/electrocasnice-electrocasnice-mari-masini-de-spalat-rufe-si-accesorii-masini-de-spalat-rufe/lg-masina-de-spalat-rufe-frontala-slim-lg-f2wr508sbw-steam-8-kg-1200rpm-clasa-a-alb-4144381.html",
 "pret_vechi": 2189.99,
 "verificat": "2026-11-04"
-},
-{
-"titlu": "Masina de spalat rufe slim LG F2WR508SWW, 8 kg, 1200 rpm, Clasa A, Tehnologie AI DD, Aburi (Alb)",
-"pret": 2257.99,
-"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4168%2F4168821%2Fmasina-de-spalat-rufe-slim-lg-668bafa577607.jpg&type=auto&width=500&sign=lSCa5OkWPNKJJCy9pnMIDgROy-Evz0r1KpGSzX8-IjQ",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Felectrocasnice-electrocasnice-mari-masini-de-spalat-rufe-si-accesorii-masini-de-spalat-rufe%2Flg-masina-de-spalat-rufe-slim-lg-f2wr508sww-8-kg-1200-rpm-clasa-a-tehnologie-ai-dd-aburi-alb-4168821.html",
-"magazin": "evomag.ro",
-"id": "k3nRoMStiyYI",
-"brand": "LG",
-"url_magazin": "https://www.evomag.ro/electrocasnice-electrocasnice-mari-masini-de-spalat-rufe-si-accesorii-masini-de-spalat-rufe/lg-masina-de-spalat-rufe-slim-lg-f2wr508sww-8-kg-1200-rpm-clasa-a-tehnologie-ai-dd-aburi-alb-4168821.html",
-"pret_vechi": null,
-"verificat": "2026-11-04"
 }
 ],
 "magazine": [
@@ -1210,7 +1169,7 @@
 "titlu": "Mașini de spălat sub 1.500 lei",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-24",
+"actualizat": "2026-11-28",
 "feeduri": [
 {
 "id": 1539,
@@ -1276,7 +1235,7 @@
 "titlu": "Mașini de spălat vase de 45 cm",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-24",
+"actualizat": "2026-11-28",
 "feeduri": [
 {
 "id": 1096,
@@ -1301,7 +1260,7 @@
 "id": "0b40b9da2",
 "brand": "Candy",
 "url_magazin": "https://www.evomag.ro/electrocasnice-electrocasnice-mari-masini-de-spalat-vase/candy-masina-de-spalat-vase-independenta-candy-cdph-2l1049s-10-seturi-5-programe-45-cm-clasa-e-argintiu-4182585.html",
-"pret_vechi": 1123.99
+"pret_vechi": null
 },
 {
 "titlu": "Masina de spalat vase incorporabila Heinner HDW-BIM45510E++, Slim, 10 seturi, 5 programe, Clasa E, AquaStop, 45 cm",
@@ -1315,25 +1274,14 @@
 "pret_vechi": 1260.99
 },
 {
-"titlu": "Masina de spalat vase Samus SDW410.8, 10 seturi, Latime 45 cm, 8 Programe, Clasa energetica E, Afisaj electronic (Alb)",
-"pret": 1275.99,
-"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4184%2F4184937%2F6708fffbe6dd1.jpg&type=auto&width=500&sign=4234fZwoAyLffnJ9F-4s48UGePQqeFwS4m17kmX_al8",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Felectrocasnice-electrocasnice-mari-masini-de-spalat-vase%2Fsamus-masina-de-spalat-vase-samus-sdw410.8-10-seturi-latime-45-cm-8-programe-clasa-energetica-e-afisaj-electronic-alb-4184937.html",
-"magazin": "evomag.ro",
-"id": "ff3c58b57",
-"brand": "Samus",
-"url_magazin": "https://www.evomag.ro/electrocasnice-electrocasnice-mari-masini-de-spalat-vase/samus-masina-de-spalat-vase-samus-sdw410.8-10-seturi-latime-45-cm-8-programe-clasa-energetica-e-afisaj-electronic-alb-4184937.html",
-"pret_vechi": null
-},
-{
-"titlu": "Masina de spalat vase Samus SDX410.8, 10 seturi, Latime 45 cm, 8 Programe, Clasa energetica E, Afisaj electronic, Pornir",
-"pret": 1352.99,
-"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4184%2F4184945%2F6708fffbb125e.jpg&type=auto&width=500&sign=gdmW1NupEB6iNjSmQuHb71t1lsZiL1AKR1mmSGuJ7ro",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Felectrocasnice-electrocasnice-mari-masini-de-spalat-vase%2Fsamus-masina-de-spalat-vase-samus-sdx410.8-10-seturi-latime-45-cm-8-programe-clasa-energetica-e-afisaj-electronic-pornire-intarziata-inox-argintiu-4184945.html",
-"magazin": "evomag.ro",
-"id": "c5cf6ac05",
-"brand": "Samus",
-"url_magazin": "https://www.evomag.ro/electrocasnice-electrocasnice-mari-masini-de-spalat-vase/samus-masina-de-spalat-vase-samus-sdx410.8-10-seturi-latime-45-cm-8-programe-clasa-energetica-e-afisaj-electronic-pornire-intarziata-inox-argintiu-4184945.html",
+"titlu": "TESLA Masina de spalat vase incorporabila Tesla WDI491M, clasa E,10 seturi, 7 programe, 45 cm, Inox",
+"pret": 1616.99,
+"imagine": "https://www.dwyn.ro/images/products/img_202606122129/425461/full/tesla-masina-de-spalat-vase-incorp-tesla-wdi491m-clasa-e-10-seturi-7-programe-45-cm-inox-1373167.png",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fmasina-de-spalat-vase%2Ftesla%2F425461-masina-de-spalat-vase-incorporabila-tesla-wdi491m-clasa-e-10-seturi-7-programe-45-cm-inox%2F",
+"magazin": "dwyn.ro",
+"id": "VXJWYOKYLyv_",
+"brand": "TESLA",
+"url_magazin": "https://www.dwyn.ro/masina-de-spalat-vase/tesla/425461-masina-de-spalat-vase-incorporabila-tesla-wdi491m-clasa-e-10-seturi-7-programe-45-cm-inox/",
 "pret_vechi": null
 },
 {
@@ -1413,7 +1361,7 @@
 "imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F3813%2F3813914%2Fmasina-de-spalat-vase-incorpor-607e716d76389.JPG&type=auto&width=500&sign=OADkQOVJ5JANEqoEnzgUOtZlDzqV4iAaCDTFSjzHMpo",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Felectrocasnice-electrocasnice-mari-masini-de-spalat-vase%2Fbosch-masina-de-spalat-vase-incorporabila-bosch-spv2ikx10e-9-seturi-5-programe-clasa-f-home-connect-45-cm-3813914.html",
 "magazin": "evomag.ro",
-"id": "gYx_-Ek-Ri0O",
+"id": "0030f7cb8",
 "brand": "BOSCH",
 "url_magazin": "https://www.evomag.ro/electrocasnice-electrocasnice-mari-masini-de-spalat-vase/bosch-masina-de-spalat-vase-incorporabila-bosch-spv2ikx10e-9-seturi-5-programe-clasa-f-home-connect-45-cm-3813914.html",
 "pret_vechi": null,
@@ -1421,7 +1369,7 @@
 },
 {
 "titlu": "Gorenje Masina de spalat vase Gorenje GS520E15S, 9 seturi, 5 programe, Clasa E, 45 cm, Gri",
-"pret": 2345.99,
+"pret": 2343.99,
 "imagine": "https://www.dwyn.ro/images/products/img_202512311121/385058/full/gorenje-gorenje-gs520e15s-dishwasher-e-free-standing-width-45-cm-number-of-place-settings-9-grey-1179521.jpg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fmasina-de-spalat-vase%2Fgorenje%2F385058-masina-de-spalat-vase-gorenje-gs520e15s-9-seturi-5-programe-clasa-e-45-cm-gri%2F",
 "magazin": "dwyn.ro",
@@ -1431,14 +1379,14 @@
 "pret_vechi": null
 },
 {
-"titlu": "BOSCH Masina de spalat vase Bosch Serie 2, 10 seturi, 45 cm, Clasa D, Complet incorporabila",
-"pret": 2529.99,
-"imagine": "https://www.dwyn.ro/images/products/img_202512311121/409333/full/bosch-ma-in-de-sp-lat-vase-complet-ncorporabil-bosch-serie-2-spv2hkx02e-45cm-2400w-clasa-d-alb-1307839.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2Fmasina-de-spalat-vase%2Fbosch%2F409333-masina-de-spalat-vase-bosch-serie-2-10-seturi-45-cm-clasa-d-complet-incorporabila%2F",
-"magazin": "dwyn.ro",
-"id": "8XCCrklY-SiY",
+"titlu": "Masina de spalat vase incorporabila Bosch SPV4HMX49E, 10 seturi, 6 programe, Clasa E, Home Connect, 45 cm (Alb)",
+"pret": 2426.99,
+"imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4168%2F4168463%2F66826dfb9967d.jpg&type=auto&width=500&sign=uyoFWJBRtPt9ATUGVEgNuH42PvEFm2t3pyzzjF2lan4",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Felectrocasnice-electrocasnice-mari-masini-de-spalat-vase%2Fbosch-masina-de-spalat-vase-incorporabila-bosch-spv4hmx49e-10-seturi-6-programe-clasa-e-home-connect-45-cm-alb-4168463.html",
+"magazin": "evomag.ro",
+"id": "2e55f24b9",
 "brand": "BOSCH",
-"url_magazin": "https://www.dwyn.ro/masina-de-spalat-vase/bosch/409333-masina-de-spalat-vase-bosch-serie-2-10-seturi-45-cm-clasa-d-complet-incorporabila/",
+"url_magazin": "https://www.evomag.ro/electrocasnice-electrocasnice-mari-masini-de-spalat-vase/bosch-masina-de-spalat-vase-incorporabila-bosch-spv4hmx49e-10-seturi-6-programe-clasa-e-home-connect-45-cm-alb-4168463.html",
 "pret_vechi": null
 }
 ],
@@ -14238,7 +14186,7 @@
 "titlu": "Parfum Lancôme La Vie Est Belle",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-23",
+"actualizat": "2026-11-28",
 "feeduri": [
 {
 "id": 9125,
@@ -14295,17 +14243,6 @@
 "verificat": "2026-11-04"
 },
 {
-"titlu": "Lancome La Vie Est Belle EDP Volum 30 ml",
-"pret": 264.99,
-"imagine": "https://fragranza.ro/26534-large_default/lancome-la-vie-est-belle-edp.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Ffragranza.ro%2Flancome-la-vie-est-belle-edp%23%2F51-volum-30_ml",
-"magazin": "fragranza.ro",
-"id": "YhxiO-dSswny",
-"brand": "Lancome",
-"url_magazin": "https://fragranza.ro/lancome-la-vie-est-belle-edp#/51-volum-30_ml",
-"pret_vechi": null
-},
-{
 "titlu": "Lancome La Vie Est Belle Intensement Apă de parfum pentru Femei Tester EDP Volum 50 ml",
 "pret": 274.99,
 "imagine": "https://fragranza.ro/11801-large_default/lancome-la-vie-est-belle-intensement-apă-de-parfum-pentru-femei-tester-edp.jpg",
@@ -14316,6 +14253,17 @@
 "url_magazin": "https://fragranza.ro/lancome-la-vie-est-belle-intensement-apă-de-parfum-pentru-femei-tester-edp",
 "pret_vechi": null,
 "verificat": "2026-11-04"
+},
+{
+"titlu": "Lancome La Vie Est Belle EDP Volum 30 ml",
+"pret": 295.99,
+"imagine": "https://fragranza.ro/26534-large_default/lancome-la-vie-est-belle-edp.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Ffragranza.ro%2Flancome-la-vie-est-belle-edp%23%2F51-volum-30_ml",
+"magazin": "fragranza.ro",
+"id": "YhxiO-dSswny",
+"brand": "Lancome",
+"url_magazin": "https://fragranza.ro/lancome-la-vie-est-belle-edp#/51-volum-30_ml",
+"pret_vechi": null
 },
 {
 "titlu": "Lancome La Vie Est Belle L'Elixir Apa de parfum pentru femei Tester EDP Volum 50 ml",
@@ -14389,7 +14337,7 @@
 "titlu": "Parfum Yves Saint Laurent Libre",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-23",
+"actualizat": "2026-11-28",
 "feeduri": [
 {
 "id": 8532,
@@ -14410,6 +14358,39 @@
 ],
 "produse": [
 {
+"titlu": "Yves Saint Laurent Apă de parfum Libre Intense, 30 ml",
+"pret": 349.0,
+"imagine": "https://www.ozone.ro/media/catalog/product/y/v/yves_saint_laurent_parfyumna_voda_libre_intense_30_ml_1761030993_0.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ozone.ro%2Fproduct%2Fyves-saint-laurent-ap-de-parfum-libre-intense-30-ml%2F",
+"magazin": "ozone.ro",
+"id": "LkmIW3iDKM2g",
+"brand": "Yves Saint Laurent",
+"url_magazin": "https://www.ozone.ro/product/yves-saint-laurent-ap-de-parfum-libre-intense-30-ml/",
+"pret_vechi": null
+},
+{
+"titlu": "Yves Saint Laurent Apă de parfum Libre Flowers & Flames, 50 ml",
+"pret": 426.97,
+"imagine": "https://www.ozone.ro/media/catalog/product/y/v/yves_saint_laurent_parfyumna_voda_libre_flowers_flames_50_ml_1763128697_0.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ozone.ro%2Fproduct%2Fyves-saint-laurent-ap-de-parfum-libre-flowers-flames-50-ml%2F",
+"magazin": "ozone.ro",
+"id": "e5ZI2FU_sWiL",
+"brand": "Yves Saint Laurent",
+"url_magazin": "https://www.ozone.ro/product/yves-saint-laurent-ap-de-parfum-libre-flowers-flames-50-ml/",
+"pret_vechi": null
+},
+{
+"titlu": "Yves Saint Laurent Apă de parfum Libre L’Eau Nue, 50 ml",
+"pret": 447.7,
+"imagine": "https://www.ozone.ro/media/catalog/product/y/v/yves_saint_laurent_parfyumna_voda_libre_l_eau_nue_50_ml_1761031006_0.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ozone.ro%2Fproduct%2Fyves-saint-laurent-ap-de-parfum-libre-l-eau-nue-50-ml%2F",
+"magazin": "ozone.ro",
+"id": "OwMXM0BvAPcG",
+"brand": "Yves Saint Laurent",
+"url_magazin": "https://www.ozone.ro/product/yves-saint-laurent-ap-de-parfum-libre-l-eau-nue-50-ml/",
+"pret_vechi": null
+},
+{
 "titlu": "Yves Saint Laurent Libre Flowers & Flames Eau de Parfum femei 50 ml",
 "pret": 451.0,
 "imagine": "https://www.brasty.ro/images/w320/yves-saint-laurent-libre-flowers-flames-eau-de-parfum-femei-50-ml/3614274151152-1.jpg",
@@ -14422,6 +14403,39 @@
 "verificat": "2026-11-11"
 },
 {
+"titlu": "Yves Saint Laurent Apă de parfum Libre Intense, 50 ml",
+"pret": 466.81,
+"imagine": "https://www.ozone.ro/media/catalog/product/y/v/yves_saint_laurent_parfyumna_voda_libre_intense_50_ml_1761030997_0.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ozone.ro%2Fproduct%2Fyves-saint-laurent-ap-de-parfum-libre-intense-50-ml%2F",
+"magazin": "ozone.ro",
+"id": "NFt3Rt3TRP-U",
+"brand": "Yves Saint Laurent",
+"url_magazin": "https://www.ozone.ro/product/yves-saint-laurent-ap-de-parfum-libre-intense-50-ml/",
+"pret_vechi": null
+},
+{
+"titlu": "Yves Saint Laurent Parfum Libre Le Parfum, 50 ml",
+"pret": 476.94,
+"imagine": "https://www.ozone.ro/media/catalog/product/y/v/yves_saint_laurent_parfyum_libre_le_parfum_50_ml_1761030873_0.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ozone.ro%2Fproduct%2Fysl-libre-le-parfum-edp-50-ml-d%2F",
+"magazin": "ozone.ro",
+"id": "ToPknZ9S0yvI",
+"brand": "Yves Saint Laurent",
+"url_magazin": "https://www.ozone.ro/product/ysl-libre-le-parfum-edp-50-ml-d/",
+"pret_vechi": null
+},
+{
+"titlu": "Yves Saint Laurent Apă de parfum Libre, 90 ml, tester",
+"pret": 492.33,
+"imagine": "https://www.ozone.ro/media/catalog/product/y/v/yves_saint_laurent_parfyumna_voda_libre_90_ml_tester_1761031261_0.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ozone.ro%2Fproduct%2Fyves-saint-laurent-ap-de-parfum-libre-90-ml-tester%2F",
+"magazin": "ozone.ro",
+"id": "V2jCaCaIiXsG",
+"brand": "Yves Saint Laurent",
+"url_magazin": "https://www.ozone.ro/product/yves-saint-laurent-ap-de-parfum-libre-90-ml-tester/",
+"pret_vechi": null
+},
+{
 "titlu": "Yves Saint Laurent Libre Flowers & Flames Eau de Parfum femei 90 ml",
 "pret": 555.0,
 "imagine": "https://www.brasty.ro/images/w320/yves-saint-laurent-libre-flowers-flames-eau-de-parfum-femei-90-ml/2048950-1.jpg",
@@ -14432,10 +14446,33 @@
 "url_magazin": "https://www.brasty.ro/yves-saint-laurent-libre-flowers-flames-eau-de-parfum-femei-90-ml",
 "pret_vechi": null,
 "verificat": "2026-11-11"
+},
+{
+"titlu": "Yves Saint Laurent Apă de parfum Libre Collector Edition 2024, 50 ml",
+"pret": 557.24,
+"imagine": "https://www.ozone.ro/media/catalog/product/y/v/yves_saint_laurent_parfyumna_voda_libre_collector_edition_2024_50_ml_1786619726_0.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ozone.ro%2Fproduct%2Fyves-saint-laurent-ap-de-parfum-libre-collector-edition-2024-50-ml%2F",
+"magazin": "ozone.ro",
+"id": "YGhByetikwa3",
+"brand": "Yves Saint Laurent",
+"url_magazin": "https://www.ozone.ro/product/yves-saint-laurent-ap-de-parfum-libre-collector-edition-2024-50-ml/",
+"pret_vechi": null
+},
+{
+"titlu": "Yves Saint Laurent Apă de parfum Libre L’Eau Nue, 90 ml",
+"pret": 629.94,
+"imagine": "https://www.ozone.ro/media/catalog/product/y/v/yves_saint_laurent_parfyumna_voda_libre_l_eau_nue_90_ml_1761031009_0.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ozone.ro%2Fproduct%2Fyves-saint-laurent-ap-de-parfum-libre-l-eau-nue-90-ml%2F",
+"magazin": "ozone.ro",
+"id": "zrw9_rNFJpWp",
+"brand": "Yves Saint Laurent",
+"url_magazin": "https://www.ozone.ro/product/yves-saint-laurent-ap-de-parfum-libre-l-eau-nue-90-ml/",
+"pret_vechi": null
 }
 ],
 "magazine": [
-"brasty.ro"
+"brasty.ro",
+"ozone.ro"
 ]
 },
 {
@@ -14445,7 +14482,7 @@
 "titlu": "Vitamina D3 2000 UI",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-23",
+"actualizat": "2026-11-28",
 "feeduri": [
 {
 "id": 6414,
@@ -14512,16 +14549,16 @@
 "verificat": "2026-11-04"
 },
 {
-"titlu": "Vitamina D3 Köhler 2.000 UI 20 St",
-"pret": 23.34,
-"imagine": "https://liki24.ro/image/catalog/product/newupload/852176-134259313719716839.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fliki24.ro%2Fp%2Fvitamina-d3-koehler-2-000-ui-20-st%2F%3Fnlr%3D1",
-"magazin": "liki24.ro",
-"id": "YnL3wAxC21lt",
-"brand": "",
-"url_magazin": "https://liki24.ro/p/vitamina-d3-koehler-2-000-ui-20-st/?nlr=1",
+"titlu": "Laboratoarele Remedia Complex Imunitate cu vitamina C 1000 mg, zinc 25 mg si vitamina D3 2000 UI, 30 comprimate",
+"pret": 26.02,
+"imagine": "https://cdnmpro.com/848326168/p/raw/1/laboratoarele-remedia-complex-imunitate-cu-vitamina-c-1000-mg-zinc-25~150031.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.farmaciilenapofarm.ro%2Fimunitate-2%2Flaboratoarele-remedia-complex-imunitate-cu-vitamina-c-1000-mg-zinc-25-mg-si-vitamina-d3-2000-ui-30-comprimate",
+"magazin": "farmaciilenapofarm.ro",
+"id": "O5YykCeRwpJ0",
+"brand": "Laboratoarele Remedia",
+"url_magazin": "https://www.farmaciilenapofarm.ro/imunitate-2/laboratoarele-remedia-complex-imunitate-cu-vitamina-c-1000-mg-zinc-25-mg-si-vitamina-d3-2000-ui-30-comprimate",
 "pret_vechi": null,
-"verificat": "2026-11-04"
+"verificat": "2026-11-28"
 },
 {
 "titlu": "OstroVit Vitamina D3 2000 UI, 2x60 capsule",
@@ -14640,17 +14677,6 @@
 "verificat": "2026-11-04"
 },
 {
-"titlu": "Equilibra vitamina d3 2000 ui 30 comprimate - supliment imunostimulant",
-"pret": 41.76,
-"imagine": "https://liki24.ro/image/catalog/product/newupload/811236-134253389647819053.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fliki24.ro%2Fp%2Fequilibra-vitamina-d3-2000-ui-30-comprimate-supliment-imunostimulant%2F%3Fnlr%3D1",
-"magazin": "liki24.ro",
-"id": "feLDQx3YcOmL",
-"brand": "Equilibra",
-"url_magazin": "https://liki24.ro/p/equilibra-vitamina-d3-2000-ui-30-comprimate-supliment-imunostimulant/?nlr=1",
-"pret_vechi": null
-},
-{
 "titlu": "Vitamina D3 2000 UI + K2 (MK-7) 30cps moi",
 "pret": 42.11,
 "imagine": "https://cdn.vegis.ro/images/products/img_202406171514/156575/full/cosmopharm-vitamina-d3-2000-ui-plus-k2-mk-7-30cps-moi-357491.png",
@@ -14664,13 +14690,24 @@
 },
 {
 "titlu": "SFD D3 + K2, vitamina D 2000 UI + vitamina K 100 µg, 200 comprimate",
-"pret": 42.57,
+"pret": 42.23,
 "imagine": "https://liki24.ro/image/catalog/product/newupload/311096-133631868576835329.jpg",
 "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fliki24.ro%2Fp%2Fsfd-d3-k2-vitamina-d-2000-ui-vitamina-k-100-ug-200-comprimate%2F%3Fnlr%3D1",
 "magazin": "liki24.ro",
 "id": "2Mminaw3IipA",
 "brand": "SFD",
 "url_magazin": "https://liki24.ro/p/sfd-d3-k2-vitamina-d-2000-ui-vitamina-k-100-ug-200-comprimate/?nlr=1",
+"pret_vechi": null
+},
+{
+"titlu": "VITAMINA D3 IBSA 2000 UI 1×30 buc, supliment alimentar",
+"pret": 44.42,
+"imagine": "https://liki24.ro/image/catalog/product/newupload/876695-134275436330839383.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fliki24.ro%2Fp%2Fvitamina-d3-ibsa-2000-ui-1-30-buc-supliment-alimentar%2F%3Fnlr%3D1",
+"magazin": "liki24.ro",
+"id": "1t95guKrIlLe",
+"brand": "Ibsa Farmaceutici",
+"url_magazin": "https://liki24.ro/p/vitamina-d3-ibsa-2000-ui-1-30-buc-supliment-alimentar/?nlr=1",
 "pret_vechi": null
 },
 {
@@ -14696,18 +14733,6 @@
 "url_magazin": "https://vegis.ro/suplimente-capsule-comprimate/balkan-pharmaceuticals/167167-vitamina-d3-2000ui-plus-k2-50mcg-30cps-moi/",
 "pret_vechi": null,
 "verificat": "2026-11-04"
-},
-{
-"titlu": "Vitamina D3 2000 UI spray oral, 30 ml Casianhealth",
-"pret": 48.99,
-"imagine": "https://cdnmpro.com/848326168/p/raw/6/vitamina-d3-2000-ui-spray-oral-30-ml-casianhealth~188326.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.farmaciilenapofarm.ro%2Fvitamina-d3-adulti%2Fvitamina-d3-2000-ui-spray-oral-30-ml-casianhealth",
-"magazin": "farmaciilenapofarm.ro",
-"id": "7QFOXDxMjyLk",
-"brand": "Casianhealth",
-"url_magazin": "https://www.farmaciilenapofarm.ro/vitamina-d3-adulti/vitamina-d3-2000-ui-spray-oral-30-ml-casianhealth",
-"pret_vechi": null,
-"verificat": "2026-11-23"
 },
 {
 "titlu": "Vitamina D3 2000UI 120cps",
@@ -14744,6 +14769,17 @@
 "url_magazin": "https://vegis.ro/vitamine-si-minerale/molecules-of-youth/171295-vitamina-d3-2000-iu-din-lanolina-m10-90tb/",
 "pret_vechi": null,
 "verificat": "2026-11-04"
+},
+{
+"titlu": "VITAMINA D3 IBSA 2000 UI 2×30 buc, supliment alimentar",
+"pret": 84.64,
+"imagine": "https://liki24.ro/image/catalog/product/newupload/876696-134275440924215356.png",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fliki24.ro%2Fp%2Fvitamina-d3-ibsa-2000-ui-2-30-buc-supliment-alimentar%2F%3Fnlr%3D1",
+"magazin": "liki24.ro",
+"id": "CBpZY_ceFCgL",
+"brand": "Ibsa Farmaceutici",
+"url_magazin": "https://liki24.ro/p/vitamina-d3-ibsa-2000-ui-2-30-buc-supliment-alimentar/?nlr=1",
+"pret_vechi": null
 }
 ],
 "magazine": [
@@ -14759,7 +14795,7 @@
 "titlu": "Vitamina C 1000 mg",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-23",
+"actualizat": "2026-11-28",
 "feeduri": [
 {
 "id": 6414,
@@ -14813,6 +14849,18 @@
 "url_magazin": "https://www.farmaciilenapofarm.ro/vitamina-c-adulti/vitamina-c-1000-mg-cu-aroma-de-portocale-30-tablete-adams-vision",
 "pret_vechi": null,
 "verificat": "2026-11-04"
+},
+{
+"titlu": "Laboratoarele Remedia Complex Imunitate cu vitamina C 1000 mg, zinc 25 mg si vitamina D3 2000 UI, 30 comprimate",
+"pret": 26.02,
+"imagine": "https://cdnmpro.com/848326168/p/raw/1/laboratoarele-remedia-complex-imunitate-cu-vitamina-c-1000-mg-zinc-25~150031.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.farmaciilenapofarm.ro%2Fimunitate-2%2Flaboratoarele-remedia-complex-imunitate-cu-vitamina-c-1000-mg-zinc-25-mg-si-vitamina-d3-2000-ui-30-comprimate",
+"magazin": "farmaciilenapofarm.ro",
+"id": "O5YykCeRwpJ0",
+"brand": "Laboratoarele Remedia",
+"url_magazin": "https://www.farmaciilenapofarm.ro/imunitate-2/laboratoarele-remedia-complex-imunitate-cu-vitamina-c-1000-mg-zinc-25-mg-si-vitamina-d3-2000-ui-30-comprimate",
+"pret_vechi": null,
+"verificat": "2026-11-28"
 },
 {
 "titlu": "Vitamina C 1000mg 20cpr efervescente",
@@ -14875,6 +14923,17 @@
 "verificat": "2026-11-04"
 },
 {
+"titlu": "GRANIONS VITAMINA C 1000 MG, AROMĂ DE FRUCTE ROȘII, 20 COMPRIMATE",
+"pret": 39.02,
+"imagine": "https://liki24.ro/image/catalog/product/newupload/901411-134305766969399640.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fliki24.ro%2Fp%2Fgranions-vitamina-c-1000-mg-aroma-de-fructe-rosii-20-comprimate%2F%3Fnlr%3D1",
+"magazin": "liki24.ro",
+"id": "NvxXMTu87JKQ",
+"brand": "Granions",
+"url_magazin": "https://liki24.ro/p/granions-vitamina-c-1000-mg-aroma-de-fructe-rosii-20-comprimate/?nlr=1",
+"pret_vechi": null
+},
+{
 "titlu": "Vitamina C Lipozomala, 1000 mg, 60 capsule, Granions",
 "pret": 42.84,
 "imagine": "https://liki24.ro/image/catalog/product/newupload/727347-134216506832794460.jpg",
@@ -14922,17 +14981,6 @@
 "verificat": "2026-11-04"
 },
 {
-"titlu": "GRANIONS VITAMINA C 1000 MG, AROMĂ DE FRUCTE ROȘII, 20 COMPRIMATE",
-"pret": 55.75,
-"imagine": "https://liki24.ro/image/catalog/product/newupload/901411-134305766969399640.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fliki24.ro%2Fp%2Fgranions-vitamina-c-1000-mg-aroma-de-fructe-rosii-20-comprimate%2F%3Fnlr%3D1",
-"magazin": "liki24.ro",
-"id": "NvxXMTu87JKQ",
-"brand": "Granions",
-"url_magazin": "https://liki24.ro/p/granions-vitamina-c-1000-mg-aroma-de-fructe-rosii-20-comprimate/?nlr=1",
-"pret_vechi": null
-},
-{
 "titlu": "Vitamina C 1000 mg + Zn 25 mg + D3 4000UI, 2x30 comprimate filmate, Fiterman",
 "pret": 59.16,
 "imagine": "https://liki24.ro/image/catalog/product/newupload/909824-134359203784124045.png",
@@ -14978,18 +15026,6 @@
 "url_magazin": "https://pansiprod.ro/products/vitamina-c-1000-mg-90-cps?variant=44882621235431",
 "pret_vechi": null,
 "verificat": "2026-11-04"
-},
-{
-"titlu": "Vitamina C Lipozomala 1000 mg, 15 plicuri – Laboratoarele Remedia",
-"pret": 79.64,
-"imagine": "https://cdnmpro.com/848326168/p/raw/9/vitamina-c-lipozomala-1000-mg-15-plicuri-%E2%80%93-laboratoarele-remedia~150049.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.farmaciilenapofarm.ro%2Fvitamina-c-adulti%2Fvitamina-c-lipozomala-1000-mg-15-plicuri-laboratoarele-remedia",
-"magazin": "farmaciilenapofarm.ro",
-"id": "eJZjJK5zlf6h",
-"brand": "Laboratoarele Remedia",
-"url_magazin": "https://www.farmaciilenapofarm.ro/vitamina-c-adulti/vitamina-c-lipozomala-1000-mg-15-plicuri-laboratoarele-remedia",
-"pret_vechi": null,
-"verificat": "2026-11-23"
 },
 {
 "titlu": "Pachet Vitamina C Strong, 1000 mg, 60 tablete + 60 tablete, Naturmil",
@@ -15049,15 +15085,15 @@
 "verificat": "2026-11-04"
 },
 {
-"titlu": "Lipozomal Propolis 100mg, Vitamina C 1000mg, Vitamina D3 2000UI 30 fiole",
-"pret": 163.63,
-"imagine": "https://cdn.vegis.ro/images/products/img_202406171514/157562/full/albina-carpatina-lipozomal-propolis-100mg-vitamina-c-1000mg-vitamina-d3-2000ui-30-fiole-342677.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fvegis.ro%2Fsuplimente-fiole%2Falbina-carpatina%2F157562-lipozomal-propolis-100mg-vitamina-c-1000mg-vitamina-d3-2000ui-30-fiole%2F",
+"titlu": "Vitamina C 1000mg cu Bioflavonoide si Eliberare Prelungita 90tb",
+"pret": 165.0,
+"imagine": "https://cdn.vegis.ro/images/products/img_202406171514/169504/full/gnc-gnc-vitamina-c-1000-mg-cu-bioflavonoide-si-eliberare-prelungita-90-tb-381391.png",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fvegis.ro%2Fvitamina-c%2Fgnc%2F169504-vitamina-c-1000mg-cu-bioflavonoide-si-eliberare-prelungita-90tb%2F",
 "magazin": "vegis.ro",
-"id": "1-xdZzA-FrkZ",
-"brand": "ALBINA&nbsp;CARPATINA",
-"url_magazin": "https://vegis.ro/suplimente-fiole/albina-carpatina/157562-lipozomal-propolis-100mg-vitamina-c-1000mg-vitamina-d3-2000ui-30-fiole/",
-"pret_vechi": 192.5
+"id": "gYCLgTsgc8Sj",
+"brand": "GNC",
+"url_magazin": "https://vegis.ro/vitamina-c/gnc/169504-vitamina-c-1000mg-cu-bioflavonoide-si-eliberare-prelungita-90tb/",
+"pret_vechi": null
 }
 ],
 "magazine": [
@@ -15074,7 +15110,7 @@
 "titlu": "Magneziu în capsule",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-23",
+"actualizat": "2026-11-28",
 "feeduri": [
 {
 "id": 6414,
@@ -15094,18 +15130,6 @@
 }
 ],
 "produse": [
-{
-"titlu": "Păducel și Magneziu, 40 capsule, FarmaClass",
-"pret": 15.42,
-"imagine": "https://cdnmpro.com/848326168/p/raw/4/paducel-si-magneziu-40-capsule-farmaclass~188794.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.farmaciilenapofarm.ro%2Ftensiune-arteriala%2Fpaducel-si-magneziu-40-capsule-farmaclass",
-"magazin": "farmaciilenapofarm.ro",
-"id": "2qFtpvgJLDIh",
-"brand": "Farmaclass",
-"url_magazin": "https://www.farmaciilenapofarm.ro/tensiune-arteriala/paducel-si-magneziu-40-capsule-farmaclass",
-"pret_vechi": null,
-"verificat": "2026-11-04"
-},
 {
 "titlu": "Herbagetica Magneziu Forte, 30 capsule",
 "pret": 20.24,
@@ -15177,17 +15201,6 @@
 "url_magazin": "https://www.farmaciilenapofarm.ro/sanatatea-osoasa/lipozomal-d3-k2-magneziu-30-capsule-laboratoarele-remedia",
 "pret_vechi": null,
 "verificat": "2026-11-04"
-},
-{
-"titlu": "Pachet Calciu + Magneziu + Zinc + Seleniu activ 30 comprimate + Omega 3-6-9 30 capsule, Doppelherz",
-"pret": 49.47,
-"imagine": "https://liki24.ro/image/catalog/product/newupload/525505-134057030062414713.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fliki24.ro%2Fp%2Fpachet-calciu-magneziu-zinc-seleniu-activ-30-comprimate-omega-3-6-9-30-capsule-doppelherz%2F%3Fnlr%3D1",
-"magazin": "liki24.ro",
-"id": "T9I7z-9_mEsw",
-"brand": "",
-"url_magazin": "https://liki24.ro/p/pachet-calciu-magneziu-zinc-seleniu-activ-30-comprimate-omega-3-6-9-30-capsule-doppelherz/?nlr=1",
-"pret_vechi": null
 },
 {
 "titlu": "Swanson Aspartat de magneziu, 685 mg, 90 capsule",
@@ -15262,6 +15275,18 @@
 "verificat": "2026-11-04"
 },
 {
+"titlu": "Viridian Magneziu Bisglicinat High Potency, 60 capsule",
+"pret": 125.55,
+"imagine": "https://cdnmpro.com/848326168/p/raw/1/viridian-magneziu-bisglicinat-high-potency-60-capsule~188671.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.farmaciilenapofarm.ro%2Fmagneziu-si-minerale-esentiale-2%2Fviridian-magneziu-bisglicinat-high-potency-60-capsule",
+"magazin": "farmaciilenapofarm.ro",
+"id": "bb-fPaF6bHRL",
+"brand": "Viridian",
+"url_magazin": "https://www.farmaciilenapofarm.ro/magneziu-si-minerale-esentiale-2/viridian-magneziu-bisglicinat-high-potency-60-capsule",
+"pret_vechi": null,
+"verificat": "2026-11-28"
+},
+{
 "titlu": "Citrat de Potasiu și Magneziu, 90 capsule veg, Viridian",
 "pret": 141.0,
 "imagine": "https://c.cdnmp.net/992552723/p/l/8/citrat-de-potasiu-si-magneziu-90-capsule-veg-viridian~33088.jpg",
@@ -15277,7 +15302,6 @@
 "magazine": [
 "brainmarket.ro",
 "farmaciilenapofarm.ro",
-"liki24.ro",
 "remediumfarm.ro"
 ]
 },
@@ -17879,7 +17903,7 @@
 "titlu": "Geci de iarnă pentru damă",
 "nota": null,
 "in_text": null,
-"actualizat": "2026-11-23",
+"actualizat": "2026-11-28",
 "feeduri": [
 {
 "id": 5171,

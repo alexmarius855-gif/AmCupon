@@ -1,6 +1,6 @@
 {
  "de_la": "2026-05-24",
- "actualizat": "2026-11-27",
+ "actualizat": "2026-11-28",
  "nota": "Promotiile vazute pe AmCupon.ro, din datele retelelor de afiliere. `prima` = ziua in care am vazut-o prima data; `expira` = data oficiala, cand reteaua o da; `zile` = cate promotii si magazine s-au vazut in fiecare zi. Generat de scripts/istoric_promotii.py.",
  "zile": {
   "2026-05-24": {
@@ -642,6 +642,10 @@
   "2026-11-27": {
    "promotii": 271,
    "magazine": 148
+  },
+  "2026-11-28": {
+   "promotii": 267,
+   "magazine": 147
   }
  },
  "magazine": {
@@ -651,7 +655,7 @@
     "titlu": "10% DISCOUNT on first coffee order",
     "cod": false,
     "prima": "2026-05-24",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2026-12-31",
     "activa": true
    }
@@ -762,7 +766,7 @@
     "titlu": "Plătești 2, Primești 3! Redefinește Servirea pe Bambus Premium",
     "cod": false,
     "prima": "2026-10-16",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2026-12-31",
     "activa": true
    }
@@ -793,7 +797,7 @@
     "titlu": "Reducere Agroclima de pana la 20% la selectia de produse de gradina",
     "cod": false,
     "prima": "2026-11-16",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2027-07-31",
     "activa": true
    },
@@ -882,7 +886,7 @@
     "titlu": "CYBER MONDAY, COȘ AVANTAJOS",
     "cod": true,
     "prima": "2026-11-24",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2026-11-29",
     "activa": true
    },
@@ -1070,7 +1074,7 @@
     "titlu": "UP TO $120 OFF+ FREE GIFTS",
     "cod": false,
     "prima": "2026-11-13",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2026-11-30",
     "activa": true
    },
@@ -1079,7 +1083,7 @@
     "titlu": "Invisi Strap 360 lace Wig",
     "cod": false,
     "prima": "2026-11-13",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2026-11-30",
     "activa": true
    },
@@ -1162,7 +1166,7 @@
     "titlu": "ASUS November Sales",
     "cod": true,
     "prima": "2026-11-18",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2026-12-02",
     "activa": true
    },
@@ -1312,7 +1316,7 @@
     "titlu": "Ofertă Atomico: SuperSpor cu reduceri de până la 55% la produsele selectate pentru casă și grădină",
     "cod": false,
     "prima": "2026-09-24",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2026-11-30",
     "activa": true
    },
@@ -1350,7 +1354,7 @@
     "titlu": "Black Friday Offer - Up to 23% off | Atzavara Hotel & Spa",
     "cod": true,
     "prima": "2026-11-11",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2026-12-02",
     "activa": true
    },
@@ -1379,7 +1383,7 @@
     "titlu": "Livrare Gratuita Autobob la comenzile de peste 500 lei",
     "cod": false,
     "prima": "2026-10-02",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2027-12-31",
     "activa": true
    },
@@ -1556,7 +1560,7 @@
     "titlu": "Affiliate Discount Code",
     "cod": false,
     "prima": "2026-10-14",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2029-10-31",
     "activa": true
    },
@@ -1565,7 +1569,7 @@
     "titlu": "Enjoy 20% off sitewide with code: AFF20",
     "cod": true,
     "prima": "2026-09-16",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "",
     "activa": true
    }
@@ -1636,7 +1640,7 @@
     "titlu": "BLACK FRIDAY – 10% OFF + FREE ADDITIONAL DRIVER | B-RENT",
     "cod": true,
     "prima": "2026-11-16",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2026-12-01",
     "activa": true
    }
@@ -1716,7 +1720,7 @@
     "titlu": "Black Friday 50% off",
     "cod": false,
     "prima": "2026-11-23",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2026-12-07",
     "activa": true
    }
@@ -1769,7 +1773,7 @@
     "titlu": "Use code NEWBC20 to enjoy 20% OFF for new customers",
     "cod": true,
     "prima": "2026-09-08",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2026-12-31",
     "activa": true
    }
@@ -1780,7 +1784,7 @@
     "titlu": "30 Days Long Staying Package | iclub Fortress Hill Hotel | Regal Hotels",
     "cod": true,
     "prima": "2026-09-08",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2027-01-01",
     "activa": true
    },
@@ -1831,12 +1835,21 @@
     "titlu": "BLACK FRIDAY BOOST4LIFE 2026",
     "cod": false,
     "prima": "2026-11-23",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2026-11-30",
     "activa": true
    }
   ],
   "brainmarket.ro": [
+   {
+    "k": "blackfridayseprelungestepebrainmarket|",
+    "titlu": "Black Friday se prelungește pe BrainMarket!",
+    "cod": false,
+    "prima": "2026-11-28",
+    "ultima": "2026-11-28",
+    "expira": "2026-11-30",
+    "activa": true
+   },
    {
     "k": "blackfridayrevinepebrainmarket|",
     "titlu": "Black Friday revine pe BrainMarket",
@@ -1844,14 +1857,14 @@
     "prima": "2026-11-23",
     "ultima": "2026-11-27",
     "expira": "2026-11-27",
-    "activa": true
+    "activa": false
    },
    {
     "k": "brainsalepanala25|",
     "titlu": "BrainSale: până la −25%",
     "cod": false,
     "prima": "2026-11-13",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2026-11-30",
     "activa": true
    },
@@ -1860,7 +1873,7 @@
     "titlu": "November Sale – BrainMarket",
     "cod": false,
     "prima": "2026-11-10",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2026-11-30",
     "activa": true
    },
@@ -2131,7 +2144,7 @@
     "titlu": "Get up to 17% discount on stays - Casa Andina",
     "cod": true,
     "prima": "2026-10-05",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2027-01-01",
     "activa": true
    },
@@ -2151,7 +2164,7 @@
     "titlu": "Black Friday 2026 – 10% REDUCERE la anvelope Continental, Goodyear și Vredestein!",
     "cod": false,
     "prima": "2026-11-27",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2026-11-30",
     "activa": true
    },
@@ -2182,7 +2195,7 @@
     "prima": "2026-10-28",
     "ultima": "2026-11-27",
     "expira": "2026-11-27",
-    "activa": true
+    "activa": false
    },
    {
     "k": "50leireducerelaintreagacategoriedama|",
@@ -2260,7 +2273,7 @@
     "titlu": "Black Friday - Sale- 30% Off -CLLIX Apartments and Hotels: Arise",
     "cod": true,
     "prima": "2026-11-26",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2026-12-01",
     "activa": true
    },
@@ -2269,7 +2282,7 @@
     "titlu": "Summer 2026 - Sale- 20% Off -CLLIX Apartments and Hotels: Arise",
     "cod": true,
     "prima": "2026-11-04",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2026-12-11",
     "activa": true
    },
@@ -2278,7 +2291,7 @@
     "titlu": "Enjoy 10% off On Your Stay With Book Direct -CLLIX Apartments and Hotels: Arise",
     "cod": true,
     "prima": "2026-09-16",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2027-01-01",
     "activa": true
    },
@@ -2307,7 +2320,7 @@
     "titlu": "35% Off for All Massagers",
     "cod": false,
     "prima": "2026-09-08",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "",
     "activa": true
    }
@@ -2318,7 +2331,7 @@
     "titlu": "Produse cu pret redus",
     "cod": false,
     "prima": "2026-11-27",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2026-12-31",
     "activa": true
    }
@@ -2371,7 +2384,7 @@
     "titlu": "Ambalaje si decoratiuni de Craciun cu reduceri de pana la 30% la pe CraftUp.ro",
     "cod": false,
     "prima": "2026-10-02",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2026-12-18",
     "activa": true
    },
@@ -2418,7 +2431,7 @@
     "titlu": "Extra 5% PROMOCODE Offer on Room Rates -Direct Booking| Kuredu Maldives",
     "cod": true,
     "prima": "2026-09-08",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2028-01-01",
     "activa": true
    }
@@ -2429,7 +2442,7 @@
     "titlu": "Fox Days CumperiAngro.ro: până la −20%, automat în coș (până pe 6 dec)",
     "cod": false,
     "prima": "2026-11-24",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2026-12-06",
     "activa": true
    },
@@ -2458,7 +2471,7 @@
     "titlu": "Pana la 90% reducere",
     "cod": false,
     "prima": "2026-06-29",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2026-12-31",
     "activa": true
    }
@@ -2469,7 +2482,7 @@
     "titlu": "Black Friday Deals at CVLIFE – Save Up to 40%",
     "cod": true,
     "prima": "2026-11-26",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2026-11-30",
     "activa": true
    },
@@ -2487,7 +2500,7 @@
     "titlu": "30% discount",
     "cod": true,
     "prima": "2026-09-08",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2027-06-01",
     "activa": true
    }
@@ -2728,7 +2741,7 @@
     "titlu": "Save £15 on orders over £99 during Black Friday & Cyber Monday. Available for GBP-settlement accounts.",
     "cod": false,
     "prima": "2026-11-05",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2026-12-01",
     "activa": true
    },
@@ -2737,7 +2750,7 @@
     "titlu": "Save $11 on orders over $69 during Black Friday & Cyber Monday. Claim now and use it from Nov 23.",
     "cod": false,
     "prima": "2026-11-05",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2026-12-01",
     "activa": true
    },
@@ -2746,7 +2759,7 @@
     "titlu": "Save £9 on orders over £59 during Black Friday & Cyber Monday. Available for GBP-settlement accounts.",
     "cod": false,
     "prima": "2026-11-05",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2026-12-01",
     "activa": true
    },
@@ -2755,7 +2768,7 @@
     "titlu": "Save €9 on orders over €59 during Black Friday & Cyber Monday. Available for EUR-settlement accounts.",
     "cod": false,
     "prima": "2026-11-05",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2026-12-01",
     "activa": true
    },
@@ -2764,7 +2777,7 @@
     "titlu": "Save $30 on orders over $299 during Black Friday & Cyber Monday. Claim now and use it from Nov 23.",
     "cod": false,
     "prima": "2026-11-05",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2026-12-01",
     "activa": true
    },
@@ -2773,7 +2786,7 @@
     "titlu": "Save €27 on orders over €269 during Black Friday & Cyber Monday. Available for EUR-settlement accounts.",
     "cod": false,
     "prima": "2026-11-05",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2026-12-01",
     "activa": true
    },
@@ -2782,7 +2795,7 @@
     "titlu": "Save £23 on orders over £219 during Black Friday & Cyber Monday. Available for GBP-settlement accounts.",
     "cod": false,
     "prima": "2026-11-05",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2026-12-01",
     "activa": true
    },
@@ -2791,7 +2804,7 @@
     "titlu": "Save $26 on orders over $199 during Black Friday & Cyber Monday. Claim now and use it from Nov 23.",
     "cod": false,
     "prima": "2026-11-05",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2026-12-01",
     "activa": true
    },
@@ -2800,7 +2813,7 @@
     "titlu": "Save €24 on orders over €179 during Black Friday & Cyber Monday. Available for EUR-settlement accounts.",
     "cod": false,
     "prima": "2026-11-05",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2026-12-01",
     "activa": true
    },
@@ -2809,7 +2822,7 @@
     "titlu": "Save £21 on orders over £149 during Black Friday & Cyber Monday. Available for GBP-settlement accounts.",
     "cod": false,
     "prima": "2026-11-05",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2026-12-01",
     "activa": true
    },
@@ -2818,7 +2831,7 @@
     "titlu": "Save $20 on orders over $129 during Black Friday & Cyber Monday. Claim now and use it from Nov 23.",
     "cod": false,
     "prima": "2026-11-05",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2026-12-01",
     "activa": true
    },
@@ -2827,7 +2840,7 @@
     "titlu": "Save €18 on orders over €119 during Black Friday & Cyber Monday. Available for EUR-settlement accounts.",
     "cod": false,
     "prima": "2026-11-05",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2026-12-01",
     "activa": true
    },
@@ -2836,7 +2849,7 @@
     "titlu": "Save $8 on orders over $80 using coupon DH2026NOVSAVE8 at DHgate.",
     "cod": true,
     "prima": "2026-11-01",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2026-11-30",
     "activa": true
    },
@@ -2845,7 +2858,7 @@
     "titlu": "Save $6 on orders over $50 using coupon DH2026NOVSAVE6 at DHgate.",
     "cod": true,
     "prima": "2026-11-01",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2026-11-30",
     "activa": true
    },
@@ -2854,7 +2867,7 @@
     "titlu": "Save $40 on orders over $850 using coupon DH2026NOVSAVE45 at DHgate.",
     "cod": true,
     "prima": "2026-11-01",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2026-11-30",
     "activa": true
    },
@@ -2863,7 +2876,7 @@
     "titlu": "Save $35 on orders over $600 using coupon DH2026NOVSAVE35 at DHgate.",
     "cod": true,
     "prima": "2026-11-01",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2026-11-30",
     "activa": true
    },
@@ -2872,7 +2885,7 @@
     "titlu": "Save $25 on orders over $300 using coupon DH2026NOVSAVE25 at DHgate.",
     "cod": true,
     "prima": "2026-11-01",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2026-11-30",
     "activa": true
    },
@@ -2881,7 +2894,7 @@
     "titlu": "Save $20 on orders over $200 using coupon DH2026NOVSAVE20 at DHgate.",
     "cod": true,
     "prima": "2026-11-01",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2026-11-30",
     "activa": true
    },
@@ -2890,7 +2903,7 @@
     "titlu": "Save $16 on orders over $160 using coupon DH2026NOVSAVE16 at DHgate.",
     "cod": true,
     "prima": "2026-11-01",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2026-11-30",
     "activa": true
    },
@@ -2899,7 +2912,7 @@
     "titlu": "Save $12 on orders over $120 using coupon DH2026NOVSAVE12 at DHgate.",
     "cod": true,
     "prima": "2026-11-01",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2026-11-30",
     "activa": true
    },
@@ -2908,7 +2921,7 @@
     "titlu": "Save $10 on orders over $100 using coupon DH2026NOVSAVE10 at DHgate.",
     "cod": true,
     "prima": "2026-11-01",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2026-11-30",
     "activa": true
    },
@@ -2917,7 +2930,7 @@
     "titlu": "New user: Save $8 on orders over $50 using coupon DH2026NOV8NEW at DHgate.",
     "cod": true,
     "prima": "2026-11-01",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2026-11-30",
     "activa": true
    },
@@ -2926,7 +2939,7 @@
     "titlu": "New user: Save $4 on orders over $10 using coupon DH2026NOV4NEW at DHgate.",
     "cod": true,
     "prima": "2026-11-01",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2026-11-30",
     "activa": true
    },
@@ -2935,7 +2948,7 @@
     "titlu": "New user: Save $3 on orders over $5 using coupon DH2026NOV3NEW at DHgate.",
     "cod": true,
     "prima": "2026-11-01",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2026-11-30",
     "activa": true
    },
@@ -2944,7 +2957,7 @@
     "titlu": "New user: Save $10 on orders over $85 using coupon DH2026NOV10NEW at DHgate.",
     "cod": true,
     "prima": "2026-11-01",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2026-11-30",
     "activa": true
    },
@@ -3101,7 +3114,7 @@
     "titlu": "Black Friday DoctorShield.ro: reduceri de pana la 50% si transport gratuit",
     "cod": false,
     "prima": "2026-10-20",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2026-11-30",
     "activa": true
    },
@@ -3110,7 +3123,7 @@
     "titlu": "Incalzitoare de terasa Doctor Home de la 699,99 lei",
     "cod": false,
     "prima": "2026-09-24",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2026-12-31",
     "activa": true
    },
@@ -3139,7 +3152,7 @@
     "titlu": "Black Friday Sale – Save Up to 15% on Dollar Car Rentals",
     "cod": true,
     "prima": "2026-11-23",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2026-12-01",
     "activa": true
    }
@@ -3179,7 +3192,7 @@
     "titlu": "Campania de Crăciun Dr. Max – Cadouri alese cu grijă, pentru cei dragi!",
     "cod": false,
     "prima": "2026-11-16",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2026-12-31",
     "activa": true
    },
@@ -3437,7 +3450,7 @@
     "titlu": "10% reducere pe tot site-ul e-Potion.ro",
     "cod": true,
     "prima": "2026-07-16",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2027-07-10",
     "activa": true
    }
@@ -3448,7 +3461,7 @@
     "titlu": "EaseUS Black Friday Sale is live! Use promo code BF2026 to get up to 80% OFF essential software, including data recovery tools, backup…",
     "cod": true,
     "prima": "2026-11-02",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2026-12-12",
     "activa": true
    },
@@ -3488,7 +3501,7 @@
     "titlu": "Campanii noiembrie Editura Arthur",
     "cod": false,
     "prima": "2026-10-30",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2026-11-30",
     "activa": true
    },
@@ -3573,7 +3586,7 @@
     "titlu": "Reduceri pana la 90%",
     "cod": false,
     "prima": "2026-09-25",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2027-12-31",
     "activa": true
    },
@@ -3593,7 +3606,7 @@
     "titlu": "Puzzlemania! Nebunia prețurilor a început!",
     "cod": false,
     "prima": "2026-11-02",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2026-12-01",
     "activa": true
    },
@@ -3669,7 +3682,7 @@
     "titlu": "Reduceri Outlet Electric-sun.de",
     "cod": false,
     "prima": "2026-11-23",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2026-12-22",
     "activa": true
    }
@@ -3846,7 +3859,7 @@
     "titlu": "VINERI TRANSPORT GRATUIT PENTRU ORICE COMANDA CE DEPASESTE 129 RON",
     "cod": false,
     "prima": "2026-09-24",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2026-12-31",
     "activa": true
    },
@@ -3855,7 +3868,7 @@
     "titlu": "Cadou prezervative PASSION",
     "cod": false,
     "prima": "2026-09-24",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2026-12-31",
     "activa": true
    }
@@ -3866,7 +3879,7 @@
     "titlu": "Cele mai mari reduceri din an de BLACK FRIDAY -30% pe estel.ro cu BF26",
     "cod": true,
     "prima": "2026-11-27",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2026-12-01",
     "activa": true
    },
@@ -3913,7 +3926,7 @@
     "titlu": "Affiliate offer - free Moss Eyeliner with +£30 spend",
     "cod": true,
     "prima": "2026-11-11",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2026-12-31",
     "activa": true
    }
@@ -3926,7 +3939,7 @@
     "prima": "2026-11-06",
     "ultima": "2026-11-27",
     "expira": "2026-11-27",
-    "activa": true
+    "activa": false
    }
   ],
   "eufy.com": [
@@ -4288,7 +4301,7 @@
     "titlu": "18% discount on selected items",
     "cod": false,
     "prima": "2026-11-13",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2026-11-30",
     "activa": true
    },
@@ -4297,7 +4310,7 @@
     "titlu": "15% discount on selected items",
     "cod": false,
     "prima": "2026-11-13",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2026-11-30",
     "activa": true
    },
@@ -4306,7 +4319,7 @@
     "titlu": "10% discount on selected items",
     "cod": false,
     "prima": "2026-11-13",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2026-11-30",
     "activa": true
    },
@@ -4346,7 +4359,7 @@
     "titlu": "Black Friday 2026",
     "cod": false,
     "prima": "2026-10-26",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2026-11-30",
     "activa": true
    },
@@ -4426,7 +4439,7 @@
     "titlu": "Black Friday la EXPOMOB – reduceri de până la 80%!",
     "cod": false,
     "prima": "2026-10-29",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2026-11-30",
     "activa": true
    },
@@ -4471,7 +4484,7 @@
     "titlu": "Outlet Expomob – Reduceri de pana la -70% la mobilier pentru casa",
     "cod": false,
     "prima": "2026-07-16",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2026-12-31",
     "activa": true
    },
@@ -4614,7 +4627,7 @@
     "titlu": "Oferta 1+1",
     "cod": false,
     "prima": "2026-05-24",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2027-02-28",
     "activa": true
    }
@@ -4746,7 +4759,7 @@
     "titlu": "Economisește până la 25% cu Abonamentul Femi.Eko – Protecție lunară fără griji",
     "cod": true,
     "prima": "2026-06-29",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2026-12-31",
     "activa": true
    }
@@ -4757,7 +4770,7 @@
     "titlu": "Hill’s: Până la 4 conserve GRATIS la sacii de hrană selectați!",
     "cod": false,
     "prima": "2026-11-27",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2026-12-30",
     "activa": true
    },
@@ -4766,7 +4779,7 @@
     "titlu": "5% discount la prima comanda",
     "cod": true,
     "prima": "2026-11-27",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2027-01-31",
     "activa": true
    },
@@ -4775,7 +4788,7 @@
     "titlu": "Până la 25% discount",
     "cod": false,
     "prima": "2026-11-01",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2026-11-30",
     "activa": true
    },
@@ -4900,7 +4913,7 @@
     "titlu": "BLACK FRIDAY -- UP TO 45% OFF",
     "cod": true,
     "prima": "2026-11-04",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2026-12-10",
     "activa": true
    }
@@ -4922,7 +4935,7 @@
     "titlu": "BLACK MONTH FSM România 2026 – Reduceri de până la 80%!",
     "cod": false,
     "prima": "2026-10-27",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2026-12-01",
     "activa": true
    }
@@ -4933,7 +4946,7 @@
     "titlu": "Black Friday Sale| Get up to 40% off on stays - Garden Hotels",
     "cod": true,
     "prima": "2026-11-23",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2026-12-02",
     "activa": true
    },
@@ -4942,7 +4955,7 @@
     "titlu": "Get additional 5% discount on Adult Only Properties - Garden Hotels",
     "cod": true,
     "prima": "2026-09-08",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2027-01-01",
     "activa": true
    }
@@ -4953,7 +4966,7 @@
     "titlu": "USD $10 Off Coupon Code: VADER4P, For Flydigi Vader 4 Pro Gaming Controller, Force Adjustment Lever Joystick, Hall & Micro 2-in-1 Triggers…",
     "cod": true,
     "prima": "2026-09-08",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2028-07-16",
     "activa": true
    },
@@ -4962,7 +4975,7 @@
     "titlu": "USD $3 Off Coupon Code: TRIMUI256, For TRIMUI Smart Pro Game Console with 256GB TF Card, 13729 Games, 4.96in 720P IPS Screen, Linux OS, 1GB…",
     "cod": true,
     "prima": "2026-09-08",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2027-12-31",
     "activa": true
    },
@@ -4971,7 +4984,7 @@
     "titlu": "USD $22 Off Coupon Code: SCZZ97, For MINIX NEO Z97 Mini PC, Intel N97 4 Cores Max 3.6GHz, 12GB LPDDR5X RAM 512GB SSD, WiFi 6 Bluetooth 5.2…",
     "cod": true,
     "prima": "2026-09-08",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2028-03-30",
     "activa": true
    },
@@ -4980,7 +4993,7 @@
     "titlu": "USD $27 Off Coupon Code: RAY55WEU, For LONGER RAY5 5W Laser Engraver, 3.5inch Touch Screen, Offline Carving, Ultrafine Focused Laser…",
     "cod": true,
     "prima": "2026-09-08",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2027-04-30",
     "activa": true
    },
@@ -4989,7 +5002,7 @@
     "titlu": "USD $224 Off Coupon Code: PULUMAPE86, For PULUMA PE86 Electric Bike, 500W Motor, 48V 20Ah Battery, 26 inch Tires, 40km/h Max Speed, 150km…",
     "cod": true,
     "prima": "2026-09-08",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2029-07-17",
     "activa": true
    },
@@ -4998,7 +5011,7 @@
     "titlu": "USD $224 Off Coupon Code: PULUMAPE86PRO, For PULUMA PE86 Pro Electric Bike, 500W*2 Motor, 48V 20Ah Battery, 26 inch Tires, 40km/h Max…",
     "cod": true,
     "prima": "2026-09-08",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2028-07-17",
     "activa": true
    },
@@ -5007,7 +5020,7 @@
     "titlu": "USD $56 Off Coupon Code: MOB617, For Foride Xtremer 3 Electric Bike, 250W Motor, 48V 12Ah Battery, 29*2.4 inch Tires, 25km/h Max Speed…",
     "cod": true,
     "prima": "2026-09-08",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2028-07-17",
     "activa": true
    },
@@ -5016,7 +5029,7 @@
     "titlu": "USD $4 Off Coupon Code: LRAY5RF, For LONGER RAY5 Laser Engraver Raiser Feet 70mm - 8pcs. Available Countries: ALL",
     "cod": true,
     "prima": "2026-09-08",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2027-06-07",
     "activa": true
    },
@@ -5025,7 +5038,7 @@
     "titlu": "USD $7 Off Coupon Code: LRAY5M25, For LONGER RAY5 Mini 2.5W Laser Engraver, 0.04mm Precision, 12,000mm/min Speed, for Wood/ Acrylic/…",
     "cod": true,
     "prima": "2026-09-08",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2027-04-30",
     "activa": true
    },
@@ -5034,7 +5047,7 @@
     "titlu": "USD $12 Off Coupon Code: LONGERR, For LONGER Laser Engraver Y-axis Rotary Roller with Bracket. Available Countries: ALL",
     "cod": true,
     "prima": "2026-09-08",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2026-12-24",
     "activa": true
    },
@@ -5043,7 +5056,7 @@
     "titlu": "USD $15 Off Coupon Code: LONANORC, For LONGER Laser Rotary Chuck for Nano/ Nano Pro. Available Countries: ALL",
     "cod": true,
     "prima": "2026-09-08",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2026-12-24",
     "activa": true
    },
@@ -5052,7 +5065,7 @@
     "titlu": "USD $7 Off Coupon Code: JAKEY10, For Jakemy JM-Y10 2-in-1 Ultrasonic Cutter & Polisher, 35W 40kHz, OLED Display, for…",
     "cod": true,
     "prima": "2026-09-08",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2026-11-30",
     "activa": true
    },
@@ -5061,7 +5074,7 @@
     "titlu": "USD $4 Off Coupon Code: JAKE10P, For Jakemy JM-Y10 Pro 2-in-1 Ultrasonic Cutter & Polisher, 35W 40kHz, OLED Display, for…",
     "cod": true,
     "prima": "2026-09-08",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2027-04-30",
     "activa": true
    },
@@ -5070,7 +5083,7 @@
     "titlu": "8% off for 3D Printers & Laser Engravers category, max save $50",
     "cod": false,
     "prima": "2026-09-08",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2027-05-31",
     "activa": true
    },
@@ -5079,7 +5092,7 @@
     "titlu": "USD $17 Off Coupon Code: CONGKBH27, For KTC H27E6 27 inch Gaming Monitor, 2560*1440 QHD Fast IPS Screen, 300Hz 240Hz Refresh Rate, HDR 400…",
     "cod": true,
     "prima": "2026-09-08",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2026-11-30",
     "activa": true
    },
@@ -5088,7 +5101,7 @@
     "titlu": "USD $22 Off Coupon Code: ANYS14P, For Anycubic Kobra S1 Combo 3D Printer + 4kg Hyper PLA Filament - 1kg Purple + 1kg Blue + 1kg Red + 1kg…",
     "cod": true,
     "prima": "2026-09-08",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2027-06-04",
     "activa": true
    },
@@ -5097,7 +5110,7 @@
     "titlu": "USD $45 Off Coupon Code: ANYKS1CA, For Anycubic Kobra S1 3D Printer with 2*Ace Pro, Vibrant 8-Color Printing, 600mm/s Ultra-Fast Speed…",
     "cod": true,
     "prima": "2026-09-08",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2026-12-31",
     "activa": true
    },
@@ -5106,7 +5119,7 @@
     "titlu": "USD $67 Off Coupon Code: 9OJ5SQUX31, For Creality Raptor 3D Scanner, Hybrid Blue Laser NIR, 60fps Scanning Speed, Objects Between 5-2000mm…",
     "cod": true,
     "prima": "2026-09-08",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2026-11-30",
     "activa": true
    },
@@ -5384,7 +5397,7 @@
     "titlu": "Cadouri de Craciun Giftera.ro – seturi cu lantisor si mesaj pentru cei dragi",
     "cod": false,
     "prima": "2026-10-02",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2026-12-24",
     "activa": true
    },
@@ -5506,7 +5519,7 @@
     "titlu": "Păr mai des instant cu fibrele reale de păr Hairify",
     "cod": true,
     "prima": "2026-11-03",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2026-12-30",
     "activa": true
    },
@@ -5515,7 +5528,7 @@
     "titlu": "Acoperă-ți chelia instant cu fibrele de păr reale Hairify la discount",
     "cod": true,
     "prima": "2026-11-03",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2026-12-30",
     "activa": true
    },
@@ -5524,7 +5537,7 @@
     "titlu": "Fibre reale de par din cheratina naturala",
     "cod": false,
     "prima": "2026-11-02",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2026-12-30",
     "activa": true
    },
@@ -5533,7 +5546,7 @@
     "titlu": "15% Discount la fibrele de păr din cheratină pentru păr rar și chelie",
     "cod": true,
     "prima": "2026-06-29",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2026-12-31",
     "activa": true
    }
@@ -5553,7 +5566,7 @@
     "titlu": "Reduceri HappyPets de pana la 70% la produse pentru caini si pisici",
     "cod": false,
     "prima": "2026-09-24",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2026-12-31",
     "activa": true
    },
@@ -5562,7 +5575,7 @@
     "titlu": "Reduceri de pana la 70% la produse cu termen redus pe HappyPets.ro",
     "cod": false,
     "prima": "2026-09-24",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2026-12-31",
     "activa": true
    },
@@ -5571,7 +5584,7 @@
     "titlu": "Reduceri de pana la 30% la produse VetAria+ selectate pe HappyPets.ro",
     "cod": false,
     "prima": "2026-09-24",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2026-12-31",
     "activa": true
    }
@@ -5582,7 +5595,7 @@
     "titlu": "Coupon BFEARLY75: 2ND 25% Off; 3RD 55% Off; 4TH 75% Off",
     "cod": true,
     "prima": "2026-10-24",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2026-12-31",
     "activa": true
    }
@@ -5624,7 +5637,7 @@
     "titlu": "Starea de bine cu Herbagetica vine! 3 vacanțe în Maldive + premii zilnice",
     "cod": false,
     "prima": "2026-08-20",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2026-12-31",
     "activa": true
    },
@@ -5680,8 +5693,19 @@
     "titlu": "New Users",
     "cod": false,
     "prima": "2026-09-16",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2028-06-29",
+    "activa": true
+   }
+  ],
+  "hyllanpharma.ro": [
+   {
+    "k": "70discountlaproduseleselectate|",
+    "titlu": "70% discount la produsele selectate",
+    "cod": false,
+    "prima": "2026-11-28",
+    "ultima": "2026-11-28",
+    "expira": "2026-12-31",
     "activa": true
    }
   ],
@@ -5691,7 +5715,7 @@
     "titlu": "AOHi Black Friday & Cyber Monday: Exclusive 20% OFF Code Now Active",
     "cod": true,
     "prima": "2026-11-27",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2026-12-06",
     "activa": true
    },
@@ -5711,7 +5735,7 @@
     "titlu": "Adauga 2 produse si vei primi 10% discount",
     "cod": false,
     "prima": "2026-11-14",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2026-12-31",
     "activa": true
    }
@@ -5722,7 +5746,7 @@
     "titlu": "A început campania de 1 Decembrie!",
     "cod": false,
     "prima": "2026-11-13",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2026-11-30",
     "activa": true
    }
@@ -5733,7 +5757,7 @@
     "titlu": "Save 300€ on IKIER Master with Code AFFMASTER300",
     "cod": true,
     "prima": "2026-09-08",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2027-01-31",
     "activa": true
    },
@@ -5742,7 +5766,7 @@
     "titlu": "IKIER Master Exclusive $300 OFF Coupon Code – AFFMASTER300",
     "cod": true,
     "prima": "2026-09-08",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2027-01-31",
     "activa": true
    },
@@ -5751,7 +5775,7 @@
     "titlu": "IKIER K70 MAX Exclusive 200€ OFF Coupon Code – AFFK70200",
     "cod": true,
     "prima": "2026-09-08",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2027-01-31",
     "activa": true
    },
@@ -5760,7 +5784,7 @@
     "titlu": "IKIER K40 MAX Exclusive 160€ OFF Coupon Code: AFFK40160",
     "cod": true,
     "prima": "2026-09-08",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2027-01-31",
     "activa": true
    },
@@ -5769,7 +5793,7 @@
     "titlu": "IKIER K1 Ultra 36W Exclusive 80€ OFF Coupon Code: AFFK3680",
     "cod": true,
     "prima": "2026-09-08",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2027-01-31",
     "activa": true
    },
@@ -5778,7 +5802,7 @@
     "titlu": "IKIER K1 PRO (1064) 20W Exclusive 100€ OFF Coupon Code: AFFK1064100",
     "cod": true,
     "prima": "2026-09-08",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2027-01-31",
     "activa": true
    },
@@ -5787,7 +5811,7 @@
     "titlu": "Copy of $160 OFF iKier K40 MAX with Code AFFK40160",
     "cod": true,
     "prima": "2026-09-08",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2026-12-31",
     "activa": true
    },
@@ -5796,7 +5820,7 @@
     "titlu": "$200 OFF iKier K1 Pro Max 70W with Code AFFK70P200",
     "cod": true,
     "prima": "2026-09-08",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2026-12-31",
     "activa": true
    }
@@ -5827,7 +5851,7 @@
     "titlu": "Black Friday 2026 pe Infinity.ro: Reduceri de până la 70%",
     "cod": true,
     "prima": "2026-10-19",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2026-11-30",
     "activa": true
    },
@@ -5912,7 +5936,7 @@
     "titlu": "Black Friday Offer - Up to 45% Off and stay for 2 Children|Insotel Hotel (expired on 2026-11-17 16:55:55)",
     "cod": false,
     "prima": "2026-11-23",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2026-12-08",
     "activa": true
    },
@@ -5999,7 +6023,7 @@
     "titlu": "Reducere de 10% la toate produsele Intimplay.ro",
     "cod": true,
     "prima": "2026-10-14",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2027-01-01",
     "activa": true
    },
@@ -6151,7 +6175,7 @@
     "titlu": "Black Friday | Get 30% Off, JetPark Hotels",
     "cod": true,
     "prima": "2026-11-11",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2026-12-02",
     "activa": true
    }
@@ -6184,7 +6208,7 @@
     "prima": "2026-11-01",
     "ultima": "2026-11-27",
     "expira": "2026-11-27",
-    "activa": true
+    "activa": false
    },
    {
     "k": "jollymag10reducerecucoduljolly10|jolly10",
@@ -6200,7 +6224,7 @@
     "titlu": "Reducere 10% la tot cosul",
     "cod": true,
     "prima": "2026-05-24",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2026-12-31",
     "activa": true
    }
@@ -6211,7 +6235,7 @@
     "titlu": "10% OFF for Specified categories",
     "cod": false,
     "prima": "2026-09-08",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2027-03-23",
     "activa": true
    },
@@ -6220,7 +6244,7 @@
     "titlu": "No limit on quantity, time or product category. A $5 discount will be offered after use.",
     "cod": false,
     "prima": "2026-09-08",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2027-03-22",
     "activa": true
    }
@@ -6251,7 +6275,7 @@
     "titlu": "Black Friday Kamu 2026: reduceri de pana la 65%",
     "cod": false,
     "prima": "2026-11-01",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2026-11-30",
     "activa": true
    },
@@ -6271,7 +6295,7 @@
     "titlu": "BLACK FRIDAY la KÄRCHER! Black Friday la Kärcher: Cele mai mari reduceri din an! Kärcher Black Friday: 5-30 Noiembrie",
     "cod": false,
     "prima": "2026-10-26",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2026-11-30",
     "activa": true
    },
@@ -6313,7 +6337,7 @@
     "titlu": "Up To $120 Off",
     "cod": false,
     "prima": "2026-11-19",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2026-11-30",
     "activa": true
    },
@@ -6353,7 +6377,7 @@
     "titlu": "Klaiyi Black Friday Mega Sale 2026",
     "cod": true,
     "prima": "2026-11-26",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2026-11-30",
     "activa": true
    },
@@ -6548,7 +6572,7 @@
     "titlu": "Black Friday 25% off",
     "cod": true,
     "prima": "2026-11-01",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2026-11-30",
     "activa": true
    },
@@ -6557,7 +6581,7 @@
     "titlu": "Black Friday 20% off",
     "cod": true,
     "prima": "2026-11-01",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2026-11-30",
     "activa": true
    },
@@ -6566,7 +6590,7 @@
     "titlu": "Black Friday 16% off",
     "cod": true,
     "prima": "2026-11-01",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2026-11-30",
     "activa": true
    },
@@ -6611,7 +6635,7 @@
     "titlu": "Best Seller 25% off!",
     "cod": true,
     "prima": "2026-09-08",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2027-06-30",
     "activa": true
    },
@@ -6667,7 +6691,7 @@
     "titlu": "Profita acum de reduceri intre 5% si 15% la echipamente si consumabile!",
     "cod": false,
     "prima": "2026-06-29",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "",
     "activa": true
    },
@@ -6785,7 +6809,7 @@
     "titlu": "Editura Rao Books - reduceri de minim 50% la peste 1300 de titluri",
     "cod": false,
     "prima": "2026-11-01",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2026-12-31",
     "activa": true
    },
@@ -6794,7 +6818,7 @@
     "titlu": "Editura Act si Politon reducere 23% la peste 600 de titluri (23 octombrie - 23 decembrie 2026)",
     "cod": false,
     "prima": "2026-10-23",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2026-12-23",
     "activa": true
    },
@@ -6812,7 +6836,7 @@
     "titlu": "Minim 50% Reducere",
     "cod": false,
     "prima": "2026-10-05",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2026-12-31",
     "activa": true
    },
@@ -6821,7 +6845,7 @@
     "titlu": "Bursa Cărților Ieftine: Ediția sub 15 lei (peste 5000 de titluri active)",
     "cod": false,
     "prima": "2026-10-05",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2026-12-31",
     "activa": true
    },
@@ -6915,7 +6939,7 @@
     "titlu": "Transportul? GRATUIT peste 90 lei. Promoțiile lunii? Pe final»",
     "cod": false,
     "prima": "2026-11-27",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2026-12-02",
     "activa": true
    },
@@ -7189,7 +7213,7 @@
     "titlu": "Liki24 Black Friday",
     "cod": true,
     "prima": "2026-11-06",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2026-11-30",
     "activa": true
    },
@@ -7254,7 +7278,7 @@
     "titlu": "Fond de ten Nilia 30 ml – pret de lansare 148 lei",
     "cod": false,
     "prima": "2026-09-28",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2026-12-31",
     "activa": true
    },
@@ -7263,7 +7287,7 @@
     "titlu": "Reducere LiNailsBoutique de 30% la produsele cu ambalaj deteriorat",
     "cod": false,
     "prima": "2026-09-24",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2027-10-31",
     "activa": true
    },
@@ -7272,7 +7296,7 @@
     "titlu": "Oje semipermanente LNB cu reduceri de pana la 60%",
     "cod": false,
     "prima": "2026-09-24",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2027-10-31",
     "activa": true
    },
@@ -7281,7 +7305,7 @@
     "titlu": "Lichidare de stoc LNB – reduceri de pana la 70%",
     "cod": false,
     "prima": "2026-08-20",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2027-10-31",
     "activa": true
    },
@@ -7301,7 +7325,7 @@
     "titlu": "BLACK FRIDAY SALE | SAVE 35% | Lisbon heritage hotels",
     "cod": true,
     "prima": "2026-11-15",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2026-12-01",
     "activa": true
    }
@@ -7453,7 +7477,7 @@
     "titlu": "Free 4on padel balls with every racket",
     "cod": false,
     "prima": "2026-11-24",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2026-12-01",
     "activa": true
    },
@@ -7502,7 +7526,7 @@
     "titlu": "Beauty your way: ediția de sărbători",
     "cod": false,
     "prima": "2026-11-27",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2026-12-31",
     "activa": true
    },
@@ -7531,7 +7555,7 @@
     "titlu": "Black Weeks Offer - Up to 15% Off| Villa Luz | Magic Hotel Group",
     "cod": true,
     "prima": "2026-11-13",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2026-12-01",
     "activa": true
    },
@@ -7551,7 +7575,7 @@
     "titlu": "-15% la toate produsele si transport gratuit la orice comanda",
     "cod": false,
     "prima": "2026-11-10",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2026-11-30",
     "activa": true
    },
@@ -7560,7 +7584,7 @@
     "titlu": "ManukaShop - transport gratuit la orice comanda si discount aplicat la diverse produse",
     "cod": false,
     "prima": "2026-09-24",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2027-05-31",
     "activa": true
    },
@@ -7569,7 +7593,7 @@
     "titlu": "Transport gratuit la orice comanda!",
     "cod": false,
     "prima": "2026-06-29",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2027-01-31",
     "activa": true
    }
@@ -7580,7 +7604,7 @@
     "titlu": "BLACK FRIDAY MARANC: Performanța ta merită răsplătită!",
     "cod": false,
     "prima": "2026-10-26",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2026-11-30",
     "activa": true
    },
@@ -7851,7 +7875,7 @@
     "titlu": "Toate produsele sunt reduse, mai multe vanzari pentru tine!",
     "cod": false,
     "prima": "2026-11-19",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2026-11-30",
     "activa": true
    },
@@ -7882,7 +7906,7 @@
     "titlu": "Black Friday Mobidea 2026",
     "cod": false,
     "prima": "2026-11-02",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2026-11-30",
     "activa": true
    },
@@ -7949,7 +7973,7 @@
     "titlu": "Black Weekend MobilStore: -20% la accesorii (27–29 nov)",
     "cod": false,
     "prima": "2026-11-27",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2026-11-29",
     "activa": true
    },
@@ -7980,7 +8004,7 @@
     "titlu": "Livrare Gratuita la comenzi de peste 200 lei",
     "cod": false,
     "prima": "2026-05-24",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2026-12-31",
     "activa": true
    },
@@ -8058,7 +8082,7 @@
     "prima": "2026-11-23",
     "ultima": "2026-11-27",
     "expira": "2026-11-28",
-    "activa": true
+    "activa": false
    },
    {
     "k": "blackfridayupto40offatdelplazahotelsmonrealehotels|delplazablack",
@@ -8067,14 +8091,14 @@
     "prima": "2026-11-23",
     "ultima": "2026-11-27",
     "expira": "2026-11-28",
-    "activa": true
+    "activa": false
    },
    {
     "k": "discovertheheartofsaopaulosave5monrealehotelsbrazil|delplaza5",
     "titlu": "Discover the Heart of Sao Paulo & Save 5% | Monreale Hotels, Brazil",
     "cod": true,
     "prima": "2026-11-11",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2027-03-01",
     "activa": true
    },
@@ -8083,7 +8107,7 @@
     "titlu": "5% OFF on Your Stay in Campinas! Monreale Hotels",
     "cod": true,
     "prima": "2026-11-11",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2027-03-01",
     "activa": true
    }
@@ -8094,7 +8118,7 @@
     "titlu": "Fall & Winter Campaign Package",
     "cod": false,
     "prima": "2026-09-22",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2027-02-05",
     "activa": true
    },
@@ -8136,7 +8160,7 @@
     "titlu": "Nadula Black Friday Deals | Up to 60% OFF + Free Wig with Code BF",
     "cod": false,
     "prima": "2026-11-27",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2026-11-30",
     "activa": true
    },
@@ -8147,7 +8171,7 @@
     "prima": "2026-11-23",
     "ultima": "2026-11-27",
     "expira": "2026-11-27",
-    "activa": true
+    "activa": false
    },
    {
     "k": "nadulabranddayxblackfridaysaleupto120offwigsfrom49|gold",
@@ -8389,7 +8413,7 @@
     "titlu": "30% off sitewide featuring AI All Access Pack",
     "cod": true,
     "prima": "2026-11-23",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2026-12-08",
     "activa": true
    },
@@ -8407,7 +8431,7 @@
     "titlu": "30% Off the AI Website Builder with Annual Terms",
     "cod": true,
     "prima": "2026-10-27",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2027-03-01",
     "activa": true
    },
@@ -8438,7 +8462,7 @@
     "titlu": "Pre-Winter Offer is Live! Up to 25% off | Minor Hotels EUAM (formerly NH Hoteles)",
     "cod": true,
     "prima": "2026-09-08",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2027-04-01",
     "activa": true
    },
@@ -8489,7 +8513,7 @@
     "titlu": "Cadou de Bun Venit: 3% EXTRA DISCOUNT",
     "cod": true,
     "prima": "2026-10-23",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2026-11-30",
     "activa": true
    }
@@ -8518,7 +8542,7 @@
     "titlu": "REDUCERI COMBO",
     "cod": false,
     "prima": "2026-06-29",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2026-12-31",
     "activa": true
    },
@@ -8538,7 +8562,7 @@
     "titlu": "25% REDUCERE la cumparaturi LEGO® de minimum 349 lei | 26 - 30.11.2026",
     "cod": false,
     "prima": "2026-11-26",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2026-11-30",
     "activa": true
    },
@@ -8547,7 +8571,7 @@
     "titlu": "50% Reducere la al doilea produs cumparat - Jucarii&Jocuri | 23-30.11.2026",
     "cod": false,
     "prima": "2026-11-23",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2026-11-30",
     "activa": true
    },
@@ -8556,7 +8580,7 @@
     "titlu": "Magia Craciunului vine cu super premii | 16.11-27.12.2026",
     "cod": false,
     "prima": "2026-11-16",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2026-12-27",
     "activa": true
    },
@@ -8565,7 +8589,7 @@
     "titlu": "Catalog CRACIUN 2026 | 16.11 – 27.12.2026",
     "cod": false,
     "prima": "2026-11-16",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2026-12-27",
     "activa": true
    },
@@ -8765,7 +8789,7 @@
     "titlu": "15% discount on the first purchase for all subscriptions",
     "cod": false,
     "prima": "2026-09-08",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2026-12-31",
     "activa": true
    }
@@ -8818,7 +8842,7 @@
     "titlu": "Black Days",
     "cod": true,
     "prima": "2026-11-27",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2026-12-01",
     "activa": true
    }
@@ -8829,7 +8853,7 @@
     "titlu": "Cupon cadou la prima comanda",
     "cod": true,
     "prima": "2026-10-05",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2028-12-31",
     "activa": true
    },
@@ -8838,7 +8862,7 @@
     "titlu": "Cupon cadou 10%",
     "cod": true,
     "prima": "2026-10-05",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2028-07-31",
     "activa": true
    },
@@ -8871,7 +8895,7 @@
     "prima": "2026-11-13",
     "ultima": "2026-11-27",
     "expira": "2026-11-28",
-    "activa": true
+    "activa": false
    }
   ],
   "ookee.ro": [
@@ -8985,7 +9009,7 @@
     "titlu": "Quber Savings",
     "cod": true,
     "prima": "2026-09-08",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2027-10-31",
     "activa": true
    }
@@ -8996,7 +9020,7 @@
     "titlu": "Temptation Cruise 2027/2028 - Save $300 on Select Non-Refundable Categories | Original Resorts",
     "cod": true,
     "prima": "2026-11-27",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2026-12-05",
     "activa": true
    },
@@ -9005,7 +9029,7 @@
     "titlu": "Temptation Cruise 2027/2028 - $200 Onboard Credit | Original Resorts",
     "cod": true,
     "prima": "2026-11-27",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2026-12-05",
     "activa": true
    },
@@ -9014,7 +9038,7 @@
     "titlu": "Temptation Cruise 2027/2028 - $100 Onboard Credit | Original Resorts",
     "cod": true,
     "prima": "2026-11-27",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2026-12-05",
     "activa": true
    },
@@ -9023,7 +9047,7 @@
     "titlu": "Desire San Juan Southern Caribbean Cruise - $400 Onboard Credit | Original Resorts",
     "cod": true,
     "prima": "2026-11-27",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2026-12-05",
     "activa": true
    },
@@ -9032,7 +9056,7 @@
     "titlu": "SEXY & SUNNY HOLIDAYS MONTH at Temptation Cancun Resort | Original Resorts",
     "cod": true,
     "prima": "2026-11-11",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2026-12-16",
     "activa": true
    },
@@ -9171,7 +9195,7 @@
     "titlu": "Flash Sale",
     "cod": false,
     "prima": "2026-05-24",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "",
     "activa": true
    }
@@ -9182,7 +9206,7 @@
     "titlu": "OutIn Code：OIAFF5",
     "cod": true,
     "prima": "2026-09-08",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2027-04-16",
     "activa": true
    }
@@ -9193,7 +9217,7 @@
     "titlu": "Fall & Winter Campaign Package",
     "cod": false,
     "prima": "2026-09-22",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2027-02-05",
     "activa": true
    }
@@ -9204,18 +9228,18 @@
     "titlu": "Christmass 2026",
     "cod": false,
     "prima": "2026-11-23",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2027-01-10",
-    "activa": false
+    "activa": true
    },
    {
     "k": "blackfridaytbi|",
     "titlu": "Black Friday TBI",
     "cod": false,
     "prima": "2026-11-13",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2026-11-30",
-    "activa": false
+    "activa": true
    },
    {
     "k": "blackfriday|",
@@ -9242,7 +9266,7 @@
     "titlu": "Pana la 50% reducere la accesorii compatibile Roborock – PAA-Home",
     "cod": false,
     "prima": "2026-11-24",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2026-12-31",
     "activa": true
    },
@@ -9251,7 +9275,7 @@
     "titlu": "Pana la 40% reducere la accesorii compatibile Xiaomi – PAA-Home",
     "cod": false,
     "prima": "2026-11-24",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2026-12-31",
     "activa": true
    },
@@ -9269,7 +9293,7 @@
     "titlu": "Reduceri de pana la 60% la accesorii compatibile pentru aspiratoare robot pe PAA-home.ro",
     "cod": false,
     "prima": "2026-10-02",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2026-12-31",
     "activa": true
    },
@@ -9278,7 +9302,7 @@
     "titlu": "Accesorii Xiaomi Mi Robot cu reduceri de pana la 45% la PAA-home.ro",
     "cod": false,
     "prima": "2026-10-02",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2027-12-31",
     "activa": true
    },
@@ -9287,7 +9311,7 @@
     "titlu": "Accesorii Roborock cu reduceri de pana la 50% la PAA-home.ro",
     "cod": false,
     "prima": "2026-10-02",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2027-12-31",
     "activa": true
    },
@@ -9296,7 +9320,7 @@
     "titlu": "Accesorii aspirator robot Rowenta cu reduceri de pana la 50% la PAA-home.ro",
     "cod": false,
     "prima": "2026-10-02",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2027-12-31",
     "activa": true
    },
@@ -9305,7 +9329,7 @@
     "titlu": "Reduceri de pana la 40% la detergenti pentru aspiratoare robot",
     "cod": false,
     "prima": "2026-08-20",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2026-12-31",
     "activa": true
    },
@@ -9314,7 +9338,7 @@
     "titlu": "Produse Resigilate Paa-Home.ro cu reducere de pana la -50%",
     "cod": false,
     "prima": "2026-08-20",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2026-12-31",
     "activa": true
    },
@@ -9332,7 +9356,7 @@
     "titlu": "Livrare Gratuita la comenzi de peste 350 lei",
     "cod": false,
     "prima": "2026-05-24",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2026-12-31",
     "activa": true
    }
@@ -9343,7 +9367,7 @@
     "titlu": "Free PINQ padel balls with every racket",
     "cod": false,
     "prima": "2026-11-24",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2026-12-01",
     "activa": true
    },
@@ -9410,7 +9434,7 @@
     "titlu": "The Original Black Friday este LIVE! Pana la 35% reducere",
     "cod": false,
     "prima": "2026-11-27",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2026-12-02",
     "activa": true
    },
@@ -9477,7 +9501,7 @@
     "titlu": "Black Friday Sale: Get 30% off | Pez Gato",
     "cod": true,
     "prima": "2026-11-16",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2026-12-01",
     "activa": true
    }
@@ -9488,7 +9512,7 @@
     "titlu": "Oferta saptamanii 23-29 nov 2026",
     "cod": false,
     "prima": "2026-11-23",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2026-11-30",
     "activa": true
    },
@@ -9508,7 +9532,7 @@
     "titlu": "LABOR8 Signature Scent: parfum de nisa plus 3 produse in valoare de peste 455 lei la doar 195 lei + cadou PAESE + extra 10% la 2 cutii",
     "cod": false,
     "prima": "2026-10-07",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2026-11-29",
     "activa": true
    },
@@ -9548,7 +9572,7 @@
     "titlu": "Black Friday",
     "cod": false,
     "prima": "2026-11-12",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2026-11-30",
     "activa": true
    },
@@ -9700,7 +9724,7 @@
     "titlu": "Pachete speciale IRON °FLASK: Seturi 2 in 1 Sticle Termice & Pahare de la 115 RON (Până la 63% Reducere)",
     "cod": false,
     "prima": "2026-08-20",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2026-11-30",
     "activa": true
    },
@@ -9709,7 +9733,7 @@
     "titlu": "De la 10% la 75% reducere la uneltele Gakago. Alege Gakago. Alege eficiența. Exclusiv pe re-bloom.ro.",
     "cod": false,
     "prima": "2026-07-03",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2026-11-30",
     "activa": true
    },
@@ -9765,7 +9789,7 @@
     "titlu": "Redodo 8% Discount Code – Save on All Products",
     "cod": false,
     "prima": "2026-09-08",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2026-12-31",
     "activa": true
    }
@@ -9794,7 +9818,7 @@
     "titlu": "Cupon reducere 5%",
     "cod": true,
     "prima": "2026-06-29",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "",
     "activa": true
    },
@@ -9814,7 +9838,7 @@
     "titlu": "ROBUD Black Friday US 30% Off $1200+",
     "cod": true,
     "prima": "2026-11-01",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2026-11-29",
     "activa": true
    },
@@ -9823,7 +9847,7 @@
     "titlu": "ROBUD Black Friday US 28% Off $1000+",
     "cod": true,
     "prima": "2026-11-01",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2026-11-29",
     "activa": true
    },
@@ -9832,7 +9856,7 @@
     "titlu": "ROBUD Black Friday US 25% Off $800+",
     "cod": true,
     "prima": "2026-11-01",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2026-11-29",
     "activa": true
    },
@@ -9841,7 +9865,7 @@
     "titlu": "ROBUD Black Friday US 20% Off $500+",
     "cod": true,
     "prima": "2026-11-01",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2026-11-29",
     "activa": true
    }
@@ -9852,7 +9876,7 @@
     "titlu": "BLACK FRIDAY",
     "cod": false,
     "prima": "2026-10-27",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2026-11-29",
     "activa": true
    },
@@ -9883,7 +9907,7 @@
     "titlu": "Book now and get up to 25% discount with Savoy Hotels, Dubai",
     "cod": true,
     "prima": "2026-09-08",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2027-01-01",
     "activa": true
    }
@@ -9905,7 +9929,7 @@
     "titlu": "Black Friday Sevensins 2026: -50% la toate produsele de pe site",
     "cod": false,
     "prima": "2026-11-01",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2026-11-30",
     "activa": true
    },
@@ -9965,7 +9989,7 @@
     "titlu": "Black Friday Deal: 25% Off Order now to unlock a 30% OFF sitewide code on Nov27",
     "cod": true,
     "prima": "2026-11-13",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2026-12-02",
     "activa": true
    }
@@ -9976,7 +10000,7 @@
     "titlu": "Up to 15% Off For SmartWings Black Friday",
     "cod": false,
     "prima": "2026-11-16",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2026-11-30",
     "activa": true
    }
@@ -9987,7 +10011,7 @@
     "titlu": "Get 30% off all products from store.",
     "cod": false,
     "prima": "2026-09-08",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2027-04-29",
     "activa": true
    }
@@ -10018,7 +10042,7 @@
     "titlu": "Promotii periodice",
     "cod": false,
     "prima": "2026-08-20",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2026-12-31",
     "activa": true
    }
@@ -10029,7 +10053,7 @@
     "titlu": "Black Friday 2026",
     "cod": false,
     "prima": "2026-10-29",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2026-12-02",
     "activa": true
    },
@@ -10049,7 +10073,7 @@
     "titlu": "Black Friday SportDepot.ro: reduceri de pana la 50%, intre 6 si 29 noiembrie!",
     "cod": false,
     "prima": "2026-11-02",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2026-11-29",
     "activa": true
    },
@@ -10217,7 +10241,7 @@
     "titlu": "Black Friday la securitate",
     "cod": false,
     "prima": "2026-10-31",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2026-12-01",
     "activa": true
    }
@@ -10228,7 +10252,7 @@
     "titlu": "Reducere la prima coamnda",
     "cod": true,
     "prima": "2026-10-29",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2026-11-30",
     "activa": true
    },
@@ -10248,7 +10272,7 @@
     "titlu": "15% off",
     "cod": false,
     "prima": "2026-11-04",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2027-07-31",
     "activa": true
    }
@@ -10270,7 +10294,7 @@
     "titlu": "5% off For Pongbot Tennis Ball Machine",
     "cod": true,
     "prima": "2026-09-11",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2027-08-31",
     "activa": true
    }
@@ -10281,7 +10305,7 @@
     "titlu": "Save $249 on orders over $999 for Saramonic products!",
     "cod": true,
     "prima": "2026-09-16",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2028-01-01",
     "activa": true
    }
@@ -10341,7 +10365,7 @@
     "titlu": "Bank BCA Offer: Enjoy 15% off Best Flexible Rates | Swiss-bel Hotel International",
     "cod": true,
     "prima": "2026-09-08",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2026-12-21",
     "activa": true
    }
@@ -10374,7 +10398,7 @@
     "titlu": "Get your new order for all product 15% off",
     "cod": false,
     "prima": "2026-09-08",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2026-12-30",
     "activa": true
    }
@@ -10385,7 +10409,7 @@
     "titlu": "Black Friday Sale – Exclusive Savings upto 15% on Thrifty Car Rentals",
     "cod": true,
     "prima": "2026-11-23",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2026-12-01",
     "activa": true
    }
@@ -10407,7 +10431,7 @@
     "titlu": "Gama Gel de Duș 1000ml Trendvic - Calitate Premium & Comisioane Atractive",
     "cod": true,
     "prima": "2026-11-12",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2026-11-30",
     "activa": true
    },
@@ -10449,7 +10473,7 @@
     "titlu": "Save $55 on $500+ - 26Q4",
     "cod": true,
     "prima": "2026-09-30",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2026-12-31",
     "activa": true
    },
@@ -10458,7 +10482,7 @@
     "titlu": "Save $33 on $300+ - 26Q4",
     "cod": true,
     "prima": "2026-09-30",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2026-12-31",
     "activa": true
    },
@@ -10467,7 +10491,7 @@
     "titlu": "Save $10 on $100+ - 26Q4",
     "cod": true,
     "prima": "2026-09-30",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2026-12-31",
     "activa": true
    },
@@ -10476,7 +10500,7 @@
     "titlu": "9.5% off over $300 - 26Q4",
     "cod": true,
     "prima": "2026-09-30",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2026-12-31",
     "activa": true
    },
@@ -10485,7 +10509,7 @@
     "titlu": "6% off for $0-$150 order value -26Q4",
     "cod": true,
     "prima": "2026-09-30",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2026-12-31",
     "activa": true
    },
@@ -10494,7 +10518,7 @@
     "titlu": "$20 off over $300 - 26Q4",
     "cod": true,
     "prima": "2026-09-30",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2026-12-31",
     "activa": true
    },
@@ -10595,7 +10619,7 @@
     "titlu": "Enjoy a 70% discount on high-quality Virgin+ series products.",
     "cod": true,
     "prima": "2026-09-16",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2027-05-15",
     "activa": true
    },
@@ -10604,7 +10628,7 @@
     "titlu": "Clearance sale50%off",
     "cod": false,
     "prima": "2026-09-16",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2027-05-15",
     "activa": true
    },
@@ -10613,7 +10637,7 @@
     "titlu": "Buy together 25% off",
     "cod": false,
     "prima": "2026-09-16",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2027-05-15",
     "activa": true
    },
@@ -10644,7 +10668,7 @@
     "titlu": "Extra 15% cu codul \"SALE\"",
     "cod": true,
     "prima": "2026-09-24",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2026-12-31",
     "activa": true
    }
@@ -10655,7 +10679,7 @@
     "titlu": "Lemorele ｜ 20% off for new customers & Welcome Discount Sitewide",
     "cod": true,
     "prima": "2026-09-08",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2027-07-01",
     "activa": true
    },
@@ -10664,7 +10688,7 @@
     "titlu": "Lemorele ｜ 15% off sitewide & Limited Deal for best Wireless HDMI",
     "cod": true,
     "prima": "2026-09-08",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2027-07-01",
     "activa": true
    }
@@ -10751,7 +10775,7 @@
     "titlu": "NovingAIR – 30 lei reducere la comenzile de minimum 1.500 lei | AERPROASPAT30",
     "cod": true,
     "prima": "2026-11-16",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2027-02-28",
     "activa": true
    }
@@ -10838,7 +10862,7 @@
     "titlu": "18% discount on selected items",
     "cod": false,
     "prima": "2026-11-13",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2026-11-30",
     "activa": true
    },
@@ -10847,7 +10871,7 @@
     "titlu": "15% discount on selected items",
     "cod": false,
     "prima": "2026-11-13",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2026-11-30",
     "activa": true
    },
@@ -10856,7 +10880,7 @@
     "titlu": "10% discount on selected items",
     "cod": false,
     "prima": "2026-11-13",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2026-11-30",
     "activa": true
    },
@@ -10925,7 +10949,7 @@
     "titlu": "Deals Page: Reduceri de 10% prin codul OFERTE01",
     "cod": true,
     "prima": "2026-05-24",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "",
     "activa": true
    },
@@ -10934,7 +10958,7 @@
     "titlu": "Abonează-te la newsletterul nostru az & beneficiază de o reducere de 25Lei la înscriere!",
     "cod": false,
     "prima": "2026-05-24",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2028-12-31",
     "activa": true
    }
@@ -10945,7 +10969,7 @@
     "titlu": "Black Friday: -40% la toți ochelarii, online și în showroom-uri",
     "cod": true,
     "prima": "2026-10-30",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2026-12-01",
     "activa": true
    },
@@ -11037,7 +11061,7 @@
     "titlu": "20% Discount| Grandparents & Grandchildren Programme - Vila Gale",
     "cod": true,
     "prima": "2026-09-08",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2027-01-01",
     "activa": true
    }
@@ -11090,7 +11114,7 @@
     "titlu": "100 off for wecreat vision pro",
     "cod": false,
     "prima": "2026-09-16",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2027-05-31",
     "activa": true
    },
@@ -11099,7 +11123,7 @@
     "titlu": "120 off for lumos flex",
     "cod": false,
     "prima": "2026-09-16",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2026-12-31",
     "activa": true
    },
@@ -11108,7 +11132,7 @@
     "titlu": "$100 off for wecreat lumos",
     "cod": false,
     "prima": "2026-09-16",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2027-05-31",
     "activa": true
    },
@@ -11117,7 +11141,7 @@
     "titlu": "5% off for all wecreat products!-code:WECREAT",
     "cod": true,
     "prima": "2026-09-16",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2026-12-31",
     "activa": true
    }
@@ -11170,7 +11194,7 @@
     "titlu": "X-SENSE Exclusive Holiday Season Offer – 13% Off Your Entire Order",
     "cod": true,
     "prima": "2026-11-05",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2026-12-31",
     "activa": true
    },
@@ -11179,7 +11203,7 @@
     "titlu": "[EU Site] X-SENSE Exclusive Holiday Season Offer – 13% Off Your Entire Order",
     "cod": true,
     "prima": "2026-11-05",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2026-12-31",
     "activa": true
    },
@@ -11188,7 +11212,7 @@
     "titlu": "X-Sense Exclusive Affiliate Offer – 12% Off Your Entire Order",
     "cod": true,
     "prima": "2026-10-26",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2026-12-31",
     "activa": true
    },
@@ -11217,7 +11241,7 @@
     "titlu": "Get a 5% OFF on Laser Welder X1/X1Pro for your First Purchase",
     "cod": false,
     "prima": "2026-09-08",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2027-01-01",
     "activa": true
    },
@@ -11226,7 +11250,7 @@
     "titlu": "Get An Extra $99 OFF On All Orders Over $1500 on Xlaserlab",
     "cod": false,
     "prima": "2026-09-08",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2027-01-01",
     "activa": true
    }
@@ -11237,7 +11261,7 @@
     "titlu": "Xmind 10% Off | XMIND10OFF",
     "cod": true,
     "prima": "2026-09-08",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2027-06-01",
     "activa": true
    },
@@ -11661,7 +11685,7 @@
     "titlu": "Sezonul virozelor, prețuri mai mici!",
     "cod": false,
     "prima": "2026-09-30",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2026-12-21",
     "activa": true
    },
@@ -11690,7 +11714,7 @@
     "titlu": "Promotie produse Melegatti Pharma - Septembrie-Decembrie",
     "cod": false,
     "prima": "2026-10-01",
-    "ultima": "2026-11-27",
+    "ultima": "2026-11-28",
     "expira": "2026-12-31",
     "activa": true
    },

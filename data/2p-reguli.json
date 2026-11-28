@@ -1,5 +1,5 @@
 {
-"actualizat": "2026-11-27",
+"actualizat": "2026-11-28",
 "magazine": {
 "10qaroma.ro": {
 "cupoane": "yes",
@@ -1431,11 +1431,6 @@
 "google_ads": "yes",
 "cashback": "yes"
 },
-"madebysociety.co.uk": {
-"cupoane": "yes",
-"google_ads": "yes",
-"cashback": "yes"
-},
 "magazintraditional.ro": {
 "cupoane": "yes",
 "google_ads": "yes",
@@ -1549,11 +1544,6 @@
 "mobidea.ro": {
 "cupoane": "yes",
 "google_ads": "yes",
-"cashback": "yes"
-},
-"mobilalaguna.ro": {
-"cupoane": "yes",
-"google_ads": "no",
 "cashback": "yes"
 },
 "mobilasimalex.ro": {
@@ -1790,6 +1780,11 @@
 "cupoane": "yes",
 "google_ads": "yes",
 "cashback": "yes"
+},
+"ozone.ro": {
+"cupoane": "yes",
+"google_ads": "maybe",
+"cashback": "maybe"
 },
 "paa-home.ro": {
 "cupoane": "yes",

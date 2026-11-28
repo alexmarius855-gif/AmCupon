@@ -1,10 +1,10 @@
 {
-  "generat": "2026-11-27",
-  "total_magazine": 427,
-  "cu_promotie": 70,
+  "generat": "2026-11-28",
+  "total_magazine": 428,
+  "cu_promotie": 71,
   "cu_cod_real": 17,
-  "doar_oferta": 53,
-  "procent_cu_promotie": 16.4,
+  "doar_oferta": 54,
+  "procent_cu_promotie": 16.6,
   "procent_cu_cod": 4.0,
   "reducere_mediana_generala": 30,
   "magazine_cu_procent_declarat": 51,
@@ -14,7 +14,7 @@
       "nume": "Cărți & educație",
       "magazine": 22,
       "cu_promotie": 6,
-      "reducere_mediana": 55.0,
+      "reducere_mediana": 52.5,
       "reducere_max": 90,
       "esantion": 4
     },
@@ -28,6 +28,15 @@
       "esantion": 3
     },
     {
+      "slug": "fashion",
+      "nume": "Fashion",
+      "magazine": 46,
+      "cu_promotie": 8,
+      "reducere_mediana": 45.0,
+      "reducere_max": 60,
+      "esantion": 6
+    },
+    {
       "slug": "casa-gradina",
       "nume": "Casă & grădină",
       "magazine": 93,
@@ -35,15 +44,6 @@
       "reducere_mediana": 40,
       "reducere_max": 80,
       "esantion": 11
-    },
-    {
-      "slug": "fashion",
-      "nume": "Fashion",
-      "magazine": 46,
-      "cu_promotie": 9,
-      "reducere_mediana": 40,
-      "reducere_max": 60,
-      "esantion": 7
     },
     {
       "slug": "beauty",
@@ -58,16 +58,16 @@
       "slug": "sanatate",
       "nume": "Sănătate & farmacie",
       "magazine": 38,
-      "cu_promotie": 11,
-      "reducere_mediana": 25.0,
-      "reducere_max": 33,
-      "esantion": 8
+      "cu_promotie": 12,
+      "reducere_mediana": 25,
+      "reducere_max": 70,
+      "esantion": 9
     },
     {
       "slug": "marketplace",
       "nume": "Marketplace",
-      "magazine": 40,
-      "cu_promotie": 5,
+      "magazine": 41,
+      "cu_promotie": 6,
       "reducere_mediana": 20,
       "reducere_max": 70,
       "esantion": 3
@@ -156,9 +156,9 @@
   ],
   "criteriu": "domeniu .ro",
   "international": {
-    "total": 499,
-    "cu_promotie": 80,
-    "cu_cod": 52
+    "total": 498,
+    "cu_promotie": 78,
+    "cu_cod": 49
   },
   "retele": [
     "2Performant",
