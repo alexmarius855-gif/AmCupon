@@ -311,6 +311,56 @@ def verifica_date() -> dict:
         if numite:
             semnaleaza("studiu black friday cu magazine", "cifrele publice ale studiului numesc magazine", numite)
 
+    # 8c. Reduceri reale (28.11.2026, istoric_preturi.py). Pe 24.11 primele doua „scaderi" de pe /reduceri-reale erau
+    #     alt produs pe aceeasi adresa: mostra de 15 ml comparata cu flaconul de 50 ml (Kiehl's, „−52%") si „exact
+    #     jumatate" la o hrana vanduta in doua gramaje (Husse). Lista se curata la sursa; garda prinde orice drum pe
+    #     care ar reveni: o reducere care nu se reface din istoric cu cheia de azi (cheia ar fi pierdut varianta), o
+    #     adresa care vinde mai multe produse, peste 45% cu semne de varianta, peste x3, acelasi produs de doua ori.
+    #     Regulile si cheia vin din istoric_preturi.py, deci stau intr-un singur loc.
+    sc = incarca("scaderi-pret.json")
+    if sc is not None:
+        from istoric_preturi import (ACOPERIRE_MIN, PRAG_VARIANTA, RAPORT_ABSURD, adresa_reala, baze_cu_variante,
+                                     cheie, minim_inainte, semne_varianta)
+        _prod = incarca("products.json") or {}
+        produse_azi = (_prod.get("products") if isinstance(_prod, dict) else _prod) or []
+        dupa_url: dict = {}
+        for p in produse_azi:
+            dupa_url.setdefault(p.get("url"), p)
+        baze = baze_cu_variante(produse_azi)
+        cale_ist = os.path.join(ROOT, "data", "istoric-preturi.json")
+        ist_pret = None
+        if os.path.exists(cale_ist):
+            with io.open(cale_ist, encoding="utf-8") as f:
+                ist_pret = json.load(f).get("produse") or {}
+        zi_lista = sc.get("actualizat") or ""
+        suspecte, chei_lista = [], Counter()
+        for x in sc.get("produse") or []:
+            p = dupa_url.get(x.get("url")) or {"url_original": adresa_reala(x.get("url") or ""),
+                                               "title": x.get("title"), "image": x.get("image")}
+            k = cheie(p)
+            chei_lista[k] += 1
+            pr, mn = x.get("pret") or 0, x.get("minim_30_zile") or 0
+            e = (ist_pret or {}).get(k) or {}
+            eticheta = f"{x.get('merchant_slug')}: {(x.get('title') or '')[:50]} (−{x.get('scadere_pct')}%)"
+            if e.get("x"):
+                suspecte.append(eticheta + " — adresa vinde mai multe produse")
+                continue
+            if ist_pret is not None and zi_lista:
+                mn_ist, acoperire = minim_inainte(e, zi_lista) if e.get("p") else (None, 0)
+                if mn_ist is None or acoperire < ACOPERIRE_MIN or abs(mn_ist - mn) > 0.01:
+                    suspecte.append(eticheta + " — nu se reface din istoric cu cheia produsului")
+                    continue
+            if mn and pr <= mn * PRAG_VARIANTA and (e.get("m") or semne_varianta(p, baze)):
+                suspecte.append(eticheta + " — peste 45%, cu semne de varianta")
+            elif mn and pr * RAPORT_ABSURD < mn:
+                suspecte.append(eticheta + " — peste x3")
+        suspecte += [f"cheia {k} apare de {n} ori" for k, n in chei_lista.items() if n > 1]
+        stare["reduceri_reale"] = len(sc.get("produse") or [])
+        if suspecte:
+            semnaleaza("reducere reala suspecta",
+                       f"{len(suspecte)} produse din scaderi-pret.json pot fi alta varianta a produsului sau o eroare "
+                       "de feed — ruleaza scripts/istoric_preturi.py (regulile de varianta)", suspecte)
+
     # 9. Linkuri Profitshare (05.10.2026). Contul a fost respins si reteaua exclusa pe 19.08,
     #    deci un clic pe un astfel de link nu mai produce comision. Pe 05.10 inca erau 132 in
     #    top-produse.json — pe paginile /top, singurele cu vizitatori din cautari — fiindca

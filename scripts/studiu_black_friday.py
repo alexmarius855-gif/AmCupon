@@ -20,6 +20,11 @@ Plus: câte produse s-au SCUMPIT în luna dinainte de Black Friday.
 Doar CIFRE AGREGATE, fără nume de magazine: pagina descrie piața, nu acuză pe nimeni. Variațiile de
 peste x3 se exclud (altă variantă de produs pe aceeași adresă, nu un preț).
 
+VARIANTE (28.11.2026, aceleași reguli ca istoric_preturi.py): nu intră în cifre adresele care vând mai multe
+produse (`x`: două prețuri în aceeași rulare), produsele la care cantitatea s-a schimbat după începutul
+ferestrei (`s`: istoricul a repornit) și saltul de peste 45% la un produs cu semne de variantă (`m`). Se
+numără separat, în `excluse_varianta`.
+
 LIMITA, scrisă și pe pagină: feed-urile se descarcă prin rotație (la câteva zile pentru fiecare
 magazin), deci „minimul" e minimul VĂZUT de noi, iar o reducere de o zi poate să nu apară.
 
@@ -37,6 +42,9 @@ import json
 import os
 import sys
 from datetime import date, datetime, timedelta, timezone
+
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from istoric_preturi import PRAG_VARIANTA  # noqa: E402  (pragul de varianta sta intr-un singur loc)
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 ISTORIC = os.path.join(ROOT, "data", "istoric-preturi.json")
@@ -62,11 +70,18 @@ def instantaneu(istoric: dict, azi: str, ref: str = REF) -> dict:
     ieri_ref = (d_ref - timedelta(days=1)).isoformat()
     start = (d_ref - timedelta(days=FEREASTRA)).isoformat()
     recent = (date.fromisoformat(azi) - timedelta(days=VAZUT_RECENT)).isoformat()
-    reale, nu_sub_minim, scumpite, neschimbate, excluse = [], [], 0, 0, 0
+    reale, nu_sub_minim, scumpite, neschimbate, excluse, varianta = [], [], 0, 0, 0, 0
     scumpite_inainte, urmarite = 0, 0
     for e in istoric.values():
         p = e.get("p") or []
-        if not p or e.get("v", "") < recent or p[0][0] > start:
+        if not p or e.get("v", "") < recent:
+            continue
+        if p[0][0] > start:
+            if e.get("s", "") > start:
+                varianta += 1       # alta cantitate pe aceeasi adresa dupa inceputul ferestrei: istoricul a repornit
+            continue
+        if e.get("x"):
+            varianta += 1           # adresa vinde mai multe produse (doua preturi in aceeasi rulare)
             continue
         inainte = pret_la(p, ieri_ref)
         la_start = pret_la(p, start)
@@ -77,6 +92,10 @@ def instantaneu(istoric: dict, azi: str, ref: str = REF) -> dict:
         minim = min(fereastra)
         if not (1 / RAPORT_ABSURD <= acum / inainte <= RAPORT_ABSURD) or max(fereastra) / minim > RAPORT_ABSURD:
             excluse += 1
+            continue
+        if e.get("m") and (acum / inainte <= PRAG_VARIANTA or acum / inainte >= 1 / PRAG_VARIANTA
+                           or acum / minim <= PRAG_VARIANTA):
+            varianta += 1           # salt de peste 45% la un produs cu semne de varianta
             continue
         urmarite += 1
         if la_start and inainte > la_start * (1 + PRAG):
@@ -100,7 +119,7 @@ def instantaneu(istoric: dict, azi: str, ref: str = REF) -> dict:
 
     ieftinite = len(reale) + len(nu_sub_minim)
     return {
-        "zi": azi, "produse_urmarite": urmarite, "excluse": excluse,
+        "zi": azi, "produse_urmarite": urmarite, "excluse": excluse, "excluse_varianta": varianta,
         "ieftinite": ieftinite, "reale": len(reale), "nu_sub_minim": len(nu_sub_minim),
         "pct_reale_din_ieftinite": round(100 * len(reale) / ieftinite, 1) if ieftinite else None,
         "mediana_reducere_reala_pct": mediana(reale),
@@ -153,13 +172,23 @@ def test() -> int:
         "vechi": {"p": [["2026-09-20", 100], ["2026-10-01", 70]], "v": "2026-10-01"},
         # x3: alta varianta de produs -> exclus
         "absurd": {"p": [["2026-09-20", 100], ["2026-11-06", 20]], "v": "2026-11-07"},
+        # 28.11.2026 — alta varianta pe aceeasi adresa (istoric_preturi.py): nu intra, se numara separat
+        "ambiguu": {"p": [["2026-09-20", 395], ["2026-11-06", 339]], "v": "2026-11-07", "x": "2026-10-07"},
+        "jumatate": {"p": [["2026-09-20", 569.5], ["2026-11-06", 284.75]], "v": "2026-11-07", "m": 1},  # Husse
+        "repornit": {"p": [["2026-11-06", 95]], "v": "2026-11-07", "s": "2026-11-06", "a": "ml:15"},     # Kiehl's
+        # semne de varianta, dar scadere mica: ramane o reducere reala
+        "semne_mic": {"p": [["2026-09-20", 100], ["2026-11-06", 85]], "v": "2026-11-07", "m": 1},
     }
     s = instantaneu(ist, "2026-11-07")
-    v("urmarite (scurt, vechi si absurd nu intra)", s["produse_urmarite"], 3)
-    v("o reducere reala", s["reale"], 1)
+    v("urmarite (scurt, vechi, absurd si variantele nu intra)", s["produse_urmarite"], 4)
+    v("variantele se numara separat", s["excluse_varianta"], 3)
+    ist_fara = {k: {c: x for c, x in e.items() if c != "m"} for k, e in ist.items()
+                if k in ("real", "revenire", "scumpit", "jumatate", "semne_mic")}
+    v("  fara marcaj, jumatatea Husse ar parea reducere reala", instantaneu(ist_fara, "2026-11-07")["reale"], 3)
+    v("doua reduceri reale (cea cu semne, dar mica, ramane)", s["reale"], 2)
     v("revenirea dupa scumpire nu e reala", s["nu_sub_minim"], 1)
-    v("procentul de reale din cele ieftinite", s["pct_reale_din_ieftinite"], 50.0)
-    v("reducerea reala fata de minim", s["mediana_reducere_reala_pct"], 20.0)
+    v("procentul de reale din cele ieftinite", s["pct_reale_din_ieftinite"], 66.7)
+    v("reducerea reala fata de minim", s["mediana_reducere_reala_pct"], 17.5)
     v("scumpit in BF", s["scumpite"], 1)
     v("scumpite in luna dinainte (revenire)", s["scumpite_in_luna_dinainte"], 1)
     v("absurdul exclus", s["excluse"], 1)

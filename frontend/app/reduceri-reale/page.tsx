@@ -39,6 +39,8 @@ interface Statistici {
   mediana_scumpire_pct: number | null;
   mediana_ieftinire_pct: number | null;
   excluse: number;
+  /** 28.11.2026: aceeasi adresa cu alta varianta (alt gramaj, alta marime), vezi scripts/istoric_preturi.py */
+  excluse_varianta?: number;
   fereastra_zile: number;
   acoperire_min_zile: number;
 }
@@ -109,6 +111,7 @@ function intrebari(s?: Statistici) {
 export default function ReduceriRealePage() {
   const d = incarca();
   const s = d.statistici;
+  const lasateDeoparte = s ? s.excluse + (s.excluse_varianta ?? 0) : 0;
   const produse = d.produse.slice(0, 120);
   const faq = intrebari(s);
 
@@ -175,7 +178,9 @@ export default function ReduceriRealePage() {
               </div>
             </div>
             <p className="text-xs text-[var(--text-muted)] mt-3 max-w-3xl">
-              Nu numim magazine. {s.excluse > 0 ? `${cuNumar(s.excluse, "produs", "produse")} cu o variație mai mare de trei ori nu sunt numărate: pe aceeași adresă apare uneori altă variantă (alt gramaj, alt set), deci nu e o schimbare de preț. ` : ""}
+              {lasateDeoparte > 0
+                ? `Nu numim magazine și lăsăm deoparte ${cuNumar(lasateDeoparte, "produs", "produse")}: pe aceeași adresă a apărut altă variantă (alt gramaj, altă mărime, alt set) sau prețul s-a schimbat de peste trei ori, deci nu e o schimbare de preț. `
+                : "Nu numim magazine. "}
               Înainte de Black Friday merită să notezi prețul produsului pe care îl vrei.
             </p>
           </section>
