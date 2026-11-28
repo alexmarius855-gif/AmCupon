@@ -1,6 +1,6 @@
 {
  "_nota": "Generat de scripts/calendar_black_friday.py din promotiile anuntate de magazine in 2Performant (data/promotii_2p.csv si ofertele 2P active din output.json). Doar parteneri cu link platit. Nu edita de mana.",
- "generat": "2026-11-25",
+ "generat": "2026-11-28",
  "categorii": [
   {
    "slug": "casa-gradina",
@@ -15,7 +15,7 @@
   {
    "slug": "beauty",
    "nume": "cosmetice",
-   "campanii": 11
+   "campanii": 12
   },
   {
    "slug": "electronice",
@@ -35,7 +35,7 @@
   {
    "slug": "sanatate",
    "nume": "sănătate",
-   "campanii": 14
+   "campanii": 13
   },
   {
    "slug": "sport",
@@ -560,16 +560,6 @@
    "categorie": "electronice"
   },
   {
-   "magazin": "cauciucuridirect.ro",
-   "nume": "Cauciucuridirect",
-   "start": "2026-11-06",
-   "final": "2026-11-06",
-   "nota": "Oferte exclusive de Black Friday!",
-   "descriere": "Oferte exclusive de Black Friday! Valabile doar pe 06.11.2026. 10% REDUCERE la anvelopele Continental și Goodyear pentru primii 1.000 de clienți. (Valabil pentru 2 sau mai multe anvelope comandate). Codurile de reducere: 2026CONTIRDRO10, 2026GYRDRO10. 3% REDUCERE la toate celelalte mărci de anvelope! Cod de reducere. Reducerile nu se cumulează!",
-   "are_cod": true,
-   "categorie": "auto-moto"
-  },
-  {
    "magazin": "conectica.ro",
    "nume": "Conectica",
    "start": "2026-11-06",
@@ -1070,16 +1060,6 @@
    "categorie": "beauty"
   },
   {
-   "magazin": "magazin-bbraun.ro",
-   "nume": "Magazin Bbraun",
-   "start": "2026-11-11",
-   "final": "2026-11-29",
-   "nota": "Black Friday",
-   "descriere": "",
-   "are_cod": false,
-   "categorie": "sanatate"
-  },
-  {
    "magazin": "yves-rocher.ro",
    "nume": "Yves Rocher",
    "start": "2026-11-11",
@@ -1098,16 +1078,6 @@
    "descriere": "Prima ta comandă pe Infinity vine cu un beneficiu de Black Friday: 10% reducere. Ai și tu o listă de produse pe care le urmărești de ceva timp în speranța că le vei găsi la un preț bun? Momentul a venit. Între 13 și 30 noiembrie 2026, ai 18 zile de promoții la mii de produse din zeci de categorii. Anul acesta, reducerile acoperă cele mai importante nevoi de sezon: Casă și grădină: pentru proiectele de reamenajare și confortul locuinței tale.",
    "are_cod": true,
    "categorie": "marketplace"
-  },
-  {
-   "magazin": "mobilstore.ro",
-   "nume": "Mobilstore",
-   "start": "2026-11-13",
-   "final": "2026-11-15",
-   "nota": "Black Friday MobilStore: -20% la accesorii",
-   "descriere": "Black Friday la MobilStore.ro: -20% la accesorii pentru telefoane – huse, folii de protecție, încărcătoare, cabluri, căști și multe altele. Reducerea se aplică automat în coș, fără cod. Valabil vineri–duminică, 13–15 noiembrie 2026. Alegi marca și modelul telefonului și vezi doar accesoriile compatibile. Expediere în 1 zi lucrătoare, livrare gratuită peste 200 lei, retur 30 de zile.",
-   "are_cod": false,
-   "categorie": "electronice"
   },
   {
    "magazin": "paa-home.ro",
@@ -1170,16 +1140,6 @@
    "categorie": "sanatate"
   },
   {
-   "magazin": "brainmarket.ro",
-   "nume": "Brainmarket",
-   "start": "2026-11-20",
-   "final": "2026-11-27",
-   "nota": "Black Friday revine pe BrainMarket",
-   "descriere": "Black Friday continuă cu o nouă rundă pe BrainMarket! În perioada 20–27 noiembrie 2026, ai −15% la toate produsele brainmax. Descoperă formule pentru rutina zilnică, energie, focus, somn, imunitate, sport, nutriție și multe altele, acum la un preț special. Profită de Black Friday Round 2 și alege produsele Brainmax potrivite pentru tine. Oferta este valabilă în perioada 10–27 noiembrie 2026.",
-   "are_cod": false,
-   "categorie": "sanatate"
-  },
-  {
    "magazin": "doctorshield.ro",
    "nume": "DoctorShield",
    "start": "2026-11-20",
@@ -1208,6 +1168,46 @@
    "descriere": "For Black Week, every racket in our Padel Rackets collection comes with a free tube of PINQ pink padel balls. That includes rackets already reduced in the Black November sale, so you get the sale price and the free balls together.",
    "are_cod": false,
    "categorie": "sport"
+  },
+  {
+   "magazin": "cauciucuridirect.ro",
+   "nume": "Cauciucuridirect",
+   "start": "2026-11-27",
+   "final": "2026-11-30",
+   "nota": "Black Friday 2026 – 10% REDUCERE la anvelope Continental, Goodyear și Vredestein!",
+   "descriere": "Profită de ofertele speciale Black Friday 2026 și echipează-ți mașina cu anvelope de calitate, la prețuri mai avantajoase! În perioada 27–30 noiembrie 2026, beneficiezi de 10% reducere la anvelopele mărcilor Continental, Goodyear și Vredestein, folosind codurile promoționale dedicate. Coduri de reducere: Continental: 2026CONTIRDROBF10 Goodyear: 2026GYRDROBF10 Vredestein: 2026VRERDRO10 Atenție!",
+   "are_cod": false,
+   "categorie": "auto-moto"
+  },
+  {
+   "magazin": "estel.ro",
+   "nume": "Estel",
+   "start": "2026-11-27",
+   "final": "2026-12-01",
+   "nota": "Cele mai mari reduceri din an de BLACK FRIDAY -30% pe estel.ro cu",
+   "descriere": "Răsfață-ți părul cu îngrijire profesională la prețuri speciale. Folosește codul de reducere la finalizarea comenzii și te bucuri de -30% REDUCERE la produsele tale favorite! De la tratamente intensive și măști hidratante, până la produse de styling și nuanțare — alege formulele care oferă rezultate vizibile încă de la prima utilizare. Bucură-te de îngrijire de nivel salon, direct la tine acasă!",
+   "are_cod": true,
+   "categorie": "beauty"
+  },
+  {
+   "magazin": "mobilstore.ro",
+   "nume": "Mobilstore",
+   "start": "2026-11-27",
+   "final": "2026-11-29",
+   "nota": "Black Weekend MobilStore: -20% la accesorii (27–29 nov)",
+   "descriere": "Promovați -20% automat la accesorii pentru telefoane pe MobilStore.ro, Black Weekend 27–29 noiembrie. Nu este nevoie de cod. Recomandat: link-uri directe pe modelul de telefon (ex. huse iPhone 17, Samsung Galaxy S25), feedul de produse (actualizat de 3 ori pe zi) și bannerele din cont. Reguli: fără licitare pe „mobilstore”/„mobil store”/„mobilfox”, fără coduri nepublicate oficial, fără prețuri sau termene care nu apar pe site.",
+   "are_cod": false,
+   "categorie": "electronice"
+  },
+  {
+   "magazin": "brainmarket.ro",
+   "nume": "Brainmarket",
+   "start": "2026-11-28",
+   "final": "2026-11-30",
+   "nota": "Black Friday se prelungește pe BrainMarket!",
+   "descriere": "Black Friday continuă pe BrainMarket! Ai încă 3 zile în care poți profita de 15% reducere la toate produsele Brainmax. Descoperă suplimente alimentare, alimente și produse pentru rutina ta zilnică, acum la prețuri speciale. Comandă produsele preferate până pe 30 noiembrie și profită de prelungirea campaniei Black Friday! Oferta este valabilă în perioada 28–30 noiembrie 2026.",
+   "are_cod": false,
+   "categorie": "sanatate"
   }
  ]
 }
