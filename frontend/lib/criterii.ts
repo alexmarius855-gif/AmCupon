@@ -20,6 +20,8 @@ export interface ProdusCriteriu {
   pret_vechi?: number | null;
   /** Data la care pretul a fost citit de pe pagina magazinului. */
   verificat?: string;
+  /** Adresa produsului la magazin (fara afiliere): cheia termometrului de pret (lib/termometru.ts). */
+  url_magazin?: string;
 }
 
 export interface Criteriu {

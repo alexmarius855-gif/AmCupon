@@ -34,6 +34,14 @@ const nextConfig: NextConfig = {
     "/*": ["public/**/*.{png,jpg,jpeg,webp,gif,avif,svg,ico,mp4,webm,mp3,woff,woff2,ttf,otf,pdf,zip}"],
   },
 
+  // ── 404 pentru adrese necunoscute (25.11.2026) ──────────────────────────
+  // Site-ul are doua layout-uri radacina (app/(vechi) si app/(nou), pe durata trecerii la noul site), deci nu
+  // exista un layout comun din care sa se compuna 404-ul: fara acest fisier, o adresa necunoscuta primea pagina
+  // implicita a Next. app/global-not-found.tsx e 404-ul noului site.
+  experimental: {
+    globalNotFound: true,
+  },
+
   // ── Redirecturi permanente ──────────────────────────────────────────────
   // Lista traieste in `lib/redirecturi.ts`, ca sa fie ACEEASI sursa citita si de
   // `app/sitemap.ts`. Doua liste manuale au divergat odata (21.08.2026: 7 URL-uri

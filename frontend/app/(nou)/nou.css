@@ -1,0 +1,582 @@
+/*
+ * Noul AmCupon — „Pretul adevarat", directia A „Bon de noapte" (docs/design/PROMPT-SITE-NOU.md, 25.11.2026).
+ *
+ * Fara Tailwind si fara reguli in afara straturilor: o regula fara strat bate ORICE regula dintr-un strat
+ * (docs/LECTII-TEHNICE.md #16 — asa au murit tranzitiile pe vechiul site). Totul sta intr-un strat, iar ordinea
+ * straturilor decide. Culorile doar prin tokeni (:root); in componente nu se scrie niciun hex.
+ *
+ * Contrast (calculat pe fundalul efectiv, WCAG): text pe cerneala 15,9:1, text-3 7,4:1, cobalt-lum 8,0:1;
+ * pe hartie: hartie-text 16,7:1, hartie-text-2 5,8:1, cobalt 5,7:1, bun-hartie 5,4:1, rau-hartie 5,9:1;
+ * alb pe cobalt 5,9:1.
+ */
+@layer reset, tokeni, baza, aspect, componente, stari, miscare;
+
+/* ───────────────────────────── reset ───────────────────────────── */
+@layer reset {
+  *, *::before, *::after { box-sizing: border-box; }
+  html, body, h1, h2, h3, h4, p, figure, blockquote, dl, dd, ul, ol { margin: 0; }
+  ul, ol { padding: 0; list-style: none; }
+  img, svg, picture { display: block; max-width: 100%; }
+  input, button, select, textarea { font: inherit; color: inherit; }
+  button { cursor: pointer; background: none; border: 0; padding: 0; }
+  a { color: inherit; text-decoration: none; }
+  summary { cursor: pointer; }
+  summary::-webkit-details-marker { display: none; }
+}
+
+/* ───────────────────────────── tokeni ───────────────────────────── */
+@layer tokeni {
+  :root {
+    color-scheme: dark;
+    /* cerneala albastruie (fond si suprafete) */
+    --cerneala: #0a0c11;
+    --cerneala-2: #11141b;
+    --cerneala-3: #191d26;
+    --linie: #262b36;
+    --linie-tare: #363c4a;
+    --text: #e8ebf1;
+    --text-2: #c3c9d4;
+    --text-3: #9aa2b1;
+    /* hartie termica (bonul, cuponul, termometrul) */
+    --hartie: #eff1ec;
+    --hartie-2: #e3e6df;
+    --hartie-linie: #c9cdc4;
+    --hartie-text: #14161b;
+    --hartie-text-2: #5a606b;
+    /* o singura culoare de marca: cobalt de stampila */
+    --cobalt: #3550f5;
+    --cobalt-apasat: #2a41d6;
+    --cobalt-lum: #93a4ff;
+    --cobalt-ceata: rgb(53 80 245 / .14);
+    /* culori de STARE, nu accente */
+    --bun: #2fd39b;
+    --bun-hartie: #0a7350;
+    --rau: #ff7070;
+    --rau-hartie: #b42323;
+
+    --r: 12px;
+    --r-mic: 8px;
+    --ease: cubic-bezier(.2, .8, .2, 1);
+    --f-afisaj: var(--font-afisaj), ui-sans-serif, system-ui, sans-serif;
+    --f-text: var(--font-text), ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+    --f-mono: var(--font-mono), ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+    --latime: 1180px;
+    --gutter: 16px;
+  }
+  @media (min-width: 720px) { :root { --gutter: 24px; } }
+}
+
+/* ───────────────────────────── baza ───────────────────────────── */
+@layer baza {
+  html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; scroll-padding-top: 76px; }
+  body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: var(--cerneala);
+    color: var(--text);
+    font-family: var(--f-text);
+    font-size: 1rem;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+  main { flex: 1; }
+  h1, h2, h3 { font-family: var(--f-afisaj); line-height: 1.08; letter-spacing: -.015em; text-wrap: balance; }
+  p { text-wrap: pretty; }
+  ::selection { background: var(--cobalt); color: #fff; }
+  :focus-visible { outline: 2px solid var(--cobalt-lum); outline-offset: 2px; border-radius: 4px; }
+  .sr-only {
+    position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+    overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0;
+  }
+  .mono { font-family: var(--f-mono); font-variant-numeric: tabular-nums; }
+  .sari { position: absolute; left: 8px; top: -60px; z-index: 100; background: var(--cobalt); color: #fff; padding: 8px 12px; border-radius: var(--r-mic); font-weight: 700; }
+  .sari:focus { top: 8px; }
+}
+
+/* ───────────────────────────── aspect (layout) ───────────────────────────── */
+@layer aspect {
+  .cadru { width: 100%; max-width: calc(var(--latime) + 2 * var(--gutter)); margin-inline: auto; padding-inline: var(--gutter); }
+  .sectiune { margin-block: 56px; }
+  .sectiune-mica { margin-block: 32px; }
+  .stiva > * + * { margin-top: 12px; }
+  .grila { display: grid; gap: 14px; }
+  .grila-2 { display: grid; gap: 14px; grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr)); }
+  .grila-produse { display: grid; gap: 12px; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  @media (min-width: 720px) { .grila-produse { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+  @media (min-width: 1040px) { .grila-produse { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
+  .grila-cupoane { display: grid; gap: 14px; grid-template-columns: repeat(auto-fill, minmax(min(100%, 290px), 1fr)); }
+  .cap-sectiune { display: flex; align-items: flex-end; justify-content: space-between; gap: 16px; margin-bottom: 16px; }
+  .cap-sectiune > div { min-width: 0; }
+}
+
+/* ───────────────────────────── componente ───────────────────────────── */
+@layer componente {
+  /* tipografie */
+  .eticheta {
+    font-family: var(--f-mono); font-size: .75rem; font-weight: 500; letter-spacing: .12em;
+    text-transform: uppercase; color: var(--cobalt-lum);
+  }
+  .h1 { font-size: clamp(2.05rem, 1.25rem + 3.9vw, 4.1rem); font-weight: 800; letter-spacing: -.025em; line-height: 1.02; }
+  .h2 { font-size: clamp(1.45rem, 1.1rem + 1.5vw, 2.15rem); font-weight: 700; }
+  .h3 { font-size: 1.125rem; font-weight: 700; line-height: 1.25; }
+  .lead { font-size: clamp(1.02rem, .95rem + .35vw, 1.2rem); color: var(--text-2); max-width: 62ch; }
+  .sub { font-size: .9rem; color: var(--text-3); margin-top: 4px; }
+  .nota { font-size: .8rem; color: var(--text-3); line-height: 1.55; max-width: 75ch; }
+  .legatura { color: var(--cobalt-lum); font-weight: 600; font-size: .9rem; white-space: nowrap; }
+  .legatura:hover { text-decoration: underline; text-underline-offset: 3px; }
+  .text-legaturi a { color: var(--cobalt-lum); text-decoration: underline; text-decoration-color: rgb(147 164 255 / .4); text-underline-offset: 3px; }
+
+  /* butoane */
+  .buton {
+    display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+    min-height: 44px; padding: 10px 18px; border-radius: var(--r-mic);
+    background: var(--cobalt); color: #fff; font-weight: 700; font-size: .95rem; line-height: 1.2;
+    border: 1px solid transparent; transition: background-color .15s ease, transform .15s var(--ease);
+  }
+  .buton:hover { background: var(--cobalt-apasat); }
+  .buton:active { transform: scale(.98); }
+  .buton-contur {
+    display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+    min-height: 44px; padding: 10px 16px; border-radius: var(--r-mic);
+    border: 1px solid var(--linie-tare); color: var(--text); font-weight: 600; font-size: .95rem;
+    transition: border-color .15s ease, background-color .15s ease;
+  }
+  .buton-contur:hover { border-color: var(--cobalt-lum); background: var(--cobalt-ceata); }
+
+  /* antet */
+  .antet { position: sticky; top: 0; z-index: 40; background: var(--cerneala); border-bottom: 1px solid var(--linie); }
+  .antet-rand { display: flex; align-items: center; gap: 16px; min-height: 60px; }
+  .marca { display: inline-flex; align-items: center; gap: 9px; font-family: var(--f-afisaj); font-weight: 800; font-size: 1.28rem; letter-spacing: -.02em; flex-shrink: 0; }
+  .marca svg { width: 26px; height: 26px; color: var(--cobalt-lum); }
+  .marca i { font-style: normal; color: var(--cobalt-lum); }
+  .nav { display: none; gap: 2px; margin-left: 8px; }
+  .nav a { padding: 8px 10px; border-radius: var(--r-mic); color: var(--text-2); font-size: .92rem; font-weight: 500; white-space: nowrap; }
+  .nav a:hover { color: var(--text); background: var(--cerneala-3); }
+  .nav a[aria-current="page"] { color: var(--text); box-shadow: inset 0 -2px 0 var(--cobalt-lum); border-radius: 0; }
+  .cauta { margin-left: auto; display: none; position: relative; }
+  .cauta input {
+    width: 230px; height: 40px; padding: 0 40px 0 14px; border-radius: var(--r-mic);
+    background: var(--cerneala-2); border: 1px solid var(--linie-tare); color: var(--text); font-size: .9rem;
+  }
+  .cauta input::placeholder { color: var(--text-3); }
+  .cauta input:focus { outline: none; border-color: var(--cobalt-lum); }
+  .cauta button { position: absolute; right: 4px; top: 4px; width: 32px; height: 32px; display: grid; place-items: center; color: var(--text-3); border-radius: 6px; }
+  .cauta button:hover { color: var(--text); }
+  .cauta svg, .meniu-buton svg, .antet-cauta svg { width: 18px; height: 18px; }
+  .antet-cauta { margin-left: auto; width: 44px; height: 44px; display: grid; place-items: center; color: var(--text-2); border-radius: var(--r-mic); }
+  .meniu { position: relative; }
+  .meniu-buton { width: 44px; height: 44px; display: grid; place-items: center; color: var(--text); border-radius: var(--r-mic); border: 1px solid var(--linie-tare); }
+  .meniu[open] .meniu-buton { border-color: var(--cobalt-lum); }
+  .meniu-panou {
+    position: absolute; right: 0; top: calc(100% + 8px); width: min(86vw, 320px); z-index: 50;
+    background: var(--cerneala-2); border: 1px solid var(--linie-tare); border-radius: var(--r); padding: 8px;
+    box-shadow: 0 24px 48px -16px rgb(0 0 0 / .7);
+  }
+  .meniu-panou a { display: block; padding: 11px 12px; border-radius: var(--r-mic); color: var(--text-2); font-weight: 500; }
+  .meniu-panou a:hover { background: var(--cerneala-3); color: var(--text); }
+  .meniu-panou form { padding: 8px 4px 4px; }
+  .meniu-panou input { width: 100%; height: 44px; padding: 0 14px; border-radius: var(--r-mic); background: var(--cerneala); border: 1px solid var(--linie-tare); }
+  @media (min-width: 1000px) {
+    .nav { display: flex; }
+    .cauta { display: block; }
+    .antet-cauta, .meniu { display: none; }
+  }
+  .anunt { background: var(--cerneala-2); border-bottom: 1px solid var(--linie); font-size: .86rem; }
+  .anunt a { display: flex; align-items: center; justify-content: center; gap: 10px; min-height: 38px; padding: 6px var(--gutter); text-align: center; color: var(--text-2); }
+  .anunt b { color: var(--text); font-weight: 600; }
+  .anunt span:last-child { color: var(--cobalt-lum); font-weight: 600; white-space: nowrap; }
+
+  /* subsol */
+  .subsol { margin-top: 72px; border-top: 1px solid var(--linie); background: var(--cerneala-2); padding-block: 48px 32px; font-size: .9rem; }
+  .subsol-col { display: grid; gap: 28px; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  @media (min-width: 900px) { .subsol-col { grid-template-columns: 1.4fr repeat(4, minmax(0, 1fr)); } }
+  .subsol h2 { font-family: var(--f-mono); font-size: .72rem; letter-spacing: .12em; text-transform: uppercase; color: var(--text-3); font-weight: 500; margin-bottom: 12px; }
+  .subsol li + li { margin-top: 7px; }
+  .subsol li a { color: var(--text-2); }
+  .subsol li a:hover { color: var(--text); text-decoration: underline; text-underline-offset: 3px; }
+  .subsol-despre { grid-column: 1 / -1; }
+  @media (min-width: 900px) { .subsol-despre { grid-column: auto; } }
+  .subsol-despre p { color: var(--text-3); margin-top: 10px; max-width: 42ch; }
+  .subsol-jos { margin-top: 36px; padding-top: 20px; border-top: 1px solid var(--linie); display: flex; flex-wrap: wrap; gap: 8px 24px; justify-content: space-between; color: var(--text-3); font-size: .82rem; }
+
+  /* firimituri */
+  .firimituri { display: flex; flex-wrap: wrap; gap: 6px; font-size: .82rem; color: var(--text-3); padding-top: 18px; }
+  .firimituri a:hover { color: var(--text); }
+  .firimituri span[aria-hidden] { opacity: .5; }
+
+  /* placa (tile) */
+  .placa { background: var(--cerneala-2); border: 1px solid var(--linie); border-radius: var(--r); padding: 20px; min-width: 0; }
+  .placa-cap { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; margin-bottom: 14px; }
+  .placa-cap h2, .placa-cap h3 { font-size: 1.2rem; font-weight: 700; }
+
+  /* chip */
+  .chips { display: flex; gap: 8px; overflow-x: auto; scrollbar-width: none; padding-bottom: 2px; scroll-snap-type: x proximity; }
+  .chips::-webkit-scrollbar { display: none; }
+  @media (min-width: 720px) { .chips { flex-wrap: wrap; overflow: visible; } }
+  .chip {
+    flex-shrink: 0; scroll-snap-align: start; display: inline-flex; align-items: center; gap: 8px;
+    min-height: 42px; padding: 8px 14px; border-radius: 999px; border: 1px solid var(--linie-tare);
+    background: var(--cerneala); color: var(--text-2); font-size: .92rem; font-weight: 500; white-space: nowrap;
+    transition: border-color .15s ease, color .15s ease, background-color .15s ease;
+  }
+  .chip:hover { border-color: var(--text-3); color: var(--text); }
+  .chip[aria-pressed="true"] { border-color: var(--cobalt-lum); color: var(--text); background: var(--cobalt-ceata); }
+  .chip small { font-family: var(--f-mono); font-size: .76rem; color: var(--text-3); }
+  .chip[aria-pressed="true"] small { color: var(--cobalt-lum); }
+
+  /* hartie termica, cu marginea perforata (masca: nu depinde de fundalul de sub ea) */
+  .hartie {
+    --gaura: 4.5px; --pas: 13px;
+    background: var(--hartie); color: var(--hartie-text);
+    -webkit-mask:
+      radial-gradient(circle var(--gaura) at 50% 0, #0000 96%, #000) top / var(--pas) 51% repeat-x,
+      radial-gradient(circle var(--gaura) at 50% 100%, #0000 96%, #000) bottom / var(--pas) 51% repeat-x;
+    mask:
+      radial-gradient(circle var(--gaura) at 50% 0, #0000 96%, #000) top / var(--pas) 51% repeat-x,
+      radial-gradient(circle var(--gaura) at 50% 100%, #0000 96%, #000) bottom / var(--pas) 51% repeat-x;
+  }
+
+  /* ── bonul (prima pagina) ── */
+  .bon { position: relative; width: 100%; max-width: 420px; margin-inline: auto; }
+  .bon-fanta { height: 12px; border-radius: 8px; background: var(--cerneala-3); border: 1px solid var(--linie-tare); position: relative; z-index: 2; }
+  .bon-fereastra { overflow: hidden; margin: -6px 12px 0; padding-bottom: 14px; }
+  .bon-tipar { position: relative; }
+  .bon-umbra { filter: drop-shadow(0 18px 22px rgb(0 0 0 / .45)); }
+  .bon-hartie { padding: 26px 20px 24px; font-family: var(--f-mono); font-size: .86rem; line-height: 1.5; font-variant-numeric: tabular-nums; }
+  .bon-antet { text-align: center; letter-spacing: .14em; text-transform: uppercase; font-size: .74rem; color: var(--hartie-text-2); }
+  .bon-antet b { display: block; color: var(--hartie-text); font-size: .92rem; letter-spacing: .2em; font-weight: 700; }
+  .bon-taiere { border: 0; border-top: 1.5px dashed var(--hartie-linie); margin: 14px 0; }
+  .bon-produs { font-family: var(--f-text); font-weight: 600; font-size: .98rem; line-height: 1.35; color: var(--hartie-text); }
+  .bon-mag { color: var(--hartie-text-2); font-size: .8rem; margin-top: 2px; }
+  .bon-rand { display: flex; align-items: baseline; gap: 6px; }
+  .bon-rand span:first-child { flex-shrink: 0; }
+  .bon-rand i { flex: 1; min-width: 12px; border-bottom: 1.5px dotted var(--hartie-linie); transform: translateY(-4px); }
+  .bon-rand b { font-weight: 700; white-space: nowrap; }
+  .bon-rand.azi b { font-size: 1.05rem; }
+  .bon-verdict { margin-top: 12px; font-family: var(--f-text); font-size: .86rem; color: var(--hartie-text-2); line-height: 1.45; }
+  .bon-cta { margin-top: 16px; display: flex; }
+  .bon-cta .buton { width: 100%; }
+  .bon-subsol { text-align: center; margin-top: 14px; font-size: .7rem; letter-spacing: .1em; text-transform: uppercase; color: var(--hartie-text-2); }
+
+  /* stampila */
+  .stampila {
+    display: inline-flex; flex-direction: column; align-items: center; justify-content: center;
+    border: 2.5px solid currentColor; border-radius: 6px; padding: 5px 12px 4px; color: var(--cobalt);
+    font-family: var(--f-afisaj); font-weight: 800; letter-spacing: .06em; text-transform: uppercase;
+    line-height: 1.05; transform: rotate(-7deg); font-size: .98rem;
+    box-shadow: inset 0 0 0 1.5px var(--hartie), inset 0 0 0 3px currentColor;
+  }
+  .stampila small { font-family: var(--f-mono); font-size: .72rem; letter-spacing: .08em; font-weight: 700; }
+  .stampila.neutra { color: var(--hartie-text-2); }
+  .bon-stampila { display: flex; justify-content: center; margin-top: 16px; }
+  .stampila-colt { font-size: 1.1rem; padding: 7px 16px 6px; }
+
+  /* ── termometrul pretului ── */
+  .termo { --pista: var(--linie); --banda: var(--text-3); --ac: var(--text); --eticheta: var(--text-3); margin-top: 12px; }
+  .pe-hartie .termo, .termo.pe-hartie { --pista: var(--hartie-2); --banda: var(--hartie-text-2); --ac: var(--hartie-text); --eticheta: var(--hartie-text-2); }
+  .termo-pista { position: relative; height: 26px; }
+  .termo-pista::before { content: ""; position: absolute; left: 0; right: 0; top: 11px; height: 4px; border-radius: 4px; background: var(--pista); }
+  .termo-banda {
+    position: absolute; top: 9px; height: 8px; border-radius: 4px; background: var(--banda);
+    left: var(--a); width: max(6px, calc(var(--b) - var(--a))); transform-origin: left center;
+  }
+  .termo-ac { position: absolute; left: var(--x); top: 0; width: 0; height: 26px; }
+  .termo-ac::before { content: ""; position: absolute; left: -1.5px; top: 2px; width: 3px; height: 22px; border-radius: 2px; background: var(--ac); }
+  .termo-ac::after { content: ""; position: absolute; left: -6px; top: -4px; border: 6px solid transparent; border-top-color: var(--ac); border-bottom: 0; }
+  .termo[data-verdict="reala"] { --ac: var(--bun); }
+  .pe-hartie .termo[data-verdict="reala"], .termo.pe-hartie[data-verdict="reala"] { --ac: var(--bun-hartie); }
+  .termo-et { display: flex; justify-content: space-between; gap: 8px; font-family: var(--f-mono); font-size: .72rem; color: var(--eticheta); font-variant-numeric: tabular-nums; margin-top: 2px; }
+  .termo-et b { color: var(--ac); font-weight: 700; }
+  .termo-concluzie { margin-top: 6px; font-size: .8rem; line-height: 1.45; color: var(--eticheta); }
+  .termo-concluzie strong { color: var(--ac); }
+
+  /* linia pretului (seria de pe bon) */
+  .serie { margin-top: 10px; color: var(--hartie-text-2); }
+  .serie svg { width: 100%; height: 44px; overflow: visible; }
+  .serie .lin { fill: none; stroke: currentColor; stroke-width: 1.6; vector-effect: non-scaling-stroke; }
+  .serie .azi { fill: var(--bun-hartie); }
+  .serie .fereastra { fill: var(--hartie-2); }
+  .serie-et { display: flex; justify-content: space-between; font-size: .68rem; letter-spacing: .04em; }
+
+  /* ── cuponul (codul ca bon) ── */
+  .cupon { position: relative; display: flex; flex-direction: column; min-width: 0; }
+  .cupon .hartie { flex: 1; display: flex; flex-direction: column; padding: 20px 18px 18px; }
+  .cupon-cap { display: flex; align-items: center; gap: 10px; }
+  .cupon-logo { width: 40px; height: 40px; flex-shrink: 0; border-radius: 8px; background: #fff; border: 1px solid var(--hartie-linie); display: grid; place-items: center; overflow: hidden; }
+  .cupon-logo img { width: 100%; height: 100%; object-fit: contain; padding: 4px; }
+  .cupon-logo span { font-family: var(--f-afisaj); font-weight: 800; font-size: .85rem; color: var(--hartie-text-2); }
+  .cupon-mag { min-width: 0; }
+  .cupon-mag b { display: block; font-size: .92rem; font-weight: 700; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .cupon-tip { font-family: var(--f-mono); font-size: .68rem; letter-spacing: .12em; text-transform: uppercase; color: var(--hartie-text-2); }
+  .cupon-val { margin-top: 14px; font-family: var(--f-afisaj); font-weight: 800; line-height: 1; letter-spacing: -.02em; color: var(--cobalt); }
+  .cupon-val.mare { font-size: 2.3rem; }
+  .cupon-val.medie { font-size: 1.6rem; }
+  .cupon-val.mica { font-size: 1.15rem; line-height: 1.15; }
+  .cupon-pre { display: block; font-family: var(--f-mono); font-size: .7rem; letter-spacing: .1em; text-transform: uppercase; color: var(--hartie-text-2); margin-bottom: 4px; font-weight: 500; }
+  .cupon-titlu { margin-top: 10px; font-family: var(--f-text); font-weight: 600; font-size: .95rem; line-height: 1.4; letter-spacing: 0; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+  .cupon-meta { display: flex; flex-wrap: wrap; gap: 6px 12px; margin-top: 10px; font-family: var(--f-mono); font-size: .72rem; color: var(--hartie-text-2); }
+  .cupon-meta .urgent { color: var(--rau-hartie); font-weight: 700; }
+  .cupon-jos { margin-top: auto; padding-top: 16px; }
+  .cupon-taiere { border: 0; border-top: 1.5px dashed var(--hartie-linie); margin: 0 0 14px; }
+  .cupon-btn {
+    width: 100%; min-height: 46px; display: flex; align-items: center; justify-content: space-between; gap: 10px;
+    padding: 8px 8px 8px 16px; border-radius: var(--r-mic); background: var(--cobalt); color: #fff; font-weight: 700; font-size: .95rem;
+    transition: background-color .15s ease, transform .15s var(--ease);
+  }
+  .cupon-btn:hover { background: var(--cobalt-apasat); }
+  .cupon-btn:active { transform: scale(.98); }
+  .cupon-btn span:last-child { font-family: var(--f-mono); font-size: .82rem; background: rgb(255 255 255 / .16); border-radius: 6px; padding: 5px 9px; letter-spacing: .06em; }
+  .cupon-go {
+    width: 100%; min-height: 46px; display: flex; align-items: center; justify-content: center; gap: 8px; border-radius: var(--r-mic);
+    border: 1.5px solid var(--hartie-text); color: var(--hartie-text); font-weight: 700; font-size: .95rem;
+    transition: background-color .15s ease, color .15s ease;
+  }
+  .cupon-go:hover { background: var(--hartie-text); color: var(--hartie); }
+  .cupon-cod { display: flex; align-items: stretch; gap: 8px; }
+  .cupon-cod code {
+    flex: 1; min-width: 0; display: flex; align-items: center; justify-content: center; padding: 8px 10px;
+    border: 2px dashed var(--hartie-text); border-radius: var(--r-mic); font-family: var(--f-mono); font-weight: 700;
+    font-size: 1.12rem; letter-spacing: .08em; color: var(--hartie-text); overflow-wrap: anywhere; text-align: center;
+  }
+  .cupon-copiaza { flex-shrink: 0; min-width: 92px; min-height: 46px; border-radius: var(--r-mic); background: var(--hartie-text); color: var(--hartie); font-weight: 700; font-size: .88rem; padding: 0 12px; }
+  .cupon-copiaza.ok { background: var(--bun-hartie); color: #fff; }
+  .cupon-cod + .cupon-go { margin-top: 10px; }
+  .cupon .stampila-copiat { position: absolute; right: 14px; top: 14px; font-size: .82rem; color: var(--bun-hartie); pointer-events: none; }
+
+  /* filtrele grilei */
+  .filtre { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 16px; }
+
+  /* confirmarea dupa dezvaluire (in locul ferestrei vechi) */
+  .confirmare {
+    position: fixed; left: 50%; bottom: 18px; z-index: 60; width: min(92vw, 420px); transform: translateX(-50%);
+    background: var(--cerneala-3); border: 1px solid var(--linie-tare); border-radius: var(--r); padding: 14px 16px;
+    box-shadow: 0 24px 48px -16px rgb(0 0 0 / .75); display: flex; gap: 12px; align-items: flex-start; font-size: .9rem;
+  }
+  .confirmare b { display: block; color: var(--text); }
+  .confirmare p { color: var(--text-3); font-size: .84rem; margin-top: 2px; }
+  .confirmare .buton { margin-top: 10px; width: 100%; }
+  .confirmare > button { margin-left: auto; color: var(--text-3); width: 32px; height: 32px; display: grid; place-items: center; border-radius: 6px; flex-shrink: 0; }
+  .confirmare > button:hover { color: var(--text); background: var(--cerneala-2); }
+  .confirmare svg { width: 18px; height: 18px; flex-shrink: 0; }
+  .confirmare .bifa { color: var(--bun); margin-top: 2px; }
+
+  /* ── produsul (/alege, topuri) ── */
+  .produs {
+    display: flex; flex-direction: column; min-width: 0; background: var(--cerneala-2); border: 1px solid var(--linie);
+    border-radius: var(--r); overflow: hidden; transition: border-color .15s ease, transform .2s var(--ease);
+  }
+  .produs:hover { border-color: var(--linie-tare); }
+  .produs-img { aspect-ratio: 4 / 3; background: #fff; display: grid; place-items: center; padding: 12px; }
+  .produs-img img { width: 100%; height: 100%; object-fit: contain; }
+  .produs-img span { font-family: var(--f-afisaj); font-weight: 800; font-size: 1.6rem; color: var(--hartie-text-2); }
+  .produs-corp { padding: 12px 12px 14px; display: flex; flex-direction: column; gap: 4px; flex: 1; }
+  .produs-titlu { font-size: .88rem; line-height: 1.4; color: var(--text); display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+  .produs-mag { font-size: .78rem; color: var(--text-3); }
+  .produs-pret { font-family: var(--f-mono); font-weight: 700; font-size: 1.08rem; color: var(--text); margin-top: auto; padding-top: 6px; font-variant-numeric: tabular-nums; }
+  .produs-pret s { font-weight: 400; font-size: .8rem; color: var(--text-3); margin-left: 6px; }
+  .produs-data { font-family: var(--f-mono); font-size: .7rem; color: var(--text-3); }
+  .produs-data.confirmat { color: var(--bun); }
+  .produs .termo { margin-top: 6px; }
+  .produs-go { margin-top: 10px; font-size: .84rem; font-weight: 700; color: var(--cobalt-lum); }
+
+  /* ── cautatorul („Ce cumperi?") ── */
+  .cautator { background: var(--cerneala-2); border: 1px solid var(--linie); border-radius: var(--r); padding: 18px; }
+  .cautator-pas { display: flex; align-items: center; gap: 10px; font-weight: 600; font-size: .95rem; margin-bottom: 10px; }
+  .cautator-pas b { width: 24px; height: 24px; border-radius: 999px; display: grid; place-items: center; font-family: var(--f-mono); font-size: .75rem; background: var(--cobalt); color: #fff; flex-shrink: 0; }
+  .cautator-pas + .chips { margin-bottom: 16px; }
+  .rezultate { border-top: 1px solid var(--linie); padding-top: 14px; }
+  .rezultate-cap { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; margin-bottom: 10px; }
+  .rezultate-cap b { font-size: 1rem; }
+  .rezultate-cap span { font-family: var(--f-mono); font-size: .74rem; color: var(--text-3); white-space: nowrap; }
+  .rezultat { display: grid; grid-template-columns: 56px minmax(0, 1fr) auto; gap: 12px; align-items: center; padding: 8px; margin-inline: -8px; border-radius: var(--r-mic); }
+  .rezultat:hover { background: var(--cerneala-3); }
+  .rezultat-img { width: 56px; height: 56px; border-radius: 8px; background: #fff; display: grid; place-items: center; overflow: hidden; }
+  .rezultat-img img { width: 100%; height: 100%; object-fit: contain; padding: 4px; }
+  .rezultat-titlu { font-size: .86rem; line-height: 1.35; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+  .rezultat-mag { font-size: .74rem; color: var(--text-3); margin-top: 2px; }
+  .rezultat-pret { text-align: right; font-family: var(--f-mono); font-weight: 700; font-size: .95rem; white-space: nowrap; }
+  .rezultat-pret small { display: block; font-weight: 400; font-size: .68rem; color: var(--bun); }
+  .rezultate .buton-contur { width: 100%; margin-top: 12px; }
+  .cautator-gol { color: var(--text-3); font-size: .9rem; }
+
+  /* ── prima pagina ── */
+  .erou { position: relative; padding-block: 28px 8px; }
+  .erou::before {
+    content: ""; position: absolute; inset: -60px 0 auto; height: 520px; z-index: -1; pointer-events: none;
+    background: radial-gradient(60% 70% at 70% 20%, rgb(53 80 245 / .16), transparent 70%);
+  }
+  /* minmax(0, 1fr) si min-width: 0: fara ele, randul de chips (nowrap, cu scroll) latea coloana la 402 px pe un
+     ecran de 390 (elementele de grila au implicit min-width: auto). */
+  .erou-grila { display: grid; gap: 28px; align-items: start; grid-template-columns: minmax(0, 1fr); }
+  .erou-grila > * { min-width: 0; }
+  @media (min-width: 960px) { .erou-grila { grid-template-columns: minmax(0, 1.15fr) minmax(360px, .85fr); gap: 48px; padding-top: 24px; } }
+  .erou .lead { margin-top: 16px; }
+  .erou .eticheta { margin-bottom: 14px; display: block; }
+  .erou-cautator { margin-top: 24px; }
+  .bento { display: grid; gap: 14px; }
+  @media (min-width: 960px) {
+    .bento { grid-template-columns: repeat(12, minmax(0, 1fr)); }
+    .bento > .lat { grid-column: span 12; }
+    .bento > .doua-treimi { grid-column: span 8; }
+    .bento > .treime { grid-column: span 4; }
+    .bento > .jumatate { grid-column: span 6; }
+  }
+  .cifre { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; margin-top: 22px; max-width: 560px; }
+  .cifra b { display: block; font-family: var(--f-mono); font-size: clamp(1.2rem, 1rem + 1vw, 1.6rem); font-weight: 700; font-variant-numeric: tabular-nums; color: var(--text); }
+  .cifra span { font-size: .78rem; color: var(--text-3); line-height: 1.3; display: block; }
+
+  /* lista „sub minim" */
+  .scadere { display: grid; grid-template-columns: 52px minmax(0, 1fr); gap: 12px; padding-block: 12px; border-top: 1px solid var(--linie); }
+  .scadere:first-child { border-top: 0; padding-top: 0; }
+  .scadere-img { width: 52px; height: 52px; border-radius: 8px; background: #fff; overflow: hidden; display: grid; place-items: center; }
+  .scadere-img img { width: 100%; height: 100%; object-fit: contain; padding: 3px; }
+  .scadere-titlu { font-size: .86rem; line-height: 1.35; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+  .scadere-pret { font-family: var(--f-mono); font-size: .8rem; color: var(--text-3); margin-top: 3px; }
+  .scadere-pret b { color: var(--bun); font-size: .9rem; }
+
+  /* calendarul Black Friday */
+  .cal dl > div { display: flex; justify-content: space-between; gap: 12px; padding-block: 9px; border-top: 1px solid var(--linie); font-size: .9rem; }
+  .cal dl > div:first-child { border-top: 0; padding-top: 0; }
+  .cal dt { color: var(--text-3); }
+  .cal dd { font-weight: 600; text-align: right; }
+  .cal dd.acum { color: var(--bun); }
+  .cal ul { margin-top: 10px; font-size: .86rem; }
+  .cal li { display: flex; justify-content: space-between; gap: 10px; padding-block: 4px; }
+  .cal li a:hover { color: var(--cobalt-lum); }
+  .cal li span { font-family: var(--f-mono); font-size: .76rem; color: var(--text-3); white-space: nowrap; }
+
+  /* magazine */
+  .magazine { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; }
+  @media (min-width: 720px) { .magazine { grid-template-columns: repeat(6, minmax(0, 1fr)); } }
+  .mag { position: relative; aspect-ratio: 3 / 2; background: #fff; border-radius: var(--r-mic); display: grid; place-items: center; padding: 10px; border: 1px solid transparent; transition: border-color .15s ease; }
+  .mag:hover { border-color: var(--cobalt-lum); }
+  .mag img { max-height: 100%; width: 100%; object-fit: contain; }
+  .mag span.ini { font-family: var(--f-afisaj); font-weight: 800; color: var(--hartie-text-2); }
+  .mag i { position: absolute; left: 6px; top: 6px; font-style: normal; font-family: var(--f-mono); font-size: .62rem; font-weight: 700; padding: 2px 6px; border-radius: 4px; background: var(--cobalt); color: #fff; }
+  .mag i.slab { background: var(--hartie-2); color: var(--hartie-text); }
+
+  /* cum lucram */
+  .reguli li { display: grid; grid-template-columns: 28px minmax(0, 1fr); gap: 10px; padding-block: 10px; border-top: 1px solid var(--linie); font-size: .9rem; color: var(--text-2); }
+  .reguli li:first-child { border-top: 0; padding-top: 0; }
+  .reguli li b { color: var(--text); }
+  .reguli svg { width: 20px; height: 20px; color: var(--cobalt-lum); margin-top: 2px; }
+
+  /* harta de linkuri */
+  .harta { display: grid; gap: 22px; grid-template-columns: repeat(auto-fill, minmax(min(100%, 240px), 1fr)); }
+  .harta h3 { font-family: var(--f-mono); font-size: .72rem; letter-spacing: .12em; text-transform: uppercase; color: var(--text-3); font-weight: 500; margin-bottom: 10px; }
+  .harta li { font-size: .88rem; padding-block: 3px; }
+  .harta li a { color: var(--text-2); }
+  .harta li a:hover { color: var(--cobalt-lum); }
+  .harta details summary { font-size: .85rem; font-weight: 600; color: var(--cobalt-lum); margin-top: 6px; list-style: none; }
+
+  /* intrebari frecvente */
+  .faq { max-width: 820px; }
+  .faq details { border-top: 1px solid var(--linie); }
+  .faq details:last-child { border-bottom: 1px solid var(--linie); }
+  .faq summary { display: flex; justify-content: space-between; align-items: center; gap: 16px; padding-block: 16px; list-style: none; }
+  .faq summary h3 { font-family: var(--f-text); font-size: 1rem; font-weight: 600; letter-spacing: 0; line-height: 1.4; }
+  .faq summary::after { content: "+"; font-family: var(--f-mono); font-size: 1.3rem; line-height: 1; color: var(--cobalt-lum); transition: transform .2s var(--ease); flex-shrink: 0; }
+  .faq details[open] summary::after { transform: rotate(45deg); }
+  .faq details p { padding-bottom: 16px; color: var(--text-2); font-size: .94rem; max-width: 70ch; }
+  .faq-simplu > div { padding-block: 14px; border-top: 1px solid var(--linie); }
+  .faq-simplu dt { font-weight: 600; }
+  .faq-simplu dd { color: var(--text-2); font-size: .94rem; margin-top: 4px; max-width: 70ch; }
+
+  /* stari goale oneste */
+  .gol { border: 1px dashed var(--linie-tare); border-radius: var(--r); padding: 22px; color: var(--text-3); font-size: .92rem; text-align: center; }
+
+  /* statistici /reduceri-reale */
+  .statistici { display: grid; gap: 12px; grid-template-columns: repeat(auto-fill, minmax(min(100%, 200px), 1fr)); }
+  .stat { background: var(--cerneala-2); border: 1px solid var(--linie); border-radius: var(--r); padding: 16px; }
+  .stat b { display: block; font-family: var(--f-mono); font-size: 1.7rem; font-weight: 700; font-variant-numeric: tabular-nums; }
+  .stat b.rau { color: var(--rau); }
+  .stat b.bun { color: var(--bun); }
+  .stat span { font-size: .82rem; color: var(--text-3); }
+
+  /* carduri de scadere pe /reduceri-reale (bonul mic) */
+  .bon-mic { display: flex; flex-direction: column; min-width: 0; }
+  .bon-mic .hartie { flex: 1; display: flex; flex-direction: column; padding: 18px 16px 16px; font-family: var(--f-mono); font-size: .8rem; font-variant-numeric: tabular-nums; }
+  .bon-mic-cap { display: grid; grid-template-columns: 56px minmax(0, 1fr); gap: 12px; align-items: center; font-family: var(--f-text); }
+  .bon-mic-cap .scadere-img { width: 56px; height: 56px; border: 1px solid var(--hartie-linie); }
+  .bon-mic-titlu { font-weight: 600; font-size: .88rem; line-height: 1.35; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+  .bon-mic-mag { font-size: .76rem; color: var(--hartie-text-2); margin-top: 2px; }
+  .bon-mic .bon-rand { margin-top: 4px; }
+  .bon-mic .stampila { font-size: .8rem; position: absolute; right: 14px; bottom: 58px; }
+  .bon-mic .cupon-go { margin-top: auto; }
+  .bon-mic .bon-taiere { margin: 12px 0; }
+
+  /* 404 */
+  .p404 { padding-block: 72px; text-align: center; }
+  .p404 .bon { margin-top: 32px; }
+  .p404 nav { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; margin-top: 28px; }
+
+  /* bannerul de cookie-uri: pe SERVER, in HTML; ascuns din <head> pentru cine a raspuns (cc-ok) */
+  .cookie-banner { position: fixed; left: 0; right: 0; bottom: 0; z-index: 70; padding: 12px; }
+  .cookie-banner > div {
+    max-width: 880px; margin-inline: auto; background: var(--cerneala-3); border: 1px solid var(--linie-tare); border-radius: var(--r);
+    padding: 16px; display: flex; flex-wrap: wrap; gap: 12px 16px; align-items: center; box-shadow: 0 -12px 40px -12px rgb(0 0 0 / .7);
+  }
+  .cookie-banner p { flex: 1 1 320px; font-size: .84rem; color: var(--text-2); line-height: 1.5; }
+  .cookie-banner p b { color: var(--text); }
+  .cookie-banner a { color: var(--cobalt-lum); text-decoration: underline; text-underline-offset: 2px; }
+  .cookie-banner .butoane { display: flex; gap: 8px; flex: 1 1 200px; justify-content: flex-end; }
+  .cookie-banner .butoane > * { flex: 1; }
+  @media (min-width: 640px) { .cookie-banner .butoane > * { flex: 0 0 auto; } }
+  html.cc-ok .cookie-banner { display: none; }
+
+  /* confetti peste cod (lib/confetti.ts, clasa `confetti`) */
+  .confetti { position: fixed; left: 0; top: 0; width: 0; height: 0; z-index: 80; pointer-events: none; }
+  .confetti i { position: absolute; left: 0; top: 0; width: 7px; height: 11px; border-radius: 2px; opacity: 0; }
+  .confetti i:nth-child(3n) { width: 8px; height: 8px; border-radius: 50%; }
+}
+
+/* ───────────────────────────── stari ───────────────────────────── */
+@layer stari {
+  .produs:hover { transform: translateY(-2px); }
+  @media (hover: none) { .produs:hover { transform: none; } }
+}
+
+/* ───────────────────────────── miscare ───────────────────────────── */
+@layer miscare {
+  @keyframes tipar { from { transform: translateY(-104%); } to { transform: translateY(0); } }
+  @keyframes stampila { 0% { transform: scale(1.9) rotate(-22deg); opacity: 0; } 70% { transform: scale(.94) rotate(-6deg); opacity: 1; } 100% { transform: scale(1) rotate(-7deg); opacity: 1; } }
+  @keyframes umple { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+  @keyframes cade { from { transform: translateY(-10px); } to { transform: translateY(0); } }
+  @keyframes iese { from { transform: translateY(-12px); } to { transform: translateY(0); } }
+  @keyframes apare-jos { from { transform: translate(-50%, 16px); opacity: 0; } to { transform: translate(-50%, 0); opacity: 1; } }
+  @keyframes confetti {
+    0% { opacity: 1; transform: translate(-50%, -50%) rotate(0deg) scale(.5); }
+    45% { opacity: 1; transform: translate(calc(-50% + var(--dx) * .75), calc(-50% + var(--dy))) rotate(calc(var(--r) * .5)) scale(1); }
+    100% { opacity: 0; transform: translate(calc(-50% + var(--dx)), calc(-50% + var(--dy) + 70px)) rotate(var(--r)) scale(.9); }
+  }
+  .confetti i { animation: confetti .95s cubic-bezier(.15, .75, .35, 1) forwards; }
+
+  @media (prefers-reduced-motion: no-preference) {
+    /* Bonul se tipareste: doar transform, textul e pictat de la prima pictura (LCP nu asteapta). */
+    .bon-tipar { animation: tipar 1.05s var(--ease) .12s both; }
+    .bon-tipar .stampila-colt { animation: stampila .42s var(--ease) 1.15s both; }
+    .bon-tipar .termo-banda { animation: umple .7s var(--ease) .9s both; }
+    .bon-tipar .termo-ac { animation: cade .45s var(--ease) 1.05s both; }
+    /* Termometrele de mai jos se umplu cand intra in ecran (clasa `vazut` o pune Apare.tsx). */
+    .termo.asteapta .termo-banda { transform: scaleX(0); }
+    .termo.vazut .termo-banda { transform: scaleX(1); transition: transform .7s var(--ease); }
+    /* Codul iese din imprimanta la dezvaluire. */
+    .cupon-cod { animation: iese .35s var(--ease) both; }
+    .cupon .stampila-copiat { animation: stampila .38s var(--ease) both; }
+    .confirmare { animation: apare-jos .28s var(--ease) both; }
+    /* Aparitii la derulare: doar ce era complet sub ecran la incarcare (Apare.tsx). */
+    .ap-ascuns { opacity: 0; transform: translateY(14px); }
+    .ap-ascuns.ap-vazut { opacity: 1; transform: none; transition: opacity .55s var(--ease), transform .55s var(--ease); transition-delay: var(--ap-intarziere, 0ms); }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; scroll-behavior: auto !important; }
+  }
+  @media print {
+    .antet, .anunt, .subsol, .cookie-banner, .confirmare, .meniu { display: none !important; }
+    body { background: #fff; color: #000; }
+    .placa, .produs, .cautator { border-color: #bbb; background: #fff; color: #000; }
+  }
+}
